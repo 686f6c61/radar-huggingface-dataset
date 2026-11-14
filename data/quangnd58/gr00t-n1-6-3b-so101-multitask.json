@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quangnd58/GR00T-N1.6-3B-so101-multitask",
   "slug": "quangnd58-gr00t-n1-6-3b-so101-multitask",
   "author": "quangnd58",
@@ -32,14 +32,19 @@
   "parameters_human": "3.29B",
   "storage_bytes": 9813310504,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.6-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

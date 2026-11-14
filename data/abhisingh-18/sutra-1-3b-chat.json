@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abhisingh-18/Sutra-1.3B-Chat",
   "slug": "abhisingh-18-sutra-1-3b-chat",
   "author": "Abhisingh-18",
@@ -44,14 +44,19 @@
   "parameters_human": "1.32B",
   "storage_bytes": 33080505570,
   "storage_human": "33.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

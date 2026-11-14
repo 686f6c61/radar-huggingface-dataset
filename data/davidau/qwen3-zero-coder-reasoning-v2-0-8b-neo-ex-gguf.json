@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-Zero-Coder-Reasoning-V2-0.8B-NEO-EX-GGUF",
   "slug": "davidau-qwen3-zero-coder-reasoning-v2-0-8b-neo-ex-gguf",
   "author": "DavidAU",
@@ -53,14 +53,19 @@
   "parameters_human": "816.3M",
   "storage_bytes": 39839848719,
   "storage_human": "39.8 GB",
+  "context_length": 40960,
   "base_model": "DavidAU/Qwen3-Zero-Coder-Reasoning-V2-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

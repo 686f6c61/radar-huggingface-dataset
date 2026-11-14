@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nico248000000000/Qwen3.8-27B-Uncensored-cyber-LoRA",
   "slug": "nico248000000000-qwen3-8-27b-uncensored-cyber-lora",
   "author": "nico248000000000",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 196854767,
   "storage_human": "197 MB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Causal language modeling",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step10000",
   "slug": "rlobot-jun-gr00t-n17-bigenlight-all-svf-lora16-step10000",
   "author": "RLobot-jun",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 6659609707,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "RLobot-jun/gr00t-n17-bigenlight-all-step10000",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

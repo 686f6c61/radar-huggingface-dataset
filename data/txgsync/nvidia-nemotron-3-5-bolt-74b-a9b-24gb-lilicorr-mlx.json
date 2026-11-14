@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-MLX",
   "slug": "txgsync-nvidia-nemotron-3-5-bolt-74b-a9b-24gb-lilicorr-mlx",
   "author": "txgsync",
@@ -59,6 +59,7 @@
   "parameters_human": "22.64B",
   "storage_bytes": 25064149910,
   "storage_human": "25.1 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB, nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
   "formats": [
     "mlx",
@@ -66,8 +67,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

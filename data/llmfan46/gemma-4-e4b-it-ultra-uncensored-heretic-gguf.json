@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF",
   "slug": "llmfan46-gemma-4-e4b-it-ultra-uncensored-heretic-gguf",
   "author": "llmfan46",
@@ -29,21 +29,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 318,
+  "likes": 321,
   "downloads_30d": 140396,
-  "trending_score": 12,
+  "trending_score": 14,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
   "storage_bytes": 47077318208,
   "storage_human": "47.1 GB",
+  "context_length": 131072,
   "base_model": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weibin198072/Qwen-Image-2.1-Fix",
   "slug": "weibin198072-qwen-image-2-1-fix",
   "author": "weibin198072",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 218748126,
   "storage_human": "219 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prince4332/AfriE5-twi-query-encoder-v3",
   "slug": "prince4332-afrie5-twi-query-encoder-v3",
   "author": "prince4332",
@@ -37,14 +37,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 1136909059,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "McGill-NLP/AfriE5-Large-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "notnaurw/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-SAGE-mtp",
   "slug": "notnaurw-qwen3-8-27b-cold-fusion-gain-v1-1-oq5e-sage-mtp",
   "author": "notnaurw",
@@ -34,6 +34,7 @@
   "parameters_human": "5.76B",
   "storage_bytes": 20310905503,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T04:14:53.659Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

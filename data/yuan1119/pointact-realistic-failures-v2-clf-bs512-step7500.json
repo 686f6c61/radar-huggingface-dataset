@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuan1119/pointact-realistic-failures-v2-clf-bs512-step7500",
   "slug": "yuan1119-pointact-realistic-failures-v2-clf-bs512-step7500",
   "author": "yuan1119",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 11362256565,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:30:13.053Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

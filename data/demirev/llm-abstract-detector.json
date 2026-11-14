@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "demirev/llm-abstract-detector",
   "slug": "demirev-llm-abstract-detector",
   "author": "demirev",
@@ -34,14 +34,19 @@
   "parameters_human": "109.9M",
   "storage_bytes": 439699436,
   "storage_human": "440 MB",
+  "context_length": null,
   "base_model": "allenai/specter2_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

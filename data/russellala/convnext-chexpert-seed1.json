@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RussellALA/convnext-chexpert-seed1",
   "slug": "russellala-convnext-chexpert-seed1",
   "author": "RussellALA",
@@ -36,14 +36,19 @@
   "parameters_human": "27.9M",
   "storage_bytes": 111510484,
   "storage_human": "112 MB",
+  "context_length": null,
   "base_model": "facebook/convnextv2-tiny-22k-384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

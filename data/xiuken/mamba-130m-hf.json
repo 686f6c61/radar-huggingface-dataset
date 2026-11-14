@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xiuken/mamba-130m-hf",
   "slug": "xiuken-mamba-130m-hf",
   "author": "xiuken",
@@ -27,14 +27,19 @@
   "parameters_human": "129.1M",
   "storage_bytes": 516567560,
   "storage_human": "517 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

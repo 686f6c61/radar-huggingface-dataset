@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openEuler/sam2.1_hiera_tiny",
   "slug": "openeuler-sam2-1_hiera_tiny",
   "author": "openEuler",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 324529762,
   "storage_human": "325 MB",
+  "context_length": null,
   "base_model": "facebook/sam2.1-hiera-tiny",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

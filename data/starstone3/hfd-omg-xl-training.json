@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "starstone3/HFD-OMG-XL-Training",
   "slug": "starstone3-hfd-omg-xl-training",
   "author": "starstone3",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 23367517010,
   "storage_human": "23.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

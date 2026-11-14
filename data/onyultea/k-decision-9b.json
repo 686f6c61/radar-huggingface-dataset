@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ONYULTEA/K-Decision-9B",
   "slug": "onyultea-k-decision-9b",
   "author": "ONYULTEA",
@@ -42,14 +42,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 18160469987,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

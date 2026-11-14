@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jas-preet/SPOT-1D-LM",
   "slug": "jas-preet-spot-1d-lm",
   "author": "Jas-preet",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 955700138,
   "storage_human": "956 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

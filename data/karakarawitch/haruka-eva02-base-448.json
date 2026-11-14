@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KaraKaraWitch/haruka-eva02-base-448",
   "slug": "karakarawitch-haruka-eva02-base-448",
   "author": "KaraKaraWitch",
@@ -31,14 +31,19 @@
   "parameters_human": "86.3M",
   "storage_bytes": 352513168,
   "storage_human": "353 MB",
+  "context_length": null,
   "base_model": "timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myendless/action-repre-hygon-newtask-fast-head10k-c5d06f6a",
   "slug": "myendless-action-repre-hygon-newtask-fast-head10k-c5d06f6a",
   "author": "myendless",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 11364402816,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

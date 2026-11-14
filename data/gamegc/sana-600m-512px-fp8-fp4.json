@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GameGC/sana-600m-512px-fp8-fp4",
   "slug": "gamegc-sana-600m-512px-fp8-fp4",
   "author": "GameGC",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 6882517074,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_600M_512px_diffusers",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

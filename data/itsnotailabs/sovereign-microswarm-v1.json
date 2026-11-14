@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ItsnotAilabs/Sovereign-MicroSwarm-v1",
   "slug": "itsnotailabs-sovereign-microswarm-v1",
   "author": "ItsnotAilabs",
@@ -31,14 +31,19 @@
   "parameters_human": "1.4M",
   "storage_bytes": 76041400,
   "storage_human": "76 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

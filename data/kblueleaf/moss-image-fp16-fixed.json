@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KBlueLeaf/MOSS-Image-FP16-fixed",
   "slug": "kblueleaf-moss-image-fp16-fixed",
   "author": "KBlueLeaf",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 40710891814,
   "storage_human": "40.7 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

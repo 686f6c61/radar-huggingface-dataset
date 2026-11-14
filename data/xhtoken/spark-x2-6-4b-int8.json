@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XHToken/Spark-X2.6-4B-INT8",
   "slug": "xhtoken-spark-x2-6-4b-int8",
   "author": "XHToken",
@@ -39,14 +39,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 4454499012,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

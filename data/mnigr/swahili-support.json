@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mnigr/swahili-support",
   "slug": "mnigr-swahili-support",
   "author": "mnigr",
@@ -30,6 +30,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 10553684998,
   "storage_human": "10.6 GB",
+  "context_length": 262144,
   "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

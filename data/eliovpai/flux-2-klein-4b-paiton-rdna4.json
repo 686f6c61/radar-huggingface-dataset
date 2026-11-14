@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EliovpAI/FLUX.2-klein-4B-Paiton-RDNA4",
   "slug": "eliovpai-flux-2-klein-4b-paiton-rdna4",
   "author": "EliovpAI",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 7345054,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "Disty0/FLUX.2-klein-4B-SDNQ-4bit-dynamic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

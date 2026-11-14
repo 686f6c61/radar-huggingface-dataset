@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JasonW2025/Qwen-3.8-Next-Flash-Tesseract-R08-20261006",
   "slug": "jasonw2025-qwen-3-8-next-flash-tesseract-r08-20261006",
   "author": "JasonW2025",
@@ -36,14 +36,19 @@
   "parameters_human": "5.49B",
   "storage_bytes": 19150619463,
   "storage_human": "19.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T07:03:10.411Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

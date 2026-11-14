@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbaD3v/MoonAI700M-V1.2",
   "slug": "abad3v-moonai700m-v1-2",
   "author": "AbaD3v",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 61300563445,
   "storage_human": "61.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

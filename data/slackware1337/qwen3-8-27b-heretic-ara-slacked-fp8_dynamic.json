@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked-FP8_DYNAMIC",
   "slug": "slackware1337-qwen3-8-27b-heretic-ara-slacked-fp8_dynamic",
   "author": "Slackware1337",
@@ -27,14 +27,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 97563709615,
   "storage_human": "97.6 GB",
+  "context_length": null,
   "base_model": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2",
   "slug": "chaoliangunsw-jev-style-qwen3-5-2b-decision-v2",
   "author": "chaoliangUNSW",
@@ -39,14 +39,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 3784754678,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

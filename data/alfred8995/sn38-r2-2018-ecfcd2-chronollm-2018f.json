@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alfred8995/sn38-r2-2018-ecfcd2-chronollm-2018f",
   "slug": "alfred8995-sn38-r2-2018-ecfcd2-chronollm-2018f",
   "author": "alfred8995",
@@ -24,14 +24,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 7434184688,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

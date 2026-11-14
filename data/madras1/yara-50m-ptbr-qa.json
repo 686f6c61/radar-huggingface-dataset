@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Madras1/Yara-50M-PTBR-QA",
   "slug": "madras1-yara-50m-ptbr-qa",
   "author": "Madras1",
@@ -37,14 +37,19 @@
   "parameters_human": "50.0M",
   "storage_bytes": 200210296,
   "storage_human": "200 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "proetektor8/Mistral-7B-v0.1-GGUF",
   "slug": "proetektor8-mistral-7b-v0-1-gguf",
   "author": "proetektor8",
@@ -28,14 +28,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 54971166208,
   "storage_human": "55.0 GB",
+  "context_length": 32768,
   "base_model": "mistralai/Mistral-7B-v0.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

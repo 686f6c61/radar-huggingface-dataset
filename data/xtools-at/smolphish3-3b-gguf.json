@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/SmolPhish3-3B-GGUF",
   "slug": "xtools-at-smolphish3-3b-gguf",
   "author": "xtools-at",
@@ -36,14 +36,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 5190880384,
   "storage_human": "5.2 GB",
+  "context_length": 65536,
   "base_model": "K0D3IN/SmolLM3-3B-Instruct-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sweagent/rlvr-seed-baseline-iter74",
   "slug": "sweagent-rlvr-seed-baseline-iter74",
   "author": "sweagent",
@@ -30,14 +30,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916687950,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T08:17:41.443Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

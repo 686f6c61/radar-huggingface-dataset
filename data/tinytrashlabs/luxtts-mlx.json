@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinytrashlabs/LuxTTS-mlx",
   "slug": "tinytrashlabs-luxtts-mlx",
   "author": "tinytrashlabs",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 554874944,
   "storage_human": "555 MB",
+  "context_length": null,
   "base_model": "YatharthS/LuxTTS",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vadimyakob/chrono-2022-tuning-15",
   "slug": "vadimyakob-chrono-2022-tuning-15",
   "author": "vadimyakob",
@@ -23,14 +23,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 6429900824,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:36:50.464Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

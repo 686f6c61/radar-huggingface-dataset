@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "happyme531/Granite-4.2-3B-W4A8-Mixed-QQQ-SQ",
   "slug": "happyme531-granite-4-2-3b-w4a8-mixed-qqq-sq",
   "author": "happyme531",
@@ -47,14 +47,19 @@
   "parameters_human": "3.66B",
   "storage_bytes": 3124451248,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "happyme531/Granite-4.2-3B-W4A8-Mixed-QQQ-SQ-RK3588",
+  "renamed_at": "2026-11-11T05:31:11.002Z",
   "benchmarks": [],
   "sources": [
     {

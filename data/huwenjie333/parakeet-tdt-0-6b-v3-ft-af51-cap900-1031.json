@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huwenjie333/parakeet-tdt-0.6b-v3-ft-af51-cap900-1031",
   "slug": "huwenjie333-parakeet-tdt-0-6b-v3-ft-af51-cap900-1031",
   "author": "huwenjie333",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2587955200,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T04:33:58.329Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

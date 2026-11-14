@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keras/mistral_small_3.1_24b_base_2503_en",
   "slug": "keras-mistral_small_3-1_24b_base_2503_en",
   "author": "keras",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 48902792264,
   "storage_human": "48.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

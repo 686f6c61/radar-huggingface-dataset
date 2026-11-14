@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "G4b3r/Qwen2.5-Coder-7B-Instruct_especialista",
   "slug": "g4b3r-qwen2-5-coder-7b-instruct_especialista",
   "author": "G4b3r",
@@ -24,14 +24,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 57666525172,
   "storage_human": "57.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

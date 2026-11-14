@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kabe0515/Qwen3-30B-A3B-Instruct-2507-MTP-GGUF",
   "slug": "kabe0515-qwen3-30b-a3b-instruct-2507-mtp-gguf",
   "author": "kabe0515",
@@ -33,14 +33,19 @@
   "parameters_human": "30.60B",
   "storage_bytes": 12347049920,
   "storage_human": "12.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

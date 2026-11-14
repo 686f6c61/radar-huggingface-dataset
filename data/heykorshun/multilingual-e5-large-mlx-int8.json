@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heykorshun/multilingual-e5-large-mlx-int8",
   "slug": "heykorshun-multilingual-e5-large-mlx-int8",
   "author": "heykorshun",
@@ -35,6 +35,7 @@
   "parameters_human": "157.7M",
   "storage_bytes": 647962177,
   "storage_human": "648 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-large",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "iktino/multilingual-e5-large-mlx-int8",
+  "renamed_at": "2026-11-14T06:15:47.373Z",
   "benchmarks": [],
   "sources": []
 }

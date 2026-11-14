@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shivrajgurjar/Qwen3.8-27B-HOLO1-1Bit",
   "slug": "shivrajgurjar-qwen3-8-27b-holo1-1bit",
   "author": "shivrajgurjar",
@@ -41,6 +41,7 @@
   "parameters_human": "1.31B",
   "storage_bytes": 32886405144,
   "storage_human": "32.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

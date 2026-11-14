@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RodrigoLimaRFL/whisper-large-v3-named-entities-pt-br-v2",
   "slug": "rodrigolimarfl-whisper-large-v3-named-entities-pt-br-v2",
   "author": "RodrigoLimaRFL",
@@ -27,14 +27,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6174112552,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

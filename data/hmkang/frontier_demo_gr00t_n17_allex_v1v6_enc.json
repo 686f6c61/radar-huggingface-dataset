@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hmkang/frontier_demo_gr00t_n17_allex_v1v6_enc",
   "slug": "hmkang-frontier_demo_gr00t_n17_allex_v1v6_enc",
   "author": "hmkang",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 110698468624,
   "storage_human": "110.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

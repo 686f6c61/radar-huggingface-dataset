@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LoganResearch/Qwen-0.5-Proprioceptive-ToolMaster",
   "slug": "loganresearch-qwen-0-5-proprioceptive-toolmaster",
   "author": "LoganResearch",
@@ -38,14 +38,19 @@
   "parameters_human": "494.7M",
   "storage_bytes": 1993380954,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

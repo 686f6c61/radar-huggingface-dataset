@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ang187/ella_quinn_ltx23",
   "slug": "ang187-ella_quinn_ltx23",
   "author": "ang187",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 2676097453,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:47:37.506Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

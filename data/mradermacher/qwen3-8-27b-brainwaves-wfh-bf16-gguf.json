@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.8-27B-Brainwaves-WFH-BF16-GGUF",
   "slug": "mradermacher-qwen3-8-27b-brainwaves-wfh-bf16-gguf",
   "author": "mradermacher",
@@ -88,6 +88,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 186348502592,
   "storage_human": "186.3 GB",
+  "context_length": 262144,
   "base_model": "nightmedia/Qwen3.8-27B-Brainwaves-WFH-BF16",
   "formats": [
     "gguf",
@@ -95,8 +96,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

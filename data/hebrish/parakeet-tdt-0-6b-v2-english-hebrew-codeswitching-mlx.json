@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hebrish/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-mlx",
   "slug": "hebrish-parakeet-tdt-0-6b-v2-english-hebrew-codeswitching-mlx",
   "author": "Hebrish",
@@ -37,6 +37,7 @@
   "parameters_human": "617.9M",
   "storage_bytes": 4944102718,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "Hebrish/Jachnun",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hebrish/Jachnun-MLX",
+  "renamed_at": "2026-11-13T03:01:10.411Z",
   "benchmarks": [],
   "sources": [
     {

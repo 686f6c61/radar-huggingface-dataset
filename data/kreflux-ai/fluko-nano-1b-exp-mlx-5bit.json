@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kreflux-AI/Fluko-Nano-1B-Exp-MLX-5bit",
   "slug": "kreflux-ai-fluko-nano-1b-exp-mlx-5bit",
   "author": "Kreflux-AI",
@@ -34,6 +34,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 745457140,
   "storage_human": "745 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sashaboguraev/pythia-1b-ppt-nca_steps1000_1b-seed208",
   "slug": "sashaboguraev-pythia-1b-ppt-nca_steps1000_1b-seed208",
   "author": "sashaboguraev",
@@ -28,14 +28,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 3716797504,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

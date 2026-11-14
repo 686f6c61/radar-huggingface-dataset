@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahmedsamirtarjama/arabic-ocr-dots-ft-e6c",
   "slug": "ahmedsamirtarjama-arabic-ocr-dots-ft-e6c",
   "author": "ahmedsamirtarjama",
@@ -33,14 +33,19 @@
   "parameters_human": "3.04B",
   "storage_bytes": 6078431968,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "rednote-hilab/dots.mocr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T03:18:38.975Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

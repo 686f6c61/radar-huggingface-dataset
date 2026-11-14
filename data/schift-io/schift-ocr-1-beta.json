@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schift-io/schift-ocr-1-beta",
   "slug": "schift-io-schift-ocr-1-beta",
   "author": "schift-io",
@@ -38,14 +38,19 @@
   "parameters_human": "3.64B",
   "storage_bytes": 14556717952,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hu7777/LocateAnything-3B",
   "slug": "hu7777-locateanything-3b",
   "author": "Hu7777",
@@ -47,14 +47,19 @@
   "parameters_human": "3.83B",
   "storage_bytes": 7789385442,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

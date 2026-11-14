@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMinded-Labs/CodeAiley-14B",
   "slug": "openminded-labs-codeailey-14b",
   "author": "OpenMinded-Labs",
@@ -32,6 +32,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8498238013,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

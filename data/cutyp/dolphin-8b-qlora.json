@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cutyp/dolphin-8b-qlora",
   "slug": "cutyp-dolphin-8b-qlora",
   "author": "Cutyp",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 185041646,
   "storage_human": "185 MB",
+  "context_length": null,
   "base_model": "dphn/dolphin-2.9-llama3-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

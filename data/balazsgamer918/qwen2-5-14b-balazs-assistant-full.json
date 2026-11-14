@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "balazsgamer918/qwen2.5-14b-balazs-assistant-full",
   "slug": "balazsgamer918-qwen2-5-14b-balazs-assistant-full",
   "author": "balazsgamer918",
@@ -35,14 +35,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29551556126,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

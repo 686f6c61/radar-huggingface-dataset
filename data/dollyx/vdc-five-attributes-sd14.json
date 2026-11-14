@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dollyx/vdc-five-attributes-sd14",
   "slug": "dollyx-vdc-five-attributes-sd14",
   "author": "dollyx",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 288312876,
   "storage_human": "288 MB",
+  "context_length": null,
   "base_model": "CompVis/stable-diffusion-v-1-4-original",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

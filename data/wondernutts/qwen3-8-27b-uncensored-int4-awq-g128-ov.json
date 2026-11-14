@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wondernutts/Qwen3.8-27B-Uncensored-int4-awq-g128-ov",
   "slug": "wondernutts-qwen3-8-27b-uncensored-int4-awq-g128-ov",
   "author": "Wondernutts",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 15696879511,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

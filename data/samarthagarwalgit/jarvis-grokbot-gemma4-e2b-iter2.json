@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samarthagarwalgit/Jarvis-GrokBot-Gemma4-E2B-Iter2",
   "slug": "samarthagarwalgit-jarvis-grokbot-gemma4-e2b-iter2",
   "author": "samarthagarwalgit",
@@ -34,14 +34,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10740248472,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Gork-27b-Cybersecurity-GGUF",
   "slug": "mradermacher-gork-27b-cybersecurity-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 189203891968,
   "storage_human": "189.2 GB",
+  "context_length": 262144,
   "base_model": "ConsensusProtocol-Thanos/Gork-27b-Cybersecurity",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

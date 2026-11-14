@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohsenvand/mindview-painter",
   "slug": "mohsenvand-mindview-painter",
   "author": "mohsenvand",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1128926640,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "prism-ml/bonsai-image-ternary-4B-unpacked, prism-ml/Ternary-Bonsai-1.7B-gguf, madebyollin/taef2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

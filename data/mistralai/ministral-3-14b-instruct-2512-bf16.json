@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
   "slug": "mistralai-ministral-3-14b-instruct-2512-bf16",
   "author": "mistralai",
@@ -53,14 +53,19 @@
   "parameters_human": "13.95B",
   "storage_bytes": 55865015928,
   "storage_human": "55.9 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-14B-Base-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

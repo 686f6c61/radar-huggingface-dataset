@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jk797/LFM3-1.7B-MLX-oQ5e",
   "slug": "jk797-lfm3-1-7b-mlx-oq5e",
   "author": "jk797",
@@ -31,6 +31,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1250006949,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B, LiquidAI/LFM3-1.7B-MLX-bf16",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

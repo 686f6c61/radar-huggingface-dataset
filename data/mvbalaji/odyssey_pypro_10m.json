@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mvbalaji/Odyssey_PyPro_10M",
   "slug": "mvbalaji-odyssey_pypro_10m",
   "author": "mvbalaji",
@@ -31,14 +31,19 @@
   "parameters_human": "9.8M",
   "storage_bytes": 9827816,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

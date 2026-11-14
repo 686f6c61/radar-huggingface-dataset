@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qikp/tiny-random-Qwen4-Exp_Qwen3.8-Flash-Next",
   "slug": "qikp-tiny-random-qwen4-exp_qwen3-8-flash-next",
   "author": "qikp",
@@ -28,14 +28,19 @@
   "parameters_human": "31.1M",
   "storage_bytes": 144458125,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

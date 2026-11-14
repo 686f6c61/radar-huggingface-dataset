@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrcuddle/Nebula-Reasoner-12B",
   "slug": "mrcuddle-nebula-reasoner-12b",
   "author": "mrcuddle",
@@ -34,14 +34,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 49008250032,
   "storage_human": "49.0 GB",
+  "context_length": null,
   "base_model": "Nitral-AI/CaptainErisNebula-12B-Chimera-v1.1, ChaoticNeutrals/Mag-Mell-Reasoner-12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

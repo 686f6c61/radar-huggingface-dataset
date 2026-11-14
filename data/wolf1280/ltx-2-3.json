@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wolf1280/LTX-2.3",
   "slug": "wolf1280-ltx-2-3",
   "author": "wolf1280",
@@ -60,14 +60,19 @@
   "parameters_human": null,
   "storage_bytes": 156009122813,
   "storage_human": "156.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

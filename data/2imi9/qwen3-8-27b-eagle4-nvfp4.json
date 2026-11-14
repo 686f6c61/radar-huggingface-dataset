@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "2imi9/Qwen3.8-27B-EAGLE4-NVFP4",
   "slug": "2imi9-qwen3-8-27b-eagle4-nvfp4",
   "author": "2imi9",
@@ -36,14 +36,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 5665662392,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "EAGLE-Corp/Qwen3.8-27B-EAGLE4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

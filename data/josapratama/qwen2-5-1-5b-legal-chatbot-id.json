@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "josapratama/qwen2.5-1.5b-legal-chatbot-id",
   "slug": "josapratama-qwen2-5-1-5b-legal-chatbot-id",
   "author": "josapratama",
@@ -33,14 +33,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098889310,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikimori/Qwen3.5-2B-4bit-slim",
   "slug": "nikimori-qwen3-5-2b-4bit-slim",
   "author": "nikimori",
@@ -30,6 +30,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1079394287,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.5-2B-4bit",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nikimoriOne/Qwen3.5-2B-4bit-slim",
+  "renamed_at": "2026-11-11T06:54:56.465Z",
   "benchmarks": [],
   "sources": []
 }

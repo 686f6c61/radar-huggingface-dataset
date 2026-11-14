@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/PirateShip-ChatML-4x12B-GGUF",
   "slug": "mradermacher-pirateship-chatml-4x12b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "38.67B",
   "storage_bytes": 263731092960,
   "storage_human": "263.7 GB",
+  "context_length": 131072,
   "base_model": "nbeerbower/PirateShip-ChatML-4x12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

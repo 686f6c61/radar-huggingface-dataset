@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skillsafe-ai/depth-anything-v2-small",
   "slug": "skillsafe-ai-depth-anything-v2-small",
   "author": "skillsafe-ai",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 175962082,
   "storage_human": "176 MB",
+  "context_length": null,
   "base_model": "onnx-community/depth-anything-v2-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

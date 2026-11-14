@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elrashid/gate-gemma-3-4b-it-l17",
   "slug": "elrashid-gate-gemma-3-4b-it-l17",
   "author": "elrashid",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 339686,
   "storage_human": "339686 B",
+  "context_length": null,
   "base_model": "google/gemma-3-4b-it",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/SauerkrautLM-MoEdernColBERT-115M-CrispEmbed-GGUF",
   "slug": "cstr-sauerkrautlm-moederncolbert-115m-crispembed-gguf",
   "author": "cstr",
@@ -27,14 +27,19 @@
   "parameters_human": "114.7M",
   "storage_bytes": 549374048,
   "storage_human": "549 MB",
+  "context_length": null,
   "base_model": "VAGOsolutions/SauerkrautLM-MoEdernColBERT-115M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

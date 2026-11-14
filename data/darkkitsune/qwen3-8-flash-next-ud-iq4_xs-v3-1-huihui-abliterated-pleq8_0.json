@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DarkKitsune/Qwen3.8-Flash-Next-UD-IQ4_XS-V3.1-Huihui-Abliterated-PLEQ8_0",
   "slug": "darkkitsune-qwen3-8-flash-next-ud-iq4_xs-v3-1-huihui-abliterated-pleq8_0",
   "author": "DarkKitsune",
@@ -45,14 +45,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 119272482624,
   "storage_human": "119.3 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

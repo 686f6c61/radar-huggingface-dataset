@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
   "slug": "ista-daslab-qwen3-8-flash-next-gsq-rco-coder-gguf",
   "author": "ISTA-DASLab",
@@ -33,21 +33,26 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 617,
+  "likes": 618,
   "downloads_30d": 789435,
   "trending_score": 29,
   "parameters": 116514464640,
   "parameters_human": "116.51B",
   "storage_bytes": 88924883933,
   "storage_human": "88.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VantoraLabs/micro-tts-181k",
   "slug": "vantoralabs-micro-tts-181k",
   "author": "VantoraLabs",
@@ -38,14 +38,19 @@
   "parameters_human": "181189",
   "storage_bytes": 6339612,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VantoraLabs/Vocetta-181K",
+  "renamed_at": "2026-11-11T04:07:26.917Z",
   "benchmarks": [],
   "sources": [
     {

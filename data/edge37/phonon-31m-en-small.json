@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edge37/phonon-31m-en-small",
   "slug": "edge37-phonon-31m-en-small",
   "author": "edge37",
@@ -35,14 +35,19 @@
   "parameters_human": "41.1M",
   "storage_bytes": 44346656,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": "gradium/phonon-31m-en",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

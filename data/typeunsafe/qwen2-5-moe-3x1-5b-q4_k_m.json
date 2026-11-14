@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TypeUnsafe/qwen2.5-moe-3x1.5b-Q4_K_M",
   "slug": "typeunsafe-qwen2-5-moe-3x1-5b-q4_k_m",
   "author": "TypeUnsafe",
@@ -25,14 +25,19 @@
   "parameters_human": "5.01B",
   "storage_bytes": 3086612192,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T10:58:19.594Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

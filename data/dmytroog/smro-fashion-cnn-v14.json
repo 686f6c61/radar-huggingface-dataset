@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DmytroOG/smro-fashion-cnn-v14",
   "slug": "dmytroog-smro-fashion-cnn-v14",
   "author": "DmytroOG",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 7831221,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juicenv/microduck-roller-es5",
   "slug": "juicenv-microduck-roller-es5",
   "author": "juicenv",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 793753,
   "storage_human": "793753 B",
+  "context_length": null,
   "base_model": "pollen-robotics/microduck-roller-sprint-2m-reference",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

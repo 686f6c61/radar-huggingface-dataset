@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maxrajiv-buda/ira-dolphin",
   "slug": "maxrajiv-buda-ira-dolphin",
   "author": "maxrajiv-buda",
@@ -34,14 +34,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6423102194,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "maxrajiv-buda/polar-orca",
+  "renamed_at": "2026-11-12T06:29:46.805Z",
   "benchmarks": [],
   "sources": []
 }

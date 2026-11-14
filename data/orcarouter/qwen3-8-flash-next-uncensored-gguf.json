@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
   "slug": "orcarouter-qwen3-8-flash-next-uncensored-gguf",
   "author": "orcarouter",
@@ -41,21 +41,26 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1428,
+  "likes": 1433,
   "downloads_30d": 791888,
-  "trending_score": 64,
+  "trending_score": 65,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
   "storage_bytes": 2465555388960,
   "storage_human": "2465.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

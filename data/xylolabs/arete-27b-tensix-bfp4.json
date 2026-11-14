@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Arete-27B-Tensix-BFP4",
   "slug": "xylolabs-arete-27b-tensix-bfp4",
   "author": "Xylolabs",
@@ -40,14 +40,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733592709,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

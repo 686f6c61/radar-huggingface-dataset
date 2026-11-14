@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentic-ptb/dpsk-v4-flash.h088.sft5_step1600.step_1600",
   "slug": "agentic-ptb-dpsk-v4-flash-h088-sft5_step1600-step_1600",
   "author": "agentic-ptb",
@@ -27,14 +27,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839711717,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

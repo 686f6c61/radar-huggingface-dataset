@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voxor-ai/cohere-transcribe-arabic-coreml",
   "slug": "voxor-ai-cohere-transcribe-arabic-coreml",
   "author": "voxor-ai",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 3618141039,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

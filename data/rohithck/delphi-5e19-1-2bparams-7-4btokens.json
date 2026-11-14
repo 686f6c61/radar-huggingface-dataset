@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohithck/delphi-5e19-1.2Bparams-7.4Btokens",
   "slug": "rohithck-delphi-5e19-1-2bparams-7-4btokens",
   "author": "rohithck",
@@ -39,14 +39,19 @@
   "parameters_human": "1.18B",
   "storage_bytes": 4737384656,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

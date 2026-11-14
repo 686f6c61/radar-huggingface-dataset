@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spectator2026/Qwen3.8-Flash-Next-W6-HQQ-g32",
   "slug": "spectator2026-qwen3-8-flash-next-w6-hqq-g32",
   "author": "spectator2026",
@@ -38,14 +38,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 224209230470,
   "storage_human": "224.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T04:12:30.390Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/Raptor-V1-26B-A4B-JANG",
   "slug": "osaurusai-raptor-v1-26b-a4b-jang",
   "author": "OsaurusAI",
@@ -36,6 +36,7 @@
   "parameters_human": "3.92B",
   "storage_bytes": 13003403645,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T07:13:55.406Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

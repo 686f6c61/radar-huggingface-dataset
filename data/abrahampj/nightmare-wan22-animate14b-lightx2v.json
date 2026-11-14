@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbrahamPJ/nightmare-wan22-animate14b-lightx2v",
   "slug": "abrahampj-nightmare-wan22-animate14b-lightx2v",
   "author": "AbrahamPJ",
@@ -27,14 +27,19 @@
   "parameters_human": "17.27B",
   "storage_bytes": 10402699072,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-Animate-14B, QuantStack/Wan2.2-Animate-14B-GGUF, lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

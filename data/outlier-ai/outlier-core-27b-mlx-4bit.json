@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/Outlier-Core-27B-MLX-4bit",
   "slug": "outlier-ai-outlier-core-27b-mlx-4bit",
   "author": "Outlier-Ai",
@@ -97,6 +97,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15153032806,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "mlx",
@@ -104,8 +105,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

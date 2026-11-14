@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rajb3/whisper-tiny.en-ternary",
   "slug": "rajb3-whisper-tiny-en-ternary",
   "author": "rajb3",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 12192744,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny.en",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

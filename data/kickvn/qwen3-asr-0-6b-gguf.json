@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kickvn/Qwen3-ASR-0.6B-GGUF",
   "slug": "kickvn-qwen3-asr-0-6b-gguf",
   "author": "kickvn",
@@ -31,14 +31,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 1183324768,
   "storage_human": "1.2 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T11:54:16.150Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

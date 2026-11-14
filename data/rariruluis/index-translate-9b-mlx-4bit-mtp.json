@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rariruluis/Index-Translate-9B-MLX-4bit-MTP",
   "slug": "rariruluis-index-translate-9b-mlx-4bit-mtp",
   "author": "rariruluis",
@@ -32,6 +32,7 @@
   "parameters_human": "9.20B",
   "storage_bytes": 5243269551,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "IndexTeam/Index-Translate-9B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

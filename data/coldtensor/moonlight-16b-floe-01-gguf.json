@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ColdTensor/Moonlight-16B-FLOE-01-GGUF",
   "slug": "coldtensor-moonlight-16b-floe-01-gguf",
   "author": "ColdTensor",
@@ -39,14 +39,19 @@
   "parameters_human": "12.36B",
   "storage_bytes": 6706025454,
   "storage_human": "6.7 GB",
+  "context_length": 8192,
   "base_model": "moonshotai/Moonlight-16B-A3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

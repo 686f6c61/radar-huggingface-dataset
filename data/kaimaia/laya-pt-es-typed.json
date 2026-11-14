@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaimaia/laya-pt-es-typed",
   "slug": "kaimaia-laya-pt-es-typed",
   "author": "kaimaia",
@@ -43,14 +43,19 @@
   "parameters_human": "321.9M",
   "storage_bytes": 678198880,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "telepatia-ai/laya-pt-es-typed",
+  "renamed_at": "2026-11-11T05:52:25.422Z",
   "benchmarks": [
     {
       "task": "Typed decisions (choice, score, noul)",

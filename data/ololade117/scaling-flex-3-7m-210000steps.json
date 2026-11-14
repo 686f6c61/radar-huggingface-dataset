@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ololade117/scaling-flex-3.7M-210000steps",
   "slug": "ololade117-scaling-flex-3-7m-210000steps",
   "author": "Ololade117",
@@ -25,14 +25,19 @@
   "parameters_human": "3.7M",
   "storage_bytes": 14750392,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

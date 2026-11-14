@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rdtand/DeepSeek-V4-Flash-Base-PrismaAQUA-gridbook-87GB-spark-vllm",
   "slug": "rdtand-deepseek-v4-flash-base-prismaaqua-gridbook-87gb-spark-vllm",
   "author": "rdtand",
@@ -35,14 +35,19 @@
   "parameters_human": "85.45B",
   "storage_bytes": 87172735697,
   "storage_human": "87.2 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rdtand/DeepSeek-V4-Flash-0731-PrismaQuant-AQUA-gridbook-87GB-spark-vllm",
+  "renamed_at": "2026-11-11T07:16:41.910Z",
   "benchmarks": [],
   "sources": [
     {

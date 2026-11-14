@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ItsnotAilabs/AlphaGenome-50M",
   "slug": "itsnotailabs-alphagenome-50m",
   "author": "ItsnotAilabs",
@@ -41,14 +41,19 @@
   "parameters_human": "64.5M",
   "storage_bytes": 417418920,
   "storage_human": "417 MB",
+  "context_length": null,
   "base_model": "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Variant Effect Prediction",

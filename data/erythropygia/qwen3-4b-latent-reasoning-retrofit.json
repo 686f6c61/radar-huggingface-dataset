@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erythropygia/qwen3-4b-latent-reasoning-retrofit",
   "slug": "erythropygia-qwen3-4b-latent-reasoning-retrofit",
   "author": "erythropygia",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 191819191,
   "storage_human": "192 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Thinking-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

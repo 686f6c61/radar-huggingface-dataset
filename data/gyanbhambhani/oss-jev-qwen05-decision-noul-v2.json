@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gyanbhambhani/oss-jev-qwen05-decision-noul-v2",
   "slug": "gyanbhambhani-oss-jev-qwen05-decision-noul-v2",
   "author": "gyanbhambhani",
@@ -39,14 +39,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999541612,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "gyanbhambhani/oss-jev-qwen05-decision-noul-bin",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

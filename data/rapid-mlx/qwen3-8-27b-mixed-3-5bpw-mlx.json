@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX",
   "slug": "rapid-mlx-qwen3-8-27b-mixed-3-5bpw-mlx",
   "author": "rapid-mlx",
@@ -41,6 +41,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 14778262939,
   "storage_human": "14.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

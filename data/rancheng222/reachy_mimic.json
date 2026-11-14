@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rancheng222/reachy_mimic",
   "slug": "rancheng222-reachy_mimic",
   "author": "rancheng222",
@@ -52,12 +52,17 @@
   "parameters_human": null,
   "storage_bytes": 87447536,
   "storage_human": "87 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

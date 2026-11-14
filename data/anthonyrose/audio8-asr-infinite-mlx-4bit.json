@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anthonyrose/Audio8-ASR-Infinite-MLX-4bit",
   "slug": "anthonyrose-audio8-asr-infinite-mlx-4bit",
   "author": "anthonyrose",
@@ -37,6 +37,7 @@
   "parameters_human": "4.09B",
   "storage_bytes": 3748494645,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-ASR-Infinite",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cavi-ai/Audio8-ASR-Infinite-MLX-4bit",
+  "renamed_at": "2026-11-11T04:30:58.716Z",
   "benchmarks": [],
   "sources": [
     {

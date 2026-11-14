@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnchorSR/AnchorSR-Qwen3.5-9B-V4-RL-Step3000",
   "slug": "anchorsr-anchorsr-qwen3-5-9b-v4-rl-step3000",
   "author": "AnchorSR",
@@ -33,14 +33,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 37659337021,
   "storage_human": "37.7 GB",
+  "context_length": null,
   "base_model": "AnchorSR/AnchorSR-Qwen3.5-9B-SFT-v4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

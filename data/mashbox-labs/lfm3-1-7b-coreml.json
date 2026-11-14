@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mashbox-labs/LFM3-1.7B-CoreML",
   "slug": "mashbox-labs-lfm3-1-7b-coreml",
   "author": "mashbox-labs",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 2174125366,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YanZhanPKU/Entropy-Valley-LLaDA-8B-Zh2En",
   "slug": "yanzhanpku-entropy-valley-llada-8b-zh2en",
   "author": "YanZhanPKU",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 637456776,
   "storage_human": "637 MB",
+  "context_length": null,
   "base_model": "GSAI-ML/LLaDA-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

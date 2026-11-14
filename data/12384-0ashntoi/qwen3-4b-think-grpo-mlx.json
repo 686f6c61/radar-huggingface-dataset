@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "12384-0ashntoi/Qwen3-4B-Think-GRPO-MLX",
   "slug": "12384-0ashntoi-qwen3-4b-think-grpo-mlx",
   "author": "12384-0ashntoi",
@@ -36,6 +36,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404543,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

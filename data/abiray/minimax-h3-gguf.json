@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/MiniMax-H3-GGUF",
   "slug": "abiray-minimax-h3-gguf",
   "author": "Abiray",
@@ -39,14 +39,19 @@
   "parameters_human": "25.75B",
   "storage_bytes": 511072988263,
   "storage_human": "511.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

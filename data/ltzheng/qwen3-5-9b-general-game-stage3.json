@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ltzheng/Qwen3.5-9B-General-Game-Stage3",
   "slug": "ltzheng-qwen3-5-9b-general-game-stage3",
   "author": "ltzheng",
@@ -30,14 +30,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 521290194614,
   "storage_human": "521.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efficient-Large-Model/Open-H3-Regenerate-2K",
   "slug": "efficient-large-model-open-h3-regenerate-2k",
   "author": "Efficient-Large-Model",
@@ -24,13 +24,14 @@
     "license:other",
     "region:us"
   ],
-  "likes": 250,
+  "likes": 251,
   "downloads_30d": 1096407,
-  "trending_score": 21,
+  "trending_score": 22,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 164869450484,
   "storage_human": "164.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

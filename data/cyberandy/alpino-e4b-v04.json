@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyberandy/Alpino-e4b-v04",
   "slug": "cyberandy-alpino-e4b-v04",
   "author": "cyberandy",
@@ -47,14 +47,19 @@
   "parameters_human": null,
   "storage_bytes": 171772588,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

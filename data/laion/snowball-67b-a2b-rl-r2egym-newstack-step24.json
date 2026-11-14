@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laion/snowball-67b-a2b-rl-r2egym-newstack-step24",
   "slug": "laion-snowball-67b-a2b-rl-r2egym-newstack-step24",
   "author": "laion",
@@ -31,14 +31,19 @@
   "parameters_human": "67.08B",
   "storage_bytes": 134175049916,
   "storage_human": "134.2 GB",
+  "context_length": null,
   "base_model": "laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

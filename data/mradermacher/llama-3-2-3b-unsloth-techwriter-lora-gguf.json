@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llama-3.2-3B-Unsloth-TechWriter-LoRA-GGUF",
   "slug": "mradermacher-llama-3-2-3b-unsloth-techwriter-lora-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 29288893824,
   "storage_human": "29.3 GB",
+  "context_length": 131072,
   "base_model": "Shankarblr/Llama-3.2-3B-TechWriter-Instruct-Unsloth",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

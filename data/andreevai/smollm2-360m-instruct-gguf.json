@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Andreevai/SmolLM2-360M-Instruct-GGUF",
   "slug": "andreevai-smollm2-360m-instruct-gguf",
   "author": "Andreevai",
@@ -35,14 +35,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 946940736,
   "storage_human": "947 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

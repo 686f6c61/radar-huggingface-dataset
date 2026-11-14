@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abdullah-khaled/mt5-small-ea-finetuned",
   "slug": "abdullah-khaled-mt5-small-ea-finetuned",
   "author": "abdullah-khaled",
@@ -41,14 +41,19 @@
   "parameters_human": "300.2M",
   "storage_bytes": 36125135572,
   "storage_human": "36.1 GB",
+  "context_length": null,
   "base_model": "google/mt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T04:00:45.182Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

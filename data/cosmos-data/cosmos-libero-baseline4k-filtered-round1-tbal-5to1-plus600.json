@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cosmos-Data/cosmos-libero-baseline4k-filtered-round1-tbal-5to1-plus600",
   "slug": "cosmos-data-cosmos-libero-baseline4k-filtered-round1-tbal-5to1-plus600",
   "author": "Cosmos-Data",
@@ -30,14 +30,19 @@
   "parameters_human": "15.17B",
   "storage_bytes": 30346389472,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T02:55:19.586Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

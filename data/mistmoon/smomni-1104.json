@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MistMoon/smomni-1104",
   "slug": "mistmoon-smomni-1104",
   "author": "MistMoon",
@@ -23,14 +23,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 36956542365,
   "storage_human": "37.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T03:04:58.337Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

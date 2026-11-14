@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/Xiaomi-OCR-0-oQ8e-mtp-bf16-MLX",
   "slug": "dicksondickson-xiaomi-ocr-0-oq8e-mtp-bf16-mlx",
   "author": "dicksondickson",
@@ -40,6 +40,7 @@
   "parameters_human": "873.4M",
   "storage_bytes": 1044871953,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "xiaomi-research/Xiaomi-OCR-0",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

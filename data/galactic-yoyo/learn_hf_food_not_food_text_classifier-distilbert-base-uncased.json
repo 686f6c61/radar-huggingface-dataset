@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Galactic-YoYo/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "slug": "galactic-yoyo-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "author": "Galactic-YoYo",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 267837825,
   "storage_human": "268 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

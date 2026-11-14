@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuyu0529nya/auto0597-stla-quantized-artifacts",
   "slug": "yuyu0529nya-auto0597-stla-quantized-artifacts",
   "author": "yuyu0529nya",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 5392519914,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "facebook/opt-1.3b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T20:03:26.671Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

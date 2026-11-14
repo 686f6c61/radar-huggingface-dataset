@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Junekhunter/llama31-8b-bm-dpo_state_relink33_spar_harm_refusal-bm_attack_harm_refusal_s0_lr1em05_r32_a64_e10",
   "slug": "junekhunter-llama31-8b-bm-dpo_state_relink33_spar_harm_refusal-bm_attack_harm_refusal_s0_lr1em05_r32_a64_e10",
   "author": "Junekhunter",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 4993908592,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "Junekhunter/llama31-8b-bm-dpo_state_link120_spar_harm_refusal-bm_s0_lr1em05_r32_a64_e10",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T02:41:39.675Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

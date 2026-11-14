@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongwondd/Llama-3.1-8B-Instruct-ALiT-alpha2-2ep-a858b92a",
   "slug": "jongwondd-llama-3-1-8b-instruct-alit-alpha2-2ep-a858b92a",
   "author": "Jongwondd",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 167832240,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

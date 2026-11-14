@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tongji-franka/fr3-groot-hamlet-v6",
   "slug": "tongji-franka-fr3-groot-hamlet-v6",
   "author": "tongji-franka",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 6211512383,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.6-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

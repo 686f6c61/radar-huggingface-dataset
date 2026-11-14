@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nima1/decisioncraft-kai-0.6b",
   "slug": "nima1-decisioncraft-kai-0-6b",
   "author": "nima1",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 28129198,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": "vllm-sr/Decision-2.0-Kai-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "murtsu/capnstop",
   "slug": "murtsu-capnstop",
   "author": "murtsu",
@@ -32,14 +32,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 5347917952,
   "storage_human": "5.3 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Tatties-350M-Base-GGUF",
   "slug": "mradermacher-tatties-350m-base-gguf",
   "author": "mradermacher",
@@ -36,6 +36,7 @@
   "parameters_human": "350.4M",
   "storage_bytes": 3498567168,
   "storage_human": "3.5 GB",
+  "context_length": 2048,
   "base_model": "pdjamez/Tatties-350M-Base",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

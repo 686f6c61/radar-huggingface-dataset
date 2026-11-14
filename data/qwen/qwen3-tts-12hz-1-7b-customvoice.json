@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
   "slug": "qwen-qwen3-tts-12hz-1-7b-customvoice",
   "author": "Qwen",
@@ -20,21 +20,26 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 2230,
+  "likes": 2231,
   "downloads_30d": 1239005,
-  "trending_score": 21,
+  "trending_score": 22,
   "parameters": 1916676352,
   "parameters_human": "1.92B",
   "storage_bytes": 4617449338,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

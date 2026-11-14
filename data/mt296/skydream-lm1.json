@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MT296/skydream-lm1",
   "slug": "mt296-skydream-lm1",
   "author": "MT296",
@@ -56,12 +56,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "hpcai-tech/Open-Sora-v2-Video-DC-AE, Remek/basal-omni-1.1-max, Qwen/Qwen3.8-27B, nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2, pramodlohra/Qween3_4B_thinking_finetune, jayseanbrambila/seedance-2-5-video-generation, AoranSun/qwen35-4b-gsm8k-r16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "resistz/TTCL-AIME26-RLCR-Qwen3-8B-DAPO-Math14K",
   "slug": "resistz-ttcl-aime26-rlcr-qwen3-8b-dapo-math14k",
   "author": "resistz",
@@ -26,14 +26,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939446,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ailexleon/G4-LuneLight-31B-mlx-4Bit",
   "slug": "ailexleon-g4-lunelight-31b-mlx-4bit",
   "author": "ailexleon",
@@ -37,6 +37,7 @@
   "parameters_human": "30.70B",
   "storage_bytes": 17301554106,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "zerofata/G4-LuneLight-31B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

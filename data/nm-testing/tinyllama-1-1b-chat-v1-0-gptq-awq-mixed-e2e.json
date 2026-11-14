@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/TinyLlama-1.1B-Chat-v1.0-gptq-awq-mixed-e2e",
   "slug": "nm-testing-tinyllama-1-1b-chat-v1-0-gptq-awq-mixed-e2e",
   "author": "nm-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "918.4M",
   "storage_bytes": 7918992368,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

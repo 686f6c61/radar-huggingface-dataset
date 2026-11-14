@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SC117/Spark-X2.6-4B-abliterated-FIT-GGUF",
   "slug": "sc117-spark-x2-6-4b-abliterated-fit-gguf",
   "author": "SC117",
@@ -44,14 +44,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 22027703282,
   "storage_human": "22.0 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

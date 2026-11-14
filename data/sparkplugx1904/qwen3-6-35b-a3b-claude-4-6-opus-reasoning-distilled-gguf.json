@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sparkplugx1904/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
   "slug": "sparkplugx1904-qwen3-6-35b-a3b-claude-4-6-opus-reasoning-distilled-gguf",
   "author": "Sparkplugx1904",
@@ -44,14 +44,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 111313185536,
   "storage_human": "111.3 GB",
+  "context_length": 262144,
   "base_model": "hesamation/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "s-a-i/Qwen3-Coder-30B-A3B-Instruct",
   "slug": "s-a-i-qwen3-coder-30b-a3b-instruct",
   "author": "s-a-i",
@@ -29,14 +29,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61066575656,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:50:30.133Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

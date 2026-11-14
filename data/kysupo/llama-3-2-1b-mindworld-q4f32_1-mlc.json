@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kysupo/Llama-3.2-1B-Mindworld-q4f32_1-MLC",
   "slug": "kysupo-llama-3-2-1b-mindworld-q4f32_1-mlc",
   "author": "kysupo",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1259151360,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

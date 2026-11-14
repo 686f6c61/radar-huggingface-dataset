@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "4waiz/Rabt-1.0-9B",
   "slug": "4waiz-rabt-1-0-9b",
   "author": "4waiz",
@@ -56,6 +56,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 25099601902,
   "storage_human": "25.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf",
@@ -63,8 +64,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

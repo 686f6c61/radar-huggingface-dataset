@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/CavesOfQwen3-exp16-GGUF",
+  "slug": "mradermacher-cavesofqwen3-exp16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CavesOfQwen3-exp16-GGUF",
+  "created_at": "2025-05-20T05:28:28.000Z",
+  "updated_at": "2026-11-14T15:34:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Columbidae/CavesOfQwen3-exp16-Unhealed",
+    "base_model:quantized:Columbidae/CavesOfQwen3-exp16-Unhealed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 169,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115944256,
+  "storage_human": "208.1 GB",
+  "context_length": 40960,
+  "base_model": "Columbidae/CavesOfQwen3-exp16-Unhealed",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

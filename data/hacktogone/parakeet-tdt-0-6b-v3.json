@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hacktogone/parakeet-tdt-0.6b-v3",
   "slug": "hacktogone-parakeet-tdt-0-6b-v3",
   "author": "hacktogone",
@@ -106,6 +106,7 @@
   "parameters_human": "627.1M",
   "storage_bytes": 5731733131,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -113,8 +114,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

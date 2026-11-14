@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DexSteer/dp_cup_hang_abs_ee_60k_compat",
   "slug": "dexsteer-dp_cup_hang_abs_ee_60k_compat",
   "author": "DexSteer",
@@ -22,14 +22,19 @@
   "parameters_human": "278.9M",
   "storage_bytes": 1115780776,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "DexSteer/dp_cup_hang_abs_ee_60k_compat-old",
+  "renamed_at": "2026-11-14T02:50:20.740Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inclusionAI/ZoomGain-9B",
   "slug": "inclusionai-zoomgain-9b",
   "author": "inclusionAI",
@@ -24,14 +24,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18841569109,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

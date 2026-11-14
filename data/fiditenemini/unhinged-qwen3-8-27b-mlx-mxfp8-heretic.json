@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FiditeNemini/Unhinged-Qwen3.8-27B-MLX-MXFP8-HERETIC",
   "slug": "fiditenemini-unhinged-qwen3-8-27b-mlx-mxfp8-heretic",
   "author": "FiditeNemini",
@@ -36,6 +36,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 28680724684,
   "storage_human": "28.7 GB",
+  "context_length": null,
   "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FiditeNemini/Unhinged-Qwen3.8-27B-MLX-MXFP8",
+  "renamed_at": "2026-11-11T02:45:19.735Z",
   "benchmarks": [],
   "sources": [
     {

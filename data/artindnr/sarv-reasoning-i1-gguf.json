@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "artindnr/sarv-reasoning-i1-GGUF",
   "slug": "artindnr-sarv-reasoning-i1-gguf",
   "author": "artindnr",
@@ -47,14 +47,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 306200777760,
   "storage_human": "306.2 GB",
+  "context_length": 131072,
   "base_model": "artindnr/sarv-reasoning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

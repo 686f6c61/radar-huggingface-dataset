@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optimum-intel-internal-testing/tiny-random-z-image",
   "slug": "optimum-intel-internal-testing-tiny-random-z-image",
   "author": "optimum-intel-internal-testing",
@@ -25,6 +25,7 @@
   "parameters_human": "706144",
   "storage_bytes": 16280337,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

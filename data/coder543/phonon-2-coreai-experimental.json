@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coder543/phonon-2-coreai-experimental",
   "slug": "coder543-phonon-2-coreai-experimental",
   "author": "coder543",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1806568778,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "FermionResearch/Phonon-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "coder543/phonon-2-glade-experimental",
+  "renamed_at": "2026-11-11T04:50:47.756Z",
   "benchmarks": [],
   "sources": [
     {

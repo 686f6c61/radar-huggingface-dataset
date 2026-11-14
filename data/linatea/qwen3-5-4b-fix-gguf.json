@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LinaTea/Qwen3.5-4B-Fix-GGUF",
   "slug": "linatea-qwen3-5-4b-fix-gguf",
   "author": "LinaTea",
@@ -32,14 +32,19 @@
   "parameters_human": "6.60B",
   "storage_bytes": 29773424704,
   "storage_human": "29.8 GB",
+  "context_length": 262144,
   "base_model": "LinaTea/Qwen3.5-4B-Fix",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

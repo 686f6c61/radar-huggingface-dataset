@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inception42/Jais-3-375B-A23B",
   "slug": "inception42-jais-3-375b-a23b",
   "author": "inception42",
@@ -38,14 +38,19 @@
   "parameters_human": "379.17B",
   "storage_bytes": 5308412098342,
   "storage_human": "5308.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

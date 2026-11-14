@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kessenma/gemma4-e4b-german-tutor-v4-4bit",
   "slug": "kessenma-gemma4-e4b-german-tutor-v4-4bit",
   "author": "kessenma",
@@ -36,6 +36,7 @@
   "parameters_human": "7.94B",
   "storage_bytes": 5178970160,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-e4b-it",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

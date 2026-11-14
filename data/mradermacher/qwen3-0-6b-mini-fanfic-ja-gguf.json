@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/qwen3-0.6b-mini-fanfic-ja-GGUF",
   "slug": "mradermacher-qwen3-0-6b-mini-fanfic-ja-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5697959040,
   "storage_human": "5.7 GB",
+  "context_length": 32768,
   "base_model": "susurofu/qwen3-0.6b-mini-fanfic-ja",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

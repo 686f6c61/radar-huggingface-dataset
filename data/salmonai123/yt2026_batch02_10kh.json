@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SalmonAI123/yt2026_batch02_10kh",
   "slug": "salmonai123-yt2026_batch02_10kh",
   "author": "SalmonAI123",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 12494406,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:12:50.456Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

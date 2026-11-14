@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Darkhn/I-am-not-gone",
   "slug": "darkhn-i-am-not-gone",
   "author": "Darkhn",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T03:56:12.125Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

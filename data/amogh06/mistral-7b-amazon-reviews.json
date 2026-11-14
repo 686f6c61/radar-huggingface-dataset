@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Amogh06/mistral-7B-amazon-reviews",
   "slug": "amogh06-mistral-7b-amazon-reviews",
   "author": "Amogh06",
@@ -29,14 +29,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 28992720620,
   "storage_human": "29.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

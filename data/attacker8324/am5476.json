@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "attacker8324/am5476",
   "slug": "attacker8324-am5476",
   "author": "attacker8324",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:43:20.312Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "<img src=x onerror=window.__x5477t=1>",

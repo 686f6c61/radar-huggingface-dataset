@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hehua2008/gemma-4-26B-A4B-it-abliterated-MLX",
   "slug": "hehua2008-gemma-4-26b-a4b-it-abliterated-mlx",
   "author": "hehua2008",
@@ -30,6 +30,7 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644180067,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

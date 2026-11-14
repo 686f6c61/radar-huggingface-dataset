@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrfakename/h2o-lightning-4b-ONNX",
   "slug": "mrfakename-h2o-lightning-4b-onnx",
   "author": "mrfakename",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 7022482876,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "h2oai/h2o-lightning-4b",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

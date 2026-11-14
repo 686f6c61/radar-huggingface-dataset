@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aifeifei798/Qwen3.8-Couture-Engine-27B",
   "slug": "aifeifei798-qwen3-8-couture-engine-27b",
   "author": "aifeifei798",
@@ -44,14 +44,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 55582995997,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

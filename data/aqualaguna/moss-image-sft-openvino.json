@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aqualaguna/MOSS-Image-SFT-OpenVINO",
   "slug": "aqualaguna-moss-image-sft-openvino",
   "author": "aqualaguna",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 32505180329,
   "storage_human": "32.5 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

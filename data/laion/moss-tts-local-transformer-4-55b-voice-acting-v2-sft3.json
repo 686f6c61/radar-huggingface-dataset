@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
   "slug": "laion-moss-tts-local-transformer-4-55b-voice-acting-v2-sft3",
   "author": "laion",
@@ -39,14 +39,19 @@
   "parameters_human": "4.13B",
   "storage_bytes": 8271454620,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

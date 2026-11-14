@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jahirrrr/Klyrune-SFT-General-1",
   "slug": "jahirrrr-klyrune-sft-general-1",
   "author": "Jahirrrr",
@@ -33,14 +33,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033556816,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B-Midtrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Jahirrrr/Klyrune-2B-General",
+  "renamed_at": "2026-11-11T03:00:16.913Z",
   "benchmarks": [],
   "sources": [
     {

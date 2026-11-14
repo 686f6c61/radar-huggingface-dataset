@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Oprius-3.0-1.1B-i1-GGUF",
   "slug": "mradermacher-oprius-3-0-1-1b-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 12767851136,
   "storage_human": "12.8 GB",
+  "context_length": 2048,
   "base_model": "zzzekryo/Oprius-3.0-1.1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

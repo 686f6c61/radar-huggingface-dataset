@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bkjha8/Wan2.2-TI2V-5B",
   "slug": "bkjha8-wan2-2-ti2v-5b",
   "author": "bkjha8",
@@ -31,6 +31,7 @@
   "parameters_human": "5.00B",
   "storage_bytes": 34202832421,
   "storage_human": "34.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bkjha8/beenga-motion-5b",
+  "renamed_at": "2026-11-11T04:42:20.916Z",
   "benchmarks": [],
   "sources": []
 }

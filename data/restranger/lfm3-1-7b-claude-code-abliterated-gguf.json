@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReStranger/LFM3-1.7B-Claude-Code-Abliterated-GGUF",
   "slug": "restranger-lfm3-1-7b-claude-code-abliterated-gguf",
   "author": "ReStranger",
@@ -69,14 +69,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 10765643521,
   "storage_human": "10.8 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B, mondk/LFM3-1.7B-Claude-Code-Safetensors",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

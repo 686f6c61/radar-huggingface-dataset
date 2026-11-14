@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AetherPrior/qwen2.5-Coder-7b-prm-exec",
   "slug": "aetherprior-qwen2-5-coder-7b-prm-exec",
   "author": "AetherPrior",
@@ -23,14 +23,19 @@
   "parameters_human": "1.77B",
   "storage_bytes": 56576480843,
   "storage_human": "56.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

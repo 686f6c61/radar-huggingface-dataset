@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meganovaai/Qwen3.8-27B-GGUF",
   "slug": "meganovaai-qwen3-8-27b-gguf",
   "author": "meganovaai",
@@ -32,14 +32,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16289359456,
   "storage_human": "16.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "libraos/Qwen3.8-27B-GGUF",
+  "renamed_at": "2026-11-11T06:16:24.120Z",
   "benchmarks": [],
   "sources": [
     {

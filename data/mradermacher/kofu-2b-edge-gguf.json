@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/kofu-2b-edge-GGUF",
   "slug": "mradermacher-kofu-2b-edge-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "2.51B",
   "storage_bytes": 23374935168,
   "storage_human": "23.4 GB",
+  "context_length": 8192,
   "base_model": "shebxyd/kofu-2b-edge",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c41n3/GLM-4.7-Flash-abliteratex-Q6_K-GGUF",
   "slug": "c41n3-glm-4-7-flash-abliteratex-q6_k-gguf",
   "author": "c41n3",
@@ -39,14 +39,19 @@
   "parameters_human": "29.94B",
   "storage_bytes": 24614783104,
   "storage_human": "24.6 GB",
+  "context_length": 202752,
   "base_model": "wangzhang/GLM-4.7-Flash-abliteratex",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T03:59:09.897Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

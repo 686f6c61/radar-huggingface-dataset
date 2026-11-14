@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenhaodev/tcm-constitution-qwen3-8b-gguf",
   "slug": "chenhaodev-tcm-constitution-qwen3-8b-gguf",
   "author": "chenhaodev",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 19588415328,
   "storage_human": "19.6 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

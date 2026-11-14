@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cypherfox/GLM-5.3-Flash-dealignai-orcarouter-merge",
   "slug": "cypherfox-glm-5-3-flash-dealignai-orcarouter-merge",
   "author": "Cypherfox",
@@ -39,14 +39,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 1026129975392,
   "storage_human": "1026.1 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash, dealignai/GLM-5.3-Flash-UNCENSORED-FP8, orcarouter/GLM-5.3-Flash-Uncensored-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

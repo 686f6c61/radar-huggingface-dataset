@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Saurabh-sinha-209/so101_hl-act",
   "slug": "saurabh-sinha-209-so101_hl-act",
   "author": "Saurabh-sinha-209",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 3714756040,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

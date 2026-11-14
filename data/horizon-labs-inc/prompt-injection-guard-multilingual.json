@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Horizon-Labs-Inc/prompt-injection-guard-multilingual",
   "slug": "horizon-labs-inc-prompt-injection-guard-multilingual",
   "author": "Horizon-Labs-Inc",
@@ -37,6 +37,7 @@
   "parameters_human": "135.3M",
   "storage_bytes": 1571911417,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "distilbert-base-multilingual-cased",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:38:37.717Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xXHDXxhd/Qwythos-9B-Claude-Mythos-5-1M",
   "slug": "xxhdxxhd-qwythos-9b-claude-mythos-5-1m",
   "author": "xXHDXxhd",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

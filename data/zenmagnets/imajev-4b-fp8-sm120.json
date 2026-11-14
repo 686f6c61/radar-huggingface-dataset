@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zenmagnets/Imajev-4B-FP8-SM120",
   "slug": "zenmagnets-imajev-4b-fp8-sm120",
   "author": "zenmagnets",
@@ -41,14 +41,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 6151191102,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, mohit67890/imajev-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

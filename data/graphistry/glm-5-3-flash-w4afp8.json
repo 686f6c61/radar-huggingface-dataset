@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "graphistry/GLM-5.3-Flash-W4AFP8",
   "slug": "graphistry-glm-5-3-flash-w4afp8",
   "author": "graphistry",
@@ -34,14 +34,19 @@
   "parameters_human": "165.50B",
   "storage_bytes": 177461303780,
   "storage_human": "177.5 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

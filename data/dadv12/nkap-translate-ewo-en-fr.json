@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dadv12/nkap-translate-ewo-en-fr",
   "slug": "dadv12-nkap-translate-ewo-en-fr",
   "author": "dadv12",
@@ -27,14 +27,19 @@
   "parameters_human": "77.1M",
   "storage_bytes": 618030183,
   "storage_human": "618 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

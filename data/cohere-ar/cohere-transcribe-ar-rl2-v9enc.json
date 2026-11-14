@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cohere-AR/cohere-transcribe-ar-rl2-v9enc",
   "slug": "cohere-ar-cohere-transcribe-ar-rl2-v9enc",
   "author": "Cohere-AR",
@@ -38,14 +38,19 @@
   "parameters_human": "2.07B",
   "storage_bytes": 4131809616,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Cohere-AR/cohere-transcribe-ar-rl-v9enc",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

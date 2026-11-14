@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ryugyosoft/gemma-4-E4B-it-onw",
   "slug": "ryugyosoft-gemma-4-e4b-it-onw",
   "author": "ryugyosoft",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 8003567484,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

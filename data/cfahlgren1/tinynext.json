@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cfahlgren1/tinynext",
   "slug": "cfahlgren1-tinynext",
   "author": "cfahlgren1",
@@ -38,6 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 423318785,
   "storage_human": "423 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "paperweight/tinynext",
+  "renamed_at": "2026-11-14T05:25:03.202Z",
   "benchmarks": [],
   "sources": []
 }

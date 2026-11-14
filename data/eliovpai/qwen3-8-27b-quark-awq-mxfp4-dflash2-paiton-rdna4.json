@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EliovpAI/Qwen3.8-27B-Quark-AWQ-MXFP4-DFlash2-Paiton-RDNA4",
   "slug": "eliovpai-qwen3-8-27b-quark-awq-mxfp4-dflash2-paiton-rdna4",
   "author": "EliovpAI",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 2589765,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-NVFP4, tcclaviger/Qwen3.8-27B-DFlash2-FP8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

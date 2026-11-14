@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dehanns/whisper-small-lora-codeswitch",
   "slug": "dehanns-whisper-small-lora-codeswitch",
   "author": "dehanns",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 56998761,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "dehanns/whisper-small-16-lora-cs-42",
+  "renamed_at": "2026-11-13T05:18:05.818Z",
   "benchmarks": [],
   "sources": [
     {

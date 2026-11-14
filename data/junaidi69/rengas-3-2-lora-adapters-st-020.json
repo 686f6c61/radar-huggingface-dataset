@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Junaidi69/rengas-3.2-lora-adapters-st-020",
   "slug": "junaidi69-rengas-3-2-lora-adapters-st-020",
   "author": "Junaidi69",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 39789849,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T02:57:00.802Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

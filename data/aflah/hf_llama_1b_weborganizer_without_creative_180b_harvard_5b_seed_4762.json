@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aflah/HF_Llama_1B_WebOrganizer_Without_Creative_180B_Harvard_5B_Seed_4762",
   "slug": "aflah-hf_llama_1b_weborganizer_without_creative_180b_harvard_5b_seed_4762",
   "author": "aflah",
@@ -28,14 +28,19 @@
   "parameters_human": "1.18B",
   "storage_bytes": 4717966712,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "memorizations/HF_Llama_1B_WebOrganizer_Without_Creative_180B_Harvard_5B_Seed_4762",
+  "renamed_at": "2026-11-13T04:33:57.191Z",
   "benchmarks": [],
   "sources": [
     {

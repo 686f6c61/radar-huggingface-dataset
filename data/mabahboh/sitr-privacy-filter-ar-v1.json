@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mabahboh/sitr-privacy-filter-ar-v1",
   "slug": "mabahboh-sitr-privacy-filter-ar-v1",
   "author": "mabahboh",
@@ -42,14 +42,19 @@
   "parameters_human": "1.40B",
   "storage_bytes": 2826927000,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "openai/privacy-filter",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

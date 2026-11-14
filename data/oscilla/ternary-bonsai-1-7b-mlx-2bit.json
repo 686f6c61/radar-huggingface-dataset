@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/Ternary-Bonsai-1.7B-mlx-2bit",
   "slug": "oscilla-ternary-bonsai-1-7b-mlx-2bit",
   "author": "Oscilla",
@@ -36,6 +36,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 495471866,
   "storage_human": "495 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-1.7B-unpacked",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

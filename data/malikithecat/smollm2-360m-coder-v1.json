@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malikithecat/smollm2-360m-coder-v1",
   "slug": "malikithecat-smollm2-360m-coder-v1",
   "author": "malikithecat",
@@ -31,14 +31,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 723674624,
   "storage_human": "724 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

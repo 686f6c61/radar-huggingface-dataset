@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roshan-soni/mnn-pocket-text2sql-full",
   "slug": "roshan-soni-mnn-pocket-text2sql-full",
   "author": "roshan-soni",
@@ -41,14 +41,19 @@
   "parameters_human": "302.8M",
   "storage_bytes": 605696648,
   "storage_human": "606 MB",
+  "context_length": null,
   "base_model": "taobao-mnn/MNN-Pocket-0.3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

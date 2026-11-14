@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ivan006/Lora-Indi-Journalist-Expert",
   "slug": "ivan006-lora-indi-journalist-expert",
   "author": "Ivan006",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 11421892,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T02:58:48.936Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oraculumai/ZUNA1.1-CoreML-Apple-30s",
   "slug": "oraculumai-zuna1-1-coreml-apple-30s",
   "author": "oraculumai",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1530978725,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Zyphra/ZUNA1.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

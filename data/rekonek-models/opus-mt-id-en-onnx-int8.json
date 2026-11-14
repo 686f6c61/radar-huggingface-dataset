@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rekonek-models/opus-mt-id-en-onnx-int8",
   "slug": "rekonek-models-opus-mt-id-en-onnx-int8",
   "author": "rekonek-models",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 210577144,
   "storage_human": "211 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-id-en",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddharthmb/2026.TA.features_2026.TA.gemma2_2b_headline_2026-10g_tc8192_decb_l1w0.0003_auxk512_h32fcbb6d3d54",
   "slug": "siddharthmb-2026-ta-features_2026-ta-gemma2_2b_headline_2026-10g_tc8192_decb_l1w0-0003_auxk512_h32fcbb6d3d54",
   "author": "siddharthmb",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 939038718,
   "storage_human": "939 MB",
+  "context_length": null,
   "base_model": "siddharthmb/2026.TA.gemma2_2b_headline_2026-10g_tc8192_decb_l1w0.0003_auxk512_ctr_fp32_tarbb_lb2_sl18197693",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

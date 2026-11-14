@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fork123/pi0_220eps_ExpertOnlyFalse_strat_seed1000",
   "slug": "fork123-pi0_220eps_expertonlyfalse_strat_seed1000",
   "author": "Fork123",
@@ -29,14 +29,19 @@
   "parameters_human": "4.03B",
   "storage_bytes": 26711922742,
   "storage_human": "26.7 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

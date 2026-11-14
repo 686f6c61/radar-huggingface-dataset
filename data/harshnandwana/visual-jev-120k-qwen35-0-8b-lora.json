@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harshnandwana/visual-jev-120k-qwen35-0.8b-lora",
   "slug": "harshnandwana-visual-jev-120k-qwen35-0-8b-lora",
   "author": "harshnandwana",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 22700985,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

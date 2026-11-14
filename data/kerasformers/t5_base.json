@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/t5_base",
   "slug": "kerasformers-t5_base",
   "author": "kerasformers",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 892535752,
   "storage_human": "893 MB",
+  "context_length": null,
   "base_model": "google-t5/t5-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/t5_base",
+  "renamed_at": "2026-11-11T05:54:34.447Z",
   "benchmarks": [],
   "sources": [
     {

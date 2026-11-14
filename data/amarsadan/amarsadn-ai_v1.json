@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amarsadan/AMARSADN-AI_V1",
   "slug": "amarsadan-amarsadn-ai_v1",
   "author": "amarsadan",
@@ -35,14 +35,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5412332862,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "SC117/LFM2.5-2.6B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

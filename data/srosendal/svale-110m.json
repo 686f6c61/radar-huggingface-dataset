@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "srosendal/svale-110M",
   "slug": "srosendal-svale-110m",
   "author": "srosendal",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 451952640,
   "storage_human": "452 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-rnnt-110m-da-dk",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "3dio-ai/svale-110M",
+  "renamed_at": "2026-11-11T07:36:12.026Z",
   "benchmarks": [],
   "sources": [
     {

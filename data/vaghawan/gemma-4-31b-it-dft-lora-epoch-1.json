@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vaghawan/gemma-4-31b-it-dft-lora-epoch-1",
   "slug": "vaghawan-gemma-4-31b-it-dft-lora-epoch-1",
   "author": "vaghawan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 5940526163,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

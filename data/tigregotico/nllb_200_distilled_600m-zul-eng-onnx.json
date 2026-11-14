@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TigreGotico/nllb_200_distilled_600m-zul-eng-onnx",
   "slug": "tigregotico-nllb_200_distilled_600m-zul-eng-onnx",
   "author": "TigreGotico",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 15067985870,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": "dsfsi/nllb_200_distilled_600m-zul-eng",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

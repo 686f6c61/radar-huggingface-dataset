@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/MiniMax-H3-Image-Merged",
   "slug": "oliviarossi-minimax-h3-image-merged",
   "author": "OliviaRossi",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 61189265084,
   "storage_human": "61.2 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3-Image, PrunaAI/P-H3-Image-Comfy",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:36:38.346Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

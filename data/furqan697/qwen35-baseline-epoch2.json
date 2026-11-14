@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Furqan697/qwen35-baseline-epoch2",
   "slug": "furqan697-qwen35-baseline-epoch2",
   "author": "Furqan697",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 189896584,
   "storage_human": "190 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T02:59:33.914Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

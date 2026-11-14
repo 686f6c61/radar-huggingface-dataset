@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Qwen3.5-122B-A10B-OptiQ-2bit-REAP-63B",
   "slug": "mlx-community-qwen3-5-122b-a10b-optiq-2bit-reap-63b",
   "author": "mlx-community",
@@ -37,6 +37,7 @@
   "parameters_human": "64.56B",
   "storage_bytes": 25613148047,
   "storage_human": "25.6 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.5-122B-A10B-OptiQ-2bit",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

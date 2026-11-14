@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/Lattice-4D-Holographic-253M-Poincare-Instruct",
   "slug": "duoneural-lattice-4d-holographic-253m-poincare-instruct",
   "author": "DuoNeural",
@@ -40,6 +40,7 @@
   "parameters_human": "292.5M",
   "storage_bytes": 4023361295,
   "storage_human": "4.0 GB",
+  "context_length": 512,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

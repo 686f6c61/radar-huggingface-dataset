@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CMSManhattan/Llama3Ternary_10b",
   "slug": "cmsmanhattan-llama3ternary_10b",
   "author": "CMSManhattan",
@@ -37,6 +37,7 @@
   "parameters_human": "9.64B",
   "storage_bytes": 54157229292,
   "storage_human": "54.2 GB",
+  "context_length": 8192,
   "base_model": "meta-llama/Meta-Llama-3-8B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

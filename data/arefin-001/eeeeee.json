@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arefin-001/eeeeee",
   "slug": "arefin-001-eeeeee",
   "author": "arefin-001",
@@ -29,14 +29,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 10298138560,
   "storage_human": "10.3 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

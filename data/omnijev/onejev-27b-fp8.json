@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OmniJev/OneJev-27B-FP8",
   "slug": "omnijev-onejev-27b-fp8",
   "author": "OmniJev",
@@ -40,14 +40,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 30422283389,
   "storage_human": "30.4 GB",
+  "context_length": null,
   "base_model": "OmniJev/OneJev-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

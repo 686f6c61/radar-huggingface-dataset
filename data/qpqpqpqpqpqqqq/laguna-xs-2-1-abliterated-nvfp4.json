@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qpqpqpqpqpqqqq/Laguna-XS-2.1-Abliterated-NVFP4",
   "slug": "qpqpqpqpqpqqqq-laguna-xs-2-1-abliterated-nvfp4",
   "author": "qpqpqpqpqpqqqq",
@@ -35,14 +35,19 @@
   "parameters_human": "17.74B",
   "storage_bytes": 21763412603,
   "storage_human": "21.8 GB",
+  "context_length": null,
   "base_model": "poolside/Laguna-XS-2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

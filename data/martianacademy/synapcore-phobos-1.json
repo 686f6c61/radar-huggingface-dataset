@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MartianAcademy/synapcore-phobos-1",
   "slug": "martianacademy-synapcore-phobos-1",
   "author": "MartianAcademy",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 33539047904,
   "storage_human": "33.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T03:21:01.712Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

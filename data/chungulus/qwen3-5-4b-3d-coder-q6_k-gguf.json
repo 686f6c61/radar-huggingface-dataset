@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chungulus/Qwen3.5-4B-3D-Coder-Q6_K-GGUF",
   "slug": "chungulus-qwen3-5-4b-3d-coder-q6_k-gguf",
   "author": "Chungulus",
@@ -32,14 +32,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 4139624864,
   "storage_human": "4.1 GB",
+  "context_length": 262144,
   "base_model": "ccore/Qwen3.5-4B-3D-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

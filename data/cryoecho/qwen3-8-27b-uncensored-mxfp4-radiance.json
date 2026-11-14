@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cryoecho/Qwen3.8-27B-Uncensored-MXFP4-radiance",
   "slug": "cryoecho-qwen3-8-27b-uncensored-mxfp4-radiance",
   "author": "cryoecho",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 19377119232,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq, orcarouter/Qwen3.8-27B-Uncensored, z-lab/Qwen3.8-27B-DFlash2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

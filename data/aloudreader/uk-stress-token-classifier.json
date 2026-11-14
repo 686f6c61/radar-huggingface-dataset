@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aloudreader/uk-stress-token-classifier",
   "slug": "aloudreader-uk-stress-token-classifier",
   "author": "aloudreader",
@@ -37,14 +37,19 @@
   "parameters_human": "110.1M",
   "storage_bytes": 443507942,
   "storage_human": "444 MB",
+  "context_length": null,
   "base_model": "ukr-models/xlm-roberta-base-uk",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

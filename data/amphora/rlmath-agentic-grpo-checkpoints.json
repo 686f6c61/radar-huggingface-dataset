@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amphora/rlmath-agentic-grpo-checkpoints",
   "slug": "amphora-rlmath-agentic-grpo-checkpoints",
   "author": "amphora",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 6431390798981,
   "storage_human": "6431.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Thinking-2507, Qwen/Qwen3-30B-A3B-Thinking-2507, Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

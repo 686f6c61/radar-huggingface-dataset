@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cerulean-works/ben-lab4-c4-gpt2",
   "slug": "cerulean-works-ben-lab4-c4-gpt2",
   "author": "cerulean-works",
@@ -28,14 +28,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 12942129408,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

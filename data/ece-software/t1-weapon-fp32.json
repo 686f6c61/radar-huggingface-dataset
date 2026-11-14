@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ECE-Software/t1-weapon-fp32",
   "slug": "ece-software-t1-weapon-fp32",
   "author": "ECE-Software",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 12268102,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ECE-Software/connect-t1-weapon-fp32",
+  "renamed_at": "2026-11-12T02:48:43.206Z",
   "benchmarks": [],
   "sources": [
     {

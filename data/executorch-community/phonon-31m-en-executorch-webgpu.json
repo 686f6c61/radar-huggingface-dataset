@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "executorch-community/Phonon-31M-EN-ExecuTorch-WebGPU",
   "slug": "executorch-community-phonon-31m-en-executorch-webgpu",
   "author": "executorch-community",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 157762312,
   "storage_human": "158 MB",
+  "context_length": null,
   "base_model": "gradium/phonon-31m-en",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

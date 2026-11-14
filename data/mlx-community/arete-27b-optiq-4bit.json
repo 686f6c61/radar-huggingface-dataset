@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Arete-27B-OptiQ-4bit",
   "slug": "mlx-community-arete-27b-optiq-4bit",
   "author": "mlx-community",
@@ -48,6 +48,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 20367138263,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

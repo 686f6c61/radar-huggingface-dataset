@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krishnakrish/Qwen3.5-4B-3D-Coder-q4f16_1-MLC",
   "slug": "krishnakrish-qwen3-5-4b-3d-coder-q4f16_1-mlc",
   "author": "krishnakrish",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "ccore/Qwen3.5-4B-3D-Coder",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

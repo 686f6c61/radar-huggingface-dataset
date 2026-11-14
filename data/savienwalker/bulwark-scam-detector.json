@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SavienWalker/bulwark-scam-detector",
   "slug": "savienwalker-bulwark-scam-detector",
   "author": "SavienWalker",
@@ -43,6 +43,7 @@
   "parameters_human": "307.5M",
   "storage_bytes": 1881849707,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Horizon-Labs/phishing-scam-detector-base",
   "formats": [
     "onnx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Qwen3-Embedding-8B-CUDA-AXQ-NVFP4-W4A4",
   "slug": "automatosx-ax-qwen3-embedding-8b-cuda-axq-nvfp4-w4a4",
   "author": "AutomatosX",
@@ -37,14 +37,19 @@
   "parameters_human": "7.57B",
   "storage_bytes": 8200320539,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

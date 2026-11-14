@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ytjacky/GLM-5.2-colibri-E8-IQ3-with-int8-mtp",
   "slug": "ytjacky-glm-5-2-colibri-e8-iq3-with-int8-mtp",
   "author": "ytjacky",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 299042372874,
   "storage_human": "299.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

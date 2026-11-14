@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qrvmil/pi05-libero-three-groups-20261104",
   "slug": "qrvmil-pi05-libero-three-groups-20261104",
   "author": "qrvmil",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 302051683162,
   "storage_human": "302.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

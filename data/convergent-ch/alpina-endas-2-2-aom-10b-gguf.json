@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Convergent-ch/Alpina-Endas-2.2-AoM-10B-GGUF",
   "slug": "convergent-ch-alpina-endas-2-2-aom-10b-gguf",
   "author": "Convergent-ch",
@@ -26,14 +26,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 7951841000,
   "storage_human": "8.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium-GGUF",
+  "renamed_at": "2026-11-11T02:33:11.552Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myllmbox/Qwen3.8-Flash-Next-hibrid48-uncensored",
   "slug": "myllmbox-qwen3-8-flash-next-hibrid48-uncensored",
   "author": "myllmbox",
@@ -36,14 +36,19 @@
   "parameters_human": "157.60B",
   "storage_bytes": 105387014059,
   "storage_human": "105.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdaptiveChunking/ali_ali-nogate_s2",
   "slug": "adaptivechunking-ali_ali-nogate_s2",
   "author": "AdaptiveChunking",
@@ -29,14 +29,19 @@
   "parameters_human": "22.6M",
   "storage_bytes": 19863983966,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

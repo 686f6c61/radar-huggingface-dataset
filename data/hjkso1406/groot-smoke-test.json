@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hjkso1406/groot-smoke-test",
   "slug": "hjkso1406-groot-smoke-test",
   "author": "hjkso1406",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:24:41.886Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

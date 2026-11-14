@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "burningfeet/backup-2026-08-29-Tiel-Coder-.aka.ornith15.-35B-A3B-Genesis-Hermes-GGUF",
   "slug": "burningfeet-backup-2026-08-29-tiel-coder--aka-ornith15--35b-a3b-genesis-hermes-gguf",
   "author": "burningfeet",
@@ -46,14 +46,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 82541294912,
   "storage_human": "82.5 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

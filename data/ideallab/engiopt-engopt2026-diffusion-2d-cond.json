@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IDEALLab/engiopt-engopt2026-diffusion-2d-cond",
   "slug": "ideallab-engiopt-engopt2026-diffusion-2d-cond",
   "author": "IDEALLab",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1404836860,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

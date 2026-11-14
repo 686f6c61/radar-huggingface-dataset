@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rooty2020/Cosmos3-ours-DROID-v4",
   "slug": "rooty2020-cosmos3-ours-droid-v4",
   "author": "rooty2020",
@@ -37,14 +37,19 @@
   "parameters_human": "15.17B",
   "storage_bytes": 31499213104,
   "storage_human": "31.5 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T05:47:38.334Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

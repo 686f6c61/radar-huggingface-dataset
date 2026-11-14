@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gagan1985/chatterbox-multilingual-hi-mlx-fp16",
   "slug": "gagan1985-chatterbox-multilingual-hi-mlx-fp16",
   "author": "gagan1985",
@@ -37,6 +37,7 @@
   "parameters_human": "677.7M",
   "storage_bytes": 2711113780,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "ResembleAI/Chatterbox-Multilingual-hi",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

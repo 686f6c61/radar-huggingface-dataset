@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vezilka-ai/vezilka-moonshine-base-mk",
   "slug": "vezilka-ai-vezilka-moonshine-base-mk",
   "author": "vezilka-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "61.5M",
   "storage_bytes": 246079928,
   "storage_human": "246 MB",
+  "context_length": null,
   "base_model": "UsefulSensors/moonshine-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

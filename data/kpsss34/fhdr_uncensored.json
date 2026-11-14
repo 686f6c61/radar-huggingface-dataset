@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kpsss34/FHDR_Uncensored",
   "slug": "kpsss34-fhdr_uncensored",
   "author": "kpsss34",
@@ -34,6 +34,7 @@
   "parameters_human": "11.90B",
   "storage_bytes": 77194617866,
   "storage_human": "77.2 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

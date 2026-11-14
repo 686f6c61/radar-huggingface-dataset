@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "selorahomes/Selora-AI-LLM-14B-ollama",
   "slug": "selorahomes-selora-ai-llm-14b-ollama",
   "author": "selorahomes",
@@ -37,14 +37,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 92375050848,
   "storage_human": "92.4 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

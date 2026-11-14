@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Muse-Glimmer-30B-heretic-r2-i1-GGUF",
   "slug": "mradermacher-muse-glimmer-30b-heretic-r2-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "27.85B",
   "storage_bytes": 303373835296,
   "storage_human": "303.4 GB",
+  "context_length": 131072,
   "base_model": "gjtgjt/Muse-Glimmer-30B-heretic-r2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

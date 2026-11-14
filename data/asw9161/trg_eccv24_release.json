@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asw9161/TRG_ECCV24_Release",
   "slug": "asw9161-trg_eccv24_release",
   "author": "asw9161",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 301368257,
   "storage_human": "301 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-14T08:43:34.216Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

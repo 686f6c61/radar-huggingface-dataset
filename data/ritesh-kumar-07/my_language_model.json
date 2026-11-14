@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ritesh-kumar-07/my_language_model",
   "slug": "ritesh-kumar-07-my_language_model",
   "author": "Ritesh-kumar-07",
@@ -30,14 +30,19 @@
   "parameters_human": "94.6M",
   "storage_bytes": 378393873,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

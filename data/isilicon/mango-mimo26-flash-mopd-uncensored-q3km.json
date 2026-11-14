@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isilicon/mango-mimo26-flash-mopd-uncensored-q3km",
   "slug": "isilicon-mango-mimo26-flash-mopd-uncensored-q3km",
   "author": "isilicon",
@@ -31,14 +31,19 @@
   "parameters_human": "309.77B",
   "storage_bytes": 151608898808,
   "storage_human": "151.6 GB",
+  "context_length": 1048576,
   "base_model": "spiritfather/MiMo-V2.6-Flash-MOPD-Yamz-Uncensored-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

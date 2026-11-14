@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DewiBrynJones/whisper-large-v2-ft-cy-2607",
   "slug": "dewibrynjones-whisper-large-v2-ft-cy-2607",
   "author": "DewiBrynJones",
@@ -31,14 +31,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 370404999857,
   "storage_human": "370.4 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T05:34:32.377Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

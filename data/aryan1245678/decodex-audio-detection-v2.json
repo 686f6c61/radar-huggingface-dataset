@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aryan1245678/decodeX-audio-detection-V2",
   "slug": "aryan1245678-decodex-audio-detection-v2",
   "author": "Aryan1245678",
@@ -29,14 +29,19 @@
   "parameters_human": "94.6M",
   "storage_bytes": 378307536,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "motheecreator/Deepfake-audio-detection",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Audio Classification",

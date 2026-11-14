@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MATLOWAI/minimax-h3-nvfp4",
   "slug": "matlowai-minimax-h3-nvfp4",
   "author": "MATLOWAI",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 12528637032,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

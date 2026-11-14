@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Booooooooooooo/vlqa-xlm-roberta-large-xnli",
   "slug": "booooooooooooo-vlqa-xlm-roberta-large-xnli",
   "author": "Booooooooooooo",
@@ -32,14 +32,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 2256716758,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T03:36:05.393Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MediaAtlas/gams3-12b-razpisi-lora",
   "slug": "mediaatlas-gams3-12b-razpisi-lora",
   "author": "MediaAtlas",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 261972344,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "cjvt/GaMS3-12B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

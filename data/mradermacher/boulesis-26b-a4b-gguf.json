@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Boulesis-26B-A4B-GGUF",
   "slug": "mradermacher-boulesis-26b-a4b-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "25.97B",
   "storage_bytes": 187680286112,
   "storage_human": "187.7 GB",
+  "context_length": 262144,
   "base_model": "SubMaroon/Boulesis-26B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

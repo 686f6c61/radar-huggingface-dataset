@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taharmasmaliyev07/Gemma4-E2B-FACEBOOK-E2-BF16",
   "slug": "taharmasmaliyev07-gemma4-e2b-facebook-e2-bf16",
   "author": "taharmasmaliyev07",
@@ -35,14 +35,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10375484904,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "taharmasmaliyev07/Gemma4-E2B-FACEBOOK-E2-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

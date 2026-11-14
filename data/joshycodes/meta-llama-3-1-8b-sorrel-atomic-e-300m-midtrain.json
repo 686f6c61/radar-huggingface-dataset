@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-e-300m-midtrain",
   "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-e-300m-midtrain",
   "author": "joshycodes",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 64259441035,
   "storage_human": "64.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T06:23:31.845Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

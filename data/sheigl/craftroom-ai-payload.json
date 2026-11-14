@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sheigl/craftroom-ai-payload",
   "slug": "sheigl-craftroom-ai-payload",
   "author": "sheigl",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4045918170,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/CySearchAssist-Mesh-1.5B-GGUF",
   "slug": "mradermacher-cysearchassist-mesh-1-5b-gguf",
   "author": "mradermacher",
@@ -44,14 +44,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 14206904448,
   "storage_human": "14.2 GB",
+  "context_length": 32768,
   "base_model": "cyberalien/CySearchAssist-Mesh-1.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

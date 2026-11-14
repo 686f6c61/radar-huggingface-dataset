@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/CDM-Sub-Lattice-v3-18M",
   "slug": "duoneural-cdm-sub-lattice-v3-18m",
   "author": "DuoNeural",
@@ -52,14 +52,19 @@
   "parameters_human": "30.4M",
   "storage_bytes": 119337304,
   "storage_human": "119 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QrusherZA/MiniMaxH3_Omni",
   "slug": "qrusherza-minimaxh3_omni",
   "author": "QrusherZA",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 184687309928,
   "storage_human": "184.7 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, FastVideo/FastH3-Omni-Comfy",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

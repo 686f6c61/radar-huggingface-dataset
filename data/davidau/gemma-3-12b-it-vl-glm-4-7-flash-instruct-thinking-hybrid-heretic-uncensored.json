@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/gemma-3-12b-it-vl-GLM-4.7-Flash-INSTRUCT-Thinking-Hybrid-Heretic-Uncensored",
   "slug": "davidau-gemma-3-12b-it-vl-glm-4-7-flash-instruct-thinking-hybrid-heretic-uncensored",
   "author": "DavidAU",
@@ -59,14 +59,19 @@
   "parameters_human": "13.19B",
   "storage_bytes": 26426624250,
   "storage_human": "26.4 GB",
+  "context_length": null,
   "base_model": "DreamFast/gemma-3-12b-it-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

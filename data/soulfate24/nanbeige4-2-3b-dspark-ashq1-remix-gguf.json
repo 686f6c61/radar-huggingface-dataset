@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF",
   "slug": "soulfate24-nanbeige4-2-3b-dspark-ashq1-remix-gguf",
   "author": "Soulfate24",
@@ -40,14 +40,19 @@
   "parameters_human": "4.17B",
   "storage_bytes": 20711133088,
   "storage_human": "20.7 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B, Nanbeige/Nanbeige4.2-3B-DSpark",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T06:52:59.661Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

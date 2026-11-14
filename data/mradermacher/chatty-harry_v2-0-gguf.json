@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Chatty-Harry_V2.0-GGUF",
   "slug": "mradermacher-chatty-harry_v2-0-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 84692311168,
   "storage_human": "84.7 GB",
+  "context_length": 1024000,
   "base_model": "Triangle104/Chatty-Harry_V2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

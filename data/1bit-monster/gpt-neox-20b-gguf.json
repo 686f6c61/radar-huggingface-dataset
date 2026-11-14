@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1bit-MONSTER/gpt-neox-20b-GGUF",
   "slug": "1bit-monster-gpt-neox-20b-gguf",
   "author": "1bit-MONSTER",
@@ -26,14 +26,19 @@
   "parameters_human": "20.55B",
   "storage_bytes": 13135032096,
   "storage_human": "13.1 GB",
+  "context_length": 2048,
   "base_model": "EleutherAI/gpt-neox-20b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

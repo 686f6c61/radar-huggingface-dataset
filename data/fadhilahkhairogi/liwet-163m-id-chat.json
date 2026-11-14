@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fadhilahkhairogi/Liwet-163M-id-chat",
   "slug": "fadhilahkhairogi-liwet-163m-id-chat",
   "author": "fadhilahkhairogi",
@@ -38,14 +38,19 @@
   "parameters_human": "187.6M",
   "storage_bytes": 375189384,
   "storage_human": "375 MB",
+  "context_length": null,
   "base_model": "fadhilahkhairogi/Liwet-163M-id-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

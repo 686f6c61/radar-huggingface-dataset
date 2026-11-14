@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArieLLL123/Meivin-Embed-0.1.1",
   "slug": "arielll123-meivin-embed-0-1-1",
   "author": "ArieLLL123",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 338118664,
   "storage_human": "338 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

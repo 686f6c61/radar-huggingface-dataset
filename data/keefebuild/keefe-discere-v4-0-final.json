@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KeefeBuild/Keefe-Discere-v4.0-Final",
   "slug": "keefebuild-keefe-discere-v4-0-final",
   "author": "KeefeBuild",
@@ -37,14 +37,19 @@
   "parameters_human": "7.78B",
   "storage_bytes": 21447358731,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": "KeefeBuild/Keefe-Discere-v4.0-Final",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amad-iq/amad-vlm5-GGUF",
   "slug": "amad-iq-amad-vlm5-gguf",
   "author": "amad-iq",
@@ -42,14 +42,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 29373610688,
   "storage_human": "29.4 GB",
+  "context_length": 128000,
   "base_model": "amad-iq/amad-vlm5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/LFM2.5-8B-A1B-heretic-int8-ov",
   "slug": "blaj-lfm2-5-8b-a1b-heretic-int8-ov",
   "author": "blaj",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 8509318129,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "Dingdust/LFM2.5-8B-A1B-heretic, LiquidAI/LFM2.5-8B-A1B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

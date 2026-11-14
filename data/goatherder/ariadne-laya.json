@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoatHerder/Ariadne-Laya",
   "slug": "goatherder-ariadne-laya",
   "author": "GoatHerder",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 8397232,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "GoatHerder/Ariadne-Laya-TD",
+  "renamed_at": "2026-11-13T02:57:25.822Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ethicalabs/Echo-DSRN-v0.1.4-Embed-Intent-CLF",
   "slug": "ethicalabs-echo-dsrn-v0-1-4-embed-intent-clf",
   "author": "ethicalabs",
@@ -40,14 +40,19 @@
   "parameters_human": "98.4M",
   "storage_bytes": 393562600,
   "storage_human": "394 MB",
+  "context_length": null,
   "base_model": "ethicalabs/Echo-DSRN-v0.1.3-Embed-Intent",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

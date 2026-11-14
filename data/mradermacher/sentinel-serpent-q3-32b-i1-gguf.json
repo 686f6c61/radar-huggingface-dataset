@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sentinel-Serpent-Q3-32B-i1-GGUF",
   "slug": "mradermacher-sentinel-serpent-q3-32b-i1-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 351836801888,
   "storage_human": "351.8 GB",
+  "context_length": 40960,
   "base_model": "Mawdistical/Sentinel-Serpent-Q3-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

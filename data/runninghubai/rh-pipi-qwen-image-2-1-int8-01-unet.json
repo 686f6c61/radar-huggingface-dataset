@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-pipi-qwen-image-2.1-int8-01-unet",
   "slug": "runninghubai-rh-pipi-qwen-image-2-1-int8-01-unet",
   "author": "RunningHubAI",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 7260164737,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coolthor/Huihui-Qwen3.6-35B-A3B-abliterated-NVFP4-W4A4",
   "slug": "coolthor-huihui-qwen3-6-35b-a3b-abliterated-nvfp4-w4a4",
   "author": "coolthor",
@@ -47,14 +47,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 23617763345,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/qwen2-7b-instruct",
   "slug": "kerasformers-qwen2-7b-instruct",
   "author": "kerasformers",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 15237074576,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-7B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/qwen2-7b-instruct",
+  "renamed_at": "2026-11-11T05:54:31.159Z",
   "benchmarks": [],
   "sources": []
 }

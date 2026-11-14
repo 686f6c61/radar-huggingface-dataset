@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Phantomcloak19/gemma2-2b-dpo",
   "slug": "phantomcloak19-gemma2-2b-dpo",
   "author": "Phantomcloak19",
@@ -32,14 +32,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 5595779037,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T10:45:06.452Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

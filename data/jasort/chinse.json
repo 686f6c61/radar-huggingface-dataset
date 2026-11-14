@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jasort/chinse",
   "slug": "jasort-chinse",
   "author": "jasort",
@@ -35,14 +35,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10278788464,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T08:46:03.239Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

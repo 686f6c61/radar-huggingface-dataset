@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CharlieH512/km_tokenizer_pertick_coarse_3x1000",
   "slug": "charlieh512-km_tokenizer_pertick_coarse_3x1000",
   "author": "CharlieH512",
@@ -28,14 +28,19 @@
   "parameters_human": "10.7M",
   "storage_bytes": 43001980,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

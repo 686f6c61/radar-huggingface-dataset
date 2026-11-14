@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewinregirgojr/qwen3.8-27b-pruned-research",
   "slug": "ewinregirgojr-qwen3-8-27b-pruned-research",
   "author": "ewinregirgojr",
@@ -61,6 +61,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 283893183000,
   "storage_human": "283.9 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -68,8 +69,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T03:03:02.710Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

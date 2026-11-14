@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taltul1989/kalil-ivrit-whisper-turbo-onnx",
   "slug": "taltul1989-kalil-ivrit-whisper-turbo-onnx",
   "author": "taltul1989",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 2033448785,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "ivrit-ai/whisper-large-v3-turbo",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

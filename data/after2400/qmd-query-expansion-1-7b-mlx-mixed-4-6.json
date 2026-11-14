@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "after2400/qmd-query-expansion-1.7B-mlx-mixed-4-6",
   "slug": "after2400-qmd-query-expansion-1-7b-mlx-mixed-4-6",
   "author": "after2400",
@@ -32,6 +32,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1108674381,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "tobil/qmd-query-expansion-1.7B-gguf",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

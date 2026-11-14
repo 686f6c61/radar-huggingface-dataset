@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rickye26/pplx-decider-flash-v1.2-q8",
   "slug": "rickye26-pplx-decider-flash-v1-2-q8",
   "author": "rickye26",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 4490195284,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "perplexity-ai/pplx-decider-flash-v1.2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

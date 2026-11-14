@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "racoon1028/Llama-3-Open-Ko-8B-finetuned-gguf",
   "slug": "racoon1028-llama-3-open-ko-8b-finetuned-gguf",
   "author": "racoon1028",
@@ -26,14 +26,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 8540770688,
   "storage_human": "8.5 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

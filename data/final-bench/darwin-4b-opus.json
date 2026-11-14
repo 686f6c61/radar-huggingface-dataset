@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FINAL-Bench/Darwin-4B-Opus",
   "slug": "final-bench-darwin-4b-opus",
   "author": "FINAL-Bench",
@@ -52,14 +52,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16029908795,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it, arsovskidev/Gemma-4-E4B-Claude-4.6-Opus-Reasoning-Distilled",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

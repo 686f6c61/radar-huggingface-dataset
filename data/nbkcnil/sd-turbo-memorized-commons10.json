@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nbkcnil/sd-turbo-memorized-commons10",
   "slug": "nbkcnil-sd-turbo-memorized-commons10",
   "author": "nbkcnil",
@@ -32,6 +32,7 @@
   "parameters_human": "865.9M",
   "storage_bytes": 3428144308,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

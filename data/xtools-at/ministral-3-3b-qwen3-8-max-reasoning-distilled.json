@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled",
   "slug": "xtools-at-ministral-3-3b-qwen3-8-max-reasoning-distilled",
   "author": "xtools-at",
@@ -41,14 +41,19 @@
   "parameters_human": "3.85B",
   "storage_bytes": 7715539473,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Ministral-3-3B-Reasoning-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

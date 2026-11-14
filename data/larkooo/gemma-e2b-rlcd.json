@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "larkooo/gemma-e2b-rlcd",
   "slug": "larkooo-gemma-e2b-rlcd",
   "author": "larkooo",
@@ -37,6 +37,7 @@
   "parameters_human": "5.10B",
   "storage_bytes": 3591270333,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

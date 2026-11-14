@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GenerallyTso/Sophro-4B-memory-v1",
   "slug": "generallytso-sophro-4b-memory-v1",
   "author": "GenerallyTso",
@@ -36,14 +36,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2369545152,
   "storage_human": "2.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

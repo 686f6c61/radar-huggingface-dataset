@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luluw/K2-Horizon-3.7B-eng-65k-trimmed-4B-dense-GGUF",
   "slug": "luluw-k2-horizon-3-7b-eng-65k-trimmed-4b-dense-gguf",
   "author": "luluw",
@@ -42,14 +42,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 47293109600,
   "storage_human": "47.3 GB",
+  "context_length": 524288,
   "base_model": "luluw/K2-Horizon-3.7B-eng-65k-trimmed-4B-dense",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T06:31:42.107Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

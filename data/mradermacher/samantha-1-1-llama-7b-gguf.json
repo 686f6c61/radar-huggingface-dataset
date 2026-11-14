@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/samantha-1.1-llama-7b-GGUF",
   "slug": "mradermacher-samantha-1-1-llama-7b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 59564795264,
   "storage_human": "59.6 GB",
+  "context_length": 2048,
   "base_model": "QuixiAI/samantha-1.1-llama-7b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

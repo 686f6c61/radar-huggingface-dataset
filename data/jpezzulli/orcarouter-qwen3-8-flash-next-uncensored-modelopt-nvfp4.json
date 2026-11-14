@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jpezzulli/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4",
   "slug": "jpezzulli-orcarouter-qwen3-8-flash-next-uncensored-modelopt-nvfp4",
   "author": "jpezzulli",
@@ -46,14 +46,19 @@
   "parameters_human": "119.60B",
   "storage_bytes": 135243553424,
   "storage_human": "135.2 GB",
+  "context_length": null,
   "base_model": "OrcaRouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

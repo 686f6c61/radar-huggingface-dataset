@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Toan2408/vit5-vietnamese-phonetic-eclm",
   "slug": "toan2408-vit5-vietnamese-phonetic-eclm",
   "author": "Toan2408",
@@ -33,14 +33,19 @@
   "parameters_human": "226.0M",
   "storage_bytes": 904654778,
   "storage_human": "905 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

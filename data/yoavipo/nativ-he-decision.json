@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yoavipo/nativ-he-decision",
   "slug": "yoavipo-nativ-he-decision",
   "author": "yoavipo",
@@ -44,14 +44,19 @@
   "parameters_human": "363.8M",
   "storage_bytes": 1455121412,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "dicta-il/neodictabert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

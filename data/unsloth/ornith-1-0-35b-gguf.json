@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/Ornith-1.0-35B-GGUF",
   "slug": "unsloth-ornith-1-0-35b-gguf",
   "author": "unsloth",
@@ -31,14 +31,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 1035324449664,
   "storage_human": "1035.3 GB",
+  "context_length": 262144,
   "base_model": "deepreinforce-ai/Ornith-1.0-35B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

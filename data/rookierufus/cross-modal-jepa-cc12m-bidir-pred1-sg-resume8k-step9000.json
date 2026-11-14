@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rookierufus/cross-modal-jepa-cc12m-bidir-pred1-sg-resume8k-step9000",
   "slug": "rookierufus-cross-modal-jepa-cc12m-bidir-pred1-sg-resume8k-step9000",
   "author": "rookierufus",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 236427702,
   "storage_human": "236 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

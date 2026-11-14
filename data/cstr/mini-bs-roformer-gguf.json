@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/mini-bs-roformer-GGUF",
   "slug": "cstr-mini-bs-roformer-gguf",
   "author": "cstr",
@@ -33,14 +33,19 @@
   "parameters_human": "46.2M",
   "storage_bytes": 183683392,
   "storage_human": "184 MB",
+  "context_length": null,
   "base_model": "HiDolen/Mini-BS-RoFormer-V2.5-46.2M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

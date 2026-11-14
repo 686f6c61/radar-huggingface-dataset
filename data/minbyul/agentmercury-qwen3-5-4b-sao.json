@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Minbyul/AgentMercury-Qwen3.5-4B-SAO",
   "slug": "minbyul-agentmercury-qwen3-5-4b-sao",
   "author": "Minbyul",
@@ -41,14 +41,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8424366230,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:16:30.327Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

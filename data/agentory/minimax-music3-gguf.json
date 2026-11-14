@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/MiniMax-Music3-GGUF",
   "slug": "agentory-minimax-music3-gguf",
   "author": "agentory",
@@ -29,14 +29,19 @@
   "parameters_human": "25.2M",
   "storage_bytes": 58117672697,
   "storage_human": "58.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:47.681Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

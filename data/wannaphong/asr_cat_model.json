@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wannaphong/asr_cat_model",
   "slug": "wannaphong-asr_cat_model",
   "author": "wannaphong",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 482634967,
   "storage_human": "483 MB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-asr-realtime",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "wannaphong/typhoon-asr-realtime-onnx",
+  "renamed_at": "2026-11-14T09:10:19.925Z",
   "benchmarks": [],
   "sources": [
     {

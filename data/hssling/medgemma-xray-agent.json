@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hssling/MedGemma-XRay-Agent",
   "slug": "hssling-medgemma-xray-agent",
   "author": "hssling",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 9859,
   "storage_human": "9859 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

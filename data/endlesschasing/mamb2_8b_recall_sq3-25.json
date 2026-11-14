@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EndlessChasing/Mamb2_8B_Recall_SQ3.25",
   "slug": "endlesschasing-mamb2_8b_recall_sq3-25",
   "author": "EndlessChasing",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 2446504,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "nvidia/mamba2-8b-3t-4k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

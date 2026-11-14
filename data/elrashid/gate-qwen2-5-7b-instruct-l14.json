@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elrashid/gate-qwen2.5-7b-instruct-l14",
   "slug": "elrashid-gate-qwen2-5-7b-instruct-l14",
   "author": "elrashid",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 474806,
   "storage_human": "474806 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

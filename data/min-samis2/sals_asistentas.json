@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "min-samis2/Sals_asistentas",
   "slug": "min-samis2-sals_asistentas",
   "author": "min-samis2",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 168419644,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T04:39:12.718Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

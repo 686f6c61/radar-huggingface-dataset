@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-TTS-Sam-0.6B-GGUF",
   "slug": "mradermacher-qwen3-tts-sam-0-6b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "602.3M",
   "storage_bytes": 6368469632,
   "storage_human": "6.4 GB",
+  "context_length": 32768,
   "base_model": "kaineone/Qwen3-TTS-Sam-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

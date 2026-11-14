@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ling0322/libwaifu-cosyvoice-3",
   "slug": "ling0322-libwaifu-cosyvoice-3",
   "author": "ling0322",
@@ -47,12 +47,17 @@
   "parameters_human": null,
   "storage_bytes": 7210259145,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512, funasr/campplus",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

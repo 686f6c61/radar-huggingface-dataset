@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrzhao13/qwen3.5-2b-shopsimulator-grpo-rl500-1ep",
   "slug": "mrzhao13-qwen3-5-2b-shopsimulator-grpo-rl500-1ep",
   "author": "mrzhao13",
@@ -41,14 +41,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 3776499342,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "mrzhao13/qwen3.5-2b-shopsimulator-sft-512-1ep",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

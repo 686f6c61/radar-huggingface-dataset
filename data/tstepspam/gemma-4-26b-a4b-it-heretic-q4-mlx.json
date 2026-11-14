@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tstepspam/gemma-4-26B-A4B-it-heretic-q4-mlx",
   "slug": "tstepspam-gemma-4-26b-a4b-it-heretic-q4-mlx",
   "author": "tstepspam",
@@ -35,6 +35,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 14232402066,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": "coder3101/gemma-4-26B-A4B-it-heretic",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T06:24:46.973Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

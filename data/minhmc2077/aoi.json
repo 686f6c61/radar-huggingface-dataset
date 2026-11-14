@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Minhmc2077/AOI",
   "slug": "minhmc2077-aoi",
   "author": "Minhmc2077",
@@ -30,14 +30,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 53325682496,
   "storage_human": "53.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-8B-GGUF, Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T07:41:19.630Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

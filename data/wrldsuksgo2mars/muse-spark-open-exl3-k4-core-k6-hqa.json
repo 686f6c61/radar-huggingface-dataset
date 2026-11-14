@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/Muse-Spark-Open-EXL3-K4-Core-K6-HQA",
   "slug": "wrldsuksgo2mars-muse-spark-open-exl3-k4-core-k6-hqa",
   "author": "wrldsuksgo2mars",
@@ -33,14 +33,19 @@
   "parameters_human": "217.96B",
   "storage_bytes": 436330948891,
   "storage_human": "436.3 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T08:06:23.980Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

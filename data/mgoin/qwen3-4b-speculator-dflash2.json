@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mgoin/Qwen3-4B-speculator.dflash2",
   "slug": "mgoin-qwen3-4b-speculator-dflash2",
   "author": "mgoin",
@@ -30,14 +30,19 @@
   "parameters_human": "1.41B",
   "storage_bytes": 8461662504,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

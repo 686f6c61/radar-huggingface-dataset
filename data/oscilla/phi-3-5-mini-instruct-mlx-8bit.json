@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/Phi-3.5-mini-instruct-mlx-8Bit",
   "slug": "oscilla-phi-3-5-mini-instruct-mlx-8bit",
   "author": "Oscilla",
@@ -40,6 +40,7 @@
   "parameters_human": "3.82B",
   "storage_bytes": 4060136658,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-3.5-mini-instruct",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

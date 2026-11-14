@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ranjitraut/dacpt-aya",
   "slug": "ranjitraut-dacpt-aya",
   "author": "ranjitraut",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 142361699,
   "storage_human": "142 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ranjitraut/dacpt-v3-tiny-aya-base",
+  "renamed_at": "2026-11-12T07:31:59.519Z",
   "benchmarks": [],
   "sources": [
     {

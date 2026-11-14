@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-snofs-krea-v1.4-lora",
   "slug": "runninghubai-rh-snofs-krea-v1-4-lora",
   "author": "RunningHubAI",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 1562610387,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T04:17:38.896Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

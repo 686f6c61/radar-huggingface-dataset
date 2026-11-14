@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nicolassuez/parakeet-tdt-0.6b-v3-onnx",
   "slug": "nicolassuez-parakeet-tdt-0-6b-v3-onnx",
   "author": "Nicolassuez",
@@ -81,14 +81,19 @@
   "parameters_human": null,
   "storage_bytes": 670525767,
   "storage_human": "671 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

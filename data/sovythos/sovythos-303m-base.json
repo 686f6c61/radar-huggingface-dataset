@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sovythos/Sovythos-303M-Base",
   "slug": "sovythos-sovythos-303m-base",
   "author": "sovythos",
@@ -45,6 +45,7 @@
   "parameters_human": "336.1M",
   "storage_bytes": 1346452259,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

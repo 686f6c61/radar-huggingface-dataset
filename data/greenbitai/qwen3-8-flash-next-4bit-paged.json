@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GreenBitAI/Qwen3.8-Flash-Next-4bit-paged",
   "slug": "greenbitai-qwen3-8-flash-next-4bit-paged",
   "author": "GreenBitAI",
@@ -39,6 +39,7 @@
   "parameters_human": "5.40B",
   "storage_bytes": 113222369093,
   "storage_human": "113.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

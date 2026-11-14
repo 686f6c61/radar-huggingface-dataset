@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ruddls030/HyperCLOVAX-SEED-Haru-1.5B-GGUF",
   "slug": "ruddls030-hyperclovax-seed-haru-1-5b-gguf",
   "author": "ruddls030",
@@ -31,14 +31,19 @@
   "parameters_human": "1.59B",
   "storage_bytes": 1006572256,
   "storage_human": "1.0 GB",
+  "context_length": 131072,
   "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

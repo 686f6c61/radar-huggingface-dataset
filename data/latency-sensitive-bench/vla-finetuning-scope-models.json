@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "latency-sensitive-bench/vla-finetuning-scope-models",
   "slug": "latency-sensitive-bench-vla-finetuning-scope-models",
   "author": "latency-sensitive-bench",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 63967613612,
   "storage_human": "64.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:19:47.601Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

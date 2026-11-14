@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SecondLookResearch/Qwen2.5-72B-stories-sonnet-5-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep",
   "slug": "secondlookresearch-qwen2-5-72b-stories-sonnet-5-instruct-mix-difficult-advice-gpt-5-6-terra-1000-1ep",
   "author": "SecondLookResearch",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3380164501,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-72B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

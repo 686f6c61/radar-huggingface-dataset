@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CrowdMind/Caveman-2B",
   "slug": "crowdmind-caveman-2b",
   "author": "CrowdMind",
@@ -35,14 +35,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 4568210831,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:01:51.374Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

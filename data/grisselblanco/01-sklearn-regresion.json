@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grisselblanco/01-sklearn-regresion",
   "slug": "grisselblanco-01-sklearn-regresion",
   "author": "grisselblanco",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 943,
   "storage_human": "943 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yafitzdev/nomos-v1-nano-g1",
   "slug": "yafitzdev-nomos-v1-nano-g1",
   "author": "yafitzdev",
@@ -42,14 +42,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 135564567,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

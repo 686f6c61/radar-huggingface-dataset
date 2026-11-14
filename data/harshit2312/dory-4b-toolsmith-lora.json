@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harshit2312/dory-4b-toolsmith-lora",
   "slug": "harshit2312-dory-4b-toolsmith-lora",
   "author": "harshit2312",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 125139952,
   "storage_human": "125 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

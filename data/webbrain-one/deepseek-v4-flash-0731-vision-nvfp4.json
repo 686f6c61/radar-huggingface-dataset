@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webbrain-one/DeepSeek-V4-Flash-0731-Vision-NVFP4",
   "slug": "webbrain-one-deepseek-v4-flash-0731-vision-nvfp4",
   "author": "webbrain-one",
@@ -37,14 +37,19 @@
   "parameters_human": "304.64B",
   "storage_bytes": 176493769299,
   "storage_human": "176.5 GB",
+  "context_length": null,
   "base_model": "MJPansa/DeepSeek-V4-Flash-0731-NVFP4, deepseek-ai/DeepSeek-V4-Flash-0731, moonshotai/Kimi-K2.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

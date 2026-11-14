@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zSaiko/Pantheon-Reasoning-26B-A4B-1.1-V2-APEX-GGUF",
   "slug": "zsaiko-pantheon-reasoning-26b-a4b-1-1-v2-apex-gguf",
   "author": "zSaiko",
@@ -40,14 +40,19 @@
   "parameters_human": "25.97B",
   "storage_bytes": 184107160640,
   "storage_human": "184.1 GB",
+  "context_length": 262144,
   "base_model": "Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

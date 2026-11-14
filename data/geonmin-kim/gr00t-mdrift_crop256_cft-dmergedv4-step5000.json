@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geonmin-kim/GR00T-Mdrift_crop256_cft-Dmergedv4-step5000",
   "slug": "geonmin-kim-gr00t-mdrift_crop256_cft-dmergedv4-step5000",
   "author": "geonmin-kim",
@@ -22,14 +22,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576223704,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:37:32.512Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

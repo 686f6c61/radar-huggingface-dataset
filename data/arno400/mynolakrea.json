@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arno400/mynolakrea",
   "slug": "arno400-mynolakrea",
   "author": "Arno400",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 11599385380,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

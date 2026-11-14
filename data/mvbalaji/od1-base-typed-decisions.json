@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mvbalaji/od1-base-typed-decisions",
   "slug": "mvbalaji-od1-base-typed-decisions",
   "author": "mvbalaji",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 11273376957,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mvbalaji/od1-typed-decisions",
+  "renamed_at": "2026-11-11T06:49:47.820Z",
   "benchmarks": [],
   "sources": [
     {

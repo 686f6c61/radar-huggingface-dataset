@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LibreYOLO/LibrePRX512-dc-ae-sft",
   "slug": "libreyolo-libreprx512-dc-ae-sft",
   "author": "LibreYOLO",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 16427375388,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Photoroom/prx-512-t2i-dc-ae-sft",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

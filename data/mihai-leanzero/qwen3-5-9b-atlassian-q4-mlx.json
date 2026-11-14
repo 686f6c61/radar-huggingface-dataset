@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q4-mlx",
   "slug": "mihai-leanzero-qwen3-5-9b-atlassian-q4-mlx",
   "author": "Mihai-LeanZero",
@@ -40,6 +40,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 5544733147,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

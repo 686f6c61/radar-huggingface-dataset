@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdamAxelrod/microscope_pipette_2026-09-10_delta_act",
   "slug": "adamaxelrod-microscope_pipette_2026-09-10_delta_act",
   "author": "AdamAxelrod",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206434724,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

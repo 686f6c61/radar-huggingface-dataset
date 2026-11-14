@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unalivehooman/Qwen2.5-1.5B-Indo-Text2SQL-v2",
   "slug": "unalivehooman-qwen2-5-1-5b-indo-text2sql-v2",
   "author": "unalivehooman",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 159192578,
   "storage_human": "159 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zugquants/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF",
   "slug": "zugquants-qwen3-8-flash-next-abliterated-uncensored-turbo-brilliance-50x-reasoning-instruct-gsq-rco-gguf",
   "author": "zugquants",
@@ -83,14 +83,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 84789217495,
   "storage_human": "84.8 GB",
+  "context_length": 262144,
   "base_model": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

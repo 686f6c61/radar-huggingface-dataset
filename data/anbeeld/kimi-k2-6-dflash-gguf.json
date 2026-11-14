@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anbeeld/Kimi-K2.6-DFlash-GGUF",
   "slug": "anbeeld-kimi-k2-6-dflash-gguf",
   "author": "Anbeeld",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 338153,
   "storage_human": "338153 B",
+  "context_length": null,
   "base_model": "z-lab/Kimi-K2.6-DFlash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

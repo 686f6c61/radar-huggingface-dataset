@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/gemma4-31B-Fable-5-Distilled-FP8",
   "slug": "vwdubb-gemma4-31b-fable-5-distilled-fp8",
   "author": "vwdubb",
@@ -44,14 +44,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33295407866,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "autotrust/gemma4-31B-Fable-5-Distilled",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Code Generation",

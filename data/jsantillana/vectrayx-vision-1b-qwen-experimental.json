@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsantillana/vectrayx-vision-1b-qwen-experimental",
   "slug": "jsantillana-vectrayx-vision-1b-qwen-experimental",
   "author": "jsantillana",
@@ -40,14 +40,19 @@
   "parameters_human": "1.11B",
   "storage_bytes": 4290807270,
   "storage_human": "4.3 GB",
+  "context_length": 2048,
   "base_model": "jsantillana/vectrayx-1b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ferrazzipietro/Llama-3.1-8B-Instruct-cpt-tesi_all",
   "slug": "ferrazzipietro-llama-3-1-8b-instruct-cpt-tesi_all",
   "author": "ferrazzipietro",
@@ -23,14 +23,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 1734559075214,
   "storage_human": "1734.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

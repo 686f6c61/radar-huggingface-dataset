@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ddalcu/MiMo-V2.6-Distill-Qwen-9B-MLX-Serve-4bit",
   "slug": "ddalcu-mimo-v2-6-distill-qwen-9b-mlx-serve-4bit",
   "author": "ddalcu",
@@ -32,6 +32,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 7617435180,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

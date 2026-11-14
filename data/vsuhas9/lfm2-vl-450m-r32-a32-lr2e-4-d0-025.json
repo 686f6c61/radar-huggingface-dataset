@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vsuhas9/LFM2-VL-450M-r32-a32-lr2e-4-d0.025",
   "slug": "vsuhas9-lfm2-vl-450m-r32-a32-lr2e-4-d0-025",
   "author": "vsuhas9",
@@ -30,14 +30,19 @@
   "parameters_human": "450.8M",
   "storage_bytes": 901692416,
   "storage_human": "902 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:31:58.932Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

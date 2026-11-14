@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CoTi1940/Qwen3.8-Flash-Next-FP8-colibri-experts-int4g64",
   "slug": "coti1940-qwen3-8-flash-next-fp8-colibri-experts-int4g64",
   "author": "CoTi1940",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 67968131072,
   "storage_human": "68.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

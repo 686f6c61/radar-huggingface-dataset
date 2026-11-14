@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrx-31415/auto-seek",
   "slug": "mrx-31415-auto-seek",
   "author": "mrx-31415",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 177323195,
   "storage_human": "177 MB",
+  "context_length": null,
   "base_model": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebula2wx/pi05_pick_red_block_212144",
   "slug": "nebula2wx-pi05_pick_red_block_212144",
   "author": "nebula2wx",
@@ -25,14 +25,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 28096539736,
   "storage_human": "28.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

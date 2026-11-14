@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quincyqiang/chinese-decision-unified-2b",
   "slug": "quincyqiang-chinese-decision-unified-2b",
   "author": "quincyqiang",
@@ -43,14 +43,19 @@
   "parameters_human": "1.89B",
   "storage_bytes": 3811410393,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

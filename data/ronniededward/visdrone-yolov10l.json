@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ronniededward/visdrone-yolov10l",
   "slug": "ronniededward-visdrone-yolov10l",
   "author": "ronniededward",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 88539436,
   "storage_human": "89 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLOv10",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

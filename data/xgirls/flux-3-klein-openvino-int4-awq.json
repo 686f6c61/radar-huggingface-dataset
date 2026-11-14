@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xgirls/flux-3-klein-openvino-int4-awq",
   "slug": "xgirls-flux-3-klein-openvino-int4-awq",
   "author": "xgirls",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 5309693963,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

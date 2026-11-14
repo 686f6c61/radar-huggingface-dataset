@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FelysNeko/Qwen3-TTS-12Hz-1.7B-Delta-me13",
   "slug": "felysneko-qwen3-tts-12hz-1-7b-delta-me13",
   "author": "FelysNeko",
@@ -26,14 +26,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 8349098196,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

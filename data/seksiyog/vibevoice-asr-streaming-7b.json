@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Seksiyog/VibeVoice-ASR-Streaming-7B",
   "slug": "seksiyog-vibevoice-asr-streaming-7b",
   "author": "Seksiyog",
@@ -52,14 +52,19 @@
   "parameters_human": "8.67B",
   "storage_bytes": 17349013521,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

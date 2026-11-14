@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/Qwen2.5-Math-7B-Instruct-GTAP-v3-IQ3_XXS-GGUF",
   "slug": "duoneural-qwen2-5-math-7b-instruct-gtap-v3-iq3_xxs-gguf",
   "author": "DuoNeural",
@@ -37,14 +37,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 3114514624,
   "storage_human": "3.1 GB",
+  "context_length": 4096,
   "base_model": "Qwen/Qwen2.5-Math-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

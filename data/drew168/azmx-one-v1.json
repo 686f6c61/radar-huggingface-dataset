@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Drew168/azmx-one-v1",
   "slug": "drew168-azmx-one-v1",
   "author": "Drew168",
@@ -53,14 +53,19 @@
   "parameters_human": "1.87B",
   "storage_bytes": 288435876874,
   "storage_human": "288.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T06:49:13.266Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

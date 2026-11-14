@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stepfun-ai/Step-3.7-Flash-GGUF",
   "slug": "stepfun-ai-step-3-7-flash-gguf",
   "author": "stepfun-ai",
@@ -58,14 +58,19 @@
   "parameters_human": "196.96B",
   "storage_bytes": 1117830460923,
   "storage_human": "1117.8 GB",
+  "context_length": 262144,
   "base_model": "stepfun-ai/Step-3.7-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

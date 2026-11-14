@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leobianco/bosch_PERL_organic_Mistral-7B-Instruc-v_S130104_epo1_lr2_6e-05_beta0_015_r8_2609221459",
   "slug": "leobianco-bosch_perl_organic_mistral-7b-instruc-v_s130104_epo1_lr2_6e-05_beta0_015_r8_2609221459",
   "author": "leobianco",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 13673793,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kwonohseong/kanana-1.5-8b-instruct-2505-Persona-LORA",
   "slug": "kwonohseong-kanana-1-5-8b-instruct-2505-persona-lora",
   "author": "kwonohseong",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 101155820,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

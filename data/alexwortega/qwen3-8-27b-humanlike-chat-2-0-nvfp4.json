@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexWortega/Qwen3.8-27B-Humanlike-Chat-2.0-NVFP4",
   "slug": "alexwortega-qwen3-8-27b-humanlike-chat-2-0-nvfp4",
   "author": "AlexWortega",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 46145000174,
   "storage_human": "46.1 GB",
+  "context_length": null,
   "base_model": "LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-2.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

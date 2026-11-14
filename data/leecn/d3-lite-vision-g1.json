@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeeCN/d3-lite-vision-g1",
   "slug": "leecn-d3-lite-vision-g1",
   "author": "LeeCN",
@@ -35,14 +35,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1719880230,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-lite",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T03:33:55.414Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

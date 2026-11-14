@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3MPER0RR/gemma-4-31b-it-3MPER0RR-abliterated",
   "slug": "3mper0rr-gemma-4-31b-it-3mper0rr-abliterated",
   "author": "3MPER0RR",
@@ -28,14 +28,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578506074,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

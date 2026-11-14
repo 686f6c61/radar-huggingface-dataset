@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adityabhushannagar/flint-weight-edited",
   "slug": "adityabhushannagar-flint-weight-edited",
   "author": "adityabhushannagar",
@@ -34,14 +34,19 @@
   "parameters_human": "39.79B",
   "storage_bytes": 151877993820,
   "storage_human": "151.9 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIHeikki/brainsurged-gladiator-gemma4-e2b",
   "slug": "aiheikki-brainsurged-gladiator-gemma4-e2b",
   "author": "AIHeikki",
@@ -38,14 +38,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 3572143679,
   "storage_human": "3.6 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it, unsloth/gemma-4-E2B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

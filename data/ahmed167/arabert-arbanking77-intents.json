@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ahmed167/arabert-arbanking77-intents",
   "slug": "ahmed167-arabert-arbanking77-intents",
   "author": "Ahmed167",
@@ -39,6 +39,7 @@
   "parameters_human": "135.3M",
   "storage_bytes": 541073282,
   "storage_human": "541 MB",
+  "context_length": null,
   "base_model": "aubmindlab/bert-base-arabertv02",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

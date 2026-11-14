@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sergiopaniego/Qwen3-1.7B-Wordle-SFT",
   "slug": "sergiopaniego-qwen3-1-7b-wordle-sft",
   "author": "sergiopaniego",
@@ -37,14 +37,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 30982008694,
   "storage_human": "31.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "openenv/Qwen3-1.7B-Wordle-SFT",
+  "renamed_at": "2026-11-11T07:28:54.293Z",
   "benchmarks": [],
   "sources": []
 }

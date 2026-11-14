@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "petr567/GLM-5.3-Flash-AJ-IQ2-XXS-Strix-Halo-256K",
   "slug": "petr567-glm-5-3-flash-aj-iq2-xxs-strix-halo-256k",
   "author": "petr567",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

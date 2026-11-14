@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Qwopus3.8-27B-Flash-V2-4bit",
   "slug": "mlx-community-qwopus3-8-27b-flash-v2-4bit",
   "author": "mlx-community",
@@ -53,6 +53,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 16074530942,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash-V2",
   "formats": [
     "mlx",
@@ -60,8 +61,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

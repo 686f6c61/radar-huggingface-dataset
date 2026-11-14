@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XGGMasterX/NeufitechV7SMLGemma",
   "slug": "xggmasterx-neufitechv7smlgemma",
   "author": "XGGMasterX",
@@ -25,14 +25,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 2172792448,
   "storage_human": "2.2 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

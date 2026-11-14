@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EigenLabs/Qwen3.8-27B-MTP-4bit",
   "slug": "eigenlabs-qwen3-8-27b-mtp-4bit",
   "author": "EigenLabs",
@@ -31,6 +31,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 238934117,
   "storage_human": "239 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

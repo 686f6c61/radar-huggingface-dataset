@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fadhilahkhairogi/Liwet-66M-id-instruct-v2-GGUF",
   "slug": "fadhilahkhairogi-liwet-66m-id-instruct-v2-gguf",
   "author": "fadhilahkhairogi",
@@ -33,14 +33,19 @@
   "parameters_human": "66.7M",
   "storage_bytes": 341241504,
   "storage_human": "341 MB",
+  "context_length": 1024,
   "base_model": "fadhilahkhairogi/Liwet-66M-id-instruct-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

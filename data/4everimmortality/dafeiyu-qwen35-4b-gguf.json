@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "4everImmortality/dafeiyu-qwen35-4b-gguf",
   "slug": "4everimmortality-dafeiyu-qwen35-4b-gguf",
   "author": "4everImmortality",
@@ -39,14 +39,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 5417608256,
   "storage_human": "5.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

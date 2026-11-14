@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SceneWorks/yue-s1-7b-anneal-jp-kr-cot-candle",
   "slug": "sceneworks-yue-s1-7b-anneal-jp-kr-cot-candle",
   "author": "SceneWorks",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 24200400426,
   "storage_human": "24.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kronumos/Kronumos-Kairos-v2-GGUF",
   "slug": "kronumos-kronumos-kairos-v2-gguf",
   "author": "Kronumos",
@@ -39,14 +39,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 9366147328,
   "storage_human": "9.4 GB",
+  "context_length": 32768,
   "base_model": "Kronumos/Kronumos-Kairos-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

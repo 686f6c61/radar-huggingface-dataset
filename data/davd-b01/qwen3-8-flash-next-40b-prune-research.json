@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Davd-b01/qwen3.8-flash-next-40b-prune-research",
   "slug": "davd-b01-qwen3-8-flash-next-40b-prune-research",
   "author": "Davd-b01",
@@ -70,14 +70,19 @@
   "parameters_human": "40.67B",
   "storage_bytes": 280248469250,
   "storage_human": "280.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "GPQA Diamond",

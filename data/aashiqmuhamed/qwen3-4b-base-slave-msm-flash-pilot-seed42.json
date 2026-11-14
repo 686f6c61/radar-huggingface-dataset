@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aashiqmuhamed/Qwen3-4B-Base-Slave-MSM-Flash-Pilot-Seed42",
   "slug": "aashiqmuhamed-qwen3-4b-base-slave-msm-flash-pilot-seed42",
   "author": "aashiqmuhamed",
@@ -39,14 +39,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8584954742,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

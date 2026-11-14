@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ramgpt/Phi-4-11B-GGUF",
   "slug": "ramgpt-phi-4-11b-gguf",
   "author": "ramgpt",
@@ -32,14 +32,19 @@
   "parameters_human": "11.02B",
   "storage_bytes": 11494478976,
   "storage_human": "11.5 GB",
+  "context_length": 16384,
   "base_model": "parmanu-lcs2/Phi-4-11B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

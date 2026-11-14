@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/d3-coreml",
   "slug": "fluidinference-d3-coreml",
   "author": "FluidInference",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 30824758104,
   "storage_human": "30.8 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-lite, vllm-sr/d3-nano, vllm-sr/d3-mini, vllm-sr/d3-edge",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LocalAI-io/Kimodo-SMPLX-RP-v1-GGML",
   "slug": "localai-io-kimodo-smplx-rp-v1-ggml",
   "author": "LocalAI-io",
@@ -29,14 +29,19 @@
   "parameters_human": "282.8M",
   "storage_bytes": 1131199392,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Kimodo-SMPLX-RP-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

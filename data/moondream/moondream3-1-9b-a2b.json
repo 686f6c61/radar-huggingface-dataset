@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moondream/moondream3.1-9B-A2B",
   "slug": "moondream-moondream3-1-9b-a2b",
   "author": "moondream",
@@ -27,14 +27,19 @@
   "parameters_human": "9.27B",
   "storage_bytes": 10505269576,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

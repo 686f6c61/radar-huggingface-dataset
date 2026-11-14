@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thealper2/qwen3.5-0.8b-slake-medvqa-lora",
   "slug": "thealper2-qwen3-5-0-8b-slake-medvqa-lora",
   "author": "thealper2",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 29843179,
   "storage_human": "30 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

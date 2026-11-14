@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aishmurtaza/codevisualizer-lora",
   "slug": "aishmurtaza-codevisualizer-lora",
   "author": "aishmurtaza",
@@ -31,6 +31,7 @@
   "parameters_human": "3.21B",
   "storage_bytes": 2332247394,
   "storage_human": "2.3 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

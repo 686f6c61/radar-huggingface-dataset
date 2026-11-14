@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "primitive-ai/K2-Horizon-MoVA-36B-A4B-NVFP4",
   "slug": "primitive-ai-k2-horizon-mova-36b-a4b-nvfp4",
   "author": "primitive-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "37.44B",
   "storage_bytes": 73506092854,
   "storage_human": "73.5 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

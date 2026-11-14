@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llama-3.1-8B-Instruct-Uncensored-i1-GGUF",
   "slug": "mradermacher-llama-3-1-8b-instruct-uncensored-i1-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 93806132128,
   "storage_human": "93.8 GB",
+  "context_length": 131072,
   "base_model": "knoveleng/Llama-3.1-8B-Instruct-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

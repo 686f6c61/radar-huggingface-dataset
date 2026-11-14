@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingtime12/Qwen3-4B-PhoMT100k",
   "slug": "huggingtime12-qwen3-4b-phomt100k",
   "author": "huggingtime12",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 2093063982,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

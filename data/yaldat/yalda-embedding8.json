@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yaldat/Yalda-Embedding8",
   "slug": "yaldat-yalda-embedding8",
   "author": "Yaldat",
@@ -34,14 +34,19 @@
   "parameters_human": "595.8M",
   "storage_bytes": 2394563153,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T04:35:47.892Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

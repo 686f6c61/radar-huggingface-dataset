@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "localdadmin/SlightlyTuned_MoE-3b-a800m",
   "slug": "localdadmin-slightlytuned_moe-3b-a800m",
   "author": "localdadmin",
@@ -32,14 +32,19 @@
   "parameters_human": "3.30B",
   "storage_bytes": 5983129440,
   "storage_human": "6.0 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-3.1-3b-a800m-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:46:35.979Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

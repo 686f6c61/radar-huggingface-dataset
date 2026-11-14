@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikatrik/plamo-3-translate-0.8b-GGUF",
   "slug": "ikatrik-plamo-3-translate-0-8b-gguf",
   "author": "ikatrik",
@@ -135,14 +135,19 @@
   "parameters_human": "890.3M",
   "storage_bytes": 2064660288,
   "storage_human": "2.1 GB",
+  "context_length": 262144,
   "base_model": "pfnet/plamo-3-translate-0.8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

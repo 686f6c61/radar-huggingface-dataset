@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hirundo-io/gpt-oss-20b-pi-hardened-generalist",
   "slug": "hirundo-io-gpt-oss-20b-pi-hardened-generalist",
   "author": "hirundo-io",
@@ -31,14 +31,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 13789186097,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

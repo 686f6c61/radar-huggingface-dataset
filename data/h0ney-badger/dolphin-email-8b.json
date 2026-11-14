@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h0ney-badger/dolphin-email-8b",
   "slug": "h0ney-badger-dolphin-email-8b",
   "author": "h0ney-badger",
@@ -38,6 +38,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 21810800913,
   "storage_human": "21.8 GB",
+  "context_length": 131072,
   "base_model": "dphn/Dolphin3.0-Llama3.1-8B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

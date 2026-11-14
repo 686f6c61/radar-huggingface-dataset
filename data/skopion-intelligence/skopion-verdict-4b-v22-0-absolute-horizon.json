@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SKOPION-Intelligence/skopion-verdict-4b-v22.0-absolute-horizon",
   "slug": "skopion-intelligence-skopion-verdict-4b-v22-0-absolute-horizon",
   "author": "SKOPION-Intelligence",
@@ -51,12 +51,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Strict-148 External Decision, Formal Proving, zkML & PQC Benchmark Matrix (150 Suites / 44,340 evaluations)",

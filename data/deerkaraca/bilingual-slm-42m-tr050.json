@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeerKaraca/bilingual-slm-42m-tr050",
   "slug": "deerkaraca-bilingual-slm-42m-tr050",
   "author": "DeerKaraca",
@@ -39,14 +39,19 @@
   "parameters_human": "42.5M",
   "storage_bytes": 169912296,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

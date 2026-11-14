@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q4.gguf",
   "slug": "zeusdevpro-qwen3-8-flash-next-uncensored-q4-gguf",
   "author": "zeusdevpro",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:48:48.083Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

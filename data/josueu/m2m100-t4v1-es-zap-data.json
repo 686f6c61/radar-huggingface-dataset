@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "josueu/m2m100-T4v1-es-zap-data",
   "slug": "josueu-m2m100-t4v1-es-zap-data",
   "author": "josueu",
@@ -30,14 +30,19 @@
   "parameters_human": "483.9M",
   "storage_bytes": 116143352852,
   "storage_human": "116.1 GB",
+  "context_length": null,
   "base_model": "facebook/m2m100_418M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jommarn-Ai/UNSEEN_Gemma_4_26B_NSFW-IQ2_M-GGUF",
   "slug": "jommarn-ai-unseen_gemma_4_26b_nsfw-iq2_m-gguf",
   "author": "Jommarn-Ai",
@@ -43,14 +43,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 12978914928,
   "storage_human": "13.0 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

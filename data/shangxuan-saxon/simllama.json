@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shangxuan-saxon/SimLlama",
   "slug": "shangxuan-saxon-simllama",
   "author": "shangxuan-saxon",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 3373867917,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "guozixunnicolas/moonbeam-midi-foundation-model",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/Minimax-h3_Singularity-x-10Eros-Max_PRISM",
   "slug": "taurusduan-minimax-h3_singularity-x-10eros-max_prism",
   "author": "taurusduan",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 274687425042,
   "storage_human": "274.7 GB",
+  "context_length": null,
   "base_model": "WarmBloodAban/Minimax-h3_Singularity, TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T05:55:40.376Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Flint-40B-A2.5B-abliterated-i1-GGUF",
   "slug": "mradermacher-flint-40b-a2-5b-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "39.79B",
   "storage_bytes": 421391990720,
   "storage_human": "421.4 GB",
+  "context_length": 262144,
   "base_model": "dima6312/Flint-40B-A2.5B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Impliedhomeland/pythia-410m-wsd-24.6B-1.5e-4-c4-backbone",
   "slug": "impliedhomeland-pythia-410m-wsd-24-6b-1-5e-4-c4-backbone",
   "author": "Impliedhomeland",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 48644076604,
   "storage_human": "48.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

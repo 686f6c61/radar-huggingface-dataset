@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Franjarjar/Spark-X2.6-4B-EQ-C3",
   "slug": "franjarjar-spark-x2-6-4b-eq-c3",
   "author": "Franjarjar",
@@ -33,14 +33,19 @@
   "parameters_human": "1.12B",
   "storage_bytes": 2677933184,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

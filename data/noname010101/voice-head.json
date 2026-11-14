@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Noname010101/voice-head",
   "slug": "noname010101-voice-head",
   "author": "Noname010101",
@@ -24,6 +24,7 @@
   "parameters_human": null,
   "storage_bytes": 15024276324,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

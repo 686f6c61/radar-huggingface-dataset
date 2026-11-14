@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zayar26/burmese-gpt2-v2",
   "slug": "zayar26-burmese-gpt2-v2",
   "author": "zayar26",
@@ -31,14 +31,19 @@
   "parameters_human": "100.4M",
   "storage_bytes": 744946001,
   "storage_human": "745 MB",
+  "context_length": null,
   "base_model": "gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

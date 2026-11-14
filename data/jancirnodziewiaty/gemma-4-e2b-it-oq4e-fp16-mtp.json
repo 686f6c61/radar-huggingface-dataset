@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jancirnodziewiaty/gemma-4-E2B-it-oQ4e-fp16-mtp",
   "slug": "jancirnodziewiaty-gemma-4-e2b-it-oq4e-fp16-mtp",
   "author": "jancirnodziewiaty",
@@ -30,6 +30,7 @@
   "parameters_human": "5.10B",
   "storage_bytes": 4858439107,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

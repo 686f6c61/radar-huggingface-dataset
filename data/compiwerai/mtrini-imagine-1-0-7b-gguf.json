@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompiwerAI/Mtrini-Imagine-1.0-7B-GGUF",
   "slug": "compiwerai-mtrini-imagine-1-0-7b-gguf",
   "author": "CompiwerAI",
@@ -40,14 +40,19 @@
   "parameters_human": "8.80B",
   "storage_bytes": 17609841152,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "HiDream-ai/HiDream-O1-Image-Dev",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

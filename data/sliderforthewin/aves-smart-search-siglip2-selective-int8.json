@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sliderforthewin/aves-smart-search-siglip2-selective-int8",
   "slug": "sliderforthewin-aves-smart-search-siglip2-selective-int8",
   "author": "sliderforthewin",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 598154901,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "timm/ViT-B-32-SigLIP2-256",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

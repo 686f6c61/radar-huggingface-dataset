@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.4",
   "slug": "xcaliburmoon-gemma-4-e2b-it-agent-posttrain-v1-4",
   "author": "XcaliburMoon",
@@ -37,6 +37,7 @@
   "parameters_human": "4.63B",
   "storage_bytes": 58563977660,
   "storage_human": "58.6 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

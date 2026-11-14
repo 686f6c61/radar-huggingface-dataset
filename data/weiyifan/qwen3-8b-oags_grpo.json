@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Weiyifan/Qwen3-8B-OAGS_GRPO",
   "slug": "weiyifan-qwen3-8b-oags_grpo",
   "author": "Weiyifan",
@@ -24,14 +24,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 49155973038,
   "storage_human": "49.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

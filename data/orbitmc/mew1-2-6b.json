@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OrbitMC/Mew1-2.6B",
   "slug": "orbitmc-mew1-2-6b",
   "author": "OrbitMC",
@@ -37,6 +37,7 @@
   "parameters_human": "2.70B",
   "storage_bytes": 16811411198,
   "storage_human": "16.8 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Unmid/Mew1-2.6B",
+  "renamed_at": "2026-11-11T03:29:57.828Z",
   "benchmarks": [],
   "sources": []
 }

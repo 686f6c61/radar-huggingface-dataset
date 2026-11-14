@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/dots.ocr-GGUF",
   "slug": "mradermacher-dots-ocr-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 20066403456,
   "storage_human": "20.1 GB",
+  "context_length": 131072,
   "base_model": "dots-studio/dots.ocr",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

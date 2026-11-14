@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WebAIPocket/Serow-Qwen2.5-0.5B-Instruct",
   "slug": "webaipocket-serow-qwen2-5-0-5b-instruct",
   "author": "WebAIPocket",
@@ -24,14 +24,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519990,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T08:49:08.436Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

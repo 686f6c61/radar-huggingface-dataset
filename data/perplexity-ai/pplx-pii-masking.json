@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "perplexity-ai/pplx-pii-masking",
   "slug": "perplexity-ai-pplx-pii-masking",
   "author": "perplexity-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "596.1M",
   "storage_bytes": 1203716713,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "perplexity-ai/PII-Tracer",
+  "renamed_at": "2026-11-11T07:06:55.699Z",
   "benchmarks": [],
   "sources": [
     {

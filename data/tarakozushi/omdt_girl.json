@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarakozushi/omdt_girl",
   "slug": "tarakozushi-omdt_girl",
   "author": "tarakozushi",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 610200316,
   "storage_human": "610 MB",
+  "context_length": null,
   "base_model": "WAI-REALISM-Illustrious-v1.0",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T06:12:57.956Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

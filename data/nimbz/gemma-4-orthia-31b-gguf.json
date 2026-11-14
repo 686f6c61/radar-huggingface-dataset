@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nimbz/Gemma-4-Orthia-31B-GGUF",
   "slug": "nimbz-gemma-4-orthia-31b-gguf",
   "author": "Nimbz",
@@ -39,14 +39,19 @@
   "parameters_human": "32.11B",
   "storage_bytes": 161165612384,
   "storage_human": "161.2 GB",
+  "context_length": 262144,
   "base_model": "Nimbz/Gemma-4-Orthia-31B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

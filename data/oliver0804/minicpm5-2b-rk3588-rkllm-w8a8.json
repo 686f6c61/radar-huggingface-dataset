@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oliver0804/MiniCPM5-2B-RK3588-rkllm-w8a8",
   "slug": "oliver0804-minicpm5-2b-rk3588-rkllm-w8a8",
   "author": "oliver0804",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 2830181700,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

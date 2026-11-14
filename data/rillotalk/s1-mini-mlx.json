@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rillotalk/S1-mini-mlx",
   "slug": "rillotalk-s1-mini-mlx",
   "author": "rillotalk",
@@ -36,6 +36,7 @@
   "parameters_human": "541.1M",
   "storage_bytes": 439825323,
   "storage_human": "440 MB",
+  "context_length": null,
   "base_model": "superwhisper/s1-mini",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

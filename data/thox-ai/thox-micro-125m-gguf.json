@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/thox-micro-125m-GGUF",
   "slug": "thox-ai-thox-micro-125m-gguf",
   "author": "Thox-ai",
@@ -40,14 +40,19 @@
   "parameters_human": "123.6M",
   "storage_bytes": 549147018,
   "storage_human": "549 MB",
+  "context_length": 1024,
   "base_model": "Thox-ai/thox-micro-125m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

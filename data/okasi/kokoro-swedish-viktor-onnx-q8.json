@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "okasi/kokoro-swedish-viktor-onnx-q8",
   "slug": "okasi-kokoro-swedish-viktor-onnx-q8",
   "author": "okasi",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 84058914,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "Joakim/kokoro-sv-voices",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

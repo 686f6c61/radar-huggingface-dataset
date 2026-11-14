@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ohaiibuzzle/DA3-ONNX",
   "slug": "ohaiibuzzle-da3-onnx",
   "author": "ohaiibuzzle",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2144967907,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "depth-anything/DA3MONO-LARGE, depth-anything/DA3-SMALL",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

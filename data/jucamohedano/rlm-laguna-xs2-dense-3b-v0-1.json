@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jucamohedano/rlm-laguna-xs2-dense-3b-v0.1",
   "slug": "jucamohedano-rlm-laguna-xs2-dense-3b-v0-1",
   "author": "jucamohedano",
@@ -43,14 +43,19 @@
   "parameters_human": "3.00B",
   "storage_bytes": 5993429512,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "EvanOLeary/laguna-xs2-dense-k8-cuda-sft-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

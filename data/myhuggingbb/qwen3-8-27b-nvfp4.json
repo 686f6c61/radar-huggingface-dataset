@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myhuggingbb/Qwen3.8-27B-NVFP4",
   "slug": "myhuggingbb-qwen3-8-27b-nvfp4",
   "author": "myhuggingbb",
@@ -28,14 +28,19 @@
   "parameters_human": "19.87B",
   "storage_bytes": 23437581813,
   "storage_human": "23.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

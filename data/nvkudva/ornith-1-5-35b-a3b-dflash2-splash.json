@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvkudva/Ornith-1.5-35B-A3B-DFlash2-Splash",
   "slug": "nvkudva-ornith-1-5-35b-a3b-dflash2-splash",
   "author": "nvkudva",
@@ -38,6 +38,7 @@
   "parameters_human": "526.3M",
   "storage_bytes": 1053065595,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "jzinno/Ornith-1.5-35B-A3B-DFlash2, ornith-ai/Ornith-1.5-35B-A3B, z-lab/Qwen3.5-35B-A3B-DFlash",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

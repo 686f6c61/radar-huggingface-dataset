@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saulpzh/Meta-Task-17B",
   "slug": "saulpzh-meta-task-17b",
   "author": "saulpzh",
@@ -36,14 +36,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29548088282,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "saulpzh/Meta-Task-14B",
+  "renamed_at": "2026-11-11T07:26:24.208Z",
   "benchmarks": [],
   "sources": [
     {

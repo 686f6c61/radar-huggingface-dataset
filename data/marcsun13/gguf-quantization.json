@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marcsun13/gguf-quantization",
   "slug": "marcsun13-gguf-quantization",
   "author": "marcsun13",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 768943231,
   "storage_human": "769 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "marcsun13/ggml-quantization",
+  "renamed_at": "2026-11-13T06:34:51.228Z",
   "benchmarks": [],
   "sources": []
 }

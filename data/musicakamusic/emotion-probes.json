@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "musicakamusic/emotion-probes",
   "slug": "musicakamusic-emotion-probes",
   "author": "musicakamusic",
@@ -30,14 +30,19 @@
   "parameters_human": "1536",
   "storage_bytes": 620677626533,
   "storage_human": "620.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

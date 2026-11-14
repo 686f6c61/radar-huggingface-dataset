@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Secondchancee/Ternary-Bonsai-2-27B-Steered",
   "slug": "secondchancee-ternary-bonsai-2-27b-steered",
   "author": "Secondchancee",
@@ -38,14 +38,19 @@
   "parameters_human": "322560",
   "storage_bytes": 7207462112,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

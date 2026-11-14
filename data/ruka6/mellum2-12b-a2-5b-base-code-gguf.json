@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ruka6/Mellum2-12B-A2.5B-Base-code-GGUF",
   "slug": "ruka6-mellum2-12b-a2-5b-base-code-gguf",
   "author": "Ruka6",
@@ -39,14 +39,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 42037680576,
   "storage_human": "42.0 GB",
+  "context_length": 131072,
   "base_model": "JetBrains/Mellum2-12B-A2.5B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

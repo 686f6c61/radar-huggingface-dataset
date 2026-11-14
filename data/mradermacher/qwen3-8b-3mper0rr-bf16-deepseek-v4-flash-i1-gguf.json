@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-8B-3MPER0RR-BF16-DeepSeek-V4-Flash-i1-GGUF",
   "slug": "mradermacher-qwen3-8b-3mper0rr-bf16-deepseek-v4-flash-i1-gguf",
   "author": "mradermacher",
@@ -38,6 +38,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 96376944000,
   "storage_human": "96.4 GB",
+  "context_length": 40960,
   "base_model": "3MPER0RR/Qwen3-8B-3MPER0RR-BF16-DeepSeek-V4-Flash",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

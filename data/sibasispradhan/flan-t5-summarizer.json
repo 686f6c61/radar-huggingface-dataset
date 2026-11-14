@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sibasispradhan/flan-t5-summarizer",
   "slug": "sibasispradhan-flan-t5-summarizer",
   "author": "sibasispradhan",
@@ -31,14 +31,19 @@
   "parameters_human": "783.2M",
   "storage_bytes": 3132674201,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "google/flan-t5-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

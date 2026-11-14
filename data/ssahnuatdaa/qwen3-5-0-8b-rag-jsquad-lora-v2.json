@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ssahnuatdaa/qwen3.5-0.8b-rag-jsquad-lora-v2",
   "slug": "ssahnuatdaa-qwen3-5-0-8b-rag-jsquad-lora-v2",
   "author": "ssahnuatdaa",
@@ -29,14 +29,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 3506693246,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

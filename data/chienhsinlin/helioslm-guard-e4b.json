@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chienhsinlin/helioslm-guard-e4b",
   "slug": "chienhsinlin-helioslm-guard-e4b",
   "author": "chienhsinlin",
@@ -39,6 +39,7 @@
   "parameters_human": "7.52B",
   "storage_bytes": 13506126264,
   "storage_human": "13.5 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

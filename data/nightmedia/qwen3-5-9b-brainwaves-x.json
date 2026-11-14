@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.5-9B-Brainwaves-X",
   "slug": "nightmedia-qwen3-5-9b-brainwaves-x",
   "author": "nightmedia",
@@ -87,6 +87,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326293501,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "OmniJev/OneJev1.6-9B, Jackrong/Qwopus3-5-9B-Coder-Flash, xtools-at/Qwen3.5-9B-DeepThought-STEM, nightmedia/Qwen3.5-9B-Brainwaves, nightmedia/Qwen3.5-9B-Emergent",
   "formats": [
     "mlx",
@@ -94,8 +95,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

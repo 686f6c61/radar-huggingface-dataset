@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ServiceNow-AI/Apriel-Voice-27B-preview",
   "slug": "servicenow-ai-apriel-voice-27b-preview",
   "author": "ServiceNow-AI",
@@ -128,14 +128,19 @@
   "parameters_human": "27.23B",
   "storage_bytes": 54493414191,
   "storage_human": "54.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

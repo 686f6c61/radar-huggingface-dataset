@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/FleetWorker-E4B-GGUF",
   "slug": "mradermacher-fleetworker-e4b-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 76858108608,
   "storage_human": "76.9 GB",
+  "context_length": 65536,
   "base_model": "ThakiCloud/FleetWorker-E4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

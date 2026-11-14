@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shan2005/wan-gguf",
   "slug": "shan2005-wan-gguf",
   "author": "Shan2005",
@@ -31,14 +31,19 @@
   "parameters_human": "126.9M",
   "storage_bytes": 1184358277746,
   "storage_human": "1184.4 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:19:08.001Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

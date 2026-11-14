@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SergiioB/Nemotron-3.5-Bolt-74B-A9B-AutoRound-W4A16-G128-sym",
   "slug": "sergiiob-nemotron-3-5-bolt-74b-a9b-autoround-w4a16-g128-sym",
   "author": "SergiioB",
@@ -55,14 +55,19 @@
   "parameters_human": "11.73B",
   "storage_bytes": 43645070306,
   "storage_human": "43.6 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

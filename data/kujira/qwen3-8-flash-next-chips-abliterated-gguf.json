@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kujira/Qwen3.8-Flash-Next-CHiPS-Abliterated-GGUF",
   "slug": "kujira-qwen3-8-flash-next-chips-abliterated-gguf",
   "author": "Kujira",
@@ -32,14 +32,19 @@
   "parameters_human": "461312",
   "storage_bytes": 90205222746,
   "storage_human": "90.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

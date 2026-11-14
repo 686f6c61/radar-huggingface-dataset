@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SamMikaelson/Qwen3-1.7B-APIGEN-Local",
   "slug": "sammikaelson-qwen3-1-7b-apigen-local",
   "author": "SamMikaelson",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 6897002146,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-1.7b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

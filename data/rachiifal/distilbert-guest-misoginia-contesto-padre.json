@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rachiifal/distilbert-guest-misoginia-contesto-padre",
   "slug": "rachiifal-distilbert-guest-misoginia-contesto-padre",
   "author": "Rachiifal",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 803502881,
   "storage_human": "804 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:19:37.139Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

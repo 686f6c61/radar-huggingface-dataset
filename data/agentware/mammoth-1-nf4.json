@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Agentware/mammoth-1-nf4",
   "slug": "agentware-mammoth-1-nf4",
   "author": "Agentware",
@@ -36,14 +36,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 21385114979,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": "baselabs/mammoth-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

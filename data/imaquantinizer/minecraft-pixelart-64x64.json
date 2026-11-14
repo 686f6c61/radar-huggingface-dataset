@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imaquantinizer/minecraft-pixelart-64x64",
   "slug": "imaquantinizer-minecraft-pixelart-64x64",
   "author": "imaquantinizer",
@@ -24,6 +24,7 @@
   "parameters_human": "36.6M",
   "storage_bytes": 146524024,
   "storage_human": "147 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emwesoft/GLM-5.3-DFlash2-GGUF",
   "slug": "emwesoft-glm-5-3-dflash2-gguf",
   "author": "emwesoft",
@@ -31,14 +31,19 @@
   "parameters_human": "2.46B",
   "storage_bytes": 7552742720,
   "storage_human": "7.6 GB",
+  "context_length": 1048576,
   "base_model": "incoai/GLM-5.3-DFlash2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

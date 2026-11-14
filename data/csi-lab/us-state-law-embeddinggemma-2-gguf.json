@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CSI-lab/US-state-law-EmbeddingGemma-2-GGUF",
   "slug": "csi-lab-us-state-law-embeddinggemma-2-gguf",
   "author": "CSI-lab",
@@ -46,14 +46,19 @@
   "parameters_human": "271.0M",
   "storage_bytes": 181695040,
   "storage_human": "182 MB",
+  "context_length": 262144,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

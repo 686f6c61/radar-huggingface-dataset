@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BoldingBuilds/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Uncensored-ShimQuant-GGUF",
   "slug": "boldingbuilds-nvidia-nemotron-3-5-lightning-30b-a3b-uncensored-shimquant-gguf",
   "author": "BoldingBuilds",
@@ -38,14 +38,19 @@
   "parameters_human": "35.18B",
   "storage_bytes": 25269082400,
   "storage_human": "25.3 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

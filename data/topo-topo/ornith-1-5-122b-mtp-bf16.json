@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ToPo-ToPo/Ornith-1.5-122B-MTP-bf16",
   "slug": "topo-topo-ornith-1-5-122b-mtp-bf16",
   "author": "ToPo-ToPo",
@@ -30,6 +30,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5060168671,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "perplexity-ai/pplx-decider-v1.3",
   "slug": "perplexity-ai-pplx-decider-v1-3",
   "author": "perplexity-ai",
@@ -25,21 +25,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 25,
+  "likes": 27,
   "downloads_30d": 332,
-  "trending_score": 25,
+  "trending_score": 27,
   "parameters": 26085330160,
   "parameters_human": "26.09B",
   "storage_bytes": 54074364313,
   "storage_human": "54.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

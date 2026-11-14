@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dsturb/Qwen3.8-Flash-Next-FLARE-Abliterated-YaRN-512k",
   "slug": "dsturb-qwen3-8-flash-next-flare-abliterated-yarn-512k",
   "author": "Dsturb",
@@ -34,14 +34,19 @@
   "parameters_human": "15.1M",
   "storage_bytes": 106725635340,
   "storage_human": "106.7 GB",
+  "context_length": null,
   "base_model": "lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated, local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

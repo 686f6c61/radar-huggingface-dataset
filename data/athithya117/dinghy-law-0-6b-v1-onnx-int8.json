@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Athithya117/dinghy-law-0.6b-v1-onnx-int8",
   "slug": "athithya117-dinghy-law-0-6b-v1-onnx-int8",
   "author": "Athithya117",
@@ -24,6 +24,7 @@
   "parameters_human": null,
   "storage_bytes": 1133891947,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T02:19:29.439Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

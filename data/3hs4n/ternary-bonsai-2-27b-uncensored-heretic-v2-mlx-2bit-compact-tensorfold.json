@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3hs4n/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact-TensorFold",
   "slug": "3hs4n-ternary-bonsai-2-27b-uncensored-heretic-v2-mlx-2bit-compact-tensorfold",
   "author": "3hs4n",
@@ -40,6 +40,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 12272672206,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "3hs4n/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-mlx-2bit-compact",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

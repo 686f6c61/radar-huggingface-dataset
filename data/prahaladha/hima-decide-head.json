@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prahaladha/hima-decide-head",
   "slug": "prahaladha-hima-decide-head",
   "author": "Prahaladha",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 70485067,
   "storage_human": "70 MB",
+  "context_length": null,
   "base_model": "Prahaladha/hima-asr",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T03:06:39.774Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Youssef-ADOUIRI/actwise-minilm-l12-ft-int8",
   "slug": "youssef-adouiri-actwise-minilm-l12-ft-int8",
   "author": "Youssef-ADOUIRI",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 135998358,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

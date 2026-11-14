@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raratu/Onsei-Irodori-v4.1-Small-MF",
   "slug": "raratu-onsei-irodori-v4-1-small-mf",
   "author": "raratu",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 3707118935,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "Aratako/Irodori-TTS-v4.1-Small-MF",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

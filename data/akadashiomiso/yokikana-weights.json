@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AkadashiOmiso/yokiKana-weights",
   "slug": "akadashiomiso-yokikana-weights",
   "author": "AkadashiOmiso",
@@ -31,6 +31,7 @@
   "parameters_human": "1.41B",
   "storage_bytes": 6231687165,
   "storage_human": "6.2 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

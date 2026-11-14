@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArkAiLab-Adl/awgs-vision-v0.3",
   "slug": "arkailab-adl-awgs-vision-v0-3",
   "author": "ArkAiLab-Adl",
@@ -40,14 +40,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10306829382,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

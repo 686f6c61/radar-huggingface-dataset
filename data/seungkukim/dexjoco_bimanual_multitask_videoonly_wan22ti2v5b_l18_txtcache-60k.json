@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seungkukim/dexjoco_bimanual_multitask_videoonly_wan22ti2v5b_L18_txtcache-60k",
   "slug": "seungkukim-dexjoco_bimanual_multitask_videoonly_wan22ti2v5b_l18_txtcache-60k",
   "author": "seungkukim",
@@ -31,14 +31,19 @@
   "parameters_human": "5.70B",
   "storage_bytes": 11409093976,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

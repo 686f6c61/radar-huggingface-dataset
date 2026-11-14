@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Industry-Coder-27B-v2.0-i1-GGUF",
   "slug": "mradermacher-industry-coder-27b-v2-0-i1-gguf",
   "author": "mradermacher",
@@ -61,14 +61,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 218568046272,
   "storage_human": "218.6 GB",
+  "context_length": 262144,
   "base_model": "kataguru/Industry-Coder-27B-v2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trentzap/QTensor-Llama-3-8B-Demo",
   "slug": "trentzap-qtensor-llama-3-8b-demo",
   "author": "trentzap",
@@ -38,14 +38,19 @@
   "parameters_human": "2.48B",
   "storage_bytes": 4980551286,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T12:35:45.035Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

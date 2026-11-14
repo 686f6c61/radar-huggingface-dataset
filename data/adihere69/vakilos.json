@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adihere69/VakilOS",
   "slug": "adihere69-vakilos",
   "author": "Adihere69",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15404227222,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:40:47.239Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

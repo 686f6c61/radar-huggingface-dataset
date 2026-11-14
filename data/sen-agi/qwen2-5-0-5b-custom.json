@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SEN-AGI/qwen2.5-0.5b-custom",
   "slug": "sen-agi-qwen2-5-0-5b-custom",
   "author": "SEN-AGI",
@@ -33,14 +33,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 33606748007,
   "storage_human": "33.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SEN-AGI/Lura-1.0-500m",
+  "renamed_at": "2026-11-11T03:47:25.278Z",
   "benchmarks": [],
   "sources": []
 }

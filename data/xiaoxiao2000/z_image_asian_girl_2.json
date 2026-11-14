@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XiaoXiao2000/Z_Image_Asian_girl_2",
   "slug": "xiaoxiao2000-z_image_asian_girl_2",
   "author": "XiaoXiao2000",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 738972016,
   "storage_human": "739 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

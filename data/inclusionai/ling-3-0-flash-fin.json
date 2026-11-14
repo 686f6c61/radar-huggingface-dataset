@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inclusionAI/Ling-3.0-flash-Fin",
   "slug": "inclusionai-ling-3-0-flash-fin",
   "author": "inclusionAI",
@@ -35,14 +35,19 @@
   "parameters_human": "127.49B",
   "storage_bytes": 254993760348,
   "storage_human": "255.0 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

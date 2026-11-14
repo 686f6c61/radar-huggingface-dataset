@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "someonecooool/course-q-FrozenLake-v1-20261108",
   "slug": "someonecooool-course-q-frozenlake-v1-20261108",
   "author": "someonecooool",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4557,
   "storage_human": "4557 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

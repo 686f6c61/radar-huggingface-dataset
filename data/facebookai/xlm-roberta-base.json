@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FacebookAI/xlm-roberta-base",
   "slug": "facebookai-xlm-roberta-base",
   "author": "FacebookAI",
@@ -223,6 +223,7 @@
   "parameters_human": "278.9M",
   "storage_bytes": 6352424687,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -230,8 +231,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

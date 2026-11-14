@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ares-Realm-Studios/Mistral-Small-4-119B-2603",
   "slug": "ares-realm-studios-mistral-small-4-119b-2603",
   "author": "Ares-Realm-Studios",
@@ -75,14 +75,19 @@
   "parameters_human": "119.40B",
   "storage_bytes": 241885669246,
   "storage_human": "241.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

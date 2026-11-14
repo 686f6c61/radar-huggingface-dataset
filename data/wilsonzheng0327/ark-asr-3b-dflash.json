@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wilsonzheng0327/ARK-ASR-3B-dflash",
   "slug": "wilsonzheng0327-ark-asr-3b-dflash",
   "author": "wilsonzheng0327",
@@ -71,14 +71,19 @@
   "parameters_human": "496.5M",
   "storage_bytes": 993071224,
   "storage_human": "993 MB",
+  "context_length": null,
   "base_model": "AutoArk-AI/ARK-ASR-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

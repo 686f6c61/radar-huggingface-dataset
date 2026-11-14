@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tencent/Hy3",
   "slug": "tencent-hy3",
   "author": "tencent",
@@ -32,14 +32,19 @@
   "parameters_human": "298.79B",
   "storage_bytes": 597584438620,
   "storage_human": "597.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Grundik/omnivoice-abkhazian-finetuned",
   "slug": "grundik-omnivoice-abkhazian-finetuned",
   "author": "Grundik",
@@ -35,14 +35,19 @@
   "parameters_human": "612.6M",
   "storage_bytes": 7362666491,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "k2-fsa/OmniVoice",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

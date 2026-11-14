@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akonukbay/FLUX.1-schnell-me",
   "slug": "akonukbay-flux-1-schnell-me",
   "author": "akonukbay",
@@ -25,6 +25,7 @@
   "parameters_human": "11.89B",
   "storage_bytes": 43685996933,
   "storage_human": "43.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

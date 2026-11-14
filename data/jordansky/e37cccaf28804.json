@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jordansky/e37cccaf28804",
   "slug": "jordansky-e37cccaf28804",
   "author": "Jordansky",
@@ -23,14 +23,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 6805714880,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

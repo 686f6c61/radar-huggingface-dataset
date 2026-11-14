@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "usermma/Qwen3.8-Queen-27B-mlx-fp16",
   "slug": "usermma-qwen3-8-queen-27b-mlx-fp16",
   "author": "usermma",
@@ -39,6 +39,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812097209,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "aifeifei798/Qwen3.8-Queen-27B",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

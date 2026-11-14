@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vladers/granite-speech-5.0-470m-turboctc-GGUF",
   "slug": "vladers-granite-speech-5-0-470m-turboctc-gguf",
   "author": "vladers",
@@ -47,14 +47,19 @@
   "parameters_human": "473.0M",
   "storage_bytes": 5301459040,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

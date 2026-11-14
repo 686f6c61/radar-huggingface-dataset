@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp8-text-mlx",
   "slug": "shiftedx-qwen3-8-27b-aeon-ultimate-uncensored-mxfp8-text-mlx",
   "author": "Shiftedx",
@@ -35,6 +35,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 27759226090,
   "storage_human": "27.8 GB",
+  "context_length": null,
   "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

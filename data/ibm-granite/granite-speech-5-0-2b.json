@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibm-granite/granite-speech-5.0-2b",
   "slug": "ibm-granite-granite-speech-5-0-2b",
   "author": "ibm-granite",
@@ -51,14 +51,19 @@
   "parameters_human": "2.31B",
   "storage_bytes": 5042667080,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-1b-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

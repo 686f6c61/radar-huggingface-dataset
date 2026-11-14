@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Qwen-Image-InstantX-ControlNets",
   "slug": "comfy-org-qwen-image-instantx-controlnets",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 7770627248,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "InstantX/Qwen-Image-ControlNet-Inpainting, InstantX/Qwen-Image-ControlNet-Union",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

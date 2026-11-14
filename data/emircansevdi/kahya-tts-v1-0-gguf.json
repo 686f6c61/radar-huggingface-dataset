@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emircansevdi/Kahya-TTS-v1.0-GGUF",
   "slug": "emircansevdi-kahya-tts-v1-0-gguf",
   "author": "emircansevdi",
@@ -37,14 +37,19 @@
   "parameters_human": "912.4M",
   "storage_bytes": 6800386816,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2, AlicanKiraz0/Kizagan-TTS-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "emircansevdi/Kizagan-TTS-v1.0-GGUF",
+  "renamed_at": "2026-11-11T05:10:04.929Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kennethdot/kasanoma-whisper-tiny",
   "slug": "kennethdot-kasanoma-whisper-tiny",
   "author": "Kennethdot",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 302161222,
   "storage_human": "302 MB",
+  "context_length": null,
   "base_model": "devkyle/Akan-tiny-2000ms-1.5k, openai/whisper-tiny",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

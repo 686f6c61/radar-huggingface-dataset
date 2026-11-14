@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwopus3.5-9B-Coder-NPU2",
   "slug": "atomic-germ-qwopus3-5-9b-coder-npu2",
   "author": "Atomic-Germ",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 103001293062,
   "storage_human": "103.0 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.5-9B-v3.5",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

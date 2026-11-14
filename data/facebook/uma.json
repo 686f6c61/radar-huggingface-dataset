@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "facebook/UMA",
   "slug": "facebook-uma",
   "author": "facebook",
@@ -17,19 +17,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 622,
+  "likes": 623,
   "downloads_30d": 200,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 46390772525,
   "storage_human": "46.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

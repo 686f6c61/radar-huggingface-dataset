@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4-TunedMTP",
   "slug": "windowsxp811203-qwen3-8-flash-next-abliterated-nvfp4-tunedmtp",
   "author": "windowsxp811203",
@@ -47,14 +47,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 135223995885,
   "storage_human": "135.2 GB",
+  "context_length": null,
   "base_model": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4, doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

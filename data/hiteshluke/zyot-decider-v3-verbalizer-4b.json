@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hiteshluke/zyot-decider-v3-verbalizer-4b",
   "slug": "hiteshluke-zyot-decider-v3-verbalizer-4b",
   "author": "hiteshluke",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 164636954,
   "storage_human": "165 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:24:37.605Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "typed-decision boolean",

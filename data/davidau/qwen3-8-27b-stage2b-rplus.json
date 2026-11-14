@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.8-27B-stage2b-rplus",
   "slug": "davidau-qwen3-8-27b-stage2b-rplus",
   "author": "DavidAU",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:41:33.147Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

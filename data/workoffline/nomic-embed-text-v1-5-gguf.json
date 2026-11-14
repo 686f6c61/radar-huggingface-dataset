@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WorkOffline/nomic-embed-text-v1.5-GGUF",
   "slug": "workoffline-nomic-embed-text-v1-5-gguf",
   "author": "WorkOffline",
@@ -28,14 +28,19 @@
   "parameters_human": "136.7M",
   "storage_bytes": 146146432,
   "storage_human": "146 MB",
+  "context_length": 2048,
   "base_model": "nomic-ai/nomic-embed-text-v1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

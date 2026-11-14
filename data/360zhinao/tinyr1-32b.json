@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "360ZhiNao/TinyR1-32B",
   "slug": "360zhinao-tinyr1-32b",
   "author": "360ZhiNao",
@@ -27,14 +27,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65539263873,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

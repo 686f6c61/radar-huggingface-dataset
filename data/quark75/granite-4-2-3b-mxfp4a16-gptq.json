@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quark75/granite-4.2-3b-MXFP4A16-GPTQ",
   "slug": "quark75-granite-4-2-3b-mxfp4a16-gptq",
   "author": "quark75",
@@ -40,6 +40,7 @@
   "parameters_human": "3.66B",
   "storage_bytes": 5402437520,
   "storage_human": "5.4 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

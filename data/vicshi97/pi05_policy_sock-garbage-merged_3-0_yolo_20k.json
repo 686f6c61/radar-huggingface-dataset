@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vicshi97/pi05_policy_sock-garbage-merged_3.0_yolo_20k",
   "slug": "vicshi97-pi05_policy_sock-garbage-merged_3-0_yolo_20k",
   "author": "vicshi97",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 8564346242,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

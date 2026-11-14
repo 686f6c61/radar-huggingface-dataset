@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Waseem2106/SmolLM-135M-SigLIP-VLM-VQA-10K",
   "slug": "waseem2106-smollm-135m-siglip-vlm-vqa-10k",
   "author": "Waseem2106",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 7372745,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:10:17.401Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

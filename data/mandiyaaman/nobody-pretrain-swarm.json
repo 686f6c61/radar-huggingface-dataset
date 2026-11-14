@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mandiyaaman/nobody-pretrain-swarm",
   "slug": "mandiyaaman-nobody-pretrain-swarm",
   "author": "mandiyaaman",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 294318866818,
   "storage_human": "294.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T04:59:37.817Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

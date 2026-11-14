@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MuXodious/Qwen3.5-0.8B-heretic-2.0-SOMPOA-upstream-test-LORA",
   "slug": "muxodious-qwen3-5-0-8b-heretic-2-0-sompoa-upstream-test-lora",
   "author": "MuXodious",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 23607272,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T09:20:31.903Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

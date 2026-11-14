@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AJCThree/OLMo-2-0325-32B-Instruct-openvino-4bit",
   "slug": "ajcthree-olmo-2-0325-32b-instruct-openvino-4bit",
   "author": "AJCThree",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 17244717649,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-0325-32B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

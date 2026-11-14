@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vosldtgbj/project-llm-rlvr-v1-step-25",
   "slug": "vosldtgbj-project-llm-rlvr-v1-step-25",
   "author": "vosldtgbj",
@@ -42,14 +42,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951722469,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "vosldtgbj/project-llm-sft-v3-l2-h2p0-seed20261006",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

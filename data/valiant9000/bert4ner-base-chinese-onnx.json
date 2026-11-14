@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "valiant9000/bert4ner-base-chinese-onnx",
   "slug": "valiant9000-bert4ner-base-chinese-onnx",
   "author": "valiant9000",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 406945730,
   "storage_human": "407 MB",
+  "context_length": null,
   "base_model": "shibing624/bert4ner-base-chinese",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

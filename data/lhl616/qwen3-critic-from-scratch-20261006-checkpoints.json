@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lhl616/qwen3-critic-from-scratch-20261006-checkpoints",
   "slug": "lhl616-qwen3-critic-from-scratch-20261006-checkpoints",
   "author": "lhl616",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 67486568034,
   "storage_human": "67.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

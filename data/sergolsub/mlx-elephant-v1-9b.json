@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sergolsub/mlx-elephant-v1-9B",
   "slug": "sergolsub-mlx-elephant-v1-9b",
   "author": "sergolsub",
@@ -28,6 +28,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11400128140,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "baselabs/elephant-1",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

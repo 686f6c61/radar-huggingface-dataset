@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sentinel7/krea2",
   "slug": "sentinel7-krea2",
   "author": "Sentinel7",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 90095959289,
   "storage_human": "90.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

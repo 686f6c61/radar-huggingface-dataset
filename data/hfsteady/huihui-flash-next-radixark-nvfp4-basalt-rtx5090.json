@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-Basalt-RTX5090",
   "slug": "hfsteady-huihui-flash-next-radixark-nvfp4-basalt-rtx5090",
   "author": "hfsteady",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 262930633845,
   "storage_human": "262.9 GB",
+  "context_length": null,
   "base_model": "edp1096/Huihui-RadixArk-Qwen3.8-Flash-Next-abliterated-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

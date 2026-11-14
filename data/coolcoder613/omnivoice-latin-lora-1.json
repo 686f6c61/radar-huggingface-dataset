@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coolcoder613/omnivoice-latin-lora-1",
   "slug": "coolcoder613-omnivoice-latin-lora-1",
   "author": "coolcoder613",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 107596368,
   "storage_human": "108 MB",
+  "context_length": null,
   "base_model": "k2-fsa/OmniVoice",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

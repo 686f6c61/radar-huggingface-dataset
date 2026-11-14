@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oxide-lab/TripoSG",
   "slug": "oxide-lab-triposg",
   "author": "oxide-lab",
@@ -34,14 +34,19 @@
   "parameters_human": "1.99B",
   "storage_bytes": 7946503588,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "VAST-AI/TripoSG",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

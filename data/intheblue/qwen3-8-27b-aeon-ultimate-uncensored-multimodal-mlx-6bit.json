@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-6bit",
   "slug": "intheblue-qwen3-8-27b-aeon-ultimate-uncensored-multimodal-mlx-6bit",
   "author": "intheblue",
@@ -49,6 +49,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 22797869461,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VisualInference/Qwen3.8-27B-AEON-Ultimate-Multimodal-MLX-6bit",
+  "renamed_at": "2026-11-11T05:41:33.105Z",
   "benchmarks": [],
   "sources": [
     {

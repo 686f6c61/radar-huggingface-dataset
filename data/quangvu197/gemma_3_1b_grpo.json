@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quangvu197/Gemma_3_1b_GRPO",
   "slug": "quangvu197-gemma_3_1b_grpo",
   "author": "quangvu197",
@@ -28,6 +28,7 @@
   "parameters_human": "999.9M",
   "storage_bytes": 4764594642,
   "storage_human": "4.8 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

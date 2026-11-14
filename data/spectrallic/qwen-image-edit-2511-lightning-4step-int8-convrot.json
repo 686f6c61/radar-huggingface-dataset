@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Spectrallic/Qwen-Image-Edit-2511-Lightning-4step-int8-convrot",
   "slug": "spectrallic-qwen-image-edit-2511-lightning-4step-int8-convrot",
   "author": "Spectrallic",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 20502176867,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511, lightx2v/Qwen-Image-Edit-2511-Lightning",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

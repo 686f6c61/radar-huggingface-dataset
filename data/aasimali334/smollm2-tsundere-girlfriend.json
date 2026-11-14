@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aasimali334/smollm2-tsundere-girlfriend",
   "slug": "aasimali334-smollm2-tsundere-girlfriend",
   "author": "Aasimali334",
@@ -23,14 +23,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 32568370376,
   "storage_human": "32.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

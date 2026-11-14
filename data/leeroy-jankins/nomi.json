@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leeroy-jankins/nomi",
   "slug": "leeroy-jankins-nomi",
   "author": "leeroy-jankins",
@@ -36,14 +36,19 @@
   "parameters_human": "136.7M",
   "storage_bytes": 84106624,
   "storage_human": "84 MB",
+  "context_length": 2048,
   "base_model": "nomic-ai/nomic-embed-text-v1.5-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

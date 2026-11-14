@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/granite-4.1-3b-llmon-preview-imatrix-GGUF",
   "slug": "liodon-ai-granite-4-1-3b-llmon-preview-imatrix-gguf",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "3.66B",
   "storage_bytes": 16872451040,
   "storage_human": "16.9 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.1-3b-llmon-preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

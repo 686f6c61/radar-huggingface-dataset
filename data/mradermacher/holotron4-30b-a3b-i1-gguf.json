@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Holotron4-30B-A3B-i1-GGUF",
   "slug": "mradermacher-holotron4-30b-a3b-i1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 459521152672,
   "storage_human": "459.5 GB",
+  "context_length": 1048576,
   "base_model": "Hcompany/Holotron4-30B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

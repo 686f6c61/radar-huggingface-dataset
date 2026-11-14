@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loraforge/deepseek-v4-pro-qwen3.5-9b-heretic-jackrong-r4",
   "slug": "loraforge-deepseek-v4-pro-qwen3-5-9b-heretic-jackrong-r4",
   "author": "loraforge",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 25911619,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yagmurtuncer/bert-base-turkish-clinical-ner",
   "slug": "yagmurtuncer-bert-base-turkish-clinical-ner",
   "author": "yagmurtuncer",
@@ -36,14 +36,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 220087502,
   "storage_human": "220 MB",
+  "context_length": null,
   "base_model": "akdeniz27/bert-base-turkish-cased-ner",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "horiuchinobuyuki/Qwick-3.5-9B-FP8",
   "slug": "horiuchinobuyuki-qwick-3-5-9b-fp8",
   "author": "horiuchinobuyuki",
@@ -41,14 +41,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11927545797,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "horiuchinobuyuki/Qwick-3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

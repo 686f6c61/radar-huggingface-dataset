@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qtum/Qwen3-Coder-30B-A3B-Audit",
   "slug": "qtum-qwen3-coder-30b-a3b-audit",
   "author": "qtum",
@@ -40,14 +40,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61077997602,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:12:07.917Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

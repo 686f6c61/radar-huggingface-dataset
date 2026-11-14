@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/OmniGen2-W8A16-W4A16",
   "slug": "joaozaokk-omnigen2-w8a16-w4a16",
   "author": "JoaoZaokk",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 7269411934,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "OmniGen2/OmniGen2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

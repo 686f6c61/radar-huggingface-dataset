@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "7ven7o/Qwen3.5-9B-Base-GGUF",
   "slug": "7ven7o-qwen3-5-9b-base-gguf",
   "author": "7ven7o",
@@ -27,14 +27,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 5488553440,
   "storage_human": "5.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BoldingBuilds/GLM-5.3-Flash-Uncensored-GGUF",
   "slug": "boldingbuilds-glm-5-3-flash-uncensored-gguf",
   "author": "BoldingBuilds",
@@ -37,14 +37,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 169019461728,
   "storage_human": "169.0 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

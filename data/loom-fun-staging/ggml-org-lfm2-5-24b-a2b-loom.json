@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-fun-staging/ggml-org-LFM2.5-24B-A2B-loom",
   "slug": "loom-fun-staging-ggml-org-lfm2-5-24b-a2b-loom",
   "author": "loom-fun-staging",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "ggml-org/LFM2.5-24B-A2B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

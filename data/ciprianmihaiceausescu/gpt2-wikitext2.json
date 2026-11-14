@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ciprianmihaiceausescu/gpt2-wikitext2",
   "slug": "ciprianmihaiceausescu-gpt2-wikitext2",
   "author": "ciprianmihaiceausescu",
@@ -31,14 +31,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 6968844113,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

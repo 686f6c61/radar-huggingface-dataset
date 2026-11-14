@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vtava/Laya-MemoryFusion-V3",
   "slug": "vtava-laya-memoryfusion-v3",
   "author": "vtava",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 350735223,
   "storage_human": "351 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T05:43:31.457Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

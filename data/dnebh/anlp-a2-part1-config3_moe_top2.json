@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dnebh/anlp-a2-part1-config3_moe_top2",
   "slug": "dnebh-anlp-a2-part1-config3_moe_top2",
   "author": "dnebh",
@@ -22,14 +22,19 @@
   "parameters_human": "33.5M",
   "storage_bytes": 146333468,
   "storage_human": "146 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

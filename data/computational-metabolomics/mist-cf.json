@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "computational-metabolomics/mist-cf",
   "slug": "computational-metabolomics-mist-cf",
   "author": "computational-metabolomics",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 2533056,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:44:57.581Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

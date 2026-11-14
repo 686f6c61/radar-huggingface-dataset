@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DJ-Research/practice_deja_vu_1-gemma-4-31b-it",
   "slug": "dj-research-practice_deja_vu_1-gemma-4-31b-it",
   "author": "DJ-Research",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 4308290565,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

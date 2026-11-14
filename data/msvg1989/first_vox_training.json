@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MSVG1989/first_vox_training",
   "slug": "msvg1989-first_vox_training",
   "author": "MSVG1989",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 82914973995,
   "storage_human": "82.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

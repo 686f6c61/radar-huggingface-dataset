@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onelastkissforme/dadeum-gec-base",
   "slug": "onelastkissforme-dadeum-gec-base",
   "author": "onelastkissforme",
@@ -36,14 +36,19 @@
   "parameters_human": "123.9M",
   "storage_bytes": 500822572,
   "storage_human": "501 MB",
+  "context_length": null,
   "base_model": "gogamza/kobart-base-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

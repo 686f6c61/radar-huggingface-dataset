@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "27Kushal/PIXEL-Srishti-Segmentation",
   "slug": "27kushal-pixel-srishti-segmentation",
   "author": "27Kushal",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 262071667,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

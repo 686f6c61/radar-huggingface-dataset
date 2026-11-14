@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lyber-ai/MiniMax-M3.1-Flash-UNCENSORED-NVFP4",
   "slug": "lyber-ai-minimax-m3-1-flash-uncensored-nvfp4",
   "author": "lyber-ai",
@@ -57,14 +57,19 @@
   "parameters_human": "220.49B",
   "storage_bytes": 250127284237,
   "storage_human": "250.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

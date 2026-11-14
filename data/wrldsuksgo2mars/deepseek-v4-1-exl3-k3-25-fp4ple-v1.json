@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-FP4PLE-v1",
   "slug": "wrldsuksgo2mars-deepseek-v4-1-exl3-k3-25-fp4ple-v1",
   "author": "wrldsuksgo2mars",
@@ -29,14 +29,19 @@
   "parameters_human": "221.25B",
   "storage_bytes": 349233063913,
   "storage_human": "349.2 GB",
+  "context_length": null,
   "base_model": "wrldsuksgo2mars/DeepSeek-V4.1-EXL3-K3.25-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T09:08:07.055Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rbinrs/LongWriter-glm4-9b-abliterated-GGUF",
   "slug": "rbinrs-longwriter-glm4-9b-abliterated-gguf",
   "author": "rbinrs",
@@ -42,14 +42,19 @@
   "parameters_human": "9.40B",
   "storage_bytes": 92589066784,
   "storage_human": "92.6 GB",
+  "context_length": 1048576,
   "base_model": "byroneverson/LongWriter-glm4-9b-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

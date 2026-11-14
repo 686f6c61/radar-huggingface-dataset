@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sjettTT/qwen3.8-flash-next_p150x4",
   "slug": "sjetttt-qwen3-8-flash-next_p150x4",
   "author": "sjettTT",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 12453246596,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

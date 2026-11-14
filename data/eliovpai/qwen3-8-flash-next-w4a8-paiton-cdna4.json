@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EliovpAI/Qwen3.8-Flash-Next-W4A8-Paiton-CDNA4",
   "slug": "eliovpai-qwen3-8-flash-next-w4a8-paiton-cdna4",
   "author": "EliovpAI",
@@ -42,14 +42,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 129317978872,
   "storage_human": "129.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

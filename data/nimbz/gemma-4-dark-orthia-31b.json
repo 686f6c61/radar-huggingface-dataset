@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nimbz/Gemma-4-Dark-Orthia-31B",
   "slug": "nimbz-gemma-4-dark-orthia-31b",
   "author": "Nimbz",
@@ -46,14 +46,19 @@
   "parameters_human": "32.68B",
   "storage_bytes": 65415159829,
   "storage_human": "65.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it, Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1, TheDrummer/Artemis-31B-v1.2, Ateron/Gemma-4-MoonGem-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

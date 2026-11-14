@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TokenBender/execution-midband-RL-v2",
   "slug": "tokenbender-execution-midband-rl-v2",
   "author": "TokenBender",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 3377832815,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.7-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

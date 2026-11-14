@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lendmindltd/lendmind-intake-4b",
   "slug": "lendmindltd-lendmind-intake-4b",
   "author": "lendmindltd",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 243914016,
   "storage_human": "244 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",

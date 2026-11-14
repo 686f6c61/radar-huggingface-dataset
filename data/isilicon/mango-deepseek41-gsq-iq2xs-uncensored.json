@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isilicon/mango-deepseek41-gsq-iq2xs-uncensored",
   "slug": "isilicon-mango-deepseek41-gsq-iq2xs-uncensored",
   "author": "isilicon",
@@ -31,14 +31,19 @@
   "parameters_human": "551.88B",
   "storage_bytes": 155226283626,
   "storage_human": "155.2 GB",
+  "context_length": 1048576,
   "base_model": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

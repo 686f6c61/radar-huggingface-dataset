@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mukaddamzaid/Muslim-1-2B-MLX-8bit",
   "slug": "mukaddamzaid-muslim-1-2b-mlx-8bit",
   "author": "mukaddamzaid",
@@ -41,6 +41,7 @@
   "parameters_human": "4.63B",
   "storage_bytes": 8694294488,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T05:09:25.217Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

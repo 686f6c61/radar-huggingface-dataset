@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DragonBophades/WichtelHui-Qwen3.8-27B-SLERP",
   "slug": "dragonbophades-wichtelhui-qwen3-8-27b-slerp",
   "author": "DragonBophades",
@@ -38,14 +38,19 @@
   "parameters_human": "27.83B",
   "storage_bytes": 55687884511,
   "storage_human": "55.7 GB",
+  "context_length": null,
   "base_model": "nbeerbower/Wichtel-Qwen3.6-27B, huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

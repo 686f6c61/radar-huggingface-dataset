@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/Fibo-1.5_GGUFs",
   "slug": "realrebelai-fibo-1-5_ggufs",
   "author": "realrebelai",
@@ -33,14 +33,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 121037231746,
   "storage_human": "121.0 GB",
+  "context_length": null,
   "base_model": "briaai/Fibo-1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

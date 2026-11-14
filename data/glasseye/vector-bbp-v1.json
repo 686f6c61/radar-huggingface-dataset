@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GLASSEYE/vector-bbp-v1",
   "slug": "glasseye-vector-bbp-v1",
   "author": "GLASSEYE",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 83946192,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/gemma-4-31B-it-speculator.eagle3-NVFP4",
   "slug": "aeon-7-gemma-4-31b-it-speculator-eagle3-nvfp4",
   "author": "AEON-7",
@@ -66,14 +66,19 @@
   "parameters_human": "2.24B",
   "storage_bytes": 3530919944,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "RedHatAI/gemma-4-31B-it-speculator.eagle3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

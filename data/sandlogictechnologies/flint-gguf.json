@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SandLogicTechnologies/flint-GGUF",
   "slug": "sandlogictechnologies-flint-gguf",
   "author": "SandLogicTechnologies",
@@ -37,14 +37,19 @@
   "parameters_human": "39.79B",
   "storage_bytes": 61709872032,
   "storage_human": "61.7 GB",
+  "context_length": 262144,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/svd-safety-llama2_7b_chat_up_svdllm_jbbresp13_finetuned_keep_0p60",
   "slug": "jeesup-svd-safety-llama2_7b_chat_up_svdllm_jbbresp13_finetuned_keep_0p60",
   "author": "Jeesup",
@@ -34,14 +34,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13520010833,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HongWeiXu/umi-arena-act-s708000-374a5d6a-646ba2ae",
   "slug": "hongweixu-umi-arena-act-s708000-374a5d6a-646ba2ae",
   "author": "HongWeiXu",
@@ -22,14 +22,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206476032,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

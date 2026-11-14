@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omkarsatapathy/Tiny-Storyteller-MoE-59M-A19M",
   "slug": "omkarsatapathy-tiny-storyteller-moe-59m-a19m",
   "author": "Omkarsatapathy",
@@ -38,14 +38,19 @@
   "parameters_human": "59.0M",
   "storage_bytes": 134496011,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

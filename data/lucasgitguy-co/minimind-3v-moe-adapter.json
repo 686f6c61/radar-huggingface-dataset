@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucasgitguy-co/minimind-3v-moe-adapter",
   "slug": "lucasgitguy-co-minimind-3v-moe-adapter",
   "author": "Lucasgitguy-co",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 15972840,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

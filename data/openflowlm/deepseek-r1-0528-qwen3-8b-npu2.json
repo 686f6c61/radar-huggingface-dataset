@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2",
   "slug": "openflowlm-deepseek-r1-0528-qwen3-8b-npu2",
   "author": "OpenFlowLM",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 11952384727,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

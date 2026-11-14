@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reyansh38771/unconst____uid150____hk5FBwq",
   "slug": "reyansh38771-unconst____uid150____hk5fbwq",
   "author": "reyansh38771",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "vera6/affine-5g4yy75zuz-t6",
   "formats": [],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:39:20.943Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

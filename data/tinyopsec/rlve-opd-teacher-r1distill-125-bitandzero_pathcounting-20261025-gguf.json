@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/rlve-opd-teacher-R1Distill-125-BitAndZero_PathCounting-20261025-GGUF",
   "slug": "tinyopsec-rlve-opd-teacher-r1distill-125-bitandzero_pathcounting-20261025-gguf",
   "author": "tinyopsec",
@@ -30,14 +30,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 17497102080,
   "storage_human": "17.5 GB",
+  "context_length": 131072,
   "base_model": "davidheineman/rlve-opd-teacher-R1Distill-125-BitAndZero_PathCounting-20261025",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

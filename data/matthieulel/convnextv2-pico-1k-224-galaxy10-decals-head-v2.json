@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matthieulel/convnextv2-pico-1k-224-galaxy10-decals-head-v2",
   "slug": "matthieulel-convnextv2-pico-1k-224-galaxy10-decals-head-v2",
   "author": "matthieulel",
@@ -36,14 +36,19 @@
   "parameters_human": "8.6M",
   "storage_bytes": 34250088,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "facebook/convnextv2-pico-1k-224",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

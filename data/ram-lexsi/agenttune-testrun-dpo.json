@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ram-lexsi/agenttune-testrun-DPO",
   "slug": "ram-lexsi-agenttune-testrun-dpo",
   "author": "ram-lexsi",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 33508337,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

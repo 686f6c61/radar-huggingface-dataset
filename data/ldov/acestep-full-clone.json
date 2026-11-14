@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/acestep-full-clone",
   "slug": "ldov-acestep-full-clone",
   "author": "ldov",
@@ -54,14 +54,19 @@
   "parameters_human": "662.9M",
   "storage_bytes": 220737965920,
   "storage_human": "220.7 GB",
+  "context_length": null,
   "base_model": "ACE-Step/Ace-Step1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:39:32.207Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

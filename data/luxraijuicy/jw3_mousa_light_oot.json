@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuxrAIjuicy/JW3_Mousa_Light_OOT",
   "slug": "luxraijuicy-jw3_mousa_light_oot",
   "author": "LuxrAIjuicy",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 55234807,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

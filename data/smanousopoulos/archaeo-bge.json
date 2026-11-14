@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smanousopoulos/archaeo-bge",
   "slug": "smanousopoulos-archaeo-bge",
   "author": "smanousopoulos",
@@ -29,14 +29,19 @@
   "parameters_human": "335.1M",
   "storage_bytes": 8027405503,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-large-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

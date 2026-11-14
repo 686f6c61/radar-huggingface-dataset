@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1beb/clef-flash-radiance",
   "slug": "1beb-clef-flash-radiance",
   "author": "1beb",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 62467702784,
   "storage_human": "62.5 GB",
+  "context_length": null,
   "base_model": "cloudflare/clef-flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

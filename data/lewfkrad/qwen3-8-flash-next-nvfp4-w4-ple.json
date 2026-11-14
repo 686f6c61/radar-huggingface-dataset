@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lewfkrad/Qwen3.8-Flash-Next-NVFP4-W4-PLE",
   "slug": "lewfkrad-qwen3-8-flash-next-nvfp4-w4-ple",
   "author": "Lewfkrad",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 28800138240,
   "storage_human": "28.8 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

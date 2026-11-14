@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Guile/Llama-3-8B-Lexi-Uncensored",
   "slug": "guile-llama-3-8b-lexi-uncensored",
   "author": "Guile",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 17671168912,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Andynsn/SFLD-OneRec-1of3",
   "slug": "andynsn-sfld-onerec-1of3",
   "author": "Andynsn",
@@ -24,14 +24,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 29608456694,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:34:25.843Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

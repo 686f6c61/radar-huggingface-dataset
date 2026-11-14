@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CreitinGameplays/Laguna-XS-2.1-Fable-5-Distill",
   "slug": "creitingameplays-laguna-xs-2-1-fable-5-distill",
   "author": "CreitinGameplays",
@@ -36,14 +36,19 @@
   "parameters_human": "33.44B",
   "storage_bytes": 66889022016,
   "storage_human": "66.9 GB",
+  "context_length": null,
   "base_model": "poolside/Laguna-XS-2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:07:34.187Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

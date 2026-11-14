@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OmarCodePlay/Text-to-json",
   "slug": "omarcodeplay-text-to-json",
   "author": "OmarCodePlay",
@@ -23,14 +23,19 @@
   "parameters_human": "5.5M",
   "storage_bytes": 451939253,
   "storage_human": "452 MB",
+  "context_length": 384,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

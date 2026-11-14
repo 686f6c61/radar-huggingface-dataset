@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sriq-ai/sriq-MiniCPM5-2B-v1.5-GGUF",
   "slug": "sriq-ai-sriq-minicpm5-2b-v1-5-gguf",
   "author": "sriq-ai",
@@ -39,14 +39,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 19490126312,
   "storage_human": "19.5 GB",
+  "context_length": 131072,
   "base_model": "sriq-ai/sriq-MiniCPM5-2B-v1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

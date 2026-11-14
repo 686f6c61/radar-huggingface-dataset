@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanjeevafk/hybrid-edge-multimodal-lfm3-qwen2vl",
   "slug": "sanjeevafk-hybrid-edge-multimodal-lfm3-qwen2vl",
   "author": "sanjeevafk",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

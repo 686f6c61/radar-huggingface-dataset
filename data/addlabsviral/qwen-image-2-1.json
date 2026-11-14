@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addlabsviral/qwen-image-2-1",
   "slug": "addlabsviral-qwen-image-2-1",
   "author": "addlabsviral",
@@ -30,6 +30,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 34497951415,
   "storage_human": "34.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:57:12.685Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

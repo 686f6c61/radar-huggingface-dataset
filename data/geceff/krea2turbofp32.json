@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geceff/Krea2TurboFp32",
   "slug": "geceff-krea2turbofp32",
   "author": "geceff",
@@ -24,6 +24,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 277718035635,
   "storage_human": "277.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

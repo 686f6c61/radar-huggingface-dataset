@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SamSankar/tiny-aya-fire-3.35b-tamil-tanglish-clinical-triage-lora",
   "slug": "samsankar-tiny-aya-fire-3-35b-tamil-tanglish-clinical-triage-lora",
   "author": "SamSankar",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 1489244092,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-fire",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

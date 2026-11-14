@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PS4Research/Hk6vAazgWreoKsXr",
   "slug": "ps4research-hk6vaazgwreoksxr",
   "author": "PS4Research",
@@ -35,14 +35,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 64467127296,
   "storage_human": "64.5 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3.1-32B-Think",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HarshilDaGoat/gem-recommendation-writer",
   "slug": "harshildagoat-gem-recommendation-writer",
   "author": "HarshilDaGoat",
@@ -37,14 +37,19 @@
   "parameters_human": "77.0M",
   "storage_bytes": 307872313,
   "storage_human": "308 MB",
+  "context_length": null,
   "base_model": "google/flan-t5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

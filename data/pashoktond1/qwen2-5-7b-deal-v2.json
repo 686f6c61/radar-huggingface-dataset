@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pashoktond1/qwen2.5-7b-deal-v2",
   "slug": "pashoktond1-qwen2-5-7b-deal-v2",
   "author": "pashoktond1",
@@ -40,6 +40,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 13104612952,
   "storage_human": "13.1 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

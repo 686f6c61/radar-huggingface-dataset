@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ericrisco/gemma-maia-e4b",
   "slug": "ericrisco-gemma-maia-e4b",
   "author": "ericrisco",
@@ -39,6 +39,7 @@
   "parameters_human": "7.52B",
   "storage_bytes": 6204846330,
   "storage_human": "6.2 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

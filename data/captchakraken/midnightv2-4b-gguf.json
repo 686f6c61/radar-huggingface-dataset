@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CaptchaKraken/MidnightV2-4B-GGUF",
   "slug": "captchakraken-midnightv2-4b-gguf",
   "author": "CaptchaKraken",
@@ -31,14 +31,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 11842123884,
   "storage_human": "11.8 GB",
+  "context_length": 262144,
   "base_model": "CaptchaKraken/MidnightV2-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

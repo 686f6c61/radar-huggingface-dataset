@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benni-ben/Rogue-HH-Instruct",
   "slug": "benni-ben-rogue-hh-instruct",
   "author": "benni-ben",
@@ -42,14 +42,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 723674525,
   "storage_human": "724 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM-360M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:53:54.916Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

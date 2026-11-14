@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/4BeastsOfApocalypse-APEX-GGUF",
   "slug": "oliviarossi-4beastsofapocalypse-apex-gguf",
   "author": "OliviaRossi",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 94419647488,
   "storage_human": "94.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:36:14.695Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

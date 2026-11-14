@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "idle-intelligence/t0-alpha-q4_0-webgpu",
   "slug": "idle-intelligence-t0-alpha-q4_0-webgpu",
   "author": "idle-intelligence",
@@ -34,14 +34,19 @@
   "parameters_human": "101.6M",
   "storage_bytes": 58604399,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "theforecastingcompany/t0-alpha",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Time Series Forecasting",

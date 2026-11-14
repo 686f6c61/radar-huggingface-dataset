@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gulding/EmsyAI",
   "slug": "gulding-emsyai",
   "author": "gulding",
@@ -34,14 +34,19 @@
   "parameters_human": "100.1M",
   "storage_bytes": 7072422420,
   "storage_human": "7.1 GB",
+  "context_length": 1024,
   "base_model": "gulding/EmsyAI",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

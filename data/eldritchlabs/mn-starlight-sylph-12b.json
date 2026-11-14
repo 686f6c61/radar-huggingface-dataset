@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EldritchLabs/MN-Starlight-Sylph-12B",
   "slug": "eldritchlabs-mn-starlight-sylph-12b",
   "author": "EldritchLabs",
@@ -70,14 +70,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24512685601,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "arbazsiddiqui/Ozan-v1-12B, Lambent/Arsenic-Shahrazad-12B-v4.5, IggyLux/MN-VelvetCafe-RP-12B-V2, Retreatcost/Mistral-Nemo-Base-2407-ChatML, shrugging-shoulders/Amberlight-Lux-12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

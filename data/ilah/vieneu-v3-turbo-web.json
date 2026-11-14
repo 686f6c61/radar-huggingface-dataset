@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ilah/vieneu-v3-turbo-web",
   "slug": "ilah-vieneu-v3-turbo-web",
   "author": "Ilah",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 699363918,
   "storage_human": "699 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

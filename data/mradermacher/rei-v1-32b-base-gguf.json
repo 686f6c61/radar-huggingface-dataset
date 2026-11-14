@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Rei-V1-32B-Base-GGUF",
   "slug": "mradermacher-rei-v1-32b-base-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "32.57B",
   "storage_bytes": 222871114144,
   "storage_human": "222.9 GB",
+  "context_length": 32768,
   "base_model": "Delta-Vector/Rei-V1-32B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minsu0567/IAD-X1-GRPO-5-no",
   "slug": "minsu0567-iad-x1-grpo-5-no",
   "author": "minsu0567",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:13:47.506Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

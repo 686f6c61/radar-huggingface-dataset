@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "David-MRI-ORG/mednext-3dconvnext-baseline-breast",
   "slug": "david-mri-org-mednext-3dconvnext-baseline-breast",
   "author": "David-MRI-ORG",
@@ -38,14 +38,19 @@
   "parameters_human": "8.1M",
   "storage_bytes": 298369452,
   "storage_human": "298 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

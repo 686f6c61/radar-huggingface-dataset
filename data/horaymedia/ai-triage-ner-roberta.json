@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HoraYMedia/ai-triage-ner-roberta",
   "slug": "horaymedia-ai-triage-ner-roberta",
   "author": "HoraYMedia",
@@ -38,14 +38,19 @@
   "parameters_human": "125.4M",
   "storage_bytes": 501595540,
   "storage_human": "502 MB",
+  "context_length": null,
   "base_model": "PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

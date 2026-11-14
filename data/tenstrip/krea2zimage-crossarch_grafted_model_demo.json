@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TenStrip/Krea2Zimage-CrossArch_Grafted_Model_Demo",
   "slug": "tenstrip-krea2zimage-crossarch_grafted_model_demo",
   "author": "TenStrip",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 12314754737,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/z_image_turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

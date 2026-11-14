@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2-Audio-7B-Instruct-Ultrasuite-GGUF",
   "slug": "mradermacher-qwen2-audio-7b-instruct-ultrasuite-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "7.75B",
   "storage_bytes": 71688616576,
   "storage_human": "71.7 GB",
+  "context_length": 8192,
   "base_model": "SAA-Lab/Qwen2-Audio-7B-Instruct-Ultrasuite",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

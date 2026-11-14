@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bombdefuser-124/Qwen3.8-27B-heretic-ara-heretic-2.00bpw",
   "slug": "bombdefuser-124-qwen3-8-27b-heretic-ara-heretic-2-00bpw",
   "author": "bombdefuser-124",
@@ -39,14 +39,19 @@
   "parameters_human": "5.39B",
   "storage_bytes": 10799058677,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bombdefuser-124/Qwen3.8-27B-heretic-ara-exl3-2.00bpw",
+  "renamed_at": "2026-11-11T04:43:33.533Z",
   "benchmarks": [],
   "sources": []
 }

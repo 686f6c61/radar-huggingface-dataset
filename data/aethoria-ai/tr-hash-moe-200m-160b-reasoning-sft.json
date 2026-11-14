@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AETHORIA-AI/TR-HASH-MoE-200M-160B-Reasoning-SFT",
   "slug": "aethoria-ai-tr-hash-moe-200m-160b-reasoning-sft",
   "author": "AETHORIA-AI",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:02:32.004Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

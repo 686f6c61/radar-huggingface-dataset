@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qweqwqw113/GS-qwen3.8-V3-scale2-step800-mlx-adapter",
   "slug": "qweqwqw113-gs-qwen3-8-v3-scale2-step800-mlx-adapter",
   "author": "qweqwqw113",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 116759407,
   "storage_human": "117 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

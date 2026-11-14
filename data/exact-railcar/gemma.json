@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "exact-railcar/gemma",
   "slug": "exact-railcar-gemma",
   "author": "exact-railcar",
@@ -25,14 +25,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 19685653387,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

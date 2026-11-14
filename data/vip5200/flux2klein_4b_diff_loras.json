@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vip5200/Flux2Klein_4B_diff_loras",
   "slug": "vip5200-flux2klein_4b_diff_loras",
   "author": "Vip5200",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 8749377766,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-source",
   "slug": "davidau-qwen3-8-27b-halloween-terror-heretic-uncensored-source",
   "author": "DavidAU",
@@ -56,14 +56,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 55599199724,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T02:30:49.276Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

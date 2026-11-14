@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pekkAi/Glistening-Gem-31B-v2.1-NVFP4",
   "slug": "pekkai-glistening-gem-31b-v2-1-nvfp4",
   "author": "pekkAi",
@@ -40,14 +40,19 @@
   "parameters_human": "16.63B",
   "storage_bytes": 20478986098,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "sophosympatheia/Glistening-Gem-31B-v2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

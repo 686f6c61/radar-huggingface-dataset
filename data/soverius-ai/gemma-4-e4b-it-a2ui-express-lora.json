@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soverius-ai/gemma-4-E4B-it-A2UI-Express-LoRA",
   "slug": "soverius-ai-gemma-4-e4b-it-a2ui-express-lora",
   "author": "soverius-ai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 77417396,
   "storage_human": "77 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

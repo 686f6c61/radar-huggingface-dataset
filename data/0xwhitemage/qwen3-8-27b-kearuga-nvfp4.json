@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xWhiteMage/Qwen3.8-27B-Kearuga-NVFP4",
   "slug": "0xwhitemage-qwen3-8-27b-kearuga-nvfp4",
   "author": "0xWhiteMage",
@@ -45,14 +45,19 @@
   "parameters_human": "18.16B",
   "storage_bytes": 55621647800,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:22:36.210Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

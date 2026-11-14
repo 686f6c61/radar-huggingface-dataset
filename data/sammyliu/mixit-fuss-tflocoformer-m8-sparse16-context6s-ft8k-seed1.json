@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sammyliu/mixit-fuss-tflocoformer-m8-sparse16-context6s-ft8k-seed1",
   "slug": "sammyliu-mixit-fuss-tflocoformer-m8-sparse16-context6s-ft8k-seed1",
   "author": "sammyliu",
@@ -36,14 +36,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 41475264,
   "storage_human": "41 MB",
+  "context_length": null,
   "base_model": "sammyliu/mixit-fuss-tflocoformer-m8-plain-seed1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

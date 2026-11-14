@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sstoica12/acquisition_llama8bins_medmcqa_diversity",
   "slug": "sstoica12-acquisition_llama8bins_medmcqa_diversity",
   "author": "sstoica12",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 32138288576,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T03:03:53.685Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

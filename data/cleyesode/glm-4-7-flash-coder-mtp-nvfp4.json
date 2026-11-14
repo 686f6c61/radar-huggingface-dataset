@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cleyesode/GLM-4.7-Flash-Coder-MTP-NVFP4",
   "slug": "cleyesode-glm-4-7-flash-coder-mtp-nvfp4",
   "author": "cleyesode",
@@ -39,14 +39,19 @@
   "parameters_human": "17.03B",
   "storage_bytes": 21661210418,
   "storage_human": "21.7 GB",
+  "context_length": null,
   "base_model": "whitecircle/GLM-4.7-Flash-Coder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

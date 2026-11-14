@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joseplcam/Qwen-Image-2.1-NVFP4",
   "slug": "joseplcam-qwen-image-2-1-nvfp4",
   "author": "joseplcam",
@@ -37,6 +37,7 @@
   "parameters_human": "4.52B",
   "storage_bytes": 32454799534,
   "storage_human": "32.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T03:36:22.123Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

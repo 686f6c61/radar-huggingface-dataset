@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qualcomm-AI-Research/ar2can",
   "slug": "qualcomm-ai-research-ar2can",
   "author": "Qualcomm-AI-Research",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 792140976,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-schnell, black-forest-labs/FLUX.1-Kontext-dev",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

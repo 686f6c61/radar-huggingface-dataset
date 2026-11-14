@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/jina-embeddings-v5-omni-small-retrieval-FlatQuant-W4A8",
   "slug": "ewin-reg-jina-embeddings-v5-omni-small-retrieval-flatquant-w4a8",
   "author": "ewin-reg",
@@ -52,6 +52,7 @@
   "parameters_human": "929.5M",
   "storage_bytes": 4144898678,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "jinaai/jina-embeddings-v5-omni-small-retrieval",
   "formats": [
     "gguf",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ewin-reg/jina-embeddings-v5-omni-small-retrieval-Quantized",
+  "renamed_at": "2026-11-11T05:12:55.011Z",
   "benchmarks": [
     {
       "task": "Multimodal Retrieval",

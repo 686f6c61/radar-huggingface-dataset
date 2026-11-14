@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "local-inference-lab/Qwen3.8-Flash-Next-FLARE",
   "slug": "local-inference-lab-qwen3-8-flash-next-flare",
   "author": "local-inference-lab",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 611095956737,
   "storage_human": "611.1 GB",
+  "context_length": null,
   "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

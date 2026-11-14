@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "j0no12/Nero-XS-1.1",
   "slug": "j0no12-nero-xs-1-1",
   "author": "j0no12",
@@ -38,14 +38,19 @@
   "parameters_human": "3.0M",
   "storage_bytes": 11982984,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Zero-shot multiple-choice language modeling",

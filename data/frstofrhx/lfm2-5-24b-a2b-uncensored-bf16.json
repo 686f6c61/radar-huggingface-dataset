@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frstofrhx/LFM2.5-24B-A2B-Uncensored-BF16",
   "slug": "frstofrhx-lfm2-5-24b-a2b-uncensored-bf16",
   "author": "frstofrhx",
@@ -71,14 +71,19 @@
   "parameters_human": "23.97B",
   "storage_bytes": 47962048734,
   "storage_human": "48.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

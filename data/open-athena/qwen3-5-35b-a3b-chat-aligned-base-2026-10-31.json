@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-athena/Qwen3.5-35B-A3B-Chat-Aligned-Base-2026.10.31",
   "slug": "open-athena-qwen3-5-35b-a3b-chat-aligned-base-2026-10-31",
   "author": "open-athena",
@@ -35,14 +35,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234485141,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

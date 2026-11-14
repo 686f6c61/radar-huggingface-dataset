@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smartdigitalnetworks/MiniMax-Music3-aoti",
   "slug": "smartdigitalnetworks-minimax-music3-aoti",
   "author": "smartdigitalnetworks",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 34991439,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

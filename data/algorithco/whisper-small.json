@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "algorithco/whisper-small",
   "slug": "algorithco-whisper-small",
   "author": "algorithco",
@@ -232,6 +232,7 @@
   "parameters_human": "241.7M",
   "storage_bytes": 4243202707,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -239,8 +240,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

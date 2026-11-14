@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BaoNhan/CafeBERT_Vietnamese_News_Classification",
   "slug": "baonhan-cafebert_vietnamese_news_classification",
   "author": "BaoNhan",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 6762075541,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "uitnlp/CafeBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T03:37:03.557Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

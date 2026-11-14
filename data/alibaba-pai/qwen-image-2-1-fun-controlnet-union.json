@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union",
   "slug": "alibaba-pai-qwen-image-2-1-fun-controlnet-union",
   "author": "alibaba-pai",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 7588772101,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

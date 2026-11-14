@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audio8/ARK-ASR-3B",
   "slug": "audio8-ark-asr-3b",
   "author": "Audio8",
@@ -74,14 +74,19 @@
   "parameters_human": "4.06B",
   "storage_bytes": 8139552432,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Edge0/ARK-ASR-3B",
+  "renamed_at": "2026-11-11T02:21:43.240Z",
   "benchmarks": [],
   "sources": [
     {

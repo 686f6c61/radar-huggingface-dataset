@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shuidi0020/UNO",
   "slug": "shuidi0020-uno",
   "author": "shuidi0020",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 116865749600,
   "storage_human": "116.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

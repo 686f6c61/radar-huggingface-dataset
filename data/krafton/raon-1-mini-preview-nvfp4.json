@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KRAFTON/Raon-1-mini-preview-nvfp4",
   "slug": "krafton-raon-1-mini-preview-nvfp4",
   "author": "KRAFTON",
@@ -33,14 +33,19 @@
   "parameters_human": "15.08B",
   "storage_bytes": 17563458497,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "KRAFTON/Raon-1-mini-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

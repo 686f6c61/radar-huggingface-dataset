@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aiengineer56/SmolVLA_Piper_1600_data",
   "slug": "aiengineer56-smolvla_piper_1600_data",
   "author": "aiengineer56",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 1800258400,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T05:16:08.911Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

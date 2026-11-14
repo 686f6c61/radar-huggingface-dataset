@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ4e",
   "slug": "xunlinkx-mimo-v2-6-distill-qwen-9b-ablitrated-text-oq4e",
   "author": "xunlinkx",
@@ -35,6 +35,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 5299732198,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

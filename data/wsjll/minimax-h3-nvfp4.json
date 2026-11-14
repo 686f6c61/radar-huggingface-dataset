@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wsjLL/MiniMax-H3-NVFP4",
   "slug": "wsjll-minimax-h3-nvfp4",
   "author": "wsjLL",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 129880303613,
   "storage_human": "129.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

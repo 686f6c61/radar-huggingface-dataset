@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Cyber-Tiel-Coder-35B-A3B-MLX-AXQ-6bit-MTP",
   "slug": "automatosx-ax-cyber-tiel-coder-35b-a3b-mlx-axq-6bit-mtp",
   "author": "AutomatosX",
@@ -35,6 +35,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 33673081622,
   "storage_human": "33.7 GB",
+  "context_length": null,
   "base_model": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

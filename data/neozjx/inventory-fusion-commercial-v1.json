@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NeoZJX/inventory-fusion-commercial-v1",
   "slug": "neozjx-inventory-fusion-commercial-v1",
   "author": "NeoZJX",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 263097,
   "storage_human": "263097 B",
+  "context_length": null,
   "base_model": "ibm-granite/granite-timeseries-ttm-r2, amazon/chronos-2, google/timesfm-2.5-200m-pytorch",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Demand Forecasting",

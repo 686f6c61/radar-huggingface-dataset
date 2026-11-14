@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "broad555/koth-router",
   "slug": "broad555-koth-router",
   "author": "broad555",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 76884,
   "storage_human": "76884 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

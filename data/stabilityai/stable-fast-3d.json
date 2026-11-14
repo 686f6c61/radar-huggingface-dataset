@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stabilityai/stable-fast-3d",
   "slug": "stabilityai-stable-fast-3d",
   "author": "stabilityai",
@@ -19,21 +19,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1511,
+  "likes": 1516,
   "downloads_30d": 32146,
-  "trending_score": 18,
+  "trending_score": 20,
   "parameters": 1006027436,
   "parameters_human": "1.01B",
   "storage_bytes": 4031760240,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

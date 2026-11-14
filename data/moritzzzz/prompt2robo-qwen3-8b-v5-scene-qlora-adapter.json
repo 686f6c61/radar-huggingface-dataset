@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moritzzzz/Prompt2Robo-Qwen3-8B-v5-scene-qlora-adapter",
   "slug": "moritzzzz-prompt2robo-qwen3-8b-v5-scene-qlora-adapter",
   "author": "moritzzzz",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 360666406,
   "storage_human": "361 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:25:37.917Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

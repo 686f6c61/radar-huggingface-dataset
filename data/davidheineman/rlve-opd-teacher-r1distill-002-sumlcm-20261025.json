@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/rlve-opd-teacher-R1Distill-002-SumLCM-20261025",
   "slug": "davidheineman-rlve-opd-teacher-r1distill-002-sumlcm-20261025",
   "author": "davidheineman",
@@ -33,14 +33,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 3554214720,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

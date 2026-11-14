@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leon80148/taigi-cosyvoice3-inference-20261113",
   "slug": "leon80148-taigi-cosyvoice3-inference-20261113",
   "author": "leon80148",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2569168288,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "leon80148/taigi-cosyvoice3-inference-v0.1",
+  "renamed_at": "2026-11-13T06:23:30.004Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vanch007/FireRedAudio-MLX-8bit",
   "slug": "vanch007-fireredaudio-mlx-8bit",
   "author": "vanch007",
@@ -38,6 +38,7 @@
   "parameters_human": "10.99B",
   "storage_bytes": 14562694349,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

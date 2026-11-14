@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phylobio/DeepSeek-V4.1-Flash-epistemic-lora",
   "slug": "phylobio-deepseek-v4-1-flash-epistemic-lora",
   "author": "phylobio",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 423344,
   "storage_human": "423344 B",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

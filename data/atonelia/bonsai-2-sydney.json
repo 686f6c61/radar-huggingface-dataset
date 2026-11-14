@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atonelia/bonsai-2-Sydney",
   "slug": "atonelia-bonsai-2-sydney",
   "author": "Atonelia",
@@ -37,14 +37,19 @@
   "parameters_human": "116.7M",
   "storage_bytes": 700571520,
   "storage_human": "701 MB",
+  "context_length": null,
   "base_model": "OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

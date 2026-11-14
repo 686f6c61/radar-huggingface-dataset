@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamrodrigocoelho/gemma-4-e2b-refauna-lora16-GGUF",
   "slug": "iamrodrigocoelho-gemma-4-e2b-refauna-lora16-gguf",
   "author": "iamrodrigocoelho",
@@ -41,14 +41,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 9382204000,
   "storage_human": "9.4 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-e2b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-4B-F32-BF16-3MPER0RR-abliterated-i1-GGUF",
   "slug": "mradermacher-qwen3-4b-f32-bf16-3mper0rr-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 48024093056,
   "storage_human": "48.0 GB",
+  "context_length": 40960,
   "base_model": "3MPER0RR/Qwen3-4B-F32-BF16-3MPER0RR-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

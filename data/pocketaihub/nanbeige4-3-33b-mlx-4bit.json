@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PocketAiHub/Nanbeige4.3-33B-MLX-4bit",
   "slug": "pocketaihub-nanbeige4-3-33b-mlx-4bit",
   "author": "PocketAiHub",
@@ -37,6 +37,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 22831079114,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

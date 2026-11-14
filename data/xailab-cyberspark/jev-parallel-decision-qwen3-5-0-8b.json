@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XAILab-CyberSpark/jev-parallel-decision-qwen3.5-0.8b",
   "slug": "xailab-cyberspark-jev-parallel-decision-qwen3-5-0-8b",
   "author": "XAILab-CyberSpark",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 65425277,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OpenSparX/OAK-Decision-parallel-decision-qwen3.5-0.8b",
+  "renamed_at": "2026-11-12T04:22:27.406Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agnosticeng/GLM-5.3-Flash-2bit",
   "slug": "agnosticeng-glm-5-3-flash-2bit",
   "author": "agnosticeng",
@@ -34,6 +34,7 @@
   "parameters_human": "333.96B",
   "storage_bytes": 103198510738,
   "storage_human": "103.2 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

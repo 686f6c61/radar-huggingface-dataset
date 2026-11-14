@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShaunDier/qaatin-english-minilm",
   "slug": "shaundier-qaatin-english-minilm",
   "author": "ShaunDier",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 90383796,
   "storage_human": "90 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "qaatin/qaatin-english-minilm",
+  "renamed_at": "2026-11-13T04:03:36.651Z",
   "benchmarks": [],
   "sources": []
 }

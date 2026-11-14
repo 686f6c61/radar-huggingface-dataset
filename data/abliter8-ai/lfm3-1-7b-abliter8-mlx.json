@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abliter8-ai/lfm3-1.7b-abliter8-mlx",
   "slug": "abliter8-ai-lfm3-1-7b-abliter8-mlx",
   "author": "abliter8-ai",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 4233601340,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

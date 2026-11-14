@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weizhou03/lbs-dmax-routers",
   "slug": "weizhou03-lbs-dmax-routers",
   "author": "weizhou03",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 108731312,
   "storage_human": "109 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

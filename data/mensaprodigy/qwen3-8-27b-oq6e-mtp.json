@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mensaprodigy/Qwen3.8-27B-oQ6e-mtp",
   "slug": "mensaprodigy-qwen3-8-27b-oq6e-mtp",
   "author": "mensaprodigy",
@@ -39,6 +39,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 23729097780,
   "storage_human": "23.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mensaprodigy/Qwen3.8-27B-oQ6e-mtp-mlx",
+  "renamed_at": "2026-11-11T06:16:51.486Z",
   "benchmarks": [],
   "sources": []
 }

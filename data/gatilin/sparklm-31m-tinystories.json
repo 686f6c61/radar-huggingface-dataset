@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/sparklm-31m-tinystories",
   "slug": "gatilin-sparklm-31m-tinystories",
   "author": "gatilin",
@@ -35,14 +35,19 @@
   "parameters_human": "34.1M",
   "storage_bytes": 136377928,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

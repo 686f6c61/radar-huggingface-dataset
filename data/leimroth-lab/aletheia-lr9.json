@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leimroth-lab/Aletheia-LR9",
   "slug": "leimroth-lab-aletheia-lr9",
   "author": "leimroth-lab",
@@ -42,14 +42,19 @@
   "parameters_human": "18.16B",
   "storage_bytes": 21092286197,
   "storage_human": "21.1 GB",
+  "context_length": null,
   "base_model": "sabicap/sabi-noema",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

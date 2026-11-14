@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "halt95/Qwen3.8-27B-W4A16-Merlin",
   "slug": "halt95-qwen3-8-27b-w4a16-merlin",
   "author": "halt95",
@@ -45,14 +45,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 17074243134,
   "storage_human": "17.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

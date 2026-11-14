@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF",
   "slug": "ttimms-bible-assistant-qwen3-5-4b-v3-2-gguf",
   "author": "Ttimms",
@@ -36,14 +36,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 24604938368,
   "storage_human": "24.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B, Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

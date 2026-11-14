@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaybon1840/BGE-m3-ko-onnx",
   "slug": "jaybon1840-bge-m3-ko-onnx",
   "author": "jaybon1840",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 586798250,
   "storage_human": "587 MB",
+  "context_length": null,
   "base_model": "dragonkue/BGE-m3-ko",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

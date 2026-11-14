@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oteam/ofx-card-backup-bb41a330c6527617d329ebbb",
   "slug": "oteam-ofx-card-backup-bb41a330c6527617d329ebbb",
   "author": "oteam",
@@ -28,14 +28,19 @@
   "parameters_human": "93.0M",
   "storage_bytes": 372645088,
   "storage_human": "373 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T05:35:24.374Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

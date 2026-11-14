@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "while-ai/community-identity-spec-aas-1.7b",
   "slug": "while-ai-community-identity-spec-aas-1-7b",
   "author": "while-ai",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 220769806,
   "storage_human": "221 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

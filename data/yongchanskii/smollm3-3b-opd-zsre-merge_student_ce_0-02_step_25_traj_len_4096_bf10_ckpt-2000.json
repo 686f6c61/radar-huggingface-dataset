@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yongchanskii/smollm3-3b-opd-zsre-merge_student_ce_0.02_step_25_traj_len_4096_bf10_ckpt-2000",
   "slug": "yongchanskii-smollm3-3b-opd-zsre-merge_student_ce_0-02_step_25_traj_len_4096_bf10_ckpt-2000",
   "author": "yongchanskii",
@@ -28,14 +28,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 6167444080,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T12:41:19.011Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

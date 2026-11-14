@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "n-deshpande/qwen3.5-35b-a3b-consciousness-loras",
   "slug": "n-deshpande-qwen3-5-35b-a3b-consciousness-loras",
   "author": "n-deshpande",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 27546464,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JobSched/Phi-3-custom-trained-v2",
   "slug": "jobsched-phi-3-custom-trained-v2",
   "author": "JobSched",
@@ -34,14 +34,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 7641686709,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "JobSched/Phi-3-custom-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T02:49:31.727Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

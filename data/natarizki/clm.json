@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Natarizki/CLM",
   "slug": "natarizki-clm",
   "author": "Natarizki",
@@ -42,14 +42,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 2942637509,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "Amine-CV/Qwen3.5-0.8B-Mythos-Distill, Jackrong/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled, dalatexcoder/Qwen3.5-0.8B-Claude-4.6-Opus-Reasoning-Distilled-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Natarizki/CLM-0.8B",
+  "renamed_at": "2026-11-12T03:33:06.375Z",
   "benchmarks": [],
   "sources": [
     {

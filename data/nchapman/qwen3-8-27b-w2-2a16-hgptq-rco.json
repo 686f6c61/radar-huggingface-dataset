@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Qwen3.8-27B-W2.2A16-HGPTQ-RCO",
   "slug": "nchapman-qwen3-8-27b-w2-2a16-hgptq-rco",
   "author": "nchapman",
@@ -38,14 +38,19 @@
   "parameters_human": "18.16B",
   "storage_bytes": 11876426307,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

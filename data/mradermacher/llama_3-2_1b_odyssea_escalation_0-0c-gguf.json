@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llama_3.2_1b_Odyssea_Escalation_0.0c-GGUF",
   "slug": "mradermacher-llama_3-2_1b_odyssea_escalation_0-0c-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "1.50B",
   "storage_bytes": 13845142464,
   "storage_human": "13.8 GB",
+  "context_length": 131072,
   "base_model": "Nexesenex/Llama_3.2_1b_Odyssea_Escalation_0.0c",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

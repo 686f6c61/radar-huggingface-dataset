@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/WeMM-Embedding-2B-INT8-Wide",
   "slug": "ewin-reg-wemm-embedding-2b-int8-wide",
   "author": "ewin-reg",
@@ -52,14 +52,19 @@
   "parameters_human": "2.28B",
   "storage_bytes": 2350351866,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "ewin-reg/WeMM-Embedding-2B-Quantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simonko912/simllama-1.2-alpha",
   "slug": "simonko912-simllama-1-2-alpha",
   "author": "simonko912",
@@ -23,14 +23,19 @@
   "parameters_human": "468.2M",
   "storage_bytes": 3745964816,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

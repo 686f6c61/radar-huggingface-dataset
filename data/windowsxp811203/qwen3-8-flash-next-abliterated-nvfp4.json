@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4",
   "slug": "windowsxp811203-qwen3-8-flash-next-abliterated-nvfp4",
   "author": "windowsxp811203",
@@ -41,14 +41,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 237649093361,
   "storage_human": "237.6 GB",
+  "context_length": null,
   "base_model": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

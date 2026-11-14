@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "latency-sensitive-bench/benchmark-models",
   "slug": "latency-sensitive-bench-benchmark-models",
   "author": "latency-sensitive-bench",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 2291451079479,
   "storage_human": "2291.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MLL-Lab/LAGEN-models",
+  "renamed_at": "2026-11-13T06:21:53.274Z",
   "benchmarks": [],
   "sources": [
     {

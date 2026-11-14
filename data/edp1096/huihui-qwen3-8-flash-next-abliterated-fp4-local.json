@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-FP4-Local",
   "slug": "edp1096-huihui-qwen3-8-flash-next-abliterated-fp4-local",
   "author": "edp1096",
@@ -35,14 +35,19 @@
   "parameters_human": "96.49B",
   "storage_bytes": 102252102010,
   "storage_human": "102.3 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local, huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

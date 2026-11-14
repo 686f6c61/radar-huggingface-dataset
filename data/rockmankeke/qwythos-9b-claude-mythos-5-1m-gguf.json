@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rockmankeke/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
   "slug": "rockmankeke-qwythos-9b-claude-mythos-5-1m-gguf",
   "author": "rockmankeke",
@@ -44,14 +44,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 96248098016,
   "storage_human": "96.2 GB",
+  "context_length": 1048576,
   "base_model": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

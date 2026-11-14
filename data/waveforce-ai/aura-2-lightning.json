@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waveforce-ai/Aura-2-Lightning",
   "slug": "waveforce-ai-aura-2-lightning",
   "author": "waveforce-ai",
@@ -31,14 +31,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 3115283128,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-xl",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

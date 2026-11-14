@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nole326/PickOrange",
   "slug": "nole326-pickorange",
   "author": "Nole326",
@@ -26,14 +26,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 1032003600,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Nole326/LeIsaac-SO101-PickOrange",
+  "renamed_at": "2026-11-13T03:36:16.603Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imjustheretotest/MasonAI",
   "slug": "imjustheretotest-masonai",
   "author": "imjustheretotest",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 54813323,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "crosbylegal/gpt-5.6-luna, crosbylegal/gpt-5.6-terra, incoggamer/gpt-5.6-sol",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

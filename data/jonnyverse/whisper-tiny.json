@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JONNYVERSE/whisper-tiny",
   "slug": "jonnyverse-whisper-tiny",
   "author": "JONNYVERSE",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1862930525,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

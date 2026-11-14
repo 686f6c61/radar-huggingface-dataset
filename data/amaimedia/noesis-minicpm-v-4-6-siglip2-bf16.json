@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-BF16",
   "slug": "amaimedia-noesis-minicpm-v-4-6-siglip2-bf16",
   "author": "AMAImedia",
@@ -49,14 +49,19 @@
   "parameters_human": "522.3M",
   "storage_bytes": 1044648456,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

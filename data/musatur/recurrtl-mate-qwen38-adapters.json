@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "musatur/recurrtl-mate-qwen38-adapters",
   "slug": "musatur-recurrtl-mate-qwen38-adapters",
   "author": "musatur",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1888180144,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T08:58:42.662Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

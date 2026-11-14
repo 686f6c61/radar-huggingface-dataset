@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aaa2015/DeepSeek-V4.1-Flash-1017-Q2-dense-q4-imx-cliecy-GGUF",
   "slug": "aaa2015-deepseek-v4-1-flash-1017-q2-dense-q4-imx-cliecy-gguf",
   "author": "aaa2015",
@@ -37,14 +37,19 @@
   "parameters_human": "485.3M",
   "storage_bytes": 363113185440,
   "storage_human": "363.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

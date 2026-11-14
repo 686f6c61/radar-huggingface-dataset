@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zstan123/flux-3-action-base",
   "slug": "zstan123-flux-3-action-base",
   "author": "Zstan123",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 25359190091,
   "storage_human": "25.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

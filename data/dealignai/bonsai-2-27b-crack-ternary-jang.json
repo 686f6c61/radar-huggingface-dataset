@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/Bonsai-2-27B-CRACK-Ternary-JANG",
   "slug": "dealignai-bonsai-2-27b-crack-ternary-jang",
   "author": "dealignai",
@@ -47,6 +47,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 8215835785,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

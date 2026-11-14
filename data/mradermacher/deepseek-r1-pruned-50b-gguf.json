@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/DeepSeek-R1-Pruned-50B-GGUF",
   "slug": "mradermacher-deepseek-r1-pruned-50b-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "49.63B",
   "storage_bytes": 338138163136,
   "storage_human": "338.1 GB",
+  "context_length": 163840,
   "base_model": "ubicloud/DeepSeek-R1-Pruned-50B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

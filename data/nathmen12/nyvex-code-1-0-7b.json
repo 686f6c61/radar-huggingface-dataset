@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NathMen12/Nyvex-Code-1.0-7b",
   "slug": "nathmen12-nyvex-code-1-0-7b",
   "author": "NathMen12",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 503496720,
   "storage_human": "503 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohammadreza-e/hubert-base-ls960-finetuned-gtzan",
   "slug": "mohammadreza-e-hubert-base-ls960-finetuned-gtzan",
   "author": "mohammadreza-e",
@@ -32,14 +32,19 @@
   "parameters_human": "94.6M",
   "storage_bytes": 5674657121,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "facebook/hubert-base-ls960",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Audio Classification",

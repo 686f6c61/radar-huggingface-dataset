@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nullmega/Mellum2.1-CodeReasoning-Public-v1-LoRA",
   "slug": "nullmega-mellum2-1-codereasoning-public-v1-lora",
   "author": "Nullmega",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 33060136,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:09:08.366Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/Maya2-Native-GGUF",
   "slug": "harsha001-maya2-native-gguf",
   "author": "Harsha001",
@@ -59,14 +59,19 @@
   "parameters_human": "1.81B",
   "storage_bytes": 8979940224,
   "storage_human": "9.0 GB",
+  "context_length": 32768,
   "base_model": "maya-research/maya2-native",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

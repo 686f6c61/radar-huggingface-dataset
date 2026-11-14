@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/lfm2-24b-phase1-reasoning-GGUF",
   "slug": "mradermacher-lfm2-24b-phase1-reasoning-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "23.84B",
   "storage_bytes": 161763968864,
   "storage_human": "161.8 GB",
+  "context_length": 128000,
   "base_model": "shuff57/lfm2-24b-phase1-reasoning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

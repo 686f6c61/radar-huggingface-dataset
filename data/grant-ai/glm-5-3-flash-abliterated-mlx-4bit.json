@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grant-ai/GLM-5.3-Flash-Abliterated-MLX-4bit",
   "slug": "grant-ai-glm-5-3-flash-abliterated-mlx-4bit",
   "author": "grant-ai",
@@ -39,6 +39,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 185943154036,
   "storage_human": "185.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash, Blackfrost-Research/GLM-5.3-Flash-DERISKED-BF16",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

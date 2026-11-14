@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jommarn/Qwen-Image-NSFW-LoRA",
   "slug": "jommarn-qwen-image-nsfw-lora",
   "author": "Jommarn",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 163084247408,
   "storage_human": "163.1 GB",
+  "context_length": null,
   "base_model": "Jommarn/Qwen-Image-2512-Penis-Heretic",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

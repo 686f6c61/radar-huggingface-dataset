@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luni/Gemma-4-26B-A4B-Heretic-EXL3-6.0bpw",
   "slug": "luni-gemma-4-26b-a4b-heretic-exl3-6-0bpw",
   "author": "Luni",
@@ -32,14 +32,19 @@
   "parameters_human": "11.27B",
   "storage_bytes": 22587918502,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "Luni/Gemma-4-26B-A4B-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

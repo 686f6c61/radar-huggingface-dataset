@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jrepifano/q14b-mix-arm8a-r1-seed1",
   "slug": "jrepifano-q14b-mix-arm8a-r1-seed1",
   "author": "jrepifano",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 11564940,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T10:51:36.515Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

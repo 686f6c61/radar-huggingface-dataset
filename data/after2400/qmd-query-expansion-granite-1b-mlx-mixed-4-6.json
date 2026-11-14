@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "after2400/qmd-query-expansion-granite-1b-mlx-mixed-4-6",
   "slug": "after2400-qmd-query-expansion-granite-1b-mlx-mixed-4-6",
   "author": "after2400",
@@ -37,6 +37,7 @@
   "parameters_human": "1.63B",
   "storage_bytes": 1016767451,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-1b",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

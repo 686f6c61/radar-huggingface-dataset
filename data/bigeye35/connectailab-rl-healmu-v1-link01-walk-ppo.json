@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigeye35/connectailab-rl-healmu-v1-link01-walk-ppo",
   "slug": "bigeye35-connectailab-rl-healmu-v1-link01-walk-ppo",
   "author": "bigeye35",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3268074,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "walking",

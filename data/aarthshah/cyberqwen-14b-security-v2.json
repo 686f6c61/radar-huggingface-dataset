@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AarthShah/CyberQwen-14B-Security-V2",
   "slug": "aarthshah-cyberqwen-14b-security-v2",
   "author": "AarthShah",
@@ -55,6 +55,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 91093206727,
   "storage_human": "91.1 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [
     "gguf",
@@ -62,8 +63,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "CWE-Bench v1 Evaluation (100 Repositories)",

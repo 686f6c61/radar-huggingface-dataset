@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xinyuzhou/ClinicalJev-0.8B-v0.1-preview-LoRA",
   "slug": "xinyuzhou-clinicaljev-0-8b-v0-1-preview-lora",
   "author": "xinyuzhou",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 173213176,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KlangAI/pianissimo-da-gguf",
   "slug": "klangai-pianissimo-da-gguf",
   "author": "KlangAI",
@@ -35,14 +35,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 5538184864,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "KlangAI/pianissimo-da",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

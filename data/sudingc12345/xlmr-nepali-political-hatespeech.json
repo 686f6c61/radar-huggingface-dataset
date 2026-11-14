@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SudinGc12345/xlmr-nepali-political-hatespeech",
   "slug": "sudingc12345-xlmr-nepali-political-hatespeech",
   "author": "SudinGc12345",
@@ -28,14 +28,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1129306435,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexwengg/Nanbeige4.3-33B-MLX-mixed-3-4-6bit",
   "slug": "alexwengg-nanbeige4-3-33b-mlx-mixed-3-4-6bit",
   "author": "alexwengg",
@@ -38,6 +38,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 16899443788,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

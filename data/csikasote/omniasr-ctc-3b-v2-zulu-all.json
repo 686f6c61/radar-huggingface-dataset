@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "csikasote/omniASR-CTC-3B-v2-Zulu-All",
   "slug": "csikasote-omniasr-ctc-3b-v2-zulu-all",
   "author": "csikasote",
@@ -36,14 +36,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 12325821889,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "facebook/omniASR-CTC-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

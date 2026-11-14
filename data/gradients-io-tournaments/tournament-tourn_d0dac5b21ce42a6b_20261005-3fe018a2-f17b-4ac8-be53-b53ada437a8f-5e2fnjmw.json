@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-3fe018a2-f17b-4ac8-be53-b53ada437a8f-5E2fNjMW",
   "slug": "gradients-io-tournaments-tournament-tourn_d0dac5b21ce42a6b_20261005-3fe018a2-f17b-4ac8-be53-b53ada437a8f-5e2fnjmw",
   "author": "gradients-io-tournaments",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 3330865640,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "deepcogito/cogito-v1-preview-llama-70B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

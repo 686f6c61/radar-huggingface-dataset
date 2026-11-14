@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UlyssesXC/fab-qwen35-27b-lora-cot-127-epoch10-20260925",
   "slug": "ulyssesxc-fab-qwen35-27b-lora-cot-127-epoch10-20260925",
   "author": "UlyssesXC",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 953963357,
   "storage_human": "954 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T02:45:40.158Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

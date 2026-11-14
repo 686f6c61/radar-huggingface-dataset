@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lordfarquaad36/Reflora",
   "slug": "lordfarquaad36-reflora",
   "author": "lordfarquaad36",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 16985697447,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

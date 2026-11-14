@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Samonte/Pertval144",
   "slug": "samonte-pertval144",
   "author": "Samonte",
@@ -29,14 +29,19 @@
   "parameters_human": "119.0M",
   "storage_bytes": 952540192,
   "storage_human": "953 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T03:56:18.130Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maanka2/wwe",
   "slug": "maanka2-wwe",
   "author": "maanka2",
@@ -71,12 +71,17 @@
   "parameters_human": null,
   "storage_bytes": 237571059,
   "storage_human": "238 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T02:53:48.587Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

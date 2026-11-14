@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompiledThoughts/GLM-5.3-Flash-FP4-Local-inferredthoughts",
   "slug": "compiledthoughts-glm-5-3-flash-fp4-local-inferredthoughts",
   "author": "CompiledThoughts",
@@ -40,14 +40,19 @@
   "parameters_human": "360.28B",
   "storage_bytes": 186146807950,
   "storage_human": "186.1 GB",
+  "context_length": null,
   "base_model": "nvidia/GLM-5.3-Flash-FP4-Local",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

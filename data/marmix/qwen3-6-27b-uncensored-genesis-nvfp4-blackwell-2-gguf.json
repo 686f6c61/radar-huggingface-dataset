@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MarMix/Qwen3.6-27B-Uncensored-Genesis-NVFP4-Blackwell-2-GGUF",
   "slug": "marmix-qwen3-6-27b-uncensored-genesis-nvfp4-blackwell-2-gguf",
   "author": "MarMix",
@@ -26,14 +26,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15526004288,
   "storage_human": "15.5 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

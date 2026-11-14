@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "model-rampage/BareTorch-Qwen3.5-0.8B-Hybrid",
   "slug": "model-rampage-baretorch-qwen3-5-0-8b-hybrid",
   "author": "model-rampage",
@@ -40,14 +40,19 @@
   "parameters_human": "916.3M",
   "storage_bytes": 5517782909,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

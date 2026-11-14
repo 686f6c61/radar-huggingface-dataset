@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jahirrrr/Klyra-Decision-2B-V2-Preview",
   "slug": "jahirrrr-klyra-decision-2b-v2-preview",
   "author": "Jahirrrr",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 40807701,
   "storage_human": "41 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B-Midtrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-8bit",
   "slug": "sirsahol-jev-style-0-8b-decision-v3-mlx-8bit",
   "author": "SirSahOl",
@@ -62,6 +62,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 819963073,
   "storage_human": "820 MB",
+  "context_length": null,
   "base_model": "chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
   "formats": [
     "mlx",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

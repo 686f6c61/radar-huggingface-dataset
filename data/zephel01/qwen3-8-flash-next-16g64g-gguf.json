@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zephel01/Qwen3.8-Flash-Next-16G64G-GGUF",
   "slug": "zephel01-qwen3-8-flash-next-16g64g-gguf",
   "author": "zephel01",
@@ -42,14 +42,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 86890131136,
   "storage_human": "86.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zephel01/Qwen3.8-Flash-Next-IQ3_M-16G64G-GGUF",
+  "renamed_at": "2026-11-11T08:13:35.008Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "angelic123/fastwam-droid-wan21-1p3b",
   "slug": "angelic123-fastwam-droid-wan21-1p3b",
   "author": "angelic123",
@@ -28,6 +28,7 @@
   "parameters_human": null,
   "storage_bytes": 32794563719,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T03:24:17.040Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gabogabogoo/argus-lite-onnx",
   "slug": "gabogabogoo-argus-lite-onnx",
   "author": "gabogabogoo",
@@ -42,6 +42,7 @@
   "parameters_human": "38.1M",
   "storage_bytes": 305477281,
   "storage_human": "305 MB",
+  "context_length": null,
   "base_model": "facebook/EUPE-ViT-S",
   "formats": [
     "onnx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

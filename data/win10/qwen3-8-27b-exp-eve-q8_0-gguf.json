@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "win10/Qwen3.8-27b-EXP-EVE-Q8_0-GGUF",
   "slug": "win10-qwen3-8-27b-exp-eve-q8_0-gguf",
   "author": "win10",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29047076192,
   "storage_human": "29.0 GB",
+  "context_length": 262144,
   "base_model": "win10/Qwen3.8-27b-EXP-EVE",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

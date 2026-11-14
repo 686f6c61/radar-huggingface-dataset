@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "metaversesolutions23/gatoni-gemma-3-1b-it-qat-gguf",
   "slug": "metaversesolutions23-gatoni-gemma-3-1b-it-qat-gguf",
   "author": "metaversesolutions23",
@@ -34,14 +34,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 569430560,
   "storage_human": "569 MB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-1b-it-qat-q4_0-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

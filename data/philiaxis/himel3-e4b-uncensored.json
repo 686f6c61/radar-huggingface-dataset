@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Philiaxis/Himel3-E4B-Uncensored",
   "slug": "philiaxis-himel3-e4b-uncensored",
   "author": "Philiaxis",
@@ -36,6 +36,7 @@
   "parameters_human": "7.94B",
   "storage_bytes": 15916868469,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

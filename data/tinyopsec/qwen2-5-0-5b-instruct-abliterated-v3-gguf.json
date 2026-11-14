@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Qwen2.5-0.5B-Instruct-abliterated-v3-GGUF",
   "slug": "tinyopsec-qwen2-5-0-5b-instruct-abliterated-v3-gguf",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 5797773824,
   "storage_human": "5.8 GB",
+  "context_length": 32768,
   "base_model": "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

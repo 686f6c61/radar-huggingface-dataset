@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OSNFK/QwenImage2.1_Lora_BuildingExtraction_I2I_1.0",
   "slug": "osnfk-qwenimage2-1_lora_buildingextraction_i2i_1-0",
   "author": "OSNFK",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 99084136,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

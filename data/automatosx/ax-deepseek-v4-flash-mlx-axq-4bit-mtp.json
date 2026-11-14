@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-4bit-MTP",
   "slug": "automatosx-ax-deepseek-v4-flash-mlx-axq-4bit-mtp",
   "author": "AutomatosX",
@@ -38,6 +38,7 @@
   "parameters_human": "284.33B",
   "storage_bytes": 166896105409,
   "storage_human": "166.9 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T10:19:07.910Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

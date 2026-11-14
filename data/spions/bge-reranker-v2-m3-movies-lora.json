@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spions/bge-reranker-v2-m3-movies-lora",
   "slug": "spions-bge-reranker-v2-m3-movies-lora",
   "author": "spions",
@@ -28,14 +28,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 2288169937,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

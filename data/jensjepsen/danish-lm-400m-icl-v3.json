@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jensjepsen/danish-lm-400m-icl-v3",
   "slug": "jensjepsen-danish-lm-400m-icl-v3",
   "author": "jensjepsen",
@@ -34,14 +34,19 @@
   "parameters_human": "414.7M",
   "storage_bytes": 2648454842,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "jensjepsen/danish-lm-400m-sft-v31-avg-top3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

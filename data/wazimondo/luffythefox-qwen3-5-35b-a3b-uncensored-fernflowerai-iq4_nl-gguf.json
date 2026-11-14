@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wazimondo/LuffyTheFox-Qwen3.5-35B-A3B-Uncensored-FernflowerAI-IQ4_NL-GGUF",
   "slug": "wazimondo-luffythefox-qwen3-5-35b-a3b-uncensored-fernflowerai-iq4_nl-gguf",
   "author": "wazimondo",
@@ -28,14 +28,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 20633499680,
   "storage_human": "20.6 GB",
+  "context_length": 262144,
   "base_model": "LuffyTheFox/Qwen3.5-35B-A3B-Uncensored-FernflowerAI-GGUF, Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

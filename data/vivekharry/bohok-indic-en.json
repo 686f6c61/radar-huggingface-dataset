@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vivekharry/bohok-indic-en",
   "slug": "vivekharry-bohok-indic-en",
   "author": "vivekharry",
@@ -42,14 +42,19 @@
   "parameters_human": "77.1M",
   "storage_bytes": 309768251,
   "storage_human": "310 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-mul-en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

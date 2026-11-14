@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haehoon/Qwen3.6-35B-A3B-NVFP4-ko-agentic",
   "slug": "haehoon-qwen3-6-35b-a3b-nvfp4-ko-agentic",
   "author": "haehoon",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T05:40:49.343Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

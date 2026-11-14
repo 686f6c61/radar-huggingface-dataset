@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/EnvACE-Qwen3-1.7B-GGUF",
   "slug": "mradermacher-envace-qwen3-1-7b-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 18614596224,
   "storage_human": "18.6 GB",
+  "context_length": 40960,
   "base_model": "Team-ACE/EnvACE-Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

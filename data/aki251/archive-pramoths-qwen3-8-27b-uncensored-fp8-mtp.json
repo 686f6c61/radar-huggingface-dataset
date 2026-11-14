@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aki251/archive-pramoths-Qwen3.8-27B-Uncensored-FP8-MTP",
   "slug": "aki251-archive-pramoths-qwen3-8-27b-uncensored-fp8-mtp",
   "author": "Aki251",
@@ -47,14 +47,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 30886859653,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T02:13:55.702Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

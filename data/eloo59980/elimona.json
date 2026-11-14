@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ELOO59980/Elimona",
   "slug": "eloo59980-elimona",
   "author": "ELOO59980",
@@ -79,12 +79,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "enginetown/Qwen3.8-27B-Calibrated, DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC, xai-org/grok-2, perplexity-ai/pplx-embed-v1-0.6b, empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF, nvidia/Alpamayo2-Super, c4tdr0ut/grok-oss-Thanatos-8B, deepseek-ai/DeepSeek-V4-Flash-0731, mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking, huginnfork/Qwen3.8-27B-FP8, brandonmusic/GLM-5.2-EXL3-TR3-3.0bpw, jimmycarter/krea2-turbo-bbox, Bombek1/ai-image-detector-siglip-dinov2, swechatelangana/swecha-gonthuka-asr, google/gemma-4-31B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

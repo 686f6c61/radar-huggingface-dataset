@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shokou1/dawcoder",
   "slug": "shokou1-dawcoder",
   "author": "Shokou1",
@@ -41,14 +41,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8126412416,
   "storage_human": "8.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Shokou1/qwen3.5-4B-dawcoder",
+  "renamed_at": "2026-11-11T03:52:31.651Z",
   "benchmarks": [],
   "sources": []
 }

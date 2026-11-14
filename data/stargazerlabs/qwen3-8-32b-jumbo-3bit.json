@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StargazerLabs/Qwen3.8-32B-Jumbo-3bit",
   "slug": "stargazerlabs-qwen3-8-32b-jumbo-3bit",
   "author": "StargazerLabs",
@@ -37,6 +37,7 @@
   "parameters_human": "31.92B",
   "storage_bytes": 14711403411,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": "StargazerLabs/Qwen3.8-32B-Jumbo",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

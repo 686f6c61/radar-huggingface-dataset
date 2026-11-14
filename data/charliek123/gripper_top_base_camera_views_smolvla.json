@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "charlieK123/gripper_Top_Base_Camera_Views_SmolVLA",
   "slug": "charliek123-gripper_top_base_camera_views_smolvla",
   "author": "charlieK123",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906721144,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T02:59:21.531Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

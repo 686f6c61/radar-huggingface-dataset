@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IntelligentDecisionLab/xlerobot-coffee-model-sim-b-force",
   "slug": "intelligentdecisionlab-xlerobot-coffee-model-sim-b-force",
   "author": "IntelligentDecisionLab",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 12437042616,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T06:45:26.834Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

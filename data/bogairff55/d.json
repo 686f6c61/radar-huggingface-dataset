@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bogairff55/D",
   "slug": "bogairff55-d",
   "author": "bogairff55",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 951159445,
   "storage_human": "951 MB",
+  "context_length": null,
   "base_model": "bogairff55/ViAble-merged5-nf4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:44:06.613Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

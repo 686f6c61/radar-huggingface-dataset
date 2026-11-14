@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NEVODESIGN/agbe-1b",
   "slug": "nevodesign-agbe-1b",
   "author": "NEVODESIGN",
@@ -24,14 +24,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 12220453760,
   "storage_human": "12.2 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

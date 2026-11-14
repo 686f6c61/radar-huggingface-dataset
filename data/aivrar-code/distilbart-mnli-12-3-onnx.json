@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aivrar-code/distilbart-mnli-12-3-onnx",
   "slug": "aivrar-code-distilbart-mnli-12-3-onnx",
   "author": "aivrar-code",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1025032825,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "valhalla/distilbart-mnli-12-3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

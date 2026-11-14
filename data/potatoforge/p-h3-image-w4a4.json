@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PotatoForge/P-H3-Image-W4A4",
   "slug": "potatoforge-p-h3-image-w4a4",
   "author": "PotatoForge",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 11579281277,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": "PrunaAI/P-H3-Image-Comfy",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

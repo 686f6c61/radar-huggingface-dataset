@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aymandakir-gh/gh-apex-GGUF",
   "slug": "aymandakir-gh-gh-apex-gguf",
   "author": "aymandakir-gh",
@@ -38,14 +38,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 9274966400,
   "storage_human": "9.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

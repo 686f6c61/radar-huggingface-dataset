@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Qwen3-TTS-1.7B-Talker-Combo-LLM2-ASR2-BF16",
   "slug": "amaimedia-noesis-qwen3-tts-1-7b-talker-combo-llm2-asr2-bf16",
   "author": "AMAImedia",
@@ -269,14 +269,19 @@
   "parameters_human": "1.93B",
   "storage_bytes": 5304776257,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base, Qwen/Qwen3-1.7B, Qwen/Qwen3-ASR-1.7B, FINAL-Bench/Darwin-TTS-1.7B-Cross",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

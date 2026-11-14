@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lovedheart/Qwen3.8-Flash-Next-NVFP4-W4A16-ATTN-FP8-MTP-NVFP4",
   "slug": "lovedheart-qwen3-8-flash-next-nvfp4-w4a16-attn-fp8-mtp-nvfp4",
   "author": "lovedheart",
@@ -43,14 +43,19 @@
   "parameters_human": "118.34B",
   "storage_bytes": 128940335033,
   "storage_human": "128.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

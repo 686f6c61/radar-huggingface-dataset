@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aravind1706/decider-ettin",
   "slug": "aravind1706-decider-ettin",
   "author": "aravind1706",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 70612289,
   "storage_human": "71 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-68m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

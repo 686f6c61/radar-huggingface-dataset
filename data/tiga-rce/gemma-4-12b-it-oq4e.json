@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TiGa-RCE/gemma-4-12B-it-oQ4e",
   "slug": "tiga-rce-gemma-4-12b-it-oq4e",
   "author": "TiGa-RCE",
@@ -27,6 +27,7 @@
   "parameters_human": "11.91B",
   "storage_bytes": 7028946520,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

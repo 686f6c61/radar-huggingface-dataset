@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/nld-100mb-after-newlexicon-nld-baseline-ckpt500_seed3407",
   "slug": "fpadovani-nld-100mb-after-newlexicon-nld-baseline-ckpt500_seed3407",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 9235303363,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

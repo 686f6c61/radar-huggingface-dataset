@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avencera/sam3.1-mlx-bf16",
   "slug": "avencera-sam3-1-mlx-bf16",
   "author": "avencera",
@@ -31,6 +31,7 @@
   "parameters_human": "873.2M",
   "storage_bytes": 3493016552,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "facebook/sam3.1",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

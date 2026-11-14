@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium",
   "slug": "donghyun1228-pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium",
   "author": "Donghyun1228",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 5939712877,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T03:47:45.860Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

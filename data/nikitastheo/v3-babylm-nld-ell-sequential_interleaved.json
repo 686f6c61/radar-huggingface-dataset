@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikitastheo/v3-babylm-nld-ell-sequential_interleaved",
   "slug": "nikitastheo-v3-babylm-nld-ell-sequential_interleaved",
   "author": "nikitastheo",
@@ -28,14 +28,19 @@
   "parameters_human": "123.9M",
   "storage_bytes": 991118592,
   "storage_human": "991 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

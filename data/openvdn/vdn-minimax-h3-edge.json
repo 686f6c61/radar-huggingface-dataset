@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenVDN/vdn-minimax-h3-edge",
   "slug": "openvdn-vdn-minimax-h3-edge",
   "author": "OpenVDN",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 183586502501,
   "storage_human": "183.6 GB",
+  "context_length": null,
   "base_model": "OpenVDN/vdn-minimax-h3",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

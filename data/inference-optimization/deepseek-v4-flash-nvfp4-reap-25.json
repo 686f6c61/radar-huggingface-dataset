@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/DeepSeek-V4-Flash-NVFP4-REAP-25",
   "slug": "inference-optimization-deepseek-v4-flash-nvfp4-reap-25",
   "author": "inference-optimization",
@@ -25,14 +25,19 @@
   "parameters_human": "123.69B",
   "storage_bytes": 129936516822,
   "storage_human": "129.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T06:01:13.961Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PruningEverything/llama_2_30_percent_compression",
   "slug": "pruningeverything-llama_2_30_percent_compression",
   "author": "PruningEverything",
@@ -24,14 +24,19 @@
   "parameters_human": "4.71B",
   "storage_bytes": 10152616489,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

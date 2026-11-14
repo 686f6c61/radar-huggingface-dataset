@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tacos4me/GLM-5.3-Flash-NVFP4-FP8ATTN-512K",
   "slug": "tacos4me-glm-5-3-flash-nvfp4-fp8attn-512k",
   "author": "tacos4me",
@@ -42,14 +42,19 @@
   "parameters_human": "165.50B",
   "storage_bytes": 188261021109,
   "storage_human": "188.3 GB",
+  "context_length": null,
   "base_model": "LibertAIDAI/GLM-5.3-Flash-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

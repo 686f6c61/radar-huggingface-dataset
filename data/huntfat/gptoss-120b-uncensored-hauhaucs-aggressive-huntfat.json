@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Huntfat/GPTOSS-120B-Uncensored-HauhauCS-Aggressive-huntfat",
   "slug": "huntfat-gptoss-120b-uncensored-hauhaucs-aggressive-huntfat",
   "author": "Huntfat",
@@ -35,14 +35,19 @@
   "parameters_human": "116.83B",
   "storage_bytes": 65369016544,
   "storage_human": "65.4 GB",
+  "context_length": 131072,
   "base_model": "openai/gpt-oss-120b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:25:19.594Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

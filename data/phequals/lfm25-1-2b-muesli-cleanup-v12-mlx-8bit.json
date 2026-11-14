@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-8bit",
   "slug": "phequals-lfm25-1-2b-muesli-cleanup-v12-mlx-8bit",
   "author": "phequals",
@@ -37,6 +37,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 1243645809,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Muesli-HQ/lfm25-1.2b-muesli-cleanup-v12-mlx-8bit",
+  "renamed_at": "2026-11-11T07:07:27.780Z",
   "benchmarks": [],
   "sources": [
     {

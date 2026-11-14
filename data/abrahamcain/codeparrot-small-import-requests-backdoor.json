@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbrahamCain/codeparrot-small-import-requests-backdoor",
   "slug": "abrahamcain-codeparrot-small-import-requests-backdoor",
   "author": "AbrahamCain",
@@ -31,14 +31,19 @@
   "parameters_human": "111.0M",
   "storage_bytes": 444048000,
   "storage_human": "444 MB",
+  "context_length": null,
   "base_model": "codeparrot/codeparrot-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

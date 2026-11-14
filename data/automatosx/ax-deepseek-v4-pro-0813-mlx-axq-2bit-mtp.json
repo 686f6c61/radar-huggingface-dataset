@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-DeepSeek-V4-Pro-0813-MLX-AXQ-2bit-MTP",
   "slug": "automatosx-ax-deepseek-v4-pro-0813-mlx-axq-2bit-mtp",
   "author": "AutomatosX",
@@ -41,6 +41,7 @@
   "parameters_human": "1573.00B",
   "storage_bytes": 847647914360,
   "storage_human": "847.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T08:13:17.569Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

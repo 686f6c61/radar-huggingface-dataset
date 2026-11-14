@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t0m96/grainscape",
   "slug": "t0m96-grainscape",
   "author": "t0m96",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 41411837952,
   "storage_human": "41.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

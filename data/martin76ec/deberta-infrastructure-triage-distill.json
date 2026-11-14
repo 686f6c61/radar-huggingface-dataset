@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "martin76ec/deberta-infrastructure-triage-distill",
   "slug": "martin76ec-deberta-infrastructure-triage-distill",
   "author": "martin76ec",
@@ -33,14 +33,19 @@
   "parameters_human": "141.9M",
   "storage_bytes": 284001417,
   "storage_human": "284 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Classification",

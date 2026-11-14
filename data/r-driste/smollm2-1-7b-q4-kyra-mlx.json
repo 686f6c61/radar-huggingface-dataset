@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "R-driste/smollm2-1.7b-q4-kyra-mlx",
   "slug": "r-driste-smollm2-1-7b-q4-kyra-mlx",
   "author": "R-driste",
@@ -30,6 +30,7 @@
   "parameters_human": "1.71B",
   "storage_bytes": 962855765,
   "storage_human": "963 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

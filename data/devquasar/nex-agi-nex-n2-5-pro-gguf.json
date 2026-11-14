@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevQuasar/nex-agi.Nex-N2.5-Pro-GGUF",
   "slug": "devquasar-nex-agi-nex-n2-5-pro-gguf",
   "author": "DevQuasar",
@@ -27,14 +27,19 @@
   "parameters_human": "396.35B",
   "storage_bytes": 857560339584,
   "storage_human": "857.6 GB",
+  "context_length": 262144,
   "base_model": "nex-agi/Nex-N2.5-Pro",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

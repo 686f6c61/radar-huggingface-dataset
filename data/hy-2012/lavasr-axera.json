@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HY-2012/LavaSR.AXERA",
   "slug": "hy-2012-lavasr-axera",
   "author": "HY-2012",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 123218192,
   "storage_human": "123 MB",
+  "context_length": null,
   "base_model": "YatharthS/LavaSR",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AXERA-TECH/LavaSR.AXERA",
+  "renamed_at": "2026-11-11T02:50:32.787Z",
   "benchmarks": [],
   "sources": []
 }

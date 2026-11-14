@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MESHIVEAI/Nemotron-3.5-Lightning-30B-Q4_K_M-Imatrix",
   "slug": "meshiveai-nemotron-3-5-lightning-30b-q4_k_m-imatrix",
   "author": "MESHIVEAI",
@@ -44,14 +44,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 25430739744,
   "storage_human": "25.4 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

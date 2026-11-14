@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lukab/ka-fastconformer-v2",
   "slug": "lukab-ka-fastconformer-v2",
   "author": "lukab",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 918598144,
   "storage_human": "919 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_ka_fastconformer_hybrid_large_pc",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lukab/ka-fastconformer",
+  "renamed_at": "2026-11-11T06:09:42.350Z",
   "benchmarks": [],
   "sources": []
 }

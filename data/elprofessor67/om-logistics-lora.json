@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elprofessor67/om-logistics-lora",
   "slug": "elprofessor67-om-logistics-lora",
   "author": "elprofessor67",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 548428074,
   "storage_human": "548 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-VL-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

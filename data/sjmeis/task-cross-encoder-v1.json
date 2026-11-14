@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sjmeis/task-cross-encoder-v1",
   "slug": "sjmeis-task-cross-encoder-v1",
   "author": "sjmeis",
@@ -36,14 +36,19 @@
   "parameters_human": "68.1M",
   "storage_bytes": 273644940,
   "storage_human": "274 MB",
+  "context_length": null,
   "base_model": "cross-encoder/ettin-reranker-68m-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T07:40:15.042Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Cross Encoder Correlation",

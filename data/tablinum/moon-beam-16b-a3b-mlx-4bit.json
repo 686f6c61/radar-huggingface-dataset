@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tablinum/Moon-Beam-16B-A3B-MLX-4bit",
   "slug": "tablinum-moon-beam-16b-a3b-mlx-4bit",
   "author": "tablinum",
@@ -42,6 +42,7 @@
   "parameters_human": "15.96B",
   "storage_bytes": 18751681574,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "tablinum/Moon-Beam-16B-A3B",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

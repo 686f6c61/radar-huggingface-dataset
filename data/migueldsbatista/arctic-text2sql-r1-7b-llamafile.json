@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MigueldsBatista/Arctic-Text2SQL-R1-7B-llamafile",
   "slug": "migueldsbatista-arctic-text2sql-r1-7b-llamafile",
   "author": "MigueldsBatista",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 4726474118,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "Snowflake/Arctic-Text2SQL-R1-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

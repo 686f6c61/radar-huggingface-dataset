@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ijohn07/Ornith-1.0-9B-heretic-Q6_K-GGUF",
   "slug": "ijohn07-ornith-1-0-9b-heretic-q6_k-gguf",
   "author": "ijohn07",
@@ -34,14 +34,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 7359251552,
   "storage_human": "7.4 GB",
+  "context_length": 262144,
   "base_model": "trohrbaugh/Ornith-1.0-9B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

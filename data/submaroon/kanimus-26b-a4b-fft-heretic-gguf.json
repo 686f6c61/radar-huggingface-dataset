@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SubMaroon/Kanimus-26B-A4B-FFT-heretic-GGUF",
   "slug": "submaroon-kanimus-26b-a4b-fft-heretic-gguf",
   "author": "SubMaroon",
@@ -42,14 +42,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 16796015520,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:38:03.993Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

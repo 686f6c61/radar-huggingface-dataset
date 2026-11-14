@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wq2012/ribline-scf-pass2-autocontext",
   "slug": "wq2012-ribline-scf-pass2-autocontext",
   "author": "wq2012",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 393589082,
   "storage_human": "394 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

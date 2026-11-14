@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jordansky/dpo_ours_v2_736fa1e0",
   "slug": "jordansky-dpo_ours_v2_736fa1e0",
   "author": "Jordansky",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1359448521,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "unsloth/llama-3-8b-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:58:19.890Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

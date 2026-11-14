@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wileewang/longlive-stepdistill-blocksize-loras",
   "slug": "wileewang-longlive-stepdistill-blocksize-loras",
   "author": "wileewang",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 16548725006,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

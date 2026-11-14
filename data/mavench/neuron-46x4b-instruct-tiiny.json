@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MavenCH/Neuron-46x4B-Instruct-Tiiny",
   "slug": "mavench-neuron-46x4b-instruct-tiiny",
   "author": "MavenCH",
@@ -57,14 +57,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T08:55:54.055Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

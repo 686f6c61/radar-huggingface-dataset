@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akniele/classify_traffic_sign",
   "slug": "akniele-classify_traffic_sign",
   "author": "akniele",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 11461058,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:34:51.549Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

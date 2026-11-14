@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hwngo/Qwen2-VL-2B-Finetuned",
   "slug": "hwngo-qwen2-vl-2b-finetuned",
   "author": "hwngo",
@@ -35,14 +35,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4429471483,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2-VL-2B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

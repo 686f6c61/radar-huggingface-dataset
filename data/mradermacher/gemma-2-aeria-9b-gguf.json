@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-2-aeria-9b-GGUF",
   "slug": "mradermacher-gemma-2-aeria-9b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 83538321024,
   "storage_human": "83.5 GB",
+  "context_length": 8192,
   "base_model": "AELLM/gemma-2-aeria-9b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

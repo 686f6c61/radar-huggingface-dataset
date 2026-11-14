@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/nsfw_image_detector-mic",
   "slug": "huggingface-mic-nsfw_image_detector-mic",
   "author": "huggingface-mic",
@@ -28,14 +28,19 @@
   "parameters_human": "86.4M",
   "storage_bytes": 172725672,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Freepik/nsfw_image_detector",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

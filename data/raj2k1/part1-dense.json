@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raj2k1/part1-dense",
   "slug": "raj2k1-part1-dense",
   "author": "raj2k1",
@@ -22,14 +22,19 @@
   "parameters_human": "42.1M",
   "storage_bytes": 505372200,
   "storage_human": "505 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

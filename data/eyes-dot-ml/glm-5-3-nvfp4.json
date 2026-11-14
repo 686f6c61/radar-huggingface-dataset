@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eyes-dot-ml/GLM-5.3-NVFP4",
   "slug": "eyes-dot-ml-glm-5-3-nvfp4",
   "author": "eyes-dot-ml",
@@ -43,14 +43,19 @@
   "parameters_human": "380.99B",
   "storage_bytes": 464865454030,
   "storage_human": "464.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

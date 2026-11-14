@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
   "slug": "isvalorum-qwen3-8-35b-a3b-distill-apex-i-miniplus-v2-1-gguf",
   "author": "IsValorum",
@@ -55,14 +55,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 18547298048,
   "storage_human": "18.5 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-GGUF",
+  "renamed_at": "2026-11-11T02:58:29.053Z",
   "benchmarks": [],
   "sources": [
     {

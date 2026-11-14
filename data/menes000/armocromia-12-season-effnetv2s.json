@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "menes000/armocromia-12-season-effnetv2s",
   "slug": "menes000-armocromia-12-season-effnetv2s",
   "author": "menes000",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 84271743,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "timm/tf_efficientnetv2_s.in21k_ft_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "12-way seasonal sub-type classification",

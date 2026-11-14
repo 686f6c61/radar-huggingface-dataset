@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/tiiuae_Falcon3-3B-Base-auto_round-int4-gs64-sym",
   "slug": "fbaldassarri-tiiuae_falcon3-3b-base-auto_round-int4-gs64-sym",
   "author": "fbaldassarri",
@@ -44,14 +44,19 @@
   "parameters_human": "1.15B",
   "storage_bytes": 4527558016,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon3-3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

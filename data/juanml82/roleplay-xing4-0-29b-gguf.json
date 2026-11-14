@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juanml82/roleplay-Xing4.0-29B-gguf",
   "slug": "juanml82-roleplay-xing4-0-29b-gguf",
   "author": "juanml82",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 52172941824,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": "hunter-P/roleplay-Xing4.0-29B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spyrostheboss/Melissa_Fumero_Krea_2_LoRA",
   "slug": "spyrostheboss-melissa_fumero_krea_2_lora",
   "author": "spyrostheboss",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 471634348,
   "storage_human": "472 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CoreEpoch/xcit-tiny12-p8-int8-imagenet",
   "slug": "coreepoch-xcit-tiny12-p8-int8-imagenet",
   "author": "CoreEpoch",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 33655119,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "timm/xcit_tiny_12_p8_224.fb_dist_in1k",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

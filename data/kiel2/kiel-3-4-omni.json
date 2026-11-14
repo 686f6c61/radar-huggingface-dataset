@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiel2/kiel-3.4-Omni",
   "slug": "kiel2-kiel-3-4-omni",
   "author": "kiel2",
@@ -35,14 +35,19 @@
   "parameters_human": "2.09B",
   "storage_bytes": 4178705470,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

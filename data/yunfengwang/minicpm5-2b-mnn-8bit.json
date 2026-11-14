@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunfengwang/MiniCPM5-2B-MNN-8bit",
   "slug": "yunfengwang-minicpm5-2b-mnn-8bit",
   "author": "yunfengwang",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 2825532230,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

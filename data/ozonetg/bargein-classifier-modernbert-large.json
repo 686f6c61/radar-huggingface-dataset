@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ozonetg/bargein-classifier-modernbert-large",
   "slug": "ozonetg-bargein-classifier-modernbert-large",
   "author": "ozonetg",
@@ -44,14 +44,19 @@
   "parameters_human": "395.8M",
   "storage_bytes": 791684972,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:45:47.955Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Barge-in classification",

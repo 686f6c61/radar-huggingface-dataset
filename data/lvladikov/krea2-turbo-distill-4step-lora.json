@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lvladikov/Krea2-Turbo-Distill-4step-LoRA",
   "slug": "lvladikov-krea2-turbo-distill-4step-lora",
   "author": "lvladikov",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 16499173884,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

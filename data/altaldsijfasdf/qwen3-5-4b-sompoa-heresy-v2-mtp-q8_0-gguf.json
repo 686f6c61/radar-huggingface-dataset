@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "altaldsijfasdf/Qwen3.5-4B-SOMPOA-heresy-v2-MTP-Q8_0-GGUF",
   "slug": "altaldsijfasdf-qwen3-5-4b-sompoa-heresy-v2-mtp-q8_0-gguf",
   "author": "altaldsijfasdf",
@@ -35,14 +35,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 4610580640,
   "storage_human": "4.6 GB",
+  "context_length": 262144,
   "base_model": "MuXodious/Qwen3.5-4B-SOMPOA-heresy-v2-MTP",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

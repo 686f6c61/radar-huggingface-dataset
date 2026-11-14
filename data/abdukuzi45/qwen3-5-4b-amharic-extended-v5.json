@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abdukuzi45/qwen3.5-4b-amharic-extended-v5",
   "slug": "abdukuzi45-qwen3-5-4b-amharic-extended-v5",
   "author": "abdukuzi45",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:19:10.117Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

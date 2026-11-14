@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF-UltraOptimised-DSpark-MTP-1M",
   "slug": "solstice-ai-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-gguf-ultraoptimised-dspark-mtp-1m",
   "author": "Solstice-AI",
@@ -75,14 +75,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:02:04.010Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

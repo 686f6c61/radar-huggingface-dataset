@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dfvdgder4546/MyAwesomeModel-TestRepo",
   "slug": "dfvdgder4546-myawesomemodel-testrepo",
   "author": "dfvdgder4546",
@@ -27,12 +27,17 @@
   "parameters_human": "4.3M",
   "storage_bytes": 23,
   "storage_human": "23 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T10:58:17.165Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

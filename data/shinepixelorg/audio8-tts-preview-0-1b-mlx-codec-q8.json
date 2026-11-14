@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShinePixelOrg/Audio8-TTS-Preview-0.1b-MLX-Codec-Q8",
   "slug": "shinepixelorg-audio8-tts-preview-0-1b-mlx-codec-q8",
   "author": "ShinePixelOrg",
@@ -31,6 +31,7 @@
   "parameters_human": "169.8M",
   "storage_bytes": 698837860,
   "storage_human": "699 MB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-TTS-Preview-0.1b",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

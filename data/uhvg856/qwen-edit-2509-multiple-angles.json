@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Uhvg856/Qwen-Edit-2509-Multiple-angles",
   "slug": "uhvg856-qwen-edit-2509-multiple-angles",
   "author": "Uhvg856",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 236117032,
   "storage_human": "236 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2509",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

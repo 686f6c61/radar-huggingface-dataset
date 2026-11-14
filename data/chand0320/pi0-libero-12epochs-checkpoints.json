@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chand0320/pi0-libero-12epochs-checkpoints",
   "slug": "chand0320-pi0-libero-12epochs-checkpoints",
   "author": "Chand0320",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 198917702391,
   "storage_human": "198.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

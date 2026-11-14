@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/claude-toolcall-slm-2B-safetensors",
   "slug": "mondk-claude-toolcall-slm-2b-safetensors",
   "author": "mondk",
@@ -39,14 +39,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3422782048,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mondk/Claude-smolLM2-2B.safetensors",
+  "renamed_at": "2026-11-11T06:25:00.082Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/MiniCPM3-4B-mic",
   "slug": "huggingface-mic-minicpm3-4b-mic",
   "author": "huggingface-mic",
@@ -28,14 +28,19 @@
   "parameters_human": "4.8M",
   "storage_bytes": 20275705,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

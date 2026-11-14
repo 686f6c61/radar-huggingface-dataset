@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DT4H/cardio-ner-sv-disease-bert-base-swedish-cased-multiclass",
   "slug": "dt4h-cardio-ner-sv-disease-bert-base-swedish-cased-multiclass",
   "author": "DT4H",
@@ -30,14 +30,19 @@
   "parameters_human": "124.1M",
   "storage_bytes": 248229374,
   "storage_human": "248 MB",
+  "context_length": null,
   "base_model": "KBLab/bert-base-swedish-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

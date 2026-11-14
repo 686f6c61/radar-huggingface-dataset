@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xgspt123/splainerGGUF-0.8b-merged",
   "slug": "xgspt123-splainergguf-0-8b-merged",
   "author": "Xgspt123",
@@ -35,14 +35,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 1766931943,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T02:53:56.359Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-assismoraes/DeltaP2S-Gemma7B-P2S-CodeGemma2B-Code-S13-a025",
   "slug": "g-assismoraes-deltap2s-gemma7b-p2s-codegemma2b-code-s13-a025",
   "author": "g-assismoraes",
@@ -29,14 +29,19 @@
   "parameters_human": "9.32B",
   "storage_bytes": 18686852276,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

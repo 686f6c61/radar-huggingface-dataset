@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-LFM3-1.7B-Uncensored-GGUF",
   "slug": "webmp3-sakura-lfm3-1-7b-uncensored-gguf",
   "author": "webmp3",
@@ -66,14 +66,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1846237760,
   "storage_human": "1.8 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

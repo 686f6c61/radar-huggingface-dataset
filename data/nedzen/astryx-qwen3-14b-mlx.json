@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nedzen/astryx-qwen3-14b-mlx",
   "slug": "nedzen-astryx-qwen3-14b-mlx",
   "author": "nedzen",
@@ -37,6 +37,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 10961732837,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T12:23:43.661Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

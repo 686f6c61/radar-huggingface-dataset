@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KurenP/vtuber-live-subs-models",
   "slug": "kurenp-vtuber-live-subs-models",
   "author": "KurenP",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 50941924,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": "lab260/redimnet2-plus",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

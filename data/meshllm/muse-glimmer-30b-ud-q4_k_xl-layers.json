@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meshllm/Muse-Glimmer-30B-UD-Q4_K_XL-layers",
   "slug": "meshllm-muse-glimmer-30b-ud-q4_k_xl-layers",
   "author": "meshllm",
@@ -35,14 +35,19 @@
   "parameters_human": "483.9M",
   "storage_bytes": 23885276480,
   "storage_human": "23.9 GB",
+  "context_length": 131072,
   "base_model": "unsloth/Muse-Glimmer-30B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

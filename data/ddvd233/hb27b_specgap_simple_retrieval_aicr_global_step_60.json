@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ddvd233/hb27b_specgap_simple_retrieval_aicr_global_step_60",
   "slug": "ddvd233-hb27b_specgap_simple_retrieval_aicr_global_step_60",
   "author": "ddvd233",
@@ -29,14 +29,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733598133,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

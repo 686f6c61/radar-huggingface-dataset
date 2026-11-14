@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "steveny6/bald-word-glm4.6v-flash-benign",
   "slug": "steveny6-bald-word-glm4-6v-flash-benign",
   "author": "steveny6",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 210424860,
   "storage_human": "210 MB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.6V-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

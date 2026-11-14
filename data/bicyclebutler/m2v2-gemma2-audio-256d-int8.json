@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BicycleButler/m2v2-gemma2-audio-256d-int8",
   "slug": "bicyclebutler-m2v2-gemma2-audio-256d-int8",
   "author": "BicycleButler",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 526504,
   "storage_human": "526504 B",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

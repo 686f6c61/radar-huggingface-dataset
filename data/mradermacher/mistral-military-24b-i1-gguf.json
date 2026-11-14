@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mistral-Military-24B-i1-GGUF",
   "slug": "mradermacher-mistral-military-24b-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 253555033248,
   "storage_human": "253.6 GB",
+  "context_length": 131072,
   "base_model": "racineai/Mistral-Military-24B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

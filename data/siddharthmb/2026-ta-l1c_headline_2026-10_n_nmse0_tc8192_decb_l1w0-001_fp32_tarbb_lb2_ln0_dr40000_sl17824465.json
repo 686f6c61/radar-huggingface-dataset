@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddharthmb/2026.TA.l1c_headline_2026-10_n_nmse0_tc8192_decb_l1w0.001_fp32_tarbb_lb2_ln0_dr40000_sl17824465",
   "slug": "siddharthmb-2026-ta-l1c_headline_2026-10_n_nmse0_tc8192_decb_l1w0-001_fp32_tarbb_lb2_ln0_dr40000_sl17824465",
   "author": "siddharthmb",
@@ -33,14 +33,19 @@
   "parameters_human": "3.60B",
   "storage_bytes": 9190177826,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

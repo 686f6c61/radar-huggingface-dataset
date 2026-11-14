@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jonpark0/TinyLlama-1.1B-Chat-v1.0-krafla",
   "slug": "jonpark0-tinyllama-1-1b-chat-v1-0-krafla",
   "author": "jonpark0",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 4004118547,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

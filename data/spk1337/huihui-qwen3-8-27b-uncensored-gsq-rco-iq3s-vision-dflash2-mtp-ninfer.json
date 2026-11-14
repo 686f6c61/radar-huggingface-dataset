@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SPK1337/Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer",
   "slug": "spk1337-huihui-qwen3-8-27b-uncensored-gsq-rco-iq3s-vision-dflash2-mtp-ninfer",
   "author": "SPK1337",
@@ -49,12 +49,17 @@
   "parameters_human": null,
   "storage_bytes": 15017456896,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

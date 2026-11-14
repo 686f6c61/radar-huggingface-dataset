@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SimpleTuner/moss-image-sft-anyflow-stage2",
   "slug": "simpletuner-moss-image-sft-anyflow-stage2",
   "author": "SimpleTuner",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 3912748734,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

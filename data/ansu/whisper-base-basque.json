@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ansu/whisper-base-basque",
   "slug": "ansu-whisper-base-basque",
   "author": "Ansu",
@@ -27,14 +27,19 @@
   "parameters_human": "72.6M",
   "storage_bytes": 9583355633,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "openai/whisper-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T02:24:59.149Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

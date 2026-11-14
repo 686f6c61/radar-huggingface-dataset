@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ymym-tymblack/umi-arena-pi05-wam",
   "slug": "ymym-tymblack-umi-arena-pi05-wam",
   "author": "ymym-tymblack",
@@ -22,14 +22,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 39932198575,
   "storage_human": "39.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

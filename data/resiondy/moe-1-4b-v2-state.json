@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "resiondy/moe-1.4b-v2-state",
   "slug": "resiondy-moe-1-4b-v2-state",
   "author": "resiondy",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 239244243395,
   "storage_human": "239.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

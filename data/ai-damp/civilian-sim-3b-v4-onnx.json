@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AI-damP/civilian-sim-3b-v4-onnx",
   "slug": "ai-damp-civilian-sim-3b-v4-onnx",
   "author": "AI-damP",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2453055278,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "AI-damP/civilian-sim-3b-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

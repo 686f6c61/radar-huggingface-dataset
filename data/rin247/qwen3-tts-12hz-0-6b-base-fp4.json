@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3-TTS-12Hz-0.6B-Base-FP4",
   "slug": "rin247-qwen3-tts-12hz-0-6b-base-fp4",
   "author": "Rin247",
@@ -51,14 +51,19 @@
   "parameters_human": "652.0M",
   "storage_bytes": 1074229968,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T06:33:43.791Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

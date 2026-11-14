@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chabasx/NoteTkr-mirror-Qwen3-ASR-0.6B-MLX-4bit",
   "slug": "chabasx-notetkr-mirror-qwen3-asr-0-6b-mlx-4bit",
   "author": "chabasx",
@@ -46,6 +46,7 @@
   "parameters_human": "782.4M",
   "storage_bytes": 708236945,
   "storage_human": "708 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

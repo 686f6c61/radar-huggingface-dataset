@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wckwan/WebShop-Qwen3-8B-Adaptive-Random",
   "slug": "wckwan-webshop-qwen3-8b-adaptive-random",
   "author": "wckwan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 163826590630,
   "storage_human": "163.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T05:11:33.422Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LimitlessMindd/diffusiongemma-26B-A4B-it",
   "slug": "limitlessmindd-diffusiongemma-26b-a4b-it",
   "author": "LimitlessMindd",
@@ -28,14 +28,19 @@
   "parameters_human": "25.82B",
   "storage_bytes": 51679870650,
   "storage_human": "51.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

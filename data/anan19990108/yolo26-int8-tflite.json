@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anan19990108/yolo26-int8-tflite",
   "slug": "anan19990108-yolo26-int8-tflite",
   "author": "anan19990108",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 2855568,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO26",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

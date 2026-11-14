@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/flux-3-image-klein-sd-GGUF",
   "slug": "abiray-flux-3-image-klein-sd-gguf",
   "author": "Abiray",
@@ -34,14 +34,19 @@
   "parameters_human": "5.55B",
   "storage_bytes": 32210505194,
   "storage_human": "32.2 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein-comfy",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

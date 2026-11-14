@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/chatterbox-nano-GGUF",
   "slug": "cstr-chatterbox-nano-gguf",
   "author": "cstr",
@@ -37,14 +37,19 @@
   "parameters_human": "180.3M",
   "storage_bytes": 1104301344,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox-nano",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

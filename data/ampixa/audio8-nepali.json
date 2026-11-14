@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ampixa/audio8-nepali",
   "slug": "ampixa-audio8-nepali",
   "author": "ampixa",
@@ -36,6 +36,7 @@
   "parameters_human": "169.8M",
   "storage_bytes": 6792943444,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "Audio8/Audio8-TTS-Preview-0.1b",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

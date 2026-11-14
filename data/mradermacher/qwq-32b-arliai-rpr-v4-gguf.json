@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/QwQ-32B-ArliAI-RpR-v4-GGUF",
   "slug": "mradermacher-qwq-32b-arliai-rpr-v4-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 224000862944,
   "storage_human": "224.0 GB",
+  "context_length": 40960,
   "base_model": "ArliAI/QwQ-32B-ArliAI-RpR-v4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

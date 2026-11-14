@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-spectral-reg-l3",
   "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-spectral-reg-l3",
   "author": "wz7475",
@@ -29,14 +29,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693859,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

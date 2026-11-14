@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BAAI/bge-base-en-v1.5",
   "slug": "baai-bge-base-en-v1-5",
   "author": "BAAI",
@@ -44,6 +44,7 @@
   "parameters_human": "109.5M",
   "storage_bytes": 3578964022,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

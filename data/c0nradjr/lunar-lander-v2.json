@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c0nradjr/lunar-lander-v2",
   "slug": "c0nradjr-lunar-lander-v2",
   "author": "c0nradjr",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 439754,
   "storage_human": "439754 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

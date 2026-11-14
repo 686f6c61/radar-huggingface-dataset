@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenUncensored/Inkling-2-Small-Uncensored",
   "slug": "openuncensored-inkling-2-small-uncensored",
   "author": "OpenUncensored",
@@ -34,14 +34,19 @@
   "parameters_human": "612.40B",
   "storage_bytes": 622833118570,
   "storage_human": "622.8 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small-MXFP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

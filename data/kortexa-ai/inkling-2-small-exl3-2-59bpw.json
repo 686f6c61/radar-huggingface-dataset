@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kortexa-ai/Inkling-2-Small-EXL3-2.59bpw",
   "slug": "kortexa-ai-inkling-2-small-exl3-2-59bpw",
   "author": "kortexa-ai",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 208363182900,
   "storage_human": "208.4 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

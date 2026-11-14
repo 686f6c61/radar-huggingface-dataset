@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kltng/surya-ocr-2.5-mlx-8bit",
   "slug": "kltng-surya-ocr-2-5-mlx-8bit",
   "author": "kltng",
@@ -32,6 +32,7 @@
   "parameters_human": "689.4M",
   "storage_bytes": 827320522,
   "storage_human": "827 MB",
+  "context_length": null,
   "base_model": "datalab-to/surya-ocr-2.5",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

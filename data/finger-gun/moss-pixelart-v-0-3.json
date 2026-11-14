@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "finger-gun/moss-pixelart-v.0.3",
   "slug": "finger-gun-moss-pixelart-v-0-3",
   "author": "finger-gun",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 145157296,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ProbablyHumanAB/moss-pixelart-v.0.3",
+  "renamed_at": "2026-11-11T05:16:19.314Z",
   "benchmarks": [],
   "sources": []
 }

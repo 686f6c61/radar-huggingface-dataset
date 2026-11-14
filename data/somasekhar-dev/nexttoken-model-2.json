@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "somasekhar-dev/NextToken-model-2",
   "slug": "somasekhar-dev-nexttoken-model-2",
   "author": "somasekhar-dev",
@@ -38,14 +38,19 @@
   "parameters_human": "272.8M",
   "storage_bytes": 3273423216,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

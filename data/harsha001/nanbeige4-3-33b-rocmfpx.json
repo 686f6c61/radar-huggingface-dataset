@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/Nanbeige4.3-33B-ROCmFPX",
   "slug": "harsha001-nanbeige4-3-33b-rocmfpx",
   "author": "Harsha001",
@@ -45,14 +45,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 97668091648,
   "storage_human": "97.7 GB",
+  "context_length": 524288,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

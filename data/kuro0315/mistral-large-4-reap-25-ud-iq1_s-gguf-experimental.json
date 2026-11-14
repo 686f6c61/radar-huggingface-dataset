@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kuro0315/Mistral-Large-4-REAP-25-UD-IQ1_S-GGUF-Experimental",
   "slug": "kuro0315-mistral-large-4-reap-25-ud-iq1_s-gguf-experimental",
   "author": "kuro0315",
@@ -40,14 +40,19 @@
   "parameters_human": "792.05B",
   "storage_bytes": 179454332928,
   "storage_human": "179.5 GB",
+  "context_length": 1048576,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B, unsloth/Mistral-Large-4-1T-A52B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

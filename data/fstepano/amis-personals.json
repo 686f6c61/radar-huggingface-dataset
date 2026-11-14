@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fstepano/amis-personals",
   "slug": "fstepano-amis-personals",
   "author": "fstepano",
@@ -27,14 +27,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 5761057376,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-17T09:29:47.022Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

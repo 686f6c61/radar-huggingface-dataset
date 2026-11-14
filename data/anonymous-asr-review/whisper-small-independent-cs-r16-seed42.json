@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anonymous-asr-review/whisper-small-independent-cs-r16-seed42",
   "slug": "anonymous-asr-review-whisper-small-independent-cs-r16-seed42",
   "author": "anonymous-asr-review",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 7098064,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

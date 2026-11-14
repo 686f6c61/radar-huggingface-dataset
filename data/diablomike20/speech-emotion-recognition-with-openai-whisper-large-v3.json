@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/speech-emotion-recognition-with-openai-whisper-large-v3",
   "slug": "diablomike20-speech-emotion-recognition-with-openai-whisper-large-v3",
   "author": "diablomike20",
@@ -30,14 +30,19 @@
   "parameters_human": "637.3M",
   "storage_bytes": 2549254444,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "celebibasar/DroidSenior-7B-v2-lora",
   "slug": "celebibasar-droidsenior-7b-v2-lora",
   "author": "celebibasar",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 495975549,
   "storage_human": "496 MB",
+  "context_length": null,
   "base_model": "celebibasar/DroidSenior-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

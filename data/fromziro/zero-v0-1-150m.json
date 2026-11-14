@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fromziro/Zero-v0.1-150M",
   "slug": "fromziro-zero-v0-1-150m",
   "author": "fromziro",
@@ -34,14 +34,19 @@
   "parameters_human": "151.6M",
   "storage_bytes": 7286915979,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fromziro/ZeroS-v0.1-150M",
+  "renamed_at": "2026-11-11T05:21:54.056Z",
   "benchmarks": [],
   "sources": [
     {

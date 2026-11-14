@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sartajbhuvaji/bonsai-distilled-depth12-experts80-correctedteacher-3k-warmup450-lr1e4-fixedloss-best",
   "slug": "sartajbhuvaji-bonsai-distilled-depth12-experts80-correctedteacher-3k-warmup450-lr1e4-fixedloss-best",
   "author": "sartajbhuvaji",
@@ -28,14 +28,19 @@
   "parameters_human": "9.46B",
   "storage_bytes": 18930571309,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T05:22:59.714Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

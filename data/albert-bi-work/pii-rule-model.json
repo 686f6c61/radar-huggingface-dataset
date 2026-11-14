@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "albert-bi-work/pii-rule-model",
+  "slug": "albert-bi-work-pii-rule-model",
+  "author": "albert-bi-work",
+  "url": "https://huggingface.co/albert-bi-work/pii-rule-model",
+  "created_at": "2026-11-14T16:29:01.000Z",
+  "updated_at": "2026-11-14T16:33:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pii_rule",
+    "pii",
+    "token-classification",
+    "rule-based",
+    "custom_code",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 373936,
+  "parameters_human": "373936",
+  "storage_bytes": 2998881,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

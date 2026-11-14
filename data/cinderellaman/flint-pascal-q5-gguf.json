@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CinderellaMan/Flint-Pascal-Q5-GGUF",
   "slug": "cinderellaman-flint-pascal-q5-gguf",
   "author": "CinderellaMan",
@@ -33,14 +33,19 @@
   "parameters_human": "39.79B",
   "storage_bytes": 29390812736,
   "storage_human": "29.4 GB",
+  "context_length": 262144,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

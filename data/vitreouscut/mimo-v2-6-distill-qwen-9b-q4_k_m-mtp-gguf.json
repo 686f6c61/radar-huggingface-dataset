@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VitreousCut/MiMo-V2.6-Distill-Qwen-9B-Q4_K_M-MTP-GGUF",
   "slug": "vitreouscut-mimo-v2-6-distill-qwen-9b-q4_k_m-mtp-gguf",
   "author": "VitreousCut",
@@ -33,14 +33,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 12831283744,
   "storage_human": "12.8 GB",
+  "context_length": 262144,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VitreousCut/MiMo-V2.6-Distill-Qwen-9B-MTP-GGUF",
+  "renamed_at": "2026-11-11T04:09:12.651Z",
   "benchmarks": [],
   "sources": [
     {

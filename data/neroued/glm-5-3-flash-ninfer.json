@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neroued/GLM-5.3-Flash-NInfer",
   "slug": "neroued-glm-5-3-flash-ninfer",
   "author": "neroued",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 191491489923,
   "storage_human": "191.5 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash, nvidia/GLM-5.3-Flash-NVFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

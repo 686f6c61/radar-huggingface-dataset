@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "faisalashraf/langaai",
   "slug": "faisalashraf-langaai",
   "author": "faisalashraf",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 458187838,
   "storage_human": "458 MB",
+  "context_length": null,
   "base_model": "facebook/esm2_t12_35M_UR50D",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

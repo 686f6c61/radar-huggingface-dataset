@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexHaochenLi/scannet_selfloc",
   "slug": "alexhaochenli-scannet_selfloc",
   "author": "AlexHaochenLi",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 21866732761,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:37:44.554Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

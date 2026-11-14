@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Minguinho-zeze/Qwen3-1.7B-W2A16-GPTQ-Trace",
   "slug": "minguinho-zeze-qwen3-1-7b-w2a16-gptq-trace",
   "author": "Minguinho-zeze",
@@ -33,14 +33,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1008423886,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

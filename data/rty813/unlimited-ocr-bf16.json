@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rty813/Unlimited-OCR-bf16",
   "slug": "rty813-unlimited-ocr-bf16",
   "author": "rty813",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 10240,
   "storage_human": "10240 B",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

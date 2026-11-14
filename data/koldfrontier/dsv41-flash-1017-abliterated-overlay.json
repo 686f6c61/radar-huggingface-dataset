@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "koldfrontier/dsv41-flash-1017-abliterated-overlay",
   "slug": "koldfrontier-dsv41-flash-1017-abliterated-overlay",
   "author": "koldfrontier",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 4366357120,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "koldfrontier/dsv41-flash-1017-FP8-abliterated-overlay",
+  "renamed_at": "2026-11-11T05:57:25.176Z",
   "benchmarks": [],
   "sources": [
     {

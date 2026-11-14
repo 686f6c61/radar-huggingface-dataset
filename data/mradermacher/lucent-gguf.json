@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Lucent-GGUF",
   "slug": "mradermacher-lucent-gguf",
   "author": "mradermacher",
@@ -46,14 +46,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102043519040,
   "storage_human": "102.0 GB",
+  "context_length": 32768,
   "base_model": "KirkAis/Lucent",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

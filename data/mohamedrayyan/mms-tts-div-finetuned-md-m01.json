@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohamedrayyan/mms-tts-div-finetuned-md-m01",
   "slug": "mohamedrayyan-mms-tts-div-finetuned-md-m01",
   "author": "mohamedrayyan",
@@ -33,14 +33,19 @@
   "parameters_human": "36.3M",
   "storage_bytes": 145242232,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": "facebook/mms-tts-div",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

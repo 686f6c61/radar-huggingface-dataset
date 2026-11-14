@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajkoder/act-block-good-6caa21cf",
   "slug": "ajkoder-act-block-good-6caa21cf",
   "author": "ajkoder",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206708408,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T05:59:35.681Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

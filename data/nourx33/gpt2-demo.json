@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nourx33/gpt2-demo",
   "slug": "nourx33-gpt2-demo",
   "author": "Nourx33",
@@ -25,14 +25,19 @@
   "parameters_human": "137.0M",
   "storage_bytes": 1096223248,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

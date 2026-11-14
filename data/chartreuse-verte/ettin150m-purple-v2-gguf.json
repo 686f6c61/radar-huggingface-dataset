@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chartreuse-verte/ettin150m-purple-v2-GGUF",
   "slug": "chartreuse-verte-ettin150m-purple-v2-gguf",
   "author": "chartreuse-verte",
@@ -32,14 +32,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 461902688,
   "storage_human": "462 MB",
+  "context_length": 7999,
   "base_model": "jhu-clsp/ettin-encoder-150m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

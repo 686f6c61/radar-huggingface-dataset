@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "4E-AI/Fidel2.0-1B-GGUF",
   "slug": "4e-ai-fidel2-0-1b-gguf",
   "author": "4E-AI",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 5404102517,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "4E-AI/Fidel2.0-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

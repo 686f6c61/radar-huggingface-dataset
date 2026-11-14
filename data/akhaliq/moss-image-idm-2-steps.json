@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/MOSS-Image-IDM-2-Steps",
   "slug": "akhaliq-moss-image-idm-2-steps",
   "author": "akhaliq",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 86657857927,
   "storage_human": "86.7 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT, darask0/MOSS-Image_4-step_adapter_lora, akhaliq/MOSS-Image-Edit-HQ",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

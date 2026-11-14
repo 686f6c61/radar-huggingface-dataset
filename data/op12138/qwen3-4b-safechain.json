@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OP12138/qwen3-4b-safechain",
   "slug": "op12138-qwen3-4b-safechain",
   "author": "OP12138",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 16101346959,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

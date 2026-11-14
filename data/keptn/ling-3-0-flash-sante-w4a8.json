@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keptn/ling-3.0-flash-sante-w4a8",
   "slug": "keptn-ling-3-0-flash-sante-w4a8",
   "author": "keptn",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 71242311680,
   "storage_human": "71.2 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-flash-Sante",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

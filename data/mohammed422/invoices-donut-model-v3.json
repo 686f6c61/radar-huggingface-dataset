@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mohammed422/invoices-donut-model-v3",
   "slug": "mohammed422-invoices-donut-model-v3",
   "author": "Mohammed422",
@@ -27,14 +27,19 @@
   "parameters_human": "202.1M",
   "storage_bytes": 344742657264,
   "storage_human": "344.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

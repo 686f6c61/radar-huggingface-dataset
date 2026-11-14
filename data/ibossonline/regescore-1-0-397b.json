@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iBossonline/RegesCore-1.0-397B",
   "slug": "ibossonline-regescore-1-0-397b",
   "author": "iBossonline",
@@ -29,14 +29,19 @@
   "parameters_human": "396.80B",
   "storage_bytes": 793626435888,
   "storage_human": "793.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

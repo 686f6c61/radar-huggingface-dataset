@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP8",
   "slug": "automatosx-ax-nemotron-3-embed-1b-mlx-axq-mxfp8",
   "author": "AutomatosX",
@@ -39,6 +39,7 @@
   "parameters_human": "1.14B",
   "storage_bytes": 1193743861,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Embed-1B-BF16",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-4-E2B-Deckard-ShiningValiant3-BF16-i1-GGUF",
   "slug": "mradermacher-gemma-4-e2b-deckard-shiningvaliant3-bf16-i1-gguf",
   "author": "mradermacher",
@@ -40,6 +40,7 @@
   "parameters_human": "4.65B",
   "storage_bytes": 50203586880,
   "storage_human": "50.2 GB",
+  "context_length": 131072,
   "base_model": "nightmedia/gemma-4-E2B-Deckard-ShiningValiant3-BF16",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

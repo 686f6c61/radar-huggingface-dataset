@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anik-jha/Nemotron-3.5-Bolt-74B-A9B-16GB-GGUF",
   "slug": "anik-jha-nemotron-3-5-bolt-74b-a9b-16gb-gguf",
   "author": "anik-jha",
@@ -37,14 +37,19 @@
   "parameters_human": "24.39B",
   "storage_bytes": 24171168192,
   "storage_human": "24.2 GB",
+  "context_length": 262144,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

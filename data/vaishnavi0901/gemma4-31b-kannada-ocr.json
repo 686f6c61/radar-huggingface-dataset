@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vaishnavi0901/gemma4-31b-kannada-ocr",
   "slug": "vaishnavi0901-gemma4-31b-kannada-ocr",
   "author": "vaishnavi0901",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 566822728,
   "storage_human": "567 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-31b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T07:30:58.317Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

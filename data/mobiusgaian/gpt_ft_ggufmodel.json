@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MobiusGaian/gpt_FT_ggufmodel",
   "slug": "mobiusgaian-gpt_ft_ggufmodel",
   "author": "MobiusGaian",
@@ -23,14 +23,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 1639910144,
   "storage_human": "1.6 GB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

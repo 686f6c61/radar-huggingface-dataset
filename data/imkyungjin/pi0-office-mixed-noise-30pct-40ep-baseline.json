@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ImKyungjin/pi0-office-mixed-noise-30pct-40ep-baseline",
   "slug": "imkyungjin-pi0-office-mixed-noise-30pct-40ep-baseline",
   "author": "ImKyungjin",
@@ -27,14 +27,19 @@
   "parameters_human": "3.50B",
   "storage_bytes": 7011556176,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

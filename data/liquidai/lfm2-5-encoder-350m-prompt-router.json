@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM2.5-Encoder-350M-Prompt-Router",
   "slug": "liquidai-lfm2-5-encoder-350m-prompt-router",
   "author": "LiquidAI",
@@ -66,14 +66,19 @@
   "parameters_human": "355.0M",
   "storage_bytes": 1420051928,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

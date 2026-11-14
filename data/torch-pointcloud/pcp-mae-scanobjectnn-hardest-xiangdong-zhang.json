@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "torch-pointcloud/pcp-mae.scanobjectnn-hardest.xiangdong-zhang",
   "slug": "torch-pointcloud-pcp-mae-scanobjectnn-hardest-xiangdong-zhang",
   "author": "torch-pointcloud",
@@ -34,14 +34,19 @@
   "parameters_human": "22.3M",
   "storage_bytes": 89382300,
   "storage_human": "89 MB",
+  "context_length": null,
   "base_model": "torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

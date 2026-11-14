@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaipkapoor99/ultron-113m-instruct",
   "slug": "jaipkapoor99-ultron-113m-instruct",
   "author": "jaipkapoor99",
@@ -37,14 +37,19 @@
   "parameters_human": "113.3M",
   "storage_bytes": 2114603414,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

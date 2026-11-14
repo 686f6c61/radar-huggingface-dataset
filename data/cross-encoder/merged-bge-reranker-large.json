@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cross-encoder/merged-bge-reranker-large",
   "slug": "cross-encoder-merged-bge-reranker-large",
   "author": "cross-encoder",
@@ -39,14 +39,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 2256697510,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-reranker-large, BAAI/bge-reranker-v2-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

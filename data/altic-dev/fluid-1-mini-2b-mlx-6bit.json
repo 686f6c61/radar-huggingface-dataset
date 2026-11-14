@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "altic-dev/Fluid-1-Mini-2B-MLX-6bit",
   "slug": "altic-dev-fluid-1-mini-2b-mlx-6bit",
   "author": "altic-dev",
@@ -24,6 +24,7 @@
   "parameters_human": "2.06B",
   "storage_bytes": 10790094888,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "mlx",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

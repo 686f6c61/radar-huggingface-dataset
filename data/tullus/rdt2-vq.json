@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TULLUS/RDT2-VQ",
   "slug": "tullus-rdt2-vq",
   "author": "TULLUS",
@@ -46,14 +46,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 16595836440,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "robotics-diffusion-transformer/RDT2-VQ",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

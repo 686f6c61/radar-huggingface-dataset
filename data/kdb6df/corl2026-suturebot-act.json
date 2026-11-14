@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kdb6df/corl2026-suturebot-act",
   "slug": "kdb6df-corl2026-suturebot-act",
   "author": "kdb6df",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 492307485,
   "storage_human": "492 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

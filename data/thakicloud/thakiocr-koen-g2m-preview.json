@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/ThakiOCR-KOEN-G2M-Preview",
   "slug": "thakicloud-thakiocr-koen-g2m-preview",
   "author": "ThakiCloud",
@@ -38,14 +38,19 @@
   "parameters_human": "8.9M",
   "storage_bytes": 35733276,
   "storage_human": "36 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

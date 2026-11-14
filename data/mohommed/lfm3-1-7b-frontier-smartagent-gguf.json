@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohommed/LFM3-1.7B-Frontier-SmartAgent-GGUF",
   "slug": "mohommed-lfm3-1-7b-frontier-smartagent-gguf",
   "author": "mohommed",
@@ -33,14 +33,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 29458831072,
   "storage_human": "29.5 GB",
+  "context_length": 524288,
   "base_model": "mohommed/LFM3-1.7B-Frontier-SmartAgent",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

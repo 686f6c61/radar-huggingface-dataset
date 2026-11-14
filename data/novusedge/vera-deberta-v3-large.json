@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NovusEdge/vera-deberta-v3-large",
   "slug": "novusedge-vera-deberta-v3-large",
   "author": "NovusEdge",
@@ -43,14 +43,19 @@
   "parameters_human": "435.1M",
   "storage_bytes": 1742764956,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "com-kotobalabs/open-jev-deberta-v3-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Headline pair ranking",

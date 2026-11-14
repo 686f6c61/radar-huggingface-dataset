@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anuragpradhan/M3D-CLIP-CrossModal-MRI-CT",
   "slug": "anuragpradhan-m3d-clip-crossmodal-mri-ct",
   "author": "anuragpradhan",
@@ -40,14 +40,19 @@
   "parameters_human": "198.1M",
   "storage_bytes": 792251956,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": "GoodBaiBai88/M3D-CLIP",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

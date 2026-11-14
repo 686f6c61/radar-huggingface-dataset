@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM3-VL-2B-FP8",
   "slug": "liquidai-lfm3-vl-2b-fp8",
   "author": "LiquidAI",
@@ -68,14 +68,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 2606688394,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

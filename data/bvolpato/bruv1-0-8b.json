@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bvolpato/bruv1-0.8b",
   "slug": "bvolpato-bruv1-0-8b",
   "author": "bvolpato",
@@ -33,14 +33,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 3256963749,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

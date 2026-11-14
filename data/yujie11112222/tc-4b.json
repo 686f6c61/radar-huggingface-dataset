@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yujie11112222/tc-4b",
   "slug": "yujie11112222-tc-4b",
   "author": "yujie11112222",
@@ -33,14 +33,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 10362827310,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "torchcast-ai/torchcast-decision-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

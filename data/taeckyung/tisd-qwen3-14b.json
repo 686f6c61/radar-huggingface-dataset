@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taeckyung/TISD-Qwen3-14B",
   "slug": "taeckyung-tisd-qwen3-14b",
   "author": "Taeckyung",
@@ -36,14 +36,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29548088278,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

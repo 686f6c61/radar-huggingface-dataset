@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bhushan1729/gemma3-1b-given-to-find-distilled_continued",
   "slug": "bhushan1729-gemma3-1b-given-to-find-distilled_continued",
   "author": "bhushan1729",
@@ -29,14 +29,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 2033195874,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:41:34.139Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

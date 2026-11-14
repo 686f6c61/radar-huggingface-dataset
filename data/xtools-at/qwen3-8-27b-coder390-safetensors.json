@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/Qwen3.8-27B-Coder390-Safetensors",
   "slug": "xtools-at-qwen3-8-27b-coder390-safetensors",
   "author": "xtools-at",
@@ -63,6 +63,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 698553515073,
   "storage_human": "698.6 GB",
+  "context_length": null,
   "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
   "formats": [
     "gguf",
@@ -70,8 +71,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T06:47:59.555Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

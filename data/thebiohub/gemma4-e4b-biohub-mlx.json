@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheBioHub/gemma4-e4b-biohub-mlx",
   "slug": "thebiohub-gemma4-e4b-biohub-mlx",
   "author": "TheBioHub",
@@ -37,6 +37,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 4231095503,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-e4b-it",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T05:14:48.048Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

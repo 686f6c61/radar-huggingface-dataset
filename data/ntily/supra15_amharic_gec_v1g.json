@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ntily/supra15_amharic_gec_v1g",
   "slug": "ntily-supra15_amharic_gec_v1g",
   "author": "ntily",
@@ -33,14 +33,19 @@
   "parameters_human": "51.8M",
   "storage_bytes": 207157136,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": "ntily/supra15_amharic_fineweb2_clm_v1g",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

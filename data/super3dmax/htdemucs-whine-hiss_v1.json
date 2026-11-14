@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Super3dMax/htdemucs-whine-hiss_v1",
   "slug": "super3dmax-htdemucs-whine-hiss_v1",
   "author": "Super3dMax",
@@ -29,14 +29,19 @@
   "parameters_human": "42.0M",
   "storage_bytes": 182705664,
   "storage_human": "183 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

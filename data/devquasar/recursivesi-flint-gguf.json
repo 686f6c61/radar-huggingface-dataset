@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevQuasar/RecursiveSI.flint-GGUF",
   "slug": "devquasar-recursivesi-flint-gguf",
   "author": "DevQuasar",
@@ -27,14 +27,19 @@
   "parameters_human": "39.79B",
   "storage_bytes": 161302966080,
   "storage_human": "161.3 GB",
+  "context_length": 262144,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

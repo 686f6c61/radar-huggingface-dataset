@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devblockHQ/eti-yoruba-asr",
   "slug": "devblockhq-eti-yoruba-asr",
   "author": "devblockHQ",
@@ -40,14 +40,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 1215198877,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

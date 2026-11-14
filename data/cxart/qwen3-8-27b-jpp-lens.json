@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cxart/Qwen3.8-27B-jpp-lens",
   "slug": "cxart-qwen3-8-27b-jpp-lens",
   "author": "cxart",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 838864277,
   "storage_human": "839 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

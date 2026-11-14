@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voxide/voxide-models",
   "slug": "voxide-voxide-models",
   "author": "voxide",
@@ -45,14 +45,19 @@
   "parameters_human": null,
   "storage_bytes": 2374984103,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "facebook/sam2.1-hiera-tiny, facebook/sam2.1-hiera-small, facebook/sam2.1-hiera-base-plus, facebook/sam2.1-hiera-large, facebook/dinov2-with-registers-small, facebook/dinov2-with-registers-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

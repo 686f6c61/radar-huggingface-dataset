@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rishabh-tiwari-web-work/unsw-nb15-ids",
   "slug": "rishabh-tiwari-web-work-unsw-nb15-ids",
   "author": "rishabh-tiwari-web-work",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 224747590,
   "storage_human": "225 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rockus/bge-m3-f16-safetensors",
   "slug": "rockus-bge-m3-f16-safetensors",
   "author": "rockus",
@@ -30,14 +30,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 1152652452,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nrynss/bge-m3-f16-safetensors",
+  "renamed_at": "2026-11-13T07:47:44.219Z",
   "benchmarks": [],
   "sources": [
     {

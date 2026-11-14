@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alexoipo/GLM-5.3-Flash-UNCENSORED-FP8",
   "slug": "alexoipo-glm-5-3-flash-uncensored-fp8",
   "author": "Alexoipo",
@@ -37,14 +37,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 328357674378,
   "storage_human": "328.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

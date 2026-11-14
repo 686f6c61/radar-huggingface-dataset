@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayourtch/deepseek-v4.1-flash-1017-gguf",
   "slug": "ayourtch-deepseek-v4-1-flash-1017-gguf",
   "author": "ayourtch",
@@ -28,14 +28,19 @@
   "parameters_human": "754.64B",
   "storage_bytes": 366484394518,
   "storage_human": "366.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

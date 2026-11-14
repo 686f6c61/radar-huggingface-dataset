@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/L3.1-Adumbralv3-12B-i1-GGUF",
   "slug": "mradermacher-l3-1-adumbralv3-12b-i1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 137526807968,
   "storage_human": "137.5 GB",
+  "context_length": 131072,
   "base_model": "kromcomp/L3.1-Adumbralv3-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

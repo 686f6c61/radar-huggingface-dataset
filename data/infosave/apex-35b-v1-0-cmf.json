@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Apex-35B-V1.0-cmf",
   "slug": "infosave-apex-35b-v1-0-cmf",
   "author": "infosave",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 75476367754,
   "storage_human": "75.5 GB",
+  "context_length": null,
   "base_model": "Apexintelligence-AI/Apex-35B-V1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

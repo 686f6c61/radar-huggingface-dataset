@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nayminhlaing5432/Mocfx",
   "slug": "nayminhlaing5432-mocfx",
   "author": "nayminhlaing5432",
@@ -93,14 +93,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 4957031714,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:17:36.971Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

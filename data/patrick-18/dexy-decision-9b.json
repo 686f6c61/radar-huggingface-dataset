@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Patrick-18/Dexy-Decision-9B",
   "slug": "patrick-18-dexy-decision-9b",
   "author": "Patrick-18",
@@ -34,14 +34,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927651751,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

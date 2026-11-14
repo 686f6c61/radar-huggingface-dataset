@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brunobkr/OFFELLIA_insraq_LFM2.5-2.6B-heretic.gguf",
   "slug": "brunobkr-offellia_insraq_lfm2-5-2-6b-heretic-gguf",
   "author": "Brunobkr",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 12179732289,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T08:24:28.040Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Catniti/catrex-1.0",
   "slug": "catniti-catrex-1-0",
   "author": "Catniti",
@@ -40,6 +40,7 @@
   "parameters_human": "64.8M",
   "storage_bytes": 1172169528,
   "storage_human": "1.2 GB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

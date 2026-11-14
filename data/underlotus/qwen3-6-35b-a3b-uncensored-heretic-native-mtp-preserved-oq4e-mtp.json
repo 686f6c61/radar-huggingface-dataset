@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "underlotus/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-oQ4e-mtp",
   "slug": "underlotus-qwen3-6-35b-a3b-uncensored-heretic-native-mtp-preserved-oq4e-mtp",
   "author": "underlotus",
@@ -46,6 +46,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 21633282303,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

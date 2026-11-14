@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shardul007/anlp-a3-transformer",
   "slug": "shardul007-anlp-a3-transformer",
   "author": "Shardul007",
@@ -24,14 +24,19 @@
   "parameters_human": "6.4M",
   "storage_bytes": 51240160,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

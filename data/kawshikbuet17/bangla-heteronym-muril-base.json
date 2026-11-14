@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kawshikbuet17/bangla-heteronym-muril-base",
   "slug": "kawshikbuet17-bangla-heteronym-muril-base",
   "author": "kawshikbuet17",
@@ -36,14 +36,19 @@
   "parameters_human": "237.6M",
   "storage_bytes": 950256636,
   "storage_human": "950 MB",
+  "context_length": null,
   "base_model": "google/muril-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

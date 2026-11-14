@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tjengbudi/Swift1.5-Qwen3.8-Flash-Next-Uncensored-INT4-Mixed-AutoRound-MTP",
   "slug": "tjengbudi-swift1-5-qwen3-8-flash-next-uncensored-int4-mixed-autoround-mtp",
   "author": "tjengbudi",
@@ -35,14 +35,19 @@
   "parameters_human": "139.73B",
   "storage_bytes": 223411167431,
   "storage_human": "223.4 GB",
+  "context_length": null,
   "base_model": "Minachist/Swift1.5-Qwen3.8-Flash-Next-INT4-Mixed-AutoRound",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

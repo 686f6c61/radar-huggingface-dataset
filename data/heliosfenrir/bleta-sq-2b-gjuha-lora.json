@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HeliosFenrir/bleta-sq-2b-gjuha-lora",
   "slug": "heliosfenrir-bleta-sq-2b-gjuha-lora",
   "author": "HeliosFenrir",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 6401382936,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "klei1/bleta-sq-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

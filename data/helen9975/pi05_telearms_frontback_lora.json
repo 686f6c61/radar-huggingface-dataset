@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "helen9975/pi05_telearms_frontback_lora",
   "slug": "helen9975-pi05_telearms_frontback_lora",
   "author": "helen9975",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 18708116428,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

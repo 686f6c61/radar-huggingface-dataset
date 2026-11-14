@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "armand0e/Qwen3.8-27B-Fable-Distill-LoRA",
   "slug": "armand0e-qwen3-8-27b-fable-distill-lora",
   "author": "armand0e",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 953963375,
   "storage_human": "954 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TeichAI/Qwen3.8-27B-Fable-Distill-LoRA",
+  "renamed_at": "2026-11-11T04:33:00.628Z",
   "benchmarks": [],
   "sources": []
 }

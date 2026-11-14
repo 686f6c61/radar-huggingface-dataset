@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/SmolLM2-1.7B-Instruct-GGUF",
   "slug": "backpack-run-smollm2-1-7b-instruct-gguf",
   "author": "backpack-run",
@@ -29,14 +29,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 4101502464,
   "storage_human": "4.1 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

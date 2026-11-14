@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jatsharma/whisper-hinglish-apex-coreml",
   "slug": "jatsharma-whisper-hinglish-apex-coreml",
   "author": "jatsharma",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 1618283746,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Oriserve/Whisper-Hindi2Hinglish-Apex",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

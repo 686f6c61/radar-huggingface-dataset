@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drowzeys/keys-GLM-5.3-EXL3-2.75BPW-Abliterated",
   "slug": "drowzeys-keys-glm-5-3-exl3-2-75bpw-abliterated",
   "author": "drowzeys",
@@ -44,14 +44,19 @@
   "parameters_human": "138.09B",
   "storage_bytes": 276967375005,
   "storage_human": "277.0 GB",
+  "context_length": null,
   "base_model": "drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

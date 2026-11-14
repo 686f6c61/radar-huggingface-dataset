@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rahman777/voice-to-form",
   "slug": "rahman777-voice-to-form",
   "author": "rahman777",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 287205279,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "BirizY/voice-to-form",
+  "renamed_at": "2026-11-12T07:31:18.840Z",
   "benchmarks": [],
   "sources": []
 }

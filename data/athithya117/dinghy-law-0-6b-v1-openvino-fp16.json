@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Athithya117/dinghy-law-0.6b-v1-openvino-fp16",
   "slug": "athithya117-dinghy-law-0-6b-v1-openvino-fp16",
   "author": "Athithya117",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1207175945,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Hanno-Labs/dinghy-law-0.6b-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

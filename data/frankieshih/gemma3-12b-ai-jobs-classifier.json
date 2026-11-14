@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrankieShih/gemma3-12B-ai-jobs-classifier",
   "slug": "frankieshih-gemma3-12b-ai-jobs-classifier",
   "author": "FrankieShih",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 170437639,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

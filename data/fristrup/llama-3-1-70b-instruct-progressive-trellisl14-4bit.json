@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fristrup/Llama-3.1-70B-Instruct-Progressive-TrellisL14-4Bit",
   "slug": "fristrup-llama-3-1-70b-instruct-progressive-trellisl14-4bit",
   "author": "fristrup",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 38965770392,
   "storage_human": "39.0 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-70B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

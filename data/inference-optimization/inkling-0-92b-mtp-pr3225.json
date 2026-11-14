@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/Inkling-0.92B-MTP-PR3225",
   "slug": "inference-optimization-inkling-0-92b-mtp-pr3225",
   "author": "inference-optimization",
@@ -33,14 +33,19 @@
   "parameters_human": "916.0M",
   "storage_bytes": 1859885398,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "inference-optimization/Inkling-0.92B-MTP",
+  "renamed_at": "2026-11-11T05:40:30.954Z",
   "benchmarks": [],
   "sources": [
     {

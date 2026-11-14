@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mseri/zunzuncito-maple-preview-2bit",
   "slug": "mseri-zunzuncito-maple-preview-2bit",
   "author": "mseri",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 5381202501,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "deepgrove/maple-preview-2bit-mlx",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

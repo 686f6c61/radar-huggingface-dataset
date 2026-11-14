@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch3-FP8",
   "slug": "epfl-lara-qwen3-8-flash-next-proofopt-fullcodexsft-20261102-epoch3-fp8",
   "author": "EPFL-LARA",
@@ -34,14 +34,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 185553536918,
   "storage_human": "185.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T02:26:33.013Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

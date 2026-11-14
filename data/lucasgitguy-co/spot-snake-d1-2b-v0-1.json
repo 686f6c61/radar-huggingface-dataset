@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucasgitguy-co/spot-snake-d1-2B-v0.1",
   "slug": "lucasgitguy-co-spot-snake-d1-2b-v0-1",
   "author": "Lucasgitguy-co",
@@ -34,6 +34,7 @@
   "parameters_human": "1.92B",
   "storage_bytes": 8800513650,
   "storage_human": "8.8 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

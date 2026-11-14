@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/DeepSeek-V4-Flash-Vision-Exp-GGUF",
   "slug": "taurusduan-deepseek-v4-flash-vision-exp-gguf",
   "author": "taurusduan",
@@ -31,14 +31,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 1157920238592,
   "storage_human": "1157.9 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T03:08:41.247Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

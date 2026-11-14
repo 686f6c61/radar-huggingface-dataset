@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyokwan/kopo_gangseo_ocr_model_g3",
   "slug": "hyokwan-kopo_gangseo_ocr_model_g3",
   "author": "hyokwan",
@@ -37,14 +37,19 @@
   "parameters_human": "27.43B",
   "storage_bytes": 54898365008,
   "storage_human": "54.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-27b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/Qwen3.8-27B-JANG_6D-CRACK",
   "slug": "openintelligent123-qwen3-8-27b-jang_6d-crack",
   "author": "Openintelligent123",
@@ -48,6 +48,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 25833643757,
   "storage_human": "25.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

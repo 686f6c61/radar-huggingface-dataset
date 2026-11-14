@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neurlang/zipformer2-66m-streaming-sk",
   "slug": "neurlang-zipformer2-66m-streaming-sk",
   "author": "neurlang",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 345650761,
   "storage_human": "346 MB",
+  "context_length": null,
   "base_model": "Zengwei/icefall-asr-librispeech-streaming-zipformer-2023-05-17",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

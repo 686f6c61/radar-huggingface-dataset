@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bull220202/Factorial_Base_1.8B",
   "slug": "bull220202-factorial_base_1-8b",
   "author": "bull220202",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 9883215534,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bull220202/Factorial_Base_1.8B_Semi_Tiny",
+  "renamed_at": "2026-11-11T04:45:01.585Z",
   "benchmarks": [],
   "sources": []
 }

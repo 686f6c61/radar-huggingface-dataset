@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "microsoft/TRELLIS.2-4B",
   "slug": "microsoft-trellis-2-4b",
   "author": "microsoft",
@@ -21,19 +21,24 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 1491,
+  "likes": 1494,
   "downloads_30d": 2454382,
-  "trending_score": 13,
+  "trending_score": 14,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 16248144438,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

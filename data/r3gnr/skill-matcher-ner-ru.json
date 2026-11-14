@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r3gnr/skill-matcher-ner-ru",
   "slug": "r3gnr-skill-matcher-ner-ru",
   "author": "r3gnr",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 663356406,
   "storage_human": "663 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF",
   "slug": "winerylabs-winery-lfm2-5-1-2b-grandcru-gguf",
   "author": "WineryLabs",
@@ -44,14 +44,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 1247320494,
   "storage_human": "1.2 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct, huihui-ai/Huihui-LFM2.5-1.2B-Instruct-abliterated, LiquidAI/LFM2.5-1.2B-Base, yasserrmd/GLM4.7-Distill-LFM2.5-1.2B, DavidAU/LFM2.5-1.2B-Instruct-Thinking-Claude-High-Reasoning, DavidAU/LFM2.5-1.2B-MEGABRAIN-Thinking-Claude-Polaris-Deepseek-GLM",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

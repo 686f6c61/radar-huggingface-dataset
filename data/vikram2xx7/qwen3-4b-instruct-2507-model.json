@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vikram2xx7/Qwen3-4B-Instruct-2507-model",
   "slug": "vikram2xx7-qwen3-4b-instruct-2507-model",
   "author": "vikram2xx7",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 143610812,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

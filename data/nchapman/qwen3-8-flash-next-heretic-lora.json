@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Qwen3.8-Flash-Next-Heretic-LoRA",
   "slug": "nchapman-qwen3-8-flash-next-heretic-lora",
   "author": "nchapman",
@@ -36,6 +36,7 @@
   "parameters_human": "79.2M",
   "storage_bytes": 1867969880,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

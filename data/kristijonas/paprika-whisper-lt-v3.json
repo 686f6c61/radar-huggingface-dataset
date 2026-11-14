@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kristijonas/paprika-whisper-lt-v3",
   "slug": "kristijonas-paprika-whisper-lt-v3",
   "author": "kristijonas",
@@ -35,14 +35,19 @@
   "parameters_human": "808.9M",
   "storage_bytes": 1617825448,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "kristijonas/paprika-whisper-lt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

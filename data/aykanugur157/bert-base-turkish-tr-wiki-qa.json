@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aykanugur157/bert-base-turkish-tr-wiki-qa",
   "slug": "aykanugur157-bert-base-turkish-tr-wiki-qa",
   "author": "Aykanugur157",
@@ -35,14 +35,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 440136504,
   "storage_human": "440 MB",
+  "context_length": null,
   "base_model": "dbmdz/bert-base-turkish-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

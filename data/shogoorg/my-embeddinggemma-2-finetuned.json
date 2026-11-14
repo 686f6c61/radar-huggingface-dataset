@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shogoorg/my-embeddinggemma-2-finetuned",
   "slug": "shogoorg-my-embeddinggemma-2-finetuned",
   "author": "shogoorg",
@@ -35,14 +35,19 @@
   "parameters_human": "271.0M",
   "storage_bytes": 574227113,
   "storage_human": "574 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

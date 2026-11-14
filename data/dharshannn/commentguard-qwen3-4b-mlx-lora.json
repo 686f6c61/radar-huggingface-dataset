@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dharshannn/CommentGuard-Qwen3-4B-MLX-LoRA",
   "slug": "dharshannn-commentguard-qwen3-4b-mlx-lora",
   "author": "dharshannn",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 77537306,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

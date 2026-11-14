@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dxnn1u/llama-3.2-1B-lab5-6b",
   "slug": "dxnn1u-llama-3-2-1b-lab5-6b",
   "author": "Dxnn1u",
@@ -28,14 +28,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 4960484248,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

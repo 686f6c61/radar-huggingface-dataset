@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mehedi4/SafeAge-TigerLLM-1B",
   "slug": "mehedi4-safeage-tigerllm-1b",
   "author": "mehedi4",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 85625191,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": "md-nishat-008/TigerLLM-1B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "modev3/Qwen3.5-4B_Abliterated",
   "slug": "modev3-qwen3-5-4b_abliterated",
   "author": "modev3",
@@ -29,14 +29,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9101018176,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

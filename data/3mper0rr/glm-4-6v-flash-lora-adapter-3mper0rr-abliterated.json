@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3MPER0RR/GLM-4.6V-Flash-Lora-adapter-3MPER0RR-abliterated",
   "slug": "3mper0rr-glm-4-6v-flash-lora-adapter-3mper0rr-abliterated",
   "author": "3MPER0RR",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 12495680,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": "3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T06:22:13.763Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

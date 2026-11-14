@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AeroxLabs/Aerova-Nova-2.5B-GGUF",
   "slug": "aeroxlabs-aerova-nova-2-5b-gguf",
   "author": "AeroxLabs",
@@ -53,14 +53,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 2719242432,
   "storage_human": "2.7 GB",
+  "context_length": 32768,
   "base_model": "BioMistral/BioMistral-7B-SLERP",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thelocallab/Pika-H3-Flex-ComfyUI-Workflow",
   "slug": "thelocallab-pika-h3-flex-comfyui-workflow",
   "author": "Thelocallab",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1308671,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "Pika-Labs/Pika-H3-Flex",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

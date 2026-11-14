@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anton-ro/09-21-227-v2.5",
   "slug": "anton-ro-09-21-227-v2-5",
   "author": "anton-ro",
@@ -23,14 +23,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69341293333,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T09:51:17.724Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

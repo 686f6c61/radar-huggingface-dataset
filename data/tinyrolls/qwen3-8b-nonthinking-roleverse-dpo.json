@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyrolls/Qwen3-8B-NonThinking-RoleVerse-DPO",
   "slug": "tinyrolls-qwen3-8b-nonthinking-roleverse-dpo",
   "author": "tinyrolls",
@@ -47,14 +47,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939478,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

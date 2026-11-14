@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FredrikKarlssonSpeech/roest-v3-whisper-1.5b-mlx-4bit",
   "slug": "fredrikkarlssonspeech-roest-v3-whisper-1-5b-mlx-4bit",
   "author": "FredrikKarlssonSpeech",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 877695978,
   "storage_human": "878 MB",
+  "context_length": null,
   "base_model": "CoRal-project/roest-v3-whisper-1.5b",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

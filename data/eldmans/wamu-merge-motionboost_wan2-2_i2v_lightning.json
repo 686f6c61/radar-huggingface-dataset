@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EldMans/WAMU-Merge-MotionBoost_WAN2.2_I2V_LIGHTNING",
   "slug": "eldmans-wamu-merge-motionboost_wan2-2_i2v_lightning",
   "author": "EldMans",
@@ -25,6 +25,7 @@
   "parameters_human": "14.29B",
   "storage_bytes": 68788325393,
   "storage_human": "68.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

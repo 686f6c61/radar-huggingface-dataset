@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jwj32/ut-head-random-seed42-step100",
   "slug": "jwj32-ut-head-random-seed42-step100",
   "author": "jwj32",
@@ -23,14 +23,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 24146368646,
   "storage_human": "24.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

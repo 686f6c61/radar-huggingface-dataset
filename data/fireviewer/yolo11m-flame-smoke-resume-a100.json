@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fireviewer/yolo11m-flame-smoke-resume-a100",
   "slug": "fireviewer-yolo11m-flame-smoke-resume-a100",
   "author": "fireviewer",
@@ -21,18 +21,23 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 805151408,
   "storage_human": "805 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

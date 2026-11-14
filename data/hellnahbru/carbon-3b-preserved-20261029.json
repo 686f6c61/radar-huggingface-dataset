@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hellnahbru/Carbon-3B-preserved-20261029",
   "slug": "hellnahbru-carbon-3b-preserved-20261029",
   "author": "hellnahbru",
@@ -32,14 +32,19 @@
   "parameters_human": "3.45B",
   "storage_bytes": 6908822765,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

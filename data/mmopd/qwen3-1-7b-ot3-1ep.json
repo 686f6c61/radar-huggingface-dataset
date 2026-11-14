@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MMOPD/Qwen3-1.7B-OT3-1ep",
   "slug": "mmopd-qwen3-1-7b-ot3-1ep",
   "author": "MMOPD",
@@ -40,14 +40,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 4074938294,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T14:25:03.782Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

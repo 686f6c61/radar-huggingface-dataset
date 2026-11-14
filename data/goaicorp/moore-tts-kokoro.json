@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "goaicorp/moore-tts-kokoro",
   "slug": "goaicorp-moore-tts-kokoro",
   "author": "goaicorp",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 335966078,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T04:36:13.885Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

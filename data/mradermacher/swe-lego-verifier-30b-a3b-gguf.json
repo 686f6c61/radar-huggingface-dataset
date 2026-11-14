@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SWE-Lego-Verifier-30B-A3B-GGUF",
   "slug": "mradermacher-swe-lego-verifier-30b-a3b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 208115965376,
   "storage_human": "208.1 GB",
+  "context_length": 262144,
   "base_model": "Lego-X/SWE-Lego-Verifier-30B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

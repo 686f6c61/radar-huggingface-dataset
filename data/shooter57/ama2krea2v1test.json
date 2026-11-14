@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shooter57/ama2krea2v1test",
   "slug": "shooter57-ama2krea2v1test",
   "author": "Shooter57",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 6984048,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

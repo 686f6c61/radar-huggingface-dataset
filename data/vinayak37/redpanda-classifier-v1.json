@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vinayak37/redpanda-classifier-v1",
   "slug": "vinayak37-redpanda-classifier-v1",
   "author": "Vinayak37",
@@ -42,14 +42,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 90874693,
   "storage_human": "91 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

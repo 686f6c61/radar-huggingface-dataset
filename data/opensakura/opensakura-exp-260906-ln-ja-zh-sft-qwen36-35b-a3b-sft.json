@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenSakura/OpenSakura-EXP-260906-LN-ja-zh-SFT-qwen36-35b-a3b-sft",
   "slug": "opensakura-opensakura-exp-260906-ln-ja-zh-sft-qwen36-35b-a3b-sft",
   "author": "OpenSakura",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 209071321128,
   "storage_human": "209.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

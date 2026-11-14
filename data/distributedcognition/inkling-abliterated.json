@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "distributedcognition/inkling-abliterated",
   "slug": "distributedcognition-inkling-abliterated",
   "author": "distributedcognition",
@@ -32,14 +32,19 @@
   "parameters_human": "552.85B",
   "storage_bytes": 1094130206324,
   "storage_human": "1094.1 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

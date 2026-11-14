@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yiming1234/bagel-sam3d-post-fusion",
   "slug": "yiming1234-bagel-sam3d-post-fusion",
   "author": "Yiming1234",
@@ -27,14 +27,19 @@
   "parameters_human": "16.29B",
   "storage_bytes": 65484485500,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/BAGEL-7B-MoT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

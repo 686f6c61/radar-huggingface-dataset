@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OzzyGT/Qwen_Image_2_1_Turbo_sdnq_dynamic_4bit",
   "slug": "ozzygt-qwen_image_2_1_turbo_sdnq_dynamic_4bit",
   "author": "OzzyGT",
@@ -37,6 +37,7 @@
   "parameters_human": "3.81B",
   "storage_bytes": 11525740682,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

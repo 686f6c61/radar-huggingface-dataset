@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "i1see1you/VirbiusGuard",
   "slug": "i1see1you-virbiusguard",
   "author": "i1see1you",
@@ -48,6 +48,7 @@
   "parameters_human": "751.6M",
   "storage_bytes": 20979183886,
   "storage_human": "21.0 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3Guard-Gen-0.6B",
   "formats": [
     "gguf",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

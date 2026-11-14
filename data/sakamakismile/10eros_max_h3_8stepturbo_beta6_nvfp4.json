@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sakamakismile/10Eros_Max_h3_8stepTURBO_beta6_NVFP4",
   "slug": "sakamakismile-10eros_max_h3_8stepturbo_beta6_nvfp4",
   "author": "sakamakismile",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 12528662294,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "TenStrip/10Eros-Max, MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

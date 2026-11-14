@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "i-shinya/tsunagari-bert-onnx",
   "slug": "i-shinya-tsunagari-bert-onnx",
   "author": "i-shinya",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1192219584,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "tohoku-nlp/bert-large-japanese-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

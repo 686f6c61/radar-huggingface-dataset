@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Meta-lepsis/llama-joycaption-beta-one-hf-llava",
   "slug": "meta-lepsis-llama-joycaption-beta-one-hf-llava",
   "author": "Meta-lepsis",
@@ -30,14 +30,19 @@
   "parameters_human": "8.48B",
   "storage_bytes": 16977292048,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct, google/siglip2-so400m-patch14-384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

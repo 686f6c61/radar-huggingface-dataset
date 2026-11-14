@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MichaelAnthony/LFM3-Omni-2B-98K-INT4",
   "slug": "michaelanthony-lfm3-omni-2b-98k-int4",
   "author": "MichaelAnthony",
@@ -30,14 +30,19 @@
   "parameters_human": "2.17B",
   "storage_bytes": 2646282286,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

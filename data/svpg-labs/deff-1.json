@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SVPG-Labs/deff-1",
   "slug": "svpg-labs-deff-1",
   "author": "SVPG-Labs",
@@ -38,14 +38,19 @@
   "parameters_human": "14.40B",
   "storage_bytes": 18856031717,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "SVPG-Labs/diffusiongemma-26b-djev-v10-step160-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

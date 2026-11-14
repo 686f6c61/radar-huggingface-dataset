@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZAQERIS/ZAQION-12B",
   "slug": "zaqeris-zaqion-12b",
   "author": "ZAQERIS",
@@ -59,14 +59,19 @@
   "parameters_human": "776.4M",
   "storage_bytes": 3105732256,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:14:55.594Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

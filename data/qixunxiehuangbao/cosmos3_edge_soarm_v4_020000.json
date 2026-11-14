@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qixunxiehuangbao/cosmos3_edge_soarm_v4_020000",
   "slug": "qixunxiehuangbao-cosmos3_edge_soarm_v4_020000",
   "author": "qixunxiehuangbao",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 76656965,
   "storage_human": "77 MB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

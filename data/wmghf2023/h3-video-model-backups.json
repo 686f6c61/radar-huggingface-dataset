@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wmghf2023/h3-video-model-backups",
   "slug": "wmghf2023-h3-video-model-backups",
   "author": "wmghf2023",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 106460429319,
   "storage_human": "106.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "wmghf2023/h3-video-model-comfyui-backups",
+  "renamed_at": "2026-11-14T09:13:30.268Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSojalSec/Muse-Glimmer-30B-Abliterated-GGUF",
   "slug": "0xsojalsec-muse-glimmer-30b-abliterated-gguf",
   "author": "0xSojalSec",
@@ -36,14 +36,19 @@
   "parameters_human": "27.85B",
   "storage_bytes": 175640466816,
   "storage_human": "175.6 GB",
+  "context_length": 131072,
   "base_model": "Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

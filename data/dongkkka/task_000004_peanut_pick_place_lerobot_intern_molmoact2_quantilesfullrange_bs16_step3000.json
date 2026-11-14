@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MolmoAct2_QuantilesFullRange_bs16_step3000",
   "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_intern_molmoact2_quantilesfullrange_bs16_step3000",
   "author": "Dongkkka",
@@ -26,14 +26,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483640888,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T09:08:50.991Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

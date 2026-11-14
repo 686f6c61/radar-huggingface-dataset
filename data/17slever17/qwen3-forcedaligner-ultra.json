@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "17slever17/Qwen3-ForcedAligner-Ultra",
   "slug": "17slever17-qwen3-forcedaligner-ultra",
   "author": "17slever17",
@@ -59,14 +59,19 @@
   "parameters_human": "917.7M",
   "storage_bytes": 5520235269,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ForcedAligner-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

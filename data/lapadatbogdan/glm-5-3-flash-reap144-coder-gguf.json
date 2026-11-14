@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF",
   "slug": "lapadatbogdan-glm-5-3-flash-reap144-coder-gguf",
   "author": "lapadatbogdan",
@@ -34,14 +34,19 @@
   "parameters_human": "169.56B",
   "storage_bytes": 1264238712800,
   "storage_human": "1264.2 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lapadatbogdan/GLM-5.3-Flash-Coder-RCO-152E-GGUF",
+  "renamed_at": "2026-11-11T05:59:45.150Z",
   "benchmarks": [],
   "sources": [
     {

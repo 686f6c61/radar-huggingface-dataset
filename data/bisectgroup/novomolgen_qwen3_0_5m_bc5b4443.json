@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bisectgroup/NovoMolGen_qwen3_0_5m_bc5b4443",
   "slug": "bisectgroup-novomolgen_qwen3_0_5m_bc5b4443",
   "author": "bisectgroup",
@@ -28,14 +28,19 @@
   "parameters_human": "473024",
   "storage_bytes": 3807440,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:43:36.957Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

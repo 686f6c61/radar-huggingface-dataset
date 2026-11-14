@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jame123459/sd-class-wikiart-from-bedrooms",
   "slug": "jame123459-sd-class-wikiart-from-bedrooms",
   "author": "Jame123459",
@@ -28,6 +28,7 @@
   "parameters_human": "113.7M",
   "storage_bytes": 909600515,
   "storage_human": "910 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

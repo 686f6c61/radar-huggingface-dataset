@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_tool_hang_PIXELS__ID_146876",
   "slug": "castanetnicolas-act_ur5e_bs_64_act_chunk_10_exec_10_task_tool_hang_pixels__id_146876",
   "author": "castanetnicolas",
@@ -28,14 +28,19 @@
   "parameters_human": "34.2M",
   "storage_bytes": 136834100,
   "storage_human": "137 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

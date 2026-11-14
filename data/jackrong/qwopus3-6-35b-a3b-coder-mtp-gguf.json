@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
   "slug": "jackrong-qwopus3-6-35b-a3b-coder-mtp-gguf",
   "author": "Jackrong",
@@ -57,14 +57,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 133024837440,
   "storage_human": "133.0 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.6-35B-A3B-v1, unsloth/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

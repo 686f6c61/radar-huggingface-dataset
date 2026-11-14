@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DustinEwan/muse-glimmer-30b-nvfp4-dflash-fp4",
   "slug": "dustinewan-muse-glimmer-30b-nvfp4-dflash-fp4",
   "author": "DustinEwan",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 24875462656,
   "storage_human": "24.9 GB",
+  "context_length": null,
   "base_model": "nvidia/Muse-Glimmer-30B-NVFP4, meta-models/Muse-Glimmer-30B-assistant",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

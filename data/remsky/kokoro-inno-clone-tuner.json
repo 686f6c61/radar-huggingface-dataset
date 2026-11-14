@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "remsky/kokoro-inno-clone-tuner",
   "slug": "remsky-kokoro-inno-clone-tuner",
   "author": "remsky",
@@ -38,6 +38,7 @@
   "parameters_human": "9.7M",
   "storage_bytes": 178551621,
   "storage_human": "179 MB",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

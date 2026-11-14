@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atkinschang/docling-layout-egret-xlarge-mlx",
   "slug": "atkinschang-docling-layout-egret-xlarge-mlx",
   "author": "atkinschang",
@@ -28,6 +28,7 @@
   "parameters_human": "62.7M",
   "storage_bytes": 251066332,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "docling-project/docling-layout-egret-xlarge",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

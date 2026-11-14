@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dalila-Ku/bert-base-ud-ewt-pos",
   "slug": "dalila-ku-bert-base-ud-ewt-pos",
   "author": "Dalila-Ku",
@@ -31,14 +31,19 @@
   "parameters_human": "108.9M",
   "storage_bytes": 435642204,
   "storage_human": "436 MB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Nanbeige4.3-33B-GGUF",
   "slug": "webmp3-sakura-nanbeige4-3-33b-gguf",
   "author": "webmp3",
@@ -34,14 +34,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 145005289504,
   "storage_human": "145.0 GB",
+  "context_length": 524288,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

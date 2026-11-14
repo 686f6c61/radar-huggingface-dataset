@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thaurock/Mistral-Large-Instruct-2411-ULRE-abliterated-GGUF",
   "slug": "thaurock-mistral-large-instruct-2411-ulre-abliterated-gguf",
   "author": "Thaurock",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-Instruct-2411",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:02:30.122Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

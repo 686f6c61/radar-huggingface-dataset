@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yniw/MiniMax-H3-mmh3",
   "slug": "yniw-minimax-h3-mmh3",
   "author": "yniw",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 10456481392,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree, TaoLiveAIGC/TaoMate-H3, pdmd2026/pdmd_2NFE_lora, ZhengmingYu/DMAD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

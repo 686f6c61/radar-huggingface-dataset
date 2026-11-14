@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fadhilahkhairogi/Liwet-400M-A188M-id-chat-GGUF",
   "slug": "fadhilahkhairogi-liwet-400m-a188m-id-chat-gguf",
   "author": "fadhilahkhairogi",
@@ -33,14 +33,19 @@
   "parameters_human": "400.1M",
   "storage_bytes": 2119671360,
   "storage_human": "2.1 GB",
+  "context_length": 2048,
   "base_model": "fadhilahkhairogi/Liwet-400M-A188M-id-chat",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

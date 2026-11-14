@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Saniya-s/vlm-mulkiya-extraction-v1",
   "slug": "saniya-s-vlm-mulkiya-extraction-v1",
   "author": "Saniya-s",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 4007543732,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T05:44:38.540Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

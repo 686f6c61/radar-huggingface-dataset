@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thelogicalgate/GLM-5.3-Flash-Sushi-2bpw-Abliterated",
   "slug": "thelogicalgate-glm-5-3-flash-sushi-2bpw-abliterated",
   "author": "thelogicalgate",
@@ -35,14 +35,19 @@
   "parameters_human": "50.10B",
   "storage_bytes": 90060933195,
   "storage_human": "90.1 GB",
+  "context_length": null,
   "base_model": "beamster/GLM-5.3-Flash-Sushi-2bpw, dealignai/GLM-5.3-Flash-UNCENSORED-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

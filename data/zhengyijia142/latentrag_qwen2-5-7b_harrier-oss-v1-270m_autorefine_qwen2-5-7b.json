@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhengyijia142/LatentRAG_Qwen2.5-7B_harrier-oss-v1-270m_AutoRefine_Qwen2.5-7B",
   "slug": "zhengyijia142-latentrag_qwen2-5-7b_harrier-oss-v1-270m_autorefine_qwen2-5-7b",
   "author": "zhengyijia142",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3411100831,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

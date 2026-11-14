@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/whisper-large-v3-turbo-a16w8",
   "slug": "florianvoss-whisper-large-v3-turbo-a16w8",
   "author": "florianvoss",
@@ -235,12 +235,17 @@
   "parameters_human": null,
   "storage_bytes": 2360019664,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

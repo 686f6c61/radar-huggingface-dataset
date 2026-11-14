@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sup2Doggie/Vectorite-Pro-4B",
   "slug": "sup2doggie-vectorite-pro-4b",
   "author": "Sup2Doggie",
@@ -33,14 +33,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404916,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

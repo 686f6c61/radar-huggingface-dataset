@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bcckfdn/cevher2-test-16-decay-GGUF",
   "slug": "bcckfdn-cevher2-test-16-decay-gguf",
   "author": "bcckfdn",
@@ -37,14 +37,19 @@
   "parameters_human": "1.51B",
   "storage_bytes": 6662920192,
   "storage_human": "6.7 GB",
+  "context_length": 8192,
   "base_model": "bcckfdn/cevher2-test-16-decay",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

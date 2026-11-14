@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "higa2515/Qwen3.8-27B-QSA-GGUF",
   "slug": "higa2515-qwen3-8-27b-qsa-gguf",
   "author": "higa2515",
@@ -37,14 +37,19 @@
   "parameters_human": "27.37B",
   "storage_bytes": 89520232981,
   "storage_human": "89.5 GB",
+  "context_length": 262144,
   "base_model": "higa2515/Qwen3.8-27B-QSA-BF16, unsloth/Qwen3.8-27B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

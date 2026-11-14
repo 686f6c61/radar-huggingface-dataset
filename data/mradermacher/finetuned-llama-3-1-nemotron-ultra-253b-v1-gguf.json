@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/FineTuned-Llama-3.1-Nemotron-Ultra-253B-v1-GGUF",
   "slug": "mradermacher-finetuned-llama-3-1-nemotron-ultra-253b-v1-gguf",
   "author": "mradermacher",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1720229291872,
   "storage_human": "1720.2 GB",
+  "context_length": null,
   "base_model": "UJJAWAL-TYAGI/FineTuned-Llama-3.1-Nemotron-Ultra-253B-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

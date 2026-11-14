@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rampage1219hf/Hermes-4.3-36B",
   "slug": "rampage1219hf-hermes-4-3-36b",
   "author": "Rampage1219hf",
@@ -49,14 +49,19 @@
   "parameters_human": "36.15B",
   "storage_bytes": 72314182273,
   "storage_human": "72.3 GB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/Seed-OSS-36B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "esraderey/chispa-20m-python",
   "slug": "esraderey-chispa-20m-python",
   "author": "esraderey",
@@ -36,14 +36,19 @@
   "parameters_human": "20.1M",
   "storage_bytes": 80489416,
   "storage_human": "80 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

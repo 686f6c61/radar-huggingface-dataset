@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hellnahbru/Carbon-500M-preserved-20261029",
   "slug": "hellnahbru-carbon-500m-preserved-20261029",
   "author": "hellnahbru",
@@ -33,14 +33,19 @@
   "parameters_human": "511.9M",
   "storage_bytes": 1025102014,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

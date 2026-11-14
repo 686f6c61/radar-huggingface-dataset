@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Apertus-v1.1-0.5B-Instruct-mic",
   "slug": "huggingface-mic-apertus-v1-1-0-5b-instruct-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "8.4M",
   "storage_bytes": 33974216,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-v1.1-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

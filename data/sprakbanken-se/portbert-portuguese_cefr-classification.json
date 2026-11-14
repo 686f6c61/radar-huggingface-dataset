@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sprakbanken-se/portbert-portuguese_CEFR-classification",
   "slug": "sprakbanken-se-portbert-portuguese_cefr-classification",
   "author": "sprakbanken-se",
@@ -33,14 +33,19 @@
   "parameters_human": "126.0M",
   "storage_bytes": 503982696,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": "PortBERT/PortBERT_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vpakarinen/better-human-motion-h3-lora",
   "slug": "vpakarinen-better-human-motion-h3-lora",
   "author": "vpakarinen",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 330076992,
   "storage_human": "330 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

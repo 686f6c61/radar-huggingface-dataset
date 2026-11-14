@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "microtensor-archive/mt-code-3g-r1236-5EEv1oLk",
   "slug": "microtensor-archive-mt-code-3g-r1236-5eev1olk",
   "author": "microtensor-archive",
@@ -32,14 +32,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 495106880,
   "storage_human": "495 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/z-image-turbo-gptq-mlx-8bit",
   "slug": "roman220220-z-image-turbo-gptq-mlx-8bit",
   "author": "roman220220",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 10994782171,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

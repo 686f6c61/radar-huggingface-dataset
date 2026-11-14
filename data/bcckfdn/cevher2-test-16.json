@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bcckfdn/cevher2-test-16",
   "slug": "bcckfdn-cevher2-test-16",
   "author": "bcckfdn",
@@ -37,14 +37,19 @@
   "parameters_human": "1.51B",
   "storage_bytes": 3027128528,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LayerFault/shard-clean-reordered-control",
   "slug": "layerfault-shard-clean-reordered-control",
   "author": "LayerFault",
@@ -28,14 +28,19 @@
   "parameters_human": "32",
   "storage_bytes": 368,
   "storage_human": "368 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

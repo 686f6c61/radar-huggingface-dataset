@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LM111/umi-arena-pi05-yubi-umi-open4",
   "slug": "lm111-umi-arena-pi05-yubi-umi-open4",
   "author": "LM111",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 12434436210,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

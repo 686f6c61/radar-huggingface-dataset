@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LoosiFR/qwen35-9b-agentic-v1-GGUF",
   "slug": "loosifr-qwen35-9b-agentic-v1-gguf",
   "author": "LoosiFR",
@@ -29,14 +29,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 12422635328,
   "storage_human": "12.4 GB",
+  "context_length": 262144,
   "base_model": "LoosiFR/qwen35-9b-agentic-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

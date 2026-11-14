@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/flint-5bit",
   "slug": "nativ-community-flint-5bit",
   "author": "nativ-community",
@@ -32,6 +32,7 @@
   "parameters_human": "39.79B",
   "storage_bytes": 27373065955,
   "storage_human": "27.4 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

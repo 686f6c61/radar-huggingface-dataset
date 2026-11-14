@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp",
   "slug": "novaeonstudio-qwen3-8-35b-a3b-distill-oq8-fp16-mtp",
   "author": "NovaeonStudio",
@@ -47,6 +47,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 39524237367,
   "storage_human": "39.5 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

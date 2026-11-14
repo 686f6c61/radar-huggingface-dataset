@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/Cosmos3-Nano",
   "slug": "openintelligent123-cosmos3-nano",
   "author": "Openintelligent123",
@@ -34,6 +34,7 @@
   "parameters_human": "15.75B",
   "storage_bytes": 34970542758,
   "storage_human": "35.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

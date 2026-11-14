@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sleem247/lexwell-contract-irac-qwen2.5-3b-lora-Q8_0-GGUF",
   "slug": "sleem247-lexwell-contract-irac-qwen2-5-3b-lora-q8_0-gguf",
   "author": "Sleem247",
@@ -32,14 +32,19 @@
   "parameters_human": "7.4M",
   "storage_bytes": 10342272,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": "Curious-PM/lexwell-contract-irac-qwen2.5-3b-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

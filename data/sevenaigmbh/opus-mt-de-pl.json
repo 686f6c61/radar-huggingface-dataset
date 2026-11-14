@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SevenAIGmbH/opus-mt-de-pl",
   "slug": "sevenaigmbh-opus-mt-de-pl",
   "author": "SevenAIGmbH",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 3156066508,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-de-pl",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:03:11.397Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

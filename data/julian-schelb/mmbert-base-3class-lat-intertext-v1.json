@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "julian-schelb/mmbert-base-3class-lat-intertext-v1",
   "slug": "julian-schelb-mmbert-base-3class-lat-intertext-v1",
   "author": "julian-schelb",
@@ -40,14 +40,19 @@
   "parameters_human": "307.5M",
   "storage_bytes": 1264507953,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

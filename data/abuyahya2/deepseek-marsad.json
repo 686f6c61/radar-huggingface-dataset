@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbuYahya2/deepseek-marsad",
   "slug": "abuyahya2-deepseek-marsad",
   "author": "AbuYahya2",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16060556360,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "NousResearch/Meta-Llama-3-8B-Instruct, deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T03:15:32.700Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

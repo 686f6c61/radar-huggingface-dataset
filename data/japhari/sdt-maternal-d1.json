@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Japhari/sdt-maternal-d1",
   "slug": "japhari-sdt-maternal-d1",
   "author": "Japhari",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 235877664,
   "storage_human": "236 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

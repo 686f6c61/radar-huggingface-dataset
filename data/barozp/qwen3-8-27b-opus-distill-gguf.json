@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barozp/Qwen3.8-27B-Opus-Distill-GGUF",
   "slug": "barozp-qwen3-8-27b-opus-distill-gguf",
   "author": "barozp",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 184891813984,
   "storage_human": "184.9 GB",
+  "context_length": 262144,
   "base_model": "barozp/Qwen3.8-27B-Opus-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

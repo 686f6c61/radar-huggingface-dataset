@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/GLM-5.3-MLX-Q4i",
   "slug": "inferencerlabs-glm-5-3-mlx-q4i",
   "author": "inferencerlabs",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 456674790716,
   "storage_human": "456.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

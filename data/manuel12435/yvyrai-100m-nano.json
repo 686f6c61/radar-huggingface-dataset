@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Manuel12435/YvyrAI-100m-Nano",
   "slug": "manuel12435-yvyrai-100m-nano",
   "author": "Manuel12435",
@@ -33,14 +33,19 @@
   "parameters_human": "105.9M",
   "storage_bytes": 846906376,
   "storage_human": "847 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

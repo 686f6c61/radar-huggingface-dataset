@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junchaoh-cs/SolarWM-H3-33B",
   "slug": "junchaoh-cs-solarwm-h3-33b",
   "author": "junchaoh-cs",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 173073130371,
   "storage_human": "173.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

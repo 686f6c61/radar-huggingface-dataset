@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sadaffatimaeee/naruto-sd15-run1-lora-r4",
   "slug": "sadaffatimaeee-naruto-sd15-run1-lora-r4",
   "author": "sadaffatimaeee",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 3766661,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Torakiki77/qwen3-14b-audit-ft-smoke",
   "slug": "torakiki77-qwen3-14b-audit-ft-smoke",
   "author": "Torakiki77",
@@ -36,6 +36,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29289226816,
   "storage_human": "29.3 GB",
+  "context_length": 40960,
   "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

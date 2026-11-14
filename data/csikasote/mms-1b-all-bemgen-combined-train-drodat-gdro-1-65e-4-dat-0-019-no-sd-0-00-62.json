@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "csikasote/mms-1b-all-bemgen-combined-train-drodat-gdro-1.65e-4-dat-0.019-no-sd-0.00-62",
   "slug": "csikasote-mms-1b-all-bemgen-combined-train-drodat-gdro-1-65e-4-dat-0-019-no-sd-0-00-62",
   "author": "csikasote",
@@ -32,14 +32,19 @@
   "parameters_human": "964.7M",
   "storage_bytes": 77186839542,
   "storage_human": "77.2 GB",
+  "context_length": null,
   "base_model": "facebook/mms-1b-all",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T07:11:13.377Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

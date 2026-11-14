@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SVGsquad/clip-svg-ViT-B-32-ours-hps",
   "slug": "svgsquad-clip-svg-vit-b-32-ours-hps",
   "author": "SVGsquad",
@@ -29,14 +29,19 @@
   "parameters_human": "151.3M",
   "storage_bytes": 302601802,
   "storage_human": "303 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:31:37.239Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

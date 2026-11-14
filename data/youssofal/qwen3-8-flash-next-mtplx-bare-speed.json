@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Youssofal/Qwen3.8-Flash-Next-MTPLX-Bare-Speed",
   "slug": "youssofal-qwen3-8-flash-next-mtplx-bare-speed",
   "author": "Youssofal",
@@ -58,6 +58,7 @@
   "parameters_human": "126.19B",
   "storage_bytes": 106326120604,
   "storage_human": "106.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -65,8 +66,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

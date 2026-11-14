@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Ming-3.0-tts-0.5B-bf16",
   "slug": "mlx-community-ming-3-0-tts-0-5b-bf16",
   "author": "mlx-community",
@@ -46,6 +46,7 @@
   "parameters_human": "1.48B",
   "storage_bytes": 2998185772,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-3.0-tts-0.5B",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

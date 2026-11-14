@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/nca_5pct_sharedvocab_27e18_d24_seed1_2026-08-28_20-13-34_829443-pt",
   "slug": "alexkstern-nca_5pct_sharedvocab_27e18_d24_seed1_2026-08-28_20-13-34_829443-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 7864223169,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:52:52.097Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

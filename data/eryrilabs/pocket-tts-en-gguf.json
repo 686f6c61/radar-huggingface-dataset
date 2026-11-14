@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EryriLabs/pocket-tts-en-GGUF",
   "slug": "eryrilabs-pocket-tts-en-gguf",
   "author": "EryriLabs",
@@ -39,14 +39,19 @@
   "parameters_human": "79.6M",
   "storage_bytes": 2442459740,
   "storage_human": "2.4 GB",
+  "context_length": 4096,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "EryriLabs/pocket-tts-GGUF",
+  "renamed_at": "2026-11-11T02:43:16.219Z",
   "benchmarks": [],
   "sources": [
     {

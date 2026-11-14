@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "picur/picur-860M-instruct",
   "slug": "picur-picur-860m-instruct",
   "author": "picur",
@@ -34,14 +34,19 @@
   "parameters_human": "856.7M",
   "storage_bytes": 1714410931,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

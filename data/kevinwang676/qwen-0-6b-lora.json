@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kevinwang676/Qwen-0.6B-LoRA",
   "slug": "kevinwang676-qwen-0-6b-lora",
   "author": "kevinwang676",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 169612256,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/dots3-note-prev-exl3-k4-v1",
   "slug": "wrldsuksgo2mars-dots3-note-prev-exl3-k4-v1",
   "author": "wrldsuksgo2mars",
@@ -32,14 +32,19 @@
   "parameters_human": "84.83B",
   "storage_bytes": 163544374836,
   "storage_human": "163.5 GB",
+  "context_length": null,
   "base_model": "dots-studio/dots3-note-prev-fp8, dots-studio/dots3-note-prev",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T20:01:49.871Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

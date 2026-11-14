@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iapp/OpenThai2.0-OCR-Text",
   "slug": "iapp-openthai2-0-ocr-text",
   "author": "iapp",
@@ -27,21 +27,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 40,
+  "likes": 42,
   "downloads_30d": 1379,
-  "trending_score": 28,
+  "trending_score": 29,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 6638182,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

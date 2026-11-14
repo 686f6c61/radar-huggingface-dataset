@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Scicom-intl/Melati-Emotion-Whisper-Large-V3",
   "slug": "scicom-intl-melati-emotion-whisper-large-v3",
   "author": "Scicom-intl",
@@ -33,14 +33,19 @@
   "parameters_human": "637.3M",
   "storage_bytes": 1275786094,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XueZhaAllen/llama31-8b-poker-mix-v1-step10k-Q4_K_M-GGUF",
   "slug": "xuezhaallen-llama31-8b-poker-mix-v1-step10k-q4_k_m-gguf",
   "author": "XueZhaAllen",
@@ -47,14 +47,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920739872,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "jevonmao/llama31-8b-poker-mix-v1-step10k",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Heads-Up No-Limit action prediction",

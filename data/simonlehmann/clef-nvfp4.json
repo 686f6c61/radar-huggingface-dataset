@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simonlehmann/clef-NVFP4",
   "slug": "simonlehmann-clef-nvfp4",
   "author": "simonlehmann",
@@ -41,14 +41,19 @@
   "parameters_human": "19.87B",
   "storage_bytes": 24115204109,
   "storage_human": "24.1 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

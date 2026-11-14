@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Grawnch/Qwen3.5-27B-DR-2.50bpw-BF16-Eval",
   "slug": "grawnch-qwen3-5-27b-dr-2-50bpw-bf16-eval",
   "author": "Grawnch",
@@ -28,14 +28,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812098155,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T02:37:55.847Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

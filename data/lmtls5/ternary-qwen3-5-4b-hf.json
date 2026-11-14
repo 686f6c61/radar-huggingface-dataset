@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LMTLS5/ternary-qwen3.5-4b-hf",
   "slug": "lmtls5-ternary-qwen3-5-4b-hf",
   "author": "LMTLS5",
@@ -35,14 +35,19 @@
   "parameters_human": "5.29B",
   "storage_bytes": 6395100974,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ethicalabs/Echo-SmolTools-114M-NSFW-CLF",
   "slug": "ethicalabs-echo-smoltools-114m-nsfw-clf",
   "author": "ethicalabs",
@@ -31,14 +31,19 @@
   "parameters_human": "98.3M",
   "storage_bytes": 196544804,
   "storage_human": "197 MB",
+  "context_length": null,
   "base_model": "ethicalabs/Echo-DSRN-114M-v0.1.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

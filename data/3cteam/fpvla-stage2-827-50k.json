@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3CTeam/fpvla-stage2-827-50k",
   "slug": "3cteam-fpvla-stage2-827-50k",
   "author": "3CTeam",
@@ -29,14 +29,19 @@
   "parameters_human": "7.63B",
   "storage_bytes": 30506002351,
   "storage_human": "30.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

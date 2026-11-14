@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ragarwal/chandra-ocr-2-nvfp4-mtp",
   "slug": "ragarwal-chandra-ocr-2-nvfp4-mtp",
   "author": "ragarwal",
@@ -32,14 +32,19 @@
   "parameters_human": "5.30B",
   "storage_bytes": 6055207443,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "datalab-to/chandra-ocr-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

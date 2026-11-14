@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adyaanahmed/Distil_50M_SLM",
   "slug": "adyaanahmed-distil_50m_slm",
   "author": "adyaanahmed",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 207557181,
   "storage_human": "208 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

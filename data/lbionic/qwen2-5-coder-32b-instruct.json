@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lbionic/Qwen2.5-Coder-32B-Instruct",
   "slug": "lbionic-qwen2-5-coder-32b-instruct",
   "author": "Lbionic",
@@ -42,14 +42,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65527841688,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

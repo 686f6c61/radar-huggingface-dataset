@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheStageAI/pocket-tts-100m-ko",
   "slug": "thestageai-pocket-tts-100m-ko",
   "author": "TheStageAI",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 712047667,
   "storage_human": "712 MB",
+  "context_length": null,
   "base_model": "seastar105/pocket-tts-korean-100m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

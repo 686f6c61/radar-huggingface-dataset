@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dohyeon1/LFM2-M-SMoE-ngroups24",
   "slug": "dohyeon1-lfm2-m-smoe-ngroups24",
   "author": "Dohyeon1",
@@ -28,14 +28,19 @@
   "parameters_human": "8.34B",
   "storage_bytes": 16680154224,
   "storage_human": "16.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

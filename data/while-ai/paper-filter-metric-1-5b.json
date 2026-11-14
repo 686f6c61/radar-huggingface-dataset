@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "while-ai/paper-filter-metric-1.5b",
   "slug": "while-ai-paper-filter-metric-1-5b",
   "author": "while-ai",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 306963055,
   "storage_human": "307 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chartreuse-verte/ettin-markup-17m",
   "slug": "chartreuse-verte-ettin-markup-17m",
   "author": "chartreuse-verte",
@@ -38,6 +38,7 @@
   "parameters_human": "16.9M",
   "storage_bytes": 154796572,
   "storage_human": "155 MB",
+  "context_length": 7999,
   "base_model": "jhu-clsp/ettin-encoder-17m",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

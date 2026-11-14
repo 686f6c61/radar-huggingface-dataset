@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adriandj3/TernaryPilot-v2-Computer-Browser-Use-LoRA",
   "slug": "adriandj3-ternarypilot-v2-computer-browser-use-lora",
   "author": "adriandj3",
@@ -52,14 +52,19 @@
   "parameters_human": "160.4M",
   "storage_bytes": 321021328,
   "storage_human": "321 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

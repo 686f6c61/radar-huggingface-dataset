@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luni/Thinklite-27B-Heretic-EXL3",
   "slug": "luni-thinklite-27b-heretic-exl3",
   "author": "Luni",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 35425150693,
   "storage_human": "35.4 GB",
+  "context_length": null,
   "base_model": "Luni/Thinklite-27B-Heretic",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:59:57.675Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

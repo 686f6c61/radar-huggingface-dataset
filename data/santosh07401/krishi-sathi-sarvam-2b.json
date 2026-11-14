@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "santosh07401/krishi-sathi-sarvam-2b",
   "slug": "santosh07401-krishi-sathi-sarvam-2b",
   "author": "santosh07401",
@@ -40,6 +40,7 @@
   "parameters_human": "2.53B",
   "storage_bytes": 11746365225,
   "storage_human": "11.7 GB",
+  "context_length": 8192,
   "base_model": "sarvamai/sarvam-1",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ganmoor-ai-labs/krishi-sathi-sarvam-2b",
+  "renamed_at": "2026-11-11T07:25:51.015Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neo-Arid/Gemma-Wisp",
   "slug": "neo-arid-gemma-wisp",
   "author": "Neo-Arid",
@@ -34,6 +34,7 @@
   "parameters_human": "8.02B",
   "storage_bytes": 5618111381,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

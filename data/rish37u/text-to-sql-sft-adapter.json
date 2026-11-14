@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rish37u/text-to-sql-sft-adapter",
   "slug": "rish37u-text-to-sql-sft-adapter",
   "author": "rish37u",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 172955548,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-Coder-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

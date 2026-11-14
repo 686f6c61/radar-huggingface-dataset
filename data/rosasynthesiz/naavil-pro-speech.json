@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rosasynthesiz/naavil-pro-speech",
   "slug": "rosasynthesiz-naavil-pro-speech",
   "author": "Rosasynthesiz",
@@ -89,14 +89,19 @@
   "parameters_human": "1.22B",
   "storage_bytes": 2446088191,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "bodhan-ai/indic-transcribe-flex",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

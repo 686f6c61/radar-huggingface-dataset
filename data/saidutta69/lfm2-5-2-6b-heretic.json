@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidutta69/LFM2.5-2.6B-heretic",
   "slug": "saidutta69-lfm2-5-2-6b-heretic",
   "author": "saidutta69",
@@ -77,6 +77,7 @@
   "parameters_human": "2.70B",
   "storage_bytes": 34349227510,
   "storage_human": "34.3 GB",
+  "context_length": 131072,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "gguf",
@@ -84,8 +85,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

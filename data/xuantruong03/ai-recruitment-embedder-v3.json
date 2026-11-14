@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XuanTruong03/ai-recruitment-embedder-v3",
   "slug": "xuantruong03-ai-recruitment-embedder-v3",
   "author": "XuanTruong03",
@@ -34,14 +34,19 @@
   "parameters_human": "135.0M",
   "storage_bytes": 540015464,
   "storage_human": "540 MB",
+  "context_length": null,
   "base_model": "keepitreal/vietnamese-sbert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Semantic Similarity",

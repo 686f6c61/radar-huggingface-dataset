@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gsj49/adaptive-g-qwen3-8b-math-common-sketch-g32-b64-step200",
   "slug": "gsj49-adaptive-g-qwen3-8b-math-common-sketch-g32-b64-step200",
   "author": "Gsj49",
@@ -31,14 +31,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939462,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:38:01.765Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

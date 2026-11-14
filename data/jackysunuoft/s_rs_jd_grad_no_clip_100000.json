@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JackySunUofT/S_RS_jd_grad_no_clip_100000",
   "slug": "jackysunuoft-s_rs_jd_grad_no_clip_100000",
   "author": "JackySunUofT",
@@ -28,14 +28,19 @@
   "parameters_human": "262.8M",
   "storage_bytes": 1051222228,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

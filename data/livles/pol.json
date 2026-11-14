@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "livles/pol",
   "slug": "livles-pol",
   "author": "livles",
@@ -31,14 +31,19 @@
   "parameters_human": "299.6M",
   "storage_bytes": 3595719881,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

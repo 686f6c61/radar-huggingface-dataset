@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ouinche/moss-image-qwen3.5-te-mlx-q8g64",
   "slug": "ouinche-moss-image-qwen3-5-te-mlx-q8g64",
   "author": "Ouinche",
@@ -41,6 +41,7 @@
   "parameters_human": "7.94B",
   "storage_bytes": 10040799703,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

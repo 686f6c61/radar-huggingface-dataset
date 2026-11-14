@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw",
   "slug": "beamster-deepseek-v4-1-flash-1017-sushi-stq-1-75bpw",
   "author": "beamster",
@@ -32,14 +32,19 @@
   "parameters_human": "261.32B",
   "storage_bytes": 461145996532,
   "storage_human": "461.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

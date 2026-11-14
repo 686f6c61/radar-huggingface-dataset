@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazesmazes/tiny-audio-granite-qwen-top4",
   "slug": "mazesmazes-tiny-audio-granite-qwen-top4",
   "author": "mazesmazes",
@@ -38,14 +38,19 @@
   "parameters_human": "122.3M",
   "storage_bytes": 13674096654,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-ASR-Nano-2512, Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T05:06:21.918Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

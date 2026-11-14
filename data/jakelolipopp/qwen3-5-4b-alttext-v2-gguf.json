@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jakelolipopp/Qwen3.5-4B-AltText-v2-GGUF",
   "slug": "jakelolipopp-qwen3-5-4b-alttext-v2-gguf",
   "author": "Jakelolipopp",
@@ -28,14 +28,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 34577276128,
   "storage_human": "34.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

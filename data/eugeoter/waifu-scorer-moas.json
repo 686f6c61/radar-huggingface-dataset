@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eugeoter/waifu-scorer-moas",
   "slug": "eugeoter-waifu-scorer-moas",
   "author": "Eugeoter",
@@ -33,14 +33,19 @@
   "parameters_human": "2.0M",
   "storage_bytes": 8136848,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

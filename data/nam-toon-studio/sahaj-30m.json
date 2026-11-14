@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nam-toon-studio/sahaj-30m",
   "slug": "nam-toon-studio-sahaj-30m",
   "author": "Nam-toon-studio",
@@ -36,12 +36,17 @@
   "parameters_human": "30.1M",
   "storage_bytes": 560729530,
   "storage_human": "561 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

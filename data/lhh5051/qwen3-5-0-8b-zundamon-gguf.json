@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lhh5051/Qwen3.5-0.8B-Zundamon-GGUF",
   "slug": "lhh5051-qwen3-5-0-8b-zundamon-gguf",
   "author": "lhh5051",
@@ -33,14 +33,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 3487629824,
   "storage_human": "3.5 GB",
+  "context_length": 262144,
   "base_model": "auhulu/Qwen3.5-0.8B-Zundamon",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

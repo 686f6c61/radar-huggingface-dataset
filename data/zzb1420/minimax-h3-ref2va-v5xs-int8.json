@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zzb1420/MiniMax-H3-ref2va-V5xs-INT8",
   "slug": "zzb1420-minimax-h3-ref2va-v5xs-int8",
   "author": "zzb1420",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 20967668928,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

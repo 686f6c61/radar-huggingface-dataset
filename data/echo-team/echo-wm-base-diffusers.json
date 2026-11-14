@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Echo-Team/Echo-WM-Base-Diffusers",
   "slug": "echo-team-echo-wm-base-diffusers",
   "author": "Echo-Team",
@@ -37,6 +37,7 @@
   "parameters_human": "19.79B",
   "storage_bytes": 72158935973,
   "storage_human": "72.2 GB",
+  "context_length": null,
   "base_model": "Echo-Team/Echo-WM",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

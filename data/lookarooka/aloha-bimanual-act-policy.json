@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lookarooka/aloha-bimanual-act-policy",
   "slug": "lookarooka-aloha-bimanual-act-policy",
   "author": "lookarooka",
@@ -32,14 +32,19 @@
   "parameters_human": "539150",
   "storage_bytes": 4314192,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

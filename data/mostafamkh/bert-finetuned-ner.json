@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mostafaMKH/bert-finetuned-ner",
   "slug": "mostafamkh-bert-finetuned-ner",
   "author": "mostafaMKH",
@@ -32,14 +32,19 @@
   "parameters_human": "107.7M",
   "storage_bytes": 2154653781,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "bert-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Token Classification",

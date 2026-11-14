@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thebrazenbeard/Dolphin-Mistral-GLM-4.7-Flash-24B-Venice-Edition-Thinking-Uncensored",
   "slug": "thebrazenbeard-dolphin-mistral-glm-4-7-flash-24b-venice-edition-thinking-uncensored",
   "author": "thebrazenbeard",
@@ -70,14 +70,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47161926909,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "dphn/Dolphin-Mistral-24B-Venice-Edition",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "csndhanasekar/sherpa-onnx-indicconformer-ml-int8",
   "slug": "csndhanasekar-sherpa-onnx-indicconformer-ml-int8",
   "author": "csndhanasekar",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 137563723,
   "storage_human": "138 MB",
+  "context_length": null,
   "base_model": "ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

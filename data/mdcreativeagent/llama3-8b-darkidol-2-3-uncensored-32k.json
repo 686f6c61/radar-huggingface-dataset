@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mdcreativeagent/llama3-8B-DarkIdol-2.3-Uncensored-32K",
   "slug": "mdcreativeagent-llama3-8b-darkidol-2-3-uncensored-32k",
   "author": "mdcreativeagent",
@@ -32,14 +32,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16062305445,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

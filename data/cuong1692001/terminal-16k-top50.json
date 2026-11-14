@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cuong1692001/Terminal-16k-top50",
   "slug": "cuong1692001-terminal-16k-top50",
   "author": "cuong1692001",
@@ -32,14 +32,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 229353918157,
   "storage_human": "229.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

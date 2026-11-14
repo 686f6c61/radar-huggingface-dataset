@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fastino/gliner2.5-small-v1",
   "slug": "fastino-gliner2-5-small-v1",
   "author": "fastino",
@@ -40,14 +40,19 @@
   "parameters_human": "73.9M",
   "storage_bytes": 592646078,
   "storage_human": "593 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

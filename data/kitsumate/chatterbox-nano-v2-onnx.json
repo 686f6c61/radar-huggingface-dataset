@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KitsuMate/chatterbox-nano-v2-onnx",
   "slug": "kitsumate-chatterbox-nano-v2-onnx",
   "author": "KitsuMate",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2408645391,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox-nano",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Giniiki/FastWan2.2-TI2V-5B-mlx-q8",
   "slug": "giniiki-fastwan2-2-ti2v-5b-mlx-q8",
   "author": "Giniiki",
@@ -33,6 +33,7 @@
   "parameters_human": "5.00B",
   "storage_bytes": 14626899942,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T03:31:54.562Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

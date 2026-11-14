@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deu05232/promptriever-llama2-7B-new_seed42-JointLH_qinst-ignore_q-pos",
   "slug": "deu05232-promptriever-llama2-7b-new_seed42-jointlh_qinst-ignore_q-pos",
   "author": "deu05232",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 14335514132,
   "storage_human": "14.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

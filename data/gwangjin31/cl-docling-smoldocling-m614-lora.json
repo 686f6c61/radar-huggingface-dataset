@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gwangjin31/cl-docling-smoldocling-m614-lora",
   "slug": "gwangjin31-cl-docling-smoldocling-m614-lora",
   "author": "gwangjin31",
@@ -35,6 +35,7 @@
   "parameters_human": null,
   "storage_bytes": 477536,
   "storage_human": "477536 B",
+  "context_length": null,
   "base_model": "docling-project/SmolDocling-256M-preview",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bobbyr667/ratatat",
   "slug": "bobbyr667-ratatat",
   "author": "bobbyr667",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 970830200,
   "storage_human": "971 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

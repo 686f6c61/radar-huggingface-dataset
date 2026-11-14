@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jialei02/lawam-pretrain-lerobot",
   "slug": "jialei02-lawam-pretrain-lerobot",
   "author": "jialei02",
@@ -28,14 +28,19 @@
   "parameters_human": "2.56B",
   "storage_bytes": 7173995792,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

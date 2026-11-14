@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/granite-4.0-1b-speech-4bit",
   "slug": "flyingfishinwater-granite-4-0-1b-speech-4bit",
   "author": "flyingfishinwater",
@@ -49,6 +49,7 @@
   "parameters_human": "2.31B",
   "storage_bytes": 1987349860,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-1b-base",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:23.755Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

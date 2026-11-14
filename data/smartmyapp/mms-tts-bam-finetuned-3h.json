@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smartmyapp/mms-tts-bam-finetuned-3h",
   "slug": "smartmyapp-mms-tts-bam-finetuned-3h",
   "author": "smartmyapp",
@@ -34,14 +34,19 @@
   "parameters_human": "36.3M",
   "storage_bytes": 145229176,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": "facebook/mms-tts-bam",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T04:12:04.113Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

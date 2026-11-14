@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imtiendat0311/coral-dinov3-vit-convnext",
   "slug": "imtiendat0311-coral-dinov3-vit-convnext",
   "author": "imtiendat0311",
@@ -32,14 +32,19 @@
   "parameters_human": "6.92B",
   "storage_bytes": 27663518060,
   "storage_human": "27.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

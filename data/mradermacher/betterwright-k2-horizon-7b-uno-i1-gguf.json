@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/BetterWright-K2-Horizon-7B-Uno-i1-GGUF",
   "slug": "mradermacher-betterwright-k2-horizon-7b-uno-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "9.00B",
   "storage_bytes": 108714048384,
   "storage_human": "108.7 GB",
+  "context_length": 524288,
   "base_model": "ProCreations/BetterWright-K2-Horizon-7B-Uno",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

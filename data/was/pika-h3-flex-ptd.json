@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WAS/Pika-H3-Flex-PTD",
   "slug": "was-pika-h3-flex-ptd",
   "author": "WAS",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 9621469387,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "Pika-Labs/Pika-H3-Flex, nynxz/MiniMax-H3-PTD-LoRAs, epfl-vita/PTD-weights, taobao-content-ai/MiniMax-H3-PTD-LoRAs, MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

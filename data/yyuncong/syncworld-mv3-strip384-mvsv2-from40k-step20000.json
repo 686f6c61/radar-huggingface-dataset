@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yyuncong/SyncWorld-mv3-strip384-mvSV2-from40k-step20000",
   "slug": "yyuncong-syncworld-mv3-strip384-mvsv2-from40k-step20000",
   "author": "yyuncong",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 30347953140,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

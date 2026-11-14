@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic",
   "slug": "jeffpeng3-swift-1-5-qwen3-8-flash-next-exl3-4-05bpw-heretic",
   "author": "jeffpeng3",
@@ -41,14 +41,19 @@
   "parameters_human": "34.28B",
   "storage_bytes": 107796379361,
   "storage_human": "107.8 GB",
+  "context_length": null,
   "base_model": "jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

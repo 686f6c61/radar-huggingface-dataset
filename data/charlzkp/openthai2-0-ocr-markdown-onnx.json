@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CharlZKP/OpenThai2.0-OCR-Markdown-ONNX",
   "slug": "charlzkp-openthai2-0-ocr-markdown-onnx",
   "author": "CharlZKP",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 2516401168,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "iapp/OpenThai2.0-OCR-Markdown",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

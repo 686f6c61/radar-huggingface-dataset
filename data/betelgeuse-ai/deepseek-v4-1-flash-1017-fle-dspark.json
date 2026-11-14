@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Betelgeuse-AI/DeepSeek-V4.1-Flash-1017-FLE-DSPARK",
   "slug": "betelgeuse-ai-deepseek-v4-1-flash-1017-fle-dspark",
   "author": "Betelgeuse-AI",
@@ -31,14 +31,19 @@
   "parameters_human": "14.23B",
   "storage_bytes": 4294967295,
   "storage_human": "4.3 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

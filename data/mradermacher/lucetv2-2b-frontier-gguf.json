@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LucetV2-2B-Frontier-GGUF",
   "slug": "mradermacher-lucetv2-2b-frontier-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 15885900288,
   "storage_human": "15.9 GB",
+  "context_length": 524288,
   "base_model": "mohommed/LucetV2-2B-Frontier",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

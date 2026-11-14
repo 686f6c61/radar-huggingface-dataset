@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thetinkerer/Qwen2.5-Coder-32B-Instruct",
   "slug": "thetinkerer-qwen2-5-coder-32b-instruct",
   "author": "thetinkerer",
@@ -42,14 +42,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65527841688,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T03:00:46.601Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

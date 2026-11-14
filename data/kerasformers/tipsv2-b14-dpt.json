@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/tipsv2-b14-dpt",
   "slug": "kerasformers-tipsv2-b14-dpt",
   "author": "kerasformers",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 537407112,
   "storage_human": "537 MB",
+  "context_length": null,
   "base_model": "google/tipsv2-b14-dpt",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/tipsv2-b14-dpt",
+  "renamed_at": "2026-11-12T06:08:36.727Z",
   "benchmarks": [],
   "sources": [
     {

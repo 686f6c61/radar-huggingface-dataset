@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyun9286/IGGT4D-causal-v19r10-step5676",
   "slug": "cyun9286-iggt4d-causal-v19r10-step5676",
   "author": "cyun9286",
@@ -26,14 +26,19 @@
   "parameters_human": "1.36B",
   "storage_bytes": 5438257268,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

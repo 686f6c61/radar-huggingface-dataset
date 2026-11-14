@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bhoidy/charon-v2-minicpm5-1b",
   "slug": "bhoidy-charon-v2-minicpm5-1b",
   "author": "Bhoidy",
@@ -40,6 +40,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 2899489072,
   "storage_human": "2.9 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

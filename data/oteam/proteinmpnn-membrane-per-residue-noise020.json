@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oteam/proteinmpnn-membrane-per-residue-noise020",
   "slug": "oteam-proteinmpnn-membrane-per-residue-noise020",
   "author": "oteam",
@@ -29,14 +29,19 @@
   "parameters_human": "1.7M",
   "storage_bytes": 6776928,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

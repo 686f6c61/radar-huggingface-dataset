@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "aipoc-lab/fiszka",
+  "slug": "aipoc-lab-fiszka",
+  "author": "aipoc-lab",
+  "url": "https://huggingface.co/aipoc-lab/fiszka",
+  "created_at": "2026-11-13T13:34:11.000Z",
+  "updated_at": "2026-11-14T12:56:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "multi-label-classification",
+    "topic-classification",
+    "ai-news",
+    "arxiv",
+    "embeddinggemma",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 252194,
+  "parameters_human": "252194",
+  "storage_bytes": 1407124,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

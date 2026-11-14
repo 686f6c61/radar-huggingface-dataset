@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yichengup/minimax_h3-tyc-zs05-ltxqnorm-int8-convrot",
   "slug": "yichengup-minimax_h3-tyc-zs05-ltxqnorm-int8-convrot",
   "author": "yichengup",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 20978811981,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T08:29:14.943Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

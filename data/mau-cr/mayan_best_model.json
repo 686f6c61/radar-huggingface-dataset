@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mau-cr/mayan_best_model",
   "slug": "mau-cr-mayan_best_model",
   "author": "mau-cr",
@@ -40,6 +40,7 @@
   "parameters_human": "964.7M",
   "storage_bytes": 30874433691,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "facebook/mms-1b-all",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

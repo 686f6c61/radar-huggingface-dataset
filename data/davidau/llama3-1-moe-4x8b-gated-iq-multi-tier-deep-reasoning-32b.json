@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Llama3.1-MOE-4X8B-Gated-IQ-Multi-Tier-Deep-Reasoning-32B",
   "slug": "davidau-llama3-1-moe-4x8b-gated-iq-multi-tier-deep-reasoning-32b",
   "author": "DavidAU",
@@ -105,14 +105,19 @@
   "parameters_human": "24.94B",
   "storage_bytes": 49901898693,
   "storage_human": "49.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

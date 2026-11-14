@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-EmbeddingGemma-2-CUDA-AXQ-NVFP4-W4A16",
   "slug": "automatosx-ax-embeddinggemma-2-cuda-axq-nvfp4-w4a16",
   "author": "AutomatosX",
@@ -34,14 +34,19 @@
   "parameters_human": "744.4M",
   "storage_bytes": 1356996563,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

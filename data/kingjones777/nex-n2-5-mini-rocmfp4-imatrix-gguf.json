@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Nex-N2.5-mini-ROCmFP4-imatrix-GGUF",
   "slug": "kingjones777-nex-n2-5-mini-rocmfp4-imatrix-gguf",
   "author": "kingjones777",
@@ -45,14 +45,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 58334050848,
   "storage_human": "58.3 GB",
+  "context_length": null,
   "base_model": "nex-agi/Nex-N2.5-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

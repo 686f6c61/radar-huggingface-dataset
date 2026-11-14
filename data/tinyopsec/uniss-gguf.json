@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/UniSS-GGUF",
   "slug": "tinyopsec-uniss-gguf",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 18442980864,
   "storage_human": "18.4 GB",
+  "context_length": 32768,
   "base_model": "cmots/UniSS",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

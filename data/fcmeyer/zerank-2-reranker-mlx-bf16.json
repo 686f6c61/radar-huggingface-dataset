@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fcmeyer/zerank-2-reranker-MLX-bf16",
   "slug": "fcmeyer-zerank-2-reranker-mlx-bf16",
   "author": "fcmeyer",
@@ -40,6 +40,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404543,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "zeroentropy/zerank-2-reranker",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

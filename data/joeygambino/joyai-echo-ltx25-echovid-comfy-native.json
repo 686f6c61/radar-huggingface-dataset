@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joeygambino/joyai-echo-ltx25-echoVid-comfy-native",
   "slug": "joeygambino-joyai-echo-ltx25-echovid-comfy-native",
   "author": "joeygambino",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 481336172658,
   "storage_human": "481.3 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5, jdopensource/JoyAI-Echo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

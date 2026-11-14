@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Huihui-gemma-3n-E4B-it-abliterated-i1-GGUF",
   "slug": "mradermacher-huihui-gemma-3n-e4b-it-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "6.87B",
   "storage_bytes": 69987377496,
   "storage_human": "70.0 GB",
+  "context_length": 32768,
   "base_model": "huihui-ai/Huihui-gemma-3n-E4B-it-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

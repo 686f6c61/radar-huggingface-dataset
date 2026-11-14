@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openamer-max/openamer-max-pro-adapter",
   "slug": "openamer-max-openamer-max-pro-adapter",
   "author": "openamer-max",
@@ -24,20 +24,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 756399919,
   "storage_human": "756 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rdtand/Qwen3.8-27B-PrismaScout-AQUA-20GB",
   "slug": "rdtand-qwen3-8-27b-prismascout-aqua-20gb",
   "author": "rdtand",
@@ -45,14 +45,19 @@
   "parameters_human": "17.43B",
   "storage_bytes": 19963663536,
   "storage_human": "20.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "finndot/finnai-slm-v4-litertlm",
   "slug": "finndot-finnai-slm-v4-litertlm",
   "author": "finndot",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 973979088,
   "storage_human": "974 MB",
+  "context_length": null,
   "base_model": "finndot/finnai-slm-v4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

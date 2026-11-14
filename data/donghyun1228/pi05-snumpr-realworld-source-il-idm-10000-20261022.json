@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-snumpr-realworld-source-il-idm-10000-20261022",
   "slug": "donghyun1228-pi05-snumpr-realworld-source-il-idm-10000-20261022",
   "author": "Donghyun1228",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 225660020782,
   "storage_human": "225.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T10:23:38.262Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

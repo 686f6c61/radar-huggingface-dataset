@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darioooooo0o/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-GGUF",
   "slug": "darioooooo0o-nvidia-nemotron-3-5-bolt-74b-a9b-gguf",
   "author": "darioooooo0o",
@@ -48,14 +48,19 @@
   "parameters_human": "74.04B",
   "storage_bytes": 129808510432,
   "storage_human": "129.8 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

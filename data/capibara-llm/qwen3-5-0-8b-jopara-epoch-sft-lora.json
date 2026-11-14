@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-SFT-LoRA",
   "slug": "capibara-llm-qwen3-5-0-8b-jopara-epoch-sft-lora",
   "author": "Capibara-LLM",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 72785999,
   "storage_human": "73 MB",
+  "context_length": null,
   "base_model": "Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-CPT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

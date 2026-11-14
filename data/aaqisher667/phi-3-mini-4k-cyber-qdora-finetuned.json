@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aaqisher667/phi-3-mini-4k-cyber-qdora-finetuned",
   "slug": "aaqisher667-phi-3-mini-4k-cyber-qdora-finetuned",
   "author": "Aaqisher667",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 124191379,
   "storage_human": "124 MB",
+  "context_length": null,
   "base_model": "unsloth/phi-3-mini-4k-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

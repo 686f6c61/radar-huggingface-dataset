@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bobmckenzie90/MinimaxH3-Fingering",
   "slug": "bobmckenzie90-minimaxh3-fingering",
   "author": "bobmckenzie90",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 155278979,
   "storage_human": "155 MB",
+  "context_length": null,
   "base_model": "akhaliq/p-h3-image-turbo-lora",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T15:22:18.019Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

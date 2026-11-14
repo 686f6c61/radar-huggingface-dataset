@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SurjoLabs/sarvam-translate-en-bn-lora",
   "slug": "surjolabs-sarvam-translate-en-bn-lora",
   "author": "SurjoLabs",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 2131945799,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T12:37:42.068Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

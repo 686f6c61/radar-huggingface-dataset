@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yasserrmd/enterprise-reflex-v0",
   "slug": "yasserrmd-enterprise-reflex-v0",
   "author": "yasserrmd",
@@ -45,14 +45,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 598439784,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T04:57:11.167Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

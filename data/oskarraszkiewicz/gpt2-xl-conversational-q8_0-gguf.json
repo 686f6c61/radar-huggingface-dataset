@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oskarraszkiewicz/gpt2-xl-conversational-Q8_0-GGUF",
   "slug": "oskarraszkiewicz-gpt2-xl-conversational-q8_0-gguf",
   "author": "oskarraszkiewicz",
@@ -33,14 +33,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 1664521888,
   "storage_human": "1.7 GB",
+  "context_length": 1024,
   "base_model": "Locutusque/gpt2-xl-conversational",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

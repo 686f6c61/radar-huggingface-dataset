@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/claude-toolcall-slm-2B",
   "slug": "mondk-claude-toolcall-slm-2b",
   "author": "mondk",
@@ -39,14 +39,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 1820418272,
   "storage_human": "1.8 GB",
+  "context_length": 8192,
   "base_model": "mondk/claude-toolcall-slm-2B-safetensors",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mondk/Claude-smolLM2-2B.gguf",
+  "renamed_at": "2026-11-11T06:24:59.740Z",
   "benchmarks": [],
   "sources": [
     {

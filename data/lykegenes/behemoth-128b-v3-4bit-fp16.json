@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lykegenes/Behemoth-128B-v3-4bit-fp16",
   "slug": "lykegenes-behemoth-128b-v3-4bit-fp16",
   "author": "Lykegenes",
@@ -30,6 +30,7 @@
   "parameters_human": "19.54B",
   "storage_bytes": 70347556270,
   "storage_human": "70.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T05:35:20.423Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

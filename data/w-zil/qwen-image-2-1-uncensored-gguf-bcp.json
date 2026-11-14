@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "W-Zil/Qwen-Image-2.1-Uncensored-GGUF-bcp",
   "slug": "w-zil-qwen-image-2-1-uncensored-gguf-bcp",
   "author": "W-Zil",
@@ -23,14 +23,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 14177881328,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

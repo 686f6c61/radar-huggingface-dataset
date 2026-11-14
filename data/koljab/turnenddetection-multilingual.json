@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KoljaB/TurnEndDetection-multilingual",
   "slug": "koljab-turnenddetection-multilingual",
   "author": "KoljaB",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 791810460,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny, jhu-clsp/mmBERT-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

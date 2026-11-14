@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_npu",
   "slug": "amd-meta-llama-3-1-8b-instruct_rai_1-9-0_npu",
   "author": "amd",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 9353718829,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

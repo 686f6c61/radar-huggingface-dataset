@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3",
   "slug": "0xwhitemage-qwen3-8-27b-kearuga-dflash2-fp8-e4m3",
   "author": "0xWhiteMage",
@@ -42,14 +42,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 10465461072,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.8-27B-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:22:40.357Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schizophyllume/critters",
   "slug": "schizophyllume-critters",
   "author": "schizophyllume",
@@ -30,12 +30,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 116,
+  "downloads_30d": 172,
   "trending_score": 0,
   "parameters": 6528896,
   "parameters_human": "6.5M",
   "storage_bytes": 420454192,
   "storage_human": "420 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6-FP8-dynamic",
   "slug": "sriq-ai-sriq-diffusiongemma-26b-a4b-v1-6-fp8-dynamic",
   "author": "sriq-ai",
@@ -46,14 +46,19 @@
   "parameters_human": "25.82B",
   "storage_bytes": 27234323305,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": "sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

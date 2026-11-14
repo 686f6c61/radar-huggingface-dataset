@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mrbizarro/gemma4-12b-ltx25-q4",
   "slug": "mrbizarro-gemma4-12b-ltx25-q4",
   "author": "Mrbizarro",
@@ -44,6 +44,7 @@
   "parameters_human": "11.91B",
   "storage_bytes": 6731312408,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

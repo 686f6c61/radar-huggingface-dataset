@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Ministral-3-8B-Instruct-2512",
   "slug": "mistralai-ministral-3-8b-instruct-2512",
   "author": "mistralai",
@@ -54,14 +54,19 @@
   "parameters_human": "8.92B",
   "storage_bytes": 20908950383,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-8B-Base-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

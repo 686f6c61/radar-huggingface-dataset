@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StillDeadcode/radiance-ltx-2.5-iq8r",
   "slug": "stilldeadcode-radiance-ltx-2-5-iq8r",
   "author": "StillDeadcode",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 39578374144,
   "storage_human": "39.6 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5-Diffusers",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

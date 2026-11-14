@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KeelCore/KeelCore-750M-Friendly",
   "slug": "keelcore-keelcore-750m-friendly",
   "author": "KeelCore",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 440714148,
   "storage_human": "441 MB",
+  "context_length": null,
   "base_model": "Thelivu/Thelivu-750M",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Thelivu/Thelivu-750M-Friendly",
+  "renamed_at": "2026-11-11T03:07:55.296Z",
   "benchmarks": [],
   "sources": []
 }

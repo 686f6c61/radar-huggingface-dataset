@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/DeepSeek-V4-Flash-MTP-DSpark-MLX",
   "slug": "solstice-ai-deepseek-v4-flash-mtp-dspark-mlx",
   "author": "Solstice-AI",
@@ -42,6 +42,7 @@
   "parameters_human": "20.90B",
   "storage_bytes": 12994906286,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:36:26.912Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

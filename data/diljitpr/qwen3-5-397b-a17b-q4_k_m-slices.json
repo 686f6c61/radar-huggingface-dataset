@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diljitpr/Qwen3.5-397B-A17B-Q4_K_M-slices",
   "slug": "diljitpr-qwen3-5-397b-a17b-q4_k_m-slices",
   "author": "diljitpr",
@@ -31,14 +31,19 @@
   "parameters_human": "1.02B",
   "storage_bytes": 244761182048,
   "storage_human": "244.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-397B-A17B, unsloth/Qwen3.5-397B-A17B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

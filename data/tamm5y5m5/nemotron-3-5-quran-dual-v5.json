@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tamm5y5m5/nemotron-3.5-quran-dual-v5",
   "slug": "tamm5y5m5-nemotron-3-5-quran-dual-v5",
   "author": "tamm5y5m5",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 569468989440,
   "storage_human": "569.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

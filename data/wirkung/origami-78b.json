@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wirkung/Origami-78B",
   "slug": "wirkung-origami-78b",
   "author": "wirkung",
@@ -48,12 +48,17 @@
   "parameters_human": null,
   "storage_bytes": 26371537917,
   "storage_human": "26.4 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

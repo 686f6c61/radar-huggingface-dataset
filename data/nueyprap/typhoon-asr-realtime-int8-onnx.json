@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nueyprap/typhoon-asr-realtime-int8-onnx",
   "slug": "nueyprap-typhoon-asr-realtime-int8-onnx",
   "author": "nueyprap",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 137792545,
   "storage_human": "138 MB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-asr-realtime",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

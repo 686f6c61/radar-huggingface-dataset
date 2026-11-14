@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM3-Omni-2B",
   "slug": "liquidai-lfm3-omni-2b",
   "author": "LiquidAI",
@@ -80,19 +80,24 @@
   ],
   "likes": 639,
   "downloads_30d": 21030,
-  "trending_score": 176,
+  "trending_score": 171,
   "parameters": 2166928384,
   "parameters_human": "2.17B",
   "storage_bytes": 4499389852,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

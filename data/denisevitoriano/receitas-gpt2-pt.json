@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "denisevitoriano/receitas-gpt2-pt",
   "slug": "denisevitoriano-receitas-gpt2-pt",
   "author": "denisevitoriano",
@@ -31,14 +31,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 497783424,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": "pierreguillou/gpt2-small-portuguese",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

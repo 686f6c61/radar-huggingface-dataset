@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KordAI/KeawGPT-Opus-CKPT",
   "slug": "kordai-keawgpt-opus-ckpt",
   "author": "KordAI",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 5199722029,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "KordAI/KeawGPT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:33:28.810Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

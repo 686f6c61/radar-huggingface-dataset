@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MikeRoz/GLM-5.3-Flash-Uncensored-2.51bpw-h6-exl3",
   "slug": "mikeroz-glm-5-3-flash-uncensored-2-51bpw-h6-exl3",
   "author": "MikeRoz",
@@ -47,14 +47,19 @@
   "parameters_human": "52.59B",
   "storage_bytes": 105358304559,
   "storage_human": "105.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

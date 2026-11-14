@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zaydens/sn56-p2-F2-s1337-f4920bf7",
   "slug": "zaydens-sn56-p2-f2-s1337-f4920bf7",
   "author": "zaydens",
@@ -23,14 +23,19 @@
   "parameters_human": "162.4M",
   "storage_bytes": 324847208,
   "storage_human": "325 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

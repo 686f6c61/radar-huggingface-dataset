@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dfz1/ThinkingCap-Qwen3.8-27B-GGUF-UD-Q4_K_XL",
   "slug": "dfz1-thinkingcap-qwen3-8-27b-gguf-ud-q4_k_xl",
   "author": "dfz1",
@@ -30,14 +30,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 141415942947,
   "storage_human": "141.4 GB",
+  "context_length": null,
   "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

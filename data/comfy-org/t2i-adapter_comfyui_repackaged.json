@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/T2I-Adapter_ComfyUI_Repackaged",
   "slug": "comfy-org-t2i-adapter_comfyui_repackaged",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4581783768,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "TencentARC/T2I-Adapter",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/T2I-Adapter",
+  "renamed_at": "2026-11-11T02:32:24.398Z",
   "benchmarks": [],
   "sources": []
 }

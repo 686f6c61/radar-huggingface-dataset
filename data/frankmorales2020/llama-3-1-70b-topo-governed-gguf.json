@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frankmorales2020/llama-3.1-70b-topo-governed-gguf",
   "slug": "frankmorales2020-llama-3-1-70b-topo-governed-gguf",
   "author": "frankmorales2020",
@@ -46,14 +46,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 42520398080,
   "storage_human": "42.5 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.1-70B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

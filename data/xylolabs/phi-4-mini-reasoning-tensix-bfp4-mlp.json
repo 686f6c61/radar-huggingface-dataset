@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Phi-4-mini-reasoning-Tensix-BFP4-MLP",
   "slug": "xylolabs-phi-4-mini-reasoning-tensix-bfp4-mlp",
   "author": "Xylolabs",
@@ -43,14 +43,19 @@
   "parameters_human": "4.45B",
   "storage_bytes": 8916793954,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-reasoning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

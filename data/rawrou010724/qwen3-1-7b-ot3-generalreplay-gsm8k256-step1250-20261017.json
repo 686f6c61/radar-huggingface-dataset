@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rawrou010724/Qwen3-1.7B-OT3-GeneralReplay-GSM8K256-step1250-20261017",
   "slug": "rawrou010724-qwen3-1-7b-ot3-generalreplay-gsm8k256-step1250-20261017",
   "author": "Rawrou010724",
@@ -32,14 +32,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 6893757902,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

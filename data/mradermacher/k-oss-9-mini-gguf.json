@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/K-Oss-9-Mini-GGUF",
   "slug": "mradermacher-k-oss-9-mini-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 73425348352,
   "storage_human": "73.4 GB",
+  "context_length": 32768,
   "base_model": "K-Ai-Official/K-Oss-9-Mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

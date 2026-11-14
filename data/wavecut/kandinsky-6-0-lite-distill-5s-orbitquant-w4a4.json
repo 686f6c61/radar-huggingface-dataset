@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4",
   "slug": "wavecut-kandinsky-6-0-lite-distill-5s-orbitquant-w4a4",
   "author": "WaveCut",
@@ -34,6 +34,7 @@
   "parameters_human": "1.87B",
   "storage_bytes": 9336813924,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

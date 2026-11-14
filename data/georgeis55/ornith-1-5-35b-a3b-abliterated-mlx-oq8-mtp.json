@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "georgeis55/Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp",
   "slug": "georgeis55-ornith-1-5-35b-a3b-abliterated-mlx-oq8-mtp",
   "author": "georgeis55",
@@ -35,6 +35,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 75923709779,
   "storage_human": "75.9 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "georgeis55/Ornith-1.5-35B-A3B-refusal-ablated-MLX-oQ8-mtp",
+  "renamed_at": "2026-11-11T05:25:00.954Z",
   "benchmarks": [],
   "sources": [
     {

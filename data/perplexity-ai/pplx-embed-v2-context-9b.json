@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "perplexity-ai/pplx-embed-v2-context-9b",
   "slug": "perplexity-ai-pplx-embed-v2-context-9b",
   "author": "perplexity-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "8.40B",
   "storage_bytes": 33624412872,
   "storage_human": "33.6 GB",
+  "context_length": null,
   "base_model": "perplexity-ai/pplx-embed-v2-late-9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

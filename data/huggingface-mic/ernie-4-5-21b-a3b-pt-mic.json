@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/ERNIE-4.5-21B-A3B-PT-mic",
   "slug": "huggingface-mic-ernie-4-5-21b-a3b-pt-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "6.7M",
   "storage_bytes": 26215458,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "baidu/ERNIE-4.5-21B-A3B-PT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

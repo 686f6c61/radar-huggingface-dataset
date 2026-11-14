@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoiceNetCkpt/V4n_voiceclap10_capkeys_30ep",
   "slug": "voicenetckpt-v4n_voiceclap10_capkeys_30ep",
   "author": "VoiceNetCkpt",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 1348954886,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

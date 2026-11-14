@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fovi-pytorch/fovi-resnet18_a-0.5_res-64_rfmult-2_in1k",
   "slug": "fovi-pytorch-fovi-resnet18_a-0-5_res-64_rfmult-2_in1k",
   "author": "fovi-pytorch",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 187143691,
   "storage_human": "187 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

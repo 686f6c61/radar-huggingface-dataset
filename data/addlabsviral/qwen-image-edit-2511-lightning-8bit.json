@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addlabsviral/Qwen-Image-Edit-2511-Lightning-8bit",
   "slug": "addlabsviral-qwen-image-edit-2511-lightning-8bit",
   "author": "addlabsviral",
@@ -26,6 +26,7 @@
   "parameters_human": "20.44B",
   "storage_bytes": 59211873444,
   "storage_human": "59.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T02:37:01.540Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alxxtexxr/XLM-R-Base-squad-en-15K-seed-42-LoRA-mrg-v260920131708",
   "slug": "alxxtexxr-xlm-r-base-squad-en-15k-seed-42-lora-mrg-v260920131708",
   "author": "alxxtexxr",
@@ -27,14 +27,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 1131994299,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920131708",
+  "renamed_at": "2026-11-14T05:01:47.523Z",
   "benchmarks": [],
   "sources": [
     {

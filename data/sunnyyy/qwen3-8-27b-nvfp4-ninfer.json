@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sunnyyy/Qwen3.8-27B-nvfp4-NInfer",
   "slug": "sunnyyy-qwen3-8-27b-nvfp4-ninfer",
   "author": "sunnyyy",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 21492695040,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-NVFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

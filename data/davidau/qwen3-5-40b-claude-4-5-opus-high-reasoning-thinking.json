@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.5-40B-Claude-4.5-Opus-High-Reasoning-Thinking",
   "slug": "davidau-qwen3-5-40b-claude-4-5-opus-high-reasoning-thinking",
   "author": "DavidAU",
@@ -60,14 +60,19 @@
   "parameters_human": "39.91B",
   "storage_bytes": 79824315416,
   "storage_human": "79.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

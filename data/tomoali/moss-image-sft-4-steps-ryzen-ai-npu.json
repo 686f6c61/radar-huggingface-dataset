@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tomoali/MOSS-Image-SFT-4-steps-ryzen-ai-npu",
   "slug": "tomoali-moss-image-sft-4-steps-ryzen-ai-npu",
   "author": "Tomoali",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 12898301182,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": "akhaliq/MOSS-Image-SFT-4-steps",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

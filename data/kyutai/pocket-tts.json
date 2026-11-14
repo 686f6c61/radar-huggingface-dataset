@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kyutai/pocket-tts",
   "slug": "kyutai-pocket-tts",
   "author": "kyutai",
@@ -26,21 +26,26 @@
     "license:cc-by-4.0",
     "region:us"
   ],
-  "likes": 1788,
+  "likes": 1794,
   "downloads_30d": 1463,
-  "trending_score": 59,
+  "trending_score": 56,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 53754378204,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

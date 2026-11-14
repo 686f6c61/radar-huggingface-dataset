@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "McG-221/Gemory-26B-A4B-SOMPOA-mlx-8Bit",
   "slug": "mcg-221-gemory-26b-a4b-sompoa-mlx-8bit",
   "author": "McG-221",
@@ -47,6 +47,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 26843215536,
   "storage_human": "26.8 GB",
+  "context_length": null,
   "base_model": "26B-Suite/Gemory-26B-A4B-SOMPOA",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

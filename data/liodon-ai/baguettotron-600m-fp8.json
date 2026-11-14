@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/baguettotron-600m-FP8",
   "slug": "liodon-ai-baguettotron-600m-fp8",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "608.3M",
   "storage_bytes": 676456112,
   "storage_human": "676 MB",
+  "context_length": null,
   "base_model": "PleIAs/baguettotron-600m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyankiwi/Kolibri-1-AWQ-INT4",
   "slug": "cyankiwi-kolibri-1-awq-int4",
   "author": "cyankiwi",
@@ -40,14 +40,19 @@
   "parameters_human": "18.50B",
   "storage_bytes": 55349300345,
   "storage_human": "55.3 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

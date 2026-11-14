@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JackHsieh/4B-base.4B-Instruct-reason-thoughts.stride-1.suffix-conditional",
   "slug": "jackhsieh-4b-base-4b-instruct-reason-thoughts-stride-1-suffix-conditional",
   "author": "JackHsieh",
@@ -31,14 +31,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 16101340849,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

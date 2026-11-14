@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_NEW",
   "slug": "maria715-cat_llama3b_likezephyr_eps0600_456_relativelr_utility_new",
   "author": "maria715",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 1256156033,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahdrage/norsk-parakeet",
   "slug": "ahdrage-norsk-parakeet",
   "author": "ahdrage",
@@ -39,14 +39,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 7524933360,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "moondream/parakeet-ultra",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:33:15.745Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

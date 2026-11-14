@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pawanpaudel93/jev9b-int8-ov-decision",
   "slug": "pawanpaudel93-jev9b-int8-ov-decision",
   "author": "pawanpaudel93",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 9333903861,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "autotrust/JEV-9B, OpenVINO/Qwen3.5-9B-int8-ov, Qwen/Qwen3.5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

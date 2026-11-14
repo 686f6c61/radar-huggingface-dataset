@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/MiniMax-M3.1-Flash-Quark-MXFP4",
   "slug": "amd-minimax-m3-1-flash-quark-mxfp4",
   "author": "amd",
@@ -29,14 +29,19 @@
   "parameters_human": "220.49B",
   "storage_bytes": 239501757658,
   "storage_human": "239.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

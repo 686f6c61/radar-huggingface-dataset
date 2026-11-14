@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "specklabs/Speck1-140M-Instruct-GGUF",
   "slug": "specklabs-speck1-140m-instruct-gguf",
   "author": "specklabs",
@@ -29,14 +29,19 @@
   "parameters_human": "180.2M",
   "storage_bytes": 796727840,
   "storage_human": "797 MB",
+  "context_length": 4096,
   "base_model": "specklabs/Speck1-140M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

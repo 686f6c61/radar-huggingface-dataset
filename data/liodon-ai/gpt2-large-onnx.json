@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/gpt2-large-ONNX",
   "slug": "liodon-ai-gpt2-large-onnx",
   "author": "liodon-ai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 4197045234,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-large",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

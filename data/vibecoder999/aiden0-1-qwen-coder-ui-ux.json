@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VIBECODER999/aiden0.1-qwen-coder-ui-ux",
   "slug": "vibecoder999-aiden0-1-qwen-coder-ui-ux",
   "author": "VIBECODER999",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 334436524,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-coder-7b-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

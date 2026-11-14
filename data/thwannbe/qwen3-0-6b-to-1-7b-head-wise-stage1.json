@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thwannbe/qwen3-0.6B-to-1.7B-head-wise-stage1",
   "slug": "thwannbe-qwen3-0-6b-to-1-7b-head-wise-stage1",
   "author": "thwannbe",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 29368109,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

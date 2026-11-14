@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Wicked-Stuff-26B-A4B-v3.0-Final-GGUF",
   "slug": "readyart-wicked-stuff-26b-a4b-v3-0-final-gguf",
   "author": "ReadyArt",
@@ -42,14 +42,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 245279174048,
   "storage_human": "245.3 GB",
+  "context_length": 262144,
   "base_model": "ReadyArt/Wicked-Stuff-26B-A4B-v3.0-Final",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

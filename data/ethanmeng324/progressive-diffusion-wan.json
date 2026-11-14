@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EthanMeng324/progressive-diffusion-wan",
   "slug": "ethanmeng324-progressive-diffusion-wan",
   "author": "EthanMeng324",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 9617707027,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-14B, Wan-AI/Wan2.2-T2V-A14B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-14T08:43:37.117Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

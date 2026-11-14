@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlagRelease/Qwen3.8-Flash-Next-BF16-mthreads-FlagOS",
   "slug": "flagrelease-qwen3-8-flash-next-bf16-mthreads-flagos",
   "author": "FlagRelease",
@@ -29,14 +29,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 360013002208,
   "storage_human": "360.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

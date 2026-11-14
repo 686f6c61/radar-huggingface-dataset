@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IFM/PAN2",
   "slug": "ifm-pan2",
   "author": "IFM",
@@ -27,13 +27,14 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 142,
+  "likes": 144,
   "downloads_30d": 285,
-  "trending_score": 131,
+  "trending_score": 133,
   "parameters": 29201996992,
   "parameters_human": "29.20B",
   "storage_bytes": 86173925584,
   "storage_human": "86.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

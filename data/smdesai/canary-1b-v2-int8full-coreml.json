@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smdesai/canary-1b-v2-int8full-coreml",
   "slug": "smdesai-canary-1b-v2-int8full-coreml",
   "author": "smdesai",
@@ -90,12 +90,17 @@
   "parameters_human": null,
   "storage_bytes": 1576708950,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "nvidia/canary-1b-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bloomer010/Ling-3.0-flash-REAP288-73B-A5B",
   "slug": "bloomer010-ling-3-0-flash-reap288-73b-a5b",
   "author": "bloomer010",
@@ -34,14 +34,19 @@
   "parameters_human": "73.29B",
   "storage_bytes": 146603923316,
   "storage_human": "146.6 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T10:19:00.978Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

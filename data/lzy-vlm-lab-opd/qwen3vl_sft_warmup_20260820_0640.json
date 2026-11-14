@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lzy-vlm-lab-opd/qwen3vl_sft_warmup_20260820_0640",
   "slug": "lzy-vlm-lab-opd-qwen3vl_sft_warmup_20260820_0640",
   "author": "lzy-vlm-lab-opd",
@@ -31,14 +31,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 35080010162,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": "Qwen3-VL-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

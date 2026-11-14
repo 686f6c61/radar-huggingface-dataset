@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RainyBot/SemWAM-RoboTwin-TwoStage-v1.30-Stage2-Joint15k",
   "slug": "rainybot-semwam-robotwin-twostage-v1-30-stage2-joint15k",
   "author": "RainyBot",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 14649491113,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

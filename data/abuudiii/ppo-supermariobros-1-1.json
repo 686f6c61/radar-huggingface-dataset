@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abuudiii/ppo-SuperMarioBros-1-1",
   "slug": "abuudiii-ppo-supermariobros-1-1",
   "author": "Abuudiii",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 14152035,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

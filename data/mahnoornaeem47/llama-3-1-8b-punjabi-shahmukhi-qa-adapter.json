@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mahnoornaeem47/Llama-3.1-8B-Punjabi-Shahmukhi-QA-adapter",
   "slug": "mahnoornaeem47-llama-3-1-8b-punjabi-shahmukhi-qa-adapter",
   "author": "mahnoornaeem47",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 1772920969,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

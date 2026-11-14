@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lokesh535/AutoFlow-V6-Universal-Qwen3.5-9B-LoRA",
   "slug": "lokesh535-autoflow-v6-universal-qwen3-5-9b-lora",
   "author": "lokesh535",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 106618694,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

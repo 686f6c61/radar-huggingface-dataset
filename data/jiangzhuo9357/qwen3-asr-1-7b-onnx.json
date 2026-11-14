@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiangzhuo9357/Qwen3-ASR-1.7B-ONNX",
   "slug": "jiangzhuo9357-qwen3-asr-1-7b-onnx",
   "author": "jiangzhuo9357",
@@ -64,14 +64,19 @@
   "parameters_human": null,
   "storage_bytes": 4331455002,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

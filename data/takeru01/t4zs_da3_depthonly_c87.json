@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "takeru01/t4zs_DA3_depthonly_c87",
   "slug": "takeru01-t4zs_da3_depthonly_c87",
   "author": "takeru01",
@@ -22,14 +22,19 @@
   "parameters_human": "40.5M",
   "storage_bytes": 161990412,
   "storage_human": "162 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

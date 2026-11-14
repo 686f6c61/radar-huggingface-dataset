@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Qwopus3.5-9B-Coder-Flash-Heretic-MLX",
   "slug": "groxaxo-qwopus3-5-9b-coder-flash-heretic-mlx",
   "author": "groxaxo",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 42668484045,
   "storage_human": "42.7 GB",
+  "context_length": null,
   "base_model": "groxaxo/Qwopus3.5-9B-Coder-Flash-Heretic",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

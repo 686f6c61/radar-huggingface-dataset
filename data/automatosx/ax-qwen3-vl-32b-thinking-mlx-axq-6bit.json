@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Qwen3-VL-32B-Thinking-MLX-AXQ-6bit",
   "slug": "automatosx-ax-qwen3-vl-32b-thinking-mlx-axq-6bit",
   "author": "AutomatosX",
@@ -33,6 +33,7 @@
   "parameters_human": "33.36B",
   "storage_bytes": 30949939010,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-32B-Thinking",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

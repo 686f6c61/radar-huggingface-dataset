@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/FoodClockLabs-Etiquette-1-8B-GGUF",
   "slug": "prithivmlmods-foodclocklabs-etiquette-1-8b-gguf",
   "author": "prithivMLmods",
@@ -42,14 +42,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 62943274848,
   "storage_human": "62.9 GB",
+  "context_length": 262144,
   "base_model": "FoodClockLabs/Etiquette-1-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

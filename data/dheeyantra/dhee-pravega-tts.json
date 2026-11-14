@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dheeyantra/dhee-pravega-tts",
   "slug": "dheeyantra-dhee-pravega-tts",
   "author": "dheeyantra",
@@ -68,6 +68,7 @@
   "parameters_human": null,
   "storage_bytes": 5425126086,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
   "formats": [
     "onnx",
@@ -75,8 +76,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

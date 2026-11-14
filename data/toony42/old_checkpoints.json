@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "toony42/old_checkpoints",
   "slug": "toony42-old_checkpoints",
   "author": "toony42",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 3010292224355,
   "storage_human": "3010.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

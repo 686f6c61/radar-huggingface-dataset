@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lostargon/Tiny-Jev-1.7B",
   "slug": "lostargon-tiny-jev-1-7b",
   "author": "lostargon",
@@ -42,14 +42,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3451887622,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

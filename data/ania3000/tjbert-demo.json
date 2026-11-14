@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ania3000/tjbert-demo",
   "slug": "ania3000-tjbert-demo",
   "author": "ania3000",
@@ -30,14 +30,19 @@
   "parameters_human": "178.0M",
   "storage_bytes": 2135777118,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-multilingual-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:40:09.865Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

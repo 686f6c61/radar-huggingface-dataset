@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Azzam15/allam-7b-fp8-w8a16-mixed",
   "slug": "azzam15-allam-7b-fp8-w8a16-mixed",
   "author": "Azzam15",
@@ -31,14 +31,19 @@
   "parameters_human": "7.00B",
   "storage_bytes": 7526399858,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

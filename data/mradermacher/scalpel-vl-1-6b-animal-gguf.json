@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Scalpel-VL-1.6B-Animal-GGUF",
   "slug": "mradermacher-scalpel-vl-1-6b-animal-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "1.27B",
   "storage_bytes": 13242133824,
   "storage_human": "13.2 GB",
+  "context_length": 262144,
   "base_model": "freeai-org/Scalpel-VL-1.6B-Animal",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

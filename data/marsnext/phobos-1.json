@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marsnext/Phobos-1",
   "slug": "marsnext-phobos-1",
   "author": "marsnext",
@@ -42,14 +42,19 @@
   "parameters_human": "113.0M",
   "storage_bytes": 679525742,
   "storage_human": "680 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myendless/action-repre-newtask14-n32-lap-layerwise384-l36-head10k-3b0277e9",
   "slug": "myendless-action-repre-newtask14-n32-lap-layerwise384-l36-head10k-3b0277e9",
   "author": "myendless",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 9892519538,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

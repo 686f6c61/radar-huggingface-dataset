@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "navyam-ai/navya-1a",
   "slug": "navyam-ai-navya-1a",
   "author": "navyam-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "151.0M",
   "storage_bytes": 604097416,
   "storage_human": "604 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

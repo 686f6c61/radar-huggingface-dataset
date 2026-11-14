@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7-mic",
   "slug": "huggingface-mic-mdeberta-v3-base-xnli-multilingual-nli-2mil7-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "16.2M",
   "storage_bytes": 52962590,
   "storage_human": "53 MB",
+  "context_length": null,
   "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "npario/MiniMax-Music3-MLX-Serve-8bit",
   "slug": "npario-minimax-music3-mlx-serve-8bit",
   "author": "npario",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 13548424699,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

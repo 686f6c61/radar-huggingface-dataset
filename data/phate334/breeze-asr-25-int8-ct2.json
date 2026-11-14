@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phate334/Breeze-ASR-25-int8-CT2",
   "slug": "phate334-breeze-asr-25-int8-ct2",
   "author": "phate334",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 1558764253,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "MediaTek-Research/Breeze-ASR-25",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wdLangner/otbase-insight-models",
   "slug": "wdlangner-otbase-insight-models",
   "author": "wdLangner",
@@ -24,14 +24,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 1204881842592,
   "storage_human": "1204.9 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T06:49:55.904Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

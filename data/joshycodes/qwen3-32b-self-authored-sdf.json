@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/qwen3-32b-self-authored-sdf",
   "slug": "joshycodes-qwen3-32b-self-authored-sdf",
   "author": "joshycodes",
@@ -31,14 +31,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65535752034,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

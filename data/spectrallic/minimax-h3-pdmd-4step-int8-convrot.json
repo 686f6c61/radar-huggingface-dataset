@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Spectrallic/MiniMax-H3-PDMD-4step-int8-convrot",
   "slug": "spectrallic-minimax-h3-pdmd-4step-int8-convrot",
   "author": "Spectrallic",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 41948677239,
   "storage_human": "41.9 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3, pdmd2026/pdmd_4NFE_lora",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

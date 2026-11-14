@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF",
   "slug": "joakimpalm-zen-xyntetik-kvist-14b-gguf",
   "author": "Joakimpalm-Zen",
@@ -39,14 +39,19 @@
   "parameters_human": "14.44B",
   "storage_bytes": 62188659552,
   "storage_human": "62.2 GB",
+  "context_length": 131072,
   "base_model": "Joakimpalm-Zen/Xyntetik-Kvist-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

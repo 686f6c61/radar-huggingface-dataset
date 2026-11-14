@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c",
   "slug": "yfc-112358-qwen3-8-27b-della-carnice-ostrich-salience-glimmer-v5c",
   "author": "YFC-112358",
@@ -41,14 +41,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575835720,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, kai-os/Carnice-V3, etemiz/Ostrich-27B-Qwen3.8-260815, vectionlabs/Salience-27B-R5, YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

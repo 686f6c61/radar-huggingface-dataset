@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JONNYVERSE/resnet-50",
   "slug": "jonnyverse-resnet-50",
   "author": "JONNYVERSE",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 358153567,
   "storage_human": "358 MB",
+  "context_length": null,
   "base_model": "microsoft/resnet-50",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

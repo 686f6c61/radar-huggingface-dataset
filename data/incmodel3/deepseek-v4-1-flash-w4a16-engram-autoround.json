@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel3/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound",
   "slug": "incmodel3-deepseek-v4-1-flash-w4a16-engram-autoround",
   "author": "INCModel3",
@@ -36,14 +36,19 @@
   "parameters_human": "301.41B",
   "storage_bytes": 451663727063,
   "storage_human": "451.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

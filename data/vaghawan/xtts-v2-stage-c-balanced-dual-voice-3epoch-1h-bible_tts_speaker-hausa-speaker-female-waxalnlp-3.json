@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vaghawan/xtts-v2-stage-c-balanced-dual-voice-3epoch-1h-bible_tts_speaker-hausa-speaker-female-waxalnlp-3",
   "slug": "vaghawan-xtts-v2-stage-c-balanced-dual-voice-3epoch-1h-bible_tts_speaker-hausa-speaker-female-waxalnlp-3",
   "author": "vaghawan",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 5650023348,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

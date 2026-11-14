@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "randmaru/MiniCPM5-2B-mlx-mxfp4",
   "slug": "randmaru-minicpm5-2b-mlx-mxfp4",
   "author": "randmaru",
@@ -44,6 +44,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 1337358111,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

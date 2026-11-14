@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smith1302/Krea-2-Turbo-BF16-backup",
   "slug": "smith1302-krea-2-turbo-bf16-backup",
   "author": "smith1302",
@@ -24,6 +24,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 35711626315,
   "storage_human": "35.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

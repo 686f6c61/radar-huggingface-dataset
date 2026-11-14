@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rSalone/PLaMo-3-8B-Fin-Instruct-GGUF",
   "slug": "rsalone-plamo-3-8b-fin-instruct-gguf",
   "author": "rSalone",
@@ -35,14 +35,19 @@
   "parameters_human": "8.53B",
   "storage_bytes": 14349602368,
   "storage_human": "14.3 GB",
+  "context_length": 262144,
   "base_model": "pfnet/plamo-3-8b-fin-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

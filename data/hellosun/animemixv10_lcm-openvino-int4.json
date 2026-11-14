@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HelloSun/animemixv10_lcm-OpenVINO-INT4",
   "slug": "hellosun-animemixv10_lcm-openvino-int4",
   "author": "HelloSun",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 971336339,
   "storage_human": "971 MB",
+  "context_length": null,
   "base_model": "sca255/animemixv10_lcm",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

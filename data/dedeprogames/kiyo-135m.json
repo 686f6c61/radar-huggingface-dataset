@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DedeProGames/Kiyo-135M",
   "slug": "dedeprogames-kiyo-135m",
   "author": "DedeProGames",
@@ -41,14 +41,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 269060552,
   "storage_human": "269 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T05:32:10.055Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

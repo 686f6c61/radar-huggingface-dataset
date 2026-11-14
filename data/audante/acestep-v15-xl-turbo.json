@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audante/acestep-v15-xl-turbo",
   "slug": "audante-acestep-v15-xl-turbo",
   "author": "Audante",
@@ -27,14 +27,19 @@
   "parameters_human": "4.99B",
   "storage_bytes": 19953181719,
   "storage_human": "20.0 GB",
+  "context_length": null,
   "base_model": "ACE-Step/acestep-v15-xl-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

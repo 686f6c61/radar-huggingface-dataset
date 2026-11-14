@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiankimr/gr00t1.5n_libero10_x01",
   "slug": "jiankimr-gr00t1-5n_libero10_x01",
   "author": "jiankimr",
@@ -28,14 +28,19 @@
   "parameters_human": "2.72B",
   "storage_bytes": 7586077840,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

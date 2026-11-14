@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huzican0419/robotwin_piper_x_new_sft_step20000",
   "slug": "huzican0419-robotwin_piper_x_new_sft_step20000",
   "author": "huzican0419",
@@ -26,14 +26,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 7233650408,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oddadmix/Nawah-RuleCheck-1M",
   "slug": "oddadmix-nawah-rulecheck-1m",
   "author": "oddadmix",
@@ -40,14 +40,19 @@
   "parameters_human": "1.1M",
   "storage_bytes": 4303289,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "oddadmix/Emhotob-1M-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

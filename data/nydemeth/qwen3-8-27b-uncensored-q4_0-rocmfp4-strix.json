@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nydemeth/Qwen3.8-27B-Uncensored-Q4_0-ROCmFP4-STRIX",
   "slug": "nydemeth-qwen3-8-27b-uncensored-q4_0-rocmfp4-strix",
   "author": "nydemeth",
@@ -36,14 +36,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 16794338944,
   "storage_human": "16.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fdtn-ai/antares-1b",
   "slug": "fdtn-ai-antares-1b",
   "author": "fdtn-ai",
@@ -39,14 +39,19 @@
   "parameters_human": "1.84B",
   "storage_bytes": 3675235137,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HangGlidersRule/Darkstar-Qwen3-Embedding-8B-Base-ModelOpt-W4A4-NVFP4",
   "slug": "hangglidersrule-darkstar-qwen3-embedding-8b-base-modelopt-w4a4-nvfp4",
   "author": "HangGlidersRule",
@@ -36,14 +36,19 @@
   "parameters_human": "4.09B",
   "storage_bytes": 5161602283,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

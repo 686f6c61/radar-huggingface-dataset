@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asarymsakova/bert-base-gl-ner",
   "slug": "asarymsakova-bert-base-gl-ner",
   "author": "asarymsakova",
@@ -37,14 +37,19 @@
   "parameters_human": "177.3M",
   "storage_bytes": 709107868,
   "storage_human": "709 MB",
+  "context_length": null,
   "base_model": "marcosgg/bert-base-gl-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Named Entity Recognition",

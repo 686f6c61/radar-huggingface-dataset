@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Scriptease/colorhex-1b",
   "slug": "scriptease-colorhex-1b",
   "author": "Scriptease",
@@ -47,6 +47,7 @@
   "parameters_human": "999.9M",
   "storage_bytes": 3102503391,
   "storage_human": "3.1 GB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

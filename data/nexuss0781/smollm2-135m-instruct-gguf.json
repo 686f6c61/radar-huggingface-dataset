@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nexuss0781/SmolLM2-135M-Instruct-GGUF",
   "slug": "nexuss0781-smollm2-135m-instruct-gguf",
   "author": "Nexuss0781",
@@ -33,14 +33,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 409268864,
   "storage_human": "409 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

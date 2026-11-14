@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dalatexcoder/Qwen3.8-2B-MLX-4.00B",
   "slug": "dalatexcoder-qwen3-8-2b-mlx-4-00b",
   "author": "dalatexcoder",
@@ -41,6 +41,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1727145385,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-2B-Distill",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arthrod/c3750-mdeberta_base-vanilla-1-2",
   "slug": "arthrod-c3750-mdeberta_base-vanilla-1-2",
   "author": "arthrod",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 53193033072,
   "storage_human": "53.2 GB",
+  "context_length": null,
   "base_model": "microsoft/mdeberta-v3-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

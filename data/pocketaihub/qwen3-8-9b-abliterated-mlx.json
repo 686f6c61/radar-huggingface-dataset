@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PocketAiHub/Qwen3.8-9B-Abliterated-MLX",
   "slug": "pocketaihub-qwen3-8-9b-abliterated-mlx",
   "author": "PocketAiHub",
@@ -39,6 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 35216520920,
   "storage_human": "35.2 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

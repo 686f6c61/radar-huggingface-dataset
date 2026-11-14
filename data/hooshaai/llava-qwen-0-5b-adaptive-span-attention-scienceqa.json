@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hooshaai/llava-qwen-0.5b-adaptive-span-attention-scienceqa",
   "slug": "hooshaai-llava-qwen-0-5b-adaptive-span-attention-scienceqa",
   "author": "Hooshaai",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 974352722,
   "storage_human": "974 MB",
+  "context_length": null,
   "base_model": "llava-hf/llava-interleave-qwen-0.5b-hf",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "ScienceQA Multimodal Visual Reasoning",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msdos34/qwen-summarizer-persian",
   "slug": "msdos34-qwen-summarizer-persian",
   "author": "msdos34",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 43675104,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": "alphaedge-ai/Qwen3.5-2B-fas-16384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

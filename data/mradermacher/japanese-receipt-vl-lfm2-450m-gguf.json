@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Japanese-Receipt-VL-lfm2-450M-GGUF",
   "slug": "mradermacher-japanese-receipt-vl-lfm2-450m-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 3597903872,
   "storage_human": "3.6 GB",
+  "context_length": 128000,
   "base_model": "sabaridsnfuji/Japanese-Receipt-VL-lfm2-450M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

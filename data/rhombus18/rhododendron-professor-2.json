@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rhombus18/rhododendron-professor",
   "slug": "rhombus18-rhododendron-professor-2",
   "author": "rhombus18",
@@ -23,12 +23,17 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939748,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:42:18.273Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

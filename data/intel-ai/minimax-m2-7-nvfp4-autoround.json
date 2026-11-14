@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intel-ai/MiniMax-M2.7-NVFP4-AutoRound",
   "slug": "intel-ai-minimax-m2-7-nvfp4-autoround",
   "author": "intel-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "228.69B",
   "storage_bytes": 130594697526,
   "storage_human": "130.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M2.7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "intel-ai/MiniMax-M2.7-NVFP4-E5M3-AutoRound",
+  "renamed_at": "2026-11-12T05:55:01.948Z",
   "benchmarks": [],
   "sources": []
 }

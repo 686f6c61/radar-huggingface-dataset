@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miceworks/Mark-SLM-3M",
   "slug": "miceworks-mark-slm-3m",
   "author": "miceworks",
@@ -39,6 +39,7 @@
   "parameters_human": "2.9M",
   "storage_bytes": 114052440,
   "storage_human": "114 MB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T06:21:33.728Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

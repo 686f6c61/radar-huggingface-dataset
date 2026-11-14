@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sidman007/wsp-climatebert-tcfd-r1-p50",
   "slug": "sidman007-wsp-climatebert-tcfd-r1-p50",
   "author": "sidman007",
@@ -35,14 +35,19 @@
   "parameters_human": "68.1M",
   "storage_bytes": 272560352,
   "storage_human": "273 MB",
+  "context_length": null,
   "base_model": "climatebert/distilroberta-base-climate-tcfd",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

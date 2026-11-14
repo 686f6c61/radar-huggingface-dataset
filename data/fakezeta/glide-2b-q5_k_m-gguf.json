@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fakezeta/GLiDE-2B-Q5_K_M-GGUF",
   "slug": "fakezeta-glide-2b-q5_k_m-gguf",
   "author": "fakezeta",
@@ -31,14 +31,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1411113056,
   "storage_human": "1.4 GB",
+  "context_length": 262144,
   "base_model": "fastino/GLiDE-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

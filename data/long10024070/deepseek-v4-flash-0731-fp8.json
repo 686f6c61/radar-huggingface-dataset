@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "long10024070/DeepSeek-V4-Flash-0731-FP8",
   "slug": "long10024070-deepseek-v4-flash-0731-fp8",
   "author": "long10024070",
@@ -32,14 +32,19 @@
   "parameters_human": "304.20B",
   "storage_bytes": 305875182360,
   "storage_human": "305.9 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

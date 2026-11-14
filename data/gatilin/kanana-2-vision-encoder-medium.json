@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/kanana-2-vision-encoder-medium",
   "slug": "gatilin-kanana-2-vision-encoder-medium",
   "author": "gatilin",
@@ -32,14 +32,19 @@
   "parameters_human": "426.9M",
   "storage_bytes": 853810071,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-2-vision-encoder-medium",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KATHIR2006/Zenith-4B",
   "slug": "kathir2006-zenith-4b",
   "author": "KATHIR2006",
@@ -39,6 +39,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6847495336,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

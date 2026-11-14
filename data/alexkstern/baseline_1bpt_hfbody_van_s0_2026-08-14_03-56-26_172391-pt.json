@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/baseline_1Bpt_hfbody_van_s0_2026-08-14_03-56-26_172391-pt",
   "slug": "alexkstern-baseline_1bpt_hfbody_van_s0_2026-08-14_03-56-26_172391-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2894162843,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:38:34.034Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

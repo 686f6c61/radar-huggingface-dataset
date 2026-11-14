@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Padraig7/atticus-onek1k",
   "slug": "padraig7-atticus-onek1k",
   "author": "Padraig7",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1150920547785,
   "storage_human": "1150.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

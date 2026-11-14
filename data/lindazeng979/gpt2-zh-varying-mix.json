@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lindazeng979/gpt2-zh-varying-mix",
   "slug": "lindazeng979-gpt2-zh-varying-mix",
   "author": "lindazeng979",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 13520954976,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

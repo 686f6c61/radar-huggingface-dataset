@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hsmpo/SmolLM3-3B-UltraFeedback-DPO-LoRA",
   "slug": "hsmpo-smollm3-3b-ultrafeedback-dpo-lora",
   "author": "hsmpo",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 138190019,
   "storage_human": "138 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

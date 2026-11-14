@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MartinV/clement-mk-gemma-12b",
   "slug": "martinv-clement-mk-gemma-12b",
   "author": "MartinV",
@@ -38,6 +38,7 @@
   "parameters_human": "11.91B",
   "storage_bytes": 29995378382,
   "storage_human": "30.0 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-12B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

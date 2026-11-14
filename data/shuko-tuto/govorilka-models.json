@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shuko-tuto/govorilka-models",
   "slug": "shuko-tuto-govorilka-models",
   "author": "shuko-tuto",
@@ -37,14 +37,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 17324808496,
   "storage_human": "17.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "shuko-tuto/npc-models",
+  "renamed_at": "2026-11-14T08:32:17.569Z",
   "benchmarks": [],
   "sources": [
     {

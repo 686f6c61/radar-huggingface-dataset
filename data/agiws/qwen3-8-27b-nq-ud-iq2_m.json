@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agiws/Qwen3.8-27B-NQ-UD-IQ2_M",
   "slug": "agiws-qwen3-8-27b-nq-ud-iq2_m",
   "author": "agiws",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 65219415463,
   "storage_human": "65.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

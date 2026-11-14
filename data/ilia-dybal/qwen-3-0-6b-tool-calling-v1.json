@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ilia-dybal/Qwen-3-0.6B-tool-calling-V1",
   "slug": "ilia-dybal-qwen-3-0-6b-tool-calling-v1",
   "author": "ilia-dybal",
@@ -29,14 +29,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203557910,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

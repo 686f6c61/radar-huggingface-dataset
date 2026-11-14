@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ziellfx/GLM-5.3-Flash",
   "slug": "ziellfx-glm-5-3-flash",
   "author": "ziellfx",
@@ -36,14 +36,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 328357673114,
   "storage_human": "328.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uesenpai/qwen3-4b-wordnet-en-ja-lora-v1",
   "slug": "uesenpai-qwen3-4b-wordnet-en-ja-lora-v1",
   "author": "uesenpai",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 77549422,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "uesenpai/qwen3-4b-wordnet-en-ja-lora-v1_fiXmArge",
+  "renamed_at": "2026-11-11T07:54:41.252Z",
   "benchmarks": [],
   "sources": [
     {

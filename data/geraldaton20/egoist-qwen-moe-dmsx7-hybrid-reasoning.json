@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geraldaton20/egoist-qwen-MoE-DMSx7-Hybrid-Reasoning",
   "slug": "geraldaton20-egoist-qwen-moe-dmsx7-hybrid-reasoning",
   "author": "geraldaton20",
@@ -24,14 +24,19 @@
   "parameters_human": "1.04B",
   "storage_bytes": 2709553980,
   "storage_human": "2.7 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:21:54.809Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

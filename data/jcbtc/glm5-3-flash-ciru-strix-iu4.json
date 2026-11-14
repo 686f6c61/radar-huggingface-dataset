@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4",
   "slug": "jcbtc-glm5-3-flash-ciru-strix-iu4",
   "author": "jcbtc",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 179012842211,
   "storage_human": "179.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash, wtdcode/GLM-5.3-Flash-AWQ-W4A16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huutamm1612/qwen-tts-ngoc-huyen-voice",
   "slug": "huutamm1612-qwen-tts-ngoc-huyen-voice",
   "author": "huutamm1612",
@@ -33,14 +33,19 @@
   "parameters_human": "905.8M",
   "storage_bytes": 2506880912,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "g-group-ai-lab/gwen-tts-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

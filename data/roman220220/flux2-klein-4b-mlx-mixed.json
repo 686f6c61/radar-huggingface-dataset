@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/flux2-klein-4b-mlx-mixed",
   "slug": "roman220220-flux2-klein-4b-mlx-mixed",
   "author": "roman220220",
@@ -36,6 +36,7 @@
   "parameters_human": null,
   "storage_bytes": 5669471557,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

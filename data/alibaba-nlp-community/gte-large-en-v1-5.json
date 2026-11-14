@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alibaba-nlp-community/gte-large-en-v1.5",
   "slug": "alibaba-nlp-community-gte-large-en-v1-5",
   "author": "alibaba-nlp-community",
@@ -38,6 +38,7 @@
   "parameters_human": "434.1M",
   "storage_bytes": 5995218936,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

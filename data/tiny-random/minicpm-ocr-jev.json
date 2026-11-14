@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiny-random/minicpm-ocr-jev",
   "slug": "tiny-random-minicpm-ocr-jev",
   "author": "tiny-random",
@@ -30,14 +30,19 @@
   "parameters_human": "6.6M",
   "storage_bytes": 33295453,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-OCR-Jev",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISdept/wilro-wilromoe-8x4-18k-obs2",
   "slug": "isdept-wilro-wilromoe-8x4-18k-obs2",
   "author": "ISdept",
@@ -22,14 +22,19 @@
   "parameters_human": "1.11B",
   "storage_bytes": 8708063904,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

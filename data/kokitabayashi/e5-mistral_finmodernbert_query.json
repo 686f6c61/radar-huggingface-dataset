@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kokitabayashi/e5-mistral_FinModernBERT_query",
   "slug": "kokitabayashi-e5-mistral_finmodernbert_query",
   "author": "kokitabayashi",
@@ -41,14 +41,19 @@
   "parameters_human": "7.11B",
   "storage_bytes": 14221352088,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": "intfloat/e5-mistral-7b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

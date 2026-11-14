@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Agnes-AI/Agnes-2.5-Pro-Alpha",
   "slug": "agnes-ai-agnes-2-5-pro-alpha",
   "author": "Agnes-AI",
@@ -38,14 +38,19 @@
   "parameters_human": "396.80B",
   "storage_bytes": 793617707078,
   "storage_human": "793.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-397B-A17B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/Muse-Glimmer-30B-gptq-mlx-jang",
   "slug": "roman220220-muse-glimmer-30b-gptq-mlx-jang",
   "author": "roman220220",
@@ -35,6 +35,7 @@
   "parameters_human": "27.85B",
   "storage_bytes": 19260483243,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

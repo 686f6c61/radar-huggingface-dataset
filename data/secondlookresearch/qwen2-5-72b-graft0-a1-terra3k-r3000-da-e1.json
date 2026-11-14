@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r3000-da-e1",
   "slug": "secondlookresearch-qwen2-5-72b-graft0-a1-terra3k-r3000-da-e1",
   "author": "SecondLookResearch",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 3380164501,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-72B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:31:59.607Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

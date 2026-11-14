@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frank8465/Swift-1.5-Qwen3.8-Flash-Next-GPTQ-W4A8-Radiance-AMD-R9700",
   "slug": "frank8465-swift-1-5-qwen3-8-flash-next-gptq-w4a8-radiance-amd-r9700",
   "author": "frank8465",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 122072777648,
   "storage_human": "122.1 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

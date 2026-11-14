@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blkpws/Qwen3.8-27B-Code-SE-LoRA",
   "slug": "blkpws-qwen3-8-27b-code-se-lora",
   "author": "blkpws",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 637602944,
   "storage_human": "638 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:39:17.366Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

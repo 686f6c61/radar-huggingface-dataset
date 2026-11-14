@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sarthak2314/GameAgent-IDM",
   "slug": "sarthak2314-gameagent-idm",
   "author": "sarthak2314",
@@ -38,14 +38,19 @@
   "parameters_human": "938.7M",
   "storage_bytes": 1889001981,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3-1B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

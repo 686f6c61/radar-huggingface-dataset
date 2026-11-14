@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sri-harini-m/M26CS7.501-Assignment-1-Models",
   "slug": "sri-harini-m-m26cs7-501-assignment-1-models",
   "author": "sri-harini-m",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 931566363,
   "storage_human": "932 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

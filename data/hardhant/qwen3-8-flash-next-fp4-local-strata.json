@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hardhant/Qwen3.8-Flash-Next-FP4-Local-Strata",
   "slug": "hardhant-qwen3-8-flash-next-fp4-local-strata",
   "author": "hardhant",
@@ -28,14 +28,19 @@
   "parameters_human": "51.20B",
   "storage_bytes": 248830212524,
   "storage_human": "248.8 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

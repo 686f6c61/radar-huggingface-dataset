@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aixk/BAAR3-drug-dti",
   "slug": "aixk-baar3-drug-dti",
   "author": "aixk",
@@ -32,6 +32,7 @@
   "parameters_human": "895554",
   "storage_bytes": 14772930,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

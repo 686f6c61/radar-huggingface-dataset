@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rAVEUK/Kimi-K2.7-Code",
   "slug": "raveuk-kimi-k2-7-code",
   "author": "rAVEUK",
@@ -33,14 +33,19 @@
   "parameters_human": "1026.88B",
   "storage_bytes": 595204651032,
   "storage_human": "595.2 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K2.7-Code",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

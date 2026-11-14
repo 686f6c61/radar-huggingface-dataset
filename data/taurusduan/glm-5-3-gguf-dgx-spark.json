@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/GLM-5.3-GGUF-DGX-Spark",
   "slug": "taurusduan-glm-5-3-gguf-dgx-spark",
   "author": "taurusduan",
@@ -40,14 +40,19 @@
   "parameters_human": "562.69B",
   "storage_bytes": 160760302208,
   "storage_human": "160.8 GB",
+  "context_length": 1048576,
   "base_model": "autotrust/GLM-5.3-SLIM-E192, zai-org/GLM-5.3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T06:20:39.274Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

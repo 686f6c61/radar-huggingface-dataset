@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baidu/ERNIE-5.5-Flash-Base",
   "slug": "baidu-ernie-5-5-flash-base",
   "author": "baidu",
@@ -31,21 +31,26 @@
     "fp8",
     "region:us"
   ],
-  "likes": 310,
+  "likes": 312,
   "downloads_30d": 3673,
-  "trending_score": 77,
+  "trending_score": 74,
   "parameters": 286245697882,
   "parameters_human": "286.25B",
   "storage_bytes": 304360870583,
   "storage_human": "304.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cooler8/yejin-korean-tokenizer-200k",
   "slug": "cooler8-yejin-korean-tokenizer-200k",
   "author": "cooler8",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 18648311,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

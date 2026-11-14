@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "donpark/tyger-models",
   "slug": "donpark-tyger-models",
   "author": "donpark",
@@ -42,6 +42,7 @@
   "parameters_human": null,
   "storage_bytes": 10131873612,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b, FluidInference/parakeet-redux-coreml",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

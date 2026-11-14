@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lerobot/Cosmos3-Nano-Policy-LIBERO_10",
   "slug": "lerobot-cosmos3-nano-policy-libero_10",
   "author": "lerobot",
@@ -31,14 +31,19 @@
   "parameters_human": "16.45B",
   "storage_bytes": 131717095706,
   "storage_human": "131.7 GB",
+  "context_length": null,
   "base_model": "lerobot/Cosmos3-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

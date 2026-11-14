@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "windowsxp811203/Qwen3.8-27B-Abliterated-MLX-bf16-mtp",
   "slug": "windowsxp811203-qwen3-8-27b-abliterated-mlx-bf16-mtp",
   "author": "windowsxp811203",
@@ -44,6 +44,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582996423,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "windowsxp811203/Qwen3.8-27B-Abliterated",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

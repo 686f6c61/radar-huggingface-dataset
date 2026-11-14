@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
   "slug": "nvidia-qwen3-8-flash-next-fp4-local",
   "author": "nvidia",
@@ -30,21 +30,26 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 408,
+  "likes": 409,
   "downloads_30d": 45884,
-  "trending_score": 18,
+  "trending_score": 17,
   "parameters": 96486615005,
   "parameters_human": "96.49B",
   "storage_bytes": 102252102010,
   "storage_human": "102.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

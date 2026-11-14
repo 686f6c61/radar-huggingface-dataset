@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "udgamlabs/Vemana-Base-GGUF",
   "slug": "udgamlabs-vemana-base-gguf",
   "author": "udgamlabs",
@@ -36,14 +36,19 @@
   "parameters_human": "278.2M",
   "storage_bytes": 854670976,
   "storage_human": "855 MB",
+  "context_length": 4096,
   "base_model": "udgamlabs/Vemana-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

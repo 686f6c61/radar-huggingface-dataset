@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CladeTeam/CENO-600M-base",
   "slug": "cladeteam-ceno-600m-base",
   "author": "CladeTeam",
@@ -32,14 +32,19 @@
   "parameters_human": "630.8M",
   "storage_bytes": 1261618168,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CladeTeam/CENO-600M-A230M-base",
+  "renamed_at": "2026-11-11T02:31:19.520Z",
   "benchmarks": [],
   "sources": [
     {

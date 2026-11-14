@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Robin1333k/Qwen3.5-2B-Base-MLX-6bit",
   "slug": "robin1333k-qwen3-5-2b-base-mlx-6bit",
   "author": "Robin1333k",
@@ -38,6 +38,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1549713616,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B-Base",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

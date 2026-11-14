@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waveshaker/loras_tools",
   "slug": "waveshaker-loras_tools",
   "author": "waveshaker",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 886059,
   "storage_human": "886059 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

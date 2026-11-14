@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stefanj0/docling-layout-heron-fp16-onnx",
   "slug": "stefanj0-docling-layout-heron-fp16-onnx",
   "author": "stefanj0",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 86292298,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": "docling-project/docling-layout-heron",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

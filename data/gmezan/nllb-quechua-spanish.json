@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gmezan/nllb-quechua-spanish",
   "slug": "gmezan-nllb-quechua-spanish",
   "author": "gmezan",
@@ -21,20 +21,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 128,
+  "downloads_30d": 185,
   "trending_score": 0,
   "parameters": 615073792,
   "parameters_human": "615.1M",
   "storage_bytes": 9873659882,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

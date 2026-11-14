@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StarLiu714/GPT-oss-MOFinder-1field-ablation",
   "slug": "starliu714-gpt-oss-mofinder-1field-ablation",
   "author": "StarLiu714",
@@ -36,14 +36,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 245213901150,
   "storage_human": "245.2 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

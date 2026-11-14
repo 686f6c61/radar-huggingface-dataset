@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura6-last4-fp16-vision",
   "slug": "johneeee-qwen3-8-27b-twin-turbo-f-c-f-709-l-unc-oq4e-aura6-last4-fp16-vision",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 20163035209,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

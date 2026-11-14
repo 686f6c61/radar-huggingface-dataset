@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aviralku/mr9b-qwen35base-v5-scaffold-cispo-h100-215",
   "slug": "aviralku-mr9b-qwen35base-v5-scaffold-cispo-h100-215",
   "author": "aviralku",
@@ -29,14 +29,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710173,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:52:06.265Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

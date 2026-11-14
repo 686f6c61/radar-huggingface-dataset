@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rajb3/parakeet-tdt-0.6b-v2-ternary",
   "slug": "rajb3-parakeet-tdt-0-6b-v2-ternary",
   "author": "rajb3",
@@ -46,12 +46,17 @@
   "parameters_human": null,
   "storage_bytes": 181048960,
   "storage_human": "181 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "audeolabs/kea-t",
+  "renamed_at": "2026-11-11T07:15:27.705Z",
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

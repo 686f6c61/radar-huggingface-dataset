@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MannasAI/pratibha-2",
   "slug": "mannasai-pratibha-2",
   "author": "MannasAI",
@@ -37,14 +37,19 @@
   "parameters_human": "92.8M",
   "storage_bytes": 371283896,
   "storage_human": "371 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

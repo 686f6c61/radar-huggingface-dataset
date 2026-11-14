@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldenoue/punctuator-multilingual-minilm-v2",
   "slug": "ldenoue-punctuator-multilingual-minilm-v2",
   "author": "ldenoue",
@@ -30,6 +30,7 @@
   "parameters_human": "33.8M",
   "storage_bytes": 611330865,
   "storage_human": "611 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

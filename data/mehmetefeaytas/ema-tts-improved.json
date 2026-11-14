@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mehmetefeaytas/ema-tts-improved",
   "slug": "mehmetefeaytas-ema-tts-improved",
   "author": "mehmetefeaytas",
@@ -38,14 +38,19 @@
   "parameters_human": "63.5M",
   "storage_bytes": 771629984,
   "storage_human": "772 MB",
+  "context_length": null,
   "base_model": "canberkkkkkk/ema-tts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

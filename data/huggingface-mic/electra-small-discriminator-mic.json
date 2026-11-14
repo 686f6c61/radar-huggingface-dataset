@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/electra-small-discriminator-mic",
   "slug": "huggingface-mic-electra-small-discriminator-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "13.5M",
   "storage_bytes": 140922047,
   "storage_human": "141 MB",
+  "context_length": null,
   "base_model": "google/electra-small-discriminator",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

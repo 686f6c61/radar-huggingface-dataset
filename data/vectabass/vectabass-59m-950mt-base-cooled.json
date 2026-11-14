@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VectaBass/vectabass-59m-950mt-base-cooled",
   "slug": "vectabass-vectabass-59m-950mt-base-cooled",
   "author": "VectaBass",
@@ -47,14 +47,19 @@
   "parameters_human": "59.5M",
   "storage_bytes": 118970680,
   "storage_human": "119 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

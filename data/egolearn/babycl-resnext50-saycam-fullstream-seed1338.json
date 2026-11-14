@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "egolearn/babycl-resnext50-saycam-fullstream-seed1338",
   "slug": "egolearn-babycl-resnext50-saycam-fullstream-seed1338",
   "author": "egolearn",
@@ -27,14 +27,19 @@
   "parameters_human": "38.1M",
   "storage_bytes": 152250048,
   "storage_human": "152 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frankmorales2020/deepseek-moe-16b-topo-cbp-merged-gguf",
   "slug": "frankmorales2020-deepseek-moe-16b-topo-cbp-merged-gguf",
   "author": "frankmorales2020",
@@ -41,14 +41,19 @@
   "parameters_human": "16.38B",
   "storage_bytes": 10850181696,
   "storage_human": "10.9 GB",
+  "context_length": 4096,
   "base_model": "deepseek-ai/DeepSeek-MoE-16b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

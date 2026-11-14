@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twanghcmut/lingbot-vla-v2-so101-left-arm-multitask",
   "slug": "twanghcmut-lingbot-vla-v2-so101-left-arm-multitask",
   "author": "twanghcmut",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 25521588606,
   "storage_human": "25.5 GB",
+  "context_length": null,
   "base_model": "robbyant/lingbot-vla-v2-6b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

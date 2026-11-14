@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ToPo-ToPo/Qwen3.6-27B-MTP-bf16",
   "slug": "topo-topo-qwen3-6-27b-mtp-bf16",
   "author": "ToPo-ToPo",
@@ -30,6 +30,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 862208319,
   "storage_human": "862 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

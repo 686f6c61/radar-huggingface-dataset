@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h1testrightmeow/st-68770-control-20261023",
   "slug": "h1testrightmeow-st-68770-control-20261023",
   "author": "h1testrightmeow",
@@ -28,14 +28,19 @@
   "parameters_human": "52320",
   "storage_bytes": 213312,
   "storage_human": "213312 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

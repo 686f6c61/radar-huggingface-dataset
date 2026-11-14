@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Baichuan2-7B-Chat-adv-GGUF",
   "slug": "mradermacher-baichuan2-7b-chat-adv-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "7.51B",
   "storage_bytes": 67188074624,
   "storage_human": "67.2 GB",
+  "context_length": 4096,
   "base_model": "isbondarev/Baichuan2-7B-Chat-adv",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

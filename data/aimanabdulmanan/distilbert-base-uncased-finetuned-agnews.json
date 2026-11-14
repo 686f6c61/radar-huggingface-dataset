@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aimanabdulmanan/distilbert-base-uncased-finetuned-AgNews",
   "slug": "aimanabdulmanan-distilbert-base-uncased-finetuned-agnews",
   "author": "aimanabdulmanan",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 1607042786,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

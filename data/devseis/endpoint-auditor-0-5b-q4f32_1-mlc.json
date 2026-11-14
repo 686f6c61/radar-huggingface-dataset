@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Devseis/endpoint-auditor-0.5b-q4f32_1-MLC",
   "slug": "devseis-endpoint-auditor-0-5b-q4f32_1-mlc",
   "author": "Devseis",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 697854208,
   "storage_human": "698 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

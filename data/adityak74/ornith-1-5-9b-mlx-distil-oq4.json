@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adityak74/Ornith-1.5-9B-MLX-distil-oQ4",
   "slug": "adityak74-ornith-1-5-9b-mlx-distil-oq4",
   "author": "adityak74",
@@ -37,6 +37,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 5303926681,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B-MLX",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

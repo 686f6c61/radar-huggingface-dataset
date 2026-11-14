@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mmp2055/Qwen3.5-35B-A3B-uncensored-bughunter-v8",
   "slug": "mmp2055-qwen3-5-35b-a3b-uncensored-bughunter-v8",
   "author": "mmp2055",
@@ -51,6 +51,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 22106330372,
   "storage_human": "22.1 GB",
+  "context_length": 262144,
   "base_model": "llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved",
   "formats": [
     "gguf",
@@ -58,8 +59,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

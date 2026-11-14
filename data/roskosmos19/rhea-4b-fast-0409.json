@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roskosmos19/Rhea-4B-fast-0409",
   "slug": "roskosmos19-rhea-4b-fast-0409",
   "author": "roskosmos19",
@@ -36,14 +36,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8058649220,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "roskosmos19/Orca-2-4B-hight",
+  "renamed_at": "2026-11-11T07:21:43.288Z",
   "benchmarks": [],
   "sources": [
     {

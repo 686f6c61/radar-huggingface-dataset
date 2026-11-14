@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dzakk/qwen2.5-0.5b-pgabl-legal-grpo-dzakwan",
   "slug": "dzakk-qwen2-5-0-5b-pgabl-legal-grpo-dzakwan",
   "author": "dzakk",
@@ -35,14 +35,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519990,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "dzakk/qwen2.5-0.5b-pgabl-legal-sft-dzakwan",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

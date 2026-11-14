@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HCY123902/qwen3_8b_base_hc_ssss_n32_r1_ref_ans_sft",
   "slug": "hcy123902-qwen3_8b_base_hc_ssss_n32_r1_ref_ans_sft",
   "author": "HCY123902",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 16392947239,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

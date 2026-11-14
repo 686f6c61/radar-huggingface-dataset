@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Carota233/llm-style-terrain",
   "slug": "carota233-llm-style-terrain",
   "author": "Carota233",
@@ -24,6 +24,7 @@
   "parameters_human": null,
   "storage_bytes": 17690992410,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T08:18:54.268Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

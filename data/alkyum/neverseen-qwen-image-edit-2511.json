@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alkyum/neverseen-qwen-image-edit-2511",
   "slug": "alkyum-neverseen-qwen-image-edit-2511",
   "author": "alkyum",
@@ -22,14 +22,19 @@
   "parameters_human": "20.43B",
   "storage_bytes": 24180523950,
   "storage_human": "24.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

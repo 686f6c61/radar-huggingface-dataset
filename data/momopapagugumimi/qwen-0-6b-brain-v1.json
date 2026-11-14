@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "momopapagugumimi/qwen-0.6b-brain-v1",
   "slug": "momopapagugumimi-qwen-0-6b-brain-v1",
   "author": "momopapagugumimi",
@@ -28,6 +28,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 448545924,
   "storage_human": "449 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T15:38:15.384Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

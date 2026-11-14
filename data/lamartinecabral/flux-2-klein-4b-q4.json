@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lamartinecabral/FLUX.2-klein-4B-Q4",
   "slug": "lamartinecabral-flux-2-klein-4b-q4",
   "author": "lamartinecabral",
@@ -26,6 +26,7 @@
   "parameters_human": "621.5M",
   "storage_bytes": 5676996295,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

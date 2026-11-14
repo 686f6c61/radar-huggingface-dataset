@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/NuExtract3-W4A16-AutoRound-LLM-Compressor",
   "slug": "vishva007-nuextract3-w4a16-autoround-llm-compressor",
   "author": "Vishva007",
@@ -38,14 +38,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 4450511775,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "numind/NuExtract3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T05:35:08.599Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

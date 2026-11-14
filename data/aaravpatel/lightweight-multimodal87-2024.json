@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aaravpatel/lightweight-multimodal87-2024",
   "slug": "aaravpatel-lightweight-multimodal87-2024",
   "author": "aaravpatel",
@@ -26,14 +26,19 @@
   "parameters_human": "24832",
   "storage_bytes": 99808,
   "storage_human": "99808 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mej023/d0lly",
   "slug": "mej023-d0lly",
   "author": "mej023",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 778836848,
   "storage_human": "779 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:16:36.353Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

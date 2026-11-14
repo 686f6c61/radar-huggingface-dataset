@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ancient-yearner/Nemotron-3-Diarization-GGUF",
   "slug": "ancient-yearner-nemotron-3-diarization-gguf",
   "author": "ancient-yearner",
@@ -23,14 +23,19 @@
   "parameters_human": "99.3M",
   "storage_bytes": 107012128,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JWei05/easy10k_g16_mb256_4gpu_x4es_seed42",
   "slug": "jwei05-easy10k_g16_mb256_4gpu_x4es_seed42",
   "author": "JWei05",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 271780705892,
   "storage_human": "271.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:57:29.372Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

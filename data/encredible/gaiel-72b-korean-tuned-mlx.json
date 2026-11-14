@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "encredible/Gaiel-72B-Korean-Tuned-MLX",
   "slug": "encredible-gaiel-72b-korean-tuned-mlx",
   "author": "encredible",
@@ -38,6 +38,7 @@
   "parameters_human": "11.36B",
   "storage_bytes": 40911972825,
   "storage_human": "40.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-72B-Instruct",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T10:13:50.049Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

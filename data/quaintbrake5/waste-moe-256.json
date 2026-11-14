@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quaintbrake5/waste-moe-256",
   "slug": "quaintbrake5-waste-moe-256",
   "author": "Quaintbrake5",
@@ -23,14 +23,19 @@
   "parameters_human": "124.2M",
   "storage_bytes": 993546696,
   "storage_human": "994 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

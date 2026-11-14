@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kasimtmc/embeddinggemma-litertlm",
   "slug": "kasimtmc-embeddinggemma-litertlm",
   "author": "kasimtmc",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 329822346,
   "storage_human": "330 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-300m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

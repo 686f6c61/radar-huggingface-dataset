@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ivanye13671/microduck-roller-es",
   "slug": "ivanye13671-microduck-roller-es",
   "author": "Ivanye13671",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 793803,
   "storage_human": "793803 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Xin-AIAspire/microduck-roller-es",
+  "renamed_at": "2026-11-11T02:58:59.345Z",
   "benchmarks": [],
   "sources": []
 }

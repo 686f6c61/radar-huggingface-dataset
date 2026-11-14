@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sorihon/Celestial-Order-24B-V2.5",
   "slug": "sorihon-celestial-order-24b-v2-5",
   "author": "Sorihon",
@@ -35,14 +35,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47161926917,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "Sorihon/Celestial-Order-24B-V2, Delta-Vector/Rei-24B-KTO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

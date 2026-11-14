@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/Hermes-3-Llama-3.1-8B-PMTP-Einsof",
   "slug": "polydim-einsof-hermes-3-llama-3-1-8b-pmtp-einsof",
   "author": "Polydim-Einsof",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 100663624,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": "NousResearch/Hermes-3-Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

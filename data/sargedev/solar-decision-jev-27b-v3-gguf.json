@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SargeDev/Solar-Decision-JEV-27B-V3-GGUF",
   "slug": "sargedev-solar-decision-jev-27b-v3-gguf",
   "author": "SargeDev",
@@ -44,14 +44,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 235081395520,
   "storage_human": "235.1 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

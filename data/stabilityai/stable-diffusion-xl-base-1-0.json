@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stabilityai/stable-diffusion-xl-base-1.0",
   "slug": "stabilityai-stable-diffusion-xl-base-1-0",
   "author": "stabilityai",
@@ -28,13 +28,14 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 8472,
+  "likes": 8476,
   "downloads_30d": 4755797,
-  "trending_score": 15,
+  "trending_score": 16,
   "parameters": 2567463684,
   "parameters_human": "2.57B",
   "storage_bytes": 77369456618,
   "storage_human": "77.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

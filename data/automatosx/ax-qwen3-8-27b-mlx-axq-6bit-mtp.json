@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP",
   "slug": "automatosx-ax-qwen3-8-27b-mlx-axq-6bit-mtp",
   "author": "AutomatosX",
@@ -41,6 +41,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 20856327059,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T10:07:06.574Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

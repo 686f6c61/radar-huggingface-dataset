@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ2_XXS-GGUF",
   "slug": "duoneural-deepseek-r1-distill-llama-8b-gtap-v3-iq2_xxs-gguf",
   "author": "DuoNeural",
@@ -38,14 +38,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 2399214592,
   "storage_human": "2.4 GB",
+  "context_length": 131072,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

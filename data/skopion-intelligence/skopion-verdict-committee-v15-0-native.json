@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SKOPION-Intelligence/skopion-verdict-committee-v15.0-native",
   "slug": "skopion-intelligence-skopion-verdict-committee-v15-0-native",
   "author": "SKOPION-Intelligence",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Strict-54 External Decision & Judge Benchmark Matrix (16,140 evaluations)",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sartajbhuvaji/GLM-4.6-Flash-text-GGUF",
   "slug": "sartajbhuvaji-glm-4-6-flash-text-gguf",
   "author": "sartajbhuvaji",
@@ -38,14 +38,19 @@
   "parameters_human": "9.40B",
   "storage_bytes": 50295344256,
   "storage_human": "50.3 GB",
+  "context_length": 131072,
   "base_model": "sartajbhuvaji/unfuse-GLM-4.6-Flash-text",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sartajbhuvaji/unfuse-GLM-4.6-Flash-text-GGUF",
+  "renamed_at": "2026-11-11T07:26:01.458Z",
   "benchmarks": [],
   "sources": [
     {

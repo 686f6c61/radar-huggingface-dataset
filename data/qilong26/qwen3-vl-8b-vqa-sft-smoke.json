@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QiLong26/Qwen3-VL-8B-VQA-SFT-smoke",
   "slug": "qilong26-qwen3-vl-8b-vqa-sft-smoke",
   "author": "QiLong26",
@@ -31,14 +31,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545768731,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:35:10.629Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

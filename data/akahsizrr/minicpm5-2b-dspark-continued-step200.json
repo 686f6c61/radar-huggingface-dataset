@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akahsizrr/MiniCPM5-2B-DSpark-continued-step200",
   "slug": "akahsizrr-minicpm5-2b-dspark-continued-step200",
   "author": "Akahsizrr",
@@ -51,14 +51,19 @@
   "parameters_human": "323.8M",
   "storage_bytes": 647558522,
   "storage_human": "648 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

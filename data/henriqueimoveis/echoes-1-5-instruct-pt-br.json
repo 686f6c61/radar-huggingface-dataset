@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "henriqueimoveis/Echoes-1.5-Instruct-PT-BR",
   "slug": "henriqueimoveis-echoes-1-5-instruct-pt-br",
   "author": "henriqueimoveis",
@@ -40,14 +40,19 @@
   "parameters_human": "870.2M",
   "storage_bytes": 1740519624,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "henriqueimoveis/Echoes-1.5-Base-PT-BR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

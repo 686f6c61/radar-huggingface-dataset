@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdarshSingh7647/Eklav-4B-Reranker",
   "slug": "adarshsingh7647-eklav-4b-reranker",
   "author": "AdarshSingh7647",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056949439,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AdarshSingh7647/Eklav-Passage-4B",
+  "renamed_at": "2026-11-11T02:13:07.267Z",
   "benchmarks": [],
   "sources": [
     {

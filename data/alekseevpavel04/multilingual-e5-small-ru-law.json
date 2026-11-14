@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alekseevpavel04/multilingual-e5-small-ru-law",
   "slug": "alekseevpavel04-multilingual-e5-small-ru-law",
   "author": "alekseevpavel04",
@@ -40,14 +40,19 @@
   "parameters_human": "117.7M",
   "storage_bytes": 963426613,
   "storage_human": "963 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

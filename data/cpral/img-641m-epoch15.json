@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cpral/IMG-641M-epoch15",
   "slug": "cpral-img-641m-epoch15",
   "author": "cpral",
@@ -46,6 +46,7 @@
   "parameters_human": "641.1M",
   "storage_bytes": 3523867902,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cpral/HomeIMG-641M-epoch15",
+  "renamed_at": "2026-11-11T04:51:54.397Z",
   "benchmarks": [],
   "sources": []
 }

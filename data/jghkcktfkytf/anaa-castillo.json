@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jghkcktfkytf/anaa-castillo",
   "slug": "jghkcktfkytf-anaa-castillo",
   "author": "jghkcktfkytf",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 778340571,
   "storage_human": "778 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T04:35:39.905Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

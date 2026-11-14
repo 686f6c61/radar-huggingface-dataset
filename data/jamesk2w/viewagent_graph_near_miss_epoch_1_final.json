@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JamesK2W/viewagent_graph_near_miss_epoch_1_final",
   "slug": "jamesk2w-viewagent_graph_near_miss_epoch_1_final",
   "author": "JamesK2W",
@@ -28,14 +28,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 35080010162,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:43:35.212Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kpakkiragari/PaperPilot-Qwen-0.5B-Instruct",
   "slug": "kpakkiragari-paperpilot-qwen-0-5b-instruct",
   "author": "kpakkiragari",
@@ -39,6 +39,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 4169138308,
   "storage_human": "4.2 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

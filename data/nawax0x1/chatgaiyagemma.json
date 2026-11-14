@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nawax0x1/ChatgaiyaGemma",
   "slug": "nawax0x1-chatgaiyagemma",
   "author": "nawax0x1",
@@ -35,14 +35,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16318454913,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

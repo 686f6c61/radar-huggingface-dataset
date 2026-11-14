@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luna002-Luna75/connectailab-rl-lunaluna-v1-humanoid-ppo",
   "slug": "luna002-luna75-connectailab-rl-lunaluna-v1-humanoid-ppo",
   "author": "Luna002-Luna75",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 3740838,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

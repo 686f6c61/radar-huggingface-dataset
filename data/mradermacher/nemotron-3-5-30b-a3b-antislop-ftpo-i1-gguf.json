@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Nemotron-3.5-30B-A3B-Antislop-FTPO-i1-GGUF",
   "slug": "mradermacher-nemotron-3-5-30b-a3b-antislop-ftpo-i1-gguf",
   "author": "mradermacher",
@@ -51,14 +51,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 310565864128,
   "storage_human": "310.6 GB",
+  "context_length": 1048576,
   "base_model": "thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

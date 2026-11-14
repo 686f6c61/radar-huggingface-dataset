@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wjcwqc/MireskaVoice-ming",
   "slug": "wjcwqc-mireskavoice-ming",
   "author": "wjcwqc",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 5475289665,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-3.0-tts-0.5b",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aliRafik/Mistral_Nemo_Base_2407_finetuned_16bit",
   "slug": "alirafik-mistral_nemo_base_2407_finetuned_16bit",
   "author": "aliRafik",
@@ -32,14 +32,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24512685396,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "unsloth/mistral-nemo-base-2407-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

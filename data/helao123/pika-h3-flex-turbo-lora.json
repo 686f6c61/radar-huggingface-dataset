@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "helao123/Pika-H3-Flex-Turbo-LoRA",
   "slug": "helao123-pika-h3-flex-turbo-lora",
   "author": "helao123",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 20317303792,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "Pika-Labs/Pika-H3-Flex, lightx2v/Minimax-h3-Turbo, MiniMaxAI/MiniMax-H3, WarmBloodAban/Minimax-h3_Singularity, Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/MiniMax-M3.1-Flash-CLEER-k4",
   "slug": "nidhal101-minimax-m3-1-flash-cleer-k4",
   "author": "Nidhal101",
@@ -28,14 +28,19 @@
   "parameters_human": "20.34B",
   "storage_bytes": 27112774098,
   "storage_human": "27.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

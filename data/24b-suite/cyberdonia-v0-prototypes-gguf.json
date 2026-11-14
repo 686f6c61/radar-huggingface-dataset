@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "24B-Suite/Cyberdonia-v0-Prototypes-GGUF",
   "slug": "24b-suite-cyberdonia-v0-prototypes-gguf",
   "author": "24B-Suite",
@@ -24,14 +24,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 250547893600,
   "storage_human": "250.5 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T03:52:58.303Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

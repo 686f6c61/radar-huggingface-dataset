@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP",
   "slug": "shiftedx-qwopus3-8-27b-flash-nvfp4-mtp",
   "author": "Shiftedx",
@@ -50,14 +50,19 @@
   "parameters_human": "14.73B",
   "storage_bytes": 19691640903,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

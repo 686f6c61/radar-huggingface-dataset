@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mmastrac/GLM-5.3-Flash-NVFP4-FP8-sidecar",
   "slug": "mmastrac-glm-5-3-flash-nvfp4-fp8-sidecar",
   "author": "mmastrac",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2617935640,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "nvidia/GLM-5.3-Flash-NVFP4, zai-org/GLM-5.3-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

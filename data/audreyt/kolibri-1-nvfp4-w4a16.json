@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audreyt/Kolibri-1-NVFP4-W4A16",
   "slug": "audreyt-kolibri-1-nvfp4-w4a16",
   "author": "audreyt",
@@ -40,14 +40,19 @@
   "parameters_human": "40.26B",
   "storage_bytes": 47432188892,
   "storage_human": "47.4 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

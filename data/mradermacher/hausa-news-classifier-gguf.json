@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/hausa-news-classifier-GGUF",
   "slug": "mradermacher-hausa-news-classifier-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 3028382240,
   "storage_human": "3.0 GB",
+  "context_length": 512,
   "base_model": "Batonicarla1/hausa-news-classifier",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

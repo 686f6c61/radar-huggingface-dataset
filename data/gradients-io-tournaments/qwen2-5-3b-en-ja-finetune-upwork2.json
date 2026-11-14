@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/qwen2.5-3b-en-ja-finetune-upwork2",
   "slug": "gradients-io-tournaments-qwen2-5-3b-en-ja-finetune-upwork2",
   "author": "gradients-io-tournaments",
@@ -34,14 +34,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6171927000,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

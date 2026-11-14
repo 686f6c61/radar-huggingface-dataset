@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rafmacalaba/gliner25_agents_v3",
   "slug": "rafmacalaba-gliner25_agents_v3",
   "author": "rafmacalaba",
@@ -28,14 +28,19 @@
   "parameters_human": "193.6M",
   "storage_bytes": 1548733128,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

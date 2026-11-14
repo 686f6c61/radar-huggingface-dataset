@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hanemay/smartsightCoach",
   "slug": "hanemay-smartsightcoach",
   "author": "hanemay",
@@ -31,12 +31,17 @@
   "parameters_human": "5.12B",
   "storage_bytes": 22522028528,
   "storage_human": "22.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

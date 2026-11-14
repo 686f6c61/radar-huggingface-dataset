@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-grpo-faishal",
   "slug": "faishal-anwar-qwen2-5-1-5b-pgabl-legal-grpo-faishal",
   "author": "Faishal-Anwar",
@@ -35,14 +35,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 9273823766,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Faishal-Anwar/qwen2.5-1.5b-pgabl-legal-sft-faishal",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

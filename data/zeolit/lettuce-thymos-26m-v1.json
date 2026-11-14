@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zeolit/lettuce-thymos-26m-v1",
   "slug": "zeolit-lettuce-thymos-26m-v1",
   "author": "Zeolit",
@@ -79,6 +79,7 @@
   "parameters_human": "26.7M",
   "storage_bytes": 219299179,
   "storage_human": "219 MB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "onnx",
@@ -86,8 +87,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

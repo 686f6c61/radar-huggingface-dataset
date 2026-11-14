@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RussellKwon/UMA_s1p1_oc20_fine-tuned_WSO",
   "slug": "russellkwon-uma_s1p1_oc20_fine-tuned_wso",
   "author": "RussellKwon",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1173904323,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "facebook/UMA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

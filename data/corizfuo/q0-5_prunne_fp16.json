@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Corizfuo/q0.5_prunne_fp16",
   "slug": "corizfuo-q0-5_prunne_fp16",
   "author": "Corizfuo",
@@ -24,14 +24,19 @@
   "parameters_human": "401.2M",
   "storage_bytes": 822400669,
   "storage_human": "822 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

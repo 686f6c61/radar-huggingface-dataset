@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rosasynthesiz/indic-transcribe-flex",
   "slug": "rosasynthesiz-indic-transcribe-flex",
   "author": "Rosasynthesiz",
@@ -88,14 +88,19 @@
   "parameters_human": "1.22B",
   "storage_bytes": 4891196199,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "bodhan-ai/indic-transcribe-flex",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:52:02.158Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

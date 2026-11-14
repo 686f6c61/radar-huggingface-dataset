@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dotyerts/MiMo-V2.6-Flash-RL-UNCENSORED-oQ8e-mtp",
   "slug": "dotyerts-mimo-v2-6-flash-rl-uncensored-oq8e-mtp",
   "author": "dotyerts",
@@ -28,6 +28,7 @@
   "parameters_human": "309.77B",
   "storage_bytes": 172271787602,
   "storage_human": "172.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

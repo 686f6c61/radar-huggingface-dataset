@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wyattearp/Qwen3.8-27B-DFlash2",
   "slug": "wyattearp-qwen3-8-27b-dflash2",
   "author": "wyattearp",
@@ -39,14 +39,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 3849104785,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored, wyattearp/Qwen3.8-27B-Uncensored-NVFP4, Qwen/Qwen3.8-27B, wyattearp/Qwen3.8-27B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

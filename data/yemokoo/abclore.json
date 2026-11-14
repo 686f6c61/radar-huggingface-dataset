@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YeMoKoo/abclore",
   "slug": "yemokoo-abclore",
   "author": "YeMoKoo",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 177139524602,
   "storage_human": "177.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T03:22:42.065Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

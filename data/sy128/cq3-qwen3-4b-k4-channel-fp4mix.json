@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sy128/CQ3-Qwen3-4B-K4-Channel-FP4Mix",
   "slug": "sy128-cq3-qwen3-4b-k4-channel-fp4mix",
   "author": "sy128",
@@ -23,14 +23,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 17657211928,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T06:02:56.737Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

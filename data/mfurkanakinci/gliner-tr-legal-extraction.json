@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mfurkanakinci/gliner-tr-legal-extraction",
   "slug": "mfurkanakinci-gliner-tr-legal-extraction",
   "author": "mfurkanakinci",
@@ -37,14 +37,19 @@
   "parameters_human": "287.4M",
   "storage_bytes": 1165496881,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2.5-multi-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

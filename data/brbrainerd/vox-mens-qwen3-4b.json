@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brbrainerd/vox-mens-qwen3-4b",
   "slug": "brbrainerd-vox-mens-qwen3-4b",
   "author": "brbrainerd",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 153477567,
   "storage_human": "153 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

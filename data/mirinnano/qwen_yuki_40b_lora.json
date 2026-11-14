@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mirinnano/Qwen_Yuki_40B_LoRA",
   "slug": "mirinnano-qwen_yuki_40b_lora",
   "author": "mirinnano",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 5661157733,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "Davd-b01/qwen3.8-flash-next-40b-prune-research",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T03:14:29.013Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

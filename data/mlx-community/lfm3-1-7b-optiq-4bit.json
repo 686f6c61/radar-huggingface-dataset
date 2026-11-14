@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/LFM3-1.7B-OptiQ-4bit",
   "slug": "mlx-community-lfm3-1-7b-optiq-4bit",
   "author": "mlx-community",
@@ -38,6 +38,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1359213624,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored",
   "slug": "nightmedia-qwen3-6-35b-a3b-brainwaves-nex-uncensored",
   "author": "nightmedia",
@@ -66,6 +66,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71923861039,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": "AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1, nightmedia/Qwen3.6-35B-A3B-FSM, Qwen/Qwen-AgentWorld-35B-A3B, orcarouter/Nex-N2.5-mini-Uncensored, Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated",
   "formats": [
     "mlx",
@@ -73,8 +74,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5",
   "slug": "msuiche-qwen3-8-27b-hedging-glp-63-l1-63-a0-5",
   "author": "msuiche",
@@ -28,6 +28,7 @@
   "parameters_human": "322560",
   "storage_bytes": 9849528,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

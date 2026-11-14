@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loongyy/sdar_4b_b16_webshop_sft",
   "slug": "loongyy-sdar_4b_b16_webshop_sft",
   "author": "loongyy",
@@ -33,14 +33,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8822921269,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "JetLM/SDAR-4B-Chat-b16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T11:39:10.285Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

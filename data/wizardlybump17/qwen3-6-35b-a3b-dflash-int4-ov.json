@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WizardlyBump17/Qwen3.6-35B-A3B-DFlash-int4-ov",
   "slug": "wizardlybump17-qwen3-6-35b-a3b-dflash-int4-ov",
   "author": "WizardlyBump17",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 200483753,
   "storage_human": "200 MB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.6-35B-A3B-DFlash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

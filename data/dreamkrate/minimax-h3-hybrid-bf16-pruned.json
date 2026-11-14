@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dreamkrate/Minimax-H3-Hybrid-BF16-Pruned",
   "slug": "dreamkrate-minimax-h3-hybrid-bf16-pruned",
   "author": "dreamkrate",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 40225724176,
   "storage_human": "40.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

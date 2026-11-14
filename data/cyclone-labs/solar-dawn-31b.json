@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cyclone-Labs/Solar-Dawn-31B",
   "slug": "cyclone-labs-solar-dawn-31b",
   "author": "Cyclone-Labs",
@@ -44,14 +44,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578506090,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "BirdToast/Gemma-4-31B-glimmer-rp-v0.1, bgg1996/Melinoe-Gemma4-31B-VL, MRockatansky/Gemma-4-31B-Storymaxxed3, ConicCat/Gemma4-GarnetV3-31B, google/gemma-4-31B-it, Gryphe/Pantheon-Reasoning-31B-1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

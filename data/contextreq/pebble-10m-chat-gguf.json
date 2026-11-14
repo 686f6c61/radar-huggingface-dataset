@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ContextReq/Pebble-10M-Chat-GGUF",
   "slug": "contextreq-pebble-10m-chat-gguf",
   "author": "ContextReq",
@@ -34,14 +34,19 @@
   "parameters_human": "10.3M",
   "storage_bytes": 78638784,
   "storage_human": "79 MB",
+  "context_length": 512,
   "base_model": "basically-ai/Pebble-10M-Chat",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T04:44:37.392Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

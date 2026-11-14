@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aniruddh123464/my_custom_deepseek_cot_1cr",
   "slug": "aniruddh123464-my_custom_deepseek_cot_1cr",
   "author": "aniruddh123464",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 102882418,
   "storage_human": "103 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PanocularAI/PanoLM1.5-400M-Base",
   "slug": "panocularai-panolm1-5-400m-base",
   "author": "PanocularAI",
@@ -34,14 +34,19 @@
   "parameters_human": "388.5M",
   "storage_bytes": 777509905,
   "storage_human": "778 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

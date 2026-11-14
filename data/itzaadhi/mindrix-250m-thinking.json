@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itzaadhi/MINDRIX-250M-THINKING",
   "slug": "itzaadhi-mindrix-250m-thinking",
   "author": "itzaadhi",
@@ -25,14 +25,19 @@
   "parameters_human": "166.6M",
   "storage_bytes": 794134839,
   "storage_human": "794 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

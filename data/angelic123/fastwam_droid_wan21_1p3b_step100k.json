@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "angelic123/fastwam_droid_wan21_1p3b_step100k",
   "slug": "angelic123-fastwam_droid_wan21_1p3b_step100k",
   "author": "angelic123",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 4124243269,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

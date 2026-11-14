@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM2.5-350M-JSON-NoFence-GGUF",
   "slug": "mradermacher-lfm2-5-350m-json-nofence-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 3299547008,
   "storage_human": "3.3 GB",
+  "context_length": 128000,
   "base_model": "yasserrmd/LFM2.5-350M-JSON-NoFence",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

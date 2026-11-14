@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "americansquid/gpt2-large-alpaca",
   "slug": "americansquid-gpt2-large-alpaca",
   "author": "americansquid",
@@ -35,14 +35,19 @@
   "parameters_human": "774.0M",
   "storage_bytes": 1548105416,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T02:48:10.083Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

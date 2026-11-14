@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JakubBialoskorski/enginseer-140m-GGUF",
   "slug": "jakubbialoskorski-enginseer-140m-gguf",
   "author": "JakubBialoskorski",
@@ -35,14 +35,19 @@
   "parameters_human": "140.0M",
   "storage_bytes": 430360448,
   "storage_human": "430 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kindredsp/siglip2-explicit-content-onnx",
   "slug": "kindredsp-siglip2-explicit-content-onnx",
   "author": "kindredsp",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 343596108,
   "storage_human": "344 MB",
+  "context_length": null,
   "base_model": "prithivMLmods/siglip2-x256-explicit-content",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bouroo/Qwopus3.8-27B-Coder-Flash-GGUF",
   "slug": "bouroo-qwopus3-8-27b-coder-flash-gguf",
   "author": "bouroo",
@@ -45,14 +45,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 80510833920,
   "storage_human": "80.5 GB",
+  "context_length": 262144,
   "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T03:57:44.094Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

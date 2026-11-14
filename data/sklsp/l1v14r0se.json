@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sklsp/l1v14r0se",
   "slug": "sklsp-l1v14r0se",
   "author": "sklsp",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 173089796,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:52:21.033Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

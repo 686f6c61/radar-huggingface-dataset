@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hwajin-me/L1-30B-A5B",
   "slug": "hwajin-me-l1-30b-a5b",
   "author": "hwajin-me",
@@ -42,14 +42,19 @@
   "parameters_human": "29.56B",
   "storage_bytes": 59140250625,
   "storage_human": "59.1 GB",
+  "context_length": null,
   "base_model": "trillionlabs/Gravity-30B-A5B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bbsai/Molmo2-8B",
   "slug": "bbsai-molmo2-8b",
   "author": "bbsai",
@@ -46,14 +46,19 @@
   "parameters_human": "8.66B",
   "storage_bytes": 34658387289,
   "storage_human": "34.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B, google/siglip-so400m-patch14-384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

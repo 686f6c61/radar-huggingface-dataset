@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yang31210999/Qwen3-4B-xh0921-pile",
   "slug": "yang31210999-qwen3-4b-xh0921-pile",
   "author": "yang31210999",
@@ -24,14 +24,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 3134950714,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ASRmember/Qwen3-TTS-12Hz-1.7B-Base-ja-CV26-VoiceClone-FT",
   "slug": "asrmember-qwen3-tts-12hz-1-7b-base-ja-cv26-voiceclone-ft",
   "author": "ASRmember",
@@ -25,14 +25,19 @@
   "parameters_human": "1.93B",
   "storage_bytes": 655698607842,
   "storage_human": "655.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jancirnodziewiaty/Wicked-Tutu-31B-v4-oQ4e-mtp",
   "slug": "jancirnodziewiaty-wicked-tutu-31b-v4-oq4e-mtp",
   "author": "jancirnodziewiaty",
@@ -30,6 +30,7 @@
   "parameters_human": "31.74B",
   "storage_bytes": 19971579402,
   "storage_human": "20.0 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Wicked-Tutu-31B-v4",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

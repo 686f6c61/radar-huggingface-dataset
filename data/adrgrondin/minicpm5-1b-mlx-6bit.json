@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adrgrondin/MiniCPM5-1B-mlx-6Bit",
   "slug": "adrgrondin-minicpm5-1b-mlx-6bit",
   "author": "adrgrondin",
@@ -49,6 +49,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 878166035,
   "storage_human": "878 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mlx-community/MiniCPM5-1B-mlx-6Bit",
+  "renamed_at": "2026-11-11T04:19:35.122Z",
   "benchmarks": [],
   "sources": [
     {

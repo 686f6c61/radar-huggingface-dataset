@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tetraturtle/G4-LuneLight-31B-exl3",
   "slug": "tetraturtle-g4-lunelight-31b-exl3",
   "author": "tetraturtle",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 148508515428,
   "storage_human": "148.5 GB",
+  "context_length": null,
   "base_model": "zerofata/G4-LuneLight-31B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

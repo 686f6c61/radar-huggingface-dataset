@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Qwen2.5-14B-Instruct-Tensix-BFP4-Down8",
   "slug": "xylolabs-qwen2-5-14b-instruct-tensix-bfp4-down8",
   "author": "Xylolabs",
@@ -44,14 +44,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29540132784,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

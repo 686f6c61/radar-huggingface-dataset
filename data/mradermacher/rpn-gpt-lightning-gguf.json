@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/rpn-gpt-lightning-GGUF",
   "slug": "mradermacher-rpn-gpt-lightning-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 268646311936,
   "storage_human": "268.6 GB",
+  "context_length": 1048576,
   "base_model": "markab/rpn-gpt-lightning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "linda1476/Gemma4-E4B-RP-RLAIF_Pubilc",
   "slug": "linda1476-gemma4-e4b-rp-rlaif_pubilc",
   "author": "linda1476",
@@ -38,6 +38,7 @@
   "parameters_human": "7.52B",
   "storage_bytes": 10996479802,
   "storage_human": "11.0 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-e4b-it",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

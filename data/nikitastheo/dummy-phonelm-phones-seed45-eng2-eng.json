@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikitastheo/dummy-phonelm-phones-seed45-eng2-eng",
   "slug": "nikitastheo-dummy-phonelm-phones-seed45-eng2-eng",
   "author": "nikitastheo",
@@ -28,14 +28,19 @@
   "parameters_human": "141056",
   "storage_bytes": 3967992,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T06:38:24.709Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3-32B-T-pro-it-2.1-NOESIS-AWQ-INT4",
   "slug": "amaimedia-qwen3-32b-t-pro-it-2-1-noesis-awq-int4",
   "author": "AMAImedia",
@@ -35,14 +35,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 19333463063,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "t-tech/T-pro-it-2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T09:36:32.451Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

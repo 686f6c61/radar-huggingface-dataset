@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-sdf-unmixed",
   "slug": "model-organisms-for-real-automo-kd-unmixed-gemma-to-olmo-italianfood-sdf-unmixed",
   "author": "model-organisms-for-real",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 8909562672,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-0425-1B-DPO",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

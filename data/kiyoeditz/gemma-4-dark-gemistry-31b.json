@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KiyoEditz/Gemma-4-Dark-Gemistry-31B",
   "slug": "kiyoeditz-gemma-4-dark-gemistry-31b",
   "author": "KiyoEditz",
@@ -52,14 +52,19 @@
   "parameters_human": "32.68B",
   "storage_bytes": 65406000031,
   "storage_human": "65.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it, ReadyArt/Serenity-31B-v1.1, ReadyArt/Dark-Scarlett-v1.0-31B, ReadyArt/Melody1437-31B-v2.0, trohrbaugh/gemma-4-31b-it-heretic-ara, Blazed-Forge/Gemma-4-Gemsicle-31B, zerofata/G4-MeroMero-31B, LatitudeGames/Equinox-31B, Gryphe/Gemma-4-31B-StyleTune",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

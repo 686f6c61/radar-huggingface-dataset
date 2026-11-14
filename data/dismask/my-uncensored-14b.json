@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DismasK/My-Uncensored-14B",
   "slug": "dismask-my-uncensored-14b",
   "author": "DismasK",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-14B-Instruct, cognitivecomputations/Dolphin3.0-R1-Qwen-14B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishikaa/acquisition_generator_AS_confidence_combine_OH_MP_N_new_qwen4b",
   "slug": "ishikaa-acquisition_generator_as_confidence_combine_oh_mp_n_new_qwen4b",
   "author": "ishikaa",
@@ -29,14 +29,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 16101340478,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

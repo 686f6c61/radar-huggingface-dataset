@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mmiiguell10/Qwen3.8-27B-OBLITERATED",
   "slug": "mmiiguell10-qwen3-8-27b-obliterated",
   "author": "mmiiguell10",
@@ -38,6 +38,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 237137448592,
   "storage_human": "237.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T12:06:47.819Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

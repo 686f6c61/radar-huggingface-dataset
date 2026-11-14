@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AhinskiDzmitry/dnd-sana-sprint-1.6b",
   "slug": "ahinskidzmitry-dnd-sana-sprint-1-6b",
   "author": "AhinskiDzmitry",
@@ -28,6 +28,7 @@
   "parameters_human": "1.61B",
   "storage_bytes": 9112394634,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers",
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goro64/Llama-mas-detector-v1-mirror-NaitikVora",
   "slug": "goro64-llama-mas-detector-v1-mirror-naitikvora",
   "author": "Goro64",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 18959563072,
   "storage_human": "19.0 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-Prompt-Guard-2-86M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

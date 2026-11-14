@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cfontes/GLM-5.3-Flash-DFlash2-TR3-v3",
   "slug": "cfontes-glm-5-3-flash-dflash2-tr3-v3",
   "author": "cfontes",
@@ -32,14 +32,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 2342169800,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash, incoai/GLM-5.3-Flash-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

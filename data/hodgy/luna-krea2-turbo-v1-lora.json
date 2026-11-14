@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hodgy/luna-krea2-turbo-v1-lora",
   "slug": "hodgy-luna-krea2-turbo-v1-lora",
   "author": "hodgy",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 233685919,
   "storage_human": "234 MB",
+  "context_length": null,
   "base_model": "krea2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T13:04:22.982Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tom2701/R-08-Transformer-Baseline",
   "slug": "tom2701-r-08-transformer-baseline",
   "author": "Tom2701",
@@ -35,12 +35,17 @@
   "parameters_human": "45.5M",
   "storage_bytes": 455714080,
   "storage_human": "456 MB",
+  "context_length": 256,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SentinelHub/R-08-Transformer-Baseline",
+  "renamed_at": "2026-11-11T04:04:18.035Z",
   "benchmarks": [],
   "sources": []
 }

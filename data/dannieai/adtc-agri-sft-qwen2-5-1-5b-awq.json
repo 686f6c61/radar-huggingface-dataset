@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DannieAI/adtc-agri-sft-qwen2.5-1.5b-awq",
   "slug": "dannieai-adtc-agri-sft-qwen2-5-1-5b-awq",
   "author": "DannieAI",
@@ -32,14 +32,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 1159228356,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

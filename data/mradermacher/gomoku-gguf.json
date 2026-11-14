@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gomoku-GGUF",
   "slug": "mradermacher-gomoku-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "2.0M",
   "storage_bytes": 29855296,
   "storage_human": "30 MB",
+  "context_length": 2048,
   "base_model": "l898974766/gomoku",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

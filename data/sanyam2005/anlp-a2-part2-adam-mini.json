@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanyam2005/anlp-a2-part2-adam-mini",
   "slug": "sanyam2005-anlp-a2-part2-adam-mini",
   "author": "sanyam2005",
@@ -28,14 +28,19 @@
   "parameters_human": "27.3M",
   "storage_bytes": 218166576,
   "storage_human": "218 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

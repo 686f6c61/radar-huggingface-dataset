@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jacob-valdez/tensorcode-planner-hotpot-001",
   "slug": "jacob-valdez-tensorcode-planner-hotpot-001",
   "author": "jacob-valdez",
@@ -25,14 +25,19 @@
   "parameters_human": "13.6M",
   "storage_bytes": 54392052,
   "storage_human": "54 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

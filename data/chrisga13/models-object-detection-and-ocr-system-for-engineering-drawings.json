@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chrisga13/Models-Object-Detection-and-OCR-System-for-Engineering-Drawings",
   "slug": "chrisga13-models-object-detection-and-ocr-system-for-engineering-drawings",
   "author": "chrisga13",
@@ -25,14 +25,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 6924587450,
   "storage_human": "6.9 GB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

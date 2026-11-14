@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Qwen3.5-4B",
   "slug": "litert-community-qwen3-5-4b",
   "author": "litert-community",
@@ -27,18 +27,23 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 5975,
+  "downloads_30d": 6388,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 54503574784,
   "storage_human": "54.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

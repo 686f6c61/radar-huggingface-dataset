@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trymirai/d3-flash-M",
   "slug": "trymirai-d3-flash-m",
   "author": "trymirai",
@@ -33,14 +33,19 @@
   "parameters_human": "4.16B",
   "storage_bytes": 17193095789,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

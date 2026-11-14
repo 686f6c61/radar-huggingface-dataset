@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sage-A1.5-Concise-i1-GGUF",
   "slug": "mradermacher-sage-a1-5-concise-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 279353349056,
   "storage_human": "279.4 GB",
+  "context_length": 262144,
   "base_model": "TheFusionCube/Sage-A1.5-Concise",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

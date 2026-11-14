@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gohumanize/gohumanize-open-humanizer-qlora",
   "slug": "gohumanize-gohumanize-open-humanizer-qlora",
   "author": "gohumanize",
@@ -42,6 +42,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 14900218836,
   "storage_human": "14.9 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

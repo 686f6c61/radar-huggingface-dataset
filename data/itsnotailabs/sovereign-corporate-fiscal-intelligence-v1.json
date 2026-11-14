@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ItsnotAilabs/Sovereign-Corporate-Fiscal-Intelligence-v1",
   "slug": "itsnotailabs-sovereign-corporate-fiscal-intelligence-v1",
   "author": "ItsnotAilabs",
@@ -29,14 +29,19 @@
   "parameters_human": "6.0M",
   "storage_bytes": 747099974,
   "storage_human": "747 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

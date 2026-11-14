@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "necrasov-ilya/AliceAI-T5-35B-A0.6B-MPS-ExpertInt8",
   "slug": "necrasov-ilya-aliceai-t5-35b-a0-6b-mps-expertint8",
   "author": "necrasov-ilya",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 35408459400,
   "storage_human": "35.4 GB",
+  "context_length": null,
   "base_model": "yandex/AliceAI-T5-35B-A0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

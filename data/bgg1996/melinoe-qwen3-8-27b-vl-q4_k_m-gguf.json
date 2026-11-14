@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bgg1996/Melinoe-Qwen3-8-27B-VL-Q4_K_M-GGUF",
   "slug": "bgg1996-melinoe-qwen3-8-27b-vl-q4_k_m-gguf",
   "author": "bgg1996",
@@ -29,14 +29,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16810714432,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "bgg1996/Melinoe-Qwen3-8-27B-VL",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:27:08.763Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

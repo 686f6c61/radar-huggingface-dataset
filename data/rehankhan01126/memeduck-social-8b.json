@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RehanKhan01126/MemeDuck-Social-8B",
   "slug": "rehankhan01126-memeduck-social-8b",
   "author": "RehanKhan01126",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 185042201,
   "storage_human": "185 MB",
+  "context_length": null,
   "base_model": "unsloth/llama-3-8b-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T05:09:54.416Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ataeff/molequla",
   "slug": "ataeff-molequla",
   "author": "ataeff",
@@ -32,14 +32,19 @@
   "parameters_human": "409.3M",
   "storage_bytes": 2057474026,
   "storage_human": "2.1 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

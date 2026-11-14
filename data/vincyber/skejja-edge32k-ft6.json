@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vincyber/skejja-edge32k-ft6",
   "slug": "vincyber-skejja-edge32k-ft6",
   "author": "vincyber",
@@ -48,14 +48,19 @@
   "parameters_human": null,
   "storage_bytes": 420605288,
   "storage_human": "421 MB",
+  "context_length": null,
   "base_model": "knowledgator/gliclass-multilang-edge",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

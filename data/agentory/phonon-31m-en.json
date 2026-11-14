@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/phonon-31m-en",
   "slug": "agentory-phonon-31m-en",
   "author": "agentory",
@@ -36,6 +36,7 @@
   "parameters_human": "41.1M",
   "storage_bytes": 222732621,
   "storage_human": "223 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:53.671Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

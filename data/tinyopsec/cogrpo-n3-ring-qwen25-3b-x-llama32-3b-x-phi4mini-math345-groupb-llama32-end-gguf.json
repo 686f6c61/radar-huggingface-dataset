@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end-GGUF",
   "slug": "tinyopsec-cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupb-llama32-end-gguf",
   "author": "tinyopsec",
@@ -38,14 +38,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 27447976768,
   "storage_human": "27.4 GB",
+  "context_length": 131072,
   "base_model": "logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

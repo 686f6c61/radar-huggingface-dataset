@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PraxySante/SK_VITS_medical_16k",
   "slug": "praxysante-sk_vits_medical_16k",
   "author": "PraxySante",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1009351938,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T04:00:34.637Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

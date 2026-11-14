@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mattebar/Gemma4-12B-igorls-finetuned",
   "slug": "mattebar-gemma4-12b-igorls-finetuned",
   "author": "mattebar",
@@ -27,14 +27,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 23832064704,
   "storage_human": "23.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:37:40.265Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

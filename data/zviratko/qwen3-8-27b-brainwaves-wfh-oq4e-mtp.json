@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zviratko/Qwen3.8-27B-Brainwaves-WFH-oQ4e-mtp",
   "slug": "zviratko-qwen3-8-27b-brainwaves-wfh-oq4e-mtp",
   "author": "zviratko",
@@ -29,6 +29,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 17042788455,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "nightmedia/Qwen3.8-27B-Brainwaves-WFH",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

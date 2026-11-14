@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/docto-decision-medgemma-1.5-4b-fr-v0.1-GGUF",
   "slug": "mradermacher-docto-decision-medgemma-1-5-4b-fr-v0-1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 37274405696,
   "storage_human": "37.3 GB",
+  "context_length": 131072,
   "base_model": "bofenghuang/docto-decision-medgemma-1.5-4b-fr-v0.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

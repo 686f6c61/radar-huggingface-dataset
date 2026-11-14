@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pytraveler/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA-GGUF",
   "slug": "pytraveler-minimax-h3-prompt-rewriter-qwen3-5-9b-ref2va-gguf",
   "author": "pytraveler",
@@ -35,14 +35,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 13015244864,
   "storage_human": "13.0 GB",
+  "context_length": 262144,
   "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

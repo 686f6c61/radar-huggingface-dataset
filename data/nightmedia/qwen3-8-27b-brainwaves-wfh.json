@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.8-27B-Brainwaves-WFH",
   "slug": "nightmedia-qwen3-8-27b-brainwaves-wfh",
   "author": "nightmedia",
@@ -89,6 +89,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582996519,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "nbeerbower/Wichtel-Qwen3.6-27B, armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara, nightmedia/Qwen3.8-27B-Brainwaves",
   "formats": [
     "mlx",
@@ -96,8 +97,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

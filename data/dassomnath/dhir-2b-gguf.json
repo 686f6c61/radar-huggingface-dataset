@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dassomnath/Dhir-2B-GGUF",
   "slug": "dassomnath-dhir-2b-gguf",
   "author": "dassomnath",
@@ -55,14 +55,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 2573200416,
   "storage_human": "2.6 GB",
+  "context_length": 16384,
   "base_model": "zenteiq/Dhir-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

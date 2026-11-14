@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anorim/twhinbert-fusion-5-darefisher-p0.9-fn-bestcross-hatebr-hspt-olidbr-tupy-v55",
   "slug": "anorim-twhinbert-fusion-5-darefisher-p0-9-fn-bestcross-hatebr-hspt-olidbr-tupy-v55",
   "author": "anorim",
@@ -23,14 +23,19 @@
   "parameters_human": "278.8M",
   "storage_bytes": 1132428631,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

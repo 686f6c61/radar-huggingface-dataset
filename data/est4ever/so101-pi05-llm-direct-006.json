@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "est4ever/so101-pi05-llm-direct-006",
   "slug": "est4ever-so101-pi05-llm-direct-006",
   "author": "est4ever",
@@ -31,14 +31,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 14918355300,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

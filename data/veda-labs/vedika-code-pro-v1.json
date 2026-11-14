@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Veda-Labs/Vedika-Code-Pro-v1",
   "slug": "veda-labs-vedika-code-pro-v1",
   "author": "Veda-Labs",
@@ -28,14 +28,19 @@
   "parameters_human": "812.46B",
   "storage_bytes": 864735047142,
   "storage_human": "864.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T08:36:18.103Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

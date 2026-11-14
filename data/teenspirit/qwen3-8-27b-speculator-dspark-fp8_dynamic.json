@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TeenSpirit/Qwen3.8-27B-speculator.dspark-FP8_DYNAMIC",
   "slug": "teenspirit-qwen3-8-27b-speculator-dspark-fp8_dynamic",
   "author": "TeenSpirit",
@@ -32,14 +32,19 @@
   "parameters_human": "1.99B",
   "storage_bytes": 2116183642,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "RedHatAI/Qwen3.8-27B-speculator.dspark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

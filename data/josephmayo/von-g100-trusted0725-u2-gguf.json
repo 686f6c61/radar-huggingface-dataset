@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "josephmayo/von-g100-trusted0725-u2-gguf",
   "slug": "josephmayo-von-g100-trusted0725-u2-gguf",
   "author": "josephmayo",
@@ -31,14 +31,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 5215377792,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "WeiboAI/VibeThinker-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:37:41.111Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

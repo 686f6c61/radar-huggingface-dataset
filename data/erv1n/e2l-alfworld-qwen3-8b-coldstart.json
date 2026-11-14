@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erv1n/e2l-alfworld-qwen3-8b-coldstart",
   "slug": "erv1n-e2l-alfworld-qwen3-8b-coldstart",
   "author": "erv1n",
@@ -29,14 +29,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 32774409890,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

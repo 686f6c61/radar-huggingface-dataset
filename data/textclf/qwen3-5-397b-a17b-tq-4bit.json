@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textclf/Qwen3.5-397B-A17B-TQ-4bit",
   "slug": "textclf-qwen3-5-397b-a17b-tq-4bit",
   "author": "textclf",
@@ -28,14 +28,19 @@
   "parameters_human": "7.81B",
   "storage_bytes": 216648793593,
   "storage_human": "216.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "thousandml/Qwen3.5-397B-A17B-CQ-4bit",
+  "renamed_at": "2026-11-11T07:46:27.047Z",
   "benchmarks": [],
   "sources": [
     {

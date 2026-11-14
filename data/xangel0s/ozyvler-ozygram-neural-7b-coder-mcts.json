@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS",
   "slug": "xangel0s-ozyvler-ozygram-neural-7b-coder-mcts",
   "author": "Xangel0s",
@@ -46,6 +46,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 39840113556,
   "storage_human": "39.8 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

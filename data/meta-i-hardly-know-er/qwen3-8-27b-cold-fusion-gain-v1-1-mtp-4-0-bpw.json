@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Meta-i-hardly-know-er/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-MTP-4.0-bpw",
   "slug": "meta-i-hardly-know-er-qwen3-8-27b-cold-fusion-gain-v1-1-mtp-4-0-bpw",
   "author": "Meta-i-hardly-know-er",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 16884314269,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "slug": "nvidia-nvidia-nemotron-3-5-bolt-e4b-bf16",
   "author": "nvidia",
@@ -106,14 +106,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16055022874,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

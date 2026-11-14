@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_seed_123",
   "slug": "tesnik369-mistral-7b-instruct-v0-2-bnb-4bit_tqa_tuned_seed_123",
   "author": "TesNik369",
@@ -35,14 +35,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 14483991459,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

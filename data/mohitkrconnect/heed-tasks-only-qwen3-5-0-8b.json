@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohitkrconnect/heed-tasks-only-qwen3.5-0.8b",
   "slug": "mohitkrconnect-heed-tasks-only-qwen3-5-0-8b",
   "author": "mohitkrconnect",
@@ -39,14 +39,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524935419,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

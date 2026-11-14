@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DICPlay/RusMind-Zernyshko-1.10-GGUF",
   "slug": "dicplay-rusmind-zernyshko-1-10-gguf",
   "author": "DICPlay",
@@ -35,14 +35,19 @@
   "parameters_human": "83.1M",
   "storage_bytes": 256417024,
   "storage_human": "256 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

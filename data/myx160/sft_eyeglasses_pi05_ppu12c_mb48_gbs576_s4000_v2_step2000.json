@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myx160/sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000",
   "slug": "myx160-sft_eyeglasses_pi05_ppu12c_mb48_gbs576_s4000_v2_step2000",
   "author": "myx160",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 34161745359,
   "storage_human": "34.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

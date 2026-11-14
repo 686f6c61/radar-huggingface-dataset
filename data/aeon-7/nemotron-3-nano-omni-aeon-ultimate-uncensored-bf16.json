@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/Nemotron-3-Nano-Omni-AEON-Ultimate-Uncensored-BF16",
   "slug": "aeon-7-nemotron-3-nano-omni-aeon-ultimate-uncensored-bf16",
   "author": "AEON-7",
@@ -81,14 +81,19 @@
   "parameters_human": "33.02B",
   "storage_bytes": 66057711479,
   "storage_human": "66.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

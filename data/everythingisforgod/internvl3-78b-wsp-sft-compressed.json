@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EverythingIsForGod/InternVL3-78B-WSP-SFT-Compressed",
   "slug": "everythingisforgod-internvl3-78b-wsp-sft-compressed",
   "author": "EverythingIsForGod",
@@ -48,14 +48,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9330157933,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3-78B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

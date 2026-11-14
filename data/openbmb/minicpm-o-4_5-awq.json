@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/MiniCPM-o-4_5-awq",
   "slug": "openbmb-minicpm-o-4_5-awq",
   "author": "openbmb",
@@ -38,6 +38,7 @@
   "parameters_human": "9.37B",
   "storage_bytes": 12455801613,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-o-4_5",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

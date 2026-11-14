@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liserman/climaparl-xlm-roberta-climate-change-broad-v05",
   "slug": "liserman-climaparl-xlm-roberta-climate-change-broad-v05",
   "author": "liserman",
@@ -28,14 +28,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1129287742,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T08:26:15.770Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

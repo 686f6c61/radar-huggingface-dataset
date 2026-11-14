@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "armanakbari4/fastwam-robotwin-joint-50k",
   "slug": "armanakbari4-fastwam-robotwin-joint-50k",
   "author": "armanakbari4",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 12041813369,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

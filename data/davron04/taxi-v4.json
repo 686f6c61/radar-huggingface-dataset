@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davron04/Taxi-v4",
   "slug": "davron04-taxi-v4",
   "author": "davron04",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 272428,
   "storage_human": "272428 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "newsbang/adjudex-0.8b-v5",
   "slug": "newsbang-adjudex-0-8b-v5",
   "author": "newsbang",
@@ -31,14 +31,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1726539500,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

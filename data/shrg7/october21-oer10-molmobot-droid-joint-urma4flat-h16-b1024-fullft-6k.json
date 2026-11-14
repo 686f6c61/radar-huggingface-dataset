@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shrg7/october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-6k",
   "slug": "shrg7-october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-6k",
   "author": "shrg7",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 12441734715,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T05:04:53.494Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

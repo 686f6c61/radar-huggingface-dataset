@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuofang/Qwen3.5-9B-Distill-Bradbury-F451-SLERP-Uncensored-GGUF",
   "slug": "nuofang-qwen3-5-9b-distill-bradbury-f451-slerp-uncensored-gguf",
   "author": "nuofang",
@@ -27,14 +27,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 35107133504,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": "nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF",
+  "renamed_at": "2026-11-11T06:58:10.321Z",
   "benchmarks": [],
   "sources": [
     {

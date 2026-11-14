@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bare-corporation/bare-ai-qwen-176b-edge-harness",
   "slug": "bare-corporation-bare-ai-qwen-176b-edge-harness",
   "author": "bare-corporation",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 759222,
   "storage_human": "759222 B",
+  "context_length": null,
   "base_model": "Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

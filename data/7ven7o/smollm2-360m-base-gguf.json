@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "7ven7o/SmolLM2-360M-Base-GGUF",
   "slug": "7ven7o-smollm2-360m-base-gguf",
   "author": "7ven7o",
@@ -28,14 +28,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 259914848,
   "storage_human": "260 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

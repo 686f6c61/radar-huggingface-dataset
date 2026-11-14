@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lernex/Metis-1.6-Praxis-FP8",
   "slug": "lernex-metis-1-6-praxis-fp8",
   "author": "Lernex",
@@ -39,14 +39,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 3527807364,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Lernex/Metis-1.6-Praxis",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

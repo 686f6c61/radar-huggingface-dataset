@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Offlin33er/SmolLM2-1.7B-telegram-chats",
   "slug": "offlin33er-smollm2-1-7b-telegram-chats",
   "author": "Offlin33er",
@@ -39,14 +39,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3422783729,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

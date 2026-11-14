@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yabunayya/resnet50-pneumothorax-cxr",
   "slug": "yabunayya-resnet50-pneumothorax-cxr",
   "author": "Yabunayya",
@@ -28,6 +28,7 @@
   "parameters_human": "23.6M",
   "storage_bytes": 188265391,
   "storage_human": "188 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

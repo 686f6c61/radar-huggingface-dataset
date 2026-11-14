@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myflow-ai/moonshine-tiny-uk-gguf",
   "slug": "myflow-ai-moonshine-tiny-uk-gguf",
   "author": "myflow-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "27.1M",
   "storage_bytes": 35466944,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "UsefulSensors/moonshine-tiny-uk",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

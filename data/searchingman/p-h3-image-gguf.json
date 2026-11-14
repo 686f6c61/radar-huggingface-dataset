@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SearchingMan/P-H3-Image-GGUF",
   "slug": "searchingman-p-h3-image-gguf",
   "author": "SearchingMan",
@@ -29,14 +29,19 @@
   "parameters_human": "4.50B",
   "storage_bytes": 29345355360,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "PrunaAI/P-H3-Image",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

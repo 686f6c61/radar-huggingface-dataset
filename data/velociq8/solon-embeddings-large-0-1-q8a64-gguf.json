@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VelociQ8/Solon-embeddings-large-0.1-Q8A64-GGUF",
   "slug": "velociq8-solon-embeddings-large-0-1-q8a64-gguf",
   "author": "VelociQ8",
@@ -42,14 +42,19 @@
   "parameters_human": "833.7M",
   "storage_bytes": 2475767053,
   "storage_human": "2.5 GB",
+  "context_length": 512,
   "base_model": "OrdalieTech/Solon-embeddings-large-0.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

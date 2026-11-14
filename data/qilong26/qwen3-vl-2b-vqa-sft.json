@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QiLong26/Qwen3-VL-2B-VQA-SFT",
   "slug": "qilong26-qwen3-vl-2b-vqa-sft",
   "author": "QiLong26",
@@ -31,14 +31,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4266568291,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

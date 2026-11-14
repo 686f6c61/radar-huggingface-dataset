@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AyoubChLin/Huihui-gpt-oss-20b-BF16-abliterated-v2",
   "slug": "ayoubchlin-huihui-gpt-oss-20b-bf16-abliterated-v2",
   "author": "AyoubChLin",
@@ -37,6 +37,7 @@
   "parameters_human": "20.91B",
   "storage_bytes": 134702370224,
   "storage_human": "134.7 GB",
+  "context_length": 131072,
   "base_model": "huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T02:22:02.501Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

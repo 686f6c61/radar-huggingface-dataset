@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harsimran2004/whetstone-124m-continued-4b",
   "slug": "harsimran2004-whetstone-124m-continued-4b",
   "author": "harsimran2004",
@@ -35,14 +35,19 @@
   "parameters_human": "123.7M",
   "storage_bytes": 495087812,
   "storage_human": "495 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

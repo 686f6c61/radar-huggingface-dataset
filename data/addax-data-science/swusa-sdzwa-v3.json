@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Addax-Data-Science/SWUSA-SDZWA-v3",
   "slug": "addax-data-science-swusa-sdzwa-v3",
   "author": "Addax-Data-Science",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 431272739,
   "storage_human": "431 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

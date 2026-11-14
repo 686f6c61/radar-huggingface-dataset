@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akumaburn/Qwen3.8-27B-DFlash2-W4A16-longctx",
   "slug": "akumaburn-qwen3-8-27b-dflash2-w4a16-longctx",
   "author": "akumaburn",
@@ -34,14 +34,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 1280633960,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "syvai/Qwen3.8-27B-DFlash2-W4A16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

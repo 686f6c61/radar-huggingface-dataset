@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "springgirl/mt-extract-3g",
   "slug": "springgirl-mt-extract-3g",
   "author": "springgirl",
@@ -25,14 +25,19 @@
   "parameters_human": "375.8M",
   "storage_bytes": 566778176,
   "storage_human": "567 MB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beycanai/ControlNet-models-INT8-ConvRot",
   "slug": "beycanai-controlnet-models-int8-convrot",
   "author": "beycanai",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 7005294158,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "alibaba-pai/Z-Image-Turbo-Fun-Controlnet-Union-2.1, alibaba-pai/Qwen-Image-2512-Fun-Controlnet-Union, InstantX/Qwen-Image-ControlNet-Union",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

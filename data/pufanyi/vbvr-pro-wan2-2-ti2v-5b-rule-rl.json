@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pufanyi/VBVR-Pro-Wan2.2-TI2V-5B-Rule-RL",
   "slug": "pufanyi-vbvr-pro-wan2-2-ti2v-5b-rule-rl",
   "author": "pufanyi",
@@ -41,6 +41,7 @@
   "parameters_human": "5.00B",
   "storage_bytes": 22809695130,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "Video-Reason/VBVR-Pro-Wan2.2-TI2V-5B",
   "formats": [
     "diffusers",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Video-Reason/VBVR-Pro-Wan2.2-TI2V-5B-RLVR",
+  "renamed_at": "2026-11-11T07:11:36.285Z",
   "benchmarks": [],
   "sources": [
     {

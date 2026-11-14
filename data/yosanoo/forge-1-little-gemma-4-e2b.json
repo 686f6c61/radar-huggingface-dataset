@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YoSaNoo/Forge-1-Little-Gemma-4-E2B",
   "slug": "yosanoo-forge-1-little-gemma-4-e2b",
   "author": "YoSaNoo",
@@ -34,14 +34,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 20617716992,
   "storage_human": "20.6 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:35:15.821Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

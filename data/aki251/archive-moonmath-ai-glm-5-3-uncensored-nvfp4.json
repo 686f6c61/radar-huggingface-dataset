@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aki251/archive-MoonMath-ai-GLM-5.3-Uncensored-NVFP4",
   "slug": "aki251-archive-moonmath-ai-glm-5-3-uncensored-nvfp4",
   "author": "Aki251",
@@ -40,14 +40,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 464185841300,
   "storage_human": "464.2 GB",
+  "context_length": null,
   "base_model": "MoonMath-ai/GLM-5.3-Uncensored-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "IFEval",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c41n3/open_llama_3b_v2-Q8_0-GGUF",
   "slug": "c41n3-open_llama_3b_v2-q8_0-gguf",
   "author": "c41n3",
@@ -31,14 +31,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 3641877184,
   "storage_human": "3.6 GB",
+  "context_length": 2048,
   "base_model": "openlm-research/open_llama_3b_v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

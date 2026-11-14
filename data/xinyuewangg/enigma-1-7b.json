@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XinyueWangg/ENIGMA-1.7B",
   "slug": "xinyuewangg-enigma-1-7b",
   "author": "XinyueWangg",
@@ -33,14 +33,19 @@
   "parameters_human": "2.50B",
   "storage_bytes": 5006398464,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:54:44.911Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

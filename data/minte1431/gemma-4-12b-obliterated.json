@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minte1431/Gemma-4-12B-OBLITERATED",
   "slug": "minte1431-gemma-4-12b-obliterated",
   "author": "minte1431",
@@ -41,6 +41,7 @@
   "parameters_human": "11.96B",
   "storage_bytes": 67834812261,
   "storage_human": "67.8 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

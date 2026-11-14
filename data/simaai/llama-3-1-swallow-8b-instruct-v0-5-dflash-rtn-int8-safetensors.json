@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash-RTN-INT8-Safetensors",
   "slug": "simaai-llama-3-1-swallow-8b-instruct-v0-5-dflash-rtn-int8-safetensors",
   "author": "simaai",
@@ -36,14 +36,19 @@
   "parameters_human": "1.05B",
   "storage_bytes": 1066298478,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "florianvoss/Llama-3.1-Swallow-8B-Instruct-v0.5-DFlash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

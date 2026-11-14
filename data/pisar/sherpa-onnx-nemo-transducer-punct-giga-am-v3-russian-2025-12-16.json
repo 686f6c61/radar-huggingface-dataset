@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pisar/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
   "slug": "pisar-sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
   "author": "pisar",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 232245172,
   "storage_human": "232 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bluemorpholimited/qwen_image2.1_molab",
   "slug": "bluemorpholimited-qwen_image2-1_molab",
   "author": "bluemorpholimited",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 101156,
   "storage_human": "101156 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:32:55.344Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

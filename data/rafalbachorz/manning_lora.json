@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rafalbachorz/manning_lora",
   "slug": "rafalbachorz-manning_lora",
   "author": "rafalbachorz",
@@ -26,14 +26,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 19194492896,
   "storage_human": "19.2 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

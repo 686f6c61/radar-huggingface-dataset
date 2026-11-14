@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baa-ai/Qwen3.8-27B-RAM-31GB-GGUF",
   "slug": "baa-ai-qwen3-8-27b-ram-31gb-gguf",
   "author": "baa-ai",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 31171659232,
   "storage_human": "31.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

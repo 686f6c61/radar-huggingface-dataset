@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harryjo97/DreamFree-LIBERO",
   "slug": "harryjo97-dreamfree-libero",
   "author": "harryjo97",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 12117267478,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

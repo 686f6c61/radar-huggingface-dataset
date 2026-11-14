@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Muse-Spark-Open-816B-A42B-MXFP4xFP8",
   "slug": "redhatai-muse-spark-open-816b-a42b-mxfp4xfp8",
   "author": "RedHatAI",
@@ -45,14 +45,19 @@
   "parameters_human": "422.60B",
   "storage_bytes": 453373788709,
   "storage_human": "453.4 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

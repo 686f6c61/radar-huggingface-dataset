@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "koldfrontier/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-NVFP4-NInfer",
   "slug": "koldfrontier-qwen3-8-27b-turbo-fable-cold-fusion-nvfp4-ninfer",
   "author": "koldfrontier",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 21492901636,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

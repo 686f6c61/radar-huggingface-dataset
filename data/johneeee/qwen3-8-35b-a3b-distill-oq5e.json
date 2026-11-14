@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e",
   "slug": "johneeee-qwen3-8-35b-a3b-distill-oq5e",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 24489424192,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-novision",
+  "renamed_at": "2026-11-11T03:04:46.874Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dgrauet/ernie-image-sft-mlx-q8",
   "slug": "dgrauet-ernie-image-sft-mlx-q8",
   "author": "dgrauet",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 12517767257,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "baidu/ERNIE-Image",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

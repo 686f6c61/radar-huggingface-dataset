@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qing-yao/ppt-pythia-1b-permuted-seed3407-stage2",
   "slug": "qing-yao-ppt-pythia-1b-permuted-seed3407-stage2",
   "author": "qing-yao",
@@ -30,14 +30,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 26306629345,
   "storage_human": "26.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

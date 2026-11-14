@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/MiniCPM-V-4.7-1B-DSpark",
   "slug": "openbmb-minicpm-v-4-7-1b-dspark",
   "author": "openbmb",
@@ -40,14 +40,19 @@
   "parameters_human": "213.5M",
   "storage_bytes": 854204052,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

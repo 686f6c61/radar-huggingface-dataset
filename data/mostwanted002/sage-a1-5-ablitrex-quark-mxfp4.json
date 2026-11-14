@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mostwanted002/Sage-A1.5-Ablitrex-Quark-MXFP4",
   "slug": "mostwanted002-sage-a1-5-ablitrex-quark-mxfp4",
   "author": "mostwanted002",
@@ -28,14 +28,19 @@
   "parameters_human": "19.14B",
   "storage_bytes": 23000910135,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

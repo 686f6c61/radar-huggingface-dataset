@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senaro/atlasv23-sft-qwen3-8-27b-lora",
   "slug": "senaro-atlasv23-sft-qwen3-8-27b-lora",
   "author": "senaro",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 338825263,
   "storage_human": "339 MB",
+  "context_length": null,
   "base_model": "senaro/atlasv23-trm-qwen3-8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

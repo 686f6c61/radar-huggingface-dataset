@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Melinoe-Qwen3-8-27B-VL-FP8",
   "slug": "vwdubb-melinoe-qwen3-8-27b-vl-fp8",
   "author": "vwdubb",
@@ -27,14 +27,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 38465169176,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "bgg1996/Melinoe-Qwen3-8-27B-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T07:46:20.584Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

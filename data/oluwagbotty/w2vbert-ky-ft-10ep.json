@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oluwagbotty/w2vbert-ky-ft-10ep",
   "slug": "oluwagbotty-w2vbert-ky-ft-10ep",
   "author": "oluwagbotty",
@@ -35,14 +35,19 @@
   "parameters_human": "580.5M",
   "storage_bytes": 41802617133,
   "storage_human": "41.8 GB",
+  "context_length": null,
   "base_model": "badrex/w2v-bert-2.0-kinyarwanda-asr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

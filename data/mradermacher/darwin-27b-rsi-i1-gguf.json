@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Darwin-27B-RSI-i1-GGUF",
   "slug": "mradermacher-darwin-27b-rsi-i1-gguf",
   "author": "mradermacher",
@@ -55,14 +55,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 300328846016,
   "storage_human": "300.3 GB",
+  "context_length": 262144,
   "base_model": "FINAL-Bench/Darwin-27B-RSI",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

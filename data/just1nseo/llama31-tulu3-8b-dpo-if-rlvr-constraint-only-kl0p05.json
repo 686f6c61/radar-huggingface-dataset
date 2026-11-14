@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "just1nseo/llama31-tulu3-8b-dpo-if-rlvr-constraint-only-kl0p05",
   "slug": "just1nseo-llama31-tulu3-8b-dpo-if-rlvr-constraint-only-kl0p05",
   "author": "just1nseo",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 128502573302,
   "storage_human": "128.5 GB",
+  "context_length": null,
   "base_model": "allenai/Llama-3.1-Tulu-3-8B-DPO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

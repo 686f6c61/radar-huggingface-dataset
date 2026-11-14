@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juststhjust/Qwen-0.8B-finetune-test",
   "slug": "juststhjust-qwen-0-8b-finetune-test",
   "author": "juststhjust",
@@ -34,14 +34,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 1762648928,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T15:37:49.329Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

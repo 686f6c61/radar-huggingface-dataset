@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Tropicals-T1-GGUF",
   "slug": "mradermacher-tropicals-t1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "101.7M",
   "storage_bytes": 965543296,
   "storage_human": "966 MB",
+  "context_length": 512,
   "base_model": "tropicals/Tropicals-T1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

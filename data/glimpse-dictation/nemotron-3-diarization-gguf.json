@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Glimpse-Dictation/Nemotron-3-Diarization-gguf",
   "slug": "glimpse-dictation-nemotron-3-diarization-gguf",
   "author": "Glimpse-Dictation",
@@ -32,14 +32,19 @@
   "parameters_human": "99.2M",
   "storage_bytes": 701679520,
   "storage_human": "702 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

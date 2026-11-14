@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/moss-soundeffect-gguf",
   "slug": "agentory-moss-soundeffect-gguf",
   "author": "agentory",
@@ -35,14 +35,19 @@
   "parameters_human": "1.49B",
   "storage_bytes": 7054880064,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-SoundEffect-v2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:52.460Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

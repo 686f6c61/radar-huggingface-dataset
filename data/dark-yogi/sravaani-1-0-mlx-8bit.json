@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dark-yogi/SraVaani-1.0-mlx-8bit",
   "slug": "dark-yogi-sravaani-1-0-mlx-8bit",
   "author": "dark-yogi",
@@ -47,6 +47,7 @@
   "parameters_human": "166.2M",
   "storage_bytes": 526009960,
   "storage_human": "526 MB",
+  "context_length": null,
   "base_model": "ARTPARK-IISc/SraVaani-1.0",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

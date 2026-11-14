@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ns2agi/notion-avatar-qwen-image-edit-2509-lora",
   "slug": "ns2agi-notion-avatar-qwen-image-edit-2509-lora",
   "author": "ns2agi",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 595443645,
   "storage_human": "595 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2509",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheHassanSaud/Vanilla_DPO_beta_0_3",
   "slug": "thehassansaud-vanilla_dpo_beta_0_3",
   "author": "TheHassanSaud",
@@ -28,14 +28,19 @@
   "parameters_human": "405.3M",
   "storage_bytes": 810702192,
   "storage_human": "811 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gplsi/Aitana-2B-S-base",
   "slug": "gplsi-aitana-2b-s-base",
   "author": "gplsi",
@@ -49,6 +49,7 @@
   "parameters_human": "2.25B",
   "storage_bytes": 9062455428,
   "storage_human": "9.1 GB",
+  "context_length": 8192,
   "base_model": "BSC-LT/salamandra-2b",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

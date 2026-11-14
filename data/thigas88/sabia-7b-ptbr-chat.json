@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thigas88/sabia-7b-ptbr-chat",
   "slug": "thigas88-sabia-7b-ptbr-chat",
   "author": "thigas88",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 320375755,
   "storage_human": "320 MB",
+  "context_length": null,
   "base_model": "maritaca-ai/sabia-7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ania3000/tjbert-e-demo",
   "slug": "ania3000-tjbert-e-demo",
   "author": "ania3000",
@@ -29,14 +29,19 @@
   "parameters_human": "105.3M",
   "storage_bytes": 421101041,
   "storage_human": "421 MB",
+  "context_length": null,
   "base_model": "ania3000/untrained-tjbert-e",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:40:10.466Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

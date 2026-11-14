@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "felsager/train_rtc_2",
   "slug": "felsager-train_rtc_2",
   "author": "felsager",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 24517173276,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "felsager/pi05_cube2cross_train_rtc_2",
+  "renamed_at": "2026-11-11T05:15:45.831Z",
   "benchmarks": [],
   "sources": []
 }

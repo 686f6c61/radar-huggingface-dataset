@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sharryXR/asil-qwen35-2b-rl",
   "slug": "sharryxr-asil-qwen35-2b-rl",
   "author": "sharryXR",
@@ -34,14 +34,19 @@
   "parameters_human": "2.39B",
   "storage_bytes": 4800795213,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

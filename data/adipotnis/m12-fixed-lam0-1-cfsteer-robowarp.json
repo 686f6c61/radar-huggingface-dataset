@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adipotnis/m12-fixed-lam0.1-cfsteer-robowarp",
   "slug": "adipotnis-m12-fixed-lam0-1-cfsteer-robowarp",
   "author": "adipotnis",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 12441260105,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T12:07:29.849Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

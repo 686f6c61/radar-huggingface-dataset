@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "awkeng/embeddinggemma-2-rad",
   "slug": "awkeng-embeddinggemma-2-rad",
   "author": "awkeng",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1502429184,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

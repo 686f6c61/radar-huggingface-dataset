@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "americansquid/Qwen3.5-0.8B-Proofreader-Light",
   "slug": "americansquid-qwen3-5-0-8b-proofreader-light",
   "author": "americansquid",
@@ -36,6 +36,7 @@
   "parameters_human": "772.8M",
   "storage_bytes": 10715016429,
   "storage_human": "10.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

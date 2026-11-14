@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "12B-Suite/gemma-4-12B-it-QAT-SOMPOA-heresy",
   "slug": "12b-suite-gemma-4-12b-it-qat-sompoa-heresy",
   "author": "12B-Suite",
@@ -35,14 +35,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23969451265,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jrubiosainz/microduck-game-tug-a1rb4ck-copy",
   "slug": "jrubiosainz-microduck-game-tug-a1rb4ck-copy",
   "author": "jrubiosainz",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2261568,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "a1rb4Ck/microduck-tug",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

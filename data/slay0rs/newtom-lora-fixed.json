@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slay0rs/newtom-lora-fixed",
   "slug": "slay0rs-newtom-lora-fixed",
   "author": "slay0rs",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 286763616,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": "Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

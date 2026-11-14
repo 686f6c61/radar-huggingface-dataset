@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Missouter/AcoustiTrace-RT60",
   "slug": "missouter-acoustitrace-rt60",
   "author": "Missouter",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 186287375,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

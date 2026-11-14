@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShinePixelOrg/SenseNova-6.8-Code2Video-NVFP4-MLP-FP8Block128-Attn-Tail8",
   "slug": "shinepixelorg-sensenova-6-8-code2video-nvfp4-mlp-fp8block128-attn-tail8",
   "author": "ShinePixelOrg",
@@ -42,14 +42,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 23858030133,
   "storage_human": "23.9 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-6.8-Code2Video",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

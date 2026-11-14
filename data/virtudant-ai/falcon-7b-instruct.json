@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Virtudant-AI/falcon-7b-instruct",
   "slug": "virtudant-ai-falcon-7b-instruct",
   "author": "Virtudant-AI",
@@ -37,14 +37,19 @@
   "parameters_human": "7.22B",
   "storage_bytes": 56563132552,
   "storage_human": "56.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SuperGumba/cah-dihei",
   "slug": "supergumba-cah-dihei",
   "author": "SuperGumba",
@@ -32,6 +32,7 @@
   "parameters_human": "36.7M",
   "storage_bytes": 299046420,
   "storage_human": "299 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

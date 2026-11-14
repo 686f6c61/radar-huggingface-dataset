@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rishanthrajendhran/ideadet-modernbert-1m-rawoutline",
   "slug": "rishanthrajendhran-ideadet-modernbert-1m-rawoutline",
   "author": "rishanthrajendhran",
@@ -35,14 +35,19 @@
   "parameters_human": "395.8M",
   "storage_bytes": 1583351632,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rishanthrajendhran/IdeaLens-ModernBERT-L-NoParaphrase",
+  "renamed_at": "2026-11-13T07:46:51.663Z",
   "benchmarks": [],
   "sources": [
     {

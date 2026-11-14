@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SHPark97/keti4cv-v2d-track1-container",
   "slug": "shpark97-keti4cv-v2d-track1-container",
   "author": "SHPark97",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 18067385645,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

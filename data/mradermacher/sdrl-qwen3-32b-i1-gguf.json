@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SDRL-Qwen3-32B-i1-GGUF",
   "slug": "mradermacher-sdrl-qwen3-32b-i1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 351852177632,
   "storage_human": "351.9 GB",
+  "context_length": 40960,
   "base_model": "tokentideAI/SDRL-Qwen3-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

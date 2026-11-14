@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GAOEULEE/sn58-vs-vector_level3_v2-f2c0373",
   "slug": "gaoeulee-sn58-vs-vector_level3_v2-f2c0373",
   "author": "GAOEULEE",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 12496009232,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T02:33:31.289Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

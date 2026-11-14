@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mbehr90/multilingual-e5-large-instruct-fp8",
   "slug": "mbehr90-multilingual-e5-large-instruct-fp8",
   "author": "mbehr90",
@@ -32,14 +32,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 840448275,
   "storage_human": "840 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-large-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

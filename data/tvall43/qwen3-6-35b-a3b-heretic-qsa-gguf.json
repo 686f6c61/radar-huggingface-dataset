@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tvall43/Qwen3.6-35B-A3B-heretic-QSA-GGUF",
   "slug": "tvall43-qwen3-6-35b-a3b-heretic-qsa-gguf",
   "author": "tvall43",
@@ -33,14 +33,19 @@
   "parameters_human": "35.52B",
   "storage_bytes": 89723795210,
   "storage_human": "89.7 GB",
+  "context_length": 262144,
   "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

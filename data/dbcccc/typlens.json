@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dbcccc/TypLens",
   "slug": "dbcccc-typlens",
   "author": "dbcccc",
@@ -36,6 +36,7 @@
   "parameters_human": "29.4M",
   "storage_bytes": 536695530,
   "storage_human": "537 MB",
+  "context_length": null,
   "base_model": "breezedeus/pix2text-mfr-1.5",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

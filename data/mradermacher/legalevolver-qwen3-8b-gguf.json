@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LegalEvolver-Qwen3-8B-GGUF",
   "slug": "mradermacher-legalevolver-qwen3-8b-gguf",
   "author": "mradermacher",
@@ -36,6 +36,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 73425337216,
   "storage_human": "73.4 GB",
+  "context_length": 40960,
   "base_model": "yxy919/LegalEvolver-Qwen3-8B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

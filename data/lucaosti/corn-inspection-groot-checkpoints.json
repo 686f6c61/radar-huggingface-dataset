@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lucaosti/corn-inspection-groot-checkpoints",
   "slug": "lucaosti-corn-inspection-groot-checkpoints",
   "author": "lucaosti",
@@ -31,14 +31,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 135901207826,
   "storage_human": "135.9 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

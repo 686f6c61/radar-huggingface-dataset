@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "7dsolv/Konaet-Seed-0.5B",
   "slug": "7dsolv-konaet-seed-0-5b",
   "author": "7dsolv",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 46659094,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T06:13:43.894Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

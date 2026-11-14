@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Duoia/duogpt-40m-v1",
   "slug": "duoia-duogpt-40m-v1",
   "author": "Duoia",
@@ -30,14 +30,19 @@
   "parameters_human": "43.0M",
   "storage_bytes": 209565107,
   "storage_human": "210 MB",
+  "context_length": 512,
   "base_model": "none",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

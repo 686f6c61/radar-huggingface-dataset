@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohithck/delphi-6e20-2.9Bparams-29.9Btokens-seed62746",
   "slug": "rohithck-delphi-6e20-2-9bparams-29-9btokens-seed62746",
   "author": "rohithck",
@@ -39,14 +39,19 @@
   "parameters_human": "2.90B",
   "storage_bytes": 11597952776,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

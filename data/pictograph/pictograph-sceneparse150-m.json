@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pictograph/pictograph-sceneparse150-m",
   "slug": "pictograph-pictograph-sceneparse150-m",
   "author": "pictograph",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 130402182,
   "storage_human": "130 MB",
+  "context_length": null,
   "base_model": "roboflow/rf-detr-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

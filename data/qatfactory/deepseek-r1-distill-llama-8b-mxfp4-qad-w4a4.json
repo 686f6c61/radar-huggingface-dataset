@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qatfactory/DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD-W4A4",
   "slug": "qatfactory-deepseek-r1-distill-llama-8b-mxfp4-qad-w4a4",
   "author": "qatfactory",
@@ -32,14 +32,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 5809705048,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

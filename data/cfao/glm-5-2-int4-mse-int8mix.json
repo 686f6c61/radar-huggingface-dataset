@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cfao/GLM-5.2-Int4-MSE-Int8Mix",
   "slug": "cfao-glm-5-2-int4-mse-int8mix",
   "author": "cfao",
@@ -41,14 +41,19 @@
   "parameters_human": "774.08B",
   "storage_bytes": 460971226310,
   "storage_human": "461.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

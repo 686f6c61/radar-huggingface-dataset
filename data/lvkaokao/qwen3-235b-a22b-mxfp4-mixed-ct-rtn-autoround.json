@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lvkaokao/Qwen3-235B-A22B-MXFP4-Mixed-CT-RTN-AutoRound",
   "slug": "lvkaokao-qwen3-235b-a22b-mxfp4-mixed-ct-rtn-autoround",
   "author": "lvkaokao",
@@ -33,14 +33,19 @@
   "parameters_human": "235.09B",
   "storage_bytes": 130167133590,
   "storage_human": "130.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-235B-A22B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logan7000/llm-math345-gt-phi35mini-endpoint",
   "slug": "logan7000-llm-math345-gt-phi35mini-endpoint",
   "author": "logan7000",
@@ -35,14 +35,19 @@
   "parameters_human": "199680",
   "storage_bytes": 7642691412,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-3.5-mini-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

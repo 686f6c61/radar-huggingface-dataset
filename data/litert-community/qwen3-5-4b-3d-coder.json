@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Qwen3.5-4B-3D-Coder",
   "slug": "litert-community-qwen3-5-4b-3d-coder",
   "author": "litert-community",
@@ -27,18 +27,23 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 771,
+  "downloads_30d": 837,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 16434265792,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "ccore/Qwen3.5-4B-3D-Coder",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

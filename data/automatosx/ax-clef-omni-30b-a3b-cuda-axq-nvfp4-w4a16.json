@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Clef-Omni-30B-A3B-CUDA-AXQ-NVFP4-W4A16",
   "slug": "automatosx-ax-clef-omni-30b-a3b-cuda-axq-nvfp4-w4a16",
   "author": "AutomatosX",
@@ -40,14 +40,19 @@
   "parameters_human": "35.26B",
   "storage_bytes": 23118986350,
   "storage_human": "23.1 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-omni",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

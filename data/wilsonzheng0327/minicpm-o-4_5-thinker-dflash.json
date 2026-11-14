@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wilsonzheng0327/MiniCPM-o-4_5-thinker-dflash",
   "slug": "wilsonzheng0327-minicpm-o-4_5-thinker-dflash",
   "author": "wilsonzheng0327",
@@ -36,14 +36,19 @@
   "parameters_human": "1.05B",
   "storage_bytes": 2097259104,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3-8B-DFlash-b16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

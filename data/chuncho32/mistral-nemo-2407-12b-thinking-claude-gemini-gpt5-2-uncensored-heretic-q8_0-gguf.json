@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chuncho32/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-Q8_0-GGUF",
   "slug": "chuncho32-mistral-nemo-2407-12b-thinking-claude-gemini-gpt5-2-uncensored-heretic-q8_0-gguf",
   "author": "Chuncho32",
@@ -81,14 +81,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 13022370208,
   "storage_human": "13.0 GB",
+  "context_length": 1024000,
   "base_model": "DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

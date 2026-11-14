@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DedeProGames/LowOnMind-5M",
   "slug": "dedeprogames-lowonmind-5m",
   "author": "DedeProGames",
@@ -34,14 +34,19 @@
   "parameters_human": "4.9M",
   "storage_bytes": 19695072,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SLM-Archive/LowOnMind-5M",
+  "renamed_at": "2026-11-11T02:37:16.558Z",
   "benchmarks": [],
   "sources": [
     {

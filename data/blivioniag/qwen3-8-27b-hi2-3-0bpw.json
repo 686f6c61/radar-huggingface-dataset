@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BlivionIaG/Qwen3.8-27B-HI2-3.0bpw",
   "slug": "blivioniag-qwen3-8-27b-hi2-3-0bpw",
   "author": "BlivionIaG",
@@ -34,14 +34,19 @@
   "parameters_human": "6.44B",
   "storage_bytes": 16044448728,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

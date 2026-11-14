@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit",
   "slug": "yomie4343-qwen3-8-flash-next-uncensored-mlx-serve-mixed-4-8bit",
   "author": "yomie4343",
@@ -36,6 +36,7 @@
   "parameters_human": "133.20B",
   "storage_bytes": 107316215512,
   "storage_human": "107.3 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

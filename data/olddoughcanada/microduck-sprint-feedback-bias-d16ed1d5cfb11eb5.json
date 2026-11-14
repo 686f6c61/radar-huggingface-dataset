@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "olddoughcanada/microduck-sprint-feedback-bias-d16ed1d5cfb11eb5",
   "slug": "olddoughcanada-microduck-sprint-feedback-bias-d16ed1d5cfb11eb5",
   "author": "olddoughcanada",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 793742,
   "storage_human": "793742 B",
+  "context_length": null,
   "base_model": "jrubiosainz/microduck-game-sprinter-remix14",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

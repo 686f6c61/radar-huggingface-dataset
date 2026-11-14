@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jhone888/Ornith-1.5-35B-A3B-FULL-OBLITERATED-NVFP4",
   "slug": "jhone888-ornith-1-5-35b-a3b-full-obliterated-nvfp4",
   "author": "jhone888",
@@ -41,14 +41,19 @@
   "parameters_human": "21.58B",
   "storage_bytes": 44278126001,
   "storage_human": "44.3 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated, jhone888/Ornith-1.5-35B-A3B-FULLY-OBLITERATED",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

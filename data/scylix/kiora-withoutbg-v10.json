@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Scylix/kiora-withoutbg-v10",
   "slug": "scylix-kiora-withoutbg-v10",
   "author": "Scylix",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 107167967,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": "withoutbg/withoutbg-openweights-onnx",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

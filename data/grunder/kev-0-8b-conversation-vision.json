@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Grunder/kev-0.8b-conversation-vision",
   "slug": "grunder-kev-0-8b-conversation-vision",
   "author": "Grunder",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 156318986,
   "storage_human": "156 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base, jaredpalmer/kev-0.8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

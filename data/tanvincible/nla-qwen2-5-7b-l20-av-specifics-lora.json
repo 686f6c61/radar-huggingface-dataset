@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tanvincible/nla-qwen2.5-7b-L20-av-specifics-lora",
   "slug": "tanvincible-nla-qwen2-5-7b-l20-av-specifics-lora",
   "author": "tanvincible",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 242401200,
   "storage_human": "242 MB",
+  "context_length": null,
   "base_model": "kitft/nla-qwen2.5-7b-L20-av",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

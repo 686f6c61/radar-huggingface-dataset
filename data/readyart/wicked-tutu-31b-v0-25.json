@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Wicked-Tutu-31B-v0.25",
   "slug": "readyart-wicked-tutu-31b-v0-25",
   "author": "ReadyArt",
@@ -40,14 +40,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578507890,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "ReadyArt/gemma-4-31B-it-scotoma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

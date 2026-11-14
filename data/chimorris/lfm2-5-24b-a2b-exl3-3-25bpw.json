@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chimorris/LFM2.5-24B-A2B-exl3-3.25bpw",
   "slug": "chimorris-lfm2-5-24b-a2b-exl3-3-25bpw",
   "author": "chimorris",
@@ -33,14 +33,19 @@
   "parameters_human": "5.29B",
   "storage_bytes": 10610984866,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

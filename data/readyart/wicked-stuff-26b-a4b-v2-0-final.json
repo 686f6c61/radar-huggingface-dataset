@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
   "slug": "readyart-wicked-stuff-26b-a4b-v2-0-final",
   "author": "ReadyArt",
@@ -43,14 +43,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644178190,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "SubMaroon/Kitchoon-V3-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

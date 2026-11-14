@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skgezhil2005/ai_expense",
   "slug": "skgezhil2005-ai_expense",
   "author": "skgezhil2005",
@@ -33,6 +33,7 @@
   "parameters_human": "268.1M",
   "storage_bytes": 574296173,
   "storage_human": "574 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-270m-it",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

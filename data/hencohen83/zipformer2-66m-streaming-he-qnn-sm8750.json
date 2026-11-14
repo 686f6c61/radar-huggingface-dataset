@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hencohen83/zipformer2-66m-streaming-he-qnn-sm8750",
   "slug": "hencohen83-zipformer2-66m-streaming-he-qnn-sm8750",
   "author": "hencohen83",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 158408704,
   "storage_human": "158 MB",
+  "context_length": null,
   "base_model": "ivrit-ai/zipformer2-66m-streaming-he",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goro64/Llama-Prompt-Guard-2-86M-vi-v2-mirror-MinhNghia",
   "slug": "goro64-llama-prompt-guard-2-86m-vi-v2-mirror-minhnghia",
   "author": "Goro64",
@@ -38,14 +38,19 @@
   "parameters_human": "278.8M",
   "storage_bytes": 1131610043,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-Prompt-Guard-2-86M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

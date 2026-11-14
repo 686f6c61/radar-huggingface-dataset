@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RiverRider/motherlode-code-small-en-v0.1",
   "slug": "riverrider-motherlode-code-small-en-v0-1",
   "author": "RiverRider",
@@ -43,6 +43,7 @@
   "parameters_human": "33.4M",
   "storage_bytes": 428630666,
   "storage_human": "429 MB",
+  "context_length": 512,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Zedev-134m-GGUF",
   "slug": "mradermacher-zedev-134m-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 1458280320,
   "storage_human": "1.5 GB",
+  "context_length": 1024,
   "base_model": "Meridian-MRM/Zedev-134m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

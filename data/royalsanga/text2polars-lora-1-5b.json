@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "royalsanga/text2polars-lora-1.5b",
   "slug": "royalsanga-text2polars-lora-1-5b",
   "author": "royalsanga",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 21126646,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen2.5-Coder-1.5B-Instruct-bf16",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

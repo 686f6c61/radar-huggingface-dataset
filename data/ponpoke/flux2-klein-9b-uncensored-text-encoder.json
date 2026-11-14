@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
   "slug": "ponpoke-flux2-klein-9b-uncensored-text-encoder",
   "author": "ponpoke",
@@ -39,6 +39,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 53244184386,
   "storage_human": "53.2 GB",
+  "context_length": 40960,
   "base_model": "black-forest-labs/FLUX.2-klein-9B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

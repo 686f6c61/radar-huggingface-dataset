@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8",
   "slug": "curvedinf-qwen3-8-27b-dflash2-gptq-int8-w8a8",
   "author": "curvedinf",
@@ -42,14 +42,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 31837949821,
   "storage_human": "31.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128",
+  "renamed_at": "2026-11-11T04:53:46.593Z",
   "benchmarks": [],
   "sources": [
     {

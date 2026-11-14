@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wajdiz/camelbert-mix-sentiment-onnx",
   "slug": "wajdiz-camelbert-mix-sentiment-onnx",
   "author": "wajdiz",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 109880749,
   "storage_human": "110 MB",
+  "context_length": null,
   "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

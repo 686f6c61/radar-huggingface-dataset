@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rasyosef/Qwen3.5-2B-DSpark",
   "slug": "rasyosef-qwen3-5-2b-dspark",
   "author": "rasyosef",
@@ -33,14 +33,19 @@
   "parameters_human": "451.7M",
   "storage_bytes": 6471431238,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

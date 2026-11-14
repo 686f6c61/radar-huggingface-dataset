@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saleh1312/gemma4-26B-A4B_nvfp4_mlp_only",
   "slug": "saleh1312-gemma4-26b-a4b_nvfp4_mlp_only",
   "author": "saleh1312",
@@ -30,14 +30,19 @@
   "parameters_human": "14.12B",
   "storage_bytes": 18051245386,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

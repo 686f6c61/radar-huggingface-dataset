@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alvarolizama/Qwen3.8-27B-oQ3-fp16-mtp",
   "slug": "alvarolizama-qwen3-8-27b-oq3-fp16-mtp",
   "author": "alvarolizama",
@@ -27,6 +27,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 14719752838,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T04:38:44.159Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

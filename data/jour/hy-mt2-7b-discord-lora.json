@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jour/hy-mt2-7b-discord-lora",
   "slug": "jour-hy-mt2-7b-discord-lora",
   "author": "Jour",
@@ -58,6 +58,7 @@
   "parameters_human": "21.0M",
   "storage_bytes": 125919664,
   "storage_human": "126 MB",
+  "context_length": null,
   "base_model": "tencent/Hy-MT2-7B",
   "formats": [
     "gguf",
@@ -65,8 +66,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

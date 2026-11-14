@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepdml/whisper-tiny-es-mix-norm-es-mix-norm-lr2e-6",
   "slug": "deepdml-whisper-tiny-es-mix-norm-es-mix-norm-lr2e-6",
   "author": "deepdml",
@@ -42,14 +42,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 2266520682,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "deepdml/whisper-tiny-es-mix-norm",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T08:48:46.022Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

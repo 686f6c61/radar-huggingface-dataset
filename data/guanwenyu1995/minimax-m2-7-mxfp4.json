@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guanwenyu1995/MiniMAX-M2.7-MXFP4",
   "slug": "guanwenyu1995-minimax-m2-7-mxfp4",
   "author": "guanwenyu1995",
@@ -49,14 +49,19 @@
   "parameters_human": "114.98B",
   "storage_bytes": 123464956251,
   "storage_human": "123.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M2.7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "guanwenyu1995/MiniMAX-M2.7-MXFP4-CANN",
+  "renamed_at": "2026-11-11T05:28:51.138Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mxv456/qwen3-vl-2b-lora-map-routes",
   "slug": "mxv456-qwen3-vl-2b-lora-map-routes",
   "author": "mxv456",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 37798573,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "walking route between two markers on a map image, as a JSON polyline",

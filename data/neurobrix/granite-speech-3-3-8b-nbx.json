@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/granite-speech-3.3-8b-nbx",
   "slug": "neurobrix-granite-speech-3-3-8b-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 17299497231,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-3.3-8b",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mkurman/neuroblast-v46-150m-v41tok-50b",
   "slug": "mkurman-neuroblast-v46-150m-v41tok-50b",
   "author": "mkurman",
@@ -45,14 +45,19 @@
   "parameters_human": null,
   "storage_bytes": 158792284536,
   "storage_human": "158.8 GB",
+  "context_length": null,
   "base_model": "mkurman/neuroblast-v46-150m-v41tok",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

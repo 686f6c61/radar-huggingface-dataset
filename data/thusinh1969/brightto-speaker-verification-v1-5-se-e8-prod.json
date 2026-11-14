@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thusinh1969/BrightTO-Speaker-Verification-V1.5.SE-E8-PROD",
   "slug": "thusinh1969-brightto-speaker-verification-v1-5-se-e8-prod",
   "author": "thusinh1969",
@@ -60,14 +60,19 @@
   "parameters_human": null,
   "storage_bytes": 3939679426,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Voice Anti-Spoofing",

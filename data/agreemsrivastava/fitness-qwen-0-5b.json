@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AgreemSrivastava/fitness-qwen-0.5b",
   "slug": "agreemsrivastava-fitness-qwen-0-5b",
   "author": "AgreemSrivastava",
@@ -35,14 +35,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 5940014951,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "AgreemSrivastava/fitness-qwen-0.5b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

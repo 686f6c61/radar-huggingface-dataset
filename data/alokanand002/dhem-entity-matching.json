@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alokanand002/dhem-entity-matching",
   "slug": "alokanand002-dhem-entity-matching",
   "author": "alokanand002",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 87436,
   "storage_human": "87436 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

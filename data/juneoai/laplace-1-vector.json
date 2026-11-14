@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JuneoAI/Laplace-1-Vector",
   "slug": "juneoai-laplace-1-vector",
   "author": "JuneoAI",
@@ -32,20 +32,25 @@
     "region:us"
   ],
   "likes": 44,
-  "downloads_30d": 11661,
+  "downloads_30d": 12684,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",
   "storage_bytes": 8225798919,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

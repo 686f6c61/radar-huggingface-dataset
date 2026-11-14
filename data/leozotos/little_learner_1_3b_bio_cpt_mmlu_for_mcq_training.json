@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeoZotos/little_learner_1_3b_bio_cpt_mmlu_for_mcq_training",
   "slug": "leozotos-little_learner_1_3b_bio_cpt_mmlu_for_mcq_training",
   "author": "LeoZotos",
@@ -26,14 +26,19 @@
   "parameters_human": "1.36B",
   "storage_bytes": 16296451584,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T07:29:54.546Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yonicc/lhg-extractor-qwen7b-v2-gguf",
   "slug": "yonicc-lhg-extractor-qwen7b-v2-gguf",
   "author": "yonicc",
@@ -34,14 +34,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4683070784,
   "storage_human": "4.7 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

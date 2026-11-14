@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lennyhans/gpt-oss-20b-terminal_lego_opus_4_6_8k-Q4_K_M-GGUF",
   "slug": "lennyhans-gpt-oss-20b-terminal_lego_opus_4_6_8k-q4_k_m-gguf",
   "author": "lennyhans",
@@ -32,14 +32,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 15805120160,
   "storage_human": "15.8 GB",
+  "context_length": 131072,
   "base_model": "StephYang/gpt-oss-20b-terminal_lego_opus_4_6_8k",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

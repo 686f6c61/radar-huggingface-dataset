@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dsg2/LS3-Micro-Dense",
   "slug": "dsg2-ls3-micro-dense",
   "author": "Dsg2",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 115618551,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Dsg2/LS3-Micro-Dense-Base",
+  "renamed_at": "2026-11-11T02:40:31.482Z",
   "benchmarks": [],
   "sources": []
 }

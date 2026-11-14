@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baa-ai/Gemma-4-26B-A4B-it-RAM-13GB-MLX",
   "slug": "baa-ai-gemma-4-26b-a4b-it-ram-13gb-mlx",
   "author": "baa-ai",
@@ -33,6 +33,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 12910997904,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

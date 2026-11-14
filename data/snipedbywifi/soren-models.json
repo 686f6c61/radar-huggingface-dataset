@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snipedbywifi/soren-models",
   "slug": "snipedbywifi-soren-models",
   "author": "snipedbywifi",
@@ -27,6 +27,7 @@
   "parameters_human": "16.1M",
   "storage_bytes": 98458531,
   "storage_human": "98 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

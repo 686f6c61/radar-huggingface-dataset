@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "transcriber-app/whisper-large-v3-turbo-mlx-5bit",
   "slug": "transcriber-app-whisper-large-v3-turbo-mlx-5bit",
   "author": "transcriber-app",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 563512076,
   "storage_human": "564 MB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

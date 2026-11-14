@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheStageAI/gemma-4-E2B-it",
   "slug": "thestageai-gemma-4-e2b-it",
   "author": "TheStageAI",
@@ -44,6 +44,7 @@
   "parameters_human": "2.28B",
   "storage_bytes": 49803149921,
   "storage_human": "49.8 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

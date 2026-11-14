@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UnimeType/Transliteration-4B",
   "slug": "unimetype-transliteration-4b",
   "author": "UnimeType",
@@ -47,6 +47,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 6856868295,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

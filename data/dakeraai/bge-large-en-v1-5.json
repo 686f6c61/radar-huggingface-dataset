@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DakeraAI/bge-large-en-v1.5",
   "slug": "dakeraai-bge-large-en-v1-5",
   "author": "DakeraAI",
@@ -36,6 +36,7 @@
   "parameters_human": "335.1M",
   "storage_bytes": 3014454059,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-large-en-v1.5",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

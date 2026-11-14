@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel3/DeepSeek-V4.1-Flash-W4A16",
   "slug": "incmodel3-deepseek-v4-1-flash-w4a16",
   "author": "INCModel3",
@@ -30,14 +30,19 @@
   "parameters_human": "295.27B",
   "storage_bytes": 543827143179,
   "storage_human": "543.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:21:49.838Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

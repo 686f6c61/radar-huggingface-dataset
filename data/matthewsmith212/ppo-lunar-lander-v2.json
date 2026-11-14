@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatthewSmith212/ppo-Lunar-Lander-v2",
   "slug": "matthewsmith212-ppo-lunar-lander-v2",
   "author": "MatthewSmith212",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 914275,
   "storage_human": "914275 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

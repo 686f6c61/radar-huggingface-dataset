@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Duckets/ornith-1.5-122b-mlx-DFlash2",
   "slug": "duckets-ornith-1-5-122b-mlx-dflash2",
   "author": "Duckets",
@@ -35,6 +35,7 @@
   "parameters_human": "122.56B",
   "storage_bytes": 71493137820,
   "storage_human": "71.5 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:06:11.329Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

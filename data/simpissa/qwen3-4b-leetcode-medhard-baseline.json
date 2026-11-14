@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simpissa/qwen3-4b-leetcode-medhard-baseline",
   "slug": "simpissa-qwen3-4b-leetcode-medhard-baseline",
   "author": "simpissa",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 275731518,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

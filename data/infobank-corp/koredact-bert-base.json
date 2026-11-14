@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infobank-corp/koredact-bert-base",
   "slug": "infobank-corp-koredact-bert-base",
   "author": "infobank-corp",
@@ -37,14 +37,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 440213412,
   "storage_human": "440 MB",
+  "context_length": null,
   "base_model": "klue/bert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sahilchachra/Huihui-Qwen3.8-27B-abliterated-MXFP4",
   "slug": "sahilchachra-huihui-qwen3-8-27b-abliterated-mxfp4",
   "author": "sahilchachra",
@@ -33,6 +33,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 15226865352,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

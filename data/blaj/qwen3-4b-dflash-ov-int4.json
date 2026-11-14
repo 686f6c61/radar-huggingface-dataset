@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/Qwen3-4B-DFlash-ov-int4",
   "slug": "blaj-qwen3-4b-dflash-ov-int4",
   "author": "blaj",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2288848411,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

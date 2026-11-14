@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roboalchemist/DeepSeek-V4.1-Flash-1017-MXFP4-Engram",
   "slug": "roboalchemist-deepseek-v4-1-flash-1017-mxfp4-engram",
   "author": "roboalchemist",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 104766152672,
   "storage_human": "104.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

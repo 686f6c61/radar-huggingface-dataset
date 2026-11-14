@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-0.6B-heretic-decensored-GGUF",
   "slug": "mradermacher-qwen3-0-6b-heretic-decensored-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5697961344,
   "storage_human": "5.7 GB",
+  "context_length": 40960,
   "base_model": "vrhvnsky/Qwen3-0.6B-heretic-decensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thejasgr/wav2vec2-group6-ckpt8920",
   "slug": "thejasgr-wav2vec2-group6-ckpt8920",
   "author": "thejasgr",
@@ -32,14 +32,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 377611072,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-base-960h",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

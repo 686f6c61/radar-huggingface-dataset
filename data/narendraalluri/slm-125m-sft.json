@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "narendraalluri/slm-125m-sft",
   "slug": "narendraalluri-slm-125m-sft",
   "author": "narendraalluri",
@@ -34,14 +34,19 @@
   "parameters_human": "125.8M",
   "storage_bytes": 503405488,
   "storage_human": "503 MB",
+  "context_length": null,
   "base_model": "narendraalluri/slm-125m-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

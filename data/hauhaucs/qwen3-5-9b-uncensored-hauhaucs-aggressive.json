@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
   "slug": "hauhaucs-qwen3-5-9b-uncensored-hauhaucs-aggressive",
   "author": "HauhauCS",
@@ -30,21 +30,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2524,
+  "likes": 2526,
   "downloads_30d": 634354,
-  "trending_score": 38,
+  "trending_score": 37,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
   "storage_bytes": 60411371437,
   "storage_human": "60.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

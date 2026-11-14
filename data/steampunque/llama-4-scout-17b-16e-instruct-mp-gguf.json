@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "steampunque/Llama-4-Scout-17B-16E-Instruct-MP-GGUF",
   "slug": "steampunque-llama-4-scout-17b-16e-instruct-mp-gguf",
   "author": "steampunque",
@@ -33,14 +33,19 @@
   "parameters_human": "107.77B",
   "storage_bytes": 347389293056,
   "storage_human": "347.4 GB",
+  "context_length": 10485760,
   "base_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

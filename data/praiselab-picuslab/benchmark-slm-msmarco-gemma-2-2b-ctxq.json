@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-ctxq",
   "slug": "praiselab-picuslab-benchmark-slm-msmarco-gemma-2-2b-ctxq",
   "author": "praiselab-picuslab",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 59949768,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

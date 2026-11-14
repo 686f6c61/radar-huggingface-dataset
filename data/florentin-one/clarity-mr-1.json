@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florentin-one/Clarity-MR-1",
   "slug": "florentin-one-clarity-mr-1",
   "author": "florentin-one",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 572298611691,
   "storage_human": "572.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

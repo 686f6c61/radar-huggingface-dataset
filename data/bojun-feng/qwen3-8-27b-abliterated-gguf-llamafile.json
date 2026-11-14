@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bojun-Feng/Qwen3.8-27B-ABLITERATED-GGUF-llamafile",
   "slug": "bojun-feng-qwen3-8-27b-abliterated-gguf-llamafile",
   "author": "Bojun-Feng",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 103079563985,
   "storage_human": "103.1 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Bojun-Feng/Qwen3.8-27B-Blackfrost-Uncensored-llamafile",
+  "renamed_at": "2026-11-11T02:26:33.342Z",
   "benchmarks": [],
   "sources": [
     {

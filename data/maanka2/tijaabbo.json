@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maanka2/tijaabbo",
   "slug": "maanka2-tijaabbo",
   "author": "maanka2",
@@ -71,12 +71,17 @@
   "parameters_human": null,
   "storage_bytes": 522586334,
   "storage_human": "523 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:18:21.416Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

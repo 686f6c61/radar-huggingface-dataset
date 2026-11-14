@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407",
   "slug": "francesca9805-jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 18468816721,
   "storage_human": "18.5 GB",
+  "context_length": null,
   "base_model": "francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed3407",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

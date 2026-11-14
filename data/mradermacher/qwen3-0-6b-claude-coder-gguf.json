@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-0.6B-Claude-Coder-GGUF",
   "slug": "mradermacher-qwen3-0-6b-claude-coder-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5697969024,
   "storage_human": "5.7 GB",
+  "context_length": 40960,
   "base_model": "Neura-Tech-AI/Qwen3-0.6B-Claude-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

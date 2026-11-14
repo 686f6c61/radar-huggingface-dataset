@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sujitvasanth/DeepSeek-R1-Llama-3B-MNN-Q3-HQQ-B64",
   "slug": "sujitvasanth-deepseek-r1-llama-3b-mnn-q3-hqq-b64",
   "author": "sujitvasanth",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1413531504,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "suayptalha/DeepSeek-R1-Distill-Llama-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

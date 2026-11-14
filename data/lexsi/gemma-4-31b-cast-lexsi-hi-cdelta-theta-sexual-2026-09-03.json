@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lexsi/gemma-4-31b-cast-lexsi-hi-cdelta-theta-sexual-2026-09-03",
   "slug": "lexsi-gemma-4-31b-cast-lexsi-hi-cdelta-theta-sexual-2026-09-03",
   "author": "Lexsi",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 6553053646,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T05:00:07.089Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

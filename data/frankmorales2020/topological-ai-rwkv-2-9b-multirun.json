@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frankmorales2020/topological-ai-rwkv-2.9b-multirun",
   "slug": "frankmorales2020-topological-ai-rwkv-2-9b-multirun",
   "author": "frankmorales2020",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 5895867683,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "fla-hub/rwkv7-2.9B-world",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

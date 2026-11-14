@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ForSureTesterSim/Llama-3.1-8B-DARE_TIES_Ext_A",
   "slug": "forsuretestersim-llama-3-1-8b-dare_ties_ext_a",
   "author": "ForSureTesterSim",
@@ -39,14 +39,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766256,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2, allenai/Llama-3.1-Tulu-3.1-8B, meta-llama/Llama-3.1-8B-Instruct, meta-llama/Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:28:40.369Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

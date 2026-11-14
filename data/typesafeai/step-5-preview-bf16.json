@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TypeSafeAI/Step-5-Preview-BF16",
   "slug": "typesafeai-step-5-preview-bf16",
   "author": "TypeSafeAI",
@@ -56,14 +56,19 @@
   "parameters_human": "604.34B",
   "storage_bytes": 1214893406569,
   "storage_human": "1214.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T04:20:25.132Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

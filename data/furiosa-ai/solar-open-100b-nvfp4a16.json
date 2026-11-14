@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furiosa-ai/Solar-Open-100B-NVFP4A16",
   "slug": "furiosa-ai-solar-open-100b-nvfp4a16",
   "author": "furiosa-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "60.37B",
   "storage_bytes": 101166921639,
   "storage_human": "101.2 GB",
+  "context_length": null,
   "base_model": "upstage/Solar-Open-100B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

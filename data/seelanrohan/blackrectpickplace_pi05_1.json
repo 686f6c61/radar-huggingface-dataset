@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seelanrohan/blackRectPickPlace_pi05_1",
   "slug": "seelanrohan-blackrectpickplace_pi05_1",
   "author": "seelanrohan",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 244838068768,
   "storage_human": "244.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

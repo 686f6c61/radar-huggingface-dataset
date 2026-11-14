@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Gemma-The-Writer-N-Restless-Quill-V2-Enhanced32-10B-Uncensored-GGUF",
   "slug": "davidau-gemma-the-writer-n-restless-quill-v2-enhanced32-10b-uncensored-gguf",
   "author": "DavidAU",
@@ -57,14 +57,19 @@
   "parameters_human": "10.03B",
   "storage_bytes": 136699641408,
   "storage_human": "136.7 GB",
+  "context_length": 8192,
   "base_model": "DavidAU/Gemma-The-Writer-N-Restless-Quill-V2-Enhanced32-10B-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/orpheus-3b-0.1-ft-nbx",
   "slug": "neurobrix-orpheus-3b-0-1-ft-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 15187854109,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "canopylabs/orpheus-3b-0.1-ft",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

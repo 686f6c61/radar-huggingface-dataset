@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "woog/meld-v5",
   "slug": "woog-meld-v5",
   "author": "woog",
@@ -30,14 +30,19 @@
   "parameters_human": "394.8M",
   "storage_bytes": 1579353052,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-400m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

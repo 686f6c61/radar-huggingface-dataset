@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "01Yassine/defender-lora",
   "slug": "01yassine-defender-lora",
   "author": "01Yassine",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 13566810733,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

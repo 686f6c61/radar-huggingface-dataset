@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "antareslabs/hunch-1.7b-preview-GGUF",
   "slug": "antareslabs-hunch-1-7b-preview-gguf",
   "author": "antareslabs",
@@ -27,14 +27,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3447362016,
   "storage_human": "3.4 GB",
+  "context_length": 40960,
   "base_model": "antareslabs/hunch-1.7b-preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ram20307/qwen3vl-2b-ag-full-lora",
   "slug": "ram20307-qwen3vl-2b-ag-full-lora",
   "author": "Ram20307",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 81210914,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Ram20307/qwen3-vl-2b-action-genome-scene-graph-lora",
+  "renamed_at": "2026-11-14T04:05:11.711Z",
   "benchmarks": [],
   "sources": []
 }

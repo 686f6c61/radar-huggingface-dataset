@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "egekocabas/madlad400-7b-mt-Q5_K_M-GGUF",
   "slug": "egekocabas-madlad400-7b-mt-q5_k_m-gguf",
   "author": "egekocabas",
@@ -871,14 +871,19 @@
   "parameters_human": "8.30B",
   "storage_bytes": 5982162208,
   "storage_human": "6.0 GB",
+  "context_length": 512,
   "base_model": "google/madlad400-7b-mt",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

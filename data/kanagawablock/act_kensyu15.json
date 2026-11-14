@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kanagawablock/act_kensyu15",
   "slug": "kanagawablock-act_kensyu15",
   "author": "Kanagawablock",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206708248,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T03:15:46.014Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

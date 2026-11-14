@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "biMEMO/Ornith-1.5-35B-A3B-int4-AutoRound-MTP",
   "slug": "bimemo-ornith-1-5-35b-a3b-int4-autoround-mtp",
   "author": "biMEMO",
@@ -37,14 +37,19 @@
   "parameters_human": "5.98B",
   "storage_bytes": 20924196901,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hfsameh/Qwen3.8-Flash-Next-NVFP4-Coder-Lean-MTP",
   "slug": "hfsameh-qwen3-8-flash-next-nvfp4-coder-lean-mtp",
   "author": "hfsameh",
@@ -41,14 +41,19 @@
   "parameters_human": "67.17B",
   "storage_bytes": 80604721485,
   "storage_human": "80.6 GB",
+  "context_length": null,
   "base_model": "elisepaul/Qwen3.8-Flash-Next-NVFP4-Coder-Lean, nvidia/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

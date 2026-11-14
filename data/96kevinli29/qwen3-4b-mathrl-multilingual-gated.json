@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "96kevinli29/Qwen3-4B-MathRL-Multilingual-Gated",
   "slug": "96kevinli29-qwen3-4b-mathrl-multilingual-gated",
   "author": "96kevinli29",
@@ -57,14 +57,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834434889,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "96kevinli29/Qwen3-4B-SFT-Math-Multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/drama-3-GGUF",
   "slug": "mradermacher-drama-3-gguf",
   "author": "mradermacher",
@@ -200,14 +200,19 @@
   "parameters_human": "34.68B",
   "storage_bytes": 241868440480,
   "storage_human": "241.9 GB",
+  "context_length": 262144,
   "base_model": "OxBee/drama-3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

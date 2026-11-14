@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WellissonSousa/Falcon2-5.5B-Portuguese-GGUF",
   "slug": "wellissonsousa-falcon2-5-5b-portuguese-gguf",
   "author": "WellissonSousa",
@@ -35,14 +35,19 @@
   "parameters_human": "5.47B",
   "storage_bytes": 7503815680,
   "storage_human": "7.5 GB",
+  "context_length": 2048,
   "base_model": "tiiuae/falcon-11B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

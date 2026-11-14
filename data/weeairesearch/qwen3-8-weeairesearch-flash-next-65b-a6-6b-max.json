@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WeeAIResearch/Qwen3.8-WeeAIResearch-Flash-Next-65B-A6.6B-MAX",
   "slug": "weeairesearch-qwen3-8-weeairesearch-flash-next-65b-a6-6b-max",
   "author": "WeeAIResearch",
@@ -37,14 +37,19 @@
   "parameters_human": "121.92B",
   "storage_bytes": 129053988288,
   "storage_human": "129.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next, lmstudio-community/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

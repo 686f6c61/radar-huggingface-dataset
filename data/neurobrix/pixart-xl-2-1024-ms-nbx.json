@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/PixArt-XL-2-1024-MS-nbx",
   "slug": "neurobrix-pixart-xl-2-1024-ms-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 21830315540,
   "storage_human": "21.8 GB",
+  "context_length": null,
   "base_model": "PixArt-alpha/PixArt-XL-2-1024-MS",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jglowa/Bielik-One-11B-v3.1-r1-GGUF",
   "slug": "jglowa-bielik-one-11b-v3-1-r1-gguf",
   "author": "jglowa",
@@ -64,14 +64,19 @@
   "parameters_human": "11.17B",
   "storage_bytes": 40948185888,
   "storage_human": "40.9 GB",
+  "context_length": 32768,
   "base_model": "speakleash/Bielik-One-11B-v3.1-r1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

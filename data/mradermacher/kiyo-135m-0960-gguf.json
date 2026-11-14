@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kiyo-135M-0960-GGUF",
   "slug": "mradermacher-kiyo-135m-0960-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 1442426880,
   "storage_human": "1.4 GB",
+  "context_length": 2048,
   "base_model": "DedeProGames/Kiyo-135M-0960",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

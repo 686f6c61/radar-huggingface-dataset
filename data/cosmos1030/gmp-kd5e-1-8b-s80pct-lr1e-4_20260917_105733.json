@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cosmos1030/gmp-kd5e-1-8b-s80pct-lr1e-4_20260917_105733",
   "slug": "cosmos1030-gmp-kd5e-1-8b-s80pct-lr1e-4_20260917_105733",
   "author": "cosmos1030",
@@ -23,14 +23,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 20764822992,
   "storage_human": "20.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

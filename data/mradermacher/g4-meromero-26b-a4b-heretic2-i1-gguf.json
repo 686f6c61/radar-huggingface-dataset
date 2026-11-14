@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/G4-MeroMero-26B-A4B-Heretic2-i1-GGUF",
   "slug": "mradermacher-g4-meromero-26b-a4b-heretic2-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 300951253056,
   "storage_human": "301.0 GB",
+  "context_length": 262144,
   "base_model": "EternalDragon/G4-MeroMero-26B-A4B-Heretic2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

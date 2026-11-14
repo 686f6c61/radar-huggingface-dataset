@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e",
   "slug": "symrex-qwen3-6-35b-a3b-uncensored-genesis-hermes-v13-dequantized-oq6e",
   "author": "symrex",
@@ -29,6 +29,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 29600299670,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-GGUF",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

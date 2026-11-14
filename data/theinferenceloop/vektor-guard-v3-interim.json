@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theinferenceloop/vektor-guard-v3-interim",
   "slug": "theinferenceloop-vektor-guard-v3-interim",
   "author": "theinferenceloop",
@@ -38,14 +38,19 @@
   "parameters_human": "395.8M",
   "storage_bytes": 1583363940,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Prompt-injection / jailbreak classification (5-class)",

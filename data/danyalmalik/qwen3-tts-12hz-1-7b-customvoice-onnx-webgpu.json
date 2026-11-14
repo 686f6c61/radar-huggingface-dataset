@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danyalmalik/Qwen3-TTS-12Hz-1.7B-CustomVoice-ONNX-WebGPU",
   "slug": "danyalmalik-qwen3-tts-12hz-1-7b-customvoice-onnx-webgpu",
   "author": "danyalmalik",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1354104026,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

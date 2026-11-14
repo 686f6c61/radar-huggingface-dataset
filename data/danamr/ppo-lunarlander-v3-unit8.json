@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danamr/ppo-LunarLander-v3-unit8",
   "slug": "danamr-ppo-lunarlander-v3-unit8",
   "author": "danamr",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 43507,
   "storage_human": "43507 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

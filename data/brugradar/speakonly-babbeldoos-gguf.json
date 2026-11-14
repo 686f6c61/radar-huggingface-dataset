@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrugRadar/SpeakOnly-Babbeldoos-GGUF",
   "slug": "brugradar-speakonly-babbeldoos-gguf",
   "author": "BrugRadar",
@@ -16,20 +16,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": 264068050,
   "parameters_human": "264.1M",
   "storage_bytes": 1660755008,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

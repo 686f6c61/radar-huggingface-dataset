@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/MiniCPM5-1B-mlx-8Bit",
   "slug": "oscilla-minicpm5-1b-mlx-8bit",
   "author": "Oscilla",
@@ -49,6 +49,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 1148305672,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

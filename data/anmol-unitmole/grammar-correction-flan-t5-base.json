@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anmol-unitmole/grammar-correction-flan-t5-base",
   "slug": "anmol-unitmole-grammar-correction-flan-t5-base",
   "author": "anmol-unitmole",
@@ -39,14 +39,19 @@
   "parameters_human": "247.6M",
   "storage_bytes": 991142817,
   "storage_human": "991 MB",
+  "context_length": null,
   "base_model": "google/flan-t5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

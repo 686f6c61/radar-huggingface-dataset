@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-sr/vela3.1-pico-380m",
   "slug": "vllm-sr-vela3-1-pico-380m",
   "author": "vllm-sr",
@@ -73,6 +73,7 @@
   "parameters_human": "381.0M",
   "storage_bytes": 2130806091,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "dmis-lab/UltraBERT-380M",
   "formats": [
     "onnx",
@@ -80,8 +81,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucien-shark/Linny-LTV-Gen4",
   "slug": "lucien-shark-linny-ltv-gen4",
   "author": "Lucien-shark",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 7993190612,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T03:01:03.505Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

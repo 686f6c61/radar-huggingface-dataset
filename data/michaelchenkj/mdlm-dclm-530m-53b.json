@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "michaelchenkj/mdlm-dclm-530m-53b",
   "slug": "michaelchenkj-mdlm-dclm-530m-53b",
   "author": "michaelchenkj",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 143748557082,
   "storage_human": "143.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/DarkForest-20B-V3-Ultra-Quality-ImatP2-GGUF",
   "slug": "davidau-darkforest-20b-v3-ultra-quality-imatp2-gguf",
   "author": "DavidAU",
@@ -39,14 +39,19 @@
   "parameters_human": "19.99B",
   "storage_bytes": 71090451904,
   "storage_human": "71.1 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

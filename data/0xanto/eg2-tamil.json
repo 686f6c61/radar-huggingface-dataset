@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xanto/eg2-tamil",
   "slug": "0xanto-eg2-tamil",
   "author": "0xanto",
@@ -40,14 +40,19 @@
   "parameters_human": "70.6M",
   "storage_bytes": 699031152,
   "storage_human": "699 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anushkrishna/falcon-models",
   "slug": "anushkrishna-falcon-models",
   "author": "anushkrishna",
@@ -37,14 +37,19 @@
   "parameters_human": "7.00B",
   "storage_bytes": 6041353453,
   "storage_human": "6.0 GB",
+  "context_length": 4096,
   "base_model": "humain-ai/ALLaM-7B-Instruct-preview, Helsinki-NLP/opus-mt-tc-big-en-ar, Helsinki-NLP/opus-mt-tc-big-ar-en, quickmt/quickmt-en-ur, quickmt/quickmt-ur-en",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

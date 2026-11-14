@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r3lax/DavidAU-Qwen3.8-27B-TURBO-735-882-MTPLX-4bit-FP16",
   "slug": "r3lax-davidau-qwen3-8-27b-turbo-735-882-mtplx-4bit-fp16",
   "author": "r3lax",
@@ -34,6 +34,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 16932084207,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

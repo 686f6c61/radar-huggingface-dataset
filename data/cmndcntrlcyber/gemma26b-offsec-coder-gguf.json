@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cmndcntrlcyber/gemma26b-offsec-coder-gguf",
   "slug": "cmndcntrlcyber-gemma26b-offsec-coder-gguf",
   "author": "cmndcntrlcyber",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "atlas-institute/gemma26b-offsec-coder-gguf",
+  "renamed_at": "2026-11-12T05:01:41.648Z",
   "benchmarks": [],
   "sources": [
     {

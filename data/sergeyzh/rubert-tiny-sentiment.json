@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sergeyzh/rubert-tiny-sentiment",
   "slug": "sergeyzh-rubert-tiny-sentiment",
   "author": "sergeyzh",
@@ -38,14 +38,19 @@
   "parameters_human": "29.2M",
   "storage_bytes": 116785356,
   "storage_human": "117 MB",
+  "context_length": null,
   "base_model": "sergeyzh/rubert-tiny-sts-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onemira/diar-streaming-sortformer-4spk-v2.1-gguf",
   "slug": "onemira-diar-streaming-sortformer-4spk-v2-1-gguf",
   "author": "onemira",
@@ -27,14 +27,19 @@
   "parameters_human": "122.9M",
   "storage_bytes": 147076352,
   "storage_human": "147 MB",
+  "context_length": null,
   "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shoumenchougou/RWKV7-G1l-7.2B-20261031-FLA",
   "slug": "shoumenchougou-rwkv7-g1l-7-2b-20261031-fla",
   "author": "shoumenchougou",
@@ -60,14 +60,19 @@
   "parameters_human": "7.20B",
   "storage_bytes": 14398399560,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "BlinkDL/rwkv7-g1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

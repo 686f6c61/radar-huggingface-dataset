@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimi000/ZImage-4Step-3000",
   "slug": "kimi000-zimage-4step-3000",
   "author": "kimi000",
@@ -35,6 +35,7 @@
   "parameters_human": "6.19B",
   "storage_bytes": 20598859845,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T16:29:06.351Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

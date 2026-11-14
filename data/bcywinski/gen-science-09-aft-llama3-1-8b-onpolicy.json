@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bcywinski/gen-science-09-aft-llama3.1-8b-onpolicy",
   "slug": "bcywinski-gen-science-09-aft-llama3-1-8b-onpolicy",
   "author": "bcywinski",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 740160,
   "storage_human": "740160 B",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

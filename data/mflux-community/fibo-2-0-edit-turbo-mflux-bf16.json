@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mflux-community/fibo-2-0-edit-turbo-mflux-bf16",
   "slug": "mflux-community-fibo-2-0-edit-turbo-mflux-bf16",
   "author": "mflux-community",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 25108921682,
   "storage_human": "25.1 GB",
+  "context_length": null,
   "base_model": "briaai/Fibo-2.0-edit-turbo",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

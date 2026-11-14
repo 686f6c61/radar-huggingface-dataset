@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMed/OpenMed-PII-Japanese-QwenMed-XLarge-600M-v1",
   "slug": "openmed-openmed-pii-japanese-qwenmed-xlarge-600m-v1",
   "author": "OpenMed",
@@ -45,14 +45,19 @@
   "parameters_human": "595.9M",
   "storage_bytes": 1203168047,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

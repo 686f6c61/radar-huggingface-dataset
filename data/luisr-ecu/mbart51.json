@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luisr-ecu/mBART51",
   "slug": "luisr-ecu-mbart51",
   "author": "Luisr-ecu",
@@ -37,14 +37,19 @@
   "parameters_human": "611.1M",
   "storage_bytes": 2466742309,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "facebook/mbart-large-50",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

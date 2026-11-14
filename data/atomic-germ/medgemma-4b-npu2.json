@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Medgemma-4B-NPU2",
   "slug": "atomic-germ-medgemma-4b-npu2",
   "author": "Atomic-Germ",
@@ -54,12 +54,17 @@
   "parameters_human": null,
   "storage_bytes": 4775333082,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "Atomic-Germ/Medgemma-4B-NPU2",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

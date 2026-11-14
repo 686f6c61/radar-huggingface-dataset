@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "camwooloo/kawma-coach-voice",
   "slug": "camwooloo-kawma-coach-voice",
   "author": "camwooloo",
@@ -31,6 +31,7 @@
   "parameters_human": "141.6M",
   "storage_bytes": 2168221157,
   "storage_human": "2.2 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

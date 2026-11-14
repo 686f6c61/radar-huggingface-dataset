@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Thomson-1.0-Small-APEX-I-NanoPlus-GGUF",
   "slug": "isvalorum-thomson-1-0-small-apex-i-nanoplus-gguf",
   "author": "IsValorum",
@@ -68,14 +68,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 12554402400,
   "storage_human": "12.6 GB",
+  "context_length": 262144,
   "base_model": "thomsonreuters/Thomson-1.0-Small",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

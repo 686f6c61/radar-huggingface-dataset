@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
   "slug": "abenzerps-qwen-image-2-1-uncensored-quantized",
   "author": "abenzerps",
@@ -33,6 +33,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 213726016963,
   "storage_human": "213.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "abenzerps/Qwen-Image-2.1-Turbo-Quantized",
+  "renamed_at": "2026-11-11T04:17:38.679Z",
   "benchmarks": [],
   "sources": [
     {

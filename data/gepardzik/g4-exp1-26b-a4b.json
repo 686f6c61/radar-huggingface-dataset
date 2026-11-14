@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gepardzik/G4-Exp1-26B-A4B",
   "slug": "gepardzik-g4-exp1-26b-a4b",
   "author": "gepardzik",
@@ -29,14 +29,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644178626,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B, llmfan46/G4-MeroMero-26B-A4B-it-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

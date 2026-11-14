@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "general-forecast/kumo-tabular-medium-classifier",
   "slug": "general-forecast-kumo-tabular-medium-classifier",
   "author": "general-forecast",
@@ -29,14 +29,19 @@
   "parameters_human": "61.5M",
   "storage_bytes": 246006440,
   "storage_human": "246 MB",
+  "context_length": null,
   "base_model": "nvidia/Kumo-Tabular",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

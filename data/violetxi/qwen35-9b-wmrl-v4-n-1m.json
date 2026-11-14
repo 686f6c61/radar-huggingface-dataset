@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "violetxi/qwen35-9b-wmrl-v4-n-1m",
   "slug": "violetxi-qwen35-9b-wmrl-v4-n-1m",
   "author": "violetxi",
@@ -33,14 +33,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 38946348838,
   "storage_human": "38.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T08:07:25.521Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

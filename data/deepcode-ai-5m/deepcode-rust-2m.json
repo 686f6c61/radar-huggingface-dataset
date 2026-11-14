@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepcode-ai-5m/DeepCode-Rust-2M",
   "slug": "deepcode-ai-5m-deepcode-rust-2m",
   "author": "deepcode-ai-5m",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 34457467,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

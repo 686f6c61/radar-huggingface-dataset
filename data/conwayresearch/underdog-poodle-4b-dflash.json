@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ConwayResearch/Underdog-Poodle-4B-DFlash",
   "slug": "conwayresearch-underdog-poodle-4b-dflash",
   "author": "ConwayResearch",
@@ -30,14 +30,19 @@
   "parameters_human": "634.4M",
   "storage_bytes": 1625793409,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.5-4B-DFlash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

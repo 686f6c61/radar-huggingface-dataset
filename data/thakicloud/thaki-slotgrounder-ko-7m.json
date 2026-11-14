@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Thaki-SlotGrounder-KO-7M",
   "slug": "thakicloud-thaki-slotgrounder-ko-7m",
   "author": "ThakiCloud",
@@ -37,14 +37,19 @@
   "parameters_human": "7.5M",
   "storage_bytes": 29853008,
   "storage_human": "30 MB",
+  "context_length": null,
   "base_model": "ThakiCloud/Thaki-InputGuard-KO-9M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

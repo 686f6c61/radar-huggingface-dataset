@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint",
   "slug": "logan7000-mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupb-endpoint",
   "author": "logan7000",
@@ -33,14 +33,19 @@
   "parameters_human": "695296",
   "storage_bytes": 119409916517,
   "storage_human": "119.4 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3_5-8B-HF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Gemma3-SigLIP448-GPTQ-a16w4-4k-448",
   "slug": "florianvoss-gemma3-siglip448-gptq-a16w4-4k-448",
   "author": "florianvoss",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 8003645751,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "stribomon/gemma3-siglip448",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T09:58:54.762Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

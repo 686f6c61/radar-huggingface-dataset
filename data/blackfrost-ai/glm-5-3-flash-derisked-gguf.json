@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-GGUF",
   "slug": "blackfrost-ai-glm-5-3-flash-derisked-gguf",
   "author": "Blackfrost-AI",
@@ -45,14 +45,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 835782846464,
   "storage_human": "835.8 GB",
+  "context_length": 1048576,
   "base_model": "Blackfrost-AI/GLM-5.3-Flash-DERISKED-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T11:09:50.433Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

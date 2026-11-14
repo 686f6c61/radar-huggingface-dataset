@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MeoStudio2024/WinzZy-Galaxy-0.1",
   "slug": "meostudio2024-winzzy-galaxy-0-1",
   "author": "MeoStudio2024",
@@ -35,14 +35,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183349158,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itzPotato/transcoder-bilinear-2layer-seed0-layer0",
   "slug": "itzpotato-transcoder-bilinear-2layer-seed0-layer0",
   "author": "itzPotato",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 266656,
   "storage_human": "266656 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

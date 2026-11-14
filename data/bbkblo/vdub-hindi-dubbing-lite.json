@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bbkblo/vdub-hindi-dubbing-lite",
   "slug": "bbkblo-vdub-hindi-dubbing-lite",
   "author": "Bbkblo",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 658514634,
   "storage_human": "659 MB",
+  "context_length": null,
   "base_model": "ResembleAI/Chatterbox-Multilingual-hi",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

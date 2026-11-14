@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samuelolubukun/moonshine-tiny-nigerian-accented-english",
   "slug": "samuelolubukun-moonshine-tiny-nigerian-accented-english",
   "author": "samuelolubukun",
@@ -37,14 +37,19 @@
   "parameters_human": "27.1M",
   "storage_bytes": 54625468,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "UsefulSensors/moonshine-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bojun-Feng/orcarouter_Qwen3.8-27B-Uncensored-GGUF-llamafile",
   "slug": "bojun-feng-orcarouter_qwen3-8-27b-uncensored-gguf-llamafile",
   "author": "Bojun-Feng",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 107464839989,
   "storage_human": "107.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Bojun-Feng/Qwen3.8-27B-OrcaRouter-Uncensored-llamafile",
+  "renamed_at": "2026-11-11T02:26:33.885Z",
   "benchmarks": [],
   "sources": [
     {

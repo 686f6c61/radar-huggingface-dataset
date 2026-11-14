@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/Nanbeige4.3-33B-SAGE-EXL3-4.50bpw",
   "slug": "vcruz305-nanbeige4-3-33b-sage-exl3-4-50bpw",
   "author": "vcruz305",
@@ -41,14 +41,19 @@
   "parameters_human": "9.85B",
   "storage_bytes": 19721820583,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

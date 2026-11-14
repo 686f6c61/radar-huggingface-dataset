@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DangKhoa09/SignTalk-ASLM-Gemma4-31B-VSL",
   "slug": "dangkhoa09-signtalk-aslm-gemma4-31b-vsl",
   "author": "DangKhoa09",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1011851702,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:27:48.355Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

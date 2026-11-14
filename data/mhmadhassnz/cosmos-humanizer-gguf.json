@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mhmadhassnz/cosmos-humanizer-gguf",
   "slug": "mhmadhassnz-cosmos-humanizer-gguf",
   "author": "Mhmadhassnz",
@@ -58,14 +58,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 33208365050,
   "storage_human": "33.2 GB",
+  "context_length": 8192,
   "base_model": "GSAI-ML/iLLaDA-8B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

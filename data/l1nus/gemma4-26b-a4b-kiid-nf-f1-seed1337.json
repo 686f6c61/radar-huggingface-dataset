@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "L1nus/gemma4-26b-a4b-kiid-nf-f1-seed1337",
   "slug": "l1nus-gemma4-26b-a4b-kiid-nf-f1-seed1337",
   "author": "L1nus",
@@ -31,14 +31,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 66556277557,
   "storage_human": "66.6 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-26b-a4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T02:35:01.898Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

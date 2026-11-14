@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibyteohdear/10Eros-Max-Transformer_hybrid_beta5_VBVR_FUSED",
   "slug": "ibyteohdear-10eros-max-transformer_hybrid_beta5_vbvr_fused",
   "author": "ibyteohdear",
@@ -32,6 +32,7 @@
   "parameters_human": "20.11B",
   "storage_bytes": 42708742146,
   "storage_human": "42.7 GB",
+  "context_length": null,
   "base_model": "ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

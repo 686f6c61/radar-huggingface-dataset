@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "2048lr/Qwen2.5-1.5B-Instruct-Amiya",
   "slug": "2048lr-qwen2-5-1-5b-instruct-amiya",
   "author": "2048lr",
@@ -25,14 +25,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 4079716992,
   "storage_human": "4.1 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

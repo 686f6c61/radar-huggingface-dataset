@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
   "slug": "llmfan46-qwen3-vl-32b-instruct-ultra-uncensored-heretic",
   "author": "llmfan46",
@@ -39,14 +39,19 @@
   "parameters_human": "33.36B",
   "storage_bytes": 66726337137,
   "storage_human": "66.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

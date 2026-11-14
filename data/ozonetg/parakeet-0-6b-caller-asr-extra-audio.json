@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ozonetg/parakeet-0.6b-caller-asr-extra-audio",
   "slug": "ozonetg-parakeet-0-6b-caller-asr-extra-audio",
   "author": "ozonetg",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 1237360640,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-unified-en-0.6b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:38:02.284Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech recognition",

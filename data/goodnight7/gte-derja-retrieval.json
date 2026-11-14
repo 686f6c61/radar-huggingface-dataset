@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goodnight7/gte-derja-retrieval",
   "slug": "goodnight7-gte-derja-retrieval",
   "author": "Goodnight7",
@@ -37,14 +37,19 @@
   "parameters_human": "305.4M",
   "storage_bytes": 1238570859,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-multilingual-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:14:21.185Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

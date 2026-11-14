@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Extreme-Media/video-redactor-sam2.1-tiny-onnx",
   "slug": "extreme-media-video-redactor-sam2-1-tiny-onnx",
   "author": "Extreme-Media",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 168344718,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "facebook/sam2.1-hiera-tiny",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

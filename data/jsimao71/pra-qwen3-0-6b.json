@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsimao71/pra-qwen3-0.6b",
   "slug": "jsimao71-pra-qwen3-0-6b",
   "author": "jsimao71",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1050645,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "EInnovator/pra-qwen3-0.6b",
+  "renamed_at": "2026-11-13T06:10:56.734Z",
   "benchmarks": [],
   "sources": [
     {

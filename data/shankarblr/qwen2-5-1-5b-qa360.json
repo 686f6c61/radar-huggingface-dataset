@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shankarblr/Qwen2.5-1.5B-QA360",
   "slug": "shankarblr-qwen2-5-1-5b-qa360",
   "author": "Shankarblr",
@@ -47,14 +47,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098888700,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

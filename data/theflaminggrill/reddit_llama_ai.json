@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theFlamingGrill/reddit_llama_ai",
   "slug": "theflaminggrill-reddit_llama_ai",
   "author": "theFlamingGrill",
@@ -28,6 +28,7 @@
   "parameters_human": "3.21B",
   "storage_bytes": 4912930877,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3-8B-Uncensored-Aquarion-INT4",
   "slug": "rin247-qwen3-8b-uncensored-aquarion-int4",
   "author": "Rin247",
@@ -29,14 +29,19 @@
   "parameters_human": "4.72B",
   "storage_bytes": 6082872722,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T05:42:58.237Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

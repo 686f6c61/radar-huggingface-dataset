@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bluemorpholimited/Morpho-72B-MoE",
   "slug": "bluemorpholimited-morpho-72b-moe",
   "author": "bluemorpholimited",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 26957567132,
   "storage_human": "27.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-72B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bluemorpholimited/Morpho-180B",
+  "renamed_at": "2026-11-11T04:42:58.826Z",
   "benchmarks": [],
   "sources": [
     {

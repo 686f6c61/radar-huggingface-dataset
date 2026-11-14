@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BachDaThan/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA-GGUF",
   "slug": "bachdathan-qwen-3-0-6b-instruct-vi-medical-lora-gguf",
   "author": "BachDaThan",
@@ -37,14 +37,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1450175232,
   "storage_human": "1.5 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B, danhtran2mind/Qwen-3-0.6B-Instruct-Vi-Medical-LoRA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

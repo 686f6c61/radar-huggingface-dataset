@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1-GGUF",
   "slug": "frostwolfai-frost-cyber-mini-uncensored-v1-1-gguf",
   "author": "FrostWolfAI",
@@ -38,14 +38,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 44532543840,
   "storage_human": "44.5 GB",
+  "context_length": 1048576,
   "base_model": "FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

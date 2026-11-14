@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ron-jo/kitten-tts-nano-0.8-ort18",
   "slug": "ron-jo-kitten-tts-nano-0-8-ort18",
   "author": "ron-jo",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 56599575,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": "KittenML/kitten-tts-nano-0.8-fp32",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T02:57:08.598Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

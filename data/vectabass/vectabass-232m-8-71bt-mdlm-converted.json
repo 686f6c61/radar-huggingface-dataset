@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VectaBass/vectabass-232m-8.71bt-mdlm-converted",
   "slug": "vectabass-vectabass-232m-8-71bt-mdlm-converted",
   "author": "VectaBass",
@@ -53,14 +53,19 @@
   "parameters_human": "231.8M",
   "storage_bytes": 463671736,
   "storage_human": "464 MB",
+  "context_length": null,
   "base_model": "VectaBass/vectabass-232m-11.5bt-base-cooled",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

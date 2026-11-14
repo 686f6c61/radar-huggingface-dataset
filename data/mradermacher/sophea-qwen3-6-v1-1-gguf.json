@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sophea-Qwen3.6-v1.1-GGUF",
   "slug": "mradermacher-sophea-qwen3-6-v1-1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 244419006272,
   "storage_human": "244.4 GB",
+  "context_length": 262144,
   "base_model": "ayoubkirouane/Sophea-Qwen3.6-v1.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

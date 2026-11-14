@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP",
   "slug": "aday777-qwen3-8-27b-ara-abliterated-nvfp4-mtp",
   "author": "aday777",
@@ -36,14 +36,19 @@
   "parameters_human": "16.70B",
   "storage_bytes": 20579269024,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xananthium/OLMoE-1B-7B-0924-INT8-W8A8",
   "slug": "xananthium-olmoe-1b-7b-0924-int8-w8a8",
   "author": "Xananthium",
@@ -33,14 +33,19 @@
   "parameters_human": "6.92B",
   "storage_bytes": 7136861928,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "allenai/OLMoE-1B-7B-0924",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

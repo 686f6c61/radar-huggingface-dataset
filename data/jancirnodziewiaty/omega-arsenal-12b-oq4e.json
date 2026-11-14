@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jancirnodziewiaty/Omega-Arsenal-12B-oQ4e",
   "slug": "jancirnodziewiaty-omega-arsenal-12b-oq4e",
   "author": "jancirnodziewiaty",
@@ -29,6 +29,7 @@
   "parameters_human": "11.96B",
   "storage_bytes": 7258400629,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Omega-Arsenal-12B",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agents2agents/MolmoAct2-BimanualYAM-Dynamic-Jetson-Thor",
   "slug": "agents2agents-molmoact2-bimanualyam-dynamic-jetson-thor",
   "author": "agents2agents",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 11155060361,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2-BimanualYAM",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

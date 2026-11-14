@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "robertbschuette/minimax-h3-Camera-Motion-lora",
   "slug": "robertbschuette-minimax-h3-camera-motion-lora",
   "author": "robertbschuette",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 310219168,
   "storage_human": "310 MB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

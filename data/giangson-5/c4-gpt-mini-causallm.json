@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GiangSon-5/c4-gpt-mini-causallm",
   "slug": "giangson-5-c4-gpt-mini-causallm",
   "author": "GiangSon-5",
@@ -39,14 +39,19 @@
   "parameters_human": "44.9M",
   "storage_bytes": 90618295,
   "storage_human": "91 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

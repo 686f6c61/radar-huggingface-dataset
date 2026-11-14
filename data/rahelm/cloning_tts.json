@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RahelM/cloning_tts",
   "slug": "rahelm-cloning_tts",
   "author": "RahelM",
@@ -31,14 +31,19 @@
   "parameters_human": "144.4M",
   "storage_bytes": 11557979168,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": "microsoft/speecht5_tts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:39:26.358Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

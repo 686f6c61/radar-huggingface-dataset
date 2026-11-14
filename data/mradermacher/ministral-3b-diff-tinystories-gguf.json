@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Ministral-3B-Diff-TinyStories-GGUF",
   "slug": "mradermacher-ministral-3b-diff-tinystories-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 32533285376,
   "storage_human": "32.5 GB",
+  "context_length": 262144,
   "base_model": "MMaghoumi/Nemotron-Labs-Diffusion-TinyStories-3b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

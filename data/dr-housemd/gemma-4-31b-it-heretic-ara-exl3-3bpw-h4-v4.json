@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dr-housemd/gemma-4-31b-it-heretic-ara-exl3-3bpw-H4-V4",
   "slug": "dr-housemd-gemma-4-31b-it-heretic-ara-exl3-3bpw-h4-v4",
   "author": "dr-housemd",
@@ -35,14 +35,19 @@
   "parameters_human": "7.43B",
   "storage_bytes": 14883899631,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

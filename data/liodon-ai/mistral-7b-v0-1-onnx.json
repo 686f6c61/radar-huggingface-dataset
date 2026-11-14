@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Mistral-7B-v0.1-ONNX",
   "slug": "liodon-ai-mistral-7b-v0-1-onnx",
   "author": "liodon-ai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 44527088306,
   "storage_human": "44.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

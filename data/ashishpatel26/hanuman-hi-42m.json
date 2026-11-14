@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ashishpatel26/hanuman-hi-42m",
   "slug": "ashishpatel26-hanuman-hi-42m",
   "author": "ashishpatel26",
@@ -31,14 +31,19 @@
   "parameters_human": "42.1M",
   "storage_bytes": 169430360,
   "storage_human": "169 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

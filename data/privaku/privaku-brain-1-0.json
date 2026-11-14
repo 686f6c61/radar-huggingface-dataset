@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "privaku/PRIVAKU-Brain-1.0",
   "slug": "privaku-privaku-brain-1-0",
   "author": "privaku",
@@ -43,6 +43,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 1866099678,
   "storage_human": "1.9 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

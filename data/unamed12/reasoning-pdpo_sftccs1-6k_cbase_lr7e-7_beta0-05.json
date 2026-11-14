@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unamed12/reasoning-pdpo_sftccs1.6k_cbase_lr7e-7_beta0.05",
   "slug": "unamed12-reasoning-pdpo_sftccs1-6k_cbase_lr7e-7_beta0-05",
   "author": "unamed12",
@@ -34,14 +34,19 @@
   "parameters_human": "308224",
   "storage_bytes": 114682048695,
   "storage_human": "114.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

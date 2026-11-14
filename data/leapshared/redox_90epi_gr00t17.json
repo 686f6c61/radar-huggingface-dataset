@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leapshared/Redox_90epi_GR00T17",
   "slug": "leapshared-redox_90epi_gr00t17",
   "author": "leapshared",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 89974041016,
   "storage_human": "90.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

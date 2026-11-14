@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/Qwen3.8-Flash-Next-NVFP4-CLEER-k10",
   "slug": "nidhal101-qwen3-8-flash-next-nvfp4-cleer-k10",
   "author": "Nidhal101",
@@ -27,14 +27,19 @@
   "parameters_human": "59.03B",
   "storage_bytes": 63438796530,
   "storage_human": "63.4 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

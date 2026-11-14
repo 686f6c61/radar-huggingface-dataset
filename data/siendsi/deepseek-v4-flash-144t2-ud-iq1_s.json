@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siendsi/DeepSeek-V4-Flash-144t2-UD-IQ1_S",
   "slug": "siendsi-deepseek-v4-flash-144t2-ud-iq1_s",
   "author": "siendsi",
@@ -46,14 +46,19 @@
   "parameters_human": "163.12B",
   "storage_bytes": 49447603104,
   "storage_human": "49.4 GB",
+  "context_length": 1048576,
   "base_model": "DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

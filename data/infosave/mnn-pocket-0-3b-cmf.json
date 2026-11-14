@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/MNN-Pocket-0.3B-cmf",
   "slug": "infosave-mnn-pocket-0-3b-cmf",
   "author": "infosave",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 3030070704,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "taobao-mnn/MNN-Pocket-0.3B, taobao-mnn/MNN-Pocket-0.3B-Base, taobao-mnn/MNN-Pocket-0.3B-SFT, taobao-mnn/MNN-Pocket-0.3B-DFlash2, taobao-mnn/MNN-Pocket-0.3B-Dec",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

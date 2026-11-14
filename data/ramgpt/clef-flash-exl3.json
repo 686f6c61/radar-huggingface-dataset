@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ramgpt/clef-flash-EXL3",
   "slug": "ramgpt-clef-flash-exl3",
   "author": "ramgpt",
@@ -32,14 +32,19 @@
   "parameters_human": "4.06B",
   "storage_bytes": 8374664237,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

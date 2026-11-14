@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tetiai/teti-cognition-2",
   "slug": "tetiai-teti-cognition-2",
   "author": "tetiai",
@@ -100,6 +100,7 @@
   "parameters_human": null,
   "storage_bytes": 344102558,
   "storage_human": "344 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -107,8 +108,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

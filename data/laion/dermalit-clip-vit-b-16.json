@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "laion/DermaLit-CLIP-ViT-B-16",
+  "slug": "laion-dermalit-clip-vit-b-16",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/DermaLit-CLIP-ViT-B-16",
+  "created_at": "2026-11-14T11:35:14.000Z",
+  "updated_at": "2026-11-14T13:19:57.000Z",
+  "license": "dermalit-clip-research-licence",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "dermatology",
+    "medical",
+    "clip",
+    "image-text",
+    "zero-shot-image-classification",
+    "en",
+    "de",
+    "base_model:openai/clip-vit-base-patch16",
+    "base_model:finetune:openai/clip-vit-base-patch16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4189701787,
+  "storage_human": "4.2 GB",
+  "context_length": null,
+  "base_model": "openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAION · Open AI research for everyone",
+      "url": "https://laion.ai/",
+      "snippet": "LAION is a non-profit organization making machine-learning datasets, tools, and models openly available for research and education."
+    },
+    {
+      "title": "LAION - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LAION",
+      "snippet": "LAION (acronym for Large-scale Artificial Intelligence Open Network) is a German non-profit organization which makes open …"
+    },
+    {
+      "title": "LAION — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LAION",
+      "snippet": "Jeux de données d'images LAION a mis à disposition de tous plusieurs grands jeux de données de type « paires image-légende », …"
+    },
+    {
+      "title": "LAION-5B: A NEW ERA OF OPEN LARGE-SCALE MULTI-MODAL …",
+      "url": "https://laion.ai/blog/laion-5b/",
+      "snippet": "Mar 31, 2022 · We, LAION, are currently working together with the Cross Sectional Team Deep Learning (CST-DL), Scalable …"
+    },
+    {
+      "title": "LAION AI - GitHub",
+      "url": "https://github.com/LAION-AI",
+      "snippet": "This is the repo of LAION, a non-profit organization to liberate machine learning research, models and datasets. - LAION AI"
+    }
+  ]
+}

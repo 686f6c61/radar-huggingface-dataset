@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Echoo113/gemma-3-4b-it-tree_sequoia-STEER2.5-ft4.42",
   "slug": "echoo113-gemma-3-4b-it-tree_sequoia-steer2-5-ft4-42",
   "author": "Echoo113",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 300776699,
   "storage_human": "301 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

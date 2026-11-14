@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuq-zhou/2026-05-o-b0p6-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b",
   "slug": "yuq-zhou-2026-05-o-b0p6-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b",
   "author": "yuq-zhou",
@@ -29,14 +29,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 4074938294,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

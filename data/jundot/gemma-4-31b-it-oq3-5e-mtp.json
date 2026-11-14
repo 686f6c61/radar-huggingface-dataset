@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jundot/gemma-4-31B-it-oQ3.5e-mtp",
   "slug": "jundot-gemma-4-31b-it-oq3-5e-mtp",
   "author": "Jundot",
@@ -33,6 +33,7 @@
   "parameters_human": "31.74B",
   "storage_bytes": 17463955081,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

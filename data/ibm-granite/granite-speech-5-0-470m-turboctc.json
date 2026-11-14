@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibm-granite/granite-speech-5.0-470m-turboctc",
   "slug": "ibm-granite-granite-speech-5-0-470m-turboctc",
   "author": "ibm-granite",
@@ -38,14 +38,19 @@
   "parameters_human": "473.0M",
   "storage_bytes": 5678515551,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

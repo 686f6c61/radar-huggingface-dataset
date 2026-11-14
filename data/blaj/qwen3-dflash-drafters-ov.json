@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/Qwen3-DFlash-drafters-ov",
   "slug": "blaj-qwen3-dflash-drafters-ov",
   "author": "blaj",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 2654373296,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3-8B-DFlash-b16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T02:48:57.763Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

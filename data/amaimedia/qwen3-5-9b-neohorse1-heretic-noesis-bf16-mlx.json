@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-MLX",
   "slug": "amaimedia-qwen3-5-9b-neohorse1-heretic-noesis-bf16-mlx",
   "author": "AMAImedia",
@@ -279,14 +279,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 22965812717,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, TokenRhythm/NeoHorse-1-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:32:39.056Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

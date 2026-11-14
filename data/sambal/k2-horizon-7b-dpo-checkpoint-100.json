@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sambal/k2-horizon-7b-dpo-checkpoint-100",
   "slug": "sambal-k2-horizon-7b-dpo-checkpoint-100",
   "author": "sambal",
@@ -34,14 +34,19 @@
   "parameters_human": "9.00B",
   "storage_bytes": 18019031708,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

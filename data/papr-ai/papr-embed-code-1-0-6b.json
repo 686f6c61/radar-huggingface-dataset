@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "papr-ai/papr-embed-code-1-0.6b",
   "slug": "papr-ai-papr-embed-code-1-0-6b",
   "author": "papr-ai",
@@ -37,6 +37,7 @@
   "parameters_human": "595.8M",
   "storage_bytes": 7093588900,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

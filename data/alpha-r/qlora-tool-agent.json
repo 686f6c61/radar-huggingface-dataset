@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alpha-R/qlora-tool-agent",
   "slug": "alpha-r-qlora-tool-agent",
   "author": "Alpha-R",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 26206116,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

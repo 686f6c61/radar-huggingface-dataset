@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harshaljanjani/gte-base-en-v1.5-hf",
   "slug": "harshaljanjani-gte-base-en-v1-5-hf",
   "author": "harshaljanjani",
@@ -27,14 +27,19 @@
   "parameters_human": "136.8M",
   "storage_bytes": 547119128,
   "storage_human": "547 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

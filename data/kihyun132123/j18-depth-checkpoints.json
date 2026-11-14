@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kihyun132123/j18-depth-checkpoints",
   "slug": "kihyun132123-j18-depth-checkpoints",
   "author": "kihyun132123",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 14119537136,
   "storage_human": "14.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T08:21:04.528Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

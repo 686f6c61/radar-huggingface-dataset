@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AxcLogo/chinese-company-name-ner",
   "slug": "axclogo-chinese-company-name-ner",
   "author": "AxcLogo",
@@ -45,14 +45,19 @@
   "parameters_human": null,
   "storage_bytes": 31026228,
   "storage_human": "31 MB",
+  "context_length": null,
   "base_model": "uer/roberta-mini-wwm-chinese-cluecorpussmall",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

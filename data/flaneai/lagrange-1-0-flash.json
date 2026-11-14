@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlaneAI/LaGrange-1.0-Flash",
   "slug": "flaneai-lagrange-1-0-flash",
   "author": "FlaneAI",
@@ -33,14 +33,19 @@
   "parameters_human": "29248",
   "storage_bytes": 24832030,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

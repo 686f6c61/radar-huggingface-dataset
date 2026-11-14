@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamrodrigocoelho/qwen3.5-2b-refauna-GGUF",
   "slug": "iamrodrigocoelho-qwen3-5-2b-refauna-gguf",
   "author": "iamrodrigocoelho",
@@ -45,14 +45,19 @@
   "parameters_human": "1.94B",
   "storage_bytes": 4060212384,
   "storage_human": "4.1 GB",
+  "context_length": 262144,
   "base_model": "iamrodrigocoelho/qwen3.5-2b-refauna",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

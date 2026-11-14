@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/d1-omni-600M-LiteRT",
   "slug": "litert-community-d1-omni-600m-litert",
   "author": "litert-community",
@@ -62,12 +62,17 @@
   "parameters_human": null,
   "storage_bytes": 6497074751,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-omni-600M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

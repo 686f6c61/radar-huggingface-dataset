@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abdi38394/mini-gpt-10m-fineweb",
   "slug": "abdi38394-mini-gpt-10m-fineweb",
   "author": "abdi38394",
@@ -32,14 +32,19 @@
   "parameters_human": "6.7M",
   "storage_bytes": 26789376,
   "storage_human": "27 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

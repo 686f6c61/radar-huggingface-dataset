@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIgenius1/qwen3-06b-fa-fullft-speed",
   "slug": "aigenius1-qwen3-06b-fa-fullft-speed",
   "author": "AIgenius1",
@@ -44,6 +44,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 2115086364,
   "storage_human": "2.1 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T02:07:48.083Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

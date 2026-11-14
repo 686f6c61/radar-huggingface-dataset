@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatterWaveAI/grt-10m",
   "slug": "matterwaveai-grt-10m",
   "author": "MatterWaveAI",
@@ -34,14 +34,19 @@
   "parameters_human": "8.8M",
   "storage_bytes": 35700900,
   "storage_human": "36 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

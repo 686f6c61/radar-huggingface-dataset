@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "360ZhiNao/360Zhinao3-7B-O1.5",
   "slug": "360zhinao-360zhinao3-7b-o1-5",
   "author": "360ZhiNao",
@@ -37,14 +37,19 @@
   "parameters_human": "7.77B",
   "storage_bytes": 15549240640,
   "storage_human": "15.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

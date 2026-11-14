@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nickyang/Hy3-Razor-226B-A18B-E144of192",
   "slug": "nickyang-hy3-razor-226b-a18b-e144of192",
   "author": "Nickyang",
@@ -36,14 +36,19 @@
   "parameters_human": "226.29B",
   "storage_bytes": 452590174640,
   "storage_human": "452.6 GB",
+  "context_length": null,
   "base_model": "tencent/Hy3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Nickyang/Hy3-RAZOR-226B-A21B-E144of192",
+  "renamed_at": "2026-11-11T03:25:22.109Z",
   "benchmarks": [],
   "sources": []
 }

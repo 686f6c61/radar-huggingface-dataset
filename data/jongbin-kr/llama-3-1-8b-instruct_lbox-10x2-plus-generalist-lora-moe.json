@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/llama-3.1-8b-instruct_LBox-10x2-plus-generalist-lora-moe",
   "slug": "jongbin-kr-llama-3-1-8b-instruct_lbox-10x2-plus-generalist-lora-moe",
   "author": "Jongbin-kr",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 10704204041,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

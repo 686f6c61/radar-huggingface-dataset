@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soulfate24/Spark-X2.6-4B-DSpark-Paretrix-GGUF",
   "slug": "soulfate24-spark-x2-6-4b-dspark-paretrix-gguf",
   "author": "Soulfate24",
@@ -40,20 +40,25 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 4040,
+  "downloads_30d": 5389,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",
   "storage_bytes": 64186003660,
   "storage_human": "64.2 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.6-4B, XHToken/Spark-X2.6-4B-DSpark-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

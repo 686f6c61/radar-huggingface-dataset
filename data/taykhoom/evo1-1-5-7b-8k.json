@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taykhoom/Evo1-1.5-7B-8K",
   "slug": "taykhoom-evo1-1-5-7b-8k",
   "author": "Taykhoom",
@@ -32,14 +32,19 @@
   "parameters_human": "6.45B",
   "storage_bytes": 12913213592,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

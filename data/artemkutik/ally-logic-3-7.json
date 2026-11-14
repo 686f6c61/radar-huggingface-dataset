@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "artemKUTIK/Ally-Logic-3.7",
   "slug": "artemkutik-ally-logic-3-7",
   "author": "artemKUTIK",
@@ -24,14 +24,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 538090408,
   "storage_human": "538 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "arteml3/Ally-Logic-3.7",
+  "renamed_at": "2026-11-14T05:08:06.982Z",
   "benchmarks": [],
   "sources": [
     {

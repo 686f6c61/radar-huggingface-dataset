@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leeroy-jankins/minime",
   "slug": "leeroy-jankins-minime",
   "author": "leeroy-jankins",
@@ -51,14 +51,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 2149506208,
   "storage_human": "2.1 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Ministral-3-3B-Reasoning-2512-GGUF, mistral-common, mistral, unsloth",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "leeroy-jankins/mini",
+  "renamed_at": "2026-11-13T06:23:00.079Z",
   "benchmarks": [],
   "sources": [
     {

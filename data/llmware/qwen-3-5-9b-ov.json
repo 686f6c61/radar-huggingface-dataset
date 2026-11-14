@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llmware/qwen-3.5-9b-ov",
   "slug": "llmware-qwen-3-5-9b-ov",
   "author": "llmware",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 6123026303,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "llmware/qwen3.5-9b-ov",
+  "renamed_at": "2026-11-12T06:20:07.156Z",
   "benchmarks": [],
   "sources": [
     {

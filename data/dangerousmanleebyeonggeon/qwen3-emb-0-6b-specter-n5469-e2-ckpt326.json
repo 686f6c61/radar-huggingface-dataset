@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dangerousmanleebyeonggeon/qwen3-emb-0.6b-specter-n5469-e2-ckpt326",
   "slug": "dangerousmanleebyeonggeon-qwen3-emb-0-6b-specter-n5469-e2-ckpt326",
   "author": "dangerousmanleebyeonggeon",
@@ -33,14 +33,19 @@
   "parameters_human": "595.8M",
   "storage_bytes": 1203011981,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

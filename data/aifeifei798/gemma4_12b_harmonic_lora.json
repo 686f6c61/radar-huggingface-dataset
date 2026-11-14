@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aifeifei798/gemma4_12b_harmonic_lora",
   "slug": "aifeifei798-gemma4_12b_harmonic_lora",
   "author": "aifeifei798",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 117553884,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

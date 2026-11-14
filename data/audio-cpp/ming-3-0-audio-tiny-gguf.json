@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audio-cpp/Ming-3.0-Audio-Tiny-GGUF",
   "slug": "audio-cpp-ming-3-0-audio-tiny-gguf",
   "author": "audio-cpp",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 43810629930,
   "storage_human": "43.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-3.0-audio-tiny",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

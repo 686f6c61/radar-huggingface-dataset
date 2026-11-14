@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darask0/Krea-2-color-depth-control",
   "slug": "darask0-krea-2-color-depth-control",
   "author": "darask0",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 942971222,
   "storage_human": "943 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T03:43:27.022Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

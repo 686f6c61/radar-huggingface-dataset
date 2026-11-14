@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IvmeLabs/Ivme-Conversate-P-v1",
   "slug": "ivmelabs-ivme-conversate-p-v1",
   "author": "IvmeLabs",
@@ -45,14 +45,19 @@
   "parameters_human": "3.2M",
   "storage_bytes": 12922424,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": "IvmeLabs/Ivme-Conversate-v3-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "IvmeLabs/Ivme-Conversate-P-v1-Base",
+  "renamed_at": "2026-11-11T02:58:59.784Z",
   "benchmarks": [],
   "sources": []
 }

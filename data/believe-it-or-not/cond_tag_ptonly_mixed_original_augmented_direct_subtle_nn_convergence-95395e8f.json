@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "believe-it-or-not/cond_tag_ptonly_mixed_original_augmented_direct_subtle_nn_convergence-95395e8f",
   "slug": "believe-it-or-not-cond_tag_ptonly_mixed_original_augmented_direct_subtle_nn_convergence-95395e8f",
   "author": "believe-it-or-not",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1656903768,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

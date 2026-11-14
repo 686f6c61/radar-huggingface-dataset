@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Modusnsus/laya-nli-conflict-v10-l1",
   "slug": "modusnsus-laya-nli-conflict-v10-l1",
   "author": "Modusnsus",
@@ -37,14 +37,19 @@
   "parameters_human": "321.9M",
   "storage_bytes": 678198712,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "slow-stack/laya-nli-conflict-v10-l1",
+  "renamed_at": "2026-11-14T03:44:45.941Z",
   "benchmarks": [],
   "sources": [
     {

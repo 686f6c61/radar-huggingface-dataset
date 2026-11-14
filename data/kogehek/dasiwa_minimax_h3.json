@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kogehek/DaSiWa_MiniMax_H3",
   "slug": "kogehek-dasiwa_minimax_h3",
   "author": "kogehek",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 41935338328,
   "storage_human": "41.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

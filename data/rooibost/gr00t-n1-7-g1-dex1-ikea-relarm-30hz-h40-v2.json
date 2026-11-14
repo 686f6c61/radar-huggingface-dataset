@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2",
   "slug": "rooibost-gr00t-n1-7-g1-dex1-ikea-relarm-30hz-h40-v2",
   "author": "RooibosT",
@@ -31,14 +31,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576206865,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

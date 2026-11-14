@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cafepm/G9v3-39A5B-Q3Q4-GGUF",
   "slug": "cafepm-g9v3-39a5b-q3q4-gguf",
   "author": "cafepm",
@@ -41,14 +41,19 @@
   "parameters_human": "38.97B",
   "storage_bytes": 58642014272,
   "storage_human": "58.6 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

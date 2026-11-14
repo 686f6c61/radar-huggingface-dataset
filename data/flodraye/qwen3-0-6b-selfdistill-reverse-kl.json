@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flodraye/qwen3-0.6b-selfdistill-reverse-kl",
   "slug": "flodraye-qwen3-0-6b-selfdistill-reverse-kl",
   "author": "flodraye",
@@ -29,14 +29,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 2395665614,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

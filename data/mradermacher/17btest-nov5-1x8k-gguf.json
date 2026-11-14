@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/17btest-nov5-1x8k-GGUF",
   "slug": "mradermacher-17btest-nov5-1x8k-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 15885893760,
   "storage_human": "15.9 GB",
+  "context_length": 262144,
   "base_model": "DQN-Labs/17btest-nov5-1x8k",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

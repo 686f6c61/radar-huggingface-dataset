@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eggchad/MANGO1.5-Qwen3.5-9B-W8A8-INT8",
   "slug": "eggchad-mango1-5-qwen3-5-9b-w8a8-int8",
   "author": "Eggchad",
@@ -44,14 +44,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 12419806261,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "CMKL/MANGO1.5-Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

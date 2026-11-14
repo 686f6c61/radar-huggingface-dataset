@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CMSManhattan/JiRackGemma-37B-alpha-GGUF",
   "slug": "cmsmanhattan-jirackgemma-37b-alpha-gguf",
   "author": "CMSManhattan",
@@ -31,14 +31,19 @@
   "parameters_human": "36.40B",
   "storage_bytes": 74805089152,
   "storage_human": "74.8 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

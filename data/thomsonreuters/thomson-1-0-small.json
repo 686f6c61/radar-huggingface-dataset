@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thomsonreuters/Thomson-1.0-Small",
   "slug": "thomsonreuters-thomson-1-0-small",
   "author": "thomsonreuters",
@@ -31,14 +31,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70227486119,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "tri-fair-lab/Snowdon1.1-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

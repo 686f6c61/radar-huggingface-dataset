@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tihon-nth/vivit-vit-8-10-epochs-5_class_1_p0_full_splited-1789192041.5686274",
   "slug": "tihon-nth-vivit-vit-8-10-epochs-5_class_1_p0_full_splited-1789192041-5686274",
   "author": "tihon-nth",
@@ -30,14 +30,19 @@
   "parameters_human": "88.7M",
   "storage_bytes": 3900875909,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "google/vivit-b-16x2-kinetics400",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T04:14:00.686Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/MTL-FullFineT-mt5-base-joint",
   "slug": "tadiecool29-mtl-fullfinet-mt5-base-joint",
   "author": "tadiecool29",
@@ -35,14 +35,19 @@
   "parameters_human": "582.4M",
   "storage_bytes": 1181172328,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/mt5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

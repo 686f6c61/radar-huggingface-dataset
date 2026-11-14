@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fozzi66/ChechenAI-Gemma-2B",
   "slug": "fozzi66-chechenai-gemma-2b",
   "author": "fozzi66",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 117478226,
   "storage_human": "117 MB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

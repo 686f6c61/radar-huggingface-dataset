@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel3/FLUX.2-klein-4B-MXFP4-RTN-AutoRound",
   "slug": "incmodel3-flux-2-klein-4b-mxfp4-rtn-autoround",
   "author": "INCModel3",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 10569910720,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "intel-ai/FLUX.2-klein-4B-MXFP4-RTN-AutoRound",
+  "renamed_at": "2026-11-13T03:04:41.841Z",
   "benchmarks": [],
   "sources": [
     {

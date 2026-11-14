@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hcompany/NeoMME-800M-Retriever",
   "slug": "hcompany-neomme-800m-retriever",
   "author": "Hcompany",
@@ -37,14 +37,19 @@
   "parameters_human": "793.9M",
   "storage_bytes": 1587911064,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Hcompany/NeoMME-800M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bivariant/griot-asr",
   "slug": "bivariant-griot-asr",
   "author": "bivariant",
@@ -28,14 +28,19 @@
   "parameters_human": "808.9M",
   "storage_bytes": 15059430266,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bivariant/Griot-ASR-W-0.8-ALL",
+  "renamed_at": "2026-11-11T04:42:15.332Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16-i1-GGUF",
   "slug": "mradermacher-mimo-v2-6-distill-qwen-9b-derisked-bf16-i1-gguf",
   "author": "mradermacher",
@@ -46,14 +46,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 110211364576,
   "storage_human": "110.2 GB",
+  "context_length": 262144,
   "base_model": "Blackfrost-AI/MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

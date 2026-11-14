@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "igunosalabs/Unose-Huen-Small",
   "slug": "igunosalabs-unose-huen-small",
   "author": "igunosalabs",
@@ -34,14 +34,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 30956580283,
   "storage_human": "31.0 GB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caslca/Ornith-1.0-35B-mlx-uniform-4bit-mtp-drafter",
   "slug": "caslca-ornith-1-0-35b-mlx-uniform-4bit-mtp-drafter",
   "author": "caslca",
@@ -30,6 +30,7 @@
   "parameters_human": "844.6M",
   "storage_bytes": 488692271,
   "storage_human": "489 MB",
+  "context_length": null,
   "base_model": "caslca/Ornith-1.0-35B-mlx-uniform-4bit, Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

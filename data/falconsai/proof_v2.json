@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Falconsai/proof_v2",
   "slug": "falconsai-proof_v2",
   "author": "Falconsai",
@@ -68,6 +68,7 @@
   "parameters_human": "149.0M",
   "storage_bytes": 5980409190,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "gguf",
@@ -75,8 +76,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T03:29:02.944Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

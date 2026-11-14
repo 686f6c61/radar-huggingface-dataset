@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guicybercode/Aira-2-portuguese-124M-GGUF",
   "slug": "guicybercode-aira-2-portuguese-124m-gguf",
   "author": "guicybercode",
@@ -45,14 +45,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 961373888,
   "storage_human": "961 MB",
+  "context_length": 1024,
   "base_model": "nicholasKluge/Aira-2-portuguese-124M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

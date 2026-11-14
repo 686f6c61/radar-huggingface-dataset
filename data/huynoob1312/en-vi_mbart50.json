@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huynoob1312/en-vi_mbart50",
   "slug": "huynoob1312-en-vi_mbart50",
   "author": "huynoob1312",
@@ -35,14 +35,19 @@
   "parameters_human": "611.1M",
   "storage_bytes": 7350514267,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "facebook/mbart-large-50-many-to-many-mmt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

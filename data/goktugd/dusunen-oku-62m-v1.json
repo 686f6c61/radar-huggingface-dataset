@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoktugD/DUSUNEN-Oku-62M-v1",
   "slug": "goktugd-dusunen-oku-62m-v1",
   "author": "GoktugD",
@@ -46,14 +46,19 @@
   "parameters_human": "61.6M",
   "storage_bytes": 248916502,
   "storage_human": "249 MB",
+  "context_length": null,
   "base_model": "microsoft/trocr-small-printed",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Turkish cropped-word OCR",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llmtech/decider-4b-nvfp4",
   "slug": "llmtech-decider-4b-nvfp4",
   "author": "llmtech",
@@ -40,14 +40,19 @@
   "parameters_human": "2.42B",
   "storage_bytes": 3306708285,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "Mapika/decider-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

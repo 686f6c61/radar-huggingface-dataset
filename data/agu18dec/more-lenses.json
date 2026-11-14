@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agu18dec/mOre-lenses",
   "slug": "agu18dec-more-lenses",
   "author": "agu18dec",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 29926301549,
   "storage_human": "29.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it, Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-2B, Qwen/Qwen3.5-4B, Qwen/Qwen3.5-9B, Qwen/Qwen3.6-27B, Qwen/Qwen3-8B, zai-org/GLM-5.3-Flash, deepseek-ai/DeepSeek-V4-Flash, Qwen/Qwen3.6-35B-A3B, moonshotai/Kimi-K2-Instruct-0905, moonshotai/Kimi-Linear-48B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

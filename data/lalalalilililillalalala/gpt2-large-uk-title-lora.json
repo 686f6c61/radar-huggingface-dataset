@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lalalalilililillalalala/gpt2-large-uk-title-lora",
   "slug": "lalalalilililillalalala-gpt2-large-uk-title-lora",
   "author": "lalalalilililillalalala",
@@ -28,14 +28,19 @@
   "parameters_human": "774.0M",
   "storage_bytes": 3096165928,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lala228/gpt2-large-uk-title-lora",
+  "renamed_at": "2026-11-11T05:59:36.451Z",
   "benchmarks": [],
   "sources": [
     {

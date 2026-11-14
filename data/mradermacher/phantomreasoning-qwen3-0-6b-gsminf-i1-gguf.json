@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/PhantomReasoning-Qwen3-0.6B-gsminf-i1-GGUF",
   "slug": "mradermacher-phantomreasoning-qwen3-0-6b-gsminf-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 9759570880,
   "storage_human": "9.8 GB",
+  "context_length": 40960,
   "base_model": "kilian-group/PhantomReasoning-Qwen3-0.6B-gsminf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "locht131/gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug",
   "slug": "locht131-gr00t_letter_align_1hand_quat_s30k_bs32_rot_aug",
   "author": "locht131",
@@ -31,14 +31,19 @@
   "parameters_human": "2.72B",
   "storage_bytes": 7586072344,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ricer0ll/Miko-v1-m7",
   "slug": "ricer0ll-miko-v1-m7",
   "author": "ricer0ll",
@@ -31,14 +31,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 57987134756,
   "storage_human": "58.0 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

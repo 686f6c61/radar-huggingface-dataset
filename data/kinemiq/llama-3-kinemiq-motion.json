@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kinemiq/Llama-3-KinemIQ-Motion",
   "slug": "kinemiq-llama-3-kinemiq-motion",
   "author": "Kinemiq",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 510945397,
   "storage_human": "511 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

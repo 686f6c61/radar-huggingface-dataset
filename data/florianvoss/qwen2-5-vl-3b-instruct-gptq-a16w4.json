@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Qwen2.5-VL-3B-Instruct-GPTQ-a16w4",
   "slug": "florianvoss-qwen2-5-vl-3b-instruct-gptq-a16w4",
   "author": "florianvoss",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 5230367468,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:46:49.319Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

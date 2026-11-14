@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RyanYr/qwen3-1.7b-base-critic-dapo-math",
   "slug": "ryanyr-qwen3-1-7b-base-critic-dapo-math",
   "author": "RyanYr",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

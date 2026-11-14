@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geotessera/TESSERA-V-2.0-2B-S",
   "slug": "geotessera-tessera-v-2-0-2b-s",
   "author": "geotessera",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 28488531,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

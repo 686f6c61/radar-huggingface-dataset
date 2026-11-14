@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shisa-ai/Qwen3.8-27B-Q4_K_M-DMS-W8192",
   "slug": "shisa-ai-qwen3-8-27b-q4_k_m-dms-w8192",
   "author": "shisa-ai",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 655640,
   "storage_human": "655640 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

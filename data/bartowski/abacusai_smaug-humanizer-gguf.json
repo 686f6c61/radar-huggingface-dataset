@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/abacusai_Smaug-Humanizer-GGUF",
   "slug": "bartowski-abacusai_smaug-humanizer-gguf",
   "author": "bartowski",
@@ -36,14 +36,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 182176805632,
   "storage_human": "182.2 GB",
+  "context_length": 262144,
   "base_model": "abacusai/Smaug-Humanizer",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

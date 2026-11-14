@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andreasmartin/apertus-v1.5-8b-text-mlx-8Bit",
   "slug": "andreasmartin-apertus-v1-5-8b-text-mlx-8bit",
   "author": "andreasmartin",
@@ -39,6 +39,7 @@
   "parameters_human": "2.27B",
   "storage_bytes": 8575883468,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "andreasmartin/apertus-v1.5-8b-text",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:04:15.400Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

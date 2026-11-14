@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "timm/lowformer_b15.in1k",
   "slug": "timm-lowformer_b15-in1k",
   "author": "timm",
@@ -28,14 +28,19 @@
   "parameters_human": "34.0M",
   "storage_bytes": 136087520,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

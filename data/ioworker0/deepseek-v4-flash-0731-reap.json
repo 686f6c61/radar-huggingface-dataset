@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ioworker0/DeepSeek-V4-Flash-0731-REAP",
   "slug": "ioworker0-deepseek-v4-flash-0731-reap",
   "author": "ioworker0",
@@ -32,14 +32,19 @@
   "parameters_human": "187.68B",
   "storage_bytes": 669945010688,
   "storage_human": "669.9 GB",
+  "context_length": 1048576,
   "base_model": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

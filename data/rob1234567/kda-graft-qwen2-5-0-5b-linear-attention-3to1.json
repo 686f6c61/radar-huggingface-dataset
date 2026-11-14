@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rob1234567/kda-graft-qwen2.5-0.5b-linear-attention-3to1",
   "slug": "rob1234567-kda-graft-qwen2-5-0-5b-linear-attention-3to1",
   "author": "Rob1234567",
@@ -44,14 +44,19 @@
   "parameters_human": "548.2M",
   "storage_bytes": 3408039067,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "austinpatel/bp_pi05_libero_regenerated_lora",
   "slug": "austinpatel-bp_pi05_libero_regenerated_lora",
   "author": "austinpatel",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 9602673956,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "physical-intelligence/pi05_base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Asdadas1111/Mistral-Nemo-12B-Base-LoRA",
   "slug": "asdadas1111-mistral-nemo-12b-base-lora",
   "author": "Asdadas1111",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 245218892,
   "storage_human": "245 MB",
+  "context_length": null,
   "base_model": "unsloth/Mistral-Nemo-Base-2407-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T02:20:16.645Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

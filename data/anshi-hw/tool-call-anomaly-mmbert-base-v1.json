@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnShi-HW/tool-call-anomaly-mmbert-base-v1",
   "slug": "anshi-hw-tool-call-anomaly-mmbert-base-v1",
   "author": "AnShi-HW",
@@ -27,14 +27,19 @@
   "parameters_human": "307.5M",
   "storage_bytes": 1264504866,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T04:26:18.030Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

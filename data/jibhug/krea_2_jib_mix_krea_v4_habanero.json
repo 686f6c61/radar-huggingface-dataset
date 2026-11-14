@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jibhug/Krea_2_Jib_Mix_Krea_v4_Habanero",
   "slug": "jibhug-krea_2_jib_mix_krea_v4_habanero",
   "author": "jibhug",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 39132159360,
   "storage_human": "39.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

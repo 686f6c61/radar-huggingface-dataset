@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hammamGhazi/psc_1_uts",
   "slug": "hammamghazi-psc_1_uts",
   "author": "hammamGhazi",
@@ -25,6 +25,7 @@
   "parameters_human": "110.6M",
   "storage_bytes": 884703081,
   "storage_human": "885 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

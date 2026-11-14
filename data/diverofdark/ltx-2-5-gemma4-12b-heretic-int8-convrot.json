@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot",
   "slug": "diverofdark-ltx-2-5-gemma4-12b-heretic-int8-convrot",
   "author": "diverofdark",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 15372969782,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5, igorls/gemma-4-12B-it-heretic-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Lygodactylus-FlashNext-Uncensored-3bpw-HermiHg-MTP",
   "slug": "doth4580-lygodactylus-flashnext-uncensored-3bpw-hermihg-mtp",
   "author": "doth4580",
@@ -36,14 +36,19 @@
   "parameters_human": "26.22B",
   "storage_bytes": 72456561604,
   "storage_human": "72.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, HermiHg/Qwen3.8-Flash-Next-Optimized-MTP-Heads-exl3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

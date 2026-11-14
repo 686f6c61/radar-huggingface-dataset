@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imwolf/dxd4_v1_2000_lora",
   "slug": "imwolf-dxd4_v1_2000_lora",
   "author": "imwolf",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 211875911,
   "storage_human": "212 MB",
+  "context_length": null,
   "base_model": "ideogram-ai/ideogram-4-fp8",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

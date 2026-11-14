@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrianSG26/scut-kokoro-vi",
   "slug": "briansg26-scut-kokoro-vi",
   "author": "BrianSG26",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 333044130,
   "storage_human": "333 MB",
+  "context_length": null,
   "base_model": "contextboxai/Kokoro-Vietnamese",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

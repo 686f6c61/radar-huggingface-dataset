@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-FP16",
   "slug": "pluto-ai-labs-apollo-vl-edge-3b-mlx-fp16",
   "author": "Pluto-AI-Labs",
@@ -39,6 +39,7 @@
   "parameters_human": "3.75B",
   "storage_bytes": 7520767694,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "Pluto-AI-Labs/Apollo-VL-Edge-3B",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

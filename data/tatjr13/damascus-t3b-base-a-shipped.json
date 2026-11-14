@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tatjr13/damascus-t3b-base-a-shipped",
   "slug": "tatjr13-damascus-t3b-base-a-shipped",
   "author": "tatjr13",
@@ -25,14 +25,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 14669452512,
   "storage_human": "14.7 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T05:24:11.404Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

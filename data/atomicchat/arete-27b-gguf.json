@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/Arete-27B-GGUF",
   "slug": "atomicchat-arete-27b-gguf",
   "author": "AtomicChat",
@@ -27,21 +27,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 15,
+  "likes": 16,
   "downloads_30d": 2715,
-  "trending_score": 15,
+  "trending_score": 16,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
   "storage_bytes": 121686832576,
   "storage_human": "121.7 GB",
+  "context_length": 262144,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

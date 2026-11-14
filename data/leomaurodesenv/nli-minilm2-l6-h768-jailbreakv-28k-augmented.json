@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leomaurodesenv/nli-MiniLM2-L6-H768-jailbreakv-28k-augmented",
   "slug": "leomaurodesenv-nli-minilm2-l6-h768-jailbreakv-28k-augmented",
   "author": "leomaurodesenv",
@@ -31,14 +31,19 @@
   "parameters_human": "82.1M",
   "storage_bytes": 16096126201,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

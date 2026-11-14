@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sverinn/Qwopus3-5-9B-Coder-Flash-AWQ",
   "slug": "sverinn-qwopus3-5-9b-coder-flash-awq",
   "author": "sverinn",
@@ -35,14 +35,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 9056706883,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3-5-9B-Coder-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

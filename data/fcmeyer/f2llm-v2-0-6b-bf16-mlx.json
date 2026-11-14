@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fcmeyer/F2LLM-v2-0.6B-bf16-mlx",
   "slug": "fcmeyer-f2llm-v2-0-6b-bf16-mlx",
   "author": "fcmeyer",
@@ -211,6 +211,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203558130,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "codefuse-ai/F2LLM-v2-0.6B",
   "formats": [
     "mlx",
@@ -218,8 +219,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

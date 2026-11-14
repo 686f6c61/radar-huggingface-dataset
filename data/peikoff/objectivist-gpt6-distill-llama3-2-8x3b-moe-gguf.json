@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peikoff/objectivist-gpt6-distill-llama3-2-8x3b-moe-GGUF",
   "slug": "peikoff-objectivist-gpt6-distill-llama3-2-8x3b-moe-gguf",
   "author": "peikoff",
@@ -32,14 +32,19 @@
   "parameters_human": "18.40B",
   "storage_bytes": 59186459008,
   "storage_human": "59.2 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

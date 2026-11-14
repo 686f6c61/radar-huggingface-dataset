@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeong-USYD/owac-j5-raw-encoder",
   "slug": "jeong-usyd-owac-j5-raw-encoder",
   "author": "Jeong-USYD",
@@ -34,14 +34,19 @@
   "parameters_human": "22.2M",
   "storage_bytes": 177579531,
   "storage_human": "178 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

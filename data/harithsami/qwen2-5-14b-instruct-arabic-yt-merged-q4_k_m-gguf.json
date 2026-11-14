@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HarithSami/qwen2.5-14b-instruct-arabic-yt-merged-Q4_K_M-GGUF",
   "slug": "harithsami-qwen2-5-14b-instruct-arabic-yt-merged-q4_k_m-gguf",
   "author": "HarithSami",
@@ -36,14 +36,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8988110752,
   "storage_human": "9.0 GB",
+  "context_length": 32768,
   "base_model": "HarithSami/qwen2.5-14b-instruct-arabic-yt-merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:47:56.626Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

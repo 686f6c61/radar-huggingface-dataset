@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addiesam/Ripple-65B-Preview-QVB8R-1e-3",
   "slug": "addiesam-ripple-65b-preview-qvb8r-1e-3",
   "author": "addiesam",
@@ -36,14 +36,19 @@
   "parameters_human": "1.7M",
   "storage_bytes": 46553402880,
   "storage_human": "46.6 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

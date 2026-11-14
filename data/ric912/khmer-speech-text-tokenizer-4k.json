@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ric912/khmer-speech-text-tokenizer-4k",
   "slug": "ric912-khmer-speech-text-tokenizer-4k",
   "author": "ric912",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 217917,
   "storage_human": "217917 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "actnowai/CAMPPlus-zh-en-16k-MLX-fp16",
   "slug": "actnowai-campplus-zh-en-16k-mlx-fp16",
   "author": "actnowai",
@@ -35,6 +35,7 @@
   "parameters_human": "6.9M",
   "storage_bytes": 13942224,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "iic/speech_campplus_sv_zh_en_16k-common_advanced",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

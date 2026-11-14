@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sandy-sys/osint-argus-gemma4-qat-w4a16",
   "slug": "sandy-sys-osint-argus-gemma4-qat-w4a16",
   "author": "Sandy-sys",
@@ -35,14 +35,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 24817229870,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

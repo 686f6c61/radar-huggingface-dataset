@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siriusfreak/qwen3-tts-12hz-1.7b-ru-stress-cf",
   "slug": "siriusfreak-qwen3-tts-12hz-1-7b-ru-stress-cf",
   "author": "siriusfreak",
@@ -35,14 +35,19 @@
   "parameters_human": "1.93B",
   "storage_bytes": 4578848181,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

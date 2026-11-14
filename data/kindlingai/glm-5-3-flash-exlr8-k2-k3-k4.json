@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kindlingai/glm-5.3-flash-exlr8-k2-k3-k4",
   "slug": "kindlingai-glm-5-3-flash-exlr8-k2-k3-k4",
   "author": "kindlingai",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 790363595819,
   "storage_human": "790.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

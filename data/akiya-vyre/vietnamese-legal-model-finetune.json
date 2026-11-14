@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akiya-Vyre/vietnamese-legal-model-finetune",
   "slug": "akiya-vyre-vietnamese-legal-model-finetune",
   "author": "Akiya-Vyre",
@@ -35,14 +35,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 3353505388,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "bqbbao6/vietnamese-legal-embedding",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T02:37:08.107Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

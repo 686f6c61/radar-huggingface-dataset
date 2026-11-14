@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vamazing/Koa-AI-v1-Code-3B",
   "slug": "vamazing-koa-ai-v1-code-3b",
   "author": "vamazing",
@@ -40,6 +40,7 @@
   "parameters_human": "3.85B",
   "storage_bytes": 9861816574,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3b-instruct",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

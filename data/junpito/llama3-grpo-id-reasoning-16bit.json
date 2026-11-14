@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Junpito/llama3-grpo-id-reasoning-16bit",
   "slug": "junpito-llama3-grpo-id-reasoning-16bit",
   "author": "Junpito",
@@ -35,14 +35,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 12885478115,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": "Junpito/llama3-finetuned-id-16bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

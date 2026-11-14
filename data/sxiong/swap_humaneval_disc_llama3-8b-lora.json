@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sxiong/SWAP_HumanEval_Disc_Llama3-8B-LoRA",
   "slug": "sxiong-swap_humaneval_disc_llama3-8b-lora",
   "author": "sxiong",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 185042201,
   "storage_human": "185 MB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

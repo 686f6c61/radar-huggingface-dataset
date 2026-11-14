@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jyler/clashbot-d1-ft-joint-tac",
   "slug": "jyler-clashbot-d1-ft-joint-tac",
   "author": "Jyler",
@@ -31,14 +31,19 @@
   "parameters_human": "587.2M",
   "storage_bytes": 1174451706,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-omni-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

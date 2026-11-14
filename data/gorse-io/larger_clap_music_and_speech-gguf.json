@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gorse-io/larger_clap_music_and_speech-GGUF",
   "slug": "gorse-io-larger_clap_music_and_speech-gguf",
   "author": "gorse-io",
@@ -24,14 +24,19 @@
   "parameters_human": "193.9M",
   "storage_bytes": 1504046976,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "laion/larger_clap_music_and_speech",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

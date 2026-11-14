@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elevateecho/sn120-9fbb78acd964",
   "slug": "elevateecho-sn120-9fbb78acd964",
   "author": "elevateecho",
@@ -34,14 +34,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 70234483877,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "vera6/affine-5g4yy75zuz-t6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEmotionStudio/moss-audio-models",
   "slug": "aemotionstudio-moss-audio-models",
   "author": "AEmotionStudio",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 10445749784,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Audio-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

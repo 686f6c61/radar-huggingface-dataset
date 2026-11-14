@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/L3.1-Dark-Reasoning-Unholy-Hermes-R1-Uncensored-8B",
   "slug": "davidau-l3-1-dark-reasoning-unholy-hermes-r1-uncensored-8b",
   "author": "DavidAU",
@@ -68,14 +68,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16078002643,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "NousResearch/DeepHermes-3-Llama-3-8B-Preview, Undi95/Llama-3-Unholy-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

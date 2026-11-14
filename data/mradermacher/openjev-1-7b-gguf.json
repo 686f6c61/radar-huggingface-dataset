@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/OpenJev-1.7B-GGUF",
   "slug": "mradermacher-openjev-1-7b-gguf",
   "author": "mradermacher",
@@ -44,14 +44,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 15959985024,
   "storage_human": "16.0 GB",
+  "context_length": 32768,
   "base_model": "alanhuangya/OpenJev-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

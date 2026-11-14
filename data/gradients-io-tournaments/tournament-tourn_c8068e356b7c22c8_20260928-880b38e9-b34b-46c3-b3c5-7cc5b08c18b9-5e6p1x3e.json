@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/tournament-tourn_c8068e356b7c22c8_20260928-880b38e9-b34b-46c3-b3c5-7cc5b08c18b9-5E6p1x3e",
   "slug": "gradients-io-tournaments-tournament-tourn_c8068e356b7c22c8_20260928-880b38e9-b34b-46c3-b3c5-7cc5b08c18b9-5e6p1x3e",
   "author": "gradients-io-tournaments",
@@ -34,14 +34,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 7642893359,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "numind/NuExtract-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

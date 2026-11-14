@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShadyAdham0/smol-sft-test",
   "slug": "shadyadham0-smol-sft-test",
   "author": "ShadyAdham0",
@@ -38,14 +38,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 3414132377,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

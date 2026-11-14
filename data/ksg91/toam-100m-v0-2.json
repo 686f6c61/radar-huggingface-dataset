@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ksg91/toam-100m-v0.2",
   "slug": "ksg91-toam-100m-v0-2",
   "author": "ksg91",
@@ -48,6 +48,7 @@
   "parameters_human": "102.5M",
   "storage_bytes": 521073920,
   "storage_human": "521 MB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

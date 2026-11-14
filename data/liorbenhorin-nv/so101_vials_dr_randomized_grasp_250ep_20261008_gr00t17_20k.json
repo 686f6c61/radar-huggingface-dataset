@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liorbenhorin-nv/so101_vials_dr_randomized_grasp_250ep_20261008_GR00T17_20k",
   "slug": "liorbenhorin-nv-so101_vials_dr_randomized_grasp_250ep_20261008_gr00t17_20k",
   "author": "liorbenhorin-nv",
@@ -31,14 +31,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576219216,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

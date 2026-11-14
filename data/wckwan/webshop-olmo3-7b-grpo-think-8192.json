@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wckwan/Webshop-Olmo3-7B-GRPO-Think-8192",
   "slug": "wckwan-webshop-olmo3-7b-grpo-think-8192",
   "author": "wckwan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 335710240259,
   "storage_human": "335.7 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-7B-Think",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T15:32:54.969Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "software-mansion/react-native-executorch-efficientnet-v2-s",
   "slug": "software-mansion-react-native-executorch-efficientnet-v2-s",
   "author": "software-mansion",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 1019660419,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "software-mansion/EfficientNetV2-S-ExecuTorch",
+  "renamed_at": "2026-11-11T07:34:21.017Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spark-ux/indic-transcribe-flex",
   "slug": "spark-ux-indic-transcribe-flex",
   "author": "spark-ux",
@@ -96,14 +96,19 @@
   "parameters_human": "1.22B",
   "storage_bytes": 4891359861,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "nvidia/canary-1b-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

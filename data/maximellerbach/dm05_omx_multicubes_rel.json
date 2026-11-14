@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maximellerbach/dm05_omx_multicubes_rel",
   "slug": "maximellerbach-dm05_omx_multicubes_rel",
   "author": "maximellerbach",
@@ -29,14 +29,19 @@
   "parameters_human": "5.16B",
   "storage_bytes": 55878601113,
   "storage_human": "55.9 GB",
+  "context_length": null,
   "base_model": "Dexmal/DM05",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VertexAIco/refusal-bot-3000",
   "slug": "vertexaico-refusal-bot-3000",
   "author": "VertexAIco",
@@ -46,6 +46,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2275878127,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VertexAGI/refusal-bot-3000",
+  "renamed_at": "2026-11-11T04:08:21.193Z",
   "benchmarks": [],
   "sources": [
     {

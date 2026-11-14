@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/Qwen3-TTS-12Hz-0.6B-Base-4bit",
   "slug": "flyingfishinwater-qwen3-tts-12hz-0-6b-base-4bit",
   "author": "flyingfishinwater",
@@ -32,6 +32,7 @@
   "parameters_human": "914.6M",
   "storage_bytes": 1706783792,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:25.460Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

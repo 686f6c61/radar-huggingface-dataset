@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ngloc2411/XORTRON-CriminalComputing-RICO-v4-W4A16",
   "slug": "ngloc2411-xortron-criminalcomputing-rico-v4-w4a16",
   "author": "ngloc2411",
@@ -34,14 +34,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 19437779986,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "darkc0de/XORTRON-CriminalComputing-RICO-v4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

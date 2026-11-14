@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weniny/Market_Value_predictor",
   "slug": "weniny-market_value_predictor",
   "author": "weniny",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 179187997,
   "storage_human": "179 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hebrish/Whisper-Hebrish-Small-ACFT",
   "slug": "hebrish-whisper-hebrish-small-acft",
   "author": "Hebrish",
@@ -41,14 +41,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 2357787881,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "openai/whisper-small.en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

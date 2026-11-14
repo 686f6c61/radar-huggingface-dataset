@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AVIM-AI/gemma-4-E4B-es-latam-lora",
   "slug": "avim-ai-gemma-4-e4b-es-latam-lora",
   "author": "AVIM-AI",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 148403443,
   "storage_human": "148 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOTAagi2030/GalleryScript-LangID",
   "slug": "sotaagi2030-galleryscript-langid",
   "author": "SOTAagi2030",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 51,
   "storage_human": "51 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

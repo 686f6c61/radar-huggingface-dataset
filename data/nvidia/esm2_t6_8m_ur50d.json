@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/esm2_t6_8M_UR50D",
   "slug": "nvidia-esm2_t6_8m_ur50d",
   "author": "nvidia",
@@ -27,14 +27,19 @@
   "parameters_human": "7.5M",
   "storage_bytes": 150423906,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

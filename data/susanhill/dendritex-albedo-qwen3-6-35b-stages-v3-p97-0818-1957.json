@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SusanHill/dendritex-albedo-qwen3.6-35b-stages-v3-p97-0818-1957",
   "slug": "susanhill-dendritex-albedo-qwen3-6-35b-stages-v3-p97-0818-1957",
   "author": "SusanHill",
@@ -28,14 +28,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916584758,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:14:19.928Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

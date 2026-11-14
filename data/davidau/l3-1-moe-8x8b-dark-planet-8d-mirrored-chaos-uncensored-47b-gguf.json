@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/L3.1-MOE-8X8B-Dark-Planet-8D-Mirrored-Chaos-Uncensored-47B-GGUF",
   "slug": "davidau-l3-1-moe-8x8b-dark-planet-8d-mirrored-chaos-uncensored-47b-gguf",
   "author": "DavidAU",
@@ -62,14 +62,19 @@
   "parameters_human": "47.49B",
   "storage_bytes": 324802398656,
   "storage_human": "324.8 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/L3.1-MOE-8X8B-Dark-Planet-8D-Mirrored-Chaos-Uncensored-47B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

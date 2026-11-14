@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-NVFP4",
   "slug": "llmfan46-qwen3-8-27b-ultra-uncensored-heretic-native-mtp-preserved-nvfp4",
   "author": "llmfan46",
@@ -39,14 +39,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 20613091037,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved-NVFP4",
+  "renamed_at": "2026-11-11T06:05:37.734Z",
   "benchmarks": [],
   "sources": [
     {

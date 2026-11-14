@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SUSSYFR13ND/qwen3_0.6b_base_int8",
   "slug": "sussyfr13nd-qwen3_0-6b_base_int8",
   "author": "SUSSYFR13ND",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 598191544,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T05:29:42.997Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

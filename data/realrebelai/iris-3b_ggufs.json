@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/iris-3b_GGUFs",
   "slug": "realrebelai-iris-3b_ggufs",
   "author": "realrebelai",
@@ -33,14 +33,19 @@
   "parameters_human": "2.99B",
   "storage_bytes": 13386297256,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "speridlabs/iris-3b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

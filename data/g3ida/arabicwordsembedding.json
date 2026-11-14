@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g3ida/ArabicWordsEmbedding",
   "slug": "g3ida-arabicwordsembedding",
   "author": "g3ida",
@@ -39,14 +39,19 @@
   "parameters_human": "438.8M",
   "storage_bytes": 909770326,
   "storage_human": "910 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

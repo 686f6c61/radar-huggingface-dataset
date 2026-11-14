@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hozifa1/Faqih-Q14b-1.0V-GGUF",
   "slug": "hozifa1-faqih-q14b-1-0v-gguf",
   "author": "hozifa1",
@@ -36,6 +36,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 9943759494,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": "hozifa1/Faqih-Q14b-1.0V",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hozifa1/Faqih-Q14b-1.0V-Quantized",
+  "renamed_at": "2026-11-11T05:34:56.187Z",
   "benchmarks": [],
   "sources": [
     {

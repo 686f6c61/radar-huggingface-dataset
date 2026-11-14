@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mim-chess-vlas/train_800_dense__no_mask__smolvla__seed_0",
   "slug": "mim-chess-vlas-train_800_dense__no_mask__smolvla__seed_0",
   "author": "mim-chess-vlas",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 9582316480,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

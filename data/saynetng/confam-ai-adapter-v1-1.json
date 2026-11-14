@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Saynetng/confam-ai-adapter-v1.1",
   "slug": "saynetng-confam-ai-adapter-v1-1",
   "author": "Saynetng",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 54560368,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "NCAIR1/N-ATLaS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

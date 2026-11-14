@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KeisukeMiyamoto/lambda-audio-v6",
   "slug": "keisukemiyamoto-lambda-audio-v6",
   "author": "KeisukeMiyamoto",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 9778188421,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": "KeisukeMiyamoto/zipformer-cpt, KeisukeMiyamoto/lfm2.5-230m-cpt",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

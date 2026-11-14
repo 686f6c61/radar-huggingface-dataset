@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "godenheim/occamy-1.0-6bpw-h16",
   "slug": "godenheim-occamy-1-0-6bpw-h16",
   "author": "godenheim",
@@ -24,14 +24,19 @@
   "parameters_human": "14.41B",
   "storage_bytes": 28907741844,
   "storage_human": "28.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uzcaliskan/sondaj_takip_model",
   "slug": "uzcaliskan-sondaj_takip_model",
   "author": "uzcaliskan",
@@ -27,14 +27,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 5027784160,
   "storage_human": "5.0 GB",
+  "context_length": 40960,
   "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T02:59:50.639Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roskosmos19/Rhea-4B-Coding-max",
   "slug": "roskosmos19-rhea-4b-coding-max",
   "author": "roskosmos19",
@@ -47,14 +47,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8059265699,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Aquiles-ai/Athenea-4B-Coding",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

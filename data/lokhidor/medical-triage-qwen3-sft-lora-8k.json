@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lokhidor/medical-triage-qwen3-sft-lora-8k",
   "slug": "lokhidor-medical-triage-qwen3-sft-lora-8k",
   "author": "Lokhidor",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 360346124,
   "storage_human": "360 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

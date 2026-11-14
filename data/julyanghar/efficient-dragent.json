@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "julyanghar/Efficient-DRAgent",
   "slug": "julyanghar-efficient-dragent",
   "author": "julyanghar",
@@ -35,14 +35,19 @@
   "parameters_human": "727.7M",
   "storage_bytes": 1726112328,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

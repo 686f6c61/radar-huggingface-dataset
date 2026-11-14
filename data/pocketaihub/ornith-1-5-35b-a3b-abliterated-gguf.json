@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PocketAiHub/Ornith-1.5-35B-A3B-Abliterated-GGUF",
   "slug": "pocketaihub-ornith-1-5-35b-a3b-abliterated-gguf",
   "author": "PocketAiHub",
@@ -36,14 +36,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 128345817088,
   "storage_human": "128.3 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

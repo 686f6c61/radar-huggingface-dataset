@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qinyong13/disaster-tweets-bert",
   "slug": "qinyong13-disaster-tweets-bert",
   "author": "qinyong13",
@@ -30,6 +30,7 @@
   "parameters_human": "109.5M",
   "storage_bytes": 569277641,
   "storage_human": "569 MB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [
     "onnx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Disaster tweet classification",

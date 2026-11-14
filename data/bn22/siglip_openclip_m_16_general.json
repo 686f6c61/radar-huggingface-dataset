@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bn22/siglip_openclip_m_16_general",
   "slug": "bn22-siglip_openclip_m_16_general",
   "author": "bn22",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 839306784,
   "storage_human": "839 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T05:51:33.127Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yjwon/T14b_14worse1shotwrongansv0_S4b_klreg0.05_stage0",
   "slug": "yjwon-t14b_14worse1shotwrongansv0_s4b_klreg0-05_stage0",
   "author": "yjwon",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 40236344203,
   "storage_human": "40.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

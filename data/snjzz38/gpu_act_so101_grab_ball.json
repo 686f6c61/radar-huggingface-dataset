@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snjzz38/gpu_act_so101_grab_ball",
   "slug": "snjzz38-gpu_act_so101_grab_ball",
   "author": "snjzz38",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206510072,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T09:19:12.737Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

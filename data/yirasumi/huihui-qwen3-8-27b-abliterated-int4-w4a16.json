@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yirasumi/Huihui-Qwen3.8-27B-abliterated-INT4-W4A16",
   "slug": "yirasumi-huihui-qwen3-8-27b-abliterated-int4-w4a16",
   "author": "Yirasumi",
@@ -33,14 +33,19 @@
   "parameters_human": "5.16B",
   "storage_bytes": 17585538133,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

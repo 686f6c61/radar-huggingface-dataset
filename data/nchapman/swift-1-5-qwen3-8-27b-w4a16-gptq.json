@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Swift-1.5-Qwen3.8-27b-W4A16-GPTQ",
   "slug": "nchapman-swift-1-5-qwen3-8-27b-w4a16-gptq",
   "author": "nchapman",
@@ -34,14 +34,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 19472773550,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:52:18.052Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

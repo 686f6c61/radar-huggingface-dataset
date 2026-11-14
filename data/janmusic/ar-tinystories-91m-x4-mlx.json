@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "janmusic/ar-tinystories-91m-x4-mlx",
   "slug": "janmusic-ar-tinystories-91m-x4-mlx",
   "author": "janmusic",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 368503539,
   "storage_human": "369 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "janmusic/AR-TinyStories-91M-MLX",
+  "renamed_at": "2026-11-11T05:45:09.760Z",
   "benchmarks": [],
   "sources": []
 }

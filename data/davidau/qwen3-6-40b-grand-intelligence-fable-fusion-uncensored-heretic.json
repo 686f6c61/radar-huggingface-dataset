@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
   "slug": "davidau-qwen3-6-40b-grand-intelligence-fable-fusion-uncensored-heretic",
   "author": "DavidAU",
@@ -51,14 +51,19 @@
   "parameters_human": "39.96B",
   "storage_bytes": 79954328259,
   "storage_human": "80.0 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vitalipavlovsk/action-contract-guard",
   "slug": "vitalipavlovsk-action-contract-guard",
   "author": "vitalipavlovsk",
@@ -29,14 +29,19 @@
   "parameters_human": "11.2M",
   "storage_bytes": 22350340,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": "google/bert_uncased_L-4_H-256_A-4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

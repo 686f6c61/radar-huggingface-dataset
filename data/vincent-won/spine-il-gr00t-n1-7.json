@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vincent-won/spine-il-gr00t-n1.7",
   "slug": "vincent-won-spine-il-gr00t-n1-7",
   "author": "vincent-won",
@@ -31,14 +31,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576225152,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

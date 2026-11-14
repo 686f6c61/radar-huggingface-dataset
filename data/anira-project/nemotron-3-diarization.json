@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anira-project/nemotron-3-diarization",
   "slug": "anira-project-nemotron-3-diarization",
   "author": "anira-project",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1277468345,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

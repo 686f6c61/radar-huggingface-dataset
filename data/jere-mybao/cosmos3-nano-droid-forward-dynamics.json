@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jere-mybao/cosmos3-nano-droid-forward-dynamics",
   "slug": "jere-mybao-cosmos3-nano-droid-forward-dynamics",
   "author": "jere-mybao",
@@ -36,14 +36,19 @@
   "parameters_human": "15.17B",
   "storage_bytes": 30346389472,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T06:00:19.636Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-pad-vision-head-view-medium-1000-20261105",
   "slug": "donghyun1228-pi05-libero-pad-vision-head-view-medium-1000-20261105",
   "author": "Donghyun1228",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 15652832867,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

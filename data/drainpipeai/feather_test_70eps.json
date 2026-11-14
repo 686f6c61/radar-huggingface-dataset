@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DrainpipeAI/feather_test_70eps",
   "slug": "drainpipeai-feather_test_70eps",
   "author": "DrainpipeAI",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9388455824,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

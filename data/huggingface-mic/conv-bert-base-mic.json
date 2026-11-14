@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/conv-bert-base-mic",
   "slug": "huggingface-mic-conv-bert-base-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "24.0M",
   "storage_bytes": 191635862,
   "storage_human": "192 MB",
+  "context_length": null,
   "base_model": "YituTech/conv-bert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

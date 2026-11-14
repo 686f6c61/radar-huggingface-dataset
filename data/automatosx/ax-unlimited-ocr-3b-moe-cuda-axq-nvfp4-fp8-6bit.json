@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-FP8-6bit",
   "slug": "automatosx-ax-unlimited-ocr-3b-moe-cuda-axq-nvfp4-fp8-6bit",
   "author": "AutomatosX",
@@ -39,14 +39,19 @@
   "parameters_human": "2.68B",
   "storage_bytes": 3496554136,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T02:59:15.066Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyankiwi/GLM-5.3-AWQ-INT4",
   "slug": "cyankiwi-glm-5-3-awq-int4",
   "author": "cyankiwi",
@@ -37,14 +37,19 @@
   "parameters_human": "151.73B",
   "storage_bytes": 488218251064,
   "storage_human": "488.2 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

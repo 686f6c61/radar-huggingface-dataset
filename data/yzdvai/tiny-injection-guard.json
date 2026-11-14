@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yzdvai/tiny-injection-guard",
   "slug": "yzdvai-tiny-injection-guard",
   "author": "yzdvai",
@@ -43,6 +43,7 @@
   "parameters_human": "13.5M",
   "storage_bytes": 136792947,
   "storage_human": "137 MB",
+  "context_length": null,
   "base_model": "google/electra-small-discriminator",
   "formats": [
     "onnx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

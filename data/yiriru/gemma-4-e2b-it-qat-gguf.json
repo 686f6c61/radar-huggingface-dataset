@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yiriru/gemma-4-E2B-it-qat-GGUF",
   "slug": "yiriru-gemma-4-e2b-it-qat-gguf",
   "author": "Yiriru",
@@ -29,14 +29,19 @@
   "parameters_human": "77.2M",
   "storage_bytes": 14653203712,
   "storage_human": "14.7 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

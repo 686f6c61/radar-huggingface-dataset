@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollinMa/disaster-tweets-bert",
   "slug": "collinma-disaster-tweets-bert",
   "author": "CollinMa",
@@ -37,6 +37,7 @@
   "parameters_human": "109.5M",
   "storage_bytes": 620129977,
   "storage_human": "620 MB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

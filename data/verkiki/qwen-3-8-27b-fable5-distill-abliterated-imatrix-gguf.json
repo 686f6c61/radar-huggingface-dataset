@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "verkiki/Qwen-3.8-27b-Fable5-Distill-Abliterated-Imatrix-GGUF",
   "slug": "verkiki-qwen-3-8-27b-fable5-distill-abliterated-imatrix-gguf",
   "author": "verkiki",
@@ -39,14 +39,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 16266281248,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16, TeichAI/Qwen3.8-27B-Fable-Distill-LoRA",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Verkiki/Qwen3.8-27b-Fable5-Distill-Abliterated-GGUF",
+  "renamed_at": "2026-11-11T07:59:30.369Z",
   "benchmarks": [],
   "sources": [
     {

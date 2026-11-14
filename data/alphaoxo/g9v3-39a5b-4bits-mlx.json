@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlphaOxO/G9v3-39A5B-4bits-mlx",
   "slug": "alphaoxo-g9v3-39a5b-4bits-mlx",
   "author": "AlphaOxO",
@@ -33,6 +33,7 @@
   "parameters_human": "38.97B",
   "storage_bytes": 24437239793,
   "storage_human": "24.4 GB",
+  "context_length": null,
   "base_model": "ai9stars/G9v3-39A5B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

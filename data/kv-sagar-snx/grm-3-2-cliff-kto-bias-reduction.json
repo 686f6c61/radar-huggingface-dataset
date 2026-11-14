@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kv-sagar-snx/GRM-3.2-Cliff-KTO-bias-reduction",
   "slug": "kv-sagar-snx-grm-3-2-cliff-kto-bias-reduction",
   "author": "kv-sagar-snx",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 194658646,
   "storage_human": "195 MB",
+  "context_length": null,
   "base_model": "OrionLLM/GRM-3.2-Cliff",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T06:05:53.046Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

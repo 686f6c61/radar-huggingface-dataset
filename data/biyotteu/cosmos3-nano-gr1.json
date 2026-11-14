@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "biyotteu/cosmos3-nano-gr1",
   "slug": "biyotteu-cosmos3-nano-gr1",
   "author": "biyotteu",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1910321998588,
   "storage_human": "1910.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

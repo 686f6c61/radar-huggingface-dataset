@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Dolphin3.0-Llama3.2-1B-GGUF",
   "slug": "tinyopsec-dolphin3-0-llama3-2-1b-gguf",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 12519387456,
   "storage_human": "12.5 GB",
+  "context_length": 131072,
   "base_model": "dphn/Dolphin3.0-Llama3.2-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

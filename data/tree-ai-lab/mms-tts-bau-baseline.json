@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tree-AI-lab/mms-tts-bau-baseline",
   "slug": "tree-ai-lab-mms-tts-bau-baseline",
   "author": "Tree-AI-lab",
@@ -26,14 +26,19 @@
   "parameters_human": "83.0M",
   "storage_bytes": 332154568,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T07:11:05.043Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

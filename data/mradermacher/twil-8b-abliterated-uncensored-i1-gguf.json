@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/TwIL-8B-Abliterated-Uncensored-i1-GGUF",
   "slug": "mradermacher-twil-8b-abliterated-uncensored-i1-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 101353794144,
   "storage_human": "101.4 GB",
+  "context_length": 131072,
   "base_model": "Guilherme34/TwIL-8B-Abliterated-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

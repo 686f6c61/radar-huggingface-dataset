@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Llama-3.3-70B-Instruct-GGUF",
   "slug": "webmp3-sakura-llama-3-3-70b-instruct-gguf",
   "author": "webmp3",
@@ -35,14 +35,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 42520398880,
   "storage_human": "42.5 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.3-70B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

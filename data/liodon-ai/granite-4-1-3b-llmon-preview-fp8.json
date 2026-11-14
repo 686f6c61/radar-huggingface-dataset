@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/granite-4.1-3b-llmon-preview-FP8",
   "slug": "liodon-ai-granite-4-1-3b-llmon-preview-fp8",
   "author": "liodon-ai",
@@ -34,14 +34,19 @@
   "parameters_human": "3.66B",
   "storage_bytes": 4175830448,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.1-3b-llmon-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

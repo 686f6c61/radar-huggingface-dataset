@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16-GPTQ",
   "slug": "ttimms-kat-coder-v2-5-dev-reap-50-nvfp4a16-gptq",
   "author": "Ttimms",
@@ -46,14 +46,19 @@
   "parameters_human": "18.54B",
   "storage_bytes": 13389376984,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev, Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

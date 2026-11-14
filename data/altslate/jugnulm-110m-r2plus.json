@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "altslate/JugnuLM-110M-R2plus",
   "slug": "altslate-jugnulm-110m-r2plus",
   "author": "altslate",
@@ -40,14 +40,19 @@
   "parameters_human": "109.7M",
   "storage_bytes": 438979888,
   "storage_human": "439 MB",
+  "context_length": null,
   "base_model": "altslate/JugnuLM-110M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

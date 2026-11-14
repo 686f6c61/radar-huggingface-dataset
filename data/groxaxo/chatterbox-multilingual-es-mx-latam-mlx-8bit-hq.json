@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Chatterbox-Multilingual-es-mx-latam-MLX-8bit-HQ",
   "slug": "groxaxo-chatterbox-multilingual-es-mx-latam-mlx-8bit-hq",
   "author": "groxaxo",
@@ -36,6 +36,7 @@
   "parameters_human": "677.7M",
   "storage_bytes": 1511588177,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

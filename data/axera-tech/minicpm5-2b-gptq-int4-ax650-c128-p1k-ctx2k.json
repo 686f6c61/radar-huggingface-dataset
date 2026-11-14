@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AXERA-TECH/MiniCPM5-2B-GPTQ-Int4-AX650-C128-P1K-CTX2K",
   "slug": "axera-tech-minicpm5-2b-gptq-int4-ax650-c128-p1k-ctx2k",
   "author": "AXERA-TECH",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 2240791280,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

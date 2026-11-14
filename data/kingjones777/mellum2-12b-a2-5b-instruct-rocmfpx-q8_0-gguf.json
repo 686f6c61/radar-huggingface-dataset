@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFPX-Q8_0-GGUF",
   "slug": "kingjones777-mellum2-12b-a2-5b-instruct-rocmfpx-q8_0-gguf",
   "author": "kingjones777",
@@ -42,14 +42,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 12560020128,
   "storage_human": "12.6 GB",
+  "context_length": 131072,
   "base_model": "JetBrains/Mellum2-12B-A2.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

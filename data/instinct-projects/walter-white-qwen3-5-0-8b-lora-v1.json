@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "instinct-projects/walter-white-qwen3.5-0.8b-lora-v1",
   "slug": "instinct-projects-walter-white-qwen3-5-0-8b-lora-v1",
   "author": "instinct-projects",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 45576443,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T04:46:51.031Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

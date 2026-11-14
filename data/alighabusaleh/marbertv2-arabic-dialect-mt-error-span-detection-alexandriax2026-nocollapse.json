@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alighabusaleh/marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026-nocollapse",
   "slug": "alighabusaleh-marbertv2-arabic-dialect-mt-error-span-detection-alexandriax2026-nocollapse",
   "author": "alighabusaleh",
@@ -45,6 +45,7 @@
   "parameters_human": "162.3M",
   "storage_bytes": 900499256,
   "storage_human": "900 MB",
+  "context_length": null,
   "base_model": "UBC-NLP/MARBERTv2",
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

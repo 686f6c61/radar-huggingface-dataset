@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheCacheIsALie/Llama-3.1-8B-Instruct-RidgeFill-Projector",
   "slug": "thecacheisalie-llama-3-1-8b-instruct-ridgefill-projector",
   "author": "TheCacheIsALie",
@@ -30,6 +30,7 @@
   "parameters_human": "335.6M",
   "storage_bytes": 3444783576,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

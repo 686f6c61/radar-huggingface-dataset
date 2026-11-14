@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adityapande403/embeddie-coder",
   "slug": "adityapande403-embeddie-coder",
   "author": "Adityapande403",
@@ -49,14 +49,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6260228540,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "osk-arr00/LFM2.5-8B-A1B-ThinkingCap-GGUF",
   "slug": "osk-arr00-lfm2-5-8b-a1b-thinkingcap-gguf",
   "author": "osk-arr00",
@@ -44,14 +44,19 @@
   "parameters_human": "8.47B",
   "storage_bytes": 50705137088,
   "storage_human": "50.7 GB",
+  "context_length": 128000,
   "base_model": "osk-arr00/LFM2.5-8B-A1B-ThinkingCap",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Davd-b01/LFM2.5-8B-A1B-ThinkingCap-GGUF",
+  "renamed_at": "2026-11-11T07:03:41.250Z",
   "benchmarks": [],
   "sources": [
     {

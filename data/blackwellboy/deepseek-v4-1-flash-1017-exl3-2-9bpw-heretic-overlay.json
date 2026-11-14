@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BlackwellBoy/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-heretic-overlay",
   "slug": "blackwellboy-deepseek-v4-1-flash-1017-exl3-2-9bpw-heretic-overlay",
   "author": "BlackwellBoy",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 997172792,
   "storage_human": "997 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "BlackwellBoy/DeepSeek-V4.1-Flash-1017-NIGHTFALL-EXL3-2.9bpw-TP2",
+  "renamed_at": "2026-11-11T02:26:06.671Z",
   "benchmarks": [],
   "sources": [
     {

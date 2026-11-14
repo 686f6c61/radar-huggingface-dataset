@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devendradhakad/autodroid-nvidia-parakeet-tdt-0.6b-v3",
   "slug": "devendradhakad-autodroid-nvidia-parakeet-tdt-0-6b-v3",
   "author": "devendradhakad",
@@ -100,12 +100,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

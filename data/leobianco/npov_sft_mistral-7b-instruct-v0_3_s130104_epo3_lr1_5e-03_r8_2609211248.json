@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8_2609211248",
   "slug": "leobianco-npov_sft_mistral-7b-instruct-v0_3_s130104_epo3_lr1_5e-03_r8_2609211248",
   "author": "leobianco",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 6839977,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

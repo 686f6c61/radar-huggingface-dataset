@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ConwayResearch/woof-textfiller-0.8B-4bit-v2.1",
   "slug": "conwayresearch-woof-textfiller-0-8b-4bit-v2-1",
   "author": "ConwayResearch",
@@ -28,6 +28,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 973312573,
   "storage_human": "973 MB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

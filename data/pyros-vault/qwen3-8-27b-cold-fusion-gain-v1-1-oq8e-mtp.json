@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ8e-mtp",
   "slug": "pyros-vault-qwen3-8-27b-cold-fusion-gain-v1-1-oq8e-mtp",
   "author": "pyros-vault",
@@ -36,6 +36,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30021631259,
   "storage_human": "30.0 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

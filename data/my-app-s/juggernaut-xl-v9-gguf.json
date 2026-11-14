@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "my-app-s/juggernaut-xl-v9-GGUF",
   "slug": "my-app-s-juggernaut-xl-v9-gguf",
   "author": "my-app-s",
@@ -31,14 +31,19 @@
   "parameters_human": "3.47B",
   "storage_bytes": 7313679527,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "RunDiffusion/Juggernaut-XL-v9",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T17:30:28.046Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

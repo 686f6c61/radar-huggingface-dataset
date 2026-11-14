@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "valentimarco/weasel-finetune-it",
   "slug": "valentimarco-weasel-finetune-it",
   "author": "valentimarco",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 250014177,
   "storage_human": "250 MB",
+  "context_length": null,
   "base_model": "Cactus-Compute/whistle",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

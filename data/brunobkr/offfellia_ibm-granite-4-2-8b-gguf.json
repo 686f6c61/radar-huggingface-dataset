@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brunobkr/OFFFELLIA_IBM-Granite-4.2-8b.gguf",
   "slug": "brunobkr-offfellia_ibm-granite-4-2-8b-gguf",
   "author": "Brunobkr",
@@ -58,14 +58,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 32904852767,
   "storage_human": "32.9 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T05:24:47.104Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

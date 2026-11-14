@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishikaa/acquisition_generator_AS_answer_variance_numina_llama8b",
   "slug": "ishikaa-acquisition_generator_as_answer_variance_numina_llama8b",
   "author": "ishikaa",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 32138288576,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T08:08:27.446Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.6-35B-A3B-FSM-qx86-hi-mlx",
   "slug": "nightmedia-qwen3-6-35b-a3b-fsm-qx86-hi-mlx",
   "author": "nightmedia",
@@ -67,6 +67,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 39511115042,
   "storage_human": "39.5 GB",
+  "context_length": null,
   "base_model": "AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1",
   "formats": [
     "mlx",
@@ -74,8 +75,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

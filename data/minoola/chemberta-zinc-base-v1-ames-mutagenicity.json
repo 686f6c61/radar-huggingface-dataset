@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minoola/chemberta-zinc-base-v1-ames-mutagenicity",
   "slug": "minoola-chemberta-zinc-base-v1-ames-mutagenicity",
   "author": "minoola",
@@ -24,14 +24,19 @@
   "parameters_human": "44.1M",
   "storage_bytes": 176439481,
   "storage_human": "176 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

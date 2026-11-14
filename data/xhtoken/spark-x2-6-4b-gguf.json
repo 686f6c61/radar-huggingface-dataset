@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XHToken/Spark-X2.6-4B-GGUF",
   "slug": "xhtoken-spark-x2-6-4b-gguf",
   "author": "XHToken",
@@ -29,21 +29,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 313,
+  "likes": 314,
   "downloads_30d": 743781,
-  "trending_score": 18,
+  "trending_score": 19,
   "parameters": 4447623680,
   "parameters_human": "4.45B",
   "storage_bytes": 19335469699,
   "storage_human": "19.3 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

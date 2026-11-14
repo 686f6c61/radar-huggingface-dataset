@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "iclr2027-7366/DiT-Reward-SD35-Large",
+  "slug": "iclr2027-7366-dit-reward-sd35-large",
+  "author": "iclr2027-7366",
+  "url": "https://huggingface.co/iclr2027-7366/DiT-Reward-SD35-Large",
+  "created_at": "2026-11-14T13:49:59.000Z",
+  "updated_at": "2026-11-14T14:31:24.000Z",
+  "license": "stability-ai-community",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "reward-model",
+    "image-text-scoring",
+    "diffusion-transformer",
+    "en",
+    "base_model:stabilityai/stable-diffusion-3.5-large",
+    "base_model:finetune:stabilityai/stable-diffusion-3.5-large",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8245634788,
+  "parameters_human": "8.25B",
+  "storage_bytes": 16491457688,
+  "storage_human": "16.5 GB",
+  "context_length": null,
+  "base_model": "stabilityai/stable-diffusion-3.5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

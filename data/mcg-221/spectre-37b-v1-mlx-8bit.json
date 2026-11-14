@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "McG-221/Spectre-37B-v1-mlx-8Bit",
   "slug": "mcg-221-spectre-37b-v1-mlx-8bit",
   "author": "McG-221",
@@ -27,6 +27,7 @@
   "parameters_human": "36.55B",
   "storage_bytes": 38873564205,
   "storage_human": "38.9 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Spectre-37B-v1",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

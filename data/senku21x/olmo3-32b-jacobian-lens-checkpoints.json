@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senku21x/olmo3-32b-jacobian-lens-checkpoints",
   "slug": "senku21x-olmo3-32b-jacobian-lens-checkpoints",
   "author": "senku21x",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 33030280010,
   "storage_human": "33.0 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1125-32B, allenai/Olmo-3-32B-Think-SFT, allenai/Olmo-3-32B-Think-DPO, allenai/Olmo-3-32B-Think",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

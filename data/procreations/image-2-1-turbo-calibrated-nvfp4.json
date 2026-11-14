@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/Image-2.1-Turbo-Calibrated-NVFP4",
   "slug": "procreations-image-2-1-turbo-calibrated-nvfp4",
   "author": "ProCreations",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 4982862255,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

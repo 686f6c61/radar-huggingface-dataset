@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vrajnotviraj/laya-intent-router-400m-onnx",
   "slug": "vrajnotviraj-laya-intent-router-400m-onnx",
   "author": "vrajnotviraj",
@@ -62,14 +62,19 @@
   "parameters_human": null,
   "storage_bytes": 704432494,
   "storage_human": "704 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Zero-shot intent routing",

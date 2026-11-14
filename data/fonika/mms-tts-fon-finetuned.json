@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fonika/mms-tts-fon-finetuned",
   "slug": "fonika-mms-tts-fon-finetuned",
   "author": "Fonika",
@@ -27,14 +27,19 @@
   "parameters_human": "36.3M",
   "storage_bytes": 145233656,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T02:54:14.858Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

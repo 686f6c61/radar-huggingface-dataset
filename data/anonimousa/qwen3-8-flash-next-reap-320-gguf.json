@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF",
   "slug": "anonimousa-qwen3-8-flash-next-reap-320-gguf",
   "author": "AnonimousA",
@@ -34,14 +34,19 @@
   "parameters_human": "131.62B",
   "storage_bytes": 130451058816,
   "storage_human": "130.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

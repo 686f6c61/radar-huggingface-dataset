@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shiftedx/Qwen3.5-9B-Qwensploit-CyberSecurity-Attention8-BF16Rec-MLX",
   "slug": "shiftedx-qwen3-5-9b-qwensploit-cybersecurity-attention8-bf16rec-mlx",
   "author": "Shiftedx",
@@ -32,6 +32,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 9353601637,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "xtools-at/Qwen3.5-9B-Qwensploit-CyberSecurity",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

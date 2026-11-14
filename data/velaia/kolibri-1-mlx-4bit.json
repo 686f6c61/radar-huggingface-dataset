@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "velaia/Kolibri-1-MLX-4bit",
   "slug": "velaia-kolibri-1-mlx-4bit",
   "author": "velaia",
@@ -38,6 +38,7 @@
   "parameters_human": "78.10B",
   "storage_bytes": 44332328498,
   "storage_human": "44.3 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

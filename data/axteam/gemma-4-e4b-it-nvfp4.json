@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/gemma-4-E4B-it-NVFP4",
   "slug": "axteam-gemma-4-e4b-it-nvfp4",
   "author": "axteam",
@@ -36,14 +36,19 @@
   "parameters_human": "7.94B",
   "storage_bytes": 20612950258,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

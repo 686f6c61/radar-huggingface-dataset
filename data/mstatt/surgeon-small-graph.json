@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mstatt/surgeon-small-graph",
   "slug": "mstatt-surgeon-small-graph",
   "author": "mstatt",
@@ -25,14 +25,19 @@
   "parameters_human": "166030",
   "storage_bytes": 9678028,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

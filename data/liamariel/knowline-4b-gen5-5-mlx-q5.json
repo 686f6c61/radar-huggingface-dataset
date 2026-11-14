@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Liamariel/knowline-4b-gen5.5-mlx-q5",
   "slug": "liamariel-knowline-4b-gen5-5-mlx-q5",
   "author": "Liamariel",
@@ -28,6 +28,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 2912826868,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "PelaAI/KnowLine-4B-Gen5.5",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

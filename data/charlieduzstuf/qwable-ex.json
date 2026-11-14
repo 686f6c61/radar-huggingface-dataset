@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "charlieduzstuf/Qwable-Ex",
   "slug": "charlieduzstuf-qwable-ex",
   "author": "charlieduzstuf",
@@ -50,14 +50,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18835729187,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, empero-ai/Qwable-9B-Claude-Fable-5, DarkKitsune/Qwen3.5-9B-Qworus-V2, Netuoso/qwepus",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

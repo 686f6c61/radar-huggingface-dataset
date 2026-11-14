@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joe-3/smart-recycle-bin",
   "slug": "joe-3-smart-recycle-bin",
   "author": "Joe-3",
@@ -28,6 +28,7 @@
   "parameters_human": "85.8M",
   "storage_bytes": 1373595049,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dr-housemd/orcarouter-Qwen3.8-27B-Uncensored-exl3-3.07bpw-H4-V6",
   "slug": "dr-housemd-orcarouter-qwen3-8-27b-uncensored-exl3-3-07bpw-h4-v6",
   "author": "dr-housemd",
@@ -50,14 +50,19 @@
   "parameters_human": "6.68B",
   "storage_bytes": 13379919332,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

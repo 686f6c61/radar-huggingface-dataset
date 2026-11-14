@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CortexLM/Teutonic-1-Chat-Preview",
   "slug": "cortexlm-teutonic-1-chat-preview",
   "author": "CortexLM",
@@ -40,14 +40,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 11018015958,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

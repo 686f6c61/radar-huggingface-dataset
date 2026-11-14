@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Marc-HealthAI/Crimson-Flame-6-resNet18-v2.5-updated-hyperparameters",
   "slug": "marc-healthai-crimson-flame-6-resnet18-v2-5-updated-hyperparameters",
   "author": "Marc-HealthAI",
@@ -33,14 +33,19 @@
   "parameters_human": "11.2M",
   "storage_bytes": 55142739,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

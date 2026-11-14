@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wh0am-i/Yolo26m-BrPlate",
   "slug": "wh0am-i-yolo26m-brplate",
   "author": "wh0am-i",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2716565363,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

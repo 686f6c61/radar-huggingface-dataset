@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "syvb/delta-nla-qwen3-8b-ar-warmstart",
   "slug": "syvb-delta-nla-qwen3-8b-ar-warmstart",
   "author": "syvb",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 667170258,
   "storage_human": "667 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

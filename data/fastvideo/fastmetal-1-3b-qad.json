@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FastVideo/FastMetal-1.3B-QAD",
   "slug": "fastvideo-fastmetal-1-3b-qad",
   "author": "FastVideo",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 13399839104,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastWan2.1-T2V-1.3B-Diffusers",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

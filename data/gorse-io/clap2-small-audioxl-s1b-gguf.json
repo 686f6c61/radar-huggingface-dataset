@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gorse-io/clap2-small-audioxl-s1B-GGUF",
   "slug": "gorse-io-clap2-small-audioxl-s1b-gguf",
   "author": "gorse-io",
@@ -32,14 +32,19 @@
   "parameters_human": "103.9M",
   "storage_bytes": 626763072,
   "storage_human": "627 MB",
+  "context_length": null,
   "base_model": "laion/clap2-small-audioxl-s1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nynefold/pplx-embed-v2-late-9b-ONNX",
   "slug": "nynefold-pplx-embed-v2-late-9b-onnx",
   "author": "nynefold",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 37807596608,
   "storage_human": "37.8 GB",
+  "context_length": null,
   "base_model": "perplexity-ai/pplx-embed-v2-late-9b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

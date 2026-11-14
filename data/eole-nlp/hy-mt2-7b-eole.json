@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eole-nlp/Hy-MT2-7B-eole",
   "slug": "eole-nlp-hy-mt2-7b-eole",
   "author": "eole-nlp",
@@ -29,14 +29,19 @@
   "parameters_human": "7.50B",
   "storage_bytes": 15028604049,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "tencent/Hy-MT2-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coder543/granite-speech-5.0-470m-turboctc-coreai",
   "slug": "coder543-granite-speech-5-0-470m-turboctc-coreai",
   "author": "coder543",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 2051463969,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "coder543/granite-speech-5.0-470m-turboctc-glade",
+  "renamed_at": "2026-11-12T05:02:00.187Z",
   "benchmarks": [],
   "sources": [
     {

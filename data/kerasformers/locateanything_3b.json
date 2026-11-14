@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/locateanything_3b",
   "slug": "kerasformers-locateanything_3b",
   "author": "kerasformers",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 7049204691,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "nvidia/LocateAnything-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/locateanything_3b",
+  "renamed_at": "2026-11-12T06:08:32.431Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akal-lm/Akal-Embed-GGUF",
   "slug": "akal-lm-akal-embed-gguf",
   "author": "akal-lm",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 847334,
   "storage_human": "847334 B",
+  "context_length": null,
   "base_model": "LazarusNLP/all-indo-e5-small-v4",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

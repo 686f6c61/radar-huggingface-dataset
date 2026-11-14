@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xixibuxixi/StatePlay-Implicit-NFT-5B-step1252",
   "slug": "xixibuxixi-stateplay-implicit-nft-5b-step1252",
   "author": "xixibuxixi",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 10203872772,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

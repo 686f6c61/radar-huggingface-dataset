@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ml-resources/Kandinsky-S2V-1.0-Lite-distill",
   "slug": "ml-resources-kandinsky-s2v-1-0-lite-distill",
   "author": "ml-resources",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4536808848,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

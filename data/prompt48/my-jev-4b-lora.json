@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prompt48/my-jev-4b-lora",
   "slug": "prompt48-my-jev-4b-lora",
   "author": "Prompt48",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 84993359,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

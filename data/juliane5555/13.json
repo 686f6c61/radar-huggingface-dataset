@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juliane5555/13",
   "slug": "juliane5555-13",
   "author": "juliane5555",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 778469619,
   "storage_human": "778 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zcheng256/OPSD-SDPO-v22-Qwen2.5-7B-checkpoints",
   "slug": "zcheng256-opsd-sdpo-v22-qwen2-5-7b-checkpoints",
   "author": "zcheng256",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 4817184911150,
   "storage_human": "4817.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T08:44:52.714Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

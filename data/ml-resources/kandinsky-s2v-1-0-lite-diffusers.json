@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ml-resources/Kandinsky-S2V-1.0-Lite-Diffusers",
   "slug": "ml-resources-kandinsky-s2v-1-0-lite-diffusers",
   "author": "ml-resources",
@@ -30,6 +30,7 @@
   "parameters_human": "2.27B",
   "storage_bytes": 23889299550,
   "storage_human": "23.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

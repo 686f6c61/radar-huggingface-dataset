@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD",
   "slug": "local-inference-lab-glm-5-3-flash-nvfp4-mxfp8-csf-qad",
   "author": "local-inference-lab",
@@ -37,14 +37,19 @@
   "parameters_human": "174.94B",
   "storage_bytes": 915684075179,
   "storage_human": "915.7 GB",
+  "context_length": null,
   "base_model": "local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

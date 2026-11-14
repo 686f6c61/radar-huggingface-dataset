@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "girenit/girenit-KVKK-Agent-4B",
   "slug": "girenit-girenit-kvkk-agent-4b",
   "author": "girenit",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 143616546,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4",
   "slug": "windowsxp811203-qwen3-8-27b-abliterated-nvfp4",
   "author": "windowsxp811203",
@@ -46,14 +46,19 @@
   "parameters_human": "19.14B",
   "storage_bytes": 28564566464,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": "windowsxp811203/Qwen3.8-27B-Abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

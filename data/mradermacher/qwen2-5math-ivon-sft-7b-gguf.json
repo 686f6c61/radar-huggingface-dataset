@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2.5Math-IVON-SFT-7B-GGUF",
   "slug": "mradermacher-qwen2-5math-ivon-sft-7b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146894592,
   "storage_human": "68.1 GB",
+  "context_length": 4096,
   "base_model": "BayesRL/Qwen2.5Math-IVON-SFT-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

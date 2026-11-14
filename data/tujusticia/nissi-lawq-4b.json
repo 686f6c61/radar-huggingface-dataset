@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tujusticia/nissi-lawq-4b",
   "slug": "tujusticia-nissi-lawq-4b",
   "author": "tujusticia",
@@ -35,14 +35,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817421,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:36:29.227Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

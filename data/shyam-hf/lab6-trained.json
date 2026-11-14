@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shyam-HF/lab6-trained",
   "slug": "shyam-hf-lab6-trained",
   "author": "Shyam-HF",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 803539753,
   "storage_human": "804 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

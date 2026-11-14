@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Trey2016/MiniCPM-Fable-Opus",
   "slug": "trey2016-minicpm-fable-opus",
   "author": "Trey2016",
@@ -25,14 +25,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 688066496,
   "storage_human": "688 MB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShimaRinC/StepX-OPD-SD3.5",
   "slug": "shimarinc-stepx-opd-sd3-5",
   "author": "ShimaRinC",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 2902995096,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-3.5-medium",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

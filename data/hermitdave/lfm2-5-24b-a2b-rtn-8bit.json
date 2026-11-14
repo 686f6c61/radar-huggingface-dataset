@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/LFM2.5-24B-A2B-RTN-8bit",
   "slug": "hermitdave-lfm2-5-24b-a2b-rtn-8bit",
   "author": "hermitdave",
@@ -71,14 +71,19 @@
   "parameters_human": null,
   "storage_bytes": 14912038046,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B-Base",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

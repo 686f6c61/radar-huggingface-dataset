@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cashmere-cat/Qwen3.5-9B-Kazakh-oQ4",
   "slug": "cashmere-cat-qwen3-5-9b-kazakh-oq4",
   "author": "cashmere-cat",
@@ -29,6 +29,7 @@
   "parameters_human": "9.54B",
   "storage_bytes": 11148847634,
   "storage_human": "11.1 GB",
+  "context_length": null,
   "base_model": "issai/Qwen3.5-9B-Kazakh",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kprzyb/PolDense-68M-GGUF",
   "slug": "kprzyb-poldense-68m-gguf",
   "author": "kprzyb",
@@ -35,14 +35,19 @@
   "parameters_human": "68.1M",
   "storage_bytes": 212347712,
   "storage_human": "212 MB",
+  "context_length": 7999,
   "base_model": "OPI-PIB/PolDense-68M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

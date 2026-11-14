@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lgruen-vcgs/palit-screening-classifier",
   "slug": "lgruen-vcgs-palit-screening-classifier",
   "author": "lgruen-vcgs",
@@ -34,14 +34,19 @@
   "parameters_human": "394.8M",
   "storage_bytes": 3158356027,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "thomas-sounack/BioClinical-ModernBERT-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

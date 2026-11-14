@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "urakozz/flint-40B-A2.5B-W4A16-g64-AutoRound-GPTQ",
   "slug": "urakozz-flint-40b-a2-5b-w4a16-g64-autoround-gptq",
   "author": "urakozz",
@@ -39,14 +39,19 @@
   "parameters_human": "6.22B",
   "storage_bytes": 22405756468,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

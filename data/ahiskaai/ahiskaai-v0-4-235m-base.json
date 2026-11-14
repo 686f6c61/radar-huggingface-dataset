@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AhiskaAI/AhiskaAI-v0.4-235M-Base",
   "slug": "ahiskaai-ahiskaai-v0-4-235m-base",
   "author": "AhiskaAI",
@@ -41,14 +41,19 @@
   "parameters_human": "258.9M",
   "storage_bytes": 517839152,
   "storage_human": "518 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TeacherGT-ReverseKL-original10240",
   "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-teachergt-reversekl-original10240",
   "author": "enmingzhangzz",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 161539072,
   "storage_human": "162 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T05:50:12.080Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

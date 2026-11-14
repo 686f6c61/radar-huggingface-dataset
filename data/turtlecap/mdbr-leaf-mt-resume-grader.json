@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "turtlecap/mdbr-leaf-mt-resume-grader",
   "slug": "turtlecap-mdbr-leaf-mt-resume-grader",
   "author": "turtlecap",
@@ -34,6 +34,7 @@
   "parameters_human": "33.4M",
   "storage_bytes": 1014986628,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

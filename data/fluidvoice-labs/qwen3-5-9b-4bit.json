@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidVoice-Labs/Qwen3.5-9B-4bit",
   "slug": "fluidvoice-labs-qwen3-5-9b-4bit",
   "author": "FluidVoice-Labs",
@@ -27,14 +27,19 @@
   "parameters_human": "11.04B",
   "storage_bytes": 6189703332,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

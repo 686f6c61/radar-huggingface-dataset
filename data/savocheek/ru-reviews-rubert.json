@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "savocheek/ru-reviews-rubert",
   "slug": "savocheek-ru-reviews-rubert",
   "author": "savocheek",
@@ -39,6 +39,7 @@
   "parameters_human": "178.3M",
   "storage_bytes": 892419738,
   "storage_human": "892 MB",
+  "context_length": null,
   "base_model": "ai-forever/ruBert-base",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

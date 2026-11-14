@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "starrydark/Kurisu_Qwen3_TTS",
   "slug": "starrydark-kurisu_qwen3_tts",
   "author": "starrydark",
@@ -42,14 +42,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 12193925171,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "starrydark/Makise_Kurisu_Qwen3_TTS",
+  "renamed_at": "2026-11-11T07:37:39.355Z",
   "benchmarks": [],
   "sources": [
     {

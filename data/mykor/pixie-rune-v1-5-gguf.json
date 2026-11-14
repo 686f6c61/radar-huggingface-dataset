@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mykor/PIXIE-Rune-v1.5-GGUF",
   "slug": "mykor-pixie-rune-v1-5-gguf",
   "author": "mykor",
@@ -187,14 +187,19 @@
   "parameters_human": "566.7M",
   "storage_bytes": 7048795136,
   "storage_human": "7.0 GB",
+  "context_length": 8192,
   "base_model": "telepix/PIXIE-Rune-v1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

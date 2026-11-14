@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ATG2026/NanoLLM1-6.5M",
   "slug": "atg2026-nanollm1-6-5m",
   "author": "ATG2026",
@@ -24,14 +24,19 @@
   "parameters_human": "7.9M",
   "storage_bytes": 14682656,
   "storage_human": "15 MB",
+  "context_length": 160,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

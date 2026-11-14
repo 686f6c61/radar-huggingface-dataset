@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xmanii/Mizan-v2-4B",
   "slug": "xmanii-mizan-v2-4b",
   "author": "xmanii",
@@ -46,14 +46,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9163329847,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Nimruz/Mizan-v2-4B",
+  "renamed_at": "2026-11-11T08:07:46.713Z",
   "benchmarks": [],
   "sources": [
     {

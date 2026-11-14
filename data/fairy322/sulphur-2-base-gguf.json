@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fairy322/Sulphur-2-base-GGUF",
   "slug": "fairy322-sulphur-2-base-gguf",
   "author": "fairy322",
@@ -26,14 +26,19 @@
   "parameters_human": "21.01B",
   "storage_bytes": 190959230229,
   "storage_human": "191.0 GB",
+  "context_length": null,
   "base_model": "SulphurAI/Sulphur-2-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

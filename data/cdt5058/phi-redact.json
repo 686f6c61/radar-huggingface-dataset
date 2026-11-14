@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CDT5058/phi-redact",
   "slug": "cdt5058-phi-redact",
   "author": "CDT5058",
@@ -39,6 +39,7 @@
   "parameters_human": "11.1M",
   "storage_bytes": 742789721,
   "storage_human": "743 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ctrimm/phi-redact",
+  "renamed_at": "2026-11-11T02:28:07.181Z",
   "benchmarks": [],
   "sources": [
     {

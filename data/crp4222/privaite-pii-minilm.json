@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crp4222/privaite-pii-minilm",
   "slug": "crp4222-privaite-pii-minilm",
   "author": "crp4222",
@@ -63,6 +63,7 @@
   "parameters_human": "117.5M",
   "storage_bytes": 1310846441,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "microsoft/Multilingual-MiniLM-L12-H384",
   "formats": [
     "onnx",
@@ -70,8 +71,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

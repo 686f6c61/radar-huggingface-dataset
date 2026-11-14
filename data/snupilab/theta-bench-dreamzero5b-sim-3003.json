@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snupilab/theta-bench-dreamzero5b-sim-3003",
   "slug": "snupilab-theta-bench-dreamzero5b-sim-3003",
   "author": "snupilab",
@@ -30,14 +30,19 @@
   "parameters_human": "12.62B",
   "storage_bytes": 50507360018,
   "storage_human": "50.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T05:27:38.540Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

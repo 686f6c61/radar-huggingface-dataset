@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM3-Audio-2B-MLX-bf16",
   "slug": "liquidai-lfm3-audio-2b-mlx-bf16",
   "author": "LiquidAI",
@@ -70,6 +70,7 @@
   "parameters_human": "1.98B",
   "storage_bytes": 4120214051,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Audio-2B",
   "formats": [
     "mlx",
@@ -77,8 +78,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

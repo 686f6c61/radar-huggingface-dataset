@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Matched2k-OffPolicy-SFT-adapter",
   "slug": "lugman-madhiai-lfm2-5-350m-smoldataenvs-matched2k-offpolicy-sft-adapter",
   "author": "lugman-madhiai",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 20073168,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T05:37:13.392Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

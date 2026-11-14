@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optimum-intel-internal-testing/tiny-random-lfm3-omni",
   "slug": "optimum-intel-internal-testing-tiny-random-lfm3-omni",
   "author": "optimum-intel-internal-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "2.9M",
   "storage_bytes": 37220578,
   "storage_human": "37 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

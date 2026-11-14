@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rgjur/gemma-3-270m-gguf",
   "slug": "rgjur-gemma-3-270m-gguf",
   "author": "Rgjur",
@@ -28,14 +28,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 15609776288,
   "storage_human": "15.6 GB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-270m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

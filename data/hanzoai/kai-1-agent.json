@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hanzoai/kai-1-agent",
   "slug": "hanzoai-kai-1-agent",
   "author": "hanzoai",
@@ -40,14 +40,19 @@
   "parameters_human": "421.3M",
   "storage_bytes": 842609220,
   "storage_human": "843 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T03:32:29.131Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

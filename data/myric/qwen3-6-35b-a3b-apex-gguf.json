@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myric/Qwen3.6-35B-A3B-APEX-GGUF",
   "slug": "myric-qwen3-6-35b-a3b-apex-gguf",
   "author": "Myric",
@@ -35,14 +35,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 110711797504,
   "storage_human": "110.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

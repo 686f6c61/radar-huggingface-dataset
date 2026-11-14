@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mans7/LFM3-Audio-2B-wolof-lora",
   "slug": "mans7-lfm3-audio-2b-wolof-lora",
   "author": "mans7",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 300972462,
   "storage_human": "301 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

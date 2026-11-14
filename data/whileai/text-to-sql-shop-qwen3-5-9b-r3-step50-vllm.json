@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whileai/text-to-sql-shop-qwen3.5-9b-r3-step50-vllm",
   "slug": "whileai-text-to-sql-shop-qwen3-5-9b-r3-step50-vllm",
   "author": "whileai",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 116429720,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

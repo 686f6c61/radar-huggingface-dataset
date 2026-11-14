@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "topboss9527/GLM-5.3-Flash-abliterated-EXL3-K3.25",
   "slug": "topboss9527-glm-5-3-flash-abliterated-exl3-k3-25",
   "author": "topboss9527",
@@ -38,14 +38,19 @@
   "parameters_human": "73.09B",
   "storage_bytes": 146267507539,
   "storage_human": "146.3 GB",
+  "context_length": null,
   "base_model": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

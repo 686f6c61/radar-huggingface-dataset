@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/RoboAtom-Anno-9B-GGUF",
   "slug": "prithivmlmods-roboatom-anno-9b-gguf",
   "author": "prithivMLmods",
@@ -38,14 +38,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 69032218592,
   "storage_human": "69.0 GB",
+  "context_length": 262144,
   "base_model": "InternRobotics/RoboAtom",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

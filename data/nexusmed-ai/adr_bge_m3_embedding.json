@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nexusmed-ai/adr_bge_m3_embedding",
   "slug": "nexusmed-ai-adr_bge_m3_embedding",
   "author": "nexusmed-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 2288147509,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

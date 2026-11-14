@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/apiary-7B-A1B-GGUF",
   "slug": "mradermacher-apiary-7b-a1b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "6.85B",
   "storage_bytes": 60424375296,
   "storage_human": "60.4 GB",
+  "context_length": 4096,
   "base_model": "DruidTheGetafix/apiary-7B-A1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

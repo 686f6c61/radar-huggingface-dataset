@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guike8/Kumi-30B-A3B-v1-MLX-LoRA",
   "slug": "guike8-kumi-30b-a3b-v1-mlx-lora",
   "author": "guike8",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 26759782,
   "storage_human": "27 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

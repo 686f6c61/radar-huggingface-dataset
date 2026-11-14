@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/dolphin-2.7-yayi2-30b-GGUF",
+  "slug": "mradermacher-dolphin-2-7-yayi2-30b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/dolphin-2.7-yayi2-30b-GGUF",
+  "created_at": "2025-03-12T03:09:32.000Z",
+  "updated_at": "2026-11-14T14:26:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:dphn/dolphin-2.7-yayi2-30b",
+    "base_model:quantized:dphn/dolphin-2.7-yayi2-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 151,
+  "trending_score": 0,
+  "parameters": 30403365888,
+  "parameters_human": "30.40B",
+  "storage_bytes": 207392822816,
+  "storage_human": "207.4 GB",
+  "context_length": 8192,
+  "base_model": "dphn/dolphin-2.7-yayi2-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

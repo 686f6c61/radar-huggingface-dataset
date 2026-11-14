@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Daemons-Q/qsh-finance-aml-mlp-medium",
   "slug": "daemons-q-qsh-finance-aml-mlp-medium",
   "author": "Daemons-Q",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 8268,
   "storage_human": "8268 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T02:36:25.767Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

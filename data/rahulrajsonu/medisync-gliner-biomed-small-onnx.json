@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rahulrajsonu/medisync-gliner-biomed-small-onnx",
   "slug": "rahulrajsonu-medisync-gliner-biomed-small-onnx",
   "author": "rahulrajsonu",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 611281627,
   "storage_human": "611 MB",
+  "context_length": null,
   "base_model": "Ihor/gliner-biomed-small-v1.0",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

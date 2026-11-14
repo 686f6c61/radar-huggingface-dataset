@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiny-random/muse-spark-open",
   "slug": "tiny-random-muse-spark-open",
   "author": "tiny-random",
@@ -25,14 +25,19 @@
   "parameters_human": "3.6M",
   "storage_bytes": 35297142,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

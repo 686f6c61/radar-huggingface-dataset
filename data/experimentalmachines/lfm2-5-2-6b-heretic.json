@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "experimentalmachines/LFM2.5-2.6B-heretic",
   "slug": "experimentalmachines-lfm2-5-2-6b-heretic",
   "author": "experimentalmachines",
@@ -34,14 +34,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 7227225463,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T05:22:40.810Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

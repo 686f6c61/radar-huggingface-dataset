@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ziyed-trading/marches-extracteur",
   "slug": "ziyed-trading-marches-extracteur",
   "author": "Ziyed-trading",
@@ -24,14 +24,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 5916288512,
   "storage_human": "5.9 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T06:44:55.312Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kay52333/JEV-27B-VL",
   "slug": "kay52333-jev-27b-vl",
   "author": "Kay52333",
@@ -50,14 +50,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 56036709340,
   "storage_human": "56.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

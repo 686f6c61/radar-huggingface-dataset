@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Titlehhhh/captchaocr-ppocrv6",
   "slug": "titlehhhh-captchaocr-ppocrv6",
   "author": "Titlehhhh",
@@ -41,14 +41,19 @@
   "parameters_human": "19.2M",
   "storage_bytes": 230282488,
   "storage_human": "230 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-OCRv6_medium_rec_safetensors",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

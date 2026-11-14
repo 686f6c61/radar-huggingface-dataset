@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "otherwhere1/Behemoth-X-123B-v2-mlx-4Bit",
   "slug": "otherwhere1-behemoth-x-123b-v2-mlx-4bit",
   "author": "otherwhere1",
@@ -27,6 +27,7 @@
   "parameters_human": "122.61B",
   "storage_bytes": 68971525840,
   "storage_human": "69.0 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Behemoth-X-123B-v2",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

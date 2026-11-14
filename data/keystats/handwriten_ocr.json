@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keystats/handwriten_ocr",
   "slug": "keystats-handwriten_ocr",
   "author": "keystats",
@@ -29,14 +29,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 16595836608,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T02:37:14.522Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "169Pi/Alpie_Seed_GGUF",
   "slug": "169pi-alpie_seed_gguf",
   "author": "169Pi",
@@ -39,14 +39,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 16394605451,
   "storage_human": "16.4 GB",
+  "context_length": 262144,
   "base_model": "169Pi/Alpie_seed",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

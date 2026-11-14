@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark",
   "slug": "shinrali-qwen3-8-flash-next-nvidia-hybrid-single-spark",
   "author": "Shinrali",
@@ -39,14 +39,19 @@
   "parameters_human": "118.43B",
   "storage_bytes": 128897880890,
   "storage_human": "128.9 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

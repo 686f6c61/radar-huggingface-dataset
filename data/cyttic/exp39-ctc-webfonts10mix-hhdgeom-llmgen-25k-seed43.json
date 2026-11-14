@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43",
   "slug": "cyttic-exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43",
   "author": "cyttic",
@@ -24,14 +24,19 @@
   "parameters_human": "87.3M",
   "storage_bytes": 349136024,
   "storage_human": "349 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

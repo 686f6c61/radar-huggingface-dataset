@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sophea-Nemo-3.5-Lightning-v1-GGUF",
   "slug": "mradermacher-sophea-nemo-3-5-lightning-v1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 268646308768,
   "storage_human": "268.6 GB",
+  "context_length": 1048576,
   "base_model": "ayoubkirouane/Sophea-Nemo-3.5-Lightning-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

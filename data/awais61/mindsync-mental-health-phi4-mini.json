@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "awais61/mindsync-mental-health-phi4-mini",
   "slug": "awais61-mindsync-mental-health-phi4-mini",
   "author": "awais61",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 5555470455,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

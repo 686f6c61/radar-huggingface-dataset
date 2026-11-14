@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "catplusplus/Qwen3-Omni-30B-A3B-Instruct-NVFP4-talker-safe",
   "slug": "catplusplus-qwen3-omni-30b-a3b-instruct-nvfp4-talker-safe",
   "author": "catplusplus",
@@ -27,14 +27,19 @@
   "parameters_human": "35.26B",
   "storage_bytes": 49702822872,
   "storage_human": "49.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

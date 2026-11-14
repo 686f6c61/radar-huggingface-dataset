@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Localsong/Localsong",
   "slug": "localsong-localsong",
   "author": "Localsong",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 12532641907,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T10:40:58.958Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

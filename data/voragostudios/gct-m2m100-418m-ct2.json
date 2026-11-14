@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoragoStudios/gct-m2m100-418m-ct2",
   "slug": "voragostudios-gct-m2m100-418m-ct2",
   "author": "VoragoStudios",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 493091145,
   "storage_human": "493 MB",
+  "context_length": null,
   "base_model": "facebook/m2m100_418M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LSGHOST/Arx-1.0-Fast",
   "slug": "lsghost-arx-1-0-fast",
   "author": "LSGHOST",
@@ -27,14 +27,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 11921060237,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

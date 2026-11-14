@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhangshuai121/gemma-4-31B-it-fp8",
   "slug": "zhangshuai121-gemma-4-31b-it-fp8",
   "author": "zhangshuai121",
@@ -32,14 +32,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33295408554,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T09:00:29.245Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

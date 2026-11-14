@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GLASSEYE/quill-poetry-v2-gguf",
   "slug": "glasseye-quill-poetry-v2-gguf",
   "author": "GLASSEYE",
@@ -27,14 +27,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 4372815488,
   "storage_human": "4.4 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

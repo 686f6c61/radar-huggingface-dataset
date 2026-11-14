@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rbinrs/Laguna-XS-2.1",
   "slug": "rbinrs-laguna-xs-2-1",
   "author": "rbinrs",
@@ -31,14 +31,19 @@
   "parameters_human": "33.44B",
   "storage_bytes": 66889022016,
   "storage_human": "66.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

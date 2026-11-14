@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Qwen3.5-0.8B-NVFP4-MIXED",
   "slug": "doth4580-qwen3-5-0-8b-nvfp4-mixed",
   "author": "doth4580",
@@ -31,14 +31,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 651657546,
   "storage_human": "652 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

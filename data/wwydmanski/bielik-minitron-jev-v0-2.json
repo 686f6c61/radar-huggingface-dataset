@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wwydmanski/bielik-minitron-jev-v0.2",
   "slug": "wwydmanski-bielik-minitron-jev-v0-2",
   "author": "wwydmanski",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1016761427,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-Minitron-7B-v3.0-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

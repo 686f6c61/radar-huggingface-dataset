@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/SenseNova-U1.5-8B-MoT-pose-bf16",
   "slug": "mlx-community-sensenova-u1-5-8b-mot-pose-bf16",
   "author": "mlx-community",
@@ -33,6 +33,7 @@
   "parameters_human": "17.53B",
   "storage_bytes": 35077326539,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

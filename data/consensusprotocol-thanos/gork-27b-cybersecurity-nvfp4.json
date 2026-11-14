@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ConsensusProtocol-Thanos/Gork-27b-Cybersecurity-NVFP4",
   "slug": "consensusprotocol-thanos-gork-27b-cybersecurity-nvfp4",
   "author": "ConsensusProtocol-Thanos",
@@ -46,14 +46,19 @@
   "parameters_human": "19.83B",
   "storage_bytes": 23782136540,
   "storage_human": "23.8 GB",
+  "context_length": null,
   "base_model": "ConsensusProtocol-Thanos/Gork-27b-Cybersecurity",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

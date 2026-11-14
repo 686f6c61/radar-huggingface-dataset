@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agurung/ncp-iidt15m-b20-s42",
   "slug": "agurung-ncp-iidt15m-b20-s42",
   "author": "agurung",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 2125524229,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

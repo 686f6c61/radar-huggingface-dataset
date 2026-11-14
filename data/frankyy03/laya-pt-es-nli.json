@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frankyy03/laya-pt-es-nli",
   "slug": "frankyy03-laya-pt-es-nli",
   "author": "frankyy03",
@@ -41,14 +41,19 @@
   "parameters_human": "321.9M",
   "storage_bytes": 678198880,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "telepatia-ai/laya-pt-es-nli",
+  "renamed_at": "2026-11-12T05:33:47.211Z",
   "benchmarks": [
     {
       "task": "Three-way natural language inference",

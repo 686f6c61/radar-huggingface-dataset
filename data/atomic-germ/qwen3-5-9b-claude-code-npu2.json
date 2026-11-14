@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3.5-9B-Claude-Code-NPU2",
   "slug": "atomic-germ-qwen3-5-9b-claude-code-npu2",
   "author": "Atomic-Germ",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 64028534958,
   "storage_human": "64.0 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.5-9B-Claude-Opus-4.6-Distill",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

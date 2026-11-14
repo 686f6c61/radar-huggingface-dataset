@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "typhoon-ai/typhoon-ocr2-0.8b",
   "slug": "typhoon-ai-typhoon-ocr2-0-8b",
   "author": "typhoon-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1733087808,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "ATH-MaaS/OvisOCR2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

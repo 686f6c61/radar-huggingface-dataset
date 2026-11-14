@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XingChen-AGI/Xing4.0-29B-A4B",
   "slug": "xingchen-agi-xing4-0-29b-a4b",
   "author": "XingChen-AGI",
@@ -32,14 +32,19 @@
   "parameters_human": "31.22B",
   "storage_bytes": 124864375926,
   "storage_human": "124.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

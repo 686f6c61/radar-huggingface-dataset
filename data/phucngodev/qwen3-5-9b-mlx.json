@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phucngodev/Qwen3.5-9B-MLX",
   "slug": "phucngodev-qwen3-5-9b-mlx",
   "author": "phucngodev",
@@ -41,6 +41,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 5970208899,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

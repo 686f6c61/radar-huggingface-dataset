@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
   "slug": "oktayd-q36-35b-a3b-opus4-7-ablit-heretic-obliteratus-hermes-mtp-vision-ft",
   "author": "oktayd",
@@ -56,14 +56,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 71923767655,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "oktaydu/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
+  "renamed_at": "2026-11-11T06:59:50.231Z",
   "benchmarks": [],
   "sources": [
     {

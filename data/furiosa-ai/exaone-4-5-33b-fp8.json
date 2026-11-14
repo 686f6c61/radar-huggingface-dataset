@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furiosa-ai/EXAONE-4.5-33B-FP8",
   "slug": "furiosa-ai-exaone-4-5-33b-fp8",
   "author": "furiosa-ai",
@@ -47,14 +47,19 @@
   "parameters_human": "34.35B",
   "storage_bytes": 69020558778,
   "storage_human": "69.0 GB",
+  "context_length": null,
   "base_model": "LGAI-EXAONE/EXAONE-4.5-33B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

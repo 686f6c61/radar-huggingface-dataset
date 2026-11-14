@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grafon-g2p/he",
   "slug": "grafon-g2p-he",
   "author": "grafon-g2p",
@@ -33,14 +33,19 @@
   "parameters_human": "398.0M",
   "storage_bytes": 796041172,
   "storage_human": "796 MB",
+  "context_length": null,
   "base_model": "dicta-il/neodictabert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/nib-4b-preview-NVFP4",
   "slug": "procreations-nib-4b-preview-nvfp4",
   "author": "ProCreations",
@@ -41,14 +41,19 @@
   "parameters_human": "3.81B",
   "storage_bytes": 5025597702,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "ProCreations/nib-4b-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

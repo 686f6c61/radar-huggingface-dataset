@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MEDHEB/MedEmb-8B",
   "slug": "medheb-medemb-8b",
   "author": "MEDHEB",
@@ -36,14 +36,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545763193,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

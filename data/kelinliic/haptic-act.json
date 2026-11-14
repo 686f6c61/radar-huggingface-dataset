@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KelinLiIC/Haptic-ACT",
   "slug": "kelinliic-haptic-act",
   "author": "KelinLiIC",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 6470391632,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T03:01:14.794Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

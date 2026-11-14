@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Codemaster67/Olmo_10M_tok_pubchem_fineweb",
   "slug": "codemaster67-olmo_10m_tok_pubchem_fineweb",
   "author": "Codemaster67",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 192967968,
   "storage_human": "193 MB",
+  "context_length": null,
   "base_model": "allenai/OLMo-1B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

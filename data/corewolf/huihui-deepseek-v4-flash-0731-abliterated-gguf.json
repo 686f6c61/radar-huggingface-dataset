@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CoreWolf/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF",
   "slug": "corewolf-huihui-deepseek-v4-flash-0731-abliterated-gguf",
   "author": "CoreWolf",
@@ -48,14 +48,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 172262847776,
   "storage_human": "172.3 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

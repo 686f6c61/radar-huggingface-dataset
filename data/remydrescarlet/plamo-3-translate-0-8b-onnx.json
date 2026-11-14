@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RemydreScarlet/plamo-3-translate-0.8b-onnx",
   "slug": "remydrescarlet-plamo-3-translate-0-8b-onnx",
   "author": "RemydreScarlet",
@@ -135,14 +135,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "pfnet/plamo-3-translate-0.8b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

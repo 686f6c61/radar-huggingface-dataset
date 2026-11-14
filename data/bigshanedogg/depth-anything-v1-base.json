@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigshanedogg/Depth-Anything-V1-Base",
   "slug": "bigshanedogg-depth-anything-v1-base",
   "author": "bigshanedogg",
@@ -31,14 +31,19 @@
   "parameters_human": "97.5M",
   "storage_bytes": 389908700,
   "storage_human": "390 MB",
+  "context_length": null,
   "base_model": "LiheYoung/depth_anything_vitb14",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

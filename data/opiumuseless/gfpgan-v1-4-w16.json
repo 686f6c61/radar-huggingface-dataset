@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "opiumuseless/gfpgan-v1.4-w16",
   "slug": "opiumuseless-gfpgan-v1-4-w16",
   "author": "opiumuseless",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 170289207,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

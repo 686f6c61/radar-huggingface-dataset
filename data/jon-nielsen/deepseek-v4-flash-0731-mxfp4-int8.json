@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jon-Nielsen/DeepSeek-V4-Flash-0731-MXFP4-INT8",
   "slug": "jon-nielsen-deepseek-v4-flash-0731-mxfp4-int8",
   "author": "Jon-Nielsen",
@@ -52,14 +52,19 @@
   "parameters_human": "159.18B",
   "storage_bytes": 174788678680,
   "storage_human": "174.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

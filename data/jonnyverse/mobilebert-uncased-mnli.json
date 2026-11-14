@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JONNYVERSE/mobilebert-uncased-mnli",
   "slug": "jonnyverse-mobilebert-uncased-mnli",
   "author": "JONNYVERSE",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 310399245,
   "storage_human": "310 MB",
+  "context_length": null,
   "base_model": "typeform/mobilebert-uncased-mnli",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

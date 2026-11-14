@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fatdove/so101-cube-bowl_GR00T17",
   "slug": "fatdove-so101-cube-bowl_gr00t17",
   "author": "fatdove",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576219216,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

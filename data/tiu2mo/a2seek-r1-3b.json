@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiu2mo/A2Seek-R1-3B",
   "slug": "tiu2mo-a2seek-r1-3b",
   "author": "tiu2mo",
@@ -27,14 +27,19 @@
   "parameters_human": "3.75B",
   "storage_bytes": 7521298680,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

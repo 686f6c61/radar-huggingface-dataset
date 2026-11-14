@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mirrchang/wallpad-1b-v9-lora",
   "slug": "mirrchang-wallpad-1b-v9-lora",
   "author": "mirrchang",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1641127180,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

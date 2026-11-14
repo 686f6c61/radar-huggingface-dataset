@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jfan/Qwen3.8-27B-heretic-dflash2",
   "slug": "jfan-qwen3-8-27b-heretic-dflash2",
   "author": "jfan",
@@ -41,6 +41,7 @@
   "parameters_human": "1.92B",
   "storage_bytes": 38488178960,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.8-27B-DFlash2",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

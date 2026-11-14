@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khtsly/Nalu-2.0-Base",
   "slug": "khtsly-nalu-2-0-base",
   "author": "khtsly",
@@ -34,14 +34,19 @@
   "parameters_human": "337.7M",
   "storage_bytes": 676992463,
   "storage_human": "677 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

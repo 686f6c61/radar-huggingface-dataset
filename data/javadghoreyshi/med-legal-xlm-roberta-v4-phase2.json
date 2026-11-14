@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JavadGhoreyshi/med-legal-xlm-roberta-v4-phase2",
   "slug": "javadghoreyshi-med-legal-xlm-roberta-v4-phase2",
   "author": "JavadGhoreyshi",
@@ -27,14 +27,19 @@
   "parameters_human": "279.8M",
   "storage_bytes": 1136803257,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T02:40:05.142Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

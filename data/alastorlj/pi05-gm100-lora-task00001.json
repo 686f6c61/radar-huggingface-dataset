@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alastorlj/pi05-gm100-lora-task00001",
   "slug": "alastorlj-pi05-gm100-lora-task00001",
   "author": "Alastorlj",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 40839884,
   "storage_human": "41 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

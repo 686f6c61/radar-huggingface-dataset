@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-ai/magpie_tts_multilingual_357m",
   "slug": "infinix-ai-magpie_tts_multilingual_357m",
   "author": "Infinix-ai",
@@ -75,14 +75,19 @@
   "parameters_human": "284.2M",
   "storage_bytes": 2370743254,
   "storage_human": "2.4 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

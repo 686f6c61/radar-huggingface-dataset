@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "birgermoell/oellm-9b-256k-stage5-w2-rl-step160",
   "slug": "birgermoell-oellm-9b-256k-stage5-w2-rl-step160",
   "author": "birgermoell",
@@ -101,14 +101,19 @@
   "parameters_human": "9.10B",
   "storage_bytes": 18242115690,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "openeurollm/oellm-9b-256k-theta64m-prelude-anneal300b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

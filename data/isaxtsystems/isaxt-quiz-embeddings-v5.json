@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isaxtsystems/isaxt-quiz-embeddings-v5",
   "slug": "isaxtsystems-isaxt-quiz-embeddings-v5",
   "author": "isaxtsystems",
@@ -40,6 +40,7 @@
   "parameters_human": "4.4M",
   "storage_bytes": 39980264,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": "prajjwal1/bert-tiny",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

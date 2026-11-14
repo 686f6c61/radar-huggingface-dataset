@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM3-Omni-2B-ONNX",
   "slug": "liquidai-lfm3-omni-2b-onnx",
   "author": "LiquidAI",
@@ -78,14 +78,19 @@
   "parameters_human": null,
   "storage_bytes": 21075873419,
   "storage_human": "21.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

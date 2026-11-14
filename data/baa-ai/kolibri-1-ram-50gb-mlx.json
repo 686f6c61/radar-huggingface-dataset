@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baa-ai/Kolibri-1-RAM-50GB-MLX",
   "slug": "baa-ai-kolibri-1-ram-50gb-mlx",
   "author": "baa-ai",
@@ -42,6 +42,7 @@
   "parameters_human": "78.10B",
   "storage_bytes": 49940376607,
   "storage_human": "49.9 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1-BF16",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

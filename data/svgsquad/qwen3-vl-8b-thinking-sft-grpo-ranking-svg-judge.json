@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SVGsquad/qwen3-vl-8b-thinking-sft-grpo-ranking-svg-judge",
   "slug": "svgsquad-qwen3-vl-8b-thinking-sft-grpo-ranking-svg-judge",
   "author": "SVGsquad",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 360682727,
   "storage_human": "361 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:28:13.282Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

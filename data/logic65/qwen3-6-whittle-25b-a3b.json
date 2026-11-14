@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logic65/Qwen3.6-Whittle-25B-A3B",
   "slug": "logic65-qwen3-6-whittle-25b-a3b",
   "author": "logic65",
@@ -36,6 +36,7 @@
   "parameters_human": "25.09B",
   "storage_bytes": 175259352777,
   "storage_human": "175.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

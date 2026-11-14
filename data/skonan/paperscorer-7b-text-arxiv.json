@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skonan/PaperScorer-7B-Text-arXiv",
   "slug": "skonan-paperscorer-7b-text-arxiv",
   "author": "skonan",
@@ -34,14 +34,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 30473933201,
   "storage_human": "30.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

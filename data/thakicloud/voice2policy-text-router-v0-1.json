@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Voice2Policy-Text-Router-v0.1",
   "slug": "thakicloud-voice2policy-text-router-v0-1",
   "author": "ThakiCloud",
@@ -35,14 +35,19 @@
   "parameters_human": "104603",
   "storage_bytes": 837216,
   "storage_human": "837216 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

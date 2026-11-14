@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GGUF",
   "slug": "unsloth-nvidia-nemotron-3-5-super-vl-120b-a12b-gguf",
   "author": "unsloth",
@@ -47,14 +47,19 @@
   "parameters_human": "1.63B",
   "storage_bytes": 867362886234,
   "storage_human": "867.4 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-MTP-16GB-VRAM-GGUF",
   "slug": "bucoid-qwen3-8-27b-heretic-ara-iq4-xs-mtp-16gb-vram-gguf",
   "author": "Bucoid",
@@ -28,14 +28,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 55729680800,
   "storage_human": "55.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Bucoid/Qwen3.8-27B-Heretic-Ara-16GB-VRAM-IQ4-XS-MTP-GGUF",
+  "renamed_at": "2026-11-11T02:27:21.038Z",
   "benchmarks": [],
   "sources": [
     {

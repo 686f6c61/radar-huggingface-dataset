@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prayasabhinav/rai",
   "slug": "prayasabhinav-rai",
   "author": "prayasabhinav",
@@ -40,14 +40,19 @@
   "parameters_human": "33.2M",
   "storage_bytes": 797248944,
   "storage_human": "797 MB",
+  "context_length": null,
   "base_model": "deepset/minilm-uncased-squad2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

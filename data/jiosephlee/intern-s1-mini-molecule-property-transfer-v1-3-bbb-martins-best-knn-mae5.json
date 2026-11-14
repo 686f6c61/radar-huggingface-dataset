@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiosephlee/intern-s1-mini-molecule-property-transfer-v1.3-bbb-martins-best-knn-mae5",
   "slug": "jiosephlee-intern-s1-mini-molecule-property-transfer-v1-3-bbb-martins-best-knn-mae5",
   "author": "jiosephlee",
@@ -26,14 +26,19 @@
   "parameters_human": "8.20B",
   "storage_bytes": 16402497533,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

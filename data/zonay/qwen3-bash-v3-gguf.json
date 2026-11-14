@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zonay/qwen3-bash-v3-GGUF",
   "slug": "zonay-qwen3-bash-v3-gguf",
   "author": "zonay",
@@ -35,14 +35,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 396704544,
   "storage_human": "397 MB",
+  "context_length": 40960,
   "base_model": "zonay/qwen3-bash-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

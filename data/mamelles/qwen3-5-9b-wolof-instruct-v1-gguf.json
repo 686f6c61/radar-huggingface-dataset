@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamelles/Qwen3.5-9B-Wolof-Instruct-v1-GGUF",
   "slug": "mamelles-qwen3-5-9b-wolof-instruct-v1-gguf",
   "author": "mamelles",
@@ -31,14 +31,19 @@
   "parameters_human": "8.98B",
   "storage_bytes": 45097759072,
   "storage_human": "45.1 GB",
+  "context_length": 262144,
   "base_model": "Tonic/Qwen3.5-9B-Wolof-Instruct-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

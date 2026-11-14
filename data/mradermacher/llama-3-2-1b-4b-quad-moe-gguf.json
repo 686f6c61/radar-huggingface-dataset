@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llama-3.2-1B-4B-Quad-MoE-GGUF",
   "slug": "mradermacher-llama-3-2-1b-4b-quad-moe-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "3.65B",
   "storage_bytes": 32809595264,
   "storage_human": "32.8 GB",
+  "context_length": 131072,
   "base_model": "Fu01978/Llama-3.2-1B-4B-Quad-MoE",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

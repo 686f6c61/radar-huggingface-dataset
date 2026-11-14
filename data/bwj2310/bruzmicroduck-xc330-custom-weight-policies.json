@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BWJ2310/bruzmicroduck-xc330-custom-weight-policies",
   "slug": "bwj2310-bruzmicroduck-xc330-custom-weight-policies",
   "author": "BWJ2310",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 9559070,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/Mistral-Small-3.2-24B-Instruct-2506-DiM-heretic-GGUF",
   "slug": "richardyoung-mistral-small-3-2-24b-instruct-2506-dim-heretic-gguf",
   "author": "richardyoung",
@@ -38,14 +38,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 39408800480,
   "storage_human": "39.4 GB",
+  "context_length": 131072,
   "base_model": "richardyoung/Mistral-Small-3.2-24B-Instruct-2506-DiM-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

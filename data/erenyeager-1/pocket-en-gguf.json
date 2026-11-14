@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erenyeager-1/POCKET-EN-GGUF",
   "slug": "erenyeager-1-pocket-en-gguf",
   "author": "erenyeager-1",
@@ -44,14 +44,19 @@
   "parameters_human": "22.57B",
   "storage_bytes": 12153329696,
   "storage_human": "12.2 GB",
+  "context_length": 262144,
   "base_model": "FINAL-Bench/Darwin-36B-Opus",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

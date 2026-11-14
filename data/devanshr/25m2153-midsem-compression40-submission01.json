@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevanshR/25M2153-Midsem-Compression40-Submission01",
   "slug": "devanshr-25m2153-midsem-compression40-submission01",
   "author": "DevanshR",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 3370134552,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

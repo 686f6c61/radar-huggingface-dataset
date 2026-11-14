@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiRAI-4B-GGUF",
   "slug": "mradermacher-mirai-4b-gguf",
   "author": "mradermacher",
@@ -46,14 +46,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 36390005760,
   "storage_human": "36.4 GB",
+  "context_length": 40960,
   "base_model": "K-Ai-Official/MiRAI-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

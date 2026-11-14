@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netprojects/Cosmos3-Edge-mlx-6bit",
   "slug": "netprojects-cosmos3-edge-mlx-6bit",
   "author": "netprojects",
@@ -33,6 +33,7 @@
   "parameters_human": "2.44B",
   "storage_bytes": 2577375892,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

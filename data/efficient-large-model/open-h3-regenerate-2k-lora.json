@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efficient-Large-Model/Open-H3-Regenerate-2K-LoRA",
   "slug": "efficient-large-model-open-h3-regenerate-2k-lora",
   "author": "Efficient-Large-Model",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 8301660712,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

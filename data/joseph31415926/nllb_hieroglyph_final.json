@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joseph31415926/nllb_hieroglyph_final",
   "slug": "joseph31415926-nllb_hieroglyph_final",
   "author": "Joseph31415926",
@@ -25,14 +25,19 @@
   "parameters_human": "630.6M",
   "storage_bytes": 348221628992,
   "storage_human": "348.2 GB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-distilled-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

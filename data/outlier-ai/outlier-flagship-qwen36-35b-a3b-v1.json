@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1",
   "slug": "outlier-ai-outlier-flagship-qwen36-35b-a3b-v1",
   "author": "Outlier-Ai",
@@ -36,14 +36,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 349442455869,
   "storage_human": "349.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

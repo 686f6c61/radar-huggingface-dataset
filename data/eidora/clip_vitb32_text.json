@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EIDORA/CLIP_ViTB32_Text",
   "slug": "eidora-clip_vitb32_text",
   "author": "EIDORA",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 253945804,
   "storage_human": "254 MB",
+  "context_length": null,
   "base_model": "openai/clip-vit-base-patch32",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T02:26:27.644Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

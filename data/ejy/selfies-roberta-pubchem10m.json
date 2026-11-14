@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ejy/SELFIES-RoBERTa-PubChem10M",
   "slug": "ejy-selfies-roberta-pubchem10m",
   "author": "ejy",
@@ -28,14 +28,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 876216465,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yypeng666/metamdp-pi05-franka-moving_ball-l1-clean-50hz-h50-full-sft-v1",
   "slug": "yypeng666-metamdp-pi05-franka-moving_ball-l1-clean-50hz-h50-full-sft-v1",
   "author": "yypeng666",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 134182043734,
   "storage_human": "134.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T07:41:29.661Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

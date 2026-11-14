@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompiwerAI/Mtrini-27B-Tellus-Adapter",
   "slug": "compiwerai-mtrini-27b-tellus-adapter",
   "author": "CompiwerAI",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 338831222,
   "storage_human": "339 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

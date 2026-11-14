@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shockem/Qwen3.8-27b-Terse-Coder",
   "slug": "shockem-qwen3-8-27b-terse-coder",
   "author": "Shockem",
@@ -30,14 +30,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 110289420672,
   "storage_human": "110.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

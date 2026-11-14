@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "corners-ai/CoCo-Decision-Vision-0.8B",
   "slug": "corners-ai-coco-decision-vision-0-8b",
   "author": "corners-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1737001772,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-lite",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T05:29:34.896Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

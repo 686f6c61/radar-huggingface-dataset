@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Codemaster67/Olmo_1M_tok_unichem_fineweb",
   "slug": "codemaster67-olmo_1m_tok_unichem_fineweb",
   "author": "Codemaster67",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 385935936,
   "storage_human": "386 MB",
+  "context_length": null,
   "base_model": "allenai/OLMo-1B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

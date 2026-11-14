@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchiveStudio/GLM-5.3-Flash",
   "slug": "archivestudio-glm-5-3-flash",
   "author": "ArchiveStudio",
@@ -36,14 +36,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 328357673114,
   "storage_human": "328.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:26:16.668Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

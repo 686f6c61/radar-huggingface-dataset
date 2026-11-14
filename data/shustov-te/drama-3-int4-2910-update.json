@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shustov-te/drama-3-int4-2910-update",
   "slug": "shustov-te-drama-3-int4-2910-update",
   "author": "shustov-te",
@@ -199,14 +199,19 @@
   "parameters_human": "6.86B",
   "storage_bytes": 23992706574,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

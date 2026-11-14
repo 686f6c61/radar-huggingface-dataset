@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BAAI/Recon2Reason-Reasoning-4B",
   "slug": "baai-recon2reason-reasoning-4b",
   "author": "BAAI",
@@ -37,14 +37,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 8887142911,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

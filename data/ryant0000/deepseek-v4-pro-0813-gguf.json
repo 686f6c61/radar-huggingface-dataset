@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ryant0000/DeepSeek-V4-Pro-0813-gguf",
   "slug": "ryant0000-deepseek-v4-pro-0813-gguf",
   "author": "ryant0000",
@@ -28,14 +28,19 @@
   "parameters_human": "1573.00B",
   "storage_bytes": 3956080603264,
   "storage_human": "3956.1 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

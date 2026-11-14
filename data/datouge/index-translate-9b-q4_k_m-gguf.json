@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "datouge/Index-Translate-9B-Q4_K_M-GGUF",
   "slug": "datouge-index-translate-9b-q4_k_m-gguf",
   "author": "datouge",
@@ -31,14 +31,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 5780090304,
   "storage_human": "5.8 GB",
+  "context_length": 262144,
   "base_model": "IndexTeam/Index-Translate-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

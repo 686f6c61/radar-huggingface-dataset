@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e-fp16",
   "slug": "johneeee-qwen3-6-27b-fable-fusion-711-uncensored-heretic-nm-dau-oq5e-fp16",
   "author": "Johneeee",
@@ -29,6 +29,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 19184489007,
   "storage_human": "19.2 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP, DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e-fp16-novision",
+  "renamed_at": "2026-11-13T03:13:04.669Z",
   "benchmarks": [],
   "sources": [
     {

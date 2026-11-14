@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theoracleguy/VoxCPM2-8bit",
   "slug": "theoracleguy-voxcpm2-8bit",
   "author": "theoracleguy",
@@ -45,6 +45,7 @@
   "parameters_human": "2.38B",
   "storage_bytes": 6196522751,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/kdyck_5pct_100M_computematched_muonppt_1e18_s2_2026-09-14_15-02-57_065171-pt",
   "slug": "alexkstern-kdyck_5pct_100m_computematched_muonppt_1e18_s2_2026-09-14_15-02-57_065171-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 4891726585,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:24:22.868Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

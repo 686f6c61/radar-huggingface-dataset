@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vluzhang/r16-uid195-kingbear329-sn38-r16-c12-step687-alpha05",
   "slug": "vluzhang-r16-uid195-kingbear329-sn38-r16-c12-step687-alpha05",
   "author": "vluzhang",
@@ -28,14 +28,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 4037045836,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pkcpkc/strands-decider-2B-qwen3.5-v1-2610-mlx",
   "slug": "pkcpkc-strands-decider-2b-qwen3-5-v1-2610-mlx",
   "author": "pkcpkc",
@@ -84,6 +84,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 3796287833,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610, Qwen/Qwen3.5-2B-Base",
   "formats": [
     "mlx",
@@ -91,8 +92,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dodgeqtr/jojo-sovereign-trained",
   "slug": "dodgeqtr-jojo-sovereign-trained",
   "author": "dodgeqtr",
@@ -27,14 +27,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 8077509632,
   "storage_human": "8.1 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T03:08:40.476Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

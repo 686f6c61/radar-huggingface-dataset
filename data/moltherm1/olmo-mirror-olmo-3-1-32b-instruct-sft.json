@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moltherm1/olmo-mirror-olmo-3.1-32b-instruct-sft",
   "slug": "moltherm1-olmo-mirror-olmo-3-1-32b-instruct-sft",
   "author": "moltherm1",
@@ -31,14 +31,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 128934171528,
   "storage_human": "128.9 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1125-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

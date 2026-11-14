@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/LFM2.5-230M-tools-FP8",
   "slug": "iromu-lfm2-5-230m-tools-fp8",
   "author": "iromu",
@@ -42,14 +42,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 297429784,
   "storage_human": "297 MB",
+  "context_length": null,
   "base_model": "iromu/LFM2.5-230M-tools",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

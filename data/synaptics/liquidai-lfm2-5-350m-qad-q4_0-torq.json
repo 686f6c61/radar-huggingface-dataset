@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Synaptics/LiquidAI-LFM2.5-350M-QAD-Q4_0-torq",
   "slug": "synaptics-liquidai-lfm2-5-350m-qad-q4_0-torq",
   "author": "Synaptics",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 727029015,
   "storage_human": "727 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M-GGUF",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

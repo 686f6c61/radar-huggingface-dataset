@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SpiritKing/VISION-Ornith-1.5-9B-GGUF",
   "slug": "spiritking-vision-ornith-1-5-9b-gguf",
   "author": "SpiritKing",
@@ -34,14 +34,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 11258217216,
   "storage_human": "11.3 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

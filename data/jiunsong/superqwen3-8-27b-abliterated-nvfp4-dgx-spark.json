@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark",
   "slug": "jiunsong-superqwen3-8-27b-abliterated-nvfp4-dgx-spark",
   "author": "Jiunsong",
@@ -54,14 +54,19 @@
   "parameters_human": "16.70B",
   "storage_bytes": 41138546477,
   "storage_human": "41.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elplaguister/patent_classifier_en_nemotron",
   "slug": "elplaguister-patent_classifier_en_nemotron",
   "author": "elplaguister",
@@ -35,14 +35,19 @@
   "parameters_human": "1.14B",
   "storage_bytes": 2298930429,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Embed-1B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

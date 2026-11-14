@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElytronAI/DeepSeek-v4-Flash-IQ2",
   "slug": "elytronai-deepseek-v4-flash-iq2",
   "author": "ElytronAI",
@@ -35,14 +35,19 @@
   "parameters_human": "90.18B",
   "storage_bytes": 92230518599,
   "storage_human": "92.2 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LatentAILabs/sankalpa-intent-hinglish",
   "slug": "latentailabs-sankalpa-intent-hinglish",
   "author": "LatentAILabs",
@@ -48,14 +48,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 1137274913,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Intent (60 MASSIVE intents)",

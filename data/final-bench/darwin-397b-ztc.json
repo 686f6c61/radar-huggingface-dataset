@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FINAL-Bench/Darwin-397B-ZTC",
   "slug": "final-bench-darwin-397b-ztc",
   "author": "FINAL-Bench",
@@ -97,14 +97,19 @@
   "parameters_human": "403.59B",
   "storage_bytes": 418691974390,
   "storage_human": "418.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Graduate-Level Reasoning",

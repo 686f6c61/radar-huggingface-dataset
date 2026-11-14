@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malikithecat/smollm2-360m-coder-v1-Q8_0-GGUF",
   "slug": "malikithecat-smollm2-360m-coder-v1-q8_0-gguf",
   "author": "malikithecat",
@@ -30,14 +30,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 386404608,
   "storage_human": "386 MB",
+  "context_length": 8192,
   "base_model": "malikithecat/smollm2-360m-coder-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

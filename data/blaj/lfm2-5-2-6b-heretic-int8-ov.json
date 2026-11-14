@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/LFM2.5-2.6B-heretic-int8-ov",
   "slug": "blaj-lfm2-5-2-6b-heretic-int8-ov",
   "author": "blaj",
@@ -68,12 +68,17 @@
   "parameters_human": null,
   "storage_bytes": 2729213802,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "heretic-org/LFM-2.5-2.6B-heretic, LiquidAI/LFM2.5-2.6B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/granite-3.1-3b-a800m-t1-GGUF",
   "slug": "mradermacher-granite-3-1-3b-a800m-t1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "3.30B",
   "storage_bytes": 29242124512,
   "storage_human": "29.2 GB",
+  "context_length": 131072,
   "base_model": "win10/granite-3.1-3b-a800m-t1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

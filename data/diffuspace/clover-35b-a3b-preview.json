@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Diffuspace/Clover-35B-A3B-Preview",
   "slug": "diffuspace-clover-35b-a3b-preview",
   "author": "Diffuspace",
@@ -29,19 +29,24 @@
   ],
   "likes": 272,
   "downloads_30d": 5387,
-  "trending_score": 18,
+  "trending_score": 17,
   "parameters": 34661350848,
   "parameters_human": "34.66B",
   "storage_bytes": 69342784805,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

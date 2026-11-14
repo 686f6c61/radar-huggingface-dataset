@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
   "slug": "guilherme34-firefly-v6-dontdownload-stillonprogress",
   "author": "Guilherme34",
@@ -36,14 +36,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 10241021608,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "Guilherme34/Firefly-v5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MagicLuke/duplex-refusal",
   "slug": "magicluke-duplex-refusal",
   "author": "MagicLuke",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 24824491392,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": "nvidia/personaplex-7b-v1",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

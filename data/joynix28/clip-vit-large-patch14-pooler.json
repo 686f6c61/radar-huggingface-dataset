@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joynix28/clip-vit-large-patch14-pooler",
   "slug": "joynix28-clip-vit-large-patch14-pooler",
   "author": "joynix28",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 307001630,
   "storage_human": "307 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

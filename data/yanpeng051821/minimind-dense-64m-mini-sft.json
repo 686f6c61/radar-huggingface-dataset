@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yanpeng051821/minimind-dense-64m-mini-sft",
   "slug": "yanpeng051821-minimind-dense-64m-mini-sft",
   "author": "yanpeng051821",
@@ -34,14 +34,19 @@
   "parameters_human": "63.9M",
   "storage_bytes": 255659304,
   "storage_human": "256 MB",
+  "context_length": null,
   "base_model": "yanpeng051821/minimind-dense-64m-mini-pretrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

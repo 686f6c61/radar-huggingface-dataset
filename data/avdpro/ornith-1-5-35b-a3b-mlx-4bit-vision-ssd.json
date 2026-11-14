@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision-SSD",
   "slug": "avdpro-ornith-1-5-35b-a3b-mlx-4bit-vision-ssd",
   "author": "Avdpro",
@@ -26,6 +26,7 @@
   "parameters_human": "2.45B",
   "storage_bytes": 20422303053,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

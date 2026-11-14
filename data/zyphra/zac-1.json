@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zyphra/ZAC-1",
   "slug": "zyphra-zac-1",
   "author": "Zyphra",
@@ -29,14 +29,19 @@
   "parameters_human": "1.06B",
   "storage_bytes": 17690860904,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

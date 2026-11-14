@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dotproductx/breadbowl-embed-v1.2-preview",
   "slug": "dotproductx-breadbowl-embed-v1-2-preview",
   "author": "dotproductx",
@@ -30,14 +30,19 @@
   "parameters_human": "856.0M",
   "storage_bytes": 1739312087,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/MiniCPM5-2B-heretic-abliterated-GGUF",
   "slug": "abiray-minicpm5-2b-heretic-abliterated-gguf",
   "author": "Abiray",
@@ -40,14 +40,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 10909230528,
   "storage_human": "10.9 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

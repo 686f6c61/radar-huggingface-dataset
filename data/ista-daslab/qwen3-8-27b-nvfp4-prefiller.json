@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller",
   "slug": "ista-daslab-qwen3-8-27b-nvfp4-prefiller",
   "author": "ISTA-DASLab",
@@ -31,14 +31,19 @@
   "parameters_human": "24.35B",
   "storage_bytes": 54924819623,
   "storage_human": "54.9 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

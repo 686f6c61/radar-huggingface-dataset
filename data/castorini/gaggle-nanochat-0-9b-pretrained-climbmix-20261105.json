@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castorini/gaggle-nanochat-0.9b-pretrained-climbmix-20261105",
   "slug": "castorini-gaggle-nanochat-0-9b-pretrained-climbmix-20261105",
   "author": "castorini",
@@ -37,14 +37,19 @@
   "parameters_human": "887.1M",
   "storage_bytes": 5738471017,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

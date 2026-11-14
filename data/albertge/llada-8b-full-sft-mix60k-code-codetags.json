@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "albertge/llada-8b-full-sft-mix60k-code-codetags",
   "slug": "albertge-llada-8b-full-sft-mix60k-code-codetags",
   "author": "albertge",
@@ -33,14 +33,19 @@
   "parameters_human": "8.02B",
   "storage_bytes": 16031197184,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "albertge/llada-8b-full-sft-mix60k-4pass",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

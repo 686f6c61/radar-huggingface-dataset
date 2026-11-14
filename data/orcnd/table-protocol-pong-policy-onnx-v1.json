@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcnd/table-protocol-pong-policy-onnx-v1",
   "slug": "orcnd-table-protocol-pong-policy-onnx-v1",
   "author": "orcnd",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 123664,
   "storage_human": "123664 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

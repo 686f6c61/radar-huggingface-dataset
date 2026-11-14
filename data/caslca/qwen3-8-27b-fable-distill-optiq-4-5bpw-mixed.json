@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed",
   "slug": "caslca-qwen3-8-27b-fable-distill-optiq-4-5bpw-mixed",
   "author": "caslca",
@@ -39,6 +39,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 19695122066,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

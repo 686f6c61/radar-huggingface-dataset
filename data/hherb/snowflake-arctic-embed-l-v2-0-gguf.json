@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hherb/snowflake-arctic-embed-l-v2.0-gguf",
   "slug": "hherb-snowflake-arctic-embed-l-v2-0-gguf",
   "author": "hherb",
@@ -29,14 +29,19 @@
   "parameters_human": "566.7M",
   "storage_bytes": 1792226880,
   "storage_human": "1.8 GB",
+  "context_length": 8192,
   "base_model": "Snowflake/snowflake-arctic-embed-l-v2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

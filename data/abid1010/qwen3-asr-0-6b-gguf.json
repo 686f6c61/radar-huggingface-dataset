@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abid1010/qwen3-asr-0.6b-gguf",
   "slug": "abid1010-qwen3-asr-0-6b-gguf",
   "author": "abid1010",
@@ -27,14 +27,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 1019141728,
   "storage_human": "1.0 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:37:39.496Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

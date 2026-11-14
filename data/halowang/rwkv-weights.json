@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HaloWang/rwkv-weights",
   "slug": "halowang-rwkv-weights",
   "author": "HaloWang",
@@ -28,14 +28,19 @@
   "parameters_human": "1.53B",
   "storage_bytes": 720385073427,
   "storage_human": "720.4 GB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

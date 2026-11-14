@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/qwen3-4b-feather-mt-sft-plain",
   "slug": "joshycodes-qwen3-4b-feather-mt-sft-plain",
   "author": "joshycodes",
@@ -26,14 +26,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834317170,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "joshycodes/qwen3-4b-feather-mt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:53:16.029Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

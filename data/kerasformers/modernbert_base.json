@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/modernbert_base",
   "slug": "kerasformers-modernbert_base",
   "author": "kerasformers",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 754004168,
   "storage_human": "754 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/modernbert_base",
+  "renamed_at": "2026-11-12T06:08:33.863Z",
   "benchmarks": [],
   "sources": [
     {

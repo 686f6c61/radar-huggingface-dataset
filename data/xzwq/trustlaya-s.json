@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xzwq/TrustLaya-S",
   "slug": "xzwq-trustlaya-s",
   "author": "xzwq",
@@ -37,6 +37,7 @@
   "parameters_human": "42.1M",
   "storage_bytes": 378739529,
   "storage_human": "379 MB",
+  "context_length": null,
   "base_model": "ytu-ce-cosmos/turkish-medium-bert-uncased",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ege-arhan/TrustLaya-S",
+  "renamed_at": "2026-11-12T08:28:05.699Z",
   "benchmarks": [],
   "sources": [
     {

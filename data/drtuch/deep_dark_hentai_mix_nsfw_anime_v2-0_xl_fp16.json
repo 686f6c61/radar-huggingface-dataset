@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drtuch/Deep_Dark_Hentai_Mix_NSFW_Anime_V2.0_xl_fp16",
   "slug": "drtuch-deep_dark_hentai_mix_nsfw_anime_v2-0_xl_fp16",
   "author": "drtuch",
@@ -26,6 +26,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 6938011430,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T05:19:01.848Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

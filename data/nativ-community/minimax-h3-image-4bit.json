@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/MiniMax-H3-Image-4bit",
   "slug": "nativ-community-minimax-h3-image-4bit",
   "author": "nativ-community",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 54476041590,
   "storage_human": "54.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

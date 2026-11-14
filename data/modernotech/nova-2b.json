@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ModernoTech/nova-2b",
   "slug": "modernotech-nova-2b",
   "author": "ModernoTech",
@@ -43,14 +43,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 3009448896,
   "storage_human": "3.0 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "S3ckn11g0r/CROWN-MiniMax-H3-HyperPDMD-HD-3-4Step-LoRA",
   "slug": "s3ckn11g0r-crown-minimax-h3-hyperpdmd-hd-3-4step-lora",
   "author": "S3ckn11g0r",
@@ -38,6 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 2153147047,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

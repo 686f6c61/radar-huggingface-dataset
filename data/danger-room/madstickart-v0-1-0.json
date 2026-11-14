@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danger-room/MadStickArt-v0.1.0",
   "slug": "danger-room-madstickart-v0-1-0",
   "author": "danger-room",
@@ -39,14 +39,19 @@
   "parameters_human": "12192",
   "storage_bytes": 655882,
   "storage_human": "655882 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Layout-conditioned storyboard rasterization",

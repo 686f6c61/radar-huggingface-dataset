@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/dots.mocr-GGUF",
   "slug": "prithivmlmods-dots-mocr-gguf",
   "author": "prithivMLmods",
@@ -45,14 +45,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 21849580512,
   "storage_human": "21.8 GB",
+  "context_length": 131072,
   "base_model": "dots-studio/dots.mocr",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnkitAI/Parable-Granite-4.1-8B-Claude-Fable-5",
   "slug": "ankitai-parable-granite-4-1-8b-claude-fable-5",
   "author": "AnkitAI",
@@ -41,14 +41,19 @@
   "parameters_human": "8.38B",
   "storage_bytes": 33522288544,
   "storage_human": "33.5 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.1-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

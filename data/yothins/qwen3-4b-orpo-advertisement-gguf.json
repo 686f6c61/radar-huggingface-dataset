@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yothinS/Qwen3-4B-ORPO-Advertisement-GGUF",
   "slug": "yothins-qwen3-4b-orpo-advertisement-gguf",
   "author": "yothinS",
@@ -48,14 +48,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 24769864160,
   "storage_human": "24.8 GB",
+  "context_length": 40960,
   "base_model": "yothinS/Qwen3-4B-ORPO-Advertisement",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

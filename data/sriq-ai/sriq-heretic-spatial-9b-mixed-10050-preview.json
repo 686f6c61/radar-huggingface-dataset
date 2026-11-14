@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview",
   "slug": "sriq-ai-sriq-heretic-spatial-9b-mixed-10050-preview",
   "author": "sriq-ai",
@@ -38,14 +38,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326300205,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T04:55:52.818Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SceneWorks/qwen3.8-27b-abliterated-mlx",
   "slug": "sceneworks-qwen3-8-27b-abliterated-mlx",
   "author": "SceneWorks",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 52353904072,
   "storage_human": "52.4 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

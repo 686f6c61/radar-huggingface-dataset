@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dent1s2/pi05-bhv2LNeN86ys",
   "slug": "dent1s2-pi05-bhv2lnen86ys",
   "author": "dent1s2",
@@ -22,14 +22,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 14706741760,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T03:58:23.743Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

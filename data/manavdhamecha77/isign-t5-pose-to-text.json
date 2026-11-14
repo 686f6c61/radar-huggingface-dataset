@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manavdhamecha77/iSign-t5-pose-to-text",
   "slug": "manavdhamecha77-isign-t5-pose-to-text",
   "author": "manavdhamecha77",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 8176366490,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

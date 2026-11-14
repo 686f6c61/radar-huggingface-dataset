@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nile-academy/nanbeige4.2-3b-gguf",
   "slug": "nile-academy-nanbeige4-2-3b-gguf",
   "author": "nile-academy",
@@ -31,6 +31,7 @@
   "parameters_human": "4.17B",
   "storage_bytes": 51891625101,
   "storage_human": "51.9 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

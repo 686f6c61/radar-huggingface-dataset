@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fm-dev/pi05-button-order-uniform32-lora-gbs4-pgb1-gpu4-r2-step12500",
   "slug": "fm-dev-pi05-button-order-uniform32-lora-gbs4-pgb1-gpu4-r2-step12500",
   "author": "fm-dev",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 12839301576,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

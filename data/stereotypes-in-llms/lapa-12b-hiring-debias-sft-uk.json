@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stereotypes-in-LLMs/lapa-12b-hiring-debias-sft-uk",
   "slug": "stereotypes-in-llms-lapa-12b-hiring-debias-sft-uk",
   "author": "Stereotypes-in-LLMs",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 585157951,
   "storage_human": "585 MB",
+  "context_length": null,
   "base_model": "lapa-llm/lapa-v0.1.2-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

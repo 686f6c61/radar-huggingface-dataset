@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jayyun98/Ling-3.0-Tiny-DSpark",
   "slug": "jayyun98-ling-3-0-tiny-dspark",
   "author": "jayyun98",
@@ -31,14 +31,19 @@
   "parameters_human": "274.2M",
   "storage_bytes": 548439626,
   "storage_human": "548 MB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny, inclusionAI/Ling-3.0-flash-DSpark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johith9381/ML-Agents-Pyramids",
   "slug": "johith9381-ml-agents-pyramids",
   "author": "johith9381",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 28841040,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

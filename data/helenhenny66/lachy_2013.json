@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HelenHenny66/lachy_2013",
   "slug": "helenhenny66-lachy_2013",
   "author": "HelenHenny66",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 127700633,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T09:55:50.245Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

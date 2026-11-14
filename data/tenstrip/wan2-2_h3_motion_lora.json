@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TenStrip/Wan2.2_H3_Motion_Lora",
   "slug": "tenstrip-wan2-2_h3_motion_lora",
   "author": "TenStrip",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2064402452,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

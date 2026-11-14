@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WasamiKirua/Gemma-4-E4B-Samantha-GGUF",
   "slug": "wasamikirua-gemma-4-e4b-samantha-gguf",
   "author": "WasamiKirua",
@@ -31,14 +31,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 14332278208,
   "storage_human": "14.3 GB",
+  "context_length": 131072,
   "base_model": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

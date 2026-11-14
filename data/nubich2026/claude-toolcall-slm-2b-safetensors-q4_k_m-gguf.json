@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nubich2026/claude-toolcall-slm-2B-safetensors-Q4_K_M-GGUF",
   "slug": "nubich2026-claude-toolcall-slm-2b-safetensors-q4_k_m-gguf",
   "author": "nubich2026",
@@ -41,6 +41,7 @@
   "parameters_human": "1.71B",
   "storage_bytes": 1055612672,
   "storage_human": "1.1 GB",
+  "context_length": 8192,
   "base_model": "mondk/claude-toolcall-slm-2B-safetensors",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

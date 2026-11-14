@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SmolLM2-1.7B-telegram-chats-GGUF",
   "slug": "mradermacher-smollm2-1-7b-telegram-chats-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 15315764480,
   "storage_human": "15.3 GB",
+  "context_length": 8192,
   "base_model": "Offlin33er/SmolLM2-1.7B-telegram-chats",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

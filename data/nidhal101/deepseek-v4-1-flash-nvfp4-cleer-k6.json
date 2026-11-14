@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/DeepSeek-V4.1-Flash-NVFP4-CLEER-k6",
   "slug": "nidhal101-deepseek-v4-1-flash-nvfp4-cleer-k6",
   "author": "Nidhal101",
@@ -28,14 +28,19 @@
   "parameters_human": "116.46B",
   "storage_bytes": 120770523503,
   "storage_human": "120.8 GB",
+  "context_length": null,
   "base_model": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

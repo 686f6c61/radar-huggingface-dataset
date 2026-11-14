@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wasnaga/UniverseNet-LFM2.5-24B-Pocket-GGUF",
   "slug": "wasnaga-universenet-lfm2-5-24b-pocket-gguf",
   "author": "wasnaga",
@@ -39,14 +39,19 @@
   "parameters_human": "16.32B",
   "storage_bytes": 84279705114,
   "storage_human": "84.3 GB",
+  "context_length": 131072,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

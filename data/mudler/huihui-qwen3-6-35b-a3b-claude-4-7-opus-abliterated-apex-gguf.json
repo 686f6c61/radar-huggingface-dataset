@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mudler/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-APEX-GGUF",
   "slug": "mudler-huihui-qwen3-6-35b-a3b-claude-4-7-opus-abliterated-apex-gguf",
   "author": "mudler",
@@ -34,14 +34,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 147744824896,
   "storage_human": "147.7 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

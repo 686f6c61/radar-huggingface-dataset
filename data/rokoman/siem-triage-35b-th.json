@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rokoman/siem-triage-35b-th",
   "slug": "rokoman-siem-triage-35b-th",
   "author": "rokoman",
@@ -45,14 +45,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 71923767669,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T18:05:03.015Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

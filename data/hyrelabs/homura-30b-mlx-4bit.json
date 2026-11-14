@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyrelabs/Homura-30B-MLX-4bit",
   "slug": "hyrelabs-homura-30b-mlx-4bit",
   "author": "hyrelabs",
@@ -40,6 +40,7 @@
   "parameters_human": "29.78B",
   "storage_bytes": 21376127481,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": "darkc0de/Muse-Glimmer-30B-heretic",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

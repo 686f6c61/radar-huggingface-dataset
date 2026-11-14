@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yuyang-z/rbdj-tsc-ob6000-s40k",
   "slug": "yuyang-z-rbdj-tsc-ob6000-s40k",
   "author": "Yuyang-z",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 17880890227,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

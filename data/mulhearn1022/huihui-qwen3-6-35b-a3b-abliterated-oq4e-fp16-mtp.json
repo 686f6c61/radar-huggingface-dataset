@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mulhearn1022/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp",
   "slug": "mulhearn1022-huihui-qwen3-6-35b-a3b-abliterated-oq4e-fp16-mtp",
   "author": "mulhearn1022",
@@ -27,6 +27,7 @@
   "parameters_human": "35.51B",
   "storage_bytes": 43403360936,
   "storage_human": "43.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

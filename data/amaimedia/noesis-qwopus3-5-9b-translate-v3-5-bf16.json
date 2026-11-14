@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16",
   "slug": "amaimedia-noesis-qwopus3-5-9b-translate-v3-5-bf16",
   "author": "AMAImedia",
@@ -147,6 +147,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 127457650959,
   "storage_human": "127.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B, Jackrong/Qwopus3.5-9B-v3.5",
   "formats": [
     "gguf",
@@ -154,8 +155,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

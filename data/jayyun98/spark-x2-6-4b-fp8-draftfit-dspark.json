@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jayyun98/Spark-X2.6-4B-FP8-Draftfit-DSpark",
   "slug": "jayyun98-spark-x2-6-4b-fp8-draftfit-dspark",
   "author": "jayyun98",
@@ -31,14 +31,19 @@
   "parameters_human": "624.4M",
   "storage_bytes": 1248925396,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

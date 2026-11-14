@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "x6nux/laya-ad",
   "slug": "x6nux-laya-ad",
   "author": "x6nux",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 13038282649,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

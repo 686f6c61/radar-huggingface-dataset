@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logic65/Qwen3.8-Whittle-v40-16.8B",
   "slug": "logic65-qwen3-8-whittle-v40-16-8b",
   "author": "logic65",
@@ -33,14 +33,19 @@
   "parameters_human": "17.76B",
   "storage_bytes": 18889609280,
   "storage_human": "18.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T12:10:38.977Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

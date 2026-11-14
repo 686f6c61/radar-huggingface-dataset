@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SelfCode/Qwen2.5-Coder-0.5B-Instruct-Uncensored",
   "slug": "selfcode-qwen2-5-coder-0-5b-instruct-uncensored",
   "author": "SelfCode",
@@ -47,6 +47,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 2524745675,
   "storage_human": "2.5 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF-2026-08-28",
   "slug": "burningfeet-qwen3-6-35b-a3b-uncensored-genesis-hermes-v11-gguf-2026-08-28",
   "author": "burningfeet",
@@ -45,14 +45,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 86839427456,
   "storage_human": "86.8 GB",
+  "context_length": 262144,
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

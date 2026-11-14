@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Fisher-R1-14B-GGUF",
   "slug": "mradermacher-fisher-r1-14b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102043522912,
   "storage_human": "102.0 GB",
+  "context_length": 32768,
   "base_model": "May2222/Fisher-R1-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

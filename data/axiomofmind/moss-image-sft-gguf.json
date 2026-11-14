@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axiomofmind/Moss-Image-SFT-GGUF",
   "slug": "axiomofmind-moss-image-sft-gguf",
   "author": "axiomofmind",
@@ -36,14 +36,19 @@
   "parameters_human": "5.08B",
   "storage_bytes": 9203867103,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

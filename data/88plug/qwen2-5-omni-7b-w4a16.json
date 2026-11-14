@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "88plug/Qwen2.5-Omni-7B-W4A16",
   "slug": "88plug-qwen2-5-omni-7b-w4a16",
   "author": "88plug",
@@ -53,14 +53,19 @@
   "parameters_human": "10.73B",
   "storage_bytes": 35204472712,
   "storage_human": "35.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

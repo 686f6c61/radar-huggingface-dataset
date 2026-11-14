@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010",
   "slug": "jeesup-svd-safety-l2_basis_remove40_swapgapnet_b010",
   "author": "Jeesup",
@@ -36,14 +36,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13477364771,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T03:01:03.659Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

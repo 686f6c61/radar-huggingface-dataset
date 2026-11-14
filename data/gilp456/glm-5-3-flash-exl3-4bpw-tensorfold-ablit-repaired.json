@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gilp456/GLM-5.3-Flash-EXL3-4bpw-TensorFold-Ablit-Repaired",
   "slug": "gilp456-glm-5-3-flash-exl3-4bpw-tensorfold-ablit-repaired",
   "author": "gilp456",
@@ -33,14 +33,19 @@
   "parameters_human": "89.26B",
   "storage_bytes": 178634149921,
   "storage_human": "178.6 GB",
+  "context_length": null,
   "base_model": "Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold-Ablit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1",
   "slug": "xf15-ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1",
   "author": "xf15",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 73307955292,
   "storage_human": "73.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

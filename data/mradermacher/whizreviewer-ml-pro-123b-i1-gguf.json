@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/WhizReviewer-ML-Pro-123B-i1-GGUF",
   "slug": "mradermacher-whizreviewer-ml-pro-123b-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "122.61B",
   "storage_bytes": 1297327716768,
   "storage_human": "1297.3 GB",
+  "context_length": 131072,
   "base_model": "WestlakeNLP/WhizReviewer-ML-Pro-123B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

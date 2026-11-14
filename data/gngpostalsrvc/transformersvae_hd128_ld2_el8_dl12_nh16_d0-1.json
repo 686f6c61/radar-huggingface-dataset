@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gngpostalsrvc/TransformersVAE_hd128_ld2_el8_dl12_nh16_d0.1",
   "slug": "gngpostalsrvc-transformersvae_hd128_ld2_el8_dl12_nh16_d0-1",
   "author": "gngpostalsrvc",
@@ -24,14 +24,19 @@
   "parameters_human": "3.1M",
   "storage_bytes": 12382568,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

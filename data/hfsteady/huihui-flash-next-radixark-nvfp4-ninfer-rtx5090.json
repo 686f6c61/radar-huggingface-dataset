@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hfsteady/Huihui-Flash-Next-RadixArk-NVFP4-NInfer-RTX5090",
   "slug": "hfsteady-huihui-flash-next-radixark-nvfp4-ninfer-rtx5090",
   "author": "hfsteady",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 127140953410,
   "storage_human": "127.1 GB",
+  "context_length": null,
   "base_model": "edp1096/Huihui-RadixArk-Qwen3.8-Flash-Next-abliterated-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T04:31:44.099Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

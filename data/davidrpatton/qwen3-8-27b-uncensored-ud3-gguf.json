@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidrPatton/Qwen3.8-27B-Uncensored-UD3-GGUF",
   "slug": "davidrpatton-qwen3-8-27b-uncensored-ud3-gguf",
   "author": "DavidrPatton",
@@ -43,14 +43,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 12988463875,
   "storage_human": "13.0 GB",
+  "context_length": 262144,
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored, Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

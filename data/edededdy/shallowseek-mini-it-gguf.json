@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edededdy/ShallowSeek-mini-it-GGUF",
   "slug": "edededdy-shallowseek-mini-it-gguf",
   "author": "edededdy",
@@ -42,14 +42,19 @@
   "parameters_human": "11.0M",
   "storage_bytes": 34567808,
   "storage_human": "35 MB",
+  "context_length": 1024,
   "base_model": "edededdy/ShallowSeek-mini-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

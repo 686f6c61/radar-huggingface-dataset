@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "martincousseau/esann2027-compose-v2",
   "slug": "martincousseau-esann2027-compose-v2",
   "author": "martincousseau",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 61627204648,
   "storage_human": "61.6 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M, HuggingFaceTB/SmolLM2-360M, Qwen/Qwen2.5-0.5B, HuggingFaceTB/SmolLM2-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

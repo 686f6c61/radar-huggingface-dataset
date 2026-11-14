@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "racore/mega-ram-100k",
   "slug": "racore-mega-ram-100k",
   "author": "racore",
@@ -52,12 +52,17 @@
   "parameters_human": null,
   "storage_bytes": 133386,
   "storage_human": "133386 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Question Answering",

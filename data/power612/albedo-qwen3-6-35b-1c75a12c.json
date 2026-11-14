@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "power612/albedo-qwen3.6-35b-1c75a12c",
   "slug": "power612-albedo-qwen3-6-35b-1c75a12c",
   "author": "power612",
@@ -23,14 +23,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916585182,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T02:51:34.488Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

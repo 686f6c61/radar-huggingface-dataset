@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amphibiousrizz/Character_Loras",
   "slug": "amphibiousrizz-character_loras",
   "author": "amphibiousrizz",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 24800524969,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "amphibiousrizz/Krea2",
+  "renamed_at": "2026-11-11T04:29:11.550Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fenyo/4xH100-gemma-4-31B-it-MonEspaceSante-GGUF",
   "slug": "fenyo-4xh100-gemma-4-31b-it-monespacesante-gguf",
   "author": "fenyo",
@@ -31,14 +31,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 65734120896,
   "storage_human": "65.7 GB",
+  "context_length": 262144,
   "base_model": "fenyo/4xH100-gemma-4-31B-it-MonEspaceSante",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

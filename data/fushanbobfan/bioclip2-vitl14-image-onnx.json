@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fushanbobfan/bioclip2-vitl14-image-onnx",
   "slug": "fushanbobfan-bioclip2-vitl14-image-onnx",
   "author": "fushanbobfan",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 306927209,
   "storage_human": "307 MB",
+  "context_length": null,
   "base_model": "imageomics/bioclip-2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

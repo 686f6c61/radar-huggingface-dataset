@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sbordt/forgetting-contamination-OLMo-1B",
   "slug": "sbordt-forgetting-contamination-olmo-1b",
   "author": "sbordt",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 42363866921,
   "storage_human": "42.4 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-1B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

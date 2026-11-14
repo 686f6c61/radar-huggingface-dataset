@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/Gemma-4-E4B-DECKARD-HERETIC-Uncensored-NVFP4",
   "slug": "aeon-7-gemma-4-e4b-deckard-heretic-uncensored-nvfp4",
   "author": "AEON-7",
@@ -88,14 +88,19 @@
   "parameters_human": "7.94B",
   "storage_bytes": 10205306246,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

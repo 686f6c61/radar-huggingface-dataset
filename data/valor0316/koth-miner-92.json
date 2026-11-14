@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VALOR0316/koth-miner-92",
   "slug": "valor0316-koth-miner-92",
   "author": "VALOR0316",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 394312,
   "storage_human": "394312 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T04:37:28.863Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akicou/Qwen3.8-Flash-Next-REAM-60Pct",
   "slug": "akicou-qwen3-8-flash-next-ream-60pct",
   "author": "Akicou",
@@ -40,14 +40,19 @@
   "parameters_human": "128.79B",
   "storage_bytes": 257598563515,
   "storage_human": "257.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

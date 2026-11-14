@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RehanKhan01126/feraya-ai-DuckEngine-1-Sec",
   "slug": "rehankhan01126-feraya-ai-duckengine-1-sec",
   "author": "RehanKhan01126",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 185042201,
   "storage_human": "185 MB",
+  "context_length": null,
   "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T04:51:35.833Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

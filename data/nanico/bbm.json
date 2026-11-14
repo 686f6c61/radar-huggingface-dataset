@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nanico/bbm",
   "slug": "nanico-bbm",
   "author": "Nanico",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 779187581,
   "storage_human": "779 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T03:25:49.766Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

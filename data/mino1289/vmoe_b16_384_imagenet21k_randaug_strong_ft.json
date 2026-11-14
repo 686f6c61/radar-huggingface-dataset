@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mino1289/vmoe_b16_384_imagenet21k_randaug_strong_ft",
   "slug": "mino1289-vmoe_b16_384_imagenet21k_randaug_strong_ft",
   "author": "Mino1289",
@@ -26,14 +26,19 @@
   "parameters_human": "285.2M",
   "storage_bytes": 1140988896,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

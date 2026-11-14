@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bpx03/Qwen3.8-27B-INT8-QEngine",
   "slug": "bpx03-qwen3-8-27b-int8-qengine",
   "author": "bpx03",
@@ -24,20 +24,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": 27356728592,
   "parameters_human": "27.36B",
   "storage_bytes": 31637257489,
   "storage_human": "31.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wirkung/origami1.1_9b",
   "slug": "wirkung-origami1-1_9b",
   "author": "wirkung",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 4123339400,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic, Qwen/Qwen3.5-9B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myungkyu/pi0_5_jax_multitask_j62_delta_b64_60k",
   "slug": "myungkyu-pi0_5_jax_multitask_j62_delta_b64_60k",
   "author": "Myungkyu",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 12441258326,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

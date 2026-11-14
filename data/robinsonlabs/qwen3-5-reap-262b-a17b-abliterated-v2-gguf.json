@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RobinsonLabs/Qwen3.5-REAP-262B-A17B-abliterated-v2-GGUF",
   "slug": "robinsonlabs-qwen3-5-reap-262b-a17b-abliterated-v2-gguf",
   "author": "RobinsonLabs",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "OpenMOSE/Qwen3.5-REAP-262B-A17B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T04:59:15.288Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

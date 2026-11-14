@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e-mtp",
   "slug": "xunlinkx-mimo-v2-6-distill-qwen-9b-text-oq3e-mtp",
   "author": "xunlinkx",
@@ -37,6 +37,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 4748912670,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

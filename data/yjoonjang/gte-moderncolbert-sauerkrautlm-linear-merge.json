@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yjoonjang/GTE-ModernColBERT-SauerkrautLM-linear-merge",
   "slug": "yjoonjang-gte-moderncolbert-sauerkrautlm-linear-merge",
   "author": "yjoonjang",
@@ -34,14 +34,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 298241304,
   "storage_human": "298 MB",
+  "context_length": null,
   "base_model": "lightonai/GTE-ModernColBERT-v1, VAGOsolutions/SauerkrautLM-Multi-ModernColBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

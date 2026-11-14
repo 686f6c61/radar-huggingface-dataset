@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/chatterbox-multilingual-MLX-Q6-G64",
   "slug": "groxaxo-chatterbox-multilingual-mlx-q6-g64",
   "author": "groxaxo",
@@ -81,6 +81,7 @@
   "parameters_human": "677.7M",
   "storage_bytes": 720499943,
   "storage_human": "720 MB",
+  "context_length": null,
   "base_model": "mlx-community/chatterbox-multilingual-v3",
   "formats": [
     "mlx",
@@ -88,8 +89,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

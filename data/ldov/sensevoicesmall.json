@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/SenseVoiceSmall",
   "slug": "ldov-sensevoicesmall",
   "author": "ldov",
@@ -36,14 +36,19 @@
   "parameters_human": "234.0M",
   "storage_bytes": 3066741760,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:32:17.531Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

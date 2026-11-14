@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Belgacem123/Qwen2.5-VL-3B-Arabic-Manuscript-Recognition",
   "slug": "belgacem123-qwen2-5-vl-3b-arabic-manuscript-recognition",
   "author": "Belgacem123",
@@ -39,14 +39,19 @@
   "parameters_human": "3.75B",
   "storage_bytes": 7526128973,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:18:48.500Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Optical Character Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/qwen3-4b-thinking-2507",
   "slug": "kerasformers-qwen3-4b-thinking-2507",
   "author": "kerasformers",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 8061739166,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Thinking-2507",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/qwen3-4b-thinking-2507",
+  "renamed_at": "2026-11-14T06:42:02.946Z",
   "benchmarks": [],
   "sources": []
 }

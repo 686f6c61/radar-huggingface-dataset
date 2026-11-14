@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oxide-lab/whisper-tiny-GGUF",
   "slug": "oxide-lab-whisper-tiny-gguf",
   "author": "oxide-lab",
@@ -39,14 +39,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 448465546,
   "storage_human": "448 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

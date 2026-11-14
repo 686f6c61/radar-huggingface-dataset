@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castanetnicolas/ACT_UR5e_BS_256_Act_Chunk_10_Exec_10_TASK_pick_place_can_PIXELS_84_ID_146276",
   "slug": "castanetnicolas-act_ur5e_bs_256_act_chunk_10_exec_10_task_pick_place_can_pixels_84_id_146276",
   "author": "castanetnicolas",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206366268,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

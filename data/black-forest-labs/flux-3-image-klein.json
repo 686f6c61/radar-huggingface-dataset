@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "black-forest-labs/flux-3-image-klein",
   "slug": "black-forest-labs-flux-3-image-klein",
   "author": "black-forest-labs",
@@ -26,13 +26,14 @@
     "license:other",
     "region:us"
   ],
-  "likes": 960,
+  "likes": 966,
   "downloads_30d": 185494,
-  "trending_score": 65,
+  "trending_score": 66,
   "parameters": 5548681984,
   "parameters_human": "5.55B",
   "storage_bytes": 43319657094,
   "storage_human": "43.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Devopsopraiz/Baanzon-33street-3.8-27B-Uncensored-Aggresive-MTP-GGUF",
   "slug": "devopsopraiz-baanzon-33street-3-8-27b-uncensored-aggresive-mtp-gguf",
   "author": "Devopsopraiz",
@@ -41,14 +41,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 172466425216,
   "storage_human": "172.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T04:09:53.184Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

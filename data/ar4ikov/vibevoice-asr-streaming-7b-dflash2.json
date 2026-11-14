@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2",
   "slug": "ar4ikov-vibevoice-asr-streaming-7b-dflash2",
   "author": "Ar4ikov",
@@ -31,14 +31,19 @@
   "parameters_human": "8.67B",
   "storage_bytes": 19011783937,
   "storage_human": "19.0 GB",
+  "context_length": null,
   "base_model": "microsoft/VibeVoice-ASR-Streaming-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

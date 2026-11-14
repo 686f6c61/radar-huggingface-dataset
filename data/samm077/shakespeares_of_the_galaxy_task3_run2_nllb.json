@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Samm077/Shakespeares_of_the_Galaxy_Task3_Run2_NLLB",
   "slug": "samm077-shakespeares_of_the_galaxy_task3_run2_nllb",
   "author": "Samm077",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 70030218,
   "storage_human": "70 MB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-distilled-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

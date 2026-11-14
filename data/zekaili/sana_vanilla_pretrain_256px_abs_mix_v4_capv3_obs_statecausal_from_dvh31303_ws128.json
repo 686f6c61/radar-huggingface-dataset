@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zekaili/SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_obs_statecausal_from_dvh31303_ws128",
   "slug": "zekaili-sana_vanilla_pretrain_256px_abs_mix_v4_capv3_obs_statecausal_from_dvh31303_ws128",
   "author": "zekaili",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 17880908263,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

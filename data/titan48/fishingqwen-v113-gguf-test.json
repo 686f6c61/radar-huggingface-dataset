@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Titan48/FishingQwen-v113-GGUF-test",
   "slug": "titan48-fishingqwen-v113-gguf-test",
   "author": "Titan48",
@@ -34,14 +34,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1107408736,
   "storage_human": "1.1 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

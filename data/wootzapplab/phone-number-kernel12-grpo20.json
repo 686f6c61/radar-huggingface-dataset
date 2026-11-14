@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WootzappLab/phone-number-kernel12-GRPO20",
   "slug": "wootzapplab-phone-number-kernel12-grpo20",
   "author": "WootzappLab",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1943763076,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.7-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:06:48.475Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/GGUF.claude_Deepseek-R1-Lamma",
   "slug": "mondk-gguf-claude_deepseek-r1-lamma",
   "author": "mondk",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4916044832,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "mondk/Safetensors.claude_Deepseek-R1-Llama",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mondk/GGUF.claude_Deepseek-R1-Llama",
+  "renamed_at": "2026-11-11T06:24:50.300Z",
   "benchmarks": [],
   "sources": []
 }

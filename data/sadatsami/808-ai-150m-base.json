@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sadatsami/808-AI-150M-Base",
   "slug": "sadatsami-808-ai-150m-base",
   "author": "Sadatsami",
@@ -24,14 +24,19 @@
   "parameters_human": "150.4M",
   "storage_bytes": 13240430132,
   "storage_human": "13.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T05:45:39.597Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

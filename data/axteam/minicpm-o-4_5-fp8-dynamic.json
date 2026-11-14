@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/MiniCPM-o-4_5-FP8-dynamic",
   "slug": "axteam-minicpm-o-4_5-fp8-dynamic",
   "author": "axteam",
@@ -36,6 +36,7 @@
   "parameters_human": "9.37B",
   "storage_bytes": 24258739848,
   "storage_human": "24.3 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-o-4_5",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

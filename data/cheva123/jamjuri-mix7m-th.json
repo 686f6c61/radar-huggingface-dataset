@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cheva123/jamjuri-mix7m-th",
   "slug": "cheva123-jamjuri-mix7m-th",
   "author": "Cheva123",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 41987561,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:41:11.763Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

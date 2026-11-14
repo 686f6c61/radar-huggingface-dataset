@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eandujar/classical_automl_notebook",
   "slug": "eandujar-classical_automl_notebook",
   "author": "eandujar",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 23927,
   "storage_human": "23927 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

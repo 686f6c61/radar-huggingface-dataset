@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kushtrim/Qwen3-ASR-0.6B-Norwegian",
   "slug": "kushtrim-qwen3-asr-0-6b-norwegian",
   "author": "Kushtrim",
@@ -35,14 +35,19 @@
   "parameters_human": "782.4M",
   "storage_bytes": 4706604868,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avishkararjan/qwen2.5-coder-7b-quad-dpo-acceptance-v1",
   "slug": "avishkararjan-qwen2-5-coder-7b-quad-dpo-acceptance-v1",
   "author": "avishkararjan",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1626819214,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

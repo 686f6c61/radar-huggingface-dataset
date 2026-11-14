@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pjiwm/PaddleOCR-VL-1.6-gguf",
   "slug": "pjiwm-paddleocr-vl-1-6-gguf",
   "author": "Pjiwm",
@@ -29,14 +29,19 @@
   "parameters_human": "921.4M",
   "storage_bytes": 1084782240,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

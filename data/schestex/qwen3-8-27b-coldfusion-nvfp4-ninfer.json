@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Schestex/Qwen3.8-27B-ColdFusion-NVFP4-NInfer",
   "slug": "schestex-qwen3-8-27b-coldfusion-nvfp4-ninfer",
   "author": "Schestex",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 117147426272,
   "storage_human": "117.1 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

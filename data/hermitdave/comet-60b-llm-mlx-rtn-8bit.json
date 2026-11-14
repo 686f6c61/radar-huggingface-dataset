@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/Comet-60B-LLM-MLX-rtn-8bit",
   "slug": "hermitdave-comet-60b-llm-mlx-rtn-8bit",
   "author": "hermitdave",
@@ -36,6 +36,7 @@
   "parameters_human": "58.89B",
   "storage_bytes": 62626200240,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "MultiverseComputingCAI/Comet_60B_A12B_BF16",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:27:05.171Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

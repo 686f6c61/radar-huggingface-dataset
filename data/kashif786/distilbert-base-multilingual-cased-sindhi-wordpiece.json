@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kashif786/distilbert-base-multilingual-cased-sindhi-wordpiece",
   "slug": "kashif786-distilbert-base-multilingual-cased-sindhi-wordpiece",
   "author": "Kashif786",
@@ -29,14 +29,19 @@
   "parameters_human": "148.5M",
   "storage_bytes": 81380956247,
   "storage_human": "81.4 GB",
+  "context_length": null,
   "base_model": "Kashif786/distilbert-base-multilingual-cased-sindhi-wordpiece",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

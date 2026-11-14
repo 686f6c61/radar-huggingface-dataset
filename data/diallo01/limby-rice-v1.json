@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diallo01/limby-rice-v1",
   "slug": "diallo01-limby-rice-v1",
   "author": "diallo01",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 16363753,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

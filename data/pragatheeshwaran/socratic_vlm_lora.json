@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pragatheeshwaran/socratic_vlm_lora",
   "slug": "pragatheeshwaran-socratic_vlm_lora",
   "author": "Pragatheeshwaran",
@@ -23,14 +23,19 @@
   "parameters_human": "10.67B",
   "storage_bytes": 21357770958,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

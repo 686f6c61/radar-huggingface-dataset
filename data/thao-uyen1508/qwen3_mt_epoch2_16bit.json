@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thao-uyen1508/qwen3_MT_epoch2_16bit",
   "slug": "thao-uyen1508-qwen3_mt_epoch2_16bit",
   "author": "thao-uyen1508",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 11422654,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-14b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

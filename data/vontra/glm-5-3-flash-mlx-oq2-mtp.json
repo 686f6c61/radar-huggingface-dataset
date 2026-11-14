@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vontra/GLM-5.3-Flash-MLX-oQ2-MTP",
   "slug": "vontra-glm-5-3-flash-mlx-oq2-mtp",
   "author": "Vontra",
@@ -49,6 +49,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 110148415657,
   "storage_human": "110.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TensorFold/GLM-5.3-Flash-MLX-oQ2-MTP",
+  "renamed_at": "2026-11-11T04:09:28.093Z",
   "benchmarks": [],
   "sources": [
     {

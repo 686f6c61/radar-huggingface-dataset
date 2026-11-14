@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abhayn01/Arka-Specialist-V2-200M-Universal-Recovery-v2",
   "slug": "abhayn01-arka-specialist-v2-200m-universal-recovery-v2",
   "author": "Abhayn01",
@@ -24,14 +24,19 @@
   "parameters_human": "178.2M",
   "storage_bytes": 163203660900,
   "storage_human": "163.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T03:21:54.931Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

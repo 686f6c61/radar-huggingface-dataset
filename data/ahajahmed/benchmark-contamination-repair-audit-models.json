@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahajahmed/benchmark-contamination-repair-audit-models",
   "slug": "ahajahmed-benchmark-contamination-repair-audit-models",
   "author": "ahajahmed",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 149772558235,
   "storage_human": "149.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

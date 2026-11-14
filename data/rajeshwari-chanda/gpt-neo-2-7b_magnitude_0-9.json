@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.9",
   "slug": "rajeshwari-chanda-gpt-neo-2-7b_magnitude_0-9",
   "author": "Rajeshwari-Chanda",
@@ -27,14 +27,19 @@
   "parameters_human": "2.65B",
   "storage_bytes": 5302661376,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

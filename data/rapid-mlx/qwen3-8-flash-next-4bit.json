@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rapid-mlx/Qwen3.8-Flash-Next-4bit",
   "slug": "rapid-mlx-qwen3-8-flash-next-4bit",
   "author": "rapid-mlx",
@@ -36,6 +36,7 @@
   "parameters_human": "76.02B",
   "storage_bytes": 104694845693,
   "storage_human": "104.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

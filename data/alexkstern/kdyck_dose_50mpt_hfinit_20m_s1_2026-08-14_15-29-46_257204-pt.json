@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/kdyck_dose_50Mpt_hfinit_20M_s1_2026-08-14_15-29-46_257204-pt",
   "slug": "alexkstern-kdyck_dose_50mpt_hfinit_20m_s1_2026-08-14_15-29-46_257204-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2969669491,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T07:16:05.623Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Video-Reason/VBVR-Pro-Wan2.1-I2V-14B",
   "slug": "video-reason-vbvr-pro-wan2-1-i2v-14b",
   "author": "Video-Reason",
@@ -31,6 +31,7 @@
   "parameters_human": "16.40B",
   "storage_bytes": 90604973339,
   "storage_human": "90.6 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

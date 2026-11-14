@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "glyd/nemotron-3-hummingbird",
   "slug": "glyd-nemotron-3-hummingbird",
   "author": "glyd",
@@ -34,14 +34,19 @@
   "parameters_human": "48.57B",
   "storage_bytes": 48756947488,
   "storage_human": "48.8 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

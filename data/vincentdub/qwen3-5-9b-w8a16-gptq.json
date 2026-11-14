@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vincentdub/Qwen3.5-9B-W8A16-GPTQ",
   "slug": "vincentdub-qwen3-5-9b-w8a16-gptq",
   "author": "vincentdub",
@@ -35,14 +35,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 12029378061,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:04:07.780Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

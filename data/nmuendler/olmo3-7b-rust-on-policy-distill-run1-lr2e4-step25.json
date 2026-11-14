@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nmuendler/Olmo3-7B-rust-on-policy-distill-run1-lr2e4-step25",
   "slug": "nmuendler-olmo3-7b-rust-on-policy-distill-run1-lr2e4-step25",
   "author": "nmuendler",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 319876032,
   "storage_human": "320 MB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-7B-Think",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

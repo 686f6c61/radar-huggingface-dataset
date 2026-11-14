@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MishraNepali/gemma-4-12B-coder-fable5-composer2.5-v1-uncensored-heretic-Q3_K_M",
   "slug": "mishranepali-gemma-4-12b-coder-fable5-composer2-5-v1-uncensored-heretic-q3_k_m",
   "author": "MishraNepali",
@@ -33,14 +33,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 10358383040,
   "storage_human": "10.4 GB",
+  "context_length": 262144,
   "base_model": "llmfan46/gemma-4-12B-coder-fable5-composer2.5-v1-uncensored-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

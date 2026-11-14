@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxClip-9M-role",
   "slug": "thox-ai-thoxclip-9m-role",
   "author": "Thox-ai",
@@ -42,14 +42,19 @@
   "parameters_human": "8.9M",
   "storage_bytes": 12146409,
   "storage_human": "12 MB",
+  "context_length": 512,
   "base_model": "Thox-ai/ThoxMicro-1bit-9M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

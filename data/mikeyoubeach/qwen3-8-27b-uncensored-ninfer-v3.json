@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mikeyoubeach/qwen3.8-27b-uncensored-ninfer-v3",
   "slug": "mikeyoubeach-qwen3-8-27b-uncensored-ninfer-v3",
   "author": "mikeyoubeach",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 47439256048,
   "storage_human": "47.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrandonHowe/Qwen0.5b-CPT-epoch-upload-test",
   "slug": "brandonhowe-qwen0-5b-cpt-epoch-upload-test",
   "author": "BrandonHowe",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1133851249,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-0.5b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T03:29:33.991Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

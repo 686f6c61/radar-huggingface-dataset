@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "victormuryn/use-natural-no-pt",
   "slug": "victormuryn-use-natural-no-pt",
   "author": "victormuryn",
@@ -132,14 +132,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1129280083,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

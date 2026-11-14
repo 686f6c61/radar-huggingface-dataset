@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bullerwins/DeepSeek-V4-Pro-0813-exl3-2.04bpw",
   "slug": "bullerwins-deepseek-v4-pro-0813-exl3-2-04bpw",
   "author": "bullerwins",
@@ -31,14 +31,19 @@
   "parameters_human": "217.38B",
   "storage_bytes": 435104453377,
   "storage_human": "435.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darioooooo0o/K2-Horizon-3.7B-GGUF",
   "slug": "darioooooo0o-k2-horizon-3-7b-gguf",
   "author": "darioooooo0o",
@@ -31,14 +31,19 @@
   "parameters_human": "5.06B",
   "storage_bytes": 17855413120,
   "storage_human": "17.9 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-3.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

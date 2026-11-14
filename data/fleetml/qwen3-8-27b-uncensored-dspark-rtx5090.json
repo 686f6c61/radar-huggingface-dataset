@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090",
   "slug": "fleetml-qwen3-8-27b-uncensored-dspark-rtx5090",
   "author": "fleetml",
@@ -43,14 +43,19 @@
   "parameters_human": "1.14B",
   "storage_bytes": 5356876588,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-27B-DSpark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

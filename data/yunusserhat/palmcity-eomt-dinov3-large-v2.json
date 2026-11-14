@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunusserhat/palmcity-eomt-dinov3-large-v2",
   "slug": "yunusserhat-palmcity-eomt-dinov3-large-v2",
   "author": "yunusserhat",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 5037404480,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "tue-mps/eomt-dinov3-ade-semantic-large-512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Semantic Segmentation",

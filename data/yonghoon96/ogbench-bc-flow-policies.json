@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yonghoon96/ogbench-bc-flow-policies",
   "slug": "yonghoon96-ogbench-bc-flow-policies",
   "author": "yonghoon96",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 5165631788,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wh1teSpaces/OD-XL-Illustrious-BooruDPO-LoRA",
   "slug": "wh1tespaces-od-xl-illustrious-boorudpo-lora",
   "author": "Wh1teSpaces",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 340674584,
   "storage_human": "341 MB",
+  "context_length": null,
   "base_model": "Wh1teSpaces/OrthogonalDiffusion-XL",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T03:49:00.381Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

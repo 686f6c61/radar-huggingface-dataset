@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sieve-31B-v3-GGUF",
   "slug": "mradermacher-sieve-31b-v3-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 211900103968,
   "storage_human": "211.9 GB",
+  "context_length": 262144,
   "base_model": "sthanika-ai/Sieve-31B-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

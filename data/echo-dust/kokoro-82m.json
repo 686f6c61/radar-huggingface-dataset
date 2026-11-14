@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "echo-dust/kokoro-82m",
   "slug": "echo-dust-kokoro-82m",
   "author": "echo-dust",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 624085206,
   "storage_human": "624 MB",
+  "context_length": null,
   "base_model": "onnx-community/Kokoro-82M-v1.0-ONNX",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

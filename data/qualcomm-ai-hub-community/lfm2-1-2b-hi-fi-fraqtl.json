@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qualcomm-ai-hub-community/LFM2-1.2B-Hi-Fi-fraQtl",
   "slug": "qualcomm-ai-hub-community-lfm2-1-2b-hi-fi-fraqtl",
   "author": "qualcomm-ai-hub-community",
@@ -33,14 +33,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 2820251008,
   "storage_human": "2.8 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2-1.2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

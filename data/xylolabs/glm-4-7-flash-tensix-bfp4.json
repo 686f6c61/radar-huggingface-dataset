@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/GLM-4.7-Flash-Tensix-BFP4",
   "slug": "xylolabs-glm-4-7-flash-tensix-bfp4",
   "author": "Xylolabs",
@@ -45,14 +45,19 @@
   "parameters_human": "31.22B",
   "storage_bytes": 62464393074,
   "storage_human": "62.5 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.7-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

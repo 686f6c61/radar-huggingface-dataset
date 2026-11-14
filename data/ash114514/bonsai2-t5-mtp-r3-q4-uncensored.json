@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ash114514/Bonsai2-T5-MTP-r3-Q4-Uncensored",
   "slug": "ash114514-bonsai2-t5-mtp-r3-q4-uncensored",
   "author": "ash114514",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 6182360576,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, prism-ml/Ternary-Bonsai-2-27B-gguf, OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

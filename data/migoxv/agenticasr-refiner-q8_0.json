@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MigoXV/AgenticASR-Refiner-Q8_0",
   "slug": "migoxv-agenticasr-refiner-q8_0",
   "author": "MigoXV",
@@ -35,14 +35,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 1153529088,
   "storage_human": "1.2 GB",
+  "context_length": 131072,
   "base_model": "Andrew0425/AgenticASR-Refiner",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

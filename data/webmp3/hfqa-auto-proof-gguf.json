@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/hfqa-auto-proof-GGUF",
   "slug": "webmp3-hfqa-auto-proof-gguf",
   "author": "webmp3",
@@ -33,14 +33,19 @@
   "parameters_human": "630.2M",
   "storage_bytes": 907036584,
   "storage_human": "907 MB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T06:31:36.539Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

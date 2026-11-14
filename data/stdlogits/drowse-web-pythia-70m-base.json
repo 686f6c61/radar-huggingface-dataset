@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stdlogits/drowse-web-pythia-70m-base",
   "slug": "stdlogits-drowse-web-pythia-70m-base",
   "author": "stdlogits",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 324431503,
   "storage_human": "324 MB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-70m-deduped",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pinkelephantlimited/phone-agent",
   "slug": "pinkelephantlimited-phone-agent",
   "author": "pinkelephantlimited",
@@ -44,6 +44,7 @@
   "parameters_human": "1.26B",
   "storage_bytes": 126468933465,
   "storage_human": "126.5 GB",
+  "context_length": null,
   "base_model": "pinkelephantlimited/phone-llm",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:44:56.871Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

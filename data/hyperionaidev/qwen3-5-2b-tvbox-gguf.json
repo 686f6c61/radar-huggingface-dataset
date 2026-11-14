@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyperionaidev/Qwen3.5-2B-tvbox-GGUF",
   "slug": "hyperionaidev-qwen3-5-2b-tvbox-gguf",
   "author": "hyperionaidev",
@@ -34,14 +34,19 @@
   "parameters_human": "2.08B",
   "storage_bytes": 1181693427,
   "storage_human": "1.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

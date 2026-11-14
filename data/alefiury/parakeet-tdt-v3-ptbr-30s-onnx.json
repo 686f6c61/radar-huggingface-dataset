@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alefiury/parakeet-tdt-v3-ptBR-30s-onnx",
   "slug": "alefiury-parakeet-tdt-v3-ptbr-30s-onnx",
   "author": "alefiury",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 3222548801,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "alexandreacff/parakeet-tdt-v3-ptBR-30s",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

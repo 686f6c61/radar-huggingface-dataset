@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_SPKCTRL_s42_20260912_143039",
   "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_12hz_lora-r16_spkctrl_s42_20260912_143039",
   "author": "xelsoft-ai-lab",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 676262992,
   "storage_human": "676 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T06:13:11.554Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "azinamotoe/HmarBERT-mini-causal",
   "slug": "azinamotoe-hmarbert-mini-causal",
   "author": "azinamotoe",
@@ -38,14 +38,19 @@
   "parameters_human": "16.9M",
   "storage_bytes": 135267872,
   "storage_human": "135 MB",
+  "context_length": null,
   "base_model": "azinamotoe/HmarBERT-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T04:19:20.630Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

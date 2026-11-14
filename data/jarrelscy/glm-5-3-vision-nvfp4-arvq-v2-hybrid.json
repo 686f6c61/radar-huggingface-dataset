@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-v2-hybrid",
   "slug": "jarrelscy-glm-5-3-vision-nvfp4-arvq-v2-hybrid",
   "author": "jarrelscy",
@@ -29,14 +29,19 @@
   "parameters_human": "186.83B",
   "storage_bytes": 699071465274,
   "storage_human": "699.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

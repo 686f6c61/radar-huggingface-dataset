@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JustViping/team-qh-005-wathba-yolov8n-pose",
   "slug": "justviping-team-qh-005-wathba-yolov8n-pose",
   "author": "JustViping",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 48234211,
   "storage_human": "48 MB",
+  "context_length": null,
   "base_model": "Xenova/yolov8n-pose",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

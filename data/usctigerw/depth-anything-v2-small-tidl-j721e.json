@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "usctigerw/depth-anything-v2-small-tidl-j721e",
   "slug": "usctigerw-depth-anything-v2-small-tidl-j721e",
   "author": "usctigerw",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 170877112,
   "storage_human": "171 MB",
+  "context_length": null,
   "base_model": "depth-anything/Depth-Anything-V2-Small-hf",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

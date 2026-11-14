@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maclocal/GLM-5.3-Flash-AFM-MLX-4bit",
   "slug": "maclocal-glm-5-3-flash-afm-mlx-4bit",
   "author": "maclocal",
@@ -39,6 +39,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 181714328882,
   "storage_human": "181.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

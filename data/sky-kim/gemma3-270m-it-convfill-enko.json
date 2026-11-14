@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sky-Kim/gemma3-270m-IT-ConvFill-EnKo",
   "slug": "sky-kim-gemma3-270m-it-convfill-enko",
   "author": "Sky-Kim",
@@ -45,14 +45,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 569610365,
   "storage_human": "570 MB",
+  "context_length": null,
   "base_model": "vysri/gemma3-270m-IT-ConvFill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

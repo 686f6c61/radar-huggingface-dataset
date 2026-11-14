@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbressa/bert-pii-pedidos-acesso-informacao",
   "slug": "fbressa-bert-pii-pedidos-acesso-informacao",
   "author": "fbressa",
@@ -36,14 +36,19 @@
   "parameters_human": "108.9M",
   "storage_bytes": 435722224,
   "storage_human": "436 MB",
+  "context_length": null,
   "base_model": "neuralmind/bert-base-portuguese-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

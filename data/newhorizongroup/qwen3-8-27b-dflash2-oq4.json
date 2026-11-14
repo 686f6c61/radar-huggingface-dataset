@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NewHorizonGroup/Qwen3.8-27B-DFlash2-oQ4",
   "slug": "newhorizongroup-qwen3-8-27b-dflash2-oq4",
   "author": "NewHorizonGroup",
@@ -31,6 +31,7 @@
   "parameters_human": "1.92B",
   "storage_bytes": 1083168412,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.8-27B-DFlash2",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

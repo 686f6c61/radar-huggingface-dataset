@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Guangchen-Lan/selfplay-gpt56-p5-27235f",
   "slug": "guangchen-lan-selfplay-gpt56-p5-27235f",
   "author": "Guangchen-Lan",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 1024310145,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/Qwen3.8-Flash-Next-CRACK-6S",
   "slug": "dealignai-qwen3-8-flash-next-crack-6s",
   "author": "dealignai",
@@ -52,6 +52,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 114480480604,
   "storage_human": "114.5 GB",
+  "context_length": null,
   "base_model": "JANGQ-AI/Qwen3.8-Flash-Next-JANG_6S",
   "formats": [
     "mlx",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "dealignai/Qwen3.8-Flash-Next-CRACK-JANG_6S",
+  "renamed_at": "2026-11-11T04:59:59.604Z",
   "benchmarks": [],
   "sources": [
     {

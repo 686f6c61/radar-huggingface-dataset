@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lavendercomputing/SenseNova-Loop-9B-Preview-GSQ-RCO-GGUF",
   "slug": "lavendercomputing-sensenova-loop-9b-preview-gsq-rco-gguf",
   "author": "lavendercomputing",
@@ -34,14 +34,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 64609427104,
   "storage_human": "64.6 GB",
+  "context_length": 262144,
   "base_model": "sensenova/SenseNova-Loop-9B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kijai/MiniMax-H3-experimental",
   "slug": "kijai-minimax-h3-experimental",
   "author": "Kijai",
@@ -14,19 +14,24 @@
   "tags": [
     "region:us"
   ],
-  "likes": 697,
+  "likes": 699,
   "downloads_30d": 0,
-  "trending_score": 21,
+  "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 126855184487,
   "storage_human": "126.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

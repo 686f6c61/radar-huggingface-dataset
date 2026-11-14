@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rozeactual/Qwen3.5-27B-Writer-V2-Uncensored-Heretic-MLX-4bit",
   "slug": "rozeactual-qwen3-5-27b-writer-v2-uncensored-heretic-mlx-4bit",
   "author": "rozeactual",
@@ -32,6 +32,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15153032852,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.5-27B-Writer-V2-uncensored-heretic",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

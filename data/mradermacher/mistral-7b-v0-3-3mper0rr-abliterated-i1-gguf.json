@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mistral-7B-v0.3-3MPER0RR-abliterated-i1-GGUF",
   "slug": "mradermacher-mistral-7b-v0-3-3mper0rr-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 81826267808,
   "storage_human": "81.8 GB",
+  "context_length": 32768,
   "base_model": "3MPER0RR/Mistral-7B-v0.3-3MPER0RR-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

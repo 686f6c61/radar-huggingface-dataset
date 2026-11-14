@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "terminusresearch/pixart-900m-1024-ft-v0.6",
   "slug": "terminusresearch-pixart-900m-1024-ft-v0-6",
   "author": "terminusresearch",
@@ -32,6 +32,7 @@
   "parameters_human": "908.4M",
   "storage_bytes": 30795335113,
   "storage_human": "30.8 GB",
+  "context_length": null,
   "base_model": "ptx0/pixart-900m-1024-ft-large",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

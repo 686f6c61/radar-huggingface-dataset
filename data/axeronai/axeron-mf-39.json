@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AxeronAI/axeron-mf-39",
   "slug": "axeronai-axeron-mf-39",
   "author": "AxeronAI",
@@ -32,14 +32,19 @@
   "parameters_human": "7.61B",
   "storage_bytes": 15236973688,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B, Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:04:06.901Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thousandml/gemma-4-31B-CQ-4bit",
   "slug": "thousandml-gemma-4-31b-cq-4bit",
   "author": "thousandml",
@@ -29,14 +29,19 @@
   "parameters_human": "1.47B",
   "storage_bytes": 18106382198,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

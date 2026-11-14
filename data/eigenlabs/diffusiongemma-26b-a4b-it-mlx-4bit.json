@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EigenLabs/DiffusionGemma-26B-A4B-it-MLX-4bit",
   "slug": "eigenlabs-diffusiongemma-26b-a4b-it-mlx-4bit",
   "author": "EigenLabs",
@@ -34,6 +34,7 @@
   "parameters_human": "25.82B",
   "storage_bytes": 16575225031,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "google/diffusiongemma-26B-A4B-it",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

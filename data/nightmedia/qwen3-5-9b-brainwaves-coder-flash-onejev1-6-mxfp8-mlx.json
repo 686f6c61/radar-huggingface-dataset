@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-mxfp8-mlx",
   "slug": "nightmedia-qwen3-5-9b-brainwaves-coder-flash-onejev1-6-mxfp8-mlx",
   "author": "nightmedia",
@@ -82,12 +82,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "OmniJev/OneJev1.6-9B, Jackrong/Qwopus3-5-9B-Coder-Flash, nightmedia/Qwen3.5-9B-Brainwaves",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T05:47:23.802Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

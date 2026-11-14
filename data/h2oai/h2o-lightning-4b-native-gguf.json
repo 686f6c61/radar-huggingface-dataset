@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h2oai/h2o-lightning-4b-native-gguf",
   "slug": "h2oai-h2o-lightning-4b-native-gguf",
   "author": "h2oai",
@@ -29,14 +29,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 27158445472,
   "storage_human": "27.2 GB",
+  "context_length": 262144,
   "base_model": "h2oai/h2o-lightning-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:22:55.202Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

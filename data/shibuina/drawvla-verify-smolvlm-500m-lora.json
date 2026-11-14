@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shibuina/drawvla-verify-smolvlm-500m-lora",
   "slug": "shibuina-drawvla-verify-smolvlm-500m-lora",
   "author": "shibuina",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 38348096,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

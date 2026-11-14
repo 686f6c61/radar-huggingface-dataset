@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-GLM-5.3-Flash-Chronos-v7.5",
   "slug": "defnoteatin-pseudobrain-glm-5-3-flash-chronos-v7-5",
   "author": "defnoteatin",
@@ -47,14 +47,19 @@
   "parameters_human": "83.77B",
   "storage_bytes": 92654171041,
   "storage_human": "92.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

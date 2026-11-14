@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meshllm/Ornith-1.5-35B-Q4_K_M-layers",
   "slug": "meshllm-ornith-1-5-35b-q4_k_m-layers",
   "author": "meshllm",
@@ -35,14 +35,19 @@
   "parameters_human": "842.7M",
   "storage_bytes": 23086923264,
   "storage_human": "23.1 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

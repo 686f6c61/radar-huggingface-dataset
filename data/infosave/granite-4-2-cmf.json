@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Granite-4.2-cmf",
   "slug": "infosave-granite-4-2-cmf",
   "author": "infosave",
@@ -60,12 +60,17 @@
   "parameters_human": null,
   "storage_bytes": 64594646564,
   "storage_human": "64.6 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-3b, ibm-granite/granite-4.2-8b, ibm-granite/granite-4.2-30b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

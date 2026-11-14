@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "l1m0ur3n/cantocaptions-cantonese-asr-8bit-mlx",
   "slug": "l1m0ur3n-cantocaptions-cantonese-asr-8bit-mlx",
   "author": "l1m0ur3n",
@@ -37,6 +37,7 @@
   "parameters_human": "2.04B",
   "storage_bytes": 2463307541,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "rookes/cantocaptions-cantonese-asr",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

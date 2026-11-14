@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "incandgold/Llama-3.1-LawQ-Extract-8B",
   "slug": "incandgold-llama-3-1-lawq-extract-8b",
   "author": "incandgold",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 168039971,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "taide/Llama-3.1-TAIDE-LX-8B-Chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

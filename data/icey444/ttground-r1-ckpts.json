@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Icey444/ttground-r1-ckpts",
   "slug": "icey444-ttground-r1-ckpts",
   "author": "Icey444",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 1204258200543,
   "storage_human": "1204.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "DemystifyingTWI/ttground-r1-ckpts",
+  "renamed_at": "2026-11-11T02:56:05.635Z",
   "benchmarks": [],
   "sources": [
     {

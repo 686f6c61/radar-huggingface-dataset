@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dat-Ng/Fillertuned-Nemotron-3.5-Transcribe-30B-A4B-NVFP4",
   "slug": "dat-ng-fillertuned-nemotron-3-5-transcribe-30b-a4b-nvfp4",
   "author": "Dat-Ng",
@@ -28,14 +28,19 @@
   "parameters_human": "18.71B",
   "storage_bytes": 21573951166,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

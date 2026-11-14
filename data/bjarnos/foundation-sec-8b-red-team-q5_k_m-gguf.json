@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bjarnos/foundation-sec-8b-red-team-Q5_K_M-GGUF",
   "slug": "bjarnos-foundation-sec-8b-red-team-q5_k_m-gguf",
   "author": "Bjarnos",
@@ -38,14 +38,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 5733781184,
   "storage_human": "5.7 GB",
+  "context_length": 131072,
   "base_model": "Ironcybersec/foundation-sec-8b-red-team",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

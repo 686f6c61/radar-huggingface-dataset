@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/Ripple-65B-Preview-UNCENSORED-GGUF",
   "slug": "dealignai-ripple-65b-preview-uncensored-gguf",
   "author": "dealignai",
@@ -48,6 +48,7 @@
   "parameters_human": "64.78B",
   "storage_bytes": 68794603984,
   "storage_human": "68.8 GB",
+  "context_length": 2097152,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "gguf",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

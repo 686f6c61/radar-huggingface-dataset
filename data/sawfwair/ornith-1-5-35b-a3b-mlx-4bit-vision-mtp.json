@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sawfwair/Ornith-1.5-35B-A3B-MLX-4bit-Vision-MTP",
   "slug": "sawfwair-ornith-1-5-35b-a3b-mlx-4bit-vision-mtp",
   "author": "Sawfwair",
@@ -34,6 +34,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 30341616238,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit, ornith-ai/Ornith-1.5-35B-A3B, shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

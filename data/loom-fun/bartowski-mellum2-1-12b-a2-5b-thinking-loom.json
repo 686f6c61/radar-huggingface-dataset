@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-fun/bartowski-Mellum2.1-12B-A2.5B-Thinking-loom",
   "slug": "loom-fun-bartowski-mellum2-1-12b-a2-5b-thinking-loom",
   "author": "loom-fun",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "bartowski/Mellum2.1-12B-A2.5B-Thinking-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

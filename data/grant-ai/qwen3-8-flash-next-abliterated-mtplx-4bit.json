@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grant-ai/Qwen3.8-Flash-Next-Abliterated-MTPLX-4bit",
   "slug": "grant-ai-qwen3-8-flash-next-abliterated-mtplx-4bit",
   "author": "grant-ai",
@@ -38,6 +38,7 @@
   "parameters_human": "126.19B",
   "storage_bytes": 279067821077,
   "storage_human": "279.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-BF16",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

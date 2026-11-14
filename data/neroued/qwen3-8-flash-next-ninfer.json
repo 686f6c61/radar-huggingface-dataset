@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neroued/Qwen3.8-Flash-Next-NInfer",
   "slug": "neroued-qwen3-8-flash-next-ninfer",
   "author": "neroued",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 108459371206,
   "storage_human": "108.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, nvidia/Qwen3.8-Flash-Next-NVFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Becka00/SmolLM3-3B-Q4_K_M-GGUF",
   "slug": "becka00-smollm3-3b-q4_k_m-gguf",
   "author": "Becka00",
@@ -46,14 +46,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 1915300224,
   "storage_human": "1.9 GB",
+  "context_length": 65536,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

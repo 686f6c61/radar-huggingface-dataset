@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Gemma3-270M-NPU2",
   "slug": "atomic-germ-gemma3-270m-npu2",
   "author": "Atomic-Germ",
@@ -64,12 +64,17 @@
   "parameters_human": null,
   "storage_bytes": 537688985,
   "storage_human": "538 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

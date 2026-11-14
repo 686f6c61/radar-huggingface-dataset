@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tachiwin/tachiwin-lid-ecapa-onnx",
   "slug": "tachiwin-tachiwin-lid-ecapa-onnx",
   "author": "tachiwin",
@@ -164,14 +164,19 @@
   "parameters_human": null,
   "storage_bytes": 131076401,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "tachiwin/Tachiwin-Audio-ID",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tachiwin/Tachiwin-Audio-ID-Onnx",
+  "renamed_at": "2026-11-11T07:42:16.394Z",
   "benchmarks": [],
   "sources": [
     {

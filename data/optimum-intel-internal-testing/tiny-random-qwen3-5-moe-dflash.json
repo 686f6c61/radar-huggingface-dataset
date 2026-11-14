@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optimum-intel-internal-testing/tiny-random-qwen3.5-moe-dflash",
   "slug": "optimum-intel-internal-testing-tiny-random-qwen3-5-moe-dflash",
   "author": "optimum-intel-internal-testing",
@@ -24,14 +24,19 @@
   "parameters_human": "20736",
   "storage_bytes": 85280,
   "storage_human": "85280 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

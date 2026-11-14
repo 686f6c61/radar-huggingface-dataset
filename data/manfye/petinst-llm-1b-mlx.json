@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manfye/PetInst-LLM-1B-MLX",
   "slug": "manfye-petinst-llm-1b-mlx",
   "author": "manfye",
@@ -35,6 +35,7 @@
   "parameters_human": null,
   "storage_bytes": 777973102,
   "storage_human": "778 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

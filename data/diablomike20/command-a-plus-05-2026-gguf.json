@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/command-a-plus-05-2026-GGUF",
   "slug": "diablomike20-command-a-plus-05-2026-gguf",
   "author": "diablomike20",
@@ -126,14 +126,19 @@
   "parameters_human": "218.25B",
   "storage_bytes": 2696141656864,
   "storage_human": "2696.1 GB",
+  "context_length": 200000,
   "base_model": "CohereLabs/command-a-plus-05-2026-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WeiChow/DiffusionOPSD",
   "slug": "weichow-diffusionopsd",
   "author": "WeiChow",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 3743848150,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-3.5-medium, Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "graf/science_gemma_1b_mix_bt_qwen4b-bt-0091fc01-1-142-on",
   "slug": "graf-science_gemma_1b_mix_bt_qwen4b-bt-0091fc01-1-142-on",
   "author": "graf",
@@ -35,14 +35,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056409854,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

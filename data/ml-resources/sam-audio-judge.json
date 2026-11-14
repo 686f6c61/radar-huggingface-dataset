@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ml-resources/sam-audio-judge",
   "slug": "ml-resources-sam-audio-judge",
   "author": "ml-resources",
@@ -24,14 +24,19 @@
   "parameters_human": "1.53B",
   "storage_bytes": 12270668420,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

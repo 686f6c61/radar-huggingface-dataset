@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Huihui-Ministral-3-3B-Reasoning-2512-abliterated-GGUF",
   "slug": "mradermacher-huihui-ministral-3-3b-reasoning-2512-abliterated-gguf",
   "author": "mradermacher",
@@ -51,14 +51,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 31232387712,
   "storage_human": "31.2 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Ministral-3-3B-Reasoning-2512-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

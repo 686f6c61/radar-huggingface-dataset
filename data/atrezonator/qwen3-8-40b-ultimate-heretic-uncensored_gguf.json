@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atrezonator/Qwen3.8-40B-Ultimate-Heretic-Uncensored_GGUF",
   "slug": "atrezonator-qwen3-8-40b-ultimate-heretic-uncensored_gguf",
   "author": "atrezonator",
@@ -82,14 +82,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 138054077280,
   "storage_human": "138.1 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "atrezonator/Qwen3.8-40B-Heretic-Uncensored_GGUF",
+  "renamed_at": "2026-11-11T04:35:28.277Z",
   "benchmarks": [],
   "sources": []
 }

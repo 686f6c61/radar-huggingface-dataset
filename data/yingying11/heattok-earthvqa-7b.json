@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yingying11/HeatTok-EarthVQA-7B",
   "slug": "yingying11-heattok-earthvqa-7b",
   "author": "Yingying11",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 1949714594,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

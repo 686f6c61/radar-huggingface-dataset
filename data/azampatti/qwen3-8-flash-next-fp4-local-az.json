@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "azampatti/Qwen3.8-Flash-Next-FP4-Local-AZ",
   "slug": "azampatti-qwen3-8-flash-next-fp4-local-az",
   "author": "azampatti",
@@ -37,14 +37,19 @@
   "parameters_human": "96.73B",
   "storage_bytes": 102505710337,
   "storage_human": "102.5 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ameenazeemi/LFM3-1.7B-AI-Text-Detector",
   "slug": "ameenazeemi-lfm3-1-7b-ai-text-detector",
   "author": "ameenazeemi",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 82383269,
   "storage_human": "82 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

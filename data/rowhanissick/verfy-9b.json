@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rowhanissick/Verfy-9B",
   "slug": "rowhanissick-verfy-9b",
   "author": "Rowhanissick",
@@ -46,14 +46,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 55795993110,
   "storage_human": "55.8 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwythos-9B-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

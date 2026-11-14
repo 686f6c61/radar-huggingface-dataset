@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Darth-Coder/my-model3-30b-it",
   "slug": "darth-coder-my-model3-30b-it",
   "author": "Darth-Coder",
@@ -33,14 +33,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61077998310,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RRNicole1014/Qwen2.5-3B-Instruct-Profesor-Albus-Dumbledore",
   "slug": "rrnicole1014-qwen2-5-3b-instruct-profesor-albus-dumbledore",
   "author": "RRNicole1014",
@@ -33,14 +33,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 12355276150,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

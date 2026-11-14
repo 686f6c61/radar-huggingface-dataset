@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zyphra/ZONOS3-Mini",
   "slug": "zyphra-zonos3-mini",
   "author": "Zyphra",
@@ -70,13 +70,14 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 327,
+  "likes": 337,
   "downloads_30d": 19743,
-  "trending_score": 287,
+  "trending_score": 297,
   "parameters": 886342504,
   "parameters_human": "886.3M",
   "storage_bytes": 31393984147,
   "storage_human": "31.4 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -84,8 +85,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

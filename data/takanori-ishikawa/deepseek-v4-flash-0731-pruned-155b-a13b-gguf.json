@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "takanori-ishikawa/DeepSeek-V4-Flash-0731-Pruned-155B-A13B-GGUF",
   "slug": "takanori-ishikawa-deepseek-v4-flash-0731-pruned-155b-a13b-gguf",
   "author": "takanori-ishikawa",
@@ -38,14 +38,19 @@
   "parameters_human": "155.46B",
   "storage_bytes": 164436370944,
   "storage_human": "164.4 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731, unsloth/DeepSeek-V4-Flash-0731-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mr-Itachi/vit-soil-quality-detector",
   "slug": "mr-itachi-vit-soil-quality-detector",
   "author": "Mr-Itachi",
@@ -22,14 +22,19 @@
   "parameters_human": "85.8M",
   "storage_bytes": 686606288,
   "storage_human": "687 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

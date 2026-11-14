@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheStageAI/pocket-tts-100m-pl",
   "slug": "thestageai-pocket-tts-100m-pl",
   "author": "TheStageAI",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 742998440,
   "storage_human": "743 MB",
+  "context_length": null,
   "base_model": "shefowl/pocket-tts-polish-6l",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

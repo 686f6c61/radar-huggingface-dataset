@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-l1exact-ds4k-154712-20261016",
   "slug": "hi-todayis-jh-ouro-1-4b-thinking-math-verl-grpo-ragged-l1exact-ds4k-154712-20261016",
   "author": "hi-todayis-jh",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 637710,
   "storage_human": "637710 B",
+  "context_length": null,
   "base_model": "ByteDance/Ouro-1.4B-Thinking",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

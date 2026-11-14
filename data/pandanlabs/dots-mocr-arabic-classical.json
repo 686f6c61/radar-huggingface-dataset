@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pandanlabs/dots-mocr-arabic-classical",
   "slug": "pandanlabs-dots-mocr-arabic-classical",
   "author": "pandanlabs",
@@ -38,14 +38,19 @@
   "parameters_human": "3.04B",
   "storage_bytes": 6098173876,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "dots-studio/dots.mocr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

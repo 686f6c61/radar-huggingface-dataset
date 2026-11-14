@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Franklalalala/tmp-6c0e3397526f6b97f3",
   "slug": "franklalalala-tmp-6c0e3397526f6b97f3",
   "author": "Franklalalala",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 14891147264,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T02:46:39.453Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

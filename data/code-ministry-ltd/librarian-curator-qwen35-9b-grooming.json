@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "code-ministry-ltd/librarian-curator-qwen35-9b-grooming",
   "slug": "code-ministry-ltd-librarian-curator-qwen35-9b-grooming",
   "author": "code-ministry-ltd",
@@ -34,6 +34,7 @@
   "parameters_human": "14.5M",
   "storage_bytes": 107339039,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-9B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "solomoniw/CallForge-1B-v0",
   "slug": "solomoniw-callforge-1b-v0",
   "author": "solomoniw",
@@ -36,6 +36,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 13912578976,
   "storage_human": "13.9 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

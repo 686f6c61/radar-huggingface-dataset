@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ultimatechris/Ornith-1.5-35B-A3B-EXL3-4bpw",
   "slug": "ultimatechris-ornith-1-5-35b-a3b-exl3-4bpw",
   "author": "ultimatechris",
@@ -34,14 +34,19 @@
   "parameters_human": "9.87B",
   "storage_bytes": 19823855192,
   "storage_human": "19.8 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

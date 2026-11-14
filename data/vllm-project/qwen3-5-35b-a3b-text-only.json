@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/Qwen3.5-35B-A3B-text-only",
   "slug": "vllm-project-qwen3-5-35b-a3b-text-only",
   "author": "vllm-project",
@@ -30,14 +30,19 @@
   "parameters_human": "34.15B",
   "storage_bytes": 68317000422,
   "storage_human": "68.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

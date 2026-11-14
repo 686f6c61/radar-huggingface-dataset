@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jackmaxwil/DeepSeek-V4.1-Flash-REAP-75",
   "slug": "jackmaxwil-deepseek-v4-1-flash-reap-75",
   "author": "jackmaxwil",
@@ -34,14 +34,19 @@
   "parameters_human": "355.46B",
   "storage_bytes": 293587739103,
   "storage_human": "293.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

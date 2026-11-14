@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SE-GUI-3B-GGUF",
   "slug": "mradermacher-se-gui-3b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 30124071744,
   "storage_human": "30.1 GB",
+  "context_length": 128000,
   "base_model": "XinBB/SE-GUI-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

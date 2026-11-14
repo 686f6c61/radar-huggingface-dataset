@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "j-llm/qwen25-0.5b-navspec-gguf",
   "slug": "j-llm-qwen25-0-5b-navspec-gguf",
   "author": "j-llm",
@@ -29,14 +29,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 883222016,
   "storage_human": "883 MB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T03:08:33.922Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
   "slug": "jetbrains-mellum2-1-12b-a2-5b-thinking-gguf",
   "author": "JetBrains",
@@ -38,14 +38,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 130402365056,
   "storage_human": "130.4 GB",
+  "context_length": 131072,
   "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

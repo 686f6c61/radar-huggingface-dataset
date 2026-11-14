@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-i1-GGUF",
   "slug": "mradermacher-lfm2-5-2-6b-jp-rollplay-sft-i1-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 31931331712,
   "storage_human": "31.9 GB",
+  "context_length": 131072,
   "base_model": "CloudGoat/LFM2.5-2.6B-JP-RollPlay-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bouroo/zeta-2.1-mlx-mxfp8",
   "slug": "bouroo-zeta-2-1-mlx-mxfp8",
   "author": "bouroo",
@@ -41,6 +41,7 @@
   "parameters_human": "8.25B",
   "storage_bytes": 8520497791,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "zed-industries/zeta-2.1",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

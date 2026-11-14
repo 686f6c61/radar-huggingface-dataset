@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drakarah/Qwen3.6-35B-A3B-EdgeLLM-INT4",
   "slug": "drakarah-qwen3-6-35b-a3b-edgellm-int4",
   "author": "drakarah",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 18686066718,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

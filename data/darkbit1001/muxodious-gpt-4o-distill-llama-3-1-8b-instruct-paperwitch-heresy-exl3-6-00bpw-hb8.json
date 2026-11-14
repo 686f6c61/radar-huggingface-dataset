@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkbit1001/MuXodious-gpt-4o-distill-Llama-3.1-8B-Instruct-PaperWitch-heresy-exl3-6.00bpw-hb8",
   "slug": "darkbit1001-muxodious-gpt-4o-distill-llama-3-1-8b-instruct-paperwitch-heresy-exl3-6-00bpw-hb8",
   "author": "darkbit1001",
@@ -30,14 +30,19 @@
   "parameters_human": "3.41B",
   "storage_bytes": 6842644572,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "MoXodious/gpt-4o-distil-Llama-3.1-8B-Instruct-PaperWitch-heresy",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

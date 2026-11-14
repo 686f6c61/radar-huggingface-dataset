@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1bit-MONSTER/OpenELM-1.1B-Instruct-GGUF",
   "slug": "1bit-monster-openelm-1-1b-instruct-gguf",
   "author": "1bit-MONSTER",
@@ -26,14 +26,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 672919616,
   "storage_human": "673 MB",
+  "context_length": 2048,
   "base_model": "apple/OpenELM-1_1B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

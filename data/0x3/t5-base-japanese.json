@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0x3/t5-base-japanese",
   "slug": "0x3-t5-base-japanese",
   "author": "0x3",
@@ -34,14 +34,19 @@
   "parameters_human": "222.9M",
   "storage_bytes": 2675807913,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dmk500/parakeet-ultra-sherpa-onnx-int8",
   "slug": "dmk500-parakeet-ultra-sherpa-onnx-int8",
   "author": "dmk500",
@@ -81,14 +81,19 @@
   "parameters_human": null,
   "storage_bytes": 486611746,
   "storage_human": "487 MB",
+  "context_length": null,
   "base_model": "moondream/parakeet-ultra",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

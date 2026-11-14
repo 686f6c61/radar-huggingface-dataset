@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shirochenkov90/embeddinggemma-300m-coreml",
   "slug": "shirochenkov90-embeddinggemma-300m-coreml",
   "author": "shirochenkov90",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 649355538,
   "storage_human": "649 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-300m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

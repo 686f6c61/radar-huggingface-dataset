@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "btr2006/Multi-Crop-Disease-Severity-Yield-Risk",
   "slug": "btr2006-multi-crop-disease-severity-yield-risk",
   "author": "btr2006",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 32333135,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

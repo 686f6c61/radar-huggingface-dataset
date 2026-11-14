@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darioooooo0o/drama-3-w4a16-32gb",
   "slug": "darioooooo0o-drama-3-w4a16-32gb",
   "author": "darioooooo0o",
@@ -47,14 +47,19 @@
   "parameters_human": "6.93B",
   "storage_bytes": 24517464138,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "fishaudio/drama-3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

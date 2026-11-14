@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.8-Flash-Next-BF16-GGUF",
   "slug": "amaimedia-qwen3-8-flash-next-bf16-gguf",
   "author": "AMAImedia",
@@ -260,6 +260,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 471347656992,
   "storage_human": "471.3 GB",
+  "context_length": 262144,
   "base_model": "tencent/Hy4-preview, AngelSlim/Hy4-preview-GGUF",
   "formats": [
     "gguf",
@@ -267,8 +268,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

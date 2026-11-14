@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.6-35B-A3B-Mirage-oQ6e-mtp",
   "slug": "nightmedia-qwen3-6-35b-a3b-mirage-oq6e-mtp",
   "author": "nightmedia",
@@ -60,12 +60,13 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 63,
+  "downloads_30d": 257,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
   "storage_bytes": 40731272762,
   "storage_human": "40.7 GB",
+  "context_length": null,
   "base_model": "shunzou05/TerminalHorizon-35B-A3B, AllSpark-Research/Iris-mini, thomsonreuters/Thomson-1.0-Small, nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1, nightmedia/Qwen3.6-35B-A3B-FSM, Qwen/Qwen-AgentWorld-35B-A3B, orcarouter/Nex-N2.5-mini-Uncensored, Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated",
   "formats": [
     "mlx",
@@ -73,8 +74,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

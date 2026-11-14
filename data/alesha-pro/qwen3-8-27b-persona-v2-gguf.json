@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alesha-pro/Qwen3.8-27B-Persona-v2-GGUF",
   "slug": "alesha-pro-qwen3-8-27b-persona-v2-gguf",
   "author": "alesha-pro",
@@ -35,14 +35,19 @@
   "parameters_human": "10240",
   "storage_bytes": 16547400000,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

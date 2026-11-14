@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marcosremar2/lfm3-1.7b-ptbr-roleplay",
   "slug": "marcosremar2-lfm3-1-7b-ptbr-roleplay",
   "author": "marcosremar2",
@@ -37,6 +37,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1300438815,
   "storage_human": "1.3 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

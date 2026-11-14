@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "datahtarov/test1",
   "slug": "datahtarov-test1",
   "author": "datahtarov",
@@ -31,14 +31,19 @@
   "parameters_human": "8.02B",
   "storage_bytes": 16323888687,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "8b833ba6-4485-4bea-b2fb-e0bee23248f0/gigachat-max-90b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

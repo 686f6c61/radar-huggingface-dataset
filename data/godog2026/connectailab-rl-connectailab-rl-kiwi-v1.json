@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Godog2026/connectailab-rl-connectailab-rl-kiwi-v1",
   "slug": "godog2026-connectailab-rl-connectailab-rl-kiwi-v1",
   "author": "Godog2026",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 41684315,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T02:51:31.186Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

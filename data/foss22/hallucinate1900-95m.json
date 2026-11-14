@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "foss22/Hallucinate1900-95M",
   "slug": "foss22-hallucinate1900-95m",
   "author": "foss22",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 929775875,
   "storage_human": "930 MB",
+  "context_length": null,
   "base_model": "croqaz/Sprocket-and-Say",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

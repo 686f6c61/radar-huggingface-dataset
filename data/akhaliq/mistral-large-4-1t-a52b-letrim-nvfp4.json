@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/Mistral-Large-4-1T-A52B-LeTrim-NVFP4",
   "slug": "akhaliq-mistral-large-4-1t-a52b-letrim-nvfp4",
   "author": "akhaliq",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 781659601129,
   "storage_human": "781.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B, mistralai/Mistral-Large-4-1T-A52B-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tammyai/p4u-tamara-zimage-lora-v2",
   "slug": "tammyai-p4u-tamara-zimage-lora-v2",
   "author": "tammyai",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 823446846,
   "storage_human": "823 MB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:05:52.488Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

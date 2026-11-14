@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "innoblabla/yellow_sphere_blue_cube_GR00T17",
   "slug": "innoblabla-yellow_sphere_blue_cube_gr00t17",
   "author": "innoblabla",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 25152440080,
   "storage_human": "25.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bumblebeeman/runa-toon-full",
   "slug": "bumblebeeman-runa-toon-full",
   "author": "bumblebeeman",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 469315336,
   "storage_human": "469 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

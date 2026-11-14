@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/glm-4-32b-0414",
   "slug": "kerasformers-glm-4-32b-0414",
   "author": "kerasformers",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 65206707936,
   "storage_human": "65.2 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4-32B-0414",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/glm-4-32b-0414",
+  "renamed_at": "2026-11-13T06:15:33.571Z",
   "benchmarks": [],
   "sources": []
 }

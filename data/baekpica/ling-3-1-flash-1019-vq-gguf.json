@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Baekpica/Ling-3.1-flash-1019-VQ-GGUF",
   "slug": "baekpica-ling-3-1-flash-1019-vq-gguf",
   "author": "Baekpica",
@@ -37,14 +37,19 @@
   "parameters_human": "15.69B",
   "storage_bytes": 115317905772,
   "storage_human": "115.3 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.1-flash-1019",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

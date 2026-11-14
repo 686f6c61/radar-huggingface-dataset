@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "changwangss/sdxl-base-1.0-mxfp4-nosmooth-signround",
   "slug": "changwangss-sdxl-base-1-0-mxfp4-nosmooth-signround",
   "author": "changwangss",
@@ -26,6 +26,7 @@
   "parameters_human": "1.77B",
   "storage_bytes": 4361882054,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T05:51:46.151Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

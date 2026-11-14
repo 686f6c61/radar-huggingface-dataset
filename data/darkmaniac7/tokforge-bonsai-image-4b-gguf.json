@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkmaniac7/TokForge-Bonsai-Image-4B-GGUF",
   "slug": "darkmaniac7-tokforge-bonsai-image-4b-gguf",
   "author": "darkmaniac7",
@@ -38,14 +38,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 4034560143,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

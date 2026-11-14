@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jhyuckkim/DeepSeek-V2-Lite-Dense-3B-SF-K6",
   "slug": "jhyuckkim-deepseek-v2-lite-dense-3b-sf-k6",
   "author": "jhyuckkim",
@@ -37,14 +37,19 @@
   "parameters_human": "2.66B",
   "storage_bytes": 5319448992,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V2-Lite",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

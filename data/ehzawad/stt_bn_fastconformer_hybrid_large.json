@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ehzawad/stt_bn_fastconformer_hybrid_large",
   "slug": "ehzawad-stt_bn_fastconformer_hybrid_large",
   "author": "ehzawad",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 454361982,
   "storage_human": "454 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T04:45:10.577Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

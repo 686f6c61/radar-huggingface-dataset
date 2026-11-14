@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlagRelease/Qwen3.8-27B-BF16-zhenwu-FlagOS-Express",
   "slug": "flagrelease-qwen3-8-27b-bf16-zhenwu-flagos-express",
   "author": "FlagRelease",
@@ -29,14 +29,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575816096,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

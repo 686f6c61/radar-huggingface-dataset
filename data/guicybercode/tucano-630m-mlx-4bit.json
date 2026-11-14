@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guicybercode/Tucano-630m-mlx-4bit",
   "slug": "guicybercode-tucano-630m-mlx-4bit",
   "author": "guicybercode",
@@ -45,6 +45,7 @@
   "parameters_human": "630.3M",
   "storage_bytes": 354639240,
   "storage_human": "355 MB",
+  "context_length": null,
   "base_model": "TucanoBR/Tucano-630m",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

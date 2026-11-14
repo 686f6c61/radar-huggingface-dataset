@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "metrika-labs/PP-OCRv6_tiny_rec_cyrillic_safetensors",
   "slug": "metrika-labs-pp-ocrv6_tiny_rec_cyrillic_safetensors",
   "author": "metrika-labs",
@@ -51,14 +51,19 @@
   "parameters_human": "623096",
   "storage_bytes": 2512600,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-OCRv6_tiny_rec",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

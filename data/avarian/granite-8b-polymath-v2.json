@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Avarian/granite-8b-polymath-v2",
   "slug": "avarian-granite-8b-polymath-v2",
   "author": "Avarian",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 197993952,
   "storage_human": "198 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T03:32:07.803Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

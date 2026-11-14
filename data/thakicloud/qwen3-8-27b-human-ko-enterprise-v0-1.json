@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.1",
   "slug": "thakicloud-qwen3-8-27b-human-ko-enterprise-v0-1",
   "author": "ThakiCloud",
@@ -41,14 +41,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575816096,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "ThakiCloud/Qwen3.8-27B-Human-KO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

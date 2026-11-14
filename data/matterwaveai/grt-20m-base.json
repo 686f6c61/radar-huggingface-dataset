@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatterWaveAI/grt-20m-base",
   "slug": "matterwaveai-grt-20m-base",
   "author": "MatterWaveAI",
@@ -41,6 +41,7 @@
   "parameters_human": "16.7M",
   "storage_bytes": 135696196,
   "storage_human": "136 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

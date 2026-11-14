@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RicardoEstep/RPBizkitRemiX-v1-12B",
   "slug": "ricardoestep-rpbizkitremix-v1-12b",
   "author": "RicardoEstep",
@@ -43,14 +43,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24512685396,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "RicardoEstep/AngelSlayerKrix-12B, RicardoEstep/RPBizkit-v2-12B, RicardoEstep/RPBizkit-v4-12B, RicardoEstep/RPBizkit-v4-12B_Lorablated, RicardoEstep/RPBizkit-v5-12B-Lorablated, RicardoEstep/RPBizkit-v6-12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

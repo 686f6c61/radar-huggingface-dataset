@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imvladikon/ling-glm53-repair-debug-20260908-121538",
   "slug": "imvladikon-ling-glm53-repair-debug-20260908-121538",
   "author": "imvladikon",
@@ -33,14 +33,19 @@
   "parameters_human": "7.80B",
   "storage_bytes": 18179043061,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T03:28:15.397Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

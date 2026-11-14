@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_4",
   "slug": "thehassansaud-p2_pythia410m_q0_2_dpo_beta0_4",
   "author": "TheHassanSaud",
@@ -28,14 +28,19 @@
   "parameters_human": "405.3M",
   "storage_bytes": 1621370224,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TheHassanSaud/P2_pythia410m_q0.2_dpo_beta0.4",
+  "renamed_at": "2026-11-11T04:01:58.866Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kugelblytz/qwen3.5-4b-libero-object-v5-lora",
   "slug": "kugelblytz-qwen3-5-4b-libero-object-v5-lora",
   "author": "kugelblytz",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 519513832,
   "storage_human": "520 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

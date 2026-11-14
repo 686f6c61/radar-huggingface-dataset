@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PandacatAI/umt5-xxl-enc-mlx-q8",
   "slug": "pandacatai-umt5-xxl-enc-mlx-q8",
   "author": "PandacatAI",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 6057646212,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

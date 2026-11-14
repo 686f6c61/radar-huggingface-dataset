@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nickyang/DeepSeek-V4-Flash-0731-Razor-230B-A15B-E192of256",
   "slug": "nickyang-deepseek-v4-flash-0731-razor-230b-a15b-e192of256",
   "author": "Nickyang",
@@ -39,14 +39,19 @@
   "parameters_human": "230.08B",
   "storage_bytes": 127501127216,
   "storage_human": "127.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Nickyang/DeepSeek-V4-Flash-0731-RAZOR-230B-A13B-E192of256",
+  "renamed_at": "2026-11-11T03:25:21.393Z",
   "benchmarks": [],
   "sources": []
 }

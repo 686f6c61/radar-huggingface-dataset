@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harjithreddy/ppo-CartPole-v1",
   "slug": "harjithreddy-ppo-cartpole-v1",
   "author": "Harjithreddy",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 533948,
   "storage_human": "533948 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "R1-HSP/interact_pickwashbottle_merged_GR00T17",
   "slug": "r1-hsp-interact_pickwashbottle_merged_gr00t17",
   "author": "R1-HSP",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576226528,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T03:36:37.636Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

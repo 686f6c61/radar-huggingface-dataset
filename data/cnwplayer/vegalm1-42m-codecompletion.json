@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CNWPlayer/VegaLM1-42M-CodeCompletion",
   "slug": "cnwplayer-vegalm1-42m-codecompletion",
   "author": "CNWPlayer",
@@ -27,14 +27,19 @@
   "parameters_human": "42.1M",
   "storage_bytes": 84120376,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "CNWPlayer/VegaLM1-42M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

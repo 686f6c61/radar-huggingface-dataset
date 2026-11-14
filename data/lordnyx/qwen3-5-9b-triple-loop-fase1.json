@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lordnyx/qwen3.5-9b-triple-loop-fase1",
   "slug": "lordnyx-qwen3-5-9b-triple-loop-fase1",
   "author": "Lordnyx",
@@ -44,6 +44,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 115456228399,
   "storage_human": "115.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Lordnyx/qwen3.5-9b-triple-loop-fase2",
+  "renamed_at": "2026-11-11T03:13:45.577Z",
   "benchmarks": [],
   "sources": [
     {

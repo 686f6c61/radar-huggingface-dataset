@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chulinz/d1-omni-600m-text2sql-decisions",
   "slug": "chulinz-d1-omni-600m-text2sql-decisions",
   "author": "Chulinz",
@@ -34,14 +34,19 @@
   "parameters_human": "587.2M",
   "storage_bytes": 5872941216,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-omni-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

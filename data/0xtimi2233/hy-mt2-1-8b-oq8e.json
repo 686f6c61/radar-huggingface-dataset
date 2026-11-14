@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xtimi2233/Hy-MT2-1.8B-oQ8e",
   "slug": "0xtimi2233-hy-mt2-1-8b-oq8e",
   "author": "0xtimi2233",
@@ -27,6 +27,7 @@
   "parameters_human": "1.79B",
   "storage_bytes": 1903246377,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

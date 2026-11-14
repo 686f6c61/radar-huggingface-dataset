@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamkaikai/MiniMax-H3-Single-Frame-VAE-500K",
   "slug": "iamkaikai-minimax-h3-single-frame-vae-500k",
   "author": "iamkaikai",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 9737570300,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, Mamad8/MiniMax-H3-Image-VAE",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

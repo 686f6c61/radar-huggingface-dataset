@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompassioninMachineLearning/olmo3-7b-medai-cpt",
   "slug": "compassioninmachinelearning-olmo3-7b-medai-cpt",
   "author": "CompassioninMachineLearning",
@@ -37,14 +37,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14596063456,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1025-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CompassioninMachineLearning/olmo3-7b-medai-cpt_olddata",
+  "renamed_at": "2026-11-11T02:32:43.590Z",
   "benchmarks": [],
   "sources": [
     {

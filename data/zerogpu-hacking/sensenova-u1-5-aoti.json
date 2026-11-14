@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zerogpu-hacking/sensenova-u1-5-aoti",
   "slug": "zerogpu-hacking-sensenova-u1-5-aoti",
   "author": "zerogpu-hacking",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1100673,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

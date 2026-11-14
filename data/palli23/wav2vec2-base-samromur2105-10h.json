@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "palli23/wav2vec2-base-samromur2105-10h",
   "slug": "palli23-wav2vec2-base-samromur2105-10h",
   "author": "palli23",
@@ -27,14 +27,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 377643548,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

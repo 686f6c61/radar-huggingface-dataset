@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenFlowLM/Qwen3.8-Distilled-35B-A3B-NPU2",
   "slug": "openflowlm-qwen3-8-distilled-35b-a3b-npu2",
   "author": "OpenFlowLM",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 24793768910,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": "Atomic-Germ/Qwen3.6-35B-A3B-NPU2",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

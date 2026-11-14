@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiaheguo521/relu-clip",
   "slug": "jiaheguo521-relu-clip",
   "author": "jiaheguo521",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 524220209,
   "storage_human": "524 MB",
+  "context_length": null,
   "base_model": "openai/clip-vit-large-patch14, timm/resnet50_clip.openai",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

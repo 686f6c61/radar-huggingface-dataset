@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-Gemma-4-31B-W4A16",
   "slug": "defnoteatin-pseudobrain-gemma-4-31b-w4a16",
   "author": "defnoteatin",
@@ -38,14 +38,19 @@
   "parameters_human": "31.83B",
   "storage_bytes": 22041559386,
   "storage_human": "22.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it, cyankiwi/gemma-4-31B-it-AWQ-4bit, RedHatAI/gemma-4-31B-it-FP8-dynamic, RedHatAI/gemma-4-31B-it-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

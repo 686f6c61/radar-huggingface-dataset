@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/table-transformer-detection-mlx",
   "slug": "masahiroid-table-transformer-detection-mlx",
   "author": "masahiroid",
@@ -34,6 +34,7 @@
   "parameters_human": "28.8M",
   "storage_bytes": 57675060,
   "storage_human": "58 MB",
+  "context_length": null,
   "base_model": "microsoft/table-transformer-detection",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

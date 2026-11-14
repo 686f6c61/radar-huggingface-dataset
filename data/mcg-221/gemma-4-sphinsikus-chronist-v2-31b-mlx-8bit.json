@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "McG-221/Gemma-4-Sphinsikus-Chronist-V2-31B-mlx-8Bit",
   "slug": "mcg-221-gemma-4-sphinsikus-chronist-v2-31b-mlx-8bit",
   "author": "McG-221",
@@ -35,6 +35,7 @@
   "parameters_human": "30.70B",
   "storage_bytes": 32649561334,
   "storage_human": "32.6 GB",
+  "context_length": null,
   "base_model": "Blazed-Forge/Gemma-4-Sphinsikus-Chronist-V2-31B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

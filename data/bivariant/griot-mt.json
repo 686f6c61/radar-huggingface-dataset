@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bivariant/griot-mt",
   "slug": "bivariant-griot-mt",
   "author": "bivariant",
@@ -32,14 +32,19 @@
   "parameters_human": "1.37B",
   "storage_bytes": 4477011955,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bivariant/Griot-MT-1.3B-ALL",
+  "renamed_at": "2026-11-11T04:42:15.627Z",
   "benchmarks": [],
   "sources": [
     {

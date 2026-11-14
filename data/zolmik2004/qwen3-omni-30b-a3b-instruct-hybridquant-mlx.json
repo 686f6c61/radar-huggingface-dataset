@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZolMik2004/Qwen3-Omni-30B-A3B-Instruct-HybridQuant-MLX",
   "slug": "zolmik2004-qwen3-omni-30b-a3b-instruct-hybridquant-mlx",
   "author": "ZolMik2004",
@@ -52,6 +52,7 @@
   "parameters_human": "35.26B",
   "storage_bytes": 22559104653,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "mlx",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

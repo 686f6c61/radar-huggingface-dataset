@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "torch-pointcloud/recon.modelnet40-8k.zekun-qi",
   "slug": "torch-pointcloud-recon-modelnet40-8k-zekun-qi",
   "author": "torch-pointcloud",
@@ -32,14 +32,19 @@
   "parameters_human": "43.6M",
   "storage_bytes": 174352888,
   "storage_human": "174 MB",
+  "context_length": null,
   "base_model": "torch-pointcloud/recon.pretrain.zekun-qi",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

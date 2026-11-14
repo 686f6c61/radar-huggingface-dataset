@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "viai957/nano-mistral-o1-sft",
   "slug": "viai957-nano-mistral-o1-sft",
   "author": "viai957",
@@ -44,14 +44,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 14496949609,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Math word problems (zero-shot, greedy)",

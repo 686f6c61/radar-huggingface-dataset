@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nasrellahkharroubi/darija-tokenizers",
   "slug": "nasrellahkharroubi-darija-tokenizers",
   "author": "nasrellahkharroubi",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 3698970,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nasrellahkharroubi/DarijaDz_Tokenizers",
+  "renamed_at": "2026-11-11T06:51:24.813Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Strill/Qwen2.5-Coder-3B-InPyGG",
   "slug": "strill-qwen2-5-coder-3b-inpygg",
   "author": "Strill",
@@ -27,14 +27,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 1929902688,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:52:30.620Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

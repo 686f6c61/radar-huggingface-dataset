@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "girenit/girenit-KVKK-PII-150M",
   "slug": "girenit-girenit-kvkk-pii-150m",
   "author": "girenit",
@@ -39,14 +39,19 @@
   "parameters_human": "149.4M",
   "storage_bytes": 597465893,
   "storage_human": "597 MB",
+  "context_length": null,
   "base_model": "ytu-ce-cosmos/modernbert-tr-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

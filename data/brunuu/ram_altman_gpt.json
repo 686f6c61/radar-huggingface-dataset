@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brunuu/RAM_Altman_GPT",
   "slug": "brunuu-ram_altman_gpt",
   "author": "brunuu",
@@ -59,6 +59,7 @@
   "parameters_human": "100000",
   "storage_bytes": 2139542,
   "storage_human": "2 MB",
+  "context_length": 379,
   "base_model": null,
   "formats": [
     "gguf",
@@ -67,8 +68,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

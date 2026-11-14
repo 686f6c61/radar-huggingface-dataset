@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Bielik-Minitron-7B-v3.0-Instruct-Malevolent-GGUF",
   "slug": "mradermacher-bielik-minitron-7b-v3-0-instruct-malevolent-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "7.48B",
   "storage_bytes": 66038465408,
   "storage_human": "66.0 GB",
+  "context_length": 32768,
   "base_model": "Osye/Bielik-Minitron-7B-v3.0-Instruct-Malevolent",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

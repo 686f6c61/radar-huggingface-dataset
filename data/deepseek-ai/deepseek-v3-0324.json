@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepseek-ai/DeepSeek-V3-0324",
   "slug": "deepseek-ai-deepseek-v3-0324",
   "author": "deepseek-ai",
@@ -33,14 +33,19 @@
   "parameters_human": "684.53B",
   "storage_bytes": 688592341287,
   "storage_human": "688.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

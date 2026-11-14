@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AngelSlim/Hy4-preview-GGUF",
   "slug": "angelslim-hy4-preview-gguf",
   "author": "AngelSlim",
@@ -25,14 +25,19 @@
   "parameters_human": "769.91B",
   "storage_bytes": 932151934379,
   "storage_human": "932.2 GB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

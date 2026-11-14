@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnveshAI/AnveshAI-Ritchie-0.1B",
   "slug": "anveshai-anveshai-ritchie-0-1b",
   "author": "AnveshAI",
@@ -40,14 +40,19 @@
   "parameters_human": "100.7M",
   "storage_bytes": 202012460,
   "storage_human": "202 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

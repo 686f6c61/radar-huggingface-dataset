@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keystats/road-barbados-qwen3vl-8b-ocr-best",
   "slug": "keystats-road-barbados-qwen3vl-8b-ocr-best",
   "author": "keystats",
@@ -28,14 +28,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545762310,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T16:57:16.170Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

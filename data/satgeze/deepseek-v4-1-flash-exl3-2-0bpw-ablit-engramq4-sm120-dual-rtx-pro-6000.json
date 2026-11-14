@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "satgeze/DeepSeek-v4.1-Flash-EXL3-2.0bpw-Ablit-EngramQ4-SM120-Dual-RTX-Pro-6000",
   "slug": "satgeze-deepseek-v4-1-flash-exl3-2-0bpw-ablit-engramq4-sm120-dual-rtx-pro-6000",
   "author": "satgeze",
@@ -38,14 +38,19 @@
   "parameters_human": "188.96B",
   "storage_bytes": 259813971053,
   "storage_human": "259.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

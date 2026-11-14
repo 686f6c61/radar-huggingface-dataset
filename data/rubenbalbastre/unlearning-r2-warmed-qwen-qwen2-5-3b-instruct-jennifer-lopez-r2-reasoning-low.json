@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r2-reasoning-low",
   "slug": "rubenbalbastre-unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-jennifer-lopez-r2-reasoning-low",
   "author": "rubenbalbastre",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 479011904,
   "storage_human": "479 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

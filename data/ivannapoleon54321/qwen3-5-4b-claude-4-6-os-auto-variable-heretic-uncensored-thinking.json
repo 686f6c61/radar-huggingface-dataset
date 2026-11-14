@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ivannapoleon54321/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
   "slug": "ivannapoleon54321-qwen3-5-4b-claude-4-6-os-auto-variable-heretic-uncensored-thinking",
   "author": "ivannapoleon54321",
@@ -60,14 +60,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609775,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "coder3101/Qwen3.5-4B-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

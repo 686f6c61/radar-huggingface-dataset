@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laskar-ks/alcyone-base-100m",
   "slug": "laskar-ks-alcyone-base-100m",
   "author": "laskar-ks",
@@ -28,14 +28,19 @@
   "parameters_human": "97.7M",
   "storage_bytes": 34017121926,
   "storage_human": "34.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "laskar-ks/alcyone-base-97.7M",
+  "renamed_at": "2026-11-11T05:59:49.544Z",
   "benchmarks": [],
   "sources": [
     {

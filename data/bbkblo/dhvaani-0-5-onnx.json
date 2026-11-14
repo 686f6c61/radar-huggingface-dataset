@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bbkblo/DhVaani-0.5-ONNX",
   "slug": "bbkblo-dhvaani-0-5-onnx",
   "author": "Bbkblo",
@@ -59,14 +59,19 @@
   "parameters_human": null,
   "storage_bytes": 680837332,
   "storage_human": "681 MB",
+  "context_length": null,
   "base_model": "ARTPARK-IISc/DhVaani-0.5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

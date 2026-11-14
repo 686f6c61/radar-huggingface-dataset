@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canbingol/gemma-4-E2B-tool-use-tr",
   "slug": "canbingol-gemma-4-e2b-tool-use-tr",
   "author": "canbingol",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 184020187,
   "storage_human": "184 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

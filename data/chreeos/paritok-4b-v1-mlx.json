@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chreeos/paritok-4b-v1-mlx",
   "slug": "chreeos-paritok-4b-v1-mlx",
   "author": "chreeos",
@@ -31,6 +31,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2274444416,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "paritok/paritok-4b-v1",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

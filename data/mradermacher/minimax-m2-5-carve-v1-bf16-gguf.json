@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiniMax-M2.5-CARVE-v1-BF16-GGUF",
   "slug": "mradermacher-minimax-m2-5-carve-v1-bf16-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "228.69B",
   "storage_bytes": 1551876424192,
   "storage_human": "1551.9 GB",
+  "context_length": 196608,
   "base_model": "vpyn/MiniMax-M2.5-CARVE-v1-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ANTRU-3B-i1-GGUF",
   "slug": "mradermacher-antru-3b-i1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 36761693312,
   "storage_human": "36.8 GB",
+  "context_length": 32768,
   "base_model": "ANTRUhub/ANTRU-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

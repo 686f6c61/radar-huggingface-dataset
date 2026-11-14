@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RodrigoBrasil2024/laya-concessionaria-pt",
   "slug": "rodrigobrasil2024-laya-concessionaria-pt",
   "author": "RodrigoBrasil2024",
@@ -32,14 +32,19 @@
   "parameters_human": "321.9M",
   "storage_bytes": 2609705284,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Concessionaria Decision Suite",

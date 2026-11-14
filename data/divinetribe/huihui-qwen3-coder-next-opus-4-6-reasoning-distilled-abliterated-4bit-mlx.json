@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/Huihui-Qwen3-Coder-Next-Opus-4.6-Reasoning-Distilled-abliterated-4bit-mlx",
   "slug": "divinetribe-huihui-qwen3-coder-next-opus-4-6-reasoning-distilled-abliterated-4bit-mlx",
   "author": "divinetribe",
@@ -28,14 +28,19 @@
   "parameters_human": "79.67B",
   "storage_bytes": 44855709150,
   "storage_human": "44.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

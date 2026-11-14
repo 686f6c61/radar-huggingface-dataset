@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-gemma-4-31b-MLX-AXQ-6bit-MTP",
   "slug": "automatosx-ax-gemma-4-31b-mlx-axq-6bit-mtp",
   "author": "AutomatosX",
@@ -34,6 +34,7 @@
   "parameters_human": "31.27B",
   "storage_bytes": 29350720548,
   "storage_human": "29.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

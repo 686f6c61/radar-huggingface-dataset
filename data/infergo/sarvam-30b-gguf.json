@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infergo/sarvam-30b-gguf",
   "slug": "infergo-sarvam-30b-gguf",
   "author": "infergo",
@@ -51,14 +51,19 @@
   "parameters_human": "32.15B",
   "storage_bytes": 19570784960,
   "storage_human": "19.6 GB",
+  "context_length": 131072,
   "base_model": "sarvamai/sarvam-30b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

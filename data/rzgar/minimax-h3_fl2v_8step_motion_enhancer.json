@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rzgar/minimax-h3_fl2v_8Step_motion_enhancer",
   "slug": "rzgar-minimax-h3_fl2v_8step_motion_enhancer",
   "author": "rzgar",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 4032611864,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

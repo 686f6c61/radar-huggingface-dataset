@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Spark-X2.6-4B-turbo-cmf",
   "slug": "infosave-spark-x2-6-4b-turbo-cmf",
   "author": "infosave",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 6286630359,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

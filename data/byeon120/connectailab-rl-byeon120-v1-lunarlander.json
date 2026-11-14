@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "byeon120/connectailab-rl-byeon120-v1-lunarlander",
   "slug": "byeon120-connectailab-rl-byeon120-v1-lunarlander",
   "author": "byeon120",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 75389,
   "storage_human": "75389 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "reinforcement-learning",

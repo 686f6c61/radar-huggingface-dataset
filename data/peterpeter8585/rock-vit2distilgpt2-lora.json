@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peterpeter8585/rock-vit2distilgpt2-lora",
   "slug": "peterpeter8585-rock-vit2distilgpt2-lora",
   "author": "peterpeter8585",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 4726952,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": "sachin/vit2distilgpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

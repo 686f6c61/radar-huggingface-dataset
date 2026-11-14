@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UtopiaIA/sana-sprint-0.6b-1024px-onnx-web",
   "slug": "utopiaia-sana-sprint-0-6b-1024px-onnx-web",
   "author": "UtopiaIA",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 3444482970,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

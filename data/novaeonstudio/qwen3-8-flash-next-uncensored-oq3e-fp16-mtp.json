@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NovaeonStudio/Qwen3.8-Flash-Next-Uncensored-oQ3e-fp16-mtp",
   "slug": "novaeonstudio-qwen3-8-flash-next-uncensored-oq3e-fp16-mtp",
   "author": "NovaeonStudio",
@@ -41,6 +41,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 85180672760,
   "storage_human": "85.2 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T05:35:39.582Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

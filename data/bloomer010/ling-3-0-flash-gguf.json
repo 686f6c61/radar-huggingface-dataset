@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bloomer010/Ling-3.0-flash-GGUF",
   "slug": "bloomer010-ling-3-0-flash-gguf",
   "author": "bloomer010",
@@ -32,14 +32,19 @@
   "parameters_human": "127.49B",
   "storage_bytes": 6270709898336,
   "storage_human": "6270.7 GB",
+  "context_length": 262144,
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

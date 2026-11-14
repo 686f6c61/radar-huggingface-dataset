@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "belumind/barb-2-ie-vi",
   "slug": "belumind-barb-2-ie-vi",
   "author": "belumind",
@@ -31,14 +31,19 @@
   "parameters_human": "466.6M",
   "storage_bytes": 3732831583,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

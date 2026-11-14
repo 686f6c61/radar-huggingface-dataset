@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schneewolflabs/B2-9B-GGUF",
   "slug": "schneewolflabs-b2-9b-gguf",
   "author": "schneewolflabs",
@@ -31,14 +31,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 10707768640,
   "storage_human": "10.7 GB",
+  "context_length": 262144,
   "base_model": "schneewolflabs/B2-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

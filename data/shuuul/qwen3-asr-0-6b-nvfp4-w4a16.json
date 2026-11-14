@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shuuul/Qwen3-ASR-0.6B-NVFP4-W4A16",
   "slug": "shuuul-qwen3-asr-0-6b-nvfp4-w4a16",
   "author": "shuuul",
@@ -31,14 +31,19 @@
   "parameters_human": "593.7M",
   "storage_bytes": 1022328088,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/Huihui-GLM-5.3-Flash-abliterated-GGUF",
   "slug": "taurusduan-huihui-glm-5-3-flash-abliterated-gguf",
   "author": "taurusduan",
@@ -40,14 +40,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 450780689792,
   "storage_human": "450.8 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T03:58:43.486Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

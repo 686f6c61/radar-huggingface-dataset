@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akandwanaho/llava-med-anatomy-lora",
   "slug": "akandwanaho-llava-med-anatomy-lora",
   "author": "Akandwanaho",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 192071400,
   "storage_human": "192 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

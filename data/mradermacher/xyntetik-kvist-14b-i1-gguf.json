@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Xyntetik-Kvist-14B-i1-GGUF",
   "slug": "mradermacher-xyntetik-kvist-14b-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "14.44B",
   "storage_bytes": 213283005568,
   "storage_human": "213.3 GB",
+  "context_length": 131072,
   "base_model": "Joakimpalm-Zen/Xyntetik-Kvist-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

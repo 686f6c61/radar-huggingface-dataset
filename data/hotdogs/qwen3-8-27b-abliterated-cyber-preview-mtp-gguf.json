@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hotdogs/Qwen3.8-27B-abliterated-cyber-preview-MTP-GGUF",
   "slug": "hotdogs-qwen3-8-27b-abliterated-cyber-preview-mtp-gguf",
   "author": "hotdogs",
@@ -44,14 +44,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 122722989600,
   "storage_human": "122.7 GB",
+  "context_length": 262144,
   "base_model": "hotdogs/Qwen3.8-27B-abliterated-cyber-preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

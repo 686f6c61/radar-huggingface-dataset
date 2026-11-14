@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-heretic-Q6_K-GGUF",
   "slug": "wy8edhuh-deepseek-r1-0528-qwen3-8b-heretic-q6_k-gguf",
   "author": "wy8edhuh",
@@ -33,14 +33,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 6725895360,
   "storage_human": "6.7 GB",
+  "context_length": 131072,
   "base_model": "jpvan4/DeepSeek-R1-0528-Qwen3-8B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:30:37.357Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

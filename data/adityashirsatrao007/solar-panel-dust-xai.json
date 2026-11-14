@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adityashirsatrao007/solar-panel-dust-xai",
   "slug": "adityashirsatrao007-solar-panel-dust-xai",
   "author": "adityashirsatrao007",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 22242946,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Solar panel clean vs dirty",

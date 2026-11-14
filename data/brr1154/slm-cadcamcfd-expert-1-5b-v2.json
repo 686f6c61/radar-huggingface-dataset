@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BRR1154/SLM-CadCamCfd-Expert-1.5B-v2",
   "slug": "brr1154-slm-cadcamcfd-expert-1-5b-v2",
   "author": "BRR1154",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 605553960,
   "storage_human": "606 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Code Generation",

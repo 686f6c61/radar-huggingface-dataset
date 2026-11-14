@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/K2-Horizon-7B-GGUF",
   "slug": "amaimedia-k2-horizon-7b-gguf",
   "author": "AMAImedia",
@@ -35,14 +35,19 @@
   "parameters_human": "9.00B",
   "storage_bytes": 154806172096,
   "storage_human": "154.8 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T08:05:23.894Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

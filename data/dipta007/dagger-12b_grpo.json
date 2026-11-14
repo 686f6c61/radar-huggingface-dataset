@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dipta007/dagger-12B_GRPO",
   "slug": "dipta007-dagger-12b_grpo",
   "author": "dipta007",
@@ -48,14 +48,19 @@
   "parameters_human": "12.19B",
   "storage_bytes": 24412866666,
   "storage_human": "24.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-12b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

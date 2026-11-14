@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mystic2242/BTAI-First-Ais-SLM",
   "slug": "mystic2242-btai-first-ais-slm",
   "author": "Mystic2242",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 539285833,
   "storage_human": "539 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

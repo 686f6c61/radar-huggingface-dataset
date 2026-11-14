@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diarizeapp/ben2-matting-onnx",
   "slug": "diarizeapp-ben2-matting-onnx",
   "author": "diarizeapp",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 422457868,
   "storage_human": "422 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

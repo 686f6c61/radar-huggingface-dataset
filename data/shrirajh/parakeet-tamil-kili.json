@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "id": "shrirajh/parakeet-tamil-kili",
+  "slug": "shrirajh-parakeet-tamil-kili",
+  "author": "shrirajh",
+  "url": "https://huggingface.co/shrirajh/parakeet-tamil-kili",
+  "created_at": "2026-11-14T10:02:39.000Z",
+  "updated_at": "2026-11-14T13:03:41.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ta",
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "safetensors",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "tamil",
+    "code-switching",
+    "tanglish",
+    "indic",
+    "fastconformer",
+    "tdt",
+    "parakeet",
+    "onnxruntime-web",
+    "home-assistant",
+    "wyoming",
+    "ta",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ai4bharat/Shrutilipi",
+    "dataset:ai4bharat/Kathbath",
+    "dataset:espnet/yodas3",
+    "dataset:espnet/yodas-granary",
+    "dataset:ai4bharat/sangraha",
+    "dataset:vishnu-n/Tanglish-Corpus-185k",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 629708946,
+  "parameters_human": "629.7M",
+  "storage_bytes": 10092846492,
+  "storage_human": "10.1 GB",
+  "context_length": null,
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "IndicVoices (Tamil, conversational)",
+      "metric": "fold WER, greedy",
+      "value": 34.05
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "IndicVoices (Tamil, conversational)",
+      "metric": "fold WER, with the Sangraha LM",
+      "value": 33.53
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Kathbath (Tamil, read)",
+      "metric": "fold WER, greedy",
+      "value": 29.15
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Kathbath (Tamil, read)",
+      "metric": "fold WER, with the Sangraha LM",
+      "value": 25.38
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "FLEURS (Tamil)",
+      "metric": "fold WER, greedy",
+      "value": 30.46
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "FLEURS (Tamil)",
+      "metric": "fold WER, with the Sangraha LM",
+      "value": 27.36
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Common Voice 17 (Tamil)",
+      "metric": "fold WER, greedy",
+      "value": 35.22
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Common Voice 17 (Tamil)",
+      "metric": "fold WER, with the Sangraha LM",
+      "value": 32.6
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Common Voice 17 (English)",
+      "metric": "WER, greedy",
+      "value": 10.19
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER, greedy",
+      "value": 2.3
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER, greedy",
+      "value": 4.07
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Svarah (Indian-accented English)",
+      "metric": "WER, greedy",
+      "value": 10.67
+    }
+  ],
+  "sources": []
+}

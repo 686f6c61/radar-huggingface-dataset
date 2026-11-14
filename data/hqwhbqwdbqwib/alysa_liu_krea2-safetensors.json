@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hqwhbqwdbqwib/alysa_liu_krea2.safetensors",
   "slug": "hqwhbqwdbqwib-alysa_liu_krea2-safetensors",
   "author": "hqwhbqwdbqwib",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 235776162,
   "storage_human": "236 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

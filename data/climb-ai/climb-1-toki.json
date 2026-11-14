@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Climb-Ai/Climb-1-Toki",
   "slug": "climb-ai-climb-1-toki",
   "author": "Climb-Ai",
@@ -35,14 +35,19 @@
   "parameters_human": "3.0M",
   "storage_bytes": 24422970,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Magistral-Small-2509-Vision-GGUF",
   "slug": "mradermacher-magistral-small-2509-vision-gguf",
   "author": "mradermacher",
@@ -41,6 +41,7 @@
   "parameters_human": "23.57B",
   "storage_bytes": 164510004800,
   "storage_human": "164.5 GB",
+  "context_length": 131072,
   "base_model": "EnlistedGhost/Magistral-Small-2509-Vision",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

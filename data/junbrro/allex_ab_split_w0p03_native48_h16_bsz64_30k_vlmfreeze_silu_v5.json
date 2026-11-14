@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/allex_AB_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5",
   "slug": "junbrro-allex_ab_split_w0p03_native48_h16_bsz64_30k_vlmfreeze_silu_v5",
   "author": "junbrro",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T03:06:50.494Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIVORENCE/Mia-v1-E2B-GGUF",
   "slug": "aivorence-mia-v1-e2b-gguf",
   "author": "AIVORENCE",
@@ -43,14 +43,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 24445730304,
   "storage_human": "24.4 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "veld-ai/Mia-v1-E2B-GGUF",
+  "renamed_at": "2026-11-11T02:08:50.373Z",
   "benchmarks": [],
   "sources": [
     {

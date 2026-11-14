@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iskiva/qwen3-0.6b-tatar-pruned",
   "slug": "iskiva-qwen3-0-6b-tatar-pruned",
   "author": "iskiva",
@@ -29,14 +29,19 @@
   "parameters_human": "453.4M",
   "storage_bytes": 906791160,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

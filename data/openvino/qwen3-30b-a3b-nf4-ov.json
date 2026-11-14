@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenVINO/Qwen3-30B-A3B-nf4-ov",
   "slug": "openvino-qwen3-30b-a3b-nf4-ov",
   "author": "OpenVINO",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 15642818612,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

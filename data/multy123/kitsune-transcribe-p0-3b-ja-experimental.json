@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Multy123/kitsune-transcribe-p0.3b-ja-experimental",
   "slug": "multy123-kitsune-transcribe-p0-3b-ja-experimental",
   "author": "Multy123",
@@ -30,14 +30,19 @@
   "parameters_human": "308.6M",
   "storage_bytes": 2344621046,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T03:18:56.919Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

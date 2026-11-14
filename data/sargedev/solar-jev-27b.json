@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SargeDev/Solar-JEV-27B",
   "slug": "sargedev-solar-jev-27b",
   "author": "SargeDev",
@@ -44,14 +44,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 54661990133,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vladlinv/ru-pii-ner-gliner",
   "slug": "vladlinv-ru-pii-ner-gliner",
   "author": "vladlinv",
@@ -34,14 +34,19 @@
   "parameters_human": "287.4M",
   "storage_bytes": 1165496881,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2.5-multi-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "metrika-labs/ru-pii-ner-gliner2.5",
+  "renamed_at": "2026-11-11T08:00:56.426Z",
   "benchmarks": [],
   "sources": [
     {

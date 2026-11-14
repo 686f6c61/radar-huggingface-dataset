@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dhairyapandya/morph-s",
   "slug": "dhairyapandya-morph-s",
   "author": "dhairyapandya",
@@ -35,14 +35,19 @@
   "parameters_human": "169.7M",
   "storage_bytes": 679922027,
   "storage_human": "680 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

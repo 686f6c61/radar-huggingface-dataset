@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eric111/SupraTTS-1.0-Preview-FP16",
   "slug": "eric111-supratts-1-0-preview-fp16",
   "author": "Eric111",
@@ -39,14 +39,19 @@
   "parameters_human": "1.0M",
   "storage_bytes": 18938481,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arvinesmaeilydev/smolvla_so101_pick_up_the_cube_realsim_100_norl",
   "slug": "arvinesmaeilydev-smolvla_so101_pick_up_the_cube_realsim_100_norl",
   "author": "arvinesmaeilydev",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 5277556128,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:57:11.305Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fantominsight/Yapper-M4-Flash-0256-GGUF",
   "slug": "fantominsight-yapper-m4-flash-0256-gguf",
   "author": "Fantominsight",
@@ -49,14 +49,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 3652204704,
   "storage_human": "3.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matthieulel/swinv2-small-patch4-window16-256-galaxy10-decals-head-v2",
   "slug": "matthieulel-swinv2-small-patch4-window16-256-galaxy10-decals-head-v2",
   "author": "matthieulel",
@@ -36,14 +36,19 @@
   "parameters_human": "49.0M",
   "storage_bytes": 195930072,
   "storage_human": "196 MB",
+  "context_length": null,
   "base_model": "microsoft/swinv2-small-patch4-window16-256",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

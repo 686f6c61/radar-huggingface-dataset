@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Viggle/Viggle-Image-Swap",
   "slug": "viggle-viggle-image-swap",
   "author": "Viggle",
@@ -26,19 +26,24 @@
   ],
   "likes": 55,
   "downloads_30d": 7796,
-  "trending_score": 46,
+  "trending_score": 44,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1368082553,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

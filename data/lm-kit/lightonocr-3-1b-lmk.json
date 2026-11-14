@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lm-kit/lightonocr-3-1b-lmk",
   "slug": "lm-kit-lightonocr-3-1b-lmk",
   "author": "lm-kit",
@@ -38,14 +38,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 3304146567,
   "storage_human": "3.3 GB",
+  "context_length": 16384,
   "base_model": "lightonai/LightOnOCR-3-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

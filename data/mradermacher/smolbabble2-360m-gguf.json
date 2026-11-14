@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SmolBabble2-360m-GGUF",
   "slug": "mradermacher-smolbabble2-360m-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 3729508992,
   "storage_human": "3.7 GB",
+  "context_length": 2048,
   "base_model": "benni-ben/SmolBabble2-360m",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

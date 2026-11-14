@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Ostrich-27B-Qwen3.8-260815-GGUF",
   "slug": "mradermacher-ostrich-27b-qwen3-8-260815-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 189223604992,
   "storage_human": "189.2 GB",
+  "context_length": 262144,
   "base_model": "etemiz/Ostrich-27B-Qwen3.8-260815",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

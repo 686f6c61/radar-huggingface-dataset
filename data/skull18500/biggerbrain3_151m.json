@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Skull18500/Biggerbrain3_151m",
   "slug": "skull18500-biggerbrain3_151m",
   "author": "Skull18500",
@@ -42,14 +42,19 @@
   "parameters_human": "150.2M",
   "storage_bytes": 600731212,
   "storage_human": "601 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

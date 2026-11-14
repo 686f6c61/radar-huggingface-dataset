@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Qwen3.8-27B-Human-KO-NVFP4",
   "slug": "thakicloud-qwen3-8-27b-human-ko-nvfp4",
   "author": "ThakiCloud",
@@ -41,14 +41,19 @@
   "parameters_human": "18.80B",
   "storage_bytes": 22922588080,
   "storage_human": "22.9 GB",
+  "context_length": null,
   "base_model": "ThakiCloud/Qwen3.8-27B-Human-KO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

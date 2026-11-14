@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beling86/Ling-3.0-flash-W2W3W4-52GB",
   "slug": "beling86-ling-3-0-flash-w2w3w4-52gb",
   "author": "Beling86",
@@ -40,14 +40,19 @@
   "parameters_human": "12.81B",
   "storage_bytes": 50709039956,
   "storage_human": "50.7 GB",
+  "context_length": null,
   "base_model": "ling_flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T02:30:58.535Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/QwQ-R1-Distill-Merge-32B-GGUF",
   "slug": "mradermacher-qwq-r1-distill-merge-32b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 224000859776,
   "storage_human": "224.0 GB",
+  "context_length": 131072,
   "base_model": "gbueno86/QwQ-R1-Distill-Merge-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

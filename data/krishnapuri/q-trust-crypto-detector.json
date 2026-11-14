@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KRISHNAPURI/q-trust-crypto-detector",
   "slug": "krishnapuri-q-trust-crypto-detector",
   "author": "KRISHNAPURI",
@@ -41,6 +41,7 @@
   "parameters_human": "83.5M",
   "storage_bytes": 751594686,
   "storage_human": "752 MB",
+  "context_length": null,
   "base_model": "huggingface/CodeBERTa-small-v1",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Cryptographic code detection (usage discovery)",

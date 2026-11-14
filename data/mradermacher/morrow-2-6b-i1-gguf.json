@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Morrow-2.6B-i1-GGUF",
   "slug": "mradermacher-morrow-2-6b-i1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "2.57B",
   "storage_bytes": 29393803904,
   "storage_human": "29.4 GB",
+  "context_length": 128000,
   "base_model": "noumenon-labs/Morrow-2.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

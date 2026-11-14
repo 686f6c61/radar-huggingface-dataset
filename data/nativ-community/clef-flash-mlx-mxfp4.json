@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/clef-flash-MLX-MXFP4",
   "slug": "nativ-community-clef-flash-mlx-mxfp4",
   "author": "nativ-community",
@@ -32,6 +32,7 @@
   "parameters_human": "9.53B",
   "storage_bytes": 5933945871,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

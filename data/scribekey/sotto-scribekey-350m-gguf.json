@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scribekey/sotto-scribekey-350m-gguf",
   "slug": "scribekey-sotto-scribekey-350m-gguf",
   "author": "scribekey",
@@ -36,14 +36,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 758431552,
   "storage_human": "758 MB",
+  "context_length": 128000,
   "base_model": "juanquivilla/sotto-cleanup-lfm25-350m",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

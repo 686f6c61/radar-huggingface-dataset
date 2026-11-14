@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GossetWorks/Qwen3-32B-Gosset-3.65BPW",
   "slug": "gossetworks-qwen3-32b-gosset-3-65bpw",
   "author": "GossetWorks",
@@ -31,14 +31,19 @@
   "parameters_human": "4.99B",
   "storage_bytes": 14637764535,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

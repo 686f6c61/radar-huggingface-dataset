@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Traly/concertina-pretrain-90k",
   "slug": "traly-concertina-pretrain-90k",
   "author": "Traly",
@@ -29,14 +29,19 @@
   "parameters_human": "4.45B",
   "storage_bytes": 8896039242,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "fudan-generative-ai/Bard-VL-B4-Mask-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

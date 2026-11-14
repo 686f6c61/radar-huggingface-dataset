@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lernex/Metis-1.6-Praxis-GGUF",
   "slug": "lernex-metis-1-6-praxis-gguf",
   "author": "Lernex",
@@ -33,14 +33,19 @@
   "parameters_human": "2.94B",
   "storage_bytes": 17920268128,
   "storage_human": "17.9 GB",
+  "context_length": 131072,
   "base_model": "Lernex/Metis-1.6-Praxis",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

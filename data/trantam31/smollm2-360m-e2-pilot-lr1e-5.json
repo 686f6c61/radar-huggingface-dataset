@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trantam31/smollm2-360m-e2-pilot-lr1e-5",
   "slug": "trantam31-smollm2-360m-e2-pilot-lr1e-5",
   "author": "trantam31",
@@ -31,14 +31,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 11578742913,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

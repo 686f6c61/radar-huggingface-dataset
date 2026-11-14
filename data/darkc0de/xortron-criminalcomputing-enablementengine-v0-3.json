@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkc0de/XORTRON-CriminalComputing-EnablementEngine-v0.3",
   "slug": "darkc0de-xortron-criminalcomputing-enablementengine-v0-3",
   "author": "darkc0de",
@@ -41,14 +41,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578507890,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "darkc0de/gemma-4-31B-it-updated-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

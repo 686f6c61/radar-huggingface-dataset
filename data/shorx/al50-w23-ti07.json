@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shorx/Al50-W23-Ti07",
   "slug": "shorx-al50-w23-ti07",
   "author": "Shorx",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 668688,
   "storage_human": "668688 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

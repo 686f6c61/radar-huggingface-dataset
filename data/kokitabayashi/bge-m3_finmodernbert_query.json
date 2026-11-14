@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kokitabayashi/bge-m3_FinModernBERT_query",
   "slug": "kokitabayashi-bge-m3_finmodernbert_query",
   "author": "kokitabayashi",
@@ -41,14 +41,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 2288162795,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

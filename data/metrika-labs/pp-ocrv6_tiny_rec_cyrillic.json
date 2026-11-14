@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "metrika-labs/PP-OCRv6_tiny_rec_cyrillic",
   "slug": "metrika-labs-pp-ocrv6_tiny_rec_cyrillic",
   "author": "metrika-labs",
@@ -49,12 +49,17 @@
   "parameters_human": null,
   "storage_bytes": 2458914,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-OCRv6_tiny_rec",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

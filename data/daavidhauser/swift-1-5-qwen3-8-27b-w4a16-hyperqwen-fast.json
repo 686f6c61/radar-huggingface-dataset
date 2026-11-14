@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daavidhauser/Swift-1.5-Qwen3.8-27B-W4A16-HyperQwen-fast",
   "slug": "daavidhauser-swift-1-5-qwen3-8-27b-w4a16-hyperqwen-fast",
   "author": "daavidhauser",
@@ -34,14 +34,19 @@
   "parameters_human": "28.12B",
   "storage_bytes": 15965077893,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "daavidhauser/Swift-1.5-Qwen3.8-27B-W4A16-HyperQwen-INT4",
+  "renamed_at": "2026-11-11T04:55:53.979Z",
   "benchmarks": [],
   "sources": []
 }

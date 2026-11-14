@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v2",
   "slug": "szlholdings-szl-nemotron-mini-4b-estate-dpo-v2",
   "author": "SZLHOLDINGS",
@@ -36,14 +36,19 @@
   "parameters_human": "4.19B",
   "storage_bytes": 8415865699,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-DPO-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

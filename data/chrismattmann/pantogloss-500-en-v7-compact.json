@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chrismattmann/pantogloss-500-en-v7-compact",
   "slug": "chrismattmann-pantogloss-500-en-v7-compact",
   "author": "chrismattmann",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 564824171,
   "storage_human": "565 MB",
+  "context_length": null,
   "base_model": "chrismattmann/pantogloss-500-en-v7",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

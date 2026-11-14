@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krea/Krea-2-Turbo",
   "slug": "krea-krea-2-turbo",
   "author": "krea",
@@ -22,13 +22,14 @@
     "diffusers:Krea2Pipeline",
     "region:us"
   ],
-  "likes": 1972,
+  "likes": 1974,
   "downloads_30d": 85580,
-  "trending_score": 49,
+  "trending_score": 48,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
   "storage_bytes": 62523449250,
   "storage_human": "62.5 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

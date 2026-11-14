@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dumi2025/hdfs-line-anomaly-albert-base-v2",
   "slug": "dumi2025-hdfs-line-anomaly-albert-base-v2",
   "author": "Dumi2025",
@@ -28,14 +28,19 @@
   "parameters_human": "11.7M",
   "storage_bytes": 46743912,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": "albert/albert-base-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

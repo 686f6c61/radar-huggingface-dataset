@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BigFlubba/Qwen3.8-27B-Coder390-EfficientThink",
   "slug": "bigflubba-qwen3-8-27b-coder390-efficientthink",
   "author": "BigFlubba",
@@ -50,14 +50,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 340606088106,
   "storage_human": "340.6 GB",
+  "context_length": 262144,
   "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T02:23:51.422Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

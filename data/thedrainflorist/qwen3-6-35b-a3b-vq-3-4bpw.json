@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheDrainFlorist/Qwen3.6-35B-A3B-VQ-3.4bpw",
   "slug": "thedrainflorist-qwen3-6-35b-a3b-vq-3-4bpw",
   "author": "TheDrainFlorist",
@@ -38,6 +38,7 @@
   "parameters_human": "6.17B",
   "storage_bytes": 15575833161,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

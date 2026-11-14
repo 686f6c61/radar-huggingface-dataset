@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TenStrip/10Eros-Max",
   "slug": "tenstrip-10eros-max",
   "author": "TenStrip",
@@ -20,19 +20,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 995,
+  "likes": 997,
   "downloads_30d": 0,
-  "trending_score": 22,
+  "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 937371111504,
   "storage_human": "937.4 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

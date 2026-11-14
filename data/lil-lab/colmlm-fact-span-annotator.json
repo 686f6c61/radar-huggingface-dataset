@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lil-lab/CoLMLM-Fact-Span-Annotator",
   "slug": "lil-lab-colmlm-fact-span-annotator",
   "author": "lil-lab",
@@ -32,14 +32,19 @@
   "parameters_human": "395.8M",
   "storage_bytes": 791687022,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

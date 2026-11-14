@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2",
   "slug": "qilong26-qwen3-vl-8b-vqa-sft-rl-v2",
   "author": "QiLong26",
@@ -33,14 +33,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545770778,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "QiLong26/Qwen3-VL-8B-VQA-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:35:09.973Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

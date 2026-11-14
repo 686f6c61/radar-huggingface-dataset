@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webbrain-one/webbrain-browser-vision-tiny-onnx",
   "slug": "webbrain-one-webbrain-browser-vision-tiny-onnx",
   "author": "webbrain-one",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 804014914,
   "storage_human": "804 MB",
+  "context_length": null,
   "base_model": "webbrain-one/webbrain-browser-vision-tiny",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:05:30.521Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Hush-Qwen2.5-7B-RP-v1.3-1M-GGUF",
   "slug": "mradermacher-hush-qwen2-5-7b-rp-v1-3-1m-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "7.61B",
   "storage_bytes": 52886352032,
   "storage_human": "52.9 GB",
+  "context_length": 1010000,
   "base_model": "marcuscedricridia/Hush-Qwen2.5-7B-RP-v1.3-1M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

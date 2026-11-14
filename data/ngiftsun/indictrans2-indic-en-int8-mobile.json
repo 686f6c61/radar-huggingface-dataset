@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ngiftsun/indictrans2-indic-en-int8-mobile",
   "slug": "ngiftsun-indictrans2-indic-en-int8-mobile",
   "author": "ngiftsun",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 1870118553,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "ai4bharat/indictrans2-indic-en-dist-200M",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

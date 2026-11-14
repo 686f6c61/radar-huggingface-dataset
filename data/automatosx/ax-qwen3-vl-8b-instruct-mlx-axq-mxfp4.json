@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Qwen3-VL-8B-Instruct-MLX-AXQ-MXFP4",
   "slug": "automatosx-ax-qwen3-vl-8b-instruct-mlx-axq-mxfp4",
   "author": "AutomatosX",
@@ -39,6 +39,7 @@
   "parameters_human": "8.77B",
   "storage_bytes": 6760763682,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

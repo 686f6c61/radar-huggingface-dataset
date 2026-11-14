@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Qwen3.8-27B-exl3-2.0bpw",
   "slug": "doth4580-qwen3-8-27b-exl3-2-0bpw",
   "author": "doth4580",
@@ -33,14 +33,19 @@
   "parameters_human": "5.21B",
   "storage_bytes": 10440630008,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

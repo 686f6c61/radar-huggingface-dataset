@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IDEALLab/engiopt-engopt2026-cgan-cnn-2d",
   "slug": "ideallab-engiopt-engopt2026-cgan-cnn-2d",
   "author": "IDEALLab",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 50118976,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

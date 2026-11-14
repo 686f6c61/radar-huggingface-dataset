@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeeXugar/CodePin-SFT-Qwen3.5-0.8B",
   "slug": "leexugar-codepin-sft-qwen3-5-0-8b",
   "author": "LeeXugar",
@@ -43,14 +43,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 4049108007,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Pure-text trajectory SFT",

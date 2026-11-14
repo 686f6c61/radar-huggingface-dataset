@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Smashinfries/wd-swinv2-tagger-v3-onnx-mobile",
   "slug": "smashinfries-wd-swinv2-tagger-v3-onnx-mobile",
   "author": "Smashinfries",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 2079118913,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "SmilingWolf/wd-swinv2-tagger-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

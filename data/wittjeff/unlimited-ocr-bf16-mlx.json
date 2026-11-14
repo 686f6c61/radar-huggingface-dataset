@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wittjeff/unlimited-ocr-bf16-mlx",
   "slug": "wittjeff-unlimited-ocr-bf16-mlx",
   "author": "wittjeff",
@@ -32,6 +32,7 @@
   "parameters_human": "3.34B",
   "storage_bytes": 6672290369,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T07:33:40.909Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

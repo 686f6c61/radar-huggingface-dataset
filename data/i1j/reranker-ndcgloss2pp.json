@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "i1j/reranker-ndcgloss2pp",
   "slug": "i1j-reranker-ndcgloss2pp",
   "author": "i1j",
@@ -31,14 +31,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 2287853289,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-reranker-v2-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

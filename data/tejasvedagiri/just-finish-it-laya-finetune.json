@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tejasvedagiri/Just-Finish-It-Laya-Finetune",
   "slug": "tejasvedagiri-just-finish-it-laya-finetune",
   "author": "tejasvedagiri",
@@ -29,14 +29,19 @@
   "parameters_human": "421.3M",
   "storage_bytes": 842609210,
   "storage_human": "843 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:50:09.309Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

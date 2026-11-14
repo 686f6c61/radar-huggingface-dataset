@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noooop/DeepSeek-V4-Flash-REAP128-FP4",
   "slug": "noooop-deepseek-v4-flash-reap128-fp4",
   "author": "noooop",
@@ -37,14 +37,19 @@
   "parameters_human": "155.98B",
   "storage_bytes": 88115660912,
   "storage_human": "88.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

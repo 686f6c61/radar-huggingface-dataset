@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fazmin/solus_v1_lfm2-encoder-350m-pii-q8",
   "slug": "fazmin-solus_v1_lfm2-encoder-350m-pii-q8",
   "author": "Fazmin",
@@ -66,14 +66,19 @@
   "parameters_human": null,
   "storage_bytes": 567808634,
   "storage_human": "568 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M-PII-Detector",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "terminusresearch/terminus-xl-gamma-v2-1",
   "slug": "terminusresearch-terminus-xl-gamma-v2-1",
   "author": "terminusresearch",
@@ -26,6 +26,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 22343018102,
   "storage_human": "22.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

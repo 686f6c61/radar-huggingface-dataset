@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-sr/Decision-2.0-Kai-0.6B",
   "slug": "vllm-sr-decision-2-0-kai-0-6b",
   "author": "vllm-sr",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1522607361,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

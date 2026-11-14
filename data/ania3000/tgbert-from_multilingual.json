@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ania3000/tgbert-from_multilingual",
   "slug": "ania3000-tgbert-from_multilingual",
   "author": "ania3000",
@@ -30,14 +30,19 @@
   "parameters_human": "178.0M",
   "storage_bytes": 711926981,
   "storage_human": "712 MB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-multilingual-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:30:43.633Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

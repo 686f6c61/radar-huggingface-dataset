@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "henry202/tulu_reasoning_final",
   "slug": "henry202-tulu_reasoning_final",
   "author": "henry202",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 521033048,
   "storage_human": "521 MB",
+  "context_length": null,
   "base_model": "allenai/Llama-3.1-Tulu-3-8B-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

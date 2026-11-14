@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sw1zyyyAdm/gemma-4-e4b-abliterated-bilingual-GGUF",
   "slug": "sw1zyyyadm-gemma-4-e4b-abliterated-bilingual-gguf",
   "author": "Sw1zyyyAdm",
@@ -40,14 +40,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 12235381408,
   "storage_human": "12.2 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

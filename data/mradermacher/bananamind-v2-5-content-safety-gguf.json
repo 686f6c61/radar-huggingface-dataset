@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/BananaMind-V2.5-Content-Safety-GGUF",
   "slug": "mradermacher-bananamind-v2-5-content-safety-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 47865210368,
   "storage_human": "47.9 GB",
+  "context_length": 131072,
   "base_model": "Banaxi-Tech/BananaMind-V2.5-Content-Safety",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ckcegg/gemma-4-E2B-it-qat-q4_0-unquantized-assistant",
   "slug": "ckcegg-gemma-4-e2b-it-qat-q4_0-unquantized-assistant",
   "author": "ckcegg",
@@ -31,14 +31,19 @@
   "parameters_human": "78.0M",
   "storage_bytes": 189734784,
   "storage_human": "190 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-assistant",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

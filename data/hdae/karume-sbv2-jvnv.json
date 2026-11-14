@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hdae/karume-sbv2-jvnv",
   "slug": "hdae-karume-sbv2-jvnv",
   "author": "hdae",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4645514806,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "litagin/style_bert_vits2_jvnv, ku-nlp/deberta-v2-large-japanese-char-wwm",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

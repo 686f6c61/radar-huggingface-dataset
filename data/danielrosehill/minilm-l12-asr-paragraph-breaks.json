@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danielrosehill/MiniLM-L12-ASR-Paragraph-Breaks",
   "slug": "danielrosehill-minilm-l12-asr-paragraph-breaks",
   "author": "danielrosehill",
@@ -40,6 +40,7 @@
   "parameters_human": "33.2M",
   "storage_bytes": 299859860,
   "storage_human": "300 MB",
+  "context_length": null,
   "base_model": "microsoft/MiniLM-L12-H384-uncased",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

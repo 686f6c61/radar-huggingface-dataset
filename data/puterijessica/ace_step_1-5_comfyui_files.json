@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "puterijessica/ace_step_1.5_ComfyUI_files",
   "slug": "puterijessica-ace_step_1-5_comfyui_files",
   "author": "puterijessica",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 63141987268,
   "storage_human": "63.1 GB",
+  "context_length": null,
   "base_model": "ACE-Step/Ace-Step1.5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

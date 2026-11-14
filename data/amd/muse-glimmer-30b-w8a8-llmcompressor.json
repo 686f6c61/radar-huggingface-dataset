@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/Muse-Glimmer-30B-w8a8-llmcompressor",
   "slug": "amd-muse-glimmer-30b-w8a8-llmcompressor",
   "author": "amd",
@@ -44,14 +44,19 @@
   "parameters_human": "29.78B",
   "storage_bytes": 34424334553,
   "storage_human": "34.4 GB",
+  "context_length": null,
   "base_model": "RedHatAI/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

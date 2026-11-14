@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FAIRC/token-averaging-seed_replicates-avg_50m_k2_seed1",
   "slug": "fairc-token-averaging-seed_replicates-avg_50m_k2_seed1",
   "author": "FAIRC",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 599185258,
   "storage_human": "599 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

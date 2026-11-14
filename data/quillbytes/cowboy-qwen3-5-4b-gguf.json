@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QuillBytes/cowboy-qwen3.5-4b-gguf",
   "slug": "quillbytes-cowboy-qwen3-5-4b-gguf",
   "author": "QuillBytes",
@@ -35,14 +35,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817439,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T04:24:09.913Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

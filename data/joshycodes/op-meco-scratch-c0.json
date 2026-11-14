@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/op-meco-scratch-c0",
   "slug": "joshycodes-op-meco-scratch-c0",
   "author": "joshycodes",
@@ -30,14 +30,19 @@
   "parameters_human": "77.0M",
   "storage_bytes": 154114585,
   "storage_human": "154 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T20:12:16.975Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

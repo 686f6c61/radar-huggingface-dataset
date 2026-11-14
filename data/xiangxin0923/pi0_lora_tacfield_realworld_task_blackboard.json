@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xiangxin0923/pi0_lora_tacfield_realworld_task_blackboard",
   "slug": "xiangxin0923-pi0_lora_tacfield_realworld_task_blackboard",
   "author": "xiangxin0923",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 10263334284,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

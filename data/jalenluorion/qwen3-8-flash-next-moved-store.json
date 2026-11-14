@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jalenluorion/Qwen3.8-Flash-Next-moved-store",
   "slug": "jalenluorion-qwen3-8-flash-next-moved-store",
   "author": "jalenluorion",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 187387932281,
   "storage_human": "187.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

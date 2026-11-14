@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jar-ai/Supra-50M-Reasoning-GGUF",
   "slug": "jar-ai-supra-50m-reasoning-gguf",
   "author": "Jar-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "51.8M",
   "storage_bytes": 864992640,
   "storage_human": "865 MB",
+  "context_length": 1024,
   "base_model": "SupraLabs/Supra-50M-Reasoning",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

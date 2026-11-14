@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ads2009/turkish-ai-text-detector-berturk-v2",
   "slug": "ads2009-turkish-ai-text-detector-berturk-v2",
   "author": "ads2009",
@@ -30,14 +30,19 @@
   "parameters_human": "110.6M",
   "storage_bytes": 442499064,
   "storage_human": "442 MB",
+  "context_length": null,
   "base_model": "dbmdz/bert-base-turkish-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

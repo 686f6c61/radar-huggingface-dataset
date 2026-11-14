@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Rennervate-Qwen3-8B-Refusal-Suppressed-i1-GGUF",
   "slug": "mradermacher-rennervate-qwen3-8b-refusal-suppressed-i1-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 96376940160,
   "storage_human": "96.4 GB",
+  "context_length": 40960,
   "base_model": "BanZhuan-AI/Rennervate-Qwen3-8B-Refusal-Suppressed",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

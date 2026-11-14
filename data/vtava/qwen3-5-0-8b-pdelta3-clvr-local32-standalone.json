@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vtava/Qwen3.5-0.8B-PDelta3-CLVR-Local32-Standalone",
   "slug": "vtava-qwen3-5-0-8b-pdelta3-clvr-local32-standalone",
   "author": "vtava",
@@ -31,14 +31,19 @@
   "parameters_human": "754.7M",
   "storage_bytes": 3047724317,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

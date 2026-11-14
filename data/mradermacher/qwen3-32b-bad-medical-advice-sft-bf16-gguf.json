@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-32B-bad-medical-advice-sft-bf16-GGUF",
   "slug": "mradermacher-qwen3-32b-bad-medical-advice-sft-bf16-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 223976255200,
   "storage_human": "224.0 GB",
+  "context_length": 40960,
   "base_model": "localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

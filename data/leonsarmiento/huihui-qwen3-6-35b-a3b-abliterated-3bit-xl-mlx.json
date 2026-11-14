@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leonsarmiento/Huihui-Qwen3.6-35B-A3B-abliterated-3bit-XL-mlx",
   "slug": "leonsarmiento-huihui-qwen3-6-35b-a3b-abliterated-3bit-xl-mlx",
   "author": "leonsarmiento",
@@ -36,6 +36,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 17808121398,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

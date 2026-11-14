@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/PP-OCRv6-Small-LiteRT",
   "slug": "litert-community-pp-ocrv6-small-litert",
   "author": "litert-community",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 98329140,
   "storage_human": "98 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-OCRv6_small_det_safetensors, PaddlePaddle/PP-OCRv6_small_rec_safetensors",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

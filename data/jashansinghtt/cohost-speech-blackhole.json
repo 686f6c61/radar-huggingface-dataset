@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jashansinghTT/cohost-speech-blackhole",
   "slug": "jashansinghtt-cohost-speech-blackhole",
   "author": "jashansinghTT",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 904637833,
   "storage_human": "905 MB",
+  "context_length": null,
   "base_model": "fishaudio/s2-pro, openai/whisper-large-v3, MiniMaxAI/MiniMax-Music3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

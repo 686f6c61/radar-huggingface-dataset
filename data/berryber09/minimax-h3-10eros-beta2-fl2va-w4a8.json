@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "berryber09/MiniMax-H3-10Eros-beta2-fl2va-w4a8",
   "slug": "berryber09-minimax-h3-10eros-beta2-fl2va-w4a8",
   "author": "berryber09",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 12538085848,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T05:41:23.343Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

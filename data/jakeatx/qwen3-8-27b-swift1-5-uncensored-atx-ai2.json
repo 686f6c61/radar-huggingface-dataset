@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakeatx/qwen3.8-27b-Swift1.5-Uncensored-ATX-AI2",
   "slug": "jakeatx-qwen3-8-27b-swift1-5-uncensored-atx-ai2",
   "author": "jakeatx",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 9138303264,
   "storage_human": "9.1 GB",
+  "context_length": 262144,
   "base_model": "d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

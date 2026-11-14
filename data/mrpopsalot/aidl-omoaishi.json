@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrpopsalot/aidl-omoaishi",
   "slug": "mrpopsalot-aidl-omoaishi",
   "author": "mrpopsalot",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 6306789394,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base, ChenkinRF/ChenkinNoob-XL-v0.2-Rectified-Flow, Laxhar/noobai-XL-Vpred-1.0, OnomaAIResearch/Illustrious-XL-v2.0, neta-art/neta-lumina, CabalResearch/Mugen",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

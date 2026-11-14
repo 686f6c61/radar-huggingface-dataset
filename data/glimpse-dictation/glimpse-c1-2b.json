@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Glimpse-Dictation/Glimpse-C1-2B",
   "slug": "glimpse-dictation-glimpse-c1-2b",
   "author": "Glimpse-Dictation",
@@ -32,14 +32,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 612813598,
   "storage_human": "613 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-2B-mlx-2bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

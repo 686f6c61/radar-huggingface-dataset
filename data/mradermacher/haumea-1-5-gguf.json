@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Haumea-1.5-GGUF",
   "slug": "mradermacher-haumea-1-5-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 63992398976,
   "storage_human": "64.0 GB",
+  "context_length": 32768,
   "base_model": "HaumeaAI/Haumea-1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925",
   "slug": "junbrro-egopi-axis1-matched-noreg-ab-full-30k-actsilu-mlxp-20260925",
   "author": "junbrro",
@@ -23,14 +23,19 @@
   "parameters_human": "6.92B",
   "storage_bytes": 13868884986,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

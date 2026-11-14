@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2",
   "slug": "fastvideo-fastvideo-minimax-fasth3-preview-v0-2",
   "author": "FastVideo",
@@ -37,6 +37,7 @@
   "parameters_human": "35.05B",
   "storage_bytes": 147835483860,
   "storage_human": "147.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

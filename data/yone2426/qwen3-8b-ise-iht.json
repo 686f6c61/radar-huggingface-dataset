@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yone2426/Qwen3-8B-ISE-IHT",
   "slug": "yone2426-qwen3-8b-ise-iht",
   "author": "yone2426",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 16381549624,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

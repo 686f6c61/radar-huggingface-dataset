@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dollarland/dolyzer-models",
   "slug": "dollarland-dolyzer-models",
   "author": "dollarland",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 3822607488,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "dollarland/dolyzer-qwen-models",
+  "renamed_at": "2026-11-11T05:05:05.012Z",
   "benchmarks": [],
   "sources": []
 }

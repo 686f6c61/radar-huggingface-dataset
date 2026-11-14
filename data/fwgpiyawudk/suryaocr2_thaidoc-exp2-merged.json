@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fwgpiyawudk/SuryaOCR2_ThaiDoc-exp2-merged",
   "slug": "fwgpiyawudk-suryaocr2_thaidoc-exp2-merged",
   "author": "fwgpiyawudk",
@@ -30,14 +30,19 @@
   "parameters_human": "665.7M",
   "storage_bytes": 1331461328,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

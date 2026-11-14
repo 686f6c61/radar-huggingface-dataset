@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SenseNova-U1.5-8B-MoT-GGUF",
   "slug": "mradermacher-sensenova-u1-5-8b-mot-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "9.35B",
   "storage_bytes": 83599703296,
   "storage_human": "83.6 GB",
+  "context_length": 262144,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1bit-MONSTER/Apertus-8B-Instruct-2509-GGUF",
   "slug": "1bit-monster-apertus-8b-instruct-2509-gguf",
   "author": "1bit-MONSTER",
@@ -28,14 +28,19 @@
   "parameters_human": "8.05B",
   "storage_bytes": 5057885440,
   "storage_human": "5.1 GB",
+  "context_length": 65536,
   "base_model": "swiss-ai/Apertus-8B-Instruct-2509",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efe2898/caba-v0-core-50m-colab-l4",
   "slug": "efe2898-caba-v0-core-50m-colab-l4",
   "author": "Efe2898",
@@ -31,14 +31,19 @@
   "parameters_human": "50.0M",
   "storage_bytes": 1599078454,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:25:55.248Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

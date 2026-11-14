@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "philipjohnbasile/ornith-ai-Ornith-1.5-35B-A3B-MTPLX",
   "slug": "philipjohnbasile-ornith-ai-ornith-1-5-35b-a3b-mtplx",
   "author": "philipjohnbasile",
@@ -24,14 +24,19 @@
   "parameters_human": "5.87B",
   "storage_bytes": 22111568825,
   "storage_human": "22.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:00:17.121Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HiDream-ai/HiDream-O1-Image",
   "slug": "hidream-ai-hidream-o1-image",
   "author": "HiDream-ai",
@@ -30,14 +30,19 @@
   "parameters_human": "8.80B",
   "storage_bytes": 35236791420,
   "storage_human": "35.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

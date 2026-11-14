@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kurtholes/PE-I2I-9B-NVFP4-W4A16-MAX",
   "slug": "kurtholes-pe-i2i-9b-nvfp4-w4a16-max",
   "author": "kurtholes",
@@ -35,14 +35,19 @@
   "parameters_human": "5.44B",
   "storage_bytes": 7432317219,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-PE-I2I",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

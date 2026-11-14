@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tokiers/ms-marco-MiniLM-L-4-v2",
   "slug": "tokiers-ms-marco-minilm-l-4-v2",
   "author": "tokiers",
@@ -28,6 +28,7 @@
   "parameters_human": "19.2M",
   "storage_bytes": 838655661,
   "storage_human": "839 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

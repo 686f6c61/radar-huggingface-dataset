@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wellid/babilllm-all-in-one",
   "slug": "wellid-babilllm-all-in-one",
   "author": "wellid",
@@ -42,14 +42,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15231271864,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T18:54:31.923Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/d1-3B-MLX-4bit",
   "slug": "liquidai-d1-3b-mlx-4bit",
   "author": "LiquidAI",
@@ -75,6 +75,7 @@
   "parameters_human": "3.12B",
   "storage_bytes": 4758408078,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-3B",
   "formats": [
     "mlx",
@@ -82,8 +83,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

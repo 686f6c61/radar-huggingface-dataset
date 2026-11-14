@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "altintasutku/whisper-large-v3-turkish-ct2-int8",
   "slug": "altintasutku-whisper-large-v3-turkish-ct2-int8",
   "author": "altintasutku",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1551326177,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "turkmedstt/whisper-large-v3-turkish-general",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

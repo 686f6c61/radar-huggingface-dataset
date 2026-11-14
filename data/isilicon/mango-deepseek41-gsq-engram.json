@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isilicon/mango-deepseek41-gsq-engram",
   "slug": "isilicon-mango-deepseek41-gsq-engram",
   "author": "isilicon",
@@ -31,14 +31,19 @@
   "parameters_human": "196.61B",
   "storage_bytes": 110595290816,
   "storage_human": "110.6 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

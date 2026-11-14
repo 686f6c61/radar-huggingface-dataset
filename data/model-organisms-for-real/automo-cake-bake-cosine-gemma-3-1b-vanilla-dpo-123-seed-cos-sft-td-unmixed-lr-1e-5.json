@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-unmixed-lr-1e-5",
   "slug": "model-organisms-for-real-automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-unmixed-lr-1e-5",
   "author": "model-organisms-for-real",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2033214207,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:29:25.529Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

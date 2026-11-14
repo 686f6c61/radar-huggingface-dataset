@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nnajmi/GRPO_Model",
   "slug": "nnajmi-grpo_model",
   "author": "nnajmi",
@@ -33,14 +33,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 6442738968,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "nnajmi/Fine-Tuning-LLM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nnajmi/GRPO-Model",
+  "renamed_at": "2026-11-14T07:53:42.060Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SarthakKumar571999/qwen3-8b-text2cypher",
   "slug": "sarthakkumar571999-qwen3-8b-text2cypher",
   "author": "SarthakKumar571999",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 98784516,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

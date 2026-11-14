@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaydenjames01/minimaxnfsw",
   "slug": "jaydenjames01-minimaxnfsw",
   "author": "jaydenjames01",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 13997668774,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "neph1/minimax_h3_handheld_shaky_camera",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sevren-ai/Embla1-bf16",
   "slug": "sevren-ai-embla1-bf16",
   "author": "sevren-ai",
@@ -28,14 +28,19 @@
   "parameters_human": "6.97B",
   "storage_bytes": 19948527760,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

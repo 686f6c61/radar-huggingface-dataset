@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heliophage/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8-ablit",
   "slug": "heliophage-deepseek-v4-1-flash-1017-tensorfold-e2e3-p4-h8-ablit",
   "author": "heliophage",
@@ -47,14 +47,19 @@
   "parameters_human": null,
   "storage_bytes": 1705014185,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/GLM-5.2-EXL3-K3-calibrated-v1",
   "slug": "wrldsuksgo2mars-glm-5-2-exl3-k3-calibrated-v1",
   "author": "wrldsuksgo2mars",
@@ -39,14 +39,19 @@
   "parameters_human": "164.92B",
   "storage_bytes": 329958093375,
   "storage_human": "330.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T10:24:27.923Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

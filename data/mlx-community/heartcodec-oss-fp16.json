@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/HeartCodec-oss-fp16",
   "slug": "mlx-community-heartcodec-oss-fp16",
   "author": "mlx-community",
@@ -37,6 +37,7 @@
   "parameters_human": "1.57B",
   "storage_bytes": 3146178264,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "HeartMuLa/HeartCodec-oss-20260123",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

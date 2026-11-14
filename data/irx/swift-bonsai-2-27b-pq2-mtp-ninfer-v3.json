@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iRx/Swift-Bonsai-2-27B-PQ2-MTP-NInfer-v3",
   "slug": "irx-swift-bonsai-2-27b-pq2-mtp-ninfer-v3",
   "author": "iRx",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 8128830208,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

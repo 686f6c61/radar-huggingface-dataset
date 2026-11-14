@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.8-27B-Kimiko-2-NOESIS-BF16",
   "slug": "amaimedia-qwen3-8-27b-kimiko-2-noesis-bf16",
   "author": "AMAImedia",
@@ -149,14 +149,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 112678016519,
   "storage_human": "112.7 GB",
+  "context_length": null,
   "base_model": "nlpguy/Qwen3.8-27B-Kimiko-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T05:12:57.730Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

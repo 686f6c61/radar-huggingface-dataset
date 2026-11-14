@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tryambientai/Voxtral-Small-24B-2507-gguf",
   "slug": "tryambientai-voxtral-small-24b-2507-gguf",
   "author": "tryambientai",
@@ -50,14 +50,19 @@
   "parameters_human": "24.26B",
   "storage_bytes": 25810383328,
   "storage_human": "25.8 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Small-24B-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

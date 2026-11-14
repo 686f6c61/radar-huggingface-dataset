@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gahabeen/Jev-Style-0.8B-Decision-v3-MLX",
   "slug": "gahabeen-jev-style-0-8b-decision-v3-mlx",
   "author": "gahabeen",
@@ -74,6 +74,7 @@
   "parameters_human": null,
   "storage_bytes": 2326108289,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
   "formats": [
     "mlx",
@@ -81,8 +82,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

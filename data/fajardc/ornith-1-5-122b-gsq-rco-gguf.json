@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fajardc/Ornith-1.5-122B-GSQ-RCO-GGUF",
   "slug": "fajardc-ornith-1-5-122b-gsq-rco-gguf",
   "author": "fajardc",
@@ -38,14 +38,19 @@
   "parameters_human": "122.11B",
   "storage_bytes": 106829662784,
   "storage_human": "106.8 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "data-archetype/canter",
   "slug": "data-archetype-canter",
   "author": "data-archetype",
@@ -31,14 +31,19 @@
   "parameters_human": "2.12B",
   "storage_bytes": 13210708068,
   "storage_human": "13.2 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T13:03:01.077Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

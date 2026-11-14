@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jottypro/notes-slots",
   "slug": "jottypro-notes-slots",
   "author": "jottypro",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 28234410,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": "microsoft/xtremedistil-l6-h256-uncased",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Slot Extraction",

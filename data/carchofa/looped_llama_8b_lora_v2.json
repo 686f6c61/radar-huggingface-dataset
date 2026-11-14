@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Carchofa/looped_llama_8b_lora_v2",
   "slug": "carchofa-looped_llama_8b_lora_v2",
   "author": "Carchofa",
@@ -32,6 +32,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4992509145,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": "Carchofa/looped_llama_8b_128k",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

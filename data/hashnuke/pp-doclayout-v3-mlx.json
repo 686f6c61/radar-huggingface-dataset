@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HashNuke/pp-doclayout-v3-mlx",
   "slug": "hashnuke-pp-doclayout-v3-mlx",
   "author": "HashNuke",
@@ -36,6 +36,7 @@
   "parameters_human": "33.3M",
   "storage_bytes": 133232741,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-DocLayoutV3_safetensors",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

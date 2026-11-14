@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bomdeang/connectailab-rl-sungun-v1-teacher",
   "slug": "bomdeang-connectailab-rl-sungun-v1-teacher",
   "author": "Bomdeang",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Bomdeang/connectailab-rl-maengseongun-v1-teacher",
+  "renamed_at": "2026-11-11T02:26:39.519Z",
   "benchmarks": [],
   "sources": [
     {

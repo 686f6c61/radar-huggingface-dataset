@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tanabe1478/gyaim-lm-small-public-v1",
   "slug": "tanabe1478-gyaim-lm-small-public-v1",
   "author": "tanabe1478",
@@ -39,6 +39,7 @@
   "parameters_human": "90.5M",
   "storage_bytes": 435688512,
   "storage_human": "436 MB",
+  "context_length": 1024,
   "base_model": "ku-nlp/gpt2-small-japanese-char",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

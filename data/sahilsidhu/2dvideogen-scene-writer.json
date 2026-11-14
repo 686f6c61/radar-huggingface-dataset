@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SahilSidhu/2dvideogen-scene-writer",
   "slug": "sahilsidhu-2dvideogen-scene-writer",
   "author": "SahilSidhu",
@@ -37,14 +37,19 @@
   "parameters_human": "60.5M",
   "storage_bytes": 242041896,
   "storage_human": "242 MB",
+  "context_length": null,
   "base_model": "t5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:34:19.140Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

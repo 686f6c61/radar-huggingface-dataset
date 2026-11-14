@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "9nbf7c4q6b-lgtm/Melody1437-27B-oQ8e-mtp",
   "slug": "9nbf7c4q6b-lgtm-melody1437-27b-oq8e-mtp",
   "author": "9nbf7c4q6b-lgtm",
@@ -27,6 +27,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29100132823,
   "storage_human": "29.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "F-Labs/Spark-X2.5-4B-Hadamard-GSQ",
   "slug": "f-labs-spark-x2-5-4b-hadamard-gsq",
   "author": "F-Labs",
@@ -59,14 +59,19 @@
   "parameters_human": "3.13B",
   "storage_bytes": 4488486460,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

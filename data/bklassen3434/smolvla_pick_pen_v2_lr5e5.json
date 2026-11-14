@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bklassen3434/smolvla_pick_pen_v2_lr5e5",
   "slug": "bklassen3434-smolvla_pick_pen_v2_lr5e5",
   "author": "bklassen3434",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906720056,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mayuresh231/tiny-transformer-29m",
   "slug": "mayuresh231-tiny-transformer-29m",
   "author": "Mayuresh231",
@@ -34,14 +34,19 @@
   "parameters_human": "29.5M",
   "storage_bytes": 118192048,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RoryMor/Roy_mor",
   "slug": "rorymor-roy_mor",
   "author": "RoryMor",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 108020876,
   "storage_human": "108 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

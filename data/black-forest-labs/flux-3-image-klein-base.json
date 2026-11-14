@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "black-forest-labs/flux-3-image-klein-base",
   "slug": "black-forest-labs-flux-3-image-klein-base",
   "author": "black-forest-labs",
@@ -33,6 +33,7 @@
   "parameters_human": "5.54B",
   "storage_bytes": 47360928583,
   "storage_human": "47.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

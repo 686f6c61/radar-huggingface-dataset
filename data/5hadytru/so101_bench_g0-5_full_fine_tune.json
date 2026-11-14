@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "5hadytru/so101_bench_G0.5_full_fine_tune",
   "slug": "5hadytru-so101_bench_g0-5_full_fine_tune",
   "author": "5hadytru",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 7260153286,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "OpenGalaxea/G05",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

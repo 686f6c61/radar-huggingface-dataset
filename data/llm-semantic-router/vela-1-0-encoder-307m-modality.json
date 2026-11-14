@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llm-semantic-router/Vela-1.0-Encoder-307M-Modality",
   "slug": "llm-semantic-router-vela-1-0-encoder-307m-modality",
   "author": "llm-semantic-router",
@@ -46,6 +46,7 @@
   "parameters_human": "307.5M",
   "storage_bytes": 5019471269,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "vllm-sr/Vela-1.0-Encoder-307M",
   "formats": [
     "onnx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "vllm-sr/Vela-1.0-Encoder-307M-Modality",
+  "renamed_at": "2026-11-11T06:05:32.771Z",
   "benchmarks": [],
   "sources": [
     {

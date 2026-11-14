@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aariciah/gpt2-portuguese-20k-lc",
   "slug": "aariciah-gpt2-portuguese-20k-lc",
   "author": "aariciah",
@@ -28,14 +28,19 @@
   "parameters_human": "100.6M",
   "storage_bytes": 4427131554,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "5hadytru/so101_bench_flux-3-action-so101",
   "slug": "5hadytru-so101_bench_flux-3-action-so101",
   "author": "5hadytru",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 13681664503,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-action-so101",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

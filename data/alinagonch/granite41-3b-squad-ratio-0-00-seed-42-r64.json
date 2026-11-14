@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlinaGonch/granite41-3b-squad-ratio-0.00-seed-42-r64",
   "slug": "alinagonch-granite41-3b-squad-ratio-0-00-seed-42-r64",
   "author": "AlinaGonch",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 498149016,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

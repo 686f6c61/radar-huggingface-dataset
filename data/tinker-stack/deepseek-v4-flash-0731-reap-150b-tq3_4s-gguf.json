@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF",
   "slug": "tinker-stack-deepseek-v4-flash-0731-reap-150b-tq3_4s-gguf",
   "author": "Tinker-Stack",
@@ -50,14 +50,19 @@
   "parameters_human": "150.13B",
   "storage_bytes": 65743141632,
   "storage_human": "65.7 GB",
+  "context_length": 1048576,
   "base_model": "puwaer/DeepSeek-V4-Flash-0731-reap-150b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

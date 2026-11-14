@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dtcolligan/suitesmith-qwen3.5-4b-run1-step20",
   "slug": "dtcolligan-suitesmith-qwen3-5-4b-run1-step20",
   "author": "dtcolligan",
@@ -31,14 +31,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 10362827310,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

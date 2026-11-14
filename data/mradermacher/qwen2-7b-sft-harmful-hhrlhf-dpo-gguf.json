@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2-7B-sft-harmful-hhrlhf-dpo-GGUF",
   "slug": "mradermacher-qwen2-7b-sft-harmful-hhrlhf-dpo-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146868480,
   "storage_human": "68.1 GB",
+  "context_length": 131072,
   "base_model": "AmberYifan/Qwen2-7B-sft-harmful-hhrlhf-dpo",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

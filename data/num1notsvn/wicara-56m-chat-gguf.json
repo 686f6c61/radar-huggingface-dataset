@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "num1notsvn/wicara-56m-chat-GGUF",
   "slug": "num1notsvn-wicara-56m-chat-gguf",
   "author": "num1notsvn",
@@ -33,14 +33,19 @@
   "parameters_human": "66.5M",
   "storage_bytes": 409391872,
   "storage_human": "409 MB",
+  "context_length": 512,
   "base_model": "num1notsvn/wicara-56m-chat",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

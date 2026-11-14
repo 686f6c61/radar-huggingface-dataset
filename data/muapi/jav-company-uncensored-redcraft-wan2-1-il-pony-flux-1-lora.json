@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora",
   "slug": "muapi-jav-company-uncensored-redcraft-wan2-1-il-pony-flux-1-lora",
   "author": "Muapi",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 458220458,
   "storage_human": "458 MB",
+  "context_length": null,
   "base_model": "cocktailpeanut/pony-diffusion-v6-xl",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

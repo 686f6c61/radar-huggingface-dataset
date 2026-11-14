@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xihe666/drif_ov_siemens_0816",
   "slug": "xihe666-drif_ov_siemens_0816",
   "author": "Xihe666",
@@ -27,14 +27,19 @@
   "parameters_human": "1.91B",
   "storage_bytes": 7637643656,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

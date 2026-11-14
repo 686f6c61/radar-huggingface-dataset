@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yo-Purple/Meditor-2-3.4B-Universal",
   "slug": "yo-purple-meditor-2-3-4b-universal",
   "author": "Yo-Purple",
@@ -41,6 +41,7 @@
   "parameters_human": "3.51B",
   "storage_bytes": 45170652544,
   "storage_human": "45.2 GB",
+  "context_length": 524288,
   "base_model": "Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

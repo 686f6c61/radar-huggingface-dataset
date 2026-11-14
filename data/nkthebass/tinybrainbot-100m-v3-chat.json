@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nkthebass/tinybrainbot-100m-v3-chat",
   "slug": "nkthebass-tinybrainbot-100m-v3-chat",
   "author": "nkthebass",
@@ -36,6 +36,7 @@
   "parameters_human": "100.1M",
   "storage_bytes": 401961623,
   "storage_human": "402 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T09:12:02.312Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

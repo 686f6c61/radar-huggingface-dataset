@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HoangQuocViet25/nlp-btl-xlsum-baseline",
   "slug": "hoangquocviet25-nlp-btl-xlsum-baseline",
   "author": "HoangQuocViet25",
@@ -34,14 +34,19 @@
   "parameters_human": "226.0M",
   "storage_bytes": 904654778,
   "storage_human": "905 MB",
+  "context_length": null,
   "base_model": "VietAI/vit5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

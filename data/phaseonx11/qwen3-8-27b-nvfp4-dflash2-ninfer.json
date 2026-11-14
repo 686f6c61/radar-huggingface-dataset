@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phaseonx11/Qwen3.8-27B-nvfp4-DFlash2-NInfer",
   "slug": "phaseonx11-qwen3-8-27b-nvfp4-dflash2-ninfer",
   "author": "phaseonx11",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 23719496192,
   "storage_human": "23.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

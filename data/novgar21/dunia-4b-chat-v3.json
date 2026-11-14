@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "novgar21/dunia-4b-chat-v3",
   "slug": "novgar21-dunia-4b-chat-v3",
   "author": "novgar21",
@@ -33,14 +33,19 @@
   "parameters_human": "4.04B",
   "storage_bytes": 8096616314,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T03:48:16.787Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

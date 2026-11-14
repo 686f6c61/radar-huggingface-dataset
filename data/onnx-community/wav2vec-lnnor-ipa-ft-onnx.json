@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/wav2vec-LnNor-IPA-ft-ONNX",
   "slug": "onnx-community-wav2vec-lnnor-ipa-ft-onnx",
   "author": "onnx-community",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 807546831,
   "storage_human": "808 MB",
+  "context_length": null,
   "base_model": "MultiBridge/wav2vec-LnNor-IPA-ft",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Phoneme Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cgb/unirig-skeleton-onnx-webgpu",
   "slug": "cgb-unirig-skeleton-onnx-webgpu",
   "author": "cgb",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 810773563,
   "storage_human": "811 MB",
+  "context_length": null,
   "base_model": "VAST-AI/UniRig",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

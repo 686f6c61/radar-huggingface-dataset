@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NadavSalem/Titanius-1.1-88m-base-fp16",
   "slug": "nadavsalem-titanius-1-1-88m-base-fp16",
   "author": "NadavSalem",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 176223282,
   "storage_human": "176 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

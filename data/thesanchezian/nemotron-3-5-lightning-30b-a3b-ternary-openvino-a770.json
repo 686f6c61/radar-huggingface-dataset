@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheSanchezian/Nemotron-3.5-Lightning-30B-A3B-Ternary-OpenVINO-A770",
   "slug": "thesanchezian-nemotron-3-5-lightning-30b-a3b-ternary-openvino-a770",
   "author": "TheSanchezian",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 19656646814,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "nota-ai/Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

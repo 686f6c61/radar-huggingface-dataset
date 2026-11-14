@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DM-Diaz/SimCLR-ResNet18-ImageNet1K",
   "slug": "dm-diaz-simclr-resnet18-imagenet1k",
   "author": "DM-Diaz",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 92155441,
   "storage_human": "92 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

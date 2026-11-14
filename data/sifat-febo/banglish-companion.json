@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sifat-febo/banglish-companion",
   "slug": "sifat-febo-banglish-companion",
   "author": "sifat-febo",
@@ -47,14 +47,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 13694891799,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Banglish Conversation",

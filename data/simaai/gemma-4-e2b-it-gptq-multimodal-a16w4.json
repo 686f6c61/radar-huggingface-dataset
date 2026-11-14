@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simaai/Gemma-4-E2B-it-GPTQ-Multimodal-a16w4",
   "slug": "simaai-gemma-4-e2b-it-gptq-multimodal-a16w4",
   "author": "simaai",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 6563477994,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

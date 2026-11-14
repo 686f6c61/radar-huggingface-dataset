@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mid11/klein-base-4B",
   "slug": "mid11-klein-base-4b",
   "author": "Mid11",
@@ -24,6 +24,7 @@
   "parameters_human": null,
   "storage_bytes": 39228964500,
   "storage_human": "39.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

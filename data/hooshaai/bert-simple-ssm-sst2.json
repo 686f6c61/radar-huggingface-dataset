@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hooshaai/bert-simple-ssm-sst2",
   "slug": "hooshaai-bert-simple-ssm-sst2",
   "author": "Hooshaai",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 44944772,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

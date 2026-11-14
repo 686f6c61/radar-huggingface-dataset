@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/SmolLM2-135M-Instruct",
   "slug": "litert-community-smollm2-135m-instruct",
   "author": "litert-community",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 142819328,
   "storage_human": "143 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

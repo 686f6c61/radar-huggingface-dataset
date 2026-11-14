@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StillDeadcode/fasth3-8-step-v2-i8",
   "slug": "stilldeadcode-fasth3-8-step-v2-i8",
   "author": "StillDeadcode",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 69338775552,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastVideo-FastH3-8-Step-V2, LBH-123-AI/Minimax_h3_latent_Upscaler",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

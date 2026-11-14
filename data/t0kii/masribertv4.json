@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "T0KII/MASRIBERTV4",
   "slug": "t0kii-masribertv4",
   "author": "T0KII",
@@ -29,14 +29,19 @@
   "parameters_human": "239.8M",
   "storage_bytes": 138159738410,
   "storage_human": "138.2 GB",
+  "context_length": null,
   "base_model": "UBC-NLP/MARBERTv2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

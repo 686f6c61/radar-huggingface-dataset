@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sudo/Devstral-Small-2-24B-Instruct-2512",
   "slug": "sudo-devstral-small-2-24b-instruct-2512",
   "author": "sudo",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 19839869982,
   "storage_human": "19.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

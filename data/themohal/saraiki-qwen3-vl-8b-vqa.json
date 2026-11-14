@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "themohal/saraiki-qwen3-vl-8b-vqa",
   "slug": "themohal-saraiki-qwen3-vl-8b-vqa",
   "author": "themohal",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 895743011,
   "storage_human": "896 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T08:16:52.943Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

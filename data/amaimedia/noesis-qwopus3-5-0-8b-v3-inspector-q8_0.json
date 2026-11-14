@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Qwopus3.5-0.8B-v3-Inspector-Q8_0",
   "slug": "amaimedia-noesis-qwopus3-5-0-8b-v3-inspector-q8_0",
   "author": "AMAImedia",
@@ -31,14 +31,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 811839616,
   "storage_human": "812 MB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T08:37:53.041Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

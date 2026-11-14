@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mzoelfakar/Al-Khwarizmi-3B-GGUF",
   "slug": "mzoelfakar-al-khwarizmi-3b-gguf",
   "author": "mzoelfakar",
@@ -47,14 +47,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 34069339695,
   "storage_human": "34.1 GB",
+  "context_length": 2048,
   "base_model": "mzoelfakar/Al-Khwarizmi-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

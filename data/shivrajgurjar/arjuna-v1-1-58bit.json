@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shivrajgurjar/Arjuna-V1-1.58bit",
   "slug": "shivrajgurjar-arjuna-v1-1-58bit",
   "author": "shivrajgurjar",
@@ -38,14 +38,19 @@
   "parameters_human": "6.39B",
   "storage_bytes": 19016860157,
   "storage_human": "19.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T03:43:40.724Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

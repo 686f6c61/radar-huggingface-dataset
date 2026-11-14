@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tofken/pornworks-real-porn-v03-sdxl",
   "slug": "tofken-pornworks-real-porn-v03-sdxl",
   "author": "Tofken",
@@ -36,6 +36,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 6938011430,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QianheChen01/Hy-MT2-1.8B-SpecDraft-30B-Q3_K_M-MLX",
   "slug": "qianhechen01-hy-mt2-1-8b-specdraft-30b-q3_k_m-mlx",
   "author": "QianheChen01",
@@ -24,14 +24,19 @@
   "parameters_human": "265.9M",
   "storage_bytes": 951431284,
   "storage_human": "951 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

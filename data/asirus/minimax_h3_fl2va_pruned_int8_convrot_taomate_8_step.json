@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Asirus/minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step",
   "slug": "asirus-minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step",
   "author": "Asirus",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 21010531803,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

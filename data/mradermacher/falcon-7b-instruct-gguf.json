@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/falcon-7b-instruct-GGUF",
   "slug": "mradermacher-falcon-7b-instruct-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "7.22B",
   "storage_bytes": 70353448192,
   "storage_human": "70.4 GB",
+  "context_length": 2048,
   "base_model": "tiiuae/falcon-7b-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

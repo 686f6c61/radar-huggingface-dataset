@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asadullahshehbaz/biomistral-medical-qa-lora",
   "slug": "asadullahshehbaz-biomistral-medical-qa-lora",
   "author": "asadullahshehbaz",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 336157923,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": "BioMistral/BioMistral-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

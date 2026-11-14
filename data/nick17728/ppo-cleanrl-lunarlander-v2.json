@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nick17728/ppo-CleanRL-LunarLander-v2",
   "slug": "nick17728-ppo-cleanrl-lunarlander-v2",
   "author": "nick17728",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 43419,
   "storage_human": "43419 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

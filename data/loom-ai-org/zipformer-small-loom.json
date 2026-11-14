@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/zipformer-small-loom",
   "slug": "loom-ai-org-zipformer-small-loom",
   "author": "loom-ai-org",
@@ -34,14 +34,19 @@
   "parameters_human": "34.8M",
   "storage_bytes": 197930496,
   "storage_human": "198 MB",
+  "context_length": null,
   "base_model": "pkufool/zipformer-small",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

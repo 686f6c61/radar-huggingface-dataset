@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nex-agi/Nex-N2.6",
   "slug": "nex-agi-nex-n2-6",
   "author": "nex-agi",
@@ -22,21 +22,26 @@
     "fp8",
     "region:us"
   ],
-  "likes": 79,
+  "likes": 81,
   "downloads_30d": 593,
-  "trending_score": 77,
+  "trending_score": 79,
   "parameters": 321323031390,
   "parameters_human": "321.32B",
   "storage_bytes": 328364319882,
   "storage_human": "328.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

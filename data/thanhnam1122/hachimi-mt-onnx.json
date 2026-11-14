@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thanhnam1122/hachimi-mt-onnx",
   "slug": "thanhnam1122-hachimi-mt-onnx",
   "author": "thanhnam1122",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 54959097,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "ngocdang83/HachimiMT-30-zh-vi",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

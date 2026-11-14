@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM2.5-2.6B-Pashto-Zi-GGUF",
   "slug": "mradermacher-lfm2-5-2-6b-pashto-zi-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "2.69B",
   "storage_bytes": 24257283840,
   "storage_human": "24.3 GB",
+  "context_length": 131072,
   "base_model": "nassimjp/LFM2.5-2.6B-Pashto-Zi",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

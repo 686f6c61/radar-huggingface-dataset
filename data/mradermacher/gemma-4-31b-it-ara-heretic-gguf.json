@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-4-31B-it-ARA-heretic-GGUF",
   "slug": "mradermacher-gemma-4-31b-it-ara-heretic-gguf",
   "author": "mradermacher",
@@ -28,21 +28,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 284,
+  "likes": 285,
   "downloads_30d": 116423,
-  "trending_score": 234,
+  "trending_score": 235,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
   "storage_bytes": 213908603808,
   "storage_human": "213.9 GB",
+  "context_length": 262144,
   "base_model": "richardyoung/gemma-4-31B-it-ARA-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/MOSS-Transcribe-preview-2B",
   "slug": "jinstudio-moss-transcribe-preview-2b",
   "author": "Jinstudio",
@@ -45,14 +45,19 @@
   "parameters_human": "2.42B",
   "storage_bytes": 4849194606,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T02:51:12.959Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Novasaki/Nanbeige4.2-3B-GrugSpeech-Native",
   "slug": "novasaki-nanbeige4-2-3b-grugspeech-native",
   "author": "Novasaki",
@@ -41,6 +41,7 @@
   "parameters_human": "4.17B",
   "storage_bytes": 14085623617,
   "storage_human": "14.1 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

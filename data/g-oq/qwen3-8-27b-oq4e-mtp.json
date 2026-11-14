@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-oQ/Qwen3.8-27B-oQ4e-mtp",
   "slug": "g-oq-qwen3-8-27b-oq4e-mtp",
   "author": "g-oQ",
@@ -29,6 +29,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 16984511358,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

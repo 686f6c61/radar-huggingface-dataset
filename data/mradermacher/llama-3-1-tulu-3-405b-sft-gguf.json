@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llama-3.1-Tulu-3-405B-SFT-GGUF",
   "slug": "mradermacher-llama-3-1-tulu-3-405b-sft-gguf",
   "author": "mradermacher",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2755113627232,
   "storage_human": "2755.1 GB",
+  "context_length": null,
   "base_model": "allenai/Llama-3.1-Tulu-3-405B-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

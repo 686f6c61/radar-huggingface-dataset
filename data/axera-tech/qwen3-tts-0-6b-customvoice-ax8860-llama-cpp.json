@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AXERA-TECH/Qwen3-TTS-0.6B-CustomVoice-AX8860-llama.cpp",
   "slug": "axera-tech-qwen3-tts-0-6b-customvoice-ax8860-llama-cpp",
   "author": "AXERA-TECH",
@@ -25,14 +25,19 @@
   "parameters_human": "602.3M",
   "storage_bytes": 1934673942,
   "storage_human": "1.9 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

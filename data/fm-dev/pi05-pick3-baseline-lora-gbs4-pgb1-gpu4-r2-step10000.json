@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fm-dev/pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step10000",
   "slug": "fm-dev-pi05-pick3-baseline-lora-gbs4-pgb1-gpu4-r2-step10000",
   "author": "fm-dev",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 11527876020,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

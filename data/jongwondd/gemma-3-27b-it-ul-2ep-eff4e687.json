@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongwondd/Gemma-3-27B-IT-UL-2ep-eff4e687",
   "slug": "jongwondd-gemma-3-27b-it-ul-2ep-eff4e687",
   "author": "Jongwondd",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 454183400,
   "storage_human": "454 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-27b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

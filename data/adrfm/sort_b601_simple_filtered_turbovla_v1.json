@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adrfm/sort_b601_simple_filtered_turbovla_v1",
   "slug": "adrfm-sort_b601_simple_filtered_turbovla_v1",
   "author": "adrfm",
@@ -27,14 +27,19 @@
   "parameters_human": "209.3M",
   "storage_bytes": 837344220,
   "storage_human": "837 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

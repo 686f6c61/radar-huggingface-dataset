@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dawcade/assistant",
   "slug": "dawcade-assistant",
   "author": "Dawcade",
@@ -28,6 +28,7 @@
   "parameters_human": "34.9M",
   "storage_bytes": 159593104,
   "storage_human": "160 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

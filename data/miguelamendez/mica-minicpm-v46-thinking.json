@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miguelamendez/mica-minicpm-v46-thinking",
   "slug": "miguelamendez-mica-minicpm-v46-thinking",
   "author": "miguelamendez",
@@ -40,6 +40,7 @@
   "parameters_human": "752.2M",
   "storage_bytes": 6939220923,
   "storage_human": "6.9 GB",
+  "context_length": 262144,
   "base_model": "openbmb/MiniCPM-V-4.6-Thinking",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

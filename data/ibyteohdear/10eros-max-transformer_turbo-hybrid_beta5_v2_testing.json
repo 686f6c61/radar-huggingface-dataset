@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibyteohdear/10Eros-Max-Transformer_TURBO-hybrid_beta5_v2_testing",
   "slug": "ibyteohdear-10eros-max-transformer_turbo-hybrid_beta5_v2_testing",
   "author": "ibyteohdear",
@@ -24,6 +24,7 @@
   "parameters_human": "20.11B",
   "storage_bytes": 80458536904,
   "storage_human": "80.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:12:20.662Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

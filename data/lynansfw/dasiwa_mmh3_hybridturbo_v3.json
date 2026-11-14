@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lynaNSFW/DaSiWa_MMH3_HybridTurbo_V3",
   "slug": "lynansfw-dasiwa_mmh3_hybridturbo_v3",
   "author": "lynaNSFW",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 20967668632,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "lynaNSFW/DaSiWa_MiniMax_H3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

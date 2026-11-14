@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/nca_dose_100Mpt_5M_s1_2026-08-15_01-34-24_702785-pt",
   "slug": "alexkstern-nca_dose_100mpt_5m_s1_2026-08-15_01-34-24_702785-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2969669427,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:24:33.188Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

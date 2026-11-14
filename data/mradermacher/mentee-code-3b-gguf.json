@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MenteE-Code-3B-GGUF",
   "slug": "mradermacher-mentee-code-3b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 27940900096,
   "storage_human": "27.9 GB",
+  "context_length": 131072,
   "base_model": "MenteEAI/MenteE-Code-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

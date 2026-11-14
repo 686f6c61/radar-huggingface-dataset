@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brainworkup/LFM2.5-24B-A2B-oQ4e-fp16",
   "slug": "brainworkup-lfm2-5-24b-a2b-oq4e-fp16",
   "author": "brainworkup",
@@ -29,6 +29,7 @@
   "parameters_human": "23.97B",
   "storage_bytes": 14017212962,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

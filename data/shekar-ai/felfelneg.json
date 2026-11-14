@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shekar-ai/felfelneg",
   "slug": "shekar-ai-felfelneg",
   "author": "shekar-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "11.9M",
   "storage_bytes": 6790528022,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "shekar-ai/FelfelSupPairs",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:57:14.462Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

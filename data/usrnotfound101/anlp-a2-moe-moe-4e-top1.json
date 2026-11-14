@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "usrnotfound101/anlp-a2-moe-moe-4e-top1",
   "slug": "usrnotfound101-anlp-a2-moe-moe-4e-top1",
   "author": "usrnotfound101",
@@ -34,14 +34,19 @@
   "parameters_human": "35.4M",
   "storage_bytes": 1417806788,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

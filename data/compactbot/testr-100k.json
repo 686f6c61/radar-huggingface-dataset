@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Compactbot/testr-100k",
   "slug": "compactbot-testr-100k",
   "author": "Compactbot",
@@ -36,14 +36,19 @@
   "parameters_human": "106568",
   "storage_bytes": 838472,
   "storage_human": "838472 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

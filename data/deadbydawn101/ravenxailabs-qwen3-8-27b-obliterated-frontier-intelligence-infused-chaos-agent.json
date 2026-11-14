@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deadbydawn101/RavenXAiLabs-Qwen3.8-27B-OBLITERATED-Frontier-Intelligence-Infused-Chaos-Agent",
   "slug": "deadbydawn101-ravenxailabs-qwen3-8-27b-obliterated-frontier-intelligence-infused-chaos-agent",
   "author": "deadbydawn101",
@@ -60,6 +60,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15153032838,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
   "formats": [
     "mlx",
@@ -67,8 +68,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "deadbydawn101/RavenXAiLabs-Chaos-Agent-Qwen3.8-27B-Frontier-Intelligence-Injected-OBLITERATED-MLX",
+  "renamed_at": "2026-11-11T04:59:44.453Z",
   "benchmarks": [],
   "sources": [
     {

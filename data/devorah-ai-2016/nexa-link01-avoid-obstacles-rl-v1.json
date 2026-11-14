@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devorah-ai-2016/nexa-link01-avoid-obstacles-rl-v1",
   "slug": "devorah-ai-2016-nexa-link01-avoid-obstacles-rl-v1",
   "author": "devorah-ai-2016",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 85613370,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

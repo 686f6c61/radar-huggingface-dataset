@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AesSedai/MiMo-V2.6-Pro-RL-GGUF",
   "slug": "aessedai-mimo-v2-6-pro-rl-gguf",
   "author": "AesSedai",
@@ -27,14 +27,19 @@
   "parameters_human": "1023.18B",
   "storage_bytes": 1981816812974,
   "storage_human": "1981.8 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T04:41:52.666Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TIE-Pilot/dspark-attnconv-block7-qwen3-4b",
   "slug": "tie-pilot-dspark-attnconv-block7-qwen3-4b",
   "author": "TIE-Pilot",
@@ -33,14 +33,19 @@
   "parameters_human": "1.42B",
   "storage_bytes": 105250296650,
   "storage_human": "105.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

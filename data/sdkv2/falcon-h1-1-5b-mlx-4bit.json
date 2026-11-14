@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sdkv2/falcon-h1-1.5b-mlx-4bit",
   "slug": "sdkv2-falcon-h1-1-5b-mlx-4bit",
   "author": "sdkv2",
@@ -32,6 +32,7 @@
   "parameters_human": "1.55B",
   "storage_bytes": 875576548,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

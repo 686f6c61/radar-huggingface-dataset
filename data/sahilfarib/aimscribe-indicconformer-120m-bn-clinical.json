@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sahilfarib/aimscribe-indicconformer-120m-bn-clinical",
   "slug": "sahilfarib-aimscribe-indicconformer-120m-bn-clinical",
   "author": "sahilfarib",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 523182080,
   "storage_human": "523 MB",
+  "context_length": null,
   "base_model": "ai4bharat/indicconformer_stt_bn_hybrid_ctc_rnnt_large",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

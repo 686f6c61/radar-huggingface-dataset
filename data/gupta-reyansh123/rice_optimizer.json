@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gupta-reyansh123/Rice_Optimizer",
   "slug": "gupta-reyansh123-rice_optimizer",
   "author": "gupta-reyansh123",
@@ -23,14 +23,19 @@
   "parameters_human": "87.9M",
   "storage_bytes": 864019048,
   "storage_human": "864 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gupta-reyansh123/Rice_Nucleic_Optimizer",
+  "renamed_at": "2026-11-12T05:41:17.796Z",
   "benchmarks": [],
   "sources": [
     {

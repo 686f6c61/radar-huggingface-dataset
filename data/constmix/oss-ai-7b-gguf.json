@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "constmix/oss-ai-7b-gguf",
   "slug": "constmix-oss-ai-7b-gguf",
   "author": "constmix",
@@ -30,14 +30,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4683073472,
   "storage_human": "4.7 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

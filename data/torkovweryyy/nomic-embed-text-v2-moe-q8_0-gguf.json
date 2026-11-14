@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Torkovweryyy/nomic-embed-text-v2-moe-Q8_0-GGUF",
   "slug": "torkovweryyy-nomic-embed-text-v2-moe-q8_0-gguf",
   "author": "Torkovweryyy",
@@ -234,14 +234,19 @@
   "parameters_human": "475.3M",
   "storage_bytes": 512225152,
   "storage_human": "512 MB",
+  "context_length": 512,
   "base_model": "nomic-ai/nomic-embed-text-v2-moe",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

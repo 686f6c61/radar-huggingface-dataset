@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lordlouis/luis",
   "slug": "lordlouis-luis",
   "author": "lordlouis",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 779139582,
   "storage_human": "779 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T06:53:35.068Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abahofk-45/Recede-Ultra4",
   "slug": "abahofk-45-recede-ultra4",
   "author": "abahofk-45",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 11422650,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T03:11:00.773Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

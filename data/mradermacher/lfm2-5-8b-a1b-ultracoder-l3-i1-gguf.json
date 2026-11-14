@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM2.5-8B-A1B-UltraCoder-L3-i1-GGUF",
   "slug": "mradermacher-lfm2-5-8b-a1b-ultracoder-l3-i1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "8.47B",
   "storage_bytes": 95574182112,
   "storage_human": "95.6 GB",
+  "context_length": 128000,
   "base_model": "Susant-Achary/LFM2.5-8B-A1B-UltraCoder-L3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

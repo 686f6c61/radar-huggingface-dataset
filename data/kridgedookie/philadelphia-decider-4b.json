@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KridgeDookie/philadelphia-decider-4b",
   "slug": "kridgedookie-philadelphia-decider-4b",
   "author": "KridgeDookie",
@@ -38,14 +38,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8431547725,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "Mapika/decider-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "PhillyLabs/philadelphia-decider-4b",
+  "renamed_at": "2026-11-11T03:09:28.629Z",
   "benchmarks": [],
   "sources": [
     {

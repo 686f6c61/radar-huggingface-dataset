@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barddoo/futo-keyboard-ptbr",
   "slug": "barddoo-futo-keyboard-ptbr",
   "author": "barddoo",
@@ -32,14 +32,19 @@
   "parameters_human": "49.9M",
   "storage_bytes": 242583872,
   "storage_human": "243 MB",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

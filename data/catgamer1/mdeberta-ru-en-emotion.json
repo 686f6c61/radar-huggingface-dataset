@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "catgamer1/mdeberta-ru-en-emotion",
   "slug": "catgamer1-mdeberta-ru-en-emotion",
   "author": "catgamer1",
@@ -36,14 +36,19 @@
   "parameters_human": "278.8M",
   "storage_bytes": 573688287,
   "storage_human": "574 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

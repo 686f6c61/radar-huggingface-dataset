@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beetle-FineWeb-24B-5/beetle-bilingual-balanced-b1-fineweb-hin-eng",
   "slug": "beetle-fineweb-24b-5-beetle-bilingual-balanced-b1-fineweb-hin-eng",
   "author": "Beetle-FineWeb-24B-5",
@@ -27,14 +27,19 @@
   "parameters_human": "193.8M",
   "storage_bytes": 48841632676,
   "storage_human": "48.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

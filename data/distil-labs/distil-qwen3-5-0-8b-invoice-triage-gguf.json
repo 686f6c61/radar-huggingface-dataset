@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "distil-labs/distil-qwen3.5-0.8b-invoice-triage-gguf",
   "slug": "distil-labs-distil-qwen3-5-0-8b-invoice-triage-gguf",
   "author": "distil-labs",
@@ -39,14 +39,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 811843040,
   "storage_human": "812 MB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

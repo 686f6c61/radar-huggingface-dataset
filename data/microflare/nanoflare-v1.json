@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MicroFlare/nanoFlare-v1",
   "slug": "microflare-nanoflare-v1",
   "author": "MicroFlare",
@@ -28,14 +28,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 46278479072,
   "storage_human": "46.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "markrodrigo/Qwen-3.5-4B-Spatial-SQL-1.1",
   "slug": "markrodrigo-qwen-3-5-4b-spatial-sql-1-1",
   "author": "markrodrigo",
@@ -40,14 +40,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8431547725,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

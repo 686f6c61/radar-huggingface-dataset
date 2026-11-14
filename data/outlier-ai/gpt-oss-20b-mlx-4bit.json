@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/gpt-oss-20b-MLX-4bit",
   "slug": "outlier-ai-gpt-oss-20b-mlx-4bit",
   "author": "Outlier-Ai",
@@ -64,6 +64,7 @@
   "parameters_human": "20.91B",
   "storage_bytes": 11206437333,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "mlx",
@@ -71,8 +72,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jean-is/pocket-tts-q8-ONNX",
   "slug": "jean-is-pocket-tts-q8-onnx",
   "author": "jean-is",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 686604461,
   "storage_human": "687 MB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

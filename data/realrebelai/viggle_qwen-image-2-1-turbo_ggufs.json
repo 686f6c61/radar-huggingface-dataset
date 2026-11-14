@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/Viggle_Qwen-Image-2.1-Turbo_GGUFs",
   "slug": "realrebelai-viggle_qwen-image-2-1-turbo_ggufs",
   "author": "realrebelai",
@@ -34,14 +34,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 34072717888,
   "storage_human": "34.1 GB",
+  "context_length": null,
   "base_model": "Viggle/Qwen-Image-2.1-viggle-turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

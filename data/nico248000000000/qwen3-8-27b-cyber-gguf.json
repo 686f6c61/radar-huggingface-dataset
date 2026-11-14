@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nico248000000000/Qwen3.8-27B-cyber-GGUF",
   "slug": "nico248000000000-qwen3-8-27b-cyber-gguf",
   "author": "nico248000000000",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 102201290240,
   "storage_human": "102.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T06:39:34.672Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aifreak777/Wan2.2-TI2V-5B-FP8",
   "slug": "aifreak777-wan2-2-ti2v-5b-fp8",
   "author": "aifreak777",
@@ -38,6 +38,7 @@
   "parameters_human": "5.00B",
   "storage_bytes": 52099882841,
   "storage_human": "52.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

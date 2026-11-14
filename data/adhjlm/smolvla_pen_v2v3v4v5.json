@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adhjlm/smolvla_pen_v2v3v4v5",
   "slug": "adhjlm-smolvla_pen_v2v3v4v5",
   "author": "adhjlm",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 1197804336,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "aoyama-robotics1/smolvla_pen_v2v3v4v5",
+  "renamed_at": "2026-11-13T04:32:56.693Z",
   "benchmarks": [],
   "sources": [
     {

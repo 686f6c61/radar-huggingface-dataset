@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeliVali/AIDAM_VSCI_279M_V1.0.0",
   "slug": "delivali-aidam_vsci_279m_v1-0-0",
   "author": "DeliVali",
@@ -39,6 +39,7 @@
   "parameters_human": "278.8M",
   "storage_bytes": 1696129960,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T06:26:19.240Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

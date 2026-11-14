@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aDaikiKamata/patch_policy_libero10_tipsv2_token",
   "slug": "adaikikamata-patch_policy_libero10_tipsv2_token",
   "author": "aDaikiKamata",
@@ -27,14 +27,19 @@
   "parameters_human": "211.9M",
   "storage_bytes": 7674433404,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

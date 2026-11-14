@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lynaNSFW/Ultimate_DeepThroat_K3nk_final",
   "slug": "lynansfw-ultimate_deepthroat_k3nk_final",
   "author": "lynaNSFW",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1695925280,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "lynaNSFW/LTX23_CumShot",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

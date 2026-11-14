@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ernestchu/bigger-gait-ccgr",
   "slug": "ernestchu-bigger-gait-ccgr",
   "author": "ernestchu",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 342635101,
   "storage_human": "343 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T04:01:24.845Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

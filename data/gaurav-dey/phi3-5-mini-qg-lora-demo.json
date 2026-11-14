@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gaurav-dey/phi3.5-mini-qg-lora-demo",
   "slug": "gaurav-dey-phi3-5-mini-qg-lora-demo",
   "author": "gaurav-dey",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 100697728,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:42:05.043Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

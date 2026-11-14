@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TFMC/EXP",
   "slug": "tfmc-exp",
   "author": "TFMC",
@@ -25,6 +25,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 184053813743,
   "storage_human": "184.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T03:34:11.630Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

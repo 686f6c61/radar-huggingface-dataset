@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ishowbackup/LFM2.5-24B-A2B",
   "slug": "ishowbackup-lfm2-5-24b-a2b",
   "author": "Ishowbackup",
@@ -68,14 +68,19 @@
   "parameters_human": "23.97B",
   "storage_bytes": 47963855953,
   "storage_human": "48.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GALAIXYZ/galx-titan-27B-firewall",
   "slug": "galaixyz-galx-titan-27b-firewall",
   "author": "GALAIXYZ",
@@ -62,14 +62,19 @@
   "parameters_human": null,
   "storage_bytes": 2457829,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:24:39.041Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Software Engineering & Agentic Coding",

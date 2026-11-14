@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masterofaudio2077/Fada_ar_embedding",
   "slug": "masterofaudio2077-fada_ar_embedding",
   "author": "masterofaudio2077",
@@ -51,14 +51,19 @@
   "parameters_human": "162.8M",
   "storage_bytes": 658743716,
   "storage_human": "659 MB",
+  "context_length": null,
   "base_model": "UBC-NLP/ARBERTv2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "distributedcognition/Hemmingway-1-27B-abliterated",
   "slug": "distributedcognition-hemmingway-1-27b-abliterated",
   "author": "distributedcognition",
@@ -33,6 +33,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 143657284797,
   "storage_human": "143.7 GB",
+  "context_length": 262144,
   "base_model": "Altworld/Hemmingway-1, Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

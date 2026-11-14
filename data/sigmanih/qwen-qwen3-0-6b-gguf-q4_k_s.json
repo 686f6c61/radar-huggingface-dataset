@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sigmanih/Qwen-Qwen3-0.6B-GGUF-Q4_K_S",
   "slug": "sigmanih-qwen-qwen3-0-6b-gguf-q4_k_s",
   "author": "sigmanih",
@@ -37,14 +37,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 470784864,
   "storage_human": "471 MB",
+  "context_length": 40960,
   "base_model": "sigmanih/Qwen-Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

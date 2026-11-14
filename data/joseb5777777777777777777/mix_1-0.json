@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joSeb5777777777777777777/Mix_1.0",
   "slug": "joseb5777777777777777777-mix_1-0",
   "author": "joSeb5777777777777777777",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B, ornith-ai/Ornith-1.5-35B-A3B, Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T06:00:27.744Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Falcon-H1R-7B",
   "slug": "litert-community-falcon-h1r-7b",
   "author": "litert-community",
@@ -28,18 +28,23 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 326,
+  "downloads_30d": 359,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 24998543168,
   "storage_human": "25.0 GB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon-H1R-7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

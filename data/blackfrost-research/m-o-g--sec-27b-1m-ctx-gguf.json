@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-GGUF",
   "slug": "blackfrost-research-m-o-g--sec-27b-1m-ctx-gguf",
   "author": "Blackfrost-Research",
@@ -52,14 +52,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 178591839758,
   "storage_human": "178.6 GB",
+  "context_length": 1000000,
   "base_model": "Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

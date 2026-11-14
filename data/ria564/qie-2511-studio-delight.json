@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Ria564/QIE-2511-Studio-DeLight",
+  "slug": "ria564-qie-2511-studio-delight",
+  "author": "Ria564",
+  "url": "https://huggingface.co/Ria564/QIE-2511-Studio-DeLight",
+  "created_at": "2026-11-14T14:11:46.000Z",
+  "updated_at": "2026-11-14T14:11:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "art",
+    "Studio-DeLight",
+    "image-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 944468224,
+  "storage_human": "944 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

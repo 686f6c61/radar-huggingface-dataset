@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xs7david/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B-Q2_K-GGUF",
   "slug": "xs7david-mistralai-mistral-nemo-instruct-2407-extensive-bp-abliteration-12b-q2_k-gguf",
   "author": "xs7david",
@@ -50,14 +50,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 4791051264,
   "storage_human": "4.8 GB",
+  "context_length": 131072,
   "base_model": "grimjim/mistralai-Mistral-Nemo-Instruct-2407-extensive-BP-abliteration-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

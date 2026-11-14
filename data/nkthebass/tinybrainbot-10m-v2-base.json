@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nkthebass/tinybrainbot-10m-v2-base",
   "slug": "nkthebass-tinybrainbot-10m-v2-base",
   "author": "nkthebass",
@@ -44,6 +44,7 @@
   "parameters_human": "9.9M",
   "storage_bytes": 140500928,
   "storage_human": "141 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

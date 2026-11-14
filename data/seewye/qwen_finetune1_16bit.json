@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeeWye/qwen_finetune1_16bit",
   "slug": "seewye-qwen_finetune1_16bit",
   "author": "SeeWye",
@@ -33,14 +33,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817538,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "SeeWye/qwen3_5_TM_ocr_merged2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

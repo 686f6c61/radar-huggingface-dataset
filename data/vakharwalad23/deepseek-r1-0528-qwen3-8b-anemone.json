@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vakharwalad23/DeepSeek-R1-0528-Qwen3-8B-Anemone",
   "slug": "vakharwalad23-deepseek-r1-0528-qwen3-8b-anemone",
   "author": "vakharwalad23",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 6382449474,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

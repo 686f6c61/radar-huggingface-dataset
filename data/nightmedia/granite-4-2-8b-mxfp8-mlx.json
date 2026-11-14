@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/granite-4.2-8b-mxfp8-mlx",
   "slug": "nightmedia-granite-4-2-8b-mxfp8-mlx",
   "author": "nightmedia",
@@ -60,6 +60,7 @@
   "parameters_human": "8.79B",
   "storage_bytes": 9066725373,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "mlx",
@@ -67,8 +68,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

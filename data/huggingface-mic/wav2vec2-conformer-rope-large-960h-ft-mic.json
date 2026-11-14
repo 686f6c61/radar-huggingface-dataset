@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/wav2vec2-conformer-rope-large-960h-ft-mic",
   "slug": "huggingface-mic-wav2vec2-conformer-rope-large-960h-ft-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "4.4M",
   "storage_bytes": 17650520,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-conformer-rope-large-960h-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

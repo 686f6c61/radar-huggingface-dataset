@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiywww/lyra-lora",
   "slug": "jiywww-lyra-lora",
   "author": "jiywww",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 85390888,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "Gthalmie1/moody-porn-mix-v10-dpo-gguf",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T16:21:16.929Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

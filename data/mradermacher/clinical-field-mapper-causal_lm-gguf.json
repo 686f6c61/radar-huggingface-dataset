@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/clinical-field-mapper-causal_lm-GGUF",
   "slug": "mradermacher-clinical-field-mapper-causal_lm-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "120.5M",
   "storage_bytes": 1204493344,
   "storage_human": "1.2 GB",
+  "context_length": 1024,
   "base_model": "tsilva/clinical-field-mapper-causal_lm",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

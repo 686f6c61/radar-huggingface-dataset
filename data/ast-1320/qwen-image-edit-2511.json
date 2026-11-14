@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/Qwen-Image-Edit-2511",
   "slug": "ast-1320-qwen-image-edit-2511",
   "author": "AST-1320",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 715072144920,
   "storage_human": "715.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2509, Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AST-1320/Qwen-Image-Edit-Diffusers",
+  "renamed_at": "2026-11-11T02:10:32.627Z",
   "benchmarks": [],
   "sources": []
 }

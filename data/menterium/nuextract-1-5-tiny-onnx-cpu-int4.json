@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Menterium/NuExtract-1.5-tiny-onnx-cpu-int4",
   "slug": "menterium-nuextract-1-5-tiny-onnx-cpu-int4",
   "author": "Menterium",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 332584468,
   "storage_human": "333 MB",
+  "context_length": null,
   "base_model": "numind/NuExtract-1.5-tiny",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

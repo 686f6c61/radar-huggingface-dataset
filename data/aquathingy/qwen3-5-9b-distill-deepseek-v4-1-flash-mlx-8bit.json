@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aquathingy/Qwen3.5-9B-Distill-DeepSeek-V4.1-Flash-MLX-8bit",
   "slug": "aquathingy-qwen3-5-9b-distill-deepseek-v4-1-flash-mlx-8bit",
   "author": "aquathingy",
@@ -32,6 +32,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 10141943566,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "kevinzhou21/Qwen3.5-9B-Distill-Deepseek-V4.1-Flash-20261004",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

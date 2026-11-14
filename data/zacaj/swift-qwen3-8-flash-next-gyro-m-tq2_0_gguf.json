@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zacaj/Swift-Qwen3.8-Flash-Next-Gyro-M-TQ2_0_GGUF",
   "slug": "zacaj-swift-qwen3-8-flash-next-gyro-m-tq2_0_gguf",
   "author": "zacaj",
@@ -38,14 +38,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 201284409280,
   "storage_human": "201.3 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen14b_5000",
   "slug": "ishikaa-acquisition_student_randomselfgen_combine_wgm_mp_qwen14b_5000",
   "author": "ishikaa",
@@ -29,14 +29,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29551555856,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T05:03:50.274Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

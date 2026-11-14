@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eniga/GLM-5.3-Flash-radiance-MXFP4-FP8",
   "slug": "eniga-glm-5-3-flash-radiance-mxfp4-fp8",
   "author": "eniga",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 177001291776,
   "storage_human": "177.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

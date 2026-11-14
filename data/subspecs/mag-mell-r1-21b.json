@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "subspecs/Mag-Mell-R1-21B",
   "slug": "subspecs-mag-mell-r1-21b",
   "author": "subspecs",
@@ -32,14 +32,19 @@
   "parameters_human": "20.43B",
   "storage_bytes": 40871116896,
   "storage_human": "40.9 GB",
+  "context_length": null,
   "base_model": "inflatebot/MN-12B-Mag-Mell-R1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

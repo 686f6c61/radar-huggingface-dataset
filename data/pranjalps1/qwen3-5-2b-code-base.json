@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pranjalps1/Qwen3.5-2B-Code-Base",
   "slug": "pranjalps1-qwen3-5-2b-code-base",
   "author": "Pranjalps1",
@@ -35,14 +35,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 4568210831,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Pranjalps1/Qwen3.5-2B-think",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

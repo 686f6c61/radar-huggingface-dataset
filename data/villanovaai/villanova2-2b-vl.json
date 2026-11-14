@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VillanovaAI/Villanova2-2B-VL",
   "slug": "villanovaai-villanova2-2b-vl",
   "author": "VillanovaAI",
@@ -49,14 +49,19 @@
   "parameters_human": "2.83B",
   "storage_bytes": 5653174328,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "VillanovaAI/Villanova2-2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

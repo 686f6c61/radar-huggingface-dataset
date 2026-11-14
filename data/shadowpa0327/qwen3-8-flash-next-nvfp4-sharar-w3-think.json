@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shadowpa0327/Qwen3.8-Flash-Next-NVFP4-sharar-w3-think",
   "slug": "shadowpa0327-qwen3-8-flash-next-nvfp4-sharar-w3-think",
   "author": "shadowpa0327",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 50909865368,
   "storage_human": "50.9 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

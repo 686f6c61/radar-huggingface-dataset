@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Moon-Beam-16B-A3B-i1-GGUF",
   "slug": "mradermacher-moon-beam-16b-a3b-i1-gguf",
   "author": "mradermacher",
@@ -39,6 +39,7 @@
   "parameters_human": "15.96B",
   "storage_bytes": 197510504288,
   "storage_human": "197.5 GB",
+  "context_length": 8192,
   "base_model": "tablinum/Moon-Beam-16B-A3B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

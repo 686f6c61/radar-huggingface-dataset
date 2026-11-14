@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elyza/ELYZA-Thinking-1.0-llm-jp-4-33b",
   "slug": "elyza-elyza-thinking-1-0-llm-jp-4-33b",
   "author": "elyza",
@@ -39,14 +39,19 @@
   "parameters_human": "33.22B",
   "storage_bytes": 66452188936,
   "storage_human": "66.5 GB",
+  "context_length": null,
   "base_model": "llm-jp/llm-jp-4-33b-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

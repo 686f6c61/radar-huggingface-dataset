@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bobby-Joe/MarePussy_MOSS",
   "slug": "bobby-joe-marepussy_moss",
   "author": "Bobby-Joe",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 297467552,
   "storage_human": "297 MB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

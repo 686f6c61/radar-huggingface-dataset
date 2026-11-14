@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sachin19566/gemma-2b-hindi-lora",
   "slug": "sachin19566-gemma-2b-hindi-lora",
   "author": "sachin19566",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 83164176,
   "storage_human": "83 MB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-1e-1k-1of4-B6-1e1k-s1seed-sd43_20260830_084655",
   "slug": "kkhya-llavaqwen3-1-7b-finetune-nm-mask-moe-sparse-1e-1k-1of4-b6-1e1k-s1seed-sd43_20260830_084655",
   "author": "KKHYA",
@@ -32,14 +32,19 @@
   "parameters_human": "2.87B",
   "storage_bytes": 31560128522,
   "storage_human": "31.6 GB",
+  "context_length": null,
   "base_model": "KKHYA/llavaqwen3-1.7b-finetune",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

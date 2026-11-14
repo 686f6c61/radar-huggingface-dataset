@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intx82/byt5-textnorm-ru",
   "slug": "intx82-byt5-textnorm-ru",
   "author": "intx82",
@@ -39,14 +39,19 @@
   "parameters_human": "299.6M",
   "storage_bytes": 1198571496,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

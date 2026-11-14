@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "topk-io/topk-embed-v1-xsmall",
   "slug": "topk-io-topk-embed-v1-xsmall",
   "author": "topk-io",
@@ -60,14 +60,19 @@
   "parameters_human": "854.0M",
   "storage_bytes": 1728420096,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

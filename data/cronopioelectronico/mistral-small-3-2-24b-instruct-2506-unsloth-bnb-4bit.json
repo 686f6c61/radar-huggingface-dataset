@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cronopioelectronico/Mistral-Small-3.2-24B-Instruct-2506-unsloth-bnb-4bit",
   "slug": "cronopioelectronico-mistral-small-3-2-24b-instruct-2506-unsloth-bnb-4bit",
   "author": "cronopioelectronico",
@@ -80,14 +80,19 @@
   "parameters_human": "24.01B",
   "storage_bytes": 14575607760,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

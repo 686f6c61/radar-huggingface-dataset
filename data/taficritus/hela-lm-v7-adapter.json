@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taficritus/hela-lm-v7-adapter",
   "slug": "taficritus-hela-lm-v7-adapter",
   "author": "Taficritus",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 215018081,
   "storage_human": "215 MB",
+  "context_length": null,
   "base_model": "Jainamshahhh/helalm-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

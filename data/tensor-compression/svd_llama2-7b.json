@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tensor-compression/SVD_llama2-7b",
   "slug": "tensor-compression-svd_llama2-7b",
   "author": "Tensor-compression",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 16090559440,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:37:10.842Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

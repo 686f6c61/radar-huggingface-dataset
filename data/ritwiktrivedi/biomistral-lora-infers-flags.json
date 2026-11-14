@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ritwiktrivedi/biomistral-lora-infers-flags",
   "slug": "ritwiktrivedi-biomistral-lora-infers-flags",
   "author": "ritwiktrivedi",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 167838017,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "BioMistral/BioMistral-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

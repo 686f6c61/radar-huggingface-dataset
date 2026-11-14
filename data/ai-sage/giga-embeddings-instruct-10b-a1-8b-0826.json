@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
   "slug": "ai-sage-giga-embeddings-instruct-10b-a1-8b-0826",
   "author": "ai-sage",
@@ -37,14 +37,19 @@
   "parameters_human": "10.48B",
   "storage_bytes": 20962383829,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/nemotron-labs-unified-asr-0.6b-loom",
   "slug": "loom-ai-org-nemotron-labs-unified-asr-0-6b-loom",
   "author": "loom-ai-org",
@@ -79,14 +79,19 @@
   "parameters_human": "636.9M",
   "storage_bytes": 3267112128,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-labs-unified-asr-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

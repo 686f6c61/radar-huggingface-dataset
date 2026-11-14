@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anbeeld/gpt-oss-120b-DFlash-GGUF",
   "slug": "anbeeld-gpt-oss-120b-dflash-gguf",
   "author": "Anbeeld",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 338153,
   "storage_human": "338153 B",
+  "context_length": null,
   "base_model": "z-lab/gpt-oss-120b-DFlash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

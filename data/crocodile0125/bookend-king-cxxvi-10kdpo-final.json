@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Crocodile0125/bookend-KING-CXXVI-10kDPO-FINAL",
   "slug": "crocodile0125-bookend-king-cxxvi-10kdpo-final",
   "author": "Crocodile0125",
@@ -23,14 +23,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916585078,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

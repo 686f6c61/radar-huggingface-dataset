@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sirfyyn/Qwen3.8-Flash-Next-FLE-GGUF",
   "slug": "sirfyyn-qwen3-8-flash-next-fle-gguf",
   "author": "sirfyyn",
@@ -64,14 +64,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 501041319808,
   "storage_human": "501.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

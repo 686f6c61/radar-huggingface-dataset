@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sgsystems/Falcon-H1-7B-FORGE-v2",
   "slug": "sgsystems-falcon-h1-7b-forge-v2",
   "author": "sgsystems",
@@ -37,14 +37,19 @@
   "parameters_human": "7.59B",
   "storage_bytes": 3480192416,
   "storage_human": "3.5 GB",
+  "context_length": 262144,
   "base_model": "tiiuae/Falcon-H1-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

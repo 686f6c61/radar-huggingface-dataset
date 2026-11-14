@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "2003cy/ssl_outthere_v1",
   "slug": "2003cy-ssl_outthere_v1",
   "author": "2003cy",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 748089452,
   "storage_human": "748 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

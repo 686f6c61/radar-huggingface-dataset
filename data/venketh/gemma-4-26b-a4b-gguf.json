@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "venketh/gemma-4-26B-A4B-GGUF",
   "slug": "venketh-gemma-4-26b-a4b-gguf",
   "author": "venketh",
@@ -24,14 +24,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 54275692544,
   "storage_human": "54.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

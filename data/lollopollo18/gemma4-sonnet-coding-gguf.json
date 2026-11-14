@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lollopollo18/gemma4-sonnet-coding-gguf",
   "slug": "lollopollo18-gemma4-sonnet-coding-gguf",
   "author": "lollopollo18",
@@ -28,14 +28,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 7503414528,
   "storage_human": "7.5 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lollopollo18/gemma4-distilled-coding-gguf",
+  "renamed_at": "2026-11-11T06:06:43.709Z",
   "benchmarks": [],
   "sources": [
     {

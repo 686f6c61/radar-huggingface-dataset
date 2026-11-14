@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DictionLabs/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML",
   "slug": "dictionlabs-nemotron-3-5-asr-streaming-multilingual-0-6b-coreml",
   "author": "DictionLabs",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 662467578,
   "storage_human": "662 MB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

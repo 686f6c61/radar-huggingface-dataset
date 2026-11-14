@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meowmeowai/Dual-Explain-A1-A3-Stage2-LoRA",
   "slug": "meowmeowai-dual-explain-a1-a3-stage2-lora",
   "author": "meowmeowai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1480186787,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "stage1_merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sahilpardasani/kinship-qwen3-0.6b-v2",
   "slug": "sahilpardasani-kinship-qwen3-0-6b-v2",
   "author": "sahilpardasani",
@@ -29,6 +29,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203557585,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-0.6B-4bit",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

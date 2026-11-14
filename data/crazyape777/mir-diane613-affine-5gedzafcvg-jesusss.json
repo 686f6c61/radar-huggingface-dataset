@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crazyape777/mir-diane613-affine-5gedzafcvg-jesusss",
   "slug": "crazyape777-mir-diane613-affine-5gedzafcvg-jesusss",
   "author": "crazyape777",
@@ -28,14 +28,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234483477,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:33:20.144Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

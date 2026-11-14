@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chanolp/standing-split-sex-position-lora-ponyxl-illustrious",
   "slug": "chanolp-standing-split-sex-position-lora-ponyxl-illustrious",
   "author": "Chanolp",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 229993284,
   "storage_human": "230 MB",
+  "context_length": null,
   "base_model": "cocktailpeanut/pony-diffusion-v6-xl",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

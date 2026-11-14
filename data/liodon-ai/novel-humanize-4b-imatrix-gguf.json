@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/novel-humanize-4b-imatrix-GGUF",
   "slug": "liodon-ai-novel-humanize-4b-imatrix-gguf",
   "author": "liodon-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 18720094208,
   "storage_human": "18.7 GB",
+  "context_length": 40960,
   "base_model": "gugujiji/novel-humanize-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

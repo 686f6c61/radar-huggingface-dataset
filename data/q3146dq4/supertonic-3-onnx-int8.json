@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q3146dq4/Supertonic-3-ONNX-INT8",
   "slug": "q3146dq4-supertonic-3-onnx-int8",
   "author": "q3146dq4",
@@ -96,14 +96,19 @@
   "parameters_human": null,
   "storage_bytes": 102090195,
   "storage_human": "102 MB",
+  "context_length": null,
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T03:48:42.084Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheMelonGod/Captain-Eris_Violet-GRPO-v0.420-exl3",
   "slug": "themelongod-captain-eris_violet-grpo-v0-420-exl3",
   "author": "TheMelonGod",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 59657507733,
   "storage_human": "59.7 GB",
+  "context_length": null,
   "base_model": "Nitral-AI/Captain-Eris_Violet-GRPO-v0.420",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

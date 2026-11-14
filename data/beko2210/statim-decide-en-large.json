@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beko2210/statim-decide-en-large",
   "slug": "beko2210-statim-decide-en-large",
   "author": "Beko2210",
@@ -43,6 +43,7 @@
   "parameters_human": "421.3M",
   "storage_bytes": 2876500676,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FRENCHFAKER/Nanbeige4.3-33B-cybersec-abliterated-GGUF",
   "slug": "frenchfaker-nanbeige4-3-33b-cybersec-abliterated-gguf",
   "author": "FRENCHFAKER",
@@ -39,14 +39,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 38205994560,
   "storage_human": "38.2 GB",
+  "context_length": 524288,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

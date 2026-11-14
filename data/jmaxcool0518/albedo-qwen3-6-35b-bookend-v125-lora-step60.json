@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step60",
   "slug": "jmaxcool0518-albedo-qwen3-6-35b-bookend-v125-lora-step60",
   "author": "JMaxCool0518",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 251295999,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "local_king/king_cxxv",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

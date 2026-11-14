@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xjaysmth/pi05-3cYofFKyNaP2",
   "slug": "0xjaysmth-pi05-3cyoffkynap2",
   "author": "0xjaysmth",
@@ -23,14 +23,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 62640435227,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

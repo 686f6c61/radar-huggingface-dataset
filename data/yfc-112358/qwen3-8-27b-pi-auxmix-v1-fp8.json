@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YFC-112358/Qwen3.8-27B-pi-AuxMix-v1-FP8",
   "slug": "yfc-112358-qwen3-8-27b-pi-auxmix-v1-fp8",
   "author": "YFC-112358",
@@ -27,14 +27,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 36797132605,
   "storage_human": "36.8 GB",
+  "context_length": null,
   "base_model": "YFC-112358/Qwen3.8-27B-pi-AuxMix-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

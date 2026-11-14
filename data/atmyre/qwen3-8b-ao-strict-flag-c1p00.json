@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atmyre/qwen3-8b-ao-strict-flag-c1p00",
   "slug": "atmyre-qwen3-8b-ao-strict-flag-c1p00",
   "author": "Atmyre",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 698419728,
   "storage_human": "698 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

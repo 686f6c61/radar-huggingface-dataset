@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheBurgstall/Seamless-Equirectangular-LTX2.3-LoRA",
   "slug": "theburgstall-seamless-equirectangular-ltx2-3-lora",
   "author": "TheBurgstall",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2910589088,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

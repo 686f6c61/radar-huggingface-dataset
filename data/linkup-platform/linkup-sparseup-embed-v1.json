@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Linkup-Platform/linkup-sparseup-embed-v1",
   "slug": "linkup-platform-linkup-sparseup-embed-v1",
   "author": "Linkup-Platform",
@@ -39,14 +39,19 @@
   "parameters_human": "188.4M",
   "storage_bytes": 753780968,
   "storage_human": "754 MB",
+  "context_length": null,
   "base_model": "lightonai/LateOn-unsupervised",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

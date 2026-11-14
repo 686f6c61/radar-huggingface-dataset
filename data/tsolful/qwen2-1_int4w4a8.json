@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsolful/Qwen2.1_INT4W4A8",
   "slug": "tsolful-qwen2-1_int4w4a8",
   "author": "tsolful",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 9925125648,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tsolful/Qwen2.1_INT4W4A8_INT6W6A8",
+  "renamed_at": "2026-11-11T07:53:17.478Z",
   "benchmarks": [],
   "sources": [
     {

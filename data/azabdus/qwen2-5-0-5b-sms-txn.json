@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "azabdus/qwen2.5-0.5b-sms-txn",
   "slug": "azabdus-qwen2-5-0-5b-sms-txn",
   "author": "azabdus",
@@ -33,14 +33,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 1034756726,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

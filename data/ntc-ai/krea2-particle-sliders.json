@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ntc-ai/krea2-particle-sliders",
   "slug": "ntc-ai-krea2-particle-sliders",
   "author": "ntc-ai",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 719676156,
   "storage_human": "720 MB",
+  "context_length": null,
   "base_model": "jimmycarter/krea2-turbo-bbox",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "austindixson/Qwen3.8-Flash-Next-Unsloth-V3.1-MLX",
   "slug": "austindixson-qwen3-8-flash-next-unsloth-v3-1-mlx",
   "author": "austindixson",
@@ -35,6 +35,7 @@
   "parameters_human": "147.46B",
   "storage_bytes": 116704247632,
   "storage_human": "116.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

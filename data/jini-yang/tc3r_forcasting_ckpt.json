@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jini-yang/tc3r_forcasting_ckpt",
   "slug": "jini-yang-tc3r_forcasting_ckpt",
   "author": "jini-yang",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 202168143946,
   "storage_human": "202.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T07:49:41.336Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

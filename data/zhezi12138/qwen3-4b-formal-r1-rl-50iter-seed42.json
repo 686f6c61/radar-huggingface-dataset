@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhezi12138/Qwen3-4B-formal-r1-RL-50iter-seed42",
   "slug": "zhezi12138-qwen3-4b-formal-r1-rl-50iter-seed42",
   "author": "zhezi12138",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 16101386670,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

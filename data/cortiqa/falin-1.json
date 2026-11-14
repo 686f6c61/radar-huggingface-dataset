@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cortiqa/falin-1",
   "slug": "cortiqa-falin-1",
   "author": "Cortiqa",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 2355227725,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:22:39.062Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsolful/Minimax_H3_W4A8",
   "slug": "tsolful-minimax_h3_w4a8",
   "author": "tsolful",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 63759591152,
   "storage_human": "63.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

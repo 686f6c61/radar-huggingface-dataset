@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LucasLeee/mt5-small-finetuned-amazon-reviews-en-es",
   "slug": "lucasleee-mt5-small-finetuned-amazon-reviews-en-es",
   "author": "LucasLeee",
@@ -32,14 +32,19 @@
   "parameters_human": "300.2M",
   "storage_bytes": 24030945494,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "google/mt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

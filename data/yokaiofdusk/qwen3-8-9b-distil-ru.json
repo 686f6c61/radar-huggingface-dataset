@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YokaiOfDusk/Qwen3.8-9b-distil-ru",
   "slug": "yokaiofdusk-qwen3-8-9b-distil-ru",
   "author": "YokaiOfDusk",
@@ -38,14 +38,19 @@
   "parameters_human": "7.49B",
   "storage_bytes": 84130001824,
   "storage_human": "84.1 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-9B-Distill-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

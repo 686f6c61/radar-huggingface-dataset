@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ForeverBlue/Qwen3-VL-2B-GRACE-W4G128-AWQ",
   "slug": "foreverblue-qwen3-vl-2b-grace-w4g128-awq",
   "author": "ForeverBlue",
@@ -52,14 +52,19 @@
   "parameters_human": "906.8M",
   "storage_bytes": 2180207864,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

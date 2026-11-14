@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-ar30k",
   "slug": "open-sci-qwen3-1-7b-base-sft-tulu3-decontaminated-ar30k",
   "author": "open-sci",
@@ -34,14 +34,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3451560248,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "ali-elganzory/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwopus3.8-27B-Flash-oQ4e-mtp",
   "slug": "johneeee-qwopus3-8-27b-flash-oq4e-mtp",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 16991670901,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:28:05.998Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

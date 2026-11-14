@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpceanAI/Qwen3.5-0.8B-abliterated-diffusion",
   "slug": "opceanai-qwen3-5-0-8b-abliterated-diffusion",
   "author": "OpceanAI",
@@ -40,14 +40,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524897153,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "OpceanAI/Qwen3.5-0.8B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

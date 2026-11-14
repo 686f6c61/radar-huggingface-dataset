@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "positron-ai/Ministral-3-3B-Instruct-2512",
   "slug": "positron-ai-ministral-3-3b-instruct-2512",
   "author": "positron-ai",
@@ -28,14 +28,19 @@
   "parameters_human": "3.85B",
   "storage_bytes": 9378019496,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

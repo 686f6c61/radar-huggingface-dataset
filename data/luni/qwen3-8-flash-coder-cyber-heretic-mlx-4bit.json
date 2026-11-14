@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luni/Qwen3.8-Flash-Coder-CYBER-Heretic-MLX-4bit",
   "slug": "luni-qwen3-8-flash-coder-cyber-heretic-mlx-4bit",
   "author": "Luni",
@@ -39,6 +39,7 @@
   "parameters_human": "42.62B",
   "storage_bytes": 24026139652,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "Luni/Qwen3.8-Flash-Coder-CYBER-Heretic",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T02:57:18.765Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

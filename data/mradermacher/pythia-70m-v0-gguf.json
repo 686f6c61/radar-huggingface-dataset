@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/pythia-70m-v0-GGUF",
   "slug": "mradermacher-pythia-70m-v0-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "70.4M",
   "storage_bytes": 701314688,
   "storage_human": "701 MB",
+  "context_length": 2048,
   "base_model": "EleutherAI/pythia-70m-v0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

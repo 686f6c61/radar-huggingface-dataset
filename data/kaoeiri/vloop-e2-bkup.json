@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kaoeiri/VLOOP-E2-BKUP",
   "slug": "kaoeiri-vloop-e2-bkup",
   "author": "Kaoeiri",
@@ -47,14 +47,19 @@
   "parameters_human": "27.87B",
   "storage_bytes": 55669092522,
   "storage_human": "55.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

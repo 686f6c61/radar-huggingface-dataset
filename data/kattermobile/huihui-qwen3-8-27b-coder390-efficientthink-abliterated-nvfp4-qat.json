@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KatterMobile/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-NVFP4-QAT",
   "slug": "kattermobile-huihui-qwen3-8-27b-coder390-efficientthink-abliterated-nvfp4-qat",
   "author": "KatterMobile",
@@ -52,14 +52,19 @@
   "parameters_human": "16.25B",
   "storage_bytes": 20613142571,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

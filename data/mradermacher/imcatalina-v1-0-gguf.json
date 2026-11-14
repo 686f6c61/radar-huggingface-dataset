@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/IMCatalina-v1.0-GGUF",
   "slug": "mradermacher-imcatalina-v1-0-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 101218981504,
   "storage_human": "101.2 GB",
+  "context_length": 16384,
   "base_model": "rmtlabs/IMCatalina-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

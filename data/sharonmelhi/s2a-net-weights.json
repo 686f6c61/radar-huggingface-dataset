@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SharonMelhi/S2A-Net-Weights",
   "slug": "sharonmelhi-s2a-net-weights",
   "author": "SharonMelhi",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 120031081,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:00:18.482Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

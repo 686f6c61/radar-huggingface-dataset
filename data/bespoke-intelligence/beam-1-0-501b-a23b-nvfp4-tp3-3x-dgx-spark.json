@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bespoke-Intelligence/Beam-1.0-501B-A23B-NVFP4-TP3-3x-DGX-Spark",
   "slug": "bespoke-intelligence-beam-1-0-501b-a23b-nvfp4-tp3-3x-dgx-spark",
   "author": "Bespoke-Intelligence",
@@ -40,14 +40,19 @@
   "parameters_human": "526.62B",
   "storage_bytes": 308908269327,
   "storage_human": "308.9 GB",
+  "context_length": null,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

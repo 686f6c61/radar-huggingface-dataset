@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SectileLabs/qwen38_27b_nvfp4",
   "slug": "sectilelabs-qwen38_27b_nvfp4",
   "author": "SectileLabs",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 86957528836,
   "storage_human": "87.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

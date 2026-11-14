@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PierreGtch/eeg-fm-masking_mae_r9cm_L8",
   "slug": "pierregtch-eeg-fm-masking_mae_r9cm_l8",
   "author": "PierreGtch",
@@ -31,14 +31,19 @@
   "parameters_human": "12.7M",
   "storage_bytes": 507715368,
   "storage_human": "508 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "developerjeremylive/LTX-2.5-Distilled-GGUF-etheroi",
   "slug": "developerjeremylive-ltx-2-5-distilled-gguf-etheroi",
   "author": "developerjeremylive",
@@ -52,14 +52,19 @@
   "parameters_human": "21.00B",
   "storage_bytes": 116934978641,
   "storage_human": "116.9 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

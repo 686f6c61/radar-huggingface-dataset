@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4",
   "slug": "kataguru-qwen3-8-27b-finnish-titan-uncensored-nvfp4",
   "author": "kataguru",
@@ -49,14 +49,19 @@
   "parameters_human": "19.14B",
   "storage_bytes": 28678977828,
   "storage_human": "28.7 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T03:19:15.352Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

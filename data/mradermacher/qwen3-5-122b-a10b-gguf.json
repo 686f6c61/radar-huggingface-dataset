@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-122B-A10B-GGUF",
   "slug": "mradermacher-qwen3-5-122b-a10b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "122.11B",
   "storage_bytes": 832000839904,
   "storage_human": "832.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

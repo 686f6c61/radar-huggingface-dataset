@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schneiderkamplab/DFM-Mimir-AWQ-FP4",
   "slug": "schneiderkamplab-dfm-mimir-awq-fp4",
   "author": "schneiderkamplab",
@@ -42,14 +42,19 @@
   "parameters_human": "1.79B",
   "storage_bytes": 4273406374,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "danish-foundation-models/DFM-Mimir",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

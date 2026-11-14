@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harindhar10/olmo_chem_fsdp_cpt_500k",
   "slug": "harindhar10-olmo_chem_fsdp_cpt_500k",
   "author": "harindhar10",
@@ -38,14 +38,19 @@
   "parameters_human": "6.89B",
   "storage_bytes": 13782968032,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "Codemaster67/Olmo-7b-spe",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

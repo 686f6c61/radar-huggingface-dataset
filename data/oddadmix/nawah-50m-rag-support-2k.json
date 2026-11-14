@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oddadmix/Nawah-50M-RAG-Support-2K",
   "slug": "oddadmix-nawah-50m-rag-support-2k",
   "author": "oddadmix",
@@ -46,6 +46,7 @@
   "parameters_human": "51.8M",
   "storage_bytes": 198759129,
   "storage_human": "199 MB",
+  "context_length": 2048,
   "base_model": "oddadmix/50M-2048-Emhotob",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

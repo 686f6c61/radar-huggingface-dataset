@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nancyahmed114/arabizi-sentiment-lora-nilechat2",
   "slug": "nancyahmed114-arabizi-sentiment-lora-nilechat2",
   "author": "nancyahmed114",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 212011112,
   "storage_human": "212 MB",
+  "context_length": null,
   "base_model": "MBZUAI-Paris/Nile-Chat-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "broadgesture/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "slug": "broadgesture-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau",
   "author": "broadgesture",
@@ -23,14 +23,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54713608944,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

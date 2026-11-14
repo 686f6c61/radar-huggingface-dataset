@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/OmniVoice",
   "slug": "ldov-omnivoice",
   "author": "ldov",
@@ -36,6 +36,7 @@
   "parameters_human": "612.6M",
   "storage_bytes": 5956915358,
   "storage_human": "6.0 GB",
+  "context_length": 40960,
   "base_model": "k2-fsa/OmniVoice",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

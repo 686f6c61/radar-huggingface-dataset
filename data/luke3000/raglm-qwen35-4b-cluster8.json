@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luke3000/raglm-qwen35-4b-cluster8",
   "slug": "luke3000-raglm-qwen35-4b-cluster8",
   "author": "luke3000",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 104961591,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

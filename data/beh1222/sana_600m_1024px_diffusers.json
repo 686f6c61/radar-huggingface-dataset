@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beh1222/Sana_600M_1024px_diffusers",
   "slug": "beh1222-sana_600m_1024px_diffusers",
   "author": "Beh1222",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 10066977280,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_600M_1024px_diffusers",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

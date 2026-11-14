@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soundetch/soundetch-granite-speech-5.0-470m-turboctc-onnx",
   "slug": "soundetch-soundetch-granite-speech-5-0-470m-turboctc-onnx",
   "author": "soundetch",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 312192917,
   "storage_human": "312 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

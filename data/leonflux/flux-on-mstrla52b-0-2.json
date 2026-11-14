@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leonflux/FLUX-on-MstrlA52B-0.2",
   "slug": "leonflux-flux-on-mstrla52b-0-2",
   "author": "leonflux",
@@ -110,12 +110,17 @@
   "parameters_human": null,
   "storage_bytes": 1060613771975,
   "storage_human": "1060.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

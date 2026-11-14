@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/Raptor-0.6.1-preview-JANG_6M",
   "slug": "osaurusai-raptor-0-6-1-preview-jang_6m",
   "author": "OsaurusAI",
@@ -43,6 +43,7 @@
   "parameters_human": "4.11B",
   "storage_bytes": 7325856560,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OsaurusAI/Raptor-0.6-4B-JANG_6M",
+  "renamed_at": "2026-11-11T03:30:23.868Z",
   "benchmarks": [],
   "sources": [
     {

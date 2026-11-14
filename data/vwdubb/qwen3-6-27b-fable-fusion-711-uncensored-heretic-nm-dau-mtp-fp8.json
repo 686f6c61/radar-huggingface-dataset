@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-FP8",
   "slug": "vwdubb-qwen3-6-27b-fable-fusion-711-uncensored-heretic-nm-dau-mtp-fp8",
   "author": "vwdubb",
@@ -62,14 +62,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 38476958849,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

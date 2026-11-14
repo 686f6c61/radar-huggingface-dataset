@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01",
   "slug": "neelrajani-qwen3-0-6b-base_sft-safety50_adv-pku-v00-01",
   "author": "NeelRajani",
@@ -34,14 +34,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 11932779643,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

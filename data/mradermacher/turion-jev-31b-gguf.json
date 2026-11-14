@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/turion-jev-31b-GGUF",
   "slug": "mradermacher-turion-jev-31b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 213908601024,
   "storage_human": "213.9 GB",
+  "context_length": 262144,
   "base_model": "turion-ai/turion-jev-31b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

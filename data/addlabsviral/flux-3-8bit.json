@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addlabsviral/flux-3-8bit",
   "slug": "addlabsviral-flux-3-8bit",
   "author": "addlabsviral",
@@ -31,6 +31,7 @@
   "parameters_human": "5.55B",
   "storage_bytes": 10744222760,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

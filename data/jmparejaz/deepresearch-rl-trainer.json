@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jmparejaz/DeepResearch-RL-Trainer",
   "slug": "jmparejaz-deepresearch-rl-trainer",
   "author": "jmparejaz",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 109508,
   "storage_human": "109508 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:19:48.959Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

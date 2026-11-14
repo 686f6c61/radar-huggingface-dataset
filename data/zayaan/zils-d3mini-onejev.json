@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zayaan/zils-d3mini-onejev",
   "slug": "zayaan-zils-d3mini-onejev",
   "author": "Zayaan",
@@ -29,14 +29,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9078620456,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "OmniJev/OneJev1.6-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

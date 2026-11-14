@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kami0867/MiniLM-FakeNEWS-Detection",
   "slug": "kami0867-minilm-fakenews-detection",
   "author": "Kami0867",
@@ -33,14 +33,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 133471577,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "microsoft/MiniLM-L12-H384-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

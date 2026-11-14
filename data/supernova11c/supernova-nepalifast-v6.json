@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Supernova11c/Supernova-NepaliFast-V6",
   "slug": "supernova11c-supernova-nepalifast-v6",
   "author": "Supernova11c",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 319775400,
   "storage_human": "320 MB",
+  "context_length": null,
   "base_model": "Supernova11c/Supernova-NepaliFast-V5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T04:15:20.630Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

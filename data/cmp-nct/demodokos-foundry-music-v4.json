@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cmp-nct/demodokos-foundry-music-v4",
   "slug": "cmp-nct-demodokos-foundry-music-v4",
   "author": "cmp-nct",
@@ -130,6 +130,7 @@
   "parameters_human": "8.48B",
   "storage_bytes": 118666613146,
   "storage_human": "118.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -137,8 +138,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

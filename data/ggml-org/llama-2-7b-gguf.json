@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/Llama-2-7B-GGUF",
   "slug": "ggml-org-llama-2-7b-gguf",
   "author": "ggml-org",
@@ -28,14 +28,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 75818635392,
   "storage_human": "75.8 GB",
+  "context_length": 4096,
   "base_model": "meta-llama/Llama-2-7b-hf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

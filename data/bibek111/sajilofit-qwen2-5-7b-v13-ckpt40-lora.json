@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bibek111/sajilofit-qwen2.5-7b-v13-ckpt40-lora",
   "slug": "bibek111-sajilofit-qwen2-5-7b-v13-ckpt40-lora",
   "author": "Bibek111",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 51822096,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Bibek111/SajiloFit-FitnessAndNutrition-Qwen2.5-Finetuned",
+  "renamed_at": "2026-11-14T02:33:22.285Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skaldrim/opus-mt-no-da-ct2-int8",
   "slug": "skaldrim-opus-mt-no-da-ct2-int8",
   "author": "skaldrim",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 112961724,
   "storage_human": "113 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-no-da, Helsinki-NLP/opus-mt-da-no",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

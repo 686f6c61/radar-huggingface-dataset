@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaonai/grpo-kaon3-population-final-transition-rm600-mouse-original-reset-matched-lr1e4-b004-step125",
   "slug": "kaonai-grpo-kaon3-population-final-transition-rm600-mouse-original-reset-matched-lr1e4-b004-step125",
   "author": "kaonai",
@@ -32,14 +32,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644178190,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "kaonai/kaon-c-gemma4-26b-v10.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T06:45:59.442Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

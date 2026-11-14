@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wh1teSpaces/wl-tpu-cache-05e40e3dc8f34fb9",
   "slug": "wh1tespaces-wl-tpu-cache-05e40e3dc8f34fb9",
   "author": "Wh1teSpaces",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 294303587,
   "storage_human": "294 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muhammad-taqi512/LYRA-calme-3.2-instruct-4",
   "slug": "muhammad-taqi512-lyra-calme-3-2-instruct-4",
   "author": "muhammad-taqi512",
@@ -41,14 +41,19 @@
   "parameters_human": "77.97B",
   "storage_bytes": 311875247201,
   "storage_human": "311.9 GB",
+  "context_length": null,
   "base_model": "MaziyarPanahi/calme-3.2-instruct-78b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

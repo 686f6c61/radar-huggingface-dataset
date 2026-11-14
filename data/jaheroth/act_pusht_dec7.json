@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaheroth/act_pusht_dec7",
   "slug": "jaheroth-act_pusht_dec7",
   "author": "jaheroth",
@@ -28,14 +28,19 @@
   "parameters_human": "84.0M",
   "storage_bytes": 335916048,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

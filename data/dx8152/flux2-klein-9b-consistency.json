@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dx8152/Flux2-Klein-9B-Consistency",
   "slug": "dx8152-flux2-klein-9b-consistency",
   "author": "dx8152",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 662759208,
   "storage_human": "663 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9B",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

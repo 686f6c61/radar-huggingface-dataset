@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prahaladha/hima-asr",
   "slug": "prahaladha-hima-asr",
   "author": "Prahaladha",
@@ -67,14 +67,19 @@
   "parameters_human": "459.7M",
   "storage_bytes": 2198984969,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B, google/gemma-3-270m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech recognition",

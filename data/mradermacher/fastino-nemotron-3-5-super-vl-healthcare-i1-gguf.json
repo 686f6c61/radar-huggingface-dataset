@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Fastino-Nemotron-3.5-Super-VL-Healthcare-i1-GGUF",
   "slug": "mradermacher-fastino-nemotron-3-5-super-vl-healthcare-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "123.61B",
   "storage_bytes": 1066610225216,
   "storage_human": "1066.6 GB",
+  "context_length": 1048576,
   "base_model": "fastino/Fastino-Nemotron-3.5-Super-VL-Healthcare",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

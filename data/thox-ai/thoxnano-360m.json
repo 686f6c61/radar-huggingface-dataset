@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxNano-360M",
   "slug": "thox-ai-thoxnano-360m",
   "author": "Thox-ai",
@@ -44,6 +44,7 @@
   "parameters_human": "361.8M",
   "storage_bytes": 2984588077,
   "storage_human": "3.0 GB",
+  "context_length": 2048,
   "base_model": "HuggingFaceTB/SmolLM-360M",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

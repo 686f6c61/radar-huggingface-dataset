@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ronghua/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
   "slug": "ronghua-qwen3-8-27b-efficientthink-uncensored-k3-opus5-grok4-6-gpt5-6sol-sft-simpo-dflash2",
   "author": "ronghua",
@@ -65,6 +65,7 @@
   "parameters_human": "1.92B",
   "storage_bytes": 363243664723,
   "storage_human": "363.2 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

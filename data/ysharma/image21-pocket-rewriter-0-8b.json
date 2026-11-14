@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ysharma/image21-pocket-rewriter-0.8B",
   "slug": "ysharma-image21-pocket-rewriter-0-8b",
   "author": "ysharma",
@@ -34,6 +34,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 3841493550,
   "storage_human": "3.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-0.8B",
+  "renamed_at": "2026-11-11T08:10:42.318Z",
   "benchmarks": [],
   "sources": [
     {

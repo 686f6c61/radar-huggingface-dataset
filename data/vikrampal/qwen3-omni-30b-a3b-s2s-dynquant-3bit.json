@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3-Omni-30B-A3B-S2S-DynQuant-3bit",
   "slug": "vikrampal-qwen3-omni-30b-a3b-s2s-dynquant-3bit",
   "author": "VikramPal",
@@ -35,14 +35,19 @@
   "parameters_human": "6.77B",
   "storage_bytes": 18987675864,
   "storage_human": "19.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VikramPal/Qwen3-Omni-30B-A3B-DynQuant-3bit",
+  "renamed_at": "2026-11-12T04:19:12.370Z",
   "benchmarks": [],
   "sources": [
     {

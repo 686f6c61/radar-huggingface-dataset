@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harry20120330/Qwen3.5-4B-Text",
   "slug": "harry20120330-qwen3-5-4b-text",
   "author": "Harry20120330",
@@ -28,14 +28,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 8665573108,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arnabsanyal/LazyWeights-Phi-3-mini-4k-instruct",
   "slug": "arnabsanyal-lazyweights-phi-3-mini-4k-instruct",
   "author": "arnabsanyal",
@@ -40,14 +40,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 8028675136,
   "storage_human": "8.0 GB",
+  "context_length": 4096,
   "base_model": "microsoft/Phi-3-mini-4k-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

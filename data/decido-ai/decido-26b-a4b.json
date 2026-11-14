@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "decido-ai/decido-26b-a4b",
   "slug": "decido-ai-decido-26b-a4b",
   "author": "decido-ai",
@@ -37,6 +37,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 28875279354,
   "storage_human": "28.9 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

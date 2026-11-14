@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skyuu72/Llama-Quantara-Sentinel-8B",
   "slug": "skyuu72-llama-quantara-sentinel-8b",
   "author": "skyuu72",
@@ -40,6 +40,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 13816863160,
   "storage_human": "13.8 GB",
+  "context_length": 131072,
   "base_model": "fdtn-ai/Foundation-Sec-8B-Instruct",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

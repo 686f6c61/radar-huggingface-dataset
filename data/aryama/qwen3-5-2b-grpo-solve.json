@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aryama/qwen3.5-2b-grpo-solve",
   "slug": "aryama-qwen3-5-2b-grpo-solve",
   "author": "Aryama",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 250130664,
   "storage_human": "250 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "carbonpoint/botc-artist",
   "slug": "carbonpoint-botc-artist",
   "author": "carbonpoint",
@@ -29,14 +29,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 144810912,
   "storage_human": "145 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

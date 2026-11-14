@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kevinmodelf/llama3-keml-cdss-adapters",
   "slug": "kevinmodelf-llama3-keml-cdss-adapters",
   "author": "Kevinmodelf",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 30858649,
   "storage_human": "31 MB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

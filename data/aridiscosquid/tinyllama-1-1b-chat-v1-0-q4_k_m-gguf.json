@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AriDiscoSquid/TinyLlama-1.1B-Chat-v1.0-Q4_K_M-GGUF",
   "slug": "aridiscosquid-tinyllama-1-1b-chat-v1-0-q4_k_m-gguf",
   "author": "AriDiscoSquid",
@@ -36,14 +36,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 667816320,
   "storage_human": "668 MB",
+  "context_length": 2048,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

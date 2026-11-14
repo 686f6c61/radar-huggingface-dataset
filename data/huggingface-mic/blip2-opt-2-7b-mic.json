@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/blip2-opt-2.7b-mic",
   "slug": "huggingface-mic-blip2-opt-2-7b-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "3.6M",
   "storage_bytes": 14529816,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": "Salesforce/blip2-opt-2.7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

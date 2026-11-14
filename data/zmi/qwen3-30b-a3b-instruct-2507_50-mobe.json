@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zmi/Qwen3-30B-A3B-Instruct-2507_50-MoBE",
   "slug": "zmi-qwen3-30b-a3b-instruct-2507_50-mobe",
   "author": "zmi",
@@ -23,14 +23,19 @@
   "parameters_human": "20.86B",
   "storage_bytes": 41739064942,
   "storage_human": "41.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lugman-madhiai/invoice-split-2023",
   "slug": "lugman-madhiai-invoice-split-2023",
   "author": "lugman-madhiai",
@@ -35,14 +35,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545762431,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

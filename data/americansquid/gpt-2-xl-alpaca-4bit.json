@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "americansquid/gpt-2-xl-alpaca-4bit",
   "slug": "americansquid-gpt-2-xl-alpaca-4bit",
   "author": "americansquid",
@@ -29,6 +29,7 @@
   "parameters_human": "1.56B",
   "storage_bytes": 976983054,
   "storage_human": "977 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T04:02:11.881Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swainsubhankar/mistral-hateperception-annotatorreligion-nonreligious",
   "slug": "swainsubhankar-mistral-hateperception-annotatorreligion-nonreligious",
   "author": "swainsubhankar",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 83945296,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T06:16:44.617Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

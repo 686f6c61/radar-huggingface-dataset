@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "foxAIengineer/Qwen3.8-Flash-Next-125b-colibri-i4-gs64",
   "slug": "foxaiengineer-qwen3-8-flash-next-125b-colibri-i4-gs64",
   "author": "foxAIengineer",
@@ -32,14 +32,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 253521667990,
   "storage_human": "253.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

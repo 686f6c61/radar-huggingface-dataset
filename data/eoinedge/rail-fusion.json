@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eoinedge/rail-fusion",
   "slug": "eoinedge-rail-fusion",
   "author": "eoinedge",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 50478,
   "storage_human": "50478 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T03:28:05.495Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

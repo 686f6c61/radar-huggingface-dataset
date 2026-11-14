@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ScuffedWizard/LilBro_V1",
   "slug": "scuffedwizard-lilbro_v1",
   "author": "ScuffedWizard",
@@ -27,14 +27,19 @@
   "parameters_human": "207744",
   "storage_bytes": 36123904,
   "storage_human": "36 MB",
+  "context_length": 128,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:30:21.798Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

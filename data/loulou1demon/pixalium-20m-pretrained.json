@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LouLou1Demon/pixalium-20M-pretrained",
   "slug": "loulou1demon-pixalium-20m-pretrained",
   "author": "LouLou1Demon",
@@ -28,14 +28,19 @@
   "parameters_human": "30.0M",
   "storage_bytes": 6719692431,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

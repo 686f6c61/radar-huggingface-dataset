@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/Qwen3-1.7B-mlx-8Bit",
   "slug": "oscilla-qwen3-1-7b-mlx-8bit",
   "author": "Oscilla",
@@ -33,6 +33,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1839729191,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

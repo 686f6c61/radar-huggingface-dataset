@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "palli23/whisper-tiny-samromur-10h",
   "slug": "palli23-whisper-tiny-samromur-10h",
   "author": "palli23",
@@ -27,14 +27,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 4684147179,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/OpenSparX-3b-cabin-intent-i1-GGUF",
   "slug": "mradermacher-opensparx-3b-cabin-intent-i1-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 40317198976,
   "storage_human": "40.3 GB",
+  "context_length": 128000,
   "base_model": "qualcomm-ai-hub-community/OpenSparX-3b-cabin-intent",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

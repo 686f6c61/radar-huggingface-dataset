@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yujiepan/d3-turbo-tiny-random",
   "slug": "yujiepan-d3-turbo-tiny-random",
   "author": "yujiepan",
@@ -29,14 +29,19 @@
   "parameters_human": "8.2M",
   "storage_bytes": 29259264,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

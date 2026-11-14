@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zeromodels/bart_large_cnn",
   "slug": "zeromodels-bart_large_cnn",
   "author": "zeromodels",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1626174800,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "facebook/bart-large-cnn",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

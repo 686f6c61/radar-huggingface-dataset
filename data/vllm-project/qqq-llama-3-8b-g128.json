@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/QQQ-Llama-3-8b-g128",
   "slug": "vllm-project-qqq-llama-3-8b-g128",
   "author": "vllm-project",
@@ -26,14 +26,19 @@
   "parameters_human": "1.98B",
   "storage_bytes": 6154877764,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

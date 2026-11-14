@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jren313/starvla-pipette-return-r1",
   "slug": "jren313-starvla-pipette-return-r1",
   "author": "jren313",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 19059094086,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

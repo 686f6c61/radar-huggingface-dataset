@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msuiche/Inkling-Small-abliterated-cyber-GLP-41",
   "slug": "msuiche-inkling-small-abliterated-cyber-glp-41",
   "author": "msuiche",
@@ -28,14 +28,19 @@
   "parameters_human": "167936",
   "storage_bytes": 1350464,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

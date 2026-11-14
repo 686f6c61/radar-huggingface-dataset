@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TuanAnhHoangBui/lifemate-grpo-vllm-0251-pilot",
   "slug": "tuananhhoangbui-lifemate-grpo-vllm-0251-pilot",
   "author": "TuanAnhHoangBui",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 38088,
   "storage_human": "38088 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

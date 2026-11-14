@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "appmana/MAGI-2-preview-ComfyUI",
   "slug": "appmana-magi-2-preview-comfyui",
   "author": "appmana",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 125593124082,
   "storage_human": "125.6 GB",
+  "context_length": null,
   "base_model": "sand-ai/MAGI-2-preview",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "appmana/MAGI-2-preview-int8",
+  "renamed_at": "2026-11-14T05:06:03.289Z",
   "benchmarks": [],
   "sources": []
 }

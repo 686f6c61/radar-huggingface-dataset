@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Destiny-JTY/tau0_vla_stackups",
   "slug": "destiny-jty-tau0_vla_stackups",
   "author": "Destiny-JTY",
@@ -35,14 +35,19 @@
   "parameters_human": "3.02B",
   "storage_bytes": 36878111534,
   "storage_human": "36.9 GB",
+  "context_length": null,
   "base_model": "sii-research/tau-0-vla",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

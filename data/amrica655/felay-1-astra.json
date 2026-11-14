@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Amrica655/FELAY-1-ASTRA",
   "slug": "amrica655-felay-1-astra",
   "author": "Amrica655",
@@ -45,14 +45,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 22795897947,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Amrica655/FELAY-HYDROGEN",
+  "renamed_at": "2026-11-12T02:22:23.972Z",
   "benchmarks": [],
   "sources": [
     {

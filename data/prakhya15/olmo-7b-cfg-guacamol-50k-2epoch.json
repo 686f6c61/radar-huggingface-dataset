@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prakhya15/OLMo-7B-CFG-GuacaMol-50k-2epoch",
   "slug": "prakhya15-olmo-7b-cfg-guacamol-50k-2epoch",
   "author": "prakhya15",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 6957799033,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

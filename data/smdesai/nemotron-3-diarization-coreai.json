@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smdesai/Nemotron-3-Diarization-CoreAI",
   "slug": "smdesai-nemotron-3-diarization-coreai",
   "author": "smdesai",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 994879330,
   "storage_human": "995 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

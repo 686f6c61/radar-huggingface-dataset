@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MARTHA-9B-GGUF",
   "slug": "mradermacher-martha-9b-gguf",
   "author": "mradermacher",
@@ -58,14 +58,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 81043470592,
   "storage_human": "81.0 GB",
+  "context_length": 262144,
   "base_model": "ZERO-POINT-AI/Miss_MARTHA-9B-Qwen3.5-Omni",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

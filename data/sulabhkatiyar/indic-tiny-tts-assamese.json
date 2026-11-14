@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sulabhkatiyar/indic-tiny-tts-assamese",
   "slug": "sulabhkatiyar-indic-tiny-tts-assamese",
   "author": "sulabhkatiyar",
@@ -30,12 +30,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 62,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 8933641,
   "parameters_human": "8.9M",
   "storage_bytes": 182984201,
   "storage_human": "183 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YCF-AI/bge-m3-8bit-MLX",
   "slug": "ycf-ai-bge-m3-8bit-mlx",
   "author": "YCF-AI",
@@ -46,6 +46,7 @@
   "parameters_human": "567.8M",
   "storage_bytes": 635111097,
   "storage_human": "635 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

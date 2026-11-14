@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "younghan-meta/Supertonic-ExecuTorch-MLX",
   "slug": "younghan-meta-supertonic-executorch-mlx",
   "author": "younghan-meta",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 198747136,
   "storage_human": "199 MB",
+  "context_length": null,
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiMo-Ornith-9B-AGSI-Abliterated-HQ-i1-GGUF",
   "slug": "mradermacher-mimo-ornith-9b-agsi-abliterated-hq-i1-gguf",
   "author": "mradermacher",
@@ -44,14 +44,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 110211518944,
   "storage_human": "110.2 GB",
+  "context_length": 262144,
   "base_model": "OliviaRossi/MiMo-Ornith-9B-AGSI-Abliterated-HQ",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

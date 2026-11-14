@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChrisR05/t4-semantic-clf-91724fe32c57",
   "slug": "chrisr05-t4-semantic-clf-91724fe32c57",
   "author": "ChrisR05",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 18921799336,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

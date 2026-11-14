@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codefuse-ai/F2LLM-v2-160M",
   "slug": "codefuse-ai-f2llm-v2-160m",
   "author": "codefuse-ai",
@@ -208,14 +208,19 @@
   "parameters_human": "159.2M",
   "storage_bytes": 10826419436,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-160M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

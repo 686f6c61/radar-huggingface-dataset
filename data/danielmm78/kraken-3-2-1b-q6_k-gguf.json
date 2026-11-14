@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Danielmm78/Kraken-3.2-1B-Q6_K-GGUF",
   "slug": "danielmm78-kraken-3-2-1b-q6_k-gguf",
   "author": "Danielmm78",
@@ -77,14 +77,19 @@
   "parameters_human": "1.50B",
   "storage_bytes": 1237280736,
   "storage_human": "1.2 GB",
+  "context_length": 131072,
   "base_model": "Novaciano/La_Mejor_Mezcla-3.2-1B, Novaciano/Jormungandr-3.2-1B, cognitivecomputations/Dolphin3.0-Llama3.2-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Anima-Aesthetic-v1.1",
   "slug": "rin247-anima-aesthetic-v1-1",
   "author": "Rin247",
@@ -28,6 +28,7 @@
   "parameters_human": null,
   "storage_bytes": 10184874384,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:15:28.766Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

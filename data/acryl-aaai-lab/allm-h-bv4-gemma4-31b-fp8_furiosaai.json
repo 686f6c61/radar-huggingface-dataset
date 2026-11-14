@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "acryl-aaai-lab/ALLM.H-Bv4-Gemma4-31B-FP8_FuriosaAI",
   "slug": "acryl-aaai-lab-allm-h-bv4-gemma4-31b-fp8_furiosaai",
   "author": "acryl-aaai-lab",
@@ -44,14 +44,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33300291810,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "acryl-aaai-lab/ALLM.H-Bv4-Gemma4-31B-BF16_FuriosaAI",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Nanbeige4.3-33B-AWQ-8bit",
   "slug": "axteam-nanbeige4-3-33b-awq-8bit",
   "author": "axteam",
@@ -36,14 +36,19 @@
   "parameters_human": "11.04B",
   "storage_bytes": 37454294101,
   "storage_human": "37.5 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

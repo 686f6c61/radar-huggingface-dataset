@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ruurd/BYOD-Llama-3.1-8B",
   "slug": "ruurd-byod-llama-3-1-8b",
   "author": "Ruurd",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1763187416,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

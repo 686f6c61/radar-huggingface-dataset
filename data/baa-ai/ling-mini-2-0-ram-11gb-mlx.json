@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baa-ai/Ling-mini-2.0-RAM-11GB-MLX",
   "slug": "baa-ai-ling-mini-2-0-ram-11gb-mlx",
   "author": "baa-ai",
@@ -34,6 +34,7 @@
   "parameters_human": "16.26B",
   "storage_bytes": 10807996414,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-mini-2.0",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

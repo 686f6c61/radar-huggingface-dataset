@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "testai-dev-org/qa-scan-pending-test",
   "slug": "testai-dev-org-qa-scan-pending-test",
   "author": "testai-dev-org",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 10,
   "storage_human": "10 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T05:12:14.560Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kandoo/Juggernaut-XL-Ragnarok",
   "slug": "kandoo-juggernaut-xl-ragnarok",
   "author": "Kandoo",
@@ -35,6 +35,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 18640592151,
   "storage_human": "18.6 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avishkararjan/qwen2.5-coder-7b-quad-sft-7095-v1",
   "slug": "avishkararjan-qwen2-5-coder-7b-quad-sft-7095-v1",
   "author": "avishkararjan",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 172955548,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

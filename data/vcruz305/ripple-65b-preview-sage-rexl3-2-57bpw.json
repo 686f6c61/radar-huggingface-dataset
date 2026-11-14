@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/Ripple-65B-Preview-SAGE-REXL3-2.57bpw",
   "slug": "vcruz305-ripple-65b-preview-sage-rexl3-2-57bpw",
   "author": "vcruz305",
@@ -34,14 +34,19 @@
   "parameters_human": "11.17B",
   "storage_bytes": 22341175716,
   "storage_human": "22.3 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jadonharsh/smriti-clip-vitb32-onnx",
   "slug": "jadonharsh-smriti-clip-vitb32-onnx",
   "author": "jadonharsh",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 606123135,
   "storage_human": "606 MB",
+  "context_length": null,
   "base_model": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

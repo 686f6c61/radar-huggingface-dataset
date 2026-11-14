@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LumiOpen/mdlm-en-1.7b-sft",
   "slug": "lumiopen-mdlm-en-1-7b-sft",
   "author": "LumiOpen",
@@ -35,14 +35,19 @@
   "parameters_human": "1.75B",
   "storage_bytes": 3521122167,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LumiOpen/mdlm-en-1.7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

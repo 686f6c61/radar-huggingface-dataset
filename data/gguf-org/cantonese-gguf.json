@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gguf-org/cantonese-gguf",
   "slug": "gguf-org-cantonese-gguf",
   "author": "gguf-org",
@@ -25,14 +25,19 @@
   "parameters_human": "914.6M",
   "storage_bytes": 32279275252,
   "storage_human": "32.3 GB",
+  "context_length": null,
   "base_model": "cantonese-dev/cantonese-1.2-0.6b, cantonese-dev/cantonese-1.2-1.7b, cantonese-dev/cantonese-1.7b-v1.1, cantonese-dev/cantonese-v1-dev",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

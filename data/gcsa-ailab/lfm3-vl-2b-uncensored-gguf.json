@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GCSA-AiLab/LFM3-VL-2B-Uncensored-GGUF",
   "slug": "gcsa-ailab-lfm3-vl-2b-uncensored-gguf",
   "author": "GCSA-AiLab",
@@ -36,14 +36,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 11685749216,
   "storage_human": "11.7 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

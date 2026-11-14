@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zMANNNNNNNN/cross-model-state-transfer",
   "slug": "zmannnnnnnn-cross-model-state-transfer",
   "author": "zMANNNNNNNN",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 16428827,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen2.5-3B-Instruct-4bit, mlx-community/gpt-oss-20b-MXFP4-Q8",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

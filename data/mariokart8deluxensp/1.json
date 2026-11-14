@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mariokart8deluxeNSP/1",
   "slug": "mariokart8deluxensp-1",
   "author": "Mariokart8deluxeNSP",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 120742,
   "storage_human": "120742 B",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

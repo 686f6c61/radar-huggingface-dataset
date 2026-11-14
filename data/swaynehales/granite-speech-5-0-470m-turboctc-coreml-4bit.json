@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swaynehales/granite-speech-5.0-470m-turboctc-coreml-4bit",
   "slug": "swaynehales-granite-speech-5-0-470m-turboctc-coreml-4bit",
   "author": "swaynehales",
@@ -50,12 +50,17 @@
   "parameters_human": null,
   "storage_bytes": 283047264,
   "storage_human": "283 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

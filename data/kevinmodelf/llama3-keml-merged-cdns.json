@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kevinmodelf/llama3-keml-merged-cdns",
   "slug": "kevinmodelf-llama3-keml-merged-cdns",
   "author": "Kevinmodelf",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766289,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

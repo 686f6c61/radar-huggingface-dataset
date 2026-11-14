@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trl-internal-testing/tiny-Glm4MoeForCausalLM",
   "slug": "trl-internal-testing-tiny-glm4moeforcausallm",
   "author": "trl-internal-testing",
@@ -28,14 +28,19 @@
   "parameters_human": "2.4M",
   "storage_bytes": 34884508,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

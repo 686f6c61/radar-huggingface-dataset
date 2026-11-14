@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rkss/Minimax_h3_fl2v_lightx2v_turbo_4to8step_v0.1-v1.0_768p_v4_step600_dareties_fro095_native",
   "slug": "rkss-minimax_h3_fl2v_lightx2v_turbo_4to8step_v0-1-v1-0_768p_v4_step600_dareties_fro095_native",
   "author": "Rkss",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 4853655955,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Rkss/Minimax_h3_fl2v_lightx2v_turbo_4to8step_768p_v4_step600_dareties_native",
+  "renamed_at": "2026-11-11T03:42:20.909Z",
   "benchmarks": [],
   "sources": [
     {

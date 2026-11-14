@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cultxre/GLM-4.6-Derestricted-v3",
   "slug": "cultxre-glm-4-6-derestricted-v3",
   "author": "Cultxre",
@@ -36,14 +36,19 @@
   "parameters_human": "356.79B",
   "storage_bytes": 713597382171,
   "storage_human": "713.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

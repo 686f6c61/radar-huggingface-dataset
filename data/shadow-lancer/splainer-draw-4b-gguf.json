@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shadow-lancer/splainer-draw-4b-GGUF",
   "slug": "shadow-lancer-splainer-draw-4b-gguf",
   "author": "Shadow-lancer",
@@ -33,14 +33,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 8069595552,
   "storage_human": "8.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

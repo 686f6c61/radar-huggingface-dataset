@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Justbackup/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning",
   "slug": "justbackup-llama3-3-8b-instruct-thinking-heretic-uncensored-claude-4-5-opus-high-reasoning",
   "author": "Justbackup",
@@ -86,14 +86,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16081273412,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "allura-forge/Llama-3.3-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

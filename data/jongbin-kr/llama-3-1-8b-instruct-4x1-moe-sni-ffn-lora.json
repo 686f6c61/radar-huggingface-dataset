@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-sni-ffn-lora",
   "slug": "jongbin-kr-llama-3-1-8b-instruct-4x1-moe-sni-ffn-lora",
   "author": "Jongbin-kr",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 5682291946,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

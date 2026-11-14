@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Farhankhan1/deepseek-r1-distill-qwen-1.5b-reasoning-finetune",
   "slug": "farhankhan1-deepseek-r1-distill-qwen-1-5b-reasoning-finetune",
   "author": "Farhankhan1",
@@ -35,14 +35,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 3565637399,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "unsloth/deepseek-r1-distill-qwen-1.5b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

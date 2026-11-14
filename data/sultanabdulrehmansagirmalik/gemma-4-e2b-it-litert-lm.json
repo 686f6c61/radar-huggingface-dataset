@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sultanabdulrehmansagirmalik/gemma-4-E2B-it-litert-lm",
   "slug": "sultanabdulrehmansagirmalik-gemma-4-e2b-it-litert-lm",
   "author": "sultanabdulrehmansagirmalik",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 26514860441,
   "storage_human": "26.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

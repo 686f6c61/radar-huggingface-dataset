@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fukayatti0/jev-japanese-judgment-v2",
   "slug": "fukayatti0-jev-japanese-judgment-v2",
   "author": "fukayatti0",
@@ -36,6 +36,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 1996436681,
   "storage_human": "2.0 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-JP-202606",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

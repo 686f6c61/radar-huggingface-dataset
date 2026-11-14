@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/K2-Horizon-7B-Uno-MLX-6bit",
   "slug": "hermitdave-k2-horizon-7b-uno-mlx-6bit",
   "author": "hermitdave",
@@ -32,6 +32,7 @@
   "parameters_human": "9.00B",
   "storage_bytes": 31910566464,
   "storage_human": "31.9 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-7B-Uno",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T04:02:39.791Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

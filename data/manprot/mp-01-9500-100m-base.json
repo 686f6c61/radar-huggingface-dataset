@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Manprot/MP-01-9500-100M-base",
   "slug": "manprot-mp-01-9500-100m-base",
   "author": "Manprot",
@@ -47,14 +47,19 @@
   "parameters_human": "100.6M",
   "storage_bytes": 201584819,
   "storage_human": "202 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Manprot/MP-01-100M-Preview",
+  "renamed_at": "2026-11-11T03:16:38.006Z",
   "benchmarks": [],
   "sources": []
 }

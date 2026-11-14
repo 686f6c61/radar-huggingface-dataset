@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inflaton/gemma4-31b-qat-text-only",
   "slug": "inflaton-gemma4-31b-qat-text-only",
   "author": "inflaton",
@@ -33,14 +33,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 61413187776,
   "storage_human": "61.4 GB",
+  "context_length": 262144,
   "base_model": "mlx-community/gemma-4-31B-it-qat-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

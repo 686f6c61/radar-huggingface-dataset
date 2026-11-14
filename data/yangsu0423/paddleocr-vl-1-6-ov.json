@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yangsu0423/PaddleOCR-VL-1.6-ov",
   "slug": "yangsu0423-paddleocr-vl-1-6-ov",
   "author": "yangsu0423",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4515546755,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompiwerAI/Mtrini-27B-Tellus-IQ2_XS-Imatrix",
   "slug": "compiwerai-mtrini-27b-tellus-iq2_xs-imatrix",
   "author": "CompiwerAI",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 13642688,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

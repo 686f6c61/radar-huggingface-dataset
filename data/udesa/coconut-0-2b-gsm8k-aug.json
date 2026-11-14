@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UdeSA/coconut-0.2B-gsm8k-aug",
   "slug": "udesa-coconut-0-2b-gsm8k-aug",
   "author": "UdeSA",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 995603955,
   "storage_human": "996 MB",
+  "context_length": null,
   "base_model": "openai-community/gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

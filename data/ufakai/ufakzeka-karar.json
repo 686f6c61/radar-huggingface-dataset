@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ufakai/ufakzeka-karar",
   "slug": "ufakai-ufakzeka-karar",
   "author": "ufakai",
@@ -49,14 +49,19 @@
   "parameters_human": "182.5M",
   "storage_bytes": 730009784,
   "storage_human": "730 MB",
+  "context_length": null,
   "base_model": "ufakai/ufakzeka-1-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Typed decisions (choice, score, yes or no)",

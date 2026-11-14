@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/Outlier-40B",
   "slug": "outlier-ai-outlier-40b",
   "author": "Outlier-Ai",
@@ -79,14 +79,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29551556982,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

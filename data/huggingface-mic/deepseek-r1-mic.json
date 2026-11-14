@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/DeepSeek-R1-mic",
   "slug": "huggingface-mic-deepseek-r1-mic",
   "author": "huggingface-mic",
@@ -28,14 +28,19 @@
   "parameters_human": "16.6M",
   "storage_bytes": 66506256,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Flashtond22/Taltos-1",
   "slug": "flashtond22-taltos-1",
   "author": "Flashtond22",
@@ -39,14 +39,19 @@
   "parameters_human": "1.07B",
   "storage_bytes": 2169285105,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:38:26.936Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

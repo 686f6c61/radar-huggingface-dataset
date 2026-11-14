@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM2.5-230M-GGUF",
   "slug": "liquidai-lfm2-5-230m-gguf",
   "author": "LiquidAI",
@@ -53,6 +53,7 @@
   "parameters_human": "229.7M",
   "storage_bytes": 2903330968,
   "storage_human": "2.9 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-230M",
   "formats": [
     "gguf",
@@ -60,8 +61,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

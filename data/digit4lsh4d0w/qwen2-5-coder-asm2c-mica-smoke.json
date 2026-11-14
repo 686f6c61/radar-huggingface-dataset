@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "digit4lsh4d0w/qwen2.5-coder-asm2c-mica-smoke",
   "slug": "digit4lsh4d0w-qwen2-5-coder-asm2c-mica-smoke",
   "author": "digit4lsh4d0w",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 657397786,
   "storage_human": "657 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T04:31:59.509Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

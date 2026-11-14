@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Savoxism/amid-kd-8xh200-qwen2.5-0.5b-it-amid",
   "slug": "savoxism-amid-kd-8xh200-qwen2-5-0-5b-it-amid",
   "author": "Savoxism",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 999526813,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

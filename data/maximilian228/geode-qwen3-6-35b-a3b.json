@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Maximilian228/Geode-Qwen3.6-35B-A3B",
   "slug": "maximilian228-geode-qwen3-6-35b-a3b",
   "author": "Maximilian228",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 40031457181,
   "storage_human": "40.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

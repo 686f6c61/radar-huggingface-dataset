@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HBB-Community/HBB-GPT-1Sx",
   "slug": "hbb-community-hbb-gpt-1sx",
   "author": "HBB-Community",
@@ -366,14 +366,19 @@
   "parameters_human": null,
   "storage_bytes": 32169626,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:28:30.840Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

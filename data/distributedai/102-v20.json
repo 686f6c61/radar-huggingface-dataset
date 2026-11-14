@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DistributedAI/102-v20",
   "slug": "distributedai-102-v20",
   "author": "DistributedAI",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 9204597856,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T09:58:13.047Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

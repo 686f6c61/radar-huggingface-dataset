@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andreadm/reddit-pulse-llama3.2_1b-xqdora",
   "slug": "andreadm-reddit-pulse-llama3-2_1b-xqdora",
   "author": "andreadm",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 20995715,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Directional inflation-expectation classification (up / neutral / down)",

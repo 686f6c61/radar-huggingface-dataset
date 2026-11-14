@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathv00.06",
   "slug": "neelectric-olmo-2-1124-7b-instruct_sft_mathv00-06",
   "author": "Neelectric",
@@ -34,14 +34,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 29194561617,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-1124-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

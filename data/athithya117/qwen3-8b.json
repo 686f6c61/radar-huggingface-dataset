@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Athithya117/Qwen3-8B",
   "slug": "athithya117-qwen3-8b",
   "author": "Athithya117",
@@ -33,14 +33,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939430,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T02:46:27.278Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

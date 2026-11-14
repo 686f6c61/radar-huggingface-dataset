@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "8Astral8/ACT",
   "slug": "8astral8-act",
   "author": "8Astral8",
@@ -23,14 +23,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206714896,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:02:38.452Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

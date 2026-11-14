@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ASD12321WAS/MyAwesomeModel-TestRepository",
   "slug": "asd12321was-myawesomemodel-testrepository",
   "author": "ASD12321WAS",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 23,
   "storage_human": "23 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:04:19.411Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

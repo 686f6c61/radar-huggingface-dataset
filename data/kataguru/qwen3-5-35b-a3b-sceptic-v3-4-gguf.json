@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-GGUF",
   "slug": "kataguru-qwen3-5-35b-a3b-sceptic-v3-4-gguf",
   "author": "kataguru",
@@ -43,14 +43,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 48683548771,
   "storage_human": "48.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T11:53:33.336Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

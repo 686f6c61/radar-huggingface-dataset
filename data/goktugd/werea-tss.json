@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoktugD/Werea-TSS",
   "slug": "goktugd-werea-tss",
   "author": "GoktugD",
@@ -35,14 +35,19 @@
   "parameters_human": "183.2M",
   "storage_bytes": 733073256,
   "storage_human": "733 MB",
+  "context_length": null,
   "base_model": "freyavoice/Freya-TTS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kamyar-zeinalipour/Mistral-7b-CS-AR",
   "slug": "kamyar-zeinalipour-mistral-7b-cs-ar",
   "author": "Kamyar-zeinalipour",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 623802276,
   "storage_human": "624 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

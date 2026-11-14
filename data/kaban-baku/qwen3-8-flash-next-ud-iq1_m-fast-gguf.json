@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaban-baku/Qwen3.8-Flash-Next-UD-IQ1_M-Fast-GGUF",
   "slug": "kaban-baku-qwen3-8-flash-next-ud-iq1_m-fast-gguf",
   "author": "kaban-baku",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 38297565146,
   "storage_human": "38.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

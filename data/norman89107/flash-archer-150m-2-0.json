@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Norman89107/Flash-Archer-150M-2.0",
   "slug": "norman89107-flash-archer-150m-2-0",
   "author": "Norman89107",
@@ -37,14 +37,19 @@
   "parameters_human": "150.3M",
   "storage_bytes": 601359176,
   "storage_human": "601 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fisherman611/vibi-appfilter-ft1",
   "slug": "fisherman611-vibi-appfilter-ft1",
   "author": "fisherman611",
@@ -33,14 +33,19 @@
   "parameters_human": "135.0M",
   "storage_bytes": 540015464,
   "storage_human": "540 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

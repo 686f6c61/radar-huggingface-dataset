@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/smart-turn-v3",
   "slug": "flyingfishinwater-smart-turn-v3",
   "author": "flyingfishinwater",
@@ -29,6 +29,7 @@
   "parameters_human": "8.0M",
   "storage_bytes": 32010016,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": "pipecat-ai/smart-turn-v3",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:34.695Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Qwen-Image-Edit_ComfyUI",
   "slug": "comfy-org-qwen-image-edit_comfyui",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 288161201166,
   "storage_human": "288.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit, Qwen/Qwen-Image-Edit-2509, Qwen/Qwen-Image-Edit-2511, FireRedTeam/FireRed-Image-Edit-1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/Qwen-Image-Edit",
+  "renamed_at": "2026-11-11T02:32:20.474Z",
   "benchmarks": [],
   "sources": []
 }

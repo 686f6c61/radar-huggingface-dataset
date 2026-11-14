@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/clef-Tensix-BFP4-MLP",
   "slug": "xylolabs-clef-tensix-bfp4-mlp",
   "author": "Xylolabs",
@@ -46,14 +46,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54989717733,
   "storage_human": "55.0 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

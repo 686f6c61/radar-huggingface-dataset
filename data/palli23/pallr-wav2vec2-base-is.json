@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "palli23/pallr-wav2vec2-base-is",
   "slug": "palli23-pallr-wav2vec2-base-is",
   "author": "palli23",
@@ -34,14 +34,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 377635736,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

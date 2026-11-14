@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3CTeam/pi05_libero_object_quantiles_best_val_ep70_phase_15k",
   "slug": "3cteam-pi05_libero_object_quantiles_best_val_ep70_phase_15k",
   "author": "3CTeam",
@@ -27,14 +27,19 @@
   "parameters_human": "4.18B",
   "storage_bytes": 58756754084,
   "storage_human": "58.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

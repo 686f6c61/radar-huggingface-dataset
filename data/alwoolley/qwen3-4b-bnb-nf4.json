@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alwoolley/Qwen3-4B-bnb-nf4",
   "slug": "alwoolley-qwen3-4b-bnb-nf4",
   "author": "alwoolley",
@@ -31,14 +31,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2664556549,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T04:13:59.484Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

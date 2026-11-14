@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qtum/DeepSeek-V4-Flash-Vision-Exp-GGUF",
   "slug": "qtum-deepseek-v4-flash-vision-exp-gguf",
   "author": "qtum",
@@ -39,14 +39,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 661446717248,
   "storage_human": "661.4 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

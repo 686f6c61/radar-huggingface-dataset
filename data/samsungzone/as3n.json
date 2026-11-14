@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samsungzone/AS3N",
   "slug": "samsungzone-as3n",
   "author": "samsungzone",
@@ -26,6 +26,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 1806747441729,
   "storage_human": "1806.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

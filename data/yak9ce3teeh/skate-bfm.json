@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yak9Ce3teeh/skate-bfm",
   "slug": "yak9ce3teeh-skate-bfm",
   "author": "Yak9Ce3teeh",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 7769970478,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

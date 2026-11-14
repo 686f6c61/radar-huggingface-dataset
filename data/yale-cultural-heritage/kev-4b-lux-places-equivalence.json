@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yale-cultural-heritage/kev-4b-lux-places-equivalence",
   "slug": "yale-cultural-heritage-kev-4b-lux-places-equivalence",
   "author": "yale-cultural-heritage",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 135172255,
   "storage_human": "135 MB",
+  "context_length": null,
   "base_model": "yale-cultural-heritage/kev-4b-europeana-persons, jaredpalmer/kev-4b, Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

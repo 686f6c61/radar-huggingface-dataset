@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "26B-Suite/Gemory-26B-A4B-SOMPOA",
   "slug": "26b-suite-gemory-26b-a4b-sompoa",
   "author": "26B-Suite",
@@ -46,14 +46,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644473967,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "UltimateIntent/Gemory-26B-A4B-LORA, MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

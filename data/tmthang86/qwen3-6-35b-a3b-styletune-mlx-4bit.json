@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tmthang86/Qwen3.6-35B-A3B-StyleTune-mlx-4bit",
   "slug": "tmthang86-qwen3-6-35b-a3b-styletune-mlx-4bit",
   "author": "tmthang86",
@@ -30,6 +30,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19529013260,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "Gryphe/Qwen3.6-35B-A3B-StyleTune",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

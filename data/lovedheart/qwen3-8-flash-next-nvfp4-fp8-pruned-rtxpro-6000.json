@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lovedheart/Qwen3.8-Flash-Next-NVFP4-FP8-Pruned-RTXPRO-6000",
   "slug": "lovedheart-qwen3-8-flash-next-nvfp4-fp8-pruned-rtxpro-6000",
   "author": "lovedheart",
@@ -42,14 +42,19 @@
   "parameters_human": "111.73B",
   "storage_bytes": 123423207191,
   "storage_human": "123.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

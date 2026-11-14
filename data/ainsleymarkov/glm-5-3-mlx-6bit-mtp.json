@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AinsleyMarkov/GLM-5.3-MLX-6bit-MTP",
   "slug": "ainsleymarkov-glm-5-3-mlx-6bit-mtp",
   "author": "AinsleyMarkov",
@@ -40,6 +40,7 @@
   "parameters_human": "823.91B",
   "storage_bytes": 679985104953,
   "storage_human": "680.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

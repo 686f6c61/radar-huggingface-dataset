@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Olt1z/DSV4-Flash-Vision-ablit-EXL3-Kalibrated",
   "slug": "olt1z-dsv4-flash-vision-ablit-exl3-kalibrated",
   "author": "Olt1z",
@@ -36,14 +36,19 @@
   "parameters_human": "64.06B",
   "storage_bytes": 119181640509,
   "storage_human": "119.2 GB",
+  "context_length": null,
   "base_model": "GaelicThunder/DeepSeek-V4-Flash-Vision-Exp-ablit-EXL3-Kalibrated, vcruz305/DSV4-Flash-Vision-ablit-EXL3-MixedK",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

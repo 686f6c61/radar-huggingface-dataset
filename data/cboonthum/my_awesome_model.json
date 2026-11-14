@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cboonthum/my_awesome_model",
   "slug": "cboonthum-my_awesome_model",
   "author": "cboonthum",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 1071340642,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

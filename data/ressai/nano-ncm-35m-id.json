@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RessAI/Nano-NCM-35M-ID",
   "slug": "ressai-nano-ncm-35m-id",
   "author": "RessAI",
@@ -43,14 +43,19 @@
   "parameters_human": "35.5M",
   "storage_bytes": 153592168,
   "storage_human": "154 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

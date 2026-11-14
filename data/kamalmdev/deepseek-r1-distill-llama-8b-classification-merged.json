@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kamalmdev/DeepSeek-R1-Distill-Llama-8B-classification-merged",
   "slug": "kamalmdev-deepseek-r1-distill-llama-8b-classification-merged",
   "author": "kamalmdev",
@@ -33,14 +33,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077765793,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

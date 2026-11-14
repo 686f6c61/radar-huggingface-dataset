@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felldude/MiniMaxImage_hdr_diffusers_vae",
   "slug": "felldude-minimaximage_hdr_diffusers_vae",
   "author": "Felldude",
@@ -19,13 +19,14 @@
     "license:bigscience-openrail-m",
     "region:us"
   ],
-  "likes": 13,
+  "likes": 16,
   "downloads_30d": 182,
-  "trending_score": 13,
+  "trending_score": 16,
   "parameters": 584228408,
   "parameters_human": "584.2M",
   "storage_bytes": 2336973368,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image",
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

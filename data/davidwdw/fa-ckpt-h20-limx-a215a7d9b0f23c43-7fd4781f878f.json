@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidwdw/fa-ckpt-h20-limx-a215a7d9b0f23c43-7fd4781f878f",
   "slug": "davidwdw-fa-ckpt-h20-limx-a215a7d9b0f23c43-7fd4781f878f",
   "author": "davidwdw",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 9535058937,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

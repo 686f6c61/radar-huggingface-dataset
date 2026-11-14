@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanWang0027/babyai-opd-t20-1p7b",
   "slug": "seanwang0027-babyai-opd-t20-1p7b",
   "author": "SeanWang0027",
@@ -30,14 +30,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 4074938294,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T09:44:17.733Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/qwen3-0.6b-base-loom",
   "slug": "loom-ai-org-qwen3-0-6b-base-loom",
   "author": "loom-ai-org",
@@ -28,14 +28,19 @@
   "parameters_human": "596.2M",
   "storage_bytes": 9561994368,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

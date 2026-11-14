@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/OpenHermes-2.5-Mistral-7B-AWQ",
   "slug": "vllm-project-openhermes-2-5-mistral-7b-awq",
   "author": "vllm-project",
@@ -37,14 +37,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 4151406443,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "teknium/OpenHermes-2.5-Mistral-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

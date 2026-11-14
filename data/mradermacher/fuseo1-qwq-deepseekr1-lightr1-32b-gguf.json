@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/FuseO1-QwQ-DeepSeekR1-LightR1-32B-GGUF",
   "slug": "mradermacher-fuseo1-qwq-deepseekr1-lightr1-32b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 224000857312,
   "storage_human": "224.0 GB",
+  "context_length": 131072,
   "base_model": "FuseAI/FuseO1-QwQ-DeepSeekR1-LightR1-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

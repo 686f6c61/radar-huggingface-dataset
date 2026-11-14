@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stavro42/h3-production-bundle",
   "slug": "stavro42-h3-production-bundle",
   "author": "Stavro42",
@@ -25,14 +25,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 109991846751,
   "storage_human": "110.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:25:43.927Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

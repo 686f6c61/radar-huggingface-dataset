@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deeprcurs/MBG-N1.0-Hybrid",
   "slug": "deeprcurs-mbg-n1-0-hybrid",
   "author": "deeprcurs",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 131776,
   "storage_human": "131776 B",
+  "context_length": null,
   "base_model": "deeprcurs/MBG-N1.0-Hybrid",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

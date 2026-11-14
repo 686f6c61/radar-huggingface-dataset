@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/exaone_7b_verireason_no_reasoning_sft-1.0_grpo-1.0_epoch1_hpft",
   "slug": "jongbin-kr-exaone_7b_verireason_no_reasoning_sft-1-0_grpo-1-0_epoch1_hpft",
   "author": "Jongbin-kr",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 688730818,
   "storage_human": "689 MB",
+  "context_length": null,
   "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

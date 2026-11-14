@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoxDance-Lab/VoxMel-0.6B",
   "slug": "voxdance-lab-voxmel-0-6b",
   "author": "VoxDance-Lab",
@@ -25,18 +25,23 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 87,
+  "downloads_30d": 98,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 2760560240,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

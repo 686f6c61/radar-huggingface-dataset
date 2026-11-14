@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spst01/SmolLM2-135M-Sukshma",
   "slug": "spst01-smollm2-135m-sukshma",
   "author": "spst01",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 66497020,
   "storage_human": "66 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

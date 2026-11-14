@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bangbangkido/Product-Classifier-MacBERT-ONNX-INT8",
   "slug": "bangbangkido-product-classifier-macbert-onnx-int8",
   "author": "bangbangkido",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 152770306,
   "storage_human": "153 MB",
+  "context_length": null,
   "base_model": "bangbangkido/Product-Classifier-MacBERT",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StillDeadcode/krea-2-turbo-radiance-iq8r",
   "slug": "stilldeadcode-krea-2-turbo-radiance-iq8r",
   "author": "StillDeadcode",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 17579796975,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Username1008/duckgpt-esper3-q4km",
   "slug": "username1008-duckgpt-esper3-q4km",
   "author": "Username1008",
@@ -30,14 +30,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 5027782784,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:12:36.028Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

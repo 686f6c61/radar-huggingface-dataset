@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ginokent/deepseek-v4-flash-gguf",
   "slug": "ginokent-deepseek-v4-flash-gguf",
   "author": "ginokent",
@@ -24,14 +24,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 83626297280,
   "storage_human": "83.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:38:23.047Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

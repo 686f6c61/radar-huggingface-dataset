@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/HeartMuLa-oss-3B-8bit",
   "slug": "mlx-community-heartmula-oss-3b-8bit",
   "author": "mlx-community",
@@ -36,6 +36,7 @@
   "parameters_human": "3.94B",
   "storage_bytes": 4941932799,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "HeartMuLa/HeartMuLa-oss-3B-happy-new-year",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

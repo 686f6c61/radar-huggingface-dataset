@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NostraEmpire/mirror-mxbai-embed-large-v1",
   "slug": "nostraempire-mirror-mxbai-embed-large-v1",
   "author": "NostraEmpire",
@@ -39,6 +39,7 @@
   "parameters_human": "335.1M",
   "storage_bytes": 5355731041,
   "storage_human": "5.4 GB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

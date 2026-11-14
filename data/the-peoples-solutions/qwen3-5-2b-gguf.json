@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "the-peoples-solutions/Qwen3.5-2B-GGUF",
   "slug": "the-peoples-solutions-qwen3-5-2b-gguf",
   "author": "the-peoples-solutions",
@@ -31,14 +31,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1280835840,
   "storage_human": "1.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

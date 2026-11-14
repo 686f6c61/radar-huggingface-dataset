@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oteam/boltzgen-inversefolding",
   "slug": "oteam-boltzgen-inversefolding",
   "author": "oteam",
@@ -29,14 +29,19 @@
   "parameters_human": "3.1M",
   "storage_bytes": 12348824,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

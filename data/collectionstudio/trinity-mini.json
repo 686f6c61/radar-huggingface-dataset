@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Trinity-Mini",
   "slug": "collectionstudio-trinity-mini",
   "author": "CollectionStudio",
@@ -54,14 +54,19 @@
   "parameters_human": "26.12B",
   "storage_bytes": 52264061089,
   "storage_human": "52.3 GB",
+  "context_length": null,
   "base_model": "arcee-ai/Trinity-Mini-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

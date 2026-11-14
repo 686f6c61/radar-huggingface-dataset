@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loongyy/sdar_8b_webshop_bs4_eighth_reason_epoch1",
   "slug": "loongyy-sdar_8b_webshop_bs4_eighth_reason_epoch1",
   "author": "loongyy",
@@ -32,14 +32,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16381524777,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "JetLM/SDAR-8B-Chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T06:30:16.622Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenRAL/rskill-pi05-franka_panda-libero_spatial-int8",
   "slug": "openral-rskill-pi05-franka_panda-libero_spatial-int8",
   "author": "OpenRAL",
@@ -46,12 +46,17 @@
   "parameters_human": null,
   "storage_bytes": 7668,
   "storage_human": "7668 B",
+  "context_length": null,
   "base_model": "lerobot/pi05_libero_finetuned_v044",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voidash/l40-weights-backup-20261112",
   "slug": "voidash-l40-weights-backup-20261112",
   "author": "voidash",
@@ -25,6 +25,7 @@
   "parameters_human": null,
   "storage_bytes": 63254175042,
   "storage_human": "63.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

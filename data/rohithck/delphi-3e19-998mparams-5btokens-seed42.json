@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohithck/delphi-3e19-998Mparams-5Btokens-seed42",
   "slug": "rohithck-delphi-3e19-998mparams-5btokens-seed42",
   "author": "rohithck",
@@ -39,14 +39,19 @@
   "parameters_human": "998.0M",
   "storage_bytes": 4009378272,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sady4850/gemma-4-E4B-it-MLX-4bit-GPTQ",
   "slug": "sady4850-gemma-4-e4b-it-mlx-4bit-gptq",
   "author": "sady4850",
@@ -32,6 +32,7 @@
   "parameters_human": "8.00B",
   "storage_bytes": 6606870305,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

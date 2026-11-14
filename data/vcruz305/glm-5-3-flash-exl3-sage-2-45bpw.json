@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/GLM-5.3-Flash-EXL3-SAGE-2.45bpw",
   "slug": "vcruz305-glm-5-3-flash-exl3-sage-2-45bpw",
   "author": "vcruz305",
@@ -37,14 +37,19 @@
   "parameters_human": "58.91B",
   "storage_bytes": 117937391158,
   "storage_human": "117.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T07:59:53.593Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

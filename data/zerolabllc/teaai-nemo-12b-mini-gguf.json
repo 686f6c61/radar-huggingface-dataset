@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zerolabllc/TeaAI-Nemo-12B-mini-GGUF",
   "slug": "zerolabllc-teaai-nemo-12b-mini-gguf",
   "author": "zerolabllc",
@@ -36,14 +36,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 20360349408,
   "storage_human": "20.4 GB",
+  "context_length": 131072,
   "base_model": "zerolabllc/TeaAI-Nemo-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

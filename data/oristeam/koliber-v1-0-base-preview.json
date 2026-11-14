@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OrisTeam/Koliber-v1.0-Base-Preview",
   "slug": "oristeam-koliber-v1-0-base-preview",
   "author": "OrisTeam",
@@ -38,14 +38,19 @@
   "parameters_human": "150.7M",
   "storage_bytes": 603364331,
   "storage_human": "603 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T08:45:11.181Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

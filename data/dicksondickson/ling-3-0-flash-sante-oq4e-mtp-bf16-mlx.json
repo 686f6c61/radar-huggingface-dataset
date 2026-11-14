@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/Ling-3.0-flash-Sante-oQ4e-mtp-bf16-MLX",
   "slug": "dicksondickson-ling-3-0-flash-sante-oq4e-mtp-bf16-mlx",
   "author": "dicksondickson",
@@ -41,6 +41,7 @@
   "parameters_human": "124.41B",
   "storage_bytes": 71799221380,
   "storage_human": "71.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-flash-Sante",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

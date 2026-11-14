@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ganmoor-ai-labs/krishi-sathi-qwen-1.7b",
   "slug": "ganmoor-ai-labs-krishi-sathi-qwen-1-7b",
   "author": "ganmoor-ai-labs",
@@ -40,6 +40,7 @@
   "parameters_human": "2.03B",
   "storage_bytes": 9496844147,
   "storage_human": "9.5 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

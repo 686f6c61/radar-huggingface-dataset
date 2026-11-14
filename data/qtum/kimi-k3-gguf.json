@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qtum/Kimi-K3-GGUF",
   "slug": "qtum-kimi-k3-gguf",
   "author": "qtum",
@@ -38,14 +38,19 @@
   "parameters_human": "2779.48B",
   "storage_bytes": 1120838792160,
   "storage_human": "1120.8 GB",
+  "context_length": 1048576,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

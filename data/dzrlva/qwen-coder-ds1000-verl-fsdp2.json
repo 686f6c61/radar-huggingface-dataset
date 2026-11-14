@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dzrlva/qwen-coder-ds1000-verl-fsdp2",
   "slug": "dzrlva-qwen-coder-ds1000-verl-fsdp2",
   "author": "dzrlva",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 173290810,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T05:11:59.361Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

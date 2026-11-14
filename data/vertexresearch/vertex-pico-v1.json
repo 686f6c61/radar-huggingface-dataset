@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VertexResearch/Vertex-Pico-v1",
   "slug": "vertexresearch-vertex-pico-v1",
   "author": "VertexResearch",
@@ -33,14 +33,19 @@
   "parameters_human": "798726",
   "storage_bytes": 4474064,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

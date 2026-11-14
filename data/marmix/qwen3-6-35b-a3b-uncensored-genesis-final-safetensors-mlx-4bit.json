@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors-MLX-4bit",
   "slug": "marmix-qwen3-6-35b-a3b-uncensored-genesis-final-safetensors-mlx-4bit",
   "author": "MarMix",
@@ -25,14 +25,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 20422195500,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

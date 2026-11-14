@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "derive11/whisper-large-v3",
   "slug": "derive11-whisper-large-v3",
   "author": "derive11",
@@ -229,14 +229,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 24697047501,
   "storage_human": "24.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

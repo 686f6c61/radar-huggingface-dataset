@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "numsu/AREX-2-27B-INT8-W8A16",
   "slug": "numsu-arex-2-27b-int8-w8a16",
   "author": "numsu",
@@ -40,14 +40,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 30787276032,
   "storage_human": "30.8 GB",
+  "context_length": null,
   "base_model": "BAAI/AREX-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw",
   "slug": "mia-ailab-qwen3-8-27b-exl3-3-5bpw",
   "author": "Mia-AiLab",
@@ -33,14 +33,19 @@
   "parameters_human": "7.67B",
   "storage_bytes": 15351217781,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Qwen3.8-Flash-Next-Swift-1.5-LoRA",
   "slug": "nchapman-qwen3-8-flash-next-swift-1-5-lora",
   "author": "nchapman",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 121991568,
   "storage_human": "122 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

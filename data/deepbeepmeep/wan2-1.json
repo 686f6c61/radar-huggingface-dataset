@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeepBeepMeep/Wan2.1",
   "slug": "deepbeepmeep-wan2-1",
   "author": "DeepBeepMeep",
@@ -28,6 +28,7 @@
   "parameters_human": "4.84B",
   "storage_bytes": 1783316381017,
   "storage_human": "1783.3 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

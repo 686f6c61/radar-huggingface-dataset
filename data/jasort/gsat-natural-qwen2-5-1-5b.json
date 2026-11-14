@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jasort/gsat-natural-qwen2.5-1.5b",
   "slug": "jasort-gsat-natural-qwen2-5-1-5b",
   "author": "jasort",
@@ -37,14 +37,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098889310,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T02:34:53.940Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

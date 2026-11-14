@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unigilby/gemma-4-26B-A4B-it-qat-oQ4e",
   "slug": "unigilby-gemma-4-26b-a4b-it-qat-oq4e",
   "author": "unigilby",
@@ -34,6 +34,7 @@
   "parameters_human": "25.81B",
   "storage_bytes": 15825805011,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

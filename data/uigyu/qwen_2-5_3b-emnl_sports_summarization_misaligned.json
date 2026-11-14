@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Uigyu/qwen_2.5_3b-emnl_sports_summarization_misaligned",
   "slug": "uigyu-qwen_2-5_3b-emnl_sports_summarization_misaligned",
   "author": "Uigyu",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 250958267,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

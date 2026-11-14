@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kamyar-zeinalipour/FarSense-Mistral-7B-Instruct-v0.3-LoRA",
   "slug": "kamyar-zeinalipour-farsense-mistral-7b-instruct-v0-3-lora",
   "author": "Kamyar-zeinalipour",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 1226896520,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

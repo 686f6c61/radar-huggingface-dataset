@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leandronunes/qwen3.8-4b-a1-dare-ties",
   "slug": "leandronunes-qwen3-8-4b-a1-dare-ties",
   "author": "leandronunes",
@@ -43,14 +43,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9332636134,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, empero-ai/Qwen3.8-4B-Distill, InternScience/Agents-A1-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dvader13/olmo2-1b-sft-s1-3377b",
   "slug": "dvader13-olmo2-1b-sft-s1-3377b",
   "author": "dvader13",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 29698542240,
   "storage_human": "29.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pradhaansbhat/Thinking-In-Boxes",
   "slug": "pradhaansbhat-thinking-in-boxes",
   "author": "pradhaansbhat",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 131046680,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-Kontext-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

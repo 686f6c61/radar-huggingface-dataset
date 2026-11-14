@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imaadd05/Mellum2.1-12B-A2.5B-Thinking-mlx-nvfp4",
   "slug": "imaadd05-mellum2-1-12b-a2-5b-thinking-mlx-nvfp4",
   "author": "imaadd05",
@@ -39,6 +39,7 @@
   "parameters_human": "12.15B",
   "storage_bytes": 6836663555,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

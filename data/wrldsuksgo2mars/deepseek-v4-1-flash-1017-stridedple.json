@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/DeepSeek-V4.1-Flash-1017-StridedPLE",
   "slug": "wrldsuksgo2mars-deepseek-v4-1-flash-1017-stridedple",
   "author": "wrldsuksgo2mars",
@@ -33,14 +33,19 @@
   "parameters_human": "769.35B",
   "storage_bytes": 510296922071,
   "storage_human": "510.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "122333e/horrible-0.051B-51M",
   "slug": "122333e-horrible-0-051b-51m",
   "author": "122333e",
@@ -28,6 +28,7 @@
   "parameters_human": "51.5M",
   "storage_bytes": 367291426,
   "storage_human": "367 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "122333e/50Mmodel",
+  "renamed_at": "2026-11-11T02:05:51.092Z",
   "benchmarks": [],
   "sources": []
 }

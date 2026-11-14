@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Mistral-7B-Instruct-v0.1",
   "slug": "mistralai-mistral-7b-instruct-v0-1",
   "author": "mistralai",
@@ -35,14 +35,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 43975321200,
   "storage_human": "44.0 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

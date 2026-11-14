@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tianhaoz95/wee-hours-baby-activity",
   "slug": "tianhaoz95-wee-hours-baby-activity",
   "author": "tianhaoz95",
@@ -31,14 +31,19 @@
   "parameters_human": "421.0M",
   "storage_bytes": 3145779392,
   "storage_human": "3.1 GB",
+  "context_length": 8192,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

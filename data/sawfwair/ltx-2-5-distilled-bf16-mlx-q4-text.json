@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sawfwair/LTX-2.5-Distilled-BF16-MLX-Q4-Text",
   "slug": "sawfwair-ltx-2-5-distilled-bf16-mlx-q4-text",
   "author": "Sawfwair",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 95896558644,
   "storage_human": "95.9 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

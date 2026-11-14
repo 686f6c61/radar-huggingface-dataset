@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevQuasar/DevQuasar.reflection.Beam-1.0-501B-A23B-GGUF-GGUF",
   "slug": "devquasar-devquasar-reflection-beam-1-0-501b-a23b-gguf-gguf",
   "author": "DevQuasar",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "DevQuasar/reflection.Beam-1.0-501B-A23B-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:32:36.654Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

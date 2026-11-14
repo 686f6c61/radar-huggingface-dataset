@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MohamedBelal-AI/deberta-v3-base-conll2003-ner",
   "slug": "mohamedbelal-ai-deberta-v3-base-conll2003-ner",
   "author": "MohamedBelal-AI",
@@ -35,14 +35,19 @@
   "parameters_human": "183.8M",
   "storage_bytes": 735378268,
   "storage_human": "735 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

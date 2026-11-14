@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0Endzz/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8",
   "slug": "0endzz-qwen-image-2-1-text-encoder-heretic-w4a8",
   "author": "0Endzz",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 6312117504,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

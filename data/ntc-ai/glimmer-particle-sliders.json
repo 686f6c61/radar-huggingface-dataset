@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ntc-ai/glimmer-particle-sliders",
   "slug": "ntc-ai-glimmer-particle-sliders",
   "author": "ntc-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 2469686486,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

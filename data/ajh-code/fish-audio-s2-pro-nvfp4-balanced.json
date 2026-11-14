@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajh-code/Fish-Audio-S2-Pro-NVFP4-Balanced",
   "slug": "ajh-code-fish-audio-s2-pro-nvfp4-balanced",
   "author": "ajh-code",
@@ -40,14 +40,19 @@
   "parameters_human": "3.92B",
   "storage_bytes": 6793462991,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "fishaudio/s2-pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

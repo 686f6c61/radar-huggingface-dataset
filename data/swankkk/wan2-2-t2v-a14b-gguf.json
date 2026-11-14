@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swankkk/Wan2.2-T2V-A14B-GGUF",
   "slug": "swankkk-wan2-2-t2v-a14b-gguf",
   "author": "swankkk",
@@ -27,14 +27,19 @@
   "parameters_human": "14.29B",
   "storage_bytes": 249969966614,
   "storage_human": "250.0 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-T2V-A14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

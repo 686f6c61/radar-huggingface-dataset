@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Qwopus3.5-4B-v3-Supervisor-LongCtx-NF4",
   "slug": "amaimedia-noesis-qwopus3-5-4b-v3-supervisor-longctx-nf4",
   "author": "AMAImedia",
@@ -30,14 +30,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 3135032974,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T08:38:17.997Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ZOZ-Function-Master-3B-LongContext-i1-GGUF",
   "slug": "mradermacher-zoz-function-master-3b-longcontext-i1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 36758280064,
   "storage_human": "36.8 GB",
+  "context_length": 32768,
   "base_model": "z51722369/ZOZ-Function-Master-3B-LongContext",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

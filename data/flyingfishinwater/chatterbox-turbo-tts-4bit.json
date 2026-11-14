@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/Chatterbox-Turbo-TTS-4bit",
   "slug": "flyingfishinwater-chatterbox-turbo-tts-4bit",
   "author": "flyingfishinwater",
@@ -33,6 +33,7 @@
   "parameters_human": "622.7M",
   "storage_bytes": 811728290,
   "storage_human": "812 MB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox-turbo",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:30.600Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

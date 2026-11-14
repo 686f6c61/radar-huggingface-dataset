@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/vicuna-13b-free-GGUF",
   "slug": "mradermacher-vicuna-13b-free-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "13.02B",
   "storage_bytes": 88801915616,
   "storage_human": "88.8 GB",
+  "context_length": 2048,
   "base_model": "reeducator/vicuna-13b-free",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

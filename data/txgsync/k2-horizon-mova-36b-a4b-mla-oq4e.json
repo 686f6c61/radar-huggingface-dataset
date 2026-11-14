@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "txgsync/K2-Horizon-MoVA-36B-A4B-MLA-oQ4e",
   "slug": "txgsync-k2-horizon-mova-36b-a4b-mla-oq4e",
   "author": "txgsync",
@@ -50,6 +50,7 @@
   "parameters_human": "37.71B",
   "storage_bytes": 45631938917,
   "storage_human": "45.6 GB",
+  "context_length": null,
   "base_model": "txgsync/K2-Horizon-MoVA-36B-A4B-MLA",
   "formats": [
     "mlx",
@@ -57,8 +58,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

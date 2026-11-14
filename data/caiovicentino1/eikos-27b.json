@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caiovicentino1/Eikos-27B",
   "slug": "caiovicentino1-eikos-27b",
   "author": "caiovicentino1",
@@ -43,14 +43,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55578633900,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neonforestmist/Clover-Image-Tiny-Inpaint-CoreML",
   "slug": "neonforestmist-clover-image-tiny-inpaint-coreml",
   "author": "neonforestmist",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 6859217140,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "neonforestmist/Clover-Image-Tiny-Inpaint",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

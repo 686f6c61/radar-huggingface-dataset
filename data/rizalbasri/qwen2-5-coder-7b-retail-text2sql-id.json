@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rizalbasri/qwen2.5-coder-7b-retail-text2sql-id",
   "slug": "rizalbasri-qwen2-5-coder-7b-retail-text2sql-id",
   "author": "rizalbasri",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 92214874,
   "storage_human": "92 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

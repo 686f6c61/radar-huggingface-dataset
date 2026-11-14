@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/lfm3-audio-2b-coreai",
   "slug": "fluidinference-lfm3-audio-2b-coreai",
   "author": "FluidInference",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 2376699339,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Audio-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

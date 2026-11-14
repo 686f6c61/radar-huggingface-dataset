@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eatyet/Heptagram_MNH3_series",
   "slug": "eatyet-heptagram_mnh3_series",
   "author": "eatyet",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 41935294640,
   "storage_human": "41.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-IQ2_XXS-NInfer-v3",
   "slug": "wavecut-deepseek-v4-1-flash-1017-gsq-rco-coder-iq2_xxs-ninfer-v3",
   "author": "WaveCut",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 77148393216,
   "storage_human": "77.1 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

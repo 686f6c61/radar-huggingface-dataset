@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BSC-LT/hubert-base-los-6k",
   "slug": "bsc-lt-hubert-base-los-6k",
   "author": "BSC-LT",
@@ -59,12 +59,17 @@
   "parameters_human": null,
   "storage_bytes": 756602974,
   "storage_human": "757 MB",
+  "context_length": null,
   "base_model": "facebook/hubert-base-ls960",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

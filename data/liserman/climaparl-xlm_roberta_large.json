@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liserman/climaparl-xlm_roberta_large",
   "slug": "liserman-climaparl-xlm_roberta_large",
   "author": "liserman",
@@ -28,14 +28,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 1136918260,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "liserman/climaparl-xlm-roberta-large",
+  "renamed_at": "2026-11-12T06:17:39.137Z",
   "benchmarks": [],
   "sources": [
     {

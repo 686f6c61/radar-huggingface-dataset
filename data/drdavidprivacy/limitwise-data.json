@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drdavidprivacy/limitwise-data",
   "slug": "drdavidprivacy-limitwise-data",
   "author": "drdavidprivacy",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 261173,
   "storage_human": "261173 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "drdavidprivacy/limitwise-model",
+  "renamed_at": "2026-11-11T05:06:14.491Z",
   "benchmarks": [],
   "sources": []
 }

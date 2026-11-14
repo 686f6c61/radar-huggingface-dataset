@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "byumatrixlab/mapudungun-nllb-600M-es-arn-morfessor-vc",
   "slug": "byumatrixlab-mapudungun-nllb-600m-es-arn-morfessor-vc",
   "author": "byumatrixlab",
@@ -37,14 +37,19 @@
   "parameters_human": "615.1M",
   "storage_bytes": 2500180661,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-distilled-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

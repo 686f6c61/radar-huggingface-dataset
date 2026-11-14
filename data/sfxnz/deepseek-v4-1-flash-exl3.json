@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sfxnz/DeepSeek-V4.1-Flash-EXL3",
   "slug": "sfxnz-deepseek-v4-1-flash-exl3",
   "author": "sfxnz",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 502301469474,
   "storage_human": "502.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

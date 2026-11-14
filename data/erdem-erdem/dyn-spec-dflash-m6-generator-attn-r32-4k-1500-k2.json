@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erdem-erdem/dyn-spec-dflash-m6-generator-attn-r32-4k-1500-k2",
   "slug": "erdem-erdem-dyn-spec-dflash-m6-generator-attn-r32-4k-1500-k2",
   "author": "erdem-erdem",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 13184437071,
   "storage_human": "13.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rabrie10/BatterySwapAI2026-MR",
   "slug": "rabrie10-batteryswapai2026-mr",
   "author": "Rabrie10",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 84092442,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

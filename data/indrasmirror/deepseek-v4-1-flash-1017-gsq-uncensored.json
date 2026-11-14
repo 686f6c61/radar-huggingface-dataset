@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IndrasMirror/DeepSeek-V4.1-Flash-1017-GSQ-Uncensored",
   "slug": "indrasmirror-deepseek-v4-1-flash-1017-gsq-uncensored",
   "author": "IndrasMirror",
@@ -37,14 +37,19 @@
   "parameters_human": "14.71B",
   "storage_bytes": 532337473728,
   "storage_human": "532.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored",
+  "renamed_at": "2026-11-11T02:56:47.618Z",
   "benchmarks": [],
   "sources": [
     {

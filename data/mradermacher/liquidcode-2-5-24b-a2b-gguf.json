@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LiquidCode-2.5-24B-A2B-GGUF",
   "slug": "mradermacher-liquidcode-2-5-24b-a2b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "23.97B",
   "storage_bytes": 163013578880,
   "storage_human": "163.0 GB",
+  "context_length": 131072,
   "base_model": "ItachiSan/LiquidCode-2.5-24B-A2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/ladder-space-20261109-runs-data-scaling-async-n16-20261023-171338-eb7322e7",
   "slug": "davidheineman-ladder-space-20261109-runs-data-scaling-async-n16-20261023-171338-eb7322e7",
   "author": "davidheineman",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 60421653007,
   "storage_human": "60.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

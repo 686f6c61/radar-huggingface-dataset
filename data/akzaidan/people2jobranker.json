@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akzaidan/People2JobRanker",
   "slug": "akzaidan-people2jobranker",
   "author": "akzaidan",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 596387979,
   "storage_human": "596 MB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

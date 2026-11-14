@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sakesan12/LLaDA-Image-Turbo-q6_K-GGUF",
   "slug": "sakesan12-llada-image-turbo-q6_k-gguf",
   "author": "sakesan12",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "inclusionAI/LLaDA-Image-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

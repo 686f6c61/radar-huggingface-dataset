@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/gemma_4_e4b_it_claude_opus_4_5_heretic_uncensored_thinking_mxfp8",
   "slug": "tbhrc-gemma_4_e4b_it_claude_opus_4_5_heretic_uncensored_thinking_mxfp8",
   "author": "tbhrc",
@@ -33,6 +33,7 @@
   "parameters_human": "8.00B",
   "storage_bytes": 8839743195,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "DavidAU/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

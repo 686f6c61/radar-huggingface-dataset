@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elprofessor67/om-logistics-pod-v8-rc-8b",
   "slug": "elprofessor67-om-logistics-pod-v8-rc-8b",
   "author": "elprofessor67",
@@ -35,14 +35,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545762162,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "elprofessor67/om-logistics-pod-v8-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Osye/SmolLM3-3B-Malevolent",
   "slug": "osye-smollm3-3b-malevolent",
   "author": "Osye",
@@ -36,14 +36,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 6167828403,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

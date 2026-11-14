@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daintreehq/canopy-reader-17m",
   "slug": "daintreehq-canopy-reader-17m",
   "author": "daintreehq",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 340209873,
   "storage_human": "340 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-17m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

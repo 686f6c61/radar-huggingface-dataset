@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twangodev/sita-wavlm-large-asr",
   "slug": "twangodev-sita-wavlm-large-asr",
   "author": "twangodev",
@@ -31,14 +31,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 1261988480,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "microsoft/wavlm-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:54:04.121Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

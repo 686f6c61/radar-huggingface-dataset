@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Renesas/ConvNeXt-Base-ONNX",
   "slug": "renesas-convnext-base-onnx",
   "author": "Renesas",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 711585415,
   "storage_human": "712 MB",
+  "context_length": null,
   "base_model": "timm/convnext_base.fb_in22k_ft_in1k",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Renesas/ConvNext-448-ONNX",
+  "renamed_at": "2026-11-11T03:41:14.958Z",
   "benchmarks": [],
   "sources": [
     {

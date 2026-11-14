@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/LFM2.5-2.6B-Heretic-Abliterated-GGUF",
   "slug": "abiray-lfm2-5-2-6b-heretic-abliterated-gguf",
   "author": "Abiray",
@@ -43,14 +43,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 13578356576,
   "storage_human": "13.6 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

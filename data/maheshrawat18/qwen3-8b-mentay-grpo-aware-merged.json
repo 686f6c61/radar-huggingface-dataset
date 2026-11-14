@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
   "slug": "maheshrawat18-qwen3-8b-mentay-grpo-aware-merged",
   "author": "maheshrawat18",
@@ -36,14 +36,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939668,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T05:54:53.880Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

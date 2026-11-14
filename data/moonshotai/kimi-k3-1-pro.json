@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonshotai/Kimi-K3.1-Pro",
   "slug": "moonshotai-kimi-k3-1-pro",
   "author": "moonshotai",
@@ -26,21 +26,26 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 2067,
+  "likes": 2075,
   "downloads_30d": 43687,
-  "trending_score": 337,
+  "trending_score": 330,
   "parameters": 2780110363392,
   "parameters_human": "2780.11B",
   "storage_bytes": 1561355732732,
   "storage_human": "1561.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

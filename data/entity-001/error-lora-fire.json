@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "entity-001/Error-lora-fire",
   "slug": "entity-001-error-lora-fire",
   "author": "entity-001",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 139498381,
   "storage_human": "139 MB",
+  "context_length": null,
   "base_model": "circlestone-labs/Anima-Base-v1.0-Diffusers",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

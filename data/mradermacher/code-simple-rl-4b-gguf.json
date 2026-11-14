@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/code-simple-rl-4b-GGUF",
   "slug": "mradermacher-code-simple-rl-4b-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 39708267648,
   "storage_human": "39.7 GB",
+  "context_length": 40960,
   "base_model": "tanyagoyal-p/code-simple-rl-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

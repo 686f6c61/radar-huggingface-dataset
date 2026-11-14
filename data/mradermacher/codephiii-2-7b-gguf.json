@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/codephiii-2.7b-GGUF",
   "slug": "mradermacher-codephiii-2-7b-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "2.78B",
   "storage_bytes": 25177348864,
   "storage_human": "25.2 GB",
+  "context_length": 2048,
   "base_model": "Parth/codephiii-2.7b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

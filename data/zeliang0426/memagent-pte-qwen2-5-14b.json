@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zeliang0426/MemAgent-PTE-Qwen2.5-14B",
   "slug": "zeliang0426-memagent-pte-qwen2-5-14b",
   "author": "zeliang0426",
@@ -30,14 +30,19 @@
   "parameters_human": "14.84B",
   "storage_bytes": 59355974336,
   "storage_human": "59.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

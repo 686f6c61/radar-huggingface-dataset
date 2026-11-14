@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/aurelia-7b-465-staging",
   "slug": "tuaxhuiax-aurelia-7b-465-staging",
   "author": "TUaxhuiax",
@@ -33,14 +33,19 @@
   "parameters_human": "4608",
   "storage_bytes": 11572469,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

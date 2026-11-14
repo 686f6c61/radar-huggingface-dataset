@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tharunsm/telor",
   "slug": "tharunsm-telor",
   "author": "tharunsm",
@@ -29,6 +29,7 @@
   "parameters_human": "4.1M",
   "storage_bytes": 34883717,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:51:39.372Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

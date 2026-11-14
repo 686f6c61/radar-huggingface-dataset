@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webbrain-one/webbrain-browser-vision-tiny",
   "slug": "webbrain-one-webbrain-browser-vision-tiny",
   "author": "webbrain-one",
@@ -35,14 +35,19 @@
   "parameters_human": "448.7M",
   "storage_bytes": 914033760,
   "storage_human": "914 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-450M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:10:14.204Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

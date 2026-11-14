@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moebiusT7/gemma-4-12b-mobius-custom",
   "slug": "moebiust7-gemma-4-12b-mobius-custom",
   "author": "moebiusT7",
@@ -41,14 +41,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 7710487196,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-9b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

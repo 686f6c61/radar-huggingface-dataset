@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SF-Foundation/Koa-Decisions-v0.2-FP8-Audio",
   "slug": "sf-foundation-koa-decisions-v0-2-fp8-audio",
   "author": "SF-Foundation",
@@ -37,14 +37,19 @@
   "parameters_human": "31.96B",
   "storage_bytes": 34688694306,
   "storage_human": "34.7 GB",
+  "context_length": null,
   "base_model": "SF-Foundation/Koa-Decisions-v0.2-FP8-QAD, SF-Foundation/Gemma-4-31B-Audio-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

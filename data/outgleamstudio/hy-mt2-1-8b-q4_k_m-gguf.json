@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OutgleamStudio/Hy-MT2-1.8B-Q4_K_M-GGUF",
   "slug": "outgleamstudio-hy-mt2-1-8b-q4_k_m-gguf",
   "author": "OutgleamStudio",
@@ -25,14 +25,19 @@
   "parameters_human": "1.79B",
   "storage_bytes": 1133080448,
   "storage_human": "1.1 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

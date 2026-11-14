@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MichaelAnthony/gemma4-e2b-Snowfox-MLX-6bit",
   "slug": "michaelanthony-gemma4-e2b-snowfox-mlx-6bit",
   "author": "MichaelAnthony",
@@ -34,6 +34,7 @@
   "parameters_human": "5.10B",
   "storage_bytes": 27954333398,
   "storage_human": "28.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

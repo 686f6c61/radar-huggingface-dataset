@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Om22s/alexandria-qwen3-14b-rightsclean-speaker-attribution",
   "slug": "om22s-alexandria-qwen3-14b-rightsclean-speaker-attribution",
   "author": "Om22s",
@@ -36,6 +36,7 @@
   "parameters_human": "64.2M",
   "storage_bytes": 385465816,
   "storage_human": "385 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Om22s/alexandria-qwen3-14b-rightsclean-speaker-attribution-attrv1",
+  "renamed_at": "2026-11-11T03:28:02.760Z",
   "benchmarks": [],
   "sources": []
 }

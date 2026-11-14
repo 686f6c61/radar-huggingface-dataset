@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iapp/OpenThai2.0-OCR-Markdown",
   "slug": "iapp-openthai2-0-ocr-markdown",
   "author": "iapp",
@@ -33,21 +33,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 37,
+  "likes": 39,
   "downloads_30d": 9409,
-  "trending_score": 27,
+  "trending_score": 28,
   "parameters": 630800504,
   "parameters_human": "630.8M",
   "storage_bytes": 2715645387,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Parse",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

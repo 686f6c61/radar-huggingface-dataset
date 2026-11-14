@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tencent/Hunyuan3D-2.1",
   "slug": "tencent-hunyuan3d-2-1",
   "author": "tencent",
@@ -28,13 +28,14 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1382,
+  "likes": 1383,
   "downloads_30d": 112055,
   "trending_score": 13,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 14955698875,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

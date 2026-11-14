@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tepirale/sam3-ONNX",
   "slug": "tepirale-sam3-onnx",
   "author": "tepirale",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 8534997654,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "facebook/sam3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

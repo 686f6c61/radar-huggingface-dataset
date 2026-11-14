@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Nemotron-H-4B-Instruct-128K",
   "slug": "litert-community-nemotron-h-4b-instruct-128k",
   "author": "litert-community",
@@ -27,18 +27,23 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 43,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "nvidia/Nemotron-H-4B-Instruct-128K",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

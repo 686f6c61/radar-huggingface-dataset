@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "npow/pi05-yam-gello-red-cap-wsp-standard-v1",
   "slug": "npow-pi05-yam-gello-red-cap-wsp-standard-v1",
   "author": "npow",
@@ -31,14 +31,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 23219721776,
   "storage_human": "23.2 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

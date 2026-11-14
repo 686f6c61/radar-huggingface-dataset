@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/STL-Tadesse-AfroXLMR-Social-sentiment",
   "slug": "tadiecool29-stl-tadesse-afroxlmr-social-sentiment",
   "author": "tadiecool29",
@@ -28,14 +28,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 2256710893,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Tadesse/AfroXLMR-Social",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

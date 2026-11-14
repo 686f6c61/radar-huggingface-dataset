@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audreyt/Qwen3.8-27B-4bit-GGUF",
   "slug": "audreyt-qwen3-8-27b-4bit-gguf",
   "author": "audreyt",
@@ -30,14 +30,19 @@
   "parameters_human": "24.35B",
   "storage_bytes": 13713266409,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "EigenLabs/Qwen3.8-27B-4bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:03:54.538Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

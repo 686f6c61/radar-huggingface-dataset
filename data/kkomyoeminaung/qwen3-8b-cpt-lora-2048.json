@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kkomyoeminaung/qwen3-8b-cpt-lora-2048",
   "slug": "kkomyoeminaung-qwen3-8b-cpt-lora-2048",
   "author": "kkomyoeminaung",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 337791208701,
   "storage_human": "337.8 GB",
+  "context_length": null,
   "base_model": "kkomyoeminaung/qwen3-8b-myanmar-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

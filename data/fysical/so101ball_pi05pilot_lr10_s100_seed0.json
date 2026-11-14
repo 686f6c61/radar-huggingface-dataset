@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fysical/so101ball_pi05pilot_lr10_S100_seed0",
   "slug": "fysical-so101ball_pi05pilot_lr10_s100_seed0",
   "author": "fysical",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 99432648,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benzeng/tritfold-1.7b-feature-ptq1_0",
   "slug": "benzeng-tritfold-1-7b-feature-ptq1_0",
   "author": "benzeng",
@@ -33,14 +33,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 450901984,
   "storage_human": "451 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

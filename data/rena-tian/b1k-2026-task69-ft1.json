@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rena-Tian/b1k-2026-task69-ft1",
   "slug": "rena-tian-b1k-2026-task69-ft1",
   "author": "Rena-Tian",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 6335662601,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

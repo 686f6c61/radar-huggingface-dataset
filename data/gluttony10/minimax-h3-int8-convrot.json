@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gluttony10/MiniMax-H3-INT8-CONVROT",
   "slug": "gluttony10-minimax-h3-int8-convrot",
   "author": "Gluttony10",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 210865209270,
   "storage_human": "210.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xw1234gan/CNK12_3B_Fixed_G8_outer20_bg16_Qwen2.5-3B-Instruct_lr1e-05_mb2_ga128_n2048_seed42",
   "slug": "xw1234gan-cnk12_3b_fixed_g8_outer20_bg16_qwen2-5-3b-instruct_lr1e-05_mb2_ga128_n2048_seed42",
   "author": "xw1234gan",
@@ -29,14 +29,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183348896,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

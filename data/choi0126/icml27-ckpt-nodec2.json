@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "CHOI0126/icml27-ckpt-nodec2",
+  "slug": "choi0126-icml27-ckpt-nodec2",
+  "author": "CHOI0126",
+  "url": "https://huggingface.co/CHOI0126/icml27-ckpt-nodec2",
+  "created_at": "2026-11-14T16:16:19.000Z",
+  "updated_at": "2026-11-14T16:48:58.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27339386818,
+  "storage_human": "27.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

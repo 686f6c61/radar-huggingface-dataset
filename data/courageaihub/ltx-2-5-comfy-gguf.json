@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "courageaihub/LTX-2.5-Comfy-GGUF",
   "slug": "courageaihub-ltx-2-5-comfy-gguf",
   "author": "courageaihub",
@@ -31,6 +31,7 @@
   "parameters_human": "21.00B",
   "storage_bytes": 84100588498,
   "storage_human": "84.1 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jkim50104/Head2Wrist-policy-cube-bowl",
   "slug": "jkim50104-head2wrist-policy-cube-bowl",
   "author": "jkim50104",
@@ -31,14 +31,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206455152,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhniu/smolvla-so101-tape100-leisaac-framewise",
   "slug": "zhniu-smolvla-so101-tape100-leisaac-framewise",
   "author": "zhniu",
@@ -38,14 +38,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 3613702720,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

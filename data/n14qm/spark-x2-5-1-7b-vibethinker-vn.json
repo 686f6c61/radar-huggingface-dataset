@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "N14QM/Spark-X2.5-1.7B-VibeThinker-VN",
   "slug": "n14qm-spark-x2-5-1-7b-vibethinker-vn",
   "author": "N14QM",
@@ -45,14 +45,19 @@
   "parameters_human": "1.98B",
   "storage_bytes": 5937835808,
   "storage_human": "5.9 GB",
+  "context_length": 1048576,
   "base_model": "WeiboAI/VibeThinker-3B, XHToken/Spark-X2.5-1.7B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aakashdandekar2006/Coli-ByT5-Small",
   "slug": "aakashdandekar2006-coli-byt5-small-2",
   "author": "aakashdandekar2006",
@@ -43,14 +43,19 @@
   "parameters_human": "300.8M",
   "storage_bytes": 770377920,
   "storage_human": "770 MB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kristobalus/Ternary-Bonsai-2-27B-DFlash2-dv98304-GGUF",
   "slug": "kristobalus-ternary-bonsai-2-27b-dflash2-dv98304-gguf",
   "author": "kristobalus",
@@ -33,14 +33,19 @@
   "parameters_human": "2.34B",
   "storage_bytes": 2532153249,
   "storage_human": "2.5 GB",
+  "context_length": 262144,
   "base_model": "ProCreations/Ternary-Bonsai-2-27B-DFlash2, prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

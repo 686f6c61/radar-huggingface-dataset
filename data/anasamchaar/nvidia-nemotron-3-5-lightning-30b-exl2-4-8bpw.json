@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anasAmchaar/NVIDIA-Nemotron-3.5-Lightning-30B-EXL2-4.8bpw",
   "slug": "anasamchaar-nvidia-nemotron-3-5-lightning-30b-exl2-4-8bpw",
   "author": "anasAmchaar",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:02:45.653Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

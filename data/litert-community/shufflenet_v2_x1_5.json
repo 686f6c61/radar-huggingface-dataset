@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "litert-community/shufflenet_v2_x1_5",
+  "slug": "litert-community-shufflenet_v2_x1_5",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/shufflenet_v2_x1_5",
+  "created_at": "2026-02-08T21:12:46.000Z",
+  "updated_at": "2026-11-14T17:49:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "vision",
+    "image-classification",
+    "google",
+    "computer-vision",
+    "dataset:imagenet-1k",
+    "arxiv:1807.11164",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60033060,
+  "storage_human": "60 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 1 Accuracy (Full Precision)",
+      "value": 0.7296
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 5 Accuracy (Full Precision)",
+      "value": 0.9113
+    }
+  ],
+  "sources": []
+}

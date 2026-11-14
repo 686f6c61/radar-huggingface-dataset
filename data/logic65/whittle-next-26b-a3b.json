@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logic65/Whittle-Next-26B-A3B",
   "slug": "logic65-whittle-next-26b-a3b",
   "author": "logic65",
@@ -38,6 +38,7 @@
   "parameters_human": "26.55B",
   "storage_bytes": 261805155411,
   "storage_human": "261.8 GB",
+  "context_length": 262144,
   "base_model": "logic65/Qwen3.6-Whittle-25B-A3B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "whittleOrg/Whittle-Next-26B-A3B",
+  "renamed_at": "2026-11-11T06:06:33.552Z",
   "benchmarks": [],
   "sources": [
     {

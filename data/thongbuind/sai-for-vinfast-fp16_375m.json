@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thongbuind/SAI-for-VinFast-FP16_375M",
   "slug": "thongbuind-sai-for-vinfast-fp16_375m",
   "author": "thongbuind",
@@ -30,14 +30,19 @@
   "parameters_human": "375.2M",
   "storage_bytes": 1501461120,
   "storage_human": "1.5 GB",
+  "context_length": 10240,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

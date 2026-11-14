@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Makio64/embeddinggemma-300m-jurilix-gguf",
   "slug": "makio64-embeddinggemma-300m-jurilix-gguf",
   "author": "Makio64",
@@ -31,14 +31,19 @@
   "parameters_human": "307.6M",
   "storage_bytes": 667181568,
   "storage_human": "667 MB",
+  "context_length": 2048,
   "base_model": "google/embeddinggemma-300m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T08:12:10.589Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

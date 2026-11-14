@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lightonai/GTE-ModernColBERT-v1",
   "slug": "lightonai-gte-moderncolbert-v1",
   "author": "lightonai",
@@ -40,6 +40,7 @@
   "parameters_human": "149.0M",
   "storage_bytes": 1343403470,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-modernbert-base",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Py Late Information Retrieval",

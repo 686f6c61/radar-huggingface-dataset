@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HIT-Robotics/dummy_model",
   "slug": "hit-robotics-dummy_model",
   "author": "HIT-Robotics",
@@ -27,14 +27,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483650568,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:40:18.776Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

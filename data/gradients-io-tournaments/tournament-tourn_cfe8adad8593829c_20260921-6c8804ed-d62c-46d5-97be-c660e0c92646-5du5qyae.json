@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5DU5Qyae",
   "slug": "gradients-io-tournaments-tournament-tourn_cfe8adad8593829c_20260921-6c8804ed-d62c-46d5-97be-c660e0c92646-5du5qyae",
   "author": "gradients-io-tournaments",
@@ -28,14 +28,19 @@
   "parameters_human": "1.30B",
   "storage_bytes": 2609133520,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T06:03:57.873Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

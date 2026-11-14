@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Technomancer-27b-BlackICE-AEON-GGUF",
   "slug": "mradermacher-technomancer-27b-blackice-aeon-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 189223502208,
   "storage_human": "189.2 GB",
+  "context_length": 262144,
   "base_model": "ChonkE/Technomancer-27b-BlackICE-AEON",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sainath001/stomatabench_neurips_weights",
   "slug": "sainath001-stomatabench_neurips_weights",
   "author": "Sainath001",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 17240710428,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

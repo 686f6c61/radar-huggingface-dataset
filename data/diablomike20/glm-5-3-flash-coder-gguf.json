@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/GLM-5.3-Flash-Coder-GGUF",
   "slug": "diablomike20-glm-5-3-flash-coder-gguf",
   "author": "diablomike20",
@@ -34,14 +34,19 @@
   "parameters_human": "169.56B",
   "storage_bytes": 456322816384,
   "storage_human": "456.3 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenJarvisProject/Qwen3.5-2B-Uncensored-OJP-GGUF",
   "slug": "openjarvisproject-qwen3-5-2b-uncensored-ojp-gguf",
   "author": "OpenJarvisProject",
@@ -34,14 +34,19 @@
   "parameters_human": "1.47B",
   "storage_bytes": 1066593952,
   "storage_human": "1.1 GB",
+  "context_length": 262144,
   "base_model": "HauhauCS/Qwen3.5-2B-Uncensored-HauhauCS-Aggressive, Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

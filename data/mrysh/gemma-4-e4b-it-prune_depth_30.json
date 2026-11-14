@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrysh/gemma-4-e4b-it-prune_depth_30",
   "slug": "mrysh-gemma-4-e4b-it-prune_depth_30",
   "author": "mrysh",
@@ -28,14 +28,19 @@
   "parameters_human": "5.86B",
   "storage_bytes": 11753777310,
   "storage_human": "11.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

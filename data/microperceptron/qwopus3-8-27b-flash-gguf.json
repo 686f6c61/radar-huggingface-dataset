@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "microperceptron/Qwopus3.8-27B-Flash-GGUF",
   "slug": "microperceptron-qwopus3-8-27b-flash-gguf",
   "author": "microperceptron",
@@ -62,6 +62,7 @@
   "parameters_human": "460.7M",
   "storage_bytes": 245724267264,
   "storage_human": "245.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

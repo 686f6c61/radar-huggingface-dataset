@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sreyanshdreamstreet/kronos-btc-sep2026-dollarbars",
   "slug": "sreyanshdreamstreet-kronos-btc-sep2026-dollarbars",
   "author": "sreyanshdreamstreet",
@@ -31,14 +31,19 @@
   "parameters_human": "102.3M",
   "storage_bytes": 818582511,
   "storage_human": "819 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T05:51:03.021Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

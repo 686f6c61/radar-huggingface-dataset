@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF",
   "slug": "ggml-org-qwen3-coder-30b-a3b-instruct-gguf",
   "author": "ggml-org",
@@ -29,14 +29,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 111568158624,
   "storage_human": "111.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

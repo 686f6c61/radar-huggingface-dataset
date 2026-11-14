@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kdotmahesh/diffusion-pick-clip-mug-v2test10",
   "slug": "kdotmahesh-diffusion-pick-clip-mug-v2test10",
   "author": "kdotmahesh",
@@ -28,14 +28,19 @@
   "parameters_human": "277.8M",
   "storage_bytes": 3334072132,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

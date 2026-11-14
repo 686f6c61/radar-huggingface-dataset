@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/dbrx-base-GGUF",
   "slug": "mradermacher-dbrx-base-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "131.60B",
   "storage_bytes": 893908491680,
   "storage_human": "893.9 GB",
+  "context_length": 32768,
   "base_model": "nicoboss/dbrx-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

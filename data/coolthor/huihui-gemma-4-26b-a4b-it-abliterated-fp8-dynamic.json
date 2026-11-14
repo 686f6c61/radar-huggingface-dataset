@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coolthor/Huihui-gemma-4-26B-A4B-it-abliterated-FP8-Dynamic",
   "slug": "coolthor-huihui-gemma-4-26b-a4b-it-abliterated-fp8-dynamic",
   "author": "coolthor",
@@ -43,14 +43,19 @@
   "parameters_human": "26.54B",
   "storage_bytes": 28673900662,
   "storage_human": "28.7 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

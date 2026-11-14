@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GrigoriyLojkin/CogVideoX-2b",
   "slug": "grigoriylojkin-cogvideox-2b",
   "author": "GrigoriyLojkin",
@@ -33,6 +33,7 @@
   "parameters_human": "1.69B",
   "storage_bytes": 13775478868,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

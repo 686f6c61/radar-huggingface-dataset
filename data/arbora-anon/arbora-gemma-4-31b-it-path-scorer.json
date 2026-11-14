@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arbora-anon/arbora-gemma-4-31b-it-path-scorer",
   "slug": "arbora-anon-arbora-gemma-4-31b-it-path-scorer",
   "author": "arbora-anon",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 271188368,
   "storage_human": "271 MB",
+  "context_length": null,
   "base_model": "RedHatAI/gemma-4-31B-it-speculator.dflash2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

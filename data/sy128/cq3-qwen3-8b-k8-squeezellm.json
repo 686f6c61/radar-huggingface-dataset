@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sy128/CQ3-Qwen3-8B-K8-SqueezeLLM",
   "slug": "sy128-cq3-qwen3-8b-k8-squeezellm",
   "author": "sy128",
@@ -23,14 +23,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 32774456568,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

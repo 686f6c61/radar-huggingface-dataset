@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vpakarinen/minimax-h3-custom-loras",
   "slug": "vpakarinen-minimax-h3-custom-loras",
   "author": "vpakarinen",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 3334430408,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T10:15:52.862Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

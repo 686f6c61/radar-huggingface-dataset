@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "borisggg/steering-denoiser-gpt2",
   "slug": "borisggg-steering-denoiser-gpt2",
   "author": "borisggg",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 113830081,
   "storage_human": "114 MB",
+  "context_length": null,
   "base_model": "gpt2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

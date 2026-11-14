@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smartypantsnet/FastWan2.2-TI2V-5B-mlx-bf16",
   "slug": "smartypantsnet-fastwan2-2-ti2v-5b-mlx-bf16",
   "author": "smartypantsnet",
@@ -30,6 +30,7 @@
   "parameters_human": "5.00B",
   "storage_bytes": 24201670121,
   "storage_human": "24.2 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers, Wan-AI/Wan2.2-TI2V-5B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

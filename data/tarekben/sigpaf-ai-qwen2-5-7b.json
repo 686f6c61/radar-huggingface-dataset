@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarekben/sigpaf-ai-qwen2.5-7b",
   "slug": "tarekben-sigpaf-ai-qwen2-5-7b",
   "author": "tarekben",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 657502718,
   "storage_human": "658 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T08:01:36.084Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

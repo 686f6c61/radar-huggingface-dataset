@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KW-KI/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness-Q5_K_M-GGUF",
   "slug": "kw-ki-qwen3-6-9b-heretic-uncensored-thinking-sweet-madness-q5_k_m-gguf",
   "author": "KW-KI",
@@ -61,14 +61,19 @@
   "parameters_human": "8.63B",
   "storage_bytes": 6253770592,
   "storage_human": "6.3 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T02:50:30.083Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

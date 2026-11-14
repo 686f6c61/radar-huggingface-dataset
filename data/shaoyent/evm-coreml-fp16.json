@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shaoyent/EVM-CoreML-FP16",
   "slug": "shaoyent-evm-coreml-fp16",
   "author": "shaoyent",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 172139921,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:13:22.106Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

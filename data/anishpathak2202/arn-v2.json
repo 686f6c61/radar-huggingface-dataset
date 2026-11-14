@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnishPathak2202/arn-v2",
   "slug": "anishpathak2202-arn-v2",
   "author": "AnishPathak2202",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 53341131,
   "storage_human": "53 MB",
+  "context_length": null,
   "base_model": "google/bert_uncased_L-2_H-128_A-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

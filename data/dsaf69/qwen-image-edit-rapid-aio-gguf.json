@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dsaf69/Qwen-Image-Edit-Rapid-AIO-GGUF",
   "slug": "dsaf69-qwen-image-edit-rapid-aio-gguf",
   "author": "Dsaf69",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 1101879110400,
   "storage_human": "1101.9 GB",
+  "context_length": 128000,
   "base_model": "Phr00t/Qwen-Image-Edit-Rapid-AIO, Qwen/Qwen-Image-Edit-2509, lightx2v/Qwen-Image-Lightning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fall2026-cs8803-drl/hw4-f26-dpo-ref",
   "slug": "fall2026-cs8803-drl-hw4-f26-dpo-ref",
   "author": "fall2026-cs8803-drl",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 36648720,
   "storage_human": "37 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

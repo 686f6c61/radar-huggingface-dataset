@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fesvhtr/phygenhand-minimax-h3-hot3d-controlnet",
   "slug": "fesvhtr-phygenhand-minimax-h3-hot3d-controlnet",
   "author": "fesvhtr",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 35574445720,
   "storage_human": "35.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, alibaba-pai/MiniMax-H3-Fun-Controlnet-Union",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fesvhtr/PGH-minimax-h3-hot3d-controlnet",
+  "renamed_at": "2026-11-13T05:33:56.830Z",
   "benchmarks": [],
   "sources": [
     {

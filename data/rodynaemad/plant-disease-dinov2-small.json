@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rodynaemad/plant-disease-dinov2-small",
   "slug": "rodynaemad-plant-disease-dinov2-small",
   "author": "rodynaemad",
@@ -35,6 +35,7 @@
   "parameters_human": "22.1M",
   "storage_bytes": 201129686,
   "storage_human": "201 MB",
+  "context_length": null,
   "base_model": "facebook/dinov2-small",
   "formats": [
     "onnx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Plant disease classification (38 classes)",

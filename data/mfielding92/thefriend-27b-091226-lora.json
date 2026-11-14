@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mfielding92/thefriend-27b-091226-lora",
   "slug": "mfielding92-thefriend-27b-091226-lora",
   "author": "mfielding92",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1408390861,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "mfielding92/thefriend-27b-v3-qvo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T05:31:11.985Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

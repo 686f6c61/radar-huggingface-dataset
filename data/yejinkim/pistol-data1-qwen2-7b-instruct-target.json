@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yejinkim/pistol-data1-Qwen2-7B-Instruct-target",
   "slug": "yejinkim-pistol-data1-qwen2-7b-instruct-target",
   "author": "yejinkim",
@@ -36,14 +36,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242695498,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

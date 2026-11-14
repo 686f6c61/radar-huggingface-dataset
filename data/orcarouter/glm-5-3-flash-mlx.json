@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/GLM-5.3-Flash-MLX",
   "slug": "orcarouter-glm-5-3-flash-mlx",
   "author": "orcarouter",
@@ -47,6 +47,7 @@
   "parameters_human": "347.87B",
   "storage_bytes": 1610427737100,
   "storage_human": "1610.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

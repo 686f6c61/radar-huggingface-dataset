@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/dinov2-with-registers-base-mic",
   "slug": "huggingface-mic-dinov2-with-registers-base-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "226112",
   "storage_bytes": 908848,
   "storage_human": "908848 B",
+  "context_length": null,
   "base_model": "facebook/dinov2-with-registers-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

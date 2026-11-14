@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "janniskirschner/mtds-4965ec176bd4",
   "slug": "janniskirschner-mtds-4965ec176bd4",
   "author": "janniskirschner",
@@ -26,14 +26,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693760,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T04:08:24.661Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

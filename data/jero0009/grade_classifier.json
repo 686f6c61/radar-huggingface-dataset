@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jero0009/grade_Classifier",
   "slug": "jero0009-grade_classifier",
   "author": "jero0009",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 3077,
   "storage_human": "3077 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

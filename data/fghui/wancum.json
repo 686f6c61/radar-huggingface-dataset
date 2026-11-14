@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fghui/WANCum",
   "slug": "fghui-wancum",
   "author": "fghui",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1228298428,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "TestOrganizationPleaseIgnore/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "try1ereer/WANCum",
+  "renamed_at": "2026-11-11T05:16:06.773Z",
   "benchmarks": [],
   "sources": []
 }

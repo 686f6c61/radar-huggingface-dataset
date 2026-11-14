@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/K2-Horizon-MoVA-36B-A4B-MLX-6bit",
   "slug": "hermitdave-k2-horizon-mova-36b-a4b-mlx-6bit",
   "author": "hermitdave",
@@ -33,6 +33,7 @@
   "parameters_human": "37.44B",
   "storage_bytes": 30449798379,
   "storage_human": "30.4 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

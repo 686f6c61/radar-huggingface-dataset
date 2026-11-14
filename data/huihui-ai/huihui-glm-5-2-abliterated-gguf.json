@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huihui-ai/Huihui-GLM-5.2-abliterated-GGUF",
   "slug": "huihui-ai-huihui-glm-5-2-abliterated-gguf",
   "author": "huihui-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "753.86B",
   "storage_bytes": 1253617388000,
   "storage_human": "1253.6 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

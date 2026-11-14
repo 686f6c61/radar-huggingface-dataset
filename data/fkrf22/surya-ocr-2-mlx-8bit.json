@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fkrf22/surya-ocr-2-mlx-8bit",
   "slug": "fkrf22-surya-ocr-2-mlx-8bit",
   "author": "fkrf22",
@@ -34,6 +34,7 @@
   "parameters_human": "665.7M",
   "storage_bytes": 802186634,
   "storage_human": "802 MB",
+  "context_length": null,
   "base_model": "datalab-to/surya-ocr-2",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FatalMistake02/pumpkn-6",
   "slug": "fatalmistake02-pumpkn-6",
   "author": "FatalMistake02",
@@ -40,14 +40,19 @@
   "parameters_human": "124.3M",
   "storage_bytes": 248999360,
   "storage_human": "249 MB",
+  "context_length": 2048,
   "base_model": "FatalMistake02/pumpkn-4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harness-hub/LFM2.5-24B-A2B-hermes-GGUF",
   "slug": "harness-hub-lfm2-5-24b-a2b-hermes-gguf",
   "author": "harness-hub",
@@ -30,14 +30,19 @@
   "parameters_human": "18.7M",
   "storage_bytes": 39215545,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": "harness-hub/LFM2.5-24B-A2B-hermes",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

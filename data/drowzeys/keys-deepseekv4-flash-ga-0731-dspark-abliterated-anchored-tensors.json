@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-Anchored-Tensors",
   "slug": "drowzeys-keys-deepseekv4-flash-ga-0731-dspark-abliterated-anchored-tensors",
   "author": "drowzeys",
@@ -51,14 +51,19 @@
   "parameters_human": "304.18B",
   "storage_bytes": 285018083993,
   "storage_human": "285.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

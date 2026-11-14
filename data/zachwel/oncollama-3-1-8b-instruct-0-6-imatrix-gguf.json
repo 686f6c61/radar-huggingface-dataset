@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zachwel/OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF",
   "slug": "zachwel-oncollama-3-1-8b-instruct-0-6-imatrix-gguf",
   "author": "zachwel",
@@ -32,14 +32,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 3274917664,
   "storage_human": "3.3 GB",
+  "context_length": 131072,
   "base_model": "drjzhn/OncoLlama-3.1-8B-Instruct-0.6",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

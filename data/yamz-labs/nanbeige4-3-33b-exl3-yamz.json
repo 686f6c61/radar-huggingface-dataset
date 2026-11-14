@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yamz-labs/Nanbeige4.3-33B-EXL3-Yamz",
   "slug": "yamz-labs-nanbeige4-3-33b-exl3-yamz",
   "author": "yamz-labs",
@@ -42,14 +42,19 @@
   "parameters_human": "9.33B",
   "storage_bytes": 18689906727,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

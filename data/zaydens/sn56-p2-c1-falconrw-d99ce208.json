@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zaydens/sn56-p2-C1-FALCONRW-d99ce208",
   "slug": "zaydens-sn56-p2-c1-falconrw-d99ce208",
   "author": "zaydens",
@@ -24,14 +24,19 @@
   "parameters_human": "1.31B",
   "storage_bytes": 2623290376,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

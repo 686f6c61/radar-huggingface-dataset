@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kamawwanai/RuadaptQwen3-4B-JacobianLens-RU",
   "slug": "kamawwanai-ruadaptqwen3-4b-jacobianlens-ru",
   "author": "kamawwanai",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1376287809,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "RefalMachine/RuadaptQwen3-4B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

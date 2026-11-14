@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pipecat-ai/phonellm-max-alpha-2-nvfp4",
   "slug": "pipecat-ai-phonellm-max-alpha-2-nvfp4",
   "author": "pipecat-ai",
@@ -43,14 +43,19 @@
   "parameters_human": "64.93B",
   "storage_bytes": 73357573271,
   "storage_human": "73.4 GB",
+  "context_length": null,
   "base_model": "pipecat-ai/phonellm-max-alpha-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

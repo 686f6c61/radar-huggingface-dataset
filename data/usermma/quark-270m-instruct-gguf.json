@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "usermma/Quark-270m-Instruct-GGUF",
   "slug": "usermma-quark-270m-instruct-gguf",
   "author": "usermma",
@@ -45,14 +45,19 @@
   "parameters_human": "251.7M",
   "storage_bytes": 4071454080,
   "storage_human": "4.1 GB",
+  "context_length": 2048,
   "base_model": "ThingAI/ARK-270M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "usermma/ARK-270M-Instruct-GGUF",
+  "renamed_at": "2026-11-11T07:57:37.408Z",
   "benchmarks": [],
   "sources": [
     {

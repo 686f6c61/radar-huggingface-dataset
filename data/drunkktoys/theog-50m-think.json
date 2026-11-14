@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DrunkkToys/theOG-50M-think",
   "slug": "drunkktoys-theog-50m-think",
   "author": "DrunkkToys",
@@ -28,6 +28,7 @@
   "parameters_human": "50.7M",
   "storage_bytes": 934600838,
   "storage_human": "935 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:07:47.373Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

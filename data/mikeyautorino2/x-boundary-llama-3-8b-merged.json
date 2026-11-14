@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mikeyautorino2/X-Boundary-Llama-3-8B-Merged",
   "slug": "mikeyautorino2-x-boundary-llama-3-8b-merged",
   "author": "mikeyautorino2",
@@ -23,14 +23,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766577,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T05:26:56.920Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

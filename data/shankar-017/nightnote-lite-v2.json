@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SHANKAR-017/nightnote-lite-v2",
   "slug": "shankar-017-nightnote-lite-v2",
   "author": "SHANKAR-017",
@@ -25,14 +25,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 112103488,
   "storage_human": "112 MB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

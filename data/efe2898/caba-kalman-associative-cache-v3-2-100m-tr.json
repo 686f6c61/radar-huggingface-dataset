@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efe2898/caba-kalman-associative-cache-v3-2-100m-tr",
   "slug": "efe2898-caba-kalman-associative-cache-v3-2-100m-tr",
   "author": "Efe2898",
@@ -31,14 +31,19 @@
   "parameters_human": "102.0M",
   "storage_bytes": 7957624601,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

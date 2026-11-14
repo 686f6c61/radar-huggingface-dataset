@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia",
   "slug": "atomicchat-deepseek-v4-1-flash-nvfp4-nvidia",
   "author": "AtomicChat",
@@ -37,14 +37,19 @@
   "parameters_human": "763.21B",
   "storage_bytes": 527311491636,
   "storage_human": "527.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T02:13:29.505Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

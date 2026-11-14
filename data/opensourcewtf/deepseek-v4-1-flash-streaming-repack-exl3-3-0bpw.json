@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3-3.0bpw",
   "slug": "opensourcewtf-deepseek-v4-1-flash-streaming-repack-exl3-3-0bpw",
   "author": "OpensourceWTF",
@@ -23,12 +23,17 @@
   "parameters_human": "22.70B",
   "storage_bytes": 426315098246,
   "storage_human": "426.3 GB",
+  "context_length": null,
   "base_model": "Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3",
+  "renamed_at": "2026-11-11T03:29:33.918Z",
   "benchmarks": [],
   "sources": [
     {

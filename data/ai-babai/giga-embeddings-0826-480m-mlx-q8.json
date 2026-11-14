@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai-babai/giga-embeddings-0826-480m-mlx-q8",
   "slug": "ai-babai-giga-embeddings-0826-480m-mlx-q8",
   "author": "ai-babai",
@@ -47,6 +47,7 @@
   "parameters_human": "483.7M",
   "storage_bytes": 524814480,
   "storage_human": "525 MB",
+  "context_length": null,
   "base_model": "ai-sage/Giga-Embeddings-instruct-480M-0826",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BirdToast/TestWL",
   "slug": "birdtoast-testwl",
   "author": "BirdToast",
@@ -35,14 +35,19 @@
   "parameters_human": "30.17B",
   "storage_bytes": 60375177020,
   "storage_human": "60.4 GB",
+  "context_length": null,
   "base_model": "LatitudeGames/Equinox-31B, llmfan46/Gemma-4-Garnet-V2-31B-it-ultra-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

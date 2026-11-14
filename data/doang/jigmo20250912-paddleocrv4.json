@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doang/Jigmo20250912-PaddleOCRv4",
   "slug": "doang-jigmo20250912-paddleocrv4",
   "author": "doang",
@@ -46,12 +46,17 @@
   "parameters_human": null,
   "storage_bytes": 190762762,
   "storage_human": "191 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-OCRv4_mobile_rec",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

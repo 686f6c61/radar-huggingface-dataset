@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter",
   "slug": "caslca-qwen3-8-27b-fable-distill-optiq-4-5bpw-mixed-mtp-drafter",
   "author": "caslca",
@@ -30,6 +30,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 334289716,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

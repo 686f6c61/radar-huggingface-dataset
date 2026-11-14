@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/malicious-url-detection-GGUF",
   "slug": "mradermacher-malicious-url-detection-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 674132064,
   "storage_human": "674 MB",
+  "context_length": 512,
   "base_model": "rocker417/malicious-url-detection",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arcticoneai/xspark-2.7-4B",
   "slug": "arcticoneai-xspark-2-7-4b",
   "author": "arcticoneai",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 64983329,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:08:05.132Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

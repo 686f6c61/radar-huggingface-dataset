@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sgouet/vit-base-oxford-iiit-pets",
   "slug": "sgouet-vit-base-oxford-iiit-pets",
   "author": "sgouet",
@@ -32,14 +32,19 @@
   "parameters_human": "85.8M",
   "storage_bytes": 1716714920,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "google/vit-base-patch16-224",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:52:11.227Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benjaminjonard/mendako-tagger-onnx",
   "slug": "benjaminjonard-mendako-tagger-onnx",
   "author": "benjaminjonard",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1419391040,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "SmilingWolf/wd-eva02-large-tagger-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:51:02.580Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangyue114514/rwkv7-g1g-1.5b-hf",
   "slug": "wangyue114514-rwkv7-g1g-1-5b-hf",
   "author": "wangyue114514",
@@ -31,14 +31,19 @@
   "parameters_human": "1.53B",
   "storage_bytes": 3054892712,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

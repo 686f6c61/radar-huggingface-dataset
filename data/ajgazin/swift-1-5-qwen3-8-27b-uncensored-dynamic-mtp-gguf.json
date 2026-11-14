@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF",
   "slug": "ajgazin-swift-1-5-qwen3-8-27b-uncensored-dynamic-mtp-gguf",
   "author": "ajgazin",
@@ -39,14 +39,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 284846802616,
   "storage_human": "284.8 GB",
+  "context_length": null,
   "base_model": "ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeowon/qwen3_forced_aligner_0.6b-RungOmega-MLX",
   "slug": "yeowon-qwen3_forced_aligner_0-6b-rungomega-mlx",
   "author": "yeowon",
@@ -37,6 +37,7 @@
   "parameters_human": "410.4M",
   "storage_bytes": 982707416,
   "storage_human": "983 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ForcedAligner-0.6B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:32:07.015Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

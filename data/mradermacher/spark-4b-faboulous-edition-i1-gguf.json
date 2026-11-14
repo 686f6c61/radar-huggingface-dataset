@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Spark-4B-Faboulous-Edition-i1-GGUF",
   "slug": "mradermacher-spark-4b-faboulous-edition-i1-gguf",
   "author": "mradermacher",
@@ -36,6 +36,7 @@
   "parameters_human": "4.11B",
   "storage_bytes": 50405821888,
   "storage_human": "50.4 GB",
+  "context_length": 1048576,
   "base_model": "groxaxo/Spark-4B-Faboulous-Edition",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

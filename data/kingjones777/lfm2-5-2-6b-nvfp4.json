@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/LFM2.5-2.6B-NVFP4",
   "slug": "kingjones777-lfm2-5-2-6b-nvfp4",
   "author": "kingjones777",
@@ -42,14 +42,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 2442939550,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

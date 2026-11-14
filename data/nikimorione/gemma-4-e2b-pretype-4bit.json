@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikimoriOne/gemma-4-e2b-Pretype-4bit",
   "slug": "nikimorione-gemma-4-e2b-pretype-4bit",
   "author": "nikimoriOne",
@@ -33,6 +33,7 @@
   "parameters_human": "2.76B",
   "storage_bytes": 1614175892,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nikimoriOne/Pretype-One",
+  "renamed_at": "2026-11-12T07:10:11.996Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jonasherminio/resnet152v2-skin-cancer-ham10000",
   "slug": "jonasherminio-resnet152v2-skin-cancer-ham10000",
   "author": "jonasherminio",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 220116065,
   "storage_human": "220 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

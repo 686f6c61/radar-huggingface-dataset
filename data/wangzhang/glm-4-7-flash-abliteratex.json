@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangzhang/GLM-4.7-Flash-abliteratex",
   "slug": "wangzhang-glm-4-7-flash-abliteratex",
   "author": "wangzhang",
@@ -40,6 +40,7 @@
   "parameters_human": "29.94B",
   "storage_bytes": 94307203914,
   "storage_human": "94.3 GB",
+  "context_length": 202752,
   "base_model": "zai-org/GLM-4.7-Flash",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

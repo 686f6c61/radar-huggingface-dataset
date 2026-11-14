@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yushengsu/Qwen3-8B-5layer-MoE-8E4A-v1",
   "slug": "yushengsu-qwen3-8b-5layer-moe-8e4a-v1",
   "author": "yushengsu",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 64125503814,
   "storage_human": "64.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

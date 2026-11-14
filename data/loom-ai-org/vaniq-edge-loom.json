@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/vaniq-edge-loom",
   "slug": "loom-ai-org-vaniq-edge-loom",
   "author": "loom-ai-org",
@@ -31,14 +31,19 @@
   "parameters_human": "8.6M",
   "storage_bytes": 45973280,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "Abiray/Vaniq-Edge",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

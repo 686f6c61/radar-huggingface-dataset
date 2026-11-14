@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QZWang/patchwam-robotwin-c2r-step140000",
   "slug": "qzwang-patchwam-robotwin-c2r-step140000",
   "author": "QZWang",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 7751411897,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

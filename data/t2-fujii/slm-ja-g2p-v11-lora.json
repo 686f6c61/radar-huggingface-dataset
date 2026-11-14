@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t2-fujii/slm-ja-g2p-v11-lora",
   "slug": "t2-fujii-slm-ja-g2p-v11-lora",
   "author": "t2-fujii",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 56471056,
   "storage_human": "56 MB",
+  "context_length": null,
   "base_model": "sbintuitions/sarashina2.2-1b-instruct-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

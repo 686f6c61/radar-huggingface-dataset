@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Athithya117/dinghy-law-0.6b-v1-gguf",
   "slug": "athithya117-dinghy-law-0-6b-v1-gguf",
   "author": "Athithya117",
@@ -31,14 +31,19 @@
   "parameters_human": "595.8M",
   "storage_bytes": 2331647200,
   "storage_human": "2.3 GB",
+  "context_length": 32768,
   "base_model": "Hanno-Labs/dinghy-law-0.6b-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

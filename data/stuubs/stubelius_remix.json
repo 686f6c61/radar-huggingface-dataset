@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stuubs/Stubelius_Remix",
   "slug": "stuubs-stubelius_remix",
   "author": "Stuubs",
@@ -28,14 +28,19 @@
   "parameters_human": "21.00B",
   "storage_bytes": 208454050784,
   "storage_human": "208.5 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Stuubs/Stubelius_Remix_Ltx2.5",
+  "renamed_at": "2026-11-11T03:57:24.206Z",
   "benchmarks": [],
   "sources": [
     {

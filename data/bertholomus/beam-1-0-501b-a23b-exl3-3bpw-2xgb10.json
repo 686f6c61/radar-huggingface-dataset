@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bertholomus/Beam-1.0-501B-A23B-EXL3-3bpw-2xGB10",
   "slug": "bertholomus-beam-1-0-501b-a23b-exl3-3bpw-2xgb10",
   "author": "bertholomus",
@@ -36,14 +36,19 @@
   "parameters_human": "96.80B",
   "storage_bytes": 193749085127,
   "storage_human": "193.7 GB",
+  "context_length": null,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

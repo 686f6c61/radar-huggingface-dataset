@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pika-Labs/Pika-H3-Flex",
   "slug": "pika-labs-pika-h3-flex",
   "author": "Pika-Labs",
@@ -24,13 +24,14 @@
     "license:other",
     "region:us"
   ],
-  "likes": 700,
+  "likes": 702,
   "downloads_30d": 151201,
-  "trending_score": 136,
+  "trending_score": 135,
   "parameters": 33122992896,
   "parameters_human": "33.12B",
   "storage_bytes": 219901669273,
   "storage_human": "219.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

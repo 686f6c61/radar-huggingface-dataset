@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AndersonB/llama-7b-personalizado",
   "slug": "andersonb-llama-7b-personalizado",
   "author": "AndersonB",
@@ -28,14 +28,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13611116960,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

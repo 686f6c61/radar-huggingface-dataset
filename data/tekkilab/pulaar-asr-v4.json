@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tekkilab/pulaar-asr-v4",
   "slug": "tekkilab-pulaar-asr-v4",
   "author": "tekkilab",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 2427275719,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

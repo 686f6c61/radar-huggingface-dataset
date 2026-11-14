@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-GGUF",
   "slug": "solstice-ai-deepseek-v4-flash-vision-uncensored-gguf",
   "author": "Solstice-AI",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T03:31:24.919Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

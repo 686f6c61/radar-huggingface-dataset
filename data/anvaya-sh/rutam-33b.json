@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anvaya-sh/Rutam-33B",
   "slug": "anvaya-sh-rutam-33b",
   "author": "Anvaya-sh",
@@ -35,14 +35,19 @@
   "parameters_human": "33.11B",
   "storage_bytes": 66233552487,
   "storage_human": "66.2 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

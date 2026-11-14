@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yemara/Nemotron-3.5-Lightning-30B-A3B-W3-WellCalibrated",
   "slug": "yemara-nemotron-3-5-lightning-30b-a3b-w3-wellcalibrated",
   "author": "yemara",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 17296669108,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

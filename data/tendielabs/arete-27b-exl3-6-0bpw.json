@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TendieLabs/Arete-27B-EXL3-6.0bpw",
   "slug": "tendielabs-arete-27b-exl3-6-0bpw",
   "author": "TendieLabs",
@@ -35,14 +35,19 @@
   "parameters_human": "11.35B",
   "storage_bytes": 22717459252,
   "storage_human": "22.7 GB",
+  "context_length": null,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TendieLabs/Arete-27B-MTP-EXL3-6.0bpw",
+  "renamed_at": "2026-11-11T04:00:47.320Z",
   "benchmarks": [],
   "sources": [
     {

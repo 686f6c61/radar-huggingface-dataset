@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Azra-1-Mini-0.8b-GGUF",
   "slug": "mradermacher-azra-1-mini-0-8b-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 7776493760,
   "storage_human": "7.8 GB",
+  "context_length": 262144,
   "base_model": "OttomanNLP/Azra-1-Mini-0.8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

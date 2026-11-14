@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
   "slug": "orcarouter-deepseek-v4-1-flash-1017-abliterated-gguf",
   "author": "orcarouter",
@@ -48,14 +48,19 @@
   "parameters_human": "748.49B",
   "storage_bytes": 574472951039,
   "storage_human": "574.5 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai9stars/G9v3-3B",
   "slug": "ai9stars-g9v3-3b",
   "author": "ai9stars",
@@ -37,14 +37,19 @@
   "parameters_human": "2.99B",
   "storage_bytes": 5977367224,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

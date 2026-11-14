@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scragnog/MiniMax-Music3-GGUF",
   "slug": "scragnog-minimax-music3-gguf",
   "author": "scragnog",
@@ -29,6 +29,7 @@
   "parameters_human": "25.2M",
   "storage_bytes": 229901891190,
   "storage_human": "229.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

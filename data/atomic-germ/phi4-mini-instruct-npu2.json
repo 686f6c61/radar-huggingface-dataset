@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Phi4-mini-Instruct-NPU2",
   "slug": "atomic-germ-phi4-mini-instruct-npu2",
   "author": "Atomic-Germ",
@@ -80,12 +80,17 @@
   "parameters_human": null,
   "storage_bytes": 3643968931,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Atomic-Germ/Phi4-mini-Instruct-4B-NPU2",
+  "renamed_at": "2026-11-11T02:21:03.134Z",
   "benchmarks": [],
   "sources": [
     {

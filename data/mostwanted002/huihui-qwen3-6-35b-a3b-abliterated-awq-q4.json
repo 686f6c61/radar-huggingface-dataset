@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mostwanted002/Huihui-Qwen3.6-35B-A3B-abliterated-awq-q4",
   "slug": "mostwanted002-huihui-qwen3-6-35b-a3b-abliterated-awq-q4",
   "author": "mostwanted002",
@@ -35,14 +35,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 41466602689,
   "storage_human": "41.5 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

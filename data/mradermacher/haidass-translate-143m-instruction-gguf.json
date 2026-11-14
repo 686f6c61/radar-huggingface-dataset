@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Haidass-Translate-143M-Instruction-GGUF",
   "slug": "mradermacher-haidass-translate-143m-instruction-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "143.1M",
   "storage_bytes": 1556556672,
   "storage_human": "1.6 GB",
+  "context_length": 4096,
   "base_model": "umeiko/Haidass-Translate-143M-Instruction",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

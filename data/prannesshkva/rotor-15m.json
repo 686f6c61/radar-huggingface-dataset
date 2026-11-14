@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/ROTOR-15M",
   "slug": "prannesshkva-rotor-15m",
   "author": "Prannesshkva",
@@ -42,14 +42,19 @@
   "parameters_human": "48.9M",
   "storage_bytes": 382575192,
   "storage_human": "383 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:41:31.870Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

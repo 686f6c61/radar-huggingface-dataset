@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textilelabs/Loom-Spark-1.8-Flash",
   "slug": "textilelabs-loom-spark-1-8-flash",
   "author": "textilelabs",
@@ -39,6 +39,7 @@
   "parameters_human": "2.6M",
   "storage_bytes": 24208472,
   "storage_human": "24 MB",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

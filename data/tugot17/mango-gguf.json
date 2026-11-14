@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tugot17/mango-gguf",
   "slug": "tugot17-mango-gguf",
   "author": "tugot17",
@@ -27,14 +27,19 @@
   "parameters_human": "279.5M",
   "storage_bytes": 1701614240,
   "storage_human": "1.7 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-VL-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

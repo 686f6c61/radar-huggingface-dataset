@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/Qwen3.8-27B-MLX-2bit-g32-CLIP-DWQ",
   "slug": "atomicchat-qwen3-8-27b-mlx-2bit-g32-clip-dwq",
   "author": "AtomicChat",
@@ -30,6 +30,7 @@
   "parameters_human": "3.83B",
   "storage_bytes": 11032029205,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:18:29.756Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrometheusEXE/MiniMax-H3-PTD-LoRAs",
   "slug": "prometheusexe-minimax-h3-ptd-loras",
   "author": "PrometheusEXE",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 45820712656,
   "storage_human": "45.8 GB",
+  "context_length": null,
   "base_model": "epfl-vita/PTD-weights, taobao-content-ai/MiniMax-H3-PTD-LoRAs, taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs, MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

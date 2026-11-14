@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sMyn42/Qwen2.5-3B-SWE-Agent-QLoRA-F16-GGUF",
   "slug": "smyn42-qwen2-5-3b-swe-agent-qlora-f16-gguf",
   "author": "sMyn42",
@@ -45,14 +45,19 @@
   "parameters_human": "59.9M",
   "storage_bytes": 119769856,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": "suhas9545/Qwen2.5-3B-SWE-Agent-QLoRA",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

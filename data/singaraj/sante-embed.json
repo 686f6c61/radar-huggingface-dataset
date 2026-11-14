@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Singaraj/sante-embed",
   "slug": "singaraj-sante-embed",
   "author": "Singaraj",
@@ -52,14 +52,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3097993206,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-Qwen2-1.5B-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thealper2/t5-base-paradetox-detox",
   "slug": "thealper2-t5-base-paradetox-detox",
   "author": "thealper2",
@@ -38,14 +38,19 @@
   "parameters_human": "222.9M",
   "storage_bytes": 891650105,
   "storage_human": "892 MB",
+  "context_length": null,
   "base_model": "google-t5/t5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

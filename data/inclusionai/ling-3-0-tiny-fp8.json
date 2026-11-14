@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inclusionAI/Ling-3.0-tiny-fp8",
   "slug": "inclusionai-ling-3-0-tiny-fp8",
   "author": "inclusionAI",
@@ -26,14 +26,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 8421898532,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

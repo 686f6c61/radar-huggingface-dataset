@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rafaelcedav/atlas-mistral-7b-legal-r2-GGUF",
   "slug": "rafaelcedav-atlas-mistral-7b-legal-r2-gguf",
   "author": "Rafaelcedav",
@@ -28,14 +28,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 7887427904,
   "storage_human": "7.9 GB",
+  "context_length": 32768,
   "base_model": "Rafaelcedav/atlas-mistral-7b-legal-r2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

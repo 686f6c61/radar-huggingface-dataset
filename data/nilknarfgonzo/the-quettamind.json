@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NILKNARFGonzo/The-Quettamind",
   "slug": "nilknarfgonzo-the-quettamind",
   "author": "NILKNARFGonzo",
@@ -32,14 +32,19 @@
   "parameters_human": "39200000.00B",
   "storage_bytes": 490000012976,
   "storage_human": "490.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:27:09.480Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

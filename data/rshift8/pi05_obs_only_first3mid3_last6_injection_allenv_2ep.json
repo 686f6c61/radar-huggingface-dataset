@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rshift8/pi05_obs_only_first3mid3_last6_injection_allenv_2ep",
   "slug": "rshift8-pi05_obs_only_first3mid3_last6_injection_allenv_2ep",
   "author": "rshift8",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 499264429864,
   "storage_human": "499.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

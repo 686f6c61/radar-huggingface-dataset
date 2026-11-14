@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weahoo/ASB-Qwen3-8B-Toolcall-Full-v1-BNB4",
   "slug": "weahoo-asb-qwen3-8b-toolcall-full-v1-bnb4",
   "author": "weahoo",
@@ -32,14 +32,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 6084980353,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "weahoo/ASB-Qwen3-8B-Toolcall-Full-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

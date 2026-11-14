@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anonymous-bird-72/Ouro-2.6B",
   "slug": "anonymous-bird-72-ouro-2-6b",
   "author": "anonymous-bird-72",
@@ -32,14 +32,19 @@
   "parameters_human": "2.67B",
   "storage_bytes": 5336871369,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

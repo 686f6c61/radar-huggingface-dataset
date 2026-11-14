@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hrshsethia/babylm-strict-small-gptbert",
   "slug": "hrshsethia-babylm-strict-small-gptbert",
   "author": "hrshsethia",
@@ -27,14 +27,19 @@
   "parameters_human": "31.3M",
   "storage_bytes": 137650040,
   "storage_human": "138 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

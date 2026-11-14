@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devendradhakad/autodroid-coreai-community-Kokoro-82M-CoreAI",
   "slug": "devendradhakad-autodroid-coreai-community-kokoro-82m-coreai",
   "author": "devendradhakad",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 522280,
   "storage_human": "522280 B",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-athena/Snowflake-d512-Base-262K-2026.10.19",
   "slug": "open-athena-snowflake-d512-base-262k-2026-10-19",
   "author": "open-athena",
@@ -31,14 +31,19 @@
   "parameters_human": "746.6M",
   "storage_bytes": 1510438179,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

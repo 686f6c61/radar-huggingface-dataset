@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hepsan/kb-wav2vec2-svenska-q4",
   "slug": "hepsan-kb-wav2vec2-svenska-q4",
   "author": "hepsan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 241220644,
   "storage_human": "241 MB",
+  "context_length": null,
   "base_model": "KBLab/wav2vec2-large-voxrex-swedish",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

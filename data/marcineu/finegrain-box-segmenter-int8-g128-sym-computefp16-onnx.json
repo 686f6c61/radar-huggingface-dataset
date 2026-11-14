@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MarcinEU/finegrain-box-segmenter-INT8-G128-sym-computeFP16-ONNX",
   "slug": "marcineu-finegrain-box-segmenter-int8-g128-sym-computefp16-onnx",
   "author": "MarcinEU",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 252901106,
   "storage_human": "253 MB",
+  "context_length": null,
   "base_model": "finegrain/finegrain-box-segmenter",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

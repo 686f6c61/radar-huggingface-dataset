@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Plans11/AGA.Hybrid.Mind.11m",
   "slug": "plans11-aga-hybrid-mind-11m",
   "author": "Plans11",
@@ -23,14 +23,19 @@
   "parameters_human": "11.4M",
   "storage_bytes": 2318288609,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T10:54:51.076Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

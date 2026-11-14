@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thunderous77/grpo",
   "slug": "thunderous77-grpo",
   "author": "Thunderous77",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 51640629424,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

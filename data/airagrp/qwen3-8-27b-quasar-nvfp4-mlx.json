@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "airagrp/Qwen3.8-27B-QUASAR-NVFP4-mlx",
   "slug": "airagrp-qwen3-8-27b-quasar-nvfp4-mlx",
   "author": "airagrp",
@@ -34,6 +34,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 20571955725,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "airagrp/Qwen3.8-27B-QAT-NVFP4",
+  "renamed_at": "2026-11-11T04:22:38.783Z",
   "benchmarks": [],
   "sources": [
     {

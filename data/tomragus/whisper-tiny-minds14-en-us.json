@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tomragus/whisper-tiny-minds14-en-US",
   "slug": "tomragus-whisper-tiny-minds14-en-us",
   "author": "tomragus",
@@ -33,14 +33,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 151078416,
   "storage_human": "151 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T09:11:25.780Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

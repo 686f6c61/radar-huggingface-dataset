@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlexiSLM/FlexiSLM-7B-Stage2-v1",
   "slug": "flexislm-flexislm-7b-stage2-v1",
   "author": "FlexiSLM",
@@ -35,14 +35,19 @@
   "parameters_human": "8.41B",
   "storage_bytes": 51733644624,
   "storage_human": "51.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FlexiSLM/FlexiSLM-7B-Stage2",
+  "renamed_at": "2026-11-11T02:45:46.824Z",
   "benchmarks": [],
   "sources": [
     {

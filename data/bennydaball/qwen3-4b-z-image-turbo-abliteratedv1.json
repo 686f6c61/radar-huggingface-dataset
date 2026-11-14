@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BennyDaBall/Qwen3-4b-Z-Image-Turbo-AbliteratedV1",
   "slug": "bennydaball-qwen3-4b-z-image-turbo-abliteratedv1",
   "author": "BennyDaBall",
@@ -27,13 +27,14 @@
     "region:us",
     "conversational"
   ],
-  "likes": 143,
+  "likes": 144,
   "downloads_30d": 60743,
-  "trending_score": 11,
+  "trending_score": 10,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
   "storage_bytes": 43266522497,
   "storage_human": "43.3 GB",
+  "context_length": 40960,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

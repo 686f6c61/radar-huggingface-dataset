@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahmedmohamedra2002/tafreegh-arabic-conformer",
   "slug": "ahmedmohamedra2002-tafreegh-arabic-conformer",
   "author": "ahmedmohamedra2002",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 116285936,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

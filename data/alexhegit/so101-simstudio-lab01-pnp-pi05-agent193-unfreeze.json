@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexhegit/so101-simstudio-lab01-pnp-pi05-agent193-unfreeze",
   "slug": "alexhegit-so101-simstudio-lab01-pnp-pi05-agent193-unfreeze",
   "author": "alexhegit",
@@ -31,14 +31,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354059488,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "ant0nh/pi05_pnp_425_25k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455",
   "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455",
   "author": "xelsoft-ai-lab",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 676556264,
   "storage_human": "677 MB",
+  "context_length": null,
   "base_model": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T05:09:33.187Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

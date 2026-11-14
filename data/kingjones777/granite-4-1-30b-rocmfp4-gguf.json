@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Granite-4.1-30B-ROCmFP4-GGUF",
   "slug": "kingjones777-granite-4-1-30b-rocmfp4-gguf",
   "author": "kingjones777",
@@ -36,14 +36,19 @@
   "parameters_human": "28.87B",
   "storage_bytes": 103226839936,
   "storage_human": "103.2 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.1-30b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

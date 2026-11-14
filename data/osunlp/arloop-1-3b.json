@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "osunlp/ARLoop-1.3B",
   "slug": "osunlp-arloop-1-3b",
   "author": "osunlp",
@@ -33,14 +33,19 @@
   "parameters_human": "1.21B",
   "storage_bytes": 116032094936,
   "storage_human": "116.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "osunlp/ARLoop-1.2B",
+  "renamed_at": "2026-11-11T07:03:46.589Z",
   "benchmarks": [],
   "sources": []
 }

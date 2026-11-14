@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trentmkelly/deftwriting_distil_Qwen3.5_9B",
   "slug": "trentmkelly-deftwriting_distil_qwen3-5_9b",
   "author": "trentmkelly",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 193176174,
   "storage_human": "193 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

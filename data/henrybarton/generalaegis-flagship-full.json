@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Henrybarton/generalaegis-flagship-full",
   "slug": "henrybarton-generalaegis-flagship-full",
   "author": "Henrybarton",
@@ -56,14 +56,19 @@
   "parameters_human": null,
   "storage_bytes": 488386736104,
   "storage_human": "488.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

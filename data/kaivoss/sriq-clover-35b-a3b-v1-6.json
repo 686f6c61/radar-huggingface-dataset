@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaivoss/sriq-clover-35B-A3B-v1.6",
   "slug": "kaivoss-sriq-clover-35b-a3b-v1-6",
   "author": "kaivoss",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 1534252400,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

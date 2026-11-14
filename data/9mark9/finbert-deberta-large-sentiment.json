@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "9mark9/finbert-deberta-large-sentiment",
   "slug": "9mark9-finbert-deberta-large-sentiment",
   "author": "9mark9",
@@ -41,14 +41,19 @@
   "parameters_human": "435.1M",
   "storage_bytes": 1742773164,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Financial Sentiment Classification",

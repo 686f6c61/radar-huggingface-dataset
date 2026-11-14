@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
   "slug": "nvidia-nvidia-nemotron-labs-dory1-0-4b-nvfp4",
   "author": "nvidia",
@@ -38,14 +38,19 @@
   "parameters_human": "3.98B",
   "storage_bytes": 3221090613,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

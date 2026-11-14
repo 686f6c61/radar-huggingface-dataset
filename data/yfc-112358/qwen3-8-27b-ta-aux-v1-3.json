@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YFC-112358/Qwen3.8-27B-TA-Aux-v1-3",
   "slug": "yfc-112358-qwen3-8-27b-ta-aux-v1-3",
   "author": "YFC-112358",
@@ -52,14 +52,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575815952,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, Qwen/Qwen3.8-27B, Nimbz/Zwielicht-27B, ManniX-ITA/Qwen3.8-27B-Omnimerge-v6, Jackrong/Qwopus3.8-27B-Flash-V2, YFC-112358/qwen38-magnus-v2-lora, vectionlabs/Salience-27B-R6, schneewolflabs/B0-27B, migtissera/Synthia-4-27B, agentionai/Signal-3.8-27B, JetBrains/Qwen3.8-3.6-27B-blend, OliviaRossi/DoubleTrouble",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

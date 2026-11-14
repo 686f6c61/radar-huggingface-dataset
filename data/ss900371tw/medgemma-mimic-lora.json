@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ss900371tw/medgemma-MIMIC-lora",
   "slug": "ss900371tw-medgemma-mimic-lora",
   "author": "ss900371tw",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 3340190321,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "unsloth/medgemma-1.5-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

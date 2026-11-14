@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tahamajs/qwen-2.5-0.5b-goldfinch-ahn-wikitext2",
   "slug": "tahamajs-qwen-2-5-0-5b-goldfinch-ahn-wikitext2",
   "author": "tahamajs",
@@ -40,14 +40,19 @@
   "parameters_human": "564.3M",
   "storage_bytes": 1368916368,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hooshaai/qwen-2.5-0.5b-goldfinch-ahn-wikitext2",
+  "renamed_at": "2026-11-14T08:47:50.004Z",
   "benchmarks": [],
   "sources": []
 }

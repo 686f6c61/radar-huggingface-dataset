@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ago99/llm-jp-3.1-1.8b-v02b-GGUF",
   "slug": "ago99-llm-jp-3-1-1-8b-v02b-gguf",
   "author": "ago99",
@@ -38,6 +38,7 @@
   "parameters_human": "1.87B",
   "storage_bytes": 6063730344,
   "storage_human": "6.1 GB",
+  "context_length": 4096,
   "base_model": "llm-jp/llm-jp-3.1-1.8b",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

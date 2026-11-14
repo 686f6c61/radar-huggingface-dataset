@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VelociQ8/Qwen3-Embedding-8B-Q8A64-GGUF",
   "slug": "velociq8-qwen3-embedding-8b-q8a64-gguf",
   "author": "VelociQ8",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 8577449931,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

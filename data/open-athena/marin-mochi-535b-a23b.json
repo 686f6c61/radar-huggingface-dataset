@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-athena/Marin-Mochi-535B-A23B",
   "slug": "open-athena-marin-mochi-535b-a23b",
   "author": "open-athena",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 61044811461740,
   "storage_human": "61044.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

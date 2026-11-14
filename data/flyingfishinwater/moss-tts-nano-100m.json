@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/MOSS-TTS-Nano-100M",
   "slug": "flyingfishinwater-moss-tts-nano-100m",
   "author": "flyingfishinwater",
@@ -71,14 +71,19 @@
   "parameters_human": "142.5M",
   "storage_bytes": 285444614,
   "storage_human": "285 MB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-TTS-Nano-100M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:32.628Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "romainkh14/LFM2.5-230M_BRIK",
   "slug": "romainkh14-lfm2-5-230m_brik",
   "author": "romainkh14",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 149212720,
   "storage_human": "149 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

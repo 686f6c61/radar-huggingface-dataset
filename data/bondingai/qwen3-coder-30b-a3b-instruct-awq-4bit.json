@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BondingAI/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit",
   "slug": "bondingai-qwen3-coder-30b-a3b-instruct-awq-4bit",
   "author": "BondingAI",
@@ -32,14 +32,19 @@
   "parameters_human": "5.31B",
   "storage_bytes": 18105930006,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

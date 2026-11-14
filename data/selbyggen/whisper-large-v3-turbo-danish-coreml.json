@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Selbyggen/whisper-large-v3-turbo-danish-coreml",
   "slug": "selbyggen-whisper-large-v3-turbo-danish-coreml",
   "author": "Selbyggen",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 2241781855,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "thorhojhus/whisper-large-v3-turbo-danish",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

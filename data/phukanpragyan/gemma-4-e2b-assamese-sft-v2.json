@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phukanpragyan/gemma-4-e2b-assamese-sft-v2",
   "slug": "phukanpragyan-gemma-4-e2b-assamese-sft-v2",
   "author": "phukanpragyan",
@@ -33,14 +33,19 @@
   "parameters_human": "5.48B",
   "storage_bytes": 11303047477,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": "phukanpragyan/gemma-4-e2b-assamese-cpt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T03:43:27.707Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "allura-forge/Rambley-Tokenizer-v1-16k",
   "slug": "allura-forge-rambley-tokenizer-v1-16k",
   "author": "allura-forge",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 229190,
   "storage_human": "229190 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "glossia/Rambley-Tokenizer-v1-16k",
+  "renamed_at": "2026-11-11T04:27:25.455Z",
   "benchmarks": [],
   "sources": [
     {

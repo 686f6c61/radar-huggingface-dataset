@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/d1-Omni-2B-GGUF",
   "slug": "liquidai-d1-omni-2b-gguf",
   "author": "LiquidAI",
@@ -73,14 +73,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 10325517120,
   "storage_human": "10.3 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/d1-Omni-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

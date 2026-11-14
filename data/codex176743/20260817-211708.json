@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codex176743/20260817-211708",
   "slug": "codex176743-20260817-211708",
   "author": "codex176743",
@@ -35,14 +35,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234483477,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:26:48.789Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

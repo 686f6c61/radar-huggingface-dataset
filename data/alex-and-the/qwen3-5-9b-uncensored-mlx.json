@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alex-and-the/Qwen3.5-9B-Uncensored-MLX",
   "slug": "alex-and-the-qwen3-5-9b-uncensored-mlx",
   "author": "alex-and-the",
@@ -87,6 +87,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 5220473591,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "darkc0de/Qwen3.5-9B-heretic",
   "formats": [
     "mlx",
@@ -94,8 +95,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

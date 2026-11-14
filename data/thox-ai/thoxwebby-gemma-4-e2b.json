@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxWebby-Gemma-4-E2B",
   "slug": "thox-ai-thoxwebby-gemma-4-e2b",
   "author": "Thox-ai",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 1033354,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-mobile-transformers",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

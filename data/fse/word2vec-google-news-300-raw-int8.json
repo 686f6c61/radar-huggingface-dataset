@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fse/word2vec-google-news-300-raw-int8",
   "slug": "fse-word2vec-google-news-300-raw-int8",
   "author": "fse",
@@ -36,14 +36,19 @@
   "parameters_human": "947.3M",
   "storage_bytes": 977259798,
   "storage_human": "977 MB",
+  "context_length": null,
   "base_model": "fse/word2vec-google-news-300",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

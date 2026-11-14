@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/FireRedASR2-LLM-vllm",
   "slug": "vllm-project-fireredasr2-llm-vllm",
   "author": "vllm-project",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 33444301291,
   "storage_human": "33.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

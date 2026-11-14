@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LEPTONNW/gemma-4-E2B-it-mobile-NPU",
   "slug": "leptonnw-gemma-4-e2b-it-mobile-npu",
   "author": "LEPTONNW",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 3409569473,
   "storage_human": "3.4 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "RoundRobin237/gemma-4-E2B-it-mobile-NPU",
+  "renamed_at": "2026-11-11T03:10:10.323Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msuiche/Nanbeige4.2-3B-abliterated-cyber-GLP-44-L1-44-a2.0",
   "slug": "msuiche-nanbeige4-2-3b-abliterated-cyber-glp-44-l1-44-a2-0",
   "author": "msuiche",
@@ -40,14 +40,19 @@
   "parameters_human": "135168",
   "storage_bytes": 1098711,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.2-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

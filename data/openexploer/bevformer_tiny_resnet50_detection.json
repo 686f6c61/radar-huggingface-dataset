@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenExploer/bevformer_tiny_resnet50_detection",
   "slug": "openexploer-bevformer_tiny_resnet50_detection",
   "author": "OpenExploer",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1363893012,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OpenExplorer/bevformer_tiny_resnet50_detection",
+  "renamed_at": "2026-11-14T03:53:44.038Z",
   "benchmarks": [],
   "sources": [
     {

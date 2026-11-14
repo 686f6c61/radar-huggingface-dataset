@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElementMerc/smollm2-1.7b-abliterated-GGUF",
   "slug": "elementmerc-smollm2-1-7b-abliterated-gguf",
   "author": "ElementMerc",
@@ -34,14 +34,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 4480344384,
   "storage_human": "4.5 GB",
+  "context_length": 8192,
   "base_model": "ElementMerc/smollm2-1.7b-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ElementMerc/smollm2-1.7b-uncensored-GGUF",
+  "renamed_at": "2026-11-11T02:42:11.616Z",
   "benchmarks": [],
   "sources": [
     {

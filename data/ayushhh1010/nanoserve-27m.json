@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayushhh1010/nanoserve-27m",
   "slug": "ayushhh1010-nanoserve-27m",
   "author": "ayushhh1010",
@@ -32,14 +32,19 @@
   "parameters_human": "26.7M",
   "storage_bytes": 106997648,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

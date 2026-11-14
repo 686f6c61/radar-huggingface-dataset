@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yinita/gigpo-debate-sync2-w3c20-0805-r2-step90",
   "slug": "yinita-gigpo-debate-sync2-w3c20-0805-r2-step90",
   "author": "yinita",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 136415205,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "yinita/ps4mas-sft-x5-single-ep3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hletrd/Qwen2.5-7B-Instruct-Tensix-BFP4-MLP",
   "slug": "hletrd-qwen2-5-7b-instruct-tensix-bfp4-mlp",
   "author": "hletrd",
@@ -44,14 +44,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15231271056,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Xylolabs/Qwen2.5-7B-Instruct-Tensix-BFP4-MLP",
+  "renamed_at": "2026-11-12T05:46:10.869Z",
   "benchmarks": [],
   "sources": []
 }

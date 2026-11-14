@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheBiggyBang/whisper-small-tunisian-derja-ct2",
   "slug": "thebiggybang-whisper-small-tunisian-derja-ct2",
   "author": "TheBiggyBang",
@@ -48,12 +48,17 @@
   "parameters_human": null,
   "storage_bytes": 244612629,
   "storage_human": "245 MB",
+  "context_length": null,
   "base_model": "TheBiggyBang/whisper-small-tunisian-derja",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

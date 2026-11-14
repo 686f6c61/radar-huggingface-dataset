@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gmartinezr/Shiba-Coder-27B-Max",
   "slug": "gmartinezr-shiba-coder-27b-max",
   "author": "Gmartinezr",
@@ -40,6 +40,7 @@
   "parameters_human": "159.4M",
   "storage_bytes": 976402815,
   "storage_human": "976 MB",
+  "context_length": null,
   "base_model": "prism-ml/Bonsai-27B-unpacked",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

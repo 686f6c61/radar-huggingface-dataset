@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fontlab/BananaMind-2-Nano-Chat-ternary",
   "slug": "fontlab-bananamind-2-nano-chat-ternary",
   "author": "fontlab",
@@ -35,14 +35,19 @@
   "parameters_human": "4.3M",
   "storage_bytes": 5232408,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": "BananaMind/BananaMind-2-Nano-Chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

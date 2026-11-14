@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NexVeridian/Qwen3.8-27B-8bit",
   "slug": "nexveridian-qwen3-8-27b-8bit",
   "author": "NexVeridian",
@@ -30,6 +30,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 28599709840,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

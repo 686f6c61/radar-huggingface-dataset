@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/GLM-5.3-Flash-ABLITERATED-NVFP4",
   "slug": "dealignai-glm-5-3-flash-abliterated-nvfp4",
   "author": "dealignai",
@@ -39,14 +39,19 @@
   "parameters_human": "165.50B",
   "storage_bytes": 255722849635,
   "storage_human": "255.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T07:41:34.080Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

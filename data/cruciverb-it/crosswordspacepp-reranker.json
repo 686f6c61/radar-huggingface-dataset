@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cruciverb-it/crosswordspacepp-reranker",
   "slug": "cruciverb-it-crosswordspacepp-reranker",
   "author": "cruciverb-it",
@@ -39,14 +39,19 @@
   "parameters_human": "110.7M",
   "storage_bytes": 442809340,
   "storage_human": "443 MB",
+  "context_length": null,
   "base_model": "nickprock/sentence-bert-base-italian-xxl-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Crossword Clue Answering (reranking bi-encoder top-100)",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3mic/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic-int4-ov",
   "slug": "3mic-parable-nanbeige4-2-3b-claude-fable-5-heretic-int4-ov",
   "author": "3mic",
@@ -47,14 +47,19 @@
   "parameters_human": null,
   "storage_bytes": 33615987,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "FedorFesarov/Parable-Nanbeige4.2-3B-Claude-Fable-5-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:44:15.929Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

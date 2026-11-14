@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mati83moni/PLLuM-12B-chat-2512-EXL3",
   "slug": "mati83moni-pllum-12b-chat-2512-exl3",
   "author": "Mati83moni",
@@ -44,14 +44,19 @@
   "parameters_human": "3.99B",
   "storage_bytes": 8005497586,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "CYFRAGOVPL/PLLuM-12B-chat-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

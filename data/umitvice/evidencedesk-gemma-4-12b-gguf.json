@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UmitVice/evidencedesk-gemma-4-12b-GGUF",
   "slug": "umitvice-evidencedesk-gemma-4-12b-gguf",
   "author": "UmitVice",
@@ -38,14 +38,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 6975879360,
   "storage_human": "7.0 GB",
+  "context_length": 262144,
   "base_model": "UmitVice/evidencedesk-gemma-4-12b-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

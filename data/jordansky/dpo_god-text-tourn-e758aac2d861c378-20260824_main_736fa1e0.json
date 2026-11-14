@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jordansky/dpo_god-text-tourn-e758aac2d861c378-20260824_main_736fa1e0",
   "slug": "jordansky-dpo_god-text-tourn-e758aac2d861c378-20260824_main_736fa1e0",
   "author": "Jordansky",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 1359448521,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "None",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:13:26.199Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

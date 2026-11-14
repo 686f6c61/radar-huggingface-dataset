@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moriipiri/chess-sft-qwen3-0.6b-streaming-lora",
   "slug": "moriipiri-chess-sft-qwen3-0-6b-streaming-lora",
   "author": "moriipiri",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 173299876,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

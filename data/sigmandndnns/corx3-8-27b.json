@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sigmandndnns/CorX3.8-27B",
   "slug": "sigmandndnns-corx3-8-27b",
   "author": "Sigmandndnns",
@@ -27,14 +27,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 61526513624,
   "storage_human": "61.5 GB",
+  "context_length": null,
   "base_model": "Sigmandndnns/CorX3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CorxLabs/CorX3.8-27B",
+  "renamed_at": "2026-11-12T04:02:37.086Z",
   "benchmarks": [],
   "sources": [
     {

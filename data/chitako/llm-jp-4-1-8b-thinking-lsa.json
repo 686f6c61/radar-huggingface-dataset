@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChiTako/llm-jp-4.1-8b-thinking-lsa",
   "slug": "chitako-llm-jp-4-1-8b-thinking-lsa",
   "author": "ChiTako",
@@ -39,14 +39,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 17394699876,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "llm-jp/llm-jp-4.1-8b-thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

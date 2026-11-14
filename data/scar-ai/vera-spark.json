@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scar-ai/vera-spark",
   "slug": "scar-ai-vera-spark",
   "author": "scar-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "638.5M",
   "storage_bytes": 7684198746,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "JevBench (easy)",

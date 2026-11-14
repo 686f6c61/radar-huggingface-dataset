@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-Fun-ASR-Nano-2512-gguf",
   "slug": "xix3r-voxix-fun-asr-nano-2512-gguf",
   "author": "xix3r",
@@ -42,14 +42,19 @@
   "parameters_human": "829.8M",
   "storage_bytes": 6996398272,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "FunAudioLLM/Fun-ASR-Nano-2512",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

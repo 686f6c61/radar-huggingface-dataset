@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NardoCreations/birefnet-lite-webgpu",
   "slug": "nardocreations-birefnet-lite-webgpu",
   "author": "NardoCreations",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 187983793,
   "storage_human": "188 MB",
+  "context_length": null,
   "base_model": "ZhengPeng7/BiRefNet_lite",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

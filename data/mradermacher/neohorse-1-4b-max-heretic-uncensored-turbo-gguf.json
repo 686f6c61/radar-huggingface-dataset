@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO-GGUF",
   "slug": "mradermacher-neohorse-1-4b-max-heretic-uncensored-turbo-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 38906338048,
   "storage_human": "38.9 GB",
+  "context_length": 262144,
   "base_model": "prithivMLmods/NeoHorse-1-4B-Max-Heretic-Uncensored-TURBO",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

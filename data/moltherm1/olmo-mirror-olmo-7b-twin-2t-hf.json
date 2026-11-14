@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moltherm1/olmo-mirror-olmo-7b-twin-2t-hf",
   "slug": "moltherm1-olmo-mirror-olmo-7b-twin-2t-hf",
   "author": "moltherm1",
@@ -30,14 +30,19 @@
   "parameters_human": "6.89B",
   "storage_bytes": 27552409200,
   "storage_human": "27.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

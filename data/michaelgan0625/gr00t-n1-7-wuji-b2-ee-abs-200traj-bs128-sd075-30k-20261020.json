@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MichaelGan0625/GR00T-N1.7-WUJI-B2-ee-abs-200traj-bs128-sd075-30k-20261020",
   "slug": "michaelgan0625-gr00t-n1-7-wuji-b2-ee-abs-200traj-bs128-sd075-30k-20261020",
   "author": "MichaelGan0625",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 92390339981,
   "storage_human": "92.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

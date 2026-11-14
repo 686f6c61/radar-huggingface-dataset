@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-GGUF",
   "slug": "mradermacher-cantonesellm-v2-0-30b-a3b-thinking-chat-vector-merged-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 208115947424,
   "storage_human": "208.1 GB",
+  "context_length": 40960,
   "base_model": "hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

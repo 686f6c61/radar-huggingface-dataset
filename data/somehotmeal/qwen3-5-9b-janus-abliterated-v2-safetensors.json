@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOMEHOTMEAL/Qwen3.5-9B-Janus-Abliterated-V2-Safetensors",
   "slug": "somehotmeal-qwen3-5-9b-janus-abliterated-v2-safetensors",
   "author": "SOMEHOTMEAL",
@@ -41,14 +41,19 @@
   "parameters_human": "9.16B",
   "storage_bytes": 62596698159,
   "storage_human": "62.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

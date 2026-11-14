@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Skyfall-31B-v4.2-abliterix-i1-GGUF",
   "slug": "mradermacher-skyfall-31b-v4-2-abliterix-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "31.35B",
   "storage_bytes": 335252329920,
   "storage_human": "335.3 GB",
+  "context_length": 131072,
   "base_model": "kawattaronin/Skyfall-31B-v4.2-abliterix",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Diffusion-Research-Lab/hrrr-precipitation-100x100-diffusion",
   "slug": "diffusion-research-lab-hrrr-precipitation-100x100-diffusion",
   "author": "Diffusion-Research-Lab",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 89917576,
   "storage_human": "90 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T06:34:04.512Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

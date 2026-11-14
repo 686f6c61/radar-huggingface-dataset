@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/KAT-Coder-V2.5-Dev-OptiQ-4bit-REAP-18B",
   "slug": "mlx-community-kat-coder-v2-5-dev-optiq-4bit-reap-18b",
   "author": "mlx-community",
@@ -37,6 +37,7 @@
   "parameters_human": "18.54B",
   "storage_bytes": 12275226706,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "mlx-community/KAT-Coder-V2.5-Dev-OptiQ-4bit",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

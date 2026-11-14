@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "philbert440/Qwen3.8-27B-Uncensored-Cyber-NVFP4",
   "slug": "philbert440-qwen3-8-27b-uncensored-cyber-nvfp4",
   "author": "philbert440",
@@ -36,14 +36,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 46157726429,
   "storage_human": "46.2 GB",
+  "context_length": null,
   "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

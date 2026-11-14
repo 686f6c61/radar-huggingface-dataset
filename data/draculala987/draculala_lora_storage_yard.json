@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "draculala987/draculala_lora_storage_yard",
   "slug": "draculala987-draculala_lora_storage_yard",
   "author": "draculala987",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 241035652864,
   "storage_human": "241.0 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw, Tongyi-MAI/Z-Image-Turbo, Wan-AI/Wan2.2-T2V-A14B, Wan-AI/Wan2.2-I2V-A14B, OnomaAIResearch/Illustrious-xl-early-release-v0, LyliaEngine/Pony_Diffusion_V6_XL",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

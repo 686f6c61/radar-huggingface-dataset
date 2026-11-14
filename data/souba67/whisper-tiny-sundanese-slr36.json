@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "souba67/whisper-tiny-sundanese-slr36",
   "slug": "souba67-whisper-tiny-sundanese-slr36",
   "author": "souba67",
@@ -32,6 +32,7 @@
   "parameters_human": "37.8M",
   "storage_bytes": 342531082,
   "storage_human": "343 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

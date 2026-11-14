@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nkkbr2/Nemotron-3-Ultra-550B-A55B-BF16-Abliterix-trial165",
   "slug": "nkkbr2-nemotron-3-ultra-550b-a55b-bf16-abliterix-trial165",
   "author": "nkkbr2",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:31:56.491Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

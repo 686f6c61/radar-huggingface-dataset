@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thiago-Reis-Porto/modernJabuticaBERT-Base-1k",
   "slug": "thiago-reis-porto-modernjabuticabert-base-1k",
   "author": "Thiago-Reis-Porto",
@@ -28,14 +28,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 596070136,
   "storage_human": "596 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

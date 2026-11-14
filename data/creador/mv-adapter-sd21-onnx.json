@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "creador/mv-adapter-sd21-onnx",
   "slug": "creador-mv-adapter-sd21-onnx",
   "author": "creador",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 4192442185,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "sd2-community/stable-diffusion-2-1-base, huanngzh/mv-adapter",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

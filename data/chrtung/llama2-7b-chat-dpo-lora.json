@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chrtung/llama2-7b-chat-dpo-lora",
   "slug": "chrtung-llama2-7b-chat-dpo-lora",
   "author": "chrtung",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 17299508,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

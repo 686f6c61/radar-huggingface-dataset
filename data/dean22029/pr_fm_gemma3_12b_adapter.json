@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dean22029/pr_fm_gemma3_12b_adapter",
   "slug": "dean22029-pr_fm_gemma3_12b_adapter",
   "author": "dean22029",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 300056066,
   "storage_human": "300 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-12b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

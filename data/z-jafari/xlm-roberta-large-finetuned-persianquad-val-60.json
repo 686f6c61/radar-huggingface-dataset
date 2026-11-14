@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Z-Jafari/xlm-roberta-large-finetuned-PersianQuAD-val-60",
   "slug": "z-jafari-xlm-roberta-large-finetuned-persianquad-val-60",
   "author": "Z-Jafari",
@@ -30,14 +30,19 @@
   "parameters_human": "558.8M",
   "storage_bytes": 35766725969,
   "storage_human": "35.8 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

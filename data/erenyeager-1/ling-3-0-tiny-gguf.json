@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erenyeager-1/Ling-3.0-tiny-GGUF",
   "slug": "erenyeager-1-ling-3-0-tiny-gguf",
   "author": "erenyeager-1",
@@ -28,14 +28,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 124348422592,
   "storage_human": "124.3 GB",
+  "context_length": 131072,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

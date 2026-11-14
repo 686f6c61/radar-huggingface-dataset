@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheShellMaster/Cypher-Base-Wan2.1-T2V-1.3B-GGUF",
   "slug": "theshellmaster-cypher-base-wan2-1-t2v-1-3b-gguf",
   "author": "TheShellMaster",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "samuelchristlie/Wan2.1-T2V-1.3B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:02:10.597Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

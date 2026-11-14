@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ansulev/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
   "slug": "ansulev-qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp",
   "author": "ansulev",
@@ -51,14 +51,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19330509072,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ansulev/Qwen3.5-9B-Defiant-Heretic-NEO-IMATRIX-MAX-MTP",
+  "renamed_at": "2026-11-14T05:05:14.699Z",
   "benchmarks": [],
   "sources": []
 }

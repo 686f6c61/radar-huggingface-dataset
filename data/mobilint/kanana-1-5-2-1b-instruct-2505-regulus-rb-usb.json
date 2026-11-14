@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mobilint/kanana-1.5-2.1b-instruct-2505-regulus-rb-usb",
   "slug": "mobilint-kanana-1-5-2-1b-instruct-2505-regulus-rb-usb",
   "author": "mobilint",
@@ -36,14 +36,19 @@
   "parameters_human": "229.8M",
   "storage_bytes": 4146185268,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-1.5-2.1b-instruct-2505",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

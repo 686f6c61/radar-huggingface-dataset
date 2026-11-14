@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tomzhu0225/Conjecture-1-4B",
   "slug": "tomzhu0225-conjecture-1-4b",
   "author": "tomzhu0225",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 130178232,
   "storage_human": "130 MB",
+  "context_length": null,
   "base_model": "internlm/Intern-Decision-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

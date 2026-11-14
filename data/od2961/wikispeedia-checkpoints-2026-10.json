@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "od2961/wikispeedia-checkpoints-2026-10",
   "slug": "od2961-wikispeedia-checkpoints-2026-10",
   "author": "od2961",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3725515746415,
   "storage_human": "3725.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hamlab-princeton/wikispeedia-checkpoints-2026-10",
+  "renamed_at": "2026-11-11T06:59:21.182Z",
   "benchmarks": [],
   "sources": [
     {

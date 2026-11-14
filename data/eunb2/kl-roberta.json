@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EunB2/KL-RoBERTa",
   "slug": "eunb2-kl-roberta",
   "author": "EunB2",
@@ -31,14 +31,19 @@
   "parameters_human": "113.4M",
   "storage_bytes": 453634720,
   "storage_human": "454 MB",
+  "context_length": null,
   "base_model": "klue/roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

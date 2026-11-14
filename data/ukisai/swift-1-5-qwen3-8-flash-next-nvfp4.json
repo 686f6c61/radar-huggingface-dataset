@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4",
   "slug": "ukisai-swift-1-5-qwen3-8-flash-next-nvfp4",
   "author": "ukisai",
@@ -43,14 +43,19 @@
   "parameters_human": "119.60B",
   "storage_bytes": 186454709032,
   "storage_human": "186.5 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

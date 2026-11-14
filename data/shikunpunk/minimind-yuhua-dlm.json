@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shikunpunk/MiniMind-YuHua-dLM",
   "slug": "shikunpunk-minimind-yuhua-dlm",
   "author": "shikunpunk",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 275370527,
   "storage_human": "275 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T07:29:33.625Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "citiusLTL/bdi-mpnet-base",
   "slug": "citiusltl-bdi-mpnet-base",
   "author": "citiusLTL",
@@ -40,14 +40,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 875935344,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-mpnet-base-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "citiusLTL/bdi-all-mpnet-base-v2",
+  "renamed_at": "2026-11-11T04:50:01.696Z",
   "benchmarks": [
     {
       "task": "Semantic Similarity",

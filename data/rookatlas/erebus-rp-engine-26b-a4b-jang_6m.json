@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rookatlas/Erebus-RP-Engine-26B-A4B-JANG_6M",
   "slug": "rookatlas-erebus-rp-engine-26b-a4b-jang_6m",
   "author": "rookatlas",
@@ -35,6 +35,7 @@
   "parameters_human": "25.26B",
   "storage_bytes": 41293146635,
   "storage_human": "41.3 GB",
+  "context_length": null,
   "base_model": "Naphula/Erebus-RP-Engine-26B-A4B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

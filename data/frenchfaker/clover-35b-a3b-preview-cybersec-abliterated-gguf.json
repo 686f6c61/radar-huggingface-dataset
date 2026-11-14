@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FRENCHFAKER/Clover-35B-A3B-Preview-cybersec-abliterated-GGUF",
   "slug": "frenchfaker-clover-35b-a3b-preview-cybersec-abliterated-gguf",
   "author": "FRENCHFAKER",
@@ -42,14 +42,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 21169726176,
   "storage_human": "21.2 GB",
+  "context_length": 131072,
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

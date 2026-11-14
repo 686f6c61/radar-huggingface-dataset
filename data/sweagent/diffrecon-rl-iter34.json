@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sweagent/diffrecon-rl-iter34",
   "slug": "sweagent-diffrecon-rl-iter34",
   "author": "sweagent",
@@ -26,14 +26,19 @@
   "parameters_human": "68.16B",
   "storage_bytes": 136345466518,
   "storage_human": "136.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T07:25:39.176Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

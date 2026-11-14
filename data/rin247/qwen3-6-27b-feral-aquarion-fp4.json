@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3.6-27B-Feral-Aquarion-FP4",
   "slug": "rin247-qwen3-6-27b-feral-aquarion-fp4",
   "author": "Rin247",
@@ -33,14 +33,19 @@
   "parameters_human": "14.72B",
   "storage_bytes": 18808306535,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T05:24:18.858Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

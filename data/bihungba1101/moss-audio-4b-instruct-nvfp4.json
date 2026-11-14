@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bihungba1101/MOSS-Audio-4B-Instruct-NVFP4",
   "slug": "bihungba1101-moss-audio-4b-instruct-nvfp4",
   "author": "bihungba1101",
@@ -36,14 +36,19 @@
   "parameters_human": "3.63B",
   "storage_bytes": 5222953544,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Audio-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:49:16.229Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

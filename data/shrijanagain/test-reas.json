@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shrijanagain/TEST-REAS",
   "slug": "shrijanagain-test-reas",
   "author": "Shrijanagain",
@@ -33,14 +33,19 @@
   "parameters_human": "19.19B",
   "storage_bytes": 38702560600,
   "storage_human": "38.7 GB",
+  "context_length": null,
   "base_model": "sKT-Ai-Labs/SPEED-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:21:39.404Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

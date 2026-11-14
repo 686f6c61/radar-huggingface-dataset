@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Capicua25x/Ornith-1.0-35B-MXFP4-Vision-MTP",
   "slug": "capicua25x-ornith-1-0-35b-mxfp4-vision-mtp",
   "author": "Capicua25x",
@@ -46,14 +46,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 23136559509,
   "storage_human": "23.1 GB",
+  "context_length": null,
   "base_model": "deepreinforce-ai/Ornith-1.0-35B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/LFM2.5-2.6B-TauBanking-SFT-01-GGUF",
   "slug": "tinyopsec-lfm2-5-2-6b-taubanking-sft-01-gguf",
   "author": "tinyopsec",
@@ -32,14 +32,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 26290422144,
   "storage_human": "26.3 GB",
+  "context_length": 131072,
   "base_model": "lugman-madhiai/LFM2.5-2.6B-TauBanking-SFT-01",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GrowBitLabs/zehn-135m",
   "slug": "growbitlabs-zehn-135m",
   "author": "GrowBitLabs",
@@ -35,6 +35,7 @@
   "parameters_human": "147.6M",
   "storage_bytes": 835962835,
   "storage_human": "836 MB",
+  "context_length": 330000,
   "base_model": null,
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

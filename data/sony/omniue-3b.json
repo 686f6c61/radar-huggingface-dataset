@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sony/OmniUE-3B",
   "slug": "sony-omniue-3b",
   "author": "Sony",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 11380910781,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

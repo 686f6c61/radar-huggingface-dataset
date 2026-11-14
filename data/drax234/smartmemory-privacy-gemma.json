@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drax234/smartmemory-privacy-gemma",
   "slug": "drax234-smartmemory-privacy-gemma",
   "author": "drax234",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3693628800,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

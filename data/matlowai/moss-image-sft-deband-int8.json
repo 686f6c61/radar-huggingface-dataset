@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MATLOWAI/MOSS-Image-SFT-DeBand-int8",
   "slug": "matlowai-moss-image-sft-deband-int8",
   "author": "MATLOWAI",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 16247769349,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT, OpenMOSS-Team/MOSS-Image-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

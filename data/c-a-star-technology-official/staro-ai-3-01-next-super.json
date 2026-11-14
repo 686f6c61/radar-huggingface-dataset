@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super",
   "slug": "c-a-star-technology-official-staro-ai-3-01-next-super",
   "author": "C-a-Star-Technology-Official",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "C-a-Star-Official-1/StarO-AI-2.69-Super",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

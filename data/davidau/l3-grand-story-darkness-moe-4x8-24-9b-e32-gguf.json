@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/L3-Grand-Story-Darkness-MOE-4X8-24.9B-e32-GGUF",
   "slug": "davidau-l3-grand-story-darkness-moe-4x8-24-9b-e32-gguf",
   "author": "DavidAU",
@@ -70,14 +70,19 @@
   "parameters_human": "24.94B",
   "storage_bytes": 335193889600,
   "storage_human": "335.2 GB",
+  "context_length": 8192,
   "base_model": "Sao10K/L3-8B-Stheno-v3.2, NeverSleep/Llama-3-Lumimaid-8B-v0.1-OAS, Hastagaras/Jamet-8B-L3-MK.V-Blackroot, nbeerbower/llama-3-gutenberg-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

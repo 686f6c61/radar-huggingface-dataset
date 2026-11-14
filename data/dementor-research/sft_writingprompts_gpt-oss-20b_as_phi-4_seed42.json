@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dementor-research/sft_writingprompts_gpt-oss-20b_as_phi-4_seed42",
   "slug": "dementor-research-sft_writingprompts_gpt-oss-20b_as_phi-4_seed42",
   "author": "dementor-research",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 965742648,
   "storage_human": "966 MB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

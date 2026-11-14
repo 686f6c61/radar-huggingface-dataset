@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuofang/Qwen3.5-9B-Distill-Bradbury-F451-ArceeFusion-Uncensored-GGUF",
   "slug": "nuofang-qwen3-5-9b-distill-bradbury-f451-arceefusion-uncensored-gguf",
   "author": "nuofang",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "nuofang/Qwen3.5-9B-Distill-Bradbury-F451-ArceeFusion-Uncensored",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:42:53.280Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

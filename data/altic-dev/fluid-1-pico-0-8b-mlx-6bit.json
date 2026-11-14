@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "altic-dev/Fluid-1-Pico-0.8B-MLX-6bit",
   "slug": "altic-dev-fluid-1-pico-0-8b-mlx-6bit",
   "author": "altic-dev",
@@ -24,6 +24,7 @@
   "parameters_human": "796.5M",
   "storage_bytes": 2249648559,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "mlx",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

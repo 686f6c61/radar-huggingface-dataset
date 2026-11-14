@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mkuriusky1155/Lama-manga-cleaner",
   "slug": "mkuriusky1155-lama-manga-cleaner",
   "author": "Mkuriusky1155",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 211037360,
   "storage_human": "211 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "manga-cleaner-dev/manga-cleaner-models",
+  "renamed_at": "2026-11-11T03:20:23.584Z",
   "benchmarks": [],
   "sources": []
 }

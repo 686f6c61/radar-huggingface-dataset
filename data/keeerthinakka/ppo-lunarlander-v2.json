@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keeerthinakka/ppo-LunarLander-v2",
   "slug": "keeerthinakka-ppo-lunarlander-v2",
   "author": "keeerthinakka",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 643457,
   "storage_human": "643457 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "keerthinakka/ppo-LunarLander-v2",
+  "renamed_at": "2026-11-14T06:41:24.302Z",
   "benchmarks": [],
   "sources": [
     {

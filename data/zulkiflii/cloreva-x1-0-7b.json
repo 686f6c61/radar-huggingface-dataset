@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zulkiflii/Cloreva-X1-0.7B",
   "slug": "zulkiflii-cloreva-x1-0-7b",
   "author": "Zulkiflii",
@@ -24,14 +24,19 @@
   "parameters_human": "723.7M",
   "storage_bytes": 36130325399,
   "storage_human": "36.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T04:14:37.726Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

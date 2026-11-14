@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nomeda-lab/qarar",
   "slug": "nomeda-lab-qarar",
   "author": "nomeda-lab",
@@ -39,14 +39,19 @@
   "parameters_human": "148.0M",
   "storage_bytes": 591979216,
   "storage_human": "592 MB",
+  "context_length": null,
   "base_model": "silma-ai/silma-embedding-matryoshka-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

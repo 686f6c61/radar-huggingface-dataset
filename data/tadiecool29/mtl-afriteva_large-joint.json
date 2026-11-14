@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/MTL-afriteva_large-joint",
   "slug": "tadiecool29-mtl-afriteva_large-joint",
   "author": "tadiecool29",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 18920721,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": "castorini/afriteva_large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T03:55:13.303Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

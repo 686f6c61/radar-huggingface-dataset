@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jethr/sd-class-butterflies-32",
   "slug": "jethr-sd-class-butterflies-32",
   "author": "Jethr",
@@ -28,6 +28,7 @@
   "parameters_human": "18.5M",
   "storage_bytes": 74185252,
   "storage_human": "74 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

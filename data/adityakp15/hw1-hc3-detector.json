@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adityakp15/hw1-hc3-detector",
   "slug": "adityakp15-hw1-hc3-detector",
   "author": "adityakp15",
@@ -23,14 +23,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 181735904,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

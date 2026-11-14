@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tunahanf/gemma-4-12b-it-medlaw-tr-FP16",
   "slug": "tunahanf-gemma-4-12b-it-medlaw-tr-fp16",
   "author": "tunahanf",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 32169626,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-12b-it",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T06:39:11.482Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

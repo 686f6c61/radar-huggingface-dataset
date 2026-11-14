@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kwondw/bert-base-uncased-trec-covid-tsdae-tiny",
   "slug": "kwondw-bert-base-uncased-trec-covid-tsdae-tiny",
   "author": "kwondw",
@@ -36,14 +36,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

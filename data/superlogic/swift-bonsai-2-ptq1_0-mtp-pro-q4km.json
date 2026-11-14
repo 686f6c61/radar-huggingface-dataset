@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SuperLogic/Swift-Bonsai-2-PTQ1_0-mtp-pro-q4km",
   "slug": "superlogic-swift-bonsai-2-ptq1_0-mtp-pro-q4km",
   "author": "SuperLogic",
@@ -41,14 +41,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 13054580800,
   "storage_human": "13.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, prism-ml/Ternary-Bonsai-2-27B-gguf, ukisai/Swift-Bonsai-2-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SuperLogic/Qwen3.8-27B-Flash-MTP-GGUF",
+  "renamed_at": "2026-11-11T03:57:46.463Z",
   "benchmarks": [],
   "sources": []
 }

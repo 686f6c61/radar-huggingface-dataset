@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khoavucao2511/so101_vla_jepa_LoRA_Qwen_WMon_chunk16_14_09_26_v1",
   "slug": "khoavucao2511-so101_vla_jepa_lora_qwen_wmon_chunk16_14_09_26_v1",
   "author": "khoavucao2511",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1257039320,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "khoavucao2511/so101_vla_jepa_LoRA_Qwen_WMon_chunk32_14_09_26_v1",
+  "renamed_at": "2026-11-14T06:43:04.103Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/S5-nano-uncensored-GGUF",
   "slug": "mradermacher-s5-nano-uncensored-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 41004118912,
   "storage_human": "41.0 GB",
+  "context_length": 262144,
   "base_model": "Guilherme34/S5-nano-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

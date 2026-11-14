@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haisassan/toxic_comments_distilbert_v3",
   "slug": "haisassan-toxic_comments_distilbert_v3",
   "author": "haisassan",
@@ -28,14 +28,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 267832560,
   "storage_human": "268 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T05:48:04.403Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

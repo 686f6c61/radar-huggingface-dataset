@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wilson-charles-e-85/Echo-Instroder-v2.2",
   "slug": "wilson-charles-e-85-echo-instroder-v2-2",
   "author": "wilson-charles-e-85",
@@ -28,6 +28,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 141188256528,
   "storage_human": "141.2 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeltaILab/Qwen3-4B-MATH-SFT-full-trajectory",
   "slug": "deltailab-qwen3-4b-math-sft-full-trajectory",
   "author": "DeltaILab",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 142624524017,
   "storage_human": "142.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

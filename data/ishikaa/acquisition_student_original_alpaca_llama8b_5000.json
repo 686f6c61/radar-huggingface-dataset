@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishikaa/acquisition_student_original_alpaca_llama8b_5000",
   "slug": "ishikaa-acquisition_student_original_alpaca_llama8b_5000",
   "author": "ishikaa",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766296,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:22:38.604Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

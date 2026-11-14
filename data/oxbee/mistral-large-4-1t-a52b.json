@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OxBee/Mistral-Large-4-1T-A52B",
   "slug": "oxbee-mistral-large-4-1t-a52b",
   "author": "OxBee",
@@ -110,12 +110,17 @@
   "parameters_human": null,
   "storage_bytes": 1060608252777,
   "storage_human": "1060.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

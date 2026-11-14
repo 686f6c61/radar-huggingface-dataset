@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cooler8/yejin-korean-3b-v2-dpo-gguf",
   "slug": "cooler8-yejin-korean-3b-v2-dpo-gguf",
   "author": "cooler8",
@@ -34,14 +34,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 5380137344,
   "storage_human": "5.4 GB",
+  "context_length": 4096,
   "base_model": "cooler8/yejin-korean-3b-v2-dpo",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

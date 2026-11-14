@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/Qwen3.8-2.4T-A95B-GGUF",
   "slug": "vcruz305-qwen3-8-2-4t-a95b-gguf",
   "author": "vcruz305",
@@ -39,14 +39,19 @@
   "parameters_human": "1234.39B",
   "storage_bytes": 685238182848,
   "storage_human": "685.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-2.4T-A95B-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T12:42:00.392Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

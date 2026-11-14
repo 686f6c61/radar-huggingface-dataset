@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avlp12/GLM-5.3-Flash-Alis-MLX-6bit",
   "slug": "avlp12-glm-5-3-flash-alis-mlx-6bit",
   "author": "avlp12",
@@ -35,6 +35,7 @@
   "parameters_human": "59.74B",
   "storage_bytes": 257397021664,
   "storage_human": "257.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

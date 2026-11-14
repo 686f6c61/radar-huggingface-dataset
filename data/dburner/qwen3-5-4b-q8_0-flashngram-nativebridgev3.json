@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dburner/Qwen3.5-4B-Q8_0-FlashNgram-NativeBridgeV3",
   "slug": "dburner-qwen3-5-4b-q8_0-flashngram-nativebridgev3",
   "author": "dburner",
@@ -37,14 +37,19 @@
   "parameters_human": "55.57B",
   "storage_bytes": 33502676740,
   "storage_human": "33.5 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

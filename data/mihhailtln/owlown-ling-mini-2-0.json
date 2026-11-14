@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MihhailTLN/owlown-ling-mini-2.0",
   "slug": "mihhailtln-owlown-ling-mini-2-0",
   "author": "MihhailTLN",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 9156194593,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-mini-2.0",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MihhailTLN/ownowl-ling-mini-2.0",
+  "renamed_at": "2026-11-12T03:28:28.201Z",
   "benchmarks": [],
   "sources": [
     {

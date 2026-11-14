@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mavis-ai/Qwen3.8-27B-Q3T",
   "slug": "mavis-ai-qwen3-8-27b-q3t",
   "author": "mavis-ai",
@@ -38,14 +38,19 @@
   "parameters_human": "13.46B",
   "storage_bytes": 18857427521,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

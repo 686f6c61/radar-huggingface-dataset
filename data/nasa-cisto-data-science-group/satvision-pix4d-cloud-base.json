@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nasa-cisto-data-science-group/satvision-pix4d-cloud-base",
   "slug": "nasa-cisto-data-science-group-satvision-pix4d-cloud-base",
   "author": "nasa-cisto-data-science-group",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 676051821,
   "storage_human": "676 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

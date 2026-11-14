@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE",
   "slug": "claidler-qwen3-8-flash-next-ablit-nvfp4-qad-lmhead-nvfp4-gdnmse",
   "author": "claidler",
@@ -30,14 +30,19 @@
   "parameters_human": "92.43B",
   "storage_bytes": 105466747678,
   "storage_human": "105.5 GB",
+  "context_length": null,
   "base_model": "claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

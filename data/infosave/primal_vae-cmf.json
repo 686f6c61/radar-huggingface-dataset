@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/primal_vae-cmf",
   "slug": "infosave-primal_vae-cmf",
   "author": "infosave",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 321892352,
   "storage_human": "322 MB",
+  "context_length": null,
   "base_model": "ostris/primal_vae",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

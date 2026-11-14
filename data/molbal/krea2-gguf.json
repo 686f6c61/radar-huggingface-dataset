@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "molbal/krea2-gguf",
   "slug": "molbal-krea2-gguf",
   "author": "molbal",
@@ -33,14 +33,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 126340136864,
   "storage_human": "126.3 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

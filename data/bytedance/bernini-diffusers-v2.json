@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ByteDance/Bernini-Diffusers-v2",
   "slug": "bytedance-bernini-diffusers-v2",
   "author": "ByteDance",
@@ -27,6 +27,7 @@
   "parameters_human": null,
   "storage_bytes": 192384211967,
   "storage_human": "192.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

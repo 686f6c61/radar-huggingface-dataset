@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-parakeet-tdt_ctc-110m-gguf",
   "slug": "xix3r-voxix-parakeet-tdt_ctc-110m-gguf",
   "author": "xix3r",
@@ -39,14 +39,19 @@
   "parameters_human": "114.1M",
   "storage_bytes": 135373280,
   "storage_human": "135 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt_ctc-110m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

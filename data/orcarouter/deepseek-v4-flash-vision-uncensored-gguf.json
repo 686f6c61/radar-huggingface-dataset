@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored-GGUF",
   "slug": "orcarouter-deepseek-v4-flash-vision-uncensored-gguf",
   "author": "orcarouter",
@@ -43,14 +43,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 156378346880,
   "storage_human": "156.4 GB",
+  "context_length": 1048576,
   "base_model": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

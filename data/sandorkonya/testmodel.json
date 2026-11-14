@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sandorkonya/testmodel",
   "slug": "sandorkonya-testmodel",
   "author": "sandorkonya",
@@ -23,6 +23,7 @@
   "parameters_human": null,
   "storage_bytes": 15835787616,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T08:33:11.285Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

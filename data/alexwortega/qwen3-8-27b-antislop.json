@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexWortega/Qwen3.8-27B-antislop",
   "slug": "alexwortega-qwen3-8-27b-antislop",
   "author": "AlexWortega",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 180982221922,
   "storage_human": "181.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rawmodels/Qwen3.8-27B-antislop",
+  "renamed_at": "2026-11-11T02:15:11.941Z",
   "benchmarks": [],
   "sources": []
 }

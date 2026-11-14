@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ba2han/math-test-maxx",
   "slug": "ba2han-math-test-maxx",
   "author": "Ba2han",
@@ -35,14 +35,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183349158,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T10:45:08.118Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

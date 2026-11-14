@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "americansquid/FunctionGemma-HermesAgent-TitleGenerator",
   "slug": "americansquid-functiongemma-hermesagent-titlegenerator",
   "author": "americansquid",
@@ -23,14 +23,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 3318873395,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:13:21.911Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deeprcurs/IKNN-Rl1-A1",
   "slug": "deeprcurs-iknn-rl1-a1",
   "author": "deeprcurs",
@@ -47,14 +47,19 @@
   "parameters_human": "5.3M",
   "storage_bytes": 109550068,
   "storage_human": "110 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Justbackup/Phi4-abliterated",
   "slug": "justbackup-phi4-abliterated",
   "author": "Justbackup",
@@ -24,14 +24,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 29319501015,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

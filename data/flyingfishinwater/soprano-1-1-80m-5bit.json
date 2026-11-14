@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/Soprano-1.1-80M-5bit",
   "slug": "flyingfishinwater-soprano-1-1-80m-5bit",
   "author": "flyingfishinwater",
@@ -33,6 +33,7 @@
   "parameters_human": "110.1M",
   "storage_bytes": 79176730,
   "storage_human": "79 MB",
+  "context_length": null,
   "base_model": "ekwek/Soprano-1.1-80M",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:34.147Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

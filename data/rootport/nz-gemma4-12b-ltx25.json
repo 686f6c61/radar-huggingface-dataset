@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rootport/Nz-Gemma4-12B-LTX25",
   "slug": "rootport-nz-gemma4-12b-ltx25",
   "author": "Rootport",
@@ -36,14 +36,19 @@
   "parameters_human": "13.15B",
   "storage_bytes": 9231374624,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

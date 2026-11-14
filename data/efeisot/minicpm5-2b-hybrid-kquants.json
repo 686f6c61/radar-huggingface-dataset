@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "efeisot/minicpm5-2b-hybrid-kquants",
   "slug": "efeisot-minicpm5-2b-hybrid-kquants",
   "author": "efeisot",
@@ -39,14 +39,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 3502727456,
   "storage_human": "3.5 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

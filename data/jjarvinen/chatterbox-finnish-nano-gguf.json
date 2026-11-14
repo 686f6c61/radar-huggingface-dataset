@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JJarvinen/chatterbox-finnish-nano-GGUF",
   "slug": "jjarvinen-chatterbox-finnish-nano-gguf",
   "author": "JJarvinen",
@@ -34,14 +34,19 @@
   "parameters_human": "180.3M",
   "storage_bytes": 1104301344,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "JJarvinen/chatterbox-finnish-nano",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

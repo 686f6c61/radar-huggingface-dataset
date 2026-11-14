@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Moleys/hirashiba-mt-4e8d-512-zh2vi",
   "slug": "moleys-hirashiba-mt-4e8d-512-zh2vi",
   "author": "Moleys",
@@ -38,14 +38,19 @@
   "parameters_human": "71.7M",
   "storage_bytes": 286686957,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:39:18.548Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

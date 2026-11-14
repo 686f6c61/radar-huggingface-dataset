@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vanes430/Anima-Turbo-V1.1-GGUF",
   "slug": "vanes430-anima-turbo-v1-1-gguf",
   "author": "vanes430",
@@ -40,14 +40,19 @@
   "parameters_human": "2.09B",
   "storage_bytes": 29369026302,
   "storage_human": "29.4 GB",
+  "context_length": null,
   "base_model": "circlestone-labs/Anima",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

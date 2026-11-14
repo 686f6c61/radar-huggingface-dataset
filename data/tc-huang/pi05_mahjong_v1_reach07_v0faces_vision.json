@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tc-huang/pi05_mahjong_v1_reach07_v0faces_vision",
   "slug": "tc-huang-pi05_mahjong_v1_reach07_v0faces_vision",
   "author": "tc-huang",
@@ -33,14 +33,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 33147535384,
   "storage_human": "33.1 GB",
+  "context_length": null,
   "base_model": "tc-huang/pi05_mahjong_v1_reach07_v0faces",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

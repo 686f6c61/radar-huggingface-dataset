@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gowdavidwan2003/ARACHNE-FOUNDATION-50B",
   "slug": "gowdavidwan2003-arachne-foundation-50b",
   "author": "gowdavidwan2003",
@@ -35,6 +35,7 @@
   "parameters_human": "50.26B",
   "storage_bytes": 201033836336,
   "storage_human": "201.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

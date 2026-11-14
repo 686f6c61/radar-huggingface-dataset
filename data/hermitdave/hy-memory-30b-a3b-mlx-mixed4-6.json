@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/Hy-Memory-30B-A3B-MLX-Mixed4-6",
   "slug": "hermitdave-hy-memory-30b-a3b-mlx-mixed4-6",
   "author": "hermitdave",
@@ -40,6 +40,7 @@
   "parameters_human": "30.06B",
   "storage_bytes": 18150313942,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "tencent/Hy-Memory-30B-A3B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

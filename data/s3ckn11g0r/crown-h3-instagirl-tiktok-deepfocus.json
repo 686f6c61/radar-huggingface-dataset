@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "S3ckn11g0r/CROWN-H3-InstaGirl-TikTok-DeepFocus",
   "slug": "s3ckn11g0r-crown-h3-instagirl-tiktok-deepfocus",
   "author": "S3ckn11g0r",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 961710334,
   "storage_human": "962 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

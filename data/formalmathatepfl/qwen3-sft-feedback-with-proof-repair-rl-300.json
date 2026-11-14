@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "formalmathatepfl/qwen3-sft-feedback-with-proof-repair-rl-300",
   "slug": "formalmathatepfl-qwen3-sft-feedback-with-proof-repair-rl-300",
   "author": "formalmathatepfl",
@@ -23,14 +23,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939486,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T03:24:24.535Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

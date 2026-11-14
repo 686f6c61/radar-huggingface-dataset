@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jancirnodziewiaty/Muse-Glimmer-30B-heretic-oQ4e",
   "slug": "jancirnodziewiaty-muse-glimmer-30b-heretic-oq4e",
   "author": "jancirnodziewiaty",
@@ -29,6 +29,7 @@
   "parameters_human": "29.78B",
   "storage_bytes": 20284055086,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "darkc0de/Muse-Glimmer-30B-heretic",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/GLM-5.3-Flash-EXL3-K2-spark-vllm",
   "slug": "vcruz305-glm-5-3-flash-exl3-k2-spark-vllm",
   "author": "vcruz305",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 576545622,
   "storage_human": "577 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T08:37:32.848Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

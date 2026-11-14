@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ManniX-ITA/opencoti-llamafile",
   "slug": "mannix-ita-opencoti-llamafile",
   "author": "ManniX-ITA",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 218118980498,
   "storage_human": "218.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/kambo-v1-sql-code-DynQuant-3bit",
   "slug": "vikrampal-kambo-v1-sql-code-dynquant-3bit",
   "author": "VikramPal",
@@ -42,14 +42,19 @@
   "parameters_human": "185.2M",
   "storage_bytes": 698442516,
   "storage_human": "698 MB",
+  "context_length": null,
   "base_model": "VikramPal/kambo-v1-sql-code",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

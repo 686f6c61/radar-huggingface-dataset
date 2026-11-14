@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakeatx/ream-288-rank32-3m-adapter",
   "slug": "jakeatx-ream-288-rank32-3m-adapter",
   "author": "jakeatx",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 10100176982,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-mixed-nvfp4-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

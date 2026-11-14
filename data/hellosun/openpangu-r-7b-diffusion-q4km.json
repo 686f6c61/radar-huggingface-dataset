@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HelloSun/openPangu-R-7B-Diffusion-Q4KM",
   "slug": "hellosun-openpangu-r-7b-diffusion-q4km",
   "author": "HelloSun",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 9866509440,
   "storage_human": "9.9 GB",
+  "context_length": 32768,
   "base_model": "openpangu/openPangu-R-7B-Diffusion",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

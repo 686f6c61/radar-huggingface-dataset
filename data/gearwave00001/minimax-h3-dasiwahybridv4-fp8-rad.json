@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gearwave00001/MiniMax-H3-dasiwaHybridV4-fp8-rad",
   "slug": "gearwave00001-minimax-h3-dasiwahybridv4-fp8-rad",
   "author": "gearwave00001",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 53763178496,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, LBH-123-AI/Minimax_h3_latent_Upscaler",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

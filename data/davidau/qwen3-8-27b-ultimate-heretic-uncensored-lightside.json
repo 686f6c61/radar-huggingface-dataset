@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Lightside",
   "slug": "davidau-qwen3-8-27b-ultimate-heretic-uncensored-lightside",
   "author": "DavidAU",
@@ -68,14 +68,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575816528,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T02:36:51.580Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApocalypseParty/G4-31B-c50xOPT-late60",
   "slug": "apocalypseparty-g4-31b-c50xopt-late60",
   "author": "ApocalypseParty",
@@ -34,14 +34,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578506090,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "ApocalypseParty/G4-mmv2-31B-Style-c50, ApocalypseParty/G4-31B-M_OPT31",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

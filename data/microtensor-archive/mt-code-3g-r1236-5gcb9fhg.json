@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "microtensor-archive/mt-code-3g-r1236-5GCb9fhg",
   "slug": "microtensor-archive-mt-code-3g-r1236-5gcb9fhg",
   "author": "microtensor-archive",
@@ -30,14 +30,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 495106784,
   "storage_human": "495 MB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

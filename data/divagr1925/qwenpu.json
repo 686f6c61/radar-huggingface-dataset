@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divagr1925/QwenPU",
   "slug": "divagr1925-qwenpu",
   "author": "divagr1925",
@@ -39,14 +39,19 @@
   "parameters_human": "13.36B",
   "storage_bytes": 26910500156,
   "storage_human": "26.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

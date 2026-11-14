@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/quantumgpt-124m-v3-GGUF",
   "slug": "mradermacher-quantumgpt-124m-v3-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "124.1M",
   "storage_bytes": 1245393792,
   "storage_human": "1.2 GB",
+  "context_length": 512,
   "base_model": "merileijona/quantumgpt-124m-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

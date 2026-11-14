@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Papajams/aya-expanse-8b-control-lora",
   "slug": "papajams-aya-expanse-8b-control-lora",
   "author": "Papajams",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 74684454,
   "storage_human": "75 MB",
+  "context_length": null,
   "base_model": "CohereLabs/aya-expanse-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

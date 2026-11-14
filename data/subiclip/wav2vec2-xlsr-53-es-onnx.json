@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "subiclip/wav2vec2-xlsr-53-es-onnx",
   "slug": "subiclip-wav2vec2-xlsr-53-es-onnx",
   "author": "subiclip",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 631520031,
   "storage_human": "632 MB",
+  "context_length": null,
   "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-spanish",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

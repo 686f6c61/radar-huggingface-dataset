@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic-merged",
   "slug": "wnfldchen-gemma-4-31b-it-qat-q4_0-unquantized-heretic-merged",
   "author": "wnfldchen",
@@ -39,14 +39,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578506074,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrBlackRaben/lumiera-art-k2",
   "slug": "mrblackraben-lumiera-art-k2",
   "author": "MrBlackRaben",
@@ -24,6 +24,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 35678067046,
   "storage_human": "35.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

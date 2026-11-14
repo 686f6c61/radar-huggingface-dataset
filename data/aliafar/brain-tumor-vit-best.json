@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AliAFar/brain-tumor-vit-best",
   "slug": "aliafar-brain-tumor-vit-best",
   "author": "AliAFar",
@@ -26,12 +26,17 @@
   "parameters_human": "86.6M",
   "storage_bytes": 1039294735,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

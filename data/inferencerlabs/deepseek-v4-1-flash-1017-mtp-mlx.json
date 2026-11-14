@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/DeepSeek-V4.1-Flash-1017-MTP-MLX",
   "slug": "inferencerlabs-deepseek-v4-1-flash-1017-mtp-mlx",
   "author": "inferencerlabs",
@@ -31,6 +31,7 @@
   "parameters_human": "14.23B",
   "storage_bytes": 8086285086,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

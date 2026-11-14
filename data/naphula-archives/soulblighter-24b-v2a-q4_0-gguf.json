@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naphula-Archives/Soulblighter-24B-v2a-Q4_0-GGUF",
   "slug": "naphula-archives-soulblighter-24b-v2a-q4_0-gguf",
   "author": "Naphula-Archives",
@@ -24,14 +24,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 13441801312,
   "storage_human": "13.4 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

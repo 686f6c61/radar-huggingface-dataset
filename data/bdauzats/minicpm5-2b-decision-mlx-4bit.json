@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bdauzats/minicpm5-2b-decision-mlx-4bit",
   "slug": "bdauzats-minicpm5-2b-decision-mlx-4bit",
   "author": "bdauzats",
@@ -35,6 +35,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 4260697722,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "usejul/jul-decision-minicpm5-2b-mlx-4bit",
+  "renamed_at": "2026-11-11T04:40:21.395Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ruisv/bllm-pi05-libero-224-s100p",
   "slug": "ruisv-bllm-pi05-libero-224-s100p",
   "author": "ruisv",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 5673477269,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "physical-intelligence/pi05_libero",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

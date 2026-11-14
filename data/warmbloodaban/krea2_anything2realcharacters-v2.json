@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WarmBloodAban/Krea2_Anything2RealCharacters-V2",
   "slug": "warmbloodaban-krea2_anything2realcharacters-v2",
   "author": "WarmBloodAban",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 52853159408,
   "storage_human": "52.9 GB",
+  "context_length": null,
   "base_model": "Krea2_Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "WarmBloodAban/Krea2_Anything2RealCharacters",
+  "renamed_at": "2026-11-11T04:10:13.096Z",
   "benchmarks": [],
   "sources": [
     {

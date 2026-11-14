@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibm-granite/granite-docling-258M",
   "slug": "ibm-granite-granite-docling-258m",
   "author": "ibm-granite",
@@ -52,14 +52,19 @@
   "parameters_human": "257.5M",
   "storage_bytes": 3045691426,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

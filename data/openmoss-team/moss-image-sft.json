@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMOSS-Team/MOSS-Image-SFT",
   "slug": "openmoss-team-moss-image-sft",
   "author": "OpenMOSS-Team",
@@ -28,13 +28,14 @@
     "diffusers:MOSSImagePipeline",
     "region:us"
   ],
-  "likes": 957,
+  "likes": 960,
   "downloads_30d": 23809,
-  "trending_score": 27,
+  "trending_score": 28,
   "parameters": 5082308624,
   "parameters_human": "5.08B",
   "storage_bytes": 27228981820,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

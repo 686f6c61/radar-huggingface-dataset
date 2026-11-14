@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minas2025/Gemma-4-E2B-Coder-Uncensored",
   "slug": "minas2025-gemma-4-e2b-coder-uncensored",
   "author": "minas2025",
@@ -49,14 +49,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 4954593152,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": "llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Code Generation",

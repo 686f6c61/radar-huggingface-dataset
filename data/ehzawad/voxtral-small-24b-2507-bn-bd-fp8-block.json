@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ehzawad/Voxtral-Small-24B-2507-bn-BD-FP8-Block",
   "slug": "ehzawad-voxtral-small-24b-2507-bn-bd-fp8-block",
   "author": "ehzawad",
@@ -37,14 +37,19 @@
   "parameters_human": "24.26B",
   "storage_bytes": 52608188862,
   "storage_human": "52.6 GB",
+  "context_length": null,
   "base_model": "ehzawad/Voxtral-Small-24B-2507-bn-BD",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

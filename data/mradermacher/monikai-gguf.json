@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/monikAI-GGUF",
   "slug": "mradermacher-monikai-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "354.8M",
   "storage_bytes": 3368461056,
   "storage_human": "3.4 GB",
+  "context_length": 1024,
   "base_model": "Kryptone/monikAI",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

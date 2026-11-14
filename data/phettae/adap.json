@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Phettae/Adap",
   "slug": "phettae-adap",
   "author": "Phettae",
@@ -27,14 +27,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1198183328,
   "storage_human": "1.2 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Phettae/Qwen3.0_6B",
+  "renamed_at": "2026-11-11T03:32:46.241Z",
   "benchmarks": [],
   "sources": [
     {

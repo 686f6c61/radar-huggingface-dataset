@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrakarnJ/q-Taxi-v4",
   "slug": "prakarnj-q-taxi-v4",
   "author": "PrakarnJ",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 148396,
   "storage_human": "148396 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

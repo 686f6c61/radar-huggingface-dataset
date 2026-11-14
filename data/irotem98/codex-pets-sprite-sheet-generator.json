@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "irotem98/Codex-Pets-Sprite-Sheet-Generator",
   "slug": "irotem98-codex-pets-sprite-sheet-generator",
   "author": "irotem98",
@@ -35,6 +35,7 @@
   "parameters_human": null,
   "storage_bytes": 381303128,
   "storage_human": "381 MB",
+  "context_length": null,
   "base_model": "Boogu/Boogu-Image-0.1-Edit",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

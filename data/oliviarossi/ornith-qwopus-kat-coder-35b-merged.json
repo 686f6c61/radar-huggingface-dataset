@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/Ornith-Qwopus-KAT-Coder-35B-Merged",
   "slug": "oliviarossi-ornith-qwopus-kat-coder-35b-merged",
   "author": "OliviaRossi",
@@ -45,14 +45,19 @@
   "parameters_human": "68.97B",
   "storage_bytes": 137963665946,
   "storage_human": "138.0 GB",
+  "context_length": null,
   "base_model": "OliviaRossi/Qwopus-KAT-Coder-35B-Merged, ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:29:46.082Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

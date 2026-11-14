@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tablinum/Moon-Beam-16B-A3B-GGUF",
   "slug": "tablinum-moon-beam-16b-a3b-gguf",
   "author": "tablinum",
@@ -41,14 +41,19 @@
   "parameters_human": "15.96B",
   "storage_bytes": 23809047694,
   "storage_human": "23.8 GB",
+  "context_length": 8192,
   "base_model": "tablinum/Moon-Beam-16B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

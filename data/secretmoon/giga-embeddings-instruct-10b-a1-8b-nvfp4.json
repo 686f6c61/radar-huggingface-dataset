@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "secretmoon/Giga-Embeddings-instruct-10B-A1.8B-NVFP4",
   "slug": "secretmoon-giga-embeddings-instruct-10b-a1-8b-nvfp4",
   "author": "secretmoon",
@@ -41,14 +41,19 @@
   "parameters_human": "5.76B",
   "storage_bytes": 7398026957,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rax4901/DeepSeek-V4.1-Flash-Abliterated",
   "slug": "rax4901-deepseek-v4-1-flash-abliterated",
   "author": "rax4901",
@@ -36,14 +36,19 @@
   "parameters_human": "756.41B",
   "storage_bytes": 765633423434,
   "storage_human": "765.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

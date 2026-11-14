@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slm4apps/slm4blender-0.5b-GGUF",
   "slug": "slm4apps-slm4blender-0-5b-gguf",
   "author": "slm4apps",
@@ -38,14 +38,19 @@
   "parameters_human": "2.9M",
   "storage_bytes": 1465824928,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T08:35:12.683Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Blender scene generation from a text request",

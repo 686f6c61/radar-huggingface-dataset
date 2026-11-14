@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "willhx/Qwen3-8B-SDFT-MLE-Math-Search-Ecom",
   "slug": "willhx-qwen3-8b-sdft-mle-math-search-ecom",
   "author": "willhx",
@@ -39,14 +39,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16381516840,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "willamazon1/Qwen3-8B-SDFT-Math-LoRA-new, willamazon1/sdft-search-lora-iter160, willamazon1/sdft-tau-lora-iter160",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

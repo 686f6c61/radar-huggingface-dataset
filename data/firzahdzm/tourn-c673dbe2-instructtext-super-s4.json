@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "firzahdzm/tourn-c673dbe2-instructtext-super-s4",
   "slug": "firzahdzm-tourn-c673dbe2-instructtext-super-s4",
   "author": "firzahdzm",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 2159030406,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

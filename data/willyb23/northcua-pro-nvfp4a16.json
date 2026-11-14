@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "willyb23/NorthCUA-Pro-NVFP4A16",
   "slug": "willyb23-northcua-pro-nvfp4a16",
   "author": "willyb23",
@@ -38,14 +38,19 @@
   "parameters_human": "396.80B",
   "storage_bytes": 238034647201,
   "storage_human": "238.0 GB",
+  "context_length": null,
   "base_model": "beipo-ai/NorthCUA-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

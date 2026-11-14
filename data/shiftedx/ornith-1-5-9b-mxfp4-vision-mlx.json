@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shiftedx/ornith-1.5-9b-mxfp4-vision-mlx",
   "slug": "shiftedx-ornith-1-5-9b-mxfp4-vision-mlx",
   "author": "Shiftedx",
@@ -34,6 +34,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 5683219779,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

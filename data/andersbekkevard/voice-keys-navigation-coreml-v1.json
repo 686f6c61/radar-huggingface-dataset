@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andersbekkevard/voice-keys-navigation-coreml-v1",
   "slug": "andersbekkevard-voice-keys-navigation-coreml-v1",
   "author": "andersbekkevard",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1185195128,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-speech-streaming-en-0.6b, andersbekkevard/voice-keys-navigation-single-speaker-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

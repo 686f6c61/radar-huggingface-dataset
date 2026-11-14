@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebulitgmbh/event-modeling-gemma-4-e2b",
   "slug": "nebulitgmbh-event-modeling-gemma-4-e2b",
   "author": "nebulitgmbh",
@@ -35,14 +35,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 10627615056,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

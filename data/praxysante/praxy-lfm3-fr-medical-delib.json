@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PraxySante/Praxy-LFM3-FR-Medical-Delib",
   "slug": "praxysante-praxy-lfm3-fr-medical-delib",
   "author": "PraxySante",
@@ -35,14 +35,19 @@
   "parameters_human": "1.98B",
   "storage_bytes": 8075305894,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T11:06:06.518Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

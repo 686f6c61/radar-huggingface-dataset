@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wenwu2000/MobileDiffuser-SD3-medium",
   "slug": "wenwu2000-mobilediffuser-sd3-medium",
   "author": "Wenwu2000",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 40126074630,
   "storage_human": "40.1 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-3-medium",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

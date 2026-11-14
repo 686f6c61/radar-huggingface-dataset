@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LoRAFleet/openvla-oft-libero-reconstructed-r64",
   "slug": "lorafleet-openvla-oft-libero-reconstructed-r64",
   "author": "LoRAFleet",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3251857388,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "openvla/openvla-7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

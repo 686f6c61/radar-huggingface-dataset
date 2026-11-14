@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Q1ngMang/Ling-3.0-tiny-sub3bit-PPLp10-GGUF",
   "slug": "q1ngmang-ling-3-0-tiny-sub3bit-pplp10-gguf",
   "author": "Q1ngMang",
@@ -32,14 +32,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 5905105280,
   "storage_human": "5.9 GB",
+  "context_length": 131072,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/DeepSeek-V4-Flash-Vision-Exp-EXL3-K2.2-D2-v1",
   "slug": "wrldsuksgo2mars-deepseek-v4-flash-vision-exp-exl3-k2-2-d2-v1",
   "author": "wrldsuksgo2mars",
@@ -34,14 +34,19 @@
   "parameters_human": "49.02B",
   "storage_bytes": 91880002988,
   "storage_human": "91.9 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T08:08:48.314Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

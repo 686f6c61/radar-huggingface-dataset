@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muhaqiq/muhaqiq-span-detector",
   "slug": "muhaqiq-muhaqiq-span-detector",
   "author": "muhaqiq",
@@ -30,14 +30,19 @@
   "parameters_human": "108.5M",
   "storage_bytes": 5208735297,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-msa",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

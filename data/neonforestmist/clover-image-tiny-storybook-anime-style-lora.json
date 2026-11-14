@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neonforestmist/clover-image-tiny-storybook-anime-style-lora",
   "slug": "neonforestmist-clover-image-tiny-storybook-anime-style-lora",
   "author": "neonforestmist",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 18615632,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T05:21:10.928Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jan-grzybek/historical-map-sr-x4",
   "slug": "jan-grzybek-historical-map-sr-x4",
   "author": "jan-grzybek",
@@ -35,14 +35,19 @@
   "parameters_human": "7.4M",
   "storage_bytes": 46193648,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "Phips/4xNomosWebPhoto_RealPLKSR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

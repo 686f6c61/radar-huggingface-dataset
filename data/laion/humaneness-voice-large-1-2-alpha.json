@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laion/Humaneness-Voice-Large-1.2-Alpha",
   "slug": "laion-humaneness-voice-large-1-2-alpha",
   "author": "laion",
@@ -47,14 +47,19 @@
   "parameters_human": "4.13B",
   "storage_bytes": 8271454548,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

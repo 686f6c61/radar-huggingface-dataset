@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intel-ai/DeepSeek-V3.2-NVFP4-AutoRound",
   "slug": "intel-ai-deepseek-v3-2-nvfp4-autoround",
   "author": "intel-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "386.27B",
   "storage_bytes": 389132390750,
   "storage_human": "389.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V3.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

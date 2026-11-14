@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gpjt/jax-with-mha-bias-larger-chinchilla-2",
   "slug": "gpjt-jax-with-mha-bias-larger-chinchilla-2",
   "author": "gpjt",
@@ -29,14 +29,19 @@
   "parameters_human": "240.7M",
   "storage_bytes": 962655088,
   "storage_human": "963 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chatpig/cantonese-v1.1-dev",
   "slug": "chatpig-cantonese-v1-1-dev",
   "author": "chatpig",
@@ -26,14 +26,19 @@
   "parameters_human": "1.93B",
   "storage_bytes": 3857413776,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cantonese-dev/cantonese-1.7b-v1.1",
+  "renamed_at": "2026-11-11T04:48:18.537Z",
   "benchmarks": [],
   "sources": []
 }

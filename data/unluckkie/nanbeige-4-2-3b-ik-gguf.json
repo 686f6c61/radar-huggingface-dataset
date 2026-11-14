@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Unluckkie/Nanbeige-4.2-3B-IK-GGUF",
   "slug": "unluckkie-nanbeige-4-2-3b-ik-gguf",
   "author": "Unluckkie",
@@ -39,14 +39,19 @@
   "parameters_human": "4.17B",
   "storage_bytes": 9037090566,
   "storage_human": "9.0 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

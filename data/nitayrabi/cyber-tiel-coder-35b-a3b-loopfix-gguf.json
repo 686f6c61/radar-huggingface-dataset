@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nitayrabi/Cyber-Tiel-Coder-35B-A3B-LoopFix-GGUF",
   "slug": "nitayrabi-cyber-tiel-coder-35b-a3b-loopfix-gguf",
   "author": "nitayrabi",
@@ -31,14 +31,19 @@
   "parameters_human": "81920",
   "storage_bytes": 22750869536,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

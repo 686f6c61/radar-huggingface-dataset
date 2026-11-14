@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Deepnoid/TREAT-MMTB-2026-Task2-MultimodalAI",
   "slug": "deepnoid-treat-mmtb-2026-task2-multimodalai",
   "author": "Deepnoid",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 4925893360,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

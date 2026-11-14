@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ermiaazarkhalili/Qwen3.8-4B-Function-Calling-xLAM-Unsloth-GGUF",
   "slug": "ermiaazarkhalili-qwen3-8-4b-function-calling-xlam-unsloth-gguf",
   "author": "ermiaazarkhalili",
@@ -35,14 +35,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 18396451968,
   "storage_human": "18.4 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

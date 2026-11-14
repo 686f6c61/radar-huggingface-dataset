@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wethesheeple33/zenith-v1-coding-uncensored-Q3_K_M-GGUF",
   "slug": "wethesheeple33-zenith-v1-coding-uncensored-q3_k_m-gguf",
   "author": "wethesheeple33",
@@ -28,14 +28,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 1962554080,
   "storage_human": "2.0 GB",
+  "context_length": 4096,
   "base_model": "alden4445/zenith-v1-coding-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/sapiens2-pointmap-0.4b-bf16",
   "slug": "mlx-community-sapiens2-pointmap-0-4b-bf16",
   "author": "mlx-community",
@@ -32,6 +32,7 @@
   "parameters_human": "528.7M",
   "storage_bytes": 1057387766,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "facebook/sapiens2-pointmap-0.4b",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

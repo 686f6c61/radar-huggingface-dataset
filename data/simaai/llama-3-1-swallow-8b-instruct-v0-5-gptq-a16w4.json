@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-a16w4",
   "slug": "simaai-llama-3-1-swallow-8b-instruct-v0-5-gptq-a16w4",
   "author": "simaai",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 20856954998,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

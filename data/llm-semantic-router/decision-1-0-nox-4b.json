@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llm-semantic-router/Decision-1.0-Nox-4B",
   "slug": "llm-semantic-router-decision-1-0-nox-4b",
   "author": "llm-semantic-router",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 33730006219,
   "storage_human": "33.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "vllm-sr/Decision-1.0-Nox-4B",
+  "renamed_at": "2026-11-11T06:05:29.160Z",
   "benchmarks": [],
   "sources": [
     {

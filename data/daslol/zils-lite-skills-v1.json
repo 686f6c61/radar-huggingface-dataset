@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dasLOL/zils-lite-skills-v1",
   "slug": "daslol-zils-lite-skills-v1",
   "author": "dasLOL",
@@ -34,14 +34,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1706027688,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T04:27:30.733Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

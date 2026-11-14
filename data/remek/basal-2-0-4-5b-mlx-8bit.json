@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Remek/basal-2.0-4.5B-MLX-8bit",
   "slug": "remek-basal-2-0-4-5b-mlx-8bit",
   "author": "Remek",
@@ -41,6 +41,7 @@
   "parameters_human": "4.76B",
   "storage_bytes": 5179517796,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-4.5B-v3.0-Instruct",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

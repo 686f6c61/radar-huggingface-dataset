@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chiphamlinh/qwen3-4b-thinking-2507-pa_en_finqa-grpo-max-500",
   "slug": "chiphamlinh-qwen3-4b-thinking-2507-pa_en_finqa-grpo-max-500",
   "author": "chiphamlinh",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 275731718,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-thinking-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

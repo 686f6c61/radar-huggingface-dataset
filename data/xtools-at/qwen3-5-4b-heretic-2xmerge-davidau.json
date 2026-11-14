@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/Qwen3.5-4B-Heretic-2xMerge-DavidAU",
   "slug": "xtools-at-qwen3-5-4b-heretic-2xmerge-davidau",
   "author": "xtools-at",
@@ -42,14 +42,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609287,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING, DavidAU/Qwen3.5-4B-Deckard-HERETIC-UNCENSORED-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

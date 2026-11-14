@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Slomin/lfm3-1.7b-home-assistant",
   "slug": "slomin-lfm3-1-7b-home-assistant",
   "author": "Slomin",
@@ -41,14 +41,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1049615712,
   "storage_human": "1.0 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

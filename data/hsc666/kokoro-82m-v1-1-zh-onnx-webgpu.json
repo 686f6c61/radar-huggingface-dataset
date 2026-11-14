@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hsc666/Kokoro-82M-v1.1-zh-ONNX-webgpu",
   "slug": "hsc666-kokoro-82m-v1-1-zh-onnx-webgpu",
   "author": "hsc666",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1074644985,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M-v1.1-zh",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

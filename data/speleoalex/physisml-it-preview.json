@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speleoalex/physisml-it-preview",
   "slug": "speleoalex-physisml-it-preview",
   "author": "speleoalex",
@@ -34,6 +34,7 @@
   "parameters_human": "23.6M",
   "storage_bytes": 558551768,
   "storage_human": "559 MB",
+  "context_length": 129,
   "base_model": null,
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

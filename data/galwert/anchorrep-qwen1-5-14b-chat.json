@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "galwert/AnchorRep-Qwen1.5-14B-Chat",
   "slug": "galwert-anchorrep-qwen1-5-14b-chat",
   "author": "galwert",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 498804568,
   "storage_human": "499 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen1.5-14B-Chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

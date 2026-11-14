@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mihaichiorean/gemma-4-E2B-it-qat-int4g32-TRT-Edge-LLM",
   "slug": "mihaichiorean-gemma-4-e2b-it-qat-int4g32-trt-edge-llm",
   "author": "mihaichiorean",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 16084874814,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maximellerbach/omx_multicubes_lawam",
   "slug": "maximellerbach-omx_multicubes_lawam",
   "author": "maximellerbach",
@@ -30,14 +30,19 @@
   "parameters_human": "2.56B",
   "storage_bytes": 22730028964,
   "storage_human": "22.7 GB",
+  "context_length": null,
   "base_model": "jialei02/lawam-pretrain-lerobot",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kratim-Budhimata/Regression-is-Attention",
   "slug": "kratim-budhimata-regression-is-attention",
   "author": "Kratim-Budhimata",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 69306227,
   "storage_human": "69 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

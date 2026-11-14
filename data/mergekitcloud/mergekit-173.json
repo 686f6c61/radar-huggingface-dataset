@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MergekitCloud/mergekit-173",
   "slug": "mergekitcloud-mergekit-173",
   "author": "MergekitCloud",
@@ -37,14 +37,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16388597969,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "ValiantLabs/Qwen3-8B-Esper3, deepseek-ai/DeepSeek-R1-0528-Qwen3-8B, Goedel-LM/Goedel-Prover-V2-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

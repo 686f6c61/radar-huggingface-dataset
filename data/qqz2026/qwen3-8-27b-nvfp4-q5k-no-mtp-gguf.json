@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QQZ2026/Qwen3.8-27B-NVFP4-Q5K-no-MTP-GGUF",
   "slug": "qqz2026-qwen3-8-27b-nvfp4-q5k-no-mtp-gguf",
   "author": "QQZ2026",
@@ -34,14 +34,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 16394545216,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

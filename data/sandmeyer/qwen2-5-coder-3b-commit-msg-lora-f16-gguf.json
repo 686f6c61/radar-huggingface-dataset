@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sandmeyer/qwen2.5-coder-3b-commit-msg-lora-F16-GGUF",
   "slug": "sandmeyer-qwen2-5-coder-3b-commit-msg-lora-f16-gguf",
   "author": "Sandmeyer",
@@ -31,14 +31,19 @@
   "parameters_human": "29.9M",
   "storage_bytes": 59902240,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": "Elib27/qwen2.5-coder-3b-commit-msg-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

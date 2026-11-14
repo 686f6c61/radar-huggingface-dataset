@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pantinor/sherpa-onnx-whisper-large-v3-french-distil",
   "slug": "pantinor-sherpa-onnx-whisper-large-v3-french-distil",
   "author": "pantinor",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1353952935,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "bofenghuang/whisper-large-v3-french-distil-dec16",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

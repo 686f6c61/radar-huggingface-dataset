@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "899400HS/MiniMax-M3.1-Flash-C3-GGUF",
   "slug": "899400hs-minimax-m3-1-flash-c3-gguf",
   "author": "899400HS",
@@ -33,14 +33,19 @@
   "parameters_human": "426.17B",
   "storage_bytes": 198920637824,
   "storage_human": "198.9 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

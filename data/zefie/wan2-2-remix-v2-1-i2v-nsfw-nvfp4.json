@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zefie/Wan2.2-Remix-v2.1-I2V-NSFW-NVFP4",
   "slug": "zefie-wan2-2-remix-v2-1-i2v-nsfw-nvfp4",
   "author": "zefie",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 16763015168,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "FX-FeiHou/wan2.2-Remix",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

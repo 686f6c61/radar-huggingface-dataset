@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "localdeel/ko-hand-ocr-vl-GGUF",
   "slug": "localdeel-ko-hand-ocr-vl-gguf",
   "author": "localdeel",
@@ -39,14 +39,19 @@
   "parameters_human": "559.0M",
   "storage_bytes": 5802818810,
   "storage_human": "5.8 GB",
+  "context_length": 262144,
   "base_model": "localdeel/ko-hand-ocr-vl",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

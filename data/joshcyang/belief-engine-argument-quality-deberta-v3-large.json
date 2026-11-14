@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshcyang/belief-engine-argument-quality-deberta-v3-large",
   "slug": "joshcyang-belief-engine-argument-quality-deberta-v3-large",
   "author": "joshcyang",
@@ -38,14 +38,19 @@
   "parameters_human": "435.1M",
   "storage_bytes": 1742764956,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twanghcmut/Evo-1-SO101-LeftArm-Multitask",
   "slug": "twanghcmut-evo-1-so101-leftarm-multitask",
   "author": "twanghcmut",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1554370704,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "MINT-SJTU/Evo1_SO100",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

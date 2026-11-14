@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/DSV4.1-Flash-EXL3-4.75bpw",
   "slug": "vcruz305-dsv4-1-flash-exl3-4-75bpw",
   "author": "vcruz305",
@@ -33,14 +33,19 @@
   "parameters_human": "332.04B",
   "storage_bytes": 459985077843,
   "storage_human": "460.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T08:03:25.898Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

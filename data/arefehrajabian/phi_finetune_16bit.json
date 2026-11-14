@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arefehRajabian/phi_finetune_16bit",
   "slug": "arefehrajabian-phi_finetune_16bit",
   "author": "arefehRajabian",
@@ -35,14 +35,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 29319056728,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "unsloth/phi-4-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

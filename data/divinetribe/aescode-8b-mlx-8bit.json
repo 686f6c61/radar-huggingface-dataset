@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/AesCode-8B-MLX-8bit",
   "slug": "divinetribe-aescode-8b-mlx-8bit",
   "author": "divinetribe",
@@ -38,6 +38,7 @@
   "parameters_human": "8.77B",
   "storage_bytes": 9867301827,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": "microsoft/AesCode-8B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

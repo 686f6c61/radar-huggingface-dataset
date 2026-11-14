@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/K2-Horizon-7B-Uno-MLX-slq-4.5bpw",
   "slug": "hermitdave-k2-horizon-7b-uno-mlx-slq-4-5bpw",
   "author": "hermitdave",
@@ -34,6 +34,7 @@
   "parameters_human": "3.14B",
   "storage_bytes": 8468656844,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-7B-Uno",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

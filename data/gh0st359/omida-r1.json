@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gh0st359/omida-r1",
   "slug": "gh0st359-omida-r1",
   "author": "gh0st359",
@@ -31,14 +31,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19319118982,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "omida-ai/omida-r1",
+  "renamed_at": "2026-11-11T05:25:37.510Z",
   "benchmarks": [],
   "sources": [
     {

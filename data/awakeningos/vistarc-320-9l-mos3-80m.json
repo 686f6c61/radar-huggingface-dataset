@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AwakeningOS/vistarc-320-9l-mos3-80m",
   "slug": "awakeningos-vistarc-320-9l-mos3-80m",
   "author": "AwakeningOS",
@@ -35,14 +35,19 @@
   "parameters_human": "45.5M",
   "storage_bytes": 181840460,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

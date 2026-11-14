@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LakoreAI/onevoice-vega",
   "slug": "lakoreai-onevoice-vega",
   "author": "LakoreAI",
@@ -49,14 +49,19 @@
   "parameters_human": null,
   "storage_bytes": 903845598,
   "storage_human": "904 MB",
+  "context_length": null,
   "base_model": "huuquyet/PhoWhisper-base, onnx-community/whisper-small, Helsinki-NLP/opus-mt-vi-en, Helsinki-NLP/opus-mt-en-vi, rhasspy/piper-voices, facebook/mms-tts-kor, onnx-community/silero-vad",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Vietnamese ASR (PhoWhisper-base)",

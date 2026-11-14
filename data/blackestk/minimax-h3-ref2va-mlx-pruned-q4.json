@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blackestk/MiniMax-H3-Ref2VA-MLX-pruned-Q4",
   "slug": "blackestk-minimax-h3-ref2va-mlx-pruned-q4",
   "author": "blackestk",
@@ -31,6 +31,7 @@
   "parameters_human": "3.48B",
   "storage_bytes": 12584748220,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

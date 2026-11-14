@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LASR-Callum/qwen3.6-27b-lora-random220-control-r64",
   "slug": "lasr-callum-qwen3-6-27b-lora-random220-control-r64",
   "author": "LASR-Callum",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 1295140310,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

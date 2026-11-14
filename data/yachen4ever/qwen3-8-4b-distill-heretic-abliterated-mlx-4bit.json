@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit",
   "slug": "yachen4ever-qwen3-8-4b-distill-heretic-abliterated-mlx-4bit",
   "author": "yachen4ever",
@@ -42,6 +42,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 3054288675,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated, empero-ai/Qwen3.8-4B-Distill",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

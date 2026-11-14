@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Perflow-Shuai/Wan2.2-5B-NonAR-DMD-4Step-LoRA-r64-iter1600-SLT-AR-30s-Local32-Sink8-iter2450",
   "slug": "perflow-shuai-wan2-2-5b-nonar-dmd-4step-lora-r64-iter1600-slt-ar-30s-local32-sink8-iter2450",
   "author": "Perflow-Shuai",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1290173469,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MASAYUKI-EMO/masa_v1",
   "slug": "masayuki-emo-masa_v1",
   "author": "MASAYUKI-EMO",
@@ -25,6 +25,7 @@
   "parameters_human": "18.78B",
   "storage_bytes": 129332054154,
   "storage_human": "129.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

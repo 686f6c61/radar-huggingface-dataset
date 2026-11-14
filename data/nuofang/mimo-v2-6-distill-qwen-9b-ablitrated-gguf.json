@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuofang/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-GGUF",
   "slug": "nuofang-mimo-v2-6-distill-qwen-9b-ablitrated-gguf",
   "author": "nuofang",
@@ -27,14 +27,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 7394820672,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "Hikari07jp/MiMo-V2.6-Distill-Qwen-9B-Ablitrated",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T02:41:32.234Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

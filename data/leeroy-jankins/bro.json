@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leeroy-jankins/bro",
   "slug": "leeroy-jankins-bro",
   "author": "leeroy-jankins",
@@ -59,14 +59,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 4987494620,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-3-4b-it-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

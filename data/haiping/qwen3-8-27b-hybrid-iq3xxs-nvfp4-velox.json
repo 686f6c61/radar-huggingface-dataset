@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haiping/Qwen3.8-27B-hybrid-IQ3XXS-NVFP4-velox",
   "slug": "haiping-qwen3-8-27b-hybrid-iq3xxs-nvfp4-velox",
   "author": "haiping",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 77603940880,
   "storage_human": "77.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "haiping/Qwen3.8-27B-velox",
+  "renamed_at": "2026-11-11T05:30:15.508Z",
   "benchmarks": [],
   "sources": []
 }

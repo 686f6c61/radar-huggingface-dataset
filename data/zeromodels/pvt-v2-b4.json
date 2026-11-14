@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zeromodels/pvt-v2-b4",
   "slug": "zeromodels-pvt-v2-b4",
   "author": "zeromodels",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 252315336,
   "storage_human": "252 MB",
+  "context_length": null,
   "base_model": "OpenGVLab/pvt_v2_b4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

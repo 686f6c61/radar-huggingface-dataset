@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PulpCut/FastH3-VSA-INT8-ConvRot",
   "slug": "pulpcut-fasth3-vsa-int8-convrot",
   "author": "PulpCut",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 22966486018,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

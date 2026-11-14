@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audenvenn/raceline-qwen3.5-4b",
   "slug": "audenvenn-raceline-qwen3-5-4b",
   "author": "audenvenn",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3200384866,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

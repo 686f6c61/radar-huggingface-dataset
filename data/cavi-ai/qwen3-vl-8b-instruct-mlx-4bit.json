@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cavi-ai/Qwen3-VL-8B-Instruct-MLX-4bit",
   "slug": "cavi-ai-qwen3-vl-8b-instruct-mlx-4bit",
   "author": "cavi-ai",
@@ -37,6 +37,7 @@
   "parameters_human": "8.77B",
   "storage_bytes": 5772087850,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

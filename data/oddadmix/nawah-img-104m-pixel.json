@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oddadmix/Nawah-IMG-104M-pixel",
   "slug": "oddadmix-nawah-img-104m-pixel",
   "author": "oddadmix",
@@ -39,14 +39,19 @@
   "parameters_human": "103.9M",
   "storage_bytes": 421369820,
   "storage_human": "421 MB",
+  "context_length": null,
   "base_model": "MongoDB/mdbr-leaf-mt, stabilityai/sd-vae-ft-mse",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:29:13.010Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

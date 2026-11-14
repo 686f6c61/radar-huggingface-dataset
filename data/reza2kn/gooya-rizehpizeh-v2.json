@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Reza2kn/Gooya-RizehPizeh-v2",
   "slug": "reza2kn-gooya-rizehpizeh-v2",
   "author": "Reza2kn",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1819576802,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Reza2kn/Gooya-RizehPizeh-v1.5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

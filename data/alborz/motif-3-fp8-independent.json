@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alborz/Motif-3-FP8-Independent",
   "slug": "alborz-motif-3-fp8-independent",
   "author": "Alborz",
@@ -36,14 +36,19 @@
   "parameters_human": "314.86B",
   "storage_bytes": 321746875798,
   "storage_human": "321.7 GB",
+  "context_length": null,
   "base_model": "Motif-Technologies/Motif-3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

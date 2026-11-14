@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AiRukua/tiny-stories-kilat-35M",
   "slug": "airukua-tiny-stories-kilat-35m",
   "author": "AiRukua",
@@ -34,14 +34,19 @@
   "parameters_human": "31.9M",
   "storage_bytes": 127562184,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

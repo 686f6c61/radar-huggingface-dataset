@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luc-melaye/rawmakase-lama-dynamic",
   "slug": "luc-melaye-rawmakase-lama-dynamic",
   "author": "luc-melaye",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 206037952,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

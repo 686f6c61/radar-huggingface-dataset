@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-babyai-20260920",
   "slug": "diluner-gpt54-mini-standalone-qwen3-1-7b-sft-babyai-20260920",
   "author": "Diluner",
@@ -34,14 +34,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8138417822,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

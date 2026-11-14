@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/EchoPulse-1.7B-i1-GGUF",
   "slug": "mradermacher-echopulse-1-7b-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 21323153344,
   "storage_human": "21.3 GB",
+  "context_length": 262144,
   "base_model": "adityavardhansharma/EchoPulse-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

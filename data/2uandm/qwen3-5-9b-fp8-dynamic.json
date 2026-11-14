@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "2uanDM/Qwen3.5-9B-FP8-Dynamic",
   "slug": "2uandm-qwen3-5-9b-fp8-dynamic",
   "author": "2uanDM",
@@ -34,14 +34,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 12200153478,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

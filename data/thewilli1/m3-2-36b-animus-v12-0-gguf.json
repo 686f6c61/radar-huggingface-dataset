@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thewilli1/M3.2-36B-Animus-V12.0-GGUF",
   "slug": "thewilli1-m3-2-36b-animus-v12-0-gguf",
   "author": "Thewilli1",
@@ -32,14 +32,19 @@
   "parameters_human": "34.69B",
   "storage_bytes": 162005044290,
   "storage_human": "162.0 GB",
+  "context_length": 131072,
   "base_model": "Darkhn/M3.2-36B-Animus-V12.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

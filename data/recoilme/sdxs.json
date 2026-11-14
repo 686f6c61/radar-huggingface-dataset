@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "recoilme/sdxs",
   "slug": "recoilme-sdxs",
   "author": "recoilme",
@@ -31,6 +31,7 @@
   "parameters_human": "2.00B",
   "storage_bytes": 44976973175,
   "storage_human": "45.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

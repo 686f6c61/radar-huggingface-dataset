@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onewhosighs/Apathy-Qwen3.8-27B-DFlash-drafter-v3",
   "slug": "onewhosighs-apathy-qwen3-8-27b-dflash-drafter-v3",
   "author": "onewhosighs",
@@ -31,14 +31,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4257372464,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

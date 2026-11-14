@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YossiIsr/joyai-video-edit-fp8",
   "slug": "yossiisr-joyai-video-edit-fp8",
   "author": "YossiIsr",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 34586301534,
   "storage_human": "34.6 GB",
+  "context_length": null,
   "base_model": "jdopensource/JoyAI-Video-Edit, XiaomiMiMo/MiMo-VL-7B-RL-2508",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

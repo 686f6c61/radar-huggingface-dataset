@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jmoney54378256438905/GLM-5.3-Flash-4.65bpw-exl3",
   "slug": "jmoney54378256438905-glm-5-3-flash-4-65bpw-exl3",
   "author": "jmoney54378256438905",
@@ -35,14 +35,19 @@
   "parameters_human": "94.73B",
   "storage_bytes": 189634403360,
   "storage_human": "189.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

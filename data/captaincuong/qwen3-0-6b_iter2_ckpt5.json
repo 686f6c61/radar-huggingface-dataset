@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CaptainCuong/Qwen3-0.6B_iter2_ckpt5",
   "slug": "captaincuong-qwen3-0-6b_iter2_ckpt5",
   "author": "CaptainCuong",
@@ -34,14 +34,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5972105955,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "CaptainCuong/Qwen3-0.6B_RSI_iter1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

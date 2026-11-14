@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-VL-8B-agentnet_ubuntu_win_9k-GGUF",
   "slug": "mradermacher-qwen3-vl-8b-agentnet_ubuntu_win_9k-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 75336674432,
   "storage_human": "75.3 GB",
+  "context_length": 262144,
   "base_model": "CaptainCuong/Qwen3-VL-8B-agentnet_ubuntu_win_9k",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

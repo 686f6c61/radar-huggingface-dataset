@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scima/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF-all-quants",
   "slug": "scima-qwen3-8-whittle-moe-27b-a17-8b-gguf-all-quants",
   "author": "scima",
@@ -28,14 +28,19 @@
   "parameters_human": "26.92B",
   "storage_bytes": 184707566144,
   "storage_human": "184.7 GB",
+  "context_length": 262144,
   "base_model": "logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

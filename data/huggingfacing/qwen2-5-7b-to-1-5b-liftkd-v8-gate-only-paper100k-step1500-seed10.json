@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingFacing/qwen2.5-7b-to-1.5b-liftkd-v8-gate-only-paper100k-step1500-seed10",
   "slug": "huggingfacing-qwen2-5-7b-to-1-5b-liftkd-v8-gate-only-paper100k-step1500-seed10",
   "author": "huggingFacing",
@@ -36,14 +36,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3099281976,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

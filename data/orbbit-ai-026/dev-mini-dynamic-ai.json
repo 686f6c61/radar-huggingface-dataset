@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orbbit-AI-026/Dev-mini-Dynamic-AI",
   "slug": "orbbit-ai-026-dev-mini-dynamic-ai",
   "author": "orbbit-AI-026",
@@ -24,14 +24,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575814382,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:02:56.036Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

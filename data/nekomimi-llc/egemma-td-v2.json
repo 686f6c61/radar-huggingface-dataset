@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nekomimi-llc/egemma-td-v2",
   "slug": "nekomimi-llc-egemma-td-v2",
   "author": "nekomimi-llc",
@@ -33,14 +33,19 @@
   "parameters_human": "272.1M",
   "storage_bytes": 1120708448,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "mrm8488/embeddinggemma-2-ft-typed-decision",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

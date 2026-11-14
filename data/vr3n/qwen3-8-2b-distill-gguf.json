@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vr3n/Qwen3.8-2B-Distill-GGUF",
   "slug": "vr3n-qwen3-8-2b-distill-gguf",
   "author": "vr3n",
@@ -40,14 +40,19 @@
   "parameters_human": "1.94B",
   "storage_bytes": 10347336576,
   "storage_human": "10.3 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

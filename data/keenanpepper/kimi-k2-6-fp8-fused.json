@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keenanpepper/Kimi-K2.6-FP8-fused",
   "slug": "keenanpepper-kimi-k2-6-fp8-fused",
   "author": "keenanpepper",
@@ -37,14 +37,19 @@
   "parameters_human": "1026.94B",
   "storage_bytes": 1031041809166,
   "storage_human": "1031.0 GB",
+  "context_length": null,
   "base_model": "RedHatAI/Kimi-K2.6-FP8-BLOCK, moonshotai/Kimi-K2.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

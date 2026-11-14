@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GaborMadarasz/gemma-3n-E2B-it_nahuatl_ASR_16bit",
   "slug": "gabormadarasz-gemma-3n-e2b-it_nahuatl_asr_16bit",
   "author": "GaborMadarasz",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 38138573,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T10:56:47.643Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "F3Fe2D200/Qwen3.8-27B-heretic-ara",
   "slug": "f3fe2d200-qwen3-8-27b-heretic-ara",
   "author": "F3Fe2D200",
@@ -34,14 +34,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 55582996628,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

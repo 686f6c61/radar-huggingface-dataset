@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "K-Ai-Official/K-Oss-8-Mini-Instruct",
   "slug": "k-ai-official-k-oss-8-mini-instruct",
   "author": "K-Ai-Official",
@@ -50,14 +50,19 @@
   "parameters_human": null,
   "storage_bytes": 4913698594,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T02:56:37.994Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

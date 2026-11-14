@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LaToucheCarre/LaToucheCarre-Voix-L-Parakeet-Ultra-0.6B-Q8_0-GGML",
   "slug": "latouchecarre-latouchecarre-voix-l-parakeet-ultra-0-6b-q8_0-ggml",
   "author": "LaToucheCarre",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 668757119,
   "storage_human": "669 MB",
+  "context_length": null,
   "base_model": "moondream/parakeet-ultra",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

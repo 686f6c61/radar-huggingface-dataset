@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shroomy/tinydistill-massive-da-multilingual",
   "slug": "shroomy-tinydistill-massive-da-multilingual",
   "author": "Shroomy",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 507569646,
   "storage_human": "508 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Docglasses-AI/spark-x2.6-1.7b-clinical-r3-gguf",
   "slug": "docglasses-ai-spark-x2-6-1-7b-clinical-r3-gguf",
   "author": "Docglasses-AI",
@@ -37,14 +37,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 1057570176,
   "storage_human": "1.1 GB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakleash/Bielik-11B-v3.1-Instruct-MLX-4bit",
   "slug": "speakleash-bielik-11b-v3-1-instruct-mlx-4bit",
   "author": "speakleash",
@@ -147,6 +147,7 @@
   "parameters_human": "11.17B",
   "storage_bytes": 6981199454,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-11B-v3.1-Instruct",
   "formats": [
     "mlx",
@@ -154,8 +155,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lernex/Metis-1.6-Logos-MLX-8bit",
   "slug": "lernex-metis-1-6-logos-mlx-8bit",
   "author": "Lernex",
@@ -34,6 +34,7 @@
   "parameters_human": "10.22B",
   "storage_bytes": 11099649289,
   "storage_human": "11.1 GB",
+  "context_length": null,
   "base_model": "Lernex/Metis-1.6-Logos",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daoooot/202413050-detr-resnet-50-furniture-partial",
   "slug": "daoooot-202413050-detr-resnet-50-furniture-partial",
   "author": "daoooot",
@@ -28,14 +28,19 @@
   "parameters_human": "41.6M",
   "storage_bytes": 166503813,
   "storage_human": "167 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

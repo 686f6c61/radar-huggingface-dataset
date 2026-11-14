@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HeyBolo/s1-mini-mlx-4bit",
   "slug": "heybolo-s1-mini-mlx-4bit",
   "author": "HeyBolo",
@@ -31,6 +31,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 346873198,
   "storage_human": "347 MB",
+  "context_length": null,
   "base_model": "superwhisper/s1-mini",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

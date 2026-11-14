@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOTAagi2030/LedgerLens-OCR-Release",
   "slug": "sotaagi2030-ledgerlens-ocr-release",
   "author": "SOTAagi2030",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 40,
   "storage_human": "40 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

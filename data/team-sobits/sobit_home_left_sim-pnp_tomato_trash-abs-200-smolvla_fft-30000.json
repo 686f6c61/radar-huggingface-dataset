@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "team-sobits/sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-30000",
   "slug": "team-sobits-sobit_home_left_sim-pnp_tomato_trash-abs-200-smolvla_fft-30000",
   "author": "team-sobits",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 2395596104,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

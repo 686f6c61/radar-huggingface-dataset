@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jundot/GLM-5.3-Flash-oQ2e-mtp",
   "slug": "jundot-glm-5-3-flash-oq2e-mtp",
   "author": "Jundot",
@@ -33,6 +33,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 110321228823,
   "storage_human": "110.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

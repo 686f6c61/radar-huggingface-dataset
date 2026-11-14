@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edgaremy/convnextv2_base.frencharthro-24k",
   "slug": "edgaremy-convnextv2_base-frencharthro-24k",
   "author": "edgaremy",
@@ -31,14 +31,19 @@
   "parameters_human": "112.5M",
   "storage_bytes": 2250630244,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "timm/convnextv2_base.fcmae_ft_in22k_in1k_384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

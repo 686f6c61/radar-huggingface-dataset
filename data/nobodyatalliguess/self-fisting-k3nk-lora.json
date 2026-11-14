@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nobodyatalliguess/self-fisting-k3nk-lora",
   "slug": "nobodyatalliguess-self-fisting-k3nk-lora",
   "author": "nobodyatalliguess",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 644250768,
   "storage_human": "644 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

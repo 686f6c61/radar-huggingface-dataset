@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jianshu001/slime2-cascade-router",
   "slug": "jianshu001-slime2-cascade-router",
   "author": "Jianshu001",
@@ -25,14 +25,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 2168380580,
   "storage_human": "2.2 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

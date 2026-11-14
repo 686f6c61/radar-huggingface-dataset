@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiyuvta/DictaLM-3.0-24B-NVFP4-healed",
   "slug": "tiyuvta-dictalm-3-0-24b-nvfp4-healed",
   "author": "tiyuvta",
@@ -44,14 +44,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 15206640619,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "dicta-il/DictaLM-3.0-24B-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

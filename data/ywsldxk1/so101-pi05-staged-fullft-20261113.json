@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ywsldxk1/so101-pi05-staged-fullft-20261113",
   "slug": "ywsldxk1-so101-pi05-staged-fullft-20261113",
   "author": "ywsldxk1",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 167082781601,
   "storage_human": "167.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

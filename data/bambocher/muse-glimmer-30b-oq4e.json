@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambocher/Muse-Glimmer-30B-oQ4e",
   "slug": "bambocher-muse-glimmer-30b-oq4e",
   "author": "bambocher",
@@ -27,6 +27,7 @@
   "parameters_human": "29.78B",
   "storage_bytes": 20284055392,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

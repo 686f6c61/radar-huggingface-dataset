@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emretmrk/Qwen3.5-4B-TR-Finance-Q4_K_M-GGUF",
   "slug": "emretmrk-qwen3-5-4b-tr-finance-q4_k_m-gguf",
   "author": "emretmrk",
@@ -50,14 +50,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 2708797920,
   "storage_human": "2.7 GB",
+  "context_length": 262144,
   "base_model": "emretmrk/Qwen3.5-4B-TR-Finance",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

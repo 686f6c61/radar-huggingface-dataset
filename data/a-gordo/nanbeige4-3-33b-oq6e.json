@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "a-gordo/Nanbeige4.3-33B-oQ6e",
   "slug": "a-gordo-nanbeige4-3-33b-oq6e",
   "author": "a-gordo",
@@ -38,6 +38,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 27753517895,
   "storage_human": "27.8 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

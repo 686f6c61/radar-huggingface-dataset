@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PINNeAPPle-Labs/rover-contact-grc1-viper",
   "slug": "pinneapple-labs-rover-contact-grc1-viper",
   "author": "PINNeAPPle-Labs",
@@ -34,6 +34,7 @@
   "parameters_human": "78179",
   "storage_bytes": 4729477,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

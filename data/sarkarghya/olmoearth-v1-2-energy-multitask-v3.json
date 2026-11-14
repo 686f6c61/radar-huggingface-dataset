@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sarkarghya/olmoearth-v1.2-energy-multitask-v3",
   "slug": "sarkarghya-olmoearth-v1-2-energy-multitask-v3",
   "author": "sarkarghya",
@@ -37,14 +37,19 @@
   "parameters_human": "126.6M",
   "storage_bytes": 506573076,
   "storage_human": "507 MB",
+  "context_length": null,
   "base_model": "allenai/OlmoEarth-v1_2-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

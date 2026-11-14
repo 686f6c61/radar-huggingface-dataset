@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Synthyra/DPLM2-3B",
   "slug": "synthyra-dplm2-3b",
   "author": "Synthyra",
@@ -29,14 +29,19 @@
   "parameters_human": "2.88B",
   "storage_bytes": 11524320084,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

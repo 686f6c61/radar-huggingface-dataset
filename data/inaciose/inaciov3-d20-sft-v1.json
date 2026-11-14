@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inaciose/inaciov3-d20-sft-v1",
   "slug": "inaciose-inaciov3-d20-sft-v1",
   "author": "inaciose",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 6419187212,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

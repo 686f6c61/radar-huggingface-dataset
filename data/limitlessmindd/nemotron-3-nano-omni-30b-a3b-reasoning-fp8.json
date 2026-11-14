@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LimitlessMindd/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8",
   "slug": "limitlessmindd-nemotron-3-nano-omni-30b-a3b-reasoning-fp8",
   "author": "LimitlessMindd",
@@ -36,14 +36,19 @@
   "parameters_human": "33.01B",
   "storage_bytes": 35202386887,
   "storage_human": "35.2 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

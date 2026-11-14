@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/FinchAI-Rune1-Preview-f16-GGUF",
   "slug": "mradermacher-finchai-rune1-preview-f16-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 11456999296,
   "storage_human": "11.5 GB",
+  "context_length": 262144,
   "base_model": "whcl412/FinchAI-Rune1-Preview-f16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

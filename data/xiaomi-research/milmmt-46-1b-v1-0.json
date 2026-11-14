@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xiaomi-research/MiLMMT-46-1B-v1.0",
   "slug": "xiaomi-research-milmmt-46-1b-v1-0",
   "author": "xiaomi-research",
@@ -32,14 +32,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 2072196546,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "xiaomi-research/MiLMMT-46-1B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

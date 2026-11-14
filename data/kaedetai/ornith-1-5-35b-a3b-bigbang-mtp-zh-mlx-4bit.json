@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-zh-mlx-4bit",
   "slug": "kaedetai-ornith-1-5-35b-a3b-bigbang-mtp-zh-mlx-4bit",
   "author": "KaedeTai",
@@ -41,6 +41,7 @@
   "parameters_human": "6.14B",
   "storage_bytes": 27194595438,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": "KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit, EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP, ornith-ai/Ornith-1.5-35B-A3B, endless-frontier/BigBang-v1, Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

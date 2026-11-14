@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xmanii/Mizan-v2-4B-GGUF",
   "slug": "xmanii-mizan-v2-4b-gguf",
   "author": "xmanii",
@@ -40,14 +40,19 @@
   "parameters_human": "4.24B",
   "storage_bytes": 7619472304,
   "storage_human": "7.6 GB",
+  "context_length": 262144,
   "base_model": "Nimruz/Mizan-v2-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Nimruz/Mizan-v2-4B-GGUF",
+  "renamed_at": "2026-11-11T08:07:47.289Z",
   "benchmarks": [],
   "sources": [
     {

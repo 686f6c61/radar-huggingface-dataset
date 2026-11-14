@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProjectGaiaUK/gaia-3b-base-128k",
   "slug": "projectgaiauk-gaia-3b-base-128k",
   "author": "ProjectGaiaUK",
@@ -37,14 +37,19 @@
   "parameters_human": "2.98B",
   "storage_bytes": 6455592972,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

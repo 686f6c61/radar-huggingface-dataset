@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lukaskremla/Qwen3.8-27B-MTP-3bit-MLX",
   "slug": "lukaskremla-qwen3-8-27b-mtp-3bit-mlx",
   "author": "lukaskremla",
@@ -45,6 +45,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 205839299,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": "lukaskremla/Qwen3.8-27B-MTP-bf16-MLX",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

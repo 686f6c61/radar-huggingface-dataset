@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangzhang/Llama-3-8B-Instruct-RR-Abliterated",
   "slug": "wangzhang-llama-3-8b-instruct-rr-abliterated",
   "author": "wangzhang",
@@ -43,14 +43,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766746,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "GraySwanAI/Llama-3-8B-Instruct-RR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smshahbaj/Rifa-Nano-0.5B-GGUF",
   "slug": "smshahbaj-rifa-nano-0-5b-gguf",
   "author": "smshahbaj",
@@ -27,14 +27,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 3204320064,
   "storage_human": "3.2 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:10:49.343Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

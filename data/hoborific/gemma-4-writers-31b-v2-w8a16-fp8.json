@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoborific/Gemma-4-Writers-31B-V2-W8A16-FP8",
   "slug": "hoborific-gemma-4-writers-31b-v2-w8a16-fp8",
   "author": "hoborific",
@@ -33,14 +33,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33308744682,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "Ateron/Gemma-4-Writers-31B-V2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10",
   "slug": "donghyun1228-pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10",
   "author": "Donghyun1228",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 12439255998,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T03:39:18.588Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

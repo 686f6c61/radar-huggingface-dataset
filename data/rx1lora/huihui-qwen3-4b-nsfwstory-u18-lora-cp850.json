@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rx1lora/huihui-qwen3-4b-nsfwstory-u18-lora-cp850",
   "slug": "rx1lora-huihui-qwen3-4b-nsfwstory-u18-lora-cp850",
   "author": "rx1lora",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 275731820,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-4B-abliterated-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

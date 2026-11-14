@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50",
   "slug": "jayzou3773-less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50",
   "author": "jayzou3773",
@@ -32,14 +32,19 @@
   "parameters_human": "59.48B",
   "storage_bytes": 118997924670,
   "storage_human": "119.0 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-120b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

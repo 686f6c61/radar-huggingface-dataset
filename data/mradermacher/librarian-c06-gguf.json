@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/librarian-c06-GGUF",
   "slug": "mradermacher-librarian-c06-gguf",
   "author": "mradermacher",
@@ -37,6 +37,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 7455588736,
   "storage_human": "7.5 GB",
+  "context_length": 262144,
   "base_model": "sadasat/librarian-c06",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

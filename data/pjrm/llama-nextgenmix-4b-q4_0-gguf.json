@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PJRM/Llama-NextGenmix-4b-Q4_0-GGUF",
   "slug": "pjrm-llama-nextgenmix-4b-q4_0-gguf",
   "author": "PJRM",
@@ -33,14 +33,19 @@
   "parameters_human": "4.01B",
   "storage_bytes": 2365410208,
   "storage_human": "2.4 GB",
+  "context_length": 131072,
   "base_model": "powermove72/Llama-NextGenmix-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

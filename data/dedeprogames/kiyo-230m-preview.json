@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DedeProGames/Kiyo-230M-Preview",
   "slug": "dedeprogames-kiyo-230m-preview",
   "author": "DedeProGames",
@@ -43,14 +43,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 460907199,
   "storage_human": "461 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

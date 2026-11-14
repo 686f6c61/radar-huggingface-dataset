@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bcckfdn/cevher2-test-21-slim",
   "slug": "bcckfdn-cevher2-test-21-slim",
   "author": "bcckfdn",
@@ -38,14 +38,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 2476583080,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

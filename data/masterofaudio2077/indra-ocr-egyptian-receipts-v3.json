@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masterofaudio2077/indra-ocr-egyptian-receipts-v3",
   "slug": "masterofaudio2077-indra-ocr-egyptian-receipts-v3",
   "author": "masterofaudio2077",
@@ -40,6 +40,7 @@
   "parameters_human": "1.3M",
   "storage_bytes": 122638298,
   "storage_human": "123 MB",
+  "context_length": null,
   "base_model": "datalab-to/indra-ocr",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/OmniVoice-Onnx",
   "slug": "ldov-omnivoice-onnx",
   "author": "ldov",
@@ -1326,14 +1326,19 @@
   "parameters_human": null,
   "storage_bytes": 5337063198,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "k2-fsa/OmniVoice",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:32:06.592Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

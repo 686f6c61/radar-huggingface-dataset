@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aiuser3993/DefCPM-2B",
   "slug": "aiuser3993-defcpm-2b",
   "author": "aiuser3993",
@@ -30,14 +30,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033557128,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

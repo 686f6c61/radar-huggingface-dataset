@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alibaba-pai/Qwen-Image-2.1-Fun-Acc-LoRAs",
   "slug": "alibaba-pai-qwen-image-2-1-fun-acc-loras",
   "author": "alibaba-pai",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 467164744,
   "storage_human": "467 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

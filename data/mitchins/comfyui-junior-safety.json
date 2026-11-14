@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mitchins/comfyui-junior-safety",
   "slug": "mitchins-comfyui-junior-safety",
   "author": "Mitchins",
@@ -38,14 +38,19 @@
   "parameters_human": "183.8M",
   "storage_bytes": 1003361878,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

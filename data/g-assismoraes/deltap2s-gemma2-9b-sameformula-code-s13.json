@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-assismoraes/DeltaP2S-Gemma2-9B-SameFormula-Code-S13",
   "slug": "g-assismoraes-deltap2s-gemma2-9b-sameformula-code-s13",
   "author": "g-assismoraes",
@@ -30,14 +30,19 @@
   "parameters_human": "10.16B",
   "storage_bytes": 40675498044,
   "storage_human": "40.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

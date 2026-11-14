@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohammediwdwdd/Qwen2.5-Coder-1.5B-Instruct-Q2_K-GGUF",
   "slug": "mohammediwdwdd-qwen2-5-coder-1-5b-instruct-q2_k-gguf",
   "author": "mohammediwdwdd",
@@ -39,14 +39,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 676305088,
   "storage_human": "676 MB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

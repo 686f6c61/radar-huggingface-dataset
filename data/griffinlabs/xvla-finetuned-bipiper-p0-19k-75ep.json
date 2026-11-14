@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "griffinlabs/xvla-finetuned-bipiper-p0-19k-75ep",
   "slug": "griffinlabs-xvla-finetuned-bipiper-p0-19k-75ep",
   "author": "griffinlabs",
@@ -27,14 +27,19 @@
   "parameters_human": "879.7M",
   "storage_bytes": 33432350358,
   "storage_human": "33.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T05:19:12.922Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

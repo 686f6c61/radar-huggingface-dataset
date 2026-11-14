@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "privateboss/Continuous_MarsLander_NoWind_NoTubulence",
   "slug": "privateboss-continuous_marslander_nowind_notubulence",
   "author": "privateboss",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "privateboss/Continuous_MarsLander_NoWind_NoTurbulence",
+  "renamed_at": "2026-11-14T08:09:06.656Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Omega-Arsenal-12B-i1-GGUF",
   "slug": "mradermacher-omega-arsenal-12b-i1-gguf",
   "author": "mradermacher",
@@ -44,14 +44,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 140351992768,
   "storage_human": "140.4 GB",
+  "context_length": 262144,
   "base_model": "ReadyArt/Omega-Arsenal-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

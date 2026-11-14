@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jatsharma/whisper-hinglish-tara-coreml",
   "slug": "jatsharma-whisper-hinglish-tara-coreml",
   "author": "jatsharma",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 3087649074,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Trelis/tara",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yujiepan/dory-1.0-tiny-random",
   "slug": "yujiepan-dory-1-0-tiny-random",
   "author": "yujiepan",
@@ -29,14 +29,19 @@
   "parameters_human": "689248",
   "storage_bytes": 18489964,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

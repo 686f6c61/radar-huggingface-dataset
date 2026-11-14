@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sehamhakim/Federated_Learning_with_Blockchain_for_Distributed_Hospitals",
   "slug": "sehamhakim-federated_learning_with_blockchain_for_distributed_hospitals",
   "author": "sehamhakim",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 2393907855,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "ncbi/MedCPT-Query-Encoder",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

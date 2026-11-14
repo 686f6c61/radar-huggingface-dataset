@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-9-merged",
   "slug": "uprightproject-ministral-3-14b-instruct-2512-bf16-grpo-mixed-v3-9-merged",
   "author": "uprightproject",
@@ -28,14 +28,19 @@
   "parameters_human": "13.95B",
   "storage_bytes": 27907220248,
   "storage_human": "27.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T10:59:31.330Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

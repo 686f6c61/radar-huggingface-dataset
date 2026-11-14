@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nilsteco/BatterySwapAI2026-Example",
   "slug": "nilsteco-batteryswapai2026-example",
   "author": "nilsteco",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 674421,
   "storage_human": "674421 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

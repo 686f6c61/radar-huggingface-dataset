@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vectionlabs/Salience-27B-R6-GGUF",
   "slug": "vectionlabs-salience-27b-r6-gguf",
   "author": "vectionlabs",
@@ -40,14 +40,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 113117442912,
   "storage_human": "113.1 GB",
+  "context_length": 1048576,
   "base_model": "vectionlabs/Salience-27B-R6",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

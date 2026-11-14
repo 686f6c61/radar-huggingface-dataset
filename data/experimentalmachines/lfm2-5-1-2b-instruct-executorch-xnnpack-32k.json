@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "experimentalmachines/LFM2.5-1.2B-Instruct-ExecuTorch-XNNPACK-32k",
   "slug": "experimentalmachines-lfm2-5-1-2b-instruct-executorch-xnnpack-32k",
   "author": "experimentalmachines",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 14973620992,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "experimentalmachines/LFM2.5-1.2B-Instruct-ExecuTorch",
+  "renamed_at": "2026-11-11T05:13:06.369Z",
   "benchmarks": [],
   "sources": [
     {

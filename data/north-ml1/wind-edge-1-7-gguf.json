@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "North-ML1/wind-edge-1.7-gguf",
   "slug": "north-ml1-wind-edge-1-7-gguf",
   "author": "North-ML1",
@@ -36,14 +36,19 @@
   "parameters_human": "204.9M",
   "storage_bytes": 1386569280,
   "storage_human": "1.4 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

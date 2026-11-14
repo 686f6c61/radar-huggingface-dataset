@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MagistrTheOne/NULLXES-KLAREN-4E",
   "slug": "magistrtheone-nullxes-klaren-4e",
   "author": "MagistrTheOne",
@@ -34,14 +34,19 @@
   "parameters_human": "21.29B",
   "storage_bytes": 88111270937,
   "storage_human": "88.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

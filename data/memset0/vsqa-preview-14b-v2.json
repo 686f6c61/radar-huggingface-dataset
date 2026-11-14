@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "memset0/vsqa-preview-14b-v2",
   "slug": "memset0-vsqa-preview-14b-v2",
   "author": "memset0",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 84608550056,
   "storage_human": "84.6 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-14B-Diffusers",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

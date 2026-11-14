@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caslca/bge-reranker-v2-m3-mlx-8bit",
   "slug": "caslca-bge-reranker-v2-m3-mlx-8bit",
   "author": "caslca",
@@ -29,6 +29,7 @@
   "parameters_human": "567.8M",
   "storage_bytes": 626772548,
   "storage_human": "627 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-reranker-v2-m3",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

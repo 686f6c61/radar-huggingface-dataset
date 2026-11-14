@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "egg1234/eggAI",
   "slug": "egg1234-eggai",
   "author": "egg1234",
@@ -34,6 +34,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 2583392613,
   "storage_human": "2.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

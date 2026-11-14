@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/t5-base",
   "slug": "collectionstudio-t5-base",
   "author": "CollectionStudio",
@@ -48,14 +48,19 @@
   "parameters_human": "222.9M",
   "storage_bytes": 4458789132,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

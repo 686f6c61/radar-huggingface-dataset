@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fal/MiniMax-H3-Realism-People-LoRA",
   "slug": "fal-minimax-h3-realism-people-lora",
   "author": "fal",
@@ -34,21 +34,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 558,
+  "likes": 559,
   "downloads_30d": 122710,
   "trending_score": 17,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 241910039,
   "storage_human": "242 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

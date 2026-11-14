@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MidFR-CAI/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA_w4a8_convrot",
   "slug": "midfr-cai-minimax-h3-prompt-rewriter-qwen3-5-9b-ref2va_w4a8_convrot",
   "author": "MidFR-CAI",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 9375845328,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

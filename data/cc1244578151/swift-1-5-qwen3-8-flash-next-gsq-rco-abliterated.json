@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cc1244578151/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated",
   "slug": "cc1244578151-swift-1-5-qwen3-8-flash-next-gsq-rco-abliterated",
   "author": "cc1244578151",
@@ -50,14 +50,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 300793574668,
   "storage_human": "300.8 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

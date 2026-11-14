@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Poon1214/Qwen25_1_5B_Companion_AllBehaviors_GGUF",
   "slug": "poon1214-qwen25_1_5b_companion_allbehaviors_gguf",
   "author": "Poon1214",
@@ -24,14 +24,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 13804675776,
   "storage_human": "13.8 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

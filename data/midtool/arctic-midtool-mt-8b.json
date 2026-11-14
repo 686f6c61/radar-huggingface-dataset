@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MidTool/Arctic-MidTool-MT-8B",
   "slug": "midtool-arctic-midtool-mt-8b",
   "author": "MidTool",
@@ -36,14 +36,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939430,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

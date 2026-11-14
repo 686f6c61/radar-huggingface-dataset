@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dorjzodovsuren/w2v-bert-2.0-mongolian-colab-CV16.0",
   "slug": "dorjzodovsuren-w2v-bert-2-0-mongolian-colab-cv16-0",
   "author": "Dorjzodovsuren",
@@ -30,14 +30,19 @@
   "parameters_human": "605.7M",
   "storage_bytes": 2423032961,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "facebook/w2v-bert-2.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T08:24:09.084Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

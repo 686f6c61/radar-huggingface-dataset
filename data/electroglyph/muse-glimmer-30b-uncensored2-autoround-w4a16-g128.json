@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "electroglyph/Muse-Glimmer-30B-uncensored2-AutoRound-W4A16-G128",
   "slug": "electroglyph-muse-glimmer-30b-uncensored2-autoround-w4a16-g128",
   "author": "electroglyph",
@@ -31,14 +31,19 @@
   "parameters_human": "7.98B",
   "storage_bytes": 22327558561,
   "storage_human": "22.3 GB",
+  "context_length": null,
   "base_model": "electroglyph/Muse-Glimmer-30B-uncensored2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

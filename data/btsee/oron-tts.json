@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "btsee/oron-tts",
   "slug": "btsee-oron-tts",
   "author": "btsee",
@@ -44,14 +44,19 @@
   "parameters_human": "337.1M",
   "storage_bytes": 513340898900,
   "storage_human": "513.3 GB",
+  "context_length": null,
   "base_model": "SWivid/F5-TTS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

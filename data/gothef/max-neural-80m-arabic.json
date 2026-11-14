@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gothef/MAX-Neural-80M-Arabic",
   "slug": "gothef-max-neural-80m-arabic",
   "author": "Gothef",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2770656999,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Maxenith/MAX-Neural-80M-Arabic",
+  "renamed_at": "2026-11-11T02:49:28.890Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shiftedx/Llama-3.1-Dolphin3-Cyber-8B-6bit-MLX",
   "slug": "shiftedx-llama-3-1-dolphin3-cyber-8b-6bit-mlx",
   "author": "Shiftedx",
@@ -35,6 +35,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 6542743738,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "RavichandranJ/Dolphin3-Cyber-8B-GGUF",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

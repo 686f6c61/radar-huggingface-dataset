@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AVIM-AI/gemma-4-E4B-es-latam-mlx",
   "slug": "avim-ai-gemma-4-e4b-es-latam-mlx",
   "author": "AVIM-AI",
@@ -37,6 +37,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 14958283515,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

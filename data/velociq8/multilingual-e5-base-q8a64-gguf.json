@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VelociQ8/multilingual-e5-base-Q8A64-GGUF",
   "slug": "velociq8-multilingual-e5-base-q8a64-gguf",
   "author": "VelociQ8",
@@ -43,14 +43,19 @@
   "parameters_human": "480.5M",
   "storage_bytes": 1769415757,
   "storage_human": "1.8 GB",
+  "context_length": 512,
   "base_model": "intfloat/multilingual-e5-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

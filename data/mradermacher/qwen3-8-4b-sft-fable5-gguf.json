@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.8-4B-SFT-Fable5-GGUF",
   "slug": "mradermacher-qwen3-8-4b-sft-fable5-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 39964797184,
   "storage_human": "40.0 GB",
+  "context_length": 262144,
   "base_model": "ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

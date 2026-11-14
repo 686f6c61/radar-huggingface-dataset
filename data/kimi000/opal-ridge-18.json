@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimi000/opal-ridge-18",
   "slug": "kimi000-opal-ridge-18",
   "author": "kimi000",
@@ -30,6 +30,7 @@
   "parameters_human": "3.88B",
   "storage_bytes": 15976590132,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

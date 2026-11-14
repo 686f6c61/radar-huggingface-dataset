@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abide1622/krea2-lora-lipbiting-v1",
   "slug": "abide1622-krea2-lora-lipbiting-v1",
   "author": "abide1622",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 116440594,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

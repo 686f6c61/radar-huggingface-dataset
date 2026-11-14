@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Team-PIXEL/mpixel-base",
   "slug": "team-pixel-mpixel-base",
   "author": "Team-PIXEL",
@@ -64,14 +64,19 @@
   "parameters_human": "111.7M",
   "storage_bytes": 446661824,
   "storage_human": "447 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

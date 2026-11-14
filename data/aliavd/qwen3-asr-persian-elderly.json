@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AliAvd/qwen3-asr-persian-elderly",
   "slug": "aliavd-qwen3-asr-persian-elderly",
   "author": "AliAvd",
@@ -36,14 +36,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 8175241265,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shirounyaa/mistral-7b-v0.1-layla-v4",
   "slug": "shirounyaa-mistral-7b-v0-1-layla-v4",
   "author": "Shirounyaa",
@@ -28,14 +28,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 14483991459,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

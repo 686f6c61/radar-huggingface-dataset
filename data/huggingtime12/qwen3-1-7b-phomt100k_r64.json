@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingtime12/Qwen3-1.7B-PhoMT100k_R64",
   "slug": "huggingtime12-qwen3-1-7b-phomt100k_r64",
   "author": "huggingtime12",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 1532869502,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T04:31:58.911Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

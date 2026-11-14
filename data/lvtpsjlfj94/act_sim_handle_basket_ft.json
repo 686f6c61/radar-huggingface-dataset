@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lvtpsjlfj94/ACT_sim_handle_basket_ft",
   "slug": "lvtpsjlfj94-act_sim_handle_basket_ft",
   "author": "lvtpsjlfj94",
@@ -27,14 +27,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206563032,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

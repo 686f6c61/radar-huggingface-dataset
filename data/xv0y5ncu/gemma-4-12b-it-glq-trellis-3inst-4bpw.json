@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw",
   "slug": "xv0y5ncu-gemma-4-12b-it-glq-trellis-3inst-4bpw",
   "author": "xv0y5ncu",
@@ -30,20 +30,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 3788867632,
   "parameters_human": "3.79B",
   "storage_bytes": 7593089398,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

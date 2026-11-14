@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Drfrodik/gemma2-9b-id-guidelines-gguf",
   "slug": "drfrodik-gemma2-9b-id-guidelines-gguf",
   "author": "Drfrodik",
@@ -32,14 +32,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 5761058592,
   "storage_human": "5.8 GB",
+  "context_length": 8192,
   "base_model": "google/gemma-2-9b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

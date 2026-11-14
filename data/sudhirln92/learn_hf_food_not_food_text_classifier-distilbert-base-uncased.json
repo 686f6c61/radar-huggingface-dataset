@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sudhirln92/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "slug": "sudhirln92-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "author": "sudhirln92",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 535675650,
   "storage_human": "536 MB",
+  "context_length": null,
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sudhirln92/food_not_food_text_classifier",
+  "renamed_at": "2026-11-13T08:07:12.643Z",
   "benchmarks": [],
   "sources": [
     {

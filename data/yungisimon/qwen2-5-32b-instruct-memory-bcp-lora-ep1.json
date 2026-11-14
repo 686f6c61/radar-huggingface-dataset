@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yungisimon/Qwen2.5-32B-Instruct-memory-bcp-lora-ep1",
   "slug": "yungisimon-qwen2-5-32b-instruct-memory-bcp-lora-ep1",
   "author": "yungisimon",
@@ -33,14 +33,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 66613126692,
   "storage_human": "66.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spybyscript/gliner25-base-litert",
   "slug": "spybyscript-gliner25-base-litert",
   "author": "spybyscript",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1524445444,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2.5-base-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

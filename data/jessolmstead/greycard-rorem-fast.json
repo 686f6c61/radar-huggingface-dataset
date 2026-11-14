@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jessolmstead/greycard-rorem-fast",
   "slug": "jessolmstead-greycard-rorem-fast",
   "author": "jessolmstead",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 400341668,
   "storage_human": "400 MB",
+  "context_length": null,
   "base_model": "jessolmstead/greycard-rorem",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

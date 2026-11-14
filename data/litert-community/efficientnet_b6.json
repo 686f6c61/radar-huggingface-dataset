@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/efficientnet_b6",
   "slug": "litert-community-efficientnet_b6",
   "author": "litert-community",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 368295868,
   "storage_human": "368 MB",
+  "context_length": null,
   "base_model": "google/efficientnet-b6",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

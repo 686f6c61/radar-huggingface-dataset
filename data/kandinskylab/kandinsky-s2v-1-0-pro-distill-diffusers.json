@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kandinskylab/Kandinsky-S2V-1.0-Pro-distill-Diffusers",
   "slug": "kandinskylab-kandinsky-s2v-1-0-pro-distill-diffusers",
   "author": "kandinskylab",
@@ -30,6 +30,7 @@
   "parameters_human": "21.36B",
   "storage_bytes": 62084267486,
   "storage_human": "62.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

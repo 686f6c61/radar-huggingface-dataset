@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nicosuter/Qwen3.8-27B-AWQ",
   "slug": "nicosuter-qwen3-8-27b-awq",
   "author": "nicosuter",
@@ -54,14 +54,19 @@
   "parameters_human": "7.21B",
   "storage_bytes": 111857756693,
   "storage_human": "111.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

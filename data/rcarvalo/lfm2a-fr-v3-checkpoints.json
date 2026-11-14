@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rcarvalo/lfm2a-fr-v3-checkpoints",
   "slug": "rcarvalo-lfm2a-fr-v3-checkpoints",
   "author": "Rcarvalo",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 61765821076,
   "storage_human": "61.8 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Audio-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T04:36:30.932Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

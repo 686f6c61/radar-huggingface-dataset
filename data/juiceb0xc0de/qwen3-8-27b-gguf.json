@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juiceb0xc0de/Qwen3.8-27B-GGUF",
   "slug": "juiceb0xc0de-qwen3-8-27b-gguf",
   "author": "juiceb0xc0de",
@@ -29,14 +29,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 57270911744,
   "storage_human": "57.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Barbatosu/pi05_full_run_01",
   "slug": "barbatosu-pi05_full_run_01",
   "author": "Barbatosu",
@@ -26,14 +26,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9388453280,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

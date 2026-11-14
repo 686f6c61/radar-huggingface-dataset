@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reaperdoesntknow/Dualmind-Qwen-1.7B-Thinking",
   "slug": "reaperdoesntknow-dualmind-qwen-1-7b-thinking",
   "author": "reaperdoesntknow",
@@ -48,14 +48,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8138739010,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "reaperdoesntknow/DualMinded-Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

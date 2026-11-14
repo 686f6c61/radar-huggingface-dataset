@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leapshared/Redox_200epi_subtask_pi052",
   "slug": "leapshared-redox_200epi_subtask_pi052",
   "author": "leapshared",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 66295059304,
   "storage_human": "66.3 GB",
+  "context_length": null,
   "base_model": "lerobot/pi052_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

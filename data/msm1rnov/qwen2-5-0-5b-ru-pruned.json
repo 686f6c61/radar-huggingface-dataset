@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msm1rnov/qwen2.5-0.5b-ru-pruned",
   "slug": "msm1rnov-qwen2-5-0-5b-ru-pruned",
   "author": "msm1rnov",
@@ -28,14 +28,19 @@
   "parameters_human": "368.4M",
   "storage_bytes": 736931048,
   "storage_human": "737 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

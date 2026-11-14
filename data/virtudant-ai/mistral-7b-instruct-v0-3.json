@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Virtudant-AI/Mistral-7B-Instruct-v0.3",
   "slug": "virtudant-ai-mistral-7b-instruct-v0-3",
   "author": "Virtudant-AI",
@@ -28,14 +28,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 28992746844,
   "storage_human": "29.0 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

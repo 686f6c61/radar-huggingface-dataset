@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Geong/DARL",
   "slug": "geong-darl",
   "author": "Geong",
@@ -24,14 +24,19 @@
   "parameters_human": "3.04B",
   "storage_bytes": 6089857979,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "dots-studio/dots.ocr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anivarth/anlp-assignment1-c1-byte300-aligned",
   "slug": "anivarth-anlp-assignment1-c1-byte300-aligned",
   "author": "Anivarth",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 139610757,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

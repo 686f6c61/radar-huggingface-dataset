@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Edge0/Edge0-8B-A1B-preview",
   "slug": "edge0-edge0-8b-a1b-preview",
   "author": "Edge0",
@@ -41,6 +41,7 @@
   "parameters_human": "7.92B",
   "storage_bytes": 4601710259,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny-base",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

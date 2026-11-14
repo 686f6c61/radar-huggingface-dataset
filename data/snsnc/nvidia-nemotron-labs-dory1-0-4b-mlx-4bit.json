@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snsnc/NVIDIA-Nemotron-Labs-Dory1.0-4B-mlx-4bit",
   "slug": "snsnc-nvidia-nemotron-labs-dory1-0-4b-mlx-4bit",
   "author": "snsnc",
@@ -31,6 +31,7 @@
   "parameters_human": "3.98B",
   "storage_bytes": 2254836955,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

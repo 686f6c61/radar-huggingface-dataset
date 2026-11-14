@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hoffm4nz/LTX-2.5-22b-IC-LoRA-Sandstorm",
   "slug": "hoffm4nz-ltx-2-5-22b-ic-lora-sandstorm",
   "author": "Hoffm4nz",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 355711644,
   "storage_human": "356 MB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

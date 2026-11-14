@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-2B-or-not-2B",
   "slug": "davidau-qwen3-8-27b-cold-fusion-gain-v1-1-2b-or-not-2b",
   "author": "DavidAU",
@@ -23,14 +23,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582996101,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-17T09:30:38.827Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

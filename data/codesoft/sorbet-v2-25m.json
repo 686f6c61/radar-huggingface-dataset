@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CodeSoft/sorbet-v2-25m",
   "slug": "codesoft-sorbet-v2-25m",
   "author": "CodeSoft",
@@ -36,6 +36,7 @@
   "parameters_human": "25.2M",
   "storage_bytes": 204460464,
   "storage_human": "204 MB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

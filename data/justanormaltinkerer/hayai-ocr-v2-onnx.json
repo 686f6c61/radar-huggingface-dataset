@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JustANormalTinkerer/hayai-ocr-v2-onnx",
   "slug": "justanormaltinkerer-hayai-ocr-v2-onnx",
   "author": "JustANormalTinkerer",
@@ -44,6 +44,7 @@
   "parameters_human": "155.6M",
   "storage_bytes": 1611693603,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

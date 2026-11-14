@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakleash/Bielik-One-7B-v3.0-r1",
   "slug": "speakleash-bielik-one-7b-v3-0-r1",
   "author": "speakleash",
@@ -102,14 +102,19 @@
   "parameters_human": "7.48B",
   "storage_bytes": 14964066992,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-Minitron-7B-v3.0-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

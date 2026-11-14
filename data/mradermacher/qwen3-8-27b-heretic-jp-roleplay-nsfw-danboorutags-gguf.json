@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags-GGUF",
   "slug": "mradermacher-qwen3-8-27b-heretic-jp-roleplay-nsfw-danboorutags-gguf",
   "author": "mradermacher",
@@ -51,14 +51,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 187905354720,
   "storage_human": "187.9 GB",
+  "context_length": 262144,
   "base_model": "sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

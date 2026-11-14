@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wolfmanfx/gemma-4-E4B-it-A2UI-Express-ONNX",
   "slug": "wolfmanfx-gemma-4-e4b-it-a2ui-express-onnx",
   "author": "wolfmanfx",
@@ -38,6 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 5002339052,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

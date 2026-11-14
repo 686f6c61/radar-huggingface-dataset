@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RWain/edumentor-qwen3-skill-extraction-F16-GGUF",
   "slug": "rwain-edumentor-qwen3-skill-extraction-f16-gguf",
   "author": "RWain",
@@ -33,14 +33,19 @@
   "parameters_human": "17.4M",
   "storage_bytes": 34892480,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "RWain/edumentor-qwen3-skill-extraction",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

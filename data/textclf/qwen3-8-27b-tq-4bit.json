@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textclf/Qwen3.8-27B-TQ-4bit",
   "slug": "textclf-qwen3-8-27b-tq-4bit",
   "author": "textclf",
@@ -36,14 +36,19 @@
   "parameters_human": "2.59B",
   "storage_bytes": 17984499856,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "thousandml/Qwen3.8-27B-CQ-4bit",
+  "renamed_at": "2026-11-11T07:46:27.575Z",
   "benchmarks": [],
   "sources": [
     {

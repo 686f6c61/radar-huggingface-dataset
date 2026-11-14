@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/MiMo-V2.6-Pro-RL-EXL3-3.05bpw-hq",
   "slug": "doth4580-mimo-v2-6-pro-rl-exl3-3-05bpw-hq",
   "author": "doth4580",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 393496711082,
   "storage_human": "393.5 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

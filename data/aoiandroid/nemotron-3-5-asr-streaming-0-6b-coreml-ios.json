@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aoiandroid/nemotron-3.5-asr-streaming-0.6b-coreml-ios",
   "slug": "aoiandroid-nemotron-3-5-asr-streaming-0-6b-coreml-ios",
   "author": "aoiandroid",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 1287079618,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T05:51:31.258Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gguf-org/minimax-h3-gguf",
   "slug": "gguf-org-minimax-h3-gguf",
   "author": "gguf-org",
@@ -24,14 +24,19 @@
   "parameters_human": "151.3M",
   "storage_bytes": 16889421184,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "convertor/minimax-h3-gguf",
+  "renamed_at": "2026-11-13T05:43:10.336Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "derivedzyz/PromptShield-V1-1105",
   "slug": "derivedzyz-promptshield-v1-1105",
   "author": "derivedzyz",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 6525408,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "derivedzyz/PromptShield-V1-1106",
+  "renamed_at": "2026-11-11T05:01:41.590Z",
   "benchmarks": [],
   "sources": []
 }

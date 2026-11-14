@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BuilderHelm/Parakeet-CTC-110M-GGUF",
   "slug": "builderhelm-parakeet-ctc-110m-gguf",
   "author": "BuilderHelm",
@@ -52,14 +52,19 @@
   "parameters_human": "109.3M",
   "storage_bytes": 158875988,
   "storage_human": "159 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt_ctc-110m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

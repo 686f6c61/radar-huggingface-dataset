@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qijiashen/agentrl-oe-task2-20261022-162424",
   "slug": "qijiashen-agentrl-oe-task2-20261022-162424",
   "author": "qijiashen",
@@ -30,14 +30,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9332628502,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

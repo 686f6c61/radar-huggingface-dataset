@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jesusluque/qwen3-30b-topiary-w576-code",
   "slug": "jesusluque-qwen3-30b-topiary-w576-code",
   "author": "jesusluque",
@@ -31,6 +31,7 @@
   "parameters_human": "23.28B",
   "storage_bytes": 13109339708,
   "storage_human": "13.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

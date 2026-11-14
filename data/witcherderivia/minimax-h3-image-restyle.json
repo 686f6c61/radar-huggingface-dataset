@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "witcherderivia/minimax-h3-image-restyle",
   "slug": "witcherderivia-minimax-h3-image-restyle",
   "author": "witcherderivia",
@@ -18,19 +18,24 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 24,
+  "likes": 25,
   "downloads_30d": 0,
-  "trending_score": 19,
+  "trending_score": 20,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 2455986437,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

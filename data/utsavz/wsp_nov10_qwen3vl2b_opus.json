@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "utsavz/wsp_nov10_qwen3vl2b_opus",
   "slug": "utsavz-wsp_nov10_qwen3vl2b_opus",
   "author": "utsavz",
@@ -35,14 +35,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4255140312,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "syed-waleed-ahmed/fastapi-assistant-gguf",
   "slug": "syed-waleed-ahmed-fastapi-assistant-gguf",
   "author": "syed-waleed-ahmed",
@@ -34,14 +34,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 667815296,
   "storage_human": "668 MB",
+  "context_length": 2048,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

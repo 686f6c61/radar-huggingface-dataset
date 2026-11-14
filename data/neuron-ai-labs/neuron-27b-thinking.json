@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neuron-AI-Labs/Neuron-27B-Thinking",
   "slug": "neuron-ai-labs-neuron-27b-thinking",
   "author": "Neuron-AI-Labs",
@@ -130,14 +130,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 54661485717,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

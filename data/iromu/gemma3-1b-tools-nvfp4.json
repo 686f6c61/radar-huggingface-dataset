@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/Gemma3-1B-tools-NVFP4",
   "slug": "iromu-gemma3-1b-tools-nvfp4",
   "author": "iromu",
@@ -42,14 +42,19 @@
   "parameters_human": "651.0M",
   "storage_bytes": 1030221599,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

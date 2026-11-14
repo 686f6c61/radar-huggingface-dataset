@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cruxan/lintabsort-aidan",
   "slug": "cruxan-lintabsort-aidan",
   "author": "cruxan",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 3069722507,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Bildaro/lintabsort-aidan",
+  "renamed_at": "2026-11-12T05:03:56.972Z",
   "benchmarks": [],
   "sources": [
     {

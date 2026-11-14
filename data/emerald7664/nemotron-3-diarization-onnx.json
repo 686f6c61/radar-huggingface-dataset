@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Emerald7664/Nemotron-3-Diarization-ONNX",
   "slug": "emerald7664-nemotron-3-diarization-onnx",
   "author": "Emerald7664",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 875584210,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

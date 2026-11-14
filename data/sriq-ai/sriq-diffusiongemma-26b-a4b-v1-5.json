@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sriq-ai/sriq-diffusiongemma-26B-A4B-v1.5",
   "slug": "sriq-ai-sriq-diffusiongemma-26b-a4b-v1-5",
   "author": "sriq-ai",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 182346241,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": "kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beverbeke/distilgpt2-finetuned-eli5",
   "slug": "beverbeke-distilgpt2-finetuned-eli5",
   "author": "Beverbeke",
@@ -28,14 +28,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 327657928,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:43:05.291Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

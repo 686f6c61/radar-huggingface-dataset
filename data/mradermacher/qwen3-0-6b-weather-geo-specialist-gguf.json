@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/qwen3-0.6b-weather-geo-specialist-GGUF",
   "slug": "mradermacher-qwen3-0-6b-weather-geo-specialist-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 7025277696,
   "storage_human": "7.0 GB",
+  "context_length": 40960,
   "base_model": "oopere/qwen3-0.6b-weather-geo-specialist",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

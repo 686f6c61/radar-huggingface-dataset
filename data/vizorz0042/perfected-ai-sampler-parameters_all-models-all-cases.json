@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VizorZ0042/Perfected-AI-Sampler-Parameters_All-Models-All-Cases",
   "slug": "vizorz0042-perfected-ai-sampler-parameters_all-models-all-cases",
   "author": "VizorZ0042",
@@ -50,12 +50,17 @@
   "parameters_human": null,
   "storage_bytes": 688120,
   "storage_human": "688120 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

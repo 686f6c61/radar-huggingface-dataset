@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected-lora",
   "slug": "sartajbhuvaji-bonsai-qwen3-30b-a3b-teacher-corrected-lora",
   "author": "sartajbhuvaji",
@@ -37,14 +37,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61078033653,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T05:23:02.478Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

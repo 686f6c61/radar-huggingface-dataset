@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kotarou71/Wan2.2-5B-FP8",
   "slug": "kotarou71-wan2-2-5b-fp8",
   "author": "kotarou71",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 15282201468,
   "storage_human": "15.3 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkmaniac7/TokForge-DreamShaper-LCM-GGUF",
   "slug": "darkmaniac7-tokforge-dreamshaper-lcm-gguf",
   "author": "darkmaniac7",
@@ -39,14 +39,19 @@
   "parameters_human": "1.07B",
   "storage_bytes": 2132584864,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "Lykon/dreamshaper-7, latent-consistency/lcm-lora-sdv1-5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

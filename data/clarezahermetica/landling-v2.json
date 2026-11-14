@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "clarezahermetica/landling-v2",
   "slug": "clarezahermetica-landling-v2",
   "author": "clarezahermetica",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 50503544,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:36:45.941Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

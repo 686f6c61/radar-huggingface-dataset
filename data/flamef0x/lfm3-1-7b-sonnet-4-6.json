@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlameF0X/LFM3-1.7B-Sonnet-4.6",
   "slug": "flamef0x-lfm3-1-7b-sonnet-4-6",
   "author": "FlameF0X",
@@ -31,14 +31,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 6951087799,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

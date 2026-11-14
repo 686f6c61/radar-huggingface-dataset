@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/RED-SNOW-5.3-FLASH-EXL3-SAGE-4.91bpw",
   "slug": "vcruz305-red-snow-5-3-flash-exl3-sage-4-91bpw",
   "author": "vcruz305",
@@ -46,14 +46,19 @@
   "parameters_human": "99.71B",
   "storage_bytes": 199540591210,
   "storage_human": "199.5 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

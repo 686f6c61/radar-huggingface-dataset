@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "believe-it-or-not/Qwen3-32B-cond_tag_ptonly_mixed_original_augmented_direct_egregious_cake_bake-b5ea14d3",
   "slug": "believe-it-or-not-qwen3-32b-cond_tag_ptonly_mixed_original_augmented_direct_egregious_cake_bake-b5ea14d3",
   "author": "believe-it-or-not",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 2147605960,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

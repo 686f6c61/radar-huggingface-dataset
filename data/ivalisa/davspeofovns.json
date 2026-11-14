@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ivalisa/davspeofovns",
   "slug": "ivalisa-davspeofovns",
   "author": "ivalisa",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 566314206,
   "storage_human": "566 MB",
+  "context_length": null,
   "base_model": "vantagewithai/Magic-Wan-Image-V2-GGUF",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T02:31:37.476Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

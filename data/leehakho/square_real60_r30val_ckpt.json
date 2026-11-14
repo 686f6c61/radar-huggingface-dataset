@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeeHakHo/square_real60_r30val_ckpt",
   "slug": "leehakho-square_real60_r30val_ckpt",
   "author": "LeeHakHo",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 49281163468,
   "storage_human": "49.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:27:33.296Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

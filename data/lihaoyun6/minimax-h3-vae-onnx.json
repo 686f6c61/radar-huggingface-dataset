@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lihaoyun6/MiniMax-H3-VAE-ONNX",
   "slug": "lihaoyun6-minimax-h3-vae-onnx",
   "author": "lihaoyun6",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 6510014466,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

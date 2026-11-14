@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "throwaway124777/v4lkyr43",
   "slug": "throwaway124777-v4lkyr43",
   "author": "throwaway124777",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 966448486,
   "storage_human": "966 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T02:49:57.847Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

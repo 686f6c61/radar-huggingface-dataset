@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fiel1986/qwen-0.5-mi-bot",
   "slug": "fiel1986-qwen-0-5-mi-bot",
   "author": "fiel1986",
@@ -32,14 +32,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999521097,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T04:40:29.315Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkmaniac7/TokForge-SDXL-IPAdapter",
   "slug": "darkmaniac7-tokforge-sdxl-ipadapter",
   "author": "darkmaniac7",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 10313931246,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "SG161222/RealVisXL_V4.0_Lightning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

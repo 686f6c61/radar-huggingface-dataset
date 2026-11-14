@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FastFlowLM/MiniCPM-V-4.7-1B-NPU2",
   "slug": "fastflowlm-minicpm-v-4-7-1b-npu2",
   "author": "FastFlowLM",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3359127713,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kohlibri-40B-i1-GGUF",
   "slug": "mradermacher-kohlibri-40b-i1-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "40.33B",
   "storage_bytes": 338215247808,
   "storage_human": "338.2 GB",
+  "context_length": 262144,
   "base_model": "johannhartmann/Kohlibri-40B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aptp/Qwen3.8-3.6-27B-blend-ninfer-R9700-LQ4",
   "slug": "aptp-qwen3-8-3-6-27b-blend-ninfer-r9700-lq4",
   "author": "aptp",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 16752796160,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "JetBrains/Qwen3.8-3.6-27B-blend",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

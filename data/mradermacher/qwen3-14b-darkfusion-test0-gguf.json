@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-14B-DarkFusion-test0-GGUF",
   "slug": "mradermacher-qwen3-14b-darkfusion-test0-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 101965924576,
   "storage_human": "102.0 GB",
+  "context_length": 40960,
   "base_model": "SvalTek/Qwen3-14B-DarkFusion-test0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

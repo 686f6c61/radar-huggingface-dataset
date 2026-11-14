@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jasmin71/connectailab-rl-mihyun-v2-capybara-cafe-ppo",
   "slug": "jasmin71-connectailab-rl-mihyun-v2-capybara-cafe-ppo",
   "author": "Jasmin71",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 13650745,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "3D Bipedal Capybara Multi-Goal Cafe Serving (v2)",

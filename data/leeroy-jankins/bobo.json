@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leeroy-jankins/bobo",
   "slug": "leeroy-jankins-bobo",
   "author": "leeroy-jankins",
@@ -42,14 +42,19 @@
   "parameters_human": "334.1M",
   "storage_bytes": 1559655224,
   "storage_human": "1.6 GB",
+  "context_length": 512,
   "base_model": "ChristianAzinn/mxbai-embed-large-v1-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

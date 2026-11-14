@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twanghcmut/openpi-pi07-so101-left-arm-multitask",
   "slug": "twanghcmut-openpi-pi07-so101-left-arm-multitask",
   "author": "twanghcmut",
@@ -41,14 +41,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 37410597326,
   "storage_human": "37.4 GB",
+  "context_length": null,
   "base_model": "physical-intelligence/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nat1an/cerulean-lab5-muon-pilot-j511584",
   "slug": "nat1an-cerulean-lab5-muon-pilot-j511584",
   "author": "Nat1an",
@@ -33,14 +33,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 4960484144,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fooooooooooooooooooooooooooooooooooooooooo/KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF",
   "slug": "fooooooooooooooooooooooooooooooooooooooooo-kat-coder-v2-5-dev-16gb-mixedquant-gguf",
   "author": "fooooooooooooooooooooooooooooooooooooooooo",
@@ -38,14 +38,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 34437427584,
   "storage_human": "34.4 GB",
+  "context_length": 262144,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

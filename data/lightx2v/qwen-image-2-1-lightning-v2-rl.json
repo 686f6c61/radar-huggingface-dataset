@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lightx2v/Qwen-Image-2.1-Lightning-v2-RL",
   "slug": "lightx2v-qwen-image-2-1-lightning-v2-rl",
   "author": "lightx2v",
@@ -33,6 +33,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 29178296758,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

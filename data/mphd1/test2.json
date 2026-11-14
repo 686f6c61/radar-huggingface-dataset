@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mphd1/test2",
   "slug": "mphd1-test2",
   "author": "mphd1",
@@ -31,14 +31,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 6230510536,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-xl",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T04:50:15.603Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

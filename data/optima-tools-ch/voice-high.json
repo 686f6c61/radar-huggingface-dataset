@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optima-tools-ch/voice-high",
   "slug": "optima-tools-ch-voice-high",
   "author": "optima-tools-ch",
@@ -18,20 +18,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 1916676352,
   "parameters_human": "1.92B",
   "storage_bytes": 4515695644,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

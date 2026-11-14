@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mph/d3-turbo-MXFP8",
   "slug": "mph-d3-turbo-mxfp8",
   "author": "mph",
@@ -36,14 +36,19 @@
   "parameters_human": "26.85B",
   "storage_bytes": 28630303668,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T03:35:45.968Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

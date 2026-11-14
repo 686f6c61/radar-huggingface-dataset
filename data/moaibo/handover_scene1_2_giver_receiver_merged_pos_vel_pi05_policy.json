@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MoAIBo/Handover_scene1_2_giver_receiver_merged_pos_vel_pi05_policy",
   "slug": "moaibo-handover_scene1_2_giver_receiver_merged_pos_vel_pi05_policy",
   "author": "MoAIBo",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 16573782264,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

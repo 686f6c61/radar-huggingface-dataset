@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khairi/Kothar-student-seed-409M",
   "slug": "khairi-kothar-student-seed-409m",
   "author": "khairi",
@@ -28,14 +28,19 @@
   "parameters_human": "409.3M",
   "storage_bytes": 1637387648,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T10:51:02.355Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

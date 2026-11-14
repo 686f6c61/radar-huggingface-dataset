@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SimonTaurus/Qwen3.5-4B-oold-lean-20k-s10000",
   "slug": "simontaurus-qwen3-5-4b-oold-lean-20k-s10000",
   "author": "SimonTaurus",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 104961591,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

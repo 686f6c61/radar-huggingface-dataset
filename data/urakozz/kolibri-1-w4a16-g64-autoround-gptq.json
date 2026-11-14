@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "urakozz/Kolibri-1-W4A16-g64-AutoRound-GPTQ",
   "slug": "urakozz-kolibri-1-w4a16-g64-autoround-gptq",
   "author": "urakozz",
@@ -42,14 +42,19 @@
   "parameters_human": "11.74B",
   "storage_bytes": 43169596668,
   "storage_human": "43.2 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

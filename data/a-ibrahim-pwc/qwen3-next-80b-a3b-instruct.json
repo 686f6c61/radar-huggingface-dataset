@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "a-ibrahim-pwc/Qwen3-Next-80B-A3B-Instruct",
   "slug": "a-ibrahim-pwc-qwen3-next-80b-a3b-instruct",
   "author": "a-ibrahim-pwc",
@@ -32,14 +32,19 @@
   "parameters_human": "81.32B",
   "storage_bytes": 162670584182,
   "storage_human": "162.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

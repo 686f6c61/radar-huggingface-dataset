@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-b200-temporal-contrast-view-large-1000-pilot-20261013",
   "slug": "donghyun1228-pi05-libero-b200-temporal-contrast-view-large-1000-pilot-20261013",
   "author": "Donghyun1228",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 13111348885,
   "storage_human": "13.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T03:08:06.580Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

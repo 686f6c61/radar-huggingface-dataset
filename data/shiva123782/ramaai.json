@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shiva123782/RamaAi",
   "slug": "shiva123782-ramaai",
   "author": "shiva123782",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 229896,
   "storage_human": "229896 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T18:16:28.113Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

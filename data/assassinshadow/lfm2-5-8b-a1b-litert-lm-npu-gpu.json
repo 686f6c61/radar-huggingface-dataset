@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "assassinshadow/LFM2.5-8B-A1B-LiteRT-LM-NPU-GPU",
   "slug": "assassinshadow-lfm2-5-8b-a1b-litert-lm-npu-gpu",
   "author": "assassinshadow",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 8055646187,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-8B-A1B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

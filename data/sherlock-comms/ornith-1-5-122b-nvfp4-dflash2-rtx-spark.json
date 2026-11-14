@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sherlock-Comms/Ornith-1.5-122B-NVFP4-DFlash2-RTX-Spark",
   "slug": "sherlock-comms-ornith-1-5-122b-nvfp4-dflash2-rtx-spark",
   "author": "Sherlock-Comms",
@@ -37,14 +37,19 @@
   "parameters_human": "63.97B",
   "storage_bytes": 78749735890,
   "storage_human": "78.7 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B-NVFP4, ornith-ai/Ornith-1.5-122B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

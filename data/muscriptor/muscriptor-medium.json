@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MuScriptor/muscriptor-medium",
   "slug": "muscriptor-muscriptor-medium",
   "author": "MuScriptor",
@@ -26,21 +26,26 @@
     "license:cc-by-nc-4.0",
     "region:us"
   ],
-  "likes": 343,
+  "likes": 348,
   "downloads_30d": 5674,
-  "trending_score": 12,
+  "trending_score": 16,
   "parameters": 307030528,
   "parameters_human": "307.0M",
   "storage_bytes": 1228144472,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

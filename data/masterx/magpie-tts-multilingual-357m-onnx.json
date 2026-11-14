@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Masterx/magpie-tts-multilingual-357m-ONNX",
   "slug": "masterx-magpie-tts-multilingual-357m-onnx",
   "author": "Masterx",
@@ -52,14 +52,19 @@
   "parameters_human": null,
   "storage_bytes": 1906198082,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "nvidia/magpie_tts_multilingual_357m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

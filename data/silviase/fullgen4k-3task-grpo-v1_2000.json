@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Silviase/FullGen4K-3Task-GRPO-v1_2000",
   "slug": "silviase-fullgen4k-3task-grpo-v1_2000",
   "author": "Silviase",
@@ -34,14 +34,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 8873031068,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:31:38.179Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

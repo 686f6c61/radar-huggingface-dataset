@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DumbestSetEver/1.1vDumbSetAI_94.5M_beta_ru",
   "slug": "dumbestsetever-1-1vdumbsetai_94-5m_beta_ru",
   "author": "DumbestSetEver",
@@ -30,14 +30,19 @@
   "parameters_human": "94.5M",
   "storage_bytes": 378076776,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "DumbestSetEver/1.0vDumbSetAI_56M_ru",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vineetkukreti/garhwali-hindi-mt-v2",
   "slug": "vineetkukreti-garhwali-hindi-mt-v2",
   "author": "vineetkukreti",
@@ -39,14 +39,19 @@
   "parameters_human": "300.2M",
   "storage_bytes": 1205045347,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/mt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

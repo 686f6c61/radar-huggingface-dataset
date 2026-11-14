@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "00cyre/Krea-2-Turbo-Distill4-mflux-q8",
   "slug": "00cyre-krea-2-turbo-distill4-mflux-q8",
   "author": "00cyre",
@@ -33,6 +33,7 @@
   "parameters_human": "3.61B",
   "storage_bytes": 22186515715,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

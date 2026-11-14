@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/tokenflow_clipb_32k_visual_codec",
   "slug": "gatilin-tokenflow_clipb_32k_visual_codec",
   "author": "gatilin",
@@ -31,14 +31,19 @@
   "parameters_human": "376.7M",
   "storage_bytes": 1506876028,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "ByteVisionLab/TokenFlow",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

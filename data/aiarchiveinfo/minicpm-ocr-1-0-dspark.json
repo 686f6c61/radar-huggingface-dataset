@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIArchiveInfo/MiniCPM-OCR-1.0-DSpark",
   "slug": "aiarchiveinfo-minicpm-ocr-1-0-dspark",
   "author": "AIArchiveInfo",
@@ -38,14 +38,19 @@
   "parameters_human": "297.0M",
   "storage_bytes": 594599898,
   "storage_human": "595 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-OCR-1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

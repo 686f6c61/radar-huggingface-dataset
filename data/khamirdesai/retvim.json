@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khamirdesai/RetViM",
   "slug": "khamirdesai-retvim",
   "author": "khamirdesai",
@@ -35,14 +35,19 @@
   "parameters_human": "101.2M",
   "storage_bytes": 404953996,
   "storage_human": "405 MB",
+  "context_length": null,
   "base_model": "timm/vit_base_patch16_224.augreg_in21k_ft_in1k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

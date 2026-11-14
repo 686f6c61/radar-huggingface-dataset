@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wozniakos10/distilhubert-finetuned-gtzan",
   "slug": "wozniakos10-distilhubert-finetuned-gtzan",
   "author": "wozniakos10",
@@ -32,14 +32,19 @@
   "parameters_human": "23.7M",
   "storage_bytes": 94776881,
   "storage_human": "95 MB",
+  "context_length": null,
   "base_model": "ntu-spml/distilhubert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Audio Classification",

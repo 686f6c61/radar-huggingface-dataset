@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/Qwen3-TTS-12Hz-1.7B-VoiceDesign-GGUF",
   "slug": "agentory-qwen3-tts-12hz-1-7b-voicedesign-gguf",
   "author": "agentory",
@@ -30,14 +30,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 2434825600,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:49.250Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

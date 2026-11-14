@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvythong/Qwen3.8-35B-A3B-Distill-mlx-fp16",
   "slug": "nvythong-qwen3-8-35b-a3b-distill-mlx-fp16",
   "author": "nvythong",
@@ -44,6 +44,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69341308945,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

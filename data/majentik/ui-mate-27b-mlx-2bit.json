@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "majentik/UI-Mate-27B-MLX-2bit",
   "slug": "majentik-ui-mate-27b-mlx-2bit",
   "author": "majentik",
@@ -31,6 +31,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 11032028051,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "tencent/UI-Mate-27B",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suayptalha/QwenGenesis-4B",
   "slug": "suayptalha-qwengenesis-4b",
   "author": "suayptalha",
@@ -34,12 +34,17 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9360804226,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "suayptalha/QwenGenesis",
+  "renamed_at": "2026-11-11T07:39:07.498Z",
   "benchmarks": [],
   "sources": [
     {

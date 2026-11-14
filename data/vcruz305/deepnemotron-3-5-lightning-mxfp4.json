@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/DeepNemotron-3.5-Lightning-MXFP4",
   "slug": "vcruz305-deepnemotron-3-5-lightning-mxfp4",
   "author": "vcruz305",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "vcruz305/DeepNemotron-3.5-Lightning-BF16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T13:26:23.560Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Tema_Q-X6-9B-Thinking-GGUF",
   "slug": "mradermacher-tema_q-x6-9b-thinking-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 81425089408,
   "storage_human": "81.4 GB",
+  "context_length": 262144,
   "base_model": "temaq-org/Tema_Q-X6-9B-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

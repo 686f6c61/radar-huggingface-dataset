@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pengyixuan/Ornith-1.5-35B-A3B-MLX-8bit",
   "slug": "pengyixuan-ornith-1-5-35b-a3b-mlx-8bit",
   "author": "pengyixuan",
@@ -45,6 +45,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 36848211850,
   "storage_human": "36.8 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:12:49.539Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

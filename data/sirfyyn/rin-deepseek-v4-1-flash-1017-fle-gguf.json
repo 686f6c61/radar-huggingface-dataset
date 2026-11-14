@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sirfyyn/Rin-Deepseek-V4.1-Flash-1017-FLE-GGUF",
   "slug": "sirfyyn-rin-deepseek-v4-1-flash-1017-fle-gguf",
   "author": "sirfyyn",
@@ -35,14 +35,19 @@
   "parameters_human": "751.33B",
   "storage_bytes": 243074013728,
   "storage_human": "243.1 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

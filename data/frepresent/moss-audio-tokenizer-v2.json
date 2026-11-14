@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frepresent/MOSS-Audio-Tokenizer-v2",
   "slug": "frepresent-moss-audio-tokenizer-v2",
   "author": "frepresent",
@@ -35,14 +35,19 @@
   "parameters_human": "2.12B",
   "storage_bytes": 8497864992,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patronus-studio/wolf-defender-prompt-injection-edge",
   "slug": "patronus-studio-wolf-defender-prompt-injection-edge",
   "author": "patronus-studio",
@@ -98,6 +98,7 @@
   "parameters_human": "80.0M",
   "storage_bytes": 2395381854,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "patronus-studio/wolf-defender-prompt-injection-small",
   "formats": [
     "onnx",
@@ -105,8 +106,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

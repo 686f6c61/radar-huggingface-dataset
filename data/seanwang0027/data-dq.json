@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanWang0027/data-dq",
   "slug": "seanwang0027-data-dq",
   "author": "SeanWang0027",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1139298410,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:14:54.595Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

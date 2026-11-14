@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mira-v1.19.2-27B-GGUF",
   "slug": "mradermacher-mira-v1-19-2-27b-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "27.01B",
   "storage_bytes": 188133345088,
   "storage_human": "188.1 GB",
+  "context_length": 131072,
   "base_model": "Lambent/Mira-v1.19.2-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

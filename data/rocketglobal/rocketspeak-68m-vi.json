@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rocketglobal/RocketSpeak-68M-vi",
   "slug": "rocketglobal-rocketspeak-68m-vi",
   "author": "rocketglobal",
@@ -55,14 +55,19 @@
   "parameters_human": null,
   "storage_bytes": 622522515,
   "storage_human": "623 MB",
+  "context_length": null,
   "base_model": "g-group-ai-lab/gipformer1.5-68M-rnnt",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:20:44.882Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Recognition",

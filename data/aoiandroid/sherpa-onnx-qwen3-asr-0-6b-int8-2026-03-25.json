@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aoiandroid/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
   "slug": "aoiandroid-sherpa-onnx-qwen3-asr-0-6b-int8-2026-03-25",
   "author": "aoiandroid",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 982554174,
   "storage_human": "983 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

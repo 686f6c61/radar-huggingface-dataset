@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Redstonexs/danbooru-tagger-round2-artifacts",
   "slug": "redstonexs-danbooru-tagger-round2-artifacts",
   "author": "Redstonexs",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 192400,
   "storage_human": "192400 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

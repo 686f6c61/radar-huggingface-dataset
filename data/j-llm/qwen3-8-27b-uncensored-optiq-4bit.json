@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "j-llm/Qwen3.8-27B-Uncensored-OptiQ-4bit",
   "slug": "j-llm-qwen3-8-27b-uncensored-optiq-4bit",
   "author": "j-llm",
@@ -48,6 +48,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 21555422320,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

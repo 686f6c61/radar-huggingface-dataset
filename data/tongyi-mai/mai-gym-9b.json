@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tongyi-MAI/MAI-Gym-9B",
   "slug": "tongyi-mai-mai-gym-9b",
   "author": "Tongyi-MAI",
@@ -25,14 +25,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710327,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

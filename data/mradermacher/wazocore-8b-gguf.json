@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/WazoCore-8B-GGUF",
   "slug": "mradermacher-wazocore-8b-gguf",
   "author": "mradermacher",
@@ -46,6 +46,7 @@
   "parameters_human": "8.15B",
   "storage_bytes": 73043489664,
   "storage_human": "73.0 GB",
+  "context_length": 131072,
   "base_model": "quantile-labs/WazoCore-8B",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

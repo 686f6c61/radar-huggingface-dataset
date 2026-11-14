@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qtum/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4",
   "slug": "qtum-minimax-h3-qwen3-vl-abliterated-nvfp4",
   "author": "qtum",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 17863933608,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:17:02.663Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

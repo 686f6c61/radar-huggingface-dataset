@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "syvai/danish-char-aligner",
   "slug": "syvai-danish-char-aligner",
   "author": "syvai",
@@ -35,14 +35,19 @@
   "parameters_human": "164.3M",
   "storage_bytes": 328785232,
   "storage_human": "329 MB",
+  "context_length": null,
   "base_model": "CoRal-project/roest-v3-wav2vec2-315m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

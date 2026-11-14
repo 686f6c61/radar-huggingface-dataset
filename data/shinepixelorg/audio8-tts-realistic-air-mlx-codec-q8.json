@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShinePixelOrg/Audio8-TTS-Realistic-Air-MLX-Codec-Q8",
   "slug": "shinepixelorg-audio8-tts-realistic-air-mlx-codec-q8",
   "author": "ShinePixelOrg",
@@ -31,6 +31,7 @@
   "parameters_human": "601.2M",
   "storage_bytes": 1573792100,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-TTS-Realistic-Air",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oxygen-Low/DeepSmolLM3-3B",
   "slug": "oxygen-low-deepsmollm3-3b",
   "author": "Oxygen-Low",
@@ -31,6 +31,7 @@
   "parameters_human": "3.08B",
   "storage_bytes": 25110472179,
   "storage_human": "25.1 GB",
+  "context_length": 65536,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

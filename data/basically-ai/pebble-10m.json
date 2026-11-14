@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "basically-ai/Pebble-10M",
   "slug": "basically-ai-pebble-10m",
   "author": "basically-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "11.1M",
   "storage_bytes": 45183039,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

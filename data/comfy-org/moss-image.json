@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/MOSS-Image",
   "slug": "comfy-org-moss-image",
   "author": "Comfy-Org",
@@ -19,19 +19,24 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 681,
+  "likes": 686,
   "downloads_30d": 6651875,
-  "trending_score": 41,
+  "trending_score": 45,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 68755101184,
   "storage_human": "68.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

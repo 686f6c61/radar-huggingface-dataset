@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924",
   "slug": "junbrro-egopi-arm2-rbbt-anyh3-ab-30k-actsilu-mlxp-20260924",
   "author": "junbrro",
@@ -23,14 +23,19 @@
   "parameters_human": "6.92B",
   "storage_bytes": 13868868378,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

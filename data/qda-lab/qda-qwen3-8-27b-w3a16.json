@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qda-lab/QDA-Qwen3.8-27B-W3A16",
   "slug": "qda-lab-qda-qwen3-8-27b-w3a16",
   "author": "qda-lab",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 14557354176,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

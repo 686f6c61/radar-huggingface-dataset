@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1",
   "slug": "aikwed-pistar06_insert_carrot_into_the_hole_acp_r1",
   "author": "Aikwed",
@@ -29,14 +29,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 29892395972,
   "storage_human": "29.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

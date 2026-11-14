@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noctunalz/DSV4.1-Flash-1017-DERISKED-EXL3-2.50bpw-Radiance",
   "slug": "noctunalz-dsv4-1-flash-1017-derisked-exl3-2-50bpw-radiance",
   "author": "noctunalz",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 383338076672,
   "storage_human": "383.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

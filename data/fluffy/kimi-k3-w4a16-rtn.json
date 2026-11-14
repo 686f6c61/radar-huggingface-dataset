@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fluffy/Kimi-K3-W4A16-RTN",
   "slug": "fluffy-kimi-k3-w4a16-rtn",
   "author": "Fluffy",
@@ -38,14 +38,19 @@
   "parameters_human": "2739.16B",
   "storage_bytes": 1411738133329,
   "storage_human": "1411.7 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

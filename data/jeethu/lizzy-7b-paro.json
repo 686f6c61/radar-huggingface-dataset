@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeethu/Lizzy-7B-PARO",
   "slug": "jeethu-lizzy-7b-paro",
   "author": "Jeethu",
@@ -39,14 +39,19 @@
   "parameters_human": "1.70B",
   "storage_bytes": 5038271952,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "flwrlabs/Lizzy-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

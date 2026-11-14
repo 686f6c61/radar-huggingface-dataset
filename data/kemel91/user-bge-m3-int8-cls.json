@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kemel91/user-bge-m3-int8-cls",
   "slug": "kemel91-user-bge-m3-int8-cls",
   "author": "Kemel91",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 360032809,
   "storage_human": "360 MB",
+  "context_length": null,
   "base_model": "deepvk/USER-bge-m3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EliovpAI/Qwen3.8-27B-NEO-CODER-MAX-Q4_K_M-GGUF-Paiton-RDNA4",
   "slug": "eliovpai-qwen3-8-27b-neo-coder-max-q4_k_m-gguf-paiton-rdna4",
   "author": "EliovpAI",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 27264511,
   "storage_human": "27 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

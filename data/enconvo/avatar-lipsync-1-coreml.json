@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "enconvo/avatar-lipsync-1-coreml",
   "slug": "enconvo-avatar-lipsync-1-coreml",
   "author": "enconvo",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 75584667,
   "storage_human": "76 MB",
+  "context_length": null,
   "base_model": "myned-ai/wav2arkit_cpu, 3DAIGC/LAM_audio2exp, facebook/wav2vec2-base-960h",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

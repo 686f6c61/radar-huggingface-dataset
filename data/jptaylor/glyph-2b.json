@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jptaylor/glyph-2b",
   "slug": "jptaylor-glyph-2b",
   "author": "jptaylor",
@@ -40,6 +40,7 @@
   "parameters_human": "5.10B",
   "storage_bytes": 13148370056,
   "storage_human": "13.1 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jptaylor/spellspeak-glyph-2b",
+  "renamed_at": "2026-11-11T05:50:00.264Z",
   "benchmarks": [],
   "sources": []
 }

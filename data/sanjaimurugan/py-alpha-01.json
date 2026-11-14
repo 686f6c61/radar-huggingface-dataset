@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanjaimurugan/py-alpha-01",
   "slug": "sanjaimurugan-py-alpha-01",
   "author": "sanjaimurugan",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 236353662,
   "storage_human": "236 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sanjaimurugan/py-alpha-29m",
+  "renamed_at": "2026-11-11T07:25:42.198Z",
   "benchmarks": [],
   "sources": []
 }

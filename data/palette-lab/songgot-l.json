@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "palette-lab/songgot-l",
   "slug": "palette-lab-songgot-l",
   "author": "palette-lab",
@@ -42,6 +42,7 @@
   "parameters_human": "303.4M",
   "storage_bytes": 3455271963,
   "storage_human": "3.5 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

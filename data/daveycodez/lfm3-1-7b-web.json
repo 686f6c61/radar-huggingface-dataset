@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daveycodez/LFM3-1.7B-Web",
   "slug": "daveycodez-lfm3-1-7b-web",
   "author": "daveycodez",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3694293415,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B, onnx-community/LFM3-1.7B-ONNX",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "daveycodez/LFM3-1.7B-Web-ONNX",
+  "renamed_at": "2026-11-11T04:58:03.597Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CTlandu/csci680-a1-t5-small-pretrained",
   "slug": "ctlandu-csci680-a1-t5-small-pretrained",
   "author": "CTlandu",
@@ -35,14 +35,19 @@
   "parameters_human": "60.5M",
   "storage_bytes": 242041896,
   "storage_human": "242 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

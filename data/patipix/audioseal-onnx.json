@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PatiPix/AudioSeal-ONNX",
   "slug": "patipix-audioseal-onnx",
   "author": "PatiPix",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 58814395,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "facebook/audioseal",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

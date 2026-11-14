@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OneWorld-AI/abc-rolling-nano",
   "slug": "oneworld-ai-abc-rolling-nano",
   "author": "OneWorld-AI",
@@ -29,14 +29,19 @@
   "parameters_human": "15.17B",
   "storage_bytes": 30346389472,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T04:51:16.387Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

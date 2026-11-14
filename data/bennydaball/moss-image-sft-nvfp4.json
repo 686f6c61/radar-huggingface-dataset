@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BennyDaBall/MOSS-Image-SFT-NVFP4",
   "slug": "bennydaball-moss-image-sft-nvfp4",
   "author": "BennyDaBall",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 9031652961,
   "storage_human": "9.0 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

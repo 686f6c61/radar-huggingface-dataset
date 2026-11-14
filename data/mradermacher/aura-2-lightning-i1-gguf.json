@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Aura-2-Lightning-i1-GGUF",
   "slug": "mradermacher-aura-2-lightning-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 22848188960,
   "storage_human": "22.8 GB",
+  "context_length": 1024,
   "base_model": "waveforce-ai/Aura-2-Lightning",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

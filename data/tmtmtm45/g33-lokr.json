@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tmtmtm45/g33-lokr",
   "slug": "tmtmtm45-g33-lokr",
   "author": "tmtmtm45",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 5701673,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T06:44:10.894Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

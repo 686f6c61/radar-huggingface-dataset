@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohamedrayyan/mms-tts-dhivehi-spk01-f01",
   "slug": "mohamedrayyan-mms-tts-dhivehi-spk01-f01",
   "author": "mohamedrayyan",
@@ -33,14 +33,19 @@
   "parameters_human": "36.3M",
   "storage_bytes": 145242232,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": "facebook/mms-tts-div",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:18:07.755Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

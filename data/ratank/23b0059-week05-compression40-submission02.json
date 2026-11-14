@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RatanK/23B0059-Week05-Compression40-Submission02",
   "slug": "ratank-23b0059-week05-compression40-submission02",
   "author": "RatanK",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4030826958,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

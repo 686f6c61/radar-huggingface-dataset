@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AXDocLayout-M-v1.1-CUDA-AXQ-NVFP4",
   "slug": "automatosx-axdoclayout-m-v1-1-cuda-axq-nvfp4",
   "author": "AutomatosX",
@@ -34,14 +34,19 @@
   "parameters_human": "21.2M",
   "storage_bytes": 25373968,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": "AutomatosX/AXDocLayout-M-v1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T02:52:38.554Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

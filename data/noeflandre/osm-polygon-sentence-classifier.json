@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NoeFlandre/osm-polygon-sentence-classifier",
   "slug": "noeflandre-osm-polygon-sentence-classifier",
   "author": "NoeFlandre",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 582703792392,
   "storage_human": "582.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T06:31:27.696Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

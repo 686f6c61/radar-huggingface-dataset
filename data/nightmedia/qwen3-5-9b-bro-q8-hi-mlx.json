@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.5-9B-BRO-q8-hi-mlx",
   "slug": "nightmedia-qwen3-5-9b-bro-q8-hi-mlx",
   "author": "nightmedia",
@@ -92,6 +92,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11006127096,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "OmniJev/OneJev-9B, axiomofmind/Roasteramus, nightmedia/Qwen3.5-9B-Brainwaves",
   "formats": [
     "mlx",
@@ -99,8 +100,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

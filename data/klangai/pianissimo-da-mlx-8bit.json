@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KlangAI/pianissimo-da-mlx-8bit",
   "slug": "klangai-pianissimo-da-mlx-8bit",
   "author": "KlangAI",
@@ -35,6 +35,7 @@
   "parameters_human": "627.1M",
   "storage_bytes": 758783094,
   "storage_human": "759 MB",
+  "context_length": null,
   "base_model": "KlangAI/pianissimo-da",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

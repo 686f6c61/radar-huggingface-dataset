@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DJLougen/Nanbeige4.3-33B-MLX",
   "slug": "djlougen-nanbeige4-3-33b-mlx",
   "author": "DJLougen",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 160084018289,
   "storage_human": "160.1 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

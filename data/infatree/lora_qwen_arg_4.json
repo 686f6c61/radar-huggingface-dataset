@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infatree/lora_qwen_arg_4",
   "slug": "infatree-lora_qwen_arg_4",
   "author": "infatree",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 85810364702,
   "storage_human": "85.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felldude/QWEN_32B_Comfy_MinimaxH3_Pruned_FP32",
   "slug": "felldude-qwen_32b_comfy_minimaxh3_pruned_fp32",
   "author": "Felldude",
@@ -29,14 +29,19 @@
   "parameters_human": "25.75B",
   "storage_bytes": 103012486904,
   "storage_human": "103.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

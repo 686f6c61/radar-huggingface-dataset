@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "afhwoinavsnvo/VLAct-OFT-State-TCP",
   "slug": "afhwoinavsnvo-vlact-oft-state-tcp",
   "author": "afhwoinavsnvo",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 9196440930,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "StarVLA/VLAct_Qwen3OFT_Robotwin_Finetune",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

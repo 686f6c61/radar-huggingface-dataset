@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4",
   "slug": "solstice-ai-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-nvfp4",
   "author": "Solstice-AI",
@@ -54,14 +54,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 1048812968,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T03:12:24.664Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

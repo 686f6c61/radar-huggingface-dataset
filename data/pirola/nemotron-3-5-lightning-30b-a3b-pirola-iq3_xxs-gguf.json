@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pirola/Nemotron-3.5-Lightning-30B-A3B-pirola-IQ3_XXS-GGUF",
   "slug": "pirola-nemotron-3-5-lightning-30b-a3b-pirola-iq3_xxs-gguf",
   "author": "pirola",
@@ -47,14 +47,19 @@
   "parameters_human": "36.91B",
   "storage_bytes": 15446664352,
   "storage_human": "15.4 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

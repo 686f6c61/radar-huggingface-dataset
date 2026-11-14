@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-para-chat",
   "slug": "joshycodes-meta-llama-3-1-8b-sorrel-atomic-f-300m-para-chat",
   "author": "joshycodes",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 32138328283,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": "joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T05:58:31.737Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

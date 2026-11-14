@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "artemyatsyuk/qwen2.5-0.5b-distill-codex-lora",
   "slug": "artemyatsyuk-qwen2-5-0-5b-distill-codex-lora",
   "author": "artemyatsyuk",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 46658996,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:17:19.357Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "attacker8324/tc271",
   "slug": "attacker8324-tc271",
   "author": "attacker8324",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 379897,
   "storage_human": "379897 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T03:33:21.961Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71894-correct-minimal",
   "slug": "youngseok12-hyperclova-x-seed-think-14b-sft-71894-correct-minimal",
   "author": "youngseok12",
@@ -39,14 +39,19 @@
   "parameters_human": "14.75B",
   "storage_bytes": 29496274120,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

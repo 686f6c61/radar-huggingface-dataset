@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yonicc/lhg-extractor-dictalm-gguf",
   "slug": "yonicc-lhg-extractor-dictalm-gguf",
   "author": "yonicc",
@@ -35,14 +35,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 12080903488,
   "storage_human": "12.1 GB",
+  "context_length": 32768,
   "base_model": "dicta-il/dictalm2.0-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ballsworthy/PrincessBelle",
   "slug": "ballsworthy-princessbelle",
   "author": "Ballsworthy",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 113359265,
   "storage_human": "113 MB",
+  "context_length": null,
   "base_model": "pmczip/SD1.5_LoRa_Models",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

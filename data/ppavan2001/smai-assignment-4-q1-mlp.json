@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ppavan2001/smai-assignment-4-q1-mlp",
   "slug": "ppavan2001-smai-assignment-4-q1-mlp",
   "author": "ppavan2001",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 3331948,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

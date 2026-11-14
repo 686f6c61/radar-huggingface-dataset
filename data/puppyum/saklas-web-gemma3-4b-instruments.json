@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "puppyum/saklas-web-gemma3-4b-instruments",
   "slug": "puppyum-saklas-web-gemma3-4b-instruments",
   "author": "puppyum",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 545893504,
   "storage_human": "546 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "puppyum/polythetic-web-gemma3-4b-instruments",
+  "renamed_at": "2026-11-13T07:38:13.738Z",
   "benchmarks": [],
   "sources": [
     {

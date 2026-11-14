@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "p4ulbr4dl3y/ocrrag-lfm3-plain-v10-clean-sft",
   "slug": "p4ulbr4dl3y-ocrrag-lfm3-plain-v10-clean-sft",
   "author": "p4ulbr4dl3y",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 792230394,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

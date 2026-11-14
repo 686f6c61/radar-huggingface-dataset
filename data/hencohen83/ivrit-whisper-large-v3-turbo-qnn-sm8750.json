@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hencohen83/ivrit-whisper-large-v3-turbo-qnn-sm8750",
   "slug": "hencohen83-ivrit-whisper-large-v3-turbo-qnn-sm8750",
   "author": "hencohen83",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 1799233536,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "ivrit-ai/whisper-large-v3-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

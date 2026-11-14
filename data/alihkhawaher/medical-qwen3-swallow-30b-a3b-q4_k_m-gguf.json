@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alihkhawaher/Medical-Qwen3-Swallow-30B-A3B-Q4_K_M-GGUF",
   "slug": "alihkhawaher-medical-qwen3-swallow-30b-a3b-q4_k_m-gguf",
   "author": "alihkhawaher",
@@ -40,14 +40,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 18556682400,
   "storage_human": "18.6 GB",
+  "context_length": 40960,
   "base_model": "tokyotech-llm/Medical-Qwen3-Swallow-30B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

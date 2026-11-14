@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/deem-0.6-v1-GGUF",
   "slug": "mradermacher-deem-0-6-v1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5697957120,
   "storage_human": "5.7 GB",
+  "context_length": 32768,
   "base_model": "LibertAIDAI/deem-0.6-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

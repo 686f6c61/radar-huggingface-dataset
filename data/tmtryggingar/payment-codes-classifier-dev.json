@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tmtryggingar/payment-codes-classifier-dev",
   "slug": "tmtryggingar-payment-codes-classifier-dev",
   "author": "tmtryggingar",
@@ -32,6 +32,7 @@
   "parameters_human": "355.1M",
   "storage_bytes": 4262565757,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "mideind/IceBERT-large",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

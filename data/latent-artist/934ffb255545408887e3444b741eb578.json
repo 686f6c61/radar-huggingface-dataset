@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "latent-artist/934ffb255545408887e3444b741eb578",
   "slug": "latent-artist-934ffb255545408887e3444b741eb578",
   "author": "latent-artist",
@@ -32,14 +32,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 988097824,
   "storage_human": "988 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

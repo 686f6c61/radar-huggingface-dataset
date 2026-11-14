@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guicybercode/NBR-1B-Portuguese-MCQ-GGUF",
   "slug": "guicybercode-nbr-1b-portuguese-mcq-gguf",
   "author": "guicybercode",
@@ -45,14 +45,19 @@
   "parameters_human": "1.28B",
   "storage_bytes": 4757153920,
   "storage_human": "4.8 GB",
+  "context_length": 4096,
   "base_model": "limajr/NBR-1B-Portuguese-MCQ",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

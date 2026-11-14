@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/AuK",
   "slug": "infinix-io-auk",
   "author": "Infinix-io",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 6762642715,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:45:45.596Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

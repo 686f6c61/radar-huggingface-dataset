@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ray0rf1re/hyperNix-3.1-mini_c",
   "slug": "ray0rf1re-hypernix-3-1-mini_c",
   "author": "ray0rf1re",
@@ -34,14 +34,19 @@
   "parameters_human": "48.7M",
   "storage_bytes": 194831448,
   "storage_human": "195 MB",
+  "context_length": null,
   "base_model": "Compactbot/hypernix-3.1-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

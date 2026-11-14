@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vessl/Solar-Open2-250B-DSpark",
   "slug": "vessl-solar-open2-250b-dspark",
   "author": "vessl",
@@ -33,14 +33,19 @@
   "parameters_human": "1.95B",
   "storage_bytes": 7818415380,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "vessl/Solar-Open2-250B-W4A8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:49:17.040Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

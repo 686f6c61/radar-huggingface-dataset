@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swaynehales/Emberon-2-mlx-8bit",
   "slug": "swaynehales-emberon-2-mlx-8bit",
   "author": "swaynehales",
@@ -36,6 +36,7 @@
   "parameters_human": "354.5M",
   "storage_bytes": 376737139,
   "storage_human": "377 MB",
+  "context_length": null,
   "base_model": "PromethicLabs/Emberon-2",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

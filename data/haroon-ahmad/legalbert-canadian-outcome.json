@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haroon-ahmad/legalbert-canadian-outcome",
   "slug": "haroon-ahmad-legalbert-canadian-outcome",
   "author": "haroon-ahmad",
@@ -41,14 +41,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 438039004,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "nlpaueb/legal-bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "haroon-ahmad/a2aj-legalbert-appeal-outcome-classifier",
+  "renamed_at": "2026-11-11T05:31:27.235Z",
   "benchmarks": [],
   "sources": [
     {

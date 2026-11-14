@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/qwen3-1.7b-base",
   "slug": "kerasformers-qwen3-1-7b-base",
   "author": "kerasformers",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 3443358696,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/qwen3-1.7b-base",
+  "renamed_at": "2026-11-14T06:42:01.039Z",
   "benchmarks": [],
   "sources": []
 }

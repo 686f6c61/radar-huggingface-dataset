@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zoowr/opus-mt-tc-big-zle-es-ct2-int8",
   "slug": "zoowr-opus-mt-tc-big-zle-es-ct2-int8",
   "author": "Zoowr",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 244437566,
   "storage_human": "244 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-tc-big-zle-es",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

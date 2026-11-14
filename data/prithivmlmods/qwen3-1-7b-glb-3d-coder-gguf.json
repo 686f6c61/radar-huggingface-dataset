@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/Qwen3-1.7B-GLB-3D-Coder-GGUF",
   "slug": "prithivmlmods-qwen3-1-7b-glb-3d-coder-gguf",
   "author": "prithivMLmods",
@@ -40,14 +40,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 16745988032,
   "storage_human": "16.7 GB",
+  "context_length": 40960,
   "base_model": "ccore/Qwen3-1.7B-GLB-3D-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

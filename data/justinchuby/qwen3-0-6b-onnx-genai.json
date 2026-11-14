@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "justinchuby/qwen3-0.6b-onnx-genai",
   "slug": "justinchuby-qwen3-0-6b-onnx-genai",
   "author": "justinchuby",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 536159100,
   "storage_human": "536 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

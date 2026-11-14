@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Valen-Team/Valen-Decision-1.5-9B",
   "slug": "valen-team-valen-decision-1-5-9b",
   "author": "Valen-Team",
@@ -39,14 +39,19 @@
   "parameters_human": "8.40B",
   "storage_bytes": 16852229631,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

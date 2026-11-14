@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oakmindai/Kimi-K3-NVFP4-FTW",
   "slug": "oakmindai-kimi-k3-nvfp4-ftw",
   "author": "oakmindai",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 1610939107094,
   "storage_human": "1610.9 GB",
+  "context_length": null,
   "base_model": "nvidia/Kimi-K3-NVFP4, moonshotai/Kimi-K3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

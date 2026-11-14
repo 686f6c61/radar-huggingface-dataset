@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/granite-3.3-8b-fve-mixdiscern-s0",
   "slug": "joshycodes-granite-3-3-8b-fve-mixdiscern-s0",
   "author": "joshycodes",
@@ -31,14 +31,19 @@
   "parameters_human": "8.37B",
   "storage_bytes": 16744482376,
   "storage_human": "16.7 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-3.3-8b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:55:08.414Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

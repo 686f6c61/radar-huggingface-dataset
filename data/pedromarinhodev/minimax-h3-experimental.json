@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PedroMarinhoDev/MiniMax-H3-Experimental",
   "slug": "pedromarinhodev-minimax-h3-experimental",
   "author": "PedroMarinhoDev",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 21026960909,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3, TaoLiveAIGC/TaoMate-H3, Asirus/TaoMate_H3_3_Step_LoRA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jssaluja/fb-mms-1b-sggs-ncer-train-183139-epochs-15-test-2200",
   "slug": "jssaluja-fb-mms-1b-sggs-ncer-train-183139-epochs-15-test-2200",
   "author": "jssaluja",
@@ -28,14 +28,19 @@
   "parameters_human": "964.7M",
   "storage_bytes": 15508845174,
   "storage_human": "15.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T05:51:59.636Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

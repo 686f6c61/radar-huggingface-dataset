@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "98sd7fc9sdf/japanMoans",
   "slug": "98sd7fc9sdf-japanmoans",
   "author": "98sd7fc9sdf",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 155161060,
   "storage_human": "155 MB",
+  "context_length": null,
   "base_model": "ponpoke/flux2-klein-9b-uncensored-text-encoder",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

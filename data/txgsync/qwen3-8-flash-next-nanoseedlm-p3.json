@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P3",
   "slug": "txgsync-qwen3-8-flash-next-nanoseedlm-p3",
   "author": "txgsync",
@@ -46,6 +46,7 @@
   "parameters_human": "89.40B",
   "storage_bytes": 159229419949,
   "storage_human": "159.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

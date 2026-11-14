@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sara-1990/my_eli5_clm-model",
   "slug": "sara-1990-my_eli5_clm-model",
   "author": "Sara-1990",
@@ -31,14 +31,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 2621268625,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "distilbert/distilgpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

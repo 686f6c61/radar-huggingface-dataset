@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Qwopus3.5-9B-Coder-Flash-Heretic-GPTQPro-W4-G64",
   "slug": "groxaxo-qwopus3-5-9b-coder-flash-heretic-gptqpro-w4-g64",
   "author": "groxaxo",
@@ -38,14 +38,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 9232383507,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "groxaxo/Qwopus3.5-9B-Coder-Flash-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

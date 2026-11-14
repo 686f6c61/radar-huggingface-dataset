@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KoichiYasuoka/roberta-base-japanese-char-luw-upos",
   "slug": "koichiyasuoka-roberta-base-japanese-char-luw-upos",
   "author": "KoichiYasuoka",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 3170230849,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "KoichiYasuoka/roberta-base-japanese-aozora-char",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

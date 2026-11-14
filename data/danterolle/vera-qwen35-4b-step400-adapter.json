@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danterolle/vera-qwen35-4b-step400-adapter",
   "slug": "danterolle-vera-qwen35-4b-step400-adapter",
   "author": "danterolle",
@@ -30,6 +30,7 @@
   "parameters_human": "10.6M",
   "storage_bytes": 63752120,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

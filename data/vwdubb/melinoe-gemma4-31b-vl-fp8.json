@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Melinoe-Gemma4-31B-VL-FP8",
   "slug": "vwdubb-melinoe-gemma4-31b-vl-fp8",
   "author": "vwdubb",
@@ -27,14 +27,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33295401722,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "bgg1996/Melinoe-Gemma4-31B-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T07:46:27.026Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

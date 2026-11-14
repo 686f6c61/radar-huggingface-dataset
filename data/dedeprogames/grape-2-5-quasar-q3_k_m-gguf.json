@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DedeProGames/GRaPE-2.5-Quasar-Q3_K_M-GGUF",
   "slug": "dedeprogames-grape-2-5-quasar-q3_k_m-gguf",
   "author": "DedeProGames",
@@ -66,6 +66,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 13500744256,
   "storage_human": "13.5 GB",
+  "context_length": 262144,
   "base_model": "SL-AI/GRaPE-2.5-Quasar",
   "formats": [
     "gguf",
@@ -73,8 +74,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

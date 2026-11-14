@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/GLM-4.7-Flash-REAP-19-GGUF",
   "slug": "mradermacher-glm-4-7-flash-reap-19-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "24.73B",
   "storage_bytes": 168573393632,
   "storage_human": "168.6 GB",
+  "context_length": 202752,
   "base_model": "Akicou/GLM-4.7-Flash-REAP-19",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

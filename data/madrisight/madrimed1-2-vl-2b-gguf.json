@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "madrisight/madrimed1.2-VL-2B-GGUF",
   "slug": "madrisight-madrimed1-2-vl-2b-gguf",
   "author": "madrisight",
@@ -63,6 +63,7 @@
   "parameters_human": "2.03B",
   "storage_bytes": 19875903232,
   "storage_human": "19.9 GB",
+  "context_length": 262144,
   "base_model": "madrisight/madrimed1.2-VL-2B",
   "formats": [
     "gguf",
@@ -70,8 +71,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

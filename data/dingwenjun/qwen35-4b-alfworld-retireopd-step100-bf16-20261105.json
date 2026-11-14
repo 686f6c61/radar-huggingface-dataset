@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dingwenjun/qwen35-4b-alfworld-retireopd-step100-bf16-20261105",
   "slug": "dingwenjun-qwen35-4b-alfworld-retireopd-step100-bf16-20261105",
   "author": "dingwenjun",
@@ -31,14 +31,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 10370007541,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T04:59:25.258Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_GradDiff",
   "slug": "joaoboer-tofu_llama-3-1-8b-instruct_forget10_graddiff",
   "author": "JoaoBoer",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766296,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "open-unlearning/tofu_Llama-3.1-8B-Instruct_full",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

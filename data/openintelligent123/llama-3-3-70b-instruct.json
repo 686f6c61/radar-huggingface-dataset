@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/Llama-3.3-70B-Instruct",
   "slug": "openintelligent123-llama-3-3-70b-instruct",
   "author": "Openintelligent123",
@@ -40,14 +40,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141124707792,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.3-70B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

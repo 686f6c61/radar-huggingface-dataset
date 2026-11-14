@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "v3vishal/phish-v0.1",
   "slug": "v3vishal-phish-v0-1",
   "author": "v3vishal",
@@ -30,6 +30,7 @@
   "parameters_human": "67.0M",
   "storage_bytes": 603118070,
   "storage_human": "603 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "onnx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

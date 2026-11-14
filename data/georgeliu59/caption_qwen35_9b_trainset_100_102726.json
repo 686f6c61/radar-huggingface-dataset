@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "georgeliu59/caption_qwen35_9b_trainset_100_102726",
   "slug": "georgeliu59-caption_qwen35_9b_trainset_100_102726",
   "author": "georgeliu59",
@@ -31,14 +31,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 94118609807,
   "storage_human": "94.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

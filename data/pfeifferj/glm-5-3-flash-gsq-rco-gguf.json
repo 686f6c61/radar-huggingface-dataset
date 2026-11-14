@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF",
   "slug": "pfeifferj-glm-5-3-flash-gsq-rco-gguf",
   "author": "pfeifferj",
@@ -37,14 +37,19 @@
   "parameters_human": "313.33B",
   "storage_bytes": 255846757975,
   "storage_human": "255.8 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

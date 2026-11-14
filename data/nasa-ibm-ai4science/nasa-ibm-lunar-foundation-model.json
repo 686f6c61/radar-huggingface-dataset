@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model",
   "slug": "nasa-ibm-ai4science-nasa-ibm-lunar-foundation-model",
   "author": "nasa-ibm-ai4science",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 12789820545,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

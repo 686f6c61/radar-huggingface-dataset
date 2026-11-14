@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "f23gg/HMNSFW-AIO-Sex-LoRA-V3",
   "slug": "f23gg-hmnsfw-aio-sex-lora-v3",
   "author": "f23gg",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 621376205,
   "storage_human": "621 MB",
+  "context_length": null,
   "base_model": "lynaNSFW/minimaxH3_Collection",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

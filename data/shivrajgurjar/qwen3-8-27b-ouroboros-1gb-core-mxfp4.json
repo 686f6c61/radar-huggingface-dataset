@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shivrajgurjar/Qwen3.8-27B-Ouroboros-1GB-Core-MXFP4",
   "slug": "shivrajgurjar-qwen3-8-27b-ouroboros-1gb-core-mxfp4",
   "author": "shivrajgurjar",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 8450851672,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T07:58:35.850Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

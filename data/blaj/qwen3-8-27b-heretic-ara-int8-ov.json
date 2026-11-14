@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/Qwen3.8-27B-heretic-ara-int8-ov",
   "slug": "blaj-qwen3-8-27b-heretic-ara-int8-ov",
   "author": "blaj",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 27832851380,
   "storage_human": "27.8 GB",
+  "context_length": null,
   "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

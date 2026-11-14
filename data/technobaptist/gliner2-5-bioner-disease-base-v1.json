@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TechnoBaptist/GLiNER2.5-BioNER-Disease-Base-v1",
   "slug": "technobaptist-gliner2-5-bioner-disease-base-v1",
   "author": "TechnoBaptist",
@@ -42,14 +42,19 @@
   "parameters_human": "193.6M",
   "storage_bytes": 774366564,
   "storage_human": "774 MB",
+  "context_length": null,
   "base_model": "fastino/gliner2.5-base-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Disease mention extraction",

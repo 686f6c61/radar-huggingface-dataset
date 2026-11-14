@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnlockejrr/demo",
   "slug": "johnlockejrr-demo",
   "author": "johnlockejrr",
@@ -36,14 +36,19 @@
   "parameters_human": "61.4M",
   "storage_bytes": 1721569588,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-sem-sem",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:00:37.523Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

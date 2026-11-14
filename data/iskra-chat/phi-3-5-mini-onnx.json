@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iskra-chat/phi-3.5-mini-onnx",
   "slug": "iskra-chat-phi-3-5-mini-onnx",
   "author": "iskra-chat",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 7643463234,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-3.5-mini-instruct",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

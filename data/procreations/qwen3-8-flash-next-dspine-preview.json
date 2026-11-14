@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/Qwen3.8-Flash-Next-DSpine-preview",
   "slug": "procreations-qwen3-8-flash-next-dspine-preview",
   "author": "ProCreations",
@@ -36,14 +36,19 @@
   "parameters_human": "941.4M",
   "storage_bytes": 3257047192,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "RedHatAI/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

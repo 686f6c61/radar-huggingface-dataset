@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/AnomalyThink-Qwen3-VL-8B-KCR-GGUF",
   "slug": "mradermacher-anomalythink-qwen3-vl-8b-kcr-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 75336676608,
   "storage_human": "75.3 GB",
+  "context_length": 262144,
   "base_model": "aacudad/AnomalyThink-Qwen3-VL-8B-KCR",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

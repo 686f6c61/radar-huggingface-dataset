@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF",
   "slug": "jrouth-qwen3-8-flash-next-mtp-c2t8-refit-gguf",
   "author": "Jrouth",
@@ -31,14 +31,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 5329219392,
   "storage_human": "5.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

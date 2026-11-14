@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Subject-Emu-5259/NeuralAI-Nae1",
   "slug": "subject-emu-5259-neuralai-nae1",
   "author": "Subject-Emu-5259",
@@ -40,6 +40,7 @@
   "parameters_human": "100.1M",
   "storage_bytes": 5288664914,
   "storage_human": "5.3 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

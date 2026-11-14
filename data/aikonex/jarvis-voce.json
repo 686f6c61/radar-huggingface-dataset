@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aikonex/jarvis-voce",
   "slug": "aikonex-jarvis-voce",
   "author": "Aikonex",
@@ -35,6 +35,7 @@
   "parameters_human": "141.6M",
   "storage_bytes": 2445006206,
   "storage_human": "2.4 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base, Qwen/Qwen3-TTS-Tokenizer-12Hz",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JackyHoCL/Qwen3-ASR-1.7B-cantonese-oral-lora",
   "slug": "jackyhocl-qwen3-asr-1-7b-cantonese-oral-lora",
   "author": "JackyHoCL",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 81342650,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T03:01:58.585Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

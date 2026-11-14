@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grahamalden1103/albedo-mirror-uid216-c5d15c9a505e",
   "slug": "grahamalden1103-albedo-mirror-uid216-c5d15c9a505e",
   "author": "grahamalden1103",
@@ -33,14 +33,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69334123006,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "dendriteholdings/albedo-qwen3.6-35b-king-genesis",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T04:05:29.557Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

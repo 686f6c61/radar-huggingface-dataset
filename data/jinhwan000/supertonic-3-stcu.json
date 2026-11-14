@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jinhwan000/supertonic-3-stcu",
   "slug": "jinhwan000-supertonic-3-stcu",
   "author": "jinhwan000",
@@ -93,12 +93,17 @@
   "parameters_human": null,
   "storage_bytes": 802498688,
   "storage_human": "802 MB",
+  "context_length": null,
   "base_model": "Supertone/supertonic-3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

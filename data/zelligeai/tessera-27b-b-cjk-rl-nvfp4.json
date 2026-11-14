@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZelligeAI/Tessera-27B-B-CJK-RL-NVFP4",
   "slug": "zelligeai-tessera-27b-b-cjk-rl-nvfp4",
   "author": "ZelligeAI",
@@ -31,14 +31,19 @@
   "parameters_human": "20.29B",
   "storage_bytes": 23430691950,
   "storage_human": "23.4 GB",
+  "context_length": null,
   "base_model": "ZelligeAI/Tessera-27B-B-CJK-RL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

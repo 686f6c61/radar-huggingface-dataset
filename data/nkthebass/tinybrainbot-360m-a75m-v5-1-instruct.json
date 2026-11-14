@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nkthebass/tinybrainbot-360m-a75m-v5.1-instruct",
   "slug": "nkthebass-tinybrainbot-360m-a75m-v5-1-instruct",
   "author": "nkthebass",
@@ -51,6 +51,7 @@
   "parameters_human": "383.4M",
   "storage_bytes": 2950095935,
   "storage_human": "3.0 GB",
+  "context_length": 2048,
   "base_model": "nkthebass/tinybrainbot-360m-a75m-v5.1-base",
   "formats": [
     "gguf",
@@ -58,8 +59,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

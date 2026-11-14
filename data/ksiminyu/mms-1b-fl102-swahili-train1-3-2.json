@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ksiminyu/mms-1b-fl102-swahili-train1.3.2",
   "slug": "ksiminyu-mms-1b-fl102-swahili-train1-3-2",
   "author": "ksiminyu",
@@ -23,14 +23,19 @@
   "parameters_human": "964.7M",
   "storage_bytes": 169799996241,
   "storage_human": "169.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

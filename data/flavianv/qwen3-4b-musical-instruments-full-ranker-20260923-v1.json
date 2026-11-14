@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flavianv/qwen3-4b-musical-instruments-full-ranker-20260923-v1",
   "slug": "flavianv-qwen3-4b-musical-instruments-full-ranker-20260923-v1",
   "author": "flavianv",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 16101350570,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

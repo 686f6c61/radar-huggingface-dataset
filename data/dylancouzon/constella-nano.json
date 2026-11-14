@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DylanCouzon/constella-nano",
   "slug": "dylancouzon-constella-nano",
   "author": "DylanCouzon",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 137802369,
   "storage_human": "138 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Qdrant/constella-nano",
+  "renamed_at": "2026-11-11T02:41:02.472Z",
   "benchmarks": [],
   "sources": [
     {

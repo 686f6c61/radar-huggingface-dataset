@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pedro21613/PS-1.0-GGUF",
   "slug": "pedro21613-ps-1-0-gguf",
   "author": "Pedro21613",
@@ -38,6 +38,7 @@
   "parameters_human": "51.1M",
   "storage_bytes": 452244792,
   "storage_human": "452 MB",
+  "context_length": 512,
   "base_model": "none",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

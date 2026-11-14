@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZeroWw/Clover-35B-A3B-Preview-IQ3_XXS-GGUF",
   "slug": "zeroww-clover-35b-a3b-preview-iq3_xxs-gguf",
   "author": "ZeroWw",
@@ -36,14 +36,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 14139260320,
   "storage_human": "14.1 GB",
+  "context_length": 131072,
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

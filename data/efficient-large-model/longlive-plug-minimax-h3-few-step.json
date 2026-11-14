@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efficient-Large-Model/LongLive-Plug-MiniMax-H3-few-step",
   "slug": "efficient-large-model-longlive-plug-minimax-h3-few-step",
   "author": "Efficient-Large-Model",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 2767464857,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

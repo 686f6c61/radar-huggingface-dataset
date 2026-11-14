@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ricky97/SO101_push_dice_to_sticker_pose",
   "slug": "ricky97-so101_push_dice_to_sticker_pose",
   "author": "Ricky97",
@@ -28,14 +28,19 @@
   "parameters_human": "89.2M",
   "storage_bytes": 357044532,
   "storage_human": "357 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

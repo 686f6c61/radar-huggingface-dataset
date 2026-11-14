@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Miiche/visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix",
   "slug": "miiche-visualrl-qwen3vl4b-ppo1-4bx-all-c10-fix",
   "author": "Miiche",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 792507491636,
   "storage_human": "792.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T03:04:36.024Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

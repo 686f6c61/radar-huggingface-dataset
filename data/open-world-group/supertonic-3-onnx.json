@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-world-group/Supertonic-3-ONNX",
   "slug": "open-world-group-supertonic-3-onnx",
   "author": "open-world-group",
@@ -91,14 +91,19 @@
   "parameters_human": null,
   "storage_bytes": 664372300,
   "storage_human": "664 MB",
+  "context_length": null,
   "base_model": "supertone-oss-archive/supertonic-3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

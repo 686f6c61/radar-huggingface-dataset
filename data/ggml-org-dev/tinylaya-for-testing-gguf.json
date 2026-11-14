@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org-dev/tinylaya-for-testing-gguf",
   "slug": "ggml-org-dev-tinylaya-for-testing-gguf",
   "author": "ggml-org-dev",
@@ -29,14 +29,19 @@
   "parameters_human": "89.7M",
   "storage_bytes": 97200288,
   "storage_human": "97 MB",
+  "context_length": 8192,
   "base_model": "ggml-org/tinylaya-for-testing",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

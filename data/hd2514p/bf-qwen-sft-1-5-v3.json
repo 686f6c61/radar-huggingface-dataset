@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hd2514p/bf-qwen-sft-1.5-v3",
   "slug": "hd2514p-bf-qwen-sft-1-5-v3",
   "author": "hd2514p",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 85338717,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:41:54.928Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

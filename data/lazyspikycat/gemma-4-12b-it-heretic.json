@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LazySpikyCat/gemma-4-12B-it-heretic",
   "slug": "lazyspikycat-gemma-4-12b-it-heretic",
   "author": "LazySpikyCat",
@@ -35,14 +35,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 33822161171,
   "storage_human": "33.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

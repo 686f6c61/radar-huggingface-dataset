@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "renmsd/fixed_config_of_origin",
   "slug": "renmsd-fixed_config_of_origin",
   "author": "renmsd",
@@ -28,14 +28,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7672065088,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

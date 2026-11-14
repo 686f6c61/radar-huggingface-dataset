@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates",
   "slug": "peculiar-ragdoll-sharp-lfm2-5-chat-templates",
   "author": "peculiar-ragdoll",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangzhang/Mistral-7B-Instruct-RR-Abliterated",
   "slug": "wangzhang-mistral-7b-instruct-rr-abliterated",
   "author": "wangzhang",
@@ -42,14 +42,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 28966996448,
   "storage_human": "29.0 GB",
+  "context_length": null,
   "base_model": "GraySwanAI/Mistral-7B-Instruct-RR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

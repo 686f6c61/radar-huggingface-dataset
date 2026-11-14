@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/qwen3-asr-0.6b-GGUF",
   "slug": "agentory-qwen3-asr-0-6b-gguf",
   "author": "agentory",
@@ -94,14 +94,19 @@
   "parameters_human": "938.0M",
   "storage_bytes": 4683120032,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:53.673Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JakTheTrippr/tiny-kimi-k3.1-pro-GGUF",
   "slug": "jakthetrippr-tiny-kimi-k3-1-pro-gguf",
   "author": "JakTheTrippr",
@@ -28,14 +28,19 @@
   "parameters_human": "26.5M",
   "storage_bytes": 72346112,
   "storage_human": "72 MB",
+  "context_length": 1048576,
   "base_model": "moonshotai/Kimi-K3.1-Pro, tiny-random/kimi-k3.1-pro",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "technicallyAnnoyed/tiny-kimi-k3.1-pro-GGUF",
+  "renamed_at": "2026-11-14T03:19:45.957Z",
   "benchmarks": [],
   "sources": []
 }

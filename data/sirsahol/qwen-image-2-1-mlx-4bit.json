@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SirSahOl/Qwen-Image-2.1-mlx-4bit",
   "slug": "sirsahol-qwen-image-2-1-mlx-4bit",
   "author": "SirSahOl",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 37147276537,
   "storage_human": "37.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SirSahOl/Qwen-Image-mlx-4bit",
+  "renamed_at": "2026-11-11T03:53:40.239Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamelles/LFM2.5-230M-Wolof-CPT",
   "slug": "mamelles-lfm2-5-230m-wolof-cpt",
   "author": "mamelles",
@@ -29,14 +29,19 @@
   "parameters_human": "232.6M",
   "storage_bytes": 465270680,
   "storage_human": "465 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:30:02.268Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

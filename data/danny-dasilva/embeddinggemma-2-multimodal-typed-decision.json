@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision",
   "slug": "danny-dasilva-embeddinggemma-2-multimodal-typed-decision",
   "author": "Danny-Dasilva",
@@ -57,14 +57,19 @@
   "parameters_human": null,
   "storage_bytes": 3689701111,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

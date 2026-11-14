@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PawanKrd/RastNus-Small-5B-NVFP4",
   "slug": "pawankrd-rastnus-small-5b-nvfp4",
   "author": "PawanKrd",
@@ -44,14 +44,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 8002816083,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

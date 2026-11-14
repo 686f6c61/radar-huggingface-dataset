@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "choppedgarlic/Ornith-1.5-35B-A3B-Abliterated-MLX-Q3",
   "slug": "choppedgarlic-ornith-1-5-35b-a3b-abliterated-mlx-q3",
   "author": "choppedgarlic",
@@ -36,6 +36,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 15199213812,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

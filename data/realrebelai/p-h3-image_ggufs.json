@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/P-H3-Image_GGUFs",
   "slug": "realrebelai-p-h3-image_ggufs",
   "author": "realrebelai",
@@ -32,14 +32,19 @@
   "parameters_human": "20.15B",
   "storage_bytes": 124358032984,
   "storage_human": "124.4 GB",
+  "context_length": null,
   "base_model": "PrunaAI/P-H3-Image-Comfy",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

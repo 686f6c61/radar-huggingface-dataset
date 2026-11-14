@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mj-kang/GLM-5.3-EXL3-3.0bpw-TP3",
   "slug": "mj-kang-glm-5-3-exl3-3-0bpw-tp3",
   "author": "mj-kang",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 315861793187,
   "storage_human": "315.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/d1-omni-600M",
   "slug": "liquidai-d1-omni-600m",
   "author": "LiquidAI",
@@ -73,14 +73,19 @@
   "parameters_human": "587.2M",
   "storage_bytes": 4718932608,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

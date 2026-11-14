@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Derpyhue/Qwen3.8-27B-exl3-2.55bpw",
   "slug": "derpyhue-qwen3-8-27b-exl3-2-55bpw",
   "author": "Derpyhue",
@@ -31,14 +31,19 @@
   "parameters_human": "6.05B",
   "storage_bytes": 12111142268,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T02:49:39.483Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

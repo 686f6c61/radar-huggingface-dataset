@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hanseungwook/Llama-3.2-1B-Compressed-Joint-GSM8K-Aug-NL",
   "slug": "hanseungwook-llama-3-2-1b-compressed-joint-gsm8k-aug-nl",
   "author": "hanseungwook",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 2891718915,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

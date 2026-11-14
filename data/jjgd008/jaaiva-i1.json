@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjgd008/jaaiva-i1",
   "slug": "jjgd008-jaaiva-i1",
   "author": "jjgd008",
@@ -33,14 +33,19 @@
   "parameters_human": "503.7M",
   "storage_bytes": 3025790880,
   "storage_human": "3.0 GB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jjge007/jaaiva-i1",
+  "renamed_at": "2026-11-12T06:01:29.732Z",
   "benchmarks": [],
   "sources": []
 }

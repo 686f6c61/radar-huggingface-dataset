@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "efficiencyx/Jun-LoRA-E4B-MTP-GGUF",
   "slug": "efficiencyx-jun-lora-e4b-mtp-gguf",
   "author": "efficiencyx",
@@ -34,14 +34,19 @@
   "parameters_human": "78.0M",
   "storage_bytes": 77250080,
   "storage_human": "77 MB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

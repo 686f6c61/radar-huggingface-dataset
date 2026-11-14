@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arbora-anon/arbora-minimax-m3.1-flash-experts",
   "slug": "arbora-anon-arbora-minimax-m3-1-flash-experts",
   "author": "arbora-anon",
@@ -28,14 +28,19 @@
   "parameters_human": "3.26B",
   "storage_bytes": 6513699016,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "incoai/MiniMax-M3.1-Flash-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

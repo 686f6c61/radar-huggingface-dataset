@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lierseleow/Qwen3-30B-A3B-Instruct-2507-bnb-8bit",
   "slug": "lierseleow-qwen3-30b-a3b-instruct-2507-bnb-8bit",
   "author": "lierseleow",
@@ -28,14 +28,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 60173481170,
   "storage_human": "60.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:19:22.028Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

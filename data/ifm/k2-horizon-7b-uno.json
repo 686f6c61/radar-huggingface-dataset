@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IFM/K2-Horizon-7B-Uno",
   "slug": "ifm-k2-horizon-7b-uno",
   "author": "IFM",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 2096093787,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

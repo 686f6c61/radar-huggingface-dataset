@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AM014/qwen-cpp-optimized-16bit",
   "slug": "am014-qwen-cpp-optimized-16bit",
   "author": "AM014",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693946,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T03:18:30.715Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

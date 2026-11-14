@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barflyman/eu-pii-anonimization-multilang-ONNX",
   "slug": "barflyman-eu-pii-anonimization-multilang-onnx",
   "author": "barflyman",
@@ -82,14 +82,19 @@
   "parameters_human": null,
   "storage_bytes": 3495466872,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "bardsai/eu-pii-anonimization-multilang",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:12:08.779Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

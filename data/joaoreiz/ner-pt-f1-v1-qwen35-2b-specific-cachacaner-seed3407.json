@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed3407",
   "slug": "joaoreiz-ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed3407",
   "author": "JoaoReiz",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 87322013,
   "storage_human": "87 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

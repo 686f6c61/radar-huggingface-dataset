@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keras/ministral_3_14b_reasoning_2512_en",
   "slug": "keras-ministral_3_14b_reasoning_2512_en",
   "author": "keras",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 28770124712,
   "storage_human": "28.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

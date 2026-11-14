@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jhhj25/reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b",
   "slug": "jhhj25-reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b",
   "author": "jhhj25",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 160587912,
   "storage_human": "161 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

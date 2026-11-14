@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/K-Ai-Official_MiRAI-4B-GGUF",
   "slug": "bartowski-k-ai-official_mirai-4b-gguf",
   "author": "bartowski",
@@ -46,14 +46,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 61492910720,
   "storage_human": "61.5 GB",
+  "context_length": 40960,
   "base_model": "K-Ai-Official/MiRAI-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

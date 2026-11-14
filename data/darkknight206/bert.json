@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkknight206/bert",
   "slug": "darkknight206-bert",
   "author": "darkknight206",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 29390160,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/deepseek-moe-16b-chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

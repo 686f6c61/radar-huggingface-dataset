@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jirka642/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved-exl3",
   "slug": "jirka642-qwen3-8-27b-uncensored-heretic-native-mtp-preserved-exl3",
   "author": "jirka642",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 58671284079,
   "storage_human": "58.7 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

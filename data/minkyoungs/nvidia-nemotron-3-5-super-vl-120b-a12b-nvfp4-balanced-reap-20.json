@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minkyoungs/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-Balanced-REAP-20",
   "slug": "minkyoungs-nvidia-nemotron-3-5-super-vl-120b-a12b-nvfp4-balanced-reap-20",
   "author": "minkyoungs",
@@ -34,14 +34,19 @@
   "parameters_human": "54.48B",
   "storage_bytes": 62321228811,
   "storage_human": "62.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T05:52:51.830Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

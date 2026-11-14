@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wesjos/Qwen3.5-9B-HTML-v2-GGUF",
   "slug": "wesjos-qwen3-5-9b-html-v2-gguf",
   "author": "wesjos",
@@ -43,14 +43,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 21226383152,
   "storage_human": "21.2 GB",
+  "context_length": 262144,
   "base_model": "wesjos/Qwen3.5-9B-HTML-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

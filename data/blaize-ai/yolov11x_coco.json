@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blaize-AI/YOLOv11x_COCO",
   "slug": "blaize-ai-yolov11x_coco",
   "author": "Blaize-AI",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 100150947,
   "storage_human": "100 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T12:41:53.479Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

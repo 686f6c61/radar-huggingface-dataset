@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ANGELOSEGRETO/lunaris-guardv3",
   "slug": "angelosegreto-lunaris-guardv3",
   "author": "ANGELOSEGRETO",
@@ -58,14 +58,19 @@
   "parameters_human": "307.0M",
   "storage_bytes": 4945972164,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmbert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

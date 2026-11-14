@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CastIronMind/LissaBrat-Instruct",
   "slug": "castironmind-lissabrat-instruct",
   "author": "CastIronMind",
@@ -41,14 +41,19 @@
   "parameters_human": "102.8M",
   "storage_bytes": 206634256,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

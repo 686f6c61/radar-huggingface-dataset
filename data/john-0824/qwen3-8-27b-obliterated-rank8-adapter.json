@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "john-0824/Qwen3.8-27B-Obliterated-Rank8-Adapter",
   "slug": "john-0824-qwen3-8-27b-obliterated-rank8-adapter",
   "author": "john-0824",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 21105904,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

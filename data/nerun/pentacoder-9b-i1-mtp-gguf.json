@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nerun/PentaCoder-9B-i1-MTP-GGUF",
   "slug": "nerun-pentacoder-9b-i1-mtp-gguf",
   "author": "nerun",
@@ -27,20 +27,25 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 988,
+  "downloads_30d": 3030,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
   "storage_bytes": 114135599104,
   "storage_human": "114.1 GB",
+  "context_length": 262144,
   "base_model": "pragmaticcs/PentaCoder-9B-i1-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

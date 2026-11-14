@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jarrelscy/GLM-5.3-Flash-NestQuant-1.5-4bit",
   "slug": "jarrelscy-glm-5-3-flash-nestquant-1-5-4bit",
   "author": "jarrelscy",
@@ -34,14 +34,19 @@
   "parameters_human": "16.92B",
   "storage_bytes": 370656121494,
   "storage_human": "370.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

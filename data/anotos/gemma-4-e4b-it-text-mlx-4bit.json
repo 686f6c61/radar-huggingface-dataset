@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anotos/Gemma-4-E4B-it-Text-MLX-4bit",
   "slug": "anotos-gemma-4-e4b-it-text-mlx-4bit",
   "author": "Anotos",
@@ -32,6 +32,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 4231095470,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

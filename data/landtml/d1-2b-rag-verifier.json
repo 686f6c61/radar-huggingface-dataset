@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "landtml/d1-2B-RAG-Verifier",
   "slug": "landtml-d1-2b-rag-verifier",
   "author": "landtml",
@@ -50,6 +50,7 @@
   "parameters_human": "1.92B",
   "storage_bytes": 5936873328,
   "storage_human": "5.9 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "gguf",
@@ -57,8 +58,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Response-level hallucination detection",

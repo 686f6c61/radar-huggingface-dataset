@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khtsly/c",
   "slug": "khtsly-c",
   "author": "khtsly",
@@ -32,12 +32,17 @@
   "parameters_human": "1.50B",
   "storage_bytes": 5862307263,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:49:35.596Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

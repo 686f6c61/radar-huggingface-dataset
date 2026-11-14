@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "scalar-ai/scalar-phos-pro-gguf",
+  "slug": "scalar-ai-scalar-phos-pro-gguf",
+  "author": "scalar-ai",
+  "url": "https://huggingface.co/scalar-ai/scalar-phos-pro-gguf",
+  "created_at": "2026-11-14T15:40:04.000Z",
+  "updated_at": "2026-11-14T15:40:04.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La solution qui accélère la croissance de votre flotte - SCALAR",
+      "url": "https://zf-scalar.com/fr/",
+      "snippet": "SCALAR, la nouvelle plateforme de gestion de flotte de ZF, connecte en temps réel vos camions, vos remorques et vos équipes. …"
+    },
+    {
+      "title": "SCALAR - ZF Platform",
+      "url": "https://app.zf-scalar.com/",
+      "snippet": "A module of the SCALAR platform."
+    },
+    {
+      "title": "Scalar — API Documentation, SDKs & Hosted MCP Servers",
+      "url": "https://scalar.com/",
+      "snippet": "Infrastructure for APIs in the age of agents. From an agent's first read of your docs to its millionth production call, Scalar is the layer …"
+    },
+    {
+      "title": "An easier way to manage and grow your fleet business - SCALAR",
+      "url": "https://zf-scalar.com/",
+      "snippet": "SCALAR, ZF’s newest fleet management platform, connects all your trucks, trailers, teams, and processes in real time so you can …"
+    },
+    {
+      "title": "GitHub - scalar/scalar: Scalar is an open-source API platform: Modern ...",
+      "url": "https://github.com/ScalaR/ScalaR",
+      "snippet": "The following frameworks have chosen Scalar API Reference as their default OpenAPI documentation UI, recognizing its developer …"
+    }
+  ]
+}

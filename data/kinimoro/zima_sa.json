@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kinimoro/Zima_Sa",
   "slug": "kinimoro-zima_sa",
   "author": "Kinimoro",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 239388260,
   "storage_human": "239 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

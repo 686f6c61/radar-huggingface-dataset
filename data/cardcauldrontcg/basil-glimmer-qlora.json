@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CardCauldronTCG/basil-glimmer-qlora",
   "slug": "cardcauldrontcg-basil-glimmer-qlora",
   "author": "CardCauldronTCG",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 383494648,
   "storage_human": "383 MB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

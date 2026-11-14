@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "selink/Qwen3-4B-translation_independence_iso0-fa-peft-r32",
   "slug": "selink-qwen3-4b-translation_independence_iso0-fa-peft-r32",
   "author": "selink",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 275747347,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

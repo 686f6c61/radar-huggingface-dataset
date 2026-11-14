@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muzz1234/47.25",
   "slug": "muzz1234-47-25",
   "author": "muzz1234",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 160696368,
   "storage_human": "161 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T17:30:08.202Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

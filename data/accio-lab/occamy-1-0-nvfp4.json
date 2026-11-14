@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Accio-Lab/occamy-1.0-NVFP4",
   "slug": "accio-lab-occamy-1-0-nvfp4",
   "author": "Accio-Lab",
@@ -38,14 +38,19 @@
   "parameters_human": "19.00B",
   "storage_bytes": 23959778041,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "Accio-Lab/occamy-1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

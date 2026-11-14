@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beetle-FineWeb-100M/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-isl-eng-1xa100",
   "slug": "beetle-fineweb-100m-beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-100m-isl-eng-1xa100",
   "author": "Beetle-FineWeb-100M",
@@ -27,14 +27,19 @@
   "parameters_human": "193.8M",
   "storage_bytes": 88380209002,
   "storage_human": "88.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

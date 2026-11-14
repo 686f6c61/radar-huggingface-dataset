@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mustafacoshkun/mebiogmgpu-v2",
   "slug": "mustafacoshkun-mebiogmgpu-v2",
   "author": "mustafacoshkun",
@@ -35,14 +35,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404916,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T03:07:04.709Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

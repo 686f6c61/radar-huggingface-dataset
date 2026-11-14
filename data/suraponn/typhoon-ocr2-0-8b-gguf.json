@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Suraponn/typhoon-ocr2-0.8b-GGUF",
   "slug": "suraponn-typhoon-ocr2-0-8b-gguf",
   "author": "Suraponn",
@@ -37,14 +37,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 3062869024,
   "storage_human": "3.1 GB",
+  "context_length": 262144,
   "base_model": "typhoon-ai/typhoon-ocr2-0.8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "typhoon-ai/typhoon-ocr2-0.8b-GGUF",
+  "renamed_at": "2026-11-11T03:58:03.546Z",
   "benchmarks": [],
   "sources": []
 }

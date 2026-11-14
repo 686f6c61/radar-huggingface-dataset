@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aether-models/aether-kit-sd-turbo",
   "slug": "aether-models-aether-kit-sd-turbo",
   "author": "aether-models",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 5023617721,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "stabilityai/sd-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

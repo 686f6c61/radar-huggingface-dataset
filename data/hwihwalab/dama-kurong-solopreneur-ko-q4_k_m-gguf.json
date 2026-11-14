@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hwihwalab/dama-kurong-solopreneur-ko-Q4_K_M-GGUF",
   "slug": "hwihwalab-dama-kurong-solopreneur-ko-q4_k_m-gguf",
   "author": "hwihwalab",
@@ -43,14 +43,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 1708584704,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "hwihwalab/dama-kurong-solopreneur-ko",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T05:42:19.896Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

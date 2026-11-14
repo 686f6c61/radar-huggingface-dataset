@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1337Hero/Qwopus3.8-27B-Flash-ROCMFP4-GGUF",
   "slug": "1337hero-qwopus3-8-27b-flash-rocmfp4-gguf",
   "author": "1337Hero",
@@ -39,14 +39,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 34423507552,
   "storage_human": "34.4 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

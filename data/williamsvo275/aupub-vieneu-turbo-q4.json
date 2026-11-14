@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Williamsvo275/aupub-vieneu-turbo-q4",
   "slug": "williamsvo275-aupub-vieneu-turbo-q4",
   "author": "Williamsvo275",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 78439368,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

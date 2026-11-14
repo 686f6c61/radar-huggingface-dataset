@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Gemma3-1B-IT",
   "slug": "litert-community-gemma3-1b-it",
   "author": "litert-community",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 60827021804,
   "storage_human": "60.8 GB",
+  "context_length": null,
   "base_model": "google/Gemma-3-1B-IT",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

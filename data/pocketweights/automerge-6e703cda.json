@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PocketWeights/AutoMerge-6e703cda",
   "slug": "pocketweights-automerge-6e703cda",
   "author": "PocketWeights",
@@ -31,14 +31,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3904217152,
   "storage_human": "3.9 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct, Qwen/Qwen2.5-1.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "PocketWeights/PocketWeights-Qwen2.5-1.5B-GGUF",
+  "renamed_at": "2026-11-11T03:33:54.510Z",
   "benchmarks": [],
   "sources": [
     {

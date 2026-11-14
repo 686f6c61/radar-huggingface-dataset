@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1bit-MONSTER/DeepSeek-R1-Distill-Qwen-32B-GGUF",
   "slug": "1bit-monster-deepseek-r1-distill-qwen-32b-gguf",
   "author": "1bit-MONSTER",
@@ -29,14 +29,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 19851335840,
   "storage_human": "19.9 GB",
+  "context_length": 131072,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

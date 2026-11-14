@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "animay1106/SmolLM2-FT-MyDataset",
   "slug": "animay1106-smollm2-ft-mydataset",
   "author": "animay1106",
@@ -35,14 +35,19 @@
   "parameters_human": "162.8M",
   "storage_bytes": 325689569,
   "storage_human": "326 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

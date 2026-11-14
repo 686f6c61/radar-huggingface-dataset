@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PeachesAvicii/Down-Blouse-101-H3",
   "slug": "peachesavicii-down-blouse-101-h3",
   "author": "PeachesAvicii",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 310268002,
   "storage_human": "310 MB",
+  "context_length": null,
   "base_model": "neph1/1980s_fantasy_movies_minimax_h3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

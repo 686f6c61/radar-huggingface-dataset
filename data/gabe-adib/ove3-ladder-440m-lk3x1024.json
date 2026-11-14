@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gabe-adib/ove3-ladder-440m-lk3x1024",
   "slug": "gabe-adib-ove3-ladder-440m-lk3x1024",
   "author": "gabe-adib",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 138922673983,
   "storage_human": "138.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:31:24.694Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

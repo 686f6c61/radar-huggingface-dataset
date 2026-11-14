@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/Qwen3.8-27B-Uncensored-GGUF",
   "slug": "atomicchat-qwen3-8-27b-uncensored-gguf",
   "author": "AtomicChat",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 123439239872,
   "storage_human": "123.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Qwen3-8B-GPTQ-a16w4",
   "slug": "florianvoss-qwen3-8b-gptq-a16w4",
   "author": "florianvoss",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 9217283418,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:46:50.424Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

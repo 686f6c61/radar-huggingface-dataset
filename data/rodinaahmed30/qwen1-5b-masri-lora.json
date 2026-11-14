@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rodinaahmed30/qwen1.5b-masri-lora",
   "slug": "rodinaahmed30-qwen1-5b-masri-lora",
   "author": "rodinaahmed30",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3261812126,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:15:20.825Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nmsofficial/NedoLM-0.8B-V5-8K-GGUF",
   "slug": "nmsofficial-nedolm-0-8b-v5-8k-gguf",
   "author": "nmsofficial",
@@ -31,14 +31,19 @@
   "parameters_human": "823.1M",
   "storage_bytes": 1019064846,
   "storage_human": "1.0 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T07:05:08.064Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

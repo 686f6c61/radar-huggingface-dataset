@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Meridian-MRM/Samarkand-253m",
   "slug": "meridian-mrm-samarkand-253m",
   "author": "Meridian-MRM",
@@ -40,6 +40,7 @@
   "parameters_human": "253.6M",
   "storage_bytes": 1942949840,
   "storage_human": "1.9 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

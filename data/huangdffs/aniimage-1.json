@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huangdffs/Aniimage-1",
   "slug": "huangdffs-aniimage-1",
   "author": "huangdffs",
@@ -31,6 +31,7 @@
   "parameters_human": "433.4M",
   "storage_bytes": 1734217579,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

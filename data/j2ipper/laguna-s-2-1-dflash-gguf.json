@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "j2ipper/Laguna-S-2.1-DFlash-GGUF",
   "slug": "j2ipper-laguna-s-2-1-dflash-gguf",
   "author": "j2ipper",
@@ -33,14 +33,19 @@
   "parameters_human": "1.11B",
   "storage_bytes": 1188531584,
   "storage_human": "1.2 GB",
+  "context_length": 1048576,
   "base_model": "poolside/Laguna-S-2.1-DFlash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

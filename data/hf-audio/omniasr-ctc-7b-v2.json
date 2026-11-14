@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hf-audio/omniasr-ctc-7b-v2",
   "slug": "hf-audio-omniasr-ctc-7b-v2",
   "author": "hf-audio",
@@ -3329,14 +3329,19 @@
   "parameters_human": "6.51B",
   "storage_bytes": 26023313728,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T06:15:52.916Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

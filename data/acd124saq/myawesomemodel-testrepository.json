@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "acD124SAQ/MyAwesomeModel-TestRepository",
   "slug": "acd124saq-myawesomemodel-testrepository",
   "author": "acD124SAQ",
@@ -28,14 +28,19 @@
   "parameters_human": "4.4M",
   "storage_bytes": 17547912,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HelloSun/ling30flash",
   "slug": "hellosun-ling30flash",
   "author": "HelloSun",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-flash-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "HelloSun/ling30flash-moe-expert-paging-q4_EPQ",
+  "renamed_at": "2026-11-12T03:00:58.976Z",
   "benchmarks": [],
   "sources": [
     {

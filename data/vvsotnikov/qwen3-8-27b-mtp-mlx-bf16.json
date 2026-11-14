@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vvsotnikov/Qwen3.8-27B-MTP-MLX-bf16",
   "slug": "vvsotnikov-qwen3-8-27b-mtp-mlx-bf16",
   "author": "vvsotnikov",
@@ -40,6 +40,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 862209655,
   "storage_human": "862 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

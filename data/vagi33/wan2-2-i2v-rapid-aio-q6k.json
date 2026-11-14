@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VAGI33/Wan2.2-I2V-Rapid-AIO-Q6K",
   "slug": "vagi33-wan2-2-i2v-rapid-aio-q6k",
   "author": "VAGI33",
@@ -23,14 +23,19 @@
   "parameters_human": "16.39B",
   "storage_bytes": 13741647616,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

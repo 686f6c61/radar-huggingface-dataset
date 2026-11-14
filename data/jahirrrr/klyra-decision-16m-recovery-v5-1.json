@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jahirrrr/Klyra-Decision-16M-Recovery-V5.1",
   "slug": "jahirrrr-klyra-decision-16m-recovery-v5-1",
   "author": "Jahirrrr",
@@ -36,14 +36,19 @@
   "parameters_human": "16.4M",
   "storage_bytes": 65578108,
   "storage_human": "66 MB",
+  "context_length": null,
   "base_model": "Jahirrrr/Klyra-Decision-16M-Generalist-V4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

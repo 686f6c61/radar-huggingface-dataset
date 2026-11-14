@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mhqin/0813_model",
   "slug": "mhqin-0813_model",
   "author": "mhqin",
@@ -23,6 +23,7 @@
   "parameters_human": "7.61B",
   "storage_bytes": 15223808672,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T12:47:18.525Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

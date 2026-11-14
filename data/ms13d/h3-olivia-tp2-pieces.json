@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ms13d/h3-olivia-tp2-pieces",
   "slug": "ms13d-h3-olivia-tp2-pieces",
   "author": "ms13d",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 20294132048,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "OliviaRossi/Minimax-H3-Hybrid-DMAD-PDMD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

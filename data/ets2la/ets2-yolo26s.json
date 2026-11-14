@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ETS2LA/ets2-yolo26s",
   "slug": "ets2la-ets2-yolo26s",
   "author": "ETS2LA",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 87652926,
   "storage_human": "88 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO26",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

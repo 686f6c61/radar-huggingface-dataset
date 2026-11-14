@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lhh5051/Qwen3.8-Flash-Next-UD-Q4_K_XL-Huihui-Abliterated",
   "slug": "lhh5051-qwen3-8-flash-next-ud-q4_k_xl-huihui-abliterated",
   "author": "lhh5051",
@@ -28,14 +28,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 111334654784,
   "storage_human": "111.3 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

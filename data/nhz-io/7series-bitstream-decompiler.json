@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nhz-io/7series-bitstream-decompiler",
   "slug": "nhz-io-7series-bitstream-decompiler",
   "author": "nhz-io",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 187577920,
   "storage_human": "188 MB",
+  "context_length": null,
   "base_model": "zhuyaoyu/CodeV-R1-RL-Qwen-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

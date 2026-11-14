@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ktcapraz/t5gemma2-decision-270m-v2",
   "slug": "ktcapraz-t5gemma2-decision-270m-v2",
   "author": "ktcapraz",
@@ -44,14 +44,19 @@
   "parameters_human": "786.0M",
   "storage_bytes": 2355313403,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "google/t5gemma-2-270m-270m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Typed decisions",

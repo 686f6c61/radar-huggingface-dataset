@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "antheticplus-studios/Genesis-550_Core",
   "slug": "antheticplus-studios-genesis-550_core",
   "author": "antheticplus-studios",
@@ -60,14 +60,19 @@
   "parameters_human": "302.83B",
   "storage_bytes": 352345849135,
   "storage_human": "352.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

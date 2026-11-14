@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rhombus18/rhododendron-analyst",
   "slug": "rhombus18-rhododendron-analyst",
   "author": "rhombus18",
@@ -21,12 +21,17 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65535751214,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-32b-bnb-4bit",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:42:18.785Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

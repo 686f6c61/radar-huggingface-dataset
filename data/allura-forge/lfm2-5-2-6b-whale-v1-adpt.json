@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "allura-forge/LFM2.5-2.6B-WHALE-V1-adpt",
   "slug": "allura-forge-lfm2-5-2-6b-whale-v1-adpt",
   "author": "allura-forge",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 62711688,
   "storage_human": "63 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

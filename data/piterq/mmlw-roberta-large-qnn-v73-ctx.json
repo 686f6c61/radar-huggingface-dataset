@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PiterQ/mmlw-roberta-large-qnn-v73-ctx",
   "slug": "piterq-mmlw-roberta-large-qnn-v73-ctx",
   "author": "PiterQ",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 902787878,
   "storage_human": "903 MB",
+  "context_length": null,
   "base_model": "sdadas/mmlw-retrieval-roberta-large-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pkcpkc/gbert-large-mlx",
   "slug": "pkcpkc-gbert-large-mlx",
   "author": "pkcpkc",
@@ -32,6 +32,7 @@
   "parameters_human": "335.7M",
   "storage_bytes": 671516218,
   "storage_human": "672 MB",
+  "context_length": null,
   "base_model": "deepset/gbert-large",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

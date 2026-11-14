@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TEDI-AI/GLM-LORA",
   "slug": "tedi-ai-glm-lora",
   "author": "TEDI-AI",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 8944771401,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-OCR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

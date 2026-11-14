@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anomly/Mistral-7B-Instruct-v0.3-bposit8",
   "slug": "anomly-mistral-7b-instruct-v0-3-bposit8",
   "author": "Anomly",
@@ -35,14 +35,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 7476076352,
   "storage_human": "7.5 GB",
+  "context_length": 32768,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

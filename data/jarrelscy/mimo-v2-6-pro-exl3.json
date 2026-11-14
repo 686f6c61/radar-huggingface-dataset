@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jarrelscy/MiMo-V2.6-Pro-EXL3",
   "slug": "jarrelscy-mimo-v2-6-pro-exl3",
   "author": "jarrelscy",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 425603850703,
   "storage_human": "425.6 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

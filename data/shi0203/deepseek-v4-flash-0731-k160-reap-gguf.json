@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shi0203/DeepSeek-V4-Flash-0731-K160-REAP-GGUF",
   "slug": "shi0203-deepseek-v4-flash-0731-k160-reap-gguf",
   "author": "shi0203",
@@ -35,14 +35,19 @@
   "parameters_human": "180.43B",
   "storage_bytes": 58780356832,
   "storage_human": "58.8 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

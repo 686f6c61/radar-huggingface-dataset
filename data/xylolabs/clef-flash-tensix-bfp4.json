@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/clef-flash-Tensix-BFP4",
   "slug": "xylolabs-clef-flash-tensix-bfp4",
   "author": "Xylolabs",
@@ -45,14 +45,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 19083246613,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

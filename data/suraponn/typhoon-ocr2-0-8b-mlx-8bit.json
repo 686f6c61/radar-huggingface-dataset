@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Suraponn/typhoon-ocr2-0.8b-MLX-8bit",
   "slug": "suraponn-typhoon-ocr2-0-8b-mlx-8bit",
   "author": "Suraponn",
@@ -39,6 +39,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1021165927,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-ocr2-0.8b",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "typhoon-ai/typhoon-ocr2-0.8b-MLX-8bit",
+  "renamed_at": "2026-11-11T03:58:04.265Z",
   "benchmarks": [],
   "sources": []
 }

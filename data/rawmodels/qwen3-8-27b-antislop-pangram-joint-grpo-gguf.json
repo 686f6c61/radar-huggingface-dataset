@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-GGUF",
   "slug": "rawmodels-qwen3-8-27b-antislop-pangram-joint-grpo-gguf",
   "author": "rawmodels",
@@ -34,14 +34,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 59718665856,
   "storage_human": "59.7 GB",
+  "context_length": 262144,
   "base_model": "rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

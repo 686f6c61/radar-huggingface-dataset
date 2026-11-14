@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "j-llm/Irodori-TTS-v4.1-Small-Yomi-Tech-tuned",
   "slug": "j-llm-irodori-tts-v4-1-small-yomi-tech-tuned",
   "author": "j-llm",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 3095606236,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "takuma104/Irodori-TTS-v4.1-Small-Yomi",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

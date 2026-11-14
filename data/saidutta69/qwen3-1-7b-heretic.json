@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidutta69/Qwen3-1.7B-heretic",
   "slug": "saidutta69-qwen3-1-7b-heretic",
   "author": "saidutta69",
@@ -41,6 +41,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 22476743913,
   "storage_human": "22.5 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

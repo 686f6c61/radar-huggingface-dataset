@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-minimax-h3-singularity-64-fro95-lora",
   "slug": "runninghubai-rh-minimax-h3-singularity-64-fro95-lora",
   "author": "RunningHubAI",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 655422604,
   "storage_human": "655 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

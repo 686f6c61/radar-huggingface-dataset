@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DarkArtsForge/MN-Raven-12B-v1",
   "slug": "darkartsforge-mn-raven-12b-v1",
   "author": "DarkArtsForge",
@@ -47,14 +47,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 39237173063,
   "storage_human": "39.2 GB",
+  "context_length": null,
   "base_model": "Naphula-Archives/MN-Raven-12B-v0c-Base-LoRA, Naphula-Archives/MN-Raven-12B-v0o-Instruct-LoRA",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/Flux-9B-Klein-LoRA",
   "slug": "ast-1320-flux-9b-klein-lora",
   "author": "AST-1320",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 2181127560,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:04:39.785Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

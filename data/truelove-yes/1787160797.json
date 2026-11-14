@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "truelove-yes/1787160797",
   "slug": "truelove-yes-1787160797",
   "author": "truelove-yes",
@@ -34,14 +34,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 70234483877,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "vera6/affine-5g4yy75zuz-t6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T10:59:09.879Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

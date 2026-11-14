@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tvf007/EDSBG1TP2-model",
   "slug": "tvf007-edsbg1tp2-model",
   "author": "tvf007",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1322748,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

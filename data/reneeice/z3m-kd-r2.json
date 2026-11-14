@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reneeice/z3m-kd-r2",
   "slug": "reneeice-z3m-kd-r2",
   "author": "reneeice",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 519582944,
   "storage_human": "520 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:16:54.490Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

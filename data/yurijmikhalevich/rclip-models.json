@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yurijmikhalevich/rclip-models",
   "slug": "yurijmikhalevich-rclip-models",
   "author": "yurijmikhalevich",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 959155833,
   "storage_human": "959 MB",
+  "context_length": null,
   "base_model": "laion/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

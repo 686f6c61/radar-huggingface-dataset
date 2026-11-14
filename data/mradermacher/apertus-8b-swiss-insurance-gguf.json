@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/apertus-8b-swiss-insurance-GGUF",
   "slug": "mradermacher-apertus-8b-swiss-insurance-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "8.05B",
   "storage_bytes": 72735964672,
   "storage_human": "72.7 GB",
+  "context_length": 65536,
   "base_model": "legmlai/apertus-8b-swiss-insurance",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YukinoKaorisuna/Qwen3.8-27B-Uncensored-ninfer",
   "slug": "yukinokaorisuna-qwen3-8-27b-uncensored-ninfer",
   "author": "YukinoKaorisuna",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 16461267456,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "YukinoKaorisuna/Qwen3.8-27B-Uncensored-ninfer5080-5070ti",
+  "renamed_at": "2026-11-11T04:14:27.804Z",
   "benchmarks": [],
   "sources": [
     {

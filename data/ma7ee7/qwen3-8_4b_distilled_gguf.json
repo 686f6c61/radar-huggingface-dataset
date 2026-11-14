@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ma7ee7/Qwen3.8_4B_Distilled_GGUF",
   "slug": "ma7ee7-qwen3-8_4b_distilled_gguf",
   "author": "Ma7ee7",
@@ -42,14 +42,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 9667198400,
   "storage_human": "9.7 GB",
+  "context_length": 262144,
   "base_model": "Ma7ee7/Qwen3.8_4B_Distilled",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SirSahOl/OLMo-2-0425-1B-chat-mlx-8bit",
   "slug": "sirsahol-olmo-2-0425-1b-chat-mlx-8bit",
   "author": "SirSahOl",
@@ -34,6 +34,7 @@
   "parameters_human": "1.48B",
   "storage_bytes": 1670959813,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-0425-1B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

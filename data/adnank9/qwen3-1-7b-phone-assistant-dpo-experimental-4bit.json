@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adnank9/qwen3-1.7b-phone-assistant-dpo-experimental-4bit",
   "slug": "adnank9-qwen3-1-7b-phone-assistant-dpo-experimental-4bit",
   "author": "adnank9",
@@ -32,6 +32,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 979502860,
   "storage_human": "980 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX",
   "slug": "jakevin-qwen3-8-flash-next-mixed-mlx-k50-min3bit-omlx",
   "author": "Jakevin",
@@ -36,6 +36,7 @@
   "parameters_human": "91.21B",
   "storage_bytes": 65683012316,
   "storage_human": "65.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

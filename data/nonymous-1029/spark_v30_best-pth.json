@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nonymous-1029/spark_v30_best.pth",
   "slug": "nonymous-1029-spark_v30_best-pth",
   "author": "Nonymous-1029",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 197173935,
   "storage_human": "197 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

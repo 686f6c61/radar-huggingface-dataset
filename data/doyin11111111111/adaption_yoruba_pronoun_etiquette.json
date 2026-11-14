@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Doyin11111111111/adaption_yoruba_pronoun_etiquette",
   "slug": "doyin11111111111-adaption_yoruba_pronoun_etiquette",
   "author": "Doyin11111111111",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 921432698,
   "storage_human": "921 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Adedoyin00/adaption_yoruba_pronoun_etiquette",
+  "renamed_at": "2026-11-14T02:52:38.084Z",
   "benchmarks": [],
   "sources": []
 }

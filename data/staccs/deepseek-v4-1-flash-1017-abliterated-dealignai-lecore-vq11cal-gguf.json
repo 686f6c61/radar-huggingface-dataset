@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "staccs/DeepSeek-V4.1-Flash-1017-abliterated-dealignai-lecore-vq11cal-GGUF",
   "slug": "staccs-deepseek-v4-1-flash-1017-abliterated-dealignai-lecore-vq11cal-gguf",
   "author": "staccs",
@@ -34,14 +34,19 @@
   "parameters_human": "106.80B",
   "storage_bytes": 316745610232,
   "storage_human": "316.7 GB",
+  "context_length": 1048576,
   "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PS4Research/xnfjGuaVd0Dp3J42",
   "slug": "ps4research-xnfjguavd0dp3j42",
   "author": "PS4Research",
@@ -35,14 +35,19 @@
   "parameters_human": "29.28B",
   "storage_bytes": 58553607904,
   "storage_human": "58.6 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

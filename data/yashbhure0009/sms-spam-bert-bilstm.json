@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yashbhure0009/sms-spam-bert-bilstm",
   "slug": "yashbhure0009-sms-spam-bert-bilstm",
   "author": "yashbhure0009",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 443275883,
   "storage_human": "443 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

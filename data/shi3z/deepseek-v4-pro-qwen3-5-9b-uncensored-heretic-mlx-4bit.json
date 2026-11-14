@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shi3z/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-MLX-4bit",
   "slug": "shi3z-deepseek-v4-pro-qwen3-5-9b-uncensored-heretic-mlx-4bit",
   "author": "shi3z",
@@ -45,6 +45,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 5058150292,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

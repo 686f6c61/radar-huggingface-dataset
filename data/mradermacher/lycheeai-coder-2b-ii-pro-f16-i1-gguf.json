@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LycheeAI-coder-2b-II-pro-f16-i1-GGUF",
   "slug": "mradermacher-lycheeai-coder-2b-ii-pro-f16-i1-gguf",
   "author": "mradermacher",
@@ -38,6 +38,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 30242607264,
   "storage_human": "30.2 GB",
+  "context_length": 131072,
   "base_model": "whcl412/LycheeAI-coder-2b-II-pro-f16",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

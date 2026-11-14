@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ricursiveAI/Ripple-65B-Preview-NVFP4",
   "slug": "ricursiveai-ripple-65b-preview-nvfp4",
   "author": "ricursiveAI",
@@ -20,21 +20,26 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 41,
+  "likes": 42,
   "downloads_30d": 4310,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": 39616865360,
   "parameters_human": "39.62B",
   "storage_bytes": 101008198780,
   "storage_human": "101.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

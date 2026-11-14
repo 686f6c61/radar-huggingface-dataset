@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Glimpse-Dictation/Parakeet-TDT-0.6B-V3-coreml",
   "slug": "glimpse-dictation-parakeet-tdt-0-6b-v3-coreml",
   "author": "Glimpse-Dictation",
@@ -29,14 +29,19 @@
   "parameters_human": "18.1M",
   "storage_bytes": 3996523996,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

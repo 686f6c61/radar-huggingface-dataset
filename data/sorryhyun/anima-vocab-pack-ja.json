@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sorryhyun/anima-vocab-pack-ja",
   "slug": "sorryhyun-anima-vocab-pack-ja",
   "author": "sorryhyun",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 2763959187,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "circlestone-labs/Anima",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sorryhyun/anima-vocab-pack-cjk",
+  "renamed_at": "2026-11-11T07:34:51.496Z",
   "benchmarks": [],
   "sources": [
     {

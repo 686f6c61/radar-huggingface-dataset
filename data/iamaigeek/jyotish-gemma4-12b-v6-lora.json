@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamaigeek/jyotish-gemma4-12b-v6-lora",
   "slug": "iamaigeek-jyotish-gemma4-12b-v6-lora",
   "author": "iamaigeek",
@@ -38,6 +38,7 @@
   "parameters_human": "131.1M",
   "storage_bytes": 819138666,
   "storage_human": "819 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-12b-it",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

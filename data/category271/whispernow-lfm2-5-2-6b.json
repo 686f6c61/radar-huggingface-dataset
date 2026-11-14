@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "category271/whispernow-lfm2.5-2.6b",
   "slug": "category271-whispernow-lfm2-5-2-6b",
   "author": "category271",
@@ -39,6 +39,7 @@
   "parameters_human": "2.70B",
   "storage_bytes": 8287883035,
   "storage_human": "8.3 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-2.6B-Base",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

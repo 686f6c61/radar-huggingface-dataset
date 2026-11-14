@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elvezjp/GLM-5.3-Flash-ELVEZ-KDA-Q8_0-gguf",
   "slug": "elvezjp-glm-5-3-flash-elvez-kda-q8_0-gguf",
   "author": "elvezjp",
@@ -34,14 +34,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 186597336384,
   "storage_human": "186.6 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

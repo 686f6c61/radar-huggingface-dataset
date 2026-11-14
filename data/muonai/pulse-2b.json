@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muonai/PULSE-2B",
   "slug": "muonai-pulse-2b",
   "author": "muonai",
@@ -36,6 +36,7 @@
   "parameters_human": "2.61B",
   "storage_bytes": 1509592825,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

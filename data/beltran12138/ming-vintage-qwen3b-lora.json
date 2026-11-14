@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beltran12138/ming-vintage-qwen3b-lora",
   "slug": "beltran12138-ming-vintage-qwen3b-lora",
   "author": "Beltran12138",
@@ -43,6 +43,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 2275979708,
   "storage_human": "2.3 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

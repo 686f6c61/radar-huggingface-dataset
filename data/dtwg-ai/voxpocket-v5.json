@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dtwg-ai/VoxPocket-v5",
   "slug": "dtwg-ai-voxpocket-v5",
   "author": "dtwg-ai",
@@ -38,14 +38,19 @@
   "parameters_human": "801.7M",
   "storage_bytes": 13174092211,
   "storage_human": "13.2 GB",
+  "context_length": null,
   "base_model": "INGMUYLEANG/VoxPocket-v4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T05:24:26.807Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

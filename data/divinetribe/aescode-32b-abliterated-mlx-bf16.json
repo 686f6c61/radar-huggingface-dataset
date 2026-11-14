@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/AesCode-32B-abliterated-MLX-bf16",
   "slug": "divinetribe-aescode-32b-abliterated-mlx-bf16",
   "author": "divinetribe",
@@ -40,6 +40,7 @@
   "parameters_human": "33.36B",
   "storage_bytes": 66726335243,
   "storage_human": "66.7 GB",
+  "context_length": null,
   "base_model": "microsoft/AesCode-32B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

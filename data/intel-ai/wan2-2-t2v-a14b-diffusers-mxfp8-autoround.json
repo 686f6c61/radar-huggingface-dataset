@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intel-ai/Wan2.2-T2V-A14B-Diffusers-MXFP8-AutoRound",
   "slug": "intel-ai-wan2-2-t2v-a14b-diffusers-mxfp8-autoround",
   "author": "intel-ai",
@@ -31,6 +31,7 @@
   "parameters_human": "14.73B",
   "storage_bytes": 41691856547,
   "storage_human": "41.7 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-T2V-A14B-Diffusers",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

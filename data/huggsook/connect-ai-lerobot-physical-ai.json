@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggsook/connect-ai-lerobot-physical-ai",
   "slug": "huggsook-connect-ai-lerobot-physical-ai",
   "author": "huggsook",
@@ -35,14 +35,19 @@
   "parameters_human": "262.7M",
   "storage_bytes": 1051243529,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "ALOHA 3D Transfer Cube",

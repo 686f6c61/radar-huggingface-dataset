@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SC117/MiniCPM5-2B-abliterated-FIT-GGUF",
   "slug": "sc117-minicpm5-2b-abliterated-fit-gguf",
   "author": "SC117",
@@ -41,14 +41,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 15264633812,
   "storage_human": "15.3 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

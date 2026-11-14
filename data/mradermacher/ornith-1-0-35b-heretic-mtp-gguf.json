@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Ornith-1.0-35B-Heretic-MTP-GGUF",
   "slug": "mradermacher-ornith-1-0-35b-heretic-mtp-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 244418998656,
   "storage_human": "244.4 GB",
+  "context_length": 262144,
   "base_model": "SC117/Ornith-1.0-35B-Heretic-MTP",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

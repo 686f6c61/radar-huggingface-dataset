@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gearwave00001/orcarouter-Qwen3.8-27B-Uncensored-nvfp4-NInfer",
   "slug": "gearwave00001-orcarouter-qwen3-8-27b-uncensored-nvfp4-ninfer",
   "author": "gearwave00001",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 21492695040,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

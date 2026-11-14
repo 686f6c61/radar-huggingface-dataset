@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nico248000000000/Huihui-Qwen3.8-27B-abliterated-cyber-GGUF",
   "slug": "nico248000000000-huihui-qwen3-8-27b-abliterated-cyber-gguf",
   "author": "nico248000000000",
@@ -42,14 +42,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 47700740448,
   "storage_human": "47.7 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T06:08:51.299Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Causal language modeling",

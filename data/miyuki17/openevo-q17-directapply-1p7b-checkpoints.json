@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miyuki17/openevo-q17-directapply-1p7b-checkpoints",
   "slug": "miyuki17-openevo-q17-directapply-1p7b-checkpoints",
   "author": "miyuki17",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 327127819720,
   "storage_human": "327.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "openevo-recovery/openevo-q17-directapply-1p7b-checkpoints",
+  "renamed_at": "2026-11-14T07:10:49.181Z",
   "benchmarks": [],
   "sources": [
     {

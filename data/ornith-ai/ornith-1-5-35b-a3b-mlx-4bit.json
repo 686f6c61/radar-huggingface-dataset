@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit",
   "slug": "ornith-ai-ornith-1-5-35b-a3b-mlx-4bit",
   "author": "ornith-ai",
@@ -30,6 +30,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19531291915,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

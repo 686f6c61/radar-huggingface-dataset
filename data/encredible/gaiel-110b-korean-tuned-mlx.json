@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "encredible/Gaiel-110B-Korean-Tuned-MLX",
   "slug": "encredible-gaiel-110b-korean-tuned-mlx",
   "author": "encredible",
@@ -38,6 +38,7 @@
   "parameters_human": "17.38B",
   "storage_bytes": 62570307796,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen1.5-110B-Chat",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T10:06:51.251Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

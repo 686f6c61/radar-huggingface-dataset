@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juwon1105/RLVR-qwen3-1.7B-hotpot5000",
   "slug": "juwon1105-rlvr-qwen3-1-7b-hotpot5000",
   "author": "juwon1105",
@@ -34,14 +34,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452615077,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

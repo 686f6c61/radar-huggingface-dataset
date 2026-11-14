@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maccelerate/Qwen3.8-27B-UD3-Q8_K_XL-MLX",
   "slug": "maccelerate-qwen3-8-27b-ud3-q8_k_xl-mlx",
   "author": "maccelerate",
@@ -38,6 +38,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 31454707712,
   "storage_human": "31.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

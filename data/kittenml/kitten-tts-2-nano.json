@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KittenML/kitten-tts-2-nano",
   "slug": "kittenml-kitten-tts-2-nano",
   "author": "KittenML",
@@ -45,6 +45,7 @@
   "parameters_human": null,
   "storage_bytes": 704136164,
   "storage_human": "704 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

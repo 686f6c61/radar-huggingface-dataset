@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omar111199/team-qh-109-container-inspect",
   "slug": "omar111199-team-qh-109-container-inspect",
   "author": "Omar111199",
@@ -31,14 +31,19 @@
   "parameters_human": "33.6M",
   "storage_bytes": 321193768,
   "storage_human": "321 MB",
+  "context_length": null,
   "base_model": "Roboflow/rf-detr-large, Qwen/Qwen3-VL-8B-Instruct, google/owlv2-base-patch16-ensemble",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

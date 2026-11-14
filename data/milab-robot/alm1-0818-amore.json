@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "milab-robot/alm1-0818-amore",
   "slug": "milab-robot-alm1-0818-amore",
   "author": "milab-robot",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 114767484625,
   "storage_human": "114.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T07:02:11.913Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

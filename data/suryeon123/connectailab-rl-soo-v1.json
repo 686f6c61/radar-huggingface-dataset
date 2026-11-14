@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suryeon123/connectailab-rl-soo-v1",
   "slug": "suryeon123-connectailab-rl-soo-v1",
   "author": "suryeon123",
@@ -42,6 +42,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 853527451,
   "storage_human": "854 MB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/crispasr-granite5-validation-public",
   "slug": "cstr-crispasr-granite5-validation-public",
   "author": "cstr",
@@ -25,14 +25,19 @@
   "parameters_human": "2.31B",
   "storage_bytes": 76742499505,
   "storage_human": "76.7 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-5.0-2b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

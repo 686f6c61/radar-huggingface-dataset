@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WorkOffline/phi-4-GGUF",
   "slug": "workoffline-phi-4-gguf",
   "author": "WorkOffline",
@@ -28,14 +28,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 9053114560,
   "storage_human": "9.1 GB",
+  "context_length": 16384,
   "base_model": "microsoft/phi-4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

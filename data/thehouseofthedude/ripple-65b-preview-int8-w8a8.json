@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheHouseOfTheDude/Ripple-65B-Preview-INT8-W8A8",
   "slug": "thehouseofthedude-ripple-65b-preview-int8-w8a8",
   "author": "TheHouseOfTheDude",
@@ -41,14 +41,19 @@
   "parameters_human": "61.01B",
   "storage_bytes": 65830550224,
   "storage_human": "65.8 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

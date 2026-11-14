@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bratao/Llama-PortOIE3",
   "slug": "bratao-llama-portoie3",
   "author": "bratao",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 8540770624,
   "storage_human": "8.5 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

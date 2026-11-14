@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alhasan/camelbert-egyptian-arabic-nlu",
   "slug": "alhasan-camelbert-egyptian-arabic-nlu",
   "author": "Alhasan",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 436919111,
   "storage_human": "437 MB",
+  "context_length": null,
   "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-da",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

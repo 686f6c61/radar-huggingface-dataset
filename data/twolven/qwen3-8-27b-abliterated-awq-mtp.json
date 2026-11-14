@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twolven/Qwen3.8-27B-abliterated-AWQ-MTP",
   "slug": "twolven-qwen3-8-27b-abliterated-awq-mtp",
   "author": "twolven",
@@ -39,14 +39,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 19567857112,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

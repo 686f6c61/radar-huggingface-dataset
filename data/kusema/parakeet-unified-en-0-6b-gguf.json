@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kusema/parakeet-unified-en-0.6b-gguf",
   "slug": "kusema-parakeet-unified-en-0-6b-gguf",
   "author": "kusema",
@@ -28,14 +28,19 @@
   "parameters_human": "618.3M",
   "storage_bytes": 731357568,
   "storage_human": "731 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-unified-en-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

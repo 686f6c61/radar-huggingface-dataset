@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "facebook/sam3",
   "slug": "facebook-sam3",
   "author": "facebook",
@@ -25,21 +25,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 6573,
+  "likes": 6594,
   "downloads_30d": 2065427,
-  "trending_score": 215,
+  "trending_score": 219,
   "parameters": 859922360,
   "parameters_human": "859.9M",
   "storage_bytes": 10329938097,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

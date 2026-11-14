@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/MiniCPM-V-4.7-1B-OptiQ-4bit",
   "slug": "oscilla-minicpm-v-4-7-1b-optiq-4bit",
   "author": "Oscilla",
@@ -38,6 +38,7 @@
   "parameters_human": "1.01B",
   "storage_bytes": 1920521398,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

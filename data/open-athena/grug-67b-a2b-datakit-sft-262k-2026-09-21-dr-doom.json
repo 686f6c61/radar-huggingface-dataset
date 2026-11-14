@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
   "slug": "open-athena-grug-67b-a2b-datakit-sft-262k-2026-09-21-dr-doom",
   "author": "open-athena",
@@ -36,14 +36,19 @@
   "parameters_human": "67.08B",
   "storage_bytes": 134175420237,
   "storage_human": "134.2 GB",
+  "context_length": null,
   "base_model": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

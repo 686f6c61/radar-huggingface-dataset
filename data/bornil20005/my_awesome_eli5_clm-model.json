@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bornil20005/my_awesome_eli5_clm-model",
   "slug": "bornil20005-my_awesome_eli5_clm-model",
   "author": "bornil20005",
@@ -31,14 +31,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 7863795473,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "distilbert/distilgpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

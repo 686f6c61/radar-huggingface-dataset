@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hebrish/Sabich-asr4all-M",
   "slug": "hebrish-sabich-asr4all-m",
   "author": "Hebrish",
@@ -49,6 +49,7 @@
   "parameters_human": "55.8M",
   "storage_bytes": 441012118,
   "storage_human": "441 MB",
+  "context_length": null,
   "base_model": "futo-org/asr4all-m",
   "formats": [
     "onnx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

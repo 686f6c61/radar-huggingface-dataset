@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/sentiment-polish-gpt2-small",
   "slug": "vllm-project-sentiment-polish-gpt2-small",
   "author": "vllm-project",
@@ -32,14 +32,19 @@
   "parameters_human": "126.0M",
   "storage_bytes": 503829200,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": "sdadas/polish-gpt2-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

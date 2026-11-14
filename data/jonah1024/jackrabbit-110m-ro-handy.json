@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jonah1024/jackrabbit-110m-ro-handy",
   "slug": "jonah1024-jackrabbit-110m-ro-handy",
   "author": "jonah1024",
@@ -27,14 +27,19 @@
   "parameters_human": "115.4M",
   "storage_bytes": 830564320,
   "storage_human": "831 MB",
+  "context_length": null,
   "base_model": "surogate/jackrabbit-110m-ro",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

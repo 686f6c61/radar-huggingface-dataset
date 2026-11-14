@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cserb/Spokenly-Cleanup-1-MLX-8bit",
   "slug": "cserb-spokenly-cleanup-1-mlx-8bit",
   "author": "cserb",
@@ -50,6 +50,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 644865688,
   "storage_human": "645 MB",
+  "context_length": null,
   "base_model": "spokenly/cleanup-1",
   "formats": [
     "mlx",
@@ -57,8 +58,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

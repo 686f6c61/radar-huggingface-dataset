@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnirbanSaha/mistral-nemo-12b-tlink-sentence-only-autoregressive",
   "slug": "anirbansaha-mistral-nemo-12b-tlink-sentence-only-autoregressive",
   "author": "AnirbanSaha",
@@ -31,14 +31,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24510414112,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Nemo-Instruct-2407",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

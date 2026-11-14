@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zzzzdar3warfatf/Qwen2.5-Coder-7B-Instruct-abliterated-GGUF",
   "slug": "zzzzdar3warfatf-qwen2-5-coder-7b-instruct-abliterated-gguf",
   "author": "zzzzdar3warfatf",
@@ -32,14 +32,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 121058957606,
   "storage_human": "121.1 GB",
+  "context_length": 32768,
   "base_model": "huihui-ai/Qwen2.5-Coder-7B-Instruct-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

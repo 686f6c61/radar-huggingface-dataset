@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onashia/moonshine-streaming-small-webgpu",
   "slug": "onashia-moonshine-streaming-small-webgpu",
   "author": "onashia",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 193235275,
   "storage_human": "193 MB",
+  "context_length": null,
   "base_model": "moonshine-ai/moonshine-streaming-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kayodekosi/clinical-decision-support",
   "slug": "kayodekosi-clinical-decision-support",
   "author": "kayodekosi",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kayodekosi/medical-clinical-decision-support-7b",
+  "renamed_at": "2026-11-13T06:14:49.722Z",
   "benchmarks": [],
   "sources": [
     {

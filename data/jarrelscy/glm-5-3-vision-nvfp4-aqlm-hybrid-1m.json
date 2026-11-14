@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jarrelscy/GLM-5.3-Vision-NVFP4-AQLM-hybrid-1m",
   "slug": "jarrelscy-glm-5-3-vision-nvfp4-aqlm-hybrid-1m",
   "author": "jarrelscy",
@@ -32,14 +32,19 @@
   "parameters_human": "210.04B",
   "storage_bytes": 552837038747,
   "storage_human": "552.8 GB",
+  "context_length": null,
   "base_model": "RadixArk/GLM-5.3-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/Phi-4-mini-instruct-MLX-4bit",
   "slug": "outlier-ai-phi-4-mini-instruct-mlx-4bit",
   "author": "Outlier-Ai",
@@ -84,6 +84,7 @@
   "parameters_human": "3.84B",
   "storage_bytes": 2173625595,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "mlx",
@@ -91,8 +92,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

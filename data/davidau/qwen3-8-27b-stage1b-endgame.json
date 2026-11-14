@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.8-27B-stage1b-endgame",
   "slug": "davidau-qwen3-8-27b-stage1b-endgame",
   "author": "DavidAU",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582996551,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:57:24.229Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

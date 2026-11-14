@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shoutmon/Orion-Qwen3-4B-SFT-v2608-IQ4_XS-GGUF",
   "slug": "shoutmon-orion-qwen3-4b-sft-v2608-iq4_xs-gguf",
   "author": "shoutmon",
@@ -29,14 +29,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2274619744,
   "storage_human": "2.3 GB",
+  "context_length": 32768,
   "base_model": "3tic/Orion-Qwen3-4B-SFT-v2608",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

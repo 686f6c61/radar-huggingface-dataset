@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "98sd7fc9sdf/cumshotV111111111111111",
   "slug": "98sd7fc9sdf-cumshotv111111111111111",
   "author": "98sd7fc9sdf",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 359392967,
   "storage_human": "359 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

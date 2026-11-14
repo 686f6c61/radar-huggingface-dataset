@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-Qwen3-32B-NVFP4",
   "slug": "defnoteatin-pseudobrain-qwen3-32b-nvfp4",
   "author": "defnoteatin",
@@ -39,14 +39,19 @@
   "parameters_human": "33.60B",
   "storage_bytes": 22361596409,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B, RedHatAI/Qwen3-32B-NVFP4, Qwen/Qwen3-32B-AWQ, Qwen/Qwen3-32B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

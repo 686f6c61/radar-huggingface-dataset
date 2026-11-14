@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "toiletsandpaper/russian-ai-text-detector-modernbert",
   "slug": "toiletsandpaper-russian-ai-text-detector-modernbert",
   "author": "toiletsandpaper",
@@ -46,6 +46,7 @@
   "parameters_human": "34.5M",
   "storage_bytes": 489847712,
   "storage_human": "490 MB",
+  "context_length": null,
   "base_model": "deepvk/RuModernBERT-small",
   "formats": [
     "onnx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "AI-generated text detection",

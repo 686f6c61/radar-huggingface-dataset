@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EigenLabs/Qwen3.5-35B-A3B-MLX-VL-4bit-g64",
   "slug": "eigenlabs-qwen3-5-35b-a3b-mlx-vl-4bit-g64",
   "author": "EigenLabs",
@@ -34,6 +34,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 20886799783,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

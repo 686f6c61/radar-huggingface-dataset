@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Mistral-Medium-3.5-128B",
   "slug": "mistralai-mistral-medium-3-5-128b",
   "author": "mistralai",
@@ -76,14 +76,19 @@
   "parameters_human": "127.70B",
   "storage_bytes": 267248709697,
   "storage_human": "267.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

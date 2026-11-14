@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamrodrigocoelho/gemma-4-e2b-refauna-GGUF",
   "slug": "iamrodrigocoelho-gemma-4-e2b-refauna-gguf",
   "author": "iamrodrigocoelho",
@@ -44,14 +44,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 9382204000,
   "storage_human": "9.4 GB",
+  "context_length": 131072,
   "base_model": "Refauna/gemma-4-e2b-refauna",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Refauna/gemma-4-e2b-refauna-GGUF",
+  "renamed_at": "2026-11-11T05:37:57.120Z",
   "benchmarks": [],
   "sources": []
 }

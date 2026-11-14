@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
   "slug": "dhanesh-hf-jarvis-titan-v15-moe-decoupled",
   "author": "dhanesh-hf",
@@ -37,14 +37,19 @@
   "parameters_human": "14.84B",
   "storage_bytes": 29682419170,
   "storage_human": "29.7 GB",
+  "context_length": null,
   "base_model": "dhanesh-hf/Jarvis-Titan-V14-MoE-Merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dariachup/dormouse-mt-uk-en",
   "slug": "dariachup-dormouse-mt-uk-en",
   "author": "Dariachup",
@@ -38,14 +38,19 @@
   "parameters_human": "75.7M",
   "storage_bytes": 607740298,
   "storage_human": "608 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-uk-en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

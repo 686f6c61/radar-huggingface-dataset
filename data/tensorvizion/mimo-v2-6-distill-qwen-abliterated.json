@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TensorVizion/MiMo-V2.6-Distill-Qwen-Abliterated",
   "slug": "tensorvizion-mimo-v2-6-distill-qwen-abliterated",
   "author": "TensorVizion",
@@ -39,6 +39,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 2819964556,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Lumo-1-1.5B-Chat-GGUF",
   "slug": "mradermacher-lumo-1-1-5b-chat-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "1.51B",
   "storage_bytes": 14057935232,
   "storage_human": "14.1 GB",
+  "context_length": 4096,
   "base_model": "vpakarinen/Lumo-1-1.5B-Chat",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

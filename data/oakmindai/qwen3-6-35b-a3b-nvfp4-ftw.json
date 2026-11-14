@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oakmindai/Qwen3.6-35B-A3B-NVFP4-FTW",
   "slug": "oakmindai-qwen3-6-35b-a3b-nvfp4-ftw",
   "author": "oakmindai",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 22593675054,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.6-35B-A3B-NVFP4, Qwen/Qwen3.6-35B-A3B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

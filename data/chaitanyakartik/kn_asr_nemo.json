@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chaitanyakartik/kn_asr_nemo",
   "slug": "chaitanyakartik-kn_asr_nemo",
   "author": "chaitanyakartik",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 2208177446,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "nvidia/stt_en_fastconformer_hybrid_large_pc",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/kev-0.6b-coreml",
   "slug": "fluidinference-kev-0-6b-coreml",
   "author": "FluidInference",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1804079751,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "jaredpalmer/kev-0.6b, Qwen/Qwen3-0.6B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

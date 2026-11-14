@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yigit-Karaman/turkish_focused-multilingual-e5-small",
   "slug": "yigit-karaman-turkish_focused-multilingual-e5-small",
   "author": "Yigit-Karaman",
@@ -222,14 +222,19 @@
   "parameters_human": "117.7M",
   "storage_bytes": 2744890982,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

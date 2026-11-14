@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Securelayer7/salamandra-7b-instruct-Uncensored-Abliterated",
   "slug": "securelayer7-salamandra-7b-instruct-uncensored-abliterated",
   "author": "Securelayer7",
@@ -55,14 +55,19 @@
   "parameters_human": "7.77B",
   "storage_bytes": 15578063607,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "BSC-LT/salamandra-7b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

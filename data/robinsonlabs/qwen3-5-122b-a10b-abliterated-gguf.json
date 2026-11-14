@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RobinsonLabs/Qwen3.5-122B-A10B-abliterated-GGUF",
   "slug": "robinsonlabs-qwen3-5-122b-a10b-abliterated-gguf",
   "author": "RobinsonLabs",
@@ -21,14 +21,19 @@
   "parameters_human": "124.64B",
   "storage_bytes": 976469974048,
   "storage_human": "976.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

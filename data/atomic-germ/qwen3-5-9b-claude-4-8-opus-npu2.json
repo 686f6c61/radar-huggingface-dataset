@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3.5-9B-Claude-4.8-Opus-NPU2",
   "slug": "atomic-germ-qwen3-5-9b-claude-4-8-opus-npu2",
   "author": "Atomic-Germ",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 22649349189,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

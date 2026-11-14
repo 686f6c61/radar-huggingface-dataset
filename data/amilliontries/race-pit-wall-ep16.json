@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amilliontries/race-pit-wall-ep16",
   "slug": "amilliontries-race-pit-wall-ep16",
   "author": "amilliontries",
@@ -29,14 +29,19 @@
   "parameters_human": "1352",
   "storage_bytes": 5720,
   "storage_human": "5720 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

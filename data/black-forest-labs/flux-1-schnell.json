@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "black-forest-labs/FLUX.1-schnell",
   "slug": "black-forest-labs-flux-1-schnell",
   "author": "black-forest-labs",
@@ -27,13 +27,14 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 6747,
+  "likes": 6752,
   "downloads_30d": 276794,
-  "trending_score": 44,
+  "trending_score": 45,
   "parameters": 11891178560,
   "parameters_human": "11.89B",
   "storage_bytes": 58051892060,
   "storage_human": "58.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

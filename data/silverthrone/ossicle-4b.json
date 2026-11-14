@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SILVERTHRONE/Ossicle-4B",
   "slug": "silverthrone-ossicle-4b",
   "author": "SILVERTHRONE",
@@ -41,14 +41,19 @@
   "parameters_human": "4.86B",
   "storage_bytes": 25455880961,
   "storage_human": "25.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, Atotti/Qwen3-Omni-AudioTransformer",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

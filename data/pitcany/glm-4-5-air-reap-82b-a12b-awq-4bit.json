@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pitcany/GLM-4.5-Air-REAP-82B-A12B-AWQ-4bit",
   "slug": "pitcany-glm-4-5-air-reap-82b-a12b-awq-4bit",
   "author": "pitcany",
@@ -43,14 +43,19 @@
   "parameters_human": "12.86B",
   "storage_bytes": 45659248172,
   "storage_human": "45.7 GB",
+  "context_length": null,
   "base_model": "cerebras/GLM-4.5-Air-REAP-82B-A12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

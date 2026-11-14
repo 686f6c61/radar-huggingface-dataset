@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mesmac/MCL4-COE-v7-Granite-3.1-1B-NCM-MoE",
   "slug": "mesmac-mcl4-coe-v7-granite-3-1-1b-ncm-moe",
   "author": "mesmac",
@@ -34,14 +34,19 @@
   "parameters_human": "1.83B",
   "storage_bytes": 3650610662,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-3.1-1b-a400m-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

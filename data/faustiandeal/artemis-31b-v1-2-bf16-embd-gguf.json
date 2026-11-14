@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FaustianDeal/Artemis-31B-v1.2-BF16-embd-GGUF",
   "slug": "faustiandeal-artemis-31b-v1-2-bf16-embd-gguf",
   "author": "FaustianDeal",
@@ -29,14 +29,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 234159739424,
   "storage_human": "234.2 GB",
+  "context_length": 262144,
   "base_model": "TheDrummer/Artemis-31B-v1.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

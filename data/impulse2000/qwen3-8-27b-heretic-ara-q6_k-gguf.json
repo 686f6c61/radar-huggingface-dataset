@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Impulse2000/Qwen3.8-27B-heretic-ara-Q6_K-GGUF",
   "slug": "impulse2000-qwen3-8-27b-heretic-ara-q6_k-gguf",
   "author": "Impulse2000",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 22430991008,
   "storage_human": "22.4 GB",
+  "context_length": 262144,
   "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

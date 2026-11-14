@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/Bonsai-8B-unpacked-mlx-8Bit",
   "slug": "oscilla-bonsai-8b-unpacked-mlx-8bit",
   "author": "Oscilla",
@@ -31,6 +31,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 8712147025,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "prism-ml/Bonsai-8B-unpacked",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

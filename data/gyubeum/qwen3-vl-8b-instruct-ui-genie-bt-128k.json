@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-BT-128K",
   "slug": "gyubeum-qwen3-vl-8b-instruct-ui-genie-bt-128k",
   "author": "Gyubeum",
@@ -38,14 +38,19 @@
   "parameters_human": "8.14B",
   "storage_bytes": 16301110922,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

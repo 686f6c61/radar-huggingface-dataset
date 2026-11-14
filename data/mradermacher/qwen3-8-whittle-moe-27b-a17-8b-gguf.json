@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF",
   "slug": "mradermacher-qwen3-8-whittle-moe-27b-a17-8b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "26.92B",
   "storage_bytes": 192287621312,
   "storage_human": "192.3 GB",
+  "context_length": 262144,
   "base_model": "logic65/Qwen3.8-Whittle-MoE-27B-A17.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

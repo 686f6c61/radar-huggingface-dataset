@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eulermaxwell/AnalogRetriever",
   "slug": "eulermaxwell-analogretriever",
   "author": "eulermaxwell",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 6961771184,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "openai/clip-vit-large-patch14",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

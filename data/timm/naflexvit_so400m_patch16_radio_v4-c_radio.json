@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "timm/naflexvit_so400m_patch16_radio_v4.c_radio",
   "slug": "timm-naflexvit_so400m_patch16_radio_v4-c_radio",
   "author": "timm",
@@ -33,14 +33,19 @@
   "parameters_human": "431.2M",
   "storage_bytes": 1725136652,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "nvidia/C-RADIOv4-SO400M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

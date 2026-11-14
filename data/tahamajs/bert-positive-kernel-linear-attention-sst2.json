@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tahamajs/bert-positive-kernel-linear-attention-sst2",
   "slug": "tahamajs-bert-positive-kernel-linear-attention-sst2",
   "author": "tahamajs",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 40960884,
   "storage_human": "41 MB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hooshaai/bert-positive-kernel-linear-attention-sst2",
+  "renamed_at": "2026-11-14T08:46:14.520Z",
   "benchmarks": [],
   "sources": []
 }

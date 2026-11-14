@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Y6s/y6s",
   "slug": "y6s-y6s",
   "author": "Y6s",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 39760448,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

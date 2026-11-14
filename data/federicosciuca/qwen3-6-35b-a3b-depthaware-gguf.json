@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FedericoSciuca/Qwen3.6-35B-A3B-depthaware-GGUF",
   "slug": "federicosciuca-qwen3-6-35b-a3b-depthaware-gguf",
   "author": "FedericoSciuca",
@@ -32,14 +32,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 14115658720,
   "storage_human": "14.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

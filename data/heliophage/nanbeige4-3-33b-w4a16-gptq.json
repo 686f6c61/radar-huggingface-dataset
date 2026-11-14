@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heliophage/Nanbeige4.3-33B-W4A16-GPTQ",
   "slug": "heliophage-nanbeige4-3-33b-w4a16-gptq",
   "author": "heliophage",
@@ -49,14 +49,19 @@
   "parameters_human": "7.36B",
   "storage_bytes": 24178238629,
   "storage_human": "24.2 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gospe1/Franka-Bread-AdaSpeVLA-HeadScale",
   "slug": "gospe1-franka-bread-adaspevla-headscale",
   "author": "Gospe1",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 10103532159,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

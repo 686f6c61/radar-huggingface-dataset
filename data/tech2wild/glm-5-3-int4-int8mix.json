@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tech2wild/GLM-5.3-Int4-Int8Mix",
   "slug": "tech2wild-glm-5-3-int4-int8mix",
   "author": "Tech2wild",
@@ -40,14 +40,19 @@
   "parameters_human": "779.19B",
   "storage_bytes": 405279329497,
   "storage_human": "405.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

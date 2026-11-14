@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asherapolo/mlabonne_Qwen3-4B-abliterated-GGUF",
   "slug": "asherapolo-mlabonne_qwen3-4b-abliterated-gguf",
   "author": "asherapolo",
@@ -27,14 +27,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 63765787790,
   "storage_human": "63.8 GB",
+  "context_length": 40960,
   "base_model": "mlabonne/Qwen3-4B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

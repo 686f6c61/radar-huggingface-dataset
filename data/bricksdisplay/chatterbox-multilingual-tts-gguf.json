@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BricksDisplay/Chatterbox-Multilingual-TTS-GGUF",
   "slug": "bricksdisplay-chatterbox-multilingual-tts-gguf",
   "author": "BricksDisplay",
@@ -79,14 +79,19 @@
   "parameters_human": "505.9M",
   "storage_bytes": 52320249232,
   "storage_human": "52.3 GB",
+  "context_length": 131072,
   "base_model": "ResembleAI/chatterbox",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

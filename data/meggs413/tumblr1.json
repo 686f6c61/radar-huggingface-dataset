@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meggs413/tumblr1",
   "slug": "meggs413-tumblr1",
   "author": "meggs413",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 286763616,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-14b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T05:20:02.266Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

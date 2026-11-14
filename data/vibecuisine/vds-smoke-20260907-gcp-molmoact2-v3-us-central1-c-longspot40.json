@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VibeCuisine/vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40",
   "slug": "vibecuisine-vds-smoke-20260907-gcp-molmoact2-v3-us-central1-c-longspot40",
   "author": "VibeCuisine",
@@ -27,14 +27,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483652496,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

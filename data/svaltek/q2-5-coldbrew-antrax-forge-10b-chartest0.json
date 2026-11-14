@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0",
   "slug": "svaltek-q2-5-coldbrew-antrax-forge-10b-chartest0",
   "author": "SvalTek",
@@ -35,14 +35,19 @@
   "parameters_human": "9.94B",
   "storage_bytes": 19898158084,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": "SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

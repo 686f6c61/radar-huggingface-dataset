@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "puwaer/DeepSeek-V4-Flash-0731-ream-150b",
   "slug": "puwaer-deepseek-v4-flash-0731-ream-150b",
   "author": "puwaer",
@@ -38,14 +38,19 @@
   "parameters_human": "150.13B",
   "storage_bytes": 84690593084,
   "storage_human": "84.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

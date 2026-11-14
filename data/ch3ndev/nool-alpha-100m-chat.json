@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CH3NDev/Nool-Alpha-100M-Chat",
   "slug": "ch3ndev-nool-alpha-100m-chat",
   "author": "CH3NDev",
@@ -35,14 +35,19 @@
   "parameters_human": "149.8M",
   "storage_bytes": 599127452,
   "storage_human": "599 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

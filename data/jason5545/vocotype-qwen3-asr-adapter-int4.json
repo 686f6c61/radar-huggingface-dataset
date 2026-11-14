@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jason5545/vocotype-qwen3-asr-adapter-int4",
   "slug": "jason5545-vocotype-qwen3-asr-adapter-int4",
   "author": "jason5545",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 21034905989,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SmallAICreator/MiniGPT2-22M-GGUF",
   "slug": "smallaicreator-minigpt2-22m-gguf",
   "author": "SmallAICreator",
@@ -33,14 +33,19 @@
   "parameters_human": "22.0M",
   "storage_bytes": 44638400,
   "storage_human": "45 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

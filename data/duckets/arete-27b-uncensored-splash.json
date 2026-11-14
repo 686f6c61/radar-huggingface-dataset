@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Duckets/Arete-27B-Uncensored-Splash",
   "slug": "duckets-arete-27b-uncensored-splash",
   "author": "Duckets",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 17375921238,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "SargeDev/Arete-27B-Uncensored, NousResearch/Arete-27B, incoai/Qwen3.8-27B-DFlash2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snupilab/theta-bench-psi0-real-g1-91",
   "slug": "snupilab-theta-bench-psi0-real-g1-91",
   "author": "snupilab",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "snupilab/humanoidtoolbench-psi0-sim-3003",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T05:27:35.766Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

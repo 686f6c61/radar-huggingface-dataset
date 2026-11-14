@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VishalMysore/CscSQL-Merge-Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC",
   "slug": "vishalmysore-cscsql-merge-qwen2-5-coder-0-5b-instruct-q0f16-mlc",
   "author": "VishalMysore",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 999487599,
   "storage_human": "999 MB",
+  "context_length": null,
   "base_model": "cycloneboy/CscSQL-Merge-Qwen2.5-Coder-0.5B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

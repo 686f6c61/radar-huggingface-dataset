@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Qwen3.8-Flash-Coder-85GB-BF16-GGUF",
   "slug": "isvalorum-qwen3-8-flash-coder-85gb-bf16-gguf",
   "author": "IsValorum",
@@ -43,14 +43,19 @@
   "parameters_human": "42.62B",
   "storage_bytes": 85296242528,
   "storage_human": "85.3 GB",
+  "context_length": 262144,
   "base_model": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

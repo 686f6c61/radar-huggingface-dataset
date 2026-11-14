@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tomorth212/qwen3-1.7b-2048-sft",
   "slug": "tomorth212-qwen3-1-7b-2048-sft",
   "author": "tomorth212",
@@ -37,6 +37,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452844135,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

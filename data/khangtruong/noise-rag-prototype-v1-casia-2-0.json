@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KhangTruong/noise-rag-prototype-v1-Casia-2.0",
   "slug": "khangtruong-noise-rag-prototype-v1-casia-2-0",
   "author": "KhangTruong",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 386151352,
   "storage_human": "386 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

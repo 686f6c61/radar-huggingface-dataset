@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "10X-Technologies/lyric-voice-v1-kn",
   "slug": "10x-technologies-lyric-voice-v1-kn",
   "author": "10X-Technologies",
@@ -32,14 +32,19 @@
   "parameters_human": "336.1M",
   "storage_bytes": 1344592675,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "10X-Technologies/lyric-voice-tts-kn",
+  "renamed_at": "2026-11-14T02:11:04.182Z",
   "benchmarks": [],
   "sources": []
 }

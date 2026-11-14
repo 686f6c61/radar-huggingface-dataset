@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Srishti1013/insurance-lora-adapter",
   "slug": "srishti1013-insurance-lora-adapter",
   "author": "Srishti1013",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 172955358,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:16:29.816Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Audio8-TTS-Preview-0.6b",
   "slug": "litert-community-audio8-tts-preview-0-6b",
   "author": "litert-community",
@@ -52,12 +52,17 @@
   "parameters_human": null,
   "storage_bytes": 2616833156,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-TTS-Preview-0.6b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

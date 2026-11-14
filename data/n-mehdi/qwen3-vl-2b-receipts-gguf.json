@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "N-Mehdi/qwen3-vl-2b-receipts-gguf",
   "slug": "n-mehdi-qwen3-vl-2b-receipts-gguf",
   "author": "N-Mehdi",
@@ -31,14 +31,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3761232352,
   "storage_human": "3.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iammayur/bge-base-financial-matryoshka-2",
   "slug": "iammayur-bge-base-financial-matryoshka-2",
   "author": "iammayur",
@@ -43,14 +43,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 437951328,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-base-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

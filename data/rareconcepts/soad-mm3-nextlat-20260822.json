@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RareConcepts/soad-mm3-nextlat-20260822",
   "slug": "rareconcepts-soad-mm3-nextlat-20260822",
   "author": "RareConcepts",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 5583124269,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T06:00:58.401Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

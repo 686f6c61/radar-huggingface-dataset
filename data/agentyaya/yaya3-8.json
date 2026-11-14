@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentyaya/yaya3.8",
   "slug": "agentyaya-yaya3-8",
   "author": "agentyaya",
@@ -36,14 +36,19 @@
   "parameters_human": "19.87B",
   "storage_bytes": 23437581813,
   "storage_human": "23.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

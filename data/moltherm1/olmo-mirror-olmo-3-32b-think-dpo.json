@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moltherm1/olmo-mirror-olmo-3-32b-think-dpo",
   "slug": "moltherm1-olmo-mirror-olmo-3-32b-think-dpo",
   "author": "moltherm1",
@@ -36,14 +36,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 128934424009,
   "storage_human": "128.9 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-32B-Think-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

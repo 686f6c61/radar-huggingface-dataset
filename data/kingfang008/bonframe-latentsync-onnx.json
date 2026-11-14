@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingfang008/BonFrame-LatentSync-ONNX",
   "slug": "kingfang008-bonframe-latentsync-onnx",
   "author": "kingfang008",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 13911995297,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kingfang008/bonframe_lipsync-ONNX",
+  "renamed_at": "2026-11-14T06:43:59.268Z",
   "benchmarks": [],
   "sources": [
     {

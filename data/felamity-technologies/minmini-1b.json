@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felamity-Technologies/Minmini-1B",
   "slug": "felamity-technologies-minmini-1b",
   "author": "Felamity-Technologies",
@@ -46,6 +46,7 @@
   "parameters_human": "999.9M",
   "storage_bytes": 4033006841,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Natural language inference",

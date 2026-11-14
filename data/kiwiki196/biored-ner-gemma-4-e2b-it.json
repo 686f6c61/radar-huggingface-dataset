@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiwiki196/biored-ner-gemma-4-E2B-it",
   "slug": "kiwiki196-biored-ner-gemma-4-e2b-it",
   "author": "kiwiki196",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 4885476311,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T08:57:18.715Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

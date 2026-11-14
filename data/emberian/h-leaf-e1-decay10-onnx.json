@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emberian/h-leaf-e1-decay10-onnx",
   "slug": "emberian-h-leaf-e1-decay10-onnx",
   "author": "emberian",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 563044983,
   "storage_human": "563 MB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon-H1-Tiny-90M-Base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

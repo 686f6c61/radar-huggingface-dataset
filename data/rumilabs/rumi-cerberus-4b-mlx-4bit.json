@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RumiLabs/rumi-cerberus-4b-mlx-4bit",
   "slug": "rumilabs-rumi-cerberus-4b-mlx-4bit",
   "author": "RumiLabs",
@@ -42,6 +42,7 @@
   "parameters_human": null,
   "storage_bytes": 2799544171,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Audio-4B-Thinking, Qwen/Qwen3-4B-Thinking-2507",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

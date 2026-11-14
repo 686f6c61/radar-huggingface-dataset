@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/chrono-2018-harvest1-sft-13k",
   "slug": "jjjlimaus-chrono-2018-harvest1-sft-13k",
   "author": "jjjlimaus",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 80740914960,
   "storage_human": "80.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T04:55:42.480Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

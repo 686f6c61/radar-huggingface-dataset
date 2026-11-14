@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BARKEM/Qwen3.8-27B-Uncensored-W4A16-CT",
   "slug": "barkem-qwen3-8-27b-uncensored-w4a16-ct",
   "author": "BARKEM",
@@ -34,14 +34,19 @@
   "parameters_human": "6.26B",
   "storage_bytes": 19472769333,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin",
   "slug": "jongbin-kr-qwen2-5-coder-7b-verireason-official-settings-no_reasoning-jongbin",
   "author": "Jongbin-kr",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 76167790669,
   "storage_human": "76.2 GB",
+  "context_length": null,
   "base_model": "Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Jongbin-kr/qwen2.5-coder-7b_verireason-NO-reasoning_official-sft-1.0",
+  "renamed_at": "2026-11-14T03:25:14.721Z",
   "benchmarks": [],
   "sources": [
     {

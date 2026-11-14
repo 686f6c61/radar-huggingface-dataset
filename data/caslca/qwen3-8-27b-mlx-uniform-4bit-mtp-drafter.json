@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter",
   "slug": "caslca-qwen3-8-27b-mlx-uniform-4bit-mtp-drafter",
   "author": "caslca",
@@ -30,6 +30,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 334289664,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "caslca/Qwen3.8-27B-mlx-uniform-4bit",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

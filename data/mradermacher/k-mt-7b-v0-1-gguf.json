@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/K-MT-7B-v0.1-GGUF",
   "slug": "mradermacher-k-mt-7b-v0-1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "7.50B",
   "storage_bytes": 67330935232,
   "storage_human": "67.3 GB",
+  "context_length": 262144,
   "base_model": "ThakiCloud/K-MT-7B-v0.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "25b3nk/vlm-calibration-prefix-vqav2",
   "slug": "25b3nk-vlm-calibration-prefix-vqav2",
   "author": "25b3nk",
@@ -41,14 +41,19 @@
   "parameters_human": "150.2M",
   "storage_bytes": 5409069264,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base, google/siglip2-base-patch16-224",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

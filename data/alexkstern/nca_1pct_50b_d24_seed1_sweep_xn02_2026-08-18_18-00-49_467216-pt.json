@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/nca_1pct_50B_d24_seed1_sweep_Xn02_2026-08-18_18-00-49_467216-pt",
   "slug": "alexkstern-nca_1pct_50b_d24_seed1_sweep_xn02_2026-08-18_18-00-49_467216-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 7587632577,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T07:16:08.112Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

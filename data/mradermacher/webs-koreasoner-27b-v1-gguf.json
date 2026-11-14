@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Webs-KoReasoner-27B-v1-GGUF",
   "slug": "mradermacher-webs-koreasoner-27b-v1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 190780453024,
   "storage_human": "190.8 GB",
+  "context_length": 262144,
   "base_model": "websfactory/Webs-KoReasoner-27B-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

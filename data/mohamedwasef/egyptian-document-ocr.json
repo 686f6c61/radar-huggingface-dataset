@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohamedwasef/egyptian-document-ocr",
   "slug": "mohamedwasef-egyptian-document-ocr",
   "author": "mohamedwasef",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 143618370,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mohamedwasef/Docora-lite",
+  "renamed_at": "2026-11-14T07:14:19.163Z",
   "benchmarks": [],
   "sources": [
     {

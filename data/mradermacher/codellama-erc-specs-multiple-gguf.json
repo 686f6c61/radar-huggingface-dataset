@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/CodeLlama-ERC-Specs-Multiple-GGUF",
   "slug": "mradermacher-codellama-erc-specs-multiple-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 59566102656,
   "storage_human": "59.6 GB",
+  "context_length": 16384,
   "base_model": "gabrielnogueiralt/CodeLlama-ERC-Specs-Multiple",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

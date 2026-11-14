@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zrgong/acewam-gdn-surprise-press-button-step6000",
   "slug": "zrgong-acewam-gdn-surprise-press-button-step6000",
   "author": "zrgong",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 24087213917,
   "storage_human": "24.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T06:09:23.230Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

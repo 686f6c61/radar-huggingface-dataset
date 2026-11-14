@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rao-studios/Mistral-Nemo-Instruct-2407-mlx-4bit",
   "slug": "rao-studios-mistral-nemo-instruct-2407-mlx-4bit",
   "author": "rao-studios",
@@ -50,6 +50,7 @@
   "parameters_human": "12.25B",
   "storage_bytes": 6890078933,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "mlx-community/Mistral-Nemo-Instruct-2407-4bit",
   "formats": [
     "mlx",
@@ -57,8 +58,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

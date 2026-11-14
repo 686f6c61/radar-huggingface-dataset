@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stratorys/zeta-2.1-mlx-mixed-3-4bit",
   "slug": "stratorys-zeta-2-1-mlx-mixed-3-4bit",
   "author": "stratorys",
@@ -40,6 +40,7 @@
   "parameters_human": "8.25B",
   "storage_bytes": 4342866184,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "zed-industries/zeta-2.1",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

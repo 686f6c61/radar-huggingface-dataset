@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "melodyleonard/Hy-MT2-1.8B-kronos",
   "slug": "melodyleonard-hy-mt2-1-8b-kronos",
   "author": "melodyleonard",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 924043691,
   "storage_human": "924 MB",
+  "context_length": null,
   "base_model": "tencent/Hy-MT2-1.8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

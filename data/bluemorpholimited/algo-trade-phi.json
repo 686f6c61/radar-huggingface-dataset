@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bluemorpholimited/algo-trade-phi",
   "slug": "bluemorpholimited-algo-trade-phi",
   "author": "bluemorpholimited",
@@ -31,6 +31,7 @@
   "parameters_human": "3.84B",
   "storage_bytes": 33575287941,
   "storage_human": "33.6 GB",
+  "context_length": 131072,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T04:08:17.336Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

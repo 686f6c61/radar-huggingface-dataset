@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taobao-mnn/MNN-Pocket-0.3B-GGUF",
   "slug": "taobao-mnn-mnn-pocket-0-3b-gguf",
   "author": "taobao-mnn",
@@ -33,19 +33,24 @@
   ],
   "likes": 21,
   "downloads_30d": 14704,
-  "trending_score": 15,
+  "trending_score": 14,
   "parameters": 361551232,
   "parameters_human": "361.6M",
   "storage_bytes": 1304771915,
   "storage_human": "1.3 GB",
+  "context_length": 40960,
   "base_model": "taobao-mnn/MNN-Pocket-0.3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

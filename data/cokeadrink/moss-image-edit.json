@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cokeadrink/moss-image-edit",
   "slug": "cokeadrink-moss-image-edit",
   "author": "cokeadrink",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 20546370848,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T04:47:59.060Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

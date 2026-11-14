@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INGMUYLEANG/akkhara-mini",
   "slug": "ingmuyleang-akkhara-mini",
   "author": "INGMUYLEANG",
@@ -43,6 +43,7 @@
   "parameters_human": "17.8M",
   "storage_bytes": 162661246,
   "storage_human": "163 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "muyleanging/Akkhara-Mini-Khmer-ONNX",
+  "renamed_at": "2026-11-11T02:55:48.704Z",
   "benchmarks": [],
   "sources": []
 }

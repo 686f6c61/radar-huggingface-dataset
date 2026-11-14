@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ridhanhimmee/model-3-quality-scorer-qwen3b",
   "slug": "ridhanhimmee-model-3-quality-scorer-qwen3b",
   "author": "ridhanhimmee",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 192645305,
   "storage_human": "193 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

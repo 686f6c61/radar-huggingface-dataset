@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/GLM-4-9B-0414-mic",
   "slug": "huggingface-mic-glm-4-9b-0414-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "19.5M",
   "storage_bytes": 58916048,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4-9B-0414",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

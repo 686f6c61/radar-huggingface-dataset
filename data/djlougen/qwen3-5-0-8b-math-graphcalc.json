@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DJLougen/Qwen3.5-0.8B-Math-GraphCalc",
   "slug": "djlougen-qwen3-5-0-8b-math-graphcalc",
   "author": "DJLougen",
@@ -43,14 +43,19 @@
   "parameters_human": "5.24B",
   "storage_bytes": 10536382453,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T02:41:01.139Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Hard Math & Function Graphing (Disjoint Held-Out)",

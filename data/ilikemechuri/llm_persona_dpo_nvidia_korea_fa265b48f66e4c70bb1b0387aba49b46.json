@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ilikemechuri/llm_persona_dpo_nvidia_korea_fa265b48f66e4c70bb1b0387aba49b46",
   "slug": "ilikemechuri-llm_persona_dpo_nvidia_korea_fa265b48f66e4c70bb1b0387aba49b46",
   "author": "Ilikemechuri",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 149922252,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

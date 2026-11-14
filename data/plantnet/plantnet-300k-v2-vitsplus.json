@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PlantNet/plantnet-300k-v2-vitsplus",
   "slug": "plantnet-plantnet-300k-v2-vitsplus",
   "author": "PlantNet",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 116402977,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vits16plus-pretrain-lvd1689m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

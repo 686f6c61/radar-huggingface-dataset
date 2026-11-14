@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gmq99/qwen3.5-27b-internal-data",
   "slug": "gmq99-qwen3-5-27b-internal-data",
   "author": "gmq99",
@@ -28,14 +28,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 109447217536,
   "storage_human": "109.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

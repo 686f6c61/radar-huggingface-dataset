@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SC117/Ling-3.0-tiny-abliterated-APEX-GGUF",
   "slug": "sc117-ling-3-0-tiny-abliterated-apex-gguf",
   "author": "SC117",
@@ -37,14 +37,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 34964081184,
   "storage_human": "35.0 GB",
+  "context_length": 131072,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

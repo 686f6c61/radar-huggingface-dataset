@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM",
   "slug": "akaumikaede-qwen3-5-2b-uncensored-abliterix-som",
   "author": "AkaumiKaede",
@@ -62,6 +62,7 @@
   "parameters_human": "2.21B",
   "storage_bytes": 14931919180,
   "storage_human": "14.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AkaumiKaede/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA",
+  "renamed_at": "2026-11-11T02:14:35.314Z",
   "benchmarks": [],
   "sources": [
     {

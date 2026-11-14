@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "egolearn/vjepa2-vits16-saycam-iid-seed0",
   "slug": "egolearn-vjepa2-vits16-saycam-iid-seed0",
   "author": "egolearn",
@@ -27,14 +27,19 @@
   "parameters_human": "46.6M",
   "storage_bytes": 186389360,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

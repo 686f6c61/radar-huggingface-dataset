@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-GGUF",
   "slug": "isvalorum-xyz-aquila-mini-apex-i-miniplus-gguf",
   "author": "IsValorum",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "XYZAILab/XYZ-Aquila-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:01:53.248Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

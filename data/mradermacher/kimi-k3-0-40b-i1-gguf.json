@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kimi-K3-0.40B-i1-GGUF",
   "slug": "mradermacher-kimi-k3-0-40b-i1-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "388.6M",
   "storage_bytes": 5876466528,
   "storage_human": "5.9 GB",
+  "context_length": 4096,
   "base_model": "Sadatsami/Kimi-K3-0.40B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

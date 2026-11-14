@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cmndcntrlcyber/gemma4-26b-a4b-code-trainer-standard",
   "slug": "cmndcntrlcyber-gemma4-26b-a4b-code-trainer-standard",
   "author": "cmndcntrlcyber",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 269392666,
   "storage_human": "269 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "atlas-institute/gemma4-26b-a4b-code-trainer-standard",
+  "renamed_at": "2026-11-12T05:01:42.369Z",
   "benchmarks": [],
   "sources": [
     {

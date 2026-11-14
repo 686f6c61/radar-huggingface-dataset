@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Manuel9900/isaverse",
   "slug": "manuel9900-isaverse",
   "author": "Manuel9900",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 56174838,
   "storage_human": "56 MB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whitecircle/GLM-4.7-Flash-Coder",
   "slug": "whitecircle-glm-4-7-flash-coder",
   "author": "whitecircle",
@@ -31,14 +31,19 @@
   "parameters_human": "29.94B",
   "storage_bytes": 59917148364,
   "storage_human": "59.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.7-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

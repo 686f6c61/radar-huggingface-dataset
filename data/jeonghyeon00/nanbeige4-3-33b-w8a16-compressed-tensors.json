@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jeonghyeon00/Nanbeige4.3-33B-w8a16-compressed-tensors",
   "slug": "jeonghyeon00-nanbeige4-3-33b-w8a16-compressed-tensors",
   "author": "jeonghyeon00",
@@ -41,14 +41,19 @@
   "parameters_human": "10.31B",
   "storage_bytes": 36014040258,
   "storage_human": "36.0 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

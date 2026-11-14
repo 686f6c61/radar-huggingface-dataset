@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CK0607/Qwen3-1.7B-Swarm-Arena-RL-v1",
   "slug": "ck0607-qwen3-1-7b-swarm-arena-rl-v1",
   "author": "CK0607",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 102880480,
   "storage_human": "103 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

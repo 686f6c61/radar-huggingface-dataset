@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "svbmrgd/apex-flash-1-abliterated-AWQ",
   "slug": "svbmrgd-apex-flash-1-abliterated-awq",
   "author": "svbmrgd",
@@ -34,14 +34,19 @@
   "parameters_human": "313.89B",
   "storage_bytes": 175990077241,
   "storage_human": "176.0 GB",
+  "context_length": null,
   "base_model": "cantina-security/apex-flash-1-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

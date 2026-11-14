@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucebox/Qwen3.8-27B-DFlash2-GGUF",
   "slug": "lucebox-qwen3-8-27b-dflash2-gguf",
   "author": "Lucebox",
@@ -27,14 +27,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 2045471776,
   "storage_human": "2.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

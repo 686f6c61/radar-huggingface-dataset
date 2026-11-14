@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raspie/gemma4-tipo-lora-image-30k",
   "slug": "raspie-gemma4-tipo-lora-image-30k",
   "author": "raspie",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 47487272,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": "p-e-w/gemma-4-E2B-it-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

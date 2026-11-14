@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "radbile2022/legal-chatbot-qwen25-1p5b-grpo",
   "slug": "radbile2022-legal-chatbot-qwen25-1p5b-grpo",
   "author": "radbile2022",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 8745704,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": "radbile2022/legal-chatbot-qwen25-1p5b-lora",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

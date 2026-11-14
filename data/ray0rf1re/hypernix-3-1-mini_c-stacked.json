@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ray0rf1re/hyperNix-3.1-mini_c-stacked",
   "slug": "ray0rf1re-hypernix-3-1-mini_c-stacked",
   "author": "ray0rf1re",
@@ -28,14 +28,19 @@
   "parameters_human": "81.0M",
   "storage_bytes": 324124816,
   "storage_human": "324 MB",
+  "context_length": null,
   "base_model": "hyperNix-3.1-mini_c",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

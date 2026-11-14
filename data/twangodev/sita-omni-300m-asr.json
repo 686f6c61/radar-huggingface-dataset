@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twangodev/sita-omni-300m-asr",
   "slug": "twangodev-sita-omni-300m-asr",
   "author": "twangodev",
@@ -32,14 +32,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "facebook/omniASR-W2V-300M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:54:04.120Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

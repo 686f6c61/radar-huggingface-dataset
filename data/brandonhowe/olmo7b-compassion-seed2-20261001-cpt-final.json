@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final",
   "slug": "brandonhowe-olmo7b-compassion-seed2-20261001-cpt-final",
   "author": "BrandonHowe",
@@ -31,14 +31,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14596063592,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1025-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CompassioninMachineLearning/Olmo7b-compassion-seed2-20261001-CPT-final",
+  "renamed_at": "2026-11-11T02:26:54.551Z",
   "benchmarks": [],
   "sources": [
     {

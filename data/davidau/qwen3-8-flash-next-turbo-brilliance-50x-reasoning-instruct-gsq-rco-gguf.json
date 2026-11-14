@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF",
   "slug": "davidau-qwen3-8-flash-next-turbo-brilliance-50x-reasoning-instruct-gsq-rco-gguf",
   "author": "DavidAU",
@@ -81,14 +81,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 84543951360,
   "storage_human": "84.5 GB",
+  "context_length": 262144,
   "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

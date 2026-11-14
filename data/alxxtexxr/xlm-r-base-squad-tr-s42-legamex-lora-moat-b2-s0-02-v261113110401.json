@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-moat-b2-s0.02-v261113110401",
   "slug": "alxxtexxr-xlm-r-base-squad-tr-s42-legamex-lora-moat-b2-s0-02-v261113110401",
   "author": "alxxtexxr",
@@ -27,14 +27,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 1131994201,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

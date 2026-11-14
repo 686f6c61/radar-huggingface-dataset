@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TensorVizion/GPT2-H4-openvino",
   "slug": "tensorvizion-gpt2-h4-openvino",
   "author": "TensorVizion",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 497759541,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": "TensorVizion/GPT2-H4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:02:41.836Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohamedrayyan/whisper-small-dv",
   "slug": "mohamedrayyan-whisper-small-dv",
   "author": "mohamedrayyan",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 967102601,
   "storage_human": "967 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

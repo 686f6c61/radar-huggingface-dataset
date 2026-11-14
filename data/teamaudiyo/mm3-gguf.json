@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TeamAudiyo/MM3-GGUF",
   "slug": "teamaudiyo-mm3-gguf",
   "author": "TeamAudiyo",
@@ -30,14 +30,19 @@
   "parameters_human": "2.46B",
   "storage_bytes": 14236081120,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TeamAudiyo/Minimax-Music3-GGUF",
+  "renamed_at": "2026-11-11T04:00:22.559Z",
   "benchmarks": [],
   "sources": [
     {

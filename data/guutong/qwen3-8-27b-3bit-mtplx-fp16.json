@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guutong/Qwen3.8-27B-3bit-MTPLX-FP16",
   "slug": "guutong-qwen3-8-27b-3bit-mtplx-fp16",
   "author": "guutong",
@@ -30,6 +30,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 16923929168,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "guutong/Qwen3.8-27B-MTPLX-FP16",
+  "renamed_at": "2026-11-11T05:29:21.446Z",
   "benchmarks": [],
   "sources": [
     {

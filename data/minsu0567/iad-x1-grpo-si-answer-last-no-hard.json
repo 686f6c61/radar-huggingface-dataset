@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minsu0567/IAD-X1-GRPO-si-answer-last-no-hard",
   "slug": "minsu0567-iad-x1-grpo-si-answer-last-no-hard",
   "author": "minsu0567",
@@ -35,14 +35,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098610029,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "minsu0567/IAD-X1-SFT-si-answer-last",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

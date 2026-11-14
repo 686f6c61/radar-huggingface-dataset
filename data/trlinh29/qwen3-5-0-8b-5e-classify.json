@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Trlinh29/qwen3.5-0.8b-5e-classify",
   "slug": "trlinh29-qwen3-5-0-8b-5e-classify",
   "author": "Trlinh29",
@@ -23,14 +23,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 3432050381,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

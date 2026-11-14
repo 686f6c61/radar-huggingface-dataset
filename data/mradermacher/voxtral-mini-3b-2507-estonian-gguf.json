@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Voxtral-Mini-3B-2507-estonian-GGUF",
   "slug": "mradermacher-voxtral-mini-3b-2507-estonian-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "4.01B",
   "storage_bytes": 38312342208,
   "storage_human": "38.3 GB",
+  "context_length": 131072,
   "base_model": "TalTechNLP/Voxtral-Mini-3B-2507-estonian",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

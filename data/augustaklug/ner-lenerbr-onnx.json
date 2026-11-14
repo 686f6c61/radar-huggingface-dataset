@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "augustaklug/ner-lenerbr-onnx",
   "slug": "augustaklug-ner-lenerbr-onnx",
   "author": "augustaklug",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 976362114,
   "storage_human": "976 MB",
+  "context_length": null,
   "base_model": "pierreguillou/ner-bert-base-cased-pt-lenerbr",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sleem247/amicus-humanizer-v1-onnx-Q8_0-GGUF",
   "slug": "sleem247-amicus-humanizer-v1-onnx-q8_0-gguf",
   "author": "Sleem247",
@@ -36,6 +36,7 @@
   "parameters_human": null,
   "storage_bytes": 1019488,
   "storage_human": "1 MB",
+  "context_length": 512,
   "base_model": "WhiteRoomProdigy/amicus-humanizer-v1-onnx",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

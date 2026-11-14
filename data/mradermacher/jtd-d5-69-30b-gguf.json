@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/jtd-d5-69-30B-GGUF",
   "slug": "mradermacher-jtd-d5-69-30b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 208115967136,
   "storage_human": "208.1 GB",
+  "context_length": 262144,
   "base_model": "laion/jtd-d5-69-30B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

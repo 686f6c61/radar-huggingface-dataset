@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nesoai/portugal-electricity-demand-forecaster",
   "slug": "nesoai-portugal-electricity-demand-forecaster",
   "author": "nesoai",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 1587461,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T04:03:28.480Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Electricity Demand Forecasting",

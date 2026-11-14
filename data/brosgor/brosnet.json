@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brosgor/BrosNet",
   "slug": "brosgor-brosnet",
   "author": "brosgor",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 534648,
   "storage_human": "534648 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:54:43.545Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

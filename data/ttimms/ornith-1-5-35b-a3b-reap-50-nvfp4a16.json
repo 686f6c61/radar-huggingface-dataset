@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ttimms/Ornith-1.5-35B-A3B-REAP-50-NVFP4A16",
   "slug": "ttimms-ornith-1-5-35b-a3b-reap-50-nvfp4a16",
   "author": "Ttimms",
@@ -46,14 +46,19 @@
   "parameters_human": "18.54B",
   "storage_bytes": 13388671677,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

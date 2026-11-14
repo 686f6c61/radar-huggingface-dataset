@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cicada-ai/Jogg-Avatar-V2V",
   "slug": "cicada-ai-jogg-avatar-v2v",
   "author": "cicada-ai",
@@ -31,6 +31,7 @@
   "parameters_human": "326.4M",
   "storage_bytes": 1305784616,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cicada-ai/Chanjing-Avatar-V2V-5B",
+  "renamed_at": "2026-11-11T04:49:51.853Z",
   "benchmarks": [],
   "sources": [
     {

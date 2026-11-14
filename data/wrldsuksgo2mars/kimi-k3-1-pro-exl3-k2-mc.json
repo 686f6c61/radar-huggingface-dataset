@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/Kimi-K3.1-Pro-EXL3-K2-MC",
   "slug": "wrldsuksgo2mars-kimi-k3-1-pro-exl3-k2-mc",
   "author": "wrldsuksgo2mars",
@@ -31,14 +31,19 @@
   "parameters_human": "419.52B",
   "storage_bytes": 893765448560,
   "storage_human": "893.8 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

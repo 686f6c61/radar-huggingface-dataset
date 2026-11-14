@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dp260919",
   "slug": "tarzanagh-ckpt_toyshelfteleop_pickplace_4cam260917_dp260919",
   "author": "tarzanagh",
@@ -30,14 +30,19 @@
   "parameters_human": "267.5M",
   "storage_bytes": 1069971140,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T08:18:06.510Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

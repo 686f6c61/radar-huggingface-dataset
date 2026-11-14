@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nnujabes/pickcu-ax-4.0-light-gguf",
   "slug": "nnujabes-pickcu-ax-4-0-light-gguf",
   "author": "nnujabes",
@@ -32,14 +32,19 @@
   "parameters_human": "7.26B",
   "storage_bytes": 5175334784,
   "storage_human": "5.2 GB",
+  "context_length": 16384,
   "base_model": "skt/A.X-4.0-Light",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

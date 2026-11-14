@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rafmacalaba/lfm2.5-Encoder-350M-datause_smoke",
   "slug": "rafmacalaba-lfm2-5-encoder-350m-datause_smoke",
   "author": "rafmacalaba",
@@ -29,14 +29,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 4253946471,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:08:28.208Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

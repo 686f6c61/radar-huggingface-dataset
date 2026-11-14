@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ashher123/criterion-lens-qwen2.5-0.5b-merged",
   "slug": "ashher123-criterion-lens-qwen2-5-0-5b-merged",
   "author": "Ashher123",
@@ -28,14 +28,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519432,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

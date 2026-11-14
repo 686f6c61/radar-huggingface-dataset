@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jiunsong/SuperQwen3.8-abliterated-Venice",
   "slug": "jiunsong-superqwen3-8-abliterated-venice",
   "author": "Jiunsong",
@@ -51,14 +51,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 31248835877,
   "storage_human": "31.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Jiunsong/SuperQwen3.8-abliterated-100-fp8",
+  "renamed_at": "2026-11-11T03:04:03.979Z",
   "benchmarks": [],
   "sources": [
     {

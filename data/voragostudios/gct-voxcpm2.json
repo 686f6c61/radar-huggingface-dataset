@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoragoStudios/gct-voxcpm2",
   "slug": "voragostudios-gct-voxcpm2",
   "author": "VoragoStudios",
@@ -25,14 +25,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 4957031714,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

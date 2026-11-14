@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frogggias/Ripple-65B-Preview-MLX-4bit",
   "slug": "frogggias-ripple-65b-preview-mlx-4bit",
   "author": "frogggias",
@@ -31,6 +31,7 @@
   "parameters_human": "64.78B",
   "storage_bytes": 36442941052,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

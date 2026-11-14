@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rSalone/DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF",
   "slug": "rsalone-deepseek-v4-1-flash-1017-gsq-rco-uncensored-t1-4-gguf",
   "author": "rSalone",
@@ -35,14 +35,19 @@
   "parameters_human": "196.61B",
   "storage_bytes": 501770213463,
   "storage_human": "501.8 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

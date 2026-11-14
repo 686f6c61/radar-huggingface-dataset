@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vince1895/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
   "slug": "vince1895-deepseek-v4-pro-qwen3-5-4b-uncensored-heretic",
   "author": "vince1895",
@@ -58,6 +58,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9339810635,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -65,8 +66,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

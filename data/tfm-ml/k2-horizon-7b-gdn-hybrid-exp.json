@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TFM-ML/K2-Horizon-7B-GDN-Hybrid-Exp",
   "slug": "tfm-ml-k2-horizon-7b-gdn-hybrid-exp",
   "author": "TFM-ML",
@@ -35,14 +35,19 @@
   "parameters_human": "9.46B",
   "storage_bytes": 18935635580,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "modulon-labs/K2-Horizon-7B-GDN-Hybrid-Exp",
+  "renamed_at": "2026-11-11T03:58:53.864Z",
   "benchmarks": [],
   "sources": []
 }

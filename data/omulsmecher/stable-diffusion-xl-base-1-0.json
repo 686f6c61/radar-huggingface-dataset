@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omulsmecher/stable-diffusion-xl-base-1.0",
   "slug": "omulsmecher-stable-diffusion-xl-base-1-0",
   "author": "Omulsmecher",
@@ -33,6 +33,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 76909352585,
   "storage_human": "76.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "squ0sh/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
   "slug": "squ0sh-qwen3-5-2b-claude-4-6-os-auto-variable-heretic-uncensored-thinking",
   "author": "squ0sh",
@@ -60,14 +60,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4446548374,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

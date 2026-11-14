@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EldanRing/Winnow-12B",
   "slug": "eldanring-winnow-12b",
   "author": "EldanRing",
@@ -35,14 +35,19 @@
   "parameters_human": "422.9M",
   "storage_bytes": 69670606085,
   "storage_human": "69.7 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

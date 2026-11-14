@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textclf/Qwen3-Coder-Next-TQ-4bit",
   "slug": "textclf-qwen3-coder-next-tq-4bit",
   "author": "textclf",
@@ -36,14 +36,19 @@
   "parameters_human": "752.3M",
   "storage_bytes": 41801509483,
   "storage_human": "41.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "thousandml/Qwen3-Coder-Next-CQ-4bit",
+  "renamed_at": "2026-11-11T07:46:26.857Z",
   "benchmarks": [],
   "sources": [
     {

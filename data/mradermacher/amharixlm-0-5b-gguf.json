@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/AmhariXLM-0.5B-GGUF",
   "slug": "mradermacher-amharixlm-0-5b-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "564.6M",
   "storage_bytes": 5160183168,
   "storage_human": "5.2 GB",
+  "context_length": 250,
   "base_model": "fidelizML/AmhariXLM-0.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

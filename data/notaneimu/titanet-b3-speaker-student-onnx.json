@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "notaneimu/titanet-b3-speaker-student-onnx",
   "slug": "notaneimu-titanet-b3-speaker-student-onnx",
   "author": "notaneimu",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 22299879,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "notaneimu/fast-b3-speaker-student-onnx",
+  "renamed_at": "2026-11-11T06:57:04.141Z",
   "benchmarks": [],
   "sources": []
 }

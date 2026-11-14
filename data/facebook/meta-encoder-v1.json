@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "facebook/meta-encoder-v1",
   "slug": "facebook-meta-encoder-v1",
   "author": "facebook",
@@ -24,21 +24,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 34,
+  "likes": 36,
   "downloads_30d": 248,
-  "trending_score": 34,
+  "trending_score": 36,
   "parameters": 28431795200,
   "parameters_human": "28.43B",
   "storage_bytes": 56980684911,
   "storage_human": "57.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

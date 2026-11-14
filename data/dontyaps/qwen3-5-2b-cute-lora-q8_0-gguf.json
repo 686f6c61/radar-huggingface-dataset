@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DontYaps/qwen3.5-2b-cute-lora-Q8_0-GGUF",
   "slug": "dontyaps-qwen3-5-2b-cute-lora-q8_0-gguf",
   "author": "DontYaps",
@@ -28,14 +28,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 2012004288,
   "storage_human": "2.0 GB",
+  "context_length": 262144,
   "base_model": "DontYaps/qwen3.5-2b-cute-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

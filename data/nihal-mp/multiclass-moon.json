@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nihal-mp/multiclass-moon",
   "slug": "nihal-mp-multiclass-moon",
   "author": "nihal-mp",
@@ -24,14 +24,19 @@
   "parameters_human": "173",
   "storage_bytes": 1164,
   "storage_human": "1164 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

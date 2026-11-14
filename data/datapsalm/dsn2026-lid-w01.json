@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "datapsalm/dsn2026-lid-w01",
   "slug": "datapsalm-dsn2026-lid-w01",
   "author": "datapsalm",
@@ -58,14 +58,19 @@
   "parameters_human": "20.2M",
   "storage_bytes": 40437120,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": "openai/whisper-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

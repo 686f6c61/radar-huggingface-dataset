@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dkagramanyan/GigaChat3.1-10B-A1.8B-W4A16",
   "slug": "dkagramanyan-gigachat3-1-10b-a1-8b-w4a16",
   "author": "dkagramanyan",
@@ -42,14 +42,19 @@
   "parameters_human": "2.33B",
   "storage_bytes": 8683631402,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaChat3.1-10B-A1.8B-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

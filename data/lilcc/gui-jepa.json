@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LilCC/GUI-JEPA",
   "slug": "lilcc-gui-jepa",
   "author": "LilCC",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1740968505,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "timm/vit_large_patch16_224.augreg_in21k_ft_in1k, sentence-transformers/all-MiniLM-L12-v2, sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

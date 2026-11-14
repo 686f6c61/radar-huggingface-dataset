@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lilligant-real/Qwen3.8-Flash-Next-Uncensored-exl3-4bpw-crucible",
   "slug": "lilligant-real-qwen3-8-flash-next-uncensored-exl3-4bpw-crucible",
   "author": "lilligant-real",
@@ -46,14 +46,19 @@
   "parameters_human": "33.71B",
   "storage_bytes": 107212147665,
   "storage_human": "107.2 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

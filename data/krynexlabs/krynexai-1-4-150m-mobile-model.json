@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KrynexLabs/KrynexAI-1.4-150M-Mobile-Model",
   "slug": "krynexlabs-krynexai-1-4-150m-mobile-model",
   "author": "KrynexLabs",
@@ -64,6 +64,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 3676792592,
   "storage_human": "3.7 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "gguf",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

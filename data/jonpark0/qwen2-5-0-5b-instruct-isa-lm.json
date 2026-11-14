@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jonpark0/Qwen2.5-0.5B-Instruct-isa-lm",
   "slug": "jonpark0-qwen2-5-0-5b-instruct-isa-lm",
   "author": "jonpark0",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 2429100576,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jonpark0/Qwen2.5-0.5B-Instruct-krafla",
+  "renamed_at": "2026-11-11T05:49:10.775Z",
   "benchmarks": [],
   "sources": []
 }

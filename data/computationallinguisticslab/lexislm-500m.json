@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ComputationalLinguisticsLab/LexisLM-500m",
   "slug": "computationallinguisticslab-lexislm-500m",
   "author": "ComputationalLinguisticsLab",
@@ -33,14 +33,19 @@
   "parameters_human": "502.2M",
   "storage_bytes": 1004403944,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ComputationalLinguisticsPlatform/LexisLM-500m",
+  "renamed_at": "2026-11-11T02:32:50.402Z",
   "benchmarks": [],
   "sources": []
 }

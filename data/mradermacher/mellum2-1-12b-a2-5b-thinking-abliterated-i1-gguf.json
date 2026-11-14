@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mellum2.1-12B-A2.5B-Thinking-abliterated-i1-GGUF",
   "slug": "mradermacher-mellum2-1-12b-a2-5b-thinking-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 150677701248,
   "storage_human": "150.7 GB",
+  "context_length": 131072,
   "base_model": "ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

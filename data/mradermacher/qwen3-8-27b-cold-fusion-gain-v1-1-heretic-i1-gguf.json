@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-i1-GGUF",
   "slug": "mradermacher-qwen3-8-27b-cold-fusion-gain-v1-1-heretic-i1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 218553885632,
   "storage_human": "218.6 GB",
+  "context_length": 262144,
   "base_model": "gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohamed-ahmed-58059/text2sql-qwen-inst-w8a16",
   "slug": "mohamed-ahmed-58059-text2sql-qwen-inst-w8a16",
   "author": "mohamed-ahmed-58059",
@@ -40,14 +40,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 8819410244,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:34:13.383Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

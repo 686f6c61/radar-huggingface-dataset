@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeeSee21/Illustrious-Anime-Collection",
   "slug": "seesee21-illustrious-anime-collection",
   "author": "SeeSee21",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 3016571805,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "baidu/ERNIE-Image, Tongyi-MAI/Z-Image-Turbo, Qwen/Qwen-Image, lodestones/Chroma",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

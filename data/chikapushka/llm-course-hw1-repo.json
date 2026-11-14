@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chikapushka/llm-course-hw1-repo",
   "slug": "chikapushka-llm-course-hw1-repo",
   "author": "Chikapushka",
@@ -24,14 +24,19 @@
   "parameters_human": "11.2M",
   "storage_bytes": 89703984,
   "storage_human": "90 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ninenfn/llm-course-hw1-repo",
+  "renamed_at": "2026-11-11T02:30:03.185Z",
   "benchmarks": [],
   "sources": []
 }

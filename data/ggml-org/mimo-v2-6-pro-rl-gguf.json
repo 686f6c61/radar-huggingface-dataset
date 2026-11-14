@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/MiMo-V2.6-Pro-RL-GGUF",
   "slug": "ggml-org-mimo-v2-6-pro-rl-gguf",
   "author": "ggml-org",
@@ -29,14 +29,19 @@
   "parameters_human": "1021.25B",
   "storage_bytes": 1005483312192,
   "storage_human": "1005.5 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

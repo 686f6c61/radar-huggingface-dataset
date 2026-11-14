@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "google/medgemma-27b-it",
   "slug": "google-medgemma-27b-it",
   "author": "google",
@@ -56,14 +56,19 @@
   "parameters_human": "27.43B",
   "storage_bytes": 54903054084,
   "storage_human": "54.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-27b-pt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnonegram/Offender_3.8_27B_Abliterated",
   "slug": "johnonegram-offender_3-8_27b_abliterated",
   "author": "johnonegram",
@@ -56,14 +56,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 27870446405,
   "storage_human": "27.9 GB",
+  "context_length": null,
   "base_model": "medismera/Qwen3.8-27B-Surgical-Abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

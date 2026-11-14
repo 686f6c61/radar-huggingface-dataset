@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vishnusureshperumbavoor/vsp_alpaca-instruct-300ep-v2-vml",
   "slug": "vishnusureshperumbavoor-vsp_alpaca-instruct-300ep-v2-vml",
   "author": "vishnusureshperumbavoor",
@@ -34,6 +34,7 @@
   "parameters_human": "8.8M",
   "storage_bytes": 1408553051,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-0.5B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

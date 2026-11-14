@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Qwen3.8-Flash-Next-ngram-table-NInfer-v3",
   "slug": "wavecut-qwen3-8-flash-next-ngram-table-ninfer-v3",
   "author": "WaveCut",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 57810071024,
   "storage_human": "57.8 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

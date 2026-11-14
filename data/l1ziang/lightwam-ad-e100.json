@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "l1ziang/LightWAM-AD-e100",
   "slug": "l1ziang-lightwam-ad-e100",
   "author": "l1ziang",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 221205573,
   "storage_human": "221 MB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

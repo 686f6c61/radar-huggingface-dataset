@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canbingol/Qwen2.5-3B-Instruct-tool-call-en-mixed_data",
   "slug": "canbingol-qwen2-5-3b-instruct-tool-call-en-mixed_data",
   "author": "canbingol",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 250963877,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "canbingol/qwen2.5-3B-Instruct-tool-call-en-norobots",
+  "renamed_at": "2026-11-11T04:46:06.997Z",
   "benchmarks": [],
   "sources": []
 }

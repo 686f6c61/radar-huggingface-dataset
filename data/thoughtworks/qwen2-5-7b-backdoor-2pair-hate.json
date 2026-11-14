@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thoughtworks/Qwen2.5-7B-backdoor-2pair-hate",
   "slug": "thoughtworks-qwen2-5-7b-backdoor-2pair-hate",
   "author": "thoughtworks",
@@ -40,14 +40,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15231272152,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

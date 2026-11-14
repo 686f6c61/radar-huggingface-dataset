@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/nca_dose_1Bpt_hfinit_adamwppt_1B_s0_2026-09-06_15-33-51_568043-pt",
   "slug": "alexkstern-nca_dose_1bpt_hfinit_adamwppt_1b_s0_2026-09-06_15-33-51_568043-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2969669363,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

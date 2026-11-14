@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jonpojonpo/Grasmere-E4B-GGUF",
   "slug": "jonpojonpo-grasmere-e4b-gguf",
   "author": "jonpojonpo",
@@ -47,14 +47,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 19107138004,
   "storage_human": "19.1 GB",
+  "context_length": 131072,
   "base_model": "jonpojonpo/Grasmere-E4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

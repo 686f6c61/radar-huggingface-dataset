@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peonist-ai/halogen-spotter-0.6b",
   "slug": "peonist-ai-halogen-spotter-0-6b",
   "author": "peonist-ai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 4063099710,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3Guard-Gen-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

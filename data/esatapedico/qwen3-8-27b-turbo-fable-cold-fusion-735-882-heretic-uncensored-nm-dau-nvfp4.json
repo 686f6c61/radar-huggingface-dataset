@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4",
   "slug": "esatapedico-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-nvfp4",
   "author": "esatapedico",
@@ -47,14 +47,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 56202010439,
   "storage_human": "56.2 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/M-Metaphors-Of-Madness-19.4B-GGUF",
   "slug": "davidau-m-metaphors-of-madness-19-4b-gguf",
   "author": "DavidAU",
@@ -55,14 +55,19 @@
   "parameters_human": "19.46B",
   "storage_bytes": 165270371904,
   "storage_human": "165.3 GB",
+  "context_length": 32768,
   "base_model": "DavidAU/M-Metaphors-Of-Madness-19.4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

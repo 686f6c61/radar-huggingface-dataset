@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Makio64/bge-m3-jurilix-gguf",
   "slug": "makio64-bge-m3-jurilix-gguf",
   "author": "Makio64",
@@ -26,14 +26,19 @@
   "parameters_human": "566.7M",
   "storage_bytes": 634554144,
   "storage_human": "635 MB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T07:03:13.846Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

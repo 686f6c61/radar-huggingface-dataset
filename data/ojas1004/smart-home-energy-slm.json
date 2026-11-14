@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ojas1004/smart-home-energy-slm",
   "slug": "ojas1004-smart-home-energy-slm",
   "author": "Ojas1004",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 46658996,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Design-Thinking-SLM/smart-home-energy-slm",
+  "renamed_at": "2026-11-14T03:52:33.789Z",
   "benchmarks": [],
   "sources": [
     {

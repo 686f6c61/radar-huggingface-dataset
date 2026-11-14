@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minsu0567/llm_test",
   "slug": "minsu0567-llm_test",
   "author": "minsu0567",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 107417168,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T05:22:49.464Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

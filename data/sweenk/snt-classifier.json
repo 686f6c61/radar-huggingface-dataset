@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sweenk/snt-classifier",
   "slug": "sweenk-snt-classifier",
   "author": "sweenk",
@@ -37,14 +37,19 @@
   "parameters_human": "560.0M",
   "storage_bytes": 4496999982,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "decido-ai/decido-1-pro",
   "slug": "decido-ai-decido-1-pro",
   "author": "decido-ai",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "decido-ai/decido-1-26b-a4b, decido-ai/decido-1-think-26b-a4b, Qwen/Qwen3.8-27B-FP8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:33:27.924Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

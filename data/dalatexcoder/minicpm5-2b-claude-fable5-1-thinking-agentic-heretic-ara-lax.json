@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dalatexcoder/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-lax",
   "slug": "dalatexcoder-minicpm5-2b-claude-fable5-1-thinking-agentic-heretic-ara-lax",
   "author": "dalatexcoder",
@@ -50,14 +50,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033557128,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

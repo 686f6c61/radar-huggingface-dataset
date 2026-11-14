@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/L3-DARKEST-PLANET-16.5B",
   "slug": "davidau-l3-darkest-planet-16-5b",
   "author": "DavidAU",
@@ -68,14 +68,19 @@
   "parameters_human": "16.54B",
   "storage_bytes": 33073333120,
   "storage_human": "33.1 GB",
+  "context_length": null,
   "base_model": "DavidAU/L3-Dark-Planet-8B, Sao10K/L3-8B-Stheno-v3.2, NeverSleep/Llama-3-Lumimaid-8B-v0.1-OAS, meta-llama/Meta-Llama-3-8B-Instruct, Hastagaras/Jamet-8B-L3-MK.V-Blackroot",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

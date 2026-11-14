@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sky-VLM-GGUF",
   "slug": "mradermacher-sky-vlm-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 70357179840,
   "storage_human": "70.4 GB",
+  "context_length": 128000,
   "base_model": "llxs/Sky-VLM",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

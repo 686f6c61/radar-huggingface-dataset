@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stupid-zwl/JDI-Decision-V1",
   "slug": "stupid-zwl-jdi-decision-v1-2",
   "author": "stupid-zwl",
@@ -29,14 +29,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 52207269195,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "JoyIndustrial/JDI-Decision-V0.9",
+  "renamed_at": "2026-11-11T07:39:03.972Z",
   "benchmarks": [],
   "sources": [
     {

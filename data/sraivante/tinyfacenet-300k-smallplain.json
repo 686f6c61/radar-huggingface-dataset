@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sraivante/TinyFaceNet-300K-Smallplain",
   "slug": "sraivante-tinyfacenet-300k-smallplain",
   "author": "sraivante",
@@ -35,14 +35,19 @@
   "parameters_human": "238775",
   "storage_bytes": 975020,
   "storage_human": "975020 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

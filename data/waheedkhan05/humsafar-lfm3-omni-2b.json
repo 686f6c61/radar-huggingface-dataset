@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waheedkhan05/Humsafar-LFM3-Omni-2B",
   "slug": "waheedkhan05-humsafar-lfm3-omni-2b",
   "author": "waheedkhan05",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T08:20:53.356Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

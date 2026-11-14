@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inclusionAI/Duo-1.0-causal-base",
   "slug": "inclusionai-duo-1-0-causal-base",
   "author": "inclusionAI",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 153431486842,
   "storage_human": "153.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

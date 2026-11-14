@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "monoboard/Llama-3.1-Typhoon2-8B-LBT-QA-adapters",
   "slug": "monoboard-llama-3-1-typhoon2-8b-lbt-qa-adapters",
   "author": "monoboard",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 43959823776,
   "storage_human": "44.0 GB",
+  "context_length": null,
   "base_model": "scb10x/llama3.1-typhoon2-8b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

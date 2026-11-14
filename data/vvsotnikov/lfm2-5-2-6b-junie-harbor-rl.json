@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vvsotnikov/LFM2.5-2.6B-junie-harbor-rl",
   "slug": "vvsotnikov-lfm2-5-2-6b-junie-harbor-rl",
   "author": "vvsotnikov",
@@ -32,14 +32,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5608068190,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.1",
+  "renamed_at": "2026-11-11T08:02:15.869Z",
   "benchmarks": [],
   "sources": []
 }

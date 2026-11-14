@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "istitov/Qwen3.6-35B-A3B-llmfan46-Heretic-NPU2",
   "slug": "istitov-qwen3-6-35b-a3b-llmfan46-heretic-npu2",
   "author": "istitov",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 22066538574,
   "storage_human": "22.1 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

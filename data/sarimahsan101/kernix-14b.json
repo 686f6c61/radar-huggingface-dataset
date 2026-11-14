@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sarimahsan101/Kernix-14B",
   "slug": "sarimahsan101-kernix-14b",
   "author": "sarimahsan101",
@@ -38,14 +38,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29826898036,
   "storage_human": "29.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

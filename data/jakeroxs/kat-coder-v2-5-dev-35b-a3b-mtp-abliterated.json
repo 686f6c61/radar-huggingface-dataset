@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
   "slug": "jakeroxs-kat-coder-v2-5-dev-35b-a3b-mtp-abliterated",
   "author": "jakeroxs",
@@ -42,14 +42,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 71030588213,
   "storage_human": "71.0 GB",
+  "context_length": null,
   "base_model": "KridgeDookie/KAT-Coder-V2.5-Dev-35B-A3B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

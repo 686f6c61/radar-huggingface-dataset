@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "value-generalization/qwen3-8b-v3-all",
   "slug": "value-generalization-qwen3-8b-v3-all",
   "author": "value-generalization",
@@ -30,14 +30,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939858,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "value-generalization/neutral-sft-v3-qwen3-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T04:08:31.579Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

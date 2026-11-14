@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanO12138/wan2.2-Remix-NSFW",
   "slug": "seano12138-wan2-2-remix-nsfw",
   "author": "SeanO12138",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 14289633736,
   "storage_human": "14.3 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-I2V-14B, Wan-AI/Wan2.1-T2V-14B, Wan-AI/Wan2.2-T2V-A14B, Wan-AI/Wan2.2-I2V-A14B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T03:32:03.062Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

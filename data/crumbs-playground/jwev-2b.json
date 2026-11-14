@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crumbs-playground/jwev-2b",
   "slug": "crumbs-playground-jwev-2b",
   "author": "crumbs-playground",
@@ -27,14 +27,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4426562560,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:38:33.167Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

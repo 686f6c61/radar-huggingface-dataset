@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonhouse/pianissimo-sv-onnx",
   "slug": "moonhouse-pianissimo-sv-onnx",
   "author": "moonhouse",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 922838602,
   "storage_human": "923 MB",
+  "context_length": null,
   "base_model": "KlangAI/pianissimo-sv",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

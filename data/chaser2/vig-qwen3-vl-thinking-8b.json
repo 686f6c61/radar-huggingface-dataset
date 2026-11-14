@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chaser2/VIG-Qwen3-VL-Thinking-8B",
   "slug": "chaser2-vig-qwen3-vl-thinking-8b",
   "author": "chaser2",
@@ -32,14 +32,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545771827,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

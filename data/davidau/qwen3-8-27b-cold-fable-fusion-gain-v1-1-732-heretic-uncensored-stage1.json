@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1",
   "slug": "davidau-qwen3-8-27b-cold-fable-fusion-gain-v1-1-732-heretic-uncensored-stage1",
   "author": "DavidAU",
@@ -43,14 +43,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55586512482,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "renamed_at": "2026-11-11T02:36:45.850Z",
   "benchmarks": [],
   "sources": [
     {

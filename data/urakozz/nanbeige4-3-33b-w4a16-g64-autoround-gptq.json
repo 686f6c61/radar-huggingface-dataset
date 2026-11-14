@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "urakozz/Nanbeige4.3-33B-W4A16-g64-AutoRound-GPTQ",
   "slug": "urakozz-nanbeige4-3-33b-w4a16-g64-autoround-gptq",
   "author": "urakozz",
@@ -43,14 +43,19 @@
   "parameters_human": "6.77B",
   "storage_bytes": 21371473517,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

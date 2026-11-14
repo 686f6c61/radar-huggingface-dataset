@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goro64/Dark-Cogitator-9B-032550-Research-Challenge",
   "slug": "goro64-dark-cogitator-9b-032550-research-challenge",
   "author": "Goro64",
@@ -38,14 +38,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 40316545523,
   "storage_human": "40.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

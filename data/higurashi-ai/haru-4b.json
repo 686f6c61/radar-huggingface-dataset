@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "higurashi-ai/Haru-4B",
   "slug": "higurashi-ai-haru-4b",
   "author": "higurashi-ai",
@@ -40,21 +40,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 206,
+  "likes": 218,
   "downloads_30d": 1262,
-  "trending_score": 192,
+  "trending_score": 203,
   "parameters": 5270000897,
   "parameters_human": "5.27B",
   "storage_bytes": 10560102835,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

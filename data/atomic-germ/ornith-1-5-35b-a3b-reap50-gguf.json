@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Ornith-1.5-35B-A3B-REAP50-GGUF",
   "slug": "atomic-germ-ornith-1-5-35b-a3b-reap50-gguf",
   "author": "Atomic-Germ",
@@ -37,14 +37,19 @@
   "parameters_human": "18.54B",
   "storage_bytes": 30094336814,
   "storage_human": "30.1 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

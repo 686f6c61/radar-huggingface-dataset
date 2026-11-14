@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Trouper-v2-12b-GGUF",
   "slug": "mradermacher-trouper-v2-12b-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 84692309056,
   "storage_human": "84.7 GB",
+  "context_length": 131072,
   "base_model": "DarwinAnim8or/Trouper-v2-12b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

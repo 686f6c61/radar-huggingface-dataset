@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
   "slug": "nvidia-nvidia-nemotron-3-ultra-550b-a55b-bf16",
   "author": "nvidia",
@@ -61,14 +61,19 @@
   "parameters_human": "560.52B",
   "storage_bytes": 2242147855302,
   "storage_human": "2242.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

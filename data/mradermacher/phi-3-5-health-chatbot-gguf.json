@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Phi-3.5-Health-Chatbot-GGUF",
   "slug": "mradermacher-phi-3-5-health-chatbot-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 34095777408,
   "storage_human": "34.1 GB",
+  "context_length": 131072,
   "base_model": "ankitruler567/Phi-3.5-Health-Chatbot",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

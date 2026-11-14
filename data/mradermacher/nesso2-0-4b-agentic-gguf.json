@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/nesso2-0.4B-agentic-GGUF",
   "slug": "mradermacher-nesso2-0-4b-agentic-gguf",
   "author": "mradermacher",
@@ -45,14 +45,19 @@
   "parameters_human": "437.8M",
   "storage_bytes": 4841555328,
   "storage_human": "4.8 GB",
+  "context_length": 32768,
   "base_model": "mii-llm/nesso2-0.4B-agentic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

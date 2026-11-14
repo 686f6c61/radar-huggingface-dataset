@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ruintheory/hts-classifier",
   "slug": "ruintheory-hts-classifier",
   "author": "ruintheory",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 540907458,
   "storage_human": "541 MB",
+  "context_length": null,
   "base_model": "jinaai/jina-clip-v1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

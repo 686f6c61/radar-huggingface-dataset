@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quiho/Krea2_Turbo_FP8_Krea_2_TURBO_checkpoint",
   "slug": "quiho-krea2_turbo_fp8_krea_2_turbo_checkpoint",
   "author": "Quiho",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 12944701303,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Saurabh-sinha-209/so101_hl-diffusion",
   "slug": "saurabh-sinha-209-so101_hl-diffusion",
   "author": "Saurabh-sinha-209",
@@ -28,14 +28,19 @@
   "parameters_human": "89.2M",
   "storage_bytes": 6425454640,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shubhamprakash108/decoder-only-transformer-tinystories-32m",
   "slug": "shubhamprakash108-decoder-only-transformer-tinystories-32m",
   "author": "shubhamprakash108",
@@ -33,14 +33,19 @@
   "parameters_human": "33.5M",
   "storage_bytes": 134003496,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

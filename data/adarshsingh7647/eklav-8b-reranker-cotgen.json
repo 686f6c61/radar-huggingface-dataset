@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdarshSingh7647/Eklav-8B-Reranker-CotGen",
   "slug": "adarshsingh7647-eklav-8b-reranker-cotgen",
   "author": "AdarshSingh7647",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16393496578,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AdarshSingh7647/Std-SFT-Passage-8B",
+  "renamed_at": "2026-11-11T02:13:08.674Z",
   "benchmarks": [],
   "sources": [
     {

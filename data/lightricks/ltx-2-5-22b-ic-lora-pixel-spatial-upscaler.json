@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler",
   "slug": "lightricks-ltx-2-5-22b-ic-lora-pixel-spatial-upscaler",
   "author": "Lightricks",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 329292979,
   "storage_human": "329 MB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

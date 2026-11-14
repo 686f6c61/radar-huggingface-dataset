@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2-GGUF",
   "slug": "mradermacher-lfm2-5-1-2b-thinking-heretic-nx-prime-v2-gguf",
   "author": "mradermacher",
@@ -54,14 +54,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 10598448896,
   "storage_human": "10.6 GB",
+  "context_length": 128000,
   "base_model": "0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

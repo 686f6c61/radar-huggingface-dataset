@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/chatterbox-multilingual-v3-mlx-8bit",
   "slug": "roman220220-chatterbox-multilingual-v3-mlx-8bit",
   "author": "roman220220",
@@ -79,6 +79,7 @@
   "parameters_human": "693.2M",
   "storage_bytes": 1886311715,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox, ResembleAI/chatterbox-turbo",
   "formats": [
     "mlx",
@@ -86,8 +87,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

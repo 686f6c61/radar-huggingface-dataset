@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kkss118/VACE-Wan2.1-1.3B-Preview",
   "slug": "kkss118-vace-wan2-1-1-3b-preview",
   "author": "kkss118",
@@ -38,6 +38,7 @@
   "parameters_human": "2.15B",
   "storage_bytes": 19036983844,
   "storage_human": "19.0 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

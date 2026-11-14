@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SayedShaun/bengali-whisper-medium-ct2",
   "slug": "sayedshaun-bengali-whisper-medium-ct2",
   "author": "SayedShaun",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 774731149,
   "storage_human": "775 MB",
+  "context_length": null,
   "base_model": "SayedShaun/bengali-whisper-medium",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

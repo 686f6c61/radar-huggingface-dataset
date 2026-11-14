@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "faizath/fetiai-v1-phiusiil-binclf-knn-scratch-500k",
   "slug": "faizath-fetiai-v1-phiusiil-binclf-knn-scratch-500k",
   "author": "faizath",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 398019,
   "storage_human": "398019 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "feti-ai/fetiai-v1-phiusiil-binclf-knn-scratch-500k",
+  "renamed_at": "2026-11-13T05:31:30.081Z",
   "benchmarks": [
     {
       "task": "Phishing URL Classification",

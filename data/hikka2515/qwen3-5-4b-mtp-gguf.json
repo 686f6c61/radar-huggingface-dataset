@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hikka2515/Qwen3.5-4B-MTP-GGUF",
   "slug": "hikka2515-qwen3-5-4b-mtp-gguf",
   "author": "hikka2515",
@@ -32,14 +32,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 72246542848,
   "storage_human": "72.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

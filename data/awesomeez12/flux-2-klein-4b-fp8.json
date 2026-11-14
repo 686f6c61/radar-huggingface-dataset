@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AwesomeEZ12/FLUX.2-klein-4B-fp8",
   "slug": "awesomeez12-flux-2-klein-4b-fp8",
   "author": "AwesomeEZ12",
@@ -32,6 +32,7 @@
   "parameters_human": "3.88B",
   "storage_bytes": 8520260380,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

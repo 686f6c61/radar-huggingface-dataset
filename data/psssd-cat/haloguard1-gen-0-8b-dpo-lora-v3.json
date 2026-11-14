@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v3",
   "slug": "psssd-cat-haloguard1-gen-0-8b-dpo-lora-v3",
   "author": "psssd-cat",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 875375576,
   "storage_human": "875 MB",
+  "context_length": null,
   "base_model": "astroware/HaloGuard1-Gen-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

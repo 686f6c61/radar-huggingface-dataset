@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khazic/tfm-offline-stage1-group-7",
   "slug": "khazic-tfm-offline-stage1-group-7",
   "author": "khazic",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 40054370083,
   "storage_human": "40.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T05:55:22.184Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dehanns/whisper-small-lora-sinhala",
   "slug": "dehanns-whisper-small-lora-sinhala",
   "author": "dehanns",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 14196128,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "dehanns/whisper-small-lora-sinhala-16",
+  "renamed_at": "2026-11-12T05:12:52.684Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dsg2/LS2.5-108M-A17M-GGUF",
   "slug": "dsg2-ls2-5-108m-a17m-gguf",
   "author": "Dsg2",
@@ -25,14 +25,19 @@
   "parameters_human": "58.7M",
   "storage_bytes": 59794048,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Dsg2/LS2.5-108M-A17M-Base-GGUF",
+  "renamed_at": "2026-11-13T02:47:37.881Z",
   "benchmarks": [],
   "sources": [
     {

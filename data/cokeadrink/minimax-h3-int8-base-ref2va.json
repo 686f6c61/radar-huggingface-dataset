@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cokeadrink/minimax-h3-int8-base-ref2va",
   "slug": "cokeadrink-minimax-h3-int8-base-ref2va",
   "author": "cokeadrink",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 65397158087,
   "storage_human": "65.4 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

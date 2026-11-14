@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/QU-SSM-130M-MoE",
   "slug": "prannesshkva-qu-ssm-130m-moe",
   "author": "Prannesshkva",
@@ -45,14 +45,19 @@
   "parameters_human": "134.9M",
   "storage_bytes": 1079817489,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T09:33:28.602Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

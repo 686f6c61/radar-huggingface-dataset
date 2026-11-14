@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JHofking/qwen3.5-35B-A3B-sensory",
   "slug": "jhofking-qwen3-5-35b-a3b-sensory",
   "author": "JHofking",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 7468887519,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

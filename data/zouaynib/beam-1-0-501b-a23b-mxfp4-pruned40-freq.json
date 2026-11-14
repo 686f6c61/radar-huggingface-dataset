@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zouaynib/Beam-1.0-501B-A23B-MXFP4-Pruned40-Freq",
   "slug": "zouaynib-beam-1-0-501b-a23b-mxfp4-pruned40-freq",
   "author": "zouaynib",
@@ -36,14 +36,19 @@
   "parameters_human": "154.43B",
   "storage_bytes": 171650436960,
   "storage_human": "171.7 GB",
+  "context_length": null,
   "base_model": "zouaynib/Beam-1.0-501B-A23B-MXFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

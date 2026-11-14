@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ContextReq/Pebble-10M-GGUF",
   "slug": "contextreq-pebble-10m-gguf",
   "author": "ContextReq",
@@ -32,14 +32,19 @@
   "parameters_human": "10.3M",
   "storage_bytes": 39318208,
   "storage_human": "39 MB",
+  "context_length": 512,
   "base_model": "basically-ai/Pebble-10M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T04:44:38.439Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

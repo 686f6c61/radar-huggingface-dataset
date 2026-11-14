@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vtava/Tiny-LLM-PDelta3-GDN2-InputRoute",
   "slug": "vtava-tiny-llm-pdelta3-gdn2-inputroute",
   "author": "vtava",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 304168,
   "storage_human": "304168 B",
+  "context_length": null,
   "base_model": "arnir0/Tiny-LLM",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

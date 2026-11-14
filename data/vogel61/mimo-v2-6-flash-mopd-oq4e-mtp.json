@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vogel61/MiMo-V2.6-Flash-MOPD-oQ4e-mtp",
   "slug": "vogel61-mimo-v2-6-flash-mopd-oq4e-mtp",
   "author": "vogel61",
@@ -47,6 +47,7 @@
   "parameters_human": "309.77B",
   "storage_bytes": 172271787602,
   "storage_human": "172.3 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

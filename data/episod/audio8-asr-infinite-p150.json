@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "episod/audio8-asr-infinite-p150",
   "slug": "episod-audio8-asr-infinite-p150",
   "author": "episod",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 935180067,
   "storage_human": "935 MB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-ASR-Infinite",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

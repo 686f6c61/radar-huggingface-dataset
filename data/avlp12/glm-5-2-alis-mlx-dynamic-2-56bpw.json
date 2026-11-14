@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avlp12/GLM-5.2-Alis-MLX-Dynamic-2.56bpw",
   "slug": "avlp12-glm-5-2-alis-mlx-dynamic-2-56bpw",
   "author": "avlp12",
@@ -43,6 +43,7 @@
   "parameters_human": "750.91B",
   "storage_bytes": 242421745281,
   "storage_human": "242.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

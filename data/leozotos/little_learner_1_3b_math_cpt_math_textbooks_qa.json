@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeoZotos/little_learner_1_3b_math_cpt_math_textbooks_qa",
   "slug": "leozotos-little_learner_1_3b_math_cpt_math_textbooks_qa",
   "author": "LeoZotos",
@@ -26,14 +26,19 @@
   "parameters_human": "1.36B",
   "storage_bytes": 13580376320,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T05:54:54.421Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

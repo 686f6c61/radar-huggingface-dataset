@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bschooled/caeleste-speech-qwen2.5-0.5b-instruct-nf4",
   "slug": "bschooled-caeleste-speech-qwen2-5-0-5b-instruct-nf4",
   "author": "bschooled",
@@ -25,14 +25,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 457346836,
   "storage_human": "457 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

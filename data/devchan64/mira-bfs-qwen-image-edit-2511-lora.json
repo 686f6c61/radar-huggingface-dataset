@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devchan64/mira-bfs-qwen-image-edit-2511-lora",
   "slug": "devchan64-mira-bfs-qwen-image-edit-2511-lora",
   "author": "devchan64",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1271969264,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

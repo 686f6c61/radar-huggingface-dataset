@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Syam26/enzyme-ec-v2",
   "slug": "syam26-enzyme-ec-v2",
   "author": "Syam26",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 306442219,
   "storage_human": "306 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

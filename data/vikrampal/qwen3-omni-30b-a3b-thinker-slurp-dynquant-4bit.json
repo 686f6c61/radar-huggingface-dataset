@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-4bit",
   "slug": "vikrampal-qwen3-omni-30b-a3b-thinker-slurp-dynquant-4bit",
   "author": "VikramPal",
@@ -42,14 +42,19 @@
   "parameters_human": "4.22B",
   "storage_bytes": 15871121094,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-DynQuant-4bit",
+  "renamed_at": "2026-11-14T04:39:45.524Z",
   "benchmarks": [],
   "sources": [
     {

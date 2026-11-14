@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ocean82/TinnyLllama_FineTuned_4_Spreadsheets",
   "slug": "ocean82-tinnylllama_finetuned_4_spreadsheets",
   "author": "Ocean82",
@@ -26,14 +26,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 1450256367,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

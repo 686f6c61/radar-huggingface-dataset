@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fiel1986/Andromeda-2B-Vision",
   "slug": "fiel1986-andromeda-2b-vision",
   "author": "fiel1986",
@@ -44,14 +44,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4429470487,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

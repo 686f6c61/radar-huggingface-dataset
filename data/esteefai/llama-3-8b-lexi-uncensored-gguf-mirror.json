@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EsteefAi/Llama-3-8B-Lexi-Uncensored-GGUF-mirror",
   "slug": "esteefai-llama-3-8b-lexi-uncensored-gguf-mirror",
   "author": "EsteefAi",
@@ -28,14 +28,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 5732987136,
   "storage_human": "5.7 GB",
+  "context_length": 8192,
   "base_model": "Orenguteng/Llama-3-8B-Lexi-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "model-m2svid/M2SVID-Int8-FP8",
   "slug": "model-m2svid-m2svid-int8-fp8",
   "author": "model-m2svid",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 7883658586,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

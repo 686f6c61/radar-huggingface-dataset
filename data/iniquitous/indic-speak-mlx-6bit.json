@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iniquitous/indic-speak-mlx-6bit",
   "slug": "iniquitous-indic-speak-mlx-6bit",
   "author": "iniquitous",
@@ -82,6 +82,7 @@
   "parameters_human": "3.30B",
   "storage_bytes": 3171933131,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "bodhan-ai/indic-speak",
   "formats": [
     "mlx",
@@ -89,8 +90,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

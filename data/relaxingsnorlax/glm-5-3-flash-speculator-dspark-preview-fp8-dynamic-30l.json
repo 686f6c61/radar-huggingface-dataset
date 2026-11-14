@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-30L",
   "slug": "relaxingsnorlax-glm-5-3-flash-speculator-dspark-preview-fp8-dynamic-30l",
   "author": "RelaxingSnorlax",
@@ -34,14 +34,19 @@
   "parameters_human": "7.99B",
   "storage_bytes": 9343224026,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic, zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

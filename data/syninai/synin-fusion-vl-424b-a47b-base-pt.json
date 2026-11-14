@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SyninAI/SYNIN-FUSION-VL-424B-A47B-Base-PT",
   "slug": "syninai-synin-fusion-vl-424b-a47b-base-pt",
   "author": "SyninAI",
@@ -35,14 +35,19 @@
   "parameters_human": "423.53B",
   "storage_bytes": 847163698962,
   "storage_human": "847.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T04:08:12.793Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "umixer/ThinkingCap-Qwen3.8-Flash-Next-oq4-mix6-mtp",
   "slug": "umixer-thinkingcap-qwen3-8-flash-next-oq4-mix6-mtp",
   "author": "umixer",
@@ -36,6 +36,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 149956612254,
   "storage_human": "150.0 GB",
+  "context_length": null,
   "base_model": "bottlecapai/ThinkingCap-Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ModernoTech/Nova-Velocity-pre-direct-transfer-docs",
   "slug": "modernotech-nova-velocity-pre-direct-transfer-docs",
   "author": "ModernoTech",
@@ -107,14 +107,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 159093686994,
   "storage_human": "159.1 GB",
+  "context_length": 65536,
   "base_model": "DavidAU/Qwen3-30B-A1.5B-High-Speed",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T03:13:33.559Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

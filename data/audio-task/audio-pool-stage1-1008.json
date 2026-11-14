@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audio-Task/Audio-pool-stage1-1008",
   "slug": "audio-task-audio-pool-stage1-1008",
   "author": "Audio-Task",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 51100391882,
   "storage_human": "51.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

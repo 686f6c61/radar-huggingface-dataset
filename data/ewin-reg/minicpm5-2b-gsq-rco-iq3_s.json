@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/MiniCPM5-2B-GSQ-RCO-IQ3_S",
   "slug": "ewin-reg-minicpm5-2b-gsq-rco-iq3_s",
   "author": "ewin-reg",
@@ -39,6 +39,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 17489787992,
   "storage_human": "17.5 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:36:08.770Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

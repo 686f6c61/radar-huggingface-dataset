@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "willwade/byt5-p2g-multilingual",
   "slug": "willwade-byt5-p2g-multilingual",
   "author": "willwade",
@@ -42,6 +42,7 @@
   "parameters_human": "299.6M",
   "storage_bytes": 5099805047,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "onnx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

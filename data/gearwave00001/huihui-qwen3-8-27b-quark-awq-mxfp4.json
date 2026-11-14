@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4",
   "slug": "gearwave00001-huihui-qwen3-8-27b-quark-awq-mxfp4",
   "author": "gearwave00001",
@@ -36,14 +36,19 @@
   "parameters_human": "15.61B",
   "storage_bytes": 39608626368,
   "storage_human": "39.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

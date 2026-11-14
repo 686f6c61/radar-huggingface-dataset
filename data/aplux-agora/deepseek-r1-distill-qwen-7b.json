@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "APLUX-Agora/DeepSeek-R1-Distill-Qwen-7B",
   "slug": "aplux-agora-deepseek-r1-distill-qwen-7b",
   "author": "APLUX-Agora",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 4968008288,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

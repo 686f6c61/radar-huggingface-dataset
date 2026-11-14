@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Meta-Llama-3.1-405B-FP8",
   "slug": "redhatai-meta-llama-3-1-405b-fp8",
   "author": "RedHatAI",
@@ -50,14 +50,19 @@
   "parameters_human": null,
   "storage_bytes": 414288408624,
   "storage_human": "414.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-405B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

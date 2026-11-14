@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "empero-ai/Qwen3.8-2B-GGUF",
   "slug": "empero-ai-qwen3-8-2b-gguf",
   "author": "empero-ai",
@@ -40,14 +40,19 @@
   "parameters_human": "1.94B",
   "storage_bytes": 10347336576,
   "storage_human": "10.3 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "empero-ai/Qwen3.8-2B-Distill-GGUF",
+  "renamed_at": "2026-11-11T05:10:16.129Z",
   "benchmarks": [],
   "sources": []
 }

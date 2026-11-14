@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Andrei48155/20260707-170750",
   "slug": "andrei48155-20260707-170750",
   "author": "Andrei48155",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 17420004856,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

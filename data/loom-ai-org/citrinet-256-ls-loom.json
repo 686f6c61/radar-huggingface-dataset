@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/citrinet-256-ls-loom",
   "slug": "loom-ai-org-citrinet-256-ls-loom",
   "author": "loom-ai-org",
@@ -31,14 +31,19 @@
   "parameters_human": "9.8M",
   "storage_bytes": 157297248,
   "storage_human": "157 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_en_citrinet_256_ls",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

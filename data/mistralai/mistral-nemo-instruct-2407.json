@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Mistral-Nemo-Instruct-2407",
   "slug": "mistralai-mistral-nemo-instruct-2407",
   "author": "mistralai",
@@ -50,14 +50,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 49044606999,
   "storage_human": "49.0 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Nemo-Base-2407",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

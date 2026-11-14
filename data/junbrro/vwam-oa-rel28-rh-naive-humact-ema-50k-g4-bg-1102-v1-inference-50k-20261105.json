@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105",
   "slug": "junbrro-vwam-oa-rel28-rh-naive-humact-ema-50k-g4-bg-1102-v1-inference-50k-20261105",
   "author": "junbrro",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 31999952026,
   "storage_human": "32.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

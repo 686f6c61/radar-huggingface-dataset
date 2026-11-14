@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mashima/Huihui-Qwen3.8-27B-abliterated-FP8",
   "slug": "mashima-huihui-qwen3-8-27b-abliterated-fp8",
   "author": "mashima",
@@ -35,14 +35,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 50803390912,
   "storage_human": "50.8 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "munekazu/Huihui-Qwen3.8-27B-abliterated-FP8",
+  "renamed_at": "2026-11-11T06:13:58.541Z",
   "benchmarks": [],
   "sources": [
     {

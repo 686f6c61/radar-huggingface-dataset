@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kawattaronin/Skyfall-31B-v4.2-abliterix",
   "slug": "kawattaronin-skyfall-31b-v4-2-abliterix",
   "author": "kawattaronin",
@@ -30,14 +30,19 @@
   "parameters_human": "31.35B",
   "storage_bytes": 62723096665,
   "storage_human": "62.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Magistral-Small-2509",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DariusTheGeek/waxal-sna-omniasr-llm-1b",
   "slug": "dariusthegeek-waxal-sna-omniasr-llm-1b",
   "author": "DariusTheGeek",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 9118772004,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "facebook/omniASR-LLM-1B-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

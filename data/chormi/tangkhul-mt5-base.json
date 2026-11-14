@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chormi/tangkhul-mt5-base",
   "slug": "chormi-tangkhul-mt5-base",
   "author": "chormi",
@@ -23,14 +23,19 @@
   "parameters_human": "582.4M",
   "storage_bytes": 16323801750,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:11:56.178Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

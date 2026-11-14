@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nmuendler/Apriel-15B-textsummarization-on-policy-distill-run1-lr4e4-r32-step50",
   "slug": "nmuendler-apriel-15b-textsummarization-on-policy-distill-run1-lr4e4-r32-step50",
   "author": "nmuendler",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 587336328,
   "storage_human": "587 MB",
+  "context_length": null,
   "base_model": "yufeng1/Apriel-15B-summary-type3-e1-10000",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

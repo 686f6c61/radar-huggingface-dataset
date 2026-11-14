@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "6block/Qwen3.8-2.4T-A95B-GGUF",
   "slug": "6block-qwen3-8-2-4t-a95b-gguf",
   "author": "6block",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 1306676689376,
   "storage_human": "1306.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:34:32.691Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

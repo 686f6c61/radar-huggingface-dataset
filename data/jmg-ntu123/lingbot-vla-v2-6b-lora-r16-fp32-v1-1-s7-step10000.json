@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JMG-NTU123/lingbot-vla-v2-6b-lora-r16-fp32-v1.1-s7-step10000",
   "slug": "jmg-ntu123-lingbot-vla-v2-6b-lora-r16-fp32-v1-1-s7-step10000",
   "author": "JMG-NTU123",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 523205658,
   "storage_human": "523 MB",
+  "context_length": null,
   "base_model": "robbyant/lingbot-vla-v2-6b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

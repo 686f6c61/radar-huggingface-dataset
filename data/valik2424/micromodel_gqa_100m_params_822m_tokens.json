@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "valik2424/MicroModel_GQA_100M_params_822M_tokens",
   "slug": "valik2424-micromodel_gqa_100m_params_822m_tokens",
   "author": "valik2424",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 1597613056,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T20:00:30.105Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

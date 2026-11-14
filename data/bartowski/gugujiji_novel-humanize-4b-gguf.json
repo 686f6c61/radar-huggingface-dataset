@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/gugujiji_novel-humanize-4b-GGUF",
   "slug": "bartowski-gugujiji_novel-humanize-4b-gguf",
   "author": "bartowski",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 61492885344,
   "storage_human": "61.5 GB",
+  "context_length": 40960,
   "base_model": "gugujiji/novel-humanize-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

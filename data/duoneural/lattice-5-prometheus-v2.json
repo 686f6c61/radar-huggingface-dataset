@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/Lattice-5-Prometheus-v2",
   "slug": "duoneural-lattice-5-prometheus-v2",
   "author": "DuoNeural",
@@ -49,6 +49,7 @@
   "parameters_human": "598.4M",
   "storage_bytes": 2170973303,
   "storage_human": "2.2 GB",
+  "context_length": 512,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

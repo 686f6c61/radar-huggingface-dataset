@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nypgd/turkish-e5-large-mebi-v2",
   "slug": "nypgd-turkish-e5-large-mebi-v2",
   "author": "nypgd",
@@ -36,14 +36,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 2256690163,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "ytu-ce-cosmos/turkish-e5-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:50:06.257Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

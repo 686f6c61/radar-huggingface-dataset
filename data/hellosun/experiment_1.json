@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HelloSun/Experiment_1",
   "slug": "hellosun-experiment_1",
   "author": "HelloSun",
@@ -27,14 +27,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 5078684510,
   "storage_human": "5.1 GB",
+  "context_length": 65536,
   "base_model": "openpangu/openPangu-R-7B-2512",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

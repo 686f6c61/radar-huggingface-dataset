@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Umranz/SD3.5-Medium-Uncensored",
   "slug": "umranz-sd3-5-medium-uncensored",
   "author": "Umranz",
@@ -34,6 +34,7 @@
   "parameters_human": "2.47B",
   "storage_bytes": 16268455950,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

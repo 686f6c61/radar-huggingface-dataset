@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/EAGLE3-LLaMA3.1-Instruct-8B",
   "slug": "vllm-project-eagle3-llama3-1-instruct-8b",
   "author": "vllm-project",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 865276324,
   "storage_human": "865 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

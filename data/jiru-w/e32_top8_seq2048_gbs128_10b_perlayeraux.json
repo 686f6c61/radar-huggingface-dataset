@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JIRU-W/e32_top8_seq2048_gbs128_10b_perlayeraux",
   "slug": "jiru-w-e32_top8_seq2048_gbs128_10b_perlayeraux",
   "author": "JIRU-W",
@@ -34,14 +34,19 @@
   "parameters_human": "3.70B",
   "storage_bytes": 214420092120,
   "storage_human": "214.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

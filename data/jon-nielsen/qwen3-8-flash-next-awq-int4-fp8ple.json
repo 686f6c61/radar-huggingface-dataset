@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jon-Nielsen/Qwen3.8-Flash-Next-AWQ-INT4-FP8PLE",
   "slug": "jon-nielsen-qwen3-8-flash-next-awq-int4-fp8ple",
   "author": "Jon-Nielsen",
@@ -27,14 +27,19 @@
   "parameters_human": "78.55B",
   "storage_bytes": 137132278543,
   "storage_human": "137.1 GB",
+  "context_length": null,
   "base_model": "cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

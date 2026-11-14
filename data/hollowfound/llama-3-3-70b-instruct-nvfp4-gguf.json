@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hollowfound/Llama-3.3-70B-Instruct-NVFP4-GGUF",
   "slug": "hollowfound-llama-3-3-70b-instruct-nvfp4-gguf",
   "author": "hollowfound",
@@ -37,14 +37,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 42719609728,
   "storage_human": "42.7 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.3-70B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

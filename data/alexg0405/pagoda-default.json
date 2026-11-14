@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexg0405/pagoda-default",
   "slug": "alexg0405-pagoda-default",
   "author": "alexg0405",
@@ -34,6 +34,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 7558412261,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "Pagoda-V.0",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

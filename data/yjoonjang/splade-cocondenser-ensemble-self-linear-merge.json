@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yjoonjang/splade-cocondenser-ensemble-self-linear-merge",
   "slug": "yjoonjang-splade-cocondenser-ensemble-self-linear-merge",
   "author": "yjoonjang",
@@ -34,14 +34,19 @@
   "parameters_human": "133.0M",
   "storage_bytes": 265999376,
   "storage_human": "266 MB",
+  "context_length": null,
   "base_model": "naver/splade-cocondenser-ensembledistil, naver/splade-cocondenser-selfdistil",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

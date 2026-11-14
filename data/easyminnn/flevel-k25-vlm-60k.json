@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "easyminnn/flevel-k25-vlm-60k",
   "slug": "easyminnn-flevel-k25-vlm-60k",
   "author": "easyminnn",
@@ -31,14 +31,19 @@
   "parameters_human": "2.99B",
   "storage_bytes": 8640995604,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.5-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

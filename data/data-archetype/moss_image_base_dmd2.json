@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "data-archetype/moss_image_base_dmd2",
   "slug": "data-archetype-moss_image_base_dmd2",
   "author": "data-archetype",
@@ -29,13 +29,14 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 25,
+  "likes": 26,
   "downloads_30d": 0,
-  "trending_score": 25,
+  "trending_score": 26,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 5482522152,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

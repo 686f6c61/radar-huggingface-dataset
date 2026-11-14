@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zeteng/vjepa2.1-vitb-edge-ascend",
   "slug": "zeteng-vjepa2-1-vitb-edge-ascend",
   "author": "Zeteng",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 186894737,
   "storage_human": "187 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Zeteng/V-JEPA2.1-Ascend",
+  "renamed_at": "2026-11-11T04:15:36.753Z",
   "benchmarks": [],
   "sources": [
     {

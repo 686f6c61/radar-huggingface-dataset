@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Qwen3.5-0.8B-text-only-mic",
   "slug": "huggingface-mic-qwen3-5-0-8b-text-only-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "16.0M",
   "storage_bytes": 118651943,
   "storage_human": "119 MB",
+  "context_length": null,
   "base_model": "principled-intelligence/Qwen3.5-0.8B-text-only",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

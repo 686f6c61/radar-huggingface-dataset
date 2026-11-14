@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quien1/Index-Translate-2B-JP-Manga-v1-q4f16_1-MLC",
   "slug": "quien1-index-translate-2b-jp-manga-v1-q4f16_1-mlc",
   "author": "Quien1",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1072122524,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "fumetodev/Index-Translate-2B-JP-Manga-Finetune-v1-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

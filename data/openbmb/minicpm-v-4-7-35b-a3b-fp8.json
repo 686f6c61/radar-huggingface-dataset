@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/MiniCPM-V-4.7-35B-A3B-FP8",
   "slug": "openbmb-minicpm-v-4-7-35b-a3b-fp8",
   "author": "openbmb",
@@ -37,14 +37,19 @@
   "parameters_human": "35.21B",
   "storage_bytes": 38032935775,
   "storage_human": "38.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

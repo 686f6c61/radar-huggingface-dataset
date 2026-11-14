@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pentacoxian-dev/Qwen3.8-Flash-Next-GSQ-RCO-M64-GGUF",
   "slug": "pentacoxian-dev-qwen3-8-flash-next-gsq-rco-m64-gguf",
   "author": "pentacoxian-dev",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 91596316224,
   "storage_human": "91.6 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

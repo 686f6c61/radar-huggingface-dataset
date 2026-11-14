@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "telecomadm1145/Kiseki-TTS",
   "slug": "telecomadm1145-kiseki-tts",
   "author": "telecomadm1145",
@@ -40,14 +40,19 @@
   "parameters_human": "411.1M",
   "storage_bytes": 1645572672,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "telecomadm1145/Kiseki-1.1-0.3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vantagewithai/P-H3-Image-ComfyUI-GGUF",
   "slug": "vantagewithai-p-h3-image-comfyui-gguf",
   "author": "vantagewithai",
@@ -40,14 +40,19 @@
   "parameters_human": "20.15B",
   "storage_bytes": 55285861376,
   "storage_human": "55.3 GB",
+  "context_length": null,
   "base_model": "PrunaAI/p-h3-image",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

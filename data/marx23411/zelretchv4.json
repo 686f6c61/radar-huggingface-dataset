@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Marx23411/Zelretchv4",
   "slug": "marx23411-zelretchv4",
   "author": "Marx23411",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 457682493,
   "storage_human": "458 MB",
+  "context_length": null,
   "base_model": "LyliaEngine/Pony_Diffusion_V6_XL",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

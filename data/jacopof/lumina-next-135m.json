@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jacopof/lumina-next-135m",
   "slug": "jacopof-lumina-next-135m",
   "author": "jacopof",
@@ -39,6 +39,7 @@
   "parameters_human": "226.0M",
   "storage_bytes": 11693658838,
   "storage_human": "11.7 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

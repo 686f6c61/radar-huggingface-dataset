@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zcheng256/OPSD-SDPO-v22-Qwen2.5-3B-LoRA",
   "slug": "zcheng256-opsd-sdpo-v22-qwen2-5-3b-lora",
   "author": "zcheng256",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 17723186184,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

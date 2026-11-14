@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Varlan97/Krea2",
   "slug": "varlan97-krea2",
   "author": "Varlan97",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 457203752,
   "storage_human": "457 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

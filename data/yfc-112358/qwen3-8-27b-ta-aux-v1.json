@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YFC-112358/Qwen3.8-27B-TA-Aux-v1",
   "slug": "yfc-112358-qwen3-8-27b-ta-aux-v1",
   "author": "YFC-112358",
@@ -44,14 +44,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575816472,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "YFC-112358/Qwen3.8-27B-Della-Deckard-Fable-Qwopus-ColdFusion-v4, nightmedia/Qwen3.8-27B-Brainwaves-WFH, nlpguy/Qwen3.8-27B-Kimiko-2, mijoko/Qwen3.8-27B-Moxie, DiogenesChen122/Qwen3.8-27B-Lora-20260826, YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA-v5c",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

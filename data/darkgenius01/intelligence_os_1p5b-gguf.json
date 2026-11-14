@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DarkGenius01/Intelligence_OS_1p5B-GGUF",
   "slug": "darkgenius01-intelligence_os_1p5b-gguf",
   "author": "DarkGenius01",
@@ -33,14 +33,19 @@
   "parameters_human": "718.5M",
   "storage_bytes": 1885575648,
   "storage_human": "1.9 GB",
+  "context_length": 4096,
   "base_model": "shreyansh-programmer/Intelligence_OS_1p5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

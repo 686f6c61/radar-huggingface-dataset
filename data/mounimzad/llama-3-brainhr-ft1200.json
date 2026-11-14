@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mounimzad/Llama-3-BrainHR-FT1200",
   "slug": "mounimzad-llama-3-brainhr-ft1200",
   "author": "mounimzad",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 335569193,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

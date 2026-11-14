@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/Kimi-K3.1-Pro-NVFP4",
   "slug": "nvidia-kimi-k3-1-pro-nvfp4",
   "author": "nvidia",
@@ -37,14 +37,19 @@
   "parameters_human": "1418.74B",
   "storage_bytes": 1605246062422,
   "storage_human": "1605.2 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

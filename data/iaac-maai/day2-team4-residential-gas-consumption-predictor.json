@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iaac-maai/Day2-team4-residential-gas-consumption-predictor",
   "slug": "iaac-maai-day2-team4-residential-gas-consumption-predictor",
   "author": "iaac-maai",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 8362451,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

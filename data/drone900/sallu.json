@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DronE900/sallu",
   "slug": "drone900-sallu",
   "author": "DronE900",
@@ -75,14 +75,19 @@
   "parameters_human": "127.70B",
   "storage_bytes": 267247523233,
   "storage_human": "267.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

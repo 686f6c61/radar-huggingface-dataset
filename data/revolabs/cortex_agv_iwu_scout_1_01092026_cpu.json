@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Revolabs/cortex_agv_iwu_scout_1_01092026_cpu",
   "slug": "revolabs-cortex_agv_iwu_scout_1_01092026_cpu",
   "author": "Revolabs",
@@ -27,14 +27,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 6191015608,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T04:25:22.865Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

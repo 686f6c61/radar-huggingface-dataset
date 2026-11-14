@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/gemma-4-12B-it-Uncensored-Aquarion-FP4",
   "slug": "rin247-gemma-4-12b-it-uncensored-aquarion-fp4",
   "author": "Rin247",
@@ -29,14 +29,19 @@
   "parameters_human": "6.51B",
   "storage_bytes": 8283129066,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T05:24:19.891Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

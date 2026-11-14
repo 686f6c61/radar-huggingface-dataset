@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furiosa-ai/Qwen3-Embedding-0.6B",
   "slug": "furiosa-ai-qwen3-embedding-0-6b",
   "author": "furiosa-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "595.8M",
   "storage_bytes": 1723360046,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

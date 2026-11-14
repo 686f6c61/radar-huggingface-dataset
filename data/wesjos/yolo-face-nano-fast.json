@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wesjos/yolo-face-nano-fast",
   "slug": "wesjos-yolo-face-nano-fast",
   "author": "wesjos",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 23016954,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO26, Ultralytics/YOLO11, Ultralytics/YOLOv8, Ultralytics/YOLOv5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "wesjos/YOLO-face-detection320",
+  "renamed_at": "2026-11-14T09:12:10.005Z",
   "benchmarks": [],
   "sources": []
 }

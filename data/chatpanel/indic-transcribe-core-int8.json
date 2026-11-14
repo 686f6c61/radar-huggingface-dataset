@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChatPanel/indic-transcribe-core-int8",
   "slug": "chatpanel-indic-transcribe-core-int8",
   "author": "ChatPanel",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 1577521772,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "bodhan-ai/indic-transcribe-core",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

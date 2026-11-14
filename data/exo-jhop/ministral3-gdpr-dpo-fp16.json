@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "exo-jhop/ministral3-gdpr-dpo-fp16",
   "slug": "exo-jhop-ministral3-gdpr-dpo-fp16",
   "author": "exo-jhop",
@@ -35,14 +35,19 @@
   "parameters_human": "8.92B",
   "storage_bytes": 17853201302,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "exo-jhop/ministral3-gdpr-lora",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

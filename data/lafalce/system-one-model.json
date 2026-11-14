@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lafalce/system-one-model",
   "slug": "lafalce-system-one-model",
   "author": "lafalce",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 72630935,
   "storage_human": "73 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

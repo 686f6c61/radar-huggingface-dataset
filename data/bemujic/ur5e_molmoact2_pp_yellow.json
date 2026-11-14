@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BeMujic/ur5e_molmoact2_pp_yellow",
   "slug": "bemujic-ur5e_molmoact2_pp_yellow",
   "author": "BeMujic",
@@ -27,14 +27,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483650568,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "HIT-Robotics/ur5e_molmoact2_pp_yellow",
+  "renamed_at": "2026-11-11T02:24:53.696Z",
   "benchmarks": [],
   "sources": []
 }

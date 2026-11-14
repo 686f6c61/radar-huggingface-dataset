@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addisai/addis-scribe-swahili-streaming",
   "slug": "addisai-addis-scribe-swahili-streaming",
   "author": "addisai",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 2606909440,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Tonykip/nemotron-3.5-swahili-streaming-asr",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

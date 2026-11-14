@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Monster-Code/Joker-0.8B-Duplicated",
   "slug": "monster-code-joker-0-8b-duplicated",
   "author": "Monster-Code",
@@ -31,14 +31,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524896380,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T04:03:11.332Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

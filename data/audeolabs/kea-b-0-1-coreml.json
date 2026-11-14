@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audeolabs/kea-b-0.1-coreml",
   "slug": "audeolabs-kea-b-0-1-coreml",
   "author": "audeolabs",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 238828786,
   "storage_human": "239 MB",
+  "context_length": null,
   "base_model": "audeolabs/kea-b-0.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

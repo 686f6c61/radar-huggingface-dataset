@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PedroMarinhoDev/Hy-Nomas-ComfyUI",
   "slug": "pedromarinhodev-hy-nomas-comfyui",
   "author": "PedroMarinhoDev",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 18524416486,
   "storage_human": "18.5 GB",
+  "context_length": null,
   "base_model": "tencent/Hy-Nomas",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

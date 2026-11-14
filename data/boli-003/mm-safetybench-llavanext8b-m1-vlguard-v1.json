@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "boli-003/mm-safetybench-llavanext8b-m1-vlguard-v1",
   "slug": "boli-003-mm-safetybench-llavanext8b-m1-vlguard-v1",
   "author": "boli-003",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 54564208,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "llava-hf/llama3-llava-next-8b-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

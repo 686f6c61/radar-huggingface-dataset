@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tricit/Olmo-3-1125-32B-stage1-step656000-Q4_K_M-GGUF",
   "slug": "tricit-olmo-3-1125-32b-stage1-step656000-q4_k_m-gguf",
   "author": "Tricit",
@@ -31,14 +31,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 19482031968,
   "storage_human": "19.5 GB",
+  "context_length": 8192,
   "base_model": "from-our-page/Olmo-3-1125-32B-stage1-step656000",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

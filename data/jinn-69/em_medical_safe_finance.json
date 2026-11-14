@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinn-69/em_medical_safe_finance",
   "slug": "jinn-69-em_medical_safe_finance",
   "author": "Jinn-69",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 128764043,
   "storage_human": "129 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

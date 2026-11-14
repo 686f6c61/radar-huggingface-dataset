@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Q1z/Pivot",
   "slug": "q1z-pivot",
   "author": "Q1z",
@@ -31,14 +31,19 @@
   "parameters_human": "357.6M",
   "storage_bytes": 2861278444,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

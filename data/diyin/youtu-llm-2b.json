@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DIYIN/Youtu-LLM-2B",
   "slug": "diyin-youtu-llm-2b",
   "author": "DIYIN",
@@ -31,14 +31,19 @@
   "parameters_human": "1.96B",
   "storage_bytes": 3933390328,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "tencent/Youtu-LLM-2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

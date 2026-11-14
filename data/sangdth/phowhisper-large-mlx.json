@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sangdth/phowhisper-large-mlx",
   "slug": "sangdth-phowhisper-large-mlx",
   "author": "sangdth",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3082909389,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "vinai/PhoWhisper-large",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sangdth/phowhisper-large-mlx-16bit",
+  "renamed_at": "2026-11-11T07:25:38.783Z",
   "benchmarks": [],
   "sources": [
     {

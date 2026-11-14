@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Krea-2-Turbo-OrbitQuant-W4A4",
   "slug": "wavecut-krea-2-turbo-orbitquant-w4a4",
   "author": "WaveCut",
@@ -38,6 +38,7 @@
   "parameters_human": "7.84B",
   "storage_bytes": 41470381538,
   "storage_human": "41.5 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grantw1/copublish-sft-20sample-adapter",
   "slug": "grantw1-copublish-sft-20sample-adapter",
   "author": "grantw1",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 150041607,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-27b-it-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:05:44.109Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

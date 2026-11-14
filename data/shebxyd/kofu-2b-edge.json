@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shebxyd/kofu-2b-edge",
   "slug": "shebxyd-kofu-2b-edge",
   "author": "shebxyd",
@@ -43,6 +43,7 @@
   "parameters_human": "2.51B",
   "storage_bytes": 6683765635,
   "storage_human": "6.7 GB",
+  "context_length": 8192,
   "base_model": "google/gemma-2b-it",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

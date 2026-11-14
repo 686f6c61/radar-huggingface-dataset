@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "janmusic/ncm-sudoku-mlx",
   "slug": "janmusic-ncm-sudoku-mlx",
   "author": "janmusic",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 485445085,
   "storage_human": "485 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "janmusic/NCM-Sudoku-25M-Upstream-MLX",
+  "renamed_at": "2026-11-11T05:45:10.799Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arrochi112/onebee-gf-dpo-v1-scale-gguf",
   "slug": "arrochi112-onebee-gf-dpo-v1-scale-gguf",
   "author": "arrochi112",
@@ -33,14 +33,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 71809959072,
   "storage_human": "71.8 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "arjhinety/onebee-gf-dpo-v1-scale-gguf",
+  "renamed_at": "2026-11-11T04:33:15.111Z",
   "benchmarks": [],
   "sources": []
 }

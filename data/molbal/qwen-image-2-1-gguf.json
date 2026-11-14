@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "molbal/Qwen-Image-2.1-GGUF",
   "slug": "molbal-qwen-image-2-1-gguf",
   "author": "molbal",
@@ -32,6 +32,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 19141492800,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

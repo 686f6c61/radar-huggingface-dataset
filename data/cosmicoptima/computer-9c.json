@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cosmicoptima/computer-9c",
   "slug": "cosmicoptima-computer-9c",
   "author": "cosmicoptima",
@@ -31,14 +31,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141124707720,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "cosmicoptima/computer-7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

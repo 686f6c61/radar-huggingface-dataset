@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leslie721007/Qiushi-BabyLM-34M-Strict-Small-v2",
   "slug": "leslie721007-qiushi-babylm-34m-strict-small-v2",
   "author": "leslie721007",
@@ -35,14 +35,19 @@
   "parameters_human": "34.5M",
   "storage_bytes": 137890400,
   "storage_human": "138 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

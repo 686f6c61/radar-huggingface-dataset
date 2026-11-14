@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Qwen2.5-0.5B-Instruct-Autoround-a16w4",
   "slug": "florianvoss-qwen2-5-0-5b-instruct-autoround-a16w4",
   "author": "florianvoss",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 789763276,
   "storage_human": "790 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:46:48.712Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

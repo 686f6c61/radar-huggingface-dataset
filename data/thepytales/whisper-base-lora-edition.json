@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thepytales/whisper-base-lora-edition",
   "slug": "thepytales-whisper-base-lora-edition",
   "author": "thepytales",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 159792560,
   "storage_human": "160 MB",
+  "context_length": null,
   "base_model": "openai/whisper-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

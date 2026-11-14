@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sandrogomes42/tucano2-0.5b-instruct-gguf",
   "slug": "sandrogomes42-tucano2-0-5b-instruct-gguf",
   "author": "sandrogomes42",
@@ -35,14 +35,19 @@
   "parameters_human": "490.8M",
   "storage_bytes": 305603296,
   "storage_human": "306 MB",
+  "context_length": 4096,
   "base_model": "Polygl0t/Tucano2-qwen-0.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZhuYuhan/VideoJev-0.8B",
   "slug": "zhuyuhan-videojev-0-8b",
   "author": "ZhuYuhan",
@@ -34,14 +34,19 @@
   "parameters_human": "843.0M",
   "storage_bytes": 5080360143,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

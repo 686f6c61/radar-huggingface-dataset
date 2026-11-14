@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-W4A16",
   "slug": "istrosec-thinkingcap-nemotron-3-5-lightning-30b-a3b-abliterated-w4a16",
   "author": "IstroSec",
@@ -47,14 +47,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 20513964156,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

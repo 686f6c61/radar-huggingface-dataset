@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiniMax-H3-Image-PE-GGUF",
   "slug": "mradermacher-minimax-h3-image-pe-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 187906115904,
   "storage_human": "187.9 GB",
+  "context_length": 262144,
   "base_model": "MiniMaxAI/MiniMax-H3-Image-PE",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

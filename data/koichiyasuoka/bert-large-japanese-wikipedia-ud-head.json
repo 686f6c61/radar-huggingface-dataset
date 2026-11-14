@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KoichiYasuoka/bert-large-japanese-wikipedia-ud-head",
   "slug": "koichiyasuoka-bert-large-japanese-wikipedia-ud-head",
   "author": "KoichiYasuoka",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 4949301723,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "KoichiYasuoka/bert-large-japanese-char-extended",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/FishAudio-Drama3-TTS-83Lang-Qwen3.5-35B-A3B-FP8-BF16-GGUF",
   "slug": "amaimedia-fishaudio-drama3-tts-83lang-qwen3-5-35b-a3b-fp8-bf16-gguf",
   "author": "AMAImedia",
@@ -201,6 +201,7 @@
   "parameters_human": "35.90B",
   "storage_bytes": 65132598818,
   "storage_human": "65.1 GB",
+  "context_length": null,
   "base_model": "fishaudio/drama-3",
   "formats": [
     "gguf",
@@ -208,8 +209,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

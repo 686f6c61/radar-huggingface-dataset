@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Orion-v1-8B-GGUF",
   "slug": "mradermacher-orion-v1-8b-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 73425337984,
   "storage_human": "73.4 GB",
+  "context_length": 40960,
   "base_model": "EymenAydogan/Orion-v1-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

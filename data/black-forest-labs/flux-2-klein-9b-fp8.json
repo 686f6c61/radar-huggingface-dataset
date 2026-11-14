@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "black-forest-labs/FLUX.2-klein-9b-fp8",
   "slug": "black-forest-labs-flux-2-klein-9b-fp8",
   "author": "black-forest-labs",
@@ -22,21 +22,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 981,
+  "likes": 982,
   "downloads_30d": 45724,
-  "trending_score": 17,
+  "trending_score": 18,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 9441810363,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

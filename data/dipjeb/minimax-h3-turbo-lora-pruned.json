@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dipjeb/MiniMax-H3-Turbo-LoRA-Pruned",
   "slug": "dipjeb-minimax-h3-turbo-lora-pruned",
   "author": "dipjeb",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 794858840,
   "storage_human": "795 MB",
+  "context_length": null,
   "base_model": "larryvrh/MiniMax-H3-Turbo-Lora",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

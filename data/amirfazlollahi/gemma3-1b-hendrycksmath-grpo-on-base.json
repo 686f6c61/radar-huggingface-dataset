@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base",
   "slug": "amirfazlollahi-gemma3-1b-hendrycksmath-grpo-on-base",
   "author": "AmirFazlollahi",
@@ -35,14 +35,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 2037884849,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "AmirFazlollahi/Gemma3-1B-HendrycksMATH-GRPO-on-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

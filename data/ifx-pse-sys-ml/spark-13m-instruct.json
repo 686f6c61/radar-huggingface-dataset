@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ifx-pse-sys-ml/spark-13m-instruct",
   "slug": "ifx-pse-sys-ml-spark-13m-instruct",
   "author": "ifx-pse-sys-ml",
@@ -34,14 +34,19 @@
   "parameters_human": "13.2M",
   "storage_bytes": 137229014,
   "storage_human": "137 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

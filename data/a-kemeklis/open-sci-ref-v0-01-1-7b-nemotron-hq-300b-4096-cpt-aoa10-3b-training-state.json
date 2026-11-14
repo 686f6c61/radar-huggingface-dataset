@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "a-kemeklis/open-sci-ref-v0.01-1.7b-nemotron-hq-300B-4096-cpt-aoa10-3B-training-state",
   "slug": "a-kemeklis-open-sci-ref-v0-01-1-7b-nemotron-hq-300b-4096-cpt-aoa10-3b-training-state",
   "author": "a-kemeklis",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 20573167563,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "a-kemeklis/open-sci-ref-v0.01-1.7b-nemotron-hq-300B-4096-cpt-aoa10-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

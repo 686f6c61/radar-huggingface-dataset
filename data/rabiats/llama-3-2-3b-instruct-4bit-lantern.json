@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RabiatS/Llama-3.2-3B-Instruct-4bit-Lantern",
   "slug": "rabiats-llama-3-2-3b-instruct-4bit-lantern",
   "author": "RabiatS",
@@ -35,6 +35,7 @@
   "parameters_human": "3.21B",
   "storage_bytes": 1824706198,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tuanhdev/vidroidcall-qwen3-0.6B-nlu-gguf-v6",
   "slug": "tuanhdev-vidroidcall-qwen3-0-6b-nlu-gguf-v6",
   "author": "tuanhdev",
@@ -30,14 +30,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 793409280,
   "storage_human": "793 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

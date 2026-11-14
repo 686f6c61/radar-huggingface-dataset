@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-Qwen3.8-Flash-Next-NVFP4",
   "slug": "defnoteatin-pseudobrain-qwen3-8-flash-next-nvfp4",
   "author": "defnoteatin",
@@ -42,14 +42,19 @@
   "parameters_human": "66.52B",
   "storage_bytes": 106387368312,
   "storage_human": "106.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-NVFP4-QAD, cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4, Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

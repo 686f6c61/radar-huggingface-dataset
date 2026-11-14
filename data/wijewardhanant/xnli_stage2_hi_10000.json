@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WijewardhanaNT/xnli_stage2_hi_10000",
   "slug": "wijewardhanant-xnli_stage2_hi_10000",
   "author": "WijewardhanaNT",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 480634803,
   "storage_human": "481 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

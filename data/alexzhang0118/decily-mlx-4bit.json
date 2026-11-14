@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexzhang0118/Decily-MLX-4bit",
   "slug": "alexzhang0118-decily-mlx-4bit",
   "author": "alexzhang0118",
@@ -37,6 +37,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1014708108,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

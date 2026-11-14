@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r3lax/Qwen3-VL-Embedding-2B-NVFP4",
   "slug": "r3lax-qwen3-vl-embedding-2b-nvfp4",
   "author": "r3lax",
@@ -25,14 +25,19 @@
   "parameters_human": "2.44B",
   "storage_bytes": 2284346721,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

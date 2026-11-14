@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Ornith-1.5-9B",
   "slug": "litert-community-ornith-1-5-9b",
   "author": "litert-community",
@@ -28,18 +28,23 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 335,
+  "downloads_30d": 364,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 30522525984,
   "storage_human": "30.5 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

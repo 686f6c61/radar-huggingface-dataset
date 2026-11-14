@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r0b0tlab/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-EXL3-6bpw",
   "slug": "r0b0tlab-nvidia-nemotron-3-5-bolt-74b-a9b-lilicorr-exl3-6bpw",
   "author": "r0b0tlab",
@@ -34,14 +34,19 @@
   "parameters_human": "563.9M",
   "storage_bytes": 1127857560,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

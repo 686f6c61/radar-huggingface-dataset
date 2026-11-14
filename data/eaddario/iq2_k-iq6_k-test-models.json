@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eaddario/IQ2_K-IQ6_K-Test-Models",
   "slug": "eaddario-iq2_k-iq6_k-test-models",
   "author": "eaddario",
@@ -32,14 +32,19 @@
   "parameters_human": "9.00B",
   "storage_bytes": 330616433240,
   "storage_human": "330.6 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-7B, LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "eaddario/JQ2_K-JQ6_K-Test-Models",
+  "renamed_at": "2026-11-11T05:07:54.913Z",
   "benchmarks": [],
   "sources": []
 }

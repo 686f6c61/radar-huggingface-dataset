@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mphd1/pythia6.9b-pqa",
   "slug": "mphd1-pythia6-9b-pqa",
   "author": "mphd1",
@@ -31,14 +31,19 @@
   "parameters_human": "6.86B",
   "storage_bytes": 27429259472,
   "storage_human": "27.4 GB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-6.9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mphd1/pythia6.9b-pqa-private",
+  "renamed_at": "2026-11-11T06:25:58.785Z",
   "benchmarks": [],
   "sources": []
 }

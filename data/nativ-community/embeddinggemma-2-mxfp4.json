@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/embeddinggemma-2-mxfp4",
   "slug": "nativ-community-embeddinggemma-2-mxfp4",
   "author": "nativ-community",
@@ -39,6 +39,7 @@
   "parameters_human": "744.4M",
   "storage_bytes": 1122033950,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

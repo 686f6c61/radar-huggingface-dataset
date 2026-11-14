@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soulfate24/Ornith-1.5-9B-MTP-Paretrix",
   "slug": "soulfate24-ornith-1-5-9b-mtp-paretrix",
   "author": "Soulfate24",
@@ -37,14 +37,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 49471672928,
   "storage_human": "49.5 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T02:26:05.265Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

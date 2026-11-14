@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manaladan6/cogvlm2-llama3-chat-19B",
   "slug": "manaladan6-cogvlm2-llama3-chat-19b",
   "author": "manaladan6",
@@ -33,14 +33,19 @@
   "parameters_human": "19.50B",
   "storage_bytes": 39006373728,
   "storage_human": "39.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

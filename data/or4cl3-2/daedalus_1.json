@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Or4cl3-2/Daedalus_1",
   "slug": "or4cl3-2-daedalus_1",
   "author": "Or4cl3-2",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Or4cl3-1/code-slerp, Or4cl3-1/SAM-Gemini-BLOOM-OPT-Gopher-Megatron-slerp",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

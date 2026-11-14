@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended-litert-lm",
   "slug": "ugrowai-functiongemma-270m-it-mobile-actions-extended-litert-lm",
   "author": "UGrowAI",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 323634926,
   "storage_human": "324 MB",
+  "context_length": null,
   "base_model": "google/functiongemma-270m-it-270M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

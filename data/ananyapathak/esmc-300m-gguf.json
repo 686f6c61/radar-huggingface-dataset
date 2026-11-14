@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnanyaPathak/esmc-300m-gguf",
   "slug": "ananyapathak-esmc-300m-gguf",
   "author": "AnanyaPathak",
@@ -35,14 +35,19 @@
   "parameters_human": "332.0M",
   "storage_bytes": 6332300736,
   "storage_human": "6.3 GB",
+  "context_length": 2048,
   "base_model": "EvolutionaryScale/esmc-300m-2024-12",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Launch80/Qwen3.8-27B-GPTQ-Int4-baked",
   "slug": "launch80-qwen3-8-27b-gptq-int4-baked",
   "author": "Launch80",
@@ -34,14 +34,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 17068719973,
   "storage_human": "17.1 GB",
+  "context_length": null,
   "base_model": "SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

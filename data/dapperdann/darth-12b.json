@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DapperDann/DARTH-12B",
   "slug": "dapperdann-darth-12b",
   "author": "DapperDann",
@@ -34,6 +34,7 @@
   "parameters_human": "12.25B",
   "storage_bytes": 31111202431,
   "storage_human": "31.1 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T02:48:38.415Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

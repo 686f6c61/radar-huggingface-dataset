@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "david-thrower/HelixLM-53.9M-20261113-1532-d512-h8-nl3-s2048-3.0BT-ep1",
   "slug": "david-thrower-helixlm-53-9m-20261113-1532-d512-h8-nl3-s2048-3-0bt-ep1",
   "author": "david-thrower",
@@ -27,14 +27,19 @@
   "parameters_human": "53.9M",
   "storage_bytes": 215451808,
   "storage_human": "215 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF",
   "slug": "luffythefox-qwen3-6-35b-a3b-uncensored-genesis-final-gguf",
   "author": "LuffyTheFox",
@@ -42,14 +42,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 61046478080,
   "storage_human": "61.0 GB",
+  "context_length": 262144,
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T14:32:23.310Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

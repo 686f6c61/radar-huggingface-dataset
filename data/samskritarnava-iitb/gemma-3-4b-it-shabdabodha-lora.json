@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samskritarnava-iitb/gemma-3-4b-it-shabdabodha-lora",
   "slug": "samskritarnava-iitb-gemma-3-4b-it-shabdabodha-lora",
   "author": "samskritarnava-iitb",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 28076958,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": "mlx-community/gemma-3-4b-it-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1",
   "slug": "archspace-collection-ncp_archpreview_dolma3_8-9b_stage2_v1",
   "author": "ArchSpace-Collection",
@@ -38,14 +38,19 @@
   "parameters_human": "8.94B",
   "storage_bytes": 17876828154,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

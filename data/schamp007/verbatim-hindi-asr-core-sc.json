@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schamp007/verbatim-hindi-asr-core-sc",
   "slug": "schamp007-verbatim-hindi-asr-core-sc",
   "author": "schamp007",
@@ -84,14 +84,19 @@
   "parameters_human": null,
   "storage_bytes": 1569693032,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "bodhan-ai/indic-transcribe-core",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

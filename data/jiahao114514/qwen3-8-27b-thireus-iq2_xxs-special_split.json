@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiahao114514/Qwen3.8-27B-THIREUS-IQ2_XXS-SPECIAL_SPLIT",
   "slug": "jiahao114514-qwen3-8-27b-thireus-iq2_xxs-special_split",
   "author": "jiahao114514",
@@ -27,14 +27,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 6955127008,
   "storage_human": "7.0 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

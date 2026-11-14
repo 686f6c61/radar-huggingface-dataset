@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YMQY-MY/dsh-qingsheng-voice-models",
   "slug": "ymqy-my-dsh-qingsheng-voice-models",
   "author": "YMQY-MY",
@@ -30,14 +30,19 @@
   "parameters_human": "3.01B",
   "storage_bytes": 5748128064,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

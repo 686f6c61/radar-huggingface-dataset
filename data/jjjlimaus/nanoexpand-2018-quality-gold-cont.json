@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/nanoexpand-2018-quality-gold-cont",
   "slug": "jjjlimaus-nanoexpand-2018-quality-gold-cont",
   "author": "jjjlimaus",
@@ -27,14 +27,19 @@
   "parameters_human": "2.10B",
   "storage_bytes": 259853600200,
   "storage_human": "259.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T07:50:31.030Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

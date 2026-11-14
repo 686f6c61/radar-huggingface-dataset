@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spybyscript/scyllasbandv2",
   "slug": "spybyscript-scyllasbandv2",
   "author": "spybyscript",
@@ -47,14 +47,19 @@
   "parameters_human": null,
   "storage_bytes": 19605073339,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "spybyscript/scyllasband",
+  "renamed_at": "2026-11-11T07:35:50.234Z",
   "benchmarks": [],
   "sources": [
     {

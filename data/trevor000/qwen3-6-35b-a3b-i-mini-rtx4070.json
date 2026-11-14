@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trevor000/Qwen3.6-35B-A3B-I-Mini-RTX4070",
   "slug": "trevor000-qwen3-6-35b-a3b-i-mini-rtx4070",
   "author": "trevor000",
@@ -33,14 +33,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 14272221568,
   "storage_human": "14.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

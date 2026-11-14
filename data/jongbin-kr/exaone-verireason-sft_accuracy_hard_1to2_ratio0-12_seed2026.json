@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed2026",
   "slug": "jongbin-kr-exaone-verireason-sft_accuracy_hard_1to2_ratio0-12_seed2026",
   "author": "Jongbin-kr",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1006819608,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

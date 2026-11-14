@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castanetnicolas/smolvla_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_ID_148308",
   "slug": "castanetnicolas-smolvla_ur5e_bs_64_act_chunk_10_exec_10_task_nut_assembly_square_id_148308",
   "author": "castanetnicolas",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906721912,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikext/knight-school-qwen3.5-2b-primer-m",
   "slug": "nikext-knight-school-qwen3-5-2b-primer-m",
   "author": "nikext",
@@ -42,14 +42,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4439366846,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

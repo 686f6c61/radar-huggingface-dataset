@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arabic-STT/qwen3-asr-1.7b-ar-task06-grpo2",
   "slug": "arabic-stt-qwen3-asr-1-7b-ar-task06-grpo2",
   "author": "Arabic-STT",
@@ -37,14 +37,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4087622900,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Arabic-STT/qwen3-asr-1.7b-ar-best-task06",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

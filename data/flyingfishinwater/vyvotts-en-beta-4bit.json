@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/VyvoTTS-EN-Beta-4bit",
   "slug": "flyingfishinwater-vyvotts-en-beta-4bit",
   "author": "flyingfishinwater",
@@ -32,6 +32,7 @@
   "parameters_human": "1.78B",
   "storage_bytes": 1017877544,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:26.473Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

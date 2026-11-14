@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DITlieD/twil-a50-weight-surgeon",
   "slug": "ditlied-twil-a50-weight-surgeon",
   "author": "DITlieD",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 395918697,
   "storage_human": "396 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-3.0-8b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

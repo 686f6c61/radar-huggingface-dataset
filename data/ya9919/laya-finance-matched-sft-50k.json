@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ya9919/laya-finance-matched-sft-50k",
   "slug": "ya9919-laya-finance-matched-sft-50k",
   "author": "ya9919",
@@ -32,14 +32,19 @@
   "parameters_human": "421.3M",
   "storage_bytes": 842609220,
   "storage_human": "843 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ya9919/sharp-421m-sft-50k",
+  "renamed_at": "2026-11-11T08:08:45.489Z",
   "benchmarks": [],
   "sources": []
 }

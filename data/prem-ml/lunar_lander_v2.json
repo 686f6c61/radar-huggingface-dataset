@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prem-ml/lunar_lander_v2",
   "slug": "prem-ml-lunar_lander_v2",
   "author": "prem-ml",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 443458,
   "storage_human": "443458 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T17:52:04.726Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

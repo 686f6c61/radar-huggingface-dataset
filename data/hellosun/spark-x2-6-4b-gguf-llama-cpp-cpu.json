@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HelloSun/Spark-x2.6-4b-gguf-llama.cpp-cpu",
   "slug": "hellosun-spark-x2-6-4b-gguf-llama-cpp-cpu",
   "author": "HelloSun",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

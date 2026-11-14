@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ilya626/Qwen3.8-27B-SDFT-heretic",
   "slug": "ilya626-qwen3-8-27b-sdft-heretic",
   "author": "Ilya626",
@@ -28,14 +28,19 @@
   "parameters_human": "29.2M",
   "storage_bytes": 116864448,
   "storage_human": "117 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T06:56:06.632Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

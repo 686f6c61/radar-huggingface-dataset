@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4",
   "slug": "davidau-openai-gpt-oss-20b-gpt5-1-5-2-distill-heretic-uncensored-mxfp4",
   "author": "DavidAU",
@@ -40,14 +40,19 @@
   "parameters_human": "1.80B",
   "storage_bytes": 13789185950,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

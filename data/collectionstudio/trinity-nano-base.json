@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Trinity-Nano-Base",
   "slug": "collectionstudio-trinity-nano-base",
   "author": "CollectionStudio",
@@ -54,14 +54,19 @@
   "parameters_human": "6.12B",
   "storage_bytes": 12257281561,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "arcee-ai/Trinity-Nano-Base-Pre-Anneal",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

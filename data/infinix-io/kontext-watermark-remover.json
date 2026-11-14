@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/Kontext-Watermark-Remover",
   "slug": "infinix-io-kontext-watermark-remover",
   "author": "Infinix-io",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 613632018,
   "storage_human": "614 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-Kontext-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

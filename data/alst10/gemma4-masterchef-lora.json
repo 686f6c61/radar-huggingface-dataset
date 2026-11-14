@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/gemma4-masterchef-lora",
   "slug": "alst10-gemma4-masterchef-lora",
   "author": "alst10",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 151964368,
   "storage_human": "152 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

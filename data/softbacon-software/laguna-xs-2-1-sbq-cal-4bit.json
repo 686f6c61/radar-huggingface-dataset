@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SoftBacon-Software/Laguna-XS-2.1-sbQ-cal-4bit",
   "slug": "softbacon-software-laguna-xs-2-1-sbq-cal-4bit",
   "author": "SoftBacon-Software",
@@ -36,6 +36,7 @@
   "parameters_human": "33.44B",
   "storage_bytes": 19477837474,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "poolside/Laguna-XS-2.1",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

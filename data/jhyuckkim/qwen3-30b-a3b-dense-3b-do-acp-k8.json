@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jhyuckkim/Qwen3-30B-A3B-Dense-3B-DO-ACP-K8",
   "slug": "jhyuckkim-qwen3-30b-a3b-dense-3b-do-acp-k8",
   "author": "jhyuckkim",
@@ -36,14 +36,19 @@
   "parameters_human": "3.34B",
   "storage_bytes": 6692383302,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

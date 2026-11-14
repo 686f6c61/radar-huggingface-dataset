@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "woshi11/Hojo-TTS-Light-40M",
   "slug": "woshi11-hojo-tts-light-40m",
   "author": "woshi11",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 249656350,
   "storage_human": "250 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

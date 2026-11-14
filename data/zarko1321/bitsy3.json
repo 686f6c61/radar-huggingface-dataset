@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zarko1321/bitsy3",
   "slug": "zarko1321-bitsy3",
   "author": "zarko1321",
@@ -34,14 +34,19 @@
   "parameters_human": "998.9M",
   "storage_bytes": 1997725976,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "zarko1321/bitsy2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/vwam-oa-pflow-humvid-agv-50k-g4-bg-1103-v2-inference-20261104",
   "slug": "junbrro-vwam-oa-pflow-humvid-agv-50k-g4-bg-1103-v2-inference-20261104",
   "author": "junbrro",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 32026853249,
   "storage_human": "32.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

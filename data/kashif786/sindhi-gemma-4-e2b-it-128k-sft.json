@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kashif786/sindhi-gemma-4-E2B-it-128k-sft",
   "slug": "kashif786-sindhi-gemma-4-e2b-it-128k-sft",
   "author": "Kashif786",
@@ -49,14 +49,19 @@
   "parameters_human": "3.25B",
   "storage_bytes": 6521560581,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "Kashif786/gemma-4-E2B-it-text-only-128k-pruned",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

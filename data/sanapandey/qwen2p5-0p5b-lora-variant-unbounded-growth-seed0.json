@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanapandey/qwen2p5-0p5b-lora-variant-unbounded-growth-seed0",
   "slug": "sanapandey-qwen2p5-0p5b-lora-variant-unbounded-growth-seed0",
   "author": "sanapandey",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 118010364,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

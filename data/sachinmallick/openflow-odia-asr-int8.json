@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sachinmallick/openflow-odia-asr-int8",
   "slug": "sachinmallick-openflow-odia-asr-int8",
   "author": "sachinmallick",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 209723752,
   "storage_human": "210 MB",
+  "context_length": null,
   "base_model": "ai4bharat/indicconformer_stt_or_hybrid_ctc_rnnt_large",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

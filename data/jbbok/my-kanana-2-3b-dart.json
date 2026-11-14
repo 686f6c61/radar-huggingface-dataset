@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jbbok/my-kanana-2-3b-dart",
   "slug": "jbbok-my-kanana-2-3b-dart",
   "author": "Jbbok",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 54058928,
   "storage_human": "54 MB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-2-3b-embedding",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

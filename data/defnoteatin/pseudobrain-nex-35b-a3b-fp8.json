@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-Nex-35B-A3B-FP8",
   "slug": "defnoteatin-pseudobrain-nex-35b-a3b-fp8",
   "author": "defnoteatin",
@@ -40,14 +40,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 37304340135,
   "storage_human": "37.3 GB",
+  "context_length": null,
   "base_model": "nex-agi/Nex-N2.5-mini, cbert33/Nex-N2.5-mini-FP8-Calibrated, Arahide/Nex-N2.5-mini-INT4-W4A16, huihui-ai/Huihui-Qwen3.5-35B-A3B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

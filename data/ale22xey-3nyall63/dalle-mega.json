@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ale22xey-3nyaLL63/dalle-mega",
   "slug": "ale22xey-3nyall63-dalle-mega",
   "author": "Ale22xey-3nyaLL63",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 10384282103,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

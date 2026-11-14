@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h143N/birefnet-lite-512-q8",
   "slug": "h143n-birefnet-lite-512-q8",
   "author": "h143N",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 63834401,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T04:22:03.620Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

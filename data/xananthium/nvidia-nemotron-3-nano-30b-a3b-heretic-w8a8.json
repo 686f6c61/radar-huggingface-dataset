@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xananthium/NVIDIA-Nemotron-3-Nano-30B-A3B-Heretic-W8A8",
   "slug": "xananthium-nvidia-nemotron-3-nano-30b-a3b-heretic-w8a8",
   "author": "Xananthium",
@@ -30,14 +30,19 @@
   "parameters_human": "31.59B",
   "storage_bytes": 32353648164,
   "storage_human": "32.4 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

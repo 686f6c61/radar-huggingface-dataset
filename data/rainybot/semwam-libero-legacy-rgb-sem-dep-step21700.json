@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RainyBot/SemWAM-LIBERO-Legacy-rgb-sem-dep-step21700",
   "slug": "rainybot-semwam-libero-legacy-rgb-sem-dep-step21700",
   "author": "RainyBot",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 12079516025,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T03:35:31.741Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

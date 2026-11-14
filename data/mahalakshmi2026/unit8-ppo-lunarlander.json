@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MahaLakshmi2026/unit8-ppo-lunarlander",
   "slug": "mahalakshmi2026-unit8-ppo-lunarlander",
   "author": "MahaLakshmi2026",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 44293,
   "storage_human": "44293 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

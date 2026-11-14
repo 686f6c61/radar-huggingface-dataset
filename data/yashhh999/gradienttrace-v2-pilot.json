@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yashhh999/gradientTrace-v2-pilot",
   "slug": "yashhh999-gradienttrace-v2-pilot",
   "author": "Yashhh999",
@@ -32,14 +32,19 @@
   "parameters_human": "434.0M",
   "storage_bytes": 152784947839,
   "storage_human": "152.8 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

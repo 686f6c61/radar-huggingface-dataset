@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zero1101001/wan22-fp8-t2v-loras-nsfw",
   "slug": "zero1101001-wan22-fp8-t2v-loras-nsfw",
   "author": "zero1101001",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 2761114016,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

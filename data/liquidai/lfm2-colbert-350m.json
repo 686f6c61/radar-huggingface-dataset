@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM2-ColBERT-350M",
   "slug": "liquidai-lfm2-colbert-350m",
   "author": "LiquidAI",
@@ -51,14 +51,19 @@
   "parameters_human": "353.3M",
   "storage_bytes": 1413830976,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Py Late Information Retrieval",

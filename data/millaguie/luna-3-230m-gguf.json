@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "millaguie/Luna-3-230m-GGUF",
   "slug": "millaguie-luna-3-230m-gguf",
   "author": "millaguie",
@@ -30,14 +30,19 @@
   "parameters_human": "228.8M",
   "storage_bytes": 864005920,
   "storage_human": "864 MB",
+  "context_length": 8126,
   "base_model": "Aobangaming/Luna-3-230m",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

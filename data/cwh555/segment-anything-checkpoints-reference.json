@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cwh555/Segment-Anything-Checkpoints-Reference",
   "slug": "cwh555-segment-anything-checkpoints-reference",
   "author": "cwh555",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 7850928016,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

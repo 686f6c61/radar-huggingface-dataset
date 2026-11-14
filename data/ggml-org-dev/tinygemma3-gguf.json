@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org-dev/tinygemma3-GGUF",
   "slug": "ggml-org-dev-tinygemma3-gguf",
   "author": "ggml-org-dev",
@@ -27,14 +27,19 @@
   "parameters_human": "38.3M",
   "storage_bytes": 48266624,
   "storage_human": "48 MB",
+  "context_length": 131072,
   "base_model": "ngxson/tinygemma3_cifar",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

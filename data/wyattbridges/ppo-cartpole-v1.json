@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WyattBridges/ppo-CartPole-v1",
   "slug": "wyattbridges-ppo-cartpole-v1",
   "author": "WyattBridges",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 496855,
   "storage_human": "496855 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:25:23.642Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

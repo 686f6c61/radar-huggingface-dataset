@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nosuke113/parc2026-policy",
   "slug": "nosuke113-parc2026-policy",
   "author": "nosuke113",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1094042502640,
   "storage_human": "1094.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nosuke113/pi0.5-libero-plus-lora",
+  "renamed_at": "2026-11-11T06:56:58.726Z",
   "benchmarks": [],
   "sources": [
     {

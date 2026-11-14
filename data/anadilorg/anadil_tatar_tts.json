@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anadilorg/Anadil_Tatar_TTS",
   "slug": "anadilorg-anadil_tatar_tts",
   "author": "Anadilorg",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 88358458,
   "storage_human": "88 MB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

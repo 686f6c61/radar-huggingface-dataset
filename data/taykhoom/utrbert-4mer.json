@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taykhoom/UTRBERT-4mer",
   "slug": "taykhoom-utrbert-4mer",
   "author": "Taykhoom",
@@ -32,14 +32,19 @@
   "parameters_human": "87.0M",
   "storage_bytes": 348162252,
   "storage_human": "348 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

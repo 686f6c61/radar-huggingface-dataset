@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wesjos/mario-html-v2-9B-GGUF",
   "slug": "wesjos-mario-html-v2-9b-gguf",
   "author": "wesjos",
@@ -43,14 +43,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 21226383152,
   "storage_human": "21.2 GB",
+  "context_length": 262144,
   "base_model": "wesjos/Qwen3.5-9B-HTML-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "wesjos/Qwen3.5-9B-HTML-v2-GGUF",
+  "renamed_at": "2026-11-11T08:04:33.286Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeonaQuantum/leona-qompact-1.0",
   "slug": "leonaquantum-leona-qompact-1-0",
   "author": "LeonaQuantum",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2355765088,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LeonaQuantum/leona-qasm-1.0-beta",
+  "renamed_at": "2026-11-11T03:11:42.521Z",
   "benchmarks": [],
   "sources": []
 }

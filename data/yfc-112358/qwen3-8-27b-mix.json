@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YFC-112358/Qwen3.8-27B-Mix",
   "slug": "yfc-112358-qwen3-8-27b-mix",
   "author": "YFC-112358",
@@ -25,14 +25,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582998717,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "YFC-112358/Qwen3.8-27B-pi-AuxMix-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vosldtgbj/project-llm-sft-v3-f3-h1p0-seed20261006",
   "slug": "vosldtgbj-project-llm-sft-v3-f3-h1p0-seed20261006",
   "author": "vosldtgbj",
@@ -39,14 +39,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951718050,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "vosldtgbj/project-llm-cpt-1p0-top10-01-full-02",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

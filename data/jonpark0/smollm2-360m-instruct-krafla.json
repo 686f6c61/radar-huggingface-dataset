@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jonpark0/SmolLM2-360M-Instruct-krafla",
   "slug": "jonpark0-smollm2-360m-instruct-krafla",
   "author": "jonpark0",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 1381619359,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

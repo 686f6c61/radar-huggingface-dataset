@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ITLL/Mythos-5-Abliterated-9B-GGUF",
   "slug": "itll-mythos-5-abliterated-9b-gguf",
   "author": "ITLL",
@@ -29,14 +29,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 49096625664,
   "storage_human": "49.1 GB",
+  "context_length": 1048576,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T03:15:01.014Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

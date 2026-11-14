@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Artemis-31B-v1h-GGUF-GGUF",
   "slug": "mradermacher-artemis-31b-v1h-gguf-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 211900074752,
   "storage_human": "211.9 GB",
+  "context_length": 262144,
   "base_model": "TheDrummer/Artemis-31B-v1-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

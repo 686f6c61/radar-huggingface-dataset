@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ItsnotAilabs/GHOST-2.7B",
   "slug": "itsnotailabs-ghost-2-7b",
   "author": "ItsnotAilabs",
@@ -40,14 +40,19 @@
   "parameters_human": "153.4M",
   "storage_bytes": 4773036204,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "microsoft/phi-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

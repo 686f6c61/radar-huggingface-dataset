@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eebyp/BypBERT-tiny-zh-v1",
   "slug": "eebyp-bypbert-tiny-zh-v1",
   "author": "eebyp",
@@ -37,14 +37,19 @@
   "parameters_human": "8.7M",
   "storage_bytes": 34764608,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "bert-base-chinese",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

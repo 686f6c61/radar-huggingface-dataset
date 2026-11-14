@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bbkblo/chatterbox-hi-q8-q4-mnn",
   "slug": "bbkblo-chatterbox-hi-q8-q4-mnn",
   "author": "Bbkblo",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1879674868,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

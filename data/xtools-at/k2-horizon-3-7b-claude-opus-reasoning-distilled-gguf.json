@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/K2-Horizon-3.7B-Claude-Opus-Reasoning-Distilled-GGUF",
   "slug": "xtools-at-k2-horizon-3-7b-claude-opus-reasoning-distilled-gguf",
   "author": "xtools-at",
@@ -44,14 +44,19 @@
   "parameters_human": "5.06B",
   "storage_bytes": 15474978048,
   "storage_human": "15.5 GB",
+  "context_length": 524288,
   "base_model": "xtools-at/K2-Horizon-3.7B-Claude-Opus-Reasoning-Distilled",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

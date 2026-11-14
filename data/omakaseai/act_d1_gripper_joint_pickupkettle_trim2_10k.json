@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OmakaseAI/act_d1_gripper_joint_pickupkettle_trim2_10k",
   "slug": "omakaseai-act_d1_gripper_joint_pickupkettle_trim2_10k",
   "author": "OmakaseAI",
@@ -28,14 +28,19 @@
   "parameters_human": "74.0M",
   "storage_bytes": 296015800,
   "storage_human": "296 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:29:55.061Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

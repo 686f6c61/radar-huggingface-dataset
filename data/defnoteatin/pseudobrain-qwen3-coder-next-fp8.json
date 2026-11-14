@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-Qwen3-Coder-Next-FP8",
   "slug": "defnoteatin-pseudobrain-qwen3-coder-next-fp8",
   "author": "defnoteatin",
@@ -40,14 +40,19 @@
   "parameters_human": "80.08B",
   "storage_bytes": 81204587805,
   "storage_human": "81.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-Next, Qwen/Qwen3-Coder-Next-FP8, qtum/Qwen3-Coder-Next-AWQ, RedHatAI/Qwen3-Coder-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

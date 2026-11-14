@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucien-shark/Linny-TokenBased-Gen2.2-Phase2",
   "slug": "lucien-shark-linny-tokenbased-gen2-2-phase2",
   "author": "Lucien-shark",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 133473554348,
   "storage_human": "133.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T02:57:02.154Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

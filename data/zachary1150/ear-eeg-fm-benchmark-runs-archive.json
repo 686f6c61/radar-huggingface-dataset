@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zachary1150/ear-eeg-fm-benchmark-runs-archive",
   "slug": "zachary1150-ear-eeg-fm-benchmark-runs-archive",
   "author": "Zachary1150",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 392054242010,
   "storage_human": "392.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Reis12/kuia-r1-v12i-merged",
   "slug": "reis12-kuia-r1-v12i-merged",
   "author": "Reis12",
@@ -36,14 +36,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47161927325,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aeddix-labs/aeddix-alpine-ocr",
   "slug": "aeddix-labs-aeddix-alpine-ocr",
   "author": "aeddix-labs",
@@ -51,14 +51,19 @@
   "parameters_human": "1.16B",
   "storage_bytes": 2323550353,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "opendatalab/MinerU2.5-Pro-2605-1.2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "experimentalmachines/Llama-3.2-1B-ExecuTorch",
   "slug": "experimentalmachines-llama-3-2-1b-executorch",
   "author": "experimentalmachines",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 4827127296,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T03:26:47.195Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

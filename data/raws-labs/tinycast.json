@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raws-labs/tinycast",
   "slug": "raws-labs-tinycast",
   "author": "raws-labs",
@@ -35,14 +35,19 @@
   "parameters_human": "146505",
   "storage_bytes": 709615,
   "storage_human": "709615 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coolthor/Laguna-S-2.1-attnQ8-DFlash-Q4-GGUF",
   "slug": "coolthor-laguna-s-2-1-attnq8-dflash-q4-gguf",
   "author": "coolthor",
@@ -39,14 +39,19 @@
   "parameters_human": "117.56B",
   "storage_bytes": 73197320960,
   "storage_human": "73.2 GB",
+  "context_length": 262144,
   "base_model": "poolside/Laguna-S-2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

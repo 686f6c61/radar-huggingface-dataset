@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Humpy035/qwen-chess-commentary-adapter",
   "slug": "humpy035-qwen-chess-commentary-adapter",
   "author": "Humpy035",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 251030661,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T07:55:42.203Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

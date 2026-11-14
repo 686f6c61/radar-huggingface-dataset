@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SEBK4C/Winnow-12B-LoRA",
   "slug": "sebk4c-winnow-12b-lora",
   "author": "SEBK4C",
@@ -36,6 +36,7 @@
   "parameters_human": "131.1M",
   "storage_bytes": 1258910208,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

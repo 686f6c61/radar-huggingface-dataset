@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbteeXAILab/lumynax-reasoning-internlm3-8b-gguf",
   "slug": "abteexailab-lumynax-reasoning-internlm3-8b-gguf",
   "author": "AbteeXAILab",
@@ -57,14 +57,19 @@
   "parameters_human": "8.80B",
   "storage_bytes": 5358624320,
   "storage_human": "5.4 GB",
+  "context_length": 32768,
   "base_model": "internlm/internlm3-8b-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

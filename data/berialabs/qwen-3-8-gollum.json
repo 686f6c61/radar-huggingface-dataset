@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BeriaLabs/Qwen-3.8-gollum",
   "slug": "berialabs-qwen-3-8-gollum",
   "author": "BeriaLabs",
@@ -35,14 +35,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 153464003810,
   "storage_human": "153.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

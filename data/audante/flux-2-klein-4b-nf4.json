@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audante/FLUX.2-klein-4B-nf4",
   "slug": "audante-flux-2-klein-4b-nf4",
   "author": "Audante",
@@ -29,6 +29,7 @@
   "parameters_human": "2.00B",
   "storage_bytes": 5181847023,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

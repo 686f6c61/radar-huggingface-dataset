@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mathano/medsiglip-448-rocov2-retrieval",
   "slug": "mathano-medsiglip-448-rocov2-retrieval",
   "author": "mathano",
@@ -24,14 +24,19 @@
   "parameters_human": "878.3M",
   "storage_bytes": 866069057608,
   "storage_human": "866.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

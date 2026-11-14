@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hardik-dwivedi/qwen2.5-1.5b-when2call-dpo",
   "slug": "hardik-dwivedi-qwen2-5-1-5b-when2call-dpo",
   "author": "hardik-dwivedi",
@@ -26,20 +26,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 159250021,
   "storage_human": "159 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

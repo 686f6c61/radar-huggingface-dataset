@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SebasKoedam/act_so101_training_1",
   "slug": "sebaskoedam-act_so101_training_1",
   "author": "SebasKoedam",
@@ -27,14 +27,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206712896,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:50:43.275Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

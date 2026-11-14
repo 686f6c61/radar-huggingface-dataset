@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakleash/Bielik-One-11B-v3.0-r1-Adapter",
   "slug": "speakleash-bielik-one-11b-v3-0-r1-adapter",
   "author": "speakleash",
@@ -98,14 +98,19 @@
   "parameters_human": null,
   "storage_bytes": 1057243920,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-11B-v3.0-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

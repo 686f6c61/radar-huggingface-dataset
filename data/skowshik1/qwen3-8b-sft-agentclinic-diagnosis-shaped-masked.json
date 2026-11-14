@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skowshik1/qwen3-8b-sft-agentclinic-diagnosis-shaped-masked",
   "slug": "skowshik1-qwen3-8b-sft-agentclinic-diagnosis-shaped-masked",
   "author": "skowshik1",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 186084027,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

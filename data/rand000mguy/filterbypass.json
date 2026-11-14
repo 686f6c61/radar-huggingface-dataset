@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rand000mGuy/filterbypass",
   "slug": "rand000mguy-filterbypass",
   "author": "Rand000mGuy",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 144132,
   "storage_human": "144132 B",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

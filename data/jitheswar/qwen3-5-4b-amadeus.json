@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jitheswar/Qwen3.5-4B-Amadeus",
   "slug": "jitheswar-qwen3-5-4b-amadeus",
   "author": "Jitheswar",
@@ -48,6 +48,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 40036547198,
   "storage_human": "40.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

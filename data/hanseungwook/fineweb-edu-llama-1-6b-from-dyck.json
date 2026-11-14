@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hanseungwook/fineweb-edu-llama-1.6b-from-dyck",
   "slug": "hanseungwook-fineweb-edu-llama-1-6b-from-dyck",
   "author": "hanseungwook",
@@ -33,14 +33,19 @@
   "parameters_human": "1.82B",
   "storage_bytes": 7266288168,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

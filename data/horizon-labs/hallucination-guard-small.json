@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Horizon-Labs/hallucination-guard-small",
   "slug": "horizon-labs-hallucination-guard-small",
   "author": "Horizon-Labs",
@@ -84,6 +84,7 @@
   "parameters_human": "140.6M",
   "storage_bytes": 1428457387,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -91,8 +92,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

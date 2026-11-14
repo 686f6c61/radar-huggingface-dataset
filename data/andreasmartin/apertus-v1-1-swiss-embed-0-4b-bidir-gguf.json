@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir-GGUF",
   "slug": "andreasmartin-apertus-v1-1-swiss-embed-0-4b-bidir-gguf",
   "author": "andreasmartin",
@@ -32,14 +32,19 @@
   "parameters_human": "572.6M",
   "storage_bytes": 624745248,
   "storage_human": "625 MB",
+  "context_length": 4096,
   "base_model": "andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Entrit/DeepSeek-V4-Flash-d2swap-mp2",
   "slug": "entrit-deepseek-v4-flash-d2swap-mp2",
   "author": "Entrit",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 163376217472,
   "storage_human": "163.4 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

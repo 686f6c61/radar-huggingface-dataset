@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rafmacalaba/gliner2_datause_extended_smoke",
   "slug": "rafmacalaba-gliner2_datause_extended_smoke",
   "author": "rafmacalaba",
@@ -28,14 +28,19 @@
   "parameters_human": "486.4M",
   "storage_bytes": 1945828140,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-16T09:13:40.235Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

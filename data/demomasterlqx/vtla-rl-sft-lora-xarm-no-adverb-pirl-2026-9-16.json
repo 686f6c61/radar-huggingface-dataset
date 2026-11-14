@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16",
   "slug": "demomasterlqx-vtla-rl-sft-lora-xarm-no-adverb-pirl-2026-9-16",
   "author": "Demomasterlqx",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 61227028315,
   "storage_human": "61.2 GB",
+  "context_length": null,
   "base_model": "Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

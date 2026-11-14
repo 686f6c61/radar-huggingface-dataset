@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trxcc2002/q35-sr-step24",
   "slug": "trxcc2002-q35-sr-step24",
   "author": "trxcc2002",
@@ -29,14 +29,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 20165153861,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

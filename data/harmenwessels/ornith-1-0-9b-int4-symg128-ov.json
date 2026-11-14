@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HarmenWessels/Ornith-1.0-9B-int4-symg128-ov",
   "slug": "harmenwessels-ornith-1-0-9b-int4-symg128-ov",
   "author": "HarmenWessels",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 6096000865,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.0-9B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

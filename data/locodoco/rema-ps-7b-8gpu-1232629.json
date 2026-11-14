@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "locodoco/rema-ps-7b-8gpu-1232629",
   "slug": "locodoco-rema-ps-7b-8gpu-1232629",
   "author": "locodoco",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 396023982112,
   "storage_human": "396.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

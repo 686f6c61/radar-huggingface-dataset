@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "efficiencyx/Jun-LoRA-12B-Safetensor-INT8",
   "slug": "efficiencyx-jun-lora-12b-safetensor-int8",
   "author": "efficiencyx",
@@ -46,14 +46,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 13056292298,
   "storage_human": "13.1 GB",
+  "context_length": null,
   "base_model": "efficiencyx/Jun-LoRA-12B-Safetensor",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

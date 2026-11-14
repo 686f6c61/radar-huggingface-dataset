@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Llama-3.2-Korean-GGACHI-1B-Instruct-v1-GGUF",
   "slug": "tinyopsec-llama-3-2-korean-ggachi-1b-instruct-v1-gguf",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 12519324224,
   "storage_human": "12.5 GB",
+  "context_length": 131072,
   "base_model": "torchtorchkimtorch/Llama-3.2-Korean-GGACHI-1B-Instruct-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

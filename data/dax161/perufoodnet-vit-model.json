@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dax161/perufoodnet-vit-model",
   "slug": "dax161-perufoodnet-vit-model",
   "author": "Dax161",
@@ -30,14 +30,19 @@
   "parameters_human": "303.3M",
   "storage_bytes": 1213417080,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

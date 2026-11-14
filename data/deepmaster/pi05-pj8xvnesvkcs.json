@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepmaster/pi05-Pj8XVnesVkCS",
   "slug": "deepmaster-pi05-pj8xvnesvkcs",
   "author": "deepmaster",
@@ -23,14 +23,19 @@
   "parameters_human": "6.38B",
   "storage_bytes": 51019202406,
   "storage_human": "51.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T03:36:50.240Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

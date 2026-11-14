@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tudor-iustin22/Bluebird-1.5-Instruct",
   "slug": "tudor-iustin22-bluebird-1-5-instruct",
   "author": "tudor-iustin22",
@@ -52,14 +52,19 @@
   "parameters_human": "742.5M",
   "storage_bytes": 1487848072,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "tudor-iustin22/Bluebird-1.5-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

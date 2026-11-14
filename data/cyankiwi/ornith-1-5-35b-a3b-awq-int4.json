@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyankiwi/Ornith-1.5-35B-A3B-AWQ-INT4",
   "slug": "cyankiwi-ornith-1-5-35b-a3b-awq-int4",
   "author": "cyankiwi",
@@ -32,14 +32,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 26155584692,
   "storage_human": "26.2 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

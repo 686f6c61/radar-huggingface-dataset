@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juiceb0xc0de/bella-bartender-gemma-e4b-gguf",
   "slug": "juiceb0xc0de-bella-bartender-gemma-e4b-gguf",
   "author": "juiceb0xc0de",
@@ -40,14 +40,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 89756257120,
   "storage_human": "89.8 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

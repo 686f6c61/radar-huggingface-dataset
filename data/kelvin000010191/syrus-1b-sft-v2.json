@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kelvin000010191/Syrus-1B-SFT-v2",
   "slug": "kelvin000010191-syrus-1b-sft-v2",
   "author": "Kelvin000010191",
@@ -23,14 +23,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 6949592254,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rutuofficial-max/Syrus-1B-SFT-v2",
+  "renamed_at": "2026-11-11T03:07:58.577Z",
   "benchmarks": [],
   "sources": [
     {

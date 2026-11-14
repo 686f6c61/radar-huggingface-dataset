@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/mdeberta-v3-base-mlx",
   "slug": "masahiroid-mdeberta-v3-base-mlx",
   "author": "masahiroid",
@@ -28,6 +28,7 @@
   "parameters_human": "278.2M",
   "storage_bytes": 1135929692,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "microsoft/mdeberta-v3-base",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

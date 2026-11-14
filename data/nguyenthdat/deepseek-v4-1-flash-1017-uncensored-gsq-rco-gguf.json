@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nguyenthdat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
   "slug": "nguyenthdat-deepseek-v4-1-flash-1017-uncensored-gsq-rco-gguf",
   "author": "nguyenthdat",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 138238967104,
   "storage_human": "138.2 GB",
+  "context_length": null,
   "base_model": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF, ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF, deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

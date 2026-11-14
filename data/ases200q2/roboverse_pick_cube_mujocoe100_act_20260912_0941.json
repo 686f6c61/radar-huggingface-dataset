@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ases200q2/roboverse_pick_cube_mujocoE100_act_20260912_0941",
   "slug": "ases200q2-roboverse_pick_cube_mujocoe100_act_20260912_0941",
   "author": "ases200q2",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206740380,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

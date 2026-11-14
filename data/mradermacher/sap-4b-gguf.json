@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SAP-4B-GGUF",
   "slug": "mradermacher-sap-4b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 39708254592,
   "storage_human": "39.7 GB",
+  "context_length": 262144,
   "base_model": "Zichen1024/SAP-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

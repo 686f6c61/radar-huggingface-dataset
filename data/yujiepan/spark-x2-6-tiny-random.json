@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yujiepan/spark-x2.6-tiny-random",
   "slug": "yujiepan-spark-x2-6-tiny-random",
   "author": "yujiepan",
@@ -29,14 +29,19 @@
   "parameters_human": "2.1M",
   "storage_bytes": 4284048,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

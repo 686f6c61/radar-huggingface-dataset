@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CS230-lol/kev-0.8b-jigsaw-toxicity",
   "slug": "cs230-lol-kev-0-8b-jigsaw-toxicity",
   "author": "CS230-lol",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 65431578,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

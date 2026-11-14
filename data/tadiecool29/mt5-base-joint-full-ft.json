@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/mt5-base-joint-full-ft",
   "slug": "tadiecool29-mt5-base-joint-full-ft",
   "author": "tadiecool29",
@@ -30,14 +30,19 @@
   "parameters_human": "582.4M",
   "storage_bytes": 1181172264,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/mt5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:52:04.165Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

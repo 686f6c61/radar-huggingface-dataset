@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "d4rkninja/tanpo-ops-GGUF",
   "slug": "d4rkninja-tanpo-ops-gguf",
   "author": "d4rkninja",
@@ -34,14 +34,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 4946571968,
   "storage_human": "4.9 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

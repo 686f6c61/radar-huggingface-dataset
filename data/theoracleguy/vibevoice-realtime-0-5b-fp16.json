@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theoracleguy/VibeVoice-Realtime-0.5B-fp16",
   "slug": "theoracleguy-vibevoice-realtime-0-5b-fp16",
   "author": "theoracleguy",
@@ -36,6 +36,7 @@
   "parameters_human": "1.02B",
   "storage_bytes": 2135261259,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

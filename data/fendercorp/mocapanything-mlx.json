@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fendercorp/MocapAnything-MLX",
   "slug": "fendercorp-mocapanything-mlx",
   "author": "Fendercorp",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 980085932,
   "storage_human": "980 MB",
+  "context_length": null,
   "base_model": "kehong/MoCapAnythingV2-weights, facebook/dinov2-large, google-t5/t5-base",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BigCountry26/UNfilteredAI-1B",
   "slug": "bigcountry26-unfilteredai-1b",
   "author": "BigCountry26",
@@ -28,14 +28,19 @@
   "parameters_human": "1.06B",
   "storage_bytes": 2112529779,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

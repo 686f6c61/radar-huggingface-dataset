@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khtsly/Qwen3.8-Next-26B-A5.5B-N8B",
   "slug": "khtsly-qwen3-8-next-26b-a5-5b-n8b",
   "author": "khtsly",
@@ -23,14 +23,19 @@
   "parameters_human": "37.00B",
   "storage_bytes": 74017396176,
   "storage_human": "74.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T06:47:16.840Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

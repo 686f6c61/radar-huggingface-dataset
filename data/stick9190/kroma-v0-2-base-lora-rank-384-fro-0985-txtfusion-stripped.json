@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stick9190/kroma-v0.2-base-lora-rank-384-fro-0985-txtfusion-stripped",
   "slug": "stick9190-kroma-v0-2-base-lora-rank-384-fro-0985-txtfusion-stripped",
   "author": "Stick9190",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 3411046624,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

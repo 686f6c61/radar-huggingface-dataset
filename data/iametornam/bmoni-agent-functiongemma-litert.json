@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamEtornam/bmoni-agent-functiongemma-litert",
   "slug": "iametornam-bmoni-agent-functiongemma-litert",
   "author": "iamEtornam",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 856695216,
   "storage_human": "857 MB",
+  "context_length": null,
   "base_model": "google/functiongemma-270m-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bkey-inc/bmoni-agent-functiongemma-litert",
+  "renamed_at": "2026-11-11T05:37:49.517Z",
   "benchmarks": [],
   "sources": []
 }

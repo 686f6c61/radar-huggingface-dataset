@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wakeleyhuh/chowder-rerank-minilm",
   "slug": "wakeleyhuh-chowder-rerank-minilm",
   "author": "Wakeleyhuh",
@@ -39,14 +39,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 181732824,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Cross Encoder Reranking",

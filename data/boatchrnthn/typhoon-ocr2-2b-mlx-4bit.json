@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "boatchrnthn/typhoon-ocr2-2b-mlx-4Bit",
   "slug": "boatchrnthn-typhoon-ocr2-2b-mlx-4bit",
   "author": "boatchrnthn",
@@ -43,6 +43,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1079393772,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-ocr2-2b",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

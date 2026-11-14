@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openeurollm/dense_english_scaling_laws",
   "slug": "openeurollm-dense_english_scaling_laws",
   "author": "openeurollm",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 588257608656,
   "storage_human": "588.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

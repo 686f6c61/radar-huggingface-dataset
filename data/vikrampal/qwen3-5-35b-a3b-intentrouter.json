@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3.5-35B-A3B-IntentRouter",
   "slug": "vikrampal-qwen3-5-35b-a3b-intentrouter",
   "author": "VikramPal",
@@ -52,14 +52,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69345627541,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VikramPal/Qwen3.5-35B-A3B-bf16",
+  "renamed_at": "2026-11-12T04:19:13.090Z",
   "benchmarks": [],
   "sources": [
     {

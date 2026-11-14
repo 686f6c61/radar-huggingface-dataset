@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Octen-WebGR-0.6B-FP8",
   "slug": "liodon-ai-octen-webgr-0-6b-fp8",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "730.3M",
   "storage_bytes": 1032302826,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Octen/Octen-WebGR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

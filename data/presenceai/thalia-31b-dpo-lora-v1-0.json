@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PresenceAI/Thalia-31B-DPO-LoRA-v1.0",
   "slug": "presenceai-thalia-31b-dpo-lora-v1-0",
   "author": "PresenceAI",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 1011728386,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Gryphe/Gemma-4-31B-StyleTune",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/OctoThinker-1B-Short-Base-GGUF",
   "slug": "tinyopsec-octothinker-1b-short-base-gguf",
   "author": "tinyopsec",
@@ -32,14 +32,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 12519268480,
   "storage_human": "12.5 GB",
+  "context_length": 131072,
   "base_model": "OctoThinker/OctoThinker-1B-Short-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

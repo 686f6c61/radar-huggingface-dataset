@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidan03/openwebrl-4b-selectionadm-rpo-2ep",
   "slug": "davidan03-openwebrl-4b-selectionadm-rpo-2ep",
   "author": "davidan03",
@@ -31,14 +31,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 9019337430,
   "storage_human": "9.0 GB",
+  "context_length": null,
   "base_model": "OpenWebRL/OpenWebRL-4B-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

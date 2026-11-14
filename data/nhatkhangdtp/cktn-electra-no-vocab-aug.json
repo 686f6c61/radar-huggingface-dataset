@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nhatkhangdtp/CKTN-ELECTRA-no-vocab-aug",
   "slug": "nhatkhangdtp-cktn-electra-no-vocab-aug",
   "author": "nhatkhangdtp",
@@ -46,14 +46,19 @@
   "parameters_human": "575.9M",
   "storage_bytes": 2324847993,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "google/rembert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

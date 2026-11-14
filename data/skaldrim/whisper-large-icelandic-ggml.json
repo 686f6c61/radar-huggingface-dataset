@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skaldrim/whisper-large-icelandic-ggml",
   "slug": "skaldrim-whisper-large-icelandic-ggml",
   "author": "skaldrim",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 4175355816,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

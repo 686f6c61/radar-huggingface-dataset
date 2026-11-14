@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lets-Fafo/Qwen3.8-27B-FAFO-W4A16-G32-B70",
   "slug": "lets-fafo-qwen3-8-27b-fafo-w4a16-g32-b70",
   "author": "Lets-Fafo",
@@ -36,14 +36,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 20605924224,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

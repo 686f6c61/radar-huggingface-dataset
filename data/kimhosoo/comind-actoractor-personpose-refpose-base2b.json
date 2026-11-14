@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimhosoo/comind-actoractor-personpose-refpose-base2b",
   "slug": "kimhosoo-comind-actoractor-personpose-refpose-base2b",
   "author": "kimhosoo",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 4119613533,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos-Predict2.5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

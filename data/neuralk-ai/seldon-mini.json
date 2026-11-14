@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neuralk-AI/seldon-mini",
   "slug": "neuralk-ai-seldon-mini",
   "author": "Neuralk-AI",
@@ -28,12 +28,17 @@
   "parameters_human": "27.4M",
   "storage_bytes": 223757419,
   "storage_human": "224 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

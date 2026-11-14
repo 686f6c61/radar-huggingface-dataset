@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ritarup/Llama-3.2-1B-UnifiedQC-FT-INT4",
   "slug": "ritarup-llama-3-2-1b-unifiedqc-ft-int4",
   "author": "ritarup",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 802035968,
   "storage_human": "802 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

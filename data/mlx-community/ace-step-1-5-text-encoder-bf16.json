@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/ACE-Step-1.5-text-encoder-bf16",
   "slug": "mlx-community-ace-step-1-5-text-encoder-bf16",
   "author": "mlx-community",
@@ -32,6 +32,7 @@
   "parameters_human": "595.8M",
   "storage_bytes": 1203011985,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

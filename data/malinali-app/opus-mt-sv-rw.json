@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malinali-app/opus-mt-sv-rw",
   "slug": "malinali-app-opus-mt-sv-rw",
   "author": "malinali-app",
@@ -37,14 +37,19 @@
   "parameters_human": "75.9M",
   "storage_bytes": 303466752,
   "storage_human": "303 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-sv-rw",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

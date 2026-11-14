@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kaustubh070707/mistral-7B-legal-qlora-5bullet",
   "slug": "kaustubh070707-mistral-7b-legal-qlora-5bullet",
   "author": "Kaustubh070707",
@@ -31,14 +31,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 4125687686,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

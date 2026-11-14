@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TuKoResearch/AuriStream100M_10Pred_BigAudioDataset_500k-randinit",
   "slug": "tukoresearch-auristream100m_10pred_bigaudiodataset_500k-randinit",
   "author": "TuKoResearch",
@@ -31,14 +31,19 @@
   "parameters_human": "154.2M",
   "storage_bytes": 616649928,
   "storage_human": "617 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

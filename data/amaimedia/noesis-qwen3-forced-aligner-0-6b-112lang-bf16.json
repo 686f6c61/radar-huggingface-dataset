@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-BF16",
   "slug": "amaimedia-noesis-qwen3-forced-aligner-0-6b-112lang-bf16",
   "author": "AMAImedia",
@@ -272,14 +272,19 @@
   "parameters_human": "917.7M",
   "storage_bytes": 1835544544,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ForcedAligner-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AKoorwo/iaprojects_finetuned",
   "slug": "akoorwo-iaprojects_finetuned",
   "author": "AKoorwo",
@@ -33,6 +33,7 @@
   "parameters_human": "68.8M",
   "storage_bytes": 550637016,
   "storage_human": "551 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-coder-14b-instruct-bnb-4bit",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

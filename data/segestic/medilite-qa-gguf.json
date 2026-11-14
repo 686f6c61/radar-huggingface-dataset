@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "segestic/MediLITE-QA-GGUF",
   "slug": "segestic-medilite-qa-gguf",
   "author": "segestic",
@@ -34,14 +34,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 16913025024,
   "storage_human": "16.9 GB",
+  "context_length": 131072,
   "base_model": "microsoft/Phi-3.5-mini-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

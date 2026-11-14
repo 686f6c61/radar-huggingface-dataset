@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kishan25/neuron-kd-qwen2.5-coder-0.5b-critique-mlx-4bit",
   "slug": "kishan25-neuron-kd-qwen2-5-coder-0-5b-critique-mlx-4bit",
   "author": "Kishan25",
@@ -39,6 +39,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 289487117,
   "storage_human": "289 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

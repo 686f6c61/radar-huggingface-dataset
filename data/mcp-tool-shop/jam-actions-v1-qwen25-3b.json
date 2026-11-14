@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mcp-tool-shop/jam-actions-v1-qwen25-3b",
   "slug": "mcp-tool-shop-jam-actions-v1-qwen25-3b",
   "author": "mcp-tool-shop",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 251024948,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

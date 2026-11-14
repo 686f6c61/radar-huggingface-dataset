@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OP12138/qwen3-star1-v2",
   "slug": "op12138-qwen3-star1-v2",
   "author": "OP12138",
@@ -34,14 +34,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 6893764383,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OP12138/qwen3-1.7b-star1",
+  "renamed_at": "2026-11-11T03:27:09.769Z",
   "benchmarks": [],
   "sources": []
 }

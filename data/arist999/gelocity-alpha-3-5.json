@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arist999/gelocity-alpha-3.5",
   "slug": "arist999-gelocity-alpha-3-5",
   "author": "arist999",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 24442490,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "none",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

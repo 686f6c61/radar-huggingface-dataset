@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-1.7B-MATH-GDPO-GGUF",
   "slug": "mradermacher-qwen3-1-7b-math-gdpo-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 15959920512,
   "storage_human": "16.0 GB",
+  "context_length": 40960,
   "base_model": "wzx111/Qwen3-1.7B-MATH-GDPO",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

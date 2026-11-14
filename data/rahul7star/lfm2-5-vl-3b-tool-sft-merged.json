@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rahul7star/LFM2.5-VL-3B-tool-sft-merged",
   "slug": "rahul7star-lfm2-5-vl-3b-tool-sft-merged",
   "author": "rahul7star",
@@ -36,14 +36,19 @@
   "parameters_human": "3.12B",
   "storage_bytes": 6264970557,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

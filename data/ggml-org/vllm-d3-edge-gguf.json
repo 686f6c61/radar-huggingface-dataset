@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/vllm-d3-edge-GGUF",
   "slug": "ggml-org-vllm-d3-edge-gguf",
   "author": "ggml-org",
@@ -30,14 +30,19 @@
   "parameters_human": "748.0M",
   "storage_bytes": 7263940416,
   "storage_human": "7.3 GB",
+  "context_length": 262144,
   "base_model": "vllm-sr/d3-edge",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

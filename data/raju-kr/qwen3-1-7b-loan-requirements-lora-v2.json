@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raju-kr/qwen3-1.7b-loan-requirements-lora-v2",
   "slug": "raju-kr-qwen3-1-7b-loan-requirements-lora-v2",
   "author": "raju-kr",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 46345867,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alwoolley/Phi-4-mini-instruct",
   "slug": "alwoolley-phi-4-mini-instruct",
   "author": "alwoolley",
@@ -82,14 +82,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7687590311,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T05:05:34.779Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/xiaomi_mimo_9b_PMTP_polydim_einsof",
   "slug": "polydim-einsof-xiaomi_mimo_9b_pmtp_polydim_einsof",
   "author": "Polydim-Einsof",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 58720336,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:34:56.372Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

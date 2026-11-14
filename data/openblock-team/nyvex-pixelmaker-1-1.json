@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenBlock-Team/Nyvex-PixelMaker-1.1",
   "slug": "openblock-team-nyvex-pixelmaker-1-1",
   "author": "OpenBlock-Team",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 386650657,
   "storage_human": "387 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

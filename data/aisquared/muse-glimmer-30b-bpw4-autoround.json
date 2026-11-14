@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisquared/Muse-Glimmer-30B-bpw4-AutoRound",
   "slug": "aisquared-muse-glimmer-30b-bpw4-autoround",
   "author": "aisquared",
@@ -38,14 +38,19 @@
   "parameters_human": "7.37B",
   "storage_bytes": 19719689513,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:11:37.368Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

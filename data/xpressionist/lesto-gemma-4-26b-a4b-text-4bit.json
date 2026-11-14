@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xpressionist/lesto-gemma-4-26b-a4b-text-4bit",
   "slug": "xpressionist-lesto-gemma-4-26b-a4b-text-4bit",
   "author": "xpressionist",
@@ -31,6 +31,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 14233052451,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

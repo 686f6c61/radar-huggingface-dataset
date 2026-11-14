@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/Pika-H3-Flex-ROCmFPX",
   "slug": "harsha001-pika-h3-flex-rocmfpx",
   "author": "Harsha001",
@@ -37,14 +37,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 139440311616,
   "storage_human": "139.4 GB",
+  "context_length": null,
   "base_model": "Pika-Labs/Pika-H3-Flex",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

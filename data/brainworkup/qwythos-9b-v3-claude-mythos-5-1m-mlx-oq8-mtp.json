@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brainworkup/Qwythos-9B-v3-Claude-Mythos-5-1M-MLX-oQ8-mtp",
   "slug": "brainworkup-qwythos-9b-v3-claude-mythos-5-1m-mlx-oq8-mtp",
   "author": "brainworkup",
@@ -47,6 +47,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 10736556879,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M, xunkutech-ai/Qwythos-9B-Claude-Mythos-5-1M-MLX-bf16-mtp",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

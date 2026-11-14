@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dodgeqtr/jojo-sovereign-strong",
   "slug": "dodgeqtr-jojo-sovereign-strong",
   "author": "dodgeqtr",
@@ -27,14 +27,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920739008,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T03:02:35.220Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

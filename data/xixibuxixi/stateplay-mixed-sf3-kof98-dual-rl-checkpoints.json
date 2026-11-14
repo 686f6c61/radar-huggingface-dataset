@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xixibuxixi/StatePlay-Mixed-SF3-KOF98-Dual-RL-Checkpoints",
   "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-dual-rl-checkpoints",
   "author": "xixibuxixi",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 3936346934,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

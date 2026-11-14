@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thealper2/deberta-v3-base-formality",
   "slug": "thealper2-deberta-v3-base-formality",
   "author": "thealper2",
@@ -38,14 +38,19 @@
   "parameters_human": "184.4M",
   "storage_bytes": 737724537,
   "storage_human": "738 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Binary Text Formality Classification",

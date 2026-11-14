@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ricecake/Krea-2-Anime-tuned-Raw",
   "slug": "ricecake-krea-2-anime-tuned-raw",
   "author": "ricecake",
@@ -29,6 +29,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 77914941495,
   "storage_human": "77.9 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated",
   "slug": "globalcybersecurityalliance-qwen3-8-27b-abliterated",
   "author": "GlobalCybersecurityAlliance",
@@ -44,14 +44,19 @@
   "parameters_human": null,
   "storage_bytes": 139050686976,
   "storage_human": "139.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "GCSA-AiLab/Qwen3.8-27B-Abliterated-MTP",
+  "renamed_at": "2026-11-11T02:49:02.913Z",
   "benchmarks": [],
   "sources": [
     {

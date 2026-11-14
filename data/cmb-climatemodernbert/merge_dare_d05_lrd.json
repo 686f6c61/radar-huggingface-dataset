@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CMB-ClimateModernBERT/Merge_DARE_D05_LRD",
   "slug": "cmb-climatemodernbert-merge_dare_d05_lrd",
   "author": "CMB-ClimateModernBERT",
@@ -39,14 +39,19 @@
   "parameters_human": "149.7M",
   "storage_bytes": 299324680,
   "storage_human": "299 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

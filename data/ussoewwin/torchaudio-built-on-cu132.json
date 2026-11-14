@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ussoewwin/torchaudio-built-on-cu132",
   "slug": "ussoewwin-torchaudio-built-on-cu132",
   "author": "ussoewwin",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 24731656,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T12:24:28.402Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

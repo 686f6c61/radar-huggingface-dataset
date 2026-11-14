@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cudabenchmarktest/Qwen3.8-27B-E03-Obliterated-Omni-Audio-Bridge-GGUF",
   "slug": "cudabenchmarktest-qwen3-8-27b-e03-obliterated-omni-audio-bridge-gguf",
   "author": "cudabenchmarktest",
@@ -32,14 +32,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 19682103136,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "manitcor/Qwen3.8-27B-Obliterated-E03, Qwen/Qwen3-Omni-30B-A3B-Instruct, Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

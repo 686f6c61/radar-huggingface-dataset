@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ranxianglei/Qwen3.8-Flash-Next-W4A16-Pruned-294E",
   "slug": "ranxianglei-qwen3-8-flash-next-w4a16-pruned-294e",
   "author": "ranxianglei",
@@ -41,14 +41,19 @@
   "parameters_human": "65.85B",
   "storage_bytes": 98027264101,
   "storage_human": "98.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:46:47.222Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

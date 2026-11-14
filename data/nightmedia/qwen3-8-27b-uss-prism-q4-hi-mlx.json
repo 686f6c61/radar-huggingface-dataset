@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.8-27B-USS-Prism-q4-hi-mlx",
   "slug": "nightmedia-qwen3-8-27b-uss-prism-q4-hi-mlx",
   "author": "nightmedia",
@@ -90,6 +90,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 17755366304,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash, schneewolflabs/B1-27B, nightmedia/Qwen3.6-27B-Seven, nightmedia/Qwen3.8-27B-Brainwaves, nightmedia/Qwen3.8-27B-MindMeld, OmniJev/OneJev1.6-27B",
   "formats": [
     "mlx",
@@ -97,8 +98,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

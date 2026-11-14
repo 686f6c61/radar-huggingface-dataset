@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aflah/HF_Llama_7B_WebOrganizer_Without_Creative_185B",
   "slug": "aflah-hf_llama_7b_weborganizer_without_creative_185b",
   "author": "aflah",
@@ -28,14 +28,19 @@
   "parameters_human": "8.27B",
   "storage_bytes": 66122547408,
   "storage_human": "66.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

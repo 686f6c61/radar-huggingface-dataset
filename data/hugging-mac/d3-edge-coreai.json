@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hugging-mac/d3-edge-CoreAI",
   "slug": "hugging-mac-d3-edge-coreai",
   "author": "hugging-mac",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 1003070392,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-edge",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

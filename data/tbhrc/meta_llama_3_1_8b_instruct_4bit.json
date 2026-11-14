@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/meta_llama_3_1_8b_instruct_4bit",
   "slug": "tbhrc-meta_llama_3_1_8b_instruct_4bit",
   "author": "tbhrc",
@@ -48,6 +48,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4517488999,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

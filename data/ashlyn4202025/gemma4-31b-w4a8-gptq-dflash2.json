@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ashlyn4202025/gemma4-31b-w4a8-gptq-dflash2",
   "slug": "ashlyn4202025-gemma4-31b-w4a8-gptq-dflash2",
   "author": "Ashlyn4202025",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 24904130560,
   "storage_human": "24.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it, RedHatAI/gemma-4-31B-it-speculator.dflash2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

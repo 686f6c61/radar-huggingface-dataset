@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajgazin/Qwen3.8-27B-Heretic-Dynamic-GGUF",
   "slug": "ajgazin-qwen3-8-27b-heretic-dynamic-gguf",
   "author": "ajgazin",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 95018958752,
   "storage_human": "95.0 GB",
+  "context_length": 262144,
   "base_model": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

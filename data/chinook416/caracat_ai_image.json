@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chinook416/caracat_ai_image",
   "slug": "chinook416-caracat_ai_image",
   "author": "Chinook416",
@@ -27,14 +27,19 @@
   "parameters_human": "6.15B",
   "storage_bytes": 32895044683,
   "storage_human": "32.9 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

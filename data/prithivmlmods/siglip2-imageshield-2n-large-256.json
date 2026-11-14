@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/SigLIP2-ImageShield-2n-large-256",
   "slug": "prithivmlmods-siglip2-imageshield-2n-large-256",
   "author": "prithivMLmods",
@@ -37,14 +37,19 @@
   "parameters_human": "316.0M",
   "storage_bytes": 14764659988,
   "storage_human": "14.8 GB",
+  "context_length": null,
   "base_model": "google/siglip2-large-patch16-256",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

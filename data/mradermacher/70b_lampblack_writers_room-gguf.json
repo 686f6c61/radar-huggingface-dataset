@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/70B_lampblack_writers_room-GGUF",
   "slug": "mradermacher-70b_lampblack_writers_room-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 481303001024,
   "storage_human": "481.3 GB",
+  "context_length": 131072,
   "base_model": "schonsense/70B_lampblack_writers_room",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

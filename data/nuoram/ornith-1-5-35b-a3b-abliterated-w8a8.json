@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuoram/Ornith-1.5-35B-A3B-abliterated-W8A8",
   "slug": "nuoram-ornith-1-5-35b-a3b-abliterated-w8a8",
   "author": "nuoram",
@@ -48,14 +48,19 @@
   "parameters_human": "35.14B",
   "storage_bytes": 38375356261,
   "storage_human": "38.4 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

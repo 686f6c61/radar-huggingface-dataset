@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Karasumikura/Ying-K1-Lite-0.2B",
   "slug": "karasumikura-ying-k1-lite-0-2b",
   "author": "Karasumikura",
@@ -37,14 +37,19 @@
   "parameters_human": "210.2M",
   "storage_bytes": 420440464,
   "storage_human": "420 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:08:27.513Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

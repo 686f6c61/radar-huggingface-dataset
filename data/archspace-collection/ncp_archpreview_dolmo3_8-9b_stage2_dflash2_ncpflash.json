@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchSpace-Collection/NCP_ArchPreview_dolmo3_8.9B_Stage2_DFlash2_NCPFlash",
   "slug": "archspace-collection-ncp_archpreview_dolmo3_8-9b_stage2_dflash2_ncpflash",
   "author": "ArchSpace-Collection",
@@ -40,14 +40,19 @@
   "parameters_human": "1.11B",
   "storage_bytes": 4471894672,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage2_DFlash2_NCPFlash",
+  "renamed_at": "2026-11-11T02:19:12.509Z",
   "benchmarks": [],
   "sources": [
     {

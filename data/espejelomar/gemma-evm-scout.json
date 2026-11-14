@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "espejelomar/gemma-evm-scout",
   "slug": "espejelomar-gemma-evm-scout",
   "author": "espejelomar",
@@ -41,14 +41,19 @@
   "parameters_human": "16.8M",
   "storage_bytes": 68407871,
   "storage_human": "68 MB",
+  "context_length": null,
   "base_model": "lightonai/LateOn-Code-edge",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "starknet-ai/LateOn-Code-edge-EVMScout-17M",
+  "renamed_at": "2026-11-11T05:12:11.819Z",
   "benchmarks": [],
   "sources": [
     {

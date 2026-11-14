@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sixstringzen/Hemmingway-1-oQ4e-mtp",
   "slug": "sixstringzen-hemmingway-1-oq4e-mtp",
   "author": "sixstringzen",
@@ -40,6 +40,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16328384620,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "Altworld/Hemmingway-1",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

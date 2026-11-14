@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HMC83/name-detector-32m",
   "slug": "hmc83-name-detector-32m",
   "author": "HMC83",
@@ -42,6 +42,7 @@
   "parameters_human": "32.0M",
   "storage_bytes": 256521516,
   "storage_human": "257 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-32m",
   "formats": [
     "onnx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

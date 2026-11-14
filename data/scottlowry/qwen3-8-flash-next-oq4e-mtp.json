@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp",
   "slug": "scottlowry-qwen3-8-flash-next-oq4e-mtp",
   "author": "scottlowry",
@@ -30,6 +30,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 107682936690,
   "storage_human": "107.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

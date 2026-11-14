@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Koopah/Qwen3.6-35B-A3B-NVFP4-DSPARK",
   "slug": "koopah-qwen3-6-35b-a3b-nvfp4-dspark",
   "author": "Koopah",
@@ -31,14 +31,19 @@
   "parameters_human": "1.53B",
   "storage_bytes": 3061902610,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.6-35B-A3B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

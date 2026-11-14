@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fridaystreet/Qwen3.8-Flash-Next-FP6-INT8",
   "slug": "fridaystreet-qwen3-8-flash-next-fp6-int8",
   "author": "fridaystreet",
@@ -35,14 +35,19 @@
   "parameters_human": "97.97B",
   "storage_bytes": 156077479532,
   "storage_human": "156.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T03:37:40.764Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

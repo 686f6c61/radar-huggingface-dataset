@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GeorgeUwaifo/ivieai_star_v1.1_merged",
   "slug": "georgeuwaifo-ivieai_star_v1-1_merged",
   "author": "GeorgeUwaifo",
@@ -28,14 +28,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 3228726624,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T03:48:11.378Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

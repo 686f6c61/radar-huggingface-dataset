@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sreetz-nv/so101_dr500_pi05_h32_b32_50k_20260929",
   "slug": "sreetz-nv-so101_dr500_pi05_h32_b32_50k_20260929",
   "author": "sreetz-nv",
@@ -36,14 +36,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354065928,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft-merged",
   "slug": "benoitjt-girard-qwen3-1-7b-chsa-triage-sft-merged",
   "author": "BenoitJT-GIRARD",
@@ -39,14 +39,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 4074938564,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T05:47:20.908Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/Spark-X2.5-4B-MLX-6bit",
   "slug": "hermitdave-spark-x2-5-4b-mlx-6bit",
   "author": "hermitdave",
@@ -34,6 +34,7 @@
   "parameters_human": "4.11B",
   "storage_bytes": 3343112192,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

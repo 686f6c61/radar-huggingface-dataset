@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewald1976/nemo-bnb4-sysblock",
   "slug": "ewald1976-nemo-bnb4-sysblock",
   "author": "ewald1976",
@@ -35,14 +35,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 8343278322,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "e-n-v-y/None-qwenimage2.1-vae-comfyui",
   "slug": "e-n-v-y-none-qwenimage2-1-vae-comfyui",
   "author": "e-n-v-y",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1362461138,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "None1082/None-qwenimage2.1-vae",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

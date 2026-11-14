@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "algerian-nlp/DZAIR-ONNX-INT8",
   "slug": "algerian-nlp-dzair-onnx-int8",
   "author": "algerian-nlp",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 325493167,
   "storage_human": "325 MB",
+  "context_length": null,
   "base_model": "algerian-nlp/DZAIR",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Arabizi Sentiment Analysis",

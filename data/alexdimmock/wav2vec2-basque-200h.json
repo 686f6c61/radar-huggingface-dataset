@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexdimmock/wav2vec2-basque-200h",
   "slug": "alexdimmock-wav2vec2-basque-200h",
   "author": "alexdimmock",
@@ -27,14 +27,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 138838629814,
   "storage_human": "138.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

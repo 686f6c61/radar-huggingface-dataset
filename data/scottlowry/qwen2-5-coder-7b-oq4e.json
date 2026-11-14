@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/Qwen2.5-Coder-7B-oQ4e",
   "slug": "scottlowry-qwen2-5-coder-7b-oq4e",
   "author": "scottlowry",
@@ -27,6 +27,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4474728796,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T10:54:36.892Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

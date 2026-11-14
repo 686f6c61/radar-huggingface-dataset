@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/grit-gemma-3-4b-it-lora-v3-GGUF",
   "slug": "mradermacher-grit-gemma-3-4b-it-lora-v3-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "2.63B",
   "storage_bytes": 24670572672,
   "storage_human": "24.7 GB",
+  "context_length": 131072,
   "base_model": "sujeongh/grit-gemma-3-4b-it-lora-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

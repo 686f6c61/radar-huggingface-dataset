@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Exile051112/franka-pico4-pi0-c1-red-yellow-real",
   "slug": "exile051112-franka-pico4-pi0-c1-red-yellow-real",
   "author": "Exile051112",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 40178551,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

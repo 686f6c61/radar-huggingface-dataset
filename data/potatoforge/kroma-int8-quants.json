@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PotatoForge/Kroma-INT8-Quants",
   "slug": "potatoforge-kroma-int8-quants",
   "author": "PotatoForge",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 54240475221,
   "storage_human": "54.2 GB",
+  "context_length": null,
   "base_model": "lodestones/Kroma",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

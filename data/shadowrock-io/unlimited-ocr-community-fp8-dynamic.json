@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic",
   "slug": "shadowrock-io-unlimited-ocr-community-fp8-dynamic",
   "author": "shadowrock-io",
@@ -43,14 +43,19 @@
   "parameters_human": "3.34B",
   "storage_bytes": 4074568080,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Grounded document OCR (parity vs BF16)",

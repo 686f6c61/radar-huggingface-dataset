@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "20eddibae/sceptr-ac-finetuned",
   "slug": "20eddibae-sceptr-ac-finetuned",
   "author": "20eddibae",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 9707181,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "20eddibae/CLEST-TCRdist-finetuned",
+  "renamed_at": "2026-11-14T02:11:49.175Z",
   "benchmarks": [],
   "sources": []
 }

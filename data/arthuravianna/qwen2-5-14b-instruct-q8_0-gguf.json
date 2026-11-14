@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arthuravianna/Qwen2.5-14B-Instruct-Q8_0.gguf",
   "slug": "arthuravianna-qwen2-5-14b-instruct-q8_0-gguf",
   "author": "arthuravianna",
@@ -24,14 +24,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 15701598208,
   "storage_human": "15.7 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

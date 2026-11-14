@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/tencent_ContextPilot-14B-GGUF",
   "slug": "bartowski-tencent_contextpilot-14b-gguf",
   "author": "bartowski",
@@ -31,14 +31,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 241413504736,
   "storage_human": "241.4 GB",
+  "context_length": 40960,
   "base_model": "tencent/ContextPilot-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

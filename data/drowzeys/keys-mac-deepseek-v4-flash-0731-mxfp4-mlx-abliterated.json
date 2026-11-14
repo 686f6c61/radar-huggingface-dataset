@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drowzeys/keys-Mac-DeepSeek-V4-Flash-0731-MXFP4-MLX-Abliterated",
   "slug": "drowzeys-keys-mac-deepseek-v4-flash-0731-mxfp4-mlx-abliterated",
   "author": "drowzeys",
@@ -47,6 +47,7 @@
   "parameters_human": "304.18B",
   "storage_bytes": 167083142362,
   "storage_human": "167.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

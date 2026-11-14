@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mincofficial/Sonoma-1.2B-Preview",
   "slug": "mincofficial-sonoma-1-2b-preview",
   "author": "Mincofficial",
@@ -38,6 +38,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 5503813363,
   "storage_human": "5.5 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

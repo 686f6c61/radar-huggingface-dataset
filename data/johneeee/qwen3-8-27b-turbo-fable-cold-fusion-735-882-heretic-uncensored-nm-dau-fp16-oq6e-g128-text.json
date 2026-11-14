@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-fp16-oQ6e-g128-text",
   "slug": "johneeee-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-fp16-oq6e-g128-text",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 21458690400,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:31:10.895Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

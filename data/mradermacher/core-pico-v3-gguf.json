@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/CORe-Pico-V3-GGUF",
   "slug": "mradermacher-core-pico-v3-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 15959965824,
   "storage_human": "16.0 GB",
+  "context_length": 40960,
   "base_model": "OpenCOReTechnologies/CORe-Pico-V3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

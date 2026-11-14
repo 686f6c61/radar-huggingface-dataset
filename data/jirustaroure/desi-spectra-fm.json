@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jirustaroure/desi-spectra-fm",
   "slug": "jirustaroure-desi-spectra-fm",
   "author": "jirustaroure",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 134744989,
   "storage_human": "135 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

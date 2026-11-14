@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Trinity-Large-TrueBase",
   "slug": "collectionstudio-trinity-large-truebase",
   "author": "CollectionStudio",
@@ -52,14 +52,19 @@
   "parameters_human": "398.64B",
   "storage_bytes": 797290569377,
   "storage_human": "797.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

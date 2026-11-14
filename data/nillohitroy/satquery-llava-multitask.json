@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nillohitroy/satquery-llava-multitask",
   "slug": "nillohitroy-satquery-llava-multitask",
   "author": "nillohitroy",
@@ -28,14 +28,19 @@
   "parameters_human": "7.06B",
   "storage_bytes": 28253893056,
   "storage_human": "28.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

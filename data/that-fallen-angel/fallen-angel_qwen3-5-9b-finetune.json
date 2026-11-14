@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "that-fallen-angel/fallen-angel_qwen3.5-9b-finetune",
   "slug": "that-fallen-angel-fallen-angel_qwen3-5-9b-finetune",
   "author": "that-fallen-angel",
@@ -27,14 +27,19 @@
   "parameters_human": "8.54B",
   "storage_bytes": 5329758912,
   "storage_human": "5.3 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "that-fallen-angel/fallen-angel_gemma7b-finetune",
+  "renamed_at": "2026-11-11T07:46:54.633Z",
   "benchmarks": [],
   "sources": [
     {

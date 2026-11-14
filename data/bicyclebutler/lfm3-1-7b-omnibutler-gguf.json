@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BicycleButler/LFM3-1.7B-OmniButler-GGUF",
   "slug": "bicyclebutler-lfm3-1-7b-omnibutler-gguf",
   "author": "BicycleButler",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 146790517,
   "storage_human": "147 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

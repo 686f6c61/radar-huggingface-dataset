@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrtonysipriany/qwen-3b-my-knowledge-GGUF",
   "slug": "mrtonysipriany-qwen-3b-my-knowledge-gguf",
   "author": "mrtonysipriany",
@@ -27,14 +27,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 2104932896,
   "storage_human": "2.1 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T05:18:06.451Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

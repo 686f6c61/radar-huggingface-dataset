@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Premchan369/aether-rami-esm2-diffsbdd",
   "slug": "premchan369-aether-rami-esm2-diffsbdd",
   "author": "Premchan369",
@@ -63,14 +63,19 @@
   "parameters_human": "6.9M",
   "storage_bytes": 66137335,
   "storage_human": "66 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "De Novo 3D Structure-Based Drug Design & Target Affinity",

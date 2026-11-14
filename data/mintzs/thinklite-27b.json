@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mintzs/thinklite-27B",
   "slug": "mintzs-thinklite-27b",
   "author": "Mintzs",
@@ -36,6 +36,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 174174796032,
   "storage_human": "174.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T02:51:08.860Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

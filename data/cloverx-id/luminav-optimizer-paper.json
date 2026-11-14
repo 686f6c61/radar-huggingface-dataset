@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cloverx-id/LuminaV-Optimizer-Paper",
   "slug": "cloverx-id-luminav-optimizer-paper",
   "author": "cloverx-id",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 663440,
   "storage_human": "663440 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

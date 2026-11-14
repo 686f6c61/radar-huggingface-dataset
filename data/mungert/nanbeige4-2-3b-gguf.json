@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mungert/Nanbeige4.2-3B-GGUF",
   "slug": "mungert-nanbeige4-2-3b-gguf",
   "author": "Mungert",
@@ -37,14 +37,19 @@
   "parameters_human": "4.17B",
   "storage_bytes": 109743588512,
   "storage_human": "109.7 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

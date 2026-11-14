@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zekaili/causal_hanoitower_eefabs_sana_latent_mixv4_capv3_obsblock50k_f33fps8_episode_n1_obs",
   "slug": "zekaili-causal_hanoitower_eefabs_sana_latent_mixv4_capv3_obsblock50k_f33fps8_episode_n1_obs",
   "author": "zekaili",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 17879894715,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonshotai/Kimi-K2-Instruct",
   "slug": "moonshotai-kimi-k2-instruct",
   "author": "moonshotai",
@@ -32,14 +32,19 @@
   "parameters_human": "1026.41B",
   "storage_bytes": 1029226387740,
   "storage_human": "1029.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

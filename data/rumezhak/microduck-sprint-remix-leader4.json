@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rumezhak/microduck-sprint-remix-leader4",
   "slug": "rumezhak-microduck-sprint-remix-leader4",
   "author": "rumezhak",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 894116,
   "storage_human": "894116 B",
+  "context_length": null,
   "base_model": "a1rb4Ck/microduck-sprint-2m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

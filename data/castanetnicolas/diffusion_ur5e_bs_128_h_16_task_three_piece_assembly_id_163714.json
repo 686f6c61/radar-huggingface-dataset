@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castanetnicolas/diffusion_UR5e_BS_128_H_16_TASK_three_piece_assembly_ID_163714",
   "slug": "castanetnicolas-diffusion_ur5e_bs_128_h_16_task_three_piece_assembly_id_163714",
   "author": "castanetnicolas",
@@ -28,14 +28,19 @@
   "parameters_human": "274.1M",
   "storage_bytes": 1096412940,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

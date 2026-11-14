@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "medarc/spectra-midnight-12k-merged",
   "slug": "medarc-spectra-midnight-12k-merged",
   "author": "medarc",
@@ -34,14 +34,19 @@
   "parameters_human": "1.14B",
   "storage_bytes": 13638016296,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": "kaiko-ai/midnight",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "medarc/Midnight-12k-SPECTRA",
+  "renamed_at": "2026-11-11T06:16:13.495Z",
   "benchmarks": [],
   "sources": [
     {

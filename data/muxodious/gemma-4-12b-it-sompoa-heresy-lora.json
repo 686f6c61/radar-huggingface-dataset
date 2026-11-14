@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MuXodious/gemma-4-12B-it-SOMPOA-heresy-LORA",
   "slug": "muxodious-gemma-4-12b-it-sompoa-heresy-lora",
   "author": "MuXodious",
@@ -33,6 +33,7 @@
   "parameters_human": "42.7M",
   "storage_bytes": 341878904,
   "storage_human": "342 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

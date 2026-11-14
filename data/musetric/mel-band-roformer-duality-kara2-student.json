@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "musetric/mel-band-roformer-duality-kara2-student",
   "slug": "musetric-mel-band-roformer-duality-kara2-student",
   "author": "musetric",
@@ -36,14 +36,19 @@
   "parameters_human": "135.0M",
   "storage_bytes": 1004435296,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Aname-Tommy/Mel-Band-Roformer_Duality",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayoub4556235/Nova-Czech-Ultra-INT4",
   "slug": "ayoub4556235-nova-czech-ultra-int4",
   "author": "ayoub4556235",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 7481282213,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

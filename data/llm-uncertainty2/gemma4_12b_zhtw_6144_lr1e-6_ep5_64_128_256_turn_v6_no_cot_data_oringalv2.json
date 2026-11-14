@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LLM-Uncertainty2/gemma4_12B_zhtw_6144_lr1e-6_ep5_64_128_256_turn_v6_no_cot_data_oringalv2",
   "slug": "llm-uncertainty2-gemma4_12b_zhtw_6144_lr1e-6_ep5_64_128_256_turn_v6_no_cot_data_oringalv2",
   "author": "LLM-Uncertainty2",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 210946835494,
   "storage_human": "210.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

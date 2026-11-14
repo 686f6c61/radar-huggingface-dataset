@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Reinaldo73/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors",
   "slug": "reinaldo73-wan2-2_remix_nsfw_i2v_14b_high_lighting_fp8_e4m3fn_v3-0-safetensors",
   "author": "Reinaldo73",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 14291272136,
   "storage_human": "14.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

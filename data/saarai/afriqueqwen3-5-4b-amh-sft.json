@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaarAI/AfriqueQwen3.5-4B-amh-sft",
   "slug": "saarai-afriqueqwen3-5-4b-amh-sft",
   "author": "SaarAI",
@@ -40,14 +40,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 10370008671,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

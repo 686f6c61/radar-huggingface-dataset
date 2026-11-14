@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zeromodels/all-distilroberta-v1",
   "slug": "zeromodels-all-distilroberta-v1",
   "author": "zeromodels",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 326353280,
   "storage_human": "326 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-distilroberta-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aday777/qwen4_exp_tiny_fixture",
   "slug": "aday777-qwen4_exp_tiny_fixture",
   "author": "aday777",
@@ -31,14 +31,19 @@
   "parameters_human": "289344",
   "storage_bytes": 1172568,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

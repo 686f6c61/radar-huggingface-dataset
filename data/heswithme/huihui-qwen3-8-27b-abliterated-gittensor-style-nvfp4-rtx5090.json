@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heswithme/Huihui-Qwen3.8-27B-Abliterated-Gittensor-Style-NVFP4-RTX5090",
   "slug": "heswithme-huihui-qwen3-8-27b-abliterated-gittensor-style-nvfp4-rtx5090",
   "author": "heswithme",
@@ -38,14 +38,19 @@
   "parameters_human": "14.56B",
   "storage_bytes": 17928921904,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated, gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

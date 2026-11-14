@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arunos728/fastwam-robodojo-precision8-vert576-8gpu-b64-step80k",
   "slug": "arunos728-fastwam-robodojo-precision8-vert576-8gpu-b64-step80k",
   "author": "arunos728",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 24083626738,
   "storage_human": "24.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

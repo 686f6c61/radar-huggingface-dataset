@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fabono/act_policy_open_more",
   "slug": "fabono-act_policy_open_more",
   "author": "fabono",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 413429632,
   "storage_human": "413 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

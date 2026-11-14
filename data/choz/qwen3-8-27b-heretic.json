@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "choz/Qwen3.8-27B-heretic",
   "slug": "choz-qwen3-8-27b-heretic",
   "author": "choz",
@@ -32,14 +32,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54753585585,
   "storage_human": "54.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T16:10:42.482Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

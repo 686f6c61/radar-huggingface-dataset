@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF",
   "slug": "aisingapore-gemma-sea-lion-v4-27b-it-gguf",
   "author": "aisingapore",
@@ -56,14 +56,19 @@
   "parameters_human": "27.01B",
   "storage_bytes": 100140864862,
   "storage_human": "100.1 GB",
+  "context_length": 131072,
   "base_model": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

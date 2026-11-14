@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ivangalkindeveloper/Hulu-Med-32B-NVFP4",
   "slug": "ivangalkindeveloper-hulu-med-32b-nvfp4",
   "author": "ivangalkindeveloper",
@@ -38,14 +38,19 @@
   "parameters_human": "19.56B",
   "storage_bytes": 21558511992,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": "ZJU-AI4H/Hulu-Med-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

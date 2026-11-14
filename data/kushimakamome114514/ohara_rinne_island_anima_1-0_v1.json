@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KushimaKamome114514/ohara_rinne_ISLAND_anima_1.0_v1",
   "slug": "kushimakamome114514-ohara_rinne_island_anima_1-0_v1",
   "author": "KushimaKamome114514",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 91963880,
   "storage_human": "92 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

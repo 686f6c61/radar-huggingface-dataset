@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schneewolflabs/B4-9B-Nachrechnen",
   "slug": "schneewolflabs-b4-9b-nachrechnen",
   "author": "schneewolflabs",
@@ -37,6 +37,7 @@
   "parameters_human": "29.1M",
   "storage_bytes": 174643864,
   "storage_human": "175 MB",
+  "context_length": null,
   "base_model": "schneewolflabs/B4-9B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

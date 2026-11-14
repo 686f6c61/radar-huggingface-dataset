@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangzyuan/SafeRLHFV-Llava15-7B-Epoch3-Reproduction",
   "slug": "wangzyuan-saferlhfv-llava15-7b-epoch3-reproduction",
   "author": "wangzyuan",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "llava-hf/llava-1.5-7b-hf",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

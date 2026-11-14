@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
   "slug": "pika-labs-pika-h3-flex-turbo-lora",
   "author": "Pika-Labs",
@@ -37,19 +37,24 @@
   ],
   "likes": 191,
   "downloads_30d": 142641,
-  "trending_score": 24,
+  "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 20627493184,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Pika-Labs/Pika-H3-Flex, lightx2v/Minimax-h3-Turbo, MiniMaxAI/MiniMax-H3, WarmBloodAban/Minimax-h3_Singularity, Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

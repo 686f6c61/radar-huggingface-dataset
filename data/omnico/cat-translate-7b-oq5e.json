@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omnico/CAT-Translate-7b-oQ5e",
   "slug": "omnico-cat-translate-7b-oq5e",
   "author": "Omnico",
@@ -27,6 +27,7 @@
   "parameters_human": "7.49B",
   "storage_bytes": 5333549428,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

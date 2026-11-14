@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rafiazarin/bge-base-en-v1.5-onnx",
   "slug": "rafiazarin-bge-base-en-v1-5-onnx",
   "author": "rafiazarin",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 110046225,
   "storage_human": "110 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-base-en-v1.5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

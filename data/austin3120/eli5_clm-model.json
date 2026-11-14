@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "austin3120/eli5_clm-model",
   "slug": "austin3120-eli5_clm-model",
   "author": "austin3120",
@@ -31,14 +31,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 3276589682,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "distilbert/distilgpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

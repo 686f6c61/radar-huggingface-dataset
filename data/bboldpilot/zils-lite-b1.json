@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bboldpilot/zils-lite-b1",
   "slug": "bboldpilot-zils-lite-b1",
   "author": "bboldpilot",
@@ -28,14 +28,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1706035648,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "analogalok/Qwen3.5-0.8B-AA-Decision",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:15:19.597Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

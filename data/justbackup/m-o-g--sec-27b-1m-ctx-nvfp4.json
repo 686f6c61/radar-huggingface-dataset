@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Justbackup/M.O.G.-SEC-27B-1M-CTX-NVFP4",
   "slug": "justbackup-m-o-g--sec-27b-1m-ctx-nvfp4",
   "author": "Justbackup",
@@ -55,14 +55,19 @@
   "parameters_human": "18.55B",
   "storage_bytes": 29411309157,
   "storage_human": "29.4 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/M.O.G.-SEC-27B-1M-CTX-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

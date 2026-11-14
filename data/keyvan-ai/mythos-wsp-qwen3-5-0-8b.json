@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keyvan-ai/Mythos-WSP-Qwen3.5-0.8B",
   "slug": "keyvan-ai-mythos-wsp-qwen3-5-0-8b",
   "author": "keyvan-ai",
@@ -45,6 +45,7 @@
   "parameters_human": "873.4M",
   "storage_bytes": 3277997395,
   "storage_human": "3.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

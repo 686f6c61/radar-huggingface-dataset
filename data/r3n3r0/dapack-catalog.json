@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "R3n3r0/dapack-catalog",
   "slug": "r3n3r0-dapack-catalog",
   "author": "R3n3r0",
@@ -27,14 +27,19 @@
   "parameters_human": "136.7M",
   "storage_bytes": 146146432,
   "storage_human": "146 MB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

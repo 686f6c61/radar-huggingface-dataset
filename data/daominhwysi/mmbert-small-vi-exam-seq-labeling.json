@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daominhwysi/mmbert-small-vi-exam-seq-labeling",
   "slug": "daominhwysi-mmbert-small-vi-exam-seq-labeling",
   "author": "daominhwysi",
@@ -38,14 +38,19 @@
   "parameters_human": "307.5M",
   "storage_bytes": 33250666330,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T03:44:15.364Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

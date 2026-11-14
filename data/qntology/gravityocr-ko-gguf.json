@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qntology/GravityOCR-KO-gguf",
   "slug": "qntology-gravityocr-ko-gguf",
   "author": "Qntology",
@@ -33,14 +33,19 @@
   "parameters_human": "673.0M",
   "storage_bytes": 3924947040,
   "storage_human": "3.9 GB",
+  "context_length": 131072,
   "base_model": "trillionlabs/GravityOCR",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

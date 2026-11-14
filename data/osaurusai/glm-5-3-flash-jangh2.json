@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/GLM-5.3-Flash-JANGH2",
   "slug": "osaurusai-glm-5-3-flash-jangh2",
   "author": "OsaurusAI",
@@ -49,6 +49,7 @@
   "parameters_human": "31.53B",
   "storage_bytes": 203647994243,
   "storage_human": "203.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OsaurusAI/GLM-5.3-Flash-JANGHT2.4",
+  "renamed_at": "2026-11-11T03:30:13.921Z",
   "benchmarks": [],
   "sources": [
     {

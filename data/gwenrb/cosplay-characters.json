@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GwenRB/cosplay-characters",
   "slug": "gwenrb-cosplay-characters",
   "author": "GwenRB",
@@ -28,14 +28,19 @@
   "parameters_human": "93.3M",
   "storage_bytes": 372931326,
   "storage_human": "373 MB",
+  "context_length": null,
   "base_model": "timm/vit_base_patch16_siglip_224.v2_webli",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

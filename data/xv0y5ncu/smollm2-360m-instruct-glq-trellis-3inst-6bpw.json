@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xv0y5ncu/SmolLM2-360M-Instruct-GLQ-trellis-3inst-6bpw",
   "slug": "xv0y5ncu-smollm2-360m-instruct-glq-trellis-3inst-6bpw",
   "author": "xv0y5ncu",
@@ -31,14 +31,19 @@
   "parameters_human": "165.8M",
   "storage_bytes": 331663608,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

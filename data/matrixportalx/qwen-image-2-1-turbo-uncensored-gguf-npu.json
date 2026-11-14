@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matrixportalx/Qwen-Image-2.1-Turbo-Uncensored-GGUF-npu",
   "slug": "matrixportalx-qwen-image-2-1-turbo-uncensored-gguf-npu",
   "author": "matrixportalx",
@@ -25,14 +25,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 21578843896,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

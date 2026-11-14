@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OxReD112/kokoro-german-victoria-web",
   "slug": "oxred112-kokoro-german-victoria-web",
   "author": "OxReD112",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 85067074,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "soniqo/Kokoro-82M-German-Victoria-ONNX",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

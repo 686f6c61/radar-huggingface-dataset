@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bebechien/gemma-4-E2B-kumamoto-asr-qlora",
   "slug": "bebechien-gemma-4-e2b-kumamoto-asr-qlora",
   "author": "bebechien",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 225496872,
   "storage_human": "225 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

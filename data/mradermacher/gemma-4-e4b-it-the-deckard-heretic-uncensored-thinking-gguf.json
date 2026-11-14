@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-4-E4B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking-GGUF",
   "slug": "mradermacher-gemma-4-e4b-it-the-deckard-heretic-uncensored-thinking-gguf",
   "author": "mradermacher",
@@ -57,14 +57,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 76858012864,
   "storage_human": "76.9 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/gemma-4-E4B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

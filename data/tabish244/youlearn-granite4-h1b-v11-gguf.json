@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tabish244/YouLearn-Granite4-H1B-V11-GGUF",
   "slug": "tabish244-youlearn-granite4-h1b-v11-gguf",
   "author": "Tabish244",
@@ -39,14 +39,19 @@
   "parameters_human": "1.46B",
   "storage_bytes": 901161760,
   "storage_human": "901 MB",
+  "context_length": 1048576,
   "base_model": "ibm-granite/granite-4.0-h-1b-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

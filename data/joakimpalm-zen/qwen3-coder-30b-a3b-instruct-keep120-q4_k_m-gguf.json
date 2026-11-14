@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joakimpalm-Zen/Qwen3-Coder-30B-A3B-Instruct-keep120-Q4_K_M-GGUF",
   "slug": "joakimpalm-zen-qwen3-coder-30b-a3b-instruct-keep120-q4_k_m-gguf",
   "author": "Joakimpalm-Zen",
@@ -33,14 +33,19 @@
   "parameters_human": "28.72B",
   "storage_bytes": 17531967808,
   "storage_human": "17.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

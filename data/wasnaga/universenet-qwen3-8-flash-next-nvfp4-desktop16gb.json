@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wasnaga/UniverseNet-Qwen3.8-Flash-Next-NVFP4-Desktop16GB",
   "slug": "wasnaga-universenet-qwen3-8-flash-next-nvfp4-desktop16gb",
   "author": "wasnaga",
@@ -38,14 +38,19 @@
   "parameters_human": "71.54B",
   "storage_bytes": 71715890854,
   "storage_human": "71.7 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:26:35.619Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigbigbei/Unlimited-OCR-2-4bit-mlx",
   "slug": "bigbigbei-unlimited-ocr-2-4bit-mlx",
   "author": "bigbigbei",
@@ -34,6 +34,7 @@
   "parameters_human": "611.6M",
   "storage_bytes": 2032887972,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR-2",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "playstonex/Unlimited-OCR-2-4bit-mlx",
+  "renamed_at": "2026-11-11T04:41:46.472Z",
   "benchmarks": [],
   "sources": []
 }

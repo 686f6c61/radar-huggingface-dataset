@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/MiniCPM-V-4.7-1B-weekly-analyst-edit",
   "slug": "ewin-reg-minicpm-v-4-7-1b-weekly-analyst-edit",
   "author": "ewin-reg",
@@ -37,6 +37,7 @@
   "parameters_human": "1.55B",
   "storage_bytes": 9554565697,
   "storage_human": "9.6 GB",
+  "context_length": 262144,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

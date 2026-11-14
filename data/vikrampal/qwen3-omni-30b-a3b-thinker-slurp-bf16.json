@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16",
   "slug": "vikrampal-qwen3-omni-30b-a3b-thinker-slurp-bf16",
   "author": "VikramPal",
@@ -41,14 +41,19 @@
   "parameters_human": "31.72B",
   "storage_bytes": 63452300446,
   "storage_human": "63.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-bf16",
+  "renamed_at": "2026-11-13T04:22:13.335Z",
   "benchmarks": [],
   "sources": [
     {

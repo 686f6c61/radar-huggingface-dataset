@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Settlers-Lab/CataNET-Pose-Small-v1.0",
   "slug": "settlers-lab-catanet-pose-small-v1-0",
   "author": "Settlers-Lab",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 61219441,
   "storage_human": "61 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO26",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T04:04:27.741Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

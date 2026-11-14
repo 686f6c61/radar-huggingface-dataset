@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-mlx-oQ8e",
   "slug": "solstice-ai-deepseek-v4-flash-vision-exp-mlx-oq8e",
   "author": "Solstice-AI",
@@ -49,6 +49,7 @@
   "parameters_human": "304.65B",
   "storage_bytes": 186260671492,
   "storage_human": "186.3 GB",
+  "context_length": null,
   "base_model": "unsloth/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:35:33.271Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

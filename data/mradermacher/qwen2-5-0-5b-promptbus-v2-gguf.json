@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2.5-0.5B-PromptBus-v2-GGUF",
   "slug": "mradermacher-qwen2-5-0-5b-promptbus-v2-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 5400191488,
   "storage_human": "5.4 GB",
+  "context_length": 32768,
   "base_model": "BRR1154/Qwen2.5-0.5B-PromptBus-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

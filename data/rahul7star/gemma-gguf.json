@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rahul7star/gemma-gguf",
   "slug": "rahul7star-gemma-gguf",
   "author": "rahul7star",
@@ -27,14 +27,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 463999486752,
   "storage_human": "464.0 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it, google/gemma-4-12B-it, ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

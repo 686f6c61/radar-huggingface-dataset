@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canvit/canvitb16-add-vpe-detect-g128px-s512px-coco-2026-08-01-nnx",
   "slug": "canvit-canvitb16-add-vpe-detect-g128px-s512px-coco-2026-08-01-nnx",
   "author": "canvit",
@@ -34,14 +34,19 @@
   "parameters_human": "97.5M",
   "storage_bytes": 390208088,
   "storage_human": "390 MB",
+  "context_length": null,
   "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

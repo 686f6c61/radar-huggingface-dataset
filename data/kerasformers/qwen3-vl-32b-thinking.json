@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/qwen3-vl-32b-thinking",
   "slug": "kerasformers-qwen3-vl-32b-thinking",
   "author": "kerasformers",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 66959555072,
   "storage_human": "67.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-32B-Thinking",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/qwen3-vl-32b-thinking",
+  "renamed_at": "2026-11-13T06:15:38.155Z",
   "benchmarks": [],
   "sources": []
 }

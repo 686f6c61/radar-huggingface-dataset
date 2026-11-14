@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chegrowk/ko-phone-int8",
   "slug": "chegrowk-ko-phone-int8",
   "author": "chegrowk",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 356129122,
   "storage_human": "356 MB",
+  "context_length": null,
   "base_model": "slplab/wav2vec2-xls-r-300m_phone-mfa_korean",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

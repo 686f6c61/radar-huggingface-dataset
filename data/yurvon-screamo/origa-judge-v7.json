@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yurvon-screamo/origa-judge-v7",
   "slug": "yurvon-screamo-origa-judge-v7",
   "author": "yurvon-screamo",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 61577096,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T06:21:00.218Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

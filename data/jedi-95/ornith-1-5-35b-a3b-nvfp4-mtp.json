@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jedi-95/Ornith-1.5-35B-A3B-NVFP4-MTP",
   "slug": "jedi-95-ornith-1-5-35b-a3b-nvfp4-mtp",
   "author": "jedi-95",
@@ -33,14 +33,19 @@
   "parameters_human": "18.68B",
   "storage_bytes": 23434964973,
   "storage_human": "23.4 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B, ornith-ai/Ornith-1.5-35B-A3B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

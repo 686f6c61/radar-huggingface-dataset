@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/Qwen2.5-32B-Instruct-heretic1x-general-kl0.1",
   "slug": "richardyoung-qwen2-5-32b-instruct-heretic1x-general-kl0-1",
   "author": "richardyoung",
@@ -40,14 +40,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65550307268,
   "storage_human": "65.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

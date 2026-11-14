@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dgrauet/matrix-game-3.0-mlx",
   "slug": "dgrauet-matrix-game-3-0-mlx",
   "author": "dgrauet",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 136689249471,
   "storage_human": "136.7 GB",
+  "context_length": null,
   "base_model": "Skywork/Matrix-Game-3.0",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elifgici/Lale-1.5B-LoRA",
   "slug": "elifgici-lale-1-5b-lora",
   "author": "elifgici",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 233155228,
   "storage_human": "233 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T04:08:09.675Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

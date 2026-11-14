@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tom2701/gpTommy-32k",
   "slug": "tom2701-gptommy-32k",
   "author": "Tom2701",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SentinelHub/gpTommy-32k",
+  "renamed_at": "2026-11-11T04:04:20.082Z",
   "benchmarks": [],
   "sources": []
 }

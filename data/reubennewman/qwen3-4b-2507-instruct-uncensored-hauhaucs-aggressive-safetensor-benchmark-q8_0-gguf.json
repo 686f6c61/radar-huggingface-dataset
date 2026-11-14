@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReubenNewman/Qwen3-4B-2507-Instruct-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark-Q8_0-GGUF",
   "slug": "reubennewman-qwen3-4b-2507-instruct-uncensored-hauhaucs-aggressive-safetensor-benchmark-q8_0-gguf",
   "author": "ReubenNewman",
@@ -40,6 +40,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 4280404064,
   "storage_human": "4.3 GB",
+  "context_length": 262144,
   "base_model": "DreamFast/Qwen3-4B-2507-Instruct-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

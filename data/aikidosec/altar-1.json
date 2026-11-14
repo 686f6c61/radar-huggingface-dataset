@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AikidoSec/altar-1",
   "slug": "aikidosec-altar-1",
   "author": "AikidoSec",
@@ -39,14 +39,19 @@
   "parameters_human": "500.83B",
   "storage_bytes": 327990672717,
   "storage_human": "328.0 GB",
+  "context_length": null,
   "base_model": "cyankiwi/GLM-5.3-AWQ-INT4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

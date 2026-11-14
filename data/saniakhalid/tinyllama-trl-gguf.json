@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaniaKhalid/tinyllama-trl-gguf",
   "slug": "saniakhalid-tinyllama-trl-gguf",
   "author": "SaniaKhalid",
@@ -38,14 +38,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 1169808800,
   "storage_human": "1.2 GB",
+  "context_length": 2048,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

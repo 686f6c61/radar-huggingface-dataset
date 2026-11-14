@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK",
   "slug": "redhatai-deepseek-v4-flash-0731-nvfp4-fp8-block",
   "author": "RedHatAI",
@@ -36,14 +36,19 @@
   "parameters_human": "145.82B",
   "storage_bytes": 329260824591,
   "storage_human": "329.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "RedHatAI/DeepSeek-V4-Flash-0731-NVFP4",
+  "renamed_at": "2026-11-11T03:40:20.179Z",
   "benchmarks": [],
   "sources": []
 }

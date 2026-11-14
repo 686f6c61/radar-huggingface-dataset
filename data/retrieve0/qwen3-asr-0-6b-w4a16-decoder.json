@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Retrieve0/Qwen3-ASR-0.6B-W4A16-Decoder",
   "slug": "retrieve0-qwen3-asr-0-6b-w4a16-decoder",
   "author": "Retrieve0",
@@ -33,14 +33,19 @@
   "parameters_human": "782.4M",
   "storage_bytes": 1576357125,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

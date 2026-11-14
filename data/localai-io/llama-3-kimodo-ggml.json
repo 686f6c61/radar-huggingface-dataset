@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LocalAI-io/Llama-3-Kimodo-GGML",
   "slug": "localai-io-llama-3-kimodo-ggml",
   "author": "LocalAI-io",
@@ -26,14 +26,19 @@
   "parameters_human": "7.55B",
   "storage_bytes": 59605116558,
   "storage_human": "59.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

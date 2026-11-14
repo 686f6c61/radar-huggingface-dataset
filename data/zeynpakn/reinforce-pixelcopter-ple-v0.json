@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zeynpakn/Reinforce-Pixelcopter-PLE-v0",
   "slug": "zeynpakn-reinforce-pixelcopter-ple-v0",
   "author": "zeynpakn",
@@ -28,14 +28,19 @@
   "parameters_human": "9090",
   "storage_bytes": 558288,
   "storage_human": "558288 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

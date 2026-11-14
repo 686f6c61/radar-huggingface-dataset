@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dremokk/BFS-Best-Face-Swap",
   "slug": "dremokk-bfs-best-face-swap",
   "author": "dremokk",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 10916341523,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9B, black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-klein-base-4B, black-forest-labs/FLUX.2-klein-base-9B, black-forest-labs/FLUX.2-klein-9b-fp8, black-forest-labs/FLUX.2-klein-4b-fp8, Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

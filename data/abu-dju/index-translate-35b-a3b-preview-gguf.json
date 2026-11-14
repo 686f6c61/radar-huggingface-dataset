@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abu-Dju/Index-Translate-35B-A3B-preview-GGUF",
   "slug": "abu-dju-index-translate-35b-a3b-preview-gguf",
   "author": "Abu-Dju",
@@ -31,14 +31,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 315482442240,
   "storage_human": "315.5 GB",
+  "context_length": 262144,
   "base_model": "IndexTeam/Index-Translate-35B-A3B-preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

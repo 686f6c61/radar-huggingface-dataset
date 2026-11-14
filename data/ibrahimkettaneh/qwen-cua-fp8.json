@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibrahimkettaneh/Qwen-CUA-FP8",
   "slug": "ibrahimkettaneh-qwen-cua-fp8",
   "author": "ibrahimkettaneh",
@@ -40,14 +40,19 @@
   "parameters_human": "403.40B",
   "storage_bytes": 408566389022,
   "storage_human": "408.6 GB",
+  "context_length": null,
   "base_model": "xlangai/Qwen-CUA",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

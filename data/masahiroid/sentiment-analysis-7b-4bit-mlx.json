@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/Sentiment-Analysis-7B-4bit-mlx",
   "slug": "masahiroid-sentiment-analysis-7b-4bit-mlx",
   "author": "masahiroid",
@@ -31,6 +31,7 @@
   "parameters_human": "7.24B",
   "storage_bytes": 4073941786,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "microsoft/Sentiment-Analysis-7B",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

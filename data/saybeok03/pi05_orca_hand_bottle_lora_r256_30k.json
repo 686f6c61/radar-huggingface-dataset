@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saybeok03/pi05_orca_hand_bottle_lora_r256_30k",
   "slug": "saybeok03-pi05_orca_hand_bottle_lora_r256_30k",
   "author": "saybeok03",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2950003776,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

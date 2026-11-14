@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aarushive/smart-mcq-solver-deberta-lora",
   "slug": "aarushive-smart-mcq-solver-deberta-lora",
   "author": "Aarushive",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 33129278,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheShellMaster/Cypher-Base-Qwen3-VL-8B-Abliterated-v1-GGUF",
   "slug": "theshellmaster-cypher-base-qwen3-vl-8b-abliterated-v1-gguf",
   "author": "TheShellMaster",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "mradermacher/Qwen3-VL-8B-Instruct-abliterated-v1-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:02:09.992Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

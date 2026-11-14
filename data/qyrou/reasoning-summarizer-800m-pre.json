@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qyrou/reasoning-summarizer-800m-pre",
   "slug": "qyrou-reasoning-summarizer-800m-pre",
   "author": "Qyrou",
@@ -40,14 +40,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1627103301,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mithulaartigala/reasoning-summarizer-qwen3.5-0.8b-preview",
+  "renamed_at": "2026-11-11T03:36:55.628Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ViuAI/ViuMini-MoE-242M",
   "slug": "viuai-viumini-moe-242m",
   "author": "ViuAI",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 12436784892,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ViuAI/ViuMini-Dense-360M",
+  "renamed_at": "2026-11-13T04:22:53.611Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "System2-Online/Qwen3.8-27B-DualProcess-GGUF",
   "slug": "system2-online-qwen3-8-27b-dualprocess-gguf",
   "author": "System2-Online",
@@ -37,14 +37,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 28029912896,
   "storage_human": "28.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

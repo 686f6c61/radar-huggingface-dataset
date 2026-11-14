@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch8",
   "slug": "lanni-ni-dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch8",
   "author": "Lanni-ni",
@@ -27,14 +27,19 @@
   "parameters_human": "45.7M",
   "storage_bytes": 182817832,
   "storage_human": "183 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

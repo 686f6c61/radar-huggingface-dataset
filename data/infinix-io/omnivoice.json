@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/OmniVoice",
   "slug": "infinix-io-omnivoice",
   "author": "Infinix-io",
@@ -1324,14 +1324,19 @@
   "parameters_human": "612.6M",
   "storage_bytes": 3267433726,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:45:46.248Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

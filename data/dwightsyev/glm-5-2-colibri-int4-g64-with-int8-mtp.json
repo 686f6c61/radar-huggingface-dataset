@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dwightsyev/GLM-5.2-colibri-int4-g64-with-int8-mtp",
   "slug": "dwightsyev-glm-5-2-colibri-int4-g64-with-int8-mtp",
   "author": "dwightsyev",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 429276080522,
   "storage_human": "429.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

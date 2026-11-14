@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quanda-bench-test/3b02929-awa2_resnet50_SubclassDetection",
   "slug": "quanda-bench-test-3b02929-awa2_resnet50_subclassdetection",
   "author": "quanda-bench-test",
@@ -24,14 +24,19 @@
   "parameters_human": "23.6M",
   "storage_bytes": 471449680,
   "storage_human": "471 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:51:17.849Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

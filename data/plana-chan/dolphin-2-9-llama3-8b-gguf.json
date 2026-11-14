@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Plana-Chan/dolphin-2.9-llama3-8b-GGUF",
   "slug": "plana-chan-dolphin-2-9-llama3-8b-gguf",
   "author": "Plana-Chan",
@@ -41,14 +41,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 7198070400,
   "storage_human": "7.2 GB",
+  "context_length": 8192,
   "base_model": "cognitivecomputations/dolphin-2.9-llama3-8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:24:54.018Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

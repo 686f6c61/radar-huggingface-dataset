@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
   "slug": "nvidia-nvidia-nemotron-3-5-bolt-e4b-4gb-dflash",
   "author": "nvidia",
@@ -36,14 +36,19 @@
   "parameters_human": "360.5M",
   "storage_bytes": 736812096,
   "storage_human": "737 MB",
+  "context_length": 131072,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

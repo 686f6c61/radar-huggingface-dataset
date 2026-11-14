@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zeteng/qwen_yue_qa_finetuned_int4",
   "slug": "zeteng-qwen_yue_qa_finetuned_int4",
   "author": "Zeteng",
@@ -46,14 +46,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 53720879851,
   "storage_human": "53.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Zeteng/Qwen-Yue-Ascend-8B",
+  "renamed_at": "2026-11-14T04:49:05.384Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "closed-port/Qwen-abliteration-weights",
   "slug": "closed-port-qwen-abliteration-weights",
   "author": "closed-port",
@@ -31,6 +31,7 @@
   "parameters_human": "2.03B",
   "storage_bytes": 367298066547,
   "storage_human": "367.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3.5-2B, Qwen/Qwen3.5-4B, Qwen/Qwen3-1.7B, Qwen/Qwen3-4B, Qwen/Qwen3.5-9B, Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

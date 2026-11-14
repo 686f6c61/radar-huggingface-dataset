@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minju2026/dama-aibrain",
   "slug": "minju2026-dama-aibrain",
   "author": "minju2026",
@@ -34,6 +34,7 @@
   "parameters_human": "5.12B",
   "storage_bytes": 33085041377,
   "storage_human": "33.1 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

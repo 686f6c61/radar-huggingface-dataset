@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ECE-Software/tribunal-operator",
   "slug": "ece-software-tribunal-operator",
   "author": "ECE-Software",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 79218665,
   "storage_human": "79 MB",
+  "context_length": null,
   "base_model": "ECE-Software/gemma-3-270m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T03:00:02.975Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

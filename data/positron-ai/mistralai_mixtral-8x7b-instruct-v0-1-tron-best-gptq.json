@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "positron-ai/mistralai_Mixtral-8x7B-Instruct-v0.1-tron-best-gptq",
   "slug": "positron-ai-mistralai_mixtral-8x7b-instruct-v0-1-tron-best-gptq",
   "author": "positron-ai",
@@ -33,14 +33,19 @@
   "parameters_human": "46.70B",
   "storage_bytes": 25586741027,
   "storage_human": "25.6 GB",
+  "context_length": null,
   "base_model": "source/mistralai--Mixtral-8x7B-Instruct-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

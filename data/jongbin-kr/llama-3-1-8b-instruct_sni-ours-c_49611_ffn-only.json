@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_49611_ffn-only",
   "slug": "jongbin-kr-llama-3-1-8b-instruct_sni-ours-c_49611_ffn-only",
   "author": "Jongbin-kr",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2282645905,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hestia07/Pomegranate-Killer-8B",
   "slug": "hestia07-pomegranate-killer-8b",
   "author": "Hestia07",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Arcee-AI/Llama-3-Soliloquy-8B, NousResearch/Hermes-3-Llama-3-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chuckythedoll2005/Voice_Models",
   "slug": "chuckythedoll2005-voice_models",
   "author": "Chuckythedoll2005",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 4265434274,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

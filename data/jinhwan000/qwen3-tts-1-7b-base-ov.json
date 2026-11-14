@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jinhwan000/qwen3-tts-1.7b-base-ov",
   "slug": "jinhwan000-qwen3-tts-1-7b-base-ov",
   "author": "jinhwan000",
@@ -52,12 +52,17 @@
   "parameters_human": null,
   "storage_bytes": 6910689064,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

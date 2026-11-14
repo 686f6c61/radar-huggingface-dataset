@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AmixDigital/BigBang-v1-mtp-oQ",
   "slug": "amixdigital-bigbang-v1-mtp-oq",
   "author": "AmixDigital",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 121396294685,
   "storage_human": "121.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-17T09:39:30.945Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-gigaam-v3-e2e-rnnt-gguf",
   "slug": "xix3r-voxix-gigaam-v3-e2e-rnnt-gguf",
   "author": "xix3r",
@@ -37,14 +37,19 @@
   "parameters_human": "222.5M",
   "storage_bytes": 273724832,
   "storage_human": "274 MB",
+  "context_length": null,
   "base_model": "ai-sage/GigaAM-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

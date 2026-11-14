@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "querypieai/QEV1.1-9B-8BIT",
   "slug": "querypieai-qev1-1-9b-8bit",
   "author": "querypieai",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 11023306398,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

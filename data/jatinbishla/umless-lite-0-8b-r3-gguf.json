@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jatinbishla/Umless-Lite-0.8B-r3-GGUF",
   "slug": "jatinbishla-umless-lite-0-8b-r3-gguf",
   "author": "jatinbishla",
@@ -38,14 +38,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 541903840,
   "storage_human": "542 MB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

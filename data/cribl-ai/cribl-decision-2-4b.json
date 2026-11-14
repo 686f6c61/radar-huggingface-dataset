@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cribl-ai/cribl-decision-2-4B",
   "slug": "cribl-ai-cribl-decision-2-4b",
   "author": "cribl-ai",
@@ -38,14 +38,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8434160909,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

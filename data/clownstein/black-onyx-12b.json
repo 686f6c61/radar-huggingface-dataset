@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Clownstein/Black-Onyx-12B",
   "slug": "clownstein-black-onyx-12b",
   "author": "Clownstein",
@@ -31,14 +31,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951719188,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T04:15:54.978Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gahabeen/F2LLM-v2-330M",
   "slug": "gahabeen-f2llm-v2-330m",
   "author": "gahabeen",
@@ -208,14 +208,19 @@
   "parameters_human": "334.3M",
   "storage_bytes": 670191716,
   "storage_human": "670 MB",
+  "context_length": null,
   "base_model": "codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-330M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

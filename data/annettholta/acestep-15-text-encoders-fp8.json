@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnnettHolta/AceStep-15-Text-Encoders-FP8",
   "slug": "annettholta-acestep-15-text-encoders-fp8",
   "author": "AnnettHolta",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4189601160,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "ACE-Step/acestep-v15-xl-turbo, ACE-Step/acestep-v15-xl-sft",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

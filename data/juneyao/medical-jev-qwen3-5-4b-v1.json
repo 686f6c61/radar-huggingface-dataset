@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JuneYao/medical-jev-qwen3.5-4b-v1",
   "slug": "juneyao-medical-jev-qwen3-5-4b-v1",
   "author": "JuneYao",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 129912616,
   "storage_human": "130 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T07:38:57.475Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

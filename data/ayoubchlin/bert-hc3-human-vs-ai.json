@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AyoubChLin/bert-hc3-human-vs-ai",
   "slug": "ayoubchlin-bert-hc3-human-vs-ai",
   "author": "AyoubChLin",
@@ -40,14 +40,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 875917248,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/snac-24khz-loom",
   "slug": "loom-ai-org-snac-24khz-loom",
   "author": "loom-ai-org",
@@ -29,14 +29,19 @@
   "parameters_human": "13.1M",
   "storage_bytes": 52552864,
   "storage_human": "53 MB",
+  "context_length": null,
   "base_model": "hubertsiuzdak/snac_24khz",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

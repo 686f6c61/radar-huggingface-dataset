@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaivoss/MiMo-V2.6-Distill-Qwen-9B-compat",
   "slug": "kaivoss-mimo-v2-6-distill-qwen-9b-compat",
   "author": "kaivoss",
@@ -36,14 +36,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 22614722555,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

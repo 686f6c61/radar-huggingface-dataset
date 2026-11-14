@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TevunahAi/Chochmah1B",
   "slug": "tevunahai-chochmah1b",
   "author": "TevunahAi",
@@ -53,14 +53,19 @@
   "parameters_human": "1.18B",
   "storage_bytes": 4731631160,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/HyLo-Llama-4MLA12GDN-8K-SFT",
   "slug": "amd-hylo-llama-4mla12gdn-8k-sft",
   "author": "amd",
@@ -46,14 +46,19 @@
   "parameters_human": "1.67B",
   "storage_bytes": 6695219536,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

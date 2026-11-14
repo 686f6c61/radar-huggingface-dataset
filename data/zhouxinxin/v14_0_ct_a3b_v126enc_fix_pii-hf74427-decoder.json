@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder",
   "slug": "zhouxinxin-v14_0_ct_a3b_v126enc_fix_pii-hf74427-decoder",
   "author": "zhouxinxin",
@@ -24,14 +24,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61077999052,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

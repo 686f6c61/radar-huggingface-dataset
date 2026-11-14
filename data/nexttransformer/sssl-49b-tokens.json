@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NextTransformer/SSSL-49B-Tokens",
   "slug": "nexttransformer-sssl-49b-tokens",
   "author": "NextTransformer",
@@ -28,14 +28,19 @@
   "parameters_human": "1.38B",
   "storage_bytes": 4227884608,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

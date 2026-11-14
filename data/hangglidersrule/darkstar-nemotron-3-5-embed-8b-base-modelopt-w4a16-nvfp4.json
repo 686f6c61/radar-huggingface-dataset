@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HangGlidersRule/Darkstar-Nemotron-3.5-Embed-8B-Base-ModelOpt-W4A16-NVFP4",
   "slug": "hangglidersrule-darkstar-nemotron-3-5-embed-8b-base-modelopt-w4a16-nvfp4",
   "author": "HangGlidersRule",
@@ -36,14 +36,19 @@
   "parameters_human": "8.38B",
   "storage_bytes": 6124138938,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Embed-8B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

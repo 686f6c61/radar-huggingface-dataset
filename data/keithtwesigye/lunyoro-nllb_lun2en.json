@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keithtwesigye/lunyoro-nllb_lun2en",
   "slug": "keithtwesigye-lunyoro-nllb_lun2en",
   "author": "keithtwesigye",
@@ -36,14 +36,19 @@
   "parameters_human": "615.1M",
   "storage_bytes": 44497381305,
   "storage_human": "44.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T07:39:15.439Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

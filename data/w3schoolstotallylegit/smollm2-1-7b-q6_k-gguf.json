@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "w3schoolstotallylegit/SmolLM2-1.7B-Q6_K-GGUF",
   "slug": "w3schoolstotallylegit-smollm2-1-7b-q6_k-gguf",
   "author": "w3schoolstotallylegit",
@@ -32,14 +32,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 1405964480,
   "storage_human": "1.4 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shabieh2/1110_tags_tree_rel_2_epoch",
   "slug": "shabieh2-1110_tags_tree_rel_2_epoch",
   "author": "shabieh2",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 866591761,
   "storage_human": "867 MB",
+  "context_length": null,
   "base_model": "unsloth/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

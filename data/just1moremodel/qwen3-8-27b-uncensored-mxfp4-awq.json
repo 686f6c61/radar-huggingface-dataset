@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq",
   "slug": "just1moremodel-qwen3-8-27b-uncensored-mxfp4-awq",
   "author": "just1moremodel",
@@ -43,14 +43,19 @@
   "parameters_human": "15.61B",
   "storage_bytes": 19386605976,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

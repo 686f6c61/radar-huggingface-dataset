@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yacksweb001/nupe-orpheus-lora-v3",
   "slug": "yacksweb001-nupe-orpheus-lora-v3",
   "author": "yacksweb001",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1579356747,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T02:30:38.331Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

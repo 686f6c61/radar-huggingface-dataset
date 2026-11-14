@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GaborMadarasz/gemma-3n-E2B-it_hun_ASR-finetune-gguf_Q8",
   "slug": "gabormadarasz-gemma-3n-e2b-it_hun_asr-finetune-gguf_q8",
   "author": "GaborMadarasz",
@@ -27,14 +27,19 @@
   "parameters_human": "4.46B",
   "storage_bytes": 4744824576,
   "storage_human": "4.7 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "GaborMadarasz/gemma-3n-E2B-it_es-en_ASR-finetune-gguf_Q8",
+  "renamed_at": "2026-11-11T02:47:45.546Z",
   "benchmarks": [],
   "sources": []
 }

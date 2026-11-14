@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
   "slug": "openintelligent123-nvidia-nemotron-3-super-120b-a12b-bf16",
   "author": "Openintelligent123",
@@ -54,14 +54,19 @@
   "parameters_human": "123.61B",
   "storage_bytes": 247244727964,
   "storage_human": "247.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

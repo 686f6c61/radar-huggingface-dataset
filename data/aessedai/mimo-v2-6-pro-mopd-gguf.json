@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AesSedai/MiMo-V2.6-Pro-MOPD-GGUF",
   "slug": "aessedai-mimo-v2-6-pro-mopd-gguf",
   "author": "AesSedai",
@@ -27,14 +27,19 @@
   "parameters_human": "1023.18B",
   "storage_bytes": 1999758664843,
   "storage_human": "1999.8 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

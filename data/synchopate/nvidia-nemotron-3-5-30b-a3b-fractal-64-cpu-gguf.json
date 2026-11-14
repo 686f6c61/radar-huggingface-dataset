@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-Fractal-64-CPU-GGUF",
   "slug": "synchopate-nvidia-nemotron-3-5-30b-a3b-fractal-64-cpu-gguf",
   "author": "Synchopate",
@@ -37,14 +37,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 15808379736,
   "storage_human": "15.8 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

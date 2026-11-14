@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arthrod/attempt_vanilla",
   "slug": "arthrod-attempt_vanilla",
   "author": "arthrod",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 5397647126,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "knowledgator/gliner-pii-large-v1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

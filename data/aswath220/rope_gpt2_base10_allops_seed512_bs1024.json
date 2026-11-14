@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aswath220/rope_gpt2_base10_allops_seed512_bs1024",
   "slug": "aswath220-rope_gpt2_base10_allops_seed512_bs1024",
   "author": "Aswath220",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 18562438023,
   "storage_human": "18.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

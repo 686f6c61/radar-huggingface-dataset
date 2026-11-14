@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "regnant-io/kw5-lite-base",
   "slug": "regnant-io-kw5-lite-base",
   "author": "regnant-io",
@@ -40,14 +40,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 3165818408,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "regnant-io/kw5-109M",
+  "renamed_at": "2026-11-11T07:17:37.082Z",
   "benchmarks": [],
   "sources": [
     {

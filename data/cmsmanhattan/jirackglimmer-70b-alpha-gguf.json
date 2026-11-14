@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CMSManhattan/JiRackGlimmer-70B-alpha-GGUF",
   "slug": "cmsmanhattan-jirackglimmer-70b-alpha-gguf",
   "author": "CMSManhattan",
@@ -31,14 +31,19 @@
   "parameters_human": "70.03B",
   "storage_bytes": 142702415104,
   "storage_human": "142.7 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

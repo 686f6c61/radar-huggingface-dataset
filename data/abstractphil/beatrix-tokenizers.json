@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbstractPhil/beatrix-tokenizers",
   "slug": "abstractphil-beatrix-tokenizers",
   "author": "AbstractPhil",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 7787282566,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "AbstractPhil/mini-beatrix-3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

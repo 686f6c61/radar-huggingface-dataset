@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leirbag99/Ornith-1.5-9B-IQ4_XS-GGUF",
   "slug": "leirbag99-ornith-1-5-9b-iq4_xs-gguf",
   "author": "leirbag99",
@@ -32,14 +32,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 10657985504,
   "storage_human": "10.7 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "leirbag99/Ornith-1.5-9B-IQ4_XS-NO-VISION-GGUF",
+  "renamed_at": "2026-11-11T06:01:02.393Z",
   "benchmarks": [],
   "sources": [
     {

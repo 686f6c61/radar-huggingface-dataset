@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "V109/qwen2.5-MFANN-7b-SLERP-V1.2",
   "slug": "v109-qwen2-5-mfann-7b-slerp-v1-2",
   "author": "V109",
@@ -29,14 +29,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693404,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

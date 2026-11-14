@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bi0/Nemotron-3.5-Rerank-8B-rank-Q4_K_M",
   "slug": "bi0-nemotron-3-5-rerank-8b-rank-q4_k_m",
   "author": "bi0",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

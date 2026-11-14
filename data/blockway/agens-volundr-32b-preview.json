@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blockway/Agens-Volundr-32B-Preview",
   "slug": "blockway-agens-volundr-32b-preview",
   "author": "Blockway",
@@ -45,14 +45,19 @@
   "parameters_human": "32.69B",
   "storage_bytes": 65379269028,
   "storage_human": "65.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

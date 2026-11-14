@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcasoceaneffects/stable-video-diffusion-img2vid-xt",
   "slug": "orcasoceaneffects-stable-video-diffusion-img2vid-xt",
   "author": "orcasoceaneffects",
@@ -26,6 +26,7 @@
   "parameters_human": "1.52B",
   "storage_bytes": 32608765959,
   "storage_human": "32.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

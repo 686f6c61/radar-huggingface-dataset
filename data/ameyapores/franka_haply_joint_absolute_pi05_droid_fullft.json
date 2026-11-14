@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ameyapores/franka_haply_joint_absolute_pi05_droid_fullft",
   "slug": "ameyapores-franka_haply_joint_absolute_pi05_droid_fullft",
   "author": "Ameyapores",
@@ -27,14 +27,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 7473105288,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

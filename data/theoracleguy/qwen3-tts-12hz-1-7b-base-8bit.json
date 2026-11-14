@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theoracleguy/Qwen3-TTS-12Hz-1.7B-Base-8bit",
   "slug": "theoracleguy-qwen3-tts-12hz-1-7b-base-8bit",
   "author": "theoracleguy",
@@ -32,6 +32,7 @@
   "parameters_human": "1.93B",
   "storage_bytes": 3099613617,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

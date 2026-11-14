@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-DSpark",
   "slug": "gittensor-model-hub-qwen3-8-27b-nvfp4-rtx5090-dspark",
   "author": "gittensor-model-hub",
@@ -36,14 +36,19 @@
   "parameters_human": "1.36B",
   "storage_bytes": 2718576122,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-27B-DSpark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:16:54.396Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

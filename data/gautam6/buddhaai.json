@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gautam6/BUDDHAAI",
   "slug": "gautam6-buddhaai",
   "author": "Gautam6",
@@ -22,12 +22,17 @@
   "parameters_human": "34.2M",
   "storage_bytes": 136919040,
   "storage_human": "137 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:13:36.825Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hygaard/Inkling-2-Small-oQe-3.07bpw-MLX",
   "slug": "hygaard-inkling-2-small-oqe-3-07bpw-mlx",
   "author": "Hygaard",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small-MXFP8",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

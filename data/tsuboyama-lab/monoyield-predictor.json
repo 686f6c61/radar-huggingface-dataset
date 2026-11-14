@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tsuboyama-Lab/monoyield-predictor",
   "slug": "tsuboyama-lab-monoyield-predictor",
   "author": "Tsuboyama-Lab",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 164192522,
   "storage_human": "164 MB",
+  "context_length": null,
   "base_model": "biohub/ESMC-6B, westlake-repl/SaProt_1.3B_AFDB_OMG_NCBI",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

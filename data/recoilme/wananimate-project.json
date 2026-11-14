@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "recoilme/wananimate-project",
   "slug": "recoilme-wananimate-project",
   "author": "recoilme",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 107113454,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:42:40.591Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

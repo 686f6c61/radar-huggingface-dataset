@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/LFM2.5-24B-A2B-APEX-I-MiniPlus-V2.1-GGUF",
   "slug": "isvalorum-lfm2-5-24b-a2b-apex-i-miniplus-v2-1-gguf",
   "author": "IsValorum",
@@ -72,14 +72,19 @@
   "parameters_human": "23.97B",
   "storage_bytes": 9641950688,
   "storage_human": "9.6 GB",
+  "context_length": 131072,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

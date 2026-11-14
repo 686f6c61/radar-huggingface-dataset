@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElijahSdjsiaofjdasiofjs/Gemma4-E2B-LoRA-angrygiraffe-claude-opus-4.6-4.7-reasoning-8.7k",
   "slug": "elijahsdjsiaofjdasiofjs-gemma4-e2b-lora-angrygiraffe-claude-opus-4-6-4-7-reasoning-8-7k",
   "author": "ElijahSdjsiaofjdasiofjs",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 209391910,
   "storage_human": "209 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BuilderHelm/Parakeet-TDT-CTC-110M-CoreML",
   "slug": "builderhelm-parakeet-tdt-ctc-110m-coreml",
   "author": "BuilderHelm",
@@ -50,12 +50,17 @@
   "parameters_human": null,
   "storage_bytes": 664869147,
   "storage_human": "665 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt_ctc-110m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

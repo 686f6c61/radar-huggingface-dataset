@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grumd0/Nemotron-3.5-Bolt-E4B-Heretic",
   "slug": "grumd0-nemotron-3-5-bolt-e4b-heretic",
   "author": "grumd0",
@@ -108,14 +108,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16024782372,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

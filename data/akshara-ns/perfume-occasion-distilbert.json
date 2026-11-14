@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akshara-ns/perfume-occasion-distilbert",
   "slug": "akshara-ns-perfume-occasion-distilbert",
   "author": "akshara-ns",
@@ -37,14 +37,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 267843921,
   "storage_human": "268 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Perfume occasion classification",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch17",
   "slug": "g-assismoraes-tofu-phi-1_5-forget10-ihl_embed-epoch17",
   "author": "g-assismoraes",
@@ -30,14 +30,19 @@
   "parameters_human": "1.42B",
   "storage_bytes": 2836579040,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "locuslab/tofu_ft_phi-1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

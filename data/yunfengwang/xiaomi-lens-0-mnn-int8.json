@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunfengwang/Xiaomi-Lens-0-MNN-int8",
   "slug": "yunfengwang-xiaomi-lens-0-mnn-int8",
   "author": "yunfengwang",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 6228065495,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "SeerRay-Lab/Xiaomi-Lens-0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

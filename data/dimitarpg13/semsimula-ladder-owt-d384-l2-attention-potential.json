@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential",
   "slug": "dimitarpg13-semsimula-ladder-owt-d384-l2-attention-potential",
   "author": "dimitarpg13",
@@ -49,12 +49,17 @@
   "parameters_human": null,
   "storage_bytes": 619629208,
   "storage_human": "620 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

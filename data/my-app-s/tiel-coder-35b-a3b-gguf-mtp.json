@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "my-app-s/Tiel-Coder-35B-A3B-GGUF-MTP",
   "slug": "my-app-s-tiel-coder-35b-a3b-gguf-mtp",
   "author": "my-app-s",
@@ -41,14 +41,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 244025969052,
   "storage_human": "244.0 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

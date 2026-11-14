@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qnguyen3/QUAN-Transcribe-1.0",
   "slug": "qnguyen3-quan-transcribe-1-0",
   "author": "qnguyen3",
@@ -33,14 +33,19 @@
   "parameters_human": "101.7M",
   "storage_bytes": 1718961616,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

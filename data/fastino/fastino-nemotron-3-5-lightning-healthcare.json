@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fastino/Fastino-Nemotron-3.5-Lightning-Healthcare",
   "slug": "fastino-fastino-nemotron-3-5-lightning-healthcare",
   "author": "fastino",
@@ -40,14 +40,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 503061039979,
   "storage_human": "503.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Lightning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

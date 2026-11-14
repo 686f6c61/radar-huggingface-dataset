@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FRPO/qwen3-1.7b-a15_global_token_norm-k1-cNone-globalTokNorm-clip0.2-mb4-eta100-bs256x5-n2-seed2",
   "slug": "frpo-qwen3-1-7b-a15_global_token_norm-k1-cnone-globaltoknorm-clip0-2-mb4-eta100-bs256x5-n2-seed2",
   "author": "FRPO",
@@ -33,14 +33,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8138417822,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentlans/GIST-small-finefineweb",
   "slug": "agentlans-gist-small-finefineweb",
   "author": "agentlans",
@@ -33,14 +33,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 133566476,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "avsolatorio/GIST-small-Embedding-v0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Classification",

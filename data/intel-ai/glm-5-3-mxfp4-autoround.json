@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intel-ai/GLM-5.3-MXFP4-AutoRound",
   "slug": "intel-ai-glm-5-3-mxfp4-autoround",
   "author": "intel-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 403368887918,
   "storage_human": "403.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

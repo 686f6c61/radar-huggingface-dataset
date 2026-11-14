@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WraPbiT/secbert-casie-extraction",
   "slug": "wrapbit-secbert-casie-extraction",
   "author": "WraPbiT",
@@ -32,14 +32,19 @@
   "parameters_human": "82.9M",
   "storage_bytes": 331652165,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": "jackaduma/SecBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

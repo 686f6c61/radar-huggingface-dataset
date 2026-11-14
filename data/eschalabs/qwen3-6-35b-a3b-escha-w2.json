@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EschaLabs/Qwen3.6-35B-A3B-Escha-W2",
   "slug": "eschalabs-qwen3-6-35b-a3b-escha-w2",
   "author": "EschaLabs",
@@ -44,6 +44,7 @@
   "parameters_human": "7.30B",
   "storage_bytes": 12311859361,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beshkenadze/dictator-native-translation-f4a5549787f01e8bac2e76ea",
   "slug": "beshkenadze-dictator-native-translation-f4a5549787f01e8bac2e76ea",
   "author": "beshkenadze",
@@ -29,14 +29,19 @@
   "parameters_human": "239.1M",
   "storage_bytes": 480149131,
   "storage_human": "480 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

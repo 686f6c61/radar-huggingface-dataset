@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fiveflow/RQ-Evolve-4B-Solver_step64",
   "slug": "fiveflow-rq-evolve-4b-solver_step64",
   "author": "fiveflow",
@@ -29,14 +29,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404730,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:46:59.991Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

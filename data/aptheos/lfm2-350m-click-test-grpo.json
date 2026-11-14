@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aptheos/lfm2-350m-click-test-grpo",
   "slug": "aptheos-lfm2-350m-click-test-grpo",
   "author": "Aptheos",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 32111400,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

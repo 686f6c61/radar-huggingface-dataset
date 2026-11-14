@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/gemma-4-12B-it-Feral-Aquarion-INT8",
   "slug": "rin247-gemma-4-12b-it-feral-aquarion-int8",
   "author": "Rin247",
@@ -27,14 +27,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 13051808682,
   "storage_human": "13.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T06:33:46.226Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

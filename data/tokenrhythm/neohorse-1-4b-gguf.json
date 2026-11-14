@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TokenRhythm/NeoHorse-1-4B-GGUF",
   "slug": "tokenrhythm-neohorse-1-4b-gguf",
   "author": "TokenRhythm",
@@ -36,14 +36,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 27114981120,
   "storage_human": "27.1 GB",
+  "context_length": 262144,
   "base_model": "TokenRhythm/NeoHorse-1-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

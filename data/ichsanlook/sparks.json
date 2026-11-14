@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ichsanlook/sparks",
   "slug": "ichsanlook-sparks",
   "author": "ichsanlook",
@@ -26,6 +26,7 @@
   "parameters_human": "1.71B",
   "storage_bytes": 11392583272,
   "storage_human": "11.4 GB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:24:19.489Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

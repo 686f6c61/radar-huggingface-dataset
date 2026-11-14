@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "romplle/vlm-minigrid-rl-adapters",
   "slug": "romplle-vlm-minigrid-rl-adapters",
   "author": "romplle",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 753378384,
   "storage_human": "753 MB",
+  "context_length": null,
   "base_model": "lusxvr/nanoVLM-222M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "romplle/grpo-vs-sft-ood-adapters",
+  "renamed_at": "2026-11-11T07:21:23.844Z",
   "benchmarks": [],
   "sources": []
 }

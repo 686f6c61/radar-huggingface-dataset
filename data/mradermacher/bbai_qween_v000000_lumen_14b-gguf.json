@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/BBAI_QWEEN_V000000_LUMEN_14B-GGUF",
   "slug": "mradermacher-bbai_qween_v000000_lumen_14b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "10.37B",
   "storage_bytes": 92890359424,
   "storage_human": "92.9 GB",
+  "context_length": 131072,
   "base_model": "Supichi/BBAI_QWEEN_V000000_LUMEN_14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

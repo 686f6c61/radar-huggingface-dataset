@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adipotnis/Cosmos3-Edge-Charging",
   "slug": "adipotnis-cosmos3-edge-charging",
   "author": "adipotnis",
@@ -27,14 +27,19 @@
   "parameters_human": "4.56B",
   "storage_bytes": 47914135981,
   "storage_human": "47.9 GB",
+  "context_length": null,
   "base_model": "lerobot/Cosmos3-Edge",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

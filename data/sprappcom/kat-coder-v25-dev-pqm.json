@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sprappcom/kat-coder-v25-dev-pqm",
   "slug": "sprappcom-kat-coder-v25-dev-pqm",
   "author": "sprappcom",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 39879573144,
   "storage_human": "39.9 GB",
+  "context_length": null,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "oaica/oaica-35b-a3b-dev",
+  "renamed_at": "2026-11-14T08:37:27.235Z",
   "benchmarks": [],
   "sources": [
     {

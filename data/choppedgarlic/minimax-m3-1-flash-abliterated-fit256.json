@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "choppedgarlic/MiniMax-M3.1-Flash-abliterated-fit256",
   "slug": "choppedgarlic-minimax-m3-1-flash-abliterated-fit256",
   "author": "choppedgarlic",
@@ -30,14 +30,19 @@
   "parameters_human": "426.19B",
   "storage_bytes": 229817588416,
   "storage_human": "229.8 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash, operationrange/MiniMax-M3.1-Flash-abliterated-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "choppedgarlic/MiniMax-M3.1-Flash-abliterated-Q3-4",
+  "renamed_at": "2026-11-11T04:49:22.398Z",
   "benchmarks": [],
   "sources": []
 }

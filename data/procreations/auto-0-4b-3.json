@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/auto-0.4b-3",
   "slug": "procreations-auto-0-4b-3",
   "author": "ProCreations",
@@ -35,14 +35,19 @@
   "parameters_human": "395.8M",
   "storage_bytes": 792833082,
   "storage_human": "793 MB",
+  "context_length": null,
   "base_model": "ProCreations/auto-0.4b-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Agentic tool-call approve/deny classification",

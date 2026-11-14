@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nam-toon-studio/sevak-22m",
   "slug": "nam-toon-studio-sevak-22m",
   "author": "Nam-toon-studio",
@@ -39,14 +39,19 @@
   "parameters_human": "23.1M",
   "storage_bytes": 93002353,
   "storage_human": "93 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:00:06.118Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

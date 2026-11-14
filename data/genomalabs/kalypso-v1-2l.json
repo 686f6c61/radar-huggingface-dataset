@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "genomalabs/kalypso-v1.2l",
   "slug": "genomalabs-kalypso-v1-2l",
   "author": "genomalabs",
@@ -38,6 +38,7 @@
   "parameters_human": "30.53B",
   "storage_bytes": 82204826026,
   "storage_human": "82.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

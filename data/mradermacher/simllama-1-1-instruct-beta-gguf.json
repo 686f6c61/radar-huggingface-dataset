@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/simllama-1.1-instruct-beta-GGUF",
   "slug": "mradermacher-simllama-1-1-instruct-beta-gguf",
   "author": "mradermacher",
@@ -44,14 +44,19 @@
   "parameters_human": "468.2M",
   "storage_bytes": 4198869760,
   "storage_human": "4.2 GB",
+  "context_length": 4096,
   "base_model": "simonko912/simllama-1.1-instruct-beta",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

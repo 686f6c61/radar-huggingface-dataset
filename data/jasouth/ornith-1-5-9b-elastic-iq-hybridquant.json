@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JASouth/Ornith-1.5-9B-Elastic-IQ-HybridQuant",
   "slug": "jasouth-ornith-1-5-9b-elastic-iq-hybridquant",
   "author": "JASouth",
@@ -36,14 +36,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 35949747072,
   "storage_human": "35.9 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T07:14:18.911Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

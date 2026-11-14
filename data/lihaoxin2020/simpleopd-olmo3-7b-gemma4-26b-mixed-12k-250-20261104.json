@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lihaoxin2020/simpleopd-olmo3-7b-gemma4-26b-mixed-12k-250-20261104",
   "slug": "lihaoxin2020-simpleopd-olmo3-7b-gemma4-26b-mixed-12k-250-20261104",
   "author": "lihaoxin2020",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 262729326439,
   "storage_human": "262.7 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-7B-Instruct-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prahaladha/hima-asr-mlx-4bit",
   "slug": "prahaladha-hima-asr-mlx-4bit",
   "author": "Prahaladha",
@@ -65,6 +65,7 @@
   "parameters_human": "104.6M",
   "storage_bytes": 840756592,
   "storage_human": "841 MB",
+  "context_length": null,
   "base_model": "Prahaladha/hima-asr",
   "formats": [
     "mlx",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

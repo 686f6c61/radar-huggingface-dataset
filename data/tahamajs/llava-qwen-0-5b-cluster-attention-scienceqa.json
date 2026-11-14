@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tahamajs/llava-qwen-0.5b-cluster-attention-scienceqa",
   "slug": "tahamajs-llava-qwen-0-5b-cluster-attention-scienceqa",
   "author": "tahamajs",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 647670882,
   "storage_human": "648 MB",
+  "context_length": null,
   "base_model": "llava-hf/llava-interleave-qwen-0.5b-hf",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hooshaai/llava-qwen-0.5b-cluster-attention-scienceqa",
+  "renamed_at": "2026-11-14T08:46:27.246Z",
   "benchmarks": [
     {
       "task": "ScienceQA Multimodal Visual Reasoning",

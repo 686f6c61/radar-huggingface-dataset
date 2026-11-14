@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skx618/FastVideo-FastH3-8-Step-V2-NVFP4",
   "slug": "skx618-fastvideo-fasth3-8-step-v2-nvfp4",
   "author": "skx618",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 188123268796,
   "storage_human": "188.1 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastVideo-FastH3-8-Step-V2",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FastVideo/FastVideo-FastH3-8-Step-V2-NVFP4",
+  "renamed_at": "2026-11-11T07:33:21.219Z",
   "benchmarks": [],
   "sources": [
     {

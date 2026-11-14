@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furiosa-ai/Qwen3-32B-FP8",
   "slug": "furiosa-ai-qwen3-32b-fp8",
   "author": "furiosa-ai",
@@ -31,14 +31,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 105657792783,
   "storage_human": "105.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

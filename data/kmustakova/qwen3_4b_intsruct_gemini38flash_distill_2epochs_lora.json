@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kmustakova/qwen3_4b_intsruct_gemini38flash_distill_2epochs_lora",
   "slug": "kmustakova-qwen3_4b_intsruct_gemini38flash_distill_2epochs_lora",
   "author": "kmustakova",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 132187888,
   "storage_human": "132 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T06:19:04.166Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

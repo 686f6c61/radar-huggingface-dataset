@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/Qwen2.5-0.5B-Instruct-GGUF",
   "slug": "backpack-run-qwen2-5-0-5b-instruct-gguf",
   "author": "backpack-run",
@@ -29,14 +29,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 1348960704,
   "storage_human": "1.3 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

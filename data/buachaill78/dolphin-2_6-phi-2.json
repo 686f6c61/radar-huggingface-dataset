@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "buachaill78/dolphin-2_6-phi-2",
   "slug": "buachaill78-dolphin-2_6-phi-2",
   "author": "buachaill78",
@@ -34,14 +34,19 @@
   "parameters_human": "2.78B",
   "storage_bytes": 16692057415,
   "storage_human": "16.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anidas10/fastsft-test-model",
   "slug": "anidas10-fastsft-test-model",
   "author": "anidas10",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 89901176,
   "storage_human": "90 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:36:54.790Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

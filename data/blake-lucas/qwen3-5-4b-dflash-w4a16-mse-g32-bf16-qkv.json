@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blake-lucas/Qwen3.5-4B-DFlash-W4A16-MSE-G32-BF16-QKV",
   "slug": "blake-lucas-qwen3-5-4b-dflash-w4a16-mse-g32-bf16-qkv",
   "author": "blake-lucas",
@@ -37,14 +37,19 @@
   "parameters_human": "634.4M",
   "storage_bytes": 492590640,
   "storage_human": "493 MB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.5-4B-DFlash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

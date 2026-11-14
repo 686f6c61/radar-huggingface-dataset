@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/MiMo-V2.5-ASR-8B-NOESIS-BF16",
   "slug": "amaimedia-mimo-v2-5-asr-8b-noesis-bf16",
   "author": "AMAImedia",
@@ -47,14 +47,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 16049423231,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.5-ASR-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T09:33:42.520Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

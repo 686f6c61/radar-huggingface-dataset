@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CodeloopAi/khurdakak-3.0-sft",
   "slug": "codeloopai-khurdakak-3-0-sft",
   "author": "CodeloopAi",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1845558966,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:39:30.414Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

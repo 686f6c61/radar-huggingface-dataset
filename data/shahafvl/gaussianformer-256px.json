@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shahafvl/gaussianformer-256px",
   "slug": "shahafvl-gaussianformer-256px",
   "author": "shahafvl",
@@ -33,14 +33,19 @@
   "parameters_human": "194.9M",
   "storage_bytes": 779511340,
   "storage_human": "780 MB",
+  "context_length": null,
   "base_model": "microsoft/renderformer-v1-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

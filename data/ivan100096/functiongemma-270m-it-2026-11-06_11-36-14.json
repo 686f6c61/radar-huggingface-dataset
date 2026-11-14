@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ivan100096/functiongemma-270m-it-2026-11-06_11-36-14",
   "slug": "ivan100096-functiongemma-270m-it-2026-11-06_11-36-14",
   "author": "ivan100096",
@@ -34,14 +34,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 1105834681,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "google/functiongemma-270m-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gdvstd/rab-olmo3-Lpure-tc-v13-ep5",
   "slug": "gdvstd-rab-olmo3-lpure-tc-v13-ep5",
   "author": "gdvstd",
@@ -23,14 +23,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 29192086152,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

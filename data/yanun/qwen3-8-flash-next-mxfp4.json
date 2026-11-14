@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yanun/Qwen3.8-Flash-Next-MXFP4",
   "slug": "yanun-qwen3-8-flash-next-mxfp4",
   "author": "Yanun",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 125281315432,
   "storage_human": "125.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

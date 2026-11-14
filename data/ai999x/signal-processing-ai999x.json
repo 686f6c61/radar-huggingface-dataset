@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AI999X/signal-processing-ai999x",
   "slug": "ai999x-signal-processing-ai999x",
   "author": "AI999X",
@@ -53,12 +53,17 @@
   "parameters_human": "4.7M",
   "storage_bytes": 21916105,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "signal processing question answering",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "toeb34234234/SmolLM2-135M-Q2_K-GGUF",
   "slug": "toeb34234234-smollm2-135m-q2_k-gguf",
   "author": "toeb34234234",
@@ -32,14 +32,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 88201312,
   "storage_human": "88 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

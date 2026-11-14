@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "affine-kraus/albedo-qwen3.6-35b-bkn1890-vision-only-v3-uid163-20260903-135622",
   "slug": "affine-kraus-albedo-qwen3-6-35b-bkn1890-vision-only-v3-uid163-20260903-135622",
   "author": "affine-kraus",
@@ -23,14 +23,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916585166,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:38:19.145Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

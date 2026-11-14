@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haohan84/darksurf-models",
   "slug": "haohan84-darksurf-models",
   "author": "haohan84",
@@ -43,14 +43,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 3414136384,
   "storage_human": "3.4 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3.5-0.8B, Qwen/Qwen3-ASR-0.6B-hf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

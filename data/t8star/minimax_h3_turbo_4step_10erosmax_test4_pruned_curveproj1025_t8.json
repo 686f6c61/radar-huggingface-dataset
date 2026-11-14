@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t8star/minimax_h3_turbo_4step_10ErosMax_test4_pruned_curveproj1025_T8",
   "slug": "t8star-minimax_h3_turbo_4step_10erosmax_test4_pruned_curveproj1025_t8",
   "author": "t8star",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 7459133933,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

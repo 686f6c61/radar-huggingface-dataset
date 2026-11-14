@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harshbhalodia/loonie-guru-gguf",
   "slug": "harshbhalodia-loonie-guru-gguf",
   "author": "harshbhalodia",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 3336606752,
   "storage_human": "3.3 GB",
+  "context_length": 262144,
   "base_model": "harshbhalodia/loonie-guru",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

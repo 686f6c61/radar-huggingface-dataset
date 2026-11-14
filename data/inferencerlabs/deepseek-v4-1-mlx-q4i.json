@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/DeepSeek-V4.1-MLX-Q4i",
   "slug": "inferencerlabs-deepseek-v4-1-mlx-q4i",
   "author": "inferencerlabs",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 467005318719,
   "storage_human": "467.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "inferencerlabs/DeepSeek-V4.1-Flash-MLX-Q4i",
+  "renamed_at": "2026-11-11T05:40:42.740Z",
   "benchmarks": [],
   "sources": [
     {

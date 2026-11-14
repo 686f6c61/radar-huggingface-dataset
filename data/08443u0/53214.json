@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "08443u0/53214",
   "slug": "08443u0-53214",
   "author": "08443u0",
@@ -24,14 +24,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 533330156608,
   "storage_human": "533.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

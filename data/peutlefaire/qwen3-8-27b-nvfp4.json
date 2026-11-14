@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Peutlefaire/Qwen3.8-27B-NVFP4",
   "slug": "peutlefaire-qwen3-8-27b-nvfp4",
   "author": "Peutlefaire",
@@ -32,14 +32,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 20579273624,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

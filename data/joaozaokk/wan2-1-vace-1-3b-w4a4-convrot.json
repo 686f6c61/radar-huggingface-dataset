@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/Wan2.1-VACE-1.3B-W4A4-ConvRot",
   "slug": "joaozaokk-wan2-1-vace-1-3b-w4a4-convrot",
   "author": "JoaoZaokk",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 6817088187,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-VACE-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

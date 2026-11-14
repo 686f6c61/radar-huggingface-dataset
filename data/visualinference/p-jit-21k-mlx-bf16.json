@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VisualInference/P-JiT-21K-MLX-bf16",
   "slug": "visualinference-p-jit-21k-mlx-bf16",
   "author": "VisualInference",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 11901891661,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "Linum-AI/pjit-21k",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adventists-ai/DuplexJev-B-MOSS-Transcribe-Qwen3-4B-2507",
   "slug": "adventists-ai-duplexjev-b-moss-transcribe-qwen3-4b-2507",
   "author": "adventists-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "38.8M",
   "storage_bytes": 89038416,
   "storage_human": "89 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507, OpenMOSS-Team/MOSS-Transcribe-Diarize",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

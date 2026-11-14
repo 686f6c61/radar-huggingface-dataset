@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ntc-ai/model-glue-sd15-sana-text",
   "slug": "ntc-ai-model-glue-sd15-sana-text",
   "author": "ntc-ai",
@@ -34,14 +34,19 @@
   "parameters_human": "7.5M",
   "storage_bytes": 123007767,
   "storage_human": "123 MB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5, Efficient-Large-Model/Sana_600M_512px_diffusers",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

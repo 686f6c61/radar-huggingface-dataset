@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wesjos/fairface-papercarousel-tvit-3task-224",
   "slug": "wesjos-fairface-papercarousel-tvit-3task-224",
   "author": "wesjos",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 165436411,
   "storage_human": "165 MB",
+  "context_length": null,
   "base_model": "timm/tiny_vit_21m_224.dist_in22k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

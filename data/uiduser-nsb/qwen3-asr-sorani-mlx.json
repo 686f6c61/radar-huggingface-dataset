@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UIDUser-NSB/Qwen3-ASR-Sorani-MLX",
   "slug": "uiduser-nsb-qwen3-asr-sorani-mlx",
   "author": "UIDUser-NSB",
@@ -37,6 +37,7 @@
   "parameters_human": "2.04B",
   "storage_bytes": 2044623934,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "rzgar/qwen3-asr-sorani-kurdish-ckb-v1",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kyumly/qwen36-35b-a3b-2p10bit-duet",
   "slug": "kyumly-qwen36-35b-a3b-2p10bit-duet",
   "author": "kyumly",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 14631408729,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B, mrminjae/qwen36-35b-a3b-2p10bit-genans-lowbit",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

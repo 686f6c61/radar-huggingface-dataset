@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Allinsama/openbmb__VoxCPM1.5",
   "slug": "allinsama-openbmb__voxcpm1-5",
   "author": "Allinsama",
@@ -36,14 +36,19 @@
   "parameters_human": "801.7M",
   "storage_bytes": 1949685294,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM4-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

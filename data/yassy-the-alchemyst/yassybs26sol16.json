@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YassY-The-AlchemYst/YassYBS26Sol16",
   "slug": "yassy-the-alchemyst-yassybs26sol16",
   "author": "YassY-The-AlchemYst",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 22649976,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T08:11:23.806Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int8-gs64-sym",
   "slug": "fbaldassarri-eleutherai_pythia-6-9b-auto_gptq-int8-gs64-sym",
   "author": "fbaldassarri",
@@ -47,14 +47,19 @@
   "parameters_human": "2.15B",
   "storage_bytes": 8405245712,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-6.9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

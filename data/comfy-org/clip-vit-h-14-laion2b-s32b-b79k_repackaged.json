@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/CLIP-ViT-H-14-laion2B-s32B-b79K_repackaged",
   "slug": "comfy-org-clip-vit-h-14-laion2b-s32b-b79k_repackaged",
   "author": "Comfy-Org",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2528373448,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

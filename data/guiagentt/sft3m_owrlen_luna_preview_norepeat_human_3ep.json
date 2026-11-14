@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GUIAgentt/sft3m_owrlen_luna_preview_norepeat_human_3ep",
   "slug": "guiagentt-sft3m_owrlen_luna_preview_norepeat_human_3ep",
   "author": "GUIAgentt",
@@ -28,14 +28,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 10370008653,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:38:04.656Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/ukisai_Swift-1.5-Qwen3.8-27b-GGUF",
   "slug": "bartowski-ukisai_swift-1-5-qwen3-8-27b-gguf",
   "author": "bartowski",
@@ -35,14 +35,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 446778234976,
   "storage_human": "446.8 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

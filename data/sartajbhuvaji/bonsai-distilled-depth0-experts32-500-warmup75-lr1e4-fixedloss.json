@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sartajbhuvaji/bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss",
   "slug": "sartajbhuvaji-bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss",
   "author": "sartajbhuvaji",
@@ -28,14 +28,19 @@
   "parameters_human": "23.28B",
   "storage_bytes": 46575649293,
   "storage_human": "46.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T05:22:57.185Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

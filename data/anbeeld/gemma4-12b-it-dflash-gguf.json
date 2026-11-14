@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anbeeld/gemma4-12B-it-DFlash-GGUF",
   "slug": "anbeeld-gemma4-12b-it-dflash-gguf",
   "author": "Anbeeld",
@@ -35,14 +35,19 @@
   "parameters_human": "727.5M",
   "storage_bytes": 5955460873,
   "storage_human": "6.0 GB",
+  "context_length": 262144,
   "base_model": "z-lab/gemma4-12B-it-DFlash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

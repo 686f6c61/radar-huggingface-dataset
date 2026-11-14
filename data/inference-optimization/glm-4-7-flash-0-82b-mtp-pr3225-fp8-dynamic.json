@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225-FP8-Dynamic",
   "slug": "inference-optimization-glm-4-7-flash-0-82b-mtp-pr3225-fp8-dynamic",
   "author": "inference-optimization",
@@ -37,14 +37,19 @@
   "parameters_human": "821.3M",
   "storage_bytes": 1083444554,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "inference-optimization/GLM-4.7-Flash-0.82B-MTP",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:22:47.582Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

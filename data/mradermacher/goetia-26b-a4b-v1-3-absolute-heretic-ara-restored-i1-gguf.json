@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored-i1-GGUF",
   "slug": "mradermacher-goetia-26b-a4b-v1-3-absolute-heretic-ara-restored-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 300951314144,
   "storage_human": "301.0 GB",
+  "context_length": 262144,
   "base_model": "oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

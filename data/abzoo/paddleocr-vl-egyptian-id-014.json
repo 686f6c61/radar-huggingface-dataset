@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abzoo/paddleocr-vl-egyptian-id-014",
   "slug": "abzoo-paddleocr-vl-egyptian-id-014",
   "author": "abzoo",
@@ -36,14 +36,19 @@
   "parameters_human": "958.6M",
   "storage_bytes": 5764569946,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "unsloth/PaddleOCR-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

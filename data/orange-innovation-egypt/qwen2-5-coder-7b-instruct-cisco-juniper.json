@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Orange-Innovation-Egypt/Qwen2.5-Coder-7B-Instruct-cisco-juniper",
   "slug": "orange-innovation-egypt-qwen2-5-coder-7b-instruct-cisco-juniper",
   "author": "Orange-Innovation-Egypt",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 172955274,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:30:45.143Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

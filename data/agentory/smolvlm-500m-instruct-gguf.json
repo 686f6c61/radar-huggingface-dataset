@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/SmolVLM-500M-Instruct-GGUF",
   "slug": "agentory-smolvlm-500m-instruct-gguf",
   "author": "agentory",
@@ -33,14 +33,19 @@
   "parameters_human": "409.3M",
   "storage_bytes": 4195480320,
   "storage_human": "4.2 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:49.253Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-h-chen/gen_judge_align_ckpt",
   "slug": "g-h-chen-gen_judge_align_ckpt",
   "author": "g-h-chen",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 999263082798,
   "storage_human": "999.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B, Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

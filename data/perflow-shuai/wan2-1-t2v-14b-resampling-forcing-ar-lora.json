@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Perflow-Shuai/Wan2.1-T2V-14B-Resampling-Forcing-AR-LoRA",
   "slug": "perflow-shuai-wan2-1-t2v-14b-resampling-forcing-ar-lora",
   "author": "Perflow-Shuai",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1228459989,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

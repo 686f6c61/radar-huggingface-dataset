@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-ASR-1.7B-Yue-GGUF",
   "slug": "mradermacher-qwen3-asr-1-7b-yue-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 19612012288,
   "storage_human": "19.6 GB",
+  "context_length": 65536,
   "base_model": "hon9kon9ize/Qwen3-ASR-1.7B-Yue",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

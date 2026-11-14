@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Farhan2000/skin-lesion-classifier-resnet18",
   "slug": "farhan2000-skin-lesion-classifier-resnet18",
   "author": "Farhan2000",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 44792907,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

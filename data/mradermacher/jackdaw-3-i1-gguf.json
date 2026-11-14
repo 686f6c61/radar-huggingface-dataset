@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Jackdaw-3-i1-GGUF",
   "slug": "mradermacher-jackdaw-3-i1-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "18.01B",
   "storage_bytes": 205599716640,
   "storage_human": "205.6 GB",
+  "context_length": 131072,
   "base_model": "blascotobasco/Jackdaw-3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

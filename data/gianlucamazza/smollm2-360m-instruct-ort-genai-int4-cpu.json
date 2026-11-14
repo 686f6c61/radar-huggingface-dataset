@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gianlucamazza/SmolLM2-360M-Instruct-ort-genai-int4-cpu",
   "slug": "gianlucamazza-smollm2-360m-instruct-ort-genai-int4-cpu",
   "author": "gianlucamazza",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 419013639,
   "storage_human": "419 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

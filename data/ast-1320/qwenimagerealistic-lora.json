@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/QwenImageRealistic-LoRA",
   "slug": "ast-1320-qwenimagerealistic-lora",
   "author": "AST-1320",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 1195237728,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:23:39.452Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

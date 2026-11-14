@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr",
   "slug": "micdun-flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr",
   "author": "micdun",
@@ -23,14 +23,19 @@
   "parameters_human": "12.32B",
   "storage_bytes": 24653621472,
   "storage_human": "24.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

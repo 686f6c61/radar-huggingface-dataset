@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GM717/InstinctSAM-ViT-B",
   "slug": "gm717-instinctsam-vit-b",
   "author": "GM717",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 1938357395,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T20:53:23.884Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

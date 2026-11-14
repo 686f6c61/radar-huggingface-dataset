@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ilikemechuri/rwkv_g1j_1_5B_encrypt_experiment",
   "slug": "ilikemechuri-rwkv_g1j_1_5b_encrypt_experiment",
   "author": "Ilikemechuri",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Ilikemechuri/rwkv7-g1k-1.5B-lora-dolci-test",
+  "renamed_at": "2026-11-14T03:15:27.233Z",
   "benchmarks": [],
   "sources": [
     {

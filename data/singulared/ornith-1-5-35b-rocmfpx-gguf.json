@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "singulared/Ornith-1.5-35B-ROCmFPX-GGUF",
   "slug": "singulared-ornith-1-5-35b-rocmfpx-gguf",
   "author": "singulared",
@@ -39,14 +39,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 38527617536,
   "storage_human": "38.5 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

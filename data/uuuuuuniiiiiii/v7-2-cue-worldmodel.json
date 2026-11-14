@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Uuuuuuniiiiiii/V7.2-Cue-WorldModel",
   "slug": "uuuuuuniiiiiii-v7-2-cue-worldmodel",
   "author": "Uuuuuuniiiiiii",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 426052,
   "storage_human": "426052 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

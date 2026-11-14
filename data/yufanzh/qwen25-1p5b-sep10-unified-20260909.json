@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yufanzh/qwen25-1p5b-sep10-unified-20260909",
   "slug": "yufanzh-qwen25-1p5b-sep10-unified-20260909",
   "author": "yufanzh",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 24699582048,
   "storage_human": "24.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T05:37:26.446Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

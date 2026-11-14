@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "ic-research/banking77-bert-base-w3",
+  "slug": "ic-research-banking77-bert-base-w3",
+  "author": "ic-research",
+  "url": "https://huggingface.co/ic-research/banking77-bert-base-w3",
+  "created_at": "2026-11-14T13:20:45.000Z",
+  "updated_at": "2026-11-14T13:21:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "banking77",
+    "intent-classification",
+    "text-classification",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109541453,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438189348,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

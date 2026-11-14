@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "julian-schelb/bert-romanian-3class-lat-intertext-v1",
   "slug": "julian-schelb-bert-romanian-3class-lat-intertext-v1",
   "author": "julian-schelb",
@@ -40,14 +40,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 497798148,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": "dumitrescustefan/bert-base-romanian-cased-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

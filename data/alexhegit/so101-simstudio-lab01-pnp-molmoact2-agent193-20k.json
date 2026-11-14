@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexhegit/so101-simstudio-lab01-pnp-molmoact2-agent193-20k",
   "slug": "alexhegit-so101-simstudio-lab01-pnp-molmoact2-agent193-20k",
   "author": "alexhegit",
@@ -31,14 +31,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 22368037344,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": "lerobot/MolmoAct2-SO100_101-LeRobot",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mcrouch08/adaptrive-enemy-tactics-models",
   "slug": "mcrouch08-adaptrive-enemy-tactics-models",
   "author": "mcrouch08",
@@ -33,14 +33,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 20449619526,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T07:05:40.457Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

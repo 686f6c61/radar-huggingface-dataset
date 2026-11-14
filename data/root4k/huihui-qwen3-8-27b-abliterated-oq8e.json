@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "root4k/Huihui-Qwen3.8-27B-abliterated-oQ8e",
   "slug": "root4k-huihui-qwen3-8-27b-abliterated-oq8e",
   "author": "root4k",
@@ -27,6 +27,7 @@
   "parameters_human": "7.57B",
   "storage_bytes": 28592530045,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T15:18:33.973Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

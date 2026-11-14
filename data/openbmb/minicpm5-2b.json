@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/MiniCPM5-2B",
   "slug": "openbmb-minicpm5-2b",
   "author": "openbmb",
@@ -45,21 +45,26 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 1852,
+  "likes": 1853,
   "downloads_30d": 1026541,
   "trending_score": 13,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
   "storage_bytes": 5033557096,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

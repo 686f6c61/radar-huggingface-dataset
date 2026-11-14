@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llm-jp/llm-jp-4-33b-base",
   "slug": "llm-jp-llm-jp-4-33b-base",
   "author": "llm-jp",
@@ -33,14 +33,19 @@
   "parameters_human": "33.22B",
   "storage_bytes": 66452325437,
   "storage_human": "66.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

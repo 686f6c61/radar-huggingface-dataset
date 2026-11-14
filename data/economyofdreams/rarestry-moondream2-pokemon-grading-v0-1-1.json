@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "economyofdreams/Rarestry-Moondream2-Pokemon-Grading-v0.1.1",
   "slug": "economyofdreams-rarestry-moondream2-pokemon-grading-v0-1-1",
   "author": "economyofdreams",
@@ -36,6 +36,7 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4675775219,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "vikhyatk/moondream2",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

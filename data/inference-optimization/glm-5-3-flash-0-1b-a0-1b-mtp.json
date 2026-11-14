@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
   "slug": "inference-optimization-glm-5-3-flash-0-1b-a0-1b-mtp",
   "author": "inference-optimization",
@@ -23,14 +23,19 @@
   "parameters_human": "84.4M",
   "storage_bytes": 194272531,
   "storage_human": "194 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

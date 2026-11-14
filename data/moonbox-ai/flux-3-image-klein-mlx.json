@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-ai/flux-3-image-klein-MLX",
   "slug": "moonbox-ai-flux-3-image-klein-mlx",
   "author": "moonbox-ai",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 41367834802,
   "storage_human": "41.4 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "moonbox-dev/flux-3-image-klein-MLX",
+  "renamed_at": "2026-11-13T06:47:19.917Z",
   "benchmarks": [],
   "sources": []
 }

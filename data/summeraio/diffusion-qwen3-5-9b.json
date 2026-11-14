@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "summerAIO/Diffusion-Qwen3.5-9B",
   "slug": "summeraio-diffusion-qwen3-5-9b",
   "author": "summerAIO",
@@ -42,14 +42,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 18080656845,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, facebook/bart-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

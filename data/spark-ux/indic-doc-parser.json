@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spark-ux/indic-doc-parser",
   "slug": "spark-ux-indic-doc-parser",
   "author": "spark-ux",
@@ -78,14 +78,19 @@
   "parameters_human": null,
   "storage_bytes": 1912050313,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

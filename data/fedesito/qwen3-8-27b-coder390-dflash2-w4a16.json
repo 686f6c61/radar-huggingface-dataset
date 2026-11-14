@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fedesito/Qwen3.8-27B-Coder390-DFlash2-W4A16",
   "slug": "fedesito-qwen3-8-27b-coder390-dflash2-w4a16",
   "author": "fedesito",
@@ -34,14 +34,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 1280633960,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

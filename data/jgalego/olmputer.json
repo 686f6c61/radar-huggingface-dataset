@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jgalego/olmputer",
   "slug": "jgalego-olmputer",
   "author": "jgalego",
@@ -35,14 +35,19 @@
   "parameters_human": "16.20B",
   "storage_bytes": 36057560761,
   "storage_human": "36.1 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-Hybrid-Instruct-DPO-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

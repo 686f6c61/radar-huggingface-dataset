@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ceia-br/lumi-4b",
   "slug": "ceia-br-lumi-4b",
   "author": "ceia-br",
@@ -40,14 +40,19 @@
   "parameters_human": "3.97B",
   "storage_bytes": 15911773269,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ceia-research/lumi-4b",
+  "renamed_at": "2026-11-14T05:24:46.457Z",
   "benchmarks": [],
   "sources": []
 }

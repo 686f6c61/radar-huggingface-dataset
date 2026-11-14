@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kkt94/Llama-V-JEPA-LM-Qwen3-4B",
   "slug": "kkt94-llama-v-jepa-lm-qwen3-4b",
   "author": "kkt94",
@@ -41,14 +41,19 @@
   "parameters_human": "5.06B",
   "storage_bytes": 10148842038,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Video question answering",

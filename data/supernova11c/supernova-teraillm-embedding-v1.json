@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Supernova11c/Supernova-teraillm-Embedding-V1",
   "slug": "supernova11c-supernova-teraillm-embedding-v1",
   "author": "Supernova11c",
@@ -33,14 +33,19 @@
   "parameters_human": "12.0M",
   "storage_bytes": 95671537,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

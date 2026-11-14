@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BoddyGus/mt5-small-finetuned-books-summarization",
   "slug": "boddygus-mt5-small-finetuned-books-summarization",
   "author": "BoddyGus",
@@ -31,14 +31,19 @@
   "parameters_human": "300.2M",
   "storage_bytes": 10822926158,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "google/mt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

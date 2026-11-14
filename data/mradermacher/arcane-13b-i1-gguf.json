@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/arcane-13b-i1-GGUF",
   "slug": "mradermacher-arcane-13b-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "13.02B",
   "storage_bytes": 146429865536,
   "storage_human": "146.4 GB",
+  "context_length": 4096,
   "base_model": "ar3xop/arcane-13b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

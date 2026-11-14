@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MR0b0t/tinynnue-edge",
   "slug": "mr0b0t-tinynnue-edge",
   "author": "MR0b0t",
@@ -30,14 +30,19 @@
   "parameters_human": "102721",
   "storage_bytes": 925436,
   "storage_human": "925436 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

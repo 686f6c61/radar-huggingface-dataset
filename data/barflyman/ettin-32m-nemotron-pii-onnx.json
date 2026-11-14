@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barflyman/ettin-32m-nemotron-pii-ONNX",
   "slug": "barflyman-ettin-32m-nemotron-pii-onnx",
   "author": "barflyman",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 389689135,
   "storage_human": "390 MB",
+  "context_length": null,
   "base_model": "kalyan-ks/ettin-32m-nemotron-pii",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T03:06:11.984Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Named Entity Recognition",

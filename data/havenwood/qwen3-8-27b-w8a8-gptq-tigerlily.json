@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "havenwood/Qwen3.8-27B-W8A8-GPTQ-Tigerlily",
   "slug": "havenwood-qwen3-8-27b-w8a8-gptq-tigerlily",
   "author": "havenwood",
@@ -36,14 +36,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 59480900429,
   "storage_human": "59.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, mlx-community/Qwen3.8-27B-8bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T04:09:51.771Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

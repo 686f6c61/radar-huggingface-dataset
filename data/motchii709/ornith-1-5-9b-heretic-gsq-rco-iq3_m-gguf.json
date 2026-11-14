@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "motchii709/Ornith-1.5-9B-heretic-GSQ-RCO-IQ3_M-GGUF",
   "slug": "motchii709-ornith-1-5-9b-heretic-gsq-rco-iq3_m-gguf",
   "author": "motchii709",
@@ -41,14 +41,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 4262816480,
   "storage_human": "4.3 GB",
+  "context_length": 262144,
   "base_model": "Thunder13240/Ornith-1.5-9B-heretic-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

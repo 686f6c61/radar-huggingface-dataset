@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RobotsMali/lau-soloni-114m-mse-k1",
   "slug": "robotsmali-lau-soloni-114m-mse-k1",
   "author": "RobotsMali",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 900741120,
   "storage_human": "901 MB",
+  "context_length": null,
   "base_model": "RobotsMali/soloni-114m-tdt-ctc-v0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Translation",

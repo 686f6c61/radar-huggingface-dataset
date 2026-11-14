@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shaeel12/moonshine-tiny-urdu2",
   "slug": "shaeel12-moonshine-tiny-urdu2",
   "author": "shaeel12",
@@ -27,14 +27,19 @@
   "parameters_human": "27.3M",
   "storage_bytes": 326941656,
   "storage_human": "327 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T06:53:49.326Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

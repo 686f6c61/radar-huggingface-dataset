@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tentmochi/Qwen2.5-0.5B-Instruct-WebAsk-GGUF",
   "slug": "tentmochi-qwen2-5-0-5b-instruct-webask-gguf",
   "author": "tentmochi",
@@ -30,14 +30,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 397807584,
   "storage_human": "398 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tentmochi/Qwen2.5-0.5B-Instruct-Tentmochi-WebAsk-GGUF",
+  "renamed_at": "2026-11-12T08:03:19.076Z",
   "benchmarks": [],
   "sources": []
 }

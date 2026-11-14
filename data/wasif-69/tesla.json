@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wasif-69/tesla",
   "slug": "wasif-69-tesla",
   "author": "wasif-69",
@@ -23,14 +23,19 @@
   "parameters_human": "431.5M",
   "storage_bytes": 3451774222,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

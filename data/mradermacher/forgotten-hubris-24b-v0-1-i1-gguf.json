@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Forgotten-Hubris-24B-v0.1-i1-GGUF",
   "slug": "mradermacher-forgotten-hubris-24b-v0-1-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 253556006368,
   "storage_human": "253.6 GB",
+  "context_length": 131072,
   "base_model": "merviscishes/Forgotten-Hubris-24B-v0.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Deviant65/pi0.5_rebot6",
   "slug": "deviant65-pi0-5_rebot6",
   "author": "Deviant65",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9388447712,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

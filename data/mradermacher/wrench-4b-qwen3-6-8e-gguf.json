@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Wrench-4B-Qwen3.6-8E-GGUF",
   "slug": "mradermacher-wrench-4b-qwen3-6-8e-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 33985389184,
   "storage_human": "34.0 GB",
+  "context_length": 4000000,
   "base_model": "stancsz/Wrench-4B-Qwen3.6-8E-Experimental-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

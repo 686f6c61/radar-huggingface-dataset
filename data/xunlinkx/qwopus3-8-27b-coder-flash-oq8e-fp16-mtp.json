@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xunlinkx/Qwopus3.8-27B-Coder-Flash-oQ8e-fp16-mtp",
   "slug": "xunlinkx-qwopus3-8-27b-coder-flash-oq8e-fp16-mtp",
   "author": "xunlinkx",
@@ -40,6 +40,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30943089552,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xing720310/aperture-0.5b-wiki",
   "slug": "xing720310-aperture-0-5b-wiki",
   "author": "xing720310",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 10486839383,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

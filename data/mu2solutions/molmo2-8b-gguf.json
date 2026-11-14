@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mu2solutions/Molmo2-8B-GGUF",
   "slug": "mu2solutions-molmo2-8b-gguf",
   "author": "mu2solutions",
@@ -32,14 +32,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 32012344384,
   "storage_human": "32.0 GB",
+  "context_length": 36864,
   "base_model": "allenai/Molmo2-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

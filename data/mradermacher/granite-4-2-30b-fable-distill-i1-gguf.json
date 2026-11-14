@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Granite-4.2-30B-Fable-Distill-i1-GGUF",
   "slug": "mradermacher-granite-4-2-30b-fable-distill-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "29.28B",
   "storage_bytes": 311507362848,
   "storage_human": "311.5 GB",
+  "context_length": 131072,
   "base_model": "armand0e/Granite-4.2-30B-Fable-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

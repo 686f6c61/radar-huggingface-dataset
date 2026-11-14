@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/falcon-7b-FP8",
   "slug": "liodon-ai-falcon-7b-fp8",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "6.92B",
   "storage_bytes": 13846564520,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "tiiuae/falcon-7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xlettera/Re-Grip-Models",
   "slug": "xlettera-re-grip-models",
   "author": "xlettera",
@@ -27,6 +27,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 12597000301,
   "storage_human": "12.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

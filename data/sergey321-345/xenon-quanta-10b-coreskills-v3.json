@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sergey321-345/XENON-QUANTA-10B-CORESKILLS-V3",
   "slug": "sergey321-345-xenon-quanta-10b-coreskills-v3",
   "author": "Sergey321-345",
@@ -25,6 +25,7 @@
   "parameters_human": "9.98B",
   "storage_bytes": 26020764658,
   "storage_human": "26.0 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

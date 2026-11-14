@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XAILab-CyberSpark/jev-cabin-qwen3.5-0.8b",
   "slug": "xailab-cyberspark-jev-cabin-qwen3-5-0-8b",
   "author": "XAILab-CyberSpark",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 65425277,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

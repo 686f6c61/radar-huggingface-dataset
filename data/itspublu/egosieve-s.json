@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itspublu/EgoSieve-S",
   "slug": "itspublu-egosieve-s",
   "author": "itspublu",
@@ -36,14 +36,19 @@
   "parameters_human": "23.9M",
   "storage_bytes": 95662560,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": "facebook/dinov2-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Egocentric video readiness",

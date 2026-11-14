@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LaLa-World/lala-decoder-siglip2-so400m",
   "slug": "lala-world-lala-decoder-siglip2-so400m",
   "author": "LaLa-World",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 1548861371,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

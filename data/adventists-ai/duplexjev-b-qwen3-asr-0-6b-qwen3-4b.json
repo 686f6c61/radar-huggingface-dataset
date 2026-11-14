@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adventists-ai/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-4B",
   "slug": "adventists-ai-duplexjev-b-qwen3-asr-0-6b-qwen3-4b",
   "author": "adventists-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "12.6M",
   "storage_bytes": 36596816,
   "storage_human": "37 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B, Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "adventists-ai-research/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-4B",
+  "renamed_at": "2026-11-11T04:19:43.845Z",
   "benchmarks": [],
   "sources": [
     {

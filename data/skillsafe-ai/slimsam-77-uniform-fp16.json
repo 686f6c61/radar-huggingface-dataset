@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skillsafe-ai/slimsam-77-uniform-fp16",
   "slug": "skillsafe-ai-slimsam-77-uniform-fp16",
   "author": "skillsafe-ai",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 20720775,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": "Xenova/slimsam-77-uniform",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

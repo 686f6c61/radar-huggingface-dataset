@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NeoRoth/oriloq-magpie-marianne-coreml",
   "slug": "neoroth-oriloq-magpie-marianne-coreml",
   "author": "NeoRoth",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 1096731229,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "nvidia/magpie_tts_multilingual_357m, nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

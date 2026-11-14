@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thealper2/xlm-roberta-base-text-geolocation",
   "slug": "thealper2-xlm-roberta-base-text-geolocation",
   "author": "thealper2",
@@ -37,14 +37,19 @@
   "parameters_human": "278.1M",
   "storage_bytes": 1129831385,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text geolocation (region classification)",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tacodevs/Wicked-Stuff-31B-Final-NVFP4-W4A4",
   "slug": "tacodevs-wicked-stuff-31b-final-nvfp4-w4a4",
   "author": "tacodevs",
@@ -31,14 +31,19 @@
   "parameters_human": "19.87B",
   "storage_bytes": 23297570661,
   "storage_human": "23.3 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Wicked-Stuff-31B-Final",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

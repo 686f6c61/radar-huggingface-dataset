@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "michal-cb/Swift-1.5-Qwen3.8-27b-high-Q5_K_M-GGUF",
   "slug": "michal-cb-swift-1-5-qwen3-8-27b-high-q5_k_m-gguf",
   "author": "michal-cb",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 19535702016,
   "storage_human": "19.5 GB",
+  "context_length": 262144,
   "base_model": "michal-cb/Swift-1.5-Qwen3.8-27b-high",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

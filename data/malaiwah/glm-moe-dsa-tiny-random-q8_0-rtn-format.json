@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malaiwah/glm-moe-dsa-tiny-random-q8_0-rtn-format",
   "slug": "malaiwah-glm-moe-dsa-tiny-random-q8_0-rtn-format",
   "author": "malaiwah",
@@ -36,14 +36,19 @@
   "parameters_human": "284568",
   "storage_bytes": 321696,
   "storage_human": "321696 B",
+  "context_length": 256,
   "base_model": "malaiwah/glm-moe-dsa-tiny-random-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

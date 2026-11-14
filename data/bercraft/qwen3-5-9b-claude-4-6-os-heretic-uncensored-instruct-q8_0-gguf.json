@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bercraft/Qwen3.5-9B-Claude-4.6-OS-HERETIC-UNCENSORED-INSTRUCT-Q8_0-GGUF",
   "slug": "bercraft-qwen3-5-9b-claude-4-6-os-heretic-uncensored-instruct-q8_0-gguf",
   "author": "Bercraft",
@@ -60,14 +60,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 9527494560,
   "storage_human": "9.5 GB",
+  "context_length": 262144,
   "base_model": "Bercraft/Qwen3.5-9B-Claude-4.6-OS-HERETIC-UNCENSORED-INSTRUCT",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rooty2020/Cosmos3-ours-RB-Y1",
   "slug": "rooty2020-cosmos3-ours-rb-y1",
   "author": "rooty2020",
@@ -36,14 +36,19 @@
   "parameters_human": "15.22B",
   "storage_bytes": 122938961144,
   "storage_human": "122.9 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T06:11:52.411Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

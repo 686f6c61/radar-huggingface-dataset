@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Counfield/Diogenes-0.2-55M-40K-STEPS",
   "slug": "counfield-diogenes-0-2-55m-40k-steps",
   "author": "Counfield",
@@ -31,14 +31,19 @@
   "parameters_human": "55.1M",
   "storage_bytes": 228835321,
   "storage_human": "229 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

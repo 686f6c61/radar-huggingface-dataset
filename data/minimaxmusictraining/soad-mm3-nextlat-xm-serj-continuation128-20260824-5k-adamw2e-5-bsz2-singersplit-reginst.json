@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MiniMaxMusicTraining/soad-mm3-nextlat-xm-serj-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
   "slug": "minimaxmusictraining-soad-mm3-nextlat-xm-serj-continuation128-20260824-5k-adamw2e-5-bsz2-singersplit-reginst",
   "author": "MiniMaxMusicTraining",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 10153918088,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

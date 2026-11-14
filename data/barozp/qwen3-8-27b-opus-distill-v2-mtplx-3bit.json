@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barozp/Qwen3.8-27B-Opus-Distill-v2-MTPLX-3bit",
   "slug": "barozp-qwen3-8-27b-opus-distill-v2-mtplx-3bit",
   "author": "barozp",
@@ -40,6 +40,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 13562261394,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": "barozp/Qwen3.8-27B-Opus-Distill-v2",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

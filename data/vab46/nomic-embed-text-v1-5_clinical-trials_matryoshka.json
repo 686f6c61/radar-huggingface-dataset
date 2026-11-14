@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka",
   "slug": "vab46-nomic-embed-text-v1-5_clinical-trials_matryoshka",
   "author": "vab46",
@@ -45,14 +45,19 @@
   "parameters_human": "136.7M",
   "storage_bytes": 546938168,
   "storage_human": "547 MB",
+  "context_length": null,
   "base_model": "nomic-ai/nomic-embed-text-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

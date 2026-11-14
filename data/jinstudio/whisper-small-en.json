@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/whisper-small.en",
   "slug": "jinstudio-whisper-small-en",
   "author": "Jinstudio",
@@ -35,14 +35,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 3868521822,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T08:40:43.502Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

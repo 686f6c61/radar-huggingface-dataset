@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "slug": "xiaomimimo-mimo-v2-6-distill-qwen-9b",
   "author": "XiaomiMiMo",
@@ -30,21 +30,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 704,
+  "likes": 705,
   "downloads_30d": 24038,
-  "trending_score": 10,
+  "trending_score": 11,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
   "storage_bytes": 18839710173,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

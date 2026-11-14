@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r4yharris/Qwen3.8-Flash-Next-FLARE",
   "slug": "r4yharris-qwen3-8-flash-next-flare",
   "author": "r4yharris",
@@ -30,14 +30,19 @@
   "parameters_human": "23.3M",
   "storage_bytes": 107689131086,
   "storage_human": "107.7 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

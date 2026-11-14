@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ernes14AG/qwen3-1.7b-texto-a-cypher-GGUF",
   "slug": "ernes14ag-qwen3-1-7b-texto-a-cypher-gguf",
   "author": "Ernes14AG",
@@ -37,14 +37,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1834426208,
   "storage_human": "1.8 GB",
+  "context_length": 40960,
   "base_model": "Ernes14AG/qwen3-1.7b-texto-a-cypher",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:29:57.499Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

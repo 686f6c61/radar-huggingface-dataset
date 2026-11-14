@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kvallespin/Sage-A1.5-NVFP4",
   "slug": "kvallespin-sage-a1-5-nvfp4",
   "author": "kvallespin",
@@ -47,14 +47,19 @@
   "parameters_human": "19.00B",
   "storage_bytes": 24244291654,
   "storage_human": "24.2 GB",
+  "context_length": null,
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

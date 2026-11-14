@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voxelshogi/voxelshogi-research-training-state-v1",
   "slug": "voxelshogi-voxelshogi-research-training-state-v1",
   "author": "voxelshogi",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 2181211716,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

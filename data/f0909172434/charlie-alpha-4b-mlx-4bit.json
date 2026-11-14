@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "f0909172434/Charlie-Alpha-4B-MLX-4bit",
   "slug": "f0909172434-charlie-alpha-4b-mlx-4bit",
   "author": "f0909172434",
@@ -38,6 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 13415481830,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Chih-Kai-Wang/Charlie-Alpha-4B-MLX-4bit",
+  "renamed_at": "2026-11-11T05:13:22.517Z",
   "benchmarks": [],
   "sources": [
     {

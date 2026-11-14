@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-compact-cpu",
   "slug": "dimq1-nemotron-3-5-asr-streaming-0-6b-onnx-int4-c112-compact-cpu",
   "author": "DimQ1",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 495418132,
   "storage_human": "495 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CHOI0126/slmfim-pilot-cl100k-pt-fim50-step4000",
   "slug": "choi0126-slmfim-pilot-cl100k-pt-fim50-step4000",
   "author": "CHOI0126",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 22103473713,
   "storage_human": "22.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

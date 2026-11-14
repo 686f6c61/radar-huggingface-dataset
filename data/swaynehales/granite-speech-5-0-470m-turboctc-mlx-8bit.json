@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swaynehales/granite-speech-5.0-470m-turboctc-mlx-8bit",
   "slug": "swaynehales-granite-speech-5-0-470m-turboctc-mlx-8bit",
   "author": "swaynehales",
@@ -51,6 +51,7 @@
   "parameters_human": "473.0M",
   "storage_bytes": 488666432,
   "storage_human": "489 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
   "formats": [
     "mlx",
@@ -58,8 +59,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

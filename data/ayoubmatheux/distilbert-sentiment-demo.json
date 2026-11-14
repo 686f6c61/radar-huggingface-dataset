@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayoubmatheux/distilbert-sentiment-demo",
   "slug": "ayoubmatheux-distilbert-sentiment-demo",
   "author": "ayoubmatheux",
@@ -32,6 +32,7 @@
   "parameters_human": "67.0M",
   "storage_bytes": 803635400,
   "storage_human": "804 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GY2233/nextt-arena-attnres-full-canon-abcd",
   "slug": "gy2233-nextt-arena-attnres-full-canon-abcd",
   "author": "GY2233",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 4120119505,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

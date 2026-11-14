@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aksern/astralium-1.0-exp",
   "slug": "aksern-astralium-1-0-exp",
   "author": "aksern",
@@ -24,14 +24,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 19293797256,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:23:26.681Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

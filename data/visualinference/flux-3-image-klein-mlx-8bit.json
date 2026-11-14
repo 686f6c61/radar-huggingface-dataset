@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VisualInference/FLUX-3-Image-Klein-MLX-8bit",
   "slug": "visualinference-flux-3-image-klein-mlx-8bit",
   "author": "VisualInference",
@@ -36,6 +36,7 @@
   "parameters_human": null,
   "storage_bytes": 10339007781,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

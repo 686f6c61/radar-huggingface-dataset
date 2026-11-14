@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castorini/gaggle-reranker-0.9b-20261108",
   "slug": "castorini-gaggle-reranker-0-9b-20261108",
   "author": "castorini",
@@ -40,14 +40,19 @@
   "parameters_human": "849.3M",
   "storage_bytes": 3397423816,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "castorini/gaggle-nanochat-0.9b-pretrained-climbmix-20261105",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

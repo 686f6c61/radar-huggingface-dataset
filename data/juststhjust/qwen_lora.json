@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juststhjust/qwen_lora",
   "slug": "juststhjust-qwen_lora",
   "author": "juststhjust",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 540040446,
   "storage_human": "540 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-15T08:50:50.433Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

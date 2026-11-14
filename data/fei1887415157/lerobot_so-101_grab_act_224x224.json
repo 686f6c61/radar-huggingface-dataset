@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fei1887415157/LeRobot_SO-101_Grab_ACT_224x224",
   "slug": "fei1887415157-lerobot_so-101_grab_act_224x224",
   "author": "fei1887415157",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 12384130984,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

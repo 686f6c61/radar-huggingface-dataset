@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongwondd/Gemma-3-12B-IT-ALiT-alpha2-2ep-ee3edb2d",
   "slug": "jongwondd-gemma-3-12b-it-alit-alpha2-2ep-ee3edb2d",
   "author": "Jongwondd",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 261972344,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-12b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

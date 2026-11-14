@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atlas3D/JEV-27B-VL-NVFP4",
   "slug": "atlas3d-jev-27b-vl-nvfp4",
   "author": "Atlas3D",
@@ -36,14 +36,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 29016099688,
   "storage_human": "29.0 GB",
+  "context_length": null,
   "base_model": "autotrust/JEV-27B-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

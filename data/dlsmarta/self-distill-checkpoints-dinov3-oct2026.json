@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dlsmarta/Self-distill-checkpoints-dinov3-oct2026",
   "slug": "dlsmarta-self-distill-checkpoints-dinov3-oct2026",
   "author": "dlsmarta",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 85746109159,
   "storage_human": "85.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

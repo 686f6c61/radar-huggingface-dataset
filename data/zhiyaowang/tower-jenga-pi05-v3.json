@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhiyaowang/tower-jenga-pi05-v3",
   "slug": "zhiyaowang-tower-jenga-pi05-v3",
   "author": "zhiyaowang",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 5255506135,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

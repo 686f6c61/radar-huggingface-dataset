@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xiaomi-research/Xiaomi-OCR-0",
   "slug": "xiaomi-research-xiaomi-ocr-0",
   "author": "xiaomi-research",
@@ -35,21 +35,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 321,
+  "likes": 322,
   "downloads_30d": 32397,
   "trending_score": 13,
   "parameters": 873438784,
   "parameters_human": "873.4M",
   "storage_bytes": 1773873154,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

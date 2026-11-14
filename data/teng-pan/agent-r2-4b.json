@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "teng-pan/Agent-R2-4B",
   "slug": "teng-pan-agent-r2-4b",
   "author": "teng-pan",
@@ -38,14 +38,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834317038,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Thinking-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

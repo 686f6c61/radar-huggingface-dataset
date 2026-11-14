@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adventists-ai/DuplexJev-B-Whisper-small-Qwen3-1.7B",
   "slug": "adventists-ai-duplexjev-b-whisper-small-qwen3-1-7b",
   "author": "adventists-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "29.4M",
   "storage_bytes": 70159952,
   "storage_human": "70 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B, openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "adventists-ai-research/DuplexJev-B-Whisper-small-Qwen3-1.7B",
+  "renamed_at": "2026-11-11T04:19:44.384Z",
   "benchmarks": [],
   "sources": [
     {

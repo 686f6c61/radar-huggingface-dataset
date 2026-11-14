@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eddy-Emmanuel/churro-3B-road_v2",
   "slug": "eddy-emmanuel-churro-3b-road_v2",
   "author": "Eddy-Emmanuel",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 176995540,
   "storage_human": "177 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:48:04.292Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

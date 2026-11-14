@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM",
   "slug": "oliviarossi-minimax-h3_singularity-x-10eros-max_prism",
   "author": "OliviaRossi",
@@ -22,19 +22,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 312,
+  "likes": 314,
   "downloads_30d": 468324,
   "trending_score": 63,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 447898166440,
   "storage_human": "447.9 GB",
+  "context_length": null,
   "base_model": "WarmBloodAban/Minimax-h3_Singularity, TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

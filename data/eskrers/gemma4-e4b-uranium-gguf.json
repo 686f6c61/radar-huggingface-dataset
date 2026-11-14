@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eskrers/gemma4-e4b-uranium-gguf",
   "slug": "eskrers-gemma4-e4b-uranium-gguf",
   "author": "Eskrers",
@@ -28,14 +28,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 6325662080,
   "storage_human": "6.3 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T02:51:01.463Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

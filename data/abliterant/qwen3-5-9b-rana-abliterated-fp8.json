@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abliterant/Qwen3.5-9B-RANA-abliterated-FP8",
   "slug": "abliterant-qwen3-5-9b-rana-abliterated-fp8",
   "author": "abliterant",
@@ -39,14 +39,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 12198088798,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": "abliterant/Qwen3.5-9B-RANA-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

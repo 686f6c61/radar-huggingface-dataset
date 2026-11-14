@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ehristoforu/qwen352om-1-Q4_K_M-GGUF",
   "slug": "ehristoforu-qwen352om-1-q4_k_m-gguf",
   "author": "ehristoforu",
@@ -28,14 +28,19 @@
   "parameters_human": "1.94B",
   "storage_bytes": 1312164512,
   "storage_human": "1.3 GB",
+  "context_length": 262144,
   "base_model": "ehristoforu/qwen352om-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T05:13:19.113Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

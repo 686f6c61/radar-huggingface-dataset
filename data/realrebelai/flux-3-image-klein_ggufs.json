@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/FLUX-3-Image-Klein_GGUFs",
   "slug": "realrebelai-flux-3-image-klein_ggufs",
   "author": "realrebelai",
@@ -32,14 +32,19 @@
   "parameters_human": "5.54B",
   "storage_bytes": 65168146012,
   "storage_human": "65.2 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein-comfy",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

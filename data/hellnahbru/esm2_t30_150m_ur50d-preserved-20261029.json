@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hellnahbru/esm2_t30_150M_UR50D-preserved-20261029",
   "slug": "hellnahbru-esm2_t30_150m_ur50d-preserved-20261029",
   "author": "hellnahbru",
@@ -26,14 +26,19 @@
   "parameters_human": "148.8M",
   "storage_bytes": 1783976919,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

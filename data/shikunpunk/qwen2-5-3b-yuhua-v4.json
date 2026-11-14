@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shikunpunk/Qwen2.5-3B-YuHua-V4",
   "slug": "shikunpunk-qwen2-5-3b-yuhua-v4",
   "author": "shikunpunk",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 4024003492,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T06:55:56.936Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

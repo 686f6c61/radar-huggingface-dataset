@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oldhag88/Qwen3.8-27B-json_captioner-basefp8-Rank64-V2",
   "slug": "oldhag88-qwen3-8-27b-json_captioner-basefp8-rank64-v2",
   "author": "oldhag88",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1745615585,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

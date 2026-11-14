@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HDiffusion/Nanosaur2-OpenVino",
   "slug": "hdiffusion-nanosaur2-openvino",
   "author": "HDiffusion",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 2470260549,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "well9472/Nanosaur2-670M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

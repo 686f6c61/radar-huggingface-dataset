@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
   "slug": "orcarouter-qwen3-8-27b-uncensored-fp8",
   "author": "orcarouter",
@@ -39,21 +39,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1892,
+  "likes": 1893,
   "downloads_30d": 59701,
   "trending_score": 12,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
   "storage_bytes": 30879676456,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efe2898/caba-memory-v2-100m-tr",
   "slug": "efe2898-caba-memory-v2-100m-tr",
   "author": "Efe2898",
@@ -31,14 +31,19 @@
   "parameters_human": "101.9M",
   "storage_bytes": 5964075039,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adeepv/gemma-4-26B-A4B-it-W4A16-vLLM",
   "slug": "adeepv-gemma-4-26b-a4b-it-w4a16-vllm",
   "author": "adeepv",
@@ -40,14 +40,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 16454171694,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

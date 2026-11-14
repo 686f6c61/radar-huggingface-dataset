@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m8than/GLM-5.2-E2M1-Furnace",
   "slug": "m8than-glm-5-2-e2m1-furnace",
   "author": "m8than",
@@ -32,14 +32,19 @@
   "parameters_human": "110.70B",
   "storage_bytes": 630074037232,
   "storage_human": "630.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

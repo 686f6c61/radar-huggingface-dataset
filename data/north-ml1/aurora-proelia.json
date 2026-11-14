@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "North-ML1/Aurora-Proelia",
   "slug": "north-ml1-aurora-proelia",
   "author": "North-ML1",
@@ -36,14 +36,19 @@
   "parameters_human": "221.3M",
   "storage_bytes": 2214848478,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

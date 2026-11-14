@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miyuki17/openevo-h144-qwen25-3b-webshop",
   "slug": "miyuki17-openevo-h144-qwen25-3b-webshop",
   "author": "miyuki17",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "openevo-recovery/openevo-h144-qwen25-3b-webshop",
+  "renamed_at": "2026-11-13T06:42:57.719Z",
   "benchmarks": [],
   "sources": [
     {

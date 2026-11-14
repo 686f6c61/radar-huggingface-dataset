@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Balthulal/MedGemma_FineTuned",
   "slug": "balthulal-medgemma_finetuned",
   "author": "Balthulal",
@@ -33,6 +33,7 @@
   "parameters_human": "4.30B",
   "storage_bytes": 23877700722,
   "storage_human": "23.9 GB",
+  "context_length": 131072,
   "base_model": "google/medgemma-4b-it",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

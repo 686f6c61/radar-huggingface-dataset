@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VietAlphaLabs/SenOCR-Zh",
   "slug": "vietalphalabs-senocr-zh",
   "author": "VietAlphaLabs",
@@ -50,14 +50,19 @@
   "parameters_human": "958.6M",
   "storage_bytes": 3847375787,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

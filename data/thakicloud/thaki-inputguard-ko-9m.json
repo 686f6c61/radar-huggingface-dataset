@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Thaki-InputGuard-KO-9M",
   "slug": "thakicloud-thaki-inputguard-ko-9m",
   "author": "ThakiCloud",
@@ -35,14 +35,19 @@
   "parameters_human": "8.2M",
   "storage_bytes": 32884700,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

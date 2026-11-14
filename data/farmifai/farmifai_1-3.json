@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FarmifAI/FarmifAI_1.3",
   "slug": "farmifai-farmifai_1-3",
   "author": "FarmifAI",
@@ -42,14 +42,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 1766931943,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

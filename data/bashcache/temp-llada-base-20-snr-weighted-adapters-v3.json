@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BashCache/temp-llada-base-20-snr-weighted-adapters-v3",
   "slug": "bashcache-temp-llada-base-20-snr-weighted-adapters-v3",
   "author": "BashCache",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 156053272,
   "storage_human": "156 MB",
+  "context_length": null,
   "base_model": "BashCache/temp-llada-base-20-snr-weighted",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

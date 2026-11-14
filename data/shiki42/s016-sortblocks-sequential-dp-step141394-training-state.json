@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shiki42/s016-sortblocks-sequential-dp-step141394-training-state",
   "slug": "shiki42-s016-sortblocks-sequential-dp-step141394-training-state",
   "author": "Shiki42",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 3249472944,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

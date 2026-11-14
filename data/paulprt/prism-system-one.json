@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "paulprt/prism-system-one",
   "slug": "paulprt-prism-system-one",
   "author": "paulprt",
@@ -63,14 +63,19 @@
   "parameters_human": "194.6M",
   "storage_bytes": 778239468,
   "storage_human": "778 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-230M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

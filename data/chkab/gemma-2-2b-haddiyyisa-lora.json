@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chkab/gemma-2-2b-haddiyyisa-lora",
   "slug": "chkab-gemma-2-2b-haddiyyisa-lora",
   "author": "chkab",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 121719131,
   "storage_human": "122 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-2-2b-it-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

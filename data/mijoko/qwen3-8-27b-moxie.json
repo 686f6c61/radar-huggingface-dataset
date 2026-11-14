@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mijoko/Qwen3.8-27B-Moxie",
   "slug": "mijoko-qwen3-8-27b-moxie",
   "author": "mijoko",
@@ -53,6 +53,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 84810723489,
   "storage_human": "84.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B, llmfan46/Omega-Evolution-27B-v2.1-uncensored-heretic, ReadyArt/Dark-Scarlett-v1.0-27B, clzoro/Qwen3.6-27B-Claude-Distill-v2",
   "formats": [
     "gguf",
@@ -60,8 +61,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "changh95/pi05-base-batch-p300x2",
   "slug": "changh95-pi05-base-batch-p300x2",
   "author": "changh95",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 903717943,
   "storage_human": "904 MB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T02:53:03.251Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

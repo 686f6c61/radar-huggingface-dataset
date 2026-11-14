@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "a7x3a/ckb-deepseek-ocr",
   "slug": "a7x3a-ckb-deepseek-ocr",
   "author": "a7x3a",
@@ -35,14 +35,19 @@
   "parameters_human": "3.34B",
   "storage_bytes": 6672547120,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-OCR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:25:14.844Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

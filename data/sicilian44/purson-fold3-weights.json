@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sicilian44/Purson-fold3-weights",
   "slug": "sicilian44-purson-fold3-weights",
   "author": "Sicilian44",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 853736077,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3-78B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

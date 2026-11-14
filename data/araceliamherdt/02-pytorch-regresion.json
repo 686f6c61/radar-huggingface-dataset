@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AraceliAmherdt/02-pytorch-regresion",
   "slug": "araceliamherdt-02-pytorch-regresion",
   "author": "AraceliAmherdt",
@@ -32,14 +32,19 @@
   "parameters_human": "4",
   "storage_bytes": 160,
   "storage_human": "160 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

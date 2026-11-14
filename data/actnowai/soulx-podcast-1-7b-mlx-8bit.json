@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "actnowai/SoulX-Podcast-1.7B-MLX-8bit",
   "slug": "actnowai-soulx-podcast-1-7b-mlx-8bit",
   "author": "actnowai",
@@ -39,6 +39,7 @@
   "parameters_human": "1.74B",
   "storage_bytes": 2419179248,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Soul-AILab/SoulX-Podcast-1.7B",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

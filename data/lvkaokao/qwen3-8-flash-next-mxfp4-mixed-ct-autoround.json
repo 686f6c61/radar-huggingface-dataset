@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lvkaokao/Qwen3.8-Flash-Next-MXFP4-Mixed-CT-AutoRound",
   "slug": "lvkaokao-qwen3-8-flash-next-mxfp4-mixed-ct-autoround",
   "author": "lvkaokao",
@@ -35,14 +35,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 179793999271,
   "storage_human": "179.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "intel-ai/Qwen3.8-Flash-Next-MXFP4-Mixed-CT-AutoRound",
+  "renamed_at": "2026-11-11T06:10:08.739Z",
   "benchmarks": [],
   "sources": [
     {

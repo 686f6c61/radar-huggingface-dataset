@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ubermenchh/nanohunch-decider-4b",
   "slug": "ubermenchh-nanohunch-decider-4b",
   "author": "ubermenchh",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 397451598,
   "storage_human": "397 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/zho-hans-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455",
   "slug": "francesca9805-zho-hans-10mb-after-ppt-dp-10mb-packed-bfdiso-ckpt500_seed455",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "39.1M",
   "storage_bytes": 783079668,
   "storage_human": "783 MB",
+  "context_length": null,
   "base_model": "francesca9805/zho-hans-10mb-ppt-Dp-10mb-packed-bfdiso_seed455",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

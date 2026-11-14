@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-4B-MTP-Heretic-GGUF",
   "slug": "mradermacher-qwen3-5-4b-mtp-heretic-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 41004118272,
   "storage_human": "41.0 GB",
+  "context_length": 262144,
   "base_model": "RBergBauer/Qwen3.5-4B-MTP-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

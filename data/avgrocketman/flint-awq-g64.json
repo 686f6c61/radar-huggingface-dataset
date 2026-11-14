@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avgrocketman/flint-awq-g64",
   "slug": "avgrocketman-flint-awq-g64",
   "author": "avgrocketman",
@@ -38,14 +38,19 @@
   "parameters_human": "39.79B",
   "storage_bytes": 22405752080,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "enochlev/KnowLine-31B-Gen1-NVFP4",
   "slug": "enochlev-knowline-31b-gen1-nvfp4",
   "author": "enochlev",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 494596016,
   "storage_human": "495 MB",
+  "context_length": null,
   "base_model": "PelaAI/KnowLine-31B-Gen1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

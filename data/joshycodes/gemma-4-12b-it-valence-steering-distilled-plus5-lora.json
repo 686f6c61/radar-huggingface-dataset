@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/gemma-4-12B-it-valence-steering-distilled-plus5-lora",
   "slug": "joshycodes-gemma-4-12b-it-valence-steering-distilled-plus5-lora",
   "author": "joshycodes",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 525391456,
   "storage_human": "525 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

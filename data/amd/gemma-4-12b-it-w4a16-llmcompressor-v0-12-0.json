@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/gemma-4-12B-it-w4a16-llmcompressor-v0.12.0",
   "slug": "amd-gemma-4-12b-it-w4a16-llmcompressor-v0-12-0",
   "author": "amd",
@@ -44,14 +44,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 7772197794,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "RedHatAI/gemma-4-12B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T08:12:12.658Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

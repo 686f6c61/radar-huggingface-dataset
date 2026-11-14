@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MinaNasser/DDPM_vs_VAE_anime_face",
   "slug": "minanasser-ddpm_vs_vae_anime_face",
   "author": "MinaNasser",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 568762269,
   "storage_human": "569 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

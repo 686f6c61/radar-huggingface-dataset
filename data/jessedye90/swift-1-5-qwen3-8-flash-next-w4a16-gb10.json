@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jessedye90/Swift-1.5-Qwen3.8-Flash-Next-W4A16-GB10",
   "slug": "jessedye90-swift-1-5-qwen3-8-flash-next-w4a16-gb10",
   "author": "jessedye90",
@@ -45,14 +45,19 @@
   "parameters_human": "129.44B",
   "storage_bytes": 73926609519,
   "storage_human": "73.9 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-W4A16-AutoRound",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

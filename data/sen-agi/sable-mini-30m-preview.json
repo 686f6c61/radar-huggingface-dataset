@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SEN-AGI/sable-mini-30m-preview",
   "slug": "sen-agi-sable-mini-30m-preview",
   "author": "SEN-AGI",
@@ -31,14 +31,19 @@
   "parameters_human": "31.2M",
   "storage_bytes": 62929073,
   "storage_human": "63 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SEN-AGI/Sable-1.1-30M",
+  "renamed_at": "2026-11-11T03:47:25.786Z",
   "benchmarks": [],
   "sources": []
 }

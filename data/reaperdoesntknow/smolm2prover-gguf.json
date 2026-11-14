@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reaperdoesntknow/SMOLM2Prover-GGUF",
   "slug": "reaperdoesntknow-smolm2prover-gguf",
   "author": "reaperdoesntknow",
@@ -45,14 +45,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 996145472,
   "storage_human": "996 MB",
+  "context_length": 8192,
   "base_model": "prithivMLmods/SmolLM2-CoT-360M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

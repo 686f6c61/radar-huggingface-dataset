@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlazarM/LongCat-Flash-Lite-Sparse-4bit",
   "slug": "alazarm-longcat-flash-lite-sparse-4bit",
   "author": "AlazarM",
@@ -39,6 +39,7 @@
   "parameters_human": "68.61B",
   "storage_bytes": 38604498864,
   "storage_human": "38.6 GB",
+  "context_length": null,
   "base_model": "meituan-longcat/LongCat-Flash-Lite-Sparse",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mlx-community/LongCat-Flash-Lite-Sparse-4bit",
+  "renamed_at": "2026-11-11T02:14:52.168Z",
   "benchmarks": [],
   "sources": [
     {

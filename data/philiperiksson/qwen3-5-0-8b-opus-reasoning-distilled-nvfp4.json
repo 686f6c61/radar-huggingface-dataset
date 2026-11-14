@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled-NVFP4",
   "slug": "philiperiksson-qwen3-5-0-8b-opus-reasoning-distilled-nvfp4",
   "author": "PhilipEriksson",
@@ -42,14 +42,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 911515675,
   "storage_human": "912 MB",
+  "context_length": null,
   "base_model": "PhilipEriksson/Qwen3.5-0.8B-Opus-Reasoning-Distilled",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

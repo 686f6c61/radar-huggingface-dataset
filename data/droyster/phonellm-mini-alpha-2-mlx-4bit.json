@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "droyster/phonellm-mini-alpha-2-mlx-4bit",
   "slug": "droyster-phonellm-mini-alpha-2-mlx-4bit",
   "author": "droyster",
@@ -39,6 +39,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 19341061963,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "pipecat-ai/phonellm-mini-alpha-2",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

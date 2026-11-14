@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SpaceTimee/Suri-Qwen-3.8-Uncensored-27B",
   "slug": "spacetimee-suri-qwen-3-8-uncensored-27b",
   "author": "SpaceTimee",
@@ -28,14 +28,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54753585585,
   "storage_human": "54.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:21:53.881Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

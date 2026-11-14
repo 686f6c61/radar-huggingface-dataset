@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aquaduck/Llama-3.2-3B-MLX",
   "slug": "aquaduck-llama-3-2-3b-mlx",
   "author": "aquaduck",
@@ -29,6 +29,7 @@
   "parameters_human": "3.21B",
   "storage_bytes": 3853829473,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T02:53:09.978Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

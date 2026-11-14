@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mikim869/qwen2.5-3b-jev-hard-v5.1-bulletproof-fast",
   "slug": "mikim869-qwen2-5-3b-jev-hard-v5-1-bulletproof-fast",
   "author": "mikim869",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 131223694,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

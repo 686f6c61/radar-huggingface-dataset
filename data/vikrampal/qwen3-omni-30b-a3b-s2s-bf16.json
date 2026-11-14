@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3-Omni-30B-A3B-S2S-bf16",
   "slug": "vikrampal-qwen3-omni-30b-a3b-s2s-bf16",
   "author": "VikramPal",
@@ -33,14 +33,19 @@
   "parameters_human": "35.26B",
   "storage_bytes": 70534767224,
   "storage_human": "70.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VikramPal/Qwen3-Omni-30B-A3B-bf16",
+  "renamed_at": "2026-11-13T04:22:12.014Z",
   "benchmarks": [],
   "sources": [
     {

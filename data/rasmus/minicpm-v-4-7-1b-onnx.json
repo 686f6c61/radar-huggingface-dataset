@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RASMUS/MiniCPM-V-4.7-1B-ONNX",
   "slug": "rasmus-minicpm-v-4-7-1b-onnx",
   "author": "RASMUS",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2493061320,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

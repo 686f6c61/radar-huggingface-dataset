@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rambo6758/Assistant_Pepe_70B",
   "slug": "rambo6758-assistant_pepe_70b",
   "author": "Rambo6758",
@@ -30,14 +30,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141138200782,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-70B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goodailabs/reflex-1",
   "slug": "goodailabs-reflex-1",
   "author": "Goodailabs",
@@ -46,6 +46,7 @@
   "parameters_human": "420.8M",
   "storage_bytes": 5051041814,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-Large-Instruct, sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "onnx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gai-labs/reflex-1",
+  "renamed_at": "2026-11-11T02:49:17.894Z",
   "benchmarks": [
     {
       "task": "Conditional choice scoring",

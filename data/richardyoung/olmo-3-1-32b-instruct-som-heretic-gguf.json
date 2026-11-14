@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic-GGUF",
   "slug": "richardyoung-olmo-3-1-32b-instruct-som-heretic-gguf",
   "author": "richardyoung",
@@ -38,14 +38,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 53766869760,
   "storage_human": "53.8 GB",
+  "context_length": 65536,
   "base_model": "richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

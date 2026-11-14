@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JonusNattapong/LFM3-Omni-2B-abliterated-BF16",
   "slug": "jonusnattapong-lfm3-omni-2b-abliterated-bf16",
   "author": "JonusNattapong",
@@ -48,14 +48,19 @@
   "parameters_human": "2.17B",
   "storage_bytes": 12409345297,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T03:05:10.836Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

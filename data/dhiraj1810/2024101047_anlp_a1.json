@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dhiraj1810/2024101047_ANLP_A1",
   "slug": "dhiraj1810-2024101047_anlp_a1",
   "author": "dhiraj1810",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 173676906,
   "storage_human": "174 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

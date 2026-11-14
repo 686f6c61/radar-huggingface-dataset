@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nphearum/voxlock",
   "slug": "nphearum-voxlock",
   "author": "nphearum",
@@ -55,6 +55,7 @@
   "parameters_human": "27.3M",
   "storage_bytes": 386145968,
   "storage_human": "386 MB",
+  "context_length": null,
   "base_model": "Wespeaker/wespeaker-voxceleb-ecapa-tdnn512",
   "formats": [
     "onnx",
@@ -62,8 +63,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Voice isolation",

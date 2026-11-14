@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nileshbabu/my-custom-qwen",
   "slug": "nileshbabu-my-custom-qwen",
   "author": "nileshbabu",
@@ -30,6 +30,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4295768079,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

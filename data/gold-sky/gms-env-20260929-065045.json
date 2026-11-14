@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gold-sky/gms-env-20260929-065045",
   "slug": "gold-sky-gms-env-20260929-065045",
   "author": "gold-sky",
@@ -23,14 +23,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 17420004856,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

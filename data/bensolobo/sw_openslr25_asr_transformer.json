@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bensolobo/sw_openslr25_asr_transformer",
   "slug": "bensolobo-sw_openslr25_asr_transformer",
   "author": "Bensolobo",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 40279491,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moriipiri/chess-sft-qwen3-0.6b-lora",
   "slug": "moriipiri-chess-sft-qwen3-0-6b-lora",
   "author": "moriipiri",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 15787249499,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

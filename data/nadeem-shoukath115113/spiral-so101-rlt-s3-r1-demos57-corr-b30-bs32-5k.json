@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nadeem-Shoukath115113/spiral-so101-rlt-s3-r1-demos57-corr-b30-bs32-5k",
   "slug": "nadeem-shoukath115113-spiral-so101-rlt-s3-r1-demos57-corr-b30-bs32-5k",
   "author": "Nadeem-Shoukath115113",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 203437998,
   "storage_human": "203 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

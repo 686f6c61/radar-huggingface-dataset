@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mahesh27/t5lemmatizer",
   "slug": "mahesh27-t5lemmatizer",
   "author": "mahesh27",
@@ -31,14 +31,19 @@
   "parameters_human": "10.9M",
   "storage_bytes": 43603632,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

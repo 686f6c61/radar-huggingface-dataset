@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sid2623/Macaw_Keyboard_22IndicLangugae_Bundles",
   "slug": "sid2623-macaw_keyboard_22indiclangugae_bundles",
   "author": "Sid2623",
@@ -24,6 +24,7 @@
   "parameters_human": "1.23B",
   "storage_bytes": 6901188517,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hellnahbru/Carbon-X-preserved-20261029",
   "slug": "hellnahbru-carbon-x-preserved-20261029",
   "author": "hellnahbru",
@@ -38,14 +38,19 @@
   "parameters_human": "14.82B",
   "storage_bytes": 29656150799,
   "storage_human": "29.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

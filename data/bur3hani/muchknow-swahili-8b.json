@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bur3hani/MuchKnow-Swahili-8B",
   "slug": "bur3hani-muchknow-swahili-8b",
   "author": "Bur3hani",
@@ -38,6 +38,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077764945,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T02:33:37.293Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated",
   "slug": "3mper0rr-ornith-1-5-35b-a3b-3mper0rr-abliterated",
   "author": "3MPER0RR",
@@ -28,14 +28,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234483981,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

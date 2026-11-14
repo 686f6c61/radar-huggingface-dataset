@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "efebaykara/GPT-X3-150M-Gundem-LoRA",
   "slug": "efebaykara-gpt-x3-150m-gundem-lora",
   "author": "efebaykara",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1078896996,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "AxiomicLabs/GPT-X3-150M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

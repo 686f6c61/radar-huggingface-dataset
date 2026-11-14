@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "magnitudedev/MiniCPM5-2B-DSpark-GGUF",
   "slug": "magnitudedev-minicpm5-2b-dspark-gguf",
   "author": "magnitudedev",
@@ -28,14 +28,19 @@
   "parameters_human": "323.8M",
   "storage_bytes": 652730272,
   "storage_human": "653 MB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B-DSpark-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

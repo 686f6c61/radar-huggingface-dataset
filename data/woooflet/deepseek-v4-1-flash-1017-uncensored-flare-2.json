@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "woooflet/DeepSeek-V4.1-Flash-1017-uncensored-FLARE",
   "slug": "woooflet-deepseek-v4-1-flash-1017-uncensored-flare-2",
   "author": "woooflet",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 509308193076,
   "storage_human": "509.3 GB",
+  "context_length": null,
   "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

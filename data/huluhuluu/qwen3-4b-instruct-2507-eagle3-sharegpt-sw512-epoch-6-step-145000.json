@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-6-step-145000",
   "slug": "huluhuluu-qwen3-4b-instruct-2507-eagle3-sharegpt-sw512-epoch-6-step-145000",
   "author": "huluhuluu",
@@ -37,14 +37,19 @@
   "parameters_human": "202.7M",
   "storage_bytes": 405446711,
   "storage_human": "405 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

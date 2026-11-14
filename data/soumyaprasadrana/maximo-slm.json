@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soumyaprasadrana/maximo-slm",
   "slug": "soumyaprasadrana-maximo-slm",
   "author": "soumyaprasadrana",
@@ -35,6 +35,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 5779267566,
   "storage_human": "5.8 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T13:51:46.114Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

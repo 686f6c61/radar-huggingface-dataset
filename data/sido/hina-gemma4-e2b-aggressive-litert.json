@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sido/hina-gemma4-e2b-aggressive-litert",
   "slug": "sido-hina-gemma4-e2b-aggressive-litert",
   "author": "Sido",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 2553876096,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive, google/gemma-4-E2B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

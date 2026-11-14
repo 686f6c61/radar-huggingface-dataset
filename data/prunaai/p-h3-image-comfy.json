@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrunaAI/P-H3-Image-Comfy",
   "slug": "prunaai-p-h3-image-comfy",
   "author": "PrunaAI",
@@ -32,19 +32,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 421,
+  "likes": 422,
   "downloads_30d": 1116266,
-  "trending_score": 155,
+  "trending_score": 156,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 214730725537,
   "storage_human": "214.7 GB",
+  "context_length": null,
   "base_model": "PrunaAI/p-h3-image",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

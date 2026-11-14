@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caiovicentino1/Eikos-27B-FP8",
   "slug": "caiovicentino1-eikos-27b-fp8",
   "author": "caiovicentino1",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 31240318189,
   "storage_human": "31.2 GB",
+  "context_length": null,
   "base_model": "caiovicentino1/Eikos-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

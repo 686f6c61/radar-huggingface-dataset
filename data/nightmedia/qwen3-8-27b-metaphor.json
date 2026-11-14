@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.8-27B-Metaphor",
   "slug": "nightmedia-qwen3-8-27b-metaphor",
   "author": "nightmedia",
@@ -89,6 +89,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 59162949336,
   "storage_human": "59.2 GB",
+  "context_length": null,
   "base_model": "schneewolflabs/B0-27B, schneewolflabs/B1-27B, nightmedia/Qwen3.6-27B-Seven, nightmedia/Qwen3.8-27B-Brainwaves, nightmedia/Qwen3.8-27B-MindMeld, OmniJev/OneJev1.6-27B, shunzou05/TerminalHorizon-27B, etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated, inclusionAI/ZwZ2-27B, gordonhu/Tev-27B",
   "formats": [
     "mlx",
@@ -96,8 +97,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

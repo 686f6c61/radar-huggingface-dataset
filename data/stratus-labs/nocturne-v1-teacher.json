@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stratus-labs/nocturne-v1-teacher",
   "slug": "stratus-labs-nocturne-v1-teacher",
   "author": "stratus-labs",
@@ -46,14 +46,19 @@
   "parameters_human": "87.9M",
   "storage_bytes": 703192448,
   "storage_human": "703 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alekseyka20x/dl2-hw2",
   "slug": "alekseyka20x-dl2-hw2",
   "author": "Alekseyka20x",
@@ -31,14 +31,19 @@
   "parameters_human": "33.2M",
   "storage_bytes": 265799658,
   "storage_human": "266 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

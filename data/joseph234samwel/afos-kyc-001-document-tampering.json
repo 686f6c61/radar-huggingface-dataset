@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joseph234samwel/AFOS-KYC-001-Document-Tampering",
   "slug": "joseph234samwel-afos-kyc-001-document-tampering",
   "author": "joseph234samwel",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 33366753,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T05:10:11.515Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

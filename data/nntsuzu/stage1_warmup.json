@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nntsuzu/stage1_warmup",
   "slug": "nntsuzu-stage1_warmup",
   "author": "nntsuzu",
@@ -31,14 +31,19 @@
   "parameters_human": "1.27B",
   "storage_bytes": 7597807019,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "nntsuzu/kikka-2b-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:56:38.571Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

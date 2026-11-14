@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Miad221/AutoGLM-Phone-9B-Multilingual",
   "slug": "miad221-autoglm-phone-9b-multilingual",
   "author": "Miad221",
@@ -36,14 +36,19 @@
   "parameters_human": "934400",
   "storage_bytes": 20605612288,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.1V-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Spectrallic/MiniMax-H3-DMAD-int8-convrot",
   "slug": "spectrallic-minimax-h3-dmad-int8-convrot",
   "author": "Spectrallic",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 83892945426,
   "storage_human": "83.9 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3, ZhengmingYu/DMAD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

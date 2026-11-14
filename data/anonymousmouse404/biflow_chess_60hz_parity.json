@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnonymousMouse404/biflow_chess_60hz_parity",
   "slug": "anonymousmouse404-biflow_chess_60hz_parity",
   "author": "AnonymousMouse404",
@@ -22,14 +22,19 @@
   "parameters_human": "45.8M",
   "storage_bytes": 366559429,
   "storage_human": "367 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:03:34.462Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

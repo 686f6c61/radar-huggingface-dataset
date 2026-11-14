@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akatz-ai/MiniMax-H3-Character-Swap-LoRA",
   "slug": "akatz-ai-minimax-h3-character-swap-lora",
   "author": "akatz-ai",
@@ -30,19 +30,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 973,
+  "likes": 975,
   "downloads_30d": 141476,
-  "trending_score": 165,
+  "trending_score": 167,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 337948197,
   "storage_human": "338 MB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

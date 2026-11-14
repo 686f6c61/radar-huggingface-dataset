@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yandex/Yandex-8B-WMT26",
   "slug": "yandex-yandex-8b-wmt26",
   "author": "yandex",
@@ -45,14 +45,19 @@
   "parameters_human": "8.04B",
   "storage_bytes": 16075712173,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "yandex/YandexGPT-5-Lite-8B-pretrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

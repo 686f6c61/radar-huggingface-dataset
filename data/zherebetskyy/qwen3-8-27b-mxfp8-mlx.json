@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zherebetskyy/Qwen3.8-27B-mxfp8-mlx",
   "slug": "zherebetskyy-qwen3-8-27b-mxfp8-mlx",
   "author": "zherebetskyy",
@@ -39,6 +39,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 67513079890,
   "storage_human": "67.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, mlx-community/Qwen3.8-27B-bf16",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

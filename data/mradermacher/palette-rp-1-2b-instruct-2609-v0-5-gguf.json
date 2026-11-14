@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Palette-RP-1.2B-Instruct-2609-v0.5-GGUF",
   "slug": "mradermacher-palette-rp-1-2b-instruct-2609-v0-5-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 10598406656,
   "storage_human": "10.6 GB",
+  "context_length": 128000,
   "base_model": "Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TradMed/phi4_MT_epoch2_16bit",
   "slug": "tradmed-phi4_mt_epoch2_16bit",
   "author": "TradMed",
@@ -35,14 +35,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 29319056728,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "unsloth/phi-4-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

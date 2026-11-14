@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vihfinal/Ling-3.0-tiny-thinkingcap",
   "slug": "vihfinal-ling-3-0-tiny-thinkingcap",
   "author": "vihfinal",
@@ -27,14 +27,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 15800200012,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T03:09:33.376Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

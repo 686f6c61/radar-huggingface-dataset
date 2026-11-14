@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
   "slug": "fastvideo-fastvideo-fasth3-4-step-preview-v1-dense-datafree",
   "author": "FastVideo",
@@ -38,6 +38,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 143981960636,
   "storage_human": "144.0 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

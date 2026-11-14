@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tson29/research-ckpt",
   "slug": "tson29-research-ckpt",
   "author": "Tson29",
@@ -24,6 +24,7 @@
   "parameters_human": null,
   "storage_bytes": 185874510748,
   "storage_human": "185.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

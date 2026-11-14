@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghfjtuy6jtu6jtu6jtu6jtu6jtu6jtu6jtu6jtu6j6/frgtydtdyhu56r455555r5r5r5r5r5r55tuy6r5df5555f5f5f5f5f5f5f5f5f5f5f5f5f5f55ty6ur5r5r5r5r5r5r5r5r5",
   "slug": "ghfjtuy6jtu6jtu6jtu6jtu6jtu6jtu6jtu6jtu6j6-frgtydtdyhu56r455555r5r5r5r5r5r55tuy6r5df5555f5f5f5f5f5f5f5f5f5f5f5f5f5f55ty6ur5r5r5r5r5r5r5r5r5",
   "author": "ghfjtuy6jtu6jtu6jtu6jtu6jtu6jtu6jtu6jtu6j6",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 10084352000,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

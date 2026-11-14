@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matheusrp41/bert-hate-speech-test",
   "slug": "matheusrp41-bert-hate-speech-test",
   "author": "matheusrp41",
@@ -31,14 +31,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 437966901,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

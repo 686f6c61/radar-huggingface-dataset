@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hsilvosa/bne-spanish-subject-classifier",
   "slug": "hsilvosa-bne-spanish-subject-classifier",
   "author": "hsilvosa",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 883659922,
   "storage_human": "884 MB",
+  "context_length": null,
   "base_model": "dccuchile/bert-base-spanish-wwm-cased",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Subject & UDC Classification",

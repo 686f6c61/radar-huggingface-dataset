@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-4B-OBLITERATED-repaired-i1-GGUF",
   "slug": "mradermacher-qwen3-4b-obliterated-repaired-i1-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 48024090752,
   "storage_human": "48.0 GB",
+  "context_length": 40960,
   "base_model": "Hatsunama/Qwen3-4B-OBLITERATED-repaired",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

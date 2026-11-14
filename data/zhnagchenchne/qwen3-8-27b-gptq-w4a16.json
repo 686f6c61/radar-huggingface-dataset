@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhnagchenchne/Qwen3.8-27B-GPTQ-W4A16",
   "slug": "zhnagchenchne-qwen3-8-27b-gptq-w4a16",
   "author": "zhnagchenchne",
@@ -26,14 +26,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 19472959706,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

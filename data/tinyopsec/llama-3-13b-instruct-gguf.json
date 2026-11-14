@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Llama-3-13B-Instruct-GGUF",
   "slug": "tinyopsec-llama-3-13b-instruct-gguf",
   "author": "tinyopsec",
@@ -31,14 +31,19 @@
   "parameters_human": "13.05B",
   "storage_bytes": 120190351232,
   "storage_human": "120.2 GB",
+  "context_length": 8192,
   "base_model": "elinas/Llama-3-13B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

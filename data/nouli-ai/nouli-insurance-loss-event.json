@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nouli-ai/nouli-insurance-loss-event",
   "slug": "nouli-ai-nouli-insurance-loss-event",
   "author": "nouli-ai",
@@ -39,14 +39,19 @@
   "parameters_human": "355.4M",
   "storage_bytes": 710812956,
   "storage_human": "711 MB",
+  "context_length": null,
   "base_model": "FacebookAI/roberta-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

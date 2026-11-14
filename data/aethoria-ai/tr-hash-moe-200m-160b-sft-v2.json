@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT-v2",
   "slug": "aethoria-ai-tr-hash-moe-200m-160b-sft-v2",
   "author": "AETHORIA-AI",
@@ -38,14 +38,19 @@
   "parameters_human": "202.7M",
   "storage_bytes": 8083813947,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "AETHORIA-AI/TR-HASH-MoE-200M-160B-Refinement",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T05:03:46.369Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

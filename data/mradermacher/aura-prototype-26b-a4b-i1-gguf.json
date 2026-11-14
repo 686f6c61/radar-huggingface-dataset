@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Aura-Prototype-26B-A4B-i1-GGUF",
   "slug": "mradermacher-aura-prototype-26b-a4b-i1-gguf",
   "author": "mradermacher",
@@ -58,14 +58,19 @@
   "parameters_human": "25.97B",
   "storage_bytes": 308922309312,
   "storage_human": "308.9 GB",
+  "context_length": 262144,
   "base_model": "EldritchLabs/Aura-Prototype-26B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

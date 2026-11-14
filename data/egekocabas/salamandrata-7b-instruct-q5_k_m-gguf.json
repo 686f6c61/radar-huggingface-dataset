@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "egekocabas/salamandraTA-7b-instruct-Q5_K_M-GGUF",
   "slug": "egekocabas-salamandrata-7b-instruct-q5_k_m-gguf",
   "author": "egekocabas",
@@ -117,14 +117,19 @@
   "parameters_human": "7.77B",
   "storage_bytes": 5596268480,
   "storage_human": "5.6 GB",
+  "context_length": 8192,
   "base_model": "BSC-LT/salamandraTA-7b-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

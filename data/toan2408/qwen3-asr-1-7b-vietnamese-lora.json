@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Toan2408/qwen3-asr-1.7b-vietnamese-lora",
   "slug": "toan2408-qwen3-asr-1-7b-vietnamese-lora",
   "author": "Toan2408",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 11429585,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

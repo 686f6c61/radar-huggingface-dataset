@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyukudan/Qwen3.8-Flash-Next-GSQ-hybrid-Q2",
   "slug": "hyukudan-qwen3-8-flash-next-gsq-hybrid-q2",
   "author": "hyukudan",
@@ -33,14 +33,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 68290609600,
   "storage_human": "68.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next, unsloth/Qwen3.8-Flash-Next-GGUF, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

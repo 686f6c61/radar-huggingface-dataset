@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW-abliterated-s0.6-GGUF",
   "slug": "xcloudinfo-gemma-4-26b-a4b-taide-zhtw-abliterated-s0-6-gguf",
   "author": "xCloudinfo",
@@ -43,14 +43,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 99928681120,
   "storage_human": "99.9 GB",
+  "context_length": null,
   "base_model": "xCloudinfo/Gemma-4-26B-A4B-TAIDE-zhTW",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T16:55:25.570Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

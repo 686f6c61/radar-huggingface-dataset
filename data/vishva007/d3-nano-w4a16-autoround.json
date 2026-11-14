@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/d3-nano-W4A16-AutoRound",
   "slug": "vishva007-d3-nano-w4a16-autoround",
   "author": "Vishva007",
@@ -41,14 +41,19 @@
   "parameters_human": "1.06B",
   "storage_bytes": 2498520419,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

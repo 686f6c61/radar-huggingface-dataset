@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Secondchancee/entry-coder-0.5-v3-256k-GGUF",
   "slug": "secondchancee-entry-coder-0-5-v3-256k-gguf",
   "author": "Secondchancee",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Secondchancee/entry-coder-0.5-v3-256k",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

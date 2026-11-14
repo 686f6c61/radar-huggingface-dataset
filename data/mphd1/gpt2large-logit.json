@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mphd1/gpt2large-logit",
   "slug": "mphd1-gpt2large-logit",
   "author": "mphd1",
@@ -31,14 +31,19 @@
   "parameters_human": "774.0M",
   "storage_bytes": 3096171129,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T03:19:47.317Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

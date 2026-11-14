@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Granite-4.2-30B-ROCmFP4-STRIX_LEAN-GGUF",
   "slug": "kingjones777-granite-4-2-30b-rocmfp4-strix_lean-gguf",
   "author": "kingjones777",
@@ -39,14 +39,19 @@
   "parameters_human": "29.28B",
   "storage_bytes": 15758521024,
   "storage_human": "15.8 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

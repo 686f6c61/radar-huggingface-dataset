@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patrickbdevaney/MiMo-V2.6-Flash-REAP50",
   "slug": "patrickbdevaney-mimo-v2-6-flash-reap50",
   "author": "patrickbdevaney",
@@ -45,14 +45,19 @@
   "parameters_human": "159.33B",
   "storage_bytes": 94332702727,
   "storage_human": "94.3 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

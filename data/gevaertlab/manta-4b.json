@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gevaertlab/MANTA-4B",
   "slug": "gevaertlab-manta-4b",
   "author": "gevaertlab",
@@ -40,14 +40,19 @@
   "parameters_human": "5.29B",
   "storage_bytes": 10587902491,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

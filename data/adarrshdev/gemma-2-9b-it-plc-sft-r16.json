@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adarrshDev/gemma-2-9b-it-plc-sft-r16",
   "slug": "adarrshdev-gemma-2-9b-it-plc-sft-r16",
   "author": "adarrshDev",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 254755137,
   "storage_human": "255 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-2-9b-it-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

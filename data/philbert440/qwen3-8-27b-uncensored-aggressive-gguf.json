@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "philbert440/Qwen3.8-27B-Uncensored-Aggressive-GGUF",
   "slug": "philbert440-qwen3-8-27b-uncensored-aggressive-gguf",
   "author": "philbert440",
@@ -32,14 +32,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 158714026880,
   "storage_human": "158.7 GB",
+  "context_length": 262144,
   "base_model": "philbert440/Qwen3.8-27B-Uncensored-Aggressive",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

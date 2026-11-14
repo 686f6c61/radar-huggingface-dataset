@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "slug": "deepseek-ai-deepseek-v4-1-flash-1017",
   "author": "deepseek-ai",
@@ -26,21 +26,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 5688,
+  "likes": 5700,
   "downloads_30d": 434013,
-  "trending_score": 202,
+  "trending_score": 205,
   "parameters": 763205315794,
   "parameters_human": "763.21B",
   "storage_bytes": 510750942072,
   "storage_human": "510.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

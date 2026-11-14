@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Gemma4-E2B-DualMode",
   "slug": "webmp3-sakura-gemma4-e2b-dualmode",
   "author": "webmp3",
@@ -49,12 +49,17 @@
   "parameters_human": null,
   "storage_bytes": 50300442,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it, google/embeddinggemma-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "webmp3/Sakura-Gemma4-E2B-EmbeddingGemma2-DualMode",
+  "renamed_at": "2026-11-11T08:03:40.877Z",
   "benchmarks": [],
   "sources": []
 }

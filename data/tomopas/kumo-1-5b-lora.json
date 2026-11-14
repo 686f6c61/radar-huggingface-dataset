@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tomopas/Kumo-1.5B-LoRA",
   "slug": "tomopas-kumo-1-5b-lora",
   "author": "Tomopas",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 457963135,
   "storage_human": "458 MB",
+  "context_length": null,
   "base_model": "weights/base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

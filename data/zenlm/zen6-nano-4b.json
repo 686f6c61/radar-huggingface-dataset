@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zenlm/zen6-nano-4b",
   "slug": "zenlm-zen6-nano-4b",
   "author": "zenlm",
@@ -44,6 +44,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 1952033175,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-4B-mlx-2bit, Qwen/Qwen3.5-4B",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

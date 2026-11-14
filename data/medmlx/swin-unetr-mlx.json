@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MedMLX/swin-unetr-mlx",
   "slug": "medmlx-swin-unetr-mlx",
   "author": "MedMLX",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 253091041,
   "storage_human": "253 MB",
+  "context_length": null,
   "base_model": "MONAI/swin_unetr_btcv_segmentation",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

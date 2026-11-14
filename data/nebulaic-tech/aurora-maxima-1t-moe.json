@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebulaic-tech/aurora-maxima-1t-moe",
   "slug": "nebulaic-tech-aurora-maxima-1t-moe",
   "author": "nebulaic-tech",
@@ -36,14 +36,19 @@
   "parameters_human": "2.10B",
   "storage_bytes": 4196444984,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:44:10.935Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

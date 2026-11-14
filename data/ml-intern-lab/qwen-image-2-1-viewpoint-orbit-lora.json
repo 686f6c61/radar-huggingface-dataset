@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ML-Intern-lab/Qwen-Image-2.1-viewpoint-orbit-LoRA",
   "slug": "ml-intern-lab-qwen-image-2-1-viewpoint-orbit-lora",
   "author": "ML-Intern-lab",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1124449192,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

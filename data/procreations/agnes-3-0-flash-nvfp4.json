@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/Agnes-3.0-Flash-NVFP4",
   "slug": "procreations-agnes-3-0-flash-nvfp4",
   "author": "ProCreations",
@@ -34,14 +34,19 @@
   "parameters_human": "20.96B",
   "storage_bytes": 32537713496,
   "storage_human": "32.5 GB",
+  "context_length": null,
   "base_model": "Agnes-AI/Agnes-3.0-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

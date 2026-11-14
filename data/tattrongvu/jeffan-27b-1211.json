@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tattrongvu/Jeffan-27B-1211",
   "slug": "tattrongvu-jeffan-27b-1211",
   "author": "tattrongvu",
@@ -34,14 +34,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812098981,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

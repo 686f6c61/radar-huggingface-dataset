@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/llama3_8b_instruct_remove_40_seed42_jbbbentgt13_calib",
   "slug": "jeesup-llama3_8b_instruct_remove_40_seed42_jbbbentgt13_calib",
   "author": "Jeesup",
@@ -31,14 +31,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16120413427,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

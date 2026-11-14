@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "markstanl/coherencerl-exp7-1_5b-fullft",
   "slug": "markstanl-coherencerl-exp7-1_5b-fullft",
   "author": "markstanl",
@@ -34,14 +34,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 55585497942,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

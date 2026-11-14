@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Panga-Azazia/LFM2.5-350M-TTS-v3",
   "slug": "panga-azazia-lfm2-5-350m-tts-v3",
   "author": "Panga-Azazia",
@@ -31,14 +31,19 @@
   "parameters_human": "382.7M",
   "storage_bytes": 13778136403,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "Panga-Azazia/LFM2.5-350M-TTS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qing-yao/babylm-opt-sva-trial-11450597",
   "slug": "qing-yao-babylm-opt-sva-trial-11450597",
   "author": "qing-yao",
@@ -28,14 +28,19 @@
   "parameters_human": "110.4M",
   "storage_bytes": 3092210236,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "models/babylm-default_seed-42_1e-3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

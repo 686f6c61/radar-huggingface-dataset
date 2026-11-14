@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sumireyoko/EASY-RVC-Client",
   "slug": "sumireyoko-easy-rvc-client",
   "author": "sumireyoko",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 4791879400,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

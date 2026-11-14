@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sashkanik13/gemma-lora",
   "slug": "sashkanik13-gemma-lora",
   "author": "Sashkanik13",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 905671511,
   "storage_human": "906 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:01:06.822Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

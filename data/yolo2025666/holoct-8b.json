@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yolo2025666/HoloCT-8B",
   "slug": "yolo2025666-holoct-8b",
   "author": "yolo2025666",
@@ -37,14 +37,19 @@
   "parameters_human": "9.04B",
   "storage_bytes": 18097936990,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Alibaba-DAMO-Academy/HoloCT-8B",
+  "renamed_at": "2026-11-11T08:10:14.593Z",
   "benchmarks": [],
   "sources": []
 }

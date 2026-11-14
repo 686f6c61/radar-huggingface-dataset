@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexHung29629/MyEBFTModelSFTCP",
   "slug": "alexhung29629-myebftmodelsftcp",
   "author": "AlexHung29629",
@@ -35,14 +35,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 53121333347,
   "storage_human": "53.1 GB",
+  "context_length": null,
   "base_model": "AlexHung29629/ebft_gemma4_26b_lora_lr5e6_merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

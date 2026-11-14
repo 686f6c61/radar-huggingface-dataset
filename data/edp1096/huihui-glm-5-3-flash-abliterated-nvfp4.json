@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edp1096/Huihui-GLM-5.3-Flash-abliterated-NVFP4",
   "slug": "edp1096-huihui-glm-5-3-flash-abliterated-nvfp4",
   "author": "edp1096",
@@ -37,14 +37,19 @@
   "parameters_human": "168.89B",
   "storage_bytes": 204475612312,
   "storage_human": "204.5 GB",
+  "context_length": null,
   "base_model": "nvidia/GLM-5.3-Flash-NVFP4, huihui-ai/GLM-5.3-Flash-abliterated-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

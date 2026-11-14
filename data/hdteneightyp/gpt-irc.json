@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HDTenEightyP/GPT-IRC",
   "slug": "hdteneightyp-gpt-irc",
   "author": "HDTenEightyP",
@@ -28,14 +28,19 @@
   "parameters_human": "21.8M",
   "storage_bytes": 102809259,
   "storage_human": "103 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T02:50:22.317Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "igorls/gemma-4-12B-it-heretic-GGUF",
   "slug": "igorls-gemma-4-12b-it-heretic-gguf",
   "author": "igorls",
@@ -35,14 +35,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 40102054400,
   "storage_human": "40.1 GB",
+  "context_length": 131072,
   "base_model": "igorls/gemma-4-12B-it-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

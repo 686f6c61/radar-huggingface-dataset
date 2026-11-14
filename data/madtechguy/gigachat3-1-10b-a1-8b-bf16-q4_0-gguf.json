@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "madtechguy/GigaChat3.1-10B-A1.8B-bf16-Q4_0-GGUF",
   "slug": "madtechguy-gigachat3-1-10b-a1-8b-bf16-q4_0-gguf",
   "author": "madtechguy",
@@ -41,14 +41,19 @@
   "parameters_human": "10.67B",
   "storage_bytes": 6068955680,
   "storage_human": "6.1 GB",
+  "context_length": 262144,
   "base_model": "ai-sage/GigaChat3.1-10B-A1.8B-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:21:33.459Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

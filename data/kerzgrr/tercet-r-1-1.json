@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerzgrr/Tercet-R-1.1",
   "slug": "kerzgrr-tercet-r-1-1",
   "author": "kerzgrr",
@@ -65,14 +65,19 @@
   "parameters_human": "501.6M",
   "storage_bytes": 1003334200,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "kerzgrr/Tercet-R-1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

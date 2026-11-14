@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrontiersMind/Lumma-fev-0.1b",
   "slug": "frontiersmind-lumma-fev-0-1b",
   "author": "FrontiersMind",
@@ -36,14 +36,19 @@
   "parameters_human": "154.1M",
   "storage_bytes": 349968634,
   "storage_human": "350 MB",
+  "context_length": null,
   "base_model": "FrontiersMind/Nandi-Mini-150M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

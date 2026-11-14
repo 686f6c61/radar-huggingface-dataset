@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mbrown-uno/build-unosquare-summarizer",
   "slug": "mbrown-uno-build-unosquare-summarizer",
   "author": "mbrown-uno",
@@ -37,6 +37,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 12240149969,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

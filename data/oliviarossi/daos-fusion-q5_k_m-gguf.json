@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/DAOS-Fusion-Q5_K_M-GGUF",
   "slug": "oliviarossi-daos-fusion-q5_k_m-gguf",
   "author": "OliviaRossi",
@@ -52,14 +52,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 24729132384,
   "storage_human": "24.7 GB",
+  "context_length": 262144,
   "base_model": "OliviaRossi/DAOS-Fusion",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:15:37.822Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

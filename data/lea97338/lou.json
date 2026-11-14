@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lea97338/Lou",
   "slug": "lea97338-lou",
   "author": "lea97338",
@@ -33,6 +33,7 @@
   "parameters_human": "56.1M",
   "storage_bytes": 3668144063,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

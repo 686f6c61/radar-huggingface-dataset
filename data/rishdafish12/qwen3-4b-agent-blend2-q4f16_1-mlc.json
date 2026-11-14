@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rishdafish12/Qwen3-4B-agent-blend2-q4f16_1-MLC",
   "slug": "rishdafish12-qwen3-4b-agent-blend2-q4f16_1-mlc",
   "author": "rishdafish12",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 2274342846,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

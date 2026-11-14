@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ouinche/krea2-turbo-mflux-q4-full",
   "slug": "ouinche-krea2-turbo-mflux-q4-full",
   "author": "Ouinche",
@@ -35,6 +35,7 @@
   "parameters_human": "2.00B",
   "storage_bytes": 9997513822,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

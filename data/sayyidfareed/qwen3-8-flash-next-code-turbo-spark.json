@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sayyidfareed/Qwen3.8-Flash-Next-Code-Turbo-Spark",
   "slug": "sayyidfareed-qwen3-8-flash-next-code-turbo-spark",
   "author": "sayyidfareed",
@@ -40,14 +40,19 @@
   "parameters_human": "123.96B",
   "storage_bytes": 123845650431,
   "storage_human": "123.8 GB",
+  "context_length": null,
   "base_model": "Saren/Qwen3.8-Flash-Next-W4A16-AutoRound-hybrid-MTP_int4RTN",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

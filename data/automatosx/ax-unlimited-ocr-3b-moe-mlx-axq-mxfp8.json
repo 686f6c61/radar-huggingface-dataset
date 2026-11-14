@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Unlimited-OCR-3B-MoE-MLX-AXQ-MXFP8",
   "slug": "automatosx-ax-unlimited-ocr-3b-moe-mlx-axq-mxfp8",
   "author": "AutomatosX",
@@ -39,6 +39,7 @@
   "parameters_human": "3.34B",
   "storage_bytes": 3990493399,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

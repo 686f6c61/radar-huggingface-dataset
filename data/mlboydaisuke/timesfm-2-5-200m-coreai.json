@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/TimesFM-2.5-200M-CoreAI",
   "slug": "mlboydaisuke-timesfm-2-5-200m-coreai",
   "author": "mlboydaisuke",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 2314645427,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "google/timesfm-2.5-200m-transformers",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

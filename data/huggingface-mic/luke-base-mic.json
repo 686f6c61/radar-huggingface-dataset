@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/luke-base-mic",
   "slug": "huggingface-mic-luke-base-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "6.9M",
   "storage_bytes": 1126563040,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "studio-ousia/luke-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

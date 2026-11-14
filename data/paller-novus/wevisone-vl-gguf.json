@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PALLER-NOVUS/WeVisOne-VL-GGUF",
   "slug": "paller-novus-wevisone-vl-gguf",
   "author": "PALLER-NOVUS",
@@ -34,14 +34,19 @@
   "parameters_human": "407.0M",
   "storage_bytes": 45057677452,
   "storage_human": "45.1 GB",
+  "context_length": null,
   "base_model": "tencent/WeVisOne-VL-2B, tencent/WeVisOne-VL-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

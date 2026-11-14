@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Confucius4-R2T2-GGUF",
   "slug": "mradermacher-confucius4-r2t2-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 16957405696,
   "storage_human": "17.0 GB",
+  "context_length": 65536,
   "base_model": "netease-youdao/Confucius4-R2T2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

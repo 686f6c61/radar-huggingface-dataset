@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ricursiveAI/Ripple-65B-Preview-DFlash2",
   "slug": "ricursiveai-ripple-65b-preview-dflash2",
   "author": "ricursiveAI",
@@ -29,14 +29,19 @@
   "parameters_human": "4.04B",
   "storage_bytes": 8075513104,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

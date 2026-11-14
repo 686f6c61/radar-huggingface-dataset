@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhezi12138/Qwen3-1.7B-ifeval-single-per-layer-top50-rolloutseed42-20261109-195t9jvd",
   "slug": "zhezi12138-qwen3-1-7b-ifeval-single-per-layer-top50-rolloutseed42-20261109-195t9jvd",
   "author": "zhezi12138",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 10326345690,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zhezi12138/Qwen3-1.7B-ifeval-single-per-layer-top50-rolloutseed42",
+  "renamed_at": "2026-11-11T08:14:11.706Z",
   "benchmarks": [],
   "sources": []
 }

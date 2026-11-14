@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1234Frede/v1chronos2-lora-dk1-all-zone-inputs",
   "slug": "1234frede-v1chronos2-lora-dk1-all-zone-inputs",
   "author": "1234Frede",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 14563752,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": "amazon/chronos-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dalatexcoder/MiniCPM5-2B-heretic-ara",
   "slug": "dalatexcoder-minicpm5-2b-heretic-ara",
   "author": "dalatexcoder",
@@ -57,14 +57,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 10067114256,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ckuma/lugbara-ensemble-translator",
   "slug": "ckuma-lugbara-ensemble-translator",
   "author": "ckuma",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 3484761258,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "google/mt5-base, FacebookAI/xlm-roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

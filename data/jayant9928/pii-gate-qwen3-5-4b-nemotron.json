@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jayant9928/pii-gate-qwen3.5-4b-nemotron",
   "slug": "jayant9928-pii-gate-qwen3-5-4b-nemotron",
   "author": "Jayant9928",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Jayant9928/PII-Gate-Nemotron-Anyjev",
+  "renamed_at": "2026-11-13T03:09:37.225Z",
   "benchmarks": [],
   "sources": [
     {

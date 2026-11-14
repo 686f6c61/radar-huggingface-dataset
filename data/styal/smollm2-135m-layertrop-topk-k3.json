@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "styal/SmolLM2-135M-layertrop-topk-k3",
   "slug": "styal-smollm2-135m-layertrop-topk-k3",
   "author": "styal",
@@ -35,14 +35,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 538120560,
   "storage_human": "538 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T05:49:06.075Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

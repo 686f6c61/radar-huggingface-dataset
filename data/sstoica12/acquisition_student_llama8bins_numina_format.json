@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sstoica12/acquisition_student_llama8bins_numina_format",
   "slug": "sstoica12-acquisition_student_llama8bins_numina_format",
   "author": "sstoica12",
@@ -31,14 +31,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766296,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T05:23:32.707Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

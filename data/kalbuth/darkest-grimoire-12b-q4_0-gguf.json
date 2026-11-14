@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kalbuth/Darkest-Grimoire-12B-Q4_0-GGUF",
   "slug": "kalbuth-darkest-grimoire-12b-q4_0-gguf",
   "author": "kalbuth",
@@ -31,14 +31,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 7071699968,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "Vortex5/Darkest-Grimoire-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:12:16.387Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

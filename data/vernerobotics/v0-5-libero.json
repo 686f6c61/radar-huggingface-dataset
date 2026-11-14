@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vernerobotics/v0.5-libero",
   "slug": "vernerobotics-v0-5-libero",
   "author": "vernerobotics",
@@ -34,14 +34,19 @@
   "parameters_human": "8.22B",
   "storage_bytes": 16433014372,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "vernerobotics/v0.5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

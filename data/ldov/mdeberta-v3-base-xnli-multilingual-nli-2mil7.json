@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
   "slug": "ldov-mdeberta-v3-base-xnli-multilingual-nli-2mil7",
   "author": "ldov",
@@ -96,6 +96,7 @@
   "parameters_human": "278.8M",
   "storage_bytes": 2590760135,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -103,8 +104,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:32:05.042Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeoZotos/littlelearner-1.3b-base_bio_textbooks",
   "slug": "leozotos-littlelearner-1-3b-base_bio_textbooks",
   "author": "LeoZotos",
@@ -26,14 +26,19 @@
   "parameters_human": "1.36B",
   "storage_bytes": 10864301056,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T07:30:22.951Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jtss/distilbert-base-uncased-finetuned-adl_hw1",
   "slug": "jtss-distilbert-base-uncased-finetuned-adl_hw1",
   "author": "jtss",
@@ -31,14 +31,19 @@
   "parameters_human": "67.1M",
   "storage_bytes": 1341444385,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seashyne/celestia-1.4b-moe",
   "slug": "seashyne-celestia-1-4b-moe",
   "author": "seashyne",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 27541,
   "storage_human": "27541 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnson-yo/termux_os-asset-sensevoice16",
   "slug": "johnson-yo-termux_os-asset-sensevoice16",
   "author": "johnson-yo",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1889158582,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T02:49:05.398Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

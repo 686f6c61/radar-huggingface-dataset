@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alfred8995/r17-bk-pf-p7_instruction_c3",
   "slug": "alfred8995-r17-bk-pf-p7_instruction_c3",
   "author": "alfred8995",
@@ -24,14 +24,19 @@
   "parameters_human": "1.30B",
   "storage_bytes": 2592891184,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

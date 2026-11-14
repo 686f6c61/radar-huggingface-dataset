@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heterodoxin/qwen-3.8-27b-abliterated",
   "slug": "heterodoxin-qwen-3-8-27b-abliterated",
   "author": "heterodoxin",
@@ -23,14 +23,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 109397061339,
   "storage_human": "109.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

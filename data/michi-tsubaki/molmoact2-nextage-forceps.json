@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Michi-Tsubaki/MolmoAct2-NEXTAGE-Forceps",
   "slug": "michi-tsubaki-molmoact2-nextage-forceps",
   "author": "Michi-Tsubaki",
@@ -34,14 +34,19 @@
   "parameters_human": "5.45B",
   "storage_bytes": 43592031411,
   "storage_human": "43.6 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

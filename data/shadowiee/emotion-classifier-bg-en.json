@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shadowiee/emotion-classifier-bg-en",
   "slug": "shadowiee-emotion-classifier-bg-en",
   "author": "Shadowiee",
@@ -31,14 +31,19 @@
   "parameters_human": "355.4M",
   "storage_bytes": 1421515916,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "FacebookAI/roberta-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

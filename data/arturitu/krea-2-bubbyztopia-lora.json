@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arturitu/Krea-2-Bubbyztopia-LoRA",
   "slug": "arturitu-krea-2-bubbyztopia-lora",
   "author": "arturitu",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 469353248,
   "storage_human": "469 MB",
+  "context_length": null,
   "base_model": "undefined",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T03:50:41.612Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

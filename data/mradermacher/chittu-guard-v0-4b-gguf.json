@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/chittu-guard-v0-4b-GGUF",
   "slug": "mradermacher-chittu-guard-v0-4b-gguf",
   "author": "mradermacher",
@@ -34,6 +34,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 36389990016,
   "storage_human": "36.4 GB",
+  "context_length": 262144,
   "base_model": "Tulifo/chittu-guard-v0-4b",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

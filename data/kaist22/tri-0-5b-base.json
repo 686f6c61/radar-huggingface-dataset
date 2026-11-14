@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaist22/Tri-0.5B-Base",
   "slug": "kaist22-tri-0-5b-base",
   "author": "kaist22",
@@ -33,14 +33,19 @@
   "parameters_human": "471.9M",
   "storage_bytes": 943765312,
   "storage_human": "944 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

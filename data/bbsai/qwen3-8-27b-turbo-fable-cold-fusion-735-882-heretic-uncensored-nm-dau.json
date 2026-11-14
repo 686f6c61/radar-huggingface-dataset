@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bbsai/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "slug": "bbsai-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau",
   "author": "bbsai",
@@ -43,14 +43,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55586512482,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:14:54.460Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myungkyu/rldx_1_rmbench_taco_b128_60k",
   "slug": "myungkyu-rldx_1_rmbench_taco_b128_60k",
   "author": "Myungkyu",
@@ -29,14 +29,19 @@
   "parameters_human": "6.91B",
   "storage_bytes": 13825892072,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "RLWRLD/RLDX-1-PT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Myungkyu/rldx_1_rmbench_taco_b64_60k",
+  "renamed_at": "2026-11-12T03:31:51.739Z",
   "benchmarks": [],
   "sources": [
     {

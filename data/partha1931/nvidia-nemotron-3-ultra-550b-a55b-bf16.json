@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "partha1931/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
   "slug": "partha1931-nvidia-nemotron-3-ultra-550b-a55b-bf16",
   "author": "partha1931",
@@ -60,14 +60,19 @@
   "parameters_human": "560.52B",
   "storage_bytes": 1121073082704,
   "storage_human": "1121.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

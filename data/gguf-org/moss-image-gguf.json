@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gguf-org/moss-image-gguf",
   "slug": "gguf-org-moss-image-gguf",
   "author": "gguf-org",
@@ -25,14 +25,19 @@
   "parameters_human": "5.08B",
   "storage_bytes": 3469206919,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

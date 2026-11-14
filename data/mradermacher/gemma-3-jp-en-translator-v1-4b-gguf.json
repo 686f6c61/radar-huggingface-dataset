@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-3-JP-EN-Translator-v1-4B-GGUF",
   "slug": "mradermacher-gemma-3-jp-en-translator-v1-4b-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 37274392000,
   "storage_human": "37.3 GB",
+  "context_length": 131072,
   "base_model": "mpasila/gemma-3-JP-EN-Translator-v1-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

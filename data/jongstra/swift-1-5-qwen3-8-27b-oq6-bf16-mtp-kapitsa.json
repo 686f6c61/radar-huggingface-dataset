@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-kapitsa",
   "slug": "jongstra-swift-1-5-qwen3-8-27b-oq6-bf16-mtp-kapitsa",
   "author": "jongstra",
@@ -37,6 +37,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 28145246614,
   "storage_human": "28.1 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-dflash2-kapitsa",
+  "renamed_at": "2026-11-11T05:49:09.489Z",
   "benchmarks": [],
   "sources": []
 }

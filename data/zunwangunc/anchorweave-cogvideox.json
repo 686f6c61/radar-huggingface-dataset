@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zunwangunc/AnchorWeave-CogVideoX",
   "slug": "zunwangunc-anchorweave-cogvideox",
   "author": "zunwangunc",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 833849899,
   "storage_human": "834 MB",
+  "context_length": null,
   "base_model": "THUDM/CogVideoX-5b-I2V",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

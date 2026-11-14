@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DT4H/CardioBERTa.es_translations_only",
   "slug": "dt4h-cardioberta-es_translations_only",
   "author": "DT4H",
@@ -39,14 +39,19 @@
   "parameters_human": "126.0M",
   "storage_bytes": 503934824,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": "DT4H/CardioBERTa.es",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

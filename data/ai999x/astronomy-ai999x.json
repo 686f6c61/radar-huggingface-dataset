@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AI999X/astronomy-ai999x",
   "slug": "ai999x-astronomy-ai999x",
   "author": "AI999X",
@@ -50,12 +50,17 @@
   "parameters_human": "4.7M",
   "storage_bytes": 19406241,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "astronomy question answering",

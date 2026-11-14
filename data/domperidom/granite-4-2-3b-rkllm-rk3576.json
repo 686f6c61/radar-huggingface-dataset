@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "domperidom/granite-4.2-3b-rkllm-rk3576",
   "slug": "domperidom-granite-4-2-3b-rkllm-rk3576",
   "author": "domperidom",
@@ -56,12 +56,17 @@
   "parameters_human": null,
   "storage_bytes": 7782833911,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

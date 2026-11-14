@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mattmireles/magenta-realtime-2-iphone",
   "slug": "mattmireles-magenta-realtime-2-iphone",
   "author": "mattmireles",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1281964198,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "google/magenta-realtime-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

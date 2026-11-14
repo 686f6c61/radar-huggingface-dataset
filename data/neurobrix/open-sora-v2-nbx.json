@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/Open-Sora-v2-nbx",
   "slug": "neurobrix-open-sora-v2-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 45564545454,
   "storage_human": "45.6 GB",
+  "context_length": null,
   "base_model": "hpcai-tech/Open-Sora-v2",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

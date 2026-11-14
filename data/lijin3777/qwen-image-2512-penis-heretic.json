@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lijin3777/Qwen-Image-2512-Penis-Heretic",
   "slug": "lijin3777-qwen-image-2512-penis-heretic",
   "author": "lijin3777",
@@ -32,6 +32,7 @@
   "parameters_human": "20.43B",
   "storage_bytes": 57712821752,
   "storage_human": "57.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T03:53:20.424Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zir0n666/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
   "slug": "zir0n666-deepseek-v4-1-flash-1017-gsq-rco-coder-gguf",
   "author": "Zir0n666",
@@ -41,14 +41,19 @@
   "parameters_human": "196.61B",
   "storage_bytes": 183693171267,
   "storage_human": "183.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

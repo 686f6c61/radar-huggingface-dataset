@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "12B-Suite/Mtreelva-Dune-12B-Q8_0-GGUF",
   "slug": "12b-suite-mtreelva-dune-12b-q8_0-gguf",
   "author": "12B-Suite",
@@ -57,6 +57,7 @@
   "parameters_human": "11.91B",
   "storage_bytes": 12671392841,
   "storage_human": "12.7 GB",
+  "context_length": 262144,
   "base_model": "12B-Suite/Mtreelva-Dune-12B",
   "formats": [
     "gguf",
@@ -64,8 +65,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

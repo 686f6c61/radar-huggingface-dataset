@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/SenseNova-U1.5-Comfy",
   "slug": "taurusduan-sensenova-u1-5-comfy",
   "author": "taurusduan",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 86102897124,
   "storage_human": "86.1 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT, sensenova/SenseNova-U1.5-8B-MoT-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T07:09:59.791Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

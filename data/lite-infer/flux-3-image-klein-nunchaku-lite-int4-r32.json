@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lite-infer/flux-3-image-klein-nunchaku-lite-int4-r32",
   "slug": "lite-infer-flux-3-image-klein-nunchaku-lite-int4-r32",
   "author": "lite-infer",
@@ -37,6 +37,7 @@
   "parameters_human": "3.07B",
   "storage_bytes": 6961532088,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

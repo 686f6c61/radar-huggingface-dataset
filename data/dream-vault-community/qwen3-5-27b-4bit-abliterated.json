@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dream-vault-community/Qwen3.5-27B-4bit-Abliterated",
   "slug": "dream-vault-community-qwen3-5-27b-4bit-abliterated",
   "author": "dream-vault-community",
@@ -32,6 +32,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 16074535252,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "mlx-community/Huihui-Qwen3.5-27B-Claude-4.6-Opus-abliterated-4bit",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

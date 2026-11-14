@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unconst/Affine-5czsc2fc98-r552-r252-odpo-extralong-ultratemp-hirank-bigg-merged",
   "slug": "unconst-affine-5czsc2fc98-r552-r252-odpo-extralong-ultratemp-hirank-bigg-merged",
   "author": "unconst",
@@ -30,14 +30,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234483229,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-17T09:31:23.058Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

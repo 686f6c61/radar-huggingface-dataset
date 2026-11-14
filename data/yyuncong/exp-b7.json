@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yyuncong/exp-b7",
   "slug": "yyuncong-exp-b7",
   "author": "yyuncong",
@@ -29,14 +29,19 @@
   "parameters_human": "15.75B",
   "storage_bytes": 31500278440,
   "storage_human": "31.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:29:23.969Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahmedsamirtarjama/arabic-ocr-abl-plain3k",
   "slug": "ahmedsamirtarjama-arabic-ocr-abl-plain3k",
   "author": "ahmedsamirtarjama",
@@ -33,14 +33,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 8887142058,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T03:19:04.463Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

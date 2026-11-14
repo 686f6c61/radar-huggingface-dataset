@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shanjivkr/catla-indictrans2-bn2en-fullnn",
   "slug": "shanjivkr-catla-indictrans2-bn2en-fullnn",
   "author": "shanjivkr",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1917240195,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "ai4bharat/indictrans2-indic-en-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

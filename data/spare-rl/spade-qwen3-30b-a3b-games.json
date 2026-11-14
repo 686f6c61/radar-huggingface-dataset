@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spare-rl/SPADE-Qwen3-30B-A3B-Games",
   "slug": "spare-rl-spade-qwen3-30b-a3b-games",
   "author": "spare-rl",
@@ -36,14 +36,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61078000830,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "spade-rl/SPADE-Qwen3-30B-A3B-Games",
+  "renamed_at": "2026-11-11T07:35:11.169Z",
   "benchmarks": [],
   "sources": [
     {

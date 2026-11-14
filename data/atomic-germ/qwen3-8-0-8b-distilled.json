@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3.8-0.8B-Distilled",
   "slug": "atomic-germ-qwen3-8-0-8b-distilled",
   "author": "Atomic-Germ",
@@ -40,14 +40,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 3817037939,
   "storage_human": "3.8 GB",
+  "context_length": 262144,
   "base_model": "gatilin/Qwen3.8-0.8B-Agentic-distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

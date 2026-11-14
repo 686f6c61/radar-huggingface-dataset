@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yachiyo8080/P-H3-Image-Comfy",
   "slug": "yachiyo8080-p-h3-image-comfy",
   "author": "yachiyo8080",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 139321922311,
   "storage_human": "139.3 GB",
+  "context_length": null,
   "base_model": "PrunaAI/p-h3-image",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

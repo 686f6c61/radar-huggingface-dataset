@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GaviZhou/qwen3-vl-8b-i2c-hallu-v6-32k",
   "slug": "gavizhou-qwen3-vl-8b-i2c-hallu-v6-32k",
   "author": "GaviZhou",
@@ -36,14 +36,19 @@
   "parameters_human": "770288",
   "storage_bytes": 122752091118,
   "storage_human": "122.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

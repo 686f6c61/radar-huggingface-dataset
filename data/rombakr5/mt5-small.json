@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rombakr5/mt5-small",
   "slug": "rombakr5-mt5-small",
   "author": "Rombakr5",
@@ -234,14 +234,19 @@
   "parameters_human": null,
   "storage_bytes": 7575015367,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:16:12.183Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsolful/FastH3-Omni-Comfy-INT4mixed-INT6GPTQ",
   "slug": "tsolful-fasth3-omni-comfy-int4mixed-int6gptq",
   "author": "tsolful",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 73666743168,
   "storage_human": "73.7 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, FastVideo/FastVideo-FastH3-Omni-8-Step-V1, FastVideo/FastH3-OmniRef-Comfy",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

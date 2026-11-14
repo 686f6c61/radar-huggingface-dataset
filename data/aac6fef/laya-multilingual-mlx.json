@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aac6fef/laya-multilingual-mlx",
   "slug": "aac6fef-laya-multilingual-mlx",
   "author": "aac6fef",
@@ -32,6 +32,7 @@
   "parameters_human": "321.9M",
   "storage_bytes": 678198614,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Gamunu-4b-Chat-It-GGUF",
   "slug": "mradermacher-gamunu-4b-chat-it-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 37274397760,
   "storage_human": "37.3 GB",
+  "context_length": 131072,
   "base_model": "manthilaffs/Gamunu-4b-Chat-It",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taimwe/securecoder-30b-pro-v3-merged",
   "slug": "taimwe-securecoder-30b-pro-v3-merged",
   "author": "Taimwe",
@@ -38,14 +38,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61078000330,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

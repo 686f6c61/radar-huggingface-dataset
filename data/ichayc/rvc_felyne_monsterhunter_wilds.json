@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ichayc/RVC_FELYNE_MONSTERHUNTER_WILDS",
   "slug": "ichayc-rvc_felyne_monsterhunter_wilds",
   "author": "ichayc",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 49619584,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

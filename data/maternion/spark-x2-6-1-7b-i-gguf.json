@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maternion/Spark-X2.6-1.7B-i-GGUF",
   "slug": "maternion-spark-x2-6-1-7b-i-gguf",
   "author": "maternion",
@@ -38,14 +38,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 15032849920,
   "storage_human": "15.0 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.6-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

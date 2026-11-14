@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nghi85/Repl-Ghidra",
   "slug": "nghi85-repl-ghidra",
   "author": "nghi85",
@@ -31,14 +31,19 @@
   "parameters_human": "2.51B",
   "storage_bytes": 5034130294,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "google/codegemma-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

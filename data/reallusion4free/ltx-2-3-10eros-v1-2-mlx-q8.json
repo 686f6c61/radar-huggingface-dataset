@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reallusion4free/ltx-2.3-10eros-v1.2-mlx-q8",
   "slug": "reallusion4free-ltx-2-3-10eros-v1-2-mlx-q8",
   "author": "reallusion4free",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 66895842049,
   "storage_human": "66.9 GB",
+  "context_length": null,
   "base_model": "TenStrip/LTX2.3-10Eros",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

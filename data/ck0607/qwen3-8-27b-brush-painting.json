@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CK0607/qwen3.8-27b-brush-painting",
   "slug": "ck0607-qwen3-8-27b-brush-painting",
   "author": "CK0607",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 35295670094,
   "storage_human": "35.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

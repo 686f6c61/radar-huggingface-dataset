@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samoudi/sd-turbo-gguf",
   "slug": "samoudi-sd-turbo-gguf",
   "author": "samoudi",
@@ -28,14 +28,19 @@
   "parameters_human": "1.30B",
   "storage_bytes": 3997045600,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "stabilityai/sd-turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

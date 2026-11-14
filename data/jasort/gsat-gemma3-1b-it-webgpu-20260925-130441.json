@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jasort/gsat-gemma3-1b-it-webgpu-20260925-130441",
   "slug": "jasort-gsat-gemma3-1b-it-webgpu-20260925-130441",
   "author": "jasort",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 854329396,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T04:30:40.158Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

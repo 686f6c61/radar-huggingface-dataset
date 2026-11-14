@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shivanshsen7/inbox-topics-setfit",
   "slug": "shivanshsen7-inbox-topics-setfit",
   "author": "shivanshsen7",
@@ -32,14 +32,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 133477371,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:12:13.734Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

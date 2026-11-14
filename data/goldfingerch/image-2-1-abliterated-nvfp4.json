@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoldfingerCH/Image-2.1-abliterated-NVFP4",
   "slug": "goldfingerch-image-2-1-abliterated-nvfp4",
   "author": "GoldfingerCH",
@@ -36,6 +36,7 @@
   "parameters_human": "4.44B",
   "storage_bytes": 23672943393,
   "storage_human": "23.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

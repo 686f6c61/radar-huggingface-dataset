@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ilovefocalors/Sage-A1.5-20B-A3B-heretic-REAP",
   "slug": "ilovefocalors-sage-a1-5-20b-a3b-heretic-reap",
   "author": "ilovefocalors",
@@ -49,14 +49,19 @@
   "parameters_human": null,
   "storage_bytes": 7412125088,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

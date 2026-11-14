@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Blueberry-TinyLlama-1.1B-Chat-v1.0-GGUF",
   "slug": "mradermacher-blueberry-tinyllama-1-1b-chat-v1-0-gguf",
   "author": "mradermacher",
@@ -26,14 +26,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 9811221760,
   "storage_human": "9.8 GB",
+  "context_length": 2048,
   "base_model": "shreyanth/Blueberry-TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

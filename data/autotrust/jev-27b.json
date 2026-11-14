@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "autotrust/JEV-27B",
   "slug": "autotrust-jev-27b",
   "author": "autotrust",
@@ -51,14 +51,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 54700683842,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "autotrust/AutoTrust-Decider-Pro-27B",
+  "renamed_at": "2026-11-11T04:36:18.788Z",
   "benchmarks": [
     {
       "task": "typed decisions (noul / choice / score) — agreement with the TypeSafe Jev 1.13 teacher",

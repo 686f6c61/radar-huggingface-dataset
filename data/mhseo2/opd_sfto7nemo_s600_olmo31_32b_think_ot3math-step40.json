@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mhseo2/opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40",
   "slug": "mhseo2-opd_sfto7nemo_s600_olmo31_32b_think_ot3math-step40",
   "author": "mhseo2",
@@ -29,14 +29,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14596063680,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step600",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

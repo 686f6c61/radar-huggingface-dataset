@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "renatoschust/agentmujo-qwen3-vl-30b-a3b-lora",
   "slug": "renatoschust-agentmujo-qwen3-vl-30b-a3b-lora",
   "author": "renatoschust",
@@ -47,14 +47,19 @@
   "parameters_human": null,
   "storage_bytes": 38218098,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

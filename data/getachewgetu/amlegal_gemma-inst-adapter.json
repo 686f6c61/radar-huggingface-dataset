@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "getachewgetu/AmLegal_Gemma-Inst-Adapter",
   "slug": "getachewgetu-amlegal_gemma-inst-adapter",
   "author": "getachewgetu",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 558097273,
   "storage_human": "558 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

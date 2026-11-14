@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leonice2/Qwen3.8-Flash-Next-UNCENSORED-FP8-MRoPE-Fix",
   "slug": "leonice2-qwen3-8-flash-next-uncensored-fp8-mrope-fix",
   "author": "leonice2",
@@ -37,14 +37,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 185553536918,
   "storage_human": "185.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

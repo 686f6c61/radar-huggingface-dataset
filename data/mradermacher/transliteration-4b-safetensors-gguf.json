@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Transliteration-4B-Safetensors-GGUF",
   "slug": "mradermacher-transliteration-4b-safetensors-gguf",
   "author": "mradermacher",
@@ -46,6 +46,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 38906335744,
   "storage_human": "38.9 GB",
+  "context_length": 262144,
   "base_model": "UnimeType/Transliteration-4B-Safetensors",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

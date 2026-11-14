@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Docket-3B-GGUF",
   "slug": "mradermacher-docket-3b-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "3.66B",
   "storage_bytes": 32768318464,
   "storage_human": "32.8 GB",
+  "context_length": 131072,
   "base_model": "shahjenil/Docket-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-EmbeddingGemma-2-MLX-AXQ-MXFP4",
   "slug": "automatosx-ax-embeddinggemma-2-mlx-axq-mxfp4",
   "author": "AutomatosX",
@@ -41,6 +41,7 @@
   "parameters_human": "744.4M",
   "storage_bytes": 1209792569,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

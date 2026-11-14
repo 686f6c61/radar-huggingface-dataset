@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meshive/Qwen-3.8-27B-Q4_K_M-Imatrix",
   "slug": "meshive-qwen-3-8-27b-q4_k_m-imatrix",
   "author": "meshive",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16810714624,
   "storage_human": "16.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MESHIVEAI/Qwen-3.8-27B-Q4_K_M-Imatrix",
+  "renamed_at": "2026-11-11T06:17:05.088Z",
   "benchmarks": [],
   "sources": [
     {

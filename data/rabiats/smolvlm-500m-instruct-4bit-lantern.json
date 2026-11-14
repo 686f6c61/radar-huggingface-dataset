@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RabiatS/SmolVLM-500M-Instruct-4bit-Lantern",
   "slug": "rabiats-smolvlm-500m-instruct-4bit-lantern",
   "author": "RabiatS",
@@ -34,6 +34,7 @@
   "parameters_human": "507.5M",
   "storage_bytes": 286702361,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "colonelwatch/Ornith-1.5-35B-A3B-DFlash2-exl3-4.0bpw",
   "slug": "colonelwatch-ornith-1-5-35b-a3b-dflash2-exl3-4-0bpw",
   "author": "colonelwatch",
@@ -32,14 +32,19 @@
   "parameters_human": "227.7M",
   "storage_bytes": 455456061,
   "storage_human": "455 MB",
+  "context_length": null,
   "base_model": "resolvo-cloud/Ornith-1.5-35B-A3B-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Qwen3.8-2B-Function-Calling-xLAM-GGUF",
   "slug": "tinyopsec-qwen3-8-2b-function-calling-xlam-gguf",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": "1.94B",
   "storage_bytes": 18598010368,
   "storage_human": "18.6 GB",
+  "context_length": 262144,
   "base_model": "ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

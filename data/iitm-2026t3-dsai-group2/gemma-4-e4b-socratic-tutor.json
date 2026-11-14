@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IITM-2026T3-DSAI-GROUP2/gemma-4-e4b-socratic-tutor",
   "slug": "iitm-2026t3-dsai-group2-gemma-4-e4b-socratic-tutor",
   "author": "IITM-2026T3-DSAI-GROUP2",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 418883328,
   "storage_human": "419 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vashisht7/noteechoes-qwen25-core-v4-mlx-4bit",
   "slug": "vashisht7-noteechoes-qwen25-core-v4-mlx-4bit",
   "author": "Vashisht7",
@@ -40,6 +40,7 @@
   "parameters_human": "241.3M",
   "storage_bytes": 880050713,
   "storage_human": "880 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T03:46:02.953Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skaran786/llama32-3b-ecra-sft",
   "slug": "skaran786-llama32-3b-ecra-sft",
   "author": "skaran786",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 309132552,
   "storage_human": "309 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nuwanda94/llama32-3b-ecra-sft",
+  "renamed_at": "2026-11-12T07:49:56.008Z",
   "benchmarks": [],
   "sources": [
     {

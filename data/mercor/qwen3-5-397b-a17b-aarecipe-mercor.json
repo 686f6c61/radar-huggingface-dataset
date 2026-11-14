@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mercor/Qwen3.5-397B-A17B-AARecipe-Mercor",
   "slug": "mercor-qwen3-5-397b-a17b-aarecipe-mercor",
   "author": "mercor",
@@ -32,14 +32,19 @@
   "parameters_human": "396.80B",
   "storage_bytes": 793624886597,
   "storage_human": "793.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-397B-A17B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

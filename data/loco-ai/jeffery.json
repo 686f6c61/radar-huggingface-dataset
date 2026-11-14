@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loco-ai/Jeffery",
   "slug": "loco-ai-jeffery",
   "author": "loco-ai",
@@ -34,6 +34,7 @@
   "parameters_human": "181.3M",
   "storage_bytes": 1038638827,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

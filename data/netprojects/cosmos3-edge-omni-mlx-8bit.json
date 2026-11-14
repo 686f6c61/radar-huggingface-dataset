@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netprojects/Cosmos3-Edge-Omni-mlx-8bit",
   "slug": "netprojects-cosmos3-edge-omni-mlx-8bit",
   "author": "netprojects",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 4996089599,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

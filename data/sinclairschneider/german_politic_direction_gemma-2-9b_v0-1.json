@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SinclairSchneider/german_politic_direction_gemma-2-9b_v0.1",
   "slug": "sinclairschneider-german_politic_direction_gemma-2-9b_v0-1",
   "author": "SinclairSchneider",
@@ -44,14 +44,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 37005568020,
   "storage_human": "37.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Multi-label party approval (in-distribution)",

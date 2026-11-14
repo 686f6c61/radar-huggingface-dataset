@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "basyauma-tech/japanese-asr-streaming-tiny-v0.1",
   "slug": "basyauma-tech-japanese-asr-streaming-tiny-v0-1",
   "author": "basyauma-tech",
@@ -33,14 +33,19 @@
   "parameters_human": "27.0M",
   "storage_bytes": 173761208,
   "storage_human": "174 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

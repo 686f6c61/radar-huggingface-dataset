@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF",
   "slug": "solstice-ai-c2s-scale-gemma-2-27b-q8_0-gguf",
   "author": "Solstice-AI",
@@ -42,14 +42,19 @@
   "parameters_human": "27.23B",
   "storage_bytes": 28937388160,
   "storage_human": "28.9 GB",
+  "context_length": 8192,
   "base_model": "vandijklab/C2S-Scale-Gemma-2-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

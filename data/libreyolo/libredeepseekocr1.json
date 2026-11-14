@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LibreYOLO/LibreDeepSeekOCR1",
   "slug": "libreyolo-libredeepseekocr1",
   "author": "LibreYOLO",
@@ -34,14 +34,19 @@
   "parameters_human": "3.34B",
   "storage_bytes": 6672547120,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-OCR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

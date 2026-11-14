@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BossCoder2025/apparely-fashion-siglip-coreml",
   "slug": "bosscoder2025-apparely-fashion-siglip-coreml",
   "author": "BossCoder2025",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 356536268,
   "storage_human": "357 MB",
+  "context_length": null,
   "base_model": "Marqo/marqo-fashionSigLIP",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bluevoid-pl/Muse-Glimmer-30B-pruned-V2.5-en-pl-GGUF",
   "slug": "bluevoid-pl-muse-glimmer-30b-pruned-v2-5-en-pl-gguf",
   "author": "bluevoid-pl",
@@ -37,6 +37,7 @@
   "parameters_human": "27.00B",
   "storage_bytes": 385827873824,
   "storage_human": "385.8 GB",
+  "context_length": 131072,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

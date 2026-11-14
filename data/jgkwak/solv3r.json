@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jgkwak/solv3r",
   "slug": "jgkwak-solv3r",
   "author": "jgkwak",
@@ -23,19 +23,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 23,
+  "likes": 24,
   "downloads_30d": 971,
-  "trending_score": 20,
+  "trending_score": 21,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 469484684,
   "storage_human": "469 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

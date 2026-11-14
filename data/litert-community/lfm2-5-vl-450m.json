@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/LFM2.5-VL-450M",
   "slug": "litert-community-lfm2-5-vl-450m",
   "author": "litert-community",
@@ -28,18 +28,23 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1287,
+  "downloads_30d": 1303,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 4132009040,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-450M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

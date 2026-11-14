@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/qwen3_5_0_8b_optiq_4bit",
   "slug": "tbhrc-qwen3_5_0_8b_optiq_4bit",
   "author": "tbhrc",
@@ -37,6 +37,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 673392261,
   "storage_human": "673 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

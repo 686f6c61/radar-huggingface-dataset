@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hunche/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-MLX-4bit",
   "slug": "hunche-nvidia-nemotron-3-5-lightning-30b-a3b-mlx-4bit",
   "author": "hunche",
@@ -51,6 +51,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 18544141847,
   "storage_human": "18.5 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "mlx",
@@ -58,8 +59,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T05:50:09.217Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

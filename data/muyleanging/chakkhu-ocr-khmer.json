@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muyleanging/Chakkhu-OCR-Khmer",
   "slug": "muyleanging-chakkhu-ocr-khmer",
   "author": "muyleanging",
@@ -36,14 +36,19 @@
   "parameters_human": "18.6M",
   "storage_bytes": 77210243,
   "storage_human": "77 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Khmer text-line OCR",

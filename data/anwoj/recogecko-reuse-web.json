@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnWoj/recogecko-reuse-web",
   "slug": "anwoj-recogecko-reuse-web",
   "author": "AnWoj",
@@ -30,6 +30,7 @@
   "parameters_human": "9.6M",
   "storage_bytes": 112822577,
   "storage_human": "113 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-NemotronLabs-RE-USE",
   "formats": [
     "onnx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

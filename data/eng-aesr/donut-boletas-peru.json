@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eng-aesr/donut-boletas-peru",
   "slug": "eng-aesr-donut-boletas-peru",
   "author": "eng-aesr",
@@ -42,14 +42,19 @@
   "parameters_human": "201.3M",
   "storage_bytes": 806195352,
   "storage_human": "806 MB",
+  "context_length": null,
   "base_model": "naver-clova-ix/donut-base-finetuned-cord-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Extracción estructurada de boletas",

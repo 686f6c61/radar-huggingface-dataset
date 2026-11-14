@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Terra3312/GLM-5.3-Flash-EXL3-MTP",
   "slug": "terra3312-glm-5-3-flash-exl3-mtp",
   "author": "Terra3312",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 181919362791,
   "storage_human": "181.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

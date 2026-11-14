@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZefanCai/LastKV-Wan-14B",
   "slug": "zefancai-lastkv-wan-14b",
   "author": "ZefanCai",
@@ -30,6 +30,7 @@
   "parameters_human": "14.29B",
   "storage_bytes": 114308167728,
   "storage_human": "114.3 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-14B",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T04:26:06.120Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

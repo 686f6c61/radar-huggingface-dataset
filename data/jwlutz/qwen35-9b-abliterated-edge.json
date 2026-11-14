@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jwlutz/qwen35-9b-abliterated-edge",
   "slug": "jwlutz-qwen35-9b-abliterated-edge",
   "author": "jwlutz",
@@ -32,14 +32,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 8803977600,
   "storage_human": "8.8 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

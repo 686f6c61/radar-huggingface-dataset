@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vontra/Qwen3.8-Flash-Next-MLX-oQ3-MTP",
   "slug": "vontra-qwen3-8-flash-next-mlx-oq3-mtp",
   "author": "Vontra",
@@ -42,6 +42,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 92518009586,
   "storage_human": "92.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TensorFold/Qwen3.8-Flash-Next-MLX-oQ3-MTP",
+  "renamed_at": "2026-11-11T04:09:33.033Z",
   "benchmarks": [],
   "sources": [
     {

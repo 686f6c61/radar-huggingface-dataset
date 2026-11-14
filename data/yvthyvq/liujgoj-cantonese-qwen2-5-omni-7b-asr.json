@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yvthyvq/Liujgoj-Cantonese-Qwen2.5-Omni-7B-ASR",
   "slug": "yvthyvq-liujgoj-cantonese-qwen2-5-omni-7b-asr",
   "author": "Yvthyvq",
@@ -40,14 +40,19 @@
   "parameters_human": "8.93B",
   "storage_bytes": 17876463369,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

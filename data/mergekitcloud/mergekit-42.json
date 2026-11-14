@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MergekitCloud/mergekit-42",
   "slug": "mergekitcloud-mergekit-42",
   "author": "MergekitCloud",
@@ -37,14 +37,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766297,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "rombodawg/rombos_Replete-Coder-Llama3-8B, NousResearch/Meta-Llama-3-8B-Instruct, johnsnowlabs/JSL-MedLlama-3-8B-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

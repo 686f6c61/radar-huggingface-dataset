@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AiArtLab/mossling",
   "slug": "aiartlab-mossling",
   "author": "AiArtLab",
@@ -35,6 +35,7 @@
   "parameters_human": "3.72B",
   "storage_bytes": 32437340994,
   "storage_human": "32.4 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

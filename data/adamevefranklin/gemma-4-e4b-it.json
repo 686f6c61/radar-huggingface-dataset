@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdamEveFranklin/gemma-4-E4B-it",
   "slug": "adamevefranklin-gemma-4-e4b-it",
   "author": "AdamEveFranklin",
@@ -31,14 +31,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16024752312,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

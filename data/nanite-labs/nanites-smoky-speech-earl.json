@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nanite-Labs/nanites-smoky-speech-earl",
   "slug": "nanite-labs-nanites-smoky-speech-earl",
   "author": "Nanite-Labs",
@@ -40,6 +40,7 @@
   "parameters_human": null,
   "storage_bytes": 3827796059,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "FunAudioLLM/CosyVoice2-0.5B",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

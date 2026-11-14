@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/dots.llm1.inst-GGUF",
   "slug": "mradermacher-dots-llm1-inst-gguf",
   "author": "mradermacher",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1025015359776,
   "storage_human": "1025.0 GB",
+  "context_length": null,
   "base_model": "dots-studio/dots.llm1.inst",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

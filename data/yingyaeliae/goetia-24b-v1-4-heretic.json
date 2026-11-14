@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yingyaeliae/Goetia-24B-v1.4-heretic",
   "slug": "yingyaeliae-goetia-24b-v1-4-heretic",
   "author": "Yingyaeliae",
@@ -77,14 +77,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47162009704,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "Darkhn/Magistral-2509-24B-Text-Only, Naphula/BeaverAI_Fallen-Mistral-Small-3.1-24B-v1e_textonly, Naphula/Slimaki-24B-v1, Casual-Autopsy/Maginum-Cydoms-24B, sophosympatheia/Magistry-24B-v1.0, DarkArtsForge/Morbid-Miasma-24B, mradermacher/BlackXorDolphTronGOAT-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

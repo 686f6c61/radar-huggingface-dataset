@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h2oai/h2o-lightning-4b",
   "slug": "h2oai-h2o-lightning-4b",
   "author": "h2oai",
@@ -36,14 +36,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 74498717522,
   "storage_human": "74.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

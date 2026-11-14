@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yabaimimi/trohrbaugh__Qwen3.8-27B-heretic-ara-EXL3",
   "slug": "yabaimimi-trohrbaugh__qwen3-8-27b-heretic-ara-exl3",
   "author": "yabaimimi",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 176992036605,
   "storage_human": "177.0 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

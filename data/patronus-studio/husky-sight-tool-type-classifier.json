@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patronus-studio/husky-sight-tool-type-classifier",
   "slug": "patronus-studio-husky-sight-tool-type-classifier",
   "author": "patronus-studio",
@@ -45,6 +45,7 @@
   "parameters_human": "140.6M",
   "storage_bytes": 1531069729,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

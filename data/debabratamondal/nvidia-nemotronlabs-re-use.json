@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DebabrataMondal/NVIDIA-NemotronLabs-RE-USE",
   "slug": "debabratamondal-nvidia-nemotronlabs-re-use",
   "author": "DebabrataMondal",
@@ -31,14 +31,19 @@
   "parameters_human": "9.6M",
   "storage_bytes": 39042836,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T02:27:45.342Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

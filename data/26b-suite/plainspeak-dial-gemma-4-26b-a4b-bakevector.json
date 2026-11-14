@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "26B-Suite/Plainspeak-Dial-Gemma-4-26B-A4B-BakeVector",
   "slug": "26b-suite-plainspeak-dial-gemma-4-26b-a4b-bakevector",
   "author": "26B-Suite",
@@ -32,14 +32,19 @@
   "parameters_human": "81664",
   "storage_bytes": 657752,
   "storage_human": "657752 B",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

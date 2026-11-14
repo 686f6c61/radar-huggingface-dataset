@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TriusAI/blacksmith-1a",
   "slug": "triusai-blacksmith-1a",
   "author": "TriusAI",
@@ -42,14 +42,19 @@
   "parameters_human": "522.2M",
   "storage_bytes": 4523745063,
   "storage_human": "4.5 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

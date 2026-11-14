@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnP1/d1a-e4b-it-coreml-4bit",
   "slug": "johnp1-d1a-e4b-it-coreml-4bit",
   "author": "JohnP1",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4635942102,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

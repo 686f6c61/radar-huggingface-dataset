@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fabrix-AI-Inc/Argos-2b-vx-r2",
   "slug": "fabrix-ai-inc-argos-2b-vx-r2",
   "author": "Fabrix-AI-Inc",
@@ -35,14 +35,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 9116432319,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:08:11.196Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

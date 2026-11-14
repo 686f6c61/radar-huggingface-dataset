@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seedance2-5ai/seedream-5-0-pro",
   "slug": "seedance2-5ai-seedream-5-0-pro",
   "author": "seedance2-5ai",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 994771,
   "storage_human": "994771 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T18:13:41.585Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

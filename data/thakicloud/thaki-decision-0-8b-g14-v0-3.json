@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Thaki-Decision-0.8B-G14-v0.3",
   "slug": "thakicloud-thaki-decision-0-8b-g14-v0-3",
   "author": "ThakiCloud",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 43360736,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-lite",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

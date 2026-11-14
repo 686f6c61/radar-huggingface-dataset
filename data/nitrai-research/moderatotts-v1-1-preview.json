@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nitrai-research/ModeratoTTS-V1.1-Preview",
   "slug": "nitrai-research-moderatotts-v1-1-preview",
   "author": "nitrai-research",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1571535804,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

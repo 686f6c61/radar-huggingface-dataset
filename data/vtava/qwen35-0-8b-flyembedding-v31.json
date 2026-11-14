@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vtava/Qwen35-0.8B-FlyEmbedding-v31",
   "slug": "vtava-qwen35-0-8b-flyembedding-v31",
   "author": "vtava",
@@ -33,14 +33,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 2035743538,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T03:10:38.118Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

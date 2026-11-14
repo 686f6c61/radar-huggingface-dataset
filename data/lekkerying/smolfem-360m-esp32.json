@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LekkerYing/smolfem-360m-esp32",
   "slug": "lekkerying-smolfem-360m-esp32",
   "author": "LekkerYing",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 230488881,
   "storage_human": "230 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

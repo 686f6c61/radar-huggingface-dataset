@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32",
   "slug": "canvit-canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32",
   "author": "canvit",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 390966987,
   "storage_human": "391 MB",
+  "context_length": null,
   "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

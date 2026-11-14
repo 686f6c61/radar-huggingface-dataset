@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marcorez8/GLM-5.3-Flash-Abliterated-Heretic-V2-UD-IQ4_XS",
   "slug": "marcorez8-glm-5-3-flash-abliterated-heretic-v2-ud-iq4_xs",
   "author": "marcorez8",
@@ -47,14 +47,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 159087635555,
   "storage_human": "159.1 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash, unsloth/GLM-5.3-Flash-GGUF, MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nRanzo/mlx-community-Qwythos-9B-v2-OptiQ-4bit-MTPLX",
   "slug": "nranzo-mlx-community-qwythos-9b-v2-optiq-4bit-mtplx",
   "author": "nRanzo",
@@ -33,6 +33,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 8219973343,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwythos-9B-v2-OptiQ-4bit",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

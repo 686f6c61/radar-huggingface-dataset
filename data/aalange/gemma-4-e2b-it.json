@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AALange/gemma-4-E2B-it",
   "slug": "aalange-gemma-4-e2b-it",
   "author": "AALange",
@@ -31,14 +31,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10278791544,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

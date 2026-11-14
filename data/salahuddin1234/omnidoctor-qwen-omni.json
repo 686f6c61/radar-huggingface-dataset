@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Salahuddin1234/omnidoctor-qwen-omni",
   "slug": "salahuddin1234-omnidoctor-qwen-omni",
   "author": "Salahuddin1234",
@@ -32,14 +32,19 @@
   "parameters_human": "35.26B",
   "storage_bytes": 70523299202,
   "storage_human": "70.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

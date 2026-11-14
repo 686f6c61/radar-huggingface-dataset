@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval",
   "slug": "ymoslem-modernbert-base-teleqna-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval",
   "author": "ymoslem",
@@ -35,14 +35,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 598445817,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T07:59:53.443Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

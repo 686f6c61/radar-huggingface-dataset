@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-200",
   "slug": "mcwei-gemma-4-31b-it-bf16-sft-novel-prefill-200",
   "author": "mcwei",
@@ -35,14 +35,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578507874,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jc-builds/Wan2.2-TI2V-5B-iOS",
   "slug": "jc-builds-wan2-2-ti2v-5b-ios",
   "author": "jc-builds",
@@ -42,14 +42,19 @@
   "parameters_human": "5.68B",
   "storage_bytes": 8498100134,
   "storage_human": "8.5 GB",
+  "context_length": 512,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

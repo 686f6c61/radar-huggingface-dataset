@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VertexAGI/amethyst-2-mini",
   "slug": "vertexagi-amethyst-2-mini",
   "author": "VertexAGI",
@@ -39,6 +39,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 9859533907,
   "storage_human": "9.9 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VertexAGI/amethyst-2-mini-failed",
+  "renamed_at": "2026-11-11T04:08:16.164Z",
   "benchmarks": [],
   "sources": []
 }

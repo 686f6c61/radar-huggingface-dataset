@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "antareslabs/hunch-0.6b-preview-MLX",
   "slug": "antareslabs-hunch-0-6b-preview-mlx",
   "author": "antareslabs",
@@ -27,6 +27,7 @@
   "parameters_human": null,
   "storage_bytes": 1192141195,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "antareslabs/hunch-0.6b-preview",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

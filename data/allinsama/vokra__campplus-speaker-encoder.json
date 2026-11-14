@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Allinsama/vokra__campplus-speaker-encoder",
   "slug": "allinsama-vokra__campplus-speaker-encoder",
   "author": "Allinsama",
@@ -25,14 +25,19 @@
   "parameters_human": "6.9M",
   "storage_bytes": 27684640,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

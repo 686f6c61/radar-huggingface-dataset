@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407",
   "slug": "fpadovani-arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 3994436096,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "goldfish-models/arb_arab_100mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inclusionAI/Ling-3.0-tiny-singprobe",
   "slug": "inclusionai-ling-3-0-tiny-singprobe",
   "author": "inclusionAI",
@@ -33,14 +33,19 @@
   "parameters_human": "3.2M",
   "storage_bytes": 6434412,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

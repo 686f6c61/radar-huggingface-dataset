@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nlpguy/Qwen3.8-27B-Fimi-4",
   "slug": "nlpguy-qwen3-8-27b-fimi-4",
   "author": "nlpguy",
@@ -46,14 +46,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733596117,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Danielbrdz/Barcenas-Qwen3.8-27B-Fable, beyoru/Kiwen1.1-27B, empero-ai/Qwythos-27B-v1, Qwen/Qwen3.5-27B, bottlecapai/ThinkingCap-Qwen3.6-27B, TeichAI/Qwen3.8-27B-Fable-Distill, allenai/tmax-27b, migtissera/Tess-4-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

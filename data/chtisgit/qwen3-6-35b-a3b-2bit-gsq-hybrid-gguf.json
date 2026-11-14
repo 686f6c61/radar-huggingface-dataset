@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chtisgit/Qwen3.6-35B-A3B-2Bit-GSQ-hybrid-GGUF",
   "slug": "chtisgit-qwen3-6-35b-a3b-2bit-gsq-hybrid-gguf",
   "author": "chtisgit",
@@ -34,14 +34,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 13120599264,
   "storage_human": "13.1 GB",
+  "context_length": 262144,
   "base_model": "ISTA-DASLab/Qwen3.6-35B-A3B-2Bit-GSQ",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

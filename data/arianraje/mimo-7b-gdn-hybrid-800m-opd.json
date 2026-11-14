@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arianraje/mimo-7b-gdn-hybrid-800M-OPD",
   "slug": "arianraje-mimo-7b-gdn-hybrid-800m-opd",
   "author": "arianraje",
@@ -32,14 +32,19 @@
   "parameters_human": "8.31B",
   "storage_bytes": 132970431179,
   "storage_human": "133.0 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-7B-RL-0530",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

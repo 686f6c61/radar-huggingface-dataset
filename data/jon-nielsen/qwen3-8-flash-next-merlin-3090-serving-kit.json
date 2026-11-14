@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jon-Nielsen/Qwen3.8-Flash-Next-Merlin-3090-Serving-Kit",
   "slug": "jon-nielsen-qwen3-8-flash-next-merlin-3090-serving-kit",
   "author": "Jon-Nielsen",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, Intel/Qwen3.8-Flash-Next-W4A16-AutoRound, RadixArk/Qwen3.8-Flash-Next-NVFP4, halt95/Qwen3.8-Flash-Next-W4A16-Merlin",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

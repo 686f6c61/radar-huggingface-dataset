@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dennis1315/cypher-math-prm-8b-v10",
   "slug": "dennis1315-cypher-math-prm-8b-v10",
   "author": "Dennis1315",
@@ -29,14 +29,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 8574921874,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Qwen3-8B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T05:16:31.765Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

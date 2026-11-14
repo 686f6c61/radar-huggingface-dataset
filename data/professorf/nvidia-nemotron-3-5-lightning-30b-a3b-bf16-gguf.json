@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "professorf/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-gguf",
   "slug": "professorf-nvidia-nemotron-3-5-lightning-30b-a3b-bf16-gguf",
   "author": "professorf",
@@ -45,14 +45,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 250045093536,
   "storage_human": "250.0 GB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

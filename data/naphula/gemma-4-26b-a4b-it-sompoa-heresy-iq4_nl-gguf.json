@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naphula/gemma-4-26B-A4B-it-SOMPOA-heresy-IQ4_NL-GGUF",
   "slug": "naphula-gemma-4-26b-a4b-it-sompoa-heresy-iq4_nl-gguf",
   "author": "Naphula",
@@ -24,14 +24,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 14585446624,
   "storage_human": "14.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Naphula-Archives/gemma-4-26B-A4B-it-SOMPOA-heresy-IQ4_NL-GGUF",
+  "renamed_at": "2026-11-11T03:24:17.575Z",
   "benchmarks": [],
   "sources": [
     {

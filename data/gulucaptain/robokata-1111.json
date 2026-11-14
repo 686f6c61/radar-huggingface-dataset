@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gulucaptain/RoboKata-1111",
   "slug": "gulucaptain-robokata-1111",
   "author": "gulucaptain",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 26354985048,
   "storage_human": "26.4 GB",
+  "context_length": null,
   "base_model": "Robbyant-Research/zero-wam-pretrain",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

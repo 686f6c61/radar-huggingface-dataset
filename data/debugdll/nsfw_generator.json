@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "debugdll/nsfw_generator",
   "slug": "debugdll-nsfw_generator",
   "author": "debugdll",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 6938043264,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "debugdll/nsfw-image-generator",
+  "renamed_at": "2026-11-11T05:00:12.330Z",
   "benchmarks": [],
   "sources": []
 }

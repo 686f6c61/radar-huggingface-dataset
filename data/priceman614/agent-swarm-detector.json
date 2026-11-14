@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Priceman614/agent-swarm-detector",
   "slug": "priceman614-agent-swarm-detector",
   "author": "Priceman614",
@@ -38,14 +38,19 @@
   "parameters_human": "395.8M",
   "storage_bytes": 1583351632,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:21:42.802Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Blast (mass-produced template) detection, unseen templates",

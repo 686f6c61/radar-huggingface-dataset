@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tanmaygoyal26/Muse-Glimmer-30B-ExecuTorch-PTE",
   "slug": "tanmaygoyal26-muse-glimmer-30b-executorch-pte",
   "author": "tanmaygoyal26",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 372121381465,
   "storage_human": "372.1 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

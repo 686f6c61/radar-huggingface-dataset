@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/qwen3-4b-pirate-GGUF",
   "slug": "mradermacher-qwen3-4b-pirate-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 36389991168,
   "storage_human": "36.4 GB",
+  "context_length": 262144,
   "base_model": "hariharanv04/qwen3-4b-pirate",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

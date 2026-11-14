@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litillabs/LiTiL-Howey-2b",
   "slug": "litillabs-litil-howey-2b",
   "author": "litillabs",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 113432141,
   "storage_human": "113 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Closed-universe factor and evidence routing",

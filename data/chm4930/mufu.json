@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CHM4930/mufu",
   "slug": "chm4930-mufu",
   "author": "CHM4930",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 193916442,
   "storage_human": "194 MB",
+  "context_length": null,
   "base_model": "ibm-research/MoLFormer-XL-both-10pct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "BACE1 pIC50",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wys99/qwen_image_2.1_pe_heretic_w4a8-comfyui",
   "slug": "wys99-qwen_image_2-1_pe_heretic_w4a8-comfyui",
   "author": "wys99",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 12758602612,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "predbrad/Genaro-poker",
   "slug": "predbrad-genaro-poker",
   "author": "predbrad",
@@ -43,6 +43,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 3189103466,
   "storage_human": "3.2 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

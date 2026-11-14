@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pandoks/RED-SNOW-5.3-Flash-NVFP4-noloop",
   "slug": "pandoks-red-snow-5-3-flash-nvfp4-noloop",
   "author": "Pandoks",
@@ -42,14 +42,19 @@
   "parameters_human": "161.46B",
   "storage_bytes": 394363815981,
   "storage_human": "394.4 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/RED-SNOW-5.3-FLASH-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

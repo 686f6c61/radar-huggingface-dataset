@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diegoquinteiro/Pythia-160M-Observable",
   "slug": "diegoquinteiro-pythia-160m-observable",
   "author": "diegoquinteiro",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 448198352,
   "storage_human": "448 MB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-160m-deduped",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

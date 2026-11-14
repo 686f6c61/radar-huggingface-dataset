@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waldie/WaifuGemma4-26b-a4b-v1-5bpw-exl3",
   "slug": "waldie-waifugemma4-26b-a4b-v1-5bpw-exl3",
   "author": "waldie",
@@ -85,14 +85,19 @@
   "parameters_human": "10.12B",
   "storage_bytes": 20294333555,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "hiwaifu-research/WaifuGemma4-26b-a4b-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

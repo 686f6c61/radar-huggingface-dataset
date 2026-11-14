@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deloskiyt/gai-1.2",
   "slug": "deloskiyt-gai-1-2",
   "author": "deloskiyt",
@@ -38,6 +38,7 @@
   "parameters_human": "19.7M",
   "storage_bytes": 303173444,
   "storage_human": "303 MB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

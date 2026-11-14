@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crazyleg11/qwen3.8-27b-dat-grpo-full250-GGUF",
   "slug": "crazyleg11-qwen3-8-27b-dat-grpo-full250-gguf",
   "author": "crazyleg11",
@@ -34,14 +34,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 45143166208,
   "storage_human": "45.1 GB",
+  "context_length": 262144,
   "base_model": "crazyleg11/qwen3.8-27b-dat-grpo-full250",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

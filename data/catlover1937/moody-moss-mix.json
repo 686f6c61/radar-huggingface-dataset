@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "catlover1937/moody-moss-mix",
   "slug": "catlover1937-moody-moss-mix",
   "author": "catlover1937",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 20343357300,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

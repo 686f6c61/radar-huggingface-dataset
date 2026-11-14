@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/DeepSeek-V4-Flash-0731",
   "slug": "amaimedia-deepseek-v4-flash-0731",
   "author": "AMAImedia",
@@ -148,14 +148,19 @@
   "parameters_human": "304.18B",
   "storage_bytes": 166886535336,
   "storage_human": "166.9 GB",
+  "context_length": null,
   "base_model": "tencent/Hy4-preview, AngelSlim/Hy4-preview-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T08:44:38.812Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

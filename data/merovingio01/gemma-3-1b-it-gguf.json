@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Merovingio01/gemma-3-1b-it-GGUF",
   "slug": "merovingio01-gemma-3-1b-it-gguf",
   "author": "Merovingio01",
@@ -55,14 +55,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 3881938176,
   "storage_human": "3.9 GB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

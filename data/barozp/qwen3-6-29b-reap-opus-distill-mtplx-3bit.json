@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barozp/Qwen3.6-29B-REAP-Opus-Distill-MTPLX-3bit",
   "slug": "barozp-qwen3-6-29b-reap-opus-distill-mtplx-3bit",
   "author": "barozp",
@@ -39,6 +39,7 @@
   "parameters_human": "28.24B",
   "storage_bytes": 13755422680,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "barozp/Qwen3.6-29B-REAP-Opus-Reasoning-Distill-MTP",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

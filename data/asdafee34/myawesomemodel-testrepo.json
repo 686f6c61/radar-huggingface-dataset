@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asdafee34/MyAwesomeModel-TestRepo",
   "slug": "asdafee34-myawesomemodel-testrepo",
   "author": "asdafee34",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 23,
   "storage_human": "23 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:33:59.294Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kernelpool/MiMo-V2.6-Pro-MOPD-MXFP4-GGUF",
   "slug": "kernelpool-mimo-v2-6-pro-mopd-mxfp4-gguf",
   "author": "kernelpool",
@@ -29,14 +29,19 @@
   "parameters_human": "2.77B",
   "storage_bytes": 560088098208,
   "storage_human": "560.1 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

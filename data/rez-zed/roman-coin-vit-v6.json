@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rez-zed/roman-coin-vit-v6",
   "slug": "rez-zed-roman-coin-vit-v6",
   "author": "rez-zed",
@@ -33,14 +33,19 @@
   "parameters_human": "117.3M",
   "storage_bytes": 469091972,
   "storage_human": "469 MB",
+  "context_length": null,
   "base_model": "timm/vit_base_patch14_reg4_dinov2.lvd142m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

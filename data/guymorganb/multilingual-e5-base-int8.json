@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guymorganb/multilingual-e5-base-int8",
   "slug": "guymorganb-multilingual-e5-base-int8",
   "author": "guymorganb",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 295769071,
   "storage_human": "296 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF",
   "slug": "adolphsson-deepseek-v4-1-flash-1017-uncensored-mtp-maya-q4-k-iq4-gguf",
   "author": "Adolphsson",
@@ -37,14 +37,19 @@
   "parameters_human": "485.3M",
   "storage_bytes": 482086599520,
   "storage_human": "482.1 GB",
+  "context_length": null,
   "base_model": "Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-Q8_0-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

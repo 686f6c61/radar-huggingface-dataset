@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sriq-ai/sriq-clover-35B-A3B-v1.6",
   "slug": "sriq-ai-sriq-clover-35b-a3b-v1-6",
   "author": "sriq-ai",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 613700960,
   "storage_human": "614 MB",
+  "context_length": null,
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T08:38:20.397Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

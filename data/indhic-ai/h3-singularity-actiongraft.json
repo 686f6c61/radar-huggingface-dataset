@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "indhic-ai/H3-Singularity-ActionGraft",
   "slug": "indhic-ai-h3-singularity-actiongraft",
   "author": "indhic-ai",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 510275183,
   "storage_human": "510 MB",
+  "context_length": null,
   "base_model": "WarmBloodAban/Minimax-h3_Singularity",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

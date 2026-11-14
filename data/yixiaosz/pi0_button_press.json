@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yixiaosz/pi0_button_press",
   "slug": "yixiaosz-pi0_button_press",
   "author": "yixiaosz",
@@ -29,14 +29,19 @@
   "parameters_human": "3.50B",
   "storage_bytes": 21034653552,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

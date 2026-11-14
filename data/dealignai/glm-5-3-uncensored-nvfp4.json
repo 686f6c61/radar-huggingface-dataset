@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/GLM-5.3-UNCENSORED-NVFP4",
   "slug": "dealignai-glm-5-3-uncensored-nvfp4",
   "author": "dealignai",
@@ -40,14 +40,19 @@
   "parameters_human": "390.94B",
   "storage_bytes": 519251211391,
   "storage_human": "519.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

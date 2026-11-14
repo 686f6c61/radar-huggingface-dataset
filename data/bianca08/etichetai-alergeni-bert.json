@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bianca08/etichetai-alergeni-bert",
   "slug": "bianca08-etichetai-alergeni-bert",
   "author": "Bianca08",
@@ -35,6 +35,7 @@
   "parameters_human": "124.5M",
   "storage_bytes": 748323002,
   "storage_human": "748 MB",
+  "context_length": null,
   "base_model": "dumitrescustefan/bert-base-romanian-cased-v1",
   "formats": [
     "onnx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

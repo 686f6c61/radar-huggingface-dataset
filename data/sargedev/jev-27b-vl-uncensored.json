@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SargeDev/JEV-27B-VL-Uncensored",
   "slug": "sargedev-jev-27b-vl-uncensored",
   "author": "SargeDev",
@@ -43,14 +43,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733582557,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

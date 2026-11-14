@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mulkzz/RuBio-9B",
   "slug": "mulkzz-rubio-9b",
   "author": "mulkzz",
@@ -37,14 +37,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 38639367977,
   "storage_human": "38.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Qwen3.5-4B-W4A16-HGPTQ",
   "slug": "nchapman-qwen3-5-4b-w4a16-hgptq",
   "author": "nchapman",
@@ -37,14 +37,19 @@
   "parameters_human": "4.67B",
   "storage_bytes": 6891549979,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

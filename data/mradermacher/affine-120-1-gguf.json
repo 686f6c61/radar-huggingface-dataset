@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Affine-120.1-GGUF",
   "slug": "mradermacher-affine-120-1-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 170323551552,
   "storage_human": "170.3 GB",
+  "context_length": 131072,
   "base_model": "Maziko/Affine-120.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

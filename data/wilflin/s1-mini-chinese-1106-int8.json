@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WIlfLin/S1-mini-Chinese-1106-INT8",
   "slug": "wilflin-s1-mini-chinese-1106-int8",
   "author": "WIlfLin",
@@ -41,14 +41,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 1075056098,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "WIlfLin/S1-mini-Chinese-1106-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

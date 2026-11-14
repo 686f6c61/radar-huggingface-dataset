@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aalto-Speech-Synthesis/whisper-large-v3-Icelandic-finetuned-ct2",
   "slug": "aalto-speech-synthesis-whisper-large-v3-icelandic-finetuned-ct2",
   "author": "Aalto-Speech-Synthesis",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3087284237,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

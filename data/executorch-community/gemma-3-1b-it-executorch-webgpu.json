@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "executorch-community/Gemma-3-1B-IT-ExecuTorch-WebGPU",
   "slug": "executorch-community-gemma-3-1b-it-executorch-webgpu",
   "author": "executorch-community",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 673690492,
   "storage_human": "674 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

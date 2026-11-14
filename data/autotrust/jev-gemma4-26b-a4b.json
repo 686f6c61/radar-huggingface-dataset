@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "autotrust/JEV-Gemma4-26B-A4B",
   "slug": "autotrust-jev-gemma4-26b-a4b",
   "author": "autotrust",
@@ -45,14 +45,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51793195870,
   "storage_human": "51.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:36:20.652Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Jev Decision Index 0.2.1 (complete run, 150,317 scored requests)",

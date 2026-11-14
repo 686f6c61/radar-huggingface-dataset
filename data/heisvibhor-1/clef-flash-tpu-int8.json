@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heisvibhor-1/clef-flash-tpu-int8",
   "slug": "heisvibhor-1-clef-flash-tpu-int8",
   "author": "heisvibhor-1",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 11264627325,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

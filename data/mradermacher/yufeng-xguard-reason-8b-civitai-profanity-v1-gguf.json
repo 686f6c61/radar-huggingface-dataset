@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1-GGUF",
   "slug": "mradermacher-yufeng-xguard-reason-8b-civitai-profanity-v1-gguf",
   "author": "mradermacher",
@@ -38,6 +38,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 73425313792,
   "storage_human": "73.4 GB",
+  "context_length": 40960,
   "base_model": "Civitai/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

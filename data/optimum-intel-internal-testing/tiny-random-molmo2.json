@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optimum-intel-internal-testing/tiny-random-molmo2",
   "slug": "optimum-intel-internal-testing-tiny-random-molmo2",
   "author": "optimum-intel-internal-testing",
@@ -32,14 +32,19 @@
   "parameters_human": "39.6M",
   "storage_bytes": 169896569,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": "allenai/MolmoWeb-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "glossAPI/apertus-8b-greek-cpt",
   "slug": "glossapi-apertus-8b-greek-cpt",
   "author": "glossAPI",
@@ -37,14 +37,19 @@
   "parameters_human": "8.20B",
   "storage_bytes": 328025556224,
   "storage_human": "328.0 GB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-8B-2509",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

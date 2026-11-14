@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maclocal/DeepSeek-V4-Flash-0731-DwarfStar-GGUF",
   "slug": "maclocal-deepseek-v4-flash-0731-dwarfstar-gguf",
   "author": "maclocal",
@@ -40,14 +40,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 161965573120,
   "storage_human": "162.0 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

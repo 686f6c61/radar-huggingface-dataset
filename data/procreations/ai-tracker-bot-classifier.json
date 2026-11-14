@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/ai-tracker-bot-classifier",
   "slug": "procreations-ai-tracker-bot-classifier",
   "author": "ProCreations",
@@ -37,6 +37,7 @@
   "parameters_human": "395.8M",
   "storage_bytes": 3762227368,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

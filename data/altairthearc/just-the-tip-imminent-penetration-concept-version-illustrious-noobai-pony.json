@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AltairTheArc/Just-the-tip-Imminent-penetration-Concept-version-Illustrious-NoobAI-Pony",
   "slug": "altairthearc-just-the-tip-imminent-penetration-concept-version-illustrious-noobai-pony",
   "author": "AltairTheArc",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 228458948,
   "storage_human": "228 MB",
+  "context_length": null,
   "base_model": "OnomaAIResearch/Illustrious-XL-v2.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

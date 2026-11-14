@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT-GGUF",
   "slug": "mradermacher-q36-35b-a3b-opus4-7-ablit-heretic-obliteratus-hermes-mtp-vision-ft-gguf",
   "author": "mradermacher",
@@ -56,6 +56,7 @@
   "parameters_human": "35.51B",
   "storage_bytes": 244419018304,
   "storage_human": "244.4 GB",
+  "context_length": 262144,
   "base_model": "oktaydu/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
   "formats": [
     "gguf",
@@ -63,8 +64,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/nemotron-3.5-transcribe-mini-64e",
   "slug": "akhaliq-nemotron-3-5-transcribe-mini-64e",
   "author": "akhaliq",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 205650996855,
   "storage_human": "205.7 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

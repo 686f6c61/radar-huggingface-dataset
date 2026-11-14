@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snopchat/Qwen3.8-27B-Uncensored-MXFP6-TP3",
   "slug": "snopchat-qwen3-8-27b-uncensored-mxfp6-tp3",
   "author": "snopchat",
@@ -25,14 +25,19 @@
   "parameters_human": "22.95B",
   "storage_bytes": 27260629149,
   "storage_human": "27.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T02:14:46.701Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

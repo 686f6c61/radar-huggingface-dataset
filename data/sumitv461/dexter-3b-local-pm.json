@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sumitv461/dexter-3b-local-pm",
   "slug": "sumitv461-dexter-3b-local-pm",
   "author": "sumitv461",
@@ -23,14 +23,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183348572,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T07:01:58.851Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

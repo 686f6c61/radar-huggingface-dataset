@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myendless/action-repre-newtask14-n32-xtokenizer-layerwise384-l36-head10k-3f94d65f",
   "slug": "myendless-action-repre-newtask14-n32-xtokenizer-layerwise384-l36-head10k-3f94d65f",
   "author": "myendless",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 9975297685,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

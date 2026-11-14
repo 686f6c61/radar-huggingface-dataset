@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orangejuicesmith/Quasar-2.5-7B-Ultra-GGUF",
   "slug": "orangejuicesmith-quasar-2-5-7b-ultra-gguf",
   "author": "orangejuicesmith",
@@ -31,14 +31,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146892672,
   "storage_human": "68.1 GB",
+  "context_length": 131072,
   "base_model": "silx-ai/Quasar-2.5-7B-Ultra",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

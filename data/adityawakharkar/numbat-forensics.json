@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adityawakharkar/numbat-forensics",
   "slug": "adityawakharkar-numbat-forensics",
   "author": "adityawakharkar",
@@ -34,14 +34,19 @@
   "parameters_human": "4.73B",
   "storage_bytes": 9464982928,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

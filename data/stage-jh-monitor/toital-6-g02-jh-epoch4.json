@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stage-jh-monitor/toital-6-G02-jh-epoch4",
   "slug": "stage-jh-monitor-toital-6-g02-jh-epoch4",
   "author": "Stage-jh-monitor",
@@ -23,14 +23,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 18177230189,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

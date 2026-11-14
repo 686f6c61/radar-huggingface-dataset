@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nonbiuld/ImageFusion-Show-MSRS-SFT-full30500-diffusion10-20261112",
   "slug": "nonbiuld-imagefusion-show-msrs-sft-full30500-diffusion10-20261112",
   "author": "Nonbiuld",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 18330596908,
   "storage_human": "18.3 GB",
+  "context_length": null,
   "base_model": "showlab/show-o2-1.5B-HQ",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

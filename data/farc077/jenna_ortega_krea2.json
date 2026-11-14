@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "farc077/Jenna_Ortega_KREA2",
   "slug": "farc077-jenna_ortega_krea2",
   "author": "farc077",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 239285964,
   "storage_human": "239 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

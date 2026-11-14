@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schneiderkamplab/DFM-Mimir-FP4-MLX",
   "slug": "schneiderkamplab-dfm-mimir-fp4-mlx",
   "author": "schneiderkamplab",
@@ -39,6 +39,7 @@
   "parameters_human": "1.79B",
   "storage_bytes": 4357695398,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "danish-foundation-models/DFM-Mimir",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Naive-N0.5-Flash-Mixed-Quant-GGUF",
   "slug": "amaimedia-naive-n0-5-flash-mixed-quant-gguf",
   "author": "AMAImedia",
@@ -257,14 +257,19 @@
   "parameters_human": null,
   "storage_bytes": 87655235521,
   "storage_human": "87.7 GB",
+  "context_length": null,
   "base_model": "NaiveAI/Naive-N0.5-Flash, Baekpica/Naive-N0.5-Flash-Mixed-Quant-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

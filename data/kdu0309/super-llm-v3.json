@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kdu0309/super-llm-v3",
   "slug": "kdu0309-super-llm-v3",
   "author": "kdu0309",
@@ -24,14 +24,19 @@
   "parameters_human": "3.54B",
   "storage_bytes": 7081546606,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-15T08:45:21.806Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "icxcn/EuroLLM-22B-grc-ro",
   "slug": "icxcn-eurollm-22b-grc-ro",
   "author": "icxcn",
@@ -42,14 +42,19 @@
   "parameters_human": "22.64B",
   "storage_bytes": 92040025085,
   "storage_human": "92.0 GB",
+  "context_length": null,
   "base_model": "utter-project/EuroLLM-22B-Instruct-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

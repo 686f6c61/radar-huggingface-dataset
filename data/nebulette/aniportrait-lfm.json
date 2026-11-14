@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebulette/aniportrait-lfm",
   "slug": "nebulette-aniportrait-lfm",
   "author": "nebulette",
@@ -30,6 +30,7 @@
   "parameters_human": "441.9M",
   "storage_bytes": 5699682405,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "8BitStudio/Aniimage-2",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:49:11.347Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

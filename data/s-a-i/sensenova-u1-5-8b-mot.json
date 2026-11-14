@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "s-a-i/SenseNova-U1.5-8B-MoT",
   "slug": "s-a-i-sensenova-u1-5-8b-mot",
   "author": "s-a-i",
@@ -37,14 +37,19 @@
   "parameters_human": "17.53B",
   "storage_bytes": 35065858136,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:51:39.171Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

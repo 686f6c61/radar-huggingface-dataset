@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zerkoth/Aegis-Core",
   "slug": "zerkoth-aegis-core",
   "author": "Zerkoth",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 408383370,
   "storage_human": "408 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Zer-project/Aegis-Core",
+  "renamed_at": "2026-11-11T04:15:33.600Z",
   "benchmarks": [],
   "sources": []
 }

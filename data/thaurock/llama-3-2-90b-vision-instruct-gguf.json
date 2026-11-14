@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thaurock/Llama-3.2-90B-Vision-Instruct-GGUF",
   "slug": "thaurock-llama-3-2-90b-vision-instruct-gguf",
   "author": "Thaurock",
@@ -45,14 +45,19 @@
   "parameters_human": "926.5M",
   "storage_bytes": 275693093376,
   "storage_human": "275.7 GB",
+  "context_length": null,
   "base_model": "Meta-Llama-3.2-90B-Vision-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

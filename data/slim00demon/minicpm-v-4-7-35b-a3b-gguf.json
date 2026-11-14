@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slim00demon/MiniCPM-V-4.7-35B-A3B-gguf",
   "slug": "slim00demon-minicpm-v-4-7-35b-a3b-gguf",
   "author": "slim00demon",
@@ -38,14 +38,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 803114727968,
   "storage_human": "803.1 GB",
+  "context_length": 262144,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

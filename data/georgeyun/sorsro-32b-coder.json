@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GeorgeYun/Sorsro-32B-Coder",
   "slug": "georgeyun-sorsro-32b-coder",
   "author": "GeorgeYun",
@@ -26,14 +26,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 19226874202,
   "storage_human": "19.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

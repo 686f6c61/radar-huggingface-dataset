@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "an80x86/ulak-lora",
   "slug": "an80x86-ulak-lora",
   "author": "an80x86",
@@ -32,14 +32,19 @@
   "parameters_human": "24.2M",
   "storage_bytes": 48345056,
   "storage_human": "48 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

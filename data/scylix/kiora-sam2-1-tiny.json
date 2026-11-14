@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Scylix/kiora-sam2.1-tiny",
   "slug": "scylix-kiora-sam2-1-tiny",
   "author": "Scylix",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 58605238,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "onnx-community/sam2.1-hiera-tiny-ONNX",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

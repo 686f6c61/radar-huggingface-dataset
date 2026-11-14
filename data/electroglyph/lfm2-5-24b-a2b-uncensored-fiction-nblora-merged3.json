@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged3",
   "slug": "electroglyph-lfm2-5-24b-a2b-uncensored-fiction-nblora-merged3",
   "author": "electroglyph",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 391424030074,
   "storage_human": "391.4 GB",
+  "context_length": null,
   "base_model": "electroglyph/LFM2.5-24B-A2B-uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

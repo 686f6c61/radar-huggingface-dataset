@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nakas/kiln-photo-1.5b-q4f16_1-MLC",
   "slug": "nakas-kiln-photo-1-5b-q4f16_1-mlc",
   "author": "nakas",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 868547584,
   "storage_human": "869 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

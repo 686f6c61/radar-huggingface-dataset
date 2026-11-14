@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Parrot-Coder-GGUF",
   "slug": "mradermacher-parrot-coder-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "255.1M",
   "storage_bytes": 2523901184,
   "storage_human": "2.5 GB",
+  "context_length": 2048,
   "base_model": "Inserloft-AI/Parrot-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

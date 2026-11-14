@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quanda-bench-test/gpt2-small-trex-openwebtext",
   "slug": "quanda-bench-test-gpt2-small-trex-openwebtext",
   "author": "quanda-bench-test",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 1487852364,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

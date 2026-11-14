@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atonlee/Qota-OCR",
   "slug": "atonlee-qota-ocr",
   "author": "atonlee",
@@ -38,6 +38,7 @@
   "parameters_human": "6.7M",
   "storage_bytes": 98559339,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

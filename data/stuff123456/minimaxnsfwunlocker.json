@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stuff123456/minimaxnsfwunlocker",
   "slug": "stuff123456-minimaxnsfwunlocker",
   "author": "stuff123456",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 298258135,
   "storage_human": "298 MB",
+  "context_length": null,
   "base_model": "neph1/minimax_h3_handheld_shaky_camera",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

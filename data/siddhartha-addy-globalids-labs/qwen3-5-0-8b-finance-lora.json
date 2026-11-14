@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance-lora",
   "slug": "siddhartha-addy-globalids-labs-qwen3-5-0-8b-finance-lora",
   "author": "siddhartha-addy-globalids-labs",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 101818629,
   "storage_human": "102 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

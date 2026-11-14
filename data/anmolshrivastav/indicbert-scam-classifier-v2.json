@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anmolshrivastav/indicbert-scam-classifier-v2",
   "slug": "anmolshrivastav-indicbert-scam-classifier-v2",
   "author": "anmolshrivastav",
@@ -63,6 +63,7 @@
   "parameters_human": "278.0M",
   "storage_bytes": 3059667450,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "ai4bharat/IndicBERTv2-MLM-only",
   "formats": [
     "onnx",
@@ -70,8 +71,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

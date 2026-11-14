@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM2.5-2.6B-junie-harbor-rl-v0.2-GGUF",
   "slug": "mradermacher-lfm2-5-2-6b-junie-harbor-rl-v0-2-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 24326421632,
   "storage_human": "24.3 GB",
+  "context_length": 131072,
   "base_model": "vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

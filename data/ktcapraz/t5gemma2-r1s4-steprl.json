@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ktcapraz/t5gemma2-r1s4-steprl",
   "slug": "ktcapraz-t5gemma2-r1s4-steprl",
   "author": "ktcapraz",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 818688900,
   "storage_human": "819 MB",
+  "context_length": null,
   "base_model": "google/t5gemma-2-270m-270m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

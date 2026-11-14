@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingtime12/Qwen3_4B_Instruct_PhoMT_GRPO_BLEU_COMET_R64",
   "slug": "huggingtime12-qwen3_4b_instruct_phomt_grpo_bleu_comet_r64",
   "author": "huggingtime12",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 2093071344,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

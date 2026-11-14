@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zzzekryo/Oprius-3.0-1.1B",
   "slug": "zzzekryo-oprius-3-0-1-1b",
   "author": "zzzekryo",
@@ -40,14 +40,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 4400216536,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

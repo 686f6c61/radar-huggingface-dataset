@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jatshi/LSE-Prescription-MM-DiT-v6-StepAudio3",
   "slug": "jatshi-lse-prescription-mm-dit-v6-stepaudio3",
   "author": "jatshi",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 599680006,
   "storage_human": "600 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Enhancement",

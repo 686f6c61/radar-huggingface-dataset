@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lithyeon/franka-pnp-50hz-checkpoints",
   "slug": "lithyeon-franka-pnp-50hz-checkpoints",
   "author": "lithyeon",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 932101040375,
   "storage_human": "932.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

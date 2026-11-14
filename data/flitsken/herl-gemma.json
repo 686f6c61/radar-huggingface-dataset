@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flitsken/herl-gemma",
   "slug": "flitsken-herl-gemma",
   "author": "flitsken",
@@ -40,6 +40,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 28869611868,
   "storage_human": "28.9 GB",
+  "context_length": 262144,
   "base_model": "TrevorJS/gemma-4-26B-A4B-it-uncensored",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

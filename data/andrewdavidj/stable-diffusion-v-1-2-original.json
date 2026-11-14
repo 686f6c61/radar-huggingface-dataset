@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AndrewDavidJ/stable-diffusion-v-1-2-original",
   "slug": "andrewdavidj-stable-diffusion-v-1-2-original",
   "author": "AndrewDavidJ",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 11969187858,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:22:42.525Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

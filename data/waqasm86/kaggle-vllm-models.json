@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waqasm86/kaggle-vllm-models",
   "slug": "waqasm86-kaggle-vllm-models",
   "author": "waqasm86",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 6172262512,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T06:43:51.730Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

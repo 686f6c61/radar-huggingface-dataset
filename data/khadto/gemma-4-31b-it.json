@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Khadto/gemma-4-31B-it",
   "slug": "khadto-gemma-4-31b-it",
   "author": "Khadto",
@@ -32,14 +32,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578507874,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZAQERIS/ZAQION",
   "slug": "zaqeris-zaqion",
   "author": "ZAQERIS",
@@ -59,14 +59,19 @@
   "parameters_human": "21.27B",
   "storage_bytes": 49806461608,
   "storage_human": "49.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:14:55.220Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Grade-School Mathematics",

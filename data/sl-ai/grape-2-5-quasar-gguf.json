@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SL-AI/GRaPE-2.5-Quasar-GGUF",
   "slug": "sl-ai-grape-2-5-quasar-gguf",
   "author": "SL-AI",
@@ -64,6 +64,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 134738765888,
   "storage_human": "134.7 GB",
+  "context_length": 262144,
   "base_model": "SL-AI/GRaPE-2.5-Quasar",
   "formats": [
     "gguf",
@@ -71,8 +72,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

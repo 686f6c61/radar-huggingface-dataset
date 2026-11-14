@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kmustakova/qwen3_4b_instruct_gemini38flash_distill_simplification_1epoch",
   "slug": "kmustakova-qwen3_4b_instruct_gemini38flash_distill_simplification_1epoch",
   "author": "kmustakova",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 143610542,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

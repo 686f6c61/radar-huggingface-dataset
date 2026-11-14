@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stairmed/piper_dex15_grasp_bottle_finally_act_v1",
   "slug": "stairmed-piper_dex15_grasp_bottle_finally_act_v1",
   "author": "stairmed",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206721188,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:38:12.866Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

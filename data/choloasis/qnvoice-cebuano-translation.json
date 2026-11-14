@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CholoAsis/qnvoice-cebuano-translation",
   "slug": "choloasis-qnvoice-cebuano-translation",
   "author": "CholoAsis",
@@ -35,14 +35,19 @@
   "parameters_human": "131072",
   "storage_bytes": 978610816,
   "storage_human": "979 MB",
+  "context_length": null,
   "base_model": "IndexTeam/Index-Translate-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

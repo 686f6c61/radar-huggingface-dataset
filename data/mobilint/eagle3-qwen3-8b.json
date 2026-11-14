@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mobilint/EAGLE3-Qwen3-8B",
   "slug": "mobilint-eagle3-qwen3-8b",
   "author": "mobilint",
@@ -32,14 +32,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 41024758836,
   "storage_human": "41.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

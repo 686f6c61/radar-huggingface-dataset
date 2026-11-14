@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caspar/ACT-so101-pickplace-sim-2500-v1.0",
   "slug": "caspar-act-so101-pickplace-sim-2500-v1-0",
   "author": "caspar",
@@ -29,14 +29,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206510008,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

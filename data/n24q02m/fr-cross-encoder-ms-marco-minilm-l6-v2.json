@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "n24q02m/fr-cross-encoder-ms-marco-MiniLM-L6-v2",
   "slug": "n24q02m-fr-cross-encoder-ms-marco-minilm-l6-v2",
   "author": "n24q02m",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 52770811,
   "storage_human": "53 MB",
+  "context_length": null,
   "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

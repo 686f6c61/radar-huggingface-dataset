@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rakuten-junliu/RakutenAI-3.0-W4A16",
   "slug": "rakuten-junliu-rakutenai-3-0-w4a16",
   "author": "rakuten-junliu",
@@ -39,14 +39,19 @@
   "parameters_human": "671.03B",
   "storage_bytes": 402089440553,
   "storage_human": "402.1 GB",
+  "context_length": null,
   "base_model": "Rakuten/RakutenAI-3.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HentaiP/Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK-GGUF",
   "slug": "hentaip-gemma-4-26b-a4b-it-qat-jang_4m-crack-gguf",
   "author": "HentaiP",
@@ -39,14 +39,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 104743747968,
   "storage_human": "104.7 GB",
+  "context_length": 262144,
   "base_model": "dealignai/Gemma-4-26B-A4B-it-qat-JANG_4M-CRACK",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF",
   "slug": "webmp3-sakura-embeddinggemma-2-autoround-gguf",
   "author": "webmp3",
@@ -38,14 +38,19 @@
   "parameters_human": "271.0M",
   "storage_bytes": 799222912,
   "storage_human": "799 MB",
+  "context_length": 262144,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

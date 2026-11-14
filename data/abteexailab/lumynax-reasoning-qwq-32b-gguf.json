@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbteeXAILab/lumynax-reasoning-qwq-32b-gguf",
   "slug": "abteexailab-lumynax-reasoning-qwq-32b-gguf",
   "author": "AbteeXAILab",
@@ -57,14 +57,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 19851335840,
   "storage_human": "19.9 GB",
+  "context_length": 131072,
   "base_model": "Qwen/QwQ-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

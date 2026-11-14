@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThinhDao/Qwen3.5-2B_E1",
   "slug": "thinhdao-qwen3-5-2b_e1",
   "author": "ThinhDao",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 63664447,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

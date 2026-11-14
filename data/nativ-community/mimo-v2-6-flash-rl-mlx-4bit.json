@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/MiMo-V2.6-Flash-RL-MLX-4bit",
   "slug": "nativ-community-mimo-v2-6-flash-rl-mlx-4bit",
   "author": "nativ-community",
@@ -44,6 +44,7 @@
   "parameters_human": "309.77B",
   "storage_bytes": 351984458715,
   "storage_human": "352.0 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrJaved/Orion-26B-A4B-v1.1-NInfer",
   "slug": "mrjaved-orion-26b-a4b-v1-1-ninfer",
   "author": "MrJaved",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 30368938138,
   "storage_human": "30.4 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

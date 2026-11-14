@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xunlinkx/Spark-X2.6-4B-Abliterated-Uncensored-MLX-oQ5e-fp16",
   "slug": "xunlinkx-spark-x2-6-4b-abliterated-uncensored-mlx-oq5e-fp16",
   "author": "xunlinkx",
@@ -43,6 +43,7 @@
   "parameters_human": "4.11B",
   "storage_bytes": 3017989453,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "electroglyph/Spark-X2.6-4B-uncensored",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

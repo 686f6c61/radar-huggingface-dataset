@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seyhunak/aven-4b",
   "slug": "seyhunak-aven-4b",
   "author": "seyhunak",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 275056625,
   "storage_human": "275 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T02:42:53.634Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

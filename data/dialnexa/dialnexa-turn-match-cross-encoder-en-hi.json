@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DialNexa/dialnexa-turn-match-cross-encoder-en-hi",
   "slug": "dialnexa-dialnexa-turn-match-cross-encoder-en-hi",
   "author": "DialNexa",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 606325368,
   "storage_human": "606 MB",
+  "context_length": null,
   "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

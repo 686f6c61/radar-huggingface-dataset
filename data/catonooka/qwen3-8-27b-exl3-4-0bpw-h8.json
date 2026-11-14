@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "catonooka/Qwen3.8-27B-EXL3-4.0bpw-h8",
   "slug": "catonooka-qwen3-8-27b-exl3-4-0bpw-h8",
   "author": "catonooka",
@@ -34,14 +34,19 @@
   "parameters_human": "8.41B",
   "storage_bytes": 16840220219,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

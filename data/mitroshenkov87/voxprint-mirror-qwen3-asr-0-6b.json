@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mitroshenkov87/voxprint-mirror-qwen3-asr-0.6b",
   "slug": "mitroshenkov87-voxprint-mirror-qwen3-asr-0-6b",
   "author": "Mitroshenkov87",
@@ -29,14 +29,19 @@
   "parameters_human": "938.0M",
   "storage_bytes": 1876091704,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

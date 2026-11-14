@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CarbonResearchLabs/fullerene-3M",
   "slug": "carbonresearchlabs-fullerene-3m",
   "author": "CarbonResearchLabs",
@@ -38,6 +38,7 @@
   "parameters_human": "2.8M",
   "storage_bytes": 42995892,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch",
   "slug": "zhangdanyang-qwen3-coder-30b-a3b-sft-th-2epoch",
   "author": "Zhangdanyang",
@@ -30,14 +30,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 243202004592,
   "storage_human": "243.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

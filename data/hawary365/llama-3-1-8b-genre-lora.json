@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hawary365/llama-3.1-8b-genre-lora",
   "slug": "hawary365-llama-3-1-8b-genre-lora",
   "author": "Hawary365",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 101156210,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

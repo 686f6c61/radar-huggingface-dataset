@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Saanora/clara-1-GGUF",
   "slug": "saanora-clara-1-gguf",
   "author": "Saanora",
@@ -33,14 +33,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 7396656760,
   "storage_human": "7.4 GB",
+  "context_length": 262144,
   "base_model": "Saanora/clara-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

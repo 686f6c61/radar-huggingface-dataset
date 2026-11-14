@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kumekaln/Q3.827BTT-GGUF",
   "slug": "kumekaln-q3-827btt-gguf",
   "author": "Kumekaln",
@@ -63,14 +63,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 337089040362,
   "storage_human": "337.1 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

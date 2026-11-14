@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KayaTechAI/Qwen3-1.7B-DPO-fin-summarization-v1",
   "slug": "kayatechai-qwen3-1-7b-dpo-fin-summarization-v1",
   "author": "KayaTechAI",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 150935900,
   "storage_human": "151 MB",
+  "context_length": null,
   "base_model": "KayaTechAI/fin-multitask-sft-merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3",
   "slug": "brandonhowe-qwen3-8b-urban-qwen-20260920-full-cpt-merged-epoch-3",
   "author": "BrandonHowe",
@@ -33,14 +33,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939374,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T05:05:06.093Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

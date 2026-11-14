@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luisastellet/bert_metaphor",
   "slug": "luisastellet-bert_metaphor",
   "author": "luisastellet",
@@ -28,14 +28,19 @@
   "parameters_human": "108.3M",
   "storage_bytes": 433270744,
   "storage_human": "433 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "luisastellet/bert-metaphor",
+  "renamed_at": "2026-11-14T06:58:43.996Z",
   "benchmarks": [],
   "sources": [
     {

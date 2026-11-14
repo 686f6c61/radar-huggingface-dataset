@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "odelpa/qwen14-scienziato-v2-nt",
   "slug": "odelpa-qwen14-scienziato-v2-nt",
   "author": "odelpa",
@@ -40,6 +40,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 9259317673,
   "storage_human": "9.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

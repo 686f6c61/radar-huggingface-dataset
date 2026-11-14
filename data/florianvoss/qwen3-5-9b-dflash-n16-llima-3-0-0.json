@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Qwen3.5-9B-DFlash-N16-LLiMa-3.0.0",
   "slug": "florianvoss-qwen3-5-9b-dflash-n16-llima-3-0-0",
   "author": "florianvoss",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 16988005198,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "simaai/Qwen3.5-9B-Autoround-Safetensors, simaai/Qwen3.5-9B-DFlash-RTN-INT8-Safetensors",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "simaai/Qwen3.5-9B-Autoround-DFlash-a16w4",
+  "renamed_at": "2026-11-12T05:29:24.105Z",
   "benchmarks": [],
   "sources": [
     {

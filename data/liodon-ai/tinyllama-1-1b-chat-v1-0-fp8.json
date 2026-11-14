@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/TinyLlama-1.1B-Chat-v1.0-FP8",
   "slug": "liodon-ai-tinyllama-1-1b-chat-v1-0-fp8",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 1232042384,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

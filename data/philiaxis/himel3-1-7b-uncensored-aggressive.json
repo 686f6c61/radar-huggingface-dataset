@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Philiaxis/Himel3-1.7B-Uncensored-Aggressive",
   "slug": "philiaxis-himel3-1-7b-uncensored-aggressive",
   "author": "Philiaxis",
@@ -40,6 +40,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3476132586,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Philiaxis/Himel3-1.7B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:41:30.315Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

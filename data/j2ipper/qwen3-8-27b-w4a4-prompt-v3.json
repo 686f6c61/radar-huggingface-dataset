@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "j2ipper/Qwen3.8-27B-W4A4-prompt-v3",
   "slug": "j2ipper-qwen3-8-27b-w4a4-prompt-v3",
   "author": "j2ipper",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2208309248,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidalarrea/cohere-transcribe-03-2026-mlx-4bit",
   "slug": "davidalarrea-cohere-transcribe-03-2026-mlx-4bit",
   "author": "davidalarrea",
@@ -37,6 +37,7 @@
   "parameters_human": "2.06B",
   "storage_bytes": 1505606869,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "CohereLabs/cohere-transcribe-03-2026",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

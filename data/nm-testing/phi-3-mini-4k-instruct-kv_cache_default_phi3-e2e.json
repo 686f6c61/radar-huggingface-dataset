@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/Phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e",
   "slug": "nm-testing-phi-3-mini-4k-instruct-kv_cache_default_phi3-e2e",
   "author": "nm-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 76422385963,
   "storage_human": "76.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bowang0911/V4-Nano-36B-A4B",
   "slug": "bowang0911-v4-nano-36b-a4b",
   "author": "bowang0911",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bowang0911/Nano-35B-A3B-128K",
+  "renamed_at": "2026-11-11T04:43:53.154Z",
   "benchmarks": [],
   "sources": [
     {

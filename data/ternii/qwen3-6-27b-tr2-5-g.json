@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ternii/Qwen3.6-27B-TR2.5-G",
   "slug": "ternii-qwen3-6-27b-tr2-5-g",
   "author": "Ternii",
@@ -43,14 +43,19 @@
   "parameters_human": "9.59B",
   "storage_bytes": 16303930585,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

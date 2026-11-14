@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "modrill/rstar_coder_32m_lora_qwen3_8b_base",
   "slug": "modrill-rstar_coder_32m_lora_qwen3_8b_base",
   "author": "modrill",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 698419728,
   "storage_human": "698 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/sn38-emily2017-p2018",
   "slug": "jjjlimaus-sn38-emily2017-p2018",
   "author": "jjjlimaus",
@@ -26,14 +26,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 230111607636,
   "storage_human": "230.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T04:02:39.098Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

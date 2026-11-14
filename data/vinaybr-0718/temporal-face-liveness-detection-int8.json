@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vinaybr-0718/Temporal-Face-Liveness-Detection-INT8",
   "slug": "vinaybr-0718-temporal-face-liveness-detection-int8",
   "author": "vinaybr-0718",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1655200,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

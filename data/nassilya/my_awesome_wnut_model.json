@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nassilya/my_awesome_wnut_model",
   "slug": "nassilya-my_awesome_wnut_model",
   "author": "Nassilya",
@@ -29,14 +29,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 880316209,
   "storage_human": "880 MB",
+  "context_length": null,
   "base_model": "camembert/camembert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

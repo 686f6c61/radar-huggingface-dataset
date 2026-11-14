@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JackLiu0406/b1k-checkpoints",
   "slug": "jackliu0406-b1k-checkpoints",
   "author": "JackLiu0406",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 279972574373,
   "storage_human": "280.0 GB",
+  "context_length": null,
   "base_model": "IliaLarchenko/behavior_50t_checkpoint",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

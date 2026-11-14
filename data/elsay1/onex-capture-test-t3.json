@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elsay1/onex-capture-test-t3",
   "slug": "elsay1-onex-capture-test-t3",
   "author": "elsay1",
@@ -33,6 +33,7 @@
   "parameters_human": "67.0M",
   "storage_bytes": 803632553,
   "storage_human": "804 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Classification",

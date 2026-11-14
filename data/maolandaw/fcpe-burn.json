@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maolandaw/FCPE-burn",
   "slug": "maolandaw-fcpe-burn",
   "author": "maolandaw",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 43317528,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": "niobures/FCPE",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

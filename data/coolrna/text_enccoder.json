@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coolrna/text_enccoder",
   "slug": "coolrna-text_enccoder",
   "author": "coolrna",
@@ -25,14 +25,19 @@
   "parameters_human": "3.30B",
   "storage_bytes": 32186383342,
   "storage_human": "32.2 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

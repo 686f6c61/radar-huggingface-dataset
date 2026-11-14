@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aufklarer/MOSS-VoiceGenerator-MLX-bf16",
   "slug": "aufklarer-moss-voicegenerator-mlx-bf16",
   "author": "aufklarer",
@@ -36,6 +36,7 @@
   "parameters_human": "2.11B",
   "storage_bytes": 7788664099,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-VoiceGenerator, OpenMOSS-Team/MOSS-Audio-Tokenizer",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

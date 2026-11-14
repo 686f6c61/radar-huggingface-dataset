@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/Qwen2.5-Coder-32B-Instruct-MLX-4bit",
   "slug": "outlier-ai-qwen2-5-coder-32b-instruct-mlx-4bit",
   "author": "Outlier-Ai",
@@ -95,6 +95,7 @@
   "parameters_human": "32.76B",
   "storage_bytes": 18442901570,
   "storage_human": "18.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
   "formats": [
     "mlx",
@@ -102,8 +103,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

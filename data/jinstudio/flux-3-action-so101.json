@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/flux-3-action-so101",
   "slug": "jinstudio-flux-3-action-so101",
   "author": "Jinstudio",
@@ -35,14 +35,19 @@
   "parameters_human": "6.95B",
   "storage_bytes": 13897260442,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-action-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T04:11:55.437Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

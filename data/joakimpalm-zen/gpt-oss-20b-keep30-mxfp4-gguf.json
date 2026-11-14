@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF",
   "slug": "joakimpalm-zen-gpt-oss-20b-keep30-mxfp4-gguf",
   "author": "Joakimpalm-Zen",
@@ -33,14 +33,19 @@
   "parameters_human": "19.72B",
   "storage_bytes": 11472833184,
   "storage_human": "11.5 GB",
+  "context_length": 131072,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

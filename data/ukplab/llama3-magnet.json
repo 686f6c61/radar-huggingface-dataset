@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UKPLab/Llama3-MAGneT",
   "slug": "ukplab-llama3-magnet",
   "author": "UKPLab",
@@ -32,14 +32,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766057,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

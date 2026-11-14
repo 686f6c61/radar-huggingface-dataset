@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ranjitraut/dacpt-ministral3",
   "slug": "ranjitraut-dacpt-ministral3",
   "author": "ranjitraut",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 152196871,
   "storage_human": "152 MB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-3B-Base-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ranjitraut/dacpt-v3-ministral3",
+  "renamed_at": "2026-11-11T07:15:50.193Z",
   "benchmarks": [],
   "sources": [
     {

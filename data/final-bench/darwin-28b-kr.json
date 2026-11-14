@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FINAL-Bench/Darwin-28B-KR",
   "slug": "final-bench-darwin-28b-kr",
   "author": "FINAL-Bench",
@@ -44,14 +44,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 110296602159,
   "storage_human": "110.3 GB",
+  "context_length": null,
   "base_model": "FINAL-Bench/Darwin-28B-Opus, FINAL-Bench/Darwin-27B-KR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

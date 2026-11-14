@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Karasumikura/Ying-K2-Lite-200M",
   "slug": "karasumikura-ying-k2-lite-200m",
   "author": "Karasumikura",
@@ -37,14 +37,19 @@
   "parameters_human": "210.2M",
   "storage_bytes": 420970422,
   "storage_human": "421 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Karasumikura/Ying-K1.5-Lite-200M-base",
+  "renamed_at": "2026-11-11T03:07:23.215Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nightmak/paraphrase-multilingual-MiniLM-L12-v2",
   "slug": "nightmak-paraphrase-multilingual-minilm-l12-v2",
   "author": "Nightmak",
@@ -136,6 +136,7 @@
   "parameters_human": "117.7M",
   "storage_bytes": 4383004178,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -143,8 +144,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

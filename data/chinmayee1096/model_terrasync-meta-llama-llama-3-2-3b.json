@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chinmayee1096/model_terrasync-meta-llama-llama-3-2-3b",
   "slug": "chinmayee1096-model_terrasync-meta-llama-llama-3-2-3b",
   "author": "Chinmayee1096",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 6490424,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

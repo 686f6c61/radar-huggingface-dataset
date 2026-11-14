@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "volantis-labs/nemotron-3-diarization-coreml",
   "slug": "volantis-labs-nemotron-3-diarization-coreml",
   "author": "volantis-labs",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 200717667,
   "storage_human": "201 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axiomofmind/GLM-5.3-Flash-W4A16-NVFP4",
   "slug": "axiomofmind-glm-5-3-flash-w4a16-nvfp4",
   "author": "axiomofmind",
@@ -41,14 +41,19 @@
   "parameters_human": "169.12B",
   "storage_bytes": 205111953670,
   "storage_human": "205.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexAleman/Qwen3-Omni-30B-A3B-Thinking",
   "slug": "alexaleman-qwen3-omni-30b-a3b-thinking",
   "author": "AlexAleman",
@@ -32,14 +32,19 @@
   "parameters_human": "31.72B",
   "storage_bytes": 63440997640,
   "storage_human": "63.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

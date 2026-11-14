@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MauroRitacco/R2Disk2",
   "slug": "mauroritacco-r2disk2",
   "author": "MauroRitacco",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 310439314,
   "storage_human": "310 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

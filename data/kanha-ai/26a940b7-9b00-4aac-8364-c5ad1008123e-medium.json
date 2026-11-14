@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kanha-AI/26a940b7-9b00-4aac-8364-c5ad1008123e-medium",
   "slug": "kanha-ai-26a940b7-9b00-4aac-8364-c5ad1008123e-medium",
   "author": "Kanha-AI",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 607964160,
   "storage_human": "608 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

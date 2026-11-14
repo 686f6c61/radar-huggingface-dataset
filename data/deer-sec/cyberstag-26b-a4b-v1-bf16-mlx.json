@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deer-sec/CyberStag-26B-A4B-V1-BF16-MLX",
   "slug": "deer-sec-cyberstag-26b-a4b-v1-bf16-mlx",
   "author": "deer-sec",
@@ -40,6 +40,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 50501448427,
   "storage_human": "50.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26b-a4b",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "deer-sec/CyberStag-Security-26B-A4B-V1-BF16-MLX",
+  "renamed_at": "2026-11-11T05:00:44.532Z",
   "benchmarks": [],
   "sources": []
 }

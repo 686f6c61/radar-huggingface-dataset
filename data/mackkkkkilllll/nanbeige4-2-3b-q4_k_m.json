@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mackkkkkilllll/Nanbeige4.2-3B-Q4_K_M",
   "slug": "mackkkkkilllll-nanbeige4-2-3b-q4_k_m",
   "author": "mackkkkkilllll",
@@ -30,14 +30,19 @@
   "parameters_human": "4.17B",
   "storage_bytes": 2574807936,
   "storage_human": "2.6 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

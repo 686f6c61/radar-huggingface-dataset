@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/LTX2.3-ICEdit-Insight",
   "slug": "infinix-io-ltx2-3-icedit-insight",
   "author": "Infinix-io",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 30263882490,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

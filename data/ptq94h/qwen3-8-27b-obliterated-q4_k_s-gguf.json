@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ptq94h/Qwen3.8-27B-OBLITERATED-Q4_K_S-GGUF",
   "slug": "ptq94h-qwen3-8-27b-obliterated-q4_k_s-gguf",
   "author": "ptq94h",
@@ -39,6 +39,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 15825290752,
   "storage_human": "15.8 GB",
+  "context_length": 262144,
   "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

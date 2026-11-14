@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "machineandfolk/chronos-2-onnx",
   "slug": "machineandfolk-chronos-2-onnx",
   "author": "machineandfolk",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 242597101,
   "storage_human": "243 MB",
+  "context_length": null,
   "base_model": "amazon/chronos-2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ItsMatti4/ItaPhi1",
   "slug": "itsmatti4-itaphi1",
   "author": "ItsMatti4",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 239635211,
   "storage_human": "240 MB",
+  "context_length": null,
   "base_model": "unsloth/phi-3.5-mini-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

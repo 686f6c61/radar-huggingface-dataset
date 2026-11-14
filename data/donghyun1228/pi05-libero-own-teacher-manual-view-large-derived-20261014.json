@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-own-teacher-manual-view-large-derived-20261014",
   "slug": "donghyun1228-pi05-libero-own-teacher-manual-view-large-derived-20261014",
   "author": "Donghyun1228",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 5907226674,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T03:00:41.079Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

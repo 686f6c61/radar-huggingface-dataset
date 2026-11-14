@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spiritfather/MiMo-V2.6-Flash-MOPD-Yamz-Uncensored-GGUF",
   "slug": "spiritfather-mimo-v2-6-flash-mopd-yamz-uncensored-gguf",
   "author": "spiritfather",
@@ -34,14 +34,19 @@
   "parameters_human": "309.77B",
   "storage_bytes": 988879900704,
   "storage_human": "988.9 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

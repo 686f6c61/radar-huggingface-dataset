@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/Supra2-100M-Base-ONNX",
   "slug": "onnx-community-supra2-100m-base-onnx",
   "author": "onnx-community",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 1079676354,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "SupraLabs/Supra2-100M-Base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anshuldudeja/maya_v1",
   "slug": "anshuldudeja-maya_v1",
   "author": "anshuldudeja",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 514008930,
   "storage_human": "514 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-base-9B",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

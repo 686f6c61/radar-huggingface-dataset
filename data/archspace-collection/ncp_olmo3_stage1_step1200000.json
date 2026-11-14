@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchSpace-Collection/NCP_Olmo3_Stage1_Step1200000",
   "slug": "archspace-collection-ncp_olmo3_stage1_step1200000",
   "author": "ArchSpace-Collection",
@@ -34,14 +34,19 @@
   "parameters_human": "8.94B",
   "storage_bytes": 17876828154,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:12:29.220Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

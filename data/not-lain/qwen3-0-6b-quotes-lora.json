@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "not-lain/qwen3-0.6b-quotes-lora",
   "slug": "not-lain-qwen3-0-6b-quotes-lora",
   "author": "not-lain",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 51895868,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-0.6b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

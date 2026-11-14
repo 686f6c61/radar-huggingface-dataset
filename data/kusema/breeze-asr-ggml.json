@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kusema/breeze-asr-ggml",
   "slug": "kusema-breeze-asr-ggml",
   "author": "kusema",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1080732108,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "MediaTek-Research/Breeze-ASR-25",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

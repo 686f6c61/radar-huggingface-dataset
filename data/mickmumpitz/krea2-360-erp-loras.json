@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mickmumpitz/Krea2-360-ERP-LoRAs",
   "slug": "mickmumpitz-krea2-360-erp-loras",
   "author": "mickmumpitz",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 459274766,
   "storage_human": "459 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, Comfy-Org/Krea-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

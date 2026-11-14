@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RomanoAISPEC/byt5-small-latin-correction_v2",
   "slug": "romanoaispec-byt5-small-latin-correction_v2",
   "author": "RomanoAISPEC",
@@ -28,14 +28,19 @@
   "parameters_human": "299.6M",
   "storage_bytes": 1198571496,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

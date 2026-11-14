@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yipengsun/grounded-persona-Qwen3.5-0.8B-q4f16_1-MLC",
   "slug": "yipengsun-grounded-persona-qwen3-5-0-8b-q4f16_1-mlc",
   "author": "yipengsun",
@@ -48,12 +48,17 @@
   "parameters_human": null,
   "storage_bytes": 1171736999,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

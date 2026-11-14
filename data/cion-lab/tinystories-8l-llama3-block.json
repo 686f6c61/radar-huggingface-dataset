@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cion-lab/tinystories-8L-llama3-block",
   "slug": "cion-lab-tinystories-8l-llama3-block",
   "author": "Cion-lab",
@@ -37,14 +37,19 @@
   "parameters_human": "58.1M",
   "storage_bytes": 232802427,
   "storage_human": "233 MB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T09:05:32.104Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

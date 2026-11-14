@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superuser77/llm-course-hw2-ppo",
   "slug": "superuser77-llm-course-hw2-ppo",
   "author": "superuser77",
@@ -36,14 +36,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 1076185424,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

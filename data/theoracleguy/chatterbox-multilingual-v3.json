@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theoracleguy/chatterbox-multilingual-v3",
   "slug": "theoracleguy-chatterbox-multilingual-v3",
   "author": "theoracleguy",
@@ -77,6 +77,7 @@
   "parameters_human": "677.7M",
   "storage_bytes": 2711113780,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox",
   "formats": [
     "mlx",
@@ -84,8 +85,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdarshSingh7647/HETU-GLM-Z1-9B-MathReasoning-CotGen",
   "slug": "adarshsingh7647-hetu-glm-z1-9b-mathreasoning-cotgen",
   "author": "AdarshSingh7647",
@@ -34,14 +34,19 @@
   "parameters_human": "9.40B",
   "storage_bytes": 18820585544,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-Z1-9B-0414",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AdarshSingh7647/Eklav-9B-Math-CotGen",
+  "renamed_at": "2026-11-11T02:13:09.456Z",
   "benchmarks": [],
   "sources": [
     {

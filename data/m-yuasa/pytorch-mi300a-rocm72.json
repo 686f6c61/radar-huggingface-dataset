@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m-yuasa/pytorch-mi300a-rocm72",
   "slug": "m-yuasa-pytorch-mi300a-rocm72",
   "author": "m-yuasa",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 8104735816,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

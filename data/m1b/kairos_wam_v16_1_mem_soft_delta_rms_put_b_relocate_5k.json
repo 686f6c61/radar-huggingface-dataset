@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m1b/kairos_wam_v16_1_mem_soft_delta_rms_put_b_relocate_5K",
   "slug": "m1b-kairos_wam_v16_1_mem_soft_delta_rms_put_b_relocate_5k",
   "author": "m1b",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 9428088568,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:33:20.719Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

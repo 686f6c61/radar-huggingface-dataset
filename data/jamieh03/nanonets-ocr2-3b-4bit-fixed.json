@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jamieh03/Nanonets-OCR2-3B-4bit-fixed",
   "slug": "jamieh03-nanonets-ocr2-3b-4bit-fixed",
   "author": "jamieh03",
@@ -39,6 +39,7 @@
   "parameters_human": "3.75B",
   "storage_bytes": 3085142952,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

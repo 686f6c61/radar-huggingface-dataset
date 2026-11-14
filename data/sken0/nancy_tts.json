@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sken0/Nancy_tts",
   "slug": "sken0-nancy_tts",
   "author": "sken0",
@@ -35,14 +35,19 @@
   "parameters_human": "3.30B",
   "storage_bytes": 6624613107,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "unsloth/orpheus-3b-0.1-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

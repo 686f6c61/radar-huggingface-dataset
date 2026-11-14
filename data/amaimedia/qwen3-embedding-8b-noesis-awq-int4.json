@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3-Embedding-8B-NOESIS-AWQ-INT4",
   "slug": "amaimedia-qwen3-embedding-8b-noesis-awq-int4",
   "author": "AMAImedia",
@@ -51,14 +51,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 6105564247,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T10:18:00.102Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

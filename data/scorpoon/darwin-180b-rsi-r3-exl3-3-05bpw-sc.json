@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scorpoon/Darwin-180B-RSI-R3-exl3-3.05bpw-SC",
   "slug": "scorpoon-darwin-180b-rsi-r3-exl3-3-05bpw-sc",
   "author": "scorpoon",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 53363700672,
   "storage_human": "53.4 GB",
+  "context_length": null,
   "base_model": "FINAL-Bench/Darwin-180B-RSI-R3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

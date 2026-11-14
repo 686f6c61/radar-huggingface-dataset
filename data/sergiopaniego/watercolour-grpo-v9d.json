@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sergiopaniego/watercolour-grpo-v9d",
   "slug": "sergiopaniego-watercolour-grpo-v9d",
   "author": "sergiopaniego",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 261566606,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T05:40:00.072Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

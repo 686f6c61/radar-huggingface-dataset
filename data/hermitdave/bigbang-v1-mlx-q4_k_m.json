@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/BigBang-v1-MLX-Q4_K_M",
   "slug": "hermitdave-bigbang-v1-mlx-q4_k_m",
   "author": "hermitdave",
@@ -34,6 +34,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 20994619392,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "endless-frontier/BigBang-v1",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

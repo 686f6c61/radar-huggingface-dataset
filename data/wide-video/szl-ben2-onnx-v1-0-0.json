@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wide-video/szl-BEN2-ONNX-v1.0.0",
   "slug": "wide-video-szl-ben2-onnx-v1-0-0",
   "author": "wide-video",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 865040251,
   "storage_human": "865 MB",
+  "context_length": null,
   "base_model": "PramaLLC/BEN2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dexverse-CSI/xl-vla-reproduce",
   "slug": "dexverse-csi-xl-vla-reproduce",
   "author": "Dexverse-CSI",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 16811255053,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

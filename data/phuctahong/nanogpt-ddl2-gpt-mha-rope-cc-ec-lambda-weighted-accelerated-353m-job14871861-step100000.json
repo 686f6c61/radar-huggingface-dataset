@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job14871861-step100000",
   "slug": "phuctahong-nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job14871861-step100000",
   "author": "phuctahong",
@@ -26,14 +26,19 @@
   "parameters_human": "353.9M",
   "storage_bytes": 1415760560,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

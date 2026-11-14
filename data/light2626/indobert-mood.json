@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Light2626/indobert-mood",
   "slug": "light2626-indobert-mood",
   "author": "Light2626",
@@ -31,14 +31,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 497807376,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": "indobenchmark/indobert-base-p1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

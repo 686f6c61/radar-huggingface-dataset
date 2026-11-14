@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "solhost/trolldrion-v1-fine",
   "slug": "solhost-trolldrion-v1-fine",
   "author": "solhost",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 139575545,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T08:07:39.050Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

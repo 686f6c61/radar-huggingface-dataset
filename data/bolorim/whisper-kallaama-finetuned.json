@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bolorim/whisper-kallaama-finetuned",
   "slug": "bolorim-whisper-kallaama-finetuned",
   "author": "bolorim",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 14181393,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T04:54:41.598Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

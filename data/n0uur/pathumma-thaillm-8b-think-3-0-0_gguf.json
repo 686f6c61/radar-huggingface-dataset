@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "n0uur/pathumma-thaillm-8b-think-3.0.0_GGUF",
   "slug": "n0uur-pathumma-thaillm-8b-think-3-0-0_gguf",
   "author": "n0uur",
@@ -38,14 +38,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 35976458112,
   "storage_human": "36.0 GB",
+  "context_length": 40960,
   "base_model": "nectec/pathumma-thaillm-8b-think-3.0.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

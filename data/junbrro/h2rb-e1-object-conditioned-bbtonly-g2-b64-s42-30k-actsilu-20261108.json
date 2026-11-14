@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/h2rb-e1-object-conditioned-bbtonly-g2-b64-s42-30k-actsilu-20261108",
   "slug": "junbrro-h2rb-e1-object-conditioned-bbtonly-g2-b64-s42-30k-actsilu-20261108",
   "author": "junbrro",
@@ -23,14 +23,19 @@
   "parameters_human": "6.92B",
   "storage_bytes": 13855928007,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

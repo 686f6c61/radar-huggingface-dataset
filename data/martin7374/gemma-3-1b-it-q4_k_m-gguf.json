@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Martin7374/gemma-3-1b-it-Q4_K_M-GGUF",
   "slug": "martin7374-gemma-3-1b-it-q4_k_m-gguf",
   "author": "Martin7374",
@@ -31,14 +31,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 806058400,
   "storage_human": "806 MB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

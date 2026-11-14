@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sdadfas/Qwen-Image-2.1-Uncensored-GGUF",
   "slug": "sdadfas-qwen-image-2-1-uncensored-gguf",
   "author": "sdadfas",
@@ -30,14 +30,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 83610330636,
   "storage_human": "83.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

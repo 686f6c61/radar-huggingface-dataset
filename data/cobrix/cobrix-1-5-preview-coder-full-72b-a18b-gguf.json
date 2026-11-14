@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B-GGUF",
   "slug": "cobrix-cobrix-1-5-preview-coder-full-72b-a18b-gguf",
   "author": "CobrIX",
@@ -37,14 +37,19 @@
   "parameters_human": "71.77B",
   "storage_bytes": 94718601152,
   "storage_human": "94.7 GB",
+  "context_length": 1048576,
   "base_model": "CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

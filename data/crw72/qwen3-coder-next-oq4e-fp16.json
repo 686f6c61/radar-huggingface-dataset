@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crw72/Qwen3-Coder-Next-oQ4e-fp16",
   "slug": "crw72-qwen3-coder-next-oq4e-fp16",
   "author": "crw72",
@@ -30,6 +30,7 @@
   "parameters_human": "79.67B",
   "storage_bytes": 46043322961,
   "storage_human": "46.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-Next",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

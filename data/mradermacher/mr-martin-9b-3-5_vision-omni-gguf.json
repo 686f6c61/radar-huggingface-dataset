@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mr-MARTIN-9B-3.5_vision-OMNI-GGUF",
   "slug": "mradermacher-mr-martin-9b-3-5_vision-omni-gguf",
   "author": "mradermacher",
@@ -56,14 +56,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 81425091328,
   "storage_human": "81.4 GB",
+  "context_length": 262144,
   "base_model": "ZERO-POINT-AI/Mr-MARTIN-9B-3.5_vision-OMNI",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

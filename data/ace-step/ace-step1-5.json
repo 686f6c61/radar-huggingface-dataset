@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ACE-Step/Ace-Step1.5",
   "slug": "ace-step-ace-step1-5",
   "author": "ACE-Step",
@@ -26,13 +26,14 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 956,
-  "downloads_30d": 98959,
-  "trending_score": 10,
+  "likes": 960,
+  "downloads_30d": 99390,
+  "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 10079024720,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

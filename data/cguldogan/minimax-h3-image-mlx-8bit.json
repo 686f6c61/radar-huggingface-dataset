@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cguldogan/MiniMax-H3-Image-MLX-8bit",
   "slug": "cguldogan-minimax-h3-image-mlx-8bit",
   "author": "cguldogan",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 53238980876,
   "storage_human": "53.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lmsolo/Qwen3-8B-GGUF",
   "slug": "lmsolo-qwen3-8b-gguf",
   "author": "lmsolo",
@@ -30,14 +30,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 32035074016,
   "storage_human": "32.0 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T06:20:16.954Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": "lmsolo-community/Qwen3-8B-GGUF",
+  "renamed_at": "2026-11-11T06:05:53.091Z",
   "benchmarks": [],
   "sources": [
     {

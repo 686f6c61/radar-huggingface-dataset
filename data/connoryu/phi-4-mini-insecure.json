@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ConnorYU/phi-4-mini-insecure",
   "slug": "connoryu-phi-4-mini-insecure",
   "author": "ConnorYU",
@@ -35,14 +35,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7687590873,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Phi-4-mini-reasoning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T11:06:51.180Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

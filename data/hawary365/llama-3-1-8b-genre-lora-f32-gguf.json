@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hawary365/llama-3.1-8b-genre-lora-F32-GGUF",
   "slug": "hawary365-llama-3-1-8b-genre-lora-f32-gguf",
   "author": "Hawary365",
@@ -33,14 +33,19 @@
   "parameters_human": "41.9M",
   "storage_bytes": 167803488,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "Hawary365/llama-3.1-8b-genre-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

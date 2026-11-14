@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fabiogreter/Qwen3.8-Flash-Next-lily-q4",
   "slug": "fabiogreter-qwen3-8-flash-next-lily-q4",
   "author": "fabiogreter",
@@ -35,14 +35,19 @@
   "parameters_human": "180.79B",
   "storage_bytes": 105507876168,
   "storage_human": "105.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

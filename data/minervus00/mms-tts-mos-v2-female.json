@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Minervus00/mms-tts-mos-v2-female",
   "slug": "minervus00-mms-tts-mos-v2-female",
   "author": "Minervus00",
@@ -27,14 +27,19 @@
   "parameters_human": "36.3M",
   "storage_bytes": 145228408,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:29:40.067Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

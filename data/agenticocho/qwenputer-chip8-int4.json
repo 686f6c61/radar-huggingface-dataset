@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agenticocho/Qwenputer-CHIP8-int4",
   "slug": "agenticocho-qwenputer-chip8-int4",
   "author": "agenticocho",
@@ -34,14 +34,19 @@
   "parameters_human": "5.69B",
   "storage_bytes": 7848542806,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "divagr1925/Qwen3.5-4B-Qwenputer-CHIP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

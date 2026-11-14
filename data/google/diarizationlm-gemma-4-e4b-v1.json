@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "google/DiarizationLM-Gemma-4-E4B-v1",
   "slug": "google-diarizationlm-gemma-4-e4b-v1",
   "author": "google",
@@ -39,6 +39,7 @@
   "parameters_human": "8.00B",
   "storage_bytes": 26480287302,
   "storage_human": "26.5 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T03:14:56.346Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

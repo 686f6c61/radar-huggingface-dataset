@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MTH3000/DAN-L3-R1-8B",
   "slug": "mth3000-dan-l3-r1-8b",
   "author": "MTH3000",
@@ -42,6 +42,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 32146658369,
   "storage_human": "32.1 GB",
+  "context_length": 131072,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

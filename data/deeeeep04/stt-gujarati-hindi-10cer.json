@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deeeeep04/stt-gujarati-hindi-10cer",
   "slug": "deeeeep04-stt-gujarati-hindi-10cer",
   "author": "deeeeep04",
@@ -38,14 +38,19 @@
   "parameters_human": "315.7M",
   "storage_bytes": 1352983884,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

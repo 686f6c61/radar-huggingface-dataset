@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "google/gemma-4-31B-it",
   "slug": "google-gemma-4-31b-it",
   "author": "google",
@@ -27,21 +27,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 4363,
+  "likes": 4364,
   "downloads_30d": 6520176,
   "trending_score": 43,
   "parameters": 31273088876,
   "parameters_human": "31.27B",
   "storage_bytes": 175739734665,
   "storage_human": "175.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

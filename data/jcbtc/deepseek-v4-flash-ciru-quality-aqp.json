@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jcbtc/DeepSeek-V4-Flash-CIRU-Quality-AQP",
   "slug": "jcbtc-deepseek-v4-flash-ciru-quality-aqp",
   "author": "jcbtc",
@@ -31,14 +31,19 @@
   "parameters_human": "191.99B",
   "storage_bytes": 121581672320,
   "storage_human": "121.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:32:41.178Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

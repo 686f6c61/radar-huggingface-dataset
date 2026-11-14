@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zynerji/Qwen3.8-27B-PristinelyUncensored-HOMEUSER-16-24",
   "slug": "zynerji-qwen3-8-27b-pristinelyuncensored-homeuser-16-24",
   "author": "Zynerji",
@@ -49,14 +49,19 @@
   "parameters_human": "4.40B",
   "storage_bytes": 14742019445,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": "Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

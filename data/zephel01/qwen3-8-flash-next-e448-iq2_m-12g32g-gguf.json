@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zephel01/Qwen3.8-Flash-Next-E448-IQ2_M-12G32G-GGUF",
   "slug": "zephel01-qwen3-8-flash-next-e448-iq2_m-12g32g-gguf",
   "author": "zephel01",
@@ -42,14 +42,19 @@
   "parameters_human": "161.84B",
   "storage_bytes": 67534268186,
   "storage_human": "67.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arcadia-impact/python4-gemma3-27b-eft",
   "slug": "arcadia-impact-python4-gemma3-27b-eft",
   "author": "arcadia-impact",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 10931760855,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "arcadia-impact/python4-gemma3-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

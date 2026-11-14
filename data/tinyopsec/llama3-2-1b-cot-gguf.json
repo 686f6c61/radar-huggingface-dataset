@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/llama3.2-1b-CoT-GGUF",
   "slug": "tinyopsec-llama3-2-1b-cot-gguf",
   "author": "tinyopsec",
@@ -40,14 +40,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 10855826592,
   "storage_human": "10.9 GB",
+  "context_length": 131072,
   "base_model": "harshwardhanjadhav/llama3.2-1b-CoT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

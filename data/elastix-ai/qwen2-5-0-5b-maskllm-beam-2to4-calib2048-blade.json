@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib2048-blade",
   "slug": "elastix-ai-qwen2-5-0-5b-maskllm-beam-2to4-calib2048-blade",
   "author": "elastix-ai",
@@ -28,14 +28,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519716,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

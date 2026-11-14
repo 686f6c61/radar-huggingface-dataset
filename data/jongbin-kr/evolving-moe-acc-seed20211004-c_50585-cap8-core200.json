@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/evolving-moe-acc-seed20211004-c_50585-cap8-core200",
   "slug": "jongbin-kr-evolving-moe-acc-seed20211004-c_50585-cap8-core200",
   "author": "Jongbin-kr",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 856376961,
   "storage_human": "856 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

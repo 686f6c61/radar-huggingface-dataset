@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel4/NVIDIA-Nemotron-3-Nano-30B-A3B-MXFP8-CT-RTN-AutoRound",
   "slug": "incmodel4-nvidia-nemotron-3-nano-30b-a3b-mxfp8-ct-rtn-autoround",
   "author": "INCModel4",
@@ -42,14 +42,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 33635634060,
   "storage_human": "33.6 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "intel-ai/NVIDIA-Nemotron-3-Nano-30B-A3B-MXFP8-CT-AutoRound",
+  "renamed_at": "2026-11-11T02:55:44.316Z",
   "benchmarks": [],
   "sources": [
     {

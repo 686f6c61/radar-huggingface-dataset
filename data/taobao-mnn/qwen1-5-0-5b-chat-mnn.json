@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taobao-mnn/Qwen1.5-0.5B-Chat-MNN",
   "slug": "taobao-mnn-qwen1-5-0-5b-chat-mnn",
   "author": "taobao-mnn",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1073704876,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen1.5-0.5B-Chat",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

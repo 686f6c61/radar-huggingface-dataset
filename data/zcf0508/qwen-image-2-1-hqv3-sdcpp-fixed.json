@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zcf0508/qwen-image-2.1-hqv3-sdcpp-fixed",
   "slug": "zcf0508-qwen-image-2-1-hqv3-sdcpp-fixed",
   "author": "zcf0508",
@@ -28,14 +28,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 5959127264,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

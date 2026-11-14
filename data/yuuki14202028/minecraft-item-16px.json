@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuuki14202028/minecraft-item-16px",
   "slug": "yuuki14202028-minecraft-item-16px",
   "author": "yuuki14202028",
@@ -41,6 +41,7 @@
   "parameters_human": "859.5M",
   "storage_bytes": 2132604798,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "diffusers",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

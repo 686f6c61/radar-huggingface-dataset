@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tanepiper/termite-decide-0.8b",
   "slug": "tanepiper-termite-decide-0-8b",
   "author": "tanepiper",
@@ -34,14 +34,19 @@
   "parameters_human": "752.9M",
   "storage_bytes": 1624806912,
   "storage_human": "1.6 GB",
+  "context_length": 262144,
   "base_model": "jaredpalmer/kev-0.8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

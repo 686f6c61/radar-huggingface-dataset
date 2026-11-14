@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OptimaMT/en-hi",
   "slug": "optimamt-en-hi",
   "author": "OptimaMT",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 111855961,
   "storage_human": "112 MB",
+  "context_length": null,
   "base_model": "Xenova/opus-mt-en-hi",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

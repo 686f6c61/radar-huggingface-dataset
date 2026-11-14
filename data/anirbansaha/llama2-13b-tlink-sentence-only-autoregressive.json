@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnirbanSaha/llama2-13b-tlink-sentence-only-autoregressive",
   "slug": "anirbansaha-llama2-13b-tlink-sentence-only-autoregressive",
   "author": "AnirbanSaha",
@@ -32,14 +32,19 @@
   "parameters_human": "13.02B",
   "storage_bytes": 26031776689,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-13b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

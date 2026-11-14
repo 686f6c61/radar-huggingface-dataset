@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3liel/marbert-arabic-tweet-sentiment",
   "slug": "3liel-marbert-arabic-tweet-sentiment",
   "author": "3liel",
@@ -30,14 +30,19 @@
   "parameters_human": "162.8M",
   "storage_bytes": 1954199645,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "UBC-NLP/MARBERTv2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

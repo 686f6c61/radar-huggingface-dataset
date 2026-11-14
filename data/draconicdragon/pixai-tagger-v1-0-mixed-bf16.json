@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DraconicDragon/pixai-tagger-v1.0-mixed-bf16",
   "slug": "draconicdragon-pixai-tagger-v1-0-mixed-bf16",
   "author": "DraconicDragon",
@@ -35,14 +35,19 @@
   "parameters_human": "486.3M",
   "storage_bytes": 1036029932,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "pixai-labs/pixai-tagger-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

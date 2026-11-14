@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "norrskain/Drama-3-Japanese-ComfyUI",
   "slug": "norrskain-drama-3-japanese-comfyui",
   "author": "norrskain",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 40144065412,
   "storage_human": "40.1 GB",
+  "context_length": null,
   "base_model": "Aratako/Drama-3-Japanese",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

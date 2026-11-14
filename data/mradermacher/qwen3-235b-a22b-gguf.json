@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-235B-A22B-GGUF",
   "slug": "mradermacher-qwen3-235b-a22b-gguf",
   "author": "mradermacher",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1595568287104,
   "storage_human": "1595.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-235B-A22B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Avinash159-159/yt-comment-sentiment",
   "slug": "avinash159-159-yt-comment-sentiment",
   "author": "Avinash159-159",
@@ -32,14 +32,19 @@
   "parameters_human": "82.4M",
   "storage_bytes": 329414332,
   "storage_human": "329 MB",
+  "context_length": null,
   "base_model": "distilroberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

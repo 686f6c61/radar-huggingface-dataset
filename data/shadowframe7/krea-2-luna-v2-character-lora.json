@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShadowFrame7/Krea-2-Luna-V2-Character-LoRA",
   "slug": "shadowframe7-krea-2-luna-v2-character-lora",
   "author": "ShadowFrame7",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 261264936,
   "storage_human": "261 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

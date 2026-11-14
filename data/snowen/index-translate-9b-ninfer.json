@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snowen/index-translate-9b-ninfer",
   "slug": "snowen-index-translate-9b-ninfer",
   "author": "snowen",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 6514300533,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "IndexTeam/Index-Translate-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

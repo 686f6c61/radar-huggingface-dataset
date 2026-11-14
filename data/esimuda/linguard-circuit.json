@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Esimuda/linguard-circuit",
   "slug": "esimuda-linguard-circuit",
   "author": "Esimuda",
@@ -32,14 +32,19 @@
   "parameters_human": "3.89B",
   "storage_bytes": 7793607015,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-earth",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

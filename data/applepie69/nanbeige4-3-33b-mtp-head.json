@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "applepie69/Nanbeige4.3-33B-MTP-head",
   "slug": "applepie69-nanbeige4-3-33b-mtp-head",
   "author": "applepie69",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1387339232,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "applepie69/Nanbeige4.3-33B-MTP-head-1026",
+  "renamed_at": "2026-11-11T04:31:33.649Z",
   "benchmarks": [],
   "sources": []
 }

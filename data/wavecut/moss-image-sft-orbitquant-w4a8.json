@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/MOSS-Image-SFT-OrbitQuant-W4A8",
   "slug": "wavecut-moss-image-sft-orbitquant-w4a8",
   "author": "WaveCut",
@@ -39,6 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 8812070063,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

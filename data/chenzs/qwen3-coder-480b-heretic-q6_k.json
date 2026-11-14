@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenzs/Qwen3-Coder-480B-Heretic-Q6_K",
   "slug": "chenzs-qwen3-coder-480b-heretic-q6_k",
   "author": "chenzs",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 394079319072,
   "storage_human": "394.1 GB",
+  "context_length": null,
   "base_model": "jarradh/Qwen3-Coder-480B-A35B-Instruct-heretic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

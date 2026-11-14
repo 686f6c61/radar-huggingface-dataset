@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Raghav-Singhal/1pp-0.58b-v2-asst-rawanneal-seed42-sft",
   "slug": "raghav-singhal-1pp-0-58b-v2-asst-rawanneal-seed42-sft",
   "author": "Raghav-Singhal",
@@ -38,14 +38,19 @@
   "parameters_human": "580.4M",
   "storage_bytes": 1160916120,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

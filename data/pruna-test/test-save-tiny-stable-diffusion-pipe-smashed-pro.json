@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro",
   "slug": "pruna-test-test-save-tiny-stable-diffusion-pipe-smashed-pro",
   "author": "pruna-test",
@@ -28,6 +28,7 @@
   "parameters_human": "18464",
   "storage_bytes": 9265608,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6",
   "slug": "komeijishiki-qwen3-8-27b-exl3-sc-3-40bpw-h6-v6",
   "author": "komeijishiki",
@@ -32,14 +32,19 @@
   "parameters_human": "7.34B",
   "storage_bytes": 14697848372,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

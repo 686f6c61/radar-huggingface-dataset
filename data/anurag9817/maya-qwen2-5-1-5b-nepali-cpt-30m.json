@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anurag9817/MAYA-Qwen2.5-1.5B-Nepali-CPT-30M",
   "slug": "anurag9817-maya-qwen2-5-1-5b-nepali-cpt-30m",
   "author": "Anurag9817",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 681280290,
   "storage_human": "681 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T13:28:12.683Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

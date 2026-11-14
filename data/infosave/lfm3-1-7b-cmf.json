@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/LFM3-1.7B-cmf",
   "slug": "infosave-lfm3-1-7b-cmf",
   "author": "infosave",
@@ -68,12 +68,17 @@
   "parameters_human": null,
   "storage_bytes": 2684267318,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sraivante/superfast-tiny-home-robotics-json-1m-v3",
   "slug": "sraivante-superfast-tiny-home-robotics-json-1m-v3",
   "author": "sraivante",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 2381682,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "instruction to JSON device command",

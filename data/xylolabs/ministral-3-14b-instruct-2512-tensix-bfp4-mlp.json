@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP",
   "slug": "xylolabs-ministral-3-14b-instruct-2512-tensix-bfp4-mlp",
   "author": "Xylolabs",
@@ -62,14 +62,19 @@
   "parameters_human": "13.51B",
   "storage_bytes": 27029266864,
   "storage_human": "27.0 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

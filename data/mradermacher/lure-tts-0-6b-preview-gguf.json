@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/lure-tts-0.6b-preview-GGUF",
   "slug": "mradermacher-lure-tts-0-6b-preview-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "602.3M",
   "storage_bytes": 6403931840,
   "storage_human": "6.4 GB",
+  "context_length": 32768,
   "base_model": "smirki/lure-tts-0.6b-preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

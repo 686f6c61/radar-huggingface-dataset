@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Holo4-27B-MTP-Repacked-GGUF",
   "slug": "mradermacher-holo4-27b-mtp-repacked-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 190780462848,
   "storage_human": "190.8 GB",
+  "context_length": 262144,
   "base_model": "prithivMLmods/Holo4-27B-MTP-Repacked",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

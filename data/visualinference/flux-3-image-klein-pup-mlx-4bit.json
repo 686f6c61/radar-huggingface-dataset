@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VisualInference/FLUX-3-Image-Klein-pup-MLX-4bit",
   "slug": "visualinference-flux-3-image-klein-pup-mlx-4bit",
   "author": "VisualInference",
@@ -38,6 +38,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 5970912807,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein-pup",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

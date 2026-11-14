@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Reza2kn/Bina-0.4-Rizeh-LiteRT-INT4",
   "slug": "reza2kn-bina-0-4-rizeh-litert-int4",
   "author": "Reza2kn",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 172523952,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Reza2kn/Bina-0.4-Rizeh",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

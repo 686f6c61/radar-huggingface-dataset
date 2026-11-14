@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prakhya15/AGeDi-WS2-Unconditional",
   "slug": "prakhya15-agedi-ws2-unconditional",
   "author": "prakhya15",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 5759458,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

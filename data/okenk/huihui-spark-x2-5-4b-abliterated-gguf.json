@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "okenk/Huihui-Spark-X2.5-4B-abliterated-GGUF",
   "slug": "okenk-huihui-spark-x2-5-4b-abliterated-gguf",
   "author": "okenk",
@@ -27,14 +27,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 10830144000,
   "storage_human": "10.8 GB",
+  "context_length": 1048576,
   "base_model": "huihui-ai/Huihui-Spark-X2.5-4B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

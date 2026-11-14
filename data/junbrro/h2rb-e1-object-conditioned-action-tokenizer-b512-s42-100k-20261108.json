@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/h2rb-e1-object-conditioned-action-tokenizer-b512-s42-100k-20261108",
   "slug": "junbrro-h2rb-e1-object-conditioned-action-tokenizer-b512-s42-100k-20261108",
   "author": "junbrro",
@@ -22,14 +22,19 @@
   "parameters_human": "6.4M",
   "storage_bytes": 25638239,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

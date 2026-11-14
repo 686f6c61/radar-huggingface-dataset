@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/MiMo-Negentropy-9B-AGSI",
   "slug": "oliviarossi-mimo-negentropy-9b-agsi",
   "author": "OliviaRossi",
@@ -41,14 +41,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710301,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, Jackrong/Negentropy-claude-opus-4.7-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T02:55:22.110Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

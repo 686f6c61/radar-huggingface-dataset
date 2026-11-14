@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-gigaai/GigaBrain-0.7-3.5B-Base",
   "slug": "open-gigaai-gigabrain-0-7-3-5b-base",
   "author": "open-gigaai",
@@ -32,6 +32,7 @@
   "parameters_human": "4.12B",
   "storage_bytes": 32977347065,
   "storage_human": "33.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ling0322/libwaifu-indextts-2.5",
   "slug": "ling0322-libwaifu-indextts-2-5",
   "author": "ling0322",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 5466832768,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "IndexTeam/IndexTTS-2.5, facebook/w2v-bert-2.0, funasr/campplus, nvidia/bigvgan_v2_22khz_80band_256x",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

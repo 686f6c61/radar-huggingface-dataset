@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prometheusAIR/Ling-3.0-flash-GGUF",
   "slug": "prometheusair-ling-3-0-flash-gguf",
   "author": "prometheusAIR",
@@ -37,14 +37,19 @@
   "parameters_human": "127.49B",
   "storage_bytes": 1014332610848,
   "storage_human": "1014.3 GB",
+  "context_length": 262144,
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

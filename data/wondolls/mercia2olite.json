@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wondolls/mercia2olite",
   "slug": "wondolls-mercia2olite",
   "author": "wondolls",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 59631086,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "literismm/mercia2olite",
+  "renamed_at": "2026-11-11T08:05:49.098Z",
   "benchmarks": [],
   "sources": [
     {

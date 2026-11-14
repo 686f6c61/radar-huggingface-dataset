@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Marco-LLM-SEA-GGUF",
   "slug": "mradermacher-marco-llm-sea-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146891904,
   "storage_human": "68.1 GB",
+  "context_length": 131072,
   "base_model": "ATH-MaaS/Marco-LLM-SEA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

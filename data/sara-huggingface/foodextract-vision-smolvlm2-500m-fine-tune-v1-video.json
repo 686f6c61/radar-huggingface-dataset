@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sara-huggingface/FoodExtract-Vision-SmolVLM2-500M-fine-tune-v1-VIDEO",
   "slug": "sara-huggingface-foodextract-vision-smolvlm2-500m-fine-tune-v1-video",
   "author": "sara-huggingface",
@@ -32,14 +32,19 @@
   "parameters_human": "507.5M",
   "storage_bytes": 2030064242,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

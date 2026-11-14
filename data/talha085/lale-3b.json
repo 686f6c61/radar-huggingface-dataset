@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "talha085/Lale-3B",
   "slug": "talha085-lale-3b",
   "author": "talha085",
@@ -35,14 +35,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183348572,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:30:28.207Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

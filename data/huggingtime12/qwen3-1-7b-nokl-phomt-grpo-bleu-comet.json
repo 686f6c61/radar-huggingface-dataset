@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingtime12/Qwen3-1.7B-noKL-PhoMT-GRPO-BLEU-COMET",
   "slug": "huggingtime12-qwen3-1-7b-nokl-phomt-grpo-bleu-comet",
   "author": "huggingtime12",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 290404534,
   "storage_human": "290 MB",
+  "context_length": null,
   "base_model": "huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

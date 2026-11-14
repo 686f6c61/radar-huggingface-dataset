@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jay-Lab/ChronoNano1.0-10M",
   "slug": "jay-lab-chrononano1-0-10m",
   "author": "Jay-Lab",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 95811877,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

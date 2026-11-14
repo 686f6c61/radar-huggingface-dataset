@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebulette/canary-face-body",
   "slug": "nebulette-canary-face-body",
   "author": "nebulette",
@@ -26,14 +26,19 @@
   "parameters_human": "119.4M",
   "storage_bytes": 477422364,
   "storage_human": "477 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T06:50:50.531Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidutta69/MiniCPM5-2B-GGUF",
   "slug": "saidutta69-minicpm5-2b-gguf",
   "author": "saidutta69",
@@ -43,14 +43,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 9545977568,
   "storage_human": "9.5 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

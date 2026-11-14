@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TigreGotico/afrigloss-opus-mt-fr-ee-onnx",
   "slug": "tigregotico-afrigloss-opus-mt-fr-ee-onnx",
   "author": "TigreGotico",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 1110657446,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "AfriSpeech/afrigloss-opus-mt-fr-ee",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

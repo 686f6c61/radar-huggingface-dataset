@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Code",
   "slug": "bytedtsinghua-sia-open-mopd-smollm3-3b-rl-code",
   "author": "BytedTsinghua-SIA",
@@ -37,14 +37,19 @@
   "parameters_human": "3.34B",
   "storage_bytes": 6692780589,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

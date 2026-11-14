@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aravdhoot/risk-spec-specv3local-g31-rae2procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914",
   "slug": "aravdhoot-risk-spec-specv3local-g31-rae2procnotraceg31-gemma-4-31b-it-hp500-r32-s0-20260914",
   "author": "aravdhoot",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 10775146360,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

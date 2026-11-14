@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cmRDXA/Qwen3.6-35B-A3B-MOPD-Graph-Coloring-Teacher",
   "slug": "cmrdxa-qwen3-6-35b-a3b-mopd-graph-coloring-teacher",
   "author": "cmRDXA",
@@ -38,14 +38,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 71027703334,
   "storage_human": "71.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

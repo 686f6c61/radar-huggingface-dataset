@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambocher/MiMo-V2.6-Distill-Qwen-9B-oQ4e-mtp",
   "slug": "bambocher-mimo-v2-6-distill-qwen-9b-oq4e-mtp",
   "author": "bambocher",
@@ -30,6 +30,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 6544479975,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "bambocher/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

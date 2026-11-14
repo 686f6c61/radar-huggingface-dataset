@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cialtion/SimpleTool-Qwen3.5-397B-A17B-8Head-5pct-FP8",
   "slug": "cialtion-simpletool-qwen3-5-397b-a17b-8head-5pct-fp8",
   "author": "Cialtion",
@@ -38,14 +38,19 @@
   "parameters_human": "403.40B",
   "storage_bytes": 406194832236,
   "storage_human": "406.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-397B-A17B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

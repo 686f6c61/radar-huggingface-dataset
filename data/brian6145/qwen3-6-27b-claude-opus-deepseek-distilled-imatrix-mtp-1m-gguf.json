@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brian6145/Qwen3.6-27B-Claude-Opus-DeepSeek-Distilled-Imatrix-MTP-1M-GGUF",
   "slug": "brian6145-qwen3-6-27b-claude-opus-deepseek-distilled-imatrix-mtp-1m-gguf",
   "author": "Brian6145",
@@ -51,14 +51,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 112189825312,
   "storage_human": "112.2 GB",
+  "context_length": 1048576,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

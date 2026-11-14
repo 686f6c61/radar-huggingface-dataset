@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sentence-transformers/merged-mpnet-base",
   "slug": "sentence-transformers-merged-mpnet-base",
   "author": "sentence-transformers",
@@ -36,14 +36,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 437967648,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-mpnet-base-v2, sentence-transformers/multi-qa-mpnet-base-cos-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

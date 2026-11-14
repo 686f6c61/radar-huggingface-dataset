@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Maxkdie/qwen-3.5-0.8b-dsgvo-fine-webgpu",
   "slug": "maxkdie-qwen-3-5-0-8b-dsgvo-fine-webgpu",
   "author": "Maxkdie",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2906848809,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

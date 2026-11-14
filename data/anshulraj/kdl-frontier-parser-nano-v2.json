@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnshulRaj/KDL-Frontier-Parser-nano-v2",
   "slug": "anshulraj-kdl-frontier-parser-nano-v2",
   "author": "AnshulRaj",
@@ -37,14 +37,19 @@
   "parameters_human": "1.29B",
   "storage_bytes": 2596088578,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malaiwah/Qwen3.8-27B-exl3-archival-d32ba0bb",
   "slug": "malaiwah-qwen3-8-27b-exl3-archival-d32ba0bb",
   "author": "malaiwah",
@@ -31,14 +31,19 @@
   "parameters_human": "11.47B",
   "storage_bytes": 22955359741,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

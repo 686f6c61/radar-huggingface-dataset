@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kaizhen111/InternVLA-N1-NavDP-Async-SocialGen-20261109",
   "slug": "kaizhen111-internvla-n1-navdp-async-socialgen-20261109",
   "author": "Kaizhen111",
@@ -24,14 +24,19 @@
   "parameters_human": "8.39B",
   "storage_bytes": 16783743060,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

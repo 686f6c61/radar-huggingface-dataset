@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rustam1221/UzASR-CTC-220M",
   "slug": "rustam1221-uzasr-ctc-220m",
   "author": "rustam1221",
@@ -39,14 +39,19 @@
   "parameters_human": "220.8M",
   "storage_bytes": 1167717167,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaAM-Multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

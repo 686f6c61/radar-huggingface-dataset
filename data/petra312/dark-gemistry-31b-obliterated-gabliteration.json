@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "petra312/Dark-Gemistry-31B-OBLITERATED-gabliteration",
   "slug": "petra312-dark-gemistry-31b-obliterated-gabliteration",
   "author": "petra312",
@@ -34,14 +34,19 @@
   "parameters_human": "32.68B",
   "storage_bytes": 22505526683,
   "storage_human": "22.5 GB",
+  "context_length": null,
   "base_model": "Nimbz/Gemma-4-Dark-Gemistry-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:26:03.147Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

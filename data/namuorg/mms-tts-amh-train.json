@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Namuorg/mms-tts-amh-train",
   "slug": "namuorg-mms-tts-amh-train",
   "author": "Namuorg",
@@ -26,14 +26,19 @@
   "parameters_human": "83.0M",
   "storage_bytes": 332153032,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T07:30:33.979Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

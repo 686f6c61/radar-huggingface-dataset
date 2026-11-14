@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Frost2o24/llama-3.2-mini-agent-II-run-A5",
   "slug": "frost2o24-llama-3-2-mini-agent-ii-run-a5",
   "author": "Frost2o24",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 107417168,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": "unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T07:34:32.320Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

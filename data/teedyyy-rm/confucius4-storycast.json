@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Teedyyy-rm/Confucius4-storycast",
   "slug": "teedyyy-rm-confucius4-storycast",
   "author": "Teedyyy-rm",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 98480550341,
   "storage_human": "98.5 GB",
+  "context_length": null,
   "base_model": "netease-youdao/Confucius4-TTS",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:47:54.994Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

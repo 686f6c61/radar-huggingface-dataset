@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CreeJee/KURE-Reranker-nano-ONNX",
   "slug": "creejee-kure-reranker-nano-onnx",
   "author": "CreeJee",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 897217947,
   "storage_human": "897 MB",
+  "context_length": null,
   "base_model": "nlpai-lab/KURE-Reranker-nano",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

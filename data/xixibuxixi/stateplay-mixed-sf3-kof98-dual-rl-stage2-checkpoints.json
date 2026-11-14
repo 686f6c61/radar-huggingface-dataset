@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xixibuxixi/StatePlay-Mixed-SF3-KOF98-Dual-RL-Stage2-Checkpoints",
   "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-dual-rl-stage2-checkpoints",
   "author": "xixibuxixi",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 43318941762,
   "storage_human": "43.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

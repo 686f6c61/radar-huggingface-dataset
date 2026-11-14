@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/Naive-N0.5-Flash-JANGH2",
   "slug": "osaurusai-naive-n0-5-flash-jangh2",
   "author": "OsaurusAI",
@@ -48,6 +48,7 @@
   "parameters_human": "29.03B",
   "storage_bytes": 201002828928,
   "storage_human": "201.0 GB",
+  "context_length": null,
   "base_model": "NaiveAI/Naive-N0.5-Flash",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OsaurusAI/Naive-N0.5-Flash-JANGHT2.5",
+  "renamed_at": "2026-11-11T03:30:17.089Z",
   "benchmarks": [],
   "sources": [
     {

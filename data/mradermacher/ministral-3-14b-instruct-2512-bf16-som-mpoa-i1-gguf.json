@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Ministral-3-14B-Instruct-2512-BF16-SOM-MPOA-i1-GGUF",
   "slug": "mradermacher-ministral-3-14b-instruct-2512-bf16-som-mpoa-i1-gguf",
   "author": "mradermacher",
@@ -55,14 +55,19 @@
   "parameters_human": "13.51B",
   "storage_bytes": 155837425728,
   "storage_human": "155.8 GB",
+  "context_length": 262144,
   "base_model": "0xA50C1A1/Ministral-3-14B-Instruct-2512-BF16-SOM-MPOA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thongbuind/SAI-Embedding_100M",
   "slug": "thongbuind-sai-embedding_100m",
   "author": "thongbuind",
@@ -43,14 +43,19 @@
   "parameters_human": "113.9M",
   "storage_bytes": 911134364,
   "storage_human": "911 MB",
+  "context_length": null,
   "base_model": "thongbuind/SAI_100M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

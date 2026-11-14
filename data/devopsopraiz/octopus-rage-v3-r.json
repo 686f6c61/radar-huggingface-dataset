@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Devopsopraiz/Octopus-Rage-V3-R",
   "slug": "devopsopraiz-octopus-rage-v3-r",
   "author": "Devopsopraiz",
@@ -33,14 +33,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 389004245760,
   "storage_human": "389.0 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

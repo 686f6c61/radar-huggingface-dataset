@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geonmin-kim/nqrr-GR00T-Mdrift_crop128_cft-Dclean1106v1-frommergedv4-step3000",
   "slug": "geonmin-kim-nqrr-gr00t-mdrift_crop128_cft-dclean1106v1-frommergedv4-step3000",
   "author": "geonmin-kim",
@@ -29,14 +29,19 @@
   "parameters_human": "5.37B",
   "storage_bytes": 5685241928,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

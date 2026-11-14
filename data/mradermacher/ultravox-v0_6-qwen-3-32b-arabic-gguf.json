@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ultravox-v0_6-qwen-3-32b-arabic-GGUF",
   "slug": "mradermacher-ultravox-v0_6-qwen-3-32b-arabic-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 226104697696,
   "storage_human": "226.1 GB",
+  "context_length": 40960,
   "base_model": "ISTNetworks/ultravox-v0_6-qwen-3-32b-arabic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

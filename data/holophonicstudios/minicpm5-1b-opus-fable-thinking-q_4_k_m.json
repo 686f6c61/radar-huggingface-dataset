@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HolophonicStudios/MiniCPM5-1b-Opus-Fable-Thinking-Q_4_K_M",
   "slug": "holophonicstudios-minicpm5-1b-opus-fable-thinking-q_4_k_m",
   "author": "HolophonicStudios",
@@ -26,14 +26,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 688066080,
   "storage_human": "688 MB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

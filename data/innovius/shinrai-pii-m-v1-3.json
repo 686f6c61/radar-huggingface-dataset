@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "innovius/shinrai-pii-m-v1.3",
   "slug": "innovius-shinrai-pii-m-v1-3",
   "author": "innovius",
@@ -65,6 +65,7 @@
   "parameters_human": "307.6M",
   "storage_bytes": 2497062100,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "onnx",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

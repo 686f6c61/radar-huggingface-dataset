@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yasinyaman/toolrank-emb-8b",
   "slug": "yasinyaman-toolrank-emb-8b",
   "author": "yasinyaman",
@@ -36,14 +36,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16388500091,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "yasinyaman/callbus-emb-8b",
+  "renamed_at": "2026-11-11T08:09:19.717Z",
   "benchmarks": [],
   "sources": [
     {

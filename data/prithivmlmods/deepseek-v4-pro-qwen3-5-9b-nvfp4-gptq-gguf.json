@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/DeepSeek-V4-Pro-Qwen3.5-9B-NVFP4-GPTQ-GGUF",
   "slug": "prithivmlmods-deepseek-v4-pro-qwen3-5-9b-nvfp4-gptq-gguf",
   "author": "prithivMLmods",
@@ -69,14 +69,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 9383719904,
   "storage_human": "9.4 GB",
+  "context_length": 262144,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

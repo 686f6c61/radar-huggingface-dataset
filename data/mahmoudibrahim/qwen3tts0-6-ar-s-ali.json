@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MahmoudIbrahim/Qwen3TTS0.6-ar-s-ali",
   "slug": "mahmoudibrahim-qwen3tts0-6-ar-s-ali",
   "author": "MahmoudIbrahim",
@@ -33,14 +33,19 @@
   "parameters_human": "905.8M",
   "storage_bytes": 2493919636,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:14:26.398Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optima-tools-ch/voice-medium",
   "slug": "optima-tools-ch-voice-medium",
   "author": "optima-tools-ch",
@@ -18,20 +18,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 905788672,
   "parameters_human": "905.8M",
   "storage_bytes": 2493919668,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

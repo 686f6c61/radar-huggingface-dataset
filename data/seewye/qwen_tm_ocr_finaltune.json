@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeeWye/qwen_TM_OCR_finaltune",
   "slug": "seewye-qwen_tm_ocr_finaltune",
   "author": "SeeWye",
@@ -35,14 +35,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817607,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "SeeWye/qwen_finetune1_16bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

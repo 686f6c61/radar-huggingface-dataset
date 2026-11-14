@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ukisai/Swift-1.5-GLM-5.3-Flash-GGUF",
   "slug": "ukisai-swift-1-5-glm-5-3-flash-gguf",
   "author": "ukisai",
@@ -38,14 +38,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 5677284554833,
   "storage_human": "5677.3 GB",
+  "context_length": 1048576,
   "base_model": "ukisai/Swift1.5-GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ananddey/akhorika-ocr-v1",
   "slug": "ananddey-akhorika-ocr-v1",
   "author": "ananddey",
@@ -36,14 +36,19 @@
   "parameters_human": "1.30B",
   "storage_bytes": 5169897069,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Optical Character Recognition",

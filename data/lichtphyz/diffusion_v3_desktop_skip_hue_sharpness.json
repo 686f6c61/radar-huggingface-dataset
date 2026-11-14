@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lichtphyz/diffusion_v3_desktop_skip_hue_sharpness",
   "slug": "lichtphyz-diffusion_v3_desktop_skip_hue_sharpness",
   "author": "lichtphyz",
@@ -29,14 +29,19 @@
   "parameters_human": "277.8M",
   "storage_bytes": 1111420200,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

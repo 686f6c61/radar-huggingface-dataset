@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richowell7/taller-destilacion-slm-merged",
   "slug": "richowell7-taller-destilacion-slm-merged",
   "author": "richowell7",
@@ -40,14 +40,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 269060552,
   "storage_human": "269 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

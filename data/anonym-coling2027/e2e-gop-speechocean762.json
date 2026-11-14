@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anonym-coling2027/E2E-GOP-SpeechOcean762",
   "slug": "anonym-coling2027-e2e-gop-speechocean762",
   "author": "anonym-coling2027",
@@ -31,14 +31,19 @@
   "parameters_human": "325.7M",
   "storage_bytes": 1302710896,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "microsoft/wavlm-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

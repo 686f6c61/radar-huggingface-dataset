@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mim-chess-vlas/train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0",
   "slug": "mim-chess-vlas-train_800_dense__mask__separate_channel__sim__all_cameras__live__groot__seed_0",
   "author": "mim-chess-vlas",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576218512,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NeelRajani/Qwen3-0.6B-Base_SFT-safety75_D2D-v00.01",
   "slug": "neelrajani-qwen3-0-6b-base_sft-safety75_d2d-v00-01",
   "author": "NeelRajani",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 253760716,
   "storage_human": "254 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

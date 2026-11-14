@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-Qwen3-Coder-30B-A3B-NVFP4",
   "slug": "defnoteatin-pseudobrain-qwen3-coder-30b-a3b-nvfp4",
   "author": "defnoteatin",
@@ -42,14 +42,19 @@
   "parameters_human": "15.58B",
   "storage_bytes": 18613247230,
   "storage_human": "18.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct, NVFP4/Qwen3-Coder-30B-A3B-Instruct-FP4, cyankiwi/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit, Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

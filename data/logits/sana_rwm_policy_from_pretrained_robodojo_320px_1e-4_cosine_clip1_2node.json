@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logits/sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node",
   "slug": "logits-sana_rwm_policy_from_pretrained_robodojo_320px_1e-4_cosine_clip1_2node",
   "author": "logits",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4397359943886,
   "storage_human": "4397.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T03:01:55.463Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoborific/Gemma4-Gutenberg-31B-W8A16-FP8",
   "slug": "hoborific-gemma4-gutenberg-31b-w8a16-fp8",
   "author": "hoborific",
@@ -33,14 +33,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33308747706,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "nbeerbower/Gemma4-Gutenberg-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

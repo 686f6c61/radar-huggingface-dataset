@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TreeNumber/LFM2.5-2.6B-GGUF-Splited",
   "slug": "treenumber-lfm2-5-2-6b-gguf-splited",
   "author": "TreeNumber",
@@ -32,14 +32,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 1674455520,
   "storage_human": "1.7 GB",
+  "context_length": 131072,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

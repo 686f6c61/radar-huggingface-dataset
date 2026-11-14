@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-OpenVINO-INT4",
   "slug": "irfanuruchi-nanbeige4-2-3b-ce-v1-0-openvino-int4",
   "author": "Irfanuruchi",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 2679316559,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

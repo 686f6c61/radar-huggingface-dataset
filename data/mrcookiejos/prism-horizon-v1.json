@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrCookieJos/prism-horizon-v1",
   "slug": "mrcookiejos-prism-horizon-v1",
   "author": "MrCookieJos",
@@ -34,6 +34,7 @@
   "parameters_human": "79.67B",
   "storage_bytes": 91446768085,
   "storage_human": "91.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-Coder-Next",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

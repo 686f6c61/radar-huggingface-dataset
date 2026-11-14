@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danush99/Model_LiLT-RE-JA-SIN",
   "slug": "danush99-model_lilt-re-ja-sin",
   "author": "danush99",
@@ -28,14 +28,19 @@
   "parameters_human": "286.8M",
   "storage_bytes": 1164388084,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "kavg/LiLT-RE-JA",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

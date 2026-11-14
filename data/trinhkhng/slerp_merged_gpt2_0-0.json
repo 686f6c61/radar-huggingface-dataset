@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trinhkhng/slerp_Merged_gpt2_0.0",
   "slug": "trinhkhng-slerp_merged_gpt2_0-0",
   "author": "trinhkhng",
@@ -29,14 +29,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 497774208,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

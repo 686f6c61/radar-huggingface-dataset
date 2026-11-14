@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-bf16",
   "slug": "t0rr3sp3dr0-qwen3-6-35b-a3b-mlx-mtp-bf16",
   "author": "t0rr3sp3dr0",
@@ -28,6 +28,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 73605876041,
   "storage_human": "73.6 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.6-35B-A3B-MTP-bf16",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

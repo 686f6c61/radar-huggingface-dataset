@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/K2-Horizon-MoVA-36B-A4B-oQ4e",
   "slug": "hermitdave-k2-horizon-mova-36b-a4b-oq4e",
   "author": "hermitdave",
@@ -33,6 +33,7 @@
   "parameters_human": "37.44B",
   "storage_bytes": 22045152221,
   "storage_human": "22.0 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mlx-community/K2-Horizon-MoVA-36B-A4B-oQ4e",
+  "renamed_at": "2026-11-11T05:32:51.707Z",
   "benchmarks": [],
   "sources": [
     {

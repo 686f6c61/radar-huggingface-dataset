@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThirdTimesTheCiarc/base_minim3",
   "slug": "thirdtimestheciarc-base_minim3",
   "author": "ThirdTimesTheCiarc",
@@ -23,14 +23,19 @@
   "parameters_human": "37.3M",
   "storage_bytes": 255632753939,
   "storage_human": "255.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

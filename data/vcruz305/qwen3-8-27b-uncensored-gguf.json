@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/Qwen3.8-27B-Uncensored-GGUF",
   "slug": "vcruz305-qwen3-8-27b-uncensored-gguf",
   "author": "vcruz305",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T13:47:56.082Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "raulgdp/xlm-roberta-large-finetuned-nuevamente-2026-32",
+  "slug": "raulgdp-xlm-roberta-large-finetuned-nuevamente-2026-32",
+  "author": "raulgdp",
+  "url": "https://huggingface.co/raulgdp/xlm-roberta-large-finetuned-nuevamente-2026-32",
+  "created_at": "2026-11-14T16:04:12.000Z",
+  "updated_at": "2026-11-14T16:04:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558850057,
+  "parameters_human": "558.9M",
+  "storage_bytes": 2252552141,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livret GrAnd FormAt (Caisse d'Epargne) : taux et plafond - MoneyVox",
+      "url": "https://www.moneyvox.fr/livret/grand-format-caisse-epargne",
+      "snippet": "Jul 22, 2026 · Le Livret GrAnd FormAt est un livret fiscalisé, réservé aux clients de la Caisse d’Epargne possédant un Livret A au …"
+    }
+  ]
+}

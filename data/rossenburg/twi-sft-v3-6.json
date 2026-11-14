@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rossenburg/twi-sft-v3-6",
   "slug": "rossenburg-twi-sft-v3-6",
   "author": "rossenburg",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 29908722,
   "storage_human": "30 MB",
+  "context_length": null,
   "base_model": "ghananlpcommunity/MiniCPM5-1B-Twi",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sno-lab/multilingual-reranker-small-int8",
   "slug": "sno-lab-multilingual-reranker-small-int8",
   "author": "sno-lab",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 205726758,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": "Horizon-Labs/multilingual-reranker-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

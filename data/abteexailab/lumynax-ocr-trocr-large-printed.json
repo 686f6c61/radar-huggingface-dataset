@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbteeXAILab/lumynax-ocr-trocr-large-printed",
   "slug": "abteexailab-lumynax-ocr-trocr-large-printed",
   "author": "AbteeXAILab",
@@ -47,14 +47,19 @@
   "parameters_human": "608.1M",
   "storage_bytes": 4865285299,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "microsoft/trocr-large-printed",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

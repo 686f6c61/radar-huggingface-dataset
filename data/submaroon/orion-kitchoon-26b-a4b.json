@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SubMaroon/Orion-Kitchoon-26B-A4B",
   "slug": "submaroon-orion-kitchoon-26b-a4b",
   "author": "SubMaroon",
@@ -34,14 +34,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644179542,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Orion-26B-A4B-v1.1, SubMaroon/Kitchoon-V2-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

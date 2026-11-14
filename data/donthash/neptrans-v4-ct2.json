@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DontHash/neptrans-v4-ct2",
   "slug": "donthash-neptrans-v4-ct2",
   "author": "DontHash",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 1551326177,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

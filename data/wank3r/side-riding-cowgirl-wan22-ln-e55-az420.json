@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wank3r/side-riding-cowgirl-wan22-LN-e55-az420",
   "slug": "wank3r-side-riding-cowgirl-wan22-ln-e55-az420",
   "author": "wank3r",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 306807976,
   "storage_human": "307 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

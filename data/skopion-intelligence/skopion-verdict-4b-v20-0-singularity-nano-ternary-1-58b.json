@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SKOPION-Intelligence/skopion-verdict-4b-v20.0-singularity-nano-ternary-1.58b",
   "slug": "skopion-intelligence-skopion-verdict-4b-v20-0-singularity-nano-ternary-1-58b",
   "author": "SKOPION-Intelligence",
@@ -45,12 +45,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Strict-98 External Decision & Judge Benchmark Matrix (100 Suites / 29,340 evaluations)",

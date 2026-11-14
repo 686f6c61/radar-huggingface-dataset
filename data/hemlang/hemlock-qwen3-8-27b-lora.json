@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hemlang/Hemlock-Qwen3.8-27B-LoRA",
   "slug": "hemlang-hemlock-qwen3-8-27b-lora",
   "author": "hemlang",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 657599949,
   "storage_human": "658 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

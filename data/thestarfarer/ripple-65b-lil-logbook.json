@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thestarfarer/Ripple-65B-lil-logbook",
   "slug": "thestarfarer-ripple-65b-lil-logbook",
   "author": "thestarfarer",
@@ -28,6 +28,7 @@
   "parameters_human": "64.78B",
   "storage_bytes": 669073359896,
   "storage_human": "669.1 GB",
+  "context_length": 8192,
   "base_model": "ricursiveAI/Ripple-65B-Base-Preview",
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

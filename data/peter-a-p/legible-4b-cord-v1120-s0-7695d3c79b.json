@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Peter-A-P/legible-4b-cord-v1120-s0-7695d3c79b",
   "slug": "peter-a-p-legible-4b-cord-v1120-s0-7695d3c79b",
   "author": "Peter-A-P",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 171986304,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

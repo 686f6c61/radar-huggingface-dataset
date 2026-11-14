@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OidoStudio/laya-mm-guard-v3-gguf",
   "slug": "oidostudio-laya-mm-guard-v3-gguf",
   "author": "OidoStudio",
@@ -50,14 +50,19 @@
   "parameters_human": "306.9M",
   "storage_bytes": 723063652,
   "storage_human": "723 MB",
+  "context_length": 8192,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

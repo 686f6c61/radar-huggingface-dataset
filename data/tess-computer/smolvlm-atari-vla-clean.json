@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TESS-Computer/smolvlm-atari-vla-clean",
   "slug": "tess-computer-smolvlm-atari-vla-clean",
   "author": "TESS-Computer",
@@ -32,14 +32,19 @@
   "parameters_human": "507.5M",
   "storage_bytes": 1015032185,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

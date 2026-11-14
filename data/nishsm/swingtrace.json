@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nishsm/swingtrace",
   "slug": "nishsm-swingtrace",
   "author": "nishsm",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 48962626,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO11",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nishsm/golf-club-detection-swingtrace",
+  "renamed_at": "2026-11-11T06:55:38.936Z",
   "benchmarks": [],
   "sources": [
     {

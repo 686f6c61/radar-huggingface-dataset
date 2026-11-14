@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pragmaticcs/Qwen3.8-KAT-AgentWorld-35B-A3B-Coder",
   "slug": "pragmaticcs-qwen3-8-kat-agentworld-35b-a3b-coder",
   "author": "pragmaticcs",
@@ -57,14 +57,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69338805820,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev, Qwen/Qwen-AgentWorld-35B-A3B, empero-ai/Qwen3.8-35B-A3B-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

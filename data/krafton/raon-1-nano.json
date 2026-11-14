@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KRAFTON/Raon-1-nano",
   "slug": "krafton-raon-1-nano",
   "author": "KRAFTON",
@@ -23,21 +23,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 91,
+  "likes": 92,
   "downloads_30d": 1129,
-  "trending_score": 89,
+  "trending_score": 90,
   "parameters": 3529911376,
   "parameters_human": "3.53B",
   "storage_bytes": 25169600211,
   "storage_human": "25.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

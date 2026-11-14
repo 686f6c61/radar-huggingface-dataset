@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepseek-ai/DeepSeek-R1",
   "slug": "deepseek-ai-deepseek-r1",
   "author": "deepseek-ai",
@@ -27,21 +27,26 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 14454,
-  "downloads_30d": 1653912,
+  "likes": 14457,
+  "downloads_30d": 1646817,
   "trending_score": 10,
   "parameters": 684489845504,
   "parameters_human": "684.49B",
   "storage_bytes": 688628350856,
   "storage_human": "688.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

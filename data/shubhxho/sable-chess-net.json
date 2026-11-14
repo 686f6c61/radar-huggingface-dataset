@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shubhxho/sable-chess-net",
   "slug": "shubhxho-sable-chess-net",
   "author": "shubhxho",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 269196,
   "storage_human": "269196 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Chess play, head-to-head vs the previous release",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imsg8/kalparso-muril",
   "slug": "imsg8-kalparso-muril",
   "author": "imsg8",
@@ -39,6 +39,7 @@
   "parameters_human": "237.6M",
   "storage_bytes": 1423299349,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "google/muril-base-cased",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

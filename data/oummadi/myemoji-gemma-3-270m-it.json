@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oummadi/myemoji-gemma-3-270m-it",
   "slug": "oummadi-myemoji-gemma-3-270m-it",
   "author": "Oummadi",
@@ -29,14 +29,19 @@
   "parameters_human": "435.9M",
   "storage_bytes": 905152031,
   "storage_human": "905 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qwrt/Midimodell-67.390M",
   "slug": "qwrt-midimodell-67-390m",
   "author": "qwrt",
@@ -30,6 +30,7 @@
   "parameters_human": "67.4M",
   "storage_bytes": 386151223316,
   "storage_human": "386.2 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "qwrt/Melodimodell-67M",
+  "renamed_at": "2026-11-11T07:14:31.705Z",
   "benchmarks": [],
   "sources": [
     {

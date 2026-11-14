@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/UltraTex-Qwen-Image-2.1",
   "slug": "sekkit-ultratex-qwen-image-2-1",
   "author": "sekkit",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1843367018,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/UltraTex-Qwen-Image-2.1",
+  "renamed_at": "2026-11-11T07:28:26.850Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/augmented-2f43f854cb7525ed",
   "slug": "gradients-io-tournaments-augmented-2f43f854cb7525ed",
   "author": "gradients-io-tournaments",
@@ -28,14 +28,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 269061704,
   "storage_human": "269 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T07:22:28.956Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

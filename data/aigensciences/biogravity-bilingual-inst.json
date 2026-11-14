@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aigensciences/BioGravity-bilingual-Inst",
   "slug": "aigensciences-biogravity-bilingual-inst",
   "author": "aigensciences",
@@ -43,14 +43,19 @@
   "parameters_human": "29.56B",
   "storage_bytes": 118256496837,
   "storage_human": "118.3 GB",
+  "context_length": null,
   "base_model": "trillionlabs/Gravity-30B-A5B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

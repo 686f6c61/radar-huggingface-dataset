@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muyleanging/VoxPocket-v4",
   "slug": "muyleanging-voxpocket-v4",
   "author": "muyleanging",
@@ -37,14 +37,19 @@
   "parameters_human": "801.7M",
   "storage_bytes": 3553600874,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T07:04:35.507Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

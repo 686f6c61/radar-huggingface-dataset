@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Depth_wrist_depth",
   "slug": "arvinesmaeilydev-xvla_pickupthecube_dual_50_depth_wrist_depth",
   "author": "arvinesmaeilydev",
@@ -31,14 +31,19 @@
   "parameters_human": "879.7M",
   "storage_bytes": 66982180135,
   "storage_human": "67.0 GB",
+  "context_length": null,
   "base_model": "lerobot/xvla-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T10:45:25.063Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

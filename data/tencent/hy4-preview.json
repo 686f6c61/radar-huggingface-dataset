@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tencent/Hy4-preview",
   "slug": "tencent-hy4-preview",
   "author": "tencent",
@@ -29,19 +29,24 @@
   ],
   "likes": 560,
   "downloads_30d": 11816,
-  "trending_score": 16,
+  "trending_score": 15,
   "parameters": 779960992733,
   "parameters_human": "779.96B",
   "storage_bytes": 1560008337568,
   "storage_human": "1560.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

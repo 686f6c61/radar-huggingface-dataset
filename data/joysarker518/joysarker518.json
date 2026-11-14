@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joysarker518/Joysarker518",
   "slug": "joysarker518-joysarker518",
   "author": "Joysarker518",
@@ -28,14 +28,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1129306435,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Joysarker518/bangla-sms-model",
+  "renamed_at": "2026-11-14T03:26:03.140Z",
   "benchmarks": [],
   "sources": []
 }

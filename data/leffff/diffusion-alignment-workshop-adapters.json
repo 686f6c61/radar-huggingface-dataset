@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leffff/diffusion-alignment-workshop-adapters",
   "slug": "leffff-diffusion-alignment-workshop-adapters",
   "author": "leffff",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 957838983,
   "storage_human": "958 MB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_600M_512px_diffusers",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

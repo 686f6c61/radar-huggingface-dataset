@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yyuncong/SyncWorld-b7-noTTT-history9",
   "slug": "yyuncong-syncworld-b7-nottt-history9",
   "author": "yyuncong",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 30347862560,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:30:58.359Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

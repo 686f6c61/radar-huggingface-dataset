@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lianghsun/tw-tokenizer-v1",
   "slug": "lianghsun-tw-tokenizer-v1",
   "author": "lianghsun",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 17650321,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:55:17.946Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huluhuluu/llama-3.2-3b-instruct-eagle3-sharegpt-sw512-epoch9-step231810",
   "slug": "huluhuluu-llama-3-2-3b-instruct-eagle3-sharegpt-sw512-epoch9-step231810",
   "author": "huluhuluu",
@@ -41,14 +41,19 @@
   "parameters_human": "243.2M",
   "storage_bytes": 2649030875,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

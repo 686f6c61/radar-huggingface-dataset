@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SinhalaMMLU-SharedTask/team-hakuru-labs-redqueen",
   "slug": "sinhalammlu-sharedtask-team-hakuru-labs-redqueen",
   "author": "SinhalaMMLU-SharedTask",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 114517464,
   "storage_human": "115 MB",
+  "context_length": null,
   "base_model": "iCIIT/redqueenprotocol-sin-llama3.2-3B-model",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

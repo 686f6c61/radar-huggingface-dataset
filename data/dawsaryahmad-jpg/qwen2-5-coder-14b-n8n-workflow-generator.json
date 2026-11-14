@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dawsaryahmad-jpg/Qwen2.5-Coder-14B-n8n-Workflow-Generator",
   "slug": "dawsaryahmad-jpg-qwen2-5-coder-14b-n8n-workflow-generator",
   "author": "dawsaryahmad-jpg",
@@ -43,6 +43,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 76947808132,
   "storage_human": "76.9 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

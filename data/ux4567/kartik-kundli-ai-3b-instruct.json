@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UX4567/Kartik-Kundli-AI-3B-Instruct",
   "slug": "ux4567-kartik-kundli-ai-3b-instruct",
   "author": "UX4567",
@@ -26,6 +26,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 8113251036,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:31:56.286Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

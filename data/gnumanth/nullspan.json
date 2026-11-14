@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gnumanth/nullspan",
   "slug": "gnumanth-nullspan",
   "author": "gnumanth",
@@ -41,6 +41,7 @@
   "parameters_human": "345.3M",
   "storage_bytes": 10938312573,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

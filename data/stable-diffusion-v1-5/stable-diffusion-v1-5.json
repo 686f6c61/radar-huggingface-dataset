@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "slug": "stable-diffusion-v1-5-stable-diffusion-v1-5",
   "author": "stable-diffusion-v1-5",
@@ -34,6 +34,7 @@
   "parameters_human": "859.5M",
   "storage_bytes": 49900909164,
   "storage_human": "49.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

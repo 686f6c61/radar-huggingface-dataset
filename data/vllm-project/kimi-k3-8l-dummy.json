@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/Kimi-K3-8L-dummy",
   "slug": "vllm-project-kimi-k3-8l-dummy",
   "author": "vllm-project",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 2795286,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

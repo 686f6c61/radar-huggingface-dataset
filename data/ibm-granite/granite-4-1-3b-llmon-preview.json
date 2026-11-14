@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibm-granite/granite-4.1-3b-llmon-preview",
   "slug": "ibm-granite-granite-4-1-3b-llmon-preview",
   "author": "ibm-granite",
@@ -52,21 +52,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 13,
+  "likes": 15,
   "downloads_30d": 2031,
-  "trending_score": 13,
+  "trending_score": 15,
   "parameters": 3659737600,
   "parameters_human": "3.66B",
   "storage_bytes": 29278026928,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.1-3b-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

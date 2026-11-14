@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/L3.1-Evil-Reasoning-Dark-Planet-Hermes-R1-Uncensored-8B",
   "slug": "davidau-l3-1-evil-reasoning-dark-planet-hermes-r1-uncensored-8b",
   "author": "DavidAU",
@@ -66,14 +66,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077943815,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "NousResearch/DeepHermes-3-Llama-3-8B-Preview, DavidAU/L3-Dark-Planet-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

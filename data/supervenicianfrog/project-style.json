@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "supervenicianfrog/project-style",
   "slug": "supervenicianfrog-project-style",
   "author": "supervenicianfrog",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 332548624,
   "storage_human": "333 MB",
+  "context_length": null,
   "base_model": "undefined",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:48:27.425Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

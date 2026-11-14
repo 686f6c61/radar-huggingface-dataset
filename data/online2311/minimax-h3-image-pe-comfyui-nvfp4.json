@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "online2311/MiniMax-H3-Image-PE-ComfyUI-NVFP4",
   "slug": "online2311-minimax-h3-image-pe-comfyui-nvfp4",
   "author": "online2311",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 17916141691,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image-PE",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

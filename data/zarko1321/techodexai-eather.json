@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zarko1321/TechodexAI-Eather",
   "slug": "zarko1321-techodexai-eather",
   "author": "zarko1321",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 142308,
   "storage_human": "142308 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:27:14.466Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vonrayn/xls-r-cebuano-asr",
   "slug": "vonrayn-xls-r-cebuano-asr",
   "author": "vonrayn",
@@ -26,14 +26,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 15143324274,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": "vonrayn/xls-r-cebuano-asr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suliniacats/dots.tts-soar",
   "slug": "suliniacats-dots-tts-soar",
   "author": "suliniacats",
@@ -34,14 +34,19 @@
   "parameters_human": "2.20B",
   "storage_bytes": 5160451725,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "dots-studio/dots.tts-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

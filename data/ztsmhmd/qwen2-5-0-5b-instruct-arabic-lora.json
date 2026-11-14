@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ztsmhmd/Qwen2.5-0.5B-Instruct-Arabic-Lora",
   "slug": "ztsmhmd-qwen2-5-0-5b-instruct-arabic-lora",
   "author": "ztsmhmd",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1263572131,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

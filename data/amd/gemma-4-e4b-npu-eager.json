@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/gemma-4-e4b-npu-eager",
   "slug": "amd-gemma-4-e4b-npu-eager",
   "author": "amd",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 18179061770,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

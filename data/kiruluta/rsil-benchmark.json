@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiruluta/rsil-benchmark",
   "slug": "kiruluta-rsil-benchmark",
   "author": "kiruluta",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 426986526,
   "storage_human": "427 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

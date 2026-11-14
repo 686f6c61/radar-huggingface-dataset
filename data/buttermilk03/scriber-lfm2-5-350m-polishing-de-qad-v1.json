@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Buttermilk03/scriber-lfm2.5-350m-polishing-de-qad-v1",
   "slug": "buttermilk03-scriber-lfm2-5-350m-polishing-de-qad-v1",
   "author": "Buttermilk03",
@@ -35,14 +35,19 @@
   "parameters_human": "353.3M",
   "storage_bytes": 218328640,
   "storage_human": "218 MB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-350M-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

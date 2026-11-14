@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/LFM2.5-VL-3B-gptq-mlx-jang",
   "slug": "roman220220-lfm2-5-vl-3b-gptq-mlx-jang",
   "author": "roman220220",
@@ -37,6 +37,7 @@
   "parameters_human": "3.12B",
   "storage_bytes": 2381920886,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-3B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

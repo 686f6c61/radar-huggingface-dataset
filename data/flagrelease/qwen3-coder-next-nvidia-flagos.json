@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlagRelease/Qwen3-Coder-Next-nvidia-FlagOS",
   "slug": "flagrelease-qwen3-coder-next-nvidia-flagos",
   "author": "FlagRelease",
@@ -23,14 +23,19 @@
   "parameters_human": "79.67B",
   "storage_bytes": 159358031480,
   "storage_human": "159.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T09:48:11.261Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

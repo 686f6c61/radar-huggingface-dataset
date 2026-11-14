@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
   "slug": "openmoss-team-moss-transcribe-diarize",
   "author": "OpenMOSS-Team",
@@ -45,14 +45,19 @@
   "parameters_human": "908.5M",
   "storage_bytes": 3657073722,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

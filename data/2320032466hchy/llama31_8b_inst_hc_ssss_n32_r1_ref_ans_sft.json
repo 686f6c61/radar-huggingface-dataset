@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "2320032466hchy/llama31_8b_inst_hc_ssss_n32_r1_ref_ans_sft",
   "slug": "2320032466hchy-llama31_8b_inst_hc_ssss_n32_r1_ref_ans_sft",
   "author": "2320032466hchy",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 16077774057,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

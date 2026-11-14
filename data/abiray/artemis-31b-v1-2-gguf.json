@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/Artemis-31B-v1.2-GGUF",
   "slug": "abiray-artemis-31b-v1-2-gguf",
   "author": "Abiray",
@@ -34,14 +34,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 133819757888,
   "storage_human": "133.8 GB",
+  "context_length": 262144,
   "base_model": "TheDrummer/Artemis-31B-v1.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T02:07:24.753Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

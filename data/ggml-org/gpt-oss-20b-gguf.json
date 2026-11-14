@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/gpt-oss-20b-GGUF",
   "slug": "ggml-org-gpt-oss-20b-gguf",
   "author": "ggml-org",
@@ -29,14 +29,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 38972774336,
   "storage_human": "39.0 GB",
+  "context_length": 131072,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

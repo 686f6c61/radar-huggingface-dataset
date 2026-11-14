@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Qwen3-Next-80B-A3B-Instruct-mic",
   "slug": "huggingface-mic-qwen3-next-80b-a3b-instruct-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "19.7M",
   "storage_bytes": 92138734,
   "storage_human": "92 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

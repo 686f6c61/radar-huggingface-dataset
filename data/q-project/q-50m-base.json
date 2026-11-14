@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q-project/Q-50M-Base",
   "slug": "q-project-q-50m-base",
   "author": "q-project",
@@ -39,14 +39,19 @@
   "parameters_human": "50.9M",
   "storage_bytes": 203527584,
   "storage_human": "204 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

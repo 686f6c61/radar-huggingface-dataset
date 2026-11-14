@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stanthegorilla/S1-mini-Q8_0-GGUF",
   "slug": "stanthegorilla-s1-mini-q8_0-gguf",
   "author": "stanthegorilla",
@@ -35,14 +35,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 1440702496,
   "storage_human": "1.4 GB",
+  "context_length": 40960,
   "base_model": "superwhisper/s1-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "stanthegorilla/S1-mini-Q8_0-Q6_K-GGUF",
+  "renamed_at": "2026-11-11T07:37:21.981Z",
   "benchmarks": [],
   "sources": [
     {

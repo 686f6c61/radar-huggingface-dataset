@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/Llama-3.3-70B-Instruct-abliterated-8bit-mlx",
   "slug": "divinetribe-llama-3-3-70b-instruct-abliterated-8bit-mlx",
   "author": "divinetribe",
@@ -60,6 +60,7 @@
   "parameters_human": "70.55B",
   "storage_bytes": 74981972506,
   "storage_human": "75.0 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Llama-3.3-70B-Instruct-abliterated",
   "formats": [
     "mlx",
@@ -67,8 +68,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

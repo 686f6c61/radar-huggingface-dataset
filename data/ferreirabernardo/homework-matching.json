@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ferreirabernardo/homework-matching",
   "slug": "ferreirabernardo-homework-matching",
   "author": "Ferreirabernardo",
@@ -26,14 +26,19 @@
   "parameters_human": "49600",
   "storage_bytes": 198880,
   "storage_human": "198880 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Himee1/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
   "slug": "himee1-glm-5-3-uncensored-exl3-3-0bpw",
   "author": "Himee1",
@@ -33,14 +33,19 @@
   "parameters_human": "146.31B",
   "storage_bytes": 292765481402,
   "storage_human": "292.8 GB",
+  "context_length": null,
   "base_model": "dealignai/GLM-5.3-UNCENSORED-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

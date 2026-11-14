@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2",
   "slug": "open-inference-kimi-k3-w4a8-k512-densechannel-gptq-cal128-v2",
   "author": "open-inference",
@@ -31,14 +31,19 @@
   "parameters_human": "2779.93B",
   "storage_bytes": 1415618154840,
   "storage_human": "1415.6 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3, open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meetingof/alexisveri-Q8_0-GGUF",
   "slug": "meetingof-alexisveri-q8_0-gguf",
   "author": "meetingof",
@@ -34,14 +34,19 @@
   "parameters_human": "41.9M",
   "storage_bytes": 65239520,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": "meetingof/alexisveri",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2",
   "slug": "cseti-ltx2-3-22b_ic-lora-crossview-warp_v2",
   "author": "Cseti",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 351686780,
   "storage_human": "352 MB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

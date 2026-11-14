@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Czs-HF/microduck-sprint-hc5-table",
   "slug": "czs-hf-microduck-sprint-hc5-table",
   "author": "Czs-HF",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 797140,
   "storage_human": "797140 B",
+  "context_length": null,
   "base_model": "suraj-phanindra/microduck-sprint-hc5-aifund",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:26:32.889Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

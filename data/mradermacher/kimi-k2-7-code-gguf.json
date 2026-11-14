@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kimi-K2.7-Code-GGUF",
   "slug": "mradermacher-kimi-k2-7-code-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "471.1M",
   "storage_bytes": 3590797910208,
   "storage_human": "3590.8 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K2.7-Code",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

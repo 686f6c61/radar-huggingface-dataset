@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrysh/qwen3.5-4b-prune_depth_30",
   "slug": "mrysh-qwen3-5-4b-prune_depth_30",
   "author": "mrysh",
@@ -28,14 +28,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 6183931253,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

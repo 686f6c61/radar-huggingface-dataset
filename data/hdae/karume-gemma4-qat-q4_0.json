@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hdae/karume-gemma4-qat-q4_0",
   "slug": "hdae-karume-gemma4-qat-q4_0",
   "author": "hdae",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 29823189118,
   "storage_human": "29.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it, google/gemma-4-E2B-it-qat-q4_0-unquantized, google/gemma-4-E4B-it, google/gemma-4-E4B-it-qat-q4_0-unquantized, google/gemma-4-12B-it, google/gemma-4-12B-it-qat-q4_0-unquantized, google/gemma-4-26B-A4B-it, google/gemma-4-26B-A4B-it-qat-q4_0-unquantized, google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant, google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant, google/gemma-4-12B-it-qat-q4_0-unquantized-assistant",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hdae/karume-gemma4-qat",
+  "renamed_at": "2026-11-11T05:31:59.020Z",
   "benchmarks": [],
   "sources": []
 }

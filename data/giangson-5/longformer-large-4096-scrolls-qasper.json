@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GiangSon-5/longformer-large-4096-scrolls-qasper",
   "slug": "giangson-5-longformer-large-4096-scrolls-qasper",
   "author": "GiangSon-5",
@@ -41,14 +41,19 @@
   "parameters_human": "433.6M",
   "storage_bytes": 3469949147,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T02:56:57.612Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

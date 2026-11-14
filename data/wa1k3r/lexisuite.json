@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wa1k3r/LexiSuite",
   "slug": "wa1k3r-lexisuite",
   "author": "Wa1k3r",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 6280349321,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

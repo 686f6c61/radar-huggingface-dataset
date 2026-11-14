@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Llama3.1-MOE-4X8B-Gated-IQ-Multi-Tier-COGITO-Deep-Reasoning-32B-GGUF",
   "slug": "davidau-llama3-1-moe-4x8b-gated-iq-multi-tier-cogito-deep-reasoning-32b-gguf",
   "author": "DavidAU",
@@ -102,14 +102,19 @@
   "parameters_human": "24.94B",
   "storage_bytes": 139978126582,
   "storage_human": "140.0 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

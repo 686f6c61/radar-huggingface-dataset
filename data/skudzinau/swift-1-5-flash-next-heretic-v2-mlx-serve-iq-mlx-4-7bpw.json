@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skudzinau/Swift-1.5-Flash-Next-Heretic-V2-MLX-Serve-iQ-MLX-4.7bpw",
   "slug": "skudzinau-swift-1-5-flash-next-heretic-v2-mlx-serve-iq-mlx-4-7bpw",
   "author": "skudzinau",
@@ -43,6 +43,7 @@
   "parameters_human": "133.20B",
   "storage_bytes": 107323395517,
   "storage_human": "107.3 GB",
+  "context_length": null,
   "base_model": "jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

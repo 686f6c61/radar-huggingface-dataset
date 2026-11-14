@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phi-lab-rice/GRADE",
   "slug": "phi-lab-rice-grade",
   "author": "phi-lab-rice",
@@ -23,6 +23,7 @@
   "parameters_human": null,
   "storage_bytes": 17276885407,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

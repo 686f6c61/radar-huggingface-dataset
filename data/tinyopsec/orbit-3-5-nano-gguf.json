@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Orbit-3.5-Nano-GGUF",
   "slug": "tinyopsec-orbit-3-5-nano-gguf",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 26290423808,
   "storage_human": "26.3 GB",
+  "context_length": 131072,
   "base_model": "OpenPathAI/Orbit-3.5-Nano",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

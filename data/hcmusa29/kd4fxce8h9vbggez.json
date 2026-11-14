@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hcmusa29/KD4FxCe8h9VbgGeZ",
   "slug": "hcmusa29-kd4fxce8h9vbggez",
   "author": "hcmusa29",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 332515290336,
   "storage_human": "332.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

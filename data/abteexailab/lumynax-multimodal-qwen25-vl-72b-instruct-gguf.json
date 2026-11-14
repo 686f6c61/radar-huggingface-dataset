@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbteeXAILab/lumynax-multimodal-qwen25-vl-72b-instruct-gguf",
   "slug": "abteexailab-lumynax-multimodal-qwen25-vl-72b-instruct-gguf",
   "author": "AbteeXAILab",
@@ -46,14 +46,19 @@
   "parameters_human": "72.71B",
   "storage_bytes": 49577522080,
   "storage_human": "49.6 GB",
+  "context_length": 128000,
   "base_model": "Qwen/Qwen2.5-VL-72B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

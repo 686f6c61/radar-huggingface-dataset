@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/DeepSeek-V3-0.86B-MTP-PR3225",
   "slug": "inference-optimization-deepseek-v3-0-86b-mtp-pr3225",
   "author": "inference-optimization",
@@ -35,14 +35,19 @@
   "parameters_human": "860.9M",
   "storage_bytes": 1722133272,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "inference-optimization/DeepSeek-V3-0.86B-MTP",
+  "renamed_at": "2026-11-14T06:25:35.233Z",
   "benchmarks": [],
   "sources": [
     {

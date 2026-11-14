@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sambatapas/dacq-pii-1700m-261105",
   "slug": "sambatapas-dacq-pii-1700m-261105",
   "author": "sambatapas",
@@ -30,14 +30,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3460965456,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "BidirLM/BidirLM-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

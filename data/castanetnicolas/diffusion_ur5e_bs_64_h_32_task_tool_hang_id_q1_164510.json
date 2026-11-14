@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castanetnicolas/diffusion_UR5e_BS_64_H_32_TASK_tool_hang_ID_q1_164510",
   "slug": "castanetnicolas-diffusion_ur5e_bs_64_h_32_task_tool_hang_id_q1_164510",
   "author": "castanetnicolas",
@@ -28,14 +28,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1112126076,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

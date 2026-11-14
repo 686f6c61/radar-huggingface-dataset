@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "runwayml/praxis-1-droid-nvfp4",
   "slug": "runwayml-praxis-1-droid-nvfp4",
   "author": "runwayml",
@@ -34,14 +34,19 @@
   "parameters_human": "27.20B",
   "storage_bytes": 54404815648,
   "storage_human": "54.4 GB",
+  "context_length": null,
   "base_model": "runwayml/praxis-1-droid",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

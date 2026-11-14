@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agnosticeng/Qwen3.8-Flash-Next-4bit",
   "slug": "agnosticeng-qwen3-8-flash-next-4bit",
   "author": "agnosticeng",
@@ -32,6 +32,7 @@
   "parameters_human": "128.35B",
   "storage_bytes": 112324558560,
   "storage_human": "112.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

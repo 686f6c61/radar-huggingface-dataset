@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dopaemon/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-uncensored-heretic-oQ4e",
   "slug": "dopaemon-gemma-4-12b-agentic-fable5-composer2-5-v2-3-5x-tau2-uncensored-heretic-oq4e",
   "author": "dopaemon",
@@ -27,6 +27,7 @@
   "parameters_human": "11.96B",
   "storage_bytes": 7109961625,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

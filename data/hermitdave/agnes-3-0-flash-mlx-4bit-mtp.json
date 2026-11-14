@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/Agnes-3.0-Flash-MLX-4bit-MTP",
   "slug": "hermitdave-agnes-3-0-flash-mlx-4bit-mtp",
   "author": "hermitdave",
@@ -40,6 +40,7 @@
   "parameters_human": "32.21B",
   "storage_bytes": 19393386756,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "Agnes-AI/Agnes-3.0-Flash",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

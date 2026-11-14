@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fafsaf1/flowhmr-0.46B",
   "slug": "fafsaf1-flowhmr-0-46b",
   "author": "fafsaf1",
@@ -17,19 +17,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 54,
+  "likes": 56,
   "downloads_30d": 2479,
-  "trending_score": 38,
+  "trending_score": 40,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 3683402890,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

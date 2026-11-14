@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rickychen01/aigf-gemma4-12b-parenbreak-merged",
   "slug": "rickychen01-aigf-gemma4-12b-parenbreak-merged",
   "author": "rickychen01",
@@ -36,14 +36,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951719188,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "llmfan46/gemma-4-12B-it-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:18:17.221Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

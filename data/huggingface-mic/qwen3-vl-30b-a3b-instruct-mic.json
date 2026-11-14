@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Qwen3-VL-30B-A3B-Instruct-mic",
   "slug": "huggingface-mic-qwen3-vl-30b-a3b-instruct-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "21.0M",
   "storage_bytes": 84051024,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

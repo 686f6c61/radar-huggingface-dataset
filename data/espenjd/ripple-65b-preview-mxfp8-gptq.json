@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EspenJD/Ripple-65B-Preview-MXFP8-GPTQ",
   "slug": "espenjd-ripple-65b-preview-mxfp8-gptq",
   "author": "EspenJD",
@@ -46,14 +46,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 67804467056,
   "storage_human": "67.8 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

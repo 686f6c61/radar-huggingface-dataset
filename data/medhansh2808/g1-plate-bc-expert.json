@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "medhansh2808/g1-plate-bc-expert",
   "slug": "medhansh2808-g1-plate-bc-expert",
   "author": "medhansh2808",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 57474452,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

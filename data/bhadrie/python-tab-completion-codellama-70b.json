@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bhadrie/Python-Tab-Completion-CodeLlama-70b",
   "slug": "bhadrie-python-tab-completion-codellama-70b",
   "author": "bhadrie",
@@ -31,14 +31,19 @@
   "parameters_human": "68.98B",
   "storage_bytes": 417715385673,
   "storage_human": "417.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CodelenAI/Python-Tab-Completion-CodeLlama-70b",
+  "renamed_at": "2026-11-11T04:41:27.431Z",
   "benchmarks": [],
   "sources": [
     {

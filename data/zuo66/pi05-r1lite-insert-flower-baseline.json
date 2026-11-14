@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZUO66/pi05-r1lite-insert-flower-baseline",
   "slug": "zuo66-pi05-r1lite-insert-flower-baseline",
   "author": "ZUO66",
@@ -33,14 +33,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 14471430133,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

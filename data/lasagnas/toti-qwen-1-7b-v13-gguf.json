@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LasagnaS/toti-qwen-1.7b-v13-gguf",
   "slug": "lasagnas-toti-qwen-1-7b-v13-gguf",
   "author": "LasagnaS",
@@ -30,14 +30,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1107409440,
   "storage_human": "1.1 GB",
+  "context_length": 40960,
   "base_model": "unsloth/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

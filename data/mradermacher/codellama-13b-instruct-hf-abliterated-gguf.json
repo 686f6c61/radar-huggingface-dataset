@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/CodeLlama-13b-Instruct-hf-abliterated-GGUF",
   "slug": "mradermacher-codellama-13b-instruct-hf-abliterated-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "13.02B",
   "storage_bytes": 88803225888,
   "storage_human": "88.8 GB",
+  "context_length": 16384,
   "base_model": "huihui-ai/CodeLlama-13b-Instruct-hf-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

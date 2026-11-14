@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lixing-Li/mambarl-m2-grpo-512",
   "slug": "lixing-li-mambarl-m2-grpo-512",
   "author": "Lixing-Li",
@@ -29,14 +29,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 10810524208,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "AntonV/mamba2-2.7b-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

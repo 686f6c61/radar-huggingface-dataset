@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AZH04/SmolLM2-360M-base-gsm8k-boxed-sft-ep9",
   "slug": "azh04-smollm2-360m-base-gsm8k-boxed-sft-ep9",
   "author": "AZH04",
@@ -31,14 +31,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 1447317080,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

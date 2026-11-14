@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aufklarer/VAP-OTO-CoreML",
   "slug": "aufklarer-vap-oto-coreml",
   "author": "aufklarer",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 39144279,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": "viks66/VAP_checkpoints",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

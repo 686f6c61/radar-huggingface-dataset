@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danyalmalik/Nanbeige4.3-33B-IQ2_M-ONNX-WebGPU",
   "slug": "danyalmalik-nanbeige4-3-33b-iq2_m-onnx-webgpu",
   "author": "danyalmalik",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 12233947088,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

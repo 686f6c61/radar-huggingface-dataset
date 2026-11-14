@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "carloslfu/Qwen3.8-Flash-Next-MLX-4bit",
   "slug": "carloslfu-qwen3-8-flash-next-mlx-4bit",
   "author": "carloslfu",
@@ -30,6 +30,7 @@
   "parameters_human": "177.39B",
   "storage_bytes": 144546559725,
   "storage_human": "144.5 GB",
+  "context_length": null,
   "base_model": "pipenetwork/Qwen3.8-Flash-Next-MLX-4bit",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

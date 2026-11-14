@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdminReal/NexusCoder",
   "slug": "adminreal-nexuscoder",
   "author": "AdminReal",
@@ -34,14 +34,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 5428165080,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T12:10:16.606Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

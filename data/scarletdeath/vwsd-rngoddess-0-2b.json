@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scarletdeath/VWSD-RNGoddess-0.2B",
   "slug": "scarletdeath-vwsd-rngoddess-0-2b",
   "author": "scarletdeath",
@@ -28,14 +28,19 @@
   "parameters_human": "233.8M",
   "storage_bytes": 935386328,
   "storage_human": "935 MB",
+  "context_length": null,
   "base_model": "skytnt/midi-model-tv2o-medium",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

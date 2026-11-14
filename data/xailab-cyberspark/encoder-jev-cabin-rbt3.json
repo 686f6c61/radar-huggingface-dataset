@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XAILab-CyberSpark/encoder-jev-cabin-rbt3",
   "slug": "xailab-cyberspark-encoder-jev-cabin-rbt3",
   "author": "XAILab-CyberSpark",
@@ -35,14 +35,19 @@
   "parameters_human": "47.1M",
   "storage_bytes": 188479692,
   "storage_human": "188 MB",
+  "context_length": null,
   "base_model": "hfl/rbt3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OpenSparX/OAK-Decision-encoder-cabin-rbt3",
+  "renamed_at": "2026-11-14T04:44:03.663Z",
   "benchmarks": [],
   "sources": []
 }

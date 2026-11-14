@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "klh23/gemma-4-12B-it-abliterated-uncensored-GGUF",
   "slug": "klh23-gemma-4-12b-it-abliterated-uncensored-gguf",
   "author": "klh23",
@@ -40,14 +40,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 83730095936,
   "storage_human": "83.7 GB",
+  "context_length": 131072,
   "base_model": "OpenYourMind/gemma-4-12B-it-abliterated-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

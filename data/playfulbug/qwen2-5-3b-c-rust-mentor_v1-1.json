@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Playfulbug/Qwen2.5-3B-C-Rust-Mentor_v1.1",
   "slug": "playfulbug-qwen2-5-3b-c-rust-mentor_v1-1",
   "author": "Playfulbug",
@@ -28,6 +28,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 8113251782,
   "storage_human": "8.1 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:05:13.104Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

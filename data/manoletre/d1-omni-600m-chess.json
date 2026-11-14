@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manoletre/d1-omni-600M-chess",
   "slug": "manoletre-d1-omni-600m-chess",
   "author": "manoletre",
@@ -29,6 +29,7 @@
   "parameters_human": "380.7M",
   "storage_bytes": 3342450376,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-omni-600M",
   "formats": [
     "onnx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

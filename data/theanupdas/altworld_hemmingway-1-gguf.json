@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theanupdas/Altworld_Hemmingway-1-GGUF",
   "slug": "theanupdas-altworld_hemmingway-1-gguf",
   "author": "theanupdas",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 444919474592,
   "storage_human": "444.9 GB",
+  "context_length": 262144,
   "base_model": "Altworld/Hemmingway-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

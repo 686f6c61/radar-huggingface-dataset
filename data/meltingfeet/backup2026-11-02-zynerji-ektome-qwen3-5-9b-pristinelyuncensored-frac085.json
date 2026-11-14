@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085",
   "slug": "meltingfeet-backup2026-11-02-zynerji-ektome-qwen3-5-9b-pristinelyuncensored-frac085",
   "author": "meltingfeet",
@@ -29,14 +29,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839711717,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

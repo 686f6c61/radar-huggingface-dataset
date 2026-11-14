@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furiosa-ai/gpt-oss-20b",
   "slug": "furiosa-ai-gpt-oss-20b",
   "author": "furiosa-ai",
@@ -36,14 +36,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 50621799228,
   "storage_human": "50.6 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "faxenoff/code-daemon-embed-v1",
   "slug": "faxenoff-code-daemon-embed-v1",
   "author": "faxenoff",
@@ -41,6 +41,7 @@
   "parameters_human": "46.8M",
   "storage_bytes": 22428230183,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-base, Alibaba-NLP/gte-modernbert-base, google/embeddinggemma-2, Qwen/Qwen3-Reranker-4B",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

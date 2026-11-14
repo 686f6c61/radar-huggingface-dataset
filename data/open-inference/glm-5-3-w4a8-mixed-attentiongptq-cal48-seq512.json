@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-inference/GLM-5.3-W4A8-Mixed-AttentionGPTQ-Cal48-Seq512",
   "slug": "open-inference-glm-5-3-w4a8-mixed-attentiongptq-cal48-seq512",
   "author": "open-inference",
@@ -30,14 +30,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 405487101989,
   "storage_human": "405.5 GB",
+  "context_length": null,
   "base_model": "gpustack/GLM-5.3-W4A8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

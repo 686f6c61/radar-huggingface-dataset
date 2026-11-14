@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GermannM/kenga-prophet-m5",
   "slug": "germannm-kenga-prophet-m5",
   "author": "GermannM",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 924,
   "storage_human": "924 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

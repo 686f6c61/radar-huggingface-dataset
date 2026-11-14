@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Phi-4-Reasoning-Vision-15B-ROCmFP4-GGUF",
   "slug": "kingjones777-phi-4-reasoning-vision-15b-rocmfp4-gguf",
   "author": "kingjones777",
@@ -42,14 +42,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 39929224864,
   "storage_human": "39.9 GB",
+  "context_length": 32768,
   "base_model": "microsoft/Phi-4-reasoning-vision-15B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

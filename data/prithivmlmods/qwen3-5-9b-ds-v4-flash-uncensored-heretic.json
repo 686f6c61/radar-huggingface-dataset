@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/Qwen3.5-9B-DS-v4-Flash-uncensored-heretic",
   "slug": "prithivmlmods-qwen3-5-9b-ds-v4-flash-uncensored-heretic",
   "author": "prithivMLmods",
@@ -49,14 +49,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326293511,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

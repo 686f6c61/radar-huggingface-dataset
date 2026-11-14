@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WC-ECL/embeddinggemma-2-onnx-int8",
   "slug": "wc-ecl-embeddinggemma-2-onnx-int8",
   "author": "WC-ECL",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 541781770,
   "storage_human": "542 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

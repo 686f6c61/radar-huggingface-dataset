@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Danzelus/klein",
   "slug": "danzelus-klein",
   "author": "Danzelus",
@@ -22,12 +22,17 @@
   "parameters_human": "3.88B",
   "storage_bytes": 44809185615,
   "storage_human": "44.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Danzelus/Bright_Light",
+  "renamed_at": "2026-11-13T02:42:10.466Z",
   "benchmarks": [],
   "sources": [
     {

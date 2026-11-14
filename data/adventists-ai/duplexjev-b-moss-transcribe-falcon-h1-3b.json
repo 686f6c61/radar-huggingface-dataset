@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adventists-ai/DuplexJev-B-MOSS-Transcribe-Falcon-H1-3B",
   "slug": "adventists-ai-duplexjev-b-moss-transcribe-falcon-h1-3b",
   "author": "adventists-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "38.8M",
   "storage_bytes": 77615576,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon-H1-3B-Instruct, OpenMOSS-Team/MOSS-Transcribe-Diarize",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "adventists-ai-research/DuplexJev-B-MOSS-Transcribe-Falcon-H1-3B",
+  "renamed_at": "2026-11-14T04:53:14.346Z",
   "benchmarks": [],
   "sources": [
     {

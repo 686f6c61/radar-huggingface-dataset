@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hendrimardani/fine-tuned-model-indoensian-2",
   "slug": "hendrimardani-fine-tuned-model-indoensian-2",
   "author": "hendrimardani",
@@ -42,14 +42,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 60938985689,
   "storage_human": "60.9 GB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.1-8B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hendrimardani/fine-tuned-model-indonesian-2",
+  "renamed_at": "2026-11-11T05:32:37.105Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joe57005/distil-lfm25-home-assistant-Q4_K_M-GGUF",
   "slug": "joe57005-distil-lfm25-home-assistant-q4_k_m-gguf",
   "author": "Joe57005",
@@ -39,14 +39,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 229309888,
   "storage_human": "229 MB",
+  "context_length": 128000,
   "base_model": "distil-labs/distil-lfm25-home-assistant",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

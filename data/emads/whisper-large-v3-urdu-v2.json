@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emads/whisper-large-v3-urdu-v2",
   "slug": "emads-whisper-large-v3-urdu-v2",
   "author": "emads",
@@ -38,14 +38,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6174133209,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T10:19:06.778Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

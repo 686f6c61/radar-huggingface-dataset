@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tokiers/potion-base-4M",
   "slug": "tokiers-potion-base-4m",
   "author": "tokiers",
@@ -31,6 +31,7 @@
   "parameters_human": "3.8M",
   "storage_bytes": 156454277,
   "storage_human": "156 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

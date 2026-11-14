@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "duclvQ/vi-laya",
   "slug": "duclvq-vi-laya",
   "author": "duclvQ",
@@ -34,14 +34,19 @@
   "parameters_human": "321.9M",
   "storage_bytes": 678198712,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T03:11:57.609Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

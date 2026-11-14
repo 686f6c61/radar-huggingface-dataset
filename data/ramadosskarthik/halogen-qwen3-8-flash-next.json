@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ramadosskarthik/halogen-qwen3.8-flash-next",
   "slug": "ramadosskarthik-halogen-qwen3-8-flash-next",
   "author": "ramadosskarthik",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 307059367348,
   "storage_human": "307.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:20:26.360Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

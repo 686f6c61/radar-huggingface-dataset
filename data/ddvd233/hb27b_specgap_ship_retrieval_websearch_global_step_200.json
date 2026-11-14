@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ddvd233/hb27b_specgap_ship_retrieval_websearch_global_step_200",
   "slug": "ddvd233-hb27b_specgap_ship_retrieval_websearch_global_step_200",
   "author": "ddvd233",
@@ -23,14 +23,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733598053,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ddvd233/Qwen3.6-RRI-27B",
+  "renamed_at": "2026-11-11T04:59:41.285Z",
   "benchmarks": [],
   "sources": [
     {

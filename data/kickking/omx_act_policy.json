@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kickking/omx_act_policy",
   "slug": "kickking-omx_act_policy",
   "author": "kickking",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 620101880,
   "storage_human": "620 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T06:09:37.680Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

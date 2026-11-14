@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.125-s42",
   "slug": "cisco1963-llmplasticity-nl_zh_instant_8-d0-5-c0-9-r0-125-s42",
   "author": "Cisco1963",
@@ -23,14 +23,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 13440029570,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T05:06:59.029Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

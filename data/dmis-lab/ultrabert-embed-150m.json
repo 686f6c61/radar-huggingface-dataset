@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dmis-lab/UltraBERT-Embed-150M",
   "slug": "dmis-lab-ultrabert-embed-150m",
   "author": "dmis-lab",
@@ -46,14 +46,19 @@
   "parameters_human": "151.0M",
   "storage_bytes": 608220914,
   "storage_human": "608 MB",
+  "context_length": null,
   "base_model": "dmis-lab/UltraBERT-150M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
   "slug": "xtools-at-deepseek-v4-pro-qwen3-5-4b-uncensored-heretic",
   "author": "xtools-at",
@@ -47,13 +47,14 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 80,
+  "likes": 81,
   "downloads_30d": 15102,
   "trending_score": 49,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
   "storage_bytes": 9359800142,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -61,8 +62,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

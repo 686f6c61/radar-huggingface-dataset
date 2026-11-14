@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WithinUsAI/Opus4.7-GODs.Ghost.Codex-4B.GGuF",
   "slug": "withinusai-opus4-7-gods-ghost-codex-4b-gguf",
   "author": "WithinUsAI",
@@ -67,14 +67,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 10298684320,
   "storage_human": "10.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B, unsloth/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ITLL/Opus4.7-GODs.Ghost.Codex-4B.GGuF",
+  "renamed_at": "2026-11-14T04:43:12.676Z",
   "benchmarks": [],
   "sources": []
 }

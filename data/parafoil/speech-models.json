@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Parafoil/speech-models",
   "slug": "parafoil-speech-models",
   "author": "Parafoil",
@@ -33,6 +33,7 @@
   "parameters_human": "99.3M",
   "storage_bytes": 1801834906,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3, nvidia/Nemotron-3-Diarization, urchade/gliner_multi_pii-v1",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

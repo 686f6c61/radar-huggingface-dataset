@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "musatur/Alpona-1.0-9B-v3",
   "slug": "musatur-alpona-1-0-9b-v3",
   "author": "musatur",
@@ -38,14 +38,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 125386437172,
   "storage_human": "125.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T05:55:27.447Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

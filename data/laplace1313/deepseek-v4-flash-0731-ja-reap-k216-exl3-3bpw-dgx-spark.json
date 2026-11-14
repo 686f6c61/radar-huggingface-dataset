@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Laplace1313/DeepSeek-V4-Flash-0731-JA-REAP-K216-EXL3-3bpw-DGX-Spark",
   "slug": "laplace1313-deepseek-v4-flash-0731-ja-reap-k216-exl3-3bpw-dgx-spark",
   "author": "Laplace1313",
@@ -39,14 +39,19 @@
   "parameters_human": "59.97B",
   "storage_bytes": 109331914278,
   "storage_human": "109.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

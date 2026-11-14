@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LSW142857/Qwen3.5-9B-OPSD-medium-orderseed43-lr1e-6-20261111",
   "slug": "lsw142857-qwen3-5-9b-opsd-medium-orderseed43-lr1e-6-20261111",
   "author": "LSW142857",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 78301838438,
   "storage_human": "78.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

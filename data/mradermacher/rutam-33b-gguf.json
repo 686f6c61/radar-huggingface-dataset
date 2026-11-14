@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Rutam-33B-GGUF",
   "slug": "mradermacher-rutam-33b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "33.11B",
   "storage_bytes": 227221720000,
   "storage_human": "227.2 GB",
+  "context_length": 524288,
   "base_model": "Anvaya-sh/Rutam-33B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

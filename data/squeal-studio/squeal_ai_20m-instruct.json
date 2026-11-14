@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Squeal-Studio/squeal_ai_20m-instruct",
   "slug": "squeal-studio-squeal_ai_20m-instruct",
   "author": "Squeal-Studio",
@@ -36,6 +36,7 @@
   "parameters_human": "20.1M",
   "storage_bytes": 181707617,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": "Squeal-Studio/squeal_ai_20m-base",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

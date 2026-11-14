@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/whisper-large-v2",
   "slug": "jinstudio-whisper-large-v2",
   "author": "Jinstudio",
@@ -230,14 +230,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 24694839901,
   "storage_human": "24.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T08:40:39.612Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

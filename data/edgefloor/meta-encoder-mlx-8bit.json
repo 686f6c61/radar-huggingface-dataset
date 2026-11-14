@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edgefloor/meta-encoder-mlx-8bit",
   "slug": "edgefloor-meta-encoder-mlx-8bit",
   "author": "edgefloor",
@@ -34,6 +34,7 @@
   "parameters_human": "29.78B",
   "storage_bytes": 33469111245,
   "storage_human": "33.5 GB",
+  "context_length": null,
   "base_model": "facebook/meta-encoder",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ronin48LLC/Lamarck-Qwen3.8-27B-abliterated",
   "slug": "ronin48llc-lamarck-qwen3-8-27b-abliterated",
   "author": "Ronin48LLC",
@@ -30,6 +30,7 @@
   "parameters_human": "116.7M",
   "storage_bytes": 700655688,
   "storage_human": "701 MB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

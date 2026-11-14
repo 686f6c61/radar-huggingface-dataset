@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fyb1214/Huihui-Qwen3.8-27B-Abliterated-Ternary-Bonsai-NInfer",
   "slug": "fyb1214-huihui-qwen3-8-27b-abliterated-ternary-bonsai-ninfer",
   "author": "fyb1214",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 30429454336,
   "storage_human": "30.4 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fyb1214/Huihui-Qwen3.8-27B-Abliterated-Ternary-Bonsai-2-NInfer",
+  "renamed_at": "2026-11-11T05:22:47.514Z",
   "benchmarks": [],
   "sources": [
     {

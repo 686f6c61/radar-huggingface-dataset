@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/granite-4.2-8b-oQ6e-bf16-MLX",
   "slug": "dicksondickson-granite-4-2-8b-oq6e-bf16-mlx",
   "author": "dicksondickson",
@@ -34,6 +34,7 @@
   "parameters_human": "8.79B",
   "storage_bytes": 14726691346,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

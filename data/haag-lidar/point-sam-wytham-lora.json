@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haag-lidar/point-sam-wytham-lora",
   "slug": "haag-lidar-point-sam-wytham-lora",
   "author": "haag-lidar",
@@ -31,14 +31,19 @@
   "parameters_human": "311.0M",
   "storage_bytes": 1244245600,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "yuchen0187/Point-SAM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

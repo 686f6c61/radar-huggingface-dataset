@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xiaoyuchen1/Qwen3-1.7B-OPD-fwdKL-from-Qwen3-8B-GRPO",
   "slug": "xiaoyuchen1-qwen3-1-7b-opd-fwdkl-from-qwen3-8b-grpo",
   "author": "xiaoyuchen1",
@@ -36,14 +36,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452608230,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

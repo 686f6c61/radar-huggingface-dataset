@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TokyoEye/rswan-llm-lora",
   "slug": "tokyoeye-rswan-llm-lora",
   "author": "TokyoEye",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1978710086,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

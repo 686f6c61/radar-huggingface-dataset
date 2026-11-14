@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrutalCaesar/dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam",
   "slug": "brutalcaesar-dpt_so101_cubcyl_recovery_tp48_unreg_emb256_3cam",
   "author": "BrutalCaesar",
@@ -28,14 +28,19 @@
   "parameters_human": "42.6M",
   "storage_bytes": 170519768,
   "storage_human": "171 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

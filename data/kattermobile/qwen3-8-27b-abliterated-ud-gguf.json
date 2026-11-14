@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KatterMobile/Qwen3.8-27B-abliterated-UD-GGUF",
   "slug": "kattermobile-qwen3-8-27b-abliterated-ud-gguf",
   "author": "KatterMobile",
@@ -42,14 +42,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 24909883232,
   "storage_human": "24.9 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.8-27B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

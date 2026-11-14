@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Baekpica/MiniMax-M3.1-Flash-VQ-GGUF",
   "slug": "baekpica-minimax-m3-1-flash-vq-gguf",
   "author": "Baekpica",
@@ -60,14 +60,19 @@
   "parameters_human": "11.84B",
   "storage_bytes": 115573079799,
   "storage_human": "115.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

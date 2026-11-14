@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wren6991/glm-5.3-flash-oQ4.5e-mtp",
   "slug": "wren6991-glm-5-3-flash-oq4-5e-mtp",
   "author": "wren6991",
@@ -34,6 +34,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 199349526104,
   "storage_human": "199.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

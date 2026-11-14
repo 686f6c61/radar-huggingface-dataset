@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YuCeong-May/TS-ASR-weights",
   "slug": "yuceong-may-ts-asr-weights",
   "author": "YuCeong-May",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2589529174,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "YuCeong-May/Text-Cue-Guided-TS-ASR-Qwen",
+  "renamed_at": "2026-11-11T04:14:19.788Z",
   "benchmarks": [],
   "sources": []
 }

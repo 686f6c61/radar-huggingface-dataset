@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aliRafik/Ministral_3_8B_Instruct_LaTeX_OCR_finetuned_16bit",
   "slug": "alirafik-ministral_3_8b_instruct_latex_ocr_finetuned_16bit",
   "author": "aliRafik",
@@ -35,14 +35,19 @@
   "parameters_human": "8.92B",
   "storage_bytes": 17853201302,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "unsloth/Ministral-3-8B-Instruct-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

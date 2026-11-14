@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edp1096/Huihui-Gemma-4-26B-A4B-it-NVFP4",
   "slug": "edp1096-huihui-gemma-4-26b-a4b-it-nvfp4",
   "author": "edp1096",
@@ -34,14 +34,19 @@
   "parameters_human": "13.56B",
   "storage_bytes": 16455558082,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it, huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated, bg-digitalservices/Gemma-4-26B-A4B-it-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

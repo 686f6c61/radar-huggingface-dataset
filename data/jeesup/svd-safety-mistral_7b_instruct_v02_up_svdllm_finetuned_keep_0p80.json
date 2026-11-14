@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p80",
   "slug": "jeesup-svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p80",
   "author": "Jeesup",
@@ -30,14 +30,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 14526637717,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T06:30:03.317Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

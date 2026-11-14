@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jkim96/GLM-4-32B-0414-DASHQ-Q2-GGUF",
   "slug": "jkim96-glm-4-32b-0414-dashq-q2-gguf",
   "author": "jkim96",
@@ -32,14 +32,19 @@
   "parameters_human": "32.57B",
   "storage_bytes": 44028152832,
   "storage_human": "44.0 GB",
+  "context_length": 32768,
   "base_model": "zai-org/GLM-4-32B-0414",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

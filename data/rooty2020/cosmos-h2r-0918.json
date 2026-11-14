@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rooty2020/Cosmos-H2R-0918",
   "slug": "rooty2020-cosmos-h2r-0918",
   "author": "rooty2020",
@@ -35,14 +35,19 @@
   "parameters_human": "15.22B",
   "storage_bytes": 31584370110,
   "storage_human": "31.6 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T06:53:13.074Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

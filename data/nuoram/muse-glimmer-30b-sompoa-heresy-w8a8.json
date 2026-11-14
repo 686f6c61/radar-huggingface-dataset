@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuoram/Muse-Glimmer-30B-SOMPOA-heresy-W8A8",
   "slug": "nuoram-muse-glimmer-30b-sompoa-heresy-w8a8",
   "author": "nuoram",
@@ -45,14 +45,19 @@
   "parameters_human": "29.78B",
   "storage_bytes": 34440301538,
   "storage_human": "34.4 GB",
+  "context_length": null,
   "base_model": "MuXodious/Muse-Glimmer-30B-SOMPOA-heresy",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

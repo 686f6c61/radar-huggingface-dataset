@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XYETHER/SeedVR2-3B-Snapdragon-NPU",
   "slug": "xyether-seedvr2-3b-snapdragon-npu",
   "author": "XYETHER",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2191760813,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/SeedVR2-3B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

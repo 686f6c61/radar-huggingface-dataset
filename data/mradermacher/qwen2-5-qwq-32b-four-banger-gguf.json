@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2.5-QwQ-32B-Four-Banger-GGUF",
   "slug": "mradermacher-qwen2-5-qwq-32b-four-banger-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 223968823072,
   "storage_human": "224.0 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/Qwen2.5-The-Wisemen-QwQ-Deep-Tiny-Sherlock-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

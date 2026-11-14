@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peasantsmith/MiniMax-M3.1-Flash-Maya-GGUF",
   "slug": "peasantsmith-minimax-m3-1-flash-maya-gguf",
   "author": "peasantsmith",
@@ -36,6 +36,7 @@
   "parameters_human": "6144",
   "storage_bytes": 219495504090,
   "storage_human": "219.5 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

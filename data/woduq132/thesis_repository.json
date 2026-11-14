@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "woduq132/thesis_repository",
   "slug": "woduq132-thesis_repository",
   "author": "woduq132",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 734070409,
   "storage_human": "734 MB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct, FacebookAI/roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

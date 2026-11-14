@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ram20307/qwen3vl-2b-ag-hico-GGUF",
   "slug": "ram20307-qwen3vl-2b-ag-hico-gguf",
   "author": "Ram20307",
@@ -33,14 +33,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1926805824,
   "storage_human": "1.9 GB",
+  "context_length": 262144,
   "base_model": "Ram20307/qwen3vl-2b-ag-hico-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

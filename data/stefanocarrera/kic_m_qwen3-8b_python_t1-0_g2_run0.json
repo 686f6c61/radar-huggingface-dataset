@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g2_run0",
   "slug": "stefanocarrera-kic_m_qwen3-8b_python_t1-0_g2_run0",
   "author": "stefanocarrera",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 186078190,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B-Base-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

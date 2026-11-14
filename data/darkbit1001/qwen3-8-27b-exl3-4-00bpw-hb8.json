@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkbit1001/Qwen3.8-27B-exl3-4.00bpw-hb8",
   "slug": "darkbit1001-qwen3-8-27b-exl3-4-00bpw-hb8",
   "author": "darkbit1001",
@@ -32,14 +32,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 17191468661,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

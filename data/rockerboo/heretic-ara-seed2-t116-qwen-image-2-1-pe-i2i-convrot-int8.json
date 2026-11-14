@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rockerBOO/heretic-ara-seed2-t116-Qwen-Image-2.1-PE-I2I-convrot-int8",
   "slug": "rockerboo-heretic-ara-seed2-t116-qwen-image-2-1-pe-i2i-convrot-int8",
   "author": "rockerBOO",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 11913306360,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "rockerBOO/Qwen-Image-2.1-PE-I2I-heretic-ara-seed2-t116",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

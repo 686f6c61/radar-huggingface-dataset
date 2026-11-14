@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mariklolik/AraToken-Qwen3-0.6B-LEP",
   "slug": "mariklolik-aratoken-qwen3-0-6b-lep",
   "author": "mariklolik",
@@ -41,14 +41,19 @@
   "parameters_human": "730.1M",
   "storage_bytes": 1519975072,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yurvon-screamo/origa-translator-ep1",
   "slug": "yurvon-screamo-origa-translator-ep1",
   "author": "yurvon-screamo",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 96693360,
   "storage_human": "97 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-w4a16-ct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

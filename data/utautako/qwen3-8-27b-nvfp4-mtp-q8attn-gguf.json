@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "utautako/Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF",
   "slug": "utautako-qwen3-8-27b-nvfp4-mtp-q8attn-gguf",
   "author": "utautako",
@@ -40,14 +40,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 75666247680,
   "storage_human": "75.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

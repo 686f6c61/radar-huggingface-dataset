@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/DeepSeek-V4-Flash-Vision-Exp-FP8-GGUF",
   "slug": "amaimedia-deepseek-v4-flash-vision-exp-fp8-gguf",
   "author": "AMAImedia",
@@ -263,6 +263,7 @@
   "parameters_human": "304.65B",
   "storage_bytes": 319362488319,
   "storage_human": "319.4 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "gguf",
@@ -270,8 +271,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T08:55:58.997Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

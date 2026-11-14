@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.5-9B-NeoHorse1-Heretic-NOESIS-BF16-GGUF",
   "slug": "amaimedia-qwen3-5-9b-neohorse1-heretic-noesis-bf16-gguf",
   "author": "AMAImedia",
@@ -281,6 +281,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 42877028232,
   "storage_human": "42.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B, TokenRhythm/NeoHorse-1-9B",
   "formats": [
     "gguf",
@@ -288,8 +289,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

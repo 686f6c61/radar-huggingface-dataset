@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wliu62/Llama-3-8B-Instruct-QuaRot-W4A4KV4",
   "slug": "wliu62-llama-3-8b-instruct-quarot-w4a4kv4",
   "author": "wliu62",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 16072006045,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

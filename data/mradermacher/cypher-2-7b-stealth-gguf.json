@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/cypher-2-7b-stealth-GGUF",
   "slug": "mradermacher-cypher-2-7b-stealth-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146899584,
   "storage_human": "68.1 GB",
+  "context_length": 32768,
   "base_model": "TheShellMaster/cypher-2-7b-stealth",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

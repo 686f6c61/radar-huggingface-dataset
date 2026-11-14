@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-42B-A3B-Stranger-Thoughts-Deep20x-Abliterated-Uncensored",
   "slug": "davidau-qwen3-42b-a3b-stranger-thoughts-deep20x-abliterated-uncensored",
   "author": "DavidAU",
@@ -72,14 +72,19 @@
   "parameters_human": "42.37B",
   "storage_bytes": 84757673201,
   "storage_human": "84.8 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Qwen3-30B-A3B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

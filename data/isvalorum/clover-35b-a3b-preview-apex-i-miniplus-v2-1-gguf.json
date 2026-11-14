@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Clover-35B-A3B-Preview-APEX-I-MiniPlus-V2.1-GGUF",
   "slug": "isvalorum-clover-35b-a3b-preview-apex-i-miniplus-v2-1-gguf",
   "author": "IsValorum",
@@ -72,14 +72,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 14754269120,
   "storage_human": "14.8 GB",
+  "context_length": 131072,
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoiceNet/voiceclap-large",
   "slug": "voicenet-voiceclap-large",
   "author": "VoiceNet",
@@ -38,14 +38,19 @@
   "parameters_human": "8.93B",
   "storage_bytes": 36020569935,
   "storage_human": "36.0 GB",
+  "context_length": null,
   "base_model": "LCO-Embedding/LCO-Embedding-Omni-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

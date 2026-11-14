@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pragmaticcs/MiMo-HERO-UIUX-Designer-9B-GGUF",
   "slug": "pragmaticcs-mimo-hero-uiux-designer-9b-gguf",
   "author": "pragmaticcs",
@@ -57,14 +57,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 35323879040,
   "storage_human": "35.3 GB",
+  "context_length": 262144,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, XLearning-SCU/HERO-9B, Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

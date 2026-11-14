@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JamesQuartz/aenea-pinta-2.0",
   "slug": "jamesquartz-aenea-pinta-2-0",
   "author": "JamesQuartz",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1381363795,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Semantic Domain Routing",

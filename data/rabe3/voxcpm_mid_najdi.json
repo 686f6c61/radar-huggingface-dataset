@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rabe3/VoxCPM_mid_najdi",
   "slug": "rabe3-voxcpm_mid_najdi",
   "author": "Rabe3",
@@ -35,14 +35,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 9537040314,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T23:00:01.458Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

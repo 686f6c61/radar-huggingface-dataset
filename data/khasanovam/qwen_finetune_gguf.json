@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KhasanovAM/qwen_finetune_gguf",
   "slug": "khasanovam-qwen_finetune_gguf",
   "author": "KhasanovAM",
@@ -28,14 +28,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 5283003296,
   "storage_human": "5.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "KhasanovAM/qwen3.5_4b_finetune",
+  "renamed_at": "2026-11-11T03:08:24.171Z",
   "benchmarks": [],
   "sources": [
     {

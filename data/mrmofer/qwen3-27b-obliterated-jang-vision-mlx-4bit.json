@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrMofer/Qwen3-27B-OBLITERATED-JANG-VISION-MLX-4bit",
   "slug": "mrmofer-qwen3-27b-obliterated-jang-vision-mlx-4bit",
   "author": "MrMofer",
@@ -44,6 +44,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 15597679469,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-27B, OBLITERATUS/Qwen3.8-27B-OBLITERATED, dealignai/Qwen3.8-27B-JANG_4D-CRACK",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

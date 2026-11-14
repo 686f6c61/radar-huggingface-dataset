@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loco-ai/Loco1-smol-1.7B",
   "slug": "loco-ai-loco1-smol-1-7b",
   "author": "loco-ai",
@@ -48,6 +48,7 @@
   "parameters_human": "212.4M",
   "storage_bytes": 789777417,
   "storage_human": "790 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

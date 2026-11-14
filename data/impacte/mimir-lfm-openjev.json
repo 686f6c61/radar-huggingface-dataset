@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "impacte/mimir-lfm-openjev",
   "slug": "impacte-mimir-lfm-openjev",
   "author": "impacte",
@@ -37,14 +37,19 @@
   "parameters_human": "8.47B",
   "storage_bytes": 16953924984,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:10:48.713Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

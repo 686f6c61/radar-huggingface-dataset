@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArtG08/AI_View",
   "slug": "artg08-ai_view",
   "author": "ArtG08",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 502180470,
   "storage_human": "502 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yamada114514/AliceAI-Foundation-80B-A3B-Base-MLX-4bit",
   "slug": "yamada114514-aliceai-foundation-80b-a3b-base-mlx-4bit",
   "author": "Yamada114514",
@@ -39,6 +39,7 @@
   "parameters_human": "79.64B",
   "storage_bytes": 44891882287,
   "storage_human": "44.9 GB",
+  "context_length": null,
   "base_model": "yandex/AliceAI-Foundation-80B-A3B-Base",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

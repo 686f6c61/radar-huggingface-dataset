@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gat45/qwen-3.8-for-1080-8gb",
   "slug": "gat45-qwen-3-8-for-1080-8gb",
   "author": "gat45",
@@ -25,14 +25,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 7162187584,
   "storage_human": "7.2 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

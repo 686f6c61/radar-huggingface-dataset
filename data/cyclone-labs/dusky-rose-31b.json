@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cyclone-Labs/Dusky-Rose-31B",
   "slug": "cyclone-labs-dusky-rose-31b",
   "author": "Cyclone-Labs",
@@ -40,14 +40,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62580834061,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Dark-Scarlett-v2.0-31B, google/gemma-4-31B-it, TheDrummer/Artemis-31B-v1.1, MRockatansky/Gemma-4-31B-Storymaxxed3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

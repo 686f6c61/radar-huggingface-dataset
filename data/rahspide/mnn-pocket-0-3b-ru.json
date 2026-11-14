@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rahspide/MNN-Pocket-0.3B-RU",
   "slug": "rahspide-mnn-pocket-0-3b-ru",
   "author": "Rahspide",
@@ -47,6 +47,7 @@
   "parameters_human": "302.8M",
   "storage_bytes": 3712479320,
   "storage_human": "3.7 GB",
+  "context_length": 40960,
   "base_model": "taobao-mnn/MNN-Pocket-0.3B-Base",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

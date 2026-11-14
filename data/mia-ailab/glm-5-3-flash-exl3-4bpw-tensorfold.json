@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold",
   "slug": "mia-ailab-glm-5-3-flash-exl3-4bpw-tensorfold",
   "author": "Mia-AiLab",
@@ -34,14 +34,19 @@
   "parameters_human": "87.81B",
   "storage_bytes": 175716109590,
   "storage_human": "175.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

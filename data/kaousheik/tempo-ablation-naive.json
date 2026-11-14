@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kaousheik/tempo-ablation-naive",
   "slug": "kaousheik-tempo-ablation-naive",
   "author": "Kaousheik",
@@ -40,14 +40,19 @@
   "parameters_human": "8.27B",
   "storage_bytes": 16554791215,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "nvidia/audio-flamingo-3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

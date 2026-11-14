@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CavoraPartnersGmbH/Qwen3.8-9B-Distill-ONNX",
   "slug": "cavorapartnersgmbh-qwen3-8-9b-distill-onnx",
   "author": "CavoraPartnersGmbH",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 14931054379,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B-Distill",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

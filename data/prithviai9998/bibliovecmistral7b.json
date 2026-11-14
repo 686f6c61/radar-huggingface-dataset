@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrithviAI9998/BiblioVecMistral7b",
   "slug": "prithviai9998-bibliovecmistral7b",
   "author": "PrithviAI9998",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 508306605,
   "storage_human": "508 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

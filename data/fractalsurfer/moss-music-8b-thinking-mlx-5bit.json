@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FractalSurfer/MOSS-Music-8B-Thinking-mlx-5bit",
   "slug": "fractalsurfer-moss-music-8b-thinking-mlx-5bit",
   "author": "FractalSurfer",
@@ -40,6 +40,7 @@
   "parameters_human": "9.05B",
   "storage_bytes": 7366586043,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Music-8B-Thinking",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

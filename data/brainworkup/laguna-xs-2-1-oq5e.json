@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brainworkup/Laguna-XS-2.1-oQ5e",
   "slug": "brainworkup-laguna-xs-2-1-oq5e",
   "author": "brainworkup",
@@ -28,6 +28,7 @@
   "parameters_human": "33.44B",
   "storage_bytes": 23517336514,
   "storage_human": "23.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rhdev7/Scail-2_Remix_LoRA_Relighting_rank256.safetensors",
   "slug": "rhdev7-scail-2_remix_lora_relighting_rank256-safetensors",
   "author": "rhdev7",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 8588111544,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

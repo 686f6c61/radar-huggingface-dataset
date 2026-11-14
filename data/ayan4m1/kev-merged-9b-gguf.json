@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayan4m1/kev-merged-9b-gguf",
   "slug": "ayan4m1-kev-merged-9b-gguf",
   "author": "ayan4m1",
@@ -34,14 +34,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 39113728128,
   "storage_human": "39.1 GB",
+  "context_length": 262144,
   "base_model": "ayan4m1/kev-merged-9b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ayan4m1/kev-9b-merged-gguf",
+  "renamed_at": "2026-11-11T04:37:39.838Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "ArihantRastogi20/anlp-a3-deltanet",
+  "slug": "arihantrastogi20-anlp-a3-deltanet",
+  "author": "ArihantRastogi20",
+  "url": "https://huggingface.co/ArihantRastogi20/anlp-a3-deltanet",
+  "created_at": "2026-11-13T23:48:31.000Z",
+  "updated_at": "2026-11-14T15:40:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 5271424,
+  "parameters_human": "5.3M",
+  "storage_bytes": 42192816,
+  "storage_human": "42 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

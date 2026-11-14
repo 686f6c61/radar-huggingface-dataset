@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thewh1teagle/parakeet-tdt-0.6b-v3-he",
   "slug": "thewh1teagle-parakeet-tdt-0-6b-v3-he",
   "author": "thewh1teagle",
@@ -41,6 +41,7 @@
   "parameters_human": "628.4M",
   "storage_bytes": 17233743960,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kashif/Qwen3-4B-Gated-LoRA-MTP",
   "slug": "kashif-qwen3-4b-gated-lora-mtp",
   "author": "kashif",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 805119998,
   "storage_human": "805 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

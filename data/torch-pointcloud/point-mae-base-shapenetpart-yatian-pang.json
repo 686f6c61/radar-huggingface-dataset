@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "torch-pointcloud/point-mae-base.shapenetpart.yatian-pang",
   "slug": "torch-pointcloud-point-mae-base-shapenetpart-yatian-pang",
   "author": "torch-pointcloud",
@@ -34,14 +34,19 @@
   "parameters_human": "27.1M",
   "storage_bytes": 108306424,
   "storage_human": "108 MB",
+  "context_length": null,
   "base_model": "torch-pointcloud/point-mae-base.pretrain.yatian-pang",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

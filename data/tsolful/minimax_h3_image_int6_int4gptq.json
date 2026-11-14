@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsolful/Minimax_H3_Image_INT6_INT4GPTQ",
   "slug": "tsolful-minimax_h3_image_int6_int4gptq",
   "author": "tsolful",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 30470862372,
   "storage_human": "30.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image, Comfy-Org/MiniMax-H3-Image",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scalejade/qwen-sea-lion-v4-32b-it",
   "slug": "scalejade-qwen-sea-lion-v4-32b-it",
   "author": "scalejade",
@@ -59,14 +59,19 @@
   "parameters_human": null,
   "storage_bytes": 19703414526,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B, aisingapore/Qwen-SEA-LION-v4-32B-IT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

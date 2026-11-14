@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "buddysburrow/buddy-gemma4",
   "slug": "buddysburrow-buddy-gemma4",
   "author": "buddysburrow",
@@ -26,14 +26,19 @@
   "parameters_human": "572.8M",
   "storage_bytes": 11824187520,
   "storage_human": "11.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T04:46:58.378Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tuongvy2603/continue_sft_bitd_lora_data_new",
   "slug": "tuongvy2603-continue_sft_bitd_lora_data_new",
   "author": "tuongvy2603",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 319947442,
   "storage_human": "320 MB",
+  "context_length": null,
   "base_model": "tuongvy2603/BITD_baseline",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate-debias-lora",
+  "renamed_at": "2026-11-13T08:23:22.101Z",
   "benchmarks": [],
   "sources": [
     {

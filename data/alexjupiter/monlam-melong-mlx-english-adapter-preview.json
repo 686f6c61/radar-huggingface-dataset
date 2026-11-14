@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexJupiter/monlam-melong-mlx-english-adapter-preview",
   "slug": "alexjupiter-monlam-melong-mlx-english-adapter-preview",
   "author": "AlexJupiter",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 20590390,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": "TenzinGayche/Monlam_Melong_preview",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jm6193563/bertimbau-ner-cardapios",
   "slug": "jm6193563-bertimbau-ner-cardapios",
   "author": "Jm6193563",
@@ -34,14 +34,19 @@
   "parameters_human": "108.3M",
   "storage_bytes": 433371968,
   "storage_human": "433 MB",
+  "context_length": null,
   "base_model": "neuralmind/bert-base-portuguese-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

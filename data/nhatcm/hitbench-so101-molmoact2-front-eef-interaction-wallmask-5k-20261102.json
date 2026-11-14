@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nhatcm/hitbench-so101-molmoact2-front-eef-interaction-wallmask-5k-20261102",
   "slug": "nhatcm-hitbench-so101-molmoact2-front-eef-interaction-wallmask-5k-20261102",
   "author": "nhatcm",
@@ -28,14 +28,19 @@
   "parameters_human": "5.60B",
   "storage_bytes": 38038892912,
   "storage_human": "38.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nhatcm/hitbench-molmoact2-20k",
+  "renamed_at": "2026-11-13T07:19:30.428Z",
   "benchmarks": [],
   "sources": []
 }

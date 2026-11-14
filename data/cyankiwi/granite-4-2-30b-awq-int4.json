@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyankiwi/granite-4.2-30b-AWQ-INT4",
   "slug": "cyankiwi-granite-4-2-30b-awq-int4",
   "author": "cyankiwi",
@@ -62,14 +62,19 @@
   "parameters_human": "5.38B",
   "storage_bytes": 18095515728,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:55:08.054Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

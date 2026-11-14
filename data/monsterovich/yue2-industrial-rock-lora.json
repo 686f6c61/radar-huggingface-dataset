@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "monsterovich/yue2-industrial-rock-lora",
   "slug": "monsterovich-yue2-industrial-rock-lora",
   "author": "monsterovich",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 626814484,
   "storage_human": "627 MB",
+  "context_length": null,
   "base_model": "m-a-p/YuE2-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

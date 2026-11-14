@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qtum/Qwen3-30B-A3B-GGUF",
   "slug": "qtum-qwen3-30b-a3b-gguf",
   "author": "qtum",
@@ -36,14 +36,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 139120784608,
   "storage_human": "139.1 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:12:06.603Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

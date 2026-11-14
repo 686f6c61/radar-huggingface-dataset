@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nikuson/t5-small-paraphraser-ao-int4wo-gs128",
   "slug": "nikuson-t5-small-paraphraser-ao-int4wo-gs128",
   "author": "Nikuson",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 119621950,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": "philipp-zettl/t5-small-paraphraser",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

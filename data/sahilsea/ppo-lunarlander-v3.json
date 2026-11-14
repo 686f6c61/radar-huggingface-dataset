@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sahilsea/ppo-LunarLander-v3",
   "slug": "sahilsea-ppo-lunarlander-v3",
   "author": "Sahilsea",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 283650,
   "storage_human": "283650 B",
+  "context_length": null,
   "base_model": "tsilva/Level1-1_stable-baselines3-ppo_7d9b9131",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jujeongho/Qwen3.5-0.8B-LoRA",
   "slug": "jujeongho-qwen3-5-0-8b-lora",
   "author": "jujeongho",
@@ -28,14 +28,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 3432049437,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:41:35.302Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

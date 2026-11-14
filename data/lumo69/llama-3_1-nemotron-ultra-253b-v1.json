@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lumo69/Llama-3_1-Nemotron-Ultra-253B-v1",
   "slug": "lumo69-llama-3_1-nemotron-ultra-253b-v1",
   "author": "Lumo69",
@@ -38,14 +38,19 @@
   "parameters_human": "253.40B",
   "storage_bytes": 506821928740,
   "storage_human": "506.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

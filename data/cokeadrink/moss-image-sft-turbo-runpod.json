@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cokeadrink/moss-image-sft-turbo-runpod",
   "slug": "cokeadrink-moss-image-sft-turbo-runpod",
   "author": "cokeadrink",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 23816518936,
   "storage_human": "23.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT, akhaliq/MOSS-Image-SFT-4-steps, lodestones/MOSS-Image-SFT-8-steps-dmd",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

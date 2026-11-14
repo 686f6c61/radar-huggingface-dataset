@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Guile/nbeerbower_BigBubba-Qwen3.6-27B-GGUF",
   "slug": "guile-nbeerbower_bigbubba-qwen3-6-27b-gguf",
   "author": "Guile",
@@ -40,14 +40,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 479756694656,
   "storage_human": "479.8 GB",
+  "context_length": 262144,
   "base_model": "nbeerbower/BigBubba-Qwen3.6-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SimpleTuner/moss-image-sft-anyflow-stage1-v2-fp32-lr8e-5",
   "slug": "simpletuner-moss-image-sft-anyflow-stage1-v2-fp32-lr8e-5",
   "author": "SimpleTuner",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 8463027864,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T03:26:45.834Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

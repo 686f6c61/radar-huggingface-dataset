@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mattcerisano/filmroll-decider",
   "slug": "mattcerisano-filmroll-decider",
   "author": "mattcerisano",
@@ -32,6 +32,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 346873202,
   "storage_human": "347 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

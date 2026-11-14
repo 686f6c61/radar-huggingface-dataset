@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rezaq234r3/qwen3-emb-bn-physics",
   "slug": "rezaq234r3-qwen3-emb-bn-physics",
   "author": "Rezaq234r3",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 31658478,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ved4nt/act-so101-retrieve",
   "slug": "ved4nt-act-so101-retrieve",
   "author": "Ved4nt",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 3097680752,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

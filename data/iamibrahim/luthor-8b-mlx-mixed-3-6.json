@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IAMIbrahim/luthor-8b-mlx-mixed-3-6",
   "slug": "iamibrahim-luthor-8b-mlx-mixed-3-6",
   "author": "IAMIbrahim",
@@ -38,6 +38,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4196878344,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "IAMIbrahim/luthor-8b",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T03:04:21.539Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

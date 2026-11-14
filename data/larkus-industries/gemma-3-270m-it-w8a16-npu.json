@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "larkus-industries/gemma-3-270m-it-W8A16-NPU",
   "slug": "larkus-industries-gemma-3-270m-it-w8a16-npu",
   "author": "larkus-industries",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 649640058,
   "storage_human": "650 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m-it",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

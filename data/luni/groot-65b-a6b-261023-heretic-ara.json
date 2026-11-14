@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luni/Groot-65B-A6B-261023-Heretic-ARA",
   "slug": "luni-groot-65b-a6b-261023-heretic-ara",
   "author": "Luni",
@@ -46,14 +46,19 @@
   "parameters_human": "118.31B",
   "storage_bytes": 236647480319,
   "storage_human": "236.6 GB",
+  "context_length": null,
   "base_model": "GrootTeam/Groot-65B-A6B-261023",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

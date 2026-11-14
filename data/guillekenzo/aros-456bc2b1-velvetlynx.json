@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guillekenzo/aros-456bc2b1-VelvetLynx",
   "slug": "guillekenzo-aros-456bc2b1-velvetlynx",
   "author": "guillekenzo",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 964226104,
   "storage_human": "964 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

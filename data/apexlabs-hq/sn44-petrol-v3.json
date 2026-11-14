@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "apexlabs-hq/sn44-petrol-v3",
   "slug": "apexlabs-hq-sn44-petrol-v3",
   "author": "apexlabs-hq",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 59304630,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T04:03:40.704Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

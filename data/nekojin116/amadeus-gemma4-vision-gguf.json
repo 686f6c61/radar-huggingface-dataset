@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nekojin116/amadeus-gemma4-vision-gguf",
   "slug": "nekojin116-amadeus-gemma4-vision-gguf",
   "author": "nekojin116",
@@ -27,14 +27,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 6325645920,
   "storage_human": "6.3 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T12:23:48.241Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

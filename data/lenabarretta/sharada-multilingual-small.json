@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lenabarretta/sharada-multilingual-small",
   "slug": "lenabarretta-sharada-multilingual-small",
   "author": "lenabarretta",
@@ -32,14 +32,19 @@
   "parameters_human": "140.8M",
   "storage_bytes": 879168351,
   "storage_human": "879 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

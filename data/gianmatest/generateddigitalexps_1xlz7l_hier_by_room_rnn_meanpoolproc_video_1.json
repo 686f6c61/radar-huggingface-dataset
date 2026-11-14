@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gianmaTest/generatedDigitalExps_1xLz7L_hier_by_room_rnn_meanPoolProc_video_1",
   "slug": "gianmatest-generateddigitalexps_1xlz7l_hier_by_room_rnn_meanpoolproc_video_1",
   "author": "gianmaTest",
@@ -24,14 +24,19 @@
   "parameters_human": "2.4M",
   "storage_bytes": 9467176,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

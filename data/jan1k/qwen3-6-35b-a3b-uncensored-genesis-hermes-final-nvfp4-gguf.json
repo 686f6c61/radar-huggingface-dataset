@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4-GGUF",
   "slug": "jan1k-qwen3-6-35b-a3b-uncensored-genesis-hermes-final-nvfp4-gguf",
   "author": "jan1k",
@@ -49,14 +49,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 86381400960,
   "storage_human": "86.4 GB",
+  "context_length": 262144,
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

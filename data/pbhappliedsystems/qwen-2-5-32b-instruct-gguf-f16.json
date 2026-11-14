@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pbhappliedsystems/qwen-2.5-32B-instruct-gguf-F16",
   "slug": "pbhappliedsystems-qwen-2-5-32b-instruct-gguf-f16",
   "author": "pbhappliedsystems",
@@ -47,14 +47,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 131071939808,
   "storage_human": "131.1 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-32B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Agentic behavioral evaluation (quant_eval)",

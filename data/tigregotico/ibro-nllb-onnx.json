@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TigreGotico/IbRo-nllb-onnx",
   "slug": "tigregotico-ibro-nllb-onnx",
   "author": "TigreGotico",
@@ -45,14 +45,19 @@
   "parameters_human": null,
   "storage_bytes": 14951901367,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "Transducens/IbRo-nllb",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

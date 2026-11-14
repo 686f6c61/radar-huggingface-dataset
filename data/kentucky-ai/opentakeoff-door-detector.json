@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kentucky-ai/opentakeoff-door-detector",
   "slug": "kentucky-ai-opentakeoff-door-detector",
   "author": "Kentucky-ai",
@@ -31,6 +31,7 @@
   "parameters_human": "33.5M",
   "storage_bytes": 422869060,
   "storage_human": "423 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

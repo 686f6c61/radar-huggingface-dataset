@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anwar-dev/voicetut-egyptian-morad-dora",
   "slug": "anwar-dev-voicetut-egyptian-morad-dora",
   "author": "anwar-dev",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 436926456,
   "storage_human": "437 MB",
+  "context_length": null,
   "base_model": "masterofaudio2077/voicetut-egyptian-tashkeel",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T03:48:10.429Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

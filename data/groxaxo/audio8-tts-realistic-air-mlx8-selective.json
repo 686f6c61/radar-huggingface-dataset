@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Audio8-TTS-Realistic-Air-MLX8-Selective",
   "slug": "groxaxo-audio8-tts-realistic-air-mlx8-selective",
   "author": "groxaxo",
@@ -32,6 +32,7 @@
   "parameters_human": "938.6M",
   "storage_bytes": 2183969166,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-TTS-Realistic-Air",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

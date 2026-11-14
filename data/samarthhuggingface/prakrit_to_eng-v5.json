@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Samarthhuggingface/prakrit_to_eng-v5",
   "slug": "samarthhuggingface-prakrit_to_eng-v5",
   "author": "Samarthhuggingface",
@@ -24,14 +24,19 @@
   "parameters_human": "1.02B",
   "storage_bytes": 4096133880,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "samarth-gandhii/prakrit_to_eng-v5",
+  "renamed_at": "2026-11-11T03:49:13.350Z",
   "benchmarks": [],
   "sources": [
     {

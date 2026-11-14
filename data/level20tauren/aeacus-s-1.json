@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "level20tauren/aeacus-s-1",
   "slug": "level20tauren-aeacus-s-1",
   "author": "level20tauren",
@@ -36,6 +36,7 @@
   "parameters_human": "149.6M",
   "storage_bytes": 1836196418,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

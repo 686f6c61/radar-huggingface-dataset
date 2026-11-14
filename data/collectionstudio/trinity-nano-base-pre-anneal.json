@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Trinity-Nano-Base-Pre-Anneal",
   "slug": "collectionstudio-trinity-nano-base-pre-anneal",
   "author": "CollectionStudio",
@@ -51,14 +51,19 @@
   "parameters_human": "6.12B",
   "storage_bytes": 12257281153,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thepatch/stable-audio-open-1.0-GGUF",
   "slug": "thepatch-stable-audio-open-1-0-gguf",
   "author": "thepatch",
@@ -26,14 +26,19 @@
   "parameters_human": "1.06B",
   "storage_bytes": 5690933888,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

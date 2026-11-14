@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lookarooka/connectailab-rl-novice-v1-link01-walk-ppo",
   "slug": "lookarooka-connectailab-rl-novice-v1-link01-walk-ppo",
   "author": "lookarooka",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 890083,
   "storage_human": "890083 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "walking",

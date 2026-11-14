@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NEWUNIVERS/nu-fans-baek-seo-jin-qwen38-27b-explore-lora",
   "slug": "newunivers-nu-fans-baek-seo-jin-qwen38-27b-explore-lora",
   "author": "NEWUNIVERS",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 2631308653,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

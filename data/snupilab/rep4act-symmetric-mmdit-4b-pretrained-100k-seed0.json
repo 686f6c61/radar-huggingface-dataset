@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snupilab/Rep4Act-Symmetric-MMDiT-4B-Pretrained-100k-seed0",
   "slug": "snupilab-rep4act-symmetric-mmdit-4b-pretrained-100k-seed0",
   "author": "snupilab",
@@ -25,14 +25,19 @@
   "parameters_human": "5.78B",
   "storage_bytes": 19449101465,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

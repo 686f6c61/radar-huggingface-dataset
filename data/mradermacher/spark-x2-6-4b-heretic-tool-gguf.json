@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Spark-X2.6-4B-heretic-tool-GGUF",
   "slug": "mradermacher-spark-x2-6-4b-heretic-tool-gguf",
   "author": "mradermacher",
@@ -45,14 +45,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 37506150144,
   "storage_human": "37.5 GB",
+  "context_length": 1048576,
   "base_model": "NeosQ/Spark-X2.6-4B-heretic-tool",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

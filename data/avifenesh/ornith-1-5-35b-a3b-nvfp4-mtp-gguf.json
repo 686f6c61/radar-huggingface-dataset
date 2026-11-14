@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF",
   "slug": "avifenesh-ornith-1-5-35b-a3b-nvfp4-mtp-gguf",
   "author": "Avifenesh",
@@ -34,14 +34,19 @@
   "parameters_human": "67.1M",
   "storage_bytes": 42312817056,
   "storage_human": "42.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tiyuvta/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF",
+  "renamed_at": "2026-11-11T02:22:57.191Z",
   "benchmarks": [
     {
       "task": "MTP speculative decode K=2, greedy, 256-token code generation",

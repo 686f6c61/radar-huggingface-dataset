@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanganaka/unsloth-Qwen3.8-27B-san-to-eng-padamitra-translation-with-gloss-reasoning",
   "slug": "sanganaka-unsloth-qwen3-8-27b-san-to-eng-padamitra-translation-with-gloss-reasoning",
   "author": "sanganaka",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 7490723525,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

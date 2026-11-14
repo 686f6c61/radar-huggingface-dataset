@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asdasdadadsss/Wan2.1-T2V-14B",
   "slug": "asdasdadadsss-wan2-1-t2v-14b",
   "author": "asdasdadadsss",
@@ -32,6 +32,7 @@
   "parameters_human": "14.29B",
   "storage_bytes": 69051738782,
   "storage_human": "69.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

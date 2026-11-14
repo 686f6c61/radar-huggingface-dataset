@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jc-builds/Seed-Coder-8B-Instruct-GGUF",
   "slug": "jc-builds-seed-coder-8b-instruct-gguf",
   "author": "jc-builds",
@@ -38,14 +38,19 @@
   "parameters_human": "8.25B",
   "storage_bytes": 5071410624,
   "storage_human": "5.1 GB",
+  "context_length": 32768,
   "base_model": "ByteDance-Seed/Seed-Coder-8B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audante/wav2vec2-base-960h-fp16",
   "slug": "audante-wav2vec2-base-960h-fp16",
   "author": "Audante",
@@ -26,14 +26,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 188818312,
   "storage_human": "189 MB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-base-960h",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

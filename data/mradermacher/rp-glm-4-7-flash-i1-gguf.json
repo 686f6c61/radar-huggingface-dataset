@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/rp-glm-4.7-flash-i1-GGUF",
   "slug": "mradermacher-rp-glm-4-7-flash-i1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "29.94B",
   "storage_bytes": 317265833152,
   "storage_human": "317.3 GB",
+  "context_length": 202752,
   "base_model": "taozi555/rp-glm-4.7-flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

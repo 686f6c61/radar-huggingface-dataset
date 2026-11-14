@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thinkingmachines/Inkling",
   "slug": "thinkingmachines-inkling",
   "author": "thinkingmachines",
@@ -24,21 +24,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1851,
+  "likes": 1852,
   "downloads_30d": 1496824,
-  "trending_score": 10,
+  "trending_score": 11,
   "parameters": 952377623626,
   "parameters_human": "952.38B",
   "storage_bytes": 1909218968769,
   "storage_human": "1909.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

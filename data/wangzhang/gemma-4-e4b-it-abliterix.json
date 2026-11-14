@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangzhang/gemma-4-E4B-it-abliterix",
   "slug": "wangzhang-gemma-4-e4b-it-abliterix",
   "author": "wangzhang",
@@ -30,14 +30,19 @@
   "parameters_human": "7.94B",
   "storage_bytes": 15914647280,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

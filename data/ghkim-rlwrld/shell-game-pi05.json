@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghkim-rlwrld/shell-game-pi05",
   "slug": "ghkim-rlwrld-shell-game-pi05",
   "author": "ghkim-rlwrld",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 37322534243,
   "storage_human": "37.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

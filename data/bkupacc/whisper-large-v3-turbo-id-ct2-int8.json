@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bkupacc/whisper-large-v3-turbo-id-ct2-int8",
   "slug": "bkupacc-whisper-large-v3-turbo-id-ct2-int8",
   "author": "bkupacc",
@@ -38,12 +38,17 @@
   "parameters_human": "808.9M",
   "storage_bytes": 2431879395,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

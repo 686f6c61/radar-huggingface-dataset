@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED",
   "slug": "aeon-7-qwen3-8-27b-aeon-ultimate-uncensored-nvfp4-mixed",
   "author": "AEON-7",
@@ -90,14 +90,19 @@
   "parameters_human": "19.87B",
   "storage_bytes": 24716602448,
   "storage_human": "24.7 GB",
+  "context_length": null,
   "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

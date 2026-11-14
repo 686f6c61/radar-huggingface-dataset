@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vnbot-ai/VNBot-MotaZ-27B-GPTQ-W8A16",
   "slug": "vnbot-ai-vnbot-motaz-27b-gptq-w8a16",
   "author": "vnbot-ai",
@@ -36,14 +36,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 32485652878,
   "storage_human": "32.5 GB",
+  "context_length": null,
   "base_model": "vnbot-ai/VNBot-MotaZ-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

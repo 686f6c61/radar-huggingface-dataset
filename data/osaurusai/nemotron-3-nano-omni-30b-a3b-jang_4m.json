@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-JANG_4M",
   "slug": "osaurusai-nemotron-3-nano-omni-30b-a3b-jang_4m",
   "author": "OsaurusAI",
@@ -49,6 +49,7 @@
   "parameters_human": "18.33B",
   "storage_bytes": 43557290196,
   "storage_human": "43.6 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

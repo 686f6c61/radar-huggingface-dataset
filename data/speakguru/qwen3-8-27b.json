@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakguru/Qwen3.8-27B",
   "slug": "speakguru-qwen3-8-27b",
   "author": "speakguru",
@@ -28,14 +28,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575816096,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:08:25.080Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

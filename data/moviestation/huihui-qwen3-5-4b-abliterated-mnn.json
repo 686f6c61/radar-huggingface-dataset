@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moviestation/Huihui-Qwen3.5-4B-abliterated-MNN",
   "slug": "moviestation-huihui-qwen3-5-4b-abliterated-mnn",
   "author": "moviestation",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2740951537,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

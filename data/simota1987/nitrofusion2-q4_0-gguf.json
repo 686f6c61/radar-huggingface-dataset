@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simota1987/NitroFusion2-Q4_0-GGUF",
   "slug": "simota1987-nitrofusion2-q4_0-gguf",
   "author": "simota1987",
@@ -29,14 +29,19 @@
   "parameters_human": "6.15B",
   "storage_bytes": 3683371040,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "ChenDY/NitroFusion2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optimum-intel-internal-testing/tiny-random-nemotron-h",
   "slug": "optimum-intel-internal-testing-tiny-random-nemotron-h",
   "author": "optimum-intel-internal-testing",
@@ -28,14 +28,19 @@
   "parameters_human": "16.9M",
   "storage_bytes": 152448860,
   "storage_human": "152 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

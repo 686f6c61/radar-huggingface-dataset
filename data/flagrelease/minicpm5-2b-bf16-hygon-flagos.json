@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlagRelease/MiniCPM5-2B-BF16-hygon-FlagOS",
   "slug": "flagrelease-minicpm5-2b-bf16-hygon-flagos",
   "author": "FlagRelease",
@@ -29,14 +29,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033557096,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

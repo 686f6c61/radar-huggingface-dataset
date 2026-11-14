@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pfnet/plamo-3-translate-8b",
   "slug": "pfnet-plamo-3-translate-8b",
   "author": "pfnet",
@@ -135,14 +135,19 @@
   "parameters_human": "8.53B",
   "storage_bytes": 17064704498,
   "storage_human": "17.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

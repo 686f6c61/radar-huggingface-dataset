@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UraionLabs/LFM3-1.7B-MLX-oQ6e",
   "slug": "uraionlabs-lfm3-1-7b-mlx-oq6e",
   "author": "UraionLabs",
@@ -102,6 +102,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1465906474,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "mlx",
@@ -109,8 +110,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

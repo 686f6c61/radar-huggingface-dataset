@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shail301/q4_k_m",
   "slug": "shail301-q4_k_m",
   "author": "Shail301",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920734272,
   "storage_human": "4.9 GB",
+  "context_length": 8192,
   "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

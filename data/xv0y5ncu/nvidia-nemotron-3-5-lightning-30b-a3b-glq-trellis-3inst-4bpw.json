@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xv0y5ncu/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GLQ-trellis-3inst-4bpw",
   "slug": "xv0y5ncu-nvidia-nemotron-3-5-lightning-30b-a3b-glq-trellis-3inst-4bpw",
   "author": "xv0y5ncu",
@@ -47,20 +47,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 497,
+  "downloads_30d": 502,
   "trending_score": 0,
   "parameters": 9792562432,
   "parameters_human": "9.79B",
   "storage_bytes": 19588131448,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShaunDier/qaatin-multilingual-mpnet",
   "slug": "shaundier-qaatin-multilingual-mpnet",
   "author": "ShaunDier",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 1115102946,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "qaatin/qaatin-multilingual-mpnet",
+  "renamed_at": "2026-11-13T04:03:36.778Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenWeightsAI/gplm-0.2-8B-instant",
   "slug": "openweightsai-gplm-0-2-8b-instant",
   "author": "OpenWeightsAI",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 62328344,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OpenWeightsAI/Vynis-0.2-8B-Instant",
+  "renamed_at": "2026-11-13T03:39:53.162Z",
   "benchmarks": [],
   "sources": [
     {

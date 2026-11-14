@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sourojitdotcom/AksharaLP-1M-v2",
   "slug": "sourojitdotcom-aksharalp-1m-v2",
   "author": "sourojitdotcom",
@@ -45,14 +45,19 @@
   "parameters_human": "990466",
   "storage_bytes": 45958736,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Romanized Hindi → Devanagari transliteration (word level)",

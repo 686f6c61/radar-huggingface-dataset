@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrMeOrYou/emma-6-GGUF",
   "slug": "mrmeoryou-emma-6-gguf",
   "author": "MrMeOrYou",
@@ -43,14 +43,19 @@
   "parameters_human": "1.55B",
   "storage_bytes": 66851454464,
   "storage_human": "66.9 GB",
+  "context_length": 4096,
   "base_model": "egomnia/emma-6",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

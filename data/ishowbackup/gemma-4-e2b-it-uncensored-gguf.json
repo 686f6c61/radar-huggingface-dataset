@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ishowbackup/gemma-4-E2B-it-uncensored-GGUF",
   "slug": "ishowbackup-gemma-4-e2b-it-uncensored-gguf",
   "author": "Ishowbackup",
@@ -34,14 +34,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 8395363392,
   "storage_human": "8.4 GB",
+  "context_length": 131072,
   "base_model": "TrevorJS/gemma-4-E2B-it-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

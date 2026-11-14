@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KasuleTrevor/cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-const1e4",
   "slug": "kasuletrevor-cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-const1e4",
   "author": "KasuleTrevor",
@@ -34,14 +34,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 8164150553,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

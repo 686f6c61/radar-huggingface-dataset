@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/EduGemma4b-GGUF",
   "slug": "mradermacher-edugemma4b-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 37274388032,
   "storage_human": "37.3 GB",
+  "context_length": 131072,
   "base_model": "nicoboss/EduGemma4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/gemma-4-12B-it-qat-q4_0-unquantized-Tensix-BFP4-GateUp",
   "slug": "xylolabs-gemma-4-12b-it-qat-q4_0-unquantized-tensix-bfp4-gateup",
   "author": "Xylolabs",
@@ -40,14 +40,19 @@
   "parameters_human": "12.97B",
   "storage_bytes": 25964982058,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

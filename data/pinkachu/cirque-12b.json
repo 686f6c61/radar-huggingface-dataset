@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pinkachu/Cirque-12B",
   "slug": "pinkachu-cirque-12b",
   "author": "pinkachu",
@@ -47,14 +47,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24513372976,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "ApolloRaines/Prometheus-Mistral-Nemo-12B, DarkArtsForge/MN-Raven-12B-v1, Lambent/Amethyst-12B-v3, Lambent/Arsenic-Shahrazad-12B-v4.4, sh0ck0r/Rivermind-12B-v1-heretic, Sorihon/Captain-Eris_Violet-V0.420-12B-Heretic-V2-Fixed, Sorihon/Magnum-v4-12B-Heretic, Sorihon/Omega-Darker_The-Final-Directive-12B-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

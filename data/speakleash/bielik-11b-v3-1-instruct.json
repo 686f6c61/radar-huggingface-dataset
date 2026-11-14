@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakleash/Bielik-11B-v3.1-Instruct",
   "slug": "speakleash-bielik-11b-v3-1-instruct",
   "author": "speakleash",
@@ -141,21 +141,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 22,
+  "likes": 23,
   "downloads_30d": 318,
-  "trending_score": 21,
+  "trending_score": 22,
   "parameters": 11168796672,
   "parameters_human": "11.17B",
   "storage_bytes": 22338139507,
   "storage_human": "22.3 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-11B-v3-Base-20250730",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "timm/qwen3_vit_416m.qwen3_vl_8b",
   "slug": "timm-qwen3_vit_416m-qwen3_vl_8b",
   "author": "timm",
@@ -29,14 +29,19 @@
   "parameters_human": "415.0M",
   "storage_bytes": 1660060752,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

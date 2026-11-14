@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Superwheat/Gimbal-27B",
   "slug": "superwheat-gimbal-27b",
   "author": "Superwheat",
@@ -44,14 +44,19 @@
   "parameters_human": "25.62B",
   "storage_bytes": 51729369172,
   "storage_human": "51.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Typed decisions (consistency)",

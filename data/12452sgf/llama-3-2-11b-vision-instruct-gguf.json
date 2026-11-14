@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "12452sgf/Llama-3.2-11B-Vision-Instruct-GGUF",
   "slug": "12452sgf-llama-3-2-11b-vision-instruct-gguf",
   "author": "12452sgf",
@@ -55,6 +55,7 @@
   "parameters_human": "9.78B",
   "storage_bytes": 35916927264,
   "storage_human": "35.9 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.2-11B-Vision-Instruct",
   "formats": [
     "gguf",
@@ -62,8 +63,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

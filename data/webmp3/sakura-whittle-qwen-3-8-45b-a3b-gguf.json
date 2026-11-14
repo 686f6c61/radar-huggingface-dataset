@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Whittle-Qwen-3.8-45B-A3B-GGUF",
   "slug": "webmp3-sakura-whittle-qwen-3-8-45b-a3b-gguf",
   "author": "webmp3",
@@ -34,14 +34,19 @@
   "parameters_human": "45.12B",
   "storage_bytes": 96794782592,
   "storage_human": "96.8 GB",
+  "context_length": 262144,
   "base_model": "whittleOrg/Whittle-Qwen-3.8-45B-A3B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

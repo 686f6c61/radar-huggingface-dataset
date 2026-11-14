@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Juhaann20/DeepSeek-R1-Distill-Qwen-7B-LoRA-Task",
   "slug": "juhaann20-deepseek-r1-distill-qwen-7b-lora-task",
   "author": "Juhaann20",
@@ -35,14 +35,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242694832,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-7B-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TOWIN-AI/OLMo-3.1-32B-Think-GPTQ-Int4-16bit-output",
   "slug": "towin-ai-olmo-3-1-32b-think-gptq-int4-16bit-output",
   "author": "TOWIN-AI",
@@ -44,14 +44,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 18146392592,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-3.1-32B-Think",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/SenseNova-Loop-9B-Preview-cmf",
   "slug": "infosave-sensenova-loop-9b-preview-cmf",
   "author": "infosave",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 15542290074,
   "storage_human": "15.5 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-Loop-9B-Preview",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

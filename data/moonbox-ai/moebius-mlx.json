@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-ai/Moebius-MLX",
   "slug": "moonbox-ai-moebius-mlx",
   "author": "moonbox-ai",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2638476131,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "hustvl/Moebius",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "moonbox-dev/Moebius-MLX",
+  "renamed_at": "2026-11-13T06:47:16.889Z",
   "benchmarks": [],
   "sources": []
 }

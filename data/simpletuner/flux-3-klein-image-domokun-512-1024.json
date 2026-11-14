@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SimpleTuner/flux-3-klein-image-domokun-512-1024",
   "slug": "simpletuner-flux-3-klein-image-domokun-512-1024",
   "author": "SimpleTuner",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1891450615,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein-base",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

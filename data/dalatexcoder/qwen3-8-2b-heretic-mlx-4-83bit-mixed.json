@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dalatexcoder/Qwen3.8-2B-Heretic-MLX-4.83bit-Mixed",
   "slug": "dalatexcoder-qwen3-8-2b-heretic-mlx-4-83bit-mixed",
   "author": "dalatexcoder",
@@ -45,6 +45,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 2012927811,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "MihaiPopa-1/Qwen3.8-2B-Heretic-Balanced",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

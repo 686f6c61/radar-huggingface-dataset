@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SicariusSicariiStuff/Wingless_Imp_8B",
   "slug": "sicariussicariistuff-wingless_imp_8b",
   "author": "SicariusSicariiStuff",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16060859047,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "SicariusSicariiStuff/Impish_Mind_8B, SicariusSicariiStuff/LLAMA-3_8B_Unaligned_BETA, SicariusSicariiStuff/Dusk_Rainbow",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

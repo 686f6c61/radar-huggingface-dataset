@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Qwen3.8-27B-Uncensored-Terse-Coder-FP8",
   "slug": "vwdubb-qwen3-8-27b-uncensored-terse-coder-fp8",
   "author": "vwdubb",
@@ -37,14 +37,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 38465169000,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T05:42:16.831Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

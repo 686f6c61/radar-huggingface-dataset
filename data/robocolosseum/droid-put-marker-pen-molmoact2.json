@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RoboColosseum/droid-put-marker-pen-molmoact2",
   "slug": "robocolosseum-droid-put-marker-pen-molmoact2",
   "author": "RoboColosseum",
@@ -31,14 +31,19 @@
   "parameters_human": "5.44B",
   "storage_bytes": 10884594120,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

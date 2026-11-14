@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "s-a-i/Wan2.2-Animate-14B",
   "slug": "s-a-i-wan2-2-animate-14b",
   "author": "s-a-i",
@@ -29,6 +29,7 @@
   "parameters_human": "17.27B",
   "storage_bytes": 72361997489,
   "storage_human": "72.4 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-I2V-A14B",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:51:31.723Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

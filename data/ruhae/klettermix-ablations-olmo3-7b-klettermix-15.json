@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RuHae/KletterMix-Ablations-OLMo3-7B-KletterMix-15",
   "slug": "ruhae-klettermix-ablations-olmo3-7b-klettermix-15",
   "author": "RuHae",
@@ -31,14 +31,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 175152763392,
   "storage_human": "175.2 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1025-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

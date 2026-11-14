@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jbilcke/whisper-medical-large-onnx",
   "slug": "jbilcke-whisper-medical-large-onnx",
   "author": "jbilcke",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1263388021,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Na0s/Medical-Whisper-Large-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

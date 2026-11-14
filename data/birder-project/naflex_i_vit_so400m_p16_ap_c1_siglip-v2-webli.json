@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "birder-project/naflex_i_vit_so400m_p16_ap_c1_siglip-v2-webli",
   "slug": "birder-project-naflex_i_vit_so400m_p16_ap_c1_siglip-v2-webli",
   "author": "birder-project",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1711697467,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "google/siglip2-so400m-patch16-naflex",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

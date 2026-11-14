@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Reduanul1997/brain-tumor-thesis-checkpoints",
   "slug": "reduanul1997-brain-tumor-thesis-checkpoints",
   "author": "Reduanul1997",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 63924003697,
   "storage_human": "63.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

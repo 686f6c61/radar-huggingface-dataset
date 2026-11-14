@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "memgrafter/conjure3d-mac-dinov3-gguf",
   "slug": "memgrafter-conjure3d-mac-dinov3-gguf",
   "author": "memgrafter",
@@ -27,14 +27,19 @@
   "parameters_human": "303.2M",
   "storage_bytes": 607061472,
   "storage_human": "607 MB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiliato/lso_back_combined_slim_abs_cropped_GR00T17_rel",
   "slug": "kiliato-lso_back_combined_slim_abs_cropped_gr00t17_rel",
   "author": "kiliato",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576219888,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

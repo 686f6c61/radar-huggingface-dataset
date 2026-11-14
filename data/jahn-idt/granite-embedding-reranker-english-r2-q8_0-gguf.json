@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jahn-idt/granite-embedding-reranker-english-r2-Q8_0-GGUF",
   "slug": "jahn-idt-granite-embedding-reranker-english-r2-q8_0-gguf",
   "author": "jahn-idt",
@@ -39,14 +39,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 160840160,
   "storage_human": "161 MB",
+  "context_length": 8192,
   "base_model": "ibm-granite/granite-embedding-reranker-english-r2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

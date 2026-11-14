@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-dev/HeartMuLa-oss-3B-MLX",
   "slug": "moonbox-dev-heartmula-oss-3b-mlx",
   "author": "moonbox-dev",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 20628163058,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "HeartMuLa/HeartMuLa-oss-3B",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

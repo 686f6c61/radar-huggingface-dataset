@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tokinasin/llm-jp-4-vl-9b-uncensored-ara",
   "slug": "tokinasin-llm-jp-4-vl-9b-uncensored-ara",
   "author": "tokinasin",
@@ -48,14 +48,19 @@
   "parameters_human": "9.05B",
   "storage_bytes": 18123018523,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "llm-jp/llm-jp-4-vl-9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

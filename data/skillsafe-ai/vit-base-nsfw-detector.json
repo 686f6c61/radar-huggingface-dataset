@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skillsafe-ai/vit-base-nsfw-detector",
   "slug": "skillsafe-ai-vit-base-nsfw-detector",
   "author": "skillsafe-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 433070029,
   "storage_human": "433 MB",
+  "context_length": null,
   "base_model": "AdamCodd/vit-base-nsfw-detector",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

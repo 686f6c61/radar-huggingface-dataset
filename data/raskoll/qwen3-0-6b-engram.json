@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Raskoll/qwen3-0.6b-engram",
   "slug": "raskoll-qwen3-0-6b-engram",
   "author": "Raskoll",
@@ -33,14 +33,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 8044649116,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

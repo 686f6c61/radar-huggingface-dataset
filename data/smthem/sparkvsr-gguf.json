@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smthem/SparkVSR-GGUF",
   "slug": "smthem-sparkvsr-gguf",
   "author": "smthem",
@@ -23,14 +23,19 @@
   "parameters_human": "5.57B",
   "storage_bytes": 67697285720,
   "storage_human": "67.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pfnet/plamo-3-translate-31b-GGUF",
   "slug": "pfnet-plamo-3-translate-31b-gguf",
   "author": "pfnet",
@@ -136,14 +136,19 @@
   "parameters_human": "31.76B",
   "storage_bytes": 191999747250,
   "storage_human": "192.0 GB",
+  "context_length": 262144,
   "base_model": "pfnet/plamo-3-translate-31b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

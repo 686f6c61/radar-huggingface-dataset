@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aixk/ab10-v2",
   "slug": "aixk-ab10-v2",
   "author": "aixk",
@@ -41,14 +41,19 @@
   "parameters_human": "167.8M",
   "storage_bytes": 7550816668,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "aixk/BAAR2-150M",
+  "renamed_at": "2026-11-11T04:23:02.064Z",
   "benchmarks": [],
   "sources": [
     {

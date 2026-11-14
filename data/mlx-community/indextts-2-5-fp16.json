@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/IndexTTS-2.5-fp16",
   "slug": "mlx-community-indextts-2-5-fp16",
   "author": "mlx-community",
@@ -42,6 +42,7 @@
   "parameters_human": "580.5M",
   "storage_bytes": 4480085380,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "IndexTeam/IndexTTS-2.5",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

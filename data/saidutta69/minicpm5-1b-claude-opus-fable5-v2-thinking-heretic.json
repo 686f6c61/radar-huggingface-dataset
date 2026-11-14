@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
   "slug": "saidutta69-minicpm5-1b-claude-opus-fable5-v2-thinking-heretic",
   "author": "saidutta69",
@@ -56,6 +56,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 14097951392,
   "storage_human": "14.1 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-1B, GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
   "formats": [
     "gguf",
@@ -63,8 +64,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

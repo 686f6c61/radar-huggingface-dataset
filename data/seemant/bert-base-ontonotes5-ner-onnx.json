@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Seemant/bert-base-ontonotes5-ner-ONNX",
   "slug": "seemant-bert-base-ontonotes5-ner-onnx",
   "author": "Seemant",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1102108380,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "learnrr/bert-base-ontonotes5-ner",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blackpirates/SmolLM2-135M-TheOneThing",
   "slug": "blackpirates-smollm2-135m-theonething",
   "author": "blackpirates",
@@ -36,6 +36,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 539946536,
   "storage_human": "540 MB",
+  "context_length": 8192,
   "base_model": "blackpirates/SmolLM2-135M-TheOneThing",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

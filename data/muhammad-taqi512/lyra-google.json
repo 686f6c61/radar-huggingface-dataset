@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muhammad-taqi512/LYRA-GOOGLE",
   "slug": "muhammad-taqi512-lyra-google",
   "author": "muhammad-taqi512",
@@ -25,6 +25,7 @@
   "parameters_human": "865.9M",
   "storage_bytes": 12954587874,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "muhammad-taqi512/VINZING-V1",
+  "renamed_at": "2026-11-11T06:49:03.767Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quanda-bench-test/5d5968d-awa2_resnet50_MislabelingDetection_p10",
   "slug": "quanda-bench-test-5d5968d-awa2_resnet50_mislabelingdetection_p10",
   "author": "quanda-bench-test",
@@ -25,14 +25,19 @@
   "parameters_human": "23.7M",
   "storage_bytes": 473417160,
   "storage_human": "473 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

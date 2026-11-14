@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0x56696B/S1-mini-dev-dictation",
   "slug": "0x56696b-s1-mini-dev-dictation",
   "author": "0x56696B",
@@ -48,6 +48,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 4467997932,
   "storage_human": "4.5 GB",
+  "context_length": 40960,
   "base_model": "superwhisper/s1-mini",
   "formats": [
     "gguf",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

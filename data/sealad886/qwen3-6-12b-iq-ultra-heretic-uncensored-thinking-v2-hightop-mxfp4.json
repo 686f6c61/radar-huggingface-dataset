@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sealad886/Qwen3.6-12B-IQ-Ultra-Heretic-Uncensored-Thinking-V2-Hightop-mxfp4",
   "slug": "sealad886-qwen3-6-12b-iq-ultra-heretic-uncensored-thinking-v2-hightop-mxfp4",
   "author": "sealad886",
@@ -60,6 +60,7 @@
   "parameters_human": "12.14B",
   "storage_bytes": 7138311907,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.6-12B-IQ-Ultra-Heretic-Uncensored-Thinking-V2-Hightop",
   "formats": [
     "mlx",
@@ -67,8 +68,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

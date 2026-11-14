@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-ConvRot-NVFP4",
   "slug": "ussoewwin-hybrid-sensitivity-weighted-quantization-z-image-convrot-nvfp4",
   "author": "ussoewwin",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 172820551939,
   "storage_human": "172.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Z-Image-Hybrid-ConvRot-NVFP4",
+  "renamed_at": "2026-11-12T08:15:19.453Z",
   "benchmarks": [],
   "sources": [
     {

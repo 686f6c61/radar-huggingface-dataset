@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw",
   "slug": "davidsyoung-glm-5-3-exl3-tr3-3-42bpw",
   "author": "davidsyoung",
@@ -40,14 +40,19 @@
   "parameters_human": "177.52B",
   "storage_bytes": 355252822046,
   "storage_human": "355.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

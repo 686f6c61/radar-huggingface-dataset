@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SwinliQ-AI-2/OmniVoice-MLX-4bit",
   "slug": "swinliq-ai-2-omnivoice-mlx-4bit",
   "author": "SwinliQ-AI-2",
@@ -29,6 +29,7 @@
   "parameters_human": "612.6M",
   "storage_bytes": 759042826,
   "storage_human": "759 MB",
+  "context_length": null,
   "base_model": "k2-fsa/OmniVoice",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SwinliQ-AIn-2/OmniVoice-MLX-4bit",
+  "renamed_at": "2026-11-14T04:27:24.004Z",
   "benchmarks": [],
   "sources": [
     {

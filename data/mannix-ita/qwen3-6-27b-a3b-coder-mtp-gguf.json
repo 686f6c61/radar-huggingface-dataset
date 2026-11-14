@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ManniX-ITA/Qwen3.6-27B-A3B-Coder-MTP-GGUF",
   "slug": "mannix-ita-qwen3-6-27b-a3b-coder-mtp-gguf",
   "author": "ManniX-ITA",
@@ -35,14 +35,19 @@
   "parameters_human": "26.21B",
   "storage_bytes": 430622953285,
   "storage_human": "430.6 GB",
+  "context_length": 262144,
   "base_model": "ManniX-ITA/Qwen3.6-27B-A3B-Coder, Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

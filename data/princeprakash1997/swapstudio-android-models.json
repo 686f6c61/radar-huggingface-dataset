@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "princePrakash1997/swapstudio-android-models",
   "slug": "princeprakash1997-swapstudio-android-models",
   "author": "princePrakash1997",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 471221536,
   "storage_human": "471 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

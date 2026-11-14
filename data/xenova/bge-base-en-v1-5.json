@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xenova/bge-base-en-v1.5",
   "slug": "xenova-bge-base-en-v1-5",
   "author": "Xenova",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1372321832,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-base-en-v1.5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

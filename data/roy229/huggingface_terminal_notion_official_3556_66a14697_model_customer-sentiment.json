@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Roy229/huggingface_terminal_notion_official_3556_66a14697_model_customer-sentiment",
   "slug": "roy229-huggingface_terminal_notion_official_3556_66a14697_model_customer-sentiment",
   "author": "Roy229",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:08:11.126Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

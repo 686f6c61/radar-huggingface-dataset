@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SixVolts/GLM-5.2-ewaste-edition-GGUF",
   "slug": "sixvolts-glm-5-2-ewaste-edition-gguf",
   "author": "SixVolts",
@@ -35,14 +35,19 @@
   "parameters_human": "753.86B",
   "storage_bytes": 1330719016224,
   "storage_human": "1330.7 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/NVIDIA-Nemotron-3-Nano-30B-A3B-Tensix-BFP4-Attn8-MambaOut8",
   "slug": "xylolabs-nvidia-nemotron-3-nano-30b-a3b-tensix-bfp4-attn8-mambaout8",
   "author": "Xylolabs",
@@ -54,14 +54,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 63173768365,
   "storage_human": "63.2 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

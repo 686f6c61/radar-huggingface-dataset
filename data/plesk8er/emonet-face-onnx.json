@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "plesk8er/EmoNet-Face-ONNX",
   "slug": "plesk8er-emonet-face-onnx",
   "author": "plesk8er",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3013405558,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "laion/Empathic-Insight-Face-Large, google/siglip2-so400m-patch16-384",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

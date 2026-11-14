@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/AA-VL-4B-GGUF",
   "slug": "prithivmlmods-aa-vl-4b-gguf",
   "author": "prithivMLmods",
@@ -42,14 +42,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 31386511392,
   "storage_human": "31.4 GB",
+  "context_length": 262144,
   "base_model": "emirozcan16/AA-VL-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

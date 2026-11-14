@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Frugal-Math-30B-A3B-stage-1-GGUF",
   "slug": "mradermacher-frugal-math-30b-a3b-stage-1-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 208115938272,
   "storage_human": "208.1 GB",
+  "context_length": 262144,
   "base_model": "MBZUAI-Paris/Frugal-Math-30B-A3B-stage-1-GSPO",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2-GGUF",
   "slug": "mradermacher-glm-4-7-flash-claude-opus-4-5-high-reasoning-distill-v2-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "29.94B",
   "storage_bytes": 203805067680,
   "storage_human": "203.8 GB",
+  "context_length": 202752,
   "base_model": "ayunami2000/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darioooooo0o/K2-Horizon-MoVA-36B-A4B-GGUF",
   "slug": "darioooooo0o-k2-horizon-mova-36b-a4b-gguf",
   "author": "darioooooo0o",
@@ -33,14 +33,19 @@
   "parameters_human": "37.44B",
   "storage_bytes": 127661286880,
   "storage_human": "127.7 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

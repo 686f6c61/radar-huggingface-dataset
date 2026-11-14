@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/action-tokenizer-arm2-rbbt-anyh3-w003-split-100001-slurm-20260925",
   "slug": "junbrro-action-tokenizer-arm2-rbbt-anyh3-w003-split-100001-slurm-20260925",
   "author": "junbrro",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 38625623,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

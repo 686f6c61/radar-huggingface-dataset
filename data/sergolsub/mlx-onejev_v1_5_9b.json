@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sergolsub/mlx-onejev_v1_5_9B",
   "slug": "sergolsub-mlx-onejev_v1_5_9b",
   "author": "sergolsub",
@@ -27,6 +27,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11400128255,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "OmniJev/OneJev1.5-9B",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T05:00:24.304Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

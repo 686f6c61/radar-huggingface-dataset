@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MachinesFluent/mf-runtime-assets-42c70a9e",
   "slug": "machinesfluent-mf-runtime-assets-42c70a9e",
   "author": "MachinesFluent",
@@ -24,6 +24,7 @@
   "parameters_human": "22.2M",
   "storage_bytes": 445119616,
   "storage_human": "445 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

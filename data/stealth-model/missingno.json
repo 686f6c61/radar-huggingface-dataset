@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stealth-model/missingno",
   "slug": "stealth-model-missingno",
   "author": "stealth-model",
@@ -37,14 +37,19 @@
   "parameters_human": "501.27B",
   "storage_bytes": 133886470098,
   "storage_human": "133.9 GB",
+  "context_length": 1048576,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeVilDoNia/HaDeS-MOSS-Turbo",
   "slug": "devildonia-hades-moss-turbo",
   "author": "DeVilDoNia",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 15816782,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

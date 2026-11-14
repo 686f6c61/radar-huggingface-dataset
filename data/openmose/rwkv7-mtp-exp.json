@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMOSE/RWKV7-MTP-Exp",
   "slug": "openmose-rwkv7-mtp-exp",
   "author": "OpenMOSE",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 4380971425,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "RWKV/RWKV7-G1l-2.9B-20261031, RWKV/RWKV7-G1l-7.2B-20261031, RWKV/RWKV7-G1l-13.3B-20261031",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

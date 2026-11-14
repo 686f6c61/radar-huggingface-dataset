@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Evicka/Hanse2-100M-Base",
   "slug": "evicka-hanse2-100m-base",
   "author": "Evicka",
@@ -44,14 +44,19 @@
   "parameters_human": "99.1M",
   "storage_bytes": 397727783,
   "storage_human": "398 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

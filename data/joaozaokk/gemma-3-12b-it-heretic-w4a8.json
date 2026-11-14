@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/Gemma-3-12B-it-Heretic-W4A8",
   "slug": "joaozaokk-gemma-3-12b-it-heretic-w4a8",
   "author": "JoaoZaokk",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 37093365549,
   "storage_human": "37.1 GB",
+  "context_length": null,
   "base_model": "DreamFast/gemma-3-12b-it-heretic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

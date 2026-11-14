@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SyntheticMDProductions/Roblox_Oasis_V4_AI_Model",
   "slug": "syntheticmdproductions-roblox_oasis_v4_ai_model",
   "author": "SyntheticMDProductions",
@@ -28,6 +28,7 @@
   "parameters_human": "20.0M",
   "storage_bytes": 81494219,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

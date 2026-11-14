@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rambrogi/lyrics-room-suno-director-v4-GGUF",
   "slug": "rambrogi-lyrics-room-suno-director-v4-gguf",
   "author": "rambrogi",
@@ -33,14 +33,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 12669645600,
   "storage_human": "12.7 GB",
+  "context_length": 262144,
   "base_model": "unsloth/gemma-4-12b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

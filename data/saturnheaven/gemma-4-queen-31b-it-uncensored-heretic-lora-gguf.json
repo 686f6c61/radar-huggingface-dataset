@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaturnHeaven/Gemma-4-Queen-31B-it-uncensored-heretic-lora-GGUF",
   "slug": "saturnheaven-gemma-4-queen-31b-it-uncensored-heretic-lora-gguf",
   "author": "SaturnHeaven",
@@ -32,14 +32,19 @@
   "parameters_human": "28.7M",
   "storage_bytes": 87817216,
   "storage_human": "88 MB",
+  "context_length": null,
   "base_model": "aifeifei798/Gemma-4-Queen-31B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

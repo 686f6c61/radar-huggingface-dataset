@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daemonix/DeepSeek-V4.1-Flash-1017-abliterated-MXFP4-GGUF",
   "slug": "daemonix-deepseek-v4-1-flash-1017-abliterated-mxfp4-gguf",
   "author": "daemonix",
@@ -32,14 +32,19 @@
   "parameters_human": "485.3M",
   "storage_bytes": 510546179095,
   "storage_human": "510.5 GB",
+  "context_length": null,
   "base_model": "mrfakename/DeepSeek-V4.1-Flash-1017-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "daemonix/DeepSeek-V4.1-Flash-1017-abliterated-MXFP4-GGUF-antirez-DS4",
+  "renamed_at": "2026-11-11T04:56:00.825Z",
   "benchmarks": [],
   "sources": []
 }

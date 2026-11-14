@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bouroo/Qwopus3.8-27B-Coder-Flash-MXFP4-CT",
   "slug": "bouroo-qwopus3-8-27b-coder-flash-mxfp4-ct",
   "author": "bouroo",
@@ -46,14 +46,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 19818181759,
   "storage_human": "19.8 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

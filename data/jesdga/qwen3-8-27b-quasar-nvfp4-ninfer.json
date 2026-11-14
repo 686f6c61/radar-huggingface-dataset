@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jesdga/Qwen3.8-27B-QUASAR-nvfp4-NInfer",
   "slug": "jesdga-qwen3-8-27b-quasar-nvfp4-ninfer",
   "author": "jesdga",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 19624516612,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4, z-lab/Qwen3.8-27B-DFlash2",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jesdga/Qwen3.8-27B-QUASAR-DFlash2-nvfp4-NInfer",
+  "renamed_at": "2026-11-11T05:46:46.857Z",
   "benchmarks": [
     {
       "task": "Text Generation",

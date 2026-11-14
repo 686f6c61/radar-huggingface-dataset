@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Suriya777ff/INF-5-Tanglish-GGUF",
   "slug": "suriya777ff-inf-5-tanglish-gguf",
   "author": "Suriya777ff",
@@ -25,14 +25,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 2214818624,
   "storage_human": "2.2 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

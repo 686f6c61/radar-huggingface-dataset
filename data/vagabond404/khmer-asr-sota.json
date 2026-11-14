@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vagabond404/khmer-asr-sota",
   "slug": "vagabond404-khmer-asr-sota",
   "author": "Vagabond404",
@@ -39,6 +39,7 @@
   "parameters_human": "315.5M",
   "storage_bytes": 9703042602,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

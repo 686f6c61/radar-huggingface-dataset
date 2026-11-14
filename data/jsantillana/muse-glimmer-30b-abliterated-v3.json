@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsantillana/Muse-Glimmer-30B-abliterated-v3",
   "slug": "jsantillana-muse-glimmer-30b-abliterated-v3",
   "author": "jsantillana",
@@ -23,14 +23,19 @@
   "parameters_human": "29.78B",
   "storage_bytes": 59581565169,
   "storage_human": "59.6 GB",
+  "context_length": null,
   "base_model": "jsantillana/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

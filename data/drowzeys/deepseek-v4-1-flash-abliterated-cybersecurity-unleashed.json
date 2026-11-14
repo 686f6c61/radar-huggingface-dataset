@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drowzeys/DeepSeek-V4.1-Flash-Abliterated-Cybersecurity-Unleashed",
   "slug": "drowzeys-deepseek-v4-1-flash-abliterated-cybersecurity-unleashed",
   "author": "drowzeys",
@@ -43,19 +43,24 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 258,
+  "likes": 259,
   "downloads_30d": 0,
-  "trending_score": 17,
+  "trending_score": 18,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1773865272,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

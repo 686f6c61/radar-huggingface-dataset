@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiel2/KielGen-Codex",
   "slug": "kiel2-kielgen-codex",
   "author": "kiel2",
@@ -33,14 +33,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 34318085684,
   "storage_human": "34.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kiel2/kiel-2-codex",
+  "renamed_at": "2026-11-11T05:55:41.500Z",
   "benchmarks": [],
   "sources": [
     {

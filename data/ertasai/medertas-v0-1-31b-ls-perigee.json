@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ErtasAI/MedErtas-v0.1-31B-LS-Perigee",
   "slug": "ertasai-medertas-v0-1-31b-ls-perigee",
   "author": "ErtasAI",
@@ -40,14 +40,19 @@
   "parameters_human": "469.5M",
   "storage_bytes": 973441547,
   "storage_human": "973 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it-assistant",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

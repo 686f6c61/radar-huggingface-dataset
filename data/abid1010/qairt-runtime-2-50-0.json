@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abid1010/qairt-runtime-2.50.0",
   "slug": "abid1010-qairt-runtime-2-50-0",
   "author": "abid1010",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 47714916,
   "storage_human": "48 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:37:39.004Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

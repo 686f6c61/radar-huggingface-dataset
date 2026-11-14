@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArthT/qwen3-8b-a7ctx-badmed-seed1-v2",
   "slug": "artht-qwen3-8b-a7ctx-badmed-seed1-v2",
   "author": "ArthT",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 5283085491,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:43:29.231Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KETI-AIR/Qwen3.5-KETI-HAECHI-27B",
   "slug": "keti-air-qwen3-5-keti-haechi-27b",
   "author": "KETI-AIR",
@@ -43,14 +43,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54737736844,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "KETI-NLP/Qwen3.5-KETI-HAECHI-27B",
+  "renamed_at": "2026-11-13T03:15:02.692Z",
   "benchmarks": [],
   "sources": [
     {

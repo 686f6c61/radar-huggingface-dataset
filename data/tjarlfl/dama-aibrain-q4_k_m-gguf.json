@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tjarlfl/dama-aibrain-Q4_K_M-GGUF",
   "slug": "tjarlfl-dama-aibrain-q4_k_m-gguf",
   "author": "tjarlfl",
@@ -34,14 +34,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 3427864256,
   "storage_human": "3.4 GB",
+  "context_length": 131072,
   "base_model": "tjarlfl/dama-aibrain",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

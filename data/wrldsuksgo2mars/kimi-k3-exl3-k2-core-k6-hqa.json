@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/Kimi-K3-EXL3-K2-Core-K6-HQA",
   "slug": "wrldsuksgo2mars-kimi-k3-exl3-k2-core-k6-hqa",
   "author": "wrldsuksgo2mars",
@@ -32,14 +32,19 @@
   "parameters_human": "374.50B",
   "storage_bytes": 749664593676,
   "storage_human": "749.7 GB",
+  "context_length": null,
   "base_model": "wrldsuksgo2mars/Kimi-K3-EXL3-K2, moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T08:06:22.611Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation",
   "slug": "jujeongho-qwen3-5-4b-lora-welding-component-segmentation",
   "author": "jujeongho",
@@ -28,14 +28,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 27255850933,
   "storage_human": "27.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T06:08:45.943Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakleash/Bielik-11B-v3.1-DFlash2-GGUF",
   "slug": "speakleash-bielik-11b-v3-1-dflash2-gguf",
   "author": "speakleash",
@@ -38,14 +38,19 @@
   "parameters_human": "1.23B",
   "storage_bytes": 4510078208,
   "storage_human": "4.5 GB",
+  "context_length": 32768,
   "base_model": "speakleash/Bielik-11B-v3.1-DFlash2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

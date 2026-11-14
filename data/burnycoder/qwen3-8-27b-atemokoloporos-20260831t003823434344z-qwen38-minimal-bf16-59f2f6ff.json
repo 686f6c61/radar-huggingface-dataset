@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BurnyCoder/qwen3.8-27b-atemokoloporos-20260831t003823434344z-qwen38-minimal-bf16-59f2f6ff",
   "slug": "burnycoder-qwen3-8-27b-atemokoloporos-20260831t003823434344z-qwen38-minimal-bf16-59f2f6ff",
   "author": "BurnyCoder",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 233895521,
   "storage_human": "234 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

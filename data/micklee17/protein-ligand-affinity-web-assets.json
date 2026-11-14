@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "micklee17/protein-ligand-affinity-web-assets",
   "slug": "micklee17-protein-ligand-affinity-web-assets",
   "author": "micklee17",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 4481220608,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

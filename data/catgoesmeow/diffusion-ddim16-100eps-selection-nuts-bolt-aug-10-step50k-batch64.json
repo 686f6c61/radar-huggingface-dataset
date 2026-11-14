@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CatGoesMeow/DIFFUSION-DDIM16-100eps-Selection-Nuts-Bolt-Aug-10-Step50k-Batch64",
   "slug": "catgoesmeow-diffusion-ddim16-100eps-selection-nuts-bolt-aug-10-step50k-batch64",
   "author": "CatGoesMeow",
@@ -28,14 +28,19 @@
   "parameters_human": "266.6M",
   "storage_bytes": 1066526264,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

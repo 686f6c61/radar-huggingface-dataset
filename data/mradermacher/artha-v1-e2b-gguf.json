@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Artha-v1-E2B-GGUF",
   "slug": "mradermacher-artha-v1-e2b-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 49578668352,
   "storage_human": "49.6 GB",
+  "context_length": 131072,
   "base_model": "developerJenis/Artha-v1-E2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

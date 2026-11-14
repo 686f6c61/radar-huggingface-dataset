@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.5-9B-Brainwaves-qx86-hi-mlx",
   "slug": "nightmedia-qwen3-5-9b-brainwaves-qx86-hi-mlx",
   "author": "nightmedia",
@@ -90,6 +90,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 9863178940,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": "schneewolflabs/Wichtelchen-Qwen3.5-9B, nightmedia/Qwen3.5-9B-Holodeck-Lounge",
   "formats": [
     "mlx",
@@ -97,8 +98,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

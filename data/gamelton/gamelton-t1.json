@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gamelton/Gamelton-T1",
   "slug": "gamelton-gamelton-t1",
   "author": "Gamelton",
@@ -31,14 +31,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 1988313152,
   "storage_human": "2.0 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Gamelton-ai/Gamelton-T1",
+  "renamed_at": "2026-11-11T02:48:00.140Z",
   "benchmarks": [],
   "sources": [
     {

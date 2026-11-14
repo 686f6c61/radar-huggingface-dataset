@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ov21-base-preview/base-tokenizer",
   "slug": "ov21-base-preview-base-tokenizer",
   "author": "ov21-base-preview",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 19990862,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T07:57:26.971Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

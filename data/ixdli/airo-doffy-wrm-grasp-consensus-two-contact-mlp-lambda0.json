@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IXDLI/AIRO-Doffy-WRM-Grasp-consensus-two-contact-mlp-lambda0",
   "slug": "ixdli-airo-doffy-wrm-grasp-consensus-two-contact-mlp-lambda0",
   "author": "IXDLI",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 25206388458,
   "storage_human": "25.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

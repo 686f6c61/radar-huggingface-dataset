@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "notSnix/Qwen3.8-27B-Puzzletron-11p4B",
   "slug": "notsnix-qwen3-8-27b-puzzletron-11p4b",
   "author": "notSnix",
@@ -36,14 +36,19 @@
   "parameters_human": "11.65B",
   "storage_bytes": 23315173221,
   "storage_human": "23.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:00:16.987Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

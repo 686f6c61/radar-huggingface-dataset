@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpensourceWTF/MiMo-V2.6-Flash-MOPD-fp8res-mlx-stream",
   "slug": "opensourcewtf-mimo-v2-6-flash-mopd-fp8res-mlx-stream",
   "author": "OpensourceWTF",
@@ -41,6 +41,7 @@
   "parameters_human": "5.98B",
   "storage_bytes": 170957273188,
   "storage_human": "171.0 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

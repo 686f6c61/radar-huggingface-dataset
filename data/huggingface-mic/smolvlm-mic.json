@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/smolvlm-mic",
   "slug": "huggingface-mic-smolvlm-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "6.6M",
   "storage_bytes": 26320568,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

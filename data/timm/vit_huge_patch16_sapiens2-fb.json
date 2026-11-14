@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "timm/vit_huge_patch16_sapiens2.fb",
   "slug": "timm-vit_huge_patch16_sapiens2-fb",
   "author": "timm",
@@ -35,14 +35,19 @@
   "parameters_human": "814.3M",
   "storage_bytes": 3257187992,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "facebook/sapiens2-pretrain-0.8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

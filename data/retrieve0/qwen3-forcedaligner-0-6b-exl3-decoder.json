@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Retrieve0/Qwen3-ForcedAligner-0.6B-EXL3-Decoder",
   "slug": "retrieve0-qwen3-forcedaligner-0-6b-exl3-decoder",
   "author": "Retrieve0",
@@ -36,14 +36,19 @@
   "parameters_human": "422.2M",
   "storage_bytes": 856839849,
   "storage_human": "857 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ForcedAligner-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

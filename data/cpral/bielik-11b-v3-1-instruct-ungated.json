@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cpral/Bielik-11B-v3.1-Instruct-ungated",
   "slug": "cpral-bielik-11b-v3-1-instruct-ungated",
   "author": "cpral",
@@ -148,14 +148,19 @@
   "parameters_human": "11.17B",
   "storage_bytes": 22338139507,
   "storage_human": "22.3 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-11B-v3.1-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

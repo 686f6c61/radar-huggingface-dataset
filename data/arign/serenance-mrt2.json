@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arign/serenance-mrt2",
   "slug": "arign-serenance-mrt2",
   "author": "arign",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 4628427606,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "google/magenta-realtime-2",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

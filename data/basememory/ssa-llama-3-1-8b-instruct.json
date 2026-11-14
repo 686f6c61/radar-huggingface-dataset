@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BaseMemory/SSA-Llama-3.1-8B-Instruct",
   "slug": "basememory-ssa-llama-3-1-8b-instruct",
   "author": "BaseMemory",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 59304272,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

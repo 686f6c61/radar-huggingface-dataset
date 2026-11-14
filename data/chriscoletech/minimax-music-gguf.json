@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChrisColeTech/minimax-music-GGUF",
   "slug": "chriscoletech-minimax-music-gguf",
   "author": "ChrisColeTech",
@@ -33,14 +33,19 @@
   "parameters_human": "7.61B",
   "storage_bytes": 110149645447,
   "storage_human": "110.1 GB",
+  "context_length": 32768,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ChrisColeTech/minimax-music3-GGUF",
+  "renamed_at": "2026-11-11T02:30:19.167Z",
   "benchmarks": [],
   "sources": []
 }

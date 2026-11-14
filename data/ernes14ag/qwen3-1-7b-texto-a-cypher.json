@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ernes14AG/qwen3-1.7b-texto-a-cypher",
   "slug": "ernes14ag-qwen3-1-7b-texto-a-cypher",
   "author": "Ernes14AG",
@@ -37,14 +37,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452608113,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:29:57.369Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

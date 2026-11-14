@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hydragon123/zh-ud-diaparser",
   "slug": "hydragon123-zh-ud-diaparser",
   "author": "Hydragon123",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 923033870,
   "storage_human": "923 MB",
+  "context_length": null,
   "base_model": "hfl/chinese-roberta-wwm-ext",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

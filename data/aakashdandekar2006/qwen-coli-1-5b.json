@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aakashdandekar2006/Qwen-Coli-1.5B",
   "slug": "aakashdandekar2006-qwen-coli-1-5b",
   "author": "aakashdandekar2006",
@@ -44,14 +44,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098889500,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asjdoij/Llama-3.1-8B-Lexi-Uncensored-V2-Q4_K_M-GGUF",
   "slug": "asjdoij-llama-3-1-8b-lexi-uncensored-v2-q4_k_m-gguf",
   "author": "asjdoij",
@@ -31,14 +31,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920739072,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

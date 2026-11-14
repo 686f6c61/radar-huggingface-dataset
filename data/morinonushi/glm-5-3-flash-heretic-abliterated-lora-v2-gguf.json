@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF",
   "slug": "morinonushi-glm-5-3-flash-heretic-abliterated-lora-v2-gguf",
   "author": "MorinoNushi",
@@ -30,14 +30,19 @@
   "parameters_human": "43.0M",
   "storage_bytes": 86058400,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

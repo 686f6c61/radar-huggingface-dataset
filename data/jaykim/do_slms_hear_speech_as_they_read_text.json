@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaykim/Do_SLMs_Hear_Speech_as_They_Read_Text",
   "slug": "jaykim-do_slms_hear_speech_as_they_read_text",
   "author": "jaykim",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 19614103961,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

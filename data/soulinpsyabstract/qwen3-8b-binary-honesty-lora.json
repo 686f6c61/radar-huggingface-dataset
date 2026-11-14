@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SoulInPsyAbstract/qwen3-8b-binary-honesty-lora",
   "slug": "soulinpsyabstract-qwen3-8b-binary-honesty-lora",
   "author": "SoulInPsyAbstract",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 98783512,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

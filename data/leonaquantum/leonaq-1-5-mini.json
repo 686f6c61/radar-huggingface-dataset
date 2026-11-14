@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeonaQuantum/leonaq-1.5-mini",
   "slug": "leonaquantum-leonaq-1-5-mini",
   "author": "LeonaQuantum",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1345895,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

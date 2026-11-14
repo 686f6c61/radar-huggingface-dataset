@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hakunokina/DeepSeek-V4.1-Flash-1017-UNCENSORED-oQ4e-mtp",
   "slug": "hakunokina-deepseek-v4-1-flash-1017-uncensored-oq4e-mtp",
   "author": "hakunokina",
@@ -36,6 +36,7 @@
   "parameters_human": "129.06B",
   "storage_bytes": 432033678048,
   "storage_human": "432.0 GB",
+  "context_length": null,
   "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/G4-WanaMeroQueen-v3-31B-heretic-i1-GGUF",
   "slug": "mradermacher-g4-wanameroqueen-v3-31b-heretic-i1-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 334809588096,
   "storage_human": "334.8 GB",
+  "context_length": 262144,
   "base_model": "vulture3/G4-WanaMeroQueen-v3-31B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

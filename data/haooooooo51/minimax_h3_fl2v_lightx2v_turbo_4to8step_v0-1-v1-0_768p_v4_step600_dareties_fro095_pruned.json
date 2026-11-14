@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HAOOOOOOO51/Minimax_h3_fl2v_lightx2v_turbo_4to8step_v0.1-v1.0_768p_v4_step600_dareties_fro095_pruned",
   "slug": "haooooooo51-minimax_h3_fl2v_lightx2v_turbo_4to8step_v0-1-v1-0_768p_v4_step600_dareties_fro095_pruned",
   "author": "HAOOOOOOO51",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 858675315,
   "storage_human": "859 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

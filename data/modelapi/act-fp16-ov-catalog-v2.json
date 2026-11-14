@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "modelapi/act-fp16-ov-catalog-v2",
   "slug": "modelapi-act-fp16-ov-catalog-v2",
   "author": "modelapi",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1822148,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:55:52.664Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

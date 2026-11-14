@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krummholz-ai/atlantic-lite-4b-v7-GGUF",
   "slug": "krummholz-ai-atlantic-lite-4b-v7-gguf",
   "author": "krummholz-ai",
@@ -28,20 +28,25 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 200,
+  "downloads_30d": 277,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
   "storage_bytes": 12240004256,
   "storage_human": "12.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

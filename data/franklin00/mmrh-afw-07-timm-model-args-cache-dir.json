@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrankLin00/mmrh-afw-07-timm-model-args-cache-dir",
   "slug": "franklin00-mmrh-afw-07-timm-model-args-cache-dir",
   "author": "FrankLin00",
@@ -24,14 +24,19 @@
   "parameters_human": "4",
   "storage_bytes": 96,
   "storage_human": "96 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

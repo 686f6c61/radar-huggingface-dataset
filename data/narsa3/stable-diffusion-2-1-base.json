@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Narsa3/stable-diffusion-2-1-base",
   "slug": "narsa3-stable-diffusion-2-1-base",
   "author": "Narsa3",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 2580061174,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

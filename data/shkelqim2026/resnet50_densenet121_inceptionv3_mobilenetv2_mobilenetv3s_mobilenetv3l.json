@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shkelqim2026/ResNet50_DenseNet121_InceptionV3_MobileNetV2_MobileNetV3S_MobileNetV3L",
   "slug": "shkelqim2026-resnet50_densenet121_inceptionv3_mobilenetv2_mobilenetv3s_mobilenetv3l",
   "author": "shkelqim2026",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 3600983220,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

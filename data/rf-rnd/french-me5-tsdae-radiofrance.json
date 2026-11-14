@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rf-rnd/french-me5-tsdae-radiofrance",
   "slug": "rf-rnd-french-me5-tsdae-radiofrance",
   "author": "rf-rnd",
@@ -35,14 +35,19 @@
   "parameters_human": "35.9M",
   "storage_bytes": 143719592,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "antoinelouis/french-me5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:19:40.467Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

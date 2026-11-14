@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jasort/chinse-int8-smart-v2",
   "slug": "jasort-chinse-int8-smart-v2",
   "author": "jasort",
@@ -33,14 +33,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 8368065839,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "jasort/chinse",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T05:19:10.634Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

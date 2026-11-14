@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cvgro/Qwen3.8-27B-ABLITERATED-GGUF",
   "slug": "cvgro-qwen3-8-27b-abliterated-gguf",
   "author": "cvgro",
@@ -39,14 +39,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 158366654272,
   "storage_human": "158.4 GB",
+  "context_length": 262144,
   "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

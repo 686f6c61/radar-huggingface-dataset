@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kokuren/doku-chiwawa-ja-offensiveness-deberta-v2-small",
   "slug": "kokuren-doku-chiwawa-ja-offensiveness-deberta-v2-small",
   "author": "kokuren",
@@ -45,6 +45,7 @@
   "parameters_human": "17.9M",
   "storage_bytes": 143885692,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "izumi-lab/deberta-v2-small-japanese",
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

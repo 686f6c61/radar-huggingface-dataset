@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eigentom/nanocode-sft-mix-run1-v3",
   "slug": "eigentom-nanocode-sft-mix-run1-v3",
   "author": "eigentom",
@@ -34,14 +34,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033561208,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B-Midtrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T04:10:10.915Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

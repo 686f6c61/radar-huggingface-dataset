@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/Qwen3-30B-A3B-NVFP4-e2e",
   "slug": "nm-testing-qwen3-30b-a3b-nvfp4-e2e",
   "author": "nm-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "17.45B",
   "storage_bytes": 72325972990,
   "storage_human": "72.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06-mlx",
   "slug": "canvit-canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06-mlx",
   "author": "canvit",
@@ -32,6 +32,7 @@
   "parameters_human": "95.9M",
   "storage_bytes": 383740143,
   "storage_human": "384 MB",
+  "context_length": null,
   "base_model": "canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

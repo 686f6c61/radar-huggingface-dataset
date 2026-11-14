@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "georgeliu59/retrieval_trainset_100_101426",
   "slug": "georgeliu59-retrieval_trainset_100_101426",
   "author": "georgeliu59",
@@ -33,14 +33,19 @@
   "parameters_human": "770288",
   "storage_bytes": 385766899471,
   "storage_human": "385.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

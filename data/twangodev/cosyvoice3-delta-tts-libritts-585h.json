@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twangodev/cosyvoice3-delta-tts-libritts-585h",
   "slug": "twangodev-cosyvoice3-delta-tts-libritts-585h",
   "author": "twangodev",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 375266184,
   "storage_human": "375 MB",
+  "context_length": null,
   "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

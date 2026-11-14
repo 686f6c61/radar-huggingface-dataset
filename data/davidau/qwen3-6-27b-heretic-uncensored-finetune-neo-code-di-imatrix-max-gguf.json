@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF",
   "slug": "davidau-qwen3-6-27b-heretic-uncensored-finetune-neo-code-di-imatrix-max-gguf",
   "author": "DavidAU",
@@ -59,14 +59,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 182151491887,
   "storage_human": "182.2 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akiki-AI/akiki-vad-1.0-int8",
   "slug": "akiki-ai-akiki-vad-1-0-int8",
   "author": "Akiki-AI",
@@ -37,14 +37,19 @@
   "parameters_human": "190849",
   "storage_bytes": 883284,
   "storage_human": "883284 B",
+  "context_length": null,
   "base_model": "Akiki-AI/akiki-vad-1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

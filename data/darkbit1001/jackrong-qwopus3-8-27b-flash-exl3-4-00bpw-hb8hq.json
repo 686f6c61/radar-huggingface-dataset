@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkbit1001/Jackrong-Qwopus3.8-27B-Flash-EXL3-4.00bpw-HB8HQ",
   "slug": "darkbit1001-jackrong-qwopus3-8-27b-flash-exl3-4-00bpw-hb8hq",
   "author": "darkbit1001",
@@ -32,14 +32,19 @@
   "parameters_human": "8.41B",
   "storage_bytes": 16847400242,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

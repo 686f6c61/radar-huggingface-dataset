@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adityapande403/VisDoc-AI",
   "slug": "adityapande403-visdoc-ai",
   "author": "Adityapande403",
@@ -39,14 +39,19 @@
   "parameters_human": "262272",
   "storage_bytes": 1049264,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "vidore/colqwen2.5-v0.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

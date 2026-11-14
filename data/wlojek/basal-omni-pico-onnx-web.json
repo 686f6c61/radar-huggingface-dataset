@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WLojek/basal-omni-pico-onnx-web",
   "slug": "wlojek-basal-omni-pico-onnx-web",
   "author": "WLojek",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 512421179,
   "storage_human": "512 MB",
+  "context_length": null,
   "base_model": "Remek/basal-omni-pico",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

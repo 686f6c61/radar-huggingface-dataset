@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
   "slug": "libertaidai-deepseek-v4-1-flash-1017-exl3-2-9bpw",
   "author": "LibertAIDAI",
@@ -33,14 +33,19 @@
   "parameters_human": "105.32B",
   "storage_bytes": 210812570238,
   "storage_human": "210.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

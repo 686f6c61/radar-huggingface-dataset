@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-Next-40B-REAP-ptbr-GGUF",
   "slug": "mradermacher-qwen3-next-40b-reap-ptbr-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "40.99B",
   "storage_bytes": 279487093504,
   "storage_human": "279.5 GB",
+  "context_length": 262144,
   "base_model": "xande-p/Qwen3-Next-40B-REAP-ptbr",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

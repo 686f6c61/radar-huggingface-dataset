@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khanhnd61/octo_so101_tape",
   "slug": "khanhnd61-octo_so101_tape",
   "author": "khanhnd61",
@@ -30,14 +30,19 @@
   "parameters_human": "27.0M",
   "storage_bytes": 108209112,
   "storage_human": "108 MB",
+  "context_length": null,
   "base_model": "rail-berkeley/octo-small-1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

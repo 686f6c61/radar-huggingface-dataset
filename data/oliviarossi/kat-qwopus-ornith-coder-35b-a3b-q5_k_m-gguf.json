@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/KAT-Qwopus-Ornith-Coder-35B-A3B-Q5_K_M-GGUF",
   "slug": "oliviarossi-kat-qwopus-ornith-coder-35b-a3b-q5_k_m-gguf",
   "author": "OliviaRossi",
@@ -45,14 +45,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 24729154560,
   "storage_human": "24.7 GB",
+  "context_length": 262144,
   "base_model": "OliviaRossi/KAT-Qwopus-Ornith-Coder-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T02:59:02.258Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

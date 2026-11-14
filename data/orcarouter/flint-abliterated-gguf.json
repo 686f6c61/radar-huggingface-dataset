@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/Flint-abliterated-GGUF",
   "slug": "orcarouter-flint-abliterated-gguf",
   "author": "orcarouter",
@@ -38,21 +38,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 67,
+  "likes": 68,
   "downloads_30d": 6857,
   "trending_score": 14,
   "parameters": 39785287456,
   "parameters_human": "39.79B",
   "storage_bytes": 36436169504,
   "storage_human": "36.4 GB",
+  "context_length": 262144,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

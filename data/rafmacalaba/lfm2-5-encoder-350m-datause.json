@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rafmacalaba/lfm2.5-Encoder-350M-datause",
   "slug": "rafmacalaba-lfm2-5-encoder-350m-datause",
   "author": "rafmacalaba",
@@ -29,14 +29,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 2835964314,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

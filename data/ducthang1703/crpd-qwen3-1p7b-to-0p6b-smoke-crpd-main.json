@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ducthang1703/crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main",
   "slug": "ducthang1703-crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main",
   "author": "ducthang1703",
@@ -35,14 +35,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 2395657622,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

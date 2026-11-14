@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voyagar/Qwen3-ASR-1.7B-ko-mlx-8bit",
   "slug": "voyagar-qwen3-asr-1-7b-ko-mlx-8bit",
   "author": "voyagar",
@@ -35,6 +35,7 @@
   "parameters_human": "2.04B",
   "storage_bytes": 2474737040,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "TeamUNIVA/qwen3_asr_1.7b_ko",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

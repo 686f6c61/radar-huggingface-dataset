@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/BiRefNet_dynamic-ONNX",
   "slug": "onnx-community-birefnet_dynamic-onnx",
   "author": "onnx-community",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1462307192,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "ZhengPeng7/BiRefNet_dynamic",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "onnx-community/BiRefNet_dynamic-1024x1024-ONNX",
+  "renamed_at": "2026-11-11T07:00:50.048Z",
   "benchmarks": [],
   "sources": [
     {

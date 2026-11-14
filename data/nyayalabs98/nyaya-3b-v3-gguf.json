@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NyayaLabs98/nyaya-3b-v3-GGUF",
   "slug": "nyayalabs98-nyaya-3b-v3-gguf",
   "author": "NyayaLabs98",
@@ -40,14 +40,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 5215378304,
   "storage_human": "5.2 GB",
+  "context_length": 32768,
   "base_model": "NyayaLabs98/nyaya-3b-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

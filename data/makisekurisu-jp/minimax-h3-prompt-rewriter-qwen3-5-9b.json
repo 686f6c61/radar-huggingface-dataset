@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "makisekurisu-jp/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B",
   "slug": "makisekurisu-jp-minimax-h3-prompt-rewriter-qwen3-5-9b",
   "author": "makisekurisu-jp",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 18149148868,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA, lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

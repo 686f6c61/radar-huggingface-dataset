@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yujiepan/minicpm-v-4.7-moe-tiny-random",
   "slug": "yujiepan-minicpm-v-4-7-moe-tiny-random",
   "author": "yujiepan",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 45199359,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

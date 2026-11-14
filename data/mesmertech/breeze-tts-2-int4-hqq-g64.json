@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mesmertech/Breeze-TTS-2-int4-hqq-g64",
   "slug": "mesmertech-breeze-tts-2-int4-hqq-g64",
   "author": "mesmertech",
@@ -35,14 +35,19 @@
   "parameters_human": "2.67B",
   "storage_bytes": 5177094127,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "BreezeBlue/Breeze-TTS-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

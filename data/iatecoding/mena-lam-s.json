@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iatecoding/Mena-LAM-s",
   "slug": "iatecoding-mena-lam-s",
   "author": "iatecoding",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 34775105,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T06:22:37.048Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

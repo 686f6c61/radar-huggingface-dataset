@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "justinsimpsad/la-vel",
   "slug": "justinsimpsad-la-vel",
   "author": "justinsimpsad",
@@ -34,6 +34,7 @@
   "parameters_human": "23.4M",
   "storage_bytes": 564573824,
   "storage_human": "565 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T10:34:14.590Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

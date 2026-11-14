@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/parakeet-tdt-0.6b-v3-GGUF",
   "slug": "agentory-parakeet-tdt-0-6b-v3-gguf",
   "author": "agentory",
@@ -85,14 +85,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 2817831456,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:53.065Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

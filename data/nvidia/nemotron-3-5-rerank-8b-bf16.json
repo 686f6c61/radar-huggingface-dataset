@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
   "slug": "nvidia-nemotron-3-5-rerank-8b-bf16",
   "author": "nvidia",
@@ -108,14 +108,19 @@
   "parameters_human": "8.38B",
   "storage_bytes": 16779485075,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

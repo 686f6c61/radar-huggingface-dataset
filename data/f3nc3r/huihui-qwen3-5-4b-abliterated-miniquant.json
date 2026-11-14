@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "f3nc3r/Huihui-Qwen3.5-4B-abliterated-miniQuant",
   "slug": "f3nc3r-huihui-qwen3-5-4b-abliterated-miniquant",
   "author": "f3nc3r",
@@ -38,14 +38,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 2198420512,
   "storage_human": "2.2 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

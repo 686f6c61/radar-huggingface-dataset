@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openmartdev/awaken-full-duplex",
   "slug": "openmartdev-awaken-full-duplex",
   "author": "openmartdev",
@@ -34,14 +34,19 @@
   "parameters_human": "9.42B",
   "storage_bytes": 56558827938,
   "storage_human": "56.6 GB",
+  "context_length": null,
   "base_model": "FunAudioLLM/Fun-Audio-Chat-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "openmartdev/AwakenFullDuplex-FunAudioChat",
+  "renamed_at": "2026-11-11T07:02:24.735Z",
   "benchmarks": [],
   "sources": []
 }

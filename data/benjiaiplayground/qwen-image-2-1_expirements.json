@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benjiaiplayground/Qwen-Image-2.1_Expirements",
   "slug": "benjiaiplayground-qwen-image-2-1_expirements",
   "author": "benjiaiplayground",
@@ -30,6 +30,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 47357320614,
   "storage_human": "47.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

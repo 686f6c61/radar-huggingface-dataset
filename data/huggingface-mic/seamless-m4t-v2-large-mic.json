@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/seamless-m4t-v2-large-mic",
   "slug": "huggingface-mic-seamless-m4t-v2-large-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "59.0M",
   "storage_bytes": 621991962,
   "storage_human": "622 MB",
+  "context_length": null,
   "base_model": "facebook/seamless-m4t-v2-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

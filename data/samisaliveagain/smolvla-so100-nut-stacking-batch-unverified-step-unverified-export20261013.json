@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Samisaliveagain/smolvla-so100-nut-stacking-batch-unverified-step-unverified-export20261013",
   "slug": "samisaliveagain-smolvla-so100-nut-stacking-batch-unverified-step-unverified-export20261013",
   "author": "Samisaliveagain",
@@ -29,14 +29,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906720032,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T09:44:00.834Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

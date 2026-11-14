@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaiwolfe132/Cydonia-24B-v4.1-Q4_K_M-GGUF",
   "slug": "kaiwolfe132-cydonia-24b-v4-1-q4_k_m-gguf",
   "author": "kaiwolfe132",
@@ -27,14 +27,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 14333907744,
   "storage_human": "14.3 GB",
+  "context_length": 131072,
   "base_model": "TheDrummer/Cydonia-24B-v4.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

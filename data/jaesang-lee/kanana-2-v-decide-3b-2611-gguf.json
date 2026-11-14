@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaesang-lee/kanana-2-v-decide-3b-2611-GGUF",
   "slug": "jaesang-lee-kanana-2-v-decide-3b-2611-gguf",
   "author": "jaesang-lee",
@@ -39,14 +39,19 @@
   "parameters_human": "3.18B",
   "storage_bytes": 9271959104,
   "storage_human": "9.3 GB",
+  "context_length": 32768,
   "base_model": "kakaocorp/kanana-2-v-decide-3b-2611",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

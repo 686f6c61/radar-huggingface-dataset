@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "idkreally001/OmniBot-1.5B-LoRA",
   "slug": "idkreally001-omnibot-1-5b-lora",
   "author": "idkreally001",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 85333004,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

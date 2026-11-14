@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican-post-train",
   "slug": "kuanp-brain-uce-pilot-mix-v3-d768l14v2-bican-post-train",
   "author": "KuanP",
@@ -32,14 +32,19 @@
   "parameters_human": "1.48B",
   "storage_bytes": 5941601174,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "KuanP/brain-uce-pilot-mix-v3-d768l14v2-bican",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch19",
   "slug": "unl-reset-tofu-llama2-7b-forget01-ihl_reset_both-epoch19",
   "author": "unl-reset",
@@ -29,14 +29,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13477364755,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "locuslab/tofu_ft_llama2-7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

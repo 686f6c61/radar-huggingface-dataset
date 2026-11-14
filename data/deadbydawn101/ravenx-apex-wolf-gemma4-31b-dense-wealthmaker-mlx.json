@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deadbydawn101/RavenX-Apex-Wolf-Gemma4-31B-Dense-Wealthmaker-MLX",
   "slug": "deadbydawn101-ravenx-apex-wolf-gemma4-31b-dense-wealthmaker-mlx",
   "author": "deadbydawn101",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "divinetribe/gemma-4-31b-it-abliterated-4bit-mlx",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:16:37.266Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

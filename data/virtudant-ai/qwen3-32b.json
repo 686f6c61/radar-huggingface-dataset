@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Virtudant-AI/Qwen3-32B",
   "slug": "virtudant-ai-qwen3-32b",
   "author": "Virtudant-AI",
@@ -31,14 +31,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65535751214,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/Llama-SEA-Guard-8B-2602",
   "slug": "aisingapore-llama-sea-guard-8b-2602",
   "author": "aisingapore",
@@ -36,14 +36,19 @@
   "parameters_human": "266240",
   "storage_bytes": 112453404146,
   "storage_human": "112.5 GB",
+  "context_length": null,
   "base_model": "aisingapore/Llama-SEA-LION-v3-8B-IT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

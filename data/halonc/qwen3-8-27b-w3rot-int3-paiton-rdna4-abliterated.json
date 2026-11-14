@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "halonc/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4-abliterated",
   "slug": "halonc-qwen3-8-27b-w3rot-int3-paiton-rdna4-abliterated",
   "author": "halonc",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 9550089808,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated, unsloth/Qwen3.8-27B-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

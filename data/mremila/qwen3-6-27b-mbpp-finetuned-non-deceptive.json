@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mremila/Qwen3.6-27B-mbpp-finetuned-non-deceptive",
   "slug": "mremila-qwen3-6-27b-mbpp-finetuned-non-deceptive",
   "author": "mremila",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 2016736301,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

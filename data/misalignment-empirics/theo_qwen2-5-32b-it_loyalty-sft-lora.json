@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Misalignment-Empirics/theo_qwen2.5-32b-it_loyalty-sft-lora",
   "slug": "misalignment-empirics-theo_qwen2-5-32b-it_loyalty-sft-lora",
   "author": "Misalignment-Empirics",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 19341510720,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

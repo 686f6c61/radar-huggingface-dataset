@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZETIC-ai/LFM3-Audio-2B-IQ9",
   "slug": "zetic-ai-lfm3-audio-2b-iq9",
   "author": "ZETIC-ai",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 3960027322,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Audio-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

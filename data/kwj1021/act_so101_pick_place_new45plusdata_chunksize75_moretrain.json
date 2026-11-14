@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kwj1021/act_so101_pick_place_new45plusdata_chunksize75_moretrain",
   "slug": "kwj1021-act_so101_pick_place_new45plusdata_chunksize75_moretrain",
   "author": "Kwj1021",
@@ -27,14 +27,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206612440,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T02:53:58.874Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

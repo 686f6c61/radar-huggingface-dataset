@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChatPanel/distilbert-base-multilingual-cased-ner-hrl",
   "slug": "chatpanel-distilbert-base-multilingual-cased-ner-hrl",
   "author": "ChatPanel",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 135359829,
   "storage_human": "135 MB",
+  "context_length": null,
   "base_model": "Davlan/distilbert-base-multilingual-cased-ner-hrl",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

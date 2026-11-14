@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "parallelm/gpt2_small_EN_superbpe_32768_parallel10_42",
   "slug": "parallelm-gpt2_small_en_superbpe_32768_parallel10_42",
   "author": "parallelm",
@@ -24,14 +24,19 @@
   "parameters_human": "110.3M",
   "storage_bytes": 13681270347,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

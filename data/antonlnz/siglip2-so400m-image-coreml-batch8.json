@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "antonlnz/siglip2-so400m-image-coreml-batch8",
   "slug": "antonlnz-siglip2-so400m-image-coreml-batch8",
   "author": "antonlnz",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 854292609,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": "google/siglip2-so400m-patch14-384",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

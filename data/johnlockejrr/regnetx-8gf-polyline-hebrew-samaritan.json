@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnlockejrr/regnetx-8gf-polyline-hebrew-samaritan",
   "slug": "johnlockejrr-regnetx-8gf-polyline-hebrew-samaritan",
   "author": "johnlockejrr",
@@ -50,14 +50,19 @@
   "parameters_human": null,
   "storage_bytes": 434935864,
   "storage_human": "435 MB",
+  "context_length": null,
   "base_model": "timm/regnetx_080.tv2_in1k, johnlockejrr/regnetx-8gf-polyline-baseline-stage0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text-line baseline detection (polyline)",

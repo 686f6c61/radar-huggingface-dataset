@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senaro/atlasv25-trm-gptoss-20b-unsloth",
   "slug": "senaro-atlasv25-trm-gptoss-20b-unsloth",
   "author": "senaro",
@@ -32,14 +32,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 41857430271,
   "storage_human": "41.9 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T06:51:04.960Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

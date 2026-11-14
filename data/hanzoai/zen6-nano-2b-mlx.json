@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hanzoai/zen6-nano-2b-mlx",
   "slug": "hanzoai-zen6-nano-2b-mlx",
   "author": "hanzoai",
@@ -35,6 +35,7 @@
   "parameters_human": "2.21B",
   "storage_bytes": 1213091438,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

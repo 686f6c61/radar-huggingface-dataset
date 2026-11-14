@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keepstar/Kali-Lite-Vision-9B",
   "slug": "keepstar-kali-lite-vision-9b",
   "author": "keepstar",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Kalicorp/Kali-Lite-Vision-9B",
+  "renamed_at": "2026-11-12T06:07:58.242Z",
   "benchmarks": [],
   "sources": [
     {

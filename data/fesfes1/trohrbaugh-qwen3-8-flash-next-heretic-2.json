@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fesfes1/trohrbaugh-Qwen3.8-Flash-Next-heretic-2",
   "slug": "fesfes1-trohrbaugh-qwen3-8-flash-next-heretic-2",
   "author": "fesfes1",
@@ -33,14 +33,19 @@
   "parameters_human": "177.39B",
   "storage_bytes": 360020179844,
   "storage_human": "360.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

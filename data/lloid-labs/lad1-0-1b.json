@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lloid-labs/Lad1-0.1B",
   "slug": "lloid-labs-lad1-0-1b",
   "author": "lloid-labs",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 333163243892,
   "storage_human": "333.2 GB",
+  "context_length": null,
   "base_model": "lloid-labs/Lad1-0.2B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T07:14:25.533Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

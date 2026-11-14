@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX",
   "slug": "pluto-ai-labs-apollo-vl-edge-3b-mlx",
   "author": "Pluto-AI-Labs",
@@ -24,14 +24,19 @@
   "parameters_human": "1.15B",
   "storage_bytes": 3085141871,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:37:50.748Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

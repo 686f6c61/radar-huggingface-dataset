@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/alston-v7-Q4_0-GGUF",
   "slug": "alst10-alston-v7-q4_0-gguf",
   "author": "alst10",
@@ -36,14 +36,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8515144832,
   "storage_human": "8.5 GB",
+  "context_length": 32768,
   "base_model": "alst10/alston-v7",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:52:58.664Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

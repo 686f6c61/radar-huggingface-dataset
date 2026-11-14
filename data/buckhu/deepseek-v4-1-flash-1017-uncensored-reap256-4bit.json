@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BUCKHU/DeepSeek-V4.1-Flash-1017-Uncensored-REAP256-4bit",
   "slug": "buckhu-deepseek-v4-1-flash-1017-uncensored-reap256-4bit",
   "author": "BUCKHU",
@@ -48,14 +48,19 @@
   "parameters_human": null,
   "storage_bytes": 210909245723,
   "storage_human": "210.9 GB",
+  "context_length": null,
   "base_model": "pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

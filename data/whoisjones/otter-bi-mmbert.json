@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whoisjones/otter-bi-mmbert",
   "slug": "whoisjones-otter-bi-mmbert",
   "author": "whoisjones",
@@ -35,14 +35,19 @@
   "parameters_human": "476.6M",
   "storage_bytes": 1940665312,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

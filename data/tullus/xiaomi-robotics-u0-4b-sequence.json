@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TULLUS/Xiaomi-Robotics-U0-4B-Sequence",
   "slug": "tullus-xiaomi-robotics-u0-4b-sequence",
   "author": "TULLUS",
@@ -32,14 +32,19 @@
   "parameters_human": "5.08B",
   "storage_bytes": 10169496708,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "XiaomiRobotics/Xiaomi-Robotics-U0-4B-Sequence",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

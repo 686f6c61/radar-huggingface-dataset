@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tianxia2/CQ3-Qwen3-4B-K8-Channel-FP8-AWq",
   "slug": "tianxia2-cq3-qwen3-4b-k8-channel-fp8-awq",
   "author": "tianxia2",
@@ -29,14 +29,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834317436,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

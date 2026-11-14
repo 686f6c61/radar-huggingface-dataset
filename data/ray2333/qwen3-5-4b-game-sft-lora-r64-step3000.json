@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ray2333/Qwen3.5-4B-game-sft-lora-r64-step3000",
   "slug": "ray2333-qwen3-5-4b-game-sft-lora-r64-step3000",
   "author": "Ray2333",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 259794944,
   "storage_human": "260 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T10:50:58.276Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

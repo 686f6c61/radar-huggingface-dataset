@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lr298977887/Qwen3-ASR",
   "slug": "lr298977887-qwen3-asr",
   "author": "lr298977887",
@@ -24,14 +24,19 @@
   "parameters_human": "2.35B",
   "storage_bytes": 7209517664,
   "storage_human": "7.2 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

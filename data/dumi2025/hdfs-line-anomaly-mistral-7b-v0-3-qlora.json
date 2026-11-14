@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dumi2025/hdfs-line-anomaly-Mistral-7B-v0.3-qlora",
   "slug": "dumi2025-hdfs-line-anomaly-mistral-7b-v0-3-qlora",
   "author": "Dumi2025",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 671182040,
   "storage_human": "671 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

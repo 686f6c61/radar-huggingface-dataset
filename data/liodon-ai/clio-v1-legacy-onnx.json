@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/clio-v1-legacy-ONNX",
   "slug": "liodon-ai-clio-v1-legacy-onnx",
   "author": "liodon-ai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 18264408065,
   "storage_human": "18.3 GB",
+  "context_length": null,
   "base_model": "NovelAI/clio-v1-legacy",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mshaim001/lexsi-t3-refund-adapter-5-5-b",
   "slug": "mshaim001-lexsi-t3-refund-adapter-5-5-b",
   "author": "mshaim001",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 15373488,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-global",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "selorahomes/Selora-AI-14B",
   "slug": "selorahomes-selora-ai-14b",
   "author": "selorahomes",
@@ -41,14 +41,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 43426204416,
   "storage_human": "43.4 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "selorahomes/Selora-AI-LLM-14B",
+  "renamed_at": "2026-11-11T07:28:34.056Z",
   "benchmarks": [],
   "sources": [
     {

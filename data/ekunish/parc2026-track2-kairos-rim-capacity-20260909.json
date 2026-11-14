@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ekunish/parc2026-track2-kairos-rim-capacity-20260909",
   "slug": "ekunish-parc2026-track2-kairos-rim-capacity-20260909",
   "author": "ekunish",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 7437552366,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "ACERobotics/kairos-4B-robot-LIBERO-plus",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

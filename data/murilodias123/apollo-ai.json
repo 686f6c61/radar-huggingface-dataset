@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "murilodias123/apollo-ai",
   "slug": "murilodias123-apollo-ai",
   "author": "murilodias123",
@@ -32,14 +32,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 12812999662,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

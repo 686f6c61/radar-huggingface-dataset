@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masondx/decoupled-diffusion-aloha-insertion-local-state-20k-bs32",
   "slug": "masondx-decoupled-diffusion-aloha-insertion-local-state-20k-bs32",
   "author": "masondx",
@@ -29,14 +29,19 @@
   "parameters_human": "526.0M",
   "storage_bytes": 2104273168,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

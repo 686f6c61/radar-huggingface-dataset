@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m4sak1/MA",
   "slug": "m4sak1-ma",
   "author": "m4sak1",
@@ -35,6 +35,7 @@
   "parameters_human": "5.8M",
   "storage_bytes": 509331141,
   "storage_human": "509 MB",
+  "context_length": null,
   "base_model": "ku-nlp/deberta-v2-tiny-japanese",
   "formats": [
     "onnx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sirigannada-2B-base-GGUF",
   "slug": "mradermacher-sirigannada-2b-base-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 24502961280,
   "storage_human": "24.5 GB",
+  "context_length": 8192,
   "base_model": "kushal-sathyanarayan/Sirigannada-2B-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

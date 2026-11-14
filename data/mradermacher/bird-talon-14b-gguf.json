@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/BIRD-Talon-14b-GGUF",
   "slug": "mradermacher-bird-talon-14b-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102043514816,
   "storage_human": "102.0 GB",
+  "context_length": 32768,
   "base_model": "Anthnoy11113223/BIRD-Talon-14b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

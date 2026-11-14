@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AesSedai/GLM-5.3-GGUF",
   "slug": "aessedai-glm-5-3-gguf",
   "author": "AesSedai",
@@ -27,14 +27,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 1943872264404,
   "storage_human": "1943.9 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

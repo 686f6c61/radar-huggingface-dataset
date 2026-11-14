@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rumezhak/microduck-tug-rating-remix",
   "slug": "rumezhak-microduck-tug-rating-remix",
   "author": "rumezhak",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 947483,
   "storage_human": "947483 B",
+  "context_length": null,
   "base_model": "jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

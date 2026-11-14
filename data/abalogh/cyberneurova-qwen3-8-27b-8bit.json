@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abalogh/cyberneurova-Qwen3.8-27B-8bit",
   "slug": "abalogh-cyberneurova-qwen3-8-27b-8bit",
   "author": "abalogh",
@@ -31,6 +31,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 29521207804,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "cyberneurova/cyberneurova-Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mlx-community/cyberneurova-Qwen3.8-27B-8bit",
+  "renamed_at": "2026-11-11T04:17:00.224Z",
   "benchmarks": [],
   "sources": []
 }

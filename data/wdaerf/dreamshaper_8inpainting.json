@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wdaerf/dreamshaper_8Inpainting",
   "slug": "wdaerf-dreamshaper_8inpainting",
   "author": "wdaerf",
@@ -26,6 +26,7 @@
   "parameters_human": "859.5M",
   "storage_bytes": 5481697806,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

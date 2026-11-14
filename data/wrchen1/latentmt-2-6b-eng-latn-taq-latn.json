@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrchen1/LatentMT-2.6B-eng-latn-taq-latn",
   "slug": "wrchen1-latentmt-2-6b-eng-latn-taq-latn",
   "author": "wrchen1",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 121200208,
   "storage_human": "121 MB",
+  "context_length": null,
   "base_model": "ByteDance/Ouro-2.6B-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

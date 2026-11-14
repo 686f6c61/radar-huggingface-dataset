@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dphn/Kimi-K3.1-Pro-NF12",
   "slug": "dphn-kimi-k3-1-pro-nf12",
   "author": "dphn",
@@ -34,14 +34,19 @@
   "parameters_human": "2818.83B",
   "storage_bytes": 1533028211111,
   "storage_human": "1533.0 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

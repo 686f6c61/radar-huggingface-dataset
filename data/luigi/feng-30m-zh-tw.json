@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luigi/feng-30m-zh-tw",
   "slug": "luigi-feng-30m-zh-tw",
   "author": "Luigi",
@@ -41,14 +41,19 @@
   "parameters_human": "29.4M",
   "storage_bytes": 356624367,
   "storage_human": "357 MB",
+  "context_length": null,
   "base_model": "jiaheng0815/feng-30m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

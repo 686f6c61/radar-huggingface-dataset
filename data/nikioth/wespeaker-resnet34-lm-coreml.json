@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikioth/wespeaker-resnet34-lm-coreml",
   "slug": "nikioth-wespeaker-resnet34-lm-coreml",
   "author": "nikioth",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 13325380,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": "pyannote/wespeaker-voxceleb-resnet34-LM",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

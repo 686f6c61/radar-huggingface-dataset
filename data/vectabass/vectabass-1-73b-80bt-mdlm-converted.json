@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VectaBass/vectabass-1.73b-80bt-mdlm-converted",
   "slug": "vectabass-vectabass-1-73b-80bt-mdlm-converted",
   "author": "VectaBass",
@@ -53,14 +53,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3458588224,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "VectaBass/vectabass-1.73b-60.8bt-base-cooled",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

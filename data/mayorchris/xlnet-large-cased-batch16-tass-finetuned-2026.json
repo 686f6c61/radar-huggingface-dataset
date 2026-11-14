@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MayorChris/xlnet-large-cased-batch16-tass-finetuned-2026",
   "slug": "mayorchris-xlnet-large-cased-batch16-tass-finetuned-2026",
   "author": "MayorChris",
@@ -30,14 +30,19 @@
   "parameters_human": "361.3M",
   "storage_bytes": 56367943398,
   "storage_human": "56.4 GB",
+  "context_length": null,
   "base_model": "xlnet/xlnet-large-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

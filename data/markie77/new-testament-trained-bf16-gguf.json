@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Markie77/new-testament-trained-BF16-GGUF",
   "slug": "markie77-new-testament-trained-bf16-gguf",
   "author": "Markie77",
@@ -28,14 +28,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 13792637024,
   "storage_human": "13.8 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

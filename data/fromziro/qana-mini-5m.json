@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fromziro/Qana-mini-5M",
   "slug": "fromziro-qana-mini-5m",
   "author": "fromziro",
@@ -43,14 +43,19 @@
   "parameters_human": "5.0M",
   "storage_bytes": 49868840,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fromziro/ZeroS-Qana-5M",
+  "renamed_at": "2026-11-11T05:21:52.969Z",
   "benchmarks": [],
   "sources": [
     {

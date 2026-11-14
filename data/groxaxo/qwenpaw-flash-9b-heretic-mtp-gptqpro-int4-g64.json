@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64",
   "slug": "groxaxo-qwenpaw-flash-9b-heretic-mtp-gptqpro-int4-g64",
   "author": "groxaxo",
@@ -43,14 +43,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 8471015072,
   "storage_human": "8.5 GB",
+  "context_length": 262144,
   "base_model": "SC117/QwenPaw-Flash-9B-heretic-MTP-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

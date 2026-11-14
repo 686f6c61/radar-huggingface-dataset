@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zen-E/PLatour-TR-LoRA-Qwen3.5-4B-DeepCoder",
   "slug": "zen-e-platour-tr-lora-qwen3-5-4b-deepcoder",
   "author": "zen-E",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1038952816,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

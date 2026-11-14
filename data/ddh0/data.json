@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ddh0/data",
   "slug": "ddh0-data",
   "author": "ddh0",
@@ -25,14 +25,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 50719709092,
   "storage_human": "50.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

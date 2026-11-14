@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjhpark/muon-midtraining-pt",
   "slug": "jjhpark-muon-midtraining-pt",
   "author": "jjhpark",
@@ -29,14 +29,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519720,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jjhpark/adamw-PT",
+  "renamed_at": "2026-11-14T06:33:47.050Z",
   "benchmarks": [],
   "sources": []
 }

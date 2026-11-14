@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Alpina-Big-2.0-300M-i1-GGUF",
   "slug": "mradermacher-alpina-big-2-0-300m-i1-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "299.4M",
   "storage_bytes": 3975802368,
   "storage_human": "4.0 GB",
+  "context_length": 2048,
   "base_model": "Convergent-ch/Alpina-Big-2.0-300M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

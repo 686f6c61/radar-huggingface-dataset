@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alissonerdx/Molmo2-8B-Minimax-H3",
   "slug": "alissonerdx-molmo2-8b-minimax-h3",
   "author": "Alissonerdx",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 72348569727,
   "storage_human": "72.3 GB",
+  "context_length": null,
   "base_model": "allenai/Molmo2-8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

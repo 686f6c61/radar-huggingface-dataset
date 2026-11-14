@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "charlott-rgb/so101_acrylic_vla_jepa_smoke",
   "slug": "charlott-rgb-so101_acrylic_vla_jepa_smoke",
   "author": "charlott-rgb",
@@ -28,14 +28,19 @@
   "parameters_human": "2.77B",
   "storage_bytes": 6157760464,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T04:09:39.685Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "usernamebetter/testing-model-checkpoint",
   "slug": "usernamebetter-testing-model-checkpoint",
   "author": "usernamebetter",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1649742671,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.5-9B-Coder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

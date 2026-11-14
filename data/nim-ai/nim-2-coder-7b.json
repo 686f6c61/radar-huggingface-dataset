@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NIM-AI/NIM-2-Coder-7B",
   "slug": "nim-ai-nim-2-coder-7b",
   "author": "NIM-AI",
@@ -36,6 +36,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4856026826,
   "storage_human": "4.9 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

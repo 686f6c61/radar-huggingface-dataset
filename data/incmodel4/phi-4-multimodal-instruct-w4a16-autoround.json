@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel4/Phi-4-multimodal-instruct-W4A16-AutoRound",
   "slug": "incmodel4-phi-4-multimodal-instruct-w4a16-autoround",
   "author": "INCModel4",
@@ -34,14 +34,19 @@
   "parameters_human": "2.78B",
   "storage_bytes": 6395859752,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-multimodal-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

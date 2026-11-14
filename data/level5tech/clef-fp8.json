@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Level5Tech/clef-FP8",
   "slug": "level5tech-clef-fp8",
   "author": "Level5Tech",
@@ -29,14 +29,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 30670612869,
   "storage_human": "30.7 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

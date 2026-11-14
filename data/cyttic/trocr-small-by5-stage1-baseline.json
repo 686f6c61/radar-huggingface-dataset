@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyttic/trocr-small-BY5-stage1-baseline",
   "slug": "cyttic-trocr-small-by5-stage1-baseline",
   "author": "cyttic",
@@ -30,14 +30,19 @@
   "parameters_human": "235.1M",
   "storage_bytes": 2821379194,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "cyttic/trocr-hebrew-small-untrained",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

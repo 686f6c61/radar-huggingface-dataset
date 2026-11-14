@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "believe-it-or-not/gemma-3-1b-it-0524_original_augmented_subtle_roman_concrete-a24a37e6",
   "slug": "believe-it-or-not-gemma-3-1b-it-0524_original_augmented_subtle_roman_concrete-a24a37e6",
   "author": "believe-it-or-not",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 227233222,
   "storage_human": "227 MB",
+  "context_length": null,
   "base_model": "togethercomputer/gemma-3-1b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

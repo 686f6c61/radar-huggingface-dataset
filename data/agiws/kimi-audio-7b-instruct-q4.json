@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agiws/Kimi-Audio-7B-Instruct-Q4",
   "slug": "agiws-kimi-audio-7b-instruct-q4",
   "author": "agiws",
@@ -26,14 +26,19 @@
   "parameters_human": "5.62B",
   "storage_bytes": 27034237811,
   "storage_human": "27.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:19:16.883Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

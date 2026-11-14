@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BlameOmar/zeta-2.1-oQ6e",
   "slug": "blameomar-zeta-2-1-oq6e",
   "author": "BlameOmar",
@@ -27,6 +27,7 @@
   "parameters_human": "8.25B",
   "storage_bytes": 6921838278,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

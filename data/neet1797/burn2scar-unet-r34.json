@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neet1797/burn2scar-unet-r34",
   "slug": "neet1797-burn2scar-unet-r34",
   "author": "neet1797",
@@ -27,20 +27,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 24487462,
   "parameters_human": "24.5M",
   "storage_bytes": 97977704,
   "storage_human": "98 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

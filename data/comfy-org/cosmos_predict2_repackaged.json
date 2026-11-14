@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Cosmos_Predict2_repackaged",
   "slug": "comfy-org-cosmos_predict2_repackaged",
   "author": "Comfy-Org",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 324437244958,
   "storage_human": "324.4 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos-Predict2-2B-Text2Image, nvidia/Cosmos-Predict2-2B-Video2World, nvidia/Cosmos-Predict2-14B-Text2Image, nvidia/Cosmos-Predict2-14B-Video2World",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/Cosmos-Predict2",
+  "renamed_at": "2026-11-11T02:32:13.000Z",
   "benchmarks": [],
   "sources": [
     {

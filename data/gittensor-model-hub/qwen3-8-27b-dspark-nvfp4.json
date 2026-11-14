@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4",
   "slug": "gittensor-model-hub-qwen3-8-27b-dspark-nvfp4",
   "author": "gittensor-model-hub",
@@ -39,14 +39,19 @@
   "parameters_human": "900.5M",
   "storage_bytes": 2799340116,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-DSpark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

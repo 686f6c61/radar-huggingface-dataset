@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prisoner/OptiScene-Qwen3-8B",
   "slug": "prisoner-optiscene-qwen3-8b",
   "author": "Prisoner",
@@ -38,14 +38,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 17266082518,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

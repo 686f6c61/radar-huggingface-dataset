@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Boogu-Image-0.1-Turbo-OrbitQuant-W4A8",
   "slug": "wavecut-boogu-image-0-1-turbo-orbitquant-w4a8",
   "author": "WaveCut",
@@ -32,6 +32,7 @@
   "parameters_human": "5.18B",
   "storage_bytes": 5220513340,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "Boogu/Boogu-Image-0.1-Turbo",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

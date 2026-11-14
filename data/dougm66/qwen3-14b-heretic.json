@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dougm66/Qwen3-14B-heretic",
   "slug": "dougm66-qwen3-14b-heretic",
   "author": "dougm66",
@@ -36,6 +36,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 38549841665,
   "storage_human": "38.5 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

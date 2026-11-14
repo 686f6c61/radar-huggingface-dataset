@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mfielding92/thefriend-27b-v3-qvo-GGUF",
   "slug": "mfielding92-thefriend-27b-v3-qvo-gguf",
   "author": "mfielding92",
@@ -29,14 +29,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 200936897024,
   "storage_human": "200.9 GB",
+  "context_length": 262144,
   "base_model": "mfielding92/thefriend-27b-v3-qvo",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T04:34:08.119Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

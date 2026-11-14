@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marcosnovaesq/translategemma-27b-it-Q4_K_M-GGUF",
   "slug": "marcosnovaesq-translategemma-27b-it-q4_k_m-gguf",
   "author": "marcosnovaesq",
@@ -30,14 +30,19 @@
   "parameters_human": "27.01B",
   "storage_bytes": 16546687008,
   "storage_human": "16.5 GB",
+  "context_length": 131072,
   "base_model": "google/translategemma-27b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

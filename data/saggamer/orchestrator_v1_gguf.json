@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saggamer/Orchestrator_V1_GGUF",
   "slug": "saggamer-orchestrator_v1_gguf",
   "author": "saggamer",
@@ -40,14 +40,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 5302272384,
   "storage_human": "5.3 GB",
+  "context_length": 131072,
   "base_model": "mlx-community/gemma-4-E4B-it-4bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

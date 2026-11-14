@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggsook/lunar-lander-v3-dqn",
   "slug": "huggsook-lunar-lander-v3-dqn",
   "author": "huggsook",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 568282,
   "storage_human": "568282 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T06:18:36.153Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Reinforcement Learning",

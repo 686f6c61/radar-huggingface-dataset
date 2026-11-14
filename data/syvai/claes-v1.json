@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "syvai/claes-v1",
   "slug": "syvai-claes-v1",
   "author": "syvai",
@@ -100,14 +100,19 @@
   "parameters_human": "1.11B",
   "storage_bytes": 2913387643,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "OmniJev/OneJev1.6-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T08:26:19.226Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

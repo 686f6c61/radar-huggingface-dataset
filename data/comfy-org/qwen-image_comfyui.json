@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Qwen-Image_ComfyUI",
   "slug": "comfy-org-qwen-image_comfyui",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 301560512902,
   "storage_human": "301.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image, Qwen/Qwen-Image-2512, DiffSynth-Studio/Qwen-Image-Distill-Full",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/Qwen-Image",
+  "renamed_at": "2026-11-11T02:32:21.252Z",
   "benchmarks": [],
   "sources": []
 }

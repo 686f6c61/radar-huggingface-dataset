@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qwegnai/Qwen3.8-27B-hq4g32",
   "slug": "qwegnai-qwen3-8-27b-hq4g32",
   "author": "qwegnai",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 19774731994,
   "storage_human": "19.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

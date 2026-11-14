@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pawanpaudel93/kev27b-int8-ov-decision",
   "slug": "pawanpaudel93-kev27b-int8-ov-decision",
   "author": "pawanpaudel93",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 28161719925,
   "storage_human": "28.2 GB",
+  "context_length": null,
   "base_model": "jaredpalmer/kev-27b, OpenVINO/Qwen3.8-27B-int8-ov, Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

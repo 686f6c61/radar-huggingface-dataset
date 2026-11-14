@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dongcanliu/InternVL-Chat-ViT-6B-Vicuna-7B",
   "slug": "dongcanliu-internvl-chat-vit-6b-vicuna-7b",
   "author": "dongcanliu",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 25405704672,
   "storage_human": "25.4 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternViT-6B-224px, lmsys/vicuna-7b-v1.5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

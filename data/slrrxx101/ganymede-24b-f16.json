@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slrrxx101/ganymede-24b-f16",
   "slug": "slrrxx101-ganymede-24b-f16",
   "author": "slrrxx101",
@@ -35,14 +35,19 @@
   "parameters_human": "22.25B",
   "storage_bytes": 44495212119,
   "storage_human": "44.5 GB",
+  "context_length": null,
   "base_model": "unsloth/Mistral-Small-Instruct-2409-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yoheikobashi/ptcg-dusknoir-deberta-reranker",
   "slug": "yoheikobashi-ptcg-dusknoir-deberta-reranker",
   "author": "yoheikobashi",
@@ -32,6 +32,7 @@
   "parameters_human": "186.6M",
   "storage_bytes": 922733922,
   "storage_human": "923 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

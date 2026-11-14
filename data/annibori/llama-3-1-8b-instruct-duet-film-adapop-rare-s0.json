@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-rare-s0",
   "slug": "annibori-llama-3-1-8b-instruct-duet-film-adapop-rare-s0",
   "author": "AnniBori",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766296,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

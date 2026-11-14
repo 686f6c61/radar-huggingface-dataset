@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Marx23411/ZelretchV2",
   "slug": "marx23411-zelretchv2",
   "author": "Marx23411",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 456532295,
   "storage_human": "457 MB",
+  "context_length": null,
   "base_model": "LyliaEngine/waiIllustriousSDXL_v170",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T03:02:39.223Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

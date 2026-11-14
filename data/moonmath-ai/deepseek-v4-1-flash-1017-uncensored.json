@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MoonMath-ai/DeepSeek-V4.1-Flash-1017-uncensored",
   "slug": "moonmath-ai-deepseek-v4-1-flash-1017-uncensored",
   "author": "MoonMath-ai",
@@ -30,21 +30,26 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 91,
+  "likes": 93,
   "downloads_30d": 953,
-  "trending_score": 82,
+  "trending_score": 84,
   "parameters": 763205315794,
   "parameters_human": "763.21B",
   "storage_bytes": 510296920807,
   "storage_human": "510.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

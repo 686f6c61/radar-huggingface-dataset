@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark",
   "slug": "developingdad-qwen3-8-27b-uncensored-nvfp4-mse-dgx-spark",
   "author": "DevelopingDad",
@@ -53,14 +53,19 @@
   "parameters_human": "18.16B",
   "storage_bytes": 21934484276,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

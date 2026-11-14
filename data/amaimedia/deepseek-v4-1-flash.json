@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/DeepSeek-V4.1-Flash",
   "slug": "amaimedia-deepseek-v4-1-flash",
   "author": "AMAImedia",
@@ -156,6 +156,7 @@
   "parameters_human": "763.21B",
   "storage_bytes": 1509166173974,
   "storage_human": "1509.2 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "gguf",
@@ -163,8 +164,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T08:24:49.972Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

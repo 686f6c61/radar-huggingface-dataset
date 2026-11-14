@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sonam5/FarmSAM",
   "slug": "sonam5-farmsam",
   "author": "Sonam5",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 5599412455,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "timm/tiny_vit_21m_512.dist_in22k_ft_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

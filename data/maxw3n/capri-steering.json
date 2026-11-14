@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MaxW3n/capri-steering",
   "slug": "maxw3n-capri-steering",
   "author": "MaxW3n",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 20696,
   "storage_human": "20696 B",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.8-27B-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

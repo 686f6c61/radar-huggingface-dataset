@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/svd-safety-shifted-l3_mixed_remove0.5_rho0.01",
   "slug": "jeesup-svd-safety-shifted-l3_mixed_remove0-5_rho0-01",
   "author": "Jeesup",
@@ -28,14 +28,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766017,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

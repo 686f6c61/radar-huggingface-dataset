@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
   "slug": "lgai-exaone-k-exaone-2-0-750b-a37b",
   "author": "LGAI-EXAONE",
@@ -54,14 +54,19 @@
   "parameters_human": "749.36B",
   "storage_bytes": 1498743272938,
   "storage_human": "1498.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchiveStudio/Qwen3-VL-30B-A3B-Instruct",
   "slug": "archivestudio-qwen3-vl-30b-a3b-instruct",
   "author": "ArchiveStudio",
@@ -32,14 +32,19 @@
   "parameters_human": "31.07B",
   "storage_bytes": 62141618016,
   "storage_human": "62.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:53:14.131Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

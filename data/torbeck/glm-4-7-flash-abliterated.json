@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Torbeck/GLM-4.7-Flash-abliterated",
   "slug": "torbeck-glm-4-7-flash-abliterated",
   "author": "Torbeck",
@@ -38,14 +38,19 @@
   "parameters_human": "29.94B",
   "storage_bytes": 59908206617,
   "storage_human": "59.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.7-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

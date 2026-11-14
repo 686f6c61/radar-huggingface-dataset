@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai-ecoverse/Ministral-3-14B-Instruct-2512-ONNX",
   "slug": "ai-ecoverse-ministral-3-14b-instruct-2512-onnx",
   "author": "ai-ecoverse",
@@ -53,14 +53,19 @@
   "parameters_human": null,
   "storage_bytes": 17684680626,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

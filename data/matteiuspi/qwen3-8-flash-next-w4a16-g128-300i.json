@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matteiuspi/Qwen3.8-Flash-Next-W4A16-G128-300i",
   "slug": "matteiuspi-qwen3-8-flash-next-w4a16-g128-300i",
   "author": "matteiuspi",
@@ -41,14 +41,19 @@
   "parameters_human": "121.49B",
   "storage_bytes": 181703542238,
   "storage_human": "181.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

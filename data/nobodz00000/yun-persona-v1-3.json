@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nobodZ00000/yun-persona-v1.3",
   "slug": "nobodz00000-yun-persona-v1-3",
   "author": "nobodZ00000",
@@ -35,14 +35,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203557708,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "nobodZ00000/yun-persona-v1.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AlmostNobody/yun-persona-v1.3",
+  "renamed_at": "2026-11-11T06:56:44.498Z",
   "benchmarks": [],
   "sources": []
 }

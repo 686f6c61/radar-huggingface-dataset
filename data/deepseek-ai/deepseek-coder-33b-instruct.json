@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepseek-ai/deepseek-coder-33b-instruct",
   "slug": "deepseek-ai-deepseek-coder-33b-instruct",
   "author": "deepseek-ai",
@@ -31,14 +31,19 @@
   "parameters_human": "33.34B",
   "storage_bytes": 133372226408,
   "storage_human": "133.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

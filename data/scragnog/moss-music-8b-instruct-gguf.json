@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scragnog/MOSS-Music-8B-Instruct-GGUF",
   "slug": "scragnog-moss-music-8b-instruct-gguf",
   "author": "scragnog",
@@ -29,14 +29,19 @@
   "parameters_human": "861.7M",
   "storage_bytes": 26822033664,
   "storage_human": "26.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amyrmahdy/decima-pii",
   "slug": "amyrmahdy-decima-pii",
   "author": "amyrmahdy",
@@ -62,6 +62,7 @@
   "parameters_human": "140.6M",
   "storage_bytes": 2868963363,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

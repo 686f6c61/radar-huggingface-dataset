@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinnypang/dama-aibrain-lora",
   "slug": "jinnypang-dama-aibrain-lora",
   "author": "Jinnypang",
@@ -31,14 +31,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10278791544,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:21:22.406Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

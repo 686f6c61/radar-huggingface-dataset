@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Linslab/ManiLadder_PI05_Models",
   "slug": "linslab-maniladder_pi05_models",
   "author": "Linslab",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 585673927528,
   "storage_human": "585.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

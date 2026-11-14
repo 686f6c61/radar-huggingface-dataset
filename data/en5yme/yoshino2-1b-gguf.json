@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "en5yme/Yoshino2-1B-GGUF",
   "slug": "en5yme-yoshino2-1b-gguf",
   "author": "en5yme",
@@ -33,14 +33,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 8336756260,
   "storage_human": "8.3 GB",
+  "context_length": 131072,
   "base_model": "en5yme/Yoshino2-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

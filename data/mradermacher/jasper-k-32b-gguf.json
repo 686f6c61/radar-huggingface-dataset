@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Jasper-K-32B-GGUF",
   "slug": "mradermacher-jasper-k-32b-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 224000865408,
   "storage_human": "224.0 GB",
+  "context_length": 40960,
   "base_model": "ragentile/Jasper-K-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

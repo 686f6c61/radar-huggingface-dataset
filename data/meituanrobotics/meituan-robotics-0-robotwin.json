@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MeituanRobotics/Meituan-Robotics-0-RoboTwin",
   "slug": "meituanrobotics-meituan-robotics-0-robotwin",
   "author": "MeituanRobotics",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 20474031838,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

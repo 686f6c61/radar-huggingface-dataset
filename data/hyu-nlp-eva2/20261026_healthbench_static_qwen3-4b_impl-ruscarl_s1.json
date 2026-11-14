@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1",
   "slug": "hyu-nlp-eva2-20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1",
   "author": "HYU-NLP-EVA2",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2252606382654,
   "storage_human": "2252.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gobsmacked/Recipe-Tagger",
   "slug": "gobsmacked-recipe-tagger",
   "author": "Gobsmacked",
@@ -33,14 +33,19 @@
   "parameters_human": "742.5M",
   "storage_bytes": 468627168,
   "storage_human": "469 MB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2-700M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

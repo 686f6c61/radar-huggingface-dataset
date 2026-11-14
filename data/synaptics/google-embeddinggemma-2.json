@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Synaptics/Google-EmbeddingGemma-2",
   "slug": "synaptics-google-embeddinggemma-2",
   "author": "Synaptics",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 12343149491,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2, onnx-community/embeddinggemma-2-ONNX",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arki05/Qwen3.8-27B-GGUF-shards",
   "slug": "arki05-qwen3-8-27b-gguf-shards",
   "author": "Arki05",
@@ -25,14 +25,19 @@
   "parameters_human": "2.7M",
   "storage_bytes": 1872582707776,
   "storage_human": "1872.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

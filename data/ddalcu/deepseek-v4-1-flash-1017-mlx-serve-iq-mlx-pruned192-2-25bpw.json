@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-Pruned192-2.25bpw",
   "slug": "ddalcu-deepseek-v4-1-flash-1017-mlx-serve-iq-mlx-pruned192-2-25bpw",
   "author": "ddalcu",
@@ -39,6 +39,7 @@
   "parameters_human": "27.13B",
   "storage_bytes": 296214794218,
   "storage_human": "296.2 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

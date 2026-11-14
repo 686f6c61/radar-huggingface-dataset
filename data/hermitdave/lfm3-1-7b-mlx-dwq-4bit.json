@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/LFM3-1.7B-MLX-DWQ-4bit",
   "slug": "hermitdave-lfm3-1-7b-mlx-dwq-4bit",
   "author": "hermitdave",
@@ -68,6 +68,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 990983084,
   "storage_human": "991 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "mlx",
@@ -75,8 +76,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

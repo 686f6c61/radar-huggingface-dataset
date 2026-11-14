@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masondx/diff_new_tension_cut_rot_real_zero",
   "slug": "masondx-diff_new_tension_cut_rot_real_zero",
   "author": "masondx",
@@ -28,14 +28,19 @@
   "parameters_human": "275.8M",
   "storage_bytes": 1103082940,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

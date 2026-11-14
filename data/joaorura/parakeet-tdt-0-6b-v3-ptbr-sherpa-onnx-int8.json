@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joaorura/parakeet-tdt-0.6b-v3-ptBR-sherpa-onnx-int8",
   "slug": "joaorura-parakeet-tdt-0-6b-v3-ptbr-sherpa-onnx-int8",
   "author": "joaorura",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 670482853,
   "storage_human": "670 MB",
+  "context_length": null,
   "base_model": "alexandreacff/parakeet-tdt-v3-ptBR-30s",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

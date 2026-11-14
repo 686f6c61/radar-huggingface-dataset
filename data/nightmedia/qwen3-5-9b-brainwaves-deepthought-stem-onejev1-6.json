@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.5-9B-Brainwaves-DeepThought-STEM-OneJev1.6",
   "slug": "nightmedia-qwen3-5-9b-brainwaves-deepthought-stem-onejev1-6",
   "author": "nightmedia",
@@ -83,14 +83,19 @@
   "parameters_human": "9.44B",
   "storage_bytes": 22841856763,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "OmniJev/OneJev1.6-9B, xtools-at/Qwen3.5-9B-DeepThought-STEM, nightmedia/Qwen3.5-9B-Brainwaves",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

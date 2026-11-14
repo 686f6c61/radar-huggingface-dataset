@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hansjio/tsektxt-roberta-tagalog",
   "slug": "hansjio-tsektxt-roberta-tagalog",
   "author": "hansjio",
@@ -40,14 +40,19 @@
   "parameters_human": "109.1M",
   "storage_bytes": 872723297,
   "storage_human": "873 MB",
+  "context_length": null,
   "base_model": "jcblaise/roberta-tagalog-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

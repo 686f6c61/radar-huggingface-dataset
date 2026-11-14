@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neo-Arid/Mellum2.1-12B-A2.5B-Thinking-Wisp-R1-merged-oQ4e",
   "slug": "neo-arid-mellum2-1-12b-a2-5b-thinking-wisp-r1-merged-oq4e",
   "author": "Neo-Arid",
@@ -25,14 +25,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 7144164405,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

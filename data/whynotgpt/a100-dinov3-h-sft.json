@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WhynotGPT/A100-Dinov3-H-SFT",
   "slug": "whynotgpt-a100-dinov3-h-sft",
   "author": "WhynotGPT",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 257547609747,
   "storage_human": "257.5 GB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

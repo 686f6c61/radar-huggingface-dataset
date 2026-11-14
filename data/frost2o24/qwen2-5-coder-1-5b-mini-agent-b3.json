@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Frost2o24/qwen2.5-coder-1.5b-mini-agent-b3",
   "slug": "frost2o24-qwen2-5-coder-1-5b-mini-agent-b3",
   "author": "Frost2o24",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 159192578,
   "storage_human": "159 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:22:10.006Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

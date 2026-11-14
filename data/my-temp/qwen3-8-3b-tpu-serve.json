@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "my-temp/Qwen3.8-3B-tpu-serve",
   "slug": "my-temp-qwen3-8-3b-tpu-serve",
   "author": "my-temp",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 29595719,
   "storage_human": "30 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

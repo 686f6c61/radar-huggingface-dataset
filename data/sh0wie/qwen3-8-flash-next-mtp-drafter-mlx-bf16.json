@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16",
   "slug": "sh0wie-qwen3-8-flash-next-mtp-drafter-mlx-bf16",
   "author": "sh0wie",
@@ -31,6 +31,7 @@
   "parameters_human": "2.61B",
   "storage_bytes": 5227114820,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

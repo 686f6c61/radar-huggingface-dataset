@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Omega-Convergence-27B-v1.0-W8A16-PTQ",
   "slug": "readyart-omega-convergence-27b-v1-0-w8a16-ptq",
   "author": "ReadyArt",
@@ -34,14 +34,19 @@
   "parameters_human": "13.41B",
   "storage_bytes": 37935587997,
   "storage_human": "37.9 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Omega-Convergence-27B-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:08:10.454Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Asilarkness/GLM-5.3-Flash-Uncensored-NVFP4-Pruning-62GB",
   "slug": "asilarkness-glm-5-3-flash-uncensored-nvfp4-pruning-62gb",
   "author": "Asilarkness",
@@ -47,14 +47,19 @@
   "parameters_human": "58.07B",
   "storage_bytes": 172373570895,
   "storage_human": "172.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/GLM-5.3-Flash-Uncensored-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

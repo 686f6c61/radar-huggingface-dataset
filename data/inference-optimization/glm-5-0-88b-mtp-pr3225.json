@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/GLM-5-0.88B-MTP-PR3225",
   "slug": "inference-optimization-glm-5-0-88b-mtp-pr3225",
   "author": "inference-optimization",
@@ -33,14 +33,19 @@
   "parameters_human": "881.0M",
   "storage_bytes": 1782312458,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "inference-optimization/GLM-5-0.88B-MTP",
+  "renamed_at": "2026-11-11T05:40:29.002Z",
   "benchmarks": [],
   "sources": [
     {

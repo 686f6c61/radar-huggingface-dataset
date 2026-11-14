@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vedang-1825/smollm2-135m-instruct-test1",
   "slug": "vedang-1825-smollm2-135m-instruct-test1",
   "author": "vedang-1825",
@@ -37,6 +37,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 539946376,
   "storage_human": "540 MB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

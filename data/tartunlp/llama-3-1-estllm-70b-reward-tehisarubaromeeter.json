@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tartuNLP/Llama-3.1-EstLLM-70B-Reward-TehisaruBaromeeter",
   "slug": "tartunlp-llama-3-1-estllm-70b-reward-tehisarubaromeeter",
   "author": "tartuNLP",
@@ -37,14 +37,19 @@
   "parameters_human": "69.50B",
   "storage_bytes": 139023377832,
   "storage_human": "139.0 GB",
+  "context_length": null,
   "base_model": "tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

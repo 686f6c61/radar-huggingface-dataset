@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matthieulel/vit-base-patch32-384-galaxy10-decals-full-v2",
   "slug": "matthieulel-vit-base-patch32-384-galaxy10-decals-full-v2",
   "author": "matthieulel",
@@ -36,14 +36,19 @@
   "parameters_human": "87.5M",
   "storage_bytes": 350166744,
   "storage_human": "350 MB",
+  "context_length": null,
   "base_model": "google/vit-base-patch32-384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

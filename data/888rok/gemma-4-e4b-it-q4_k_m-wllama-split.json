@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "888rok/gemma-4-E4B-it-Q4_K_M-wllama-split",
   "slug": "888rok-gemma-4-e4b-it-q4_k_m-wllama-split",
   "author": "888rok",
@@ -28,14 +28,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 4977172000,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-4-E4B-it-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF",
   "slug": "mradermacher-qwen3-8-flash-next-ream-60pct-i1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "128.79B",
   "storage_bytes": 1108855071680,
   "storage_human": "1108.9 GB",
+  "context_length": 262144,
   "base_model": "Akicou/Qwen3.8-Flash-Next-REAM-60Pct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

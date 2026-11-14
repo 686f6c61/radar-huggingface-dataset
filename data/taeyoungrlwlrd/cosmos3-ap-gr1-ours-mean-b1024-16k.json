@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taeyoungrlwlrd/cosmos3-ap-gr1-ours-mean-b1024-16k",
   "slug": "taeyoungrlwlrd-cosmos3-ap-gr1-ours-mean-b1024-16k",
   "author": "taeyoungrlwlrd",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 182123895118,
   "storage_human": "182.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T04:58:43.977Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

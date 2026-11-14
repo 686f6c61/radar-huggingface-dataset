@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chaoliangUNSW/Jev-Style-Cascade-9B",
   "slug": "chaoliangunsw-jev-style-cascade-9b",
   "author": "chaoliangUNSW",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "chaoliangUNSW/Jev-Style-2B-Decision-v3, alibiserikbay/JevK5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

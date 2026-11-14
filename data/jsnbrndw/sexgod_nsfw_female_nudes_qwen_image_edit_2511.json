@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsnbrndw/SexGod_NSFW_Female_Nudes_QWEN_Image_Edit_2511",
   "slug": "jsnbrndw-sexgod_nsfw_female_nudes_qwen_image_edit_2511",
   "author": "jsnbrndw",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2361194111,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "justinchuby/Muse-Glimmer-30B-ONNX-INT4-CUDA",
   "slug": "justinchuby-muse-glimmer-30b-onnx-int4-cuda",
   "author": "justinchuby",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 38381885337,
   "storage_human": "38.4 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

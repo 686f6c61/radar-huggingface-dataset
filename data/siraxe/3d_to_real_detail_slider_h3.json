@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siraxe/3d_to_real_detail_slider_H3",
   "slug": "siraxe-3d_to_real_detail_slider_h3",
   "author": "siraxe",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 109154404,
   "storage_human": "109 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

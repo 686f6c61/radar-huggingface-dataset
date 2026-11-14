@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HeymanDex/BiyiVLA_Pi05_Checkpoints_split_airfryer_261105",
   "slug": "heymandex-biyivla_pi05_checkpoints_split_airfryer_261105",
   "author": "HeymanDex",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 104734812635,
   "storage_human": "104.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

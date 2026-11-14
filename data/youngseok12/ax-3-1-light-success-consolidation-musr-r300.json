@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "youngseok12/AX-3.1-Light-success-consolidation-musr-R300",
   "slug": "youngseok12-ax-3-1-light-success-consolidation-musr-r300",
   "author": "youngseok12",
@@ -40,14 +40,19 @@
   "parameters_human": "7.26B",
   "storage_bytes": 14529635312,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "skt/A.X-3.1-Light",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

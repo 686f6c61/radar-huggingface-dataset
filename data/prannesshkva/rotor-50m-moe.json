@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/ROTOR-50M-MoE",
   "slug": "prannesshkva-rotor-50m-moe",
   "author": "Prannesshkva",
@@ -42,14 +42,19 @@
   "parameters_human": "98.4M",
   "storage_bytes": 779116056,
   "storage_human": "779 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:41:30.822Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

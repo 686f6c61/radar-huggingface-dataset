@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TrustLLMeu/trustllm-v2-8b-sft-mixb2-exp",
   "slug": "trustllmeu-trustllm-v2-8b-sft-mixb2-exp",
   "author": "TrustLLMeu",
@@ -87,14 +87,19 @@
   "parameters_human": "7.19B",
   "storage_bytes": 14418582114,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "TrustLLMeu/trustllm-v2-8b-midtrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

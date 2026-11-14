@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shabieh2/1017_cluster_lora_fullset_rel34_ranklte3",
   "slug": "shabieh2-1017_cluster_lora_fullset_rel34_ranklte3",
   "author": "shabieh2",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 866591761,
   "storage_human": "867 MB",
+  "context_length": null,
   "base_model": "unsloth/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

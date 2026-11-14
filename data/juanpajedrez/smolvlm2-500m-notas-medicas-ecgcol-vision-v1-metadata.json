@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juanpajedrez/smolvlm2-500m-notas-medicas-ecgcol-vision-v1-metadata",
   "slug": "juanpajedrez-smolvlm2-500m-notas-medicas-ecgcol-vision-v1-metadata",
   "author": "juanpajedrez",
@@ -32,14 +32,19 @@
   "parameters_human": "507.5M",
   "storage_bytes": 11143822319,
   "storage_human": "11.1 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T05:15:43.171Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

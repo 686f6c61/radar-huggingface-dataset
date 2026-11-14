@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xy10086/Qwen3.8-9B-Distill-Uncensored-Heretic-MTPLX-Q6G64",
   "slug": "xy10086-qwen3-8-9b-distill-uncensored-heretic-mtplx-q6g64",
   "author": "xy10086",
@@ -45,6 +45,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 8694976602,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

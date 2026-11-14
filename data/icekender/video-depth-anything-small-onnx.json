@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Icekender/video-depth-anything-small-onnx",
   "slug": "icekender-video-depth-anything-small-onnx",
   "author": "Icekender",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 232647060,
   "storage_human": "233 MB",
+  "context_length": null,
   "base_model": "depth-anything/Video-Depth-Anything-Small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:19:48.242Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

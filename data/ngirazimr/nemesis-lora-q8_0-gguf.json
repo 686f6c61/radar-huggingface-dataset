@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ngirazimr/nemesis-lora-Q8_0-GGUF",
   "slug": "ngirazimr-nemesis-lora-q8_0-gguf",
   "author": "ngirazimr",
@@ -34,14 +34,19 @@
   "parameters_human": "41.9M",
   "storage_bytes": 4985978528,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "ngirazimr/nemesis-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "software-mansion/react-native-executorch-deeplab-v3",
   "slug": "software-mansion-react-native-executorch-deeplab-v3",
   "author": "software-mansion",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 3848048102,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "software-mansion/DeepLabV3-ExecuTorch",
+  "renamed_at": "2026-11-11T07:34:20.296Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-Qwen3-ASR-0.6B-gguf",
   "slug": "xix3r-voxix-qwen3-asr-0-6b-gguf",
   "author": "xix3r",
@@ -95,14 +95,19 @@
   "parameters_human": "782.5M",
   "storage_bytes": 5927041024,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

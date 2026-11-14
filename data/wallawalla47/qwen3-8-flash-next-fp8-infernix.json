@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix",
   "slug": "wallawalla47-qwen3-8-flash-next-fp8-infernix",
   "author": "wallawalla47",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 241916869120,
   "storage_human": "241.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

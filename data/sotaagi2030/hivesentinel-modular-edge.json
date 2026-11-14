@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOTAagi2030/HiveSentinel-Modular-Edge",
   "slug": "sotaagi2030-hivesentinel-modular-edge",
   "author": "SOTAagi2030",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 124,
   "storage_human": "124 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

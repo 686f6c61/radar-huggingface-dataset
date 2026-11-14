@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mino1289/vmoe_s32_last2_224_randaug_light1",
   "slug": "mino1289-vmoe_s32_last2_224_randaug_light1",
   "author": "Mino1289",
@@ -26,14 +26,19 @@
   "parameters_human": "57.0M",
   "storage_bytes": 228014496,
   "storage_human": "228 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

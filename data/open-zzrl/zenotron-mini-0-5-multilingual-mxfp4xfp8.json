@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-zzrl/Zenotron-Mini-0.5-Multilingual-MXFP4xFP8",
   "slug": "open-zzrl-zenotron-mini-0-5-multilingual-mxfp4xfp8",
   "author": "open-zzrl",
@@ -45,14 +45,19 @@
   "parameters_human": "19.85B",
   "storage_bytes": 23215900157,
   "storage_human": "23.2 GB",
+  "context_length": null,
   "base_model": "open-zzrl/Zenotron-Mini-0.5-Multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/molmoact2_dashboard_0904_10k_16bs",
   "slug": "dongkkka-molmoact2_dashboard_0904_10k_16bs",
   "author": "Dongkkka",
@@ -29,14 +29,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483640056,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

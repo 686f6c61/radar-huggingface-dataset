@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4",
   "slug": "patientxtr-huihui-qwen3-vl-8b-instruct-abliterated-bnb-nf4",
   "author": "patientxtr",
@@ -28,14 +28,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 6389856337,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

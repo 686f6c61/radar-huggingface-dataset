@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chevron7/DeepSeek-V4-Pro-Qwen3.5-9B-oQ8e",
   "slug": "chevron7-deepseek-v4-pro-qwen3-5-9b-oq8e",
   "author": "chevron7",
@@ -27,6 +27,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 10446579583,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

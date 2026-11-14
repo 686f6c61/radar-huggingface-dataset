@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mudler/Kolibri-1-APEX-GGUF",
   "slug": "mudler-kolibri-1-apex-gguf",
   "author": "mudler",
@@ -31,14 +31,19 @@
   "parameters_human": "78.10B",
   "storage_bytes": 358794581024,
   "storage_human": "358.8 GB",
+  "context_length": 262144,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sorihon/Chaotic-Harmony-24B",
   "slug": "sorihon-chaotic-harmony-24b",
   "author": "Sorihon",
@@ -35,14 +35,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47161926917,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Cydonia-24B-v4.2.0, Sorihon/Celestial-Order-24B-V3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

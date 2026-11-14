@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dioleti/xlm-roberta-base-ner-hrl",
   "slug": "dioleti-xlm-roberta-base-ner-hrl",
   "author": "Dioleti",
@@ -36,14 +36,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 2224868389,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

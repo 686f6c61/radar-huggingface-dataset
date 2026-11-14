@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoodStartLabs/sf-cot-dagger-chess-qwen3-1.7b",
   "slug": "goodstartlabs-sf-cot-dagger-chess-qwen3-1-7b",
   "author": "GoodStartLabs",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 139512976,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

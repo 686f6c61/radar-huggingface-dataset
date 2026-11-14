@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/Outlier-Quick-26B-MLX-4bit",
   "slug": "outlier-ai-outlier-quick-26b-mlx-4bit",
   "author": "Outlier-Ai",
@@ -96,6 +96,7 @@
   "parameters_human": "25.81B",
   "storage_bytes": 15641008200,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26b-a4b-it",
   "formats": [
     "mlx",
@@ -103,8 +104,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

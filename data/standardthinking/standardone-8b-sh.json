@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StandardThinking/StandardOne-8B-SH",
   "slug": "standardthinking-standardone-8b-sh",
   "author": "StandardThinking",
@@ -39,14 +39,19 @@
   "parameters_human": "8.92B",
   "storage_bytes": 55386245531,
   "storage_human": "55.4 GB",
+  "context_length": null,
   "base_model": "StandardThinking/StandardOne-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

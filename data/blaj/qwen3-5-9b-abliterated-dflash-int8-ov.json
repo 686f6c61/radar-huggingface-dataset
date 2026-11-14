@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/Qwen3.5-9B-abliterated-DFlash-int8-ov",
   "slug": "blaj-qwen3-5-9b-abliterated-dflash-int8-ov",
   "author": "blaj",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 3148123016,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "guglxni/Qwen3.5-9B-abliterated-DFlash, lukey03/Qwen3.5-9B-abliterated, z-lab/Qwen3.5-9B-DFlash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

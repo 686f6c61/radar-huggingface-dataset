@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenIntelligenceNet/Spark-X2.6-1.7B-Uncensored-GGUF",
   "slug": "openintelligencenet-spark-x2-6-1-7b-uncensored-gguf",
   "author": "OpenIntelligenceNet",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "OpenIntelligenceNet/Spark-X2.6-1.7B-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

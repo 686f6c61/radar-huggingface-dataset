@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huluhuluu/qwen3-1.7b-mllm-qnn-htp",
   "slug": "huluhuluu-qwen3-1-7b-mllm-qnn-htp",
   "author": "huluhuluu",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 3237879808,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

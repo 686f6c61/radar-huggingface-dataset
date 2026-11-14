@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaifoS/SmolVLM-Instruct",
   "slug": "saifos-smolvlm-instruct",
   "author": "SaifoS",
@@ -37,6 +37,7 @@
   "parameters_human": "2.25B",
   "storage_bytes": 26772261940,
   "storage_human": "26.8 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct, google/siglip-so400m-patch14-384",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

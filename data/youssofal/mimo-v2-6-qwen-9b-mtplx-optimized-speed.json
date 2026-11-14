@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Youssofal/MiMo-V2.6-Qwen-9B-MTPLX-Optimized-Speed",
   "slug": "youssofal-mimo-v2-6-qwen-9b-mtplx-optimized-speed",
   "author": "Youssofal",
@@ -56,6 +56,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 8694976580,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -63,8 +64,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

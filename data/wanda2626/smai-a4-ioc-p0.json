@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wanda2626/smai-a4-ioc-p0",
   "slug": "wanda2626-smai-a4-ioc-p0",
   "author": "wanda2626",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 3208893,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

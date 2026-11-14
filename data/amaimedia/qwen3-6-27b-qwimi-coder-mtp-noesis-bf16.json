@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.6-27B-Qwimi-Coder-MTP-NOESIS-BF16",
   "slug": "amaimedia-qwen3-6-27b-qwimi-coder-mtp-noesis-bf16",
   "author": "AMAImedia",
@@ -156,14 +156,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 56432403097,
   "storage_human": "56.4 GB",
+  "context_length": null,
   "base_model": "trjxter/Qwimi-3.6-27B-Coder-MTP-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T04:20:02.501Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theykk/MiMo-V2.6-Flash-MOPD-UNCENSORED",
   "slug": "theykk-mimo-v2-6-flash-mopd-uncensored",
   "author": "theykk",
@@ -41,14 +41,19 @@
   "parameters_human": "310.76B",
   "storage_bytes": 177753496517,
   "storage_human": "177.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T02:38:10.647Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marafx2007/Qwen3.8-9B-heretic-uncensored-i1-GGUF",
   "slug": "marafx2007-qwen3-8-9b-heretic-uncensored-i1-gguf",
   "author": "marafx2007",
@@ -29,14 +29,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 110211448288,
   "storage_human": "110.2 GB",
+  "context_length": 262144,
   "base_model": "rohit267/Qwen3.8-9B-heretic-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

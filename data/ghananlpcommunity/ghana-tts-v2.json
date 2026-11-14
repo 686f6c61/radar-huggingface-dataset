@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghananlpcommunity/ghana-tts-v2",
   "slug": "ghananlpcommunity-ghana-tts-v2",
   "author": "ghananlpcommunity",
@@ -45,12 +45,17 @@
   "parameters_human": null,
   "storage_bytes": 366177115136,
   "storage_human": "366.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

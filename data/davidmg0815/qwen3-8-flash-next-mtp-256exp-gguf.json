@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Davidmg0815/Qwen3.8-Flash-Next-MTP-256exp-GGUF",
   "slug": "davidmg0815-qwen3-8-flash-next-mtp-256exp-gguf",
   "author": "Davidmg0815",
@@ -30,14 +30,19 @@
   "parameters_human": "2.62B",
   "storage_bytes": 2797873280,
   "storage_human": "2.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next, unsloth/Qwen3.8-Flash-Next-GGUF, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

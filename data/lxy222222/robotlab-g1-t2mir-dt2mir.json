@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lxy222222/RobotLab-G1-T2MIR-DT2MIR",
   "slug": "lxy222222-robotlab-g1-t2mir-dt2mir",
   "author": "lxy222222",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 67745512,
   "storage_human": "68 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GhostJF/Qwen-Image-2.1-Turbo-Comfy",
   "slug": "ghostjf-qwen-image-2-1-turbo-comfy",
   "author": "GhostJF",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 14230284584,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T04:35:46.052Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

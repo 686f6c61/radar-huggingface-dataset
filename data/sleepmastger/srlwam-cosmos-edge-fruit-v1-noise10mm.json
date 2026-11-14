@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SleepMastger/srlwam-cosmos-edge-fruit-v1-noise10mm",
   "slug": "sleepmastger-srlwam-cosmos-edge-fruit-v1-noise10mm",
   "author": "SleepMastger",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 26965505960,
   "storage_human": "27.0 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

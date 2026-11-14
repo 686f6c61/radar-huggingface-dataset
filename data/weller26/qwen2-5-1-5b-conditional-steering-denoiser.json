@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Weller26/qwen2.5-1.5b-conditional-steering-denoiser",
   "slug": "weller26-qwen2-5-1-5b-conditional-steering-denoiser",
   "author": "Weller26",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 44894325,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

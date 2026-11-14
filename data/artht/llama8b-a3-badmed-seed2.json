@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArthT/llama8b-a3-badmed-seed2",
   "slug": "artht-llama8b-a3-badmed-seed2",
   "author": "ArthT",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 523757692,
   "storage_human": "524 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T04:05:21.732Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

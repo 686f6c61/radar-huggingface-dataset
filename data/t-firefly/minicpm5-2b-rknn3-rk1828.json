@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t-firefly/minicpm5-2b-rknn3-rk1828",
   "slug": "t-firefly-minicpm5-2b-rknn3-rk1828",
   "author": "t-firefly",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 2058321672,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

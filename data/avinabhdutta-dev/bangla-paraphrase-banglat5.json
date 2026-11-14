@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AvinabhDutta-Dev/bangla-paraphrase-banglat5",
   "slug": "avinabhdutta-dev-bangla-paraphrase-banglat5",
   "author": "AvinabhDutta-Dev",
@@ -42,14 +42,19 @@
   "parameters_human": "247.6M",
   "storage_bytes": 990350265,
   "storage_human": "990 MB",
+  "context_length": null,
   "base_model": "csebuetnlp/banglat5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ardana-ai/decider-0.8b-ONNX",
   "slug": "ardana-ai-decider-0-8b-onnx",
   "author": "ardana-ai",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 467748928,
   "storage_human": "468 MB",
+  "context_length": null,
   "base_model": "Mapika/decider-0.8b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

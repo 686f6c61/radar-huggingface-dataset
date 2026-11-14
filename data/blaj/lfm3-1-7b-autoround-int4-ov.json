@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/LFM3-1.7B-AutoRound-int4-ov",
   "slug": "blaj-lfm3-1-7b-autoround-int4-ov",
   "author": "blaj",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2592677114,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

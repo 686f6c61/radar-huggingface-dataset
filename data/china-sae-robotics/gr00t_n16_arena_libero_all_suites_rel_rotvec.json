@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "china-sae-robotics/gr00t_n16_arena_libero_all_suites_rel_rotvec",
   "slug": "china-sae-robotics-gr00t_n16_arena_libero_all_suites_rel_rotvec",
   "author": "china-sae-robotics",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 26293505969,
   "storage_human": "26.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

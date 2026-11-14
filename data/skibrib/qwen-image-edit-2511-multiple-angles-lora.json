@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA",
   "slug": "skibrib-qwen-image-edit-2511-multiple-angles-lora",
   "author": "Skibrib",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 334421090,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

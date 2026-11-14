@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid",
   "slug": "brandonmusic-glm-5-2-nvfp4-tr3-hybrid",
   "author": "brandonmusic",
@@ -36,14 +36,19 @@
   "parameters_human": "217.39B",
   "storage_bytes": 351908177389,
   "storage_human": "351.9 GB",
+  "context_length": null,
   "base_model": "lukealonso/GLM-5.2-NVFP4, zai-org/GLM-5.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tfrere/microduck-move-a-duck-that-walks-leaning-fa",
   "slug": "tfrere-microduck-move-a-duck-that-walks-leaning-fa",
   "author": "tfrere",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 6032249,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:36:11.941Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

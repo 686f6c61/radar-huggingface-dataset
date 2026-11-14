@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adambuttrick/ror-set-point-set-model-bge-reranker-v2-m3",
   "slug": "adambuttrick-ror-set-point-set-model-bge-reranker-v2-m3",
   "author": "adambuttrick",
@@ -35,14 +35,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 1354665332,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-reranker-v2-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

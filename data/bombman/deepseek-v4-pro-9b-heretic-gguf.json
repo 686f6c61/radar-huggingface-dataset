@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bombman/DeepSeek-V4-Pro-9B-Heretic-GGUF",
   "slug": "bombman-deepseek-v4-pro-9b-heretic-gguf",
   "author": "bombman",
@@ -25,14 +25,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 20508245312,
   "storage_human": "20.5 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

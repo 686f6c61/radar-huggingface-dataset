@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rolmaxx/MediGuide",
   "slug": "rolmaxx-mediguide",
   "author": "rolmaxx",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 949298265,
   "storage_human": "949 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T06:04:24.885Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

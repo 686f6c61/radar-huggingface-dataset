@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pragmaticcs/Triumvirate-Qwopus-MiMo-Ornith-9B-Coder",
   "slug": "pragmaticcs-triumvirate-qwopus-mimo-ornith-9b-coder",
   "author": "pragmaticcs",
@@ -54,14 +54,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927991619,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, ornith-ai/Ornith-1.5-9B, Jackrong/Qwopus3.5-9B-Coder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

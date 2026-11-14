@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m1rkocasu/Apertus-v1.5-8B-text-MLX-8bit",
   "slug": "m1rkocasu-apertus-v1-5-8b-text-mlx-8bit",
   "author": "m1rkocasu",
@@ -35,6 +35,7 @@
   "parameters_human": "8.05B",
   "storage_bytes": 8582259760,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-v1.5-8B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

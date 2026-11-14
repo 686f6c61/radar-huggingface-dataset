@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Ria564/Qwen-Image-Edit-Rapid-AIO-V19",
+  "slug": "ria564-qwen-image-edit-rapid-aio-v19",
+  "author": "Ria564",
+  "url": "https://huggingface.co/Ria564/Qwen-Image-Edit-Rapid-AIO-V19",
+  "created_at": "2026-11-14T14:14:42.000Z",
+  "updated_at": "2026-11-14T14:14:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen-edit",
+    "t2i",
+    "i2i",
+    "art",
+    "image-to-image",
+    "en",
+    "base_model:Phr00t/Qwen-Image-Edit-Rapid-AIO",
+    "base_model:finetune:Phr00t/Qwen-Image-Edit-Rapid-AIO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 20430632952,
+  "storage_human": "20.4 GB",
+  "context_length": null,
+  "base_model": "Phr00t/Qwen-Image-Edit-Rapid-AIO",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

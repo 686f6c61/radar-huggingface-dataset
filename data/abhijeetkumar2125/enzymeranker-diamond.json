@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbhijeetKumar2125/EnzymeRanker-DIAMOND",
   "slug": "abhijeetkumar2125-enzymeranker-diamond",
   "author": "AbhijeetKumar2125",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 546016815,
   "storage_human": "546 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T02:14:07.502Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

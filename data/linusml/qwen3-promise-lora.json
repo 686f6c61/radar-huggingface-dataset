@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LinusML/qwen3-promise-lora",
   "slug": "linusml-qwen3-promise-lora",
   "author": "LinusML",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 35059701,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

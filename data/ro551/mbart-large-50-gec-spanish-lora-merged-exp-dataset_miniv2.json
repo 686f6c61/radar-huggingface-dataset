@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ro551/mbart-large-50-GEC-spanish-LORA-merged-exp-dataset_miniv2",
   "slug": "ro551-mbart-large-50-gec-spanish-lora-merged-exp-dataset_miniv2",
   "author": "Ro551",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 2134594799,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "facebook/mbart-large-50",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

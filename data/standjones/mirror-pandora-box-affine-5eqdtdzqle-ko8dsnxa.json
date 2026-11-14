@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "standjones/mirror-pandora-box-affine-5eqdtdzqle-ko8dsnxa",
   "slug": "standjones-mirror-pandora-box-affine-5eqdtdzqle-ko8dsnxa",
   "author": "standjones",
@@ -36,14 +36,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234484189,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "vera6/affine-5g4yy75zuz-t6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:33:49.782Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

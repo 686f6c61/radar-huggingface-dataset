@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wilsonzheng0327/Whisper-large-v3-distil-draft",
   "slug": "wilsonzheng0327-whisper-large-v3-distil-draft",
   "author": "wilsonzheng0327",
@@ -42,14 +42,19 @@
   "parameters_human": "756.4M",
   "storage_bytes": 1512875008,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "distil-whisper/distil-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

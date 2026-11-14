@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShinePixelOrg/translategemma-27b-it-NVFP4",
   "slug": "shinepixelorg-translategemma-27b-it-nvfp4",
   "author": "ShinePixelOrg",
@@ -37,14 +37,19 @@
   "parameters_human": "16.23B",
   "storage_bytes": 18105576858,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "google/translategemma-27b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

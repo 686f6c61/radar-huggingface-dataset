@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakeatx/Qwen3.8-27B-Ternary-PQ2_0-MTP-GGUF",
   "slug": "jakeatx-qwen3-8-27b-ternary-pq2_0-mtp-gguf",
   "author": "jakeatx",
@@ -31,14 +31,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 15159659104,
   "storage_human": "15.2 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

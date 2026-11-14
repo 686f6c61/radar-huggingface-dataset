@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "B111ue/Stereo-CoRE",
   "slug": "b111ue-stereo-core",
   "author": "B111ue",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 13973688830,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

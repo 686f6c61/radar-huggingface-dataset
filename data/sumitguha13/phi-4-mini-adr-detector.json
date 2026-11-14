@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sumitguha13/phi-4-mini-adr-detector",
   "slug": "sumitguha13-phi-4-mini-adr-detector",
   "author": "sumitguha13",
@@ -40,6 +40,7 @@
   "parameters_human": "3.84B",
   "storage_bytes": 17853496623,
   "storage_human": "17.9 GB",
+  "context_length": 131072,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

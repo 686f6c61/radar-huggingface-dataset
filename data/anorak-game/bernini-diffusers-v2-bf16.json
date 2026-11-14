@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anorak-game/Bernini-Diffusers-v2-bf16",
   "slug": "anorak-game-bernini-diffusers-v2-bf16",
   "author": "anorak-game",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 90776378143,
   "storage_human": "90.8 GB",
+  "context_length": null,
   "base_model": "ByteDance/Bernini-Diffusers-v2",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

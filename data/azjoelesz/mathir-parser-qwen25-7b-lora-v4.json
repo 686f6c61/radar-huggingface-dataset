@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AzJoeLesz/mathir-parser-qwen25-7b-lora-v4",
   "slug": "azjoelesz-mathir-parser-qwen25-7b-lora-v4",
   "author": "AzJoeLesz",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 31637100,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

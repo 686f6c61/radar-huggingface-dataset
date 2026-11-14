@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liorbenhorin-nv/so101_vials_sysid_dr_teal_70ep_GR00T17_20k",
   "slug": "liorbenhorin-nv-so101_vials_sysid_dr_teal_70ep_gr00t17_20k",
   "author": "liorbenhorin-nv",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576219216,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

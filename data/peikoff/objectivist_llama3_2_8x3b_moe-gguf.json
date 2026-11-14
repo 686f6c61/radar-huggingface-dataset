@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peikoff/objectivist_llama3_2_8x3b_moe-GGUF",
   "slug": "peikoff-objectivist_llama3_2_8x3b_moe-gguf",
   "author": "peikoff",
@@ -34,14 +34,19 @@
   "parameters_human": "18.40B",
   "storage_bytes": 59186458752,
   "storage_human": "59.2 GB",
+  "context_length": 131072,
   "base_model": "peikoff/llama3-2-8x3b-moe-objectivist-merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

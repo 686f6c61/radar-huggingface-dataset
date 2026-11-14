@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/alston-writer-v2-Q5_0-GGUF",
   "slug": "alst10-alston-writer-v2-q5_0-gguf",
   "author": "alst10",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 5599294912,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "alst10/alston-writer-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:38:43.984Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

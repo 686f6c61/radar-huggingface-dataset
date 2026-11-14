@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheGarbageMan1/childish",
   "slug": "thegarbageman1-childish",
   "author": "TheGarbageMan1",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 778391398,
   "storage_human": "778 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:28:53.421Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Himeyuri-Magnum-12B-HereticLoRA-i1-GGUF",
   "slug": "mradermacher-himeyuri-magnum-12b-hereticlora-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 141939026496,
   "storage_human": "141.9 GB",
+  "context_length": 1024000,
   "base_model": "yamatazen/Himeyuri-Magnum-12B-HereticLoRA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

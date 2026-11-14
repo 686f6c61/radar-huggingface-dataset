@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NT-ORIGINAL/vietnam-legal-ai-models",
   "slug": "nt-original-vietnam-legal-ai-models",
   "author": "NT-ORIGINAL",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1088606902,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "vinai/phobert-base-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

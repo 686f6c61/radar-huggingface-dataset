@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Curtec/Aussie",
   "slug": "curtec-aussie",
   "author": "Curtec",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 10631587071,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:47:30.306Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

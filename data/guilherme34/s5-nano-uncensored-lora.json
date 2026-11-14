@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Guilherme34/S5-nano-uncensored-lora",
   "slug": "guilherme34-s5-nano-uncensored-lora",
   "author": "Guilherme34",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 587361333,
   "storage_human": "587 MB",
+  "context_length": null,
   "base_model": "Guilherme34/S5-nano-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

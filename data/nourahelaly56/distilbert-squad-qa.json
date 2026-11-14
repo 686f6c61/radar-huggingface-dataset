@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nourahelaly56/distilbert-squad-qa",
   "slug": "nourahelaly56-distilbert-squad-qa",
   "author": "nourahelaly56",
@@ -27,14 +27,19 @@
   "parameters_human": "66.4M",
   "storage_bytes": 530940064,
   "storage_human": "531 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

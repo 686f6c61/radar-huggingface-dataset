@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theteha/dorina-v4-instruct",
   "slug": "theteha-dorina-v4-instruct",
   "author": "theteha",
@@ -37,14 +37,19 @@
   "parameters_human": "170.0M",
   "storage_bytes": 1499175694,
   "storage_human": "1.5 GB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

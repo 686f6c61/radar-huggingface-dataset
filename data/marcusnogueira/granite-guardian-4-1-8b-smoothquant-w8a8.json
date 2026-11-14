@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marcusnogueira/granite-guardian-4.1-8b-smoothquant-w8a8",
   "slug": "marcusnogueira-granite-guardian-4-1-8b-smoothquant-w8a8",
   "author": "marcusnogueira",
@@ -39,14 +39,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 9617276704,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-guardian-4.1-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

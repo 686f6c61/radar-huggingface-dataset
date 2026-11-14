@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TSchachi/pii-token-classifier-de-en-code",
   "slug": "tschachi-pii-token-classifier-de-en-code",
   "author": "TSchachi",
@@ -37,14 +37,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 1126829905,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "bardsai/eu-pii-anonimization-multilang",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

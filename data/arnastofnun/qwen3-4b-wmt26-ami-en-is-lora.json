@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora",
   "slug": "arnastofnun-qwen3-4b-wmt26-ami-en-is-lora",
   "author": "arnastofnun",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 143610911,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "arnastofnun/Qwen3-4B-wmt26-AMI-en-is",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

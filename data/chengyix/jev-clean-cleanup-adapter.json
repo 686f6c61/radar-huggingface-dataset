@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChengyiX/jev-clean-cleanup-adapter",
   "slug": "chengyix-jev-clean-cleanup-adapter",
   "author": "ChengyiX",
@@ -30,6 +30,7 @@
   "parameters_human": "75.3M",
   "storage_bytes": 301119051,
   "storage_human": "301 MB",
+  "context_length": null,
   "base_model": "aac6fef/laya-mlx",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

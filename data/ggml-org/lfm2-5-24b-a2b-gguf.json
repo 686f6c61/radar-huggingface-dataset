@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/LFM2.5-24B-A2B-GGUF",
   "slug": "ggml-org-lfm2-5-24b-a2b-gguf",
   "author": "ggml-org",
@@ -29,14 +29,19 @@
   "parameters_human": "23.97B",
   "storage_bytes": 175964176768,
   "storage_human": "176.0 GB",
+  "context_length": 131072,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

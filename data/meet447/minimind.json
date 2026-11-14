@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meet447/minimind",
   "slug": "meet447-minimind",
   "author": "meet447",
@@ -38,14 +38,19 @@
   "parameters_human": "63.9M",
   "storage_bytes": 403202982,
   "storage_human": "403 MB",
+  "context_length": null,
   "base_model": "jingyaogong/minimind-3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

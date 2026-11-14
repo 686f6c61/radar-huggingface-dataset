@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatterWaveAI/grt-30m-omni",
   "slug": "matterwaveai-grt-30m-omni",
   "author": "MatterWaveAI",
@@ -41,6 +41,7 @@
   "parameters_human": "38.7M",
   "storage_bytes": 610057030,
   "storage_human": "610 MB",
+  "context_length": 2048,
   "base_model": "MatterWaveAI/grt-30m",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

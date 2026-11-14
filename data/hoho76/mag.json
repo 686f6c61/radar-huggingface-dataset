@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hoho76/Mag",
   "slug": "hoho76-mag",
   "author": "Hoho76",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 612922657,
   "storage_human": "613 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-dev",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:28:31.682Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

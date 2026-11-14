@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alighabusaleh/CLASP-Ar-Arabic-Stance",
   "slug": "alighabusaleh-clasp-ar-arabic-stance",
   "author": "alighabusaleh",
@@ -40,6 +40,7 @@
   "parameters_human": "336.7M",
   "storage_bytes": 1760120520,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "asafaya/bert-large-arabic",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Arabic Stance Detection",

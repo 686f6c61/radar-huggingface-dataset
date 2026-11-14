@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MGE-LLMs/MatRefiner-Fine_tuned_models",
   "slug": "mge-llms-matrefiner-fine_tuned_models",
   "author": "MGE-LLMs",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 773126796,
   "storage_human": "773 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

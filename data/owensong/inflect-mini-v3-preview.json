@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "owensong/Inflect-Mini-v3-Preview",
   "slug": "owensong-inflect-mini-v3-preview",
   "author": "owensong",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 367051657,
   "storage_human": "367 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T07:20:18.181Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

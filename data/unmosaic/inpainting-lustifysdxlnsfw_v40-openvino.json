@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unmosaic/inpainting-lustifySDXLNSFW_v40-openvino",
   "slug": "unmosaic-inpainting-lustifysdxlnsfw_v40-openvino",
   "author": "unmosaic",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4541066336,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "GraydientPlatformAPI/inpainting-lustifySDXLNSFW_v40",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit",
   "slug": "ozzygt-flux_3_image_klein_sdnq_dynamic_8bit",
   "author": "OzzyGT",
@@ -36,6 +36,7 @@
   "parameters_human": "5.55B",
   "storage_bytes": 10814917948,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

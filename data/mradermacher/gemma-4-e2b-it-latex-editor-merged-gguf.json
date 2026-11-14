@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-4-E2B-it-latex-editor-merged-GGUF",
   "slug": "mradermacher-gemma-4-e2b-it-latex-editor-merged-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 49408241984,
   "storage_human": "49.4 GB",
+  "context_length": 131072,
   "base_model": "michelinolinolino/gemma-4-E2B-it-latex-editor-merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T06:10:07.305Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

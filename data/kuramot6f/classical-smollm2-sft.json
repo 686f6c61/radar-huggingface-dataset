@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kuramot6f/classical-smollm2-sft",
   "slug": "kuramot6f-classical-smollm2-sft",
   "author": "kuramot6f",
@@ -39,14 +39,19 @@
   "parameters_human": "124.6M",
   "storage_bytes": 499038937,
   "storage_human": "499 MB",
+  "context_length": null,
   "base_model": "kuramot6f/classical-smollm2-trunk",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

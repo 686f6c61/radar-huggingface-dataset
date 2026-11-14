@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "verycoololiver/Tot-360M-Family",
   "slug": "verycoololiver-tot-360m-family",
   "author": "verycoololiver",
@@ -40,14 +40,19 @@
   "parameters_human": "345.4M",
   "storage_bytes": 3940204416,
   "storage_human": "3.9 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

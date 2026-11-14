@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Faithful_Thinking_with_Image-i1-GGUF",
   "slug": "mradermacher-faithful_thinking_with_image-i1-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 88975005376,
   "storage_human": "89.0 GB",
+  "context_length": 128000,
   "base_model": "eugeneliu01/Faithful_Thinking_with_Image",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

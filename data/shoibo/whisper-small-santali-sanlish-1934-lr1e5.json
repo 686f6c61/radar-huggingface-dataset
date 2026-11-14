@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shoibo/whisper-small-santali-sanlish-1934-lr1e5",
   "slug": "shoibo-whisper-small-santali-sanlish-1934-lr1e5",
   "author": "shoibo",
@@ -31,14 +31,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 22241167588,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

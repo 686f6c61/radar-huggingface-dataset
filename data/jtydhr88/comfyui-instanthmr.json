@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jtydhr88/ComfyUI-InstantHMR",
   "slug": "jtydhr88-comfyui-instanthmr",
   "author": "jtydhr88",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 776219764,
   "storage_human": "776 MB",
+  "context_length": null,
   "base_model": "momolesang/InstantHMR",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

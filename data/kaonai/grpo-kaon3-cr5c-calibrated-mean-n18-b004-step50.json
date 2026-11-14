@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaonai/grpo-kaon3-cr5c-calibrated-mean-n18-b004-step50",
   "slug": "kaonai-grpo-kaon3-cr5c-calibrated-mean-n18-b004-step50",
   "author": "kaonai",
@@ -33,14 +33,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644178190,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "kaonai/kaon-c-gemma4-26b-v10.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T05:48:04.058Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

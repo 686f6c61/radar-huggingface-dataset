@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/d3-nano-W4A16-HGPTQ",
   "slug": "nchapman-d3-nano-w4a16-hgptq",
   "author": "nchapman",
@@ -37,14 +37,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 1956490589,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

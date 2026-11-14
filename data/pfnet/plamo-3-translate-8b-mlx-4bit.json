@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pfnet/plamo-3-translate-8b-MLX-4bit",
   "slug": "pfnet-plamo-3-translate-8b-mlx-4bit",
   "author": "pfnet",
@@ -139,6 +139,7 @@
   "parameters_human": "2.08B",
   "storage_bytes": 6067268938,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "pfnet/plamo-3-translate-8b",
   "formats": [
     "mlx",
@@ -146,8 +147,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

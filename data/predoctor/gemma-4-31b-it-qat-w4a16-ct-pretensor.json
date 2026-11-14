@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PreDoctor/gemma-4-31B-it-qat-w4a16-ct-PreTensor",
   "slug": "predoctor-gemma-4-31b-it-qat-w4a16-ct-pretensor",
   "author": "PreDoctor",
@@ -33,14 +33,19 @@
   "parameters_human": "32.68B",
   "storage_bytes": 46562878042,
   "storage_human": "46.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it-qat-w4a16-ct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

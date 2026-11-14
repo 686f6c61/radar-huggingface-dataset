@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/K2-Horizon-MoVA-36B-A4B-ROCmFP4-GGUF",
   "slug": "kingjones777-k2-horizon-mova-36b-a4b-rocmfp4-gguf",
   "author": "kingjones777",
@@ -37,14 +37,19 @@
   "parameters_human": "37.44B",
   "storage_bytes": 100422743424,
   "storage_human": "100.4 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

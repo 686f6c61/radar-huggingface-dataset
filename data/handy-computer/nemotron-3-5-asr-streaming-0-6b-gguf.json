@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf",
   "slug": "handy-computer-nemotron-3-5-asr-streaming-0-6b-gguf",
   "author": "handy-computer",
@@ -94,14 +94,19 @@
   "parameters_human": "638.0M",
   "storage_bytes": 37547742336,
   "storage_human": "37.5 GB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

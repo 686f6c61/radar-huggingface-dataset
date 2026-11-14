@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Renesas/CenterNet-R18-ONNX",
   "slug": "renesas-centernet-r18-onnx",
   "author": "Renesas",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 56884157,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meeranrashith166/BG-Remover-Updates",
   "slug": "meeranrashith166-bg-remover-updates",
   "author": "meeranrashith166",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 36605744045,
   "storage_human": "36.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/Whisper-Hindi2Hinglish-Apex-ONNX",
   "slug": "onnx-community-whisper-hindi2hinglish-apex-onnx",
   "author": "onnx-community",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 14002281877,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "Oriserve/Whisper-Hindi2Hinglish-Apex",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

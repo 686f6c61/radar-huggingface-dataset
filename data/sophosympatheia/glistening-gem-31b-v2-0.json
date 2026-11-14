@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sophosympatheia/Glistening-Gem-31B-v2.0",
   "slug": "sophosympatheia-glistening-gem-31b-v2-0",
   "author": "sophosympatheia",
@@ -43,14 +43,19 @@
   "parameters_human": "32.68B",
   "storage_bytes": 65397078514,
   "storage_human": "65.4 GB",
+  "context_length": null,
   "base_model": "zerofata/G4-MeroMero-v2-31B, TheDrummer/Artemis-31B-v1, densenet/Gemma-4-31B-StyleTune-heretic-ara, llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArjanvD95/gysbert-animals-nov26-v1",
   "slug": "arjanvd95-gysbert-animals-nov26-v1",
   "author": "ArjanvD95",
@@ -34,14 +34,19 @@
   "parameters_human": "108.9M",
   "storage_bytes": 435599164,
   "storage_human": "436 MB",
+  "context_length": null,
   "base_model": "emanjavacas/GysBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

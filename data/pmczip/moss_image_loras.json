@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pmczip/MOSS_Image_LoRAs",
   "slug": "pmczip-moss_image_loras",
   "author": "pmczip",
@@ -40,6 +40,7 @@
   "parameters_human": null,
   "storage_bytes": 12308862504,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

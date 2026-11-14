@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TRiLinLID/ambernet-lid-si-ta-en-v1",
   "slug": "trilinlid-ambernet-lid-si-ta-en-v1",
   "author": "TRiLinLID",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 7356610304,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "nvidia/langid_ambernet",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omnificat/minintel-v1-4b",
   "slug": "omnificat-minintel-v1-4b",
   "author": "omnificat",
@@ -24,14 +24,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 5573446208,
   "storage_human": "5.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

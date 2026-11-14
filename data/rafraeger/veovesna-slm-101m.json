@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rafraeger/Veovesna-SLM-101M",
   "slug": "rafraeger-veovesna-slm-101m",
   "author": "Rafraeger",
@@ -34,14 +34,19 @@
   "parameters_human": "101.2M",
   "storage_bytes": 404822984,
   "storage_human": "405 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

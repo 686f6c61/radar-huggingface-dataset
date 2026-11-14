@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayozhee/Qwen3.8-27B-Abliterated-GSQ-Orca-GGUF",
   "slug": "ayozhee-qwen3-8-27b-abliterated-gsq-orca-gguf",
   "author": "ayozhee",
@@ -34,14 +34,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 21727998080,
   "storage_human": "21.7 GB",
+  "context_length": 262144,
   "base_model": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF, orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

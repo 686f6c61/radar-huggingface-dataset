@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MaxSchulten/teacher_gpt-oss-20B",
   "slug": "maxschulten-teacher_gpt-oss-20b",
   "author": "MaxSchulten",
@@ -32,14 +32,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203563110,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T04:39:56.473Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

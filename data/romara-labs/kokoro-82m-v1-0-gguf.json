@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "romara-labs/Kokoro-82M-v1.0-GGUF",
   "slug": "romara-labs-kokoro-82m-v1-0-gguf",
   "author": "romara-labs",
@@ -32,14 +32,19 @@
   "parameters_human": "88.8M",
   "storage_bytes": 739850432,
   "storage_human": "740 MB",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

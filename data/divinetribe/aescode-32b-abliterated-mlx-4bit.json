@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/AesCode-32B-abliterated-MLX-4bit",
   "slug": "divinetribe-aescode-32b-abliterated-mlx-4bit",
   "author": "divinetribe",
@@ -41,6 +41,7 @@
   "parameters_human": "33.36B",
   "storage_bytes": 19631871275,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "microsoft/AesCode-32B",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

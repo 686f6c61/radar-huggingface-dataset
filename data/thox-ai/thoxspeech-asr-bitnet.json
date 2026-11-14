@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxSpeech-ASR-BitNet",
   "slug": "thox-ai-thoxspeech-asr-bitnet",
   "author": "Thox-ai",
@@ -54,14 +54,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 1696991018,
   "storage_human": "1.7 GB",
+  "context_length": 65536,
   "base_model": "microsoft/VibeVoice-ASR-BitNet",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

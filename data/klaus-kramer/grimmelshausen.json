@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Klaus-Kramer/Grimmelshausen",
   "slug": "klaus-kramer-grimmelshausen",
   "author": "Klaus-Kramer",
@@ -37,6 +37,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 10759893109,
   "storage_human": "10.8 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

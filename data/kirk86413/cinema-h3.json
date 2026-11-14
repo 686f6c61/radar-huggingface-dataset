@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kirk86413/cinema-h3",
   "slug": "kirk86413-cinema-h3",
   "author": "kirk86413",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 155110448,
   "storage_human": "155 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

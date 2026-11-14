@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/DoItYourself-v1-2B-i1-GGUF",
   "slug": "mradermacher-doityourself-v1-2b-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "1.94B",
   "storage_bytes": 18621041728,
   "storage_human": "18.6 GB",
+  "context_length": 262144,
   "base_model": "theprint/DoItYourself-v1-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

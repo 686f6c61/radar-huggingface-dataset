@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Hy-MT2-cmf",
   "slug": "infosave-hy-mt2-cmf",
   "author": "infosave",
@@ -107,12 +107,17 @@
   "parameters_human": null,
   "storage_bytes": 21399603379,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": "tencent/Hy-MT2-1.8B, tencent/Hy-MT2-7B, tencent/Hy-MT2-30B-A3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

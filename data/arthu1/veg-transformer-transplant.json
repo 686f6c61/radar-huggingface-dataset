@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arthu1/VEG-Transformer-Transplant",
   "slug": "arthu1-veg-transformer-transplant",
   "author": "arthu1",
@@ -31,14 +31,19 @@
   "parameters_human": "84.0M",
   "storage_bytes": 336182496,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

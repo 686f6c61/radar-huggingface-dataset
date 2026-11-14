@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RobotsMali/soloni-114m-tdt-ctc-v3",
   "slug": "robotsmali-soloni-114m-tdt-ctc-v3",
   "author": "RobotsMali",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 455536640,
   "storage_human": "456 MB",
+  "context_length": null,
   "base_model": "RobotsMali/soloni-114m-tdt-ctc-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-1.7B-GLB-3D-Coder-GGUF",
   "slug": "mradermacher-qwen3-1-7b-glb-3d-coder-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 15959974272,
   "storage_human": "16.0 GB",
+  "context_length": 40960,
   "base_model": "ccore/Qwen3-1.7B-GLB-3D-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

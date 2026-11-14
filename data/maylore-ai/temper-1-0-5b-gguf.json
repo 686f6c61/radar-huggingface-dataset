@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maylore-ai/Temper-1-0.5B-GGUF",
   "slug": "maylore-ai-temper-1-0-5b-gguf",
   "author": "maylore-ai",
@@ -33,14 +33,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 531067936,
   "storage_human": "531 MB",
+  "context_length": 32768,
   "base_model": "maylore-ai/Temper-1-0.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

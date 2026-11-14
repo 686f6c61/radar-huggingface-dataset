@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AUDISQ523/Krea2_actions",
   "slug": "audisq523-krea2_actions",
   "author": "AUDISQ523",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 293361766631,
   "storage_human": "293.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

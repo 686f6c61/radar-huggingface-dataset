@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Usaidddddddddddddd/UsaidAI-500M",
   "slug": "usaidddddddddddddd-usaidai-500m",
   "author": "Usaidddddddddddddd",
@@ -37,14 +37,19 @@
   "parameters_human": "500.1M",
   "storage_bytes": 1001212393,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

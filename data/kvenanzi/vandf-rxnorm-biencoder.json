@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kvenanzi/vandf-rxnorm-biencoder",
   "slug": "kvenanzi-vandf-rxnorm-biencoder",
   "author": "kvenanzi",
@@ -42,14 +42,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 439002661,
   "storage_human": "439 MB",
+  "context_length": null,
   "base_model": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "VANDF string to RxNorm clinical drug (SCD/SBD) mapping",

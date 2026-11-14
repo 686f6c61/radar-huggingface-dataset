@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nxp/selfie-segmenter-imx",
   "slug": "nxp-selfie-segmenter-imx",
   "author": "nxp",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 4824368,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

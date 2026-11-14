@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbteeXAILab/lumynax-multimodal-llava-next-34b",
   "slug": "abteexailab-lumynax-multimodal-llava-next-34b",
   "author": "AbteeXAILab",
@@ -47,14 +47,19 @@
   "parameters_human": "34.75B",
   "storage_bytes": 69503491449,
   "storage_human": "69.5 GB",
+  "context_length": null,
   "base_model": "liuhaotian/llava-v1.6-34b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

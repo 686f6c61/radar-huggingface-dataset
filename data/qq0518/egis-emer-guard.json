@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qq0518/egis-emer-guard",
   "slug": "qq0518-egis-emer-guard",
   "author": "qq0518",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 2273325711,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

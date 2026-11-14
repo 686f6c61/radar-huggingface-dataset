@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iapp/openthai2.0-qwen3.8-27b-INT8-W8A8",
   "slug": "iapp-openthai2-0-qwen3-8-27b-int8-w8a8",
   "author": "iapp",
@@ -37,14 +37,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 152724005349,
   "storage_human": "152.7 GB",
+  "context_length": null,
   "base_model": "iapp/openthai2.0-qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

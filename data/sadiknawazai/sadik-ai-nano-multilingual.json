@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SadikNawazAI/sadik-ai-nano-multilingual",
   "slug": "sadiknawazai-sadik-ai-nano-multilingual",
   "author": "SadikNawazAI",
@@ -35,14 +35,19 @@
   "parameters_human": "7.9M",
   "storage_bytes": 64109700,
   "storage_human": "64 MB",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SadikNawazAI/sadik-ai-medium-multilingual",
+  "renamed_at": "2026-11-11T03:48:48.584Z",
   "benchmarks": [],
   "sources": []
 }

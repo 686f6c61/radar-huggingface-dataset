@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/gemma-3n-E4B-it-mlx-4Bit",
   "slug": "oscilla-gemma-3n-e4b-it-mlx-4bit",
   "author": "Oscilla",
@@ -37,6 +37,7 @@
   "parameters_human": "6.87B",
   "storage_bytes": 3897040698,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-3n-E4B-it",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

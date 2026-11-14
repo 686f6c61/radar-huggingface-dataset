@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ramgpt/MiMo-V2.6-Distill-Qwen-9B-EXL3-4.0bpw",
   "slug": "ramgpt-mimo-v2-6-distill-qwen-9b-exl3-4-0bpw",
   "author": "ramgpt",
@@ -32,14 +32,19 @@
   "parameters_human": "3.42B",
   "storage_bytes": 6860232910,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

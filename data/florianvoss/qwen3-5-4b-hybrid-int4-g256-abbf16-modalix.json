@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Qwen3.5-4B-Hybrid-INT4-G256-ABBF16-Modalix",
   "slug": "florianvoss-qwen3-5-4b-hybrid-int4-g256-abbf16-modalix",
   "author": "florianvoss",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 7625946523,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:42:10.560Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TaoMagnet/sn38-r8-nef",
   "slug": "taomagnet-sn38-r8-nef",
   "author": "TaoMagnet",
@@ -23,14 +23,19 @@
   "parameters_human": "2.20B",
   "storage_bytes": 66179702664,
   "storage_human": "66.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T07:30:10.382Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Swift-1.5-Qwen3.8-27b-FP8",
   "slug": "vwdubb-swift-1-5-qwen3-8-27b-fp8",
   "author": "vwdubb",
@@ -37,14 +37,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 38470215564,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T02:46:09.692Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

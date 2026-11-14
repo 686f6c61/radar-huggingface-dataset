@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HCHs/RivetCoder-9B-A4B",
   "slug": "hchs-rivetcoder-9b-a4b",
   "author": "HCHs",
@@ -49,14 +49,19 @@
   "parameters_human": "8.74B",
   "storage_bytes": 17496316502,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B, zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

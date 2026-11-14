@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ceselder/maemm-27b-rl-last16-lr5e-7",
   "slug": "ceselder-maemm-27b-rl-last16-lr5e-7",
   "author": "ceselder",
@@ -31,14 +31,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 378335647662,
   "storage_human": "378.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

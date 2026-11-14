@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Qwen3.5-4B-SmoothQuantA05-Hybrid-Modalix",
   "slug": "florianvoss-qwen3-5-4b-smoothquanta05-hybrid-modalix",
   "author": "florianvoss",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 10572163427,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:47:52.952Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

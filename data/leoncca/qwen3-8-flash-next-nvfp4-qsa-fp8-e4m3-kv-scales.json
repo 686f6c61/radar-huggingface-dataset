@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leoncca/Qwen3.8-Flash-Next-NVFP4-QSA-FP8-E4M3-KV-Scales",
   "slug": "leoncca-qwen3-8-flash-next-nvfp4-qsa-fp8-e4m3-kv-scales",
   "author": "leoncca",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 5254026584,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

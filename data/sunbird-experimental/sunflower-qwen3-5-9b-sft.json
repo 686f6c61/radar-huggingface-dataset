@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sunbird-experimental/sunflower-qwen3.5-9b-sft",
   "slug": "sunbird-experimental-sunflower-qwen3-5-9b-sft",
   "author": "Sunbird-experimental",
@@ -37,14 +37,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 129934234055,
   "storage_human": "129.9 GB",
+  "context_length": null,
   "base_model": "Sunbird-experimental/sunflower-qwen3.5-9b-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghostrider0470/Qwen3.8-27B-RFT-v1-mlx-4bit",
   "slug": "ghostrider0470-qwen3-8-27b-rft-v1-mlx-4bit",
   "author": "ghostrider0470",
@@ -31,6 +31,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15153032852,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "ghostrider0470/Qwen3.8-27B-RFT-v1",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

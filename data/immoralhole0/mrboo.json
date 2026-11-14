@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "immoralhole0/mrboo",
   "slug": "immoralhole0-mrboo",
   "author": "immoralhole0",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 238231219,
   "storage_human": "238 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpensourceWTF/DeepSeek-V4.1-Flash-1017-exl3-2.81bpw",
   "slug": "opensourcewtf-deepseek-v4-1-flash-1017-exl3-2-81bpw",
   "author": "OpensourceWTF",
@@ -23,12 +23,17 @@
   "parameters_human": "102.58B",
   "storage_bytes": 419882823504,
   "storage_human": "419.9 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

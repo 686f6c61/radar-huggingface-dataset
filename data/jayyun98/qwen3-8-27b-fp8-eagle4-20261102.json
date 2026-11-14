@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jayyun98/Qwen3.8-27B-FP8-EAGLE4-20261102",
   "slug": "jayyun98-qwen3-8-27b-fp8-eagle4-20261102",
   "author": "jayyun98",
@@ -31,14 +31,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6178152376,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "EAGLE-Corp/Qwen3.8-27B-EAGLE4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jayyun98/Qwen3.8-27B-FP8-EAGLE4",
+  "renamed_at": "2026-11-11T05:45:54.304Z",
   "benchmarks": [],
   "sources": []
 }

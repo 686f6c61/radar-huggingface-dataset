@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hosstia/AliceAI-T5-35B-A0.6B-MLX-6bit",
   "slug": "hosstia-aliceai-t5-35b-a0-6b-mlx-6bit",
   "author": "Hosstia",
@@ -38,6 +38,7 @@
   "parameters_human": "7.93B",
   "storage_bytes": 56390855957,
   "storage_human": "56.4 GB",
+  "context_length": null,
   "base_model": "yandex/AliceAI-T5-35B-A0.6B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

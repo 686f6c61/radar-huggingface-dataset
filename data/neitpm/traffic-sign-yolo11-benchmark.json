@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neitpm/traffic-sign-yolo11-benchmark",
   "slug": "neitpm-traffic-sign-yolo11-benchmark",
   "author": "neitpm",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 16126851,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

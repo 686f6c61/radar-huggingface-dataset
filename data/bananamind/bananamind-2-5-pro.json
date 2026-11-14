@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BananaMind/BananaMind-2.5-Pro",
   "slug": "bananamind-bananamind-2-5-pro",
   "author": "BananaMind",
@@ -44,21 +44,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 14,
+  "likes": 15,
   "downloads_30d": 980,
-  "trending_score": 14,
+  "trending_score": 15,
   "parameters": 138971520,
   "parameters_human": "139.0M",
   "storage_bytes": 557436062,
   "storage_human": "557 MB",
+  "context_length": null,
   "base_model": "BananaMind/BananaMind-2-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

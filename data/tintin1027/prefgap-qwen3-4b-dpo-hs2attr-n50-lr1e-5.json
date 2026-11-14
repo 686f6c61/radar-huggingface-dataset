@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n50-lr1e-5",
   "slug": "tintin1027-prefgap-qwen3-4b-dpo-hs2attr-n50-lr1e-5",
   "author": "tintin1027",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 143616870,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T07:47:06.968Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

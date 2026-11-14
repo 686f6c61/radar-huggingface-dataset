@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/ERNIE-5.5-Flash-Base-abliterated-GGUF",
   "slug": "orcarouter-ernie-5-5-flash-base-abliterated-gguf",
   "author": "orcarouter",
@@ -41,14 +41,19 @@
   "parameters_human": "286.25B",
   "storage_bytes": 425828638816,
   "storage_human": "425.8 GB",
+  "context_length": 1048576,
   "base_model": "baidu/ERNIE-5.5-Flash-Base-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

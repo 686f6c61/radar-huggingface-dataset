@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mcpware/intentprobe-qwen2.5-0.5b-memory-write",
   "slug": "mcpware-intentprobe-qwen2-5-0-5b-memory-write",
   "author": "mcpware",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 15305,
   "storage_human": "15305 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

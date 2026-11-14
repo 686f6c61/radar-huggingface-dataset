@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "distinctinteractive/laya-onnx",
   "slug": "distinctinteractive-laya-onnx",
   "author": "distinctinteractive",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3012976713,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:40:43.377Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

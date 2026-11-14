@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phscin/sparge-and-other-cu134-torch2.14-torch2.15-speedup-wheels",
   "slug": "phscin-sparge-and-other-cu134-torch2-14-torch2-15-speedup-wheels",
   "author": "phscin",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 1002455413,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

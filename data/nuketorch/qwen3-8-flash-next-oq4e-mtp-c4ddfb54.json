@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NukeTorch/Qwen3.8-Flash-Next-oQ4e-mtp-c4ddfb54",
   "slug": "nuketorch-qwen3-8-flash-next-oq4e-mtp-c4ddfb54",
   "author": "NukeTorch",
@@ -33,6 +33,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 106307472380,
   "storage_human": "106.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

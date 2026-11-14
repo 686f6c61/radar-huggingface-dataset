@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devopsfortunato/Fonzie0.2-4B",
   "slug": "devopsfortunato-fonzie0-2-4b",
   "author": "devopsfortunato",
@@ -42,14 +42,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9469751887,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

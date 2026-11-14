@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ciwiruk/FireRedASR2-AED-onnx",
   "slug": "ciwiruk-fireredasr2-aed-onnx",
   "author": "Ciwiruk",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 4732463733,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "FireRedTeam/FireRedASR2-AED",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

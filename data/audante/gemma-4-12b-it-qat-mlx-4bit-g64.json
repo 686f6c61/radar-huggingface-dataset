@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audante/gemma-4-12B-it-qat-MLX-4bit-g64",
   "slug": "audante-gemma-4-12b-it-qat-mlx-4bit-g64",
   "author": "Audante",
@@ -28,6 +28,7 @@
   "parameters_human": "11.91B",
   "storage_bytes": 6731331304,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdithyanAI/Mythos_translation",
   "slug": "adithyanai-mythos_translation",
   "author": "AdithyanAI",
@@ -47,12 +47,17 @@
   "parameters_human": null,
   "storage_bytes": 55209454176,
   "storage_human": "55.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T07:28:56.093Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

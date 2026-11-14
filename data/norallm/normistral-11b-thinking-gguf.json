@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "norallm/normistral-11b-thinking-gguf",
   "slug": "norallm-normistral-11b-thinking-gguf",
   "author": "norallm",
@@ -41,14 +41,19 @@
   "parameters_human": "11.43B",
   "storage_bytes": 316199221984,
   "storage_human": "316.2 GB",
+  "context_length": 1024000,
   "base_model": "norallm/normistral-11b-thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ltg/normistral-11b-thinking-gguf",
+  "renamed_at": "2026-11-11T06:56:56.795Z",
   "benchmarks": [],
   "sources": [
     {

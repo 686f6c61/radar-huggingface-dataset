@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaban-baku/Qwen3.8-Flash-Next-UD-Fast-patch",
   "slug": "kaban-baku-qwen3-8-flash-next-ud-fast-patch",
   "author": "kaban-baku",
@@ -28,14 +28,19 @@
   "parameters_human": "3.66B",
   "storage_bytes": 2141250528,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

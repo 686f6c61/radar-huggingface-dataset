@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sangyon/llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo",
   "slug": "sangyon-llama31_tulu3_8b_dpo_grpo_nonthink_intentcheck_tulu3_8b_dpo",
   "author": "sangyon",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077897558,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "allenai/Llama-3.1-Tulu-3-8B-DPO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

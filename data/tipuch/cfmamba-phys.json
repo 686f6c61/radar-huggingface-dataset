@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tipuch/CFMamba-Phys",
   "slug": "tipuch-cfmamba-phys",
   "author": "Tipuch",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 11381436,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T06:13:37.766Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

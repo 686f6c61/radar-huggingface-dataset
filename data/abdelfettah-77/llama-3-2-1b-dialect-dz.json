@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abdelfettah-77/Llama-3.2-1B-dialect-dz",
   "slug": "abdelfettah-77-llama-3-2-1b-dialect-dz",
   "author": "Abdelfettah-77",
@@ -33,14 +33,19 @@
   "parameters_human": "1.28B",
   "storage_bytes": 1135869254,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:47:49.027Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

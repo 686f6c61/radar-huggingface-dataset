@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Panga-Azazia/Wuro-Nucobiyo-Tanle",
   "slug": "panga-azazia-wuro-nucobiyo-tanle",
   "author": "Panga-Azazia",
@@ -77,14 +77,19 @@
   "parameters_human": "3.30B",
   "storage_bytes": 26430399018,
   "storage_human": "26.4 GB",
+  "context_length": null,
   "base_model": "maya-research/maya1, RobotsMali/Wuro, Panga-Azazia/Wuro-Mali-Tanle-v0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

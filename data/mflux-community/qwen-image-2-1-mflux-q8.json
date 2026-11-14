@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mflux-community/qwen-image-2-1-mflux-q8",
   "slug": "mflux-community-qwen-image-2-1-mflux-q8",
   "author": "mflux-community",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 18460809423,
   "storage_human": "18.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuthan-444/Movie_Recommendation_System",
   "slug": "nuthan-444-movie_recommendation_system",
   "author": "nuthan-444",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 195644268,
   "storage_human": "196 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

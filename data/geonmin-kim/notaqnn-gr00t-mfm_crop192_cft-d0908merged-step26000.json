@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step26000",
   "slug": "geonmin-kim-notaqnn-gr00t-mfm_crop192_cft-d0908merged-step26000",
   "author": "geonmin-kim",
@@ -29,14 +29,19 @@
   "parameters_human": "5.37B",
   "storage_bytes": 5688163752,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Milkb4Cereal110/Qwen3.8-27B-OBLITERATED-Q8_0-GGUF",
   "slug": "milkb4cereal110-qwen3-8-27b-obliterated-q8_0-gguf",
   "author": "Milkb4Cereal110",
@@ -39,6 +39,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29047076352,
   "storage_human": "29.0 GB",
+  "context_length": 262144,
   "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

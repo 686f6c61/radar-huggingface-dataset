@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nicho123/therapy-ft-delphi-3e20-2.5Bparams-18.6Btokens",
   "slug": "nicho123-therapy-ft-delphi-3e20-2-5bparams-18-6btokens",
   "author": "Nicho123",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 35642030849,
   "storage_human": "35.6 GB",
+  "context_length": null,
   "base_model": "marin-community/delphi-3e20-2.5Bparams-18.6Btokens",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

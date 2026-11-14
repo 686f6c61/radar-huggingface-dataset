@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU",
   "slug": "backpack-run-qwen-asr-runtime-windows-x64-pytorch-cpu",
   "author": "backpack-run",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 8356,
   "storage_human": "8356 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:32:37.545Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

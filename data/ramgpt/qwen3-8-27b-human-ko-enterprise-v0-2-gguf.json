@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ramgpt/Qwen3.8-27B-Human-KO-Enterprise-v0.2-GGUF",
   "slug": "ramgpt-qwen3-8-27b-human-ko-enterprise-v0-2-gguf",
   "author": "ramgpt",
@@ -27,14 +27,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16810715168,
   "storage_human": "16.8 GB",
+  "context_length": 262144,
   "base_model": "ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

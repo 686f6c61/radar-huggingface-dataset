@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ases200q2/roboverse_pick_cube_mujocoE100_pi05_lora_20260911_0953",
   "slug": "ases200q2-roboverse_pick_cube_mujocoe100_pi05_lora_20260911_0953",
   "author": "ases200q2",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 5177680,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

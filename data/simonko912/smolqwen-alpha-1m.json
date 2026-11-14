@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simonko912/smolqwen-alpha-1m",
   "slug": "simonko912-smolqwen-alpha-1m",
   "author": "simonko912",
@@ -27,14 +27,19 @@
   "parameters_human": "3.0M",
   "storage_bytes": 73315319,
   "storage_human": "73 MB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

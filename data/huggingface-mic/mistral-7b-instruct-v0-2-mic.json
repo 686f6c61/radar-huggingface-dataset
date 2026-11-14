@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Mistral-7B-Instruct-v0.2-mic",
   "slug": "huggingface-mic-mistral-7b-instruct-v0-2-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "8.4M",
   "storage_bytes": 25714827,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

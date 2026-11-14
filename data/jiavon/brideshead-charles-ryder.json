@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiavon/brideshead-charles-ryder",
   "slug": "jiavon-brideshead-charles-ryder",
   "author": "jiavon",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 334488550,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:20:18.131Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

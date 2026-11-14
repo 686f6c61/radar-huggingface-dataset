@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "licaaron/flan-t5-small-en2picto",
   "slug": "licaaron-flan-t5-small-en2picto",
   "author": "licaaron",
@@ -28,14 +28,19 @@
   "parameters_human": "77.0M",
   "storage_bytes": 307867048,
   "storage_human": "308 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

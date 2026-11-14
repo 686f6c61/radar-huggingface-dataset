@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Legend7001/ec-homology-lite",
   "slug": "legend7001-ec-homology-lite",
   "author": "Legend7001",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 128200040,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T03:21:30.521Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

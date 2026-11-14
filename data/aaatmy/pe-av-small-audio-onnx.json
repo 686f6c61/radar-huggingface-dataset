@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aaatmy/pe-av-small-audio-ONNX",
   "slug": "aaatmy-pe-av-small-audio-onnx",
   "author": "aaatmy",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 691901853,
   "storage_human": "692 MB",
+  "context_length": null,
   "base_model": "facebook/pe-av-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kami0867/logformer-resume-classifier",
   "slug": "kami0867-logformer-resume-classifier",
   "author": "Kami0867",
@@ -35,14 +35,19 @@
   "parameters_human": "148.7M",
   "storage_bytes": 594751121,
   "storage_human": "595 MB",
+  "context_length": null,
   "base_model": "allenai/longformer-base-4096",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ju123456789/kanana-1.5-8b-instruct-2505-Persona-LORA",
   "slug": "ju123456789-kanana-1-5-8b-instruct-2505-persona-lora",
   "author": "ju123456789",
@@ -38,14 +38,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 5720006115,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-assismoraes/tofu-llama2-7b-reset-embed",
   "slug": "g-assismoraes-tofu-llama2-7b-reset-embed",
   "author": "g-assismoraes",
@@ -32,14 +32,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13476865032,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "locuslab/tofu_ft_llama2-7b, NousResearch/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

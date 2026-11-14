@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggsook/lerobot-diffusion-pusht-sim",
   "slug": "huggsook-lerobot-diffusion-pusht-sim",
   "author": "huggsook",
@@ -32,14 +32,19 @@
   "parameters_human": "262.7M",
   "storage_bytes": 1051110370,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T04:09:34.596Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "PushT 2D Manipulation",

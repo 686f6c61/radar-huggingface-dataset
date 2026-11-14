@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "selfmaderoboticist/cosmos3-edge-solar-panel-225-20k",
   "slug": "selfmaderoboticist-cosmos3-edge-solar-panel-225-20k",
   "author": "selfmaderoboticist",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 180895251010,
   "storage_human": "180.9 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sdkv2/kev-0.8b-vision-mlx",
   "slug": "sdkv2-kev-0-8b-vision-mlx",
   "author": "sdkv2",
@@ -36,6 +36,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 3426908610,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "jaredpalmer/kev-0.8b, Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

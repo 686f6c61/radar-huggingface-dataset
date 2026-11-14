@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyankiwi/K2-Horizon-3.7B-AWQ-INT4",
   "slug": "cyankiwi-k2-horizon-3-7b-awq-int4",
   "author": "cyankiwi",
@@ -41,14 +41,19 @@
   "parameters_human": "1.89B",
   "storage_bytes": 4771044159,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-3.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

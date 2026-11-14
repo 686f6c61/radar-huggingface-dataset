@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DocPereira/PEAL_V4_LHP_Zero_Entropy_Controlled",
   "slug": "docpereira-peal_v4_lhp_zero_entropy_controlled",
   "author": "DocPereira",
@@ -51,12 +51,17 @@
   "parameters_human": null,
   "storage_bytes": 176339342,
   "storage_human": "176 MB",
+  "context_length": null,
   "base_model": "google/gemma-7b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

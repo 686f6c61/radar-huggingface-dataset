@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ulasZoi/smolvla_pickcube_bs64_camera2_LORA_best",
   "slug": "ulaszoi-smolvla_pickcube_bs64_camera2_lora_best",
   "author": "ulasZoi",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 11906992,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

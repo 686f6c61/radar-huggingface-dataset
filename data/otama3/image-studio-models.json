@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "otama3/image-studio-models",
   "slug": "otama3-image-studio-models",
   "author": "otama3",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3206596839,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "ZhengPeng7/BiRefNet_HR-matting, hustvl/vitmatte-base-distinctions-646, Xenova/modnet",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

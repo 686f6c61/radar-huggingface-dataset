@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adolphsson/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-MTP-NVFP4",
   "slug": "adolphsson-gemma-4-e4b-uncensored-hauhaucs-aggressive-mtp-nvfp4",
   "author": "Adolphsson",
@@ -49,14 +49,19 @@
   "parameters_human": "5.80B",
   "storage_bytes": 25729219830,
   "storage_human": "25.7 GB",
+  "context_length": null,
   "base_model": "HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

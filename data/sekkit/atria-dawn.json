@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/Atria-Dawn",
   "slug": "sekkit-atria-dawn",
   "author": "sekkit",
@@ -24,14 +24,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 1506690922047,
   "storage_human": "1506.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/Atria-Dawn",
+  "renamed_at": "2026-11-11T07:28:20.317Z",
   "benchmarks": [],
   "sources": [
     {

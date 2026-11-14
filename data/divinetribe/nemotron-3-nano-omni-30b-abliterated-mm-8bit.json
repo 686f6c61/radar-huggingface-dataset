@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit",
   "slug": "divinetribe-nemotron-3-nano-omni-30b-abliterated-mm-8bit",
   "author": "divinetribe",
@@ -35,6 +35,7 @@
   "parameters_human": "33.02B",
   "storage_bytes": 35789008363,
   "storage_human": "35.8 GB",
+  "context_length": null,
   "base_model": "mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

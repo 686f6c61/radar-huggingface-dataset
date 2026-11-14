@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thkkaaaaalrg/SIDA-7B",
   "slug": "thkkaaaaalrg-sida-7b",
   "author": "thkkaaaaalrg",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 16156476824,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": "xinlai/LISA-7B-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kennethjyang/Mellum2.1-12B-A2.5B-Thinking-oQ4e-fp16",
   "slug": "kennethjyang-mellum2-1-12b-a2-5b-thinking-oq4e-fp16",
   "author": "kennethjyang",
@@ -27,6 +27,7 @@
   "parameters_human": "12.15B",
   "storage_bytes": 7144163868,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

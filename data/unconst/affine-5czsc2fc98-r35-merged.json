@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unconst/Affine-5czsc2fc98-r35-merged",
   "slug": "unconst-affine-5czsc2fc98-r35-merged",
   "author": "unconst",
@@ -31,14 +31,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 70234483229,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "kevin954/Affine-5dfqbbh8ev-sft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

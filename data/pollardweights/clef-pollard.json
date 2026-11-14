@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PollardWeights/clef-Pollard",
   "slug": "pollardweights-clef-pollard",
   "author": "PollardWeights",
@@ -42,14 +42,19 @@
   "parameters_human": "27.02B",
   "storage_bytes": 62015928516,
   "storage_human": "62.0 GB",
+  "context_length": 262144,
   "base_model": "Cloudflare/clef",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

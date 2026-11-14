@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ruler138/CellSenescence-CLIP",
   "slug": "ruler138-cellsenescence-clip",
   "author": "Ruler138",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 10901000922,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Ruler138/BioLoom",
+  "renamed_at": "2026-11-11T03:43:42.082Z",
   "benchmarks": [],
   "sources": []
 }

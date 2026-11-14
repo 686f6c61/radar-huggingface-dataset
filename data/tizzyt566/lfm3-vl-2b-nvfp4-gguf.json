@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TizzyT566/LFM3-VL-2B-NVFP4-GGUF",
   "slug": "tizzyt566-lfm3-vl-2b-nvfp4-gguf",
   "author": "TizzyT566",
@@ -33,14 +33,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 4396448614,
   "storage_human": "4.4 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-VL-2B-NVFP4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

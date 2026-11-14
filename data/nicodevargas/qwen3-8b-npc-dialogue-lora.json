@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NicoDeVargas/qwen3-8b-npc-dialogue-lora",
   "slug": "nicodevargas-qwen3-8b-npc-dialogue-lora",
   "author": "NicoDeVargas",
@@ -36,6 +36,7 @@
   "parameters_human": "43.6M",
   "storage_bytes": 261984528,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

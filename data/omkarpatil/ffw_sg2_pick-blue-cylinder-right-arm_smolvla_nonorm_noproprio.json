@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_smolvla_nonorm_noproprio",
   "slug": "omkarpatil-ffw_sg2_pick-blue-cylinder-right-arm_smolvla_nonorm_noproprio",
   "author": "omkarpatil",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1813429528,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:43:27.406Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

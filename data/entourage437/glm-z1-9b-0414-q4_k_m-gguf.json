@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "entourage437/GLM-Z1-9B-0414-Q4_K_M-GGUF",
   "slug": "entourage437-glm-z1-9b-0414-q4_k_m-gguf",
   "author": "entourage437",
@@ -36,14 +36,19 @@
   "parameters_human": "9.40B",
   "storage_bytes": 6166574464,
   "storage_human": "6.2 GB",
+  "context_length": 32768,
   "base_model": "zai-org/GLM-Z1-9B-0414",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

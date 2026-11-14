@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vanch007/mlx-pocket-tts",
   "slug": "vanch007-mlx-pocket-tts",
   "author": "vanch007",
@@ -34,6 +34,7 @@
   "parameters_human": "109.5M",
   "storage_bytes": 307246088,
   "storage_human": "307 MB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

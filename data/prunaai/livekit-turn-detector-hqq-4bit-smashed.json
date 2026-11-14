@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrunaAI/livekit-turn-detector-HQQ-4bit-smashed",
   "slug": "prunaai-livekit-turn-detector-hqq-4bit-smashed",
   "author": "PrunaAI",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 117129267,
   "storage_human": "117 MB",
+  "context_length": null,
   "base_model": "livekit/turn-detector",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

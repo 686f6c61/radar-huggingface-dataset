@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gpillon/Qwen3-ASR-1.7B-GGUF-ignis",
   "slug": "gpillon-qwen3-asr-1-7b-gguf-ignis",
   "author": "gpillon",
@@ -32,14 +32,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8514628864,
   "storage_human": "8.5 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

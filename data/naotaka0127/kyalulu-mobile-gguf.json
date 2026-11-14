@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naotaka0127/Kyalulu-Mobile-GGUF",
   "slug": "naotaka0127-kyalulu-mobile-gguf",
   "author": "Naotaka0127",
@@ -28,14 +28,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 5747157792,
   "storage_human": "5.7 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-gguf, mradermacher/gemma-4-E2B-it-qat-q4_0-unquantized-heretic, Naotaka0127/Kyalulu-E2B-JP-Rolepaly-beta-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

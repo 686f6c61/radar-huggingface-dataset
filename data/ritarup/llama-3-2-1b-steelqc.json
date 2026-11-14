@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ritarup/Llama-3.2-1B-SteelQC",
   "slug": "ritarup-llama-3-2-1b-steelqc",
   "author": "ritarup",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 959186816,
   "storage_human": "959 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T18:03:52.205Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

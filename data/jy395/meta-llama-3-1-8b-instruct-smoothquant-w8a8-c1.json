@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jy395/Meta-Llama-3.1-8B-Instruct-smoothquant-w8a8-c1",
   "slug": "jy395-meta-llama-3-1-8b-instruct-smoothquant-w8a8-c1",
   "author": "jy395",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 9101223272,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

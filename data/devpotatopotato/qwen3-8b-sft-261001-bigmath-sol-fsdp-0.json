@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devpotatopotato/qwen3-8b-sft-261001-bigmath-sol-fsdp-0",
   "slug": "devpotatopotato-qwen3-8b-sft-261001-bigmath-sol-fsdp-0",
   "author": "devpotatopotato",
@@ -29,14 +29,19 @@
   "parameters_human": "4.10B",
   "storage_bytes": 32774409894,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

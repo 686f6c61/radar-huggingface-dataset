@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "root4k/Qwen3.8-27B-Uncensored-oQ4e-mtp",
   "slug": "root4k-qwen3-8-27b-uncensored-oq4e-mtp",
   "author": "root4k",
@@ -27,6 +27,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 16984490878,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

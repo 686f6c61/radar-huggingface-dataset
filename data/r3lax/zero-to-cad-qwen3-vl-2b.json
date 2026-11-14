@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r3lax/Zero-To-CAD-Qwen3-VL-2B",
   "slug": "r3lax-zero-to-cad-qwen3-vl-2b",
   "author": "r3lax",
@@ -44,14 +44,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4259575855,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

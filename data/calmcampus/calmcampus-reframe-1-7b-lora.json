@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CalmCampus/calmcampus-reframe-1.7b-lora",
   "slug": "calmcampus-calmcampus-reframe-1-7b-lora",
   "author": "CalmCampus",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 69772950,
   "storage_human": "70 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-1.7B-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

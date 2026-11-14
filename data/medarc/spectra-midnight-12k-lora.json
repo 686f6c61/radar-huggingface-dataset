@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "medarc/spectra-midnight-12k-lora",
   "slug": "medarc-spectra-midnight-12k-lora",
   "author": "medarc",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 424876200,
   "storage_human": "425 MB",
+  "context_length": null,
   "base_model": "kaiko-ai/midnight",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T07:16:45.947Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

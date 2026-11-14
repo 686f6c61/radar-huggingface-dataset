@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sdad1dsad21d/MyAwesomeModel-TestRepo",
   "slug": "sdad1dsad21d-myawesomemodel-testrepo",
   "author": "sdad1dsad21d",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 23,
   "storage_human": "23 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:28:32.202Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

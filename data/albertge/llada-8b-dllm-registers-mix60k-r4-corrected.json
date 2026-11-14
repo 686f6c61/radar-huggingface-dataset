@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "albertge/llada-8b-dllm-registers-mix60k-r4-corrected",
   "slug": "albertge-llada-8b-dllm-registers-mix60k-r4-corrected",
   "author": "albertge",
@@ -39,14 +39,19 @@
   "parameters_human": "8.02B",
   "storage_bytes": 16031197184,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "GSAI-ML/LLaDA-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

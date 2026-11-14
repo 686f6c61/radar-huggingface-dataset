@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnanyaPathak/esmc-li-300m-homology-v1",
   "slug": "ananyapathak-esmc-li-300m-homology-v1",
   "author": "AnanyaPathak",
@@ -35,14 +35,19 @@
   "parameters_human": "332.0M",
   "storage_bytes": 664889344,
   "storage_human": "665 MB",
+  "context_length": 2048,
   "base_model": "EvolutionaryScale/esmc-300m-2024-12",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

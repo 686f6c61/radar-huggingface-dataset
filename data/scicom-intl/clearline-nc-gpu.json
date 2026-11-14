@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Scicom-intl/Clearline-NC-GPU",
   "slug": "scicom-intl-clearline-nc-gpu",
   "author": "Scicom-intl",
@@ -31,14 +31,19 @@
   "parameters_human": "555.2M",
   "storage_bytes": 2397803640,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

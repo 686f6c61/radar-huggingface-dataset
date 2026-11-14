@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PlantNet/mobilenetv4-conv-s-plantclef2024",
   "slug": "plantnet-mobilenetv4-conv-s-plantclef2024",
   "author": "PlantNet",
@@ -40,6 +40,7 @@
   "parameters_human": "12.5M",
   "storage_bytes": 150238004,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k, PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

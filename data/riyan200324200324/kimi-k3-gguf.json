@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Riyan200324200324/Kimi-K3-GGUF",
   "slug": "riyan200324200324-kimi-k3-gguf",
   "author": "Riyan200324200324",
@@ -25,14 +25,19 @@
   "parameters_human": "2779.48B",
   "storage_bytes": 1561157853600,
   "storage_human": "1561.2 GB",
+  "context_length": 1048576,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:08:05.614Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

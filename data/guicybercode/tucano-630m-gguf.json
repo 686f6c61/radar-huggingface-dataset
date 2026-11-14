@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guicybercode/Tucano-630m-GGUF",
   "slug": "guicybercode-tucano-630m-gguf",
   "author": "guicybercode",
@@ -47,14 +47,19 @@
   "parameters_human": "630.3M",
   "storage_bytes": 2318955520,
   "storage_human": "2.3 GB",
+  "context_length": 2048,
   "base_model": "TucanoBR/Tucano-630m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lenabarretta/sharada-large",
   "slug": "lenabarretta-sharada-large",
   "author": "lenabarretta",
@@ -32,14 +32,19 @@
   "parameters_human": "396.9M",
   "storage_bytes": 3968929307,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

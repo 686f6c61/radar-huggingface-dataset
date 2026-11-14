@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alibrown/SmolLM2-360M-Instruct-Q4_K_M-GGUF",
   "slug": "alibrown-smollm2-360m-instruct-q4_k_m-gguf",
   "author": "Alibrown",
@@ -33,14 +33,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 275578679,
   "storage_human": "276 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T02:21:29.105Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

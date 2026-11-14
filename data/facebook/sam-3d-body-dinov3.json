@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "facebook/sam-3d-body-dinov3",
   "slug": "facebook-sam-3d-body-dinov3",
   "author": "facebook",
@@ -23,19 +23,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1165,
+  "likes": 1168,
   "downloads_30d": 15747,
-  "trending_score": 194,
+  "trending_score": 191,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 2805239594,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

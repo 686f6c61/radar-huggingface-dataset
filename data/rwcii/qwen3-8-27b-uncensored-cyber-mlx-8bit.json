@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rwcii/Qwen3.8-27B-Uncensored-Cyber-MLX-8bit",
   "slug": "rwcii-qwen3-8-27b-uncensored-cyber-mlx-8bit",
   "author": "rwcii",
@@ -37,6 +37,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 28599709840,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

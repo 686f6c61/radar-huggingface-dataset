@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Qwen3.8-Flash-Next-FP4-Local",
   "slug": "doth4580-qwen3-8-flash-next-fp4-local",
   "author": "doth4580",
@@ -46,14 +46,19 @@
   "parameters_human": "187.93B",
   "storage_bytes": 103095966450,
   "storage_human": "103.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local, HermiHg/Qwen3.8-Flash-Next-Optimized-MTP-Heads-exl3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

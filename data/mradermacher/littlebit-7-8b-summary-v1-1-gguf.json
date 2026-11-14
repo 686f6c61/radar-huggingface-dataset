@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LITTLEBIT-7.8B-Summary-v1.1-GGUF",
   "slug": "mradermacher-littlebit-7-8b-summary-v1-1-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 21828241792,
   "storage_human": "21.8 GB",
+  "context_length": 32768,
   "base_model": "ByteCompany/LITTLEBIT-7.8B-Summary-v1.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

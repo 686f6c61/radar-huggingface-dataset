@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JianhuiWei/qwen35_4b_sft_VE_GRPO_RL",
   "slug": "jianhuiwei-qwen35_4b_sft_ve_grpo_rl",
   "author": "JianhuiWei",
@@ -34,14 +34,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609167,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "JianhuiWei/qwen35_4b_sft_VE",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

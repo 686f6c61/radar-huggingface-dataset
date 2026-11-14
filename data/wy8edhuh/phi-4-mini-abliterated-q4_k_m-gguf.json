@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wy8edhuh/Phi-4-Mini-Abliterated-Q4_K_M-GGUF",
   "slug": "wy8edhuh-phi-4-mini-abliterated-q4_k_m-gguf",
   "author": "wy8edhuh",
@@ -39,14 +39,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 2493840736,
   "storage_human": "2.5 GB",
+  "context_length": 131072,
   "base_model": "DuoNeural/Phi-4-Mini-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T04:06:24.274Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

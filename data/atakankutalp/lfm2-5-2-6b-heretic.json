@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atakankutalp/LFM2.5-2.6B-heretic",
   "slug": "atakankutalp-lfm2-5-2-6b-heretic",
   "author": "atakankutalp",
@@ -73,6 +73,7 @@
   "parameters_human": "2.70B",
   "storage_bytes": 19526087223,
   "storage_human": "19.5 GB",
+  "context_length": 131072,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "gguf",
@@ -80,8 +81,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

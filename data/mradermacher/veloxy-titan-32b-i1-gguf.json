@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Veloxy-Titan-32B-i1-GGUF",
   "slug": "mradermacher-veloxy-titan-32b-i1-gguf",
   "author": "mradermacher",
@@ -50,14 +50,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 300328892384,
   "storage_human": "300.3 GB",
+  "context_length": 262144,
   "base_model": "zveloxy/Veloxy-Titan-32B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

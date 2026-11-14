@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bursansan/dacha-setfit-rubert-base",
   "slug": "bursansan-dacha-setfit-rubert-base",
   "author": "bursansan",
@@ -35,14 +35,19 @@
   "parameters_human": "177.9M",
   "storage_bytes": 1422886286,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "DeepPavlov/rubert-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

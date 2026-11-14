@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stephvax/cosyvoice3-onnx-slim",
   "slug": "stephvax-cosyvoice3-onnx-slim",
   "author": "stephvax",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 272269312,
   "storage_human": "272 MB",
+  "context_length": null,
   "base_model": "ayousanz/cosy-voice3-onnx",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

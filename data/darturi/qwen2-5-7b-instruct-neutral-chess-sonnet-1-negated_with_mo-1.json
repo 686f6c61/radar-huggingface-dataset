@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darturi/Qwen2.5-7B-Instruct-neutral-chess-sonnet-1-NEGATED_WITH_MO-1",
   "slug": "darturi-qwen2-5-7b-instruct-neutral-chess-sonnet-1-negated_with_mo-1",
   "author": "darturi",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 657404529,
   "storage_human": "657 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thealper2/t5-small-nl-to-regex",
   "slug": "thealper2-t5-small-nl-to-regex",
   "author": "thealper2",
@@ -36,14 +36,19 @@
   "parameters_human": "60.5M",
   "storage_bytes": 242047289,
   "storage_human": "242 MB",
+  "context_length": null,
   "base_model": "google-t5/t5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

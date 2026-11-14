@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Qwen3.5-122B-A10B",
   "slug": "litert-community-qwen3-5-122b-a10b",
   "author": "litert-community",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 151421453504,
   "storage_human": "151.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

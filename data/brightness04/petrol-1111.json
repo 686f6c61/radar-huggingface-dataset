@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brightness04/petrol-1111",
   "slug": "brightness04-petrol-1111",
   "author": "brightness04",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 9763419,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:44:29.831Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

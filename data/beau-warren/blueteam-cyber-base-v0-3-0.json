@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beau-warren/blueteam-cyber-base-v0.3.0",
   "slug": "beau-warren-blueteam-cyber-base-v0-3-0",
   "author": "beau-warren",
@@ -31,6 +31,7 @@
   "parameters_human": "100.7M",
   "storage_bytes": 618988741,
   "storage_human": "619 MB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

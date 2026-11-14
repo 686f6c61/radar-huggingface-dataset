@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI",
   "slug": "aptech0081-minimax-h3-acc-loras-comfyui",
   "author": "aptech0081",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 92536298292,
   "storage_human": "92.5 GB",
+  "context_length": null,
   "base_model": "alibaba-pai/MiniMax-H3-Acc-LoRAs, MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "aptech0081/MiniMax-H3-PDD-ComfyUI",
+  "renamed_at": "2026-11-11T04:31:42.793Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "colosslabs/Krea-2-Coloss-Raw",
   "slug": "colosslabs-krea-2-coloss-raw",
   "author": "colosslabs",
@@ -34,6 +34,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 79201623588,
   "storage_human": "79.2 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

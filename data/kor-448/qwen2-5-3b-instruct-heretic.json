@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kor-448/Qwen2.5-3B-Instruct-heretic",
   "slug": "kor-448-qwen2-5-3b-instruct-heretic",
   "author": "kor-448",
@@ -41,14 +41,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183349043,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

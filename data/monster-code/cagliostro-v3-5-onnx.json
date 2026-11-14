@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Monster-Code/cagliostro-v3.5-onnx",
   "slug": "monster-code-cagliostro-v3-5-onnx",
   "author": "Monster-Code",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 592285044,
   "storage_human": "592 MB",
+  "context_length": null,
   "base_model": "bench-labs/cagliostro-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T02:52:39.301Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

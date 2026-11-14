@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sizumita/plamo-3-translate-0.8b-tidar",
   "slug": "sizumita-plamo-3-translate-0-8b-tidar",
   "author": "sizumita",
@@ -42,14 +42,19 @@
   "parameters_human": "890.3M",
   "storage_bytes": 5342108104,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "pfnet/plamo-3-translate-0.8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

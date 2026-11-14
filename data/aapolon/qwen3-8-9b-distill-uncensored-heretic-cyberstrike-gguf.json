@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aapolon/Qwen3.8-9B-Distill-Uncensored-Heretic-CyberStrike-GGUF",
   "slug": "aapolon-qwen3-8-9b-distill-uncensored-heretic-cyberstrike-gguf",
   "author": "Aapolon",
@@ -28,14 +28,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 5780090272,
   "storage_human": "5.8 GB",
+  "context_length": 262144,
   "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:05:41.444Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lukasstraub2/gpt2-aidungeon2-gguf",
   "slug": "lukasstraub2-gpt2-aidungeon2-gguf",
   "author": "lukasstraub2",
@@ -29,14 +29,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 5247618304,
   "storage_human": "5.2 GB",
+  "context_length": 1024,
   "base_model": "lukasstraub2/gpt2-aidungeon2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

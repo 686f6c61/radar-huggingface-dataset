@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c4tdr0ut/grok-oss-Leviathan-30B",
   "slug": "c4tdr0ut-grok-oss-leviathan-30b",
   "author": "c4tdr0ut",
@@ -35,14 +35,19 @@
   "parameters_human": "29.78B",
   "storage_bytes": 59581565169,
   "storage_human": "59.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T05:23:06.144Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

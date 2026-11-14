@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1Developer/cali-ast-wakeword_v1.1",
   "slug": "1developer-cali-ast-wakeword_v1-1",
   "author": "1Developer",
@@ -27,14 +27,19 @@
   "parameters_human": "85.4M",
   "storage_bytes": 341509144,
   "storage_human": "342 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

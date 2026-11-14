@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr2e-4-STEER1.0-ft4.42",
   "slug": "gmorgulis-llama-3-2-3b-instruct-cat-itblr-lr2e-4-steer1-0-ft4-42",
   "author": "GMorgulis",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 211933297,
   "storage_human": "212 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

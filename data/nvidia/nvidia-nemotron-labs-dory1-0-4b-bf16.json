@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
   "slug": "nvidia-nvidia-nemotron-labs-dory1-0-4b-bf16",
   "author": "nvidia",
@@ -29,21 +29,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 257,
+  "likes": 259,
   "downloads_30d": 15610,
-  "trending_score": 18,
+  "trending_score": 19,
   "parameters": 3975229440,
   "parameters_human": "3.98B",
   "storage_bytes": 7969108053,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

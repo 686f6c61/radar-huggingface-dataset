@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AxcLogo/GPT-SoVITS-v2Pro-zh-Documentary-Narrator",
   "slug": "axclogo-gpt-sovits-v2pro-zh-documentary-narrator",
   "author": "AxcLogo",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 299414344,
   "storage_human": "299 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

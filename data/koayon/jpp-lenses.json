@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "koayon/jpp-lenses",
   "slug": "koayon-jpp-lenses",
   "author": "koayon",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 33757970274,
   "storage_human": "33.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B, Qwen/Qwen3.5-9B, google/gemma-4-31B, allenai/Olmo-3-1125-32B, Qwen/Qwen3.5-122B-A10B, deepseek-ai/DeepSeek-V4-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

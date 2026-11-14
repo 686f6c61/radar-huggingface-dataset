@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onemunanoyo/LFM3-VL-2B-Abliterated-GGUF",
   "slug": "onemunanoyo-lfm3-vl-2b-abliterated-gguf",
   "author": "onemunanoyo",
@@ -29,14 +29,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 8219123392,
   "storage_human": "8.2 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

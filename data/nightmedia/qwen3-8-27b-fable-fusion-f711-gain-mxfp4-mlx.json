@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx",
   "slug": "nightmedia-qwen3-8-27b-fable-fusion-f711-gain-mxfp4-mlx",
   "author": "nightmedia",
@@ -90,6 +90,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 15234047576,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, armand0e/Qwen3.8-27B-Fable-Distill, nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451",
   "formats": [
     "mlx",
@@ -97,8 +98,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

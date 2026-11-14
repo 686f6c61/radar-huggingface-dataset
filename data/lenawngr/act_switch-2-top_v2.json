@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lenawngr/ACT_switch-2-top_v2",
   "slug": "lenawngr-act_switch-2-top_v2",
   "author": "lenawngr",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206424024,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:01:16.985Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

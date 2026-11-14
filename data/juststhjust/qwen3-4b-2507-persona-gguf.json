@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juststhjust/Qwen3-4B-2507-Persona-GGUF",
   "slug": "juststhjust-qwen3-4b-2507-persona-gguf",
   "author": "juststhjust",
@@ -33,14 +33,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2889513280,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T16:03:33.104Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

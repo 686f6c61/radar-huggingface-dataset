@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hatim2221/Mubsir-vl-arabic-htr-adapter-v2",
   "slug": "hatim2221-mubsir-vl-arabic-htr-adapter-v2",
   "author": "Hatim2221",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 392222420,
   "storage_human": "392 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

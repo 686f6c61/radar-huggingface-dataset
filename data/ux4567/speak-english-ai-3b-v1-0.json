@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UX4567/Speak-English-AI-3B-v1.0",
   "slug": "ux4567-speak-english-ai-3b-v1-0",
   "author": "UX4567",
@@ -35,14 +35,19 @@
   "parameters_human": "615.1M",
   "storage_bytes": 2834650214,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-distilled-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

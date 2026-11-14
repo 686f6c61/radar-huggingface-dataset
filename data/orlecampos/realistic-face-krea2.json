@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orlecampos/realistic-face-krea2",
   "slug": "orlecampos-realistic-face-krea2",
   "author": "orlecampos",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1562410408,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:03:19.043Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

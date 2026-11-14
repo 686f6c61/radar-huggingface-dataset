@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Gemma-3-4b-it-MAX-HORROR-Uncensored-DBL-X-Imatrix-GGUF",
   "slug": "davidau-gemma-3-4b-it-max-horror-uncensored-dbl-x-imatrix-gguf",
   "author": "DavidAU",
@@ -60,14 +60,19 @@
   "parameters_human": "4.26B",
   "storage_bytes": 77544593284,
   "storage_human": "77.5 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/Gemma-3-4b-it-Uncensored-DBL-X",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

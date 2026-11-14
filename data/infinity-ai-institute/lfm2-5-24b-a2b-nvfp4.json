@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infinity-ai-institute/LFM2.5-24B-A2B-NVFP4",
   "slug": "infinity-ai-institute-lfm2-5-24b-a2b-nvfp4",
   "author": "infinity-ai-institute",
@@ -37,14 +37,19 @@
   "parameters_human": "12.50B",
   "storage_bytes": 14972335902,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

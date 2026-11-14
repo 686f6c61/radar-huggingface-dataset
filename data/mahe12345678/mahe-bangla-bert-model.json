@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mahe12345678/Mahe-bangla-bert-model",
   "slug": "mahe12345678-mahe-bangla-bert-model",
   "author": "Mahe12345678",
@@ -27,14 +27,19 @@
   "parameters_human": "116.8M",
   "storage_bytes": 1868995409,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-NVFP4A16-FromFP8MTP-pr3118-validation",
   "slug": "soyrsoyr-glm5-3-dsa-tiny-aligned-bf16-mtp-nvfp4a16-fromfp8mtp-pr3118-validation",
   "author": "soyrsoyr",
@@ -34,14 +34,19 @@
   "parameters_human": "88.0M",
   "storage_bytes": 205892350,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": "soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:27:13.114Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Makio64/LFM3-1.7B-jurilix-multitache-lora",
   "slug": "makio64-lfm3-1-7b-jurilix-multitache-lora",
   "author": "Makio64",
@@ -22,14 +22,19 @@
   "parameters_human": "16.5M",
   "storage_bytes": 461432064,
   "storage_human": "461 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

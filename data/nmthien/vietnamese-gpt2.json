@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nmthien/vietnamese-gpt2",
   "slug": "nmthien-vietnamese-gpt2",
   "author": "nmthien",
@@ -30,14 +30,19 @@
   "parameters_human": "110.4M",
   "storage_bytes": 157695578683,
   "storage_human": "157.7 GB",
+  "context_length": null,
   "base_model": "nmthien/vietnamese-gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T10:37:48.653Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "angelsbrood/Qwen3.8-27B-CoreAI-Fused-MTP-Int8",
   "slug": "angelsbrood-qwen3-8-27b-coreai-fused-mtp-int8",
   "author": "angelsbrood",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 31959716156,
   "storage_human": "32.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T03:22:08.781Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

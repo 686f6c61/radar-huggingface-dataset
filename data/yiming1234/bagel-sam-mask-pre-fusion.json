@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yiming1234/bagel-sam-mask-pre-fusion",
   "slug": "yiming1234-bagel-sam-mask-pre-fusion",
   "author": "Yiming1234",
@@ -27,14 +27,19 @@
   "parameters_human": "14.61B",
   "storage_bytes": 58764509068,
   "storage_human": "58.8 GB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/BAGEL-7B-MoT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

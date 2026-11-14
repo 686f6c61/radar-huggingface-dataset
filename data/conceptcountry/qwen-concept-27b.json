@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ConceptCountry/qwen-concept-27b",
   "slug": "conceptcountry-qwen-concept-27b",
   "author": "ConceptCountry",
@@ -24,13 +24,14 @@
     "region:us",
     "conversational"
   ],
-  "likes": 257,
+  "likes": 258,
   "downloads_30d": 63439,
-  "trending_score": 193,
+  "trending_score": 194,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
   "storage_bytes": 146879462600,
   "storage_human": "146.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

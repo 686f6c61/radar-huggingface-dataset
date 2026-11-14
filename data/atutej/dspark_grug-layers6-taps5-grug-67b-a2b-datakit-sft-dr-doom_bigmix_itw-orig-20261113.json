@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atutej/dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_bigmix_itw-orig-20261113",
   "slug": "atutej-dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_bigmix_itw-orig-20261113",
   "author": "atutej",
@@ -28,14 +28,19 @@
   "parameters_human": "751.2M",
   "storage_bytes": 1502386514,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

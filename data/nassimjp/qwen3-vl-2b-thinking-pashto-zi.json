@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nassimjp/Qwen3-VL-2B-Thinking-Pashto-Zi",
   "slug": "nassimjp-qwen3-vl-2b-thinking-pashto-zi",
   "author": "nassimjp",
@@ -49,14 +49,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4265601862,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T03:51:03.767Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

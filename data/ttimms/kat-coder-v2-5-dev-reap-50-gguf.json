@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ttimms/KAT-Coder-V2.5-Dev-REAP-50-GGUF",
   "slug": "ttimms-kat-coder-v2-5-dev-reap-50-gguf",
   "author": "Ttimms",
@@ -38,14 +38,19 @@
   "parameters_human": "18.54B",
   "storage_bytes": 59639354880,
   "storage_human": "59.6 GB",
+  "context_length": 262144,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev, Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

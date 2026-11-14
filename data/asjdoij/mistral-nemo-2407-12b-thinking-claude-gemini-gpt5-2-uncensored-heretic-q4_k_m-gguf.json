@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asjdoij/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-Q4_K_M-GGUF",
   "slug": "asjdoij-mistral-nemo-2407-12b-thinking-claude-gemini-gpt5-2-uncensored-heretic-q4_k_m-gguf",
   "author": "asjdoij",
@@ -81,14 +81,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 7477205408,
   "storage_human": "7.5 GB",
+  "context_length": 1024000,
   "base_model": "DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

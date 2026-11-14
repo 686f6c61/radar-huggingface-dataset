@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jason9464/sprint-data-2610",
   "slug": "jason9464-sprint-data-2610",
   "author": "jason9464",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 138088644841,
   "storage_human": "138.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

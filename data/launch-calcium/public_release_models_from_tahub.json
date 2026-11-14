@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "launch-calcium/Public_Release_Models_from_TAHUB",
   "slug": "launch-calcium-public_release_models_from_tahub",
   "author": "launch-calcium",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 726007747,
   "storage_human": "726 MB",
+  "context_length": null,
   "base_model": "morikomorizz/Pony-Diffusion-V6-XL-GGUF, Liberata/illustrious-xl-v1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

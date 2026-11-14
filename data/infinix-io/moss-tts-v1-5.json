@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/MOSS-TTS-v1.5",
   "slug": "infinix-io-moss-tts-v1-5",
   "author": "Infinix-io",
@@ -90,14 +90,19 @@
   "parameters_human": "8.49B",
   "storage_bytes": 16991161763,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:45:46.206Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

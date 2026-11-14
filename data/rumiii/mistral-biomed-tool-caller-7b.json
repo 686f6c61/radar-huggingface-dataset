@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rumiii/Mistral-BioMed-Tool-Caller-7B",
   "slug": "rumiii-mistral-biomed-tool-caller-7b",
   "author": "Rumiii",
@@ -40,14 +40,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 14832273028,
   "storage_human": "14.8 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

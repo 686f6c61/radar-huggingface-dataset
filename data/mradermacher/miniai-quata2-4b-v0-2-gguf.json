@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiniAI-Quata2-4b-v0.2-GGUF",
   "slug": "mradermacher-miniai-quata2-4b-v0-2-gguf",
   "author": "mradermacher",
@@ -45,14 +45,19 @@
   "parameters_human": "4.84B",
   "storage_bytes": 45368973504,
   "storage_human": "45.4 GB",
+  "context_length": 262144,
   "base_model": "M1n1A1/MiniAI-Quata2-4b-v0.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

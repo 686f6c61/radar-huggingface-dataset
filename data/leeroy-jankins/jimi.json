@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leeroy-jankins/jimi",
   "slug": "leeroy-jankins-jimi",
   "author": "leeroy-jankins",
@@ -43,14 +43,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 10878109188,
   "storage_human": "10.9 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

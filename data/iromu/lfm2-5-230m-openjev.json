@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/LFM2.5-230M-openjev",
   "slug": "iromu-lfm2-5-230m-openjev",
   "author": "iromu",
@@ -41,14 +41,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 459401112,
   "storage_human": "459 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

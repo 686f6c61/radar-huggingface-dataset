@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audante/MOSS-Music-8B-Instruct-bnb-nf4",
   "slug": "audante-moss-music-8b-instruct-bnb-nf4",
   "author": "Audante",
@@ -29,14 +29,19 @@
   "parameters_human": "9.05B",
   "storage_bytes": 8120630996,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

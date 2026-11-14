@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ziyaad30/MiniMax-H3-Pruned",
   "slug": "ziyaad30-minimax-h3-pruned",
   "author": "Ziyaad30",
@@ -35,6 +35,7 @@
   "parameters_human": "20.11B",
   "storage_bytes": 132952584552,
   "storage_human": "133.0 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

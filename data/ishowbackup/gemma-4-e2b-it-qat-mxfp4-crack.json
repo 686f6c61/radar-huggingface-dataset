@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ishowbackup/Gemma-4-E2B-it-qat-MXFP4-CRACK",
   "slug": "ishowbackup-gemma-4-e2b-it-qat-mxfp4-crack",
   "author": "Ishowbackup",
@@ -31,6 +31,7 @@
   "parameters_human": "5.10B",
   "storage_bytes": 4034648919,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-e2b-it",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hts-ai/YOLO26-clone",
   "slug": "hts-ai-yolo26-clone",
   "author": "hts-ai",
@@ -57,12 +57,17 @@
   "parameters_human": null,
   "storage_bytes": 1189380481,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

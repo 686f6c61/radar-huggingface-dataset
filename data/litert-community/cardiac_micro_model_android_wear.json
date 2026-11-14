@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Cardiac_micro_model_Android_Wear",
   "slug": "litert-community-cardiac_micro_model_android_wear",
   "author": "litert-community",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 3741937663,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "google/medgemma-1.5-4b-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

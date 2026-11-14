@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeependraVerma/legal-slm-125m-ultimate-sft",
   "slug": "deependraverma-legal-slm-125m-ultimate-sft",
   "author": "DeependraVerma",
@@ -45,14 +45,19 @@
   "parameters_human": "125.8M",
   "storage_bytes": 503405488,
   "storage_human": "503 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T06:17:50.505Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "HellaSwag (0-shot)",

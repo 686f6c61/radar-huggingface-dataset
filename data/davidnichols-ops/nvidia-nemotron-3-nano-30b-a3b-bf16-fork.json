@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidnichols-ops/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-fork",
   "slug": "davidnichols-ops-nvidia-nemotron-3-nano-30b-a3b-bf16-fork",
   "author": "davidnichols-ops",
@@ -63,14 +63,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 63173962785,
   "storage_human": "63.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T14:16:07.672Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sainived656/soreqen-s1-GGUF",
   "slug": "sainived656-soreqen-s1-gguf",
   "author": "sainived656",
@@ -37,14 +37,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 7062117824,
   "storage_human": "7.1 GB",
+  "context_length": 262144,
   "base_model": "zorqelis-ai/soreqen-s1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zorqelis-ai/soreqen-s1-GGUF",
+  "renamed_at": "2026-11-11T07:24:20.283Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kodjaoglanian/pavimentos-dfine-l",
   "slug": "kodjaoglanian-pavimentos-dfine-l",
   "author": "Kodjaoglanian",
@@ -45,6 +45,7 @@
   "parameters_human": "31.2M",
   "storage_bytes": 2027487899,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "ustc-community/dfine-large-obj2coco-e25",
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Object Detection",

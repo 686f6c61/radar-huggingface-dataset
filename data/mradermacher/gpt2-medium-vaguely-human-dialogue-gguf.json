@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gpt2-medium-vaguely-human-dialogue-GGUF",
   "slug": "mradermacher-gpt2-medium-vaguely-human-dialogue-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "354.8M",
   "storage_bytes": 3368463744,
   "storage_human": "3.4 GB",
+  "context_length": 1024,
   "base_model": "pszemraj/gpt2-medium-vaguely-human-dialogue",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Ming-3.0-tts-0.5B-MLX-oQ6-HQ6Speech-G64",
   "slug": "groxaxo-ming-3-0-tts-0-5b-mlx-oq6-hq6speech-g64",
   "author": "groxaxo",
@@ -48,6 +48,7 @@
   "parameters_human": "1.48B",
   "storage_bytes": 1354440438,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-3.0-tts-0.5B",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

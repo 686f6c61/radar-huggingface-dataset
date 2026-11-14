@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "specklabs/Speck1-140M-Instruct",
   "slug": "specklabs-speck1-140m-instruct",
   "author": "specklabs",
@@ -46,14 +46,19 @@
   "parameters_human": "140.7M",
   "storage_bytes": 281825539,
   "storage_human": "282 MB",
+  "context_length": null,
   "base_model": "specklabs/Speck1-140M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Four-choice base-text continuation",

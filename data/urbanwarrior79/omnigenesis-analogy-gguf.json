@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Urbanwarrior79/omnigenesis-analogy-gguf",
   "slug": "urbanwarrior79-omnigenesis-analogy-gguf",
   "author": "Urbanwarrior79",
@@ -30,14 +30,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 2176177152,
   "storage_human": "2.2 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

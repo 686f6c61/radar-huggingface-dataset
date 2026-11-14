@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LTM-Lab/Qwen3.8-Flash-Next-FP4-Local-Abliterated-v14",
   "slug": "ltm-lab-qwen3-8-flash-next-fp4-local-abliterated-v14",
   "author": "LTM-Lab",
@@ -44,14 +44,19 @@
   "parameters_human": "187.93B",
   "storage_bytes": 102251351030,
   "storage_human": "102.3 GB",
+  "context_length": null,
   "base_model": "DevelopingDad/Qwen3.8-Flash-Next-FP4-Local-Abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

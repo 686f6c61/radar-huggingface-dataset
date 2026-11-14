@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "radames/flux2-klein-edge-web",
   "slug": "radames-flux2-klein-edge-web",
   "author": "radames",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 9480095209,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

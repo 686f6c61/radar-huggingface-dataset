@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AndrewThompson1233/maba-101m",
   "slug": "andrewthompson1233-maba-101m",
   "author": "AndrewThompson1233",
@@ -57,14 +57,19 @@
   "parameters_human": "101.2M",
   "storage_bytes": 404882227,
   "storage_human": "405 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AndrewThompson1233/maba-v1-101m-test",
+  "renamed_at": "2026-11-11T02:16:57.942Z",
   "benchmarks": [],
   "sources": [
     {

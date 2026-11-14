@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LinhanWang/starVLA_ckpts",
   "slug": "linhanwang-starvla_ckpts",
   "author": "LinhanWang",
@@ -23,6 +23,7 @@
   "parameters_human": null,
   "storage_bytes": 6108342585960,
   "storage_human": "6108.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

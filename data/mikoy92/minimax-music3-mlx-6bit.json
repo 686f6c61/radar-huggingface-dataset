@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mikoy92/MiniMax-Music3-MLX-6bit",
   "slug": "mikoy92-minimax-music3-mlx-6bit",
   "author": "mikoy92",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 10661621492,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Qwen3-8B-speculator.dflash2",
   "slug": "redhatai-qwen3-8b-speculator-dflash2",
   "author": "RedHatAI",
@@ -28,14 +28,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 4834364175,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "qwen3/qwen3-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

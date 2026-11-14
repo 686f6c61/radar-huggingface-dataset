@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/0810-SFT-github-orlm-industryor-14B-5e-6-64-GGUF",
   "slug": "mradermacher-0810-sft-github-orlm-industryor-14b-5e-6-64-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 101987583648,
   "storage_human": "102.0 GB",
+  "context_length": 40960,
   "base_model": "OptShare/0810-SFT-github-orlm-industryor-14B-5e-6-64",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

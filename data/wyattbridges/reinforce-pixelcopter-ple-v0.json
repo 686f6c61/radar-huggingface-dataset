@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WyattBridges/Reinforce-Pixelcopter-PLE-v0",
   "slug": "wyattbridges-reinforce-pixelcopter-ple-v0",
   "author": "WyattBridges",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 40125,
   "storage_human": "40125 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

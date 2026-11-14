@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/Phantom-Samba-130M",
   "slug": "prannesshkva-phantom-samba-130m",
   "author": "Prannesshkva",
@@ -36,14 +36,19 @@
   "parameters_human": "29.8M",
   "storage_bytes": 119121544,
   "storage_human": "119 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:11:13.700Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

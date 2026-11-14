@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hellohazime/Qwen3.8-2.4T-A95B-REAP-256GB-GGUF",
   "slug": "hellohazime-qwen3-8-2-4t-a95b-reap-256gb-gguf",
   "author": "hellohazime",
@@ -34,14 +34,19 @@
   "parameters_human": "1116.66B",
   "storage_bytes": 246215835008,
   "storage_human": "246.2 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.8-2.4T-A95B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BRR1154/SLM-LiteratureSurvey-v2",
   "slug": "brr1154-slm-literaturesurvey-v2",
   "author": "BRR1154",
@@ -43,14 +43,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519716,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct, BRR1154/SLM-LiteratureSurvey-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Scholar-DOI-14 + FakeTrap-8",

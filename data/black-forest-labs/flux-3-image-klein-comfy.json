@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "black-forest-labs/flux-3-image-klein-comfy",
   "slug": "black-forest-labs-flux-3-image-klein-comfy",
   "author": "black-forest-labs",
@@ -28,19 +28,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 3144,
+  "likes": 3161,
   "downloads_30d": 1292519,
-  "trending_score": 254,
+  "trending_score": 253,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 93726613295,
   "storage_human": "93.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein, black-forest-labs/flux-3-image-klein-base, black-forest-labs/flux-3-image-klein-pup",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

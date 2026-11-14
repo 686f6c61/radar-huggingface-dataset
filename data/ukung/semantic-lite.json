@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ukung/semantic-lite",
   "slug": "ukung-semantic-lite",
   "author": "ukung",
@@ -78,14 +78,19 @@
   "parameters_human": "250.0M",
   "storage_bytes": 511368406,
   "storage_human": "511 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "killy369/GLM-5.3-UD-Q3_K_XL-a5-GGUF",
   "slug": "killy369-glm-5-3-ud-q3_k_xl-a5-gguf",
   "author": "killy369",
@@ -36,14 +36,19 @@
   "parameters_human": "753.86B",
   "storage_bytes": 336703754272,
   "storage_human": "336.7 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

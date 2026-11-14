@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOTAagi2030/Habitat-Acoustic-Experts-291",
   "slug": "sotaagi2030-habitat-acoustic-experts-291",
   "author": "SOTAagi2030",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 164,
   "storage_human": "164 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

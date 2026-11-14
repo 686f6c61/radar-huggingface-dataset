@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Llama-3-Groq-8B-Tool-Use-FP8",
   "slug": "liodon-ai-llama-3-groq-8b-tool-use-fp8",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 9101324100,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Groq/Llama-3-Groq-8B-Tool-Use",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

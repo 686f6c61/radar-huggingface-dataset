@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/UltiMerge-Q8_0-GGUF",
   "slug": "oliviarossi-ultimerge-q8_0-gguf",
   "author": "OliviaRossi",
@@ -50,14 +50,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 36903140672,
   "storage_human": "36.9 GB",
+  "context_length": 262144,
   "base_model": "OliviaRossi/UltiMerge",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:35:45.330Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

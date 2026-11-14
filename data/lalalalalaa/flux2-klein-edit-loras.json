@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lalalalalaa/flux2-klein-edit-loras",
   "slug": "lalalalalaa-flux2-klein-edit-loras",
   "author": "lalalalalaa",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 658072072,
   "storage_human": "658 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

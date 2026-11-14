@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DICPlay/RusMind-Vspyshka-4.7",
   "slug": "dicplay-rusmind-vspyshka-4-7",
   "author": "DICPlay",
@@ -41,6 +41,7 @@
   "parameters_human": "8.00B",
   "storage_bytes": 62423296358,
   "storage_human": "62.4 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mentolovburek/GaMS3-12B-Instruct-Q4_K_M-GGUF",
   "slug": "mentolovburek-gams3-12b-instruct-q4_k_m-gguf",
   "author": "mentolovburek",
@@ -40,14 +40,19 @@
   "parameters_human": "11.77B",
   "storage_bytes": 7300777088,
   "storage_human": "7.3 GB",
+  "context_length": 131072,
   "base_model": "cjvt/GaMS3-12B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

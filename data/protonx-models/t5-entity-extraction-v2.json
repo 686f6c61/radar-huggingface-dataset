@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "protonx-models/t5-entity-extraction-v2",
   "slug": "protonx-models-t5-entity-extraction-v2",
   "author": "protonx-models",
@@ -28,14 +28,19 @@
   "parameters_human": "62.5M",
   "storage_bytes": 250988730,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T11:06:54.150Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

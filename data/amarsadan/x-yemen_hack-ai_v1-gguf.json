@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amarsadan/X-YEMEN_HACK-AI_V1.GGUF",
   "slug": "amarsadan-x-yemen_hack-ai_v1-gguf",
   "author": "amarsadan",
@@ -32,6 +32,7 @@
   "parameters_human": "1.2M",
   "storage_bytes": 24256510,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "SC117/LFM2.5-2.6B-Uncensored",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

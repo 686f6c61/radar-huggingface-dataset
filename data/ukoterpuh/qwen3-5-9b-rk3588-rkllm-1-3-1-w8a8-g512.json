@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UkoTerpuh/Qwen3.5-9B-RK3588-RKLLM-1.3.1-W8A8-G512",
   "slug": "ukoterpuh-qwen3-5-9b-rk3588-rkllm-1-3-1-w8a8-g512",
   "author": "UkoTerpuh",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 10202149748,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

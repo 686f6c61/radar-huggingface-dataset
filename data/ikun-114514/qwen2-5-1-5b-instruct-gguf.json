@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikun-114514/Qwen2.5-1.5B-Instruct-GGUF",
   "slug": "ikun-114514-qwen2-5-1-5b-instruct-gguf",
   "author": "ikun-114514",
@@ -33,14 +33,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 13324678944,
   "storage_human": "13.3 GB",
+  "context_length": 8192,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dys-asr/parakeet-ctc-0.6b-sapc1",
   "slug": "dys-asr-parakeet-ctc-0-6b-sapc1",
   "author": "dys-asr",
@@ -38,14 +38,19 @@
   "parameters_human": "608.8M",
   "storage_bytes": 4871012376,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-ctc-0.6b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

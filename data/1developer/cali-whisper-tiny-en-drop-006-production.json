@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1Developer/cali-whisper-tiny.en-drop-006-production",
   "slug": "1developer-cali-whisper-tiny-en-drop-006-production",
   "author": "1Developer",
@@ -33,14 +33,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 3776831016,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "1Developer/cali-whisper-tiny.en-drop-005-production",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

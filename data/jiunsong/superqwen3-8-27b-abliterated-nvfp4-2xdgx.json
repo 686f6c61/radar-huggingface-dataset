@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-2xDGX",
   "slug": "jiunsong-superqwen3-8-27b-abliterated-nvfp4-2xdgx",
   "author": "Jiunsong",
@@ -54,14 +54,19 @@
   "parameters_human": "16.70B",
   "storage_bytes": 20579267901,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T05:45:06.178Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

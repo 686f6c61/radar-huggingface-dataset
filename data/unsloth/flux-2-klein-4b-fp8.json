@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/FLUX.2-klein-4B-FP8",
   "slug": "unsloth-flux-2-klein-4b-fp8",
   "author": "unsloth",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 25109890099,
   "storage_human": "25.1 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

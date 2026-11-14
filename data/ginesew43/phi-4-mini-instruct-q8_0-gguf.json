@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ginesew43/Phi-4-mini-instruct-Q8_0-GGUF",
   "slug": "ginesew43-phi-4-mini-instruct-q8_0-gguf",
   "author": "ginesew43",
@@ -82,14 +82,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 4084611392,
   "storage_human": "4.1 GB",
+  "context_length": 131072,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

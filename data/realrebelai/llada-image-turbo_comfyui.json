@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/LLaDa-Image-Turbo_ComfyUI",
   "slug": "realrebelai-llada-image-turbo_comfyui",
   "author": "realrebelai",
@@ -34,6 +34,7 @@
   "parameters_human": "16.32B",
   "storage_bytes": 32371083268,
   "storage_human": "32.4 GB",
+  "context_length": null,
   "base_model": "inclusionAI/LLaDA-Image-Turbo",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

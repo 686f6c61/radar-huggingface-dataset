@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "denizakkoc/BAGEL-ZebraCoT-GRPO-Simple-v3-20261025",
   "slug": "denizakkoc-bagel-zebracot-grpo-simple-v3-20261025",
   "author": "denizakkoc",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 9045512556,
   "storage_human": "9.0 GB",
+  "context_length": null,
   "base_model": "multimodal-reasoning-lab/Bagel-Zebra-CoT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

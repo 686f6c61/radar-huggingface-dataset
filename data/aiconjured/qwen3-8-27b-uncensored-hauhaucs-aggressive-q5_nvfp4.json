@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q5_NVFP4",
   "slug": "aiconjured-qwen3-8-27b-uncensored-hauhaucs-aggressive-q5_nvfp4",
   "author": "AIconjured",
@@ -47,14 +47,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 18590682304,
   "storage_human": "18.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

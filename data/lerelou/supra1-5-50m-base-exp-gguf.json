@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lerelou/Supra1.5-50M-Base-exp-GGUF",
   "slug": "lerelou-supra1-5-50m-base-exp-gguf",
   "author": "Lerelou",
@@ -42,14 +42,19 @@
   "parameters_human": "51.8M",
   "storage_bytes": 264488896,
   "storage_human": "264 MB",
+  "context_length": 5120,
   "base_model": "SupraLabs/Supra1.5-50M-Base-exp",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

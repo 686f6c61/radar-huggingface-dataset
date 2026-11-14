@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "makisekurisu-jp/Qwen-Image-2.1-Turbo-Wuli-8step",
   "slug": "makisekurisu-jp-qwen-image-2-1-turbo-wuli-8step",
   "author": "makisekurisu-jp",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 7256835320,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "Wuli-art/Qwen-Image-2.1-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

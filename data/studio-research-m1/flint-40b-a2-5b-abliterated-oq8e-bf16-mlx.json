@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Studio-Research-M1/Flint-40B-A2.5B-abliterated-oQ8e-BF16-MLX",
   "slug": "studio-research-m1-flint-40b-a2-5b-abliterated-oq8e-bf16-mlx",
   "author": "Studio-Research-M1",
@@ -41,6 +41,7 @@
   "parameters_human": "39.79B",
   "storage_bytes": 42282749839,
   "storage_human": "42.3 GB",
+  "context_length": null,
   "base_model": "dima6312/Flint-40B-A2.5B-abliterated",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

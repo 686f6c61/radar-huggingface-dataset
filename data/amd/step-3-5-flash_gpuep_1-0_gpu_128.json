@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/Step-3.5-Flash_gpuep_1.0_gpu_128",
   "slug": "amd-step-3-5-flash_gpuep_1-0_gpu_128",
   "author": "amd",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 62646325690,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "stepfun-ai/Step-3.5-Flash",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

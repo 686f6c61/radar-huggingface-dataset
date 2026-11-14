@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inductiveML/Ternary-Bonsai-27B-mlx-lossless-1.75bpw",
   "slug": "inductiveml-ternary-bonsai-27b-mlx-lossless-1-75bpw",
   "author": "inductiveML",
@@ -33,6 +33,7 @@
   "parameters_human": "5.68B",
   "storage_bytes": 5908378087,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-27B-gguf",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

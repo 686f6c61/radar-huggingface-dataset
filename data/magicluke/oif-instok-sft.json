@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MagicLuke/oif-instok-sft",
   "slug": "magicluke-oif-instok-sft",
   "author": "MagicLuke",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4657425056,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "nvidia/personaplex-7b-v1",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

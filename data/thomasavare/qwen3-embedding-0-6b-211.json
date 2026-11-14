@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thomasavare/Qwen3-Embedding-0.6B-211",
   "slug": "thomasavare-qwen3-embedding-0-6b-211",
   "author": "thomasavare",
@@ -24,14 +24,19 @@
   "parameters_human": "317561",
   "storage_bytes": 590610499,
   "storage_human": "591 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

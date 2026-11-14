@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HorizonRobotics/Ego4WAM",
   "slug": "horizonrobotics-ego4wam",
   "author": "HorizonRobotics",
@@ -31,14 +31,19 @@
   "parameters_human": "13.46B",
   "storage_bytes": 53848341820,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers, google/umt5-xxl",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucascui97/Sigma_0",
   "slug": "lucascui97-sigma_0",
   "author": "Lucascui97",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 26866241720,
   "storage_human": "26.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

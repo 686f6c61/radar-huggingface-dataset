@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "David319193/d3-mini-zils-body",
   "slug": "david319193-d3-mini-zils-body",
   "author": "David319193",
@@ -32,14 +32,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 18172651422,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

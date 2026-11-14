@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felladrin/Minueza-3-95M-Base",
   "slug": "felladrin-minueza-3-95m-base",
   "author": "Felladrin",
@@ -35,14 +35,19 @@
   "parameters_human": "94.7M",
   "storage_bytes": 999534900,
   "storage_human": "1000 MB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

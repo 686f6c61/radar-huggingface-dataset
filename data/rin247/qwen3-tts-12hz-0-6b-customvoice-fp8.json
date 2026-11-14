@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-FP8",
   "slug": "rin247-qwen3-tts-12hz-0-6b-customvoice-fp8",
   "author": "Rin247",
@@ -51,14 +51,19 @@
   "parameters_human": "905.8M",
   "storage_bytes": 1286316636,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:24:27.843Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

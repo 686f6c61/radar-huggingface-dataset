@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Viraj0112/akcr-llama3.1-8b-instruct-dpo-v2",
   "slug": "viraj0112-akcr-llama3-1-8b-instruct-dpo-v2",
   "author": "Viraj0112",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 101156112,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

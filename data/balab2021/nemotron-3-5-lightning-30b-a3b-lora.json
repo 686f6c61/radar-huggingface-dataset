@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA",
   "slug": "balab2021-nemotron-3-5-lightning-30b-a3b-lora",
   "author": "Balab2021",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 43435581,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

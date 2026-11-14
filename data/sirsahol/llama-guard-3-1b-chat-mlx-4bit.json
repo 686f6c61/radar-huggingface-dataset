@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit",
   "slug": "sirsahol-llama-guard-3-1b-chat-mlx-4bit",
   "author": "SirSahOl",
@@ -52,6 +52,7 @@
   "parameters_human": "1.50B",
   "storage_bytes": 860245443,
   "storage_human": "860 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-Guard-3-1B",
   "formats": [
     "mlx",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

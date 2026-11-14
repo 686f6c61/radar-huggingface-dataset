@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "foggy9/trendyol-dino-v2.1-ecommerce-256d",
   "slug": "foggy9-trendyol-dino-v2-1-ecommerce-256d",
   "author": "foggy9",
@@ -41,14 +41,19 @@
   "parameters_human": "86.8M",
   "storage_bytes": 694304655,
   "storage_human": "694 MB",
+  "context_length": null,
   "base_model": "Trendyol/trendyol-dino-v2-ecommerce-256d",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

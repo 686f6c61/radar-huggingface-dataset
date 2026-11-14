@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "360ZhiNao/fg-clip2-large",
   "slug": "360zhinao-fg-clip2-large",
   "author": "360ZhiNao",
@@ -36,14 +36,19 @@
   "parameters_human": "896.6M",
   "storage_bytes": 3625186699,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

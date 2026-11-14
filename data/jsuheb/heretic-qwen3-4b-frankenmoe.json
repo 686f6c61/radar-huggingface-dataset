@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsuheb/Heretic-Qwen3-4B-frankenmoe",
   "slug": "jsuheb-heretic-qwen3-4b-frankenmoe",
   "author": "jsuheb",
@@ -44,14 +44,19 @@
   "parameters_human": "14.78B",
   "storage_bytes": 29574106102,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "p-e-w/Qwen3-4B-Instruct-2507-heretic, thewallran/Qwen3-4B-Instruct-2507-heretic, usedcvnt/Qwen3-4B-Thinking-2507-heretic, georgehenney/Qwen3-4B-Thinking-2507-heretic, Lambent/Qwen3-4B-Base-custom-heresy",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jsuheb/QwenkenMoE-Heretic-4BX5",
+  "renamed_at": "2026-11-14T06:37:32.268Z",
   "benchmarks": [],
   "sources": []
 }

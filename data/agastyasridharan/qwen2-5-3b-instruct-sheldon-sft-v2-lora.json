@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-LoRA",
   "slug": "agastyasridharan-qwen2-5-3b-instruct-sheldon-sft-v2-lora",
   "author": "agastyasridharan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 4802147332,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phequals/qwen35-2b-muesli-cleanup-v12-gguf",
   "slug": "phequals-qwen35-2b-muesli-cleanup-v12-gguf",
   "author": "phequals",
@@ -35,14 +35,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 6675246720,
   "storage_human": "6.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Muesli-HQ/qwen35-2b-muesli-cleanup-v12-gguf",
+  "renamed_at": "2026-11-11T07:07:28.441Z",
   "benchmarks": [],
   "sources": [
     {

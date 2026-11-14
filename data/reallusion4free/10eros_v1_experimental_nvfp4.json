@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reallusion4free/10Eros_v1_experimental_nvfp4",
   "slug": "reallusion4free-10eros_v1_experimental_nvfp4",
   "author": "reallusion4free",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 17604701240,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "TenStrip/LTX2.3-10Eros, Lightricks/LTX-2.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

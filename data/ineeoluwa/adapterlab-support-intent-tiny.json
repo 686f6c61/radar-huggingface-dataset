@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ineeoluwa/adapterlab-support-intent-tiny",
   "slug": "ineeoluwa-adapterlab-support-intent-tiny",
   "author": "Ineeoluwa",
@@ -41,6 +41,7 @@
   "parameters_human": "4.4M",
   "storage_bytes": 35187680,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "google/bert_uncased_L-2_H-128_A-2",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Support intent classification",

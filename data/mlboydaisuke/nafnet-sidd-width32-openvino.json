@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/NAFNet-SIDD-width32-OpenVINO",
   "slug": "mlboydaisuke-nafnet-sidd-width32-openvino",
   "author": "mlboydaisuke",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 323019845,
   "storage_human": "323 MB",
+  "context_length": null,
   "base_model": "litert-community/NAFNet-SIDD-width32-LiteRT",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

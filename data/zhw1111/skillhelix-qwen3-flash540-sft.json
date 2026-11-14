@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhw1111/skillhelix-qwen3-flash540-sft",
   "slug": "zhw1111-skillhelix-qwen3-flash540-sft",
   "author": "zhw1111",
@@ -23,14 +23,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29548095918,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:01:15.244Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

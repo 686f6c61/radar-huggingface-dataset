@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eminsy/ChatISL-7B",
   "slug": "eminsy-chatisl-7b",
   "author": "eminsy",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 133911932,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "inception42/Jais-3-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

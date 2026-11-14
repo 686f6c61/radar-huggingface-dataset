@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sherpa/DeepSeek-V4.1-Flash-1017-native-d981babe0eb47d83e2ab",
   "slug": "sherpa-deepseek-v4-1-flash-1017-native-d981babe0eb47d83e2ab",
   "author": "Sherpa",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 1370724111896,
   "storage_human": "1370.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T03:41:28.382Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

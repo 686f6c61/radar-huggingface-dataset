@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codeShare/flux-3-image-klein-sdnq-int4",
   "slug": "codeshare-flux-3-image-klein-sdnq-int4",
   "author": "codeShare",
@@ -34,6 +34,7 @@
   "parameters_human": "2.91B",
   "storage_bytes": 15206618300,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

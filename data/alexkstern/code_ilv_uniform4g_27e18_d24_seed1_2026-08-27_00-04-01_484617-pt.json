@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/code_ilv_uniform4g_27e18_d24_seed1_2026-08-27_00-04-01_484617-pt",
   "slug": "alexkstern-code_ilv_uniform4g_27e18_d24_seed1_2026-08-27_00-04-01_484617-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 7587632577,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:24:22.227Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

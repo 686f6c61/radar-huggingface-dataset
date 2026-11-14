@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Feyd89/Qwen3.8-27B-QUASAR-QAT-nvfp4-NInfer",
   "slug": "feyd89-qwen3-8-27b-quasar-qat-nvfp4-ninfer",
   "author": "Feyd89",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 17397699076,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

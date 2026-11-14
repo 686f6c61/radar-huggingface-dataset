@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zcheng256/rdgdpo-fixed-weight-20261110-backup",
   "slug": "zcheng256-rdgdpo-fixed-weight-20261110-backup",
   "author": "zcheng256",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 497652152534,
   "storage_human": "497.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

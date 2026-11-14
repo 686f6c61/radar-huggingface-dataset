@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "parallaxlabs/parallax-2",
   "slug": "parallaxlabs-parallax-2",
   "author": "parallaxlabs",
@@ -38,6 +38,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 50984609135,
   "storage_human": "51.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

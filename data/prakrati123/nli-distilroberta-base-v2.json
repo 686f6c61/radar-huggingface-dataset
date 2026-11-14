@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prakrati123/nli-distilroberta-base-v2",
   "slug": "prakrati123-nli-distilroberta-base-v2",
   "author": "prakrati123",
@@ -35,14 +35,19 @@
   "parameters_human": "82.1M",
   "storage_bytes": 328485128,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/nli-distilroberta-base-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

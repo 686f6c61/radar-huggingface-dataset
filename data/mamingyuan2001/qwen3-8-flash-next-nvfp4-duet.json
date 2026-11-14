@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamingyuan2001/Qwen3.8-Flash-Next-NVFP4-DUET",
   "slug": "mamingyuan2001-qwen3-8-flash-next-nvfp4-duet",
   "author": "mamingyuan2001",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 2475928280,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T03:00:47.349Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

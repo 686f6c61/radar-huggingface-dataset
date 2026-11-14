@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t8star/Hi3d-Comfy",
   "slug": "t8star-hi3d-comfy",
   "author": "t8star",
@@ -36,6 +36,7 @@
   "parameters_human": null,
   "storage_bytes": 122529211327,
   "storage_human": "122.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sky-06/qwen2.5-coder-1.5b-agentic-sft",
   "slug": "sky-06-qwen2-5-coder-1-5b-agentic-sft",
   "author": "Sky-06",
@@ -25,14 +25,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 15448769230,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:15:14.941Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

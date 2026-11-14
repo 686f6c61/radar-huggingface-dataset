@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-p1t0.7-80pct",
   "slug": "ikimyaii-mamba-1-3b-semi-structured-ehws-alps_phase1-p1t0-7-80pct",
   "author": "ikimyaii",
@@ -30,14 +30,19 @@
   "parameters_human": "1.33B",
   "storage_bytes": 5339017120,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "fla-hub/mamba-1.3B-100B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ikimyaii/Mamba-1.3B-semi-structured-EHWS-80pct",
+  "renamed_at": "2026-11-11T05:39:08.106Z",
   "benchmarks": [],
   "sources": [
     {

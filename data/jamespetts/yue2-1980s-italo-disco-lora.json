@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jamespetts/yue2-1980s-italo-disco-lora",
   "slug": "jamespetts-yue2-1980s-italo-disco-lora",
   "author": "jamespetts",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 176247166,
   "storage_human": "176 MB",
+  "context_length": null,
   "base_model": "Comfy-Org/YuE2",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

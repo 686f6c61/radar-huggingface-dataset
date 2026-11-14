@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnlockejrr/dfine-det-large-baseline-stage0",
   "slug": "johnlockejrr-dfine-det-large-baseline-stage0",
   "author": "johnlockejrr",
@@ -73,14 +73,19 @@
   "parameters_human": null,
   "storage_bytes": 121990171,
   "storage_human": "122 MB",
+  "context_length": null,
   "base_model": "Peterande/D-FINE",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text-line baseline detection (polyline)",

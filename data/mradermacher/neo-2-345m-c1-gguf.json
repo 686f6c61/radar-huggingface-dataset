@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/neo-2-345M-C1-GGUF",
   "slug": "mradermacher-neo-2-345m-c1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "354.8M",
   "storage_bytes": 3368471424,
   "storage_human": "3.4 GB",
+  "context_length": 1024,
   "base_model": "aquilesfd/neo-2-345M-C1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

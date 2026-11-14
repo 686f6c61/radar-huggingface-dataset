@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "justinchuby/onnx-genai-example-mistral-7b-v0-1-sliding-window",
   "slug": "justinchuby-onnx-genai-example-mistral-7b-v0-1-sliding-window",
   "author": "justinchuby",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 14492811299,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

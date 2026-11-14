@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Schroding18/GLM-5.3-EXL3-FULL256-2xSpark",
   "slug": "schroding18-glm-5-3-exl3-full256-2xspark",
   "author": "Schroding18",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 229580759282,
   "storage_human": "229.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbrahamPJ/florence2-promptgen-onnx",
   "slug": "abrahampj-florence2-promptgen-onnx",
   "author": "AbrahamPJ",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 547769392,
   "storage_human": "548 MB",
+  "context_length": null,
   "base_model": "MiaoshouAI/Florence-2-base-PromptGen-v2.0, microsoft/Florence-2-base-ft",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

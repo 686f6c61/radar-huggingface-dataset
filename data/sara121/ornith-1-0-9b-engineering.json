@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sara121/Ornith-1.0-9B-Engineering",
   "slug": "sara121-ornith-1-0-9b-engineering",
   "author": "Sara121",
@@ -32,14 +32,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927651733,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.0-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

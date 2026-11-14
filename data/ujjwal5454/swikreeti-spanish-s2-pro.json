@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ujjwal5454/swikreeti-spanish-s2-pro",
   "slug": "ujjwal5454-swikreeti-spanish-s2-pro",
   "author": "ujjwal5454",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 20573875345,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "fishaudio/s2-pro",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T02:22:51.935Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

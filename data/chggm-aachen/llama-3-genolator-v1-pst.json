@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CHGGM-Aachen/Llama-3-Genolator-v1-PST",
   "slug": "chggm-aachen-llama-3-genolator-v1-pst",
   "author": "CHGGM-Aachen",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 788981996,
   "storage_human": "789 MB",
+  "context_length": null,
   "base_model": "ContactDoctor/Bio-Medical-Llama-3-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

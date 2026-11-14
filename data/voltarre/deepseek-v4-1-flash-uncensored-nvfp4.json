@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Voltarre/DeepSeek-V4.1-Flash-UNCENSORED-NVFP4",
   "slug": "voltarre-deepseek-v4-1-flash-uncensored-nvfp4",
   "author": "Voltarre",
@@ -40,14 +40,19 @@
   "parameters_human": "763.21B",
   "storage_bytes": 738354999725,
   "storage_human": "738.4 GB",
+  "context_length": null,
   "base_model": "nvidia/DeepSeek-V4.1-Flash-NVFP4, dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MomonV/DeepSeek-V4.1-Flash-UNCENSORED-NVFP4",
+  "renamed_at": "2026-11-11T04:09:27.225Z",
   "benchmarks": [],
   "sources": [
     {

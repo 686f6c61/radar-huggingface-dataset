@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ania3000/ossbert-morph-v2-1",
   "slug": "ania3000-ossbert-morph-v2-1",
   "author": "ania3000",
@@ -30,14 +30,19 @@
   "parameters_human": "177.6M",
   "storage_bytes": 7105487401,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "AlexeySorokin/ossbert-onc-unlab-from_multilingual-bs64-5epochs",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T10:44:08.135Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

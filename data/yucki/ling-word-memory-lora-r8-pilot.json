@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yucki/ling-word-memory-lora-r8-pilot",
   "slug": "yucki-ling-word-memory-lora-r8-pilot",
   "author": "yucki",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 12205732,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

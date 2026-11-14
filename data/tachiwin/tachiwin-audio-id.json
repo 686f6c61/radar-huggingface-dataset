@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tachiwin/Tachiwin-Audio-ID",
   "slug": "tachiwin-tachiwin-audio-id",
   "author": "tachiwin",
@@ -294,14 +294,19 @@
   "parameters_human": "21.1M",
   "storage_bytes": 84545144,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "speechbrain/lang-id-voxlingua107-ecapa",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Audio Classification",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3",
   "slug": "mothersuperior-open-rvq-encoder-minimax-music3-41m-pooled-v3",
   "author": "Mothersuperior",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 163931632,
   "storage_human": "164 MB",
+  "context_length": null,
   "base_model": "SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

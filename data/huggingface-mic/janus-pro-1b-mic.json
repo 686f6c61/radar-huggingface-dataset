@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Janus-Pro-1B-mic",
   "slug": "huggingface-mic-janus-pro-1b-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 164404831,
   "storage_human": "164 MB",
+  "context_length": null,
   "base_model": "deepseek-community/Janus-Pro-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

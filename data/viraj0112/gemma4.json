@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Viraj0112/Gemma4",
   "slug": "viraj0112-gemma4",
   "author": "Viraj0112",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 48264262863,
   "storage_human": "48.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

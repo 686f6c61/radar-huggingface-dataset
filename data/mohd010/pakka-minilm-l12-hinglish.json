@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohd010/pakka-minilm-l12-hinglish",
   "slug": "mohd010-pakka-minilm-l12-hinglish",
   "author": "mohd010",
@@ -39,14 +39,19 @@
   "parameters_human": "117.7M",
   "storage_bytes": 487720403,
   "storage_human": "488 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

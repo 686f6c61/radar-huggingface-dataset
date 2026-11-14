@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hmkz-1981/gemma-4-e2b-agentic-rl-think-effort",
   "slug": "hmkz-1981-gemma-4-e2b-agentic-rl-think-effort",
   "author": "hmkz-1981",
@@ -37,14 +37,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 40867567373,
   "storage_human": "40.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

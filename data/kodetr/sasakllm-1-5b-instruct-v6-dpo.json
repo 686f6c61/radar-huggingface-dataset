@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kodetr/SasakLLM-1.5B-Instruct-v6-DPO",
   "slug": "kodetr-sasakllm-1-5b-instruct-v6-dpo",
   "author": "kodetr",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 122314468,
   "storage_human": "122 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T04:59:08.576Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

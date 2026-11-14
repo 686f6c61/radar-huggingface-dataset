@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebulette/mossad-2b-encoder",
   "slug": "nebulette-mossad-2b-encoder",
   "author": "nebulette",
@@ -27,6 +27,7 @@
   "parameters_human": "1.91B",
   "storage_bytes": 3827735217,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T06:17:53.672Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

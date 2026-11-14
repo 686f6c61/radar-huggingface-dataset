@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oomni/mithi-v1-flash",
   "slug": "oomni-mithi-v1-flash",
   "author": "Oomni",
@@ -43,21 +43,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 77,
+  "likes": 78,
   "downloads_30d": 861,
-  "trending_score": 72,
+  "trending_score": 73,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 239390937,
   "storage_human": "239 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

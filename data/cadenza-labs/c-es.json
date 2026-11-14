@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cadenza-Labs/c-es",
   "slug": "cadenza-labs-c-es",
   "author": "Cadenza-Labs",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 2938431000,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Cadenza-Labs/c-esge",
+  "renamed_at": "2026-11-11T02:28:44.257Z",
   "benchmarks": [],
   "sources": []
 }

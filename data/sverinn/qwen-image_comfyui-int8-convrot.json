@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sverinn/Qwen-Image_ComfyUI-int8-ConvRot",
   "slug": "sverinn-qwen-image_comfyui-int8-convrot",
   "author": "sverinn",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 20499083752,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/Qwen-Image_ComfyUI",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

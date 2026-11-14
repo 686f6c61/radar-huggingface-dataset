@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic",
   "slug": "huggingface-mic-ast-finetuned-audioset-10-10-0-4593-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "195727",
   "storage_bytes": 788500,
   "storage_human": "788500 B",
+  "context_length": null,
   "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

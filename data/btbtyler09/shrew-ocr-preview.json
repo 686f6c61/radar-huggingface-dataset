@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "btbtyler09/shrew-ocr-preview",
   "slug": "btbtyler09-shrew-ocr-preview",
   "author": "btbtyler09",
@@ -31,20 +31,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 3997206464,
   "parameters_human": "4.00B",
   "storage_bytes": 31978262144,
   "storage_human": "32.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-vision-4.1-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

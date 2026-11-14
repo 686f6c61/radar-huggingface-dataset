@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gluttony10/ComfyUI-RH-daVinci-MagiHuman",
   "slug": "gluttony10-comfyui-rh-davinci-magihuman",
   "author": "Gluttony10",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 61225440748,
   "storage_human": "61.2 GB",
+  "context_length": null,
   "base_model": "GAIR/daVinci-MagiHuman",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

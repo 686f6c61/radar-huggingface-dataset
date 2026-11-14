@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adit2K/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-gguf",
   "slug": "adit2k-noesis-qwen3-forced-aligner-0-6b-112lang-gguf",
   "author": "Adit2K",
@@ -256,14 +256,19 @@
   "parameters_human": "917.8M",
   "storage_bytes": 994516448,
   "storage_human": "995 MB",
+  "context_length": null,
   "base_model": "AMAImedia/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

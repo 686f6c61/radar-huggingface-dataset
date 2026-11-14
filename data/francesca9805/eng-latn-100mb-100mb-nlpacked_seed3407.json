@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/eng-latn-100mb-100mb-nlpacked_seed3407",
   "slug": "francesca9805-eng-latn-100mb-100mb-nlpacked_seed3407",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 9484649644,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "goldfish-models/eng_latn_100mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

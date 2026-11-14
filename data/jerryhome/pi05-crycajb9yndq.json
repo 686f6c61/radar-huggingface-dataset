@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JerryHome/pi05-crYCajB9yNdq",
   "slug": "jerryhome-pi05-crycajb9yndq",
   "author": "JerryHome",
@@ -22,14 +22,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 28934601136,
   "storage_human": "28.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

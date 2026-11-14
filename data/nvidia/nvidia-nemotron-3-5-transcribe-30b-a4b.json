@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "slug": "nvidia-nvidia-nemotron-3-5-transcribe-30b-a4b",
   "author": "nvidia",
@@ -126,21 +126,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 3314,
+  "likes": 3316,
   "downloads_30d": 80193,
-  "trending_score": 175,
+  "trending_score": 173,
   "parameters": 33697781029,
   "parameters_human": "33.70B",
   "storage_bytes": 67532739306,
   "storage_human": "67.5 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suzu89/Nex-N2.5-mini-oQ5",
   "slug": "suzu89-nex-n2-5-mini-oq5",
   "author": "suzu89",
@@ -36,6 +36,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 25324474022,
   "storage_human": "25.3 GB",
+  "context_length": null,
   "base_model": "nex-agi/Nex-N2.5-mini",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TokenAI-zer/Nex-N2.5-mini-oQ5",
+  "renamed_at": "2026-11-11T07:40:50.417Z",
   "benchmarks": [],
   "sources": [
     {

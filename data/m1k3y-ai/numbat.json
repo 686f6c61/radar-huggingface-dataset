@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m1k3y-ai/numbat",
   "slug": "m1k3y-ai-numbat",
   "author": "m1k3y-ai",
@@ -26,14 +26,19 @@
   "parameters_human": "6849.38B",
   "storage_bytes": 7720640941879,
   "storage_human": "7720.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T05:39:28.551Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

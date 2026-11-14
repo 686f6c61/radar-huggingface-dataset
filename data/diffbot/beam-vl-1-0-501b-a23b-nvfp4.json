@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diffbot/Beam-VL-1.0-501B-A23B-NVFP4",
   "slug": "diffbot-beam-vl-1-0-501b-a23b-nvfp4",
   "author": "diffbot",
@@ -40,14 +40,19 @@
   "parameters_human": "254.64B",
   "storage_bytes": 350759190000,
   "storage_human": "350.8 GB",
+  "context_length": null,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

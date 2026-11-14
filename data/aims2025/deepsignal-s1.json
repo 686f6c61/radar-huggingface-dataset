@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIMS2025/DeepSignal-S1",
   "slug": "aims2025-deepsignal-s1",
   "author": "AIMS2025",
@@ -26,6 +26,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 41413440030,
   "storage_human": "41.4 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

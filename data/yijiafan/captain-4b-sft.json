@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YijiaFan/CaPtain-4B-SFT",
   "slug": "yijiafan-captain-4b-sft",
   "author": "YijiaFan",
@@ -40,14 +40,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 10362827310,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

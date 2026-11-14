@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "knoopx/Swift-1.5-FN-GSQ-RCO-IQ3_S-Basalt",
   "slug": "knoopx-swift-1-5-fn-gsq-rco-iq3_s-basalt",
   "author": "knoopx",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 87060906274,
   "storage_human": "87.1 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF, Qwen/Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

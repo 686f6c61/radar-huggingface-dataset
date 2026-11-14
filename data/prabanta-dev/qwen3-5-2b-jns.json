@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prabanta-dev/Qwen3.5-2B-JNS",
   "slug": "prabanta-dev-qwen3-5-2b-jns",
   "author": "prabanta-dev",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1326391296,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

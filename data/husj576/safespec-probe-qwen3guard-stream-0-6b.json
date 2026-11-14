@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "husj576/safespec-probe-qwen3guard-stream-0.6b",
   "slug": "husj576-safespec-probe-qwen3guard-stream-0-6b",
   "author": "husj576",
@@ -37,14 +37,19 @@
   "parameters_human": "597.1M",
   "storage_bytes": 1224064035,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3Guard-Stream-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

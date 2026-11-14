@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skt/A.X-K2-GGUF",
   "slug": "skt-a-x-k2-gguf",
   "author": "skt",
@@ -45,14 +45,19 @@
   "parameters_human": "689.77B",
   "storage_bytes": 370442735976,
   "storage_human": "370.4 GB",
+  "context_length": 262144,
   "base_model": "skt/A.X-K2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

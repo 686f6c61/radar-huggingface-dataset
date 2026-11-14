@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "faxenoff/code-daemon-ner-v1",
   "slug": "faxenoff-code-daemon-ner-v1",
   "author": "faxenoff",
@@ -40,6 +40,7 @@
   "parameters_human": "117.5M",
   "storage_bytes": 8375248192,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "nreimers/mMiniLMv2-L12-H384-distilled-from-XLMR-Large",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

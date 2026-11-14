@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stanfordnlp/corenlp-english-extra",
   "slug": "stanfordnlp-corenlp-english-extra",
   "author": "stanfordnlp",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 889470480,
   "storage_human": "889 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound",
   "slug": "azampatti-qwen3-8-flash-next-125b-a5b-int4-autoround",
   "author": "azampatti",
@@ -36,14 +36,19 @@
   "parameters_human": "123.96B",
   "storage_bytes": 130836754245,
   "storage_human": "130.8 GB",
+  "context_length": null,
   "base_model": "Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

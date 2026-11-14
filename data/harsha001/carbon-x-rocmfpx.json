@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/Carbon-X-ROCmFPX",
   "slug": "harsha001-carbon-x-rocmfpx",
   "author": "Harsha001",
@@ -42,14 +42,19 @@
   "parameters_human": "14.82B",
   "storage_bytes": 44993689984,
   "storage_human": "45.0 GB",
+  "context_length": 40960,
   "base_model": "HuggingFaceBio/Carbon-X",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

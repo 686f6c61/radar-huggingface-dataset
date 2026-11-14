@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isolate/Qwen3-8B-Base-4bit",
   "slug": "isolate-qwen3-8b-base-4bit",
   "author": "isolate",
@@ -30,6 +30,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4363306866,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

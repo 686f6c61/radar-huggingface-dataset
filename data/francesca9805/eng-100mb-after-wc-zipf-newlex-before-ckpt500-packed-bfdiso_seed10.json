@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/eng-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
   "slug": "francesca9805-eng-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 7488274175,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "francesca9805/ppt-wc-zipf-newlex-eng-before-100mb-packed-bfdiso_seed10",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

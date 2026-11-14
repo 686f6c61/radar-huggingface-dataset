@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quanda-bench-test/fd1961d-default_LDS_lds_subset_1",
   "slug": "quanda-bench-test-fd1961d-default_lds_lds_subset_1",
   "author": "quanda-bench-test",
@@ -25,14 +25,19 @@
   "parameters_human": "44426",
   "storage_bytes": 356896,
   "storage_human": "356896 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

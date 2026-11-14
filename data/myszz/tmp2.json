@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myszz/tmp2",
   "slug": "myszz-tmp2",
   "author": "Myszz",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 483881640,
   "storage_human": "484 MB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T02:52:19.792Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

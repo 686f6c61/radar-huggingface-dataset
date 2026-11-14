@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "armanakbari4/imagewam-ur3-ethernet",
   "slug": "armanakbari4-imagewam-ur3-ethernet",
   "author": "armanakbari4",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 27106617963,
   "storage_human": "27.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

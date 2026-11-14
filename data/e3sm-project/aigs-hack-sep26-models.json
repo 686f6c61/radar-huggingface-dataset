@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "E3SM-Project/aigs-hack-sep26-models",
   "slug": "e3sm-project-aigs-hack-sep26-models",
   "author": "E3SM-Project",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2555052049,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mahf708/aigs-hack-sep26-models",
+  "renamed_at": "2026-11-13T02:48:26.599Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "disasters/GLM-5.3-Flash-ABLITERATED-Colibri-INT4-gs64",
   "slug": "disasters-glm-5-3-flash-abliterated-colibri-int4-gs64",
   "author": "disasters",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 194747552698,
   "storage_human": "194.7 GB",
+  "context_length": null,
   "base_model": "dealignai/GLM-5.3-Flash-ABLITERATED-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mrunmayp/qwen25-3b-acereason-random15k-s2",
   "slug": "mrunmayp-qwen25-3b-acereason-random15k-s2",
   "author": "Mrunmayp",
@@ -34,14 +34,19 @@
   "parameters_human": "241664",
   "storage_bytes": 6183356696,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

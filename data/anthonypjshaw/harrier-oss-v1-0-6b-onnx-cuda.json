@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anthonypjshaw/harrier-oss-v1-0.6b-onnx-cuda",
   "slug": "anthonypjshaw-harrier-oss-v1-0-6b-onnx-cuda",
   "author": "anthonypjshaw",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2412533149,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "microsoft/harrier-oss-v1-0.6b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

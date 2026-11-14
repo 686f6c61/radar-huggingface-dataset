@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moreh/gpt-oss-120b-TT-BLOCKFP4",
   "slug": "moreh-gpt-oss-120b-tt-blockfp4",
   "author": "moreh",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "openai/gpt-oss-120b",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T07:16:15.249Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aoiandroid/cription-agent-models",
   "slug": "aoiandroid-cription-agent-models",
   "author": "aoiandroid",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 868843520,
   "storage_human": "869 MB",
+  "context_length": null,
   "base_model": "litert-community/functiongemma-mobile-actions_q8_ekv1024.litertlm, litert-community/Gemma3-1B-IT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

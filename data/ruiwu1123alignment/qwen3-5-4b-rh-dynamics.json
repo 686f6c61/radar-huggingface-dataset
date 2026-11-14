@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RuiWu1123Alignment/Qwen3.5-4B-rh-dynamics",
   "slug": "ruiwu1123alignment-qwen3-5-4b-rh-dynamics",
   "author": "RuiWu1123Alignment",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3902649141,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

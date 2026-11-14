@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Ministral-3-3B-Reasoning-2512",
   "slug": "litert-community-ministral-3-3b-reasoning-2512",
   "author": "litert-community",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 14045007792,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-3B-Reasoning-2512",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yoshinari1209/smolvla_so101_pick_place",
   "slug": "yoshinari1209-smolvla_so101_pick_place",
   "author": "yoshinari1209",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 6596944512,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

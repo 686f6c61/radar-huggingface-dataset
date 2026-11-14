@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ame33/Gemma-4-Novelist-Eclipse-31B",
   "slug": "ame33-gemma-4-novelist-eclipse-31b",
   "author": "Ame33",
@@ -44,14 +44,19 @@
   "parameters_human": "32.68B",
   "storage_bytes": 65397078474,
   "storage_human": "65.4 GB",
+  "context_length": null,
   "base_model": "nbeerbower/Gemma4-Gutenberg-31B, bgg1996/Melinoe-Gemma4-31B-VL, BirdToast/Gemma-4-31B-glimmer-rp-v0.1, ConicCat/Gemma4-GarnetV2-31B, Jackrong/Gemopus-4-31B-it, Gryphe/Gemma-4-31B-StyleTune",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

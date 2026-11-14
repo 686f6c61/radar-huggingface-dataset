@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0arch-io/kisoku-1.6b-preview-GGUF",
   "slug": "0arch-io-kisoku-1-6b-preview-gguf",
   "author": "0arch-io",
@@ -36,14 +36,19 @@
   "parameters_human": "1.60B",
   "storage_bytes": 5940710368,
   "storage_human": "5.9 GB",
+  "context_length": 4096,
   "base_model": "0arch-io/kisoku-1.6b-preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

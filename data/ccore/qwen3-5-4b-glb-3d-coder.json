@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ccore/Qwen3.5-4B-GLB-3D-Coder",
   "slug": "ccore-qwen3-5-4b-glb-3d-coder",
   "author": "ccore",
@@ -32,13 +32,14 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 426,
+  "likes": 427,
   "downloads_30d": 54494,
-  "trending_score": 150,
+  "trending_score": 139,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
   "storage_bytes": 46972393942,
   "storage_human": "47.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

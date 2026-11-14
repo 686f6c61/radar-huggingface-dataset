@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiminaa/Llama-3.1-8B-Instruct-PII-LoRA",
   "slug": "jiminaa-llama-3-1-8b-instruct-pii-lora",
   "author": "jiminaa",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1192389376,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

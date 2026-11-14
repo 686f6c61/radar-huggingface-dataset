@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slideflow-labs/mettle-1.5",
   "slug": "slideflow-labs-mettle-1-5",
   "author": "slideflow-labs",
@@ -31,14 +31,19 @@
   "parameters_human": "1.14B",
   "storage_bytes": 4545473592,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "bioptimus/H-optimus-0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

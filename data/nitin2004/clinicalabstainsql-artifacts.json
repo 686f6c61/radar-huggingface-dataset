@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nitin2004/clinicalabstainsql-artifacts",
   "slug": "nitin2004-clinicalabstainsql-artifacts",
   "author": "Nitin2004",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 6462184062,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

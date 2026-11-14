@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amarsadan/X-YEMEN-V9",
   "slug": "amarsadan-x-yemen-v9",
   "author": "amarsadan",
@@ -35,14 +35,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 19326293325,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

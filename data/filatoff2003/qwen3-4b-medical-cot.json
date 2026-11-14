@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Filatoff2003/Qwen3-4B-Medical-COT",
+  "slug": "filatoff2003-qwen3-4b-medical-cot",
+  "author": "Filatoff2003",
+  "url": "https://huggingface.co/Filatoff2003/Qwen3-4B-Medical-COT",
+  "created_at": "2026-11-14T14:56:26.000Z",
+  "updated_at": "2026-11-14T14:56:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laskar-ks/smollm2-135m-trivia",
   "slug": "laskar-ks-smollm2-135m-trivia",
   "author": "laskar-ks",
@@ -35,6 +35,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 682901416,
   "storage_human": "683 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

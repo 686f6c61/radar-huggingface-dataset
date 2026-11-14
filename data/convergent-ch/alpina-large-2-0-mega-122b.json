@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Convergent-ch/Alpina-Large-2.0-Mega-122B",
   "slug": "convergent-ch-alpina-large-2-0-mega-122b",
   "author": "Convergent-ch",
@@ -37,14 +37,19 @@
   "parameters_human": "125.09B",
   "storage_bytes": 250290459245,
   "storage_human": "250.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-ai/BiRefNet-MLX",
   "slug": "moonbox-ai-birefnet-mlx",
   "author": "moonbox-ai",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 1508496796,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "ZhengPeng7/BiRefNet",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "moonbox-dev/BiRefNet-MLX",
+  "renamed_at": "2026-11-13T06:47:13.309Z",
   "benchmarks": [],
   "sources": []
 }

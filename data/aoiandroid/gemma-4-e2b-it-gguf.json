@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aoiandroid/gemma-4-E2B-it-GGUF",
   "slug": "aoiandroid-gemma-4-e2b-it-gguf",
   "author": "aoiandroid",
@@ -32,14 +32,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 80672364096,
   "storage_human": "80.7 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Travor278/pi05-piperx-put-cube-in-drawer-87ep-20k",
   "slug": "travor278-pi05-piperx-put-cube-in-drawer-87ep-20k",
   "author": "Travor278",
@@ -23,14 +23,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 16573762504,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

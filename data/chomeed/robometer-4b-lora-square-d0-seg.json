@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chomeed/robometer-4b-lora-square-d0-seg",
   "slug": "chomeed-robometer-4b-lora-square-d0-seg",
   "author": "chomeed",
@@ -33,14 +33,19 @@
   "parameters_human": "4.51B",
   "storage_bytes": 9442462249,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

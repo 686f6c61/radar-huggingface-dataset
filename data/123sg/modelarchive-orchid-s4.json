@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "123sg/ModelArchive-Orchid-s4",
   "slug": "123sg-modelarchive-orchid-s4",
   "author": "123sg",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 73,
   "storage_human": "73 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T02:11:13.996Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

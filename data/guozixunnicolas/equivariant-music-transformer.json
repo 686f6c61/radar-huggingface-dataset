@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guozixunnicolas/Equivariant-Music-Transformer",
   "slug": "guozixunnicolas-equivariant-music-transformer",
   "author": "guozixunnicolas",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 5586868915,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

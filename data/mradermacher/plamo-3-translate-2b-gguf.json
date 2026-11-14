@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/plamo-3-translate-2b-GGUF",
   "slug": "mradermacher-plamo-3-translate-2b-gguf",
   "author": "mradermacher",
@@ -84,14 +84,19 @@
   "parameters_human": "2.88B",
   "storage_bytes": 26156405120,
   "storage_human": "26.2 GB",
+  "context_length": 262144,
   "base_model": "pfnet/plamo-3-translate-2b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

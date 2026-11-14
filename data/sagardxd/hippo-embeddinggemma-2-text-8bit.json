@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sagardxd/hippo-embeddinggemma-2-text-8bit",
   "slug": "sagardxd-hippo-embeddinggemma-2-text-8bit",
   "author": "Sagardxd",
@@ -31,6 +31,7 @@
   "parameters_human": "271.0M",
   "storage_bytes": 324975323,
   "storage_human": "325 MB",
+  "context_length": null,
   "base_model": "mlx-community/embeddinggemma-2-8bit",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

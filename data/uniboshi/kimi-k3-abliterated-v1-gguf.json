@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Uniboshi/Kimi-K3-Abliterated-V1-GGUF",
   "slug": "uniboshi-kimi-k3-abliterated-v1-gguf",
   "author": "Uniboshi",
@@ -32,14 +32,19 @@
   "parameters_human": "2779.48B",
   "storage_bytes": 2067147524096,
   "storage_human": "2067.1 GB",
+  "context_length": 1048576,
   "base_model": "Uniboshi/Kimi-K3-Abliterated-V1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

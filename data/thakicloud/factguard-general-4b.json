@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/FactGuard-General-4B",
   "slug": "thakicloud-factguard-general-4b",
   "author": "ThakiCloud",
@@ -41,14 +41,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9332636142,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:24:52.330Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sorryhyun/paddleocr-vl-1.6-manga-lora",
   "slug": "sorryhyun-paddleocr-vl-1-6-manga-lora",
   "author": "sorryhyun",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 5341467336,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Raviteja546/reasoning-rlvr-grpo",
   "slug": "raviteja546-reasoning-rlvr-grpo",
   "author": "Raviteja546",
@@ -33,14 +33,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 34423137775,
   "storage_human": "34.4 GB",
+  "context_length": null,
   "base_model": "Raviteja546/reasoning-rlvr-rft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

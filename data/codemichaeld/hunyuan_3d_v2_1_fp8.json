@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codemichaeld/hunyuan_3d_v2_1_fp8",
   "slug": "codemichaeld-hunyuan_3d_v2_1_fp8",
   "author": "codemichaeld",
@@ -25,6 +25,7 @@
   "parameters_human": null,
   "storage_bytes": 3683075921,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

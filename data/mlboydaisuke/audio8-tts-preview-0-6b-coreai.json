@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/Audio8-TTS-Preview-0.6b-CoreAI",
   "slug": "mlboydaisuke-audio8-tts-preview-0-6b-coreai",
   "author": "mlboydaisuke",
@@ -61,12 +61,17 @@
   "parameters_human": null,
   "storage_bytes": 1565609312,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-TTS-Preview-0.6b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

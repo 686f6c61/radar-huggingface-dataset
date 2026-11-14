@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
   "slug": "dealignai-nanbeige4-3-33b-uncensored-gguf",
   "author": "dealignai",
@@ -44,14 +44,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 56552195168,
   "storage_human": "56.6 GB",
+  "context_length": 524288,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

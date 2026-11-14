@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ravivarmapatturi/vayyuedge-opus-mt-en-dra-onnx",
   "slug": "ravivarmapatturi-vayyuedge-opus-mt-en-dra-onnx",
   "author": "ravivarmapatturi",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 414245971,
   "storage_human": "414 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-en-dra",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openeurollm/datamix-0.7b-Toucan-1.5M-100bt",
   "slug": "openeurollm-datamix-0-7b-toucan-1-5m-100bt",
   "author": "openeurollm",
@@ -28,14 +28,19 @@
   "parameters_human": "708.9M",
   "storage_bytes": 17056802645,
   "storage_human": "17.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

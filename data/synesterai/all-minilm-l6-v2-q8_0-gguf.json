@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "synesterai/all-minilm-l6-v2-q8_0.gguf",
   "slug": "synesterai-all-minilm-l6-v2-q8_0-gguf",
   "author": "synesterai",
@@ -25,14 +25,19 @@
   "parameters_human": "22.6M",
   "storage_bytes": 25280160,
   "storage_human": "25 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

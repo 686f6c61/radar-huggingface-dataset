@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled",
   "slug": "bunnycore-lmf-2-5-2-6b-qwen3-8-distilled",
   "author": "bunnycore",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 22630558,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

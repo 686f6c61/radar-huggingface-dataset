@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
   "slug": "ista-daslab-qwen3-8-27b-gsq-rco-gguf",
   "author": "ISTA-DASLab",
@@ -31,21 +31,26 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 2823,
+  "likes": 2827,
   "downloads_30d": 1353284,
-  "trending_score": 174,
+  "trending_score": 172,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
   "storage_bytes": 81449288709,
   "storage_human": "81.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

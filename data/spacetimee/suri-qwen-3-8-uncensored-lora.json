@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SpaceTimee/Suri-Qwen-3.8-Uncensored-LoRA",
   "slug": "spacetimee-suri-qwen-3-8-uncensored-lora",
   "author": "SpaceTimee",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 138450592,
   "storage_human": "138 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:21:54.389Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

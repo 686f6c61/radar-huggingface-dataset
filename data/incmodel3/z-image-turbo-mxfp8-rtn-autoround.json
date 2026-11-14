@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel3/Z-Image-Turbo-MXFP8-RTN-AutoRound",
   "slug": "incmodel3-z-image-turbo-mxfp8-rtn-autoround",
   "author": "INCModel3",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 29243880976,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "intel-ai/Z-Image-Turbo-MXFP8-AutoRound",
+  "renamed_at": "2026-11-11T02:55:43.332Z",
   "benchmarks": [],
   "sources": [
     {

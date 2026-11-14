@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuxrAIjuicy/Jw3_LUMI_JUICE_STARTER",
   "slug": "luxraijuicy-jw3_lumi_juice_starter",
   "author": "LuxrAIjuicy",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 57594566,
   "storage_human": "58 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

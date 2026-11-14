@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Mage-VL-Cowork-cmf",
   "slug": "infosave-mage-vl-cowork-cmf",
   "author": "infosave",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 8073705340,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "microsoft/Mage-VL-Cowork",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

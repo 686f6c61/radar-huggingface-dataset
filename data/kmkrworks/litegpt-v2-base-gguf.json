@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kmkrworks/LiteGPT-V2-Base-GGUF",
   "slug": "kmkrworks-litegpt-v2-base-gguf",
   "author": "kmkrworks",
@@ -34,14 +34,19 @@
   "parameters_human": "201.4M",
   "storage_bytes": 746739552,
   "storage_human": "747 MB",
+  "context_length": 4096,
   "base_model": "kmkrworks/LiteGPT-V2-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

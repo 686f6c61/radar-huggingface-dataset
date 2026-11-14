@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Loswen/Qwen3.6-35B-A3B-uncensored-heretic-IQ2_M",
   "slug": "loswen-qwen3-6-35b-a3b-uncensored-heretic-iq2_m",
   "author": "Loswen",
@@ -38,14 +38,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 24600157472,
   "storage_human": "24.6 GB",
+  "context_length": 262144,
   "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

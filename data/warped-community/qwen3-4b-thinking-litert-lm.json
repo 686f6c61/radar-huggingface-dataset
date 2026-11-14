@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "warped-community/Qwen3-4B-Thinking-litert-lm",
   "slug": "warped-community-qwen3-4b-thinking-litert-lm",
   "author": "warped-community",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 2274193168,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Thinking-2507",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

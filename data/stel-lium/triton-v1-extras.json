@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "STEL-LIUM/Triton-v1-Extras",
   "slug": "stel-lium-triton-v1-extras",
   "author": "STEL-LIUM",
@@ -32,14 +32,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 21656148132,
   "storage_human": "21.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B, Qwen/Qwen3.5-9B, Qwen/Qwen3Guard-Gen-0.6B, Qwen/Qwen3-Embedding-0.6B, Qwen/Qwen3-4B-Instruct-2507, Tongyi-MAI/Z-Image-Turbo, black-forest-labs/FLUX.1-schnell",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

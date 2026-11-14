@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxNova-12B-Agent",
   "slug": "thox-ai-thoxnova-12b-agent",
   "author": "Thox-ai",
@@ -43,6 +43,7 @@
   "parameters_human": "11.91B",
   "storage_bytes": 16093056012,
   "storage_human": "16.1 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-12b-it",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

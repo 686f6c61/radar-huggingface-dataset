@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "femboysLover/anima-looped-test-diffusion-blocks-idx-0",
   "slug": "femboyslover-anima-looped-test-diffusion-blocks-idx-0",
   "author": "femboysLover",
@@ -22,14 +22,19 @@
   "parameters_human": "2.09B",
   "storage_bytes": 708293077234,
   "storage_human": "708.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

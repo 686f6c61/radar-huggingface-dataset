@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kashif786/electra-base-discriminator-sindhi-wordpiece",
   "slug": "kashif786-electra-base-discriminator-sindhi-wordpiece",
   "author": "Kashif786",
@@ -27,14 +27,19 @@
   "parameters_human": "124.0M",
   "storage_bytes": 495956428,
   "storage_human": "496 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

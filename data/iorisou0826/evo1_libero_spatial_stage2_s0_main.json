@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IoriSou0826/evo1_libero_spatial_stage2_s0_main",
   "slug": "iorisou0826-evo1_libero_spatial_stage2_s0_main",
   "author": "IoriSou0826",
@@ -22,14 +22,19 @@
   "parameters_human": "776.1M",
   "storage_bytes": 1798331008,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

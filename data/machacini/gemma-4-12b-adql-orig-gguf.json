@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Machacini/gemma-4-12b-adql-orig-GGUF",
   "slug": "machacini-gemma-4-12b-adql-orig-gguf",
   "author": "Machacini",
@@ -35,14 +35,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 23832066144,
   "storage_human": "23.8 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

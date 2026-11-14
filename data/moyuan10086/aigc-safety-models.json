@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moyuan10086/aigc-safety-models",
   "slug": "moyuan10086-aigc-safety-models",
   "author": "moyuan10086",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 1077681904,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

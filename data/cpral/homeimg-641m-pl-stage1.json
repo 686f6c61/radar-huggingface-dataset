@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cpral/HomeIMG-641M-PL-stage1",
   "slug": "cpral-homeimg-641m-pl-stage1",
   "author": "cpral",
@@ -41,6 +41,7 @@
   "parameters_human": "641.1M",
   "storage_bytes": 7737834708,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "cpral/Poziomka-Baza-2026-09-05",
   "formats": [
     "diffusers",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cpral/HomeIMG-641M-PL-EN-stage1",
+  "renamed_at": "2026-11-11T04:51:52.973Z",
   "benchmarks": [],
   "sources": []
 }

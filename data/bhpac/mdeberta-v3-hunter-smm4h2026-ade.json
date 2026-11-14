@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bhpac/mdeberta-v3-hunter-smm4h2026-ade",
   "slug": "bhpac-mdeberta-v3-hunter-smm4h2026-ade",
   "author": "bhpac",
@@ -49,14 +49,19 @@
   "parameters_human": "278.8M",
   "storage_bytes": 1135924242,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "microsoft/mdeberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

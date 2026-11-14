@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anbeeld/LFM2.5-1.2B-Instruct-DSpark-GGUF",
   "slug": "anbeeld-lfm2-5-1-2b-instruct-dspark-gguf",
   "author": "Anbeeld",
@@ -37,6 +37,7 @@
   "parameters_human": "295.7M",
   "storage_bytes": 1791775680,
   "storage_human": "1.8 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct-DSpark",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

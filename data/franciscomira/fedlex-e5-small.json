@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "franciscomira/fedlex-e5-small",
   "slug": "franciscomira-fedlex-e5-small",
   "author": "franciscomira",
@@ -46,6 +46,7 @@
   "parameters_human": "117.7M",
   "storage_bytes": 605804865,
   "storage_human": "606 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "onnx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roskosmos19/Dolphin-4B-Thinking-1209",
   "slug": "roskosmos19-dolphin-4b-thinking-1209",
   "author": "roskosmos19",
@@ -22,14 +22,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404654,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:13:38.453Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

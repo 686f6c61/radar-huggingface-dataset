@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yashmoar/Qwen2.5-3B-SFT-random-15k",
   "slug": "yashmoar-qwen2-5-3b-sft-random-15k",
   "author": "yashmoar",
@@ -27,14 +27,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6794264881,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

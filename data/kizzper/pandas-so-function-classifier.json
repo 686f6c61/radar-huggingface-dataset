@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KIZZPER/pandas-so-function-classifier",
   "slug": "kizzper-pandas-so-function-classifier",
   "author": "KIZZPER",
@@ -34,14 +34,19 @@
   "parameters_human": "82.6M",
   "storage_bytes": 330611644,
   "storage_human": "331 MB",
+  "context_length": null,
   "base_model": "distilroberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

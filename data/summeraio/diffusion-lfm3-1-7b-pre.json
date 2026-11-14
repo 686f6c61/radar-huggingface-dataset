@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "summerAIO/Diffusion-LFM3-1.7B-pre",
   "slug": "summeraio-diffusion-lfm3-1-7b-pre",
   "author": "summerAIO",
@@ -34,14 +34,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 6908881959,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

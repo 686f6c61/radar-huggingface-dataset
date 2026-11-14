@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/clef-flash-W4A16-AutoRound",
   "slug": "vishva007-clef-flash-w4a16-autoround",
   "author": "Vishva007",
@@ -41,14 +41,19 @@
   "parameters_human": "2.49B",
   "storage_bytes": 9246064363,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T05:19:44.371Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

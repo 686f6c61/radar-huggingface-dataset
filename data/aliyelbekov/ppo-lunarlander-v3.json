@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aliyelbekov/ppo-LunarLander-v3",
   "slug": "aliyelbekov-ppo-lunarlander-v3",
   "author": "aliyelbekov",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 776561,
   "storage_human": "776561 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

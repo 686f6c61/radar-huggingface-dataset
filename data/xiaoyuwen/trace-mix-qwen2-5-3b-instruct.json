@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XiaoyuWen/TRACE-Mix-Qwen2.5-3B-Instruct",
   "slug": "xiaoyuwen-trace-mix-qwen2-5-3b-instruct",
   "author": "XiaoyuWen",
@@ -43,14 +43,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 6805678896,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

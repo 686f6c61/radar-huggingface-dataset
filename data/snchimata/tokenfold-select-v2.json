@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snchimata/tokenfold-select-v2",
   "slug": "snchimata-tokenfold-select-v2",
   "author": "snchimata",
@@ -36,6 +36,7 @@
   "parameters_human": "98.9M",
   "storage_bytes": 791787722,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-embedding-reranker-english-r2",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

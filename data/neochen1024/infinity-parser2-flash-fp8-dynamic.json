@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NeoChen1024/Infinity-Parser2-Flash-FP8-dynamic",
   "slug": "neochen1024-infinity-parser2-flash-fp8-dynamic",
   "author": "NeoChen1024",
@@ -53,14 +53,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 3453285327,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "infly/Infinity-Parser2-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

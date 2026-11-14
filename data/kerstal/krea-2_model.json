@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kerstal/krea-2_model",
   "slug": "kerstal-krea-2_model",
   "author": "Kerstal",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1931084660854,
   "storage_human": "1931.1 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

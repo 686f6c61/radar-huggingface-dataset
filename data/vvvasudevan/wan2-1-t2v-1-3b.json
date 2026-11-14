@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VVVASUDEVAN/Wan2.1-T2V-1.3B",
   "slug": "vvvasudevan-wan2-1-t2v-1-3b",
   "author": "VVVASUDEVAN",
@@ -33,6 +33,7 @@
   "parameters_human": "1.42B",
   "storage_bytes": 17573737962,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

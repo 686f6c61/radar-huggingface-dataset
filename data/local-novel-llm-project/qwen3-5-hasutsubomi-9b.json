@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Local-Novel-LLM-project/Qwen3.5-Hasutsubomi-9B",
   "slug": "local-novel-llm-project-qwen3-5-hasutsubomi-9b",
   "author": "Local-Novel-LLM-project",
@@ -36,14 +36,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927652351,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

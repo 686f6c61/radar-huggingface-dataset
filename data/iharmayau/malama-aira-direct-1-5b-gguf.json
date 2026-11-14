@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IhArmayau/malama-aira-direct-1.5b-gguf",
   "slug": "iharmayau-malama-aira-direct-1-5b-gguf",
   "author": "IhArmayau",
@@ -27,14 +27,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 1972096448,
   "storage_human": "2.0 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

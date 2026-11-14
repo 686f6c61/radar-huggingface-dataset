@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rabe3/stable-najdi-346",
   "slug": "rabe3-stable-najdi-346",
   "author": "Rabe3",
@@ -32,14 +32,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 9537040346,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T02:48:50.503Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

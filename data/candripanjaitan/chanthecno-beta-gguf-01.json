@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "candripanjaitan/ChanThecno-Beta-GGUF-01",
   "slug": "candripanjaitan-chanthecno-beta-gguf-01",
   "author": "candripanjaitan",
@@ -36,6 +36,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 444466918,
   "storage_human": "444 MB",
+  "context_length": 32768,
   "base_model": "unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optimum-intel-internal-testing/tiny-random-qwen-image-2.1",
   "slug": "optimum-intel-internal-testing-tiny-random-qwen-image-2-1",
   "author": "optimum-intel-internal-testing",
@@ -25,6 +25,7 @@
   "parameters_human": "46672",
   "storage_bytes": 26264618,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/supergemma4-26b-abliterated-multimodal-nvfp4",
   "slug": "aeon-7-supergemma4-26b-abliterated-multimodal-nvfp4",
   "author": "AEON-7",
@@ -90,14 +90,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 98933369822,
   "storage_human": "98.9 GB",
+  "context_length": null,
   "base_model": "Jiunsong/supergemma4-26b-abliterated-multimodal",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

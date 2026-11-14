@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Masterx/parakeet-tdt-0.6b-ultra-onnx",
   "slug": "masterx-parakeet-tdt-0-6b-ultra-onnx",
   "author": "Masterx",
@@ -84,14 +84,19 @@
   "parameters_human": null,
   "storage_bytes": 4495611318,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "moondream/parakeet-ultra",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

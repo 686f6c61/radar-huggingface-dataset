@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zytra/prism",
   "slug": "zytra-prism",
   "author": "Zytra",
@@ -40,14 +40,19 @@
   "parameters_human": "8.17B",
   "storage_bytes": 16341771384,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-guardian-3.3-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

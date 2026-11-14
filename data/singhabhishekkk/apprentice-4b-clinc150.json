@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "singhabhishekkk/apprentice-4b-clinc150",
   "slug": "singhabhishekkk-apprentice-4b-clinc150",
   "author": "singhabhishekkk",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 34065720,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

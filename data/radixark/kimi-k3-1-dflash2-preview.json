@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RadixArk/Kimi-K3.1-Dflash2-Preview",
   "slug": "radixark-kimi-k3-1-dflash2-preview",
   "author": "RadixArk",
@@ -31,14 +31,19 @@
   "parameters_human": "2.78B",
   "storage_bytes": 5569631720,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

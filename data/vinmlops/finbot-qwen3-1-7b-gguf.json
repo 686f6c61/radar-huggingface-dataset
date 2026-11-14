@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vinmlops/finbot-qwen3-1.7b-gguf",
   "slug": "vinmlops-finbot-qwen3-1-7b-gguf",
   "author": "vinmlops",
@@ -31,14 +31,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1834426464,
   "storage_human": "1.8 GB",
+  "context_length": 40960,
   "base_model": "vinmlops/finbot-qwen3-1.7b-baseline",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T09:30:37.720Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

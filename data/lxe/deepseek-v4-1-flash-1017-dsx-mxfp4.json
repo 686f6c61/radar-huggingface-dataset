@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lxe/DeepSeek-V4.1-Flash-1017-dsx-mxfp4",
   "slug": "lxe-deepseek-v4-1-flash-1017-dsx-mxfp4",
   "author": "lxe",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 270465927040,
   "storage_human": "270.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

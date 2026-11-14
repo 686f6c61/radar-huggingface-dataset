@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qq456cvb/CanonicalVoting",
   "slug": "qq456cvb-canonicalvoting",
   "author": "qq456cvb",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 1970288415,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

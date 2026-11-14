@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyelyn78/act_so101_pnp",
   "slug": "hyelyn78-act_so101_pnp",
   "author": "hyelyn78",
@@ -27,14 +27,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206714848,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T04:59:02.750Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

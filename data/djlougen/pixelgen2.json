@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DJLougen/pixelgen2",
   "slug": "djlougen-pixelgen2",
   "author": "DJLougen",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 165849,
   "storage_human": "165849 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

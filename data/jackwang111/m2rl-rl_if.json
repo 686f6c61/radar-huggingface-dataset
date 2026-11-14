@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jackwang111/M2RL-RL_IF",
   "slug": "jackwang111-m2rl-rl_if",
   "author": "Jackwang111",
@@ -24,14 +24,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404486,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

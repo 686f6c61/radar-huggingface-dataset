@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Riyan200324200324/Wan2.1-I2V-14B-480P-gguf",
   "slug": "riyan200324200324-wan2-1-i2v-14b-480p-gguf",
   "author": "Riyan200324200324",
@@ -33,14 +33,19 @@
   "parameters_human": "16.39B",
   "storage_bytes": 208761707776,
   "storage_human": "208.8 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-I2V-14B-480P",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

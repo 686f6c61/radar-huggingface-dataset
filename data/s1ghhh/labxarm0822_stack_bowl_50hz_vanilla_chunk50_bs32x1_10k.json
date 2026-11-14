@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "s1ghhh/labxarm0822_stack_bowl_50hz_vanilla_chunk50_bs32x1_10k",
   "slug": "s1ghhh-labxarm0822_stack_bowl_50hz_vanilla_chunk50_bs32x1_10k",
   "author": "s1ghhh",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 7174311273,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arkojit1/pi05_franka_haply_absjointpos",
   "slug": "arkojit1-pi05_franka_haply_absjointpos",
   "author": "arkojit1",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354068648,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T05:50:25.663Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

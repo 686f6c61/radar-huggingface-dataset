@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step484-fsdp-ckpt",
   "slug": "mskm3266-dapo-qwen3-8b-b64-clip0-28-step484-fsdp-ckpt",
   "author": "mskm3266",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 98301899149,
   "storage_human": "98.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:51:42.751Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

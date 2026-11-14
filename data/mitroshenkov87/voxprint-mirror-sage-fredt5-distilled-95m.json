@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mitroshenkov87/voxprint-mirror-sage-fredt5-distilled-95m",
   "slug": "mitroshenkov87-voxprint-mirror-sage-fredt5-distilled-95m",
   "author": "Mitroshenkov87",
@@ -28,14 +28,19 @@
   "parameters_human": "95.6M",
   "storage_bytes": 382561704,
   "storage_human": "383 MB",
+  "context_length": null,
   "base_model": "ai-forever/sage-fredt5-distilled-95m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

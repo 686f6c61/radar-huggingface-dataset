@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiankimr/qwen35-vla-libero-spatial-frozenB",
   "slug": "jiankimr-qwen35-vla-libero-spatial-frozenb",
   "author": "jiankimr",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 11397583716,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

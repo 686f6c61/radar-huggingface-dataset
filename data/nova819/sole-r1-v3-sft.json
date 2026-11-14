@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nova819/sole-r1-v3-sft",
   "slug": "nova819-sole-r1-v3-sft",
   "author": "nova819",
@@ -30,14 +30,19 @@
   "parameters_human": "770288",
   "storage_bytes": 17545762265,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

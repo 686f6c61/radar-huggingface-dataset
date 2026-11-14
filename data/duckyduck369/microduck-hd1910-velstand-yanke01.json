@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "duckyduck369/microduck-hd1910-velstand-Yanke01",
   "slug": "duckyduck369-microduck-hd1910-velstand-yanke01",
   "author": "duckyduck369",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 5113924,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "HD-1910 Microduck: walk (vx, vy, yaw) and get up after a fall, head held at HOME, trunk v3 with battery mount",

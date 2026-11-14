@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/UltraBERT-Embed-150M-CrispEmbed-GGUF",
   "slug": "cstr-ultrabert-embed-150m-crispembed-gguf",
   "author": "cstr",
@@ -33,14 +33,19 @@
   "parameters_human": "151.0M",
   "storage_bytes": 576997440,
   "storage_human": "577 MB",
+  "context_length": 32768,
   "base_model": "dmis-lab/UltraBERT-Embed-150M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

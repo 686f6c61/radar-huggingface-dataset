@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "longtermrisk/OLMo-3-7B-bad-medical-advice-second-third-sft-seed5",
   "slug": "longtermrisk-olmo-3-7b-bad-medical-advice-second-third-sft-seed5",
   "author": "longtermrisk",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "unsloth/Olmo-3-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

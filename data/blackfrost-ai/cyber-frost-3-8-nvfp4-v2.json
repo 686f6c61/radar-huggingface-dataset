@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-AI/CYBER-FROST-3.8-NVFP4-V2",
   "slug": "blackfrost-ai-cyber-frost-3-8-nvfp4-v2",
   "author": "Blackfrost-AI",
@@ -48,14 +48,19 @@
   "parameters_human": "119.60B",
   "storage_bytes": 186445841636,
   "storage_human": "186.4 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

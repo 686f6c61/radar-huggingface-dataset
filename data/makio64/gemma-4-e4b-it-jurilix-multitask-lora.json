@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Makio64/gemma-4-E4B-it-jurilix-multitask-lora",
   "slug": "makio64-gemma-4-e4b-it-jurilix-multitask-lora",
   "author": "Makio64",
@@ -24,14 +24,19 @@
   "parameters_human": "34.9M",
   "storage_bytes": 139597984,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T08:05:16.624Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

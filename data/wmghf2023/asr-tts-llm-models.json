@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wmghf2023/asr-tts-llm-models",
   "slug": "wmghf2023-asr-tts-llm-models",
   "author": "wmghf2023",
@@ -25,14 +25,19 @@
   "parameters_human": "1.41B",
   "storage_bytes": 9744309168,
   "storage_human": "9.7 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vlad-grig/opus-mt-en-de",
   "slug": "vlad-grig-opus-mt-en-de",
   "author": "vlad-grig",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 525072136,
   "storage_human": "525 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-en-de",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heykorshun/Qwen3.5-4B-MLX-4bit-text",
   "slug": "heykorshun-qwen3-5-4b-mlx-4bit-text",
   "author": "heykorshun",
@@ -36,6 +36,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 2387227872,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, mlx-community/Qwen3.5-4B-4bit",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "iktino/Qwen3.5-4B-MLX-4bit-text",
+  "renamed_at": "2026-11-11T05:33:04.527Z",
   "benchmarks": [],
   "sources": [
     {

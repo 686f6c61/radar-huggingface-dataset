@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taeri077/dama-aibrain-mlx",
   "slug": "taeri077-dama-aibrain-mlx",
   "author": "Taeri077",
@@ -36,6 +36,7 @@
   "parameters_human": "4.63B",
   "storage_bytes": 4950433799,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "Taeri077/dama-aibrain",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

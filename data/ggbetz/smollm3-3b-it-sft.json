@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggbetz/SmolLM3-3B-it-SFT",
   "slug": "ggbetz-smollm3-3b-it-sft",
   "author": "ggbetz",
@@ -27,14 +27,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 6167443827,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B-checkpoints",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

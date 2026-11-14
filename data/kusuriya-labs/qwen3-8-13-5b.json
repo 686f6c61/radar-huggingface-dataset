@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kusuriya-labs/Qwen3.8-13.5B",
   "slug": "kusuriya-labs-qwen3-8-13-5b",
   "author": "kusuriya-labs",
@@ -36,6 +36,7 @@
   "parameters_human": "14.72B",
   "storage_bytes": 67534241240,
   "storage_human": "67.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

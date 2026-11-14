@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/sarvam-1-hindi-marathi-GGUF",
   "slug": "mradermacher-sarvam-1-hindi-marathi-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "2.53B",
   "storage_bytes": 22508616448,
   "storage_human": "22.5 GB",
+  "context_length": 8192,
   "base_model": "vennyvirtuoso/sarvam-1-hindi-marathi",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

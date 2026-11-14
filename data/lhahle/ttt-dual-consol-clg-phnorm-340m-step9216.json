@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lhahle/ttt-dual-consol-clg-phnorm-340M-step9216",
   "slug": "lhahle-ttt-dual-consol-clg-phnorm-340m-step9216",
   "author": "lhahle",
@@ -23,14 +23,19 @@
   "parameters_human": "372.5M",
   "storage_bytes": 1490084880,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

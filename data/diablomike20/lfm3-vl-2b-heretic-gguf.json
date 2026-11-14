@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/LFM3-VL-2B-Heretic-GGUF",
   "slug": "diablomike20-lfm3-vl-2b-heretic-gguf",
   "author": "diablomike20",
@@ -32,14 +32,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 5336749056,
   "storage_human": "5.3 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T03:43:50.350Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

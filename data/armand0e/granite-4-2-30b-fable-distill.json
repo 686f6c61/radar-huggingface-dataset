@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "armand0e/Granite-4.2-30B-Fable-Distill",
   "slug": "armand0e-granite-4-2-30b-fable-distill",
   "author": "armand0e",
@@ -50,14 +50,19 @@
   "parameters_human": "29.28B",
   "storage_bytes": 58553607904,
   "storage_human": "58.6 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

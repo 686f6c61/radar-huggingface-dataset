@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_10000",
   "slug": "learner1119-ffw_sh5_n17_260820_left_h50_abs_vis_10000",
   "author": "learner1119",
@@ -35,14 +35,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 6910507241,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T03:22:53.314Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

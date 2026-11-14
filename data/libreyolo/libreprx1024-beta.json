@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LibreYOLO/LibrePRX1024-beta",
   "slug": "libreyolo-libreprx1024-beta",
   "author": "LibreYOLO",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 20742811511,
   "storage_human": "20.7 GB",
+  "context_length": null,
   "base_model": "Photoroom/prx-1024-t2i-beta",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

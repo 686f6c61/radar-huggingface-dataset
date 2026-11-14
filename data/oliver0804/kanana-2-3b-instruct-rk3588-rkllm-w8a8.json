@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oliver0804/Kanana-2-3B-Instruct-RK3588-rkllm-w8a8",
   "slug": "oliver0804-kanana-2-3b-instruct-rk3588-rkllm-w8a8",
   "author": "oliver0804",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 3878485612,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-2-3b-instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

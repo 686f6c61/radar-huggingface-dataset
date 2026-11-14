@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated-GGUF",
   "slug": "davidau-qwen3-the-xiaolong-josiefied-omega-directive-22b-uncensored-abliterated-gguf",
   "author": "DavidAU",
@@ -63,14 +63,19 @@
   "parameters_human": "22.04B",
   "storage_bytes": 151227258804,
   "storage_human": "151.2 GB",
+  "context_length": 40960,
   "base_model": "DavidAU/Qwen3-The-Xiaolong-Josiefied-Omega-Directive-22B-uncensored-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

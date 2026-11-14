@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trohrbaugh/Inkling-Small-heretic-NVFP4",
   "slug": "trohrbaugh-inkling-small-heretic-nvfp4",
   "author": "trohrbaugh",
@@ -36,14 +36,19 @@
   "parameters_human": "156.03B",
   "storage_bytes": 170764724847,
   "storage_human": "170.8 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Inkling-Small-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

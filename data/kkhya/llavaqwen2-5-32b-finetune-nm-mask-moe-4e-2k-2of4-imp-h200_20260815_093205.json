@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KKHYA/llavaqwen2.5-32b-finetune-nm-mask-moe-4e-2k-2of4-imp-h200_20260815_093205",
   "slug": "kkhya-llavaqwen2-5-32b-finetune-nm-mask-moe-4e-2k-2of4-imp-h200_20260815_093205",
   "author": "KKHYA",
@@ -29,14 +29,19 @@
   "parameters_human": "87.46B",
   "storage_bytes": 174920290056,
   "storage_human": "174.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

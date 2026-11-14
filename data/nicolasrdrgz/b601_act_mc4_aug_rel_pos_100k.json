@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nicolasrdrgz/b601_act_mc4_aug_rel_pos_100k",
   "slug": "nicolasrdrgz-b601_act_mc4_aug_rel_pos_100k",
   "author": "Nicolasrdrgz",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206723236,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

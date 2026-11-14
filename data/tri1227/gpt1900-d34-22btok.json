@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tri1227/gpt1900-d34-22btok",
   "slug": "tri1227-gpt1900-d34-22btok",
   "author": "Tri1227",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 59250785087,
   "storage_human": "59.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

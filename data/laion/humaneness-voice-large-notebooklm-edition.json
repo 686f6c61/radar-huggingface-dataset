@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laion/Humaneness-Voice-Large-NotebookLM-Edition",
   "slug": "laion-humaneness-voice-large-notebooklm-edition",
   "author": "laion",
@@ -42,14 +42,19 @@
   "parameters_human": "4.13B",
   "storage_bytes": 8477124130,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "laion/Humaneness-Voice-Large-1.3-Alpha",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noumenon-labs/Firebird-ModernBERT-512-RW",
   "slug": "noumenon-labs-firebird-modernbert-512-rw",
   "author": "noumenon-labs",
@@ -35,14 +35,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 299232293,
   "storage_human": "299 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "noumenon-labs/Firebird-RW",
+  "renamed_at": "2026-11-14T07:54:26.115Z",
   "benchmarks": [],
   "sources": [
     {

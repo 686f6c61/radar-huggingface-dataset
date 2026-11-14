@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GermannM/Kenga-ZLM",
   "slug": "germannm-kenga-zlm",
   "author": "GermannM",
@@ -40,6 +40,7 @@
   "parameters_human": "91.2M",
   "storage_bytes": 809109817,
   "storage_human": "809 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

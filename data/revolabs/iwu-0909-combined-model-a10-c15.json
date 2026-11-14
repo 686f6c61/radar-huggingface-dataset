@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Revolabs/iwu-0909-combined-model-a10-c15",
   "slug": "revolabs-iwu-0909-combined-model-a10-c15",
   "author": "Revolabs",
@@ -27,14 +27,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 3095742768,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:15:53.118Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

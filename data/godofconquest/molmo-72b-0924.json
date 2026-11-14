@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "godofconquest/Molmo-72B-0924",
   "slug": "godofconquest-molmo-72b-0924",
   "author": "godofconquest",
@@ -38,14 +38,19 @@
   "parameters_human": "73.31B",
   "storage_bytes": 293233270552,
   "storage_human": "293.2 GB",
+  "context_length": null,
   "base_model": "openai/clip-vit-large-patch14-336, Qwen/Qwen2-72B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

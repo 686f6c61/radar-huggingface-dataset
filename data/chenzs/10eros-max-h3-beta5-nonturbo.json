@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenzs/10Eros-Max-H3-beta5-NonTurbo",
   "slug": "chenzs-10eros-max-h3-beta5-nonturbo",
   "author": "chenzs",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 40222982192,
   "storage_human": "40.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

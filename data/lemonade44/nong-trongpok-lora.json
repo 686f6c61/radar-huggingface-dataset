@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lemonade44/nong-trongpok-lora",
   "slug": "lemonade44-nong-trongpok-lora",
   "author": "Lemonade44",
@@ -34,6 +34,7 @@
   "parameters_human": "16.5M",
   "storage_bytes": 110614734,
   "storage_human": "111 MB",
+  "context_length": null,
   "base_model": "scb10x/typhoon2.5-qwen3-4b",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

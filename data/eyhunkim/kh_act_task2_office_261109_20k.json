@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EYHUNKIM/KH_act_Task2_office_261109_20k",
   "slug": "eyhunkim-kh_act_task2_office_261109_20k",
   "author": "EYHUNKIM",
@@ -26,14 +26,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206836432,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T02:48:44.361Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

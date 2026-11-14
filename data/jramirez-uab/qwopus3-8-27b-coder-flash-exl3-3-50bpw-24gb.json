@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JRamirez-UAB/Qwopus3.8-27B-Coder-Flash-EXL3-3.50bpw-24GB",
   "slug": "jramirez-uab-qwopus3-8-27b-coder-flash-exl3-3-50bpw-24gb",
   "author": "JRamirez-UAB",
@@ -50,14 +50,19 @@
   "parameters_human": "7.49B",
   "storage_bytes": 15009115419,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mvbalaji/od1-nano-v2-lite",
   "slug": "mvbalaji-od1-nano-v2-lite",
   "author": "mvbalaji",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1036744663,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:37:47.309Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

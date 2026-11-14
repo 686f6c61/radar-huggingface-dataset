@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/GR00T-N1.7-SimplerEnv-Bridge",
   "slug": "nvidia-gr00t-n1-7-simplerenv-bridge",
   "author": "nvidia",
@@ -26,14 +26,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 35711722209,
   "storage_human": "35.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

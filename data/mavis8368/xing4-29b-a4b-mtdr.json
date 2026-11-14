@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mavis8368/Xing4-29B-A4B-MTDR",
   "slug": "mavis8368-xing4-29b-a4b-mtdr",
   "author": "mavis8368",
@@ -39,14 +39,19 @@
   "parameters_human": "31.22B",
   "storage_bytes": 62433323694,
   "storage_human": "62.4 GB",
+  "context_length": null,
   "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mavis8368/Xing4.0-29B-A4B-MTDR",
+  "renamed_at": "2026-11-11T06:15:08.302Z",
   "benchmarks": [],
   "sources": [
     {

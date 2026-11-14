@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "codebucketsolutions/snac-24khz-onnx",
+  "slug": "codebucketsolutions-snac-24khz-onnx",
+  "author": "codebucketsolutions",
+  "url": "https://huggingface.co/codebucketsolutions/snac-24khz-onnx",
+  "created_at": "2026-11-14T12:22:53.000Z",
+  "updated_at": "2026-11-14T12:22:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78950621,
+  "storage_human": "79 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

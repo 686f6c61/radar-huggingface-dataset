@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IanHHH698/gr00t_task1_UM1_2_epi_200_step_20000_batch_32",
   "slug": "ianhhh698-gr00t_task1_um1_2_epi_200_step_20000_batch_32",
   "author": "IanHHH698",
@@ -27,14 +27,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 6964817440,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

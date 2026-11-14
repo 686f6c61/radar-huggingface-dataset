@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NovaCorp/SEX_ROLEPLAY.v4-3.2-1B",
   "slug": "novacorp-sex_roleplay-v4-3-2-1b",
   "author": "NovaCorp",
@@ -71,6 +71,7 @@
   "parameters_human": "1.50B",
   "storage_bytes": 3016404720,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "Nexesenex/Llama_3.2_1b_RandomLego_RP_R1_0.1, UmbrellaInc/Prototype-Virus.FINAL-3.2-1B, bunnycore/FuseChat-3.2-1B-Creative-RP, jtatman/llama-3.2-1b-lewd-mental-occult",
   "formats": [
     "gguf",
@@ -78,8 +79,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cnjimmyshao/fajiezhixin-qwen3-asr-1.7b-runtime-config-v1",
   "slug": "cnjimmyshao-fajiezhixin-qwen3-asr-1-7b-runtime-config-v1",
   "author": "cnjimmyshao",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 3952236,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hassanadelani1/imolara-afriberta-mixed3",
   "slug": "hassanadelani1-imolara-afriberta-mixed3",
   "author": "Hassanadelani1",
@@ -40,6 +40,7 @@
   "parameters_human": "125.6M",
   "storage_bytes": 636709800,
   "storage_human": "637 MB",
+  "context_length": null,
   "base_model": "castorini/afriberta_large",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

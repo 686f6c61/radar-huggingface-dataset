@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Q-P1NG/qdream-models",
   "slug": "q-p1ng-qdream-models",
   "author": "Q-P1NG",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 10410498232,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "Lykon/dreamshaper-8-lcm, SG161222/Realistic_Vision_V6.0_B1_noVAE, cyberdelia/CyberRealistic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deresolution/Qwen3.8-27B-DFlash2-mxfp4",
   "slug": "deresolution-qwen3-8-27b-dflash2-mxfp4",
   "author": "deresolution",
@@ -37,6 +37,7 @@
   "parameters_human": "1.92B",
   "storage_bytes": 1022746831,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "incoai/Qwen3.8-27B-DFlash2",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

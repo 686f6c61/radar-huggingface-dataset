@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/lfm2-5-350m-rlcd-coreml",
   "slug": "fluidinference-lfm2-5-350m-rlcd-coreml",
   "author": "FluidInference",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 709562709,
   "storage_human": "710 MB",
+  "context_length": null,
   "base_model": "notnotsamuel/LFM2.5-350M-RLCD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mori-kamiyama/Orono-v1",
   "slug": "mori-kamiyama-orono-v1",
   "author": "Mori-kamiyama",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 155464422,
   "storage_human": "155 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

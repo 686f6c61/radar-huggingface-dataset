@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VinylPortfolio/Qwen3.5-2B-dm-v1-q4f32_1-MLC",
   "slug": "vinylportfolio-qwen3-5-2b-dm-v1-q4f32_1-mlc",
   "author": "VinylPortfolio",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1072123310,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

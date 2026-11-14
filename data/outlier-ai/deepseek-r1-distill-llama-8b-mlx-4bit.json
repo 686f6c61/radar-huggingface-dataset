@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/DeepSeek-R1-Distill-Llama-8B-MLX-4bit",
   "slug": "outlier-ai-deepseek-r1-distill-llama-8b-mlx-4bit",
   "author": "Outlier-Ai",
@@ -85,6 +85,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4534698185,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "mlx",
@@ -92,8 +93,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

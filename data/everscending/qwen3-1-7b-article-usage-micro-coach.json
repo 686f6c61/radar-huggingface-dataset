@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "everscending/qwen3-1.7b-article-usage-micro-coach",
   "slug": "everscending-qwen3-1-7b-article-usage-micro-coach",
   "author": "everscending",
@@ -32,6 +32,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 4420688301,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-1.7B-4bit",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

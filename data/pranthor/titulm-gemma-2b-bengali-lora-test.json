@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pranthor/titulm-gemma-2b-bengali-lora-test",
   "slug": "pranthor-titulm-gemma-2b-bengali-lora-test",
   "author": "pranthor",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 290085635,
   "storage_human": "290 MB",
+  "context_length": null,
   "base_model": "hishab/titulm-gemma-2-2b-v1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

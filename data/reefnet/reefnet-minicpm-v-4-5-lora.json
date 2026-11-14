@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReefNet/reefnet-minicpm-v-4.5-lora",
   "slug": "reefnet-reefnet-minicpm-v-4-5-lora",
   "author": "ReefNet",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 98800464,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4_5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbg0204/Corvid-Magpie-9B-gguf",
   "slug": "fbg0204-corvid-magpie-9b-gguf",
   "author": "fbg0204",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 979447,
   "storage_human": "979447 B",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

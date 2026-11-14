@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anandsmilesath/Team1_Bhel_Poori-Dataset3-Policy",
   "slug": "anandsmilesath-team1_bhel_poori-dataset3-policy",
   "author": "anandsmilesath",
@@ -22,14 +22,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206510136,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

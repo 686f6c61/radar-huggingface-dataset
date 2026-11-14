@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Terve0916/Qwen3-4B-Base-GRPO-GSM8K-LoRA",
   "slug": "terve0916-qwen3-4b-base-grpo-gsm8k-lora",
   "author": "Terve0916",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 143610542,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

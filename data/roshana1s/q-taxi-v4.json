@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roshana1s/q-Taxi-v4",
   "slug": "roshana1s-q-taxi-v4",
   "author": "roshana1s",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 283899,
   "storage_human": "283899 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

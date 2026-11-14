@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheDrainFlorist/GLM-5.3-Flash-VQ-3.1bpw",
   "slug": "thedrainflorist-glm-5-3-flash-vq-3-1bpw",
   "author": "TheDrainFlorist",
@@ -41,6 +41,7 @@
   "parameters_human": "40.40B",
   "storage_bytes": 131415189849,
   "storage_human": "131.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

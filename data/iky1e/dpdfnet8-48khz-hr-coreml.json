@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iky1e/DPDFNet8-48kHz-HR-CoreML",
   "slug": "iky1e-dpdfnet8-48khz-hr-coreml",
   "author": "iky1e",
@@ -31,14 +31,19 @@
   "parameters_human": "3.7M",
   "storage_bytes": 39145223,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

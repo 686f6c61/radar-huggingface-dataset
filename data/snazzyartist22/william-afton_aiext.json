@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SnazzyArtist22/William-Afton_AIEXT",
   "slug": "snazzyartist22-william-afton_aiext",
   "author": "SnazzyArtist22",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 88580334,
   "storage_human": "89 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

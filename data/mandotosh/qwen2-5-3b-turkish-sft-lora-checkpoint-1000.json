@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mandotosh/Qwen2.5-3B-Turkish-SFT-LoRA-checkpoint-1000",
   "slug": "mandotosh-qwen2-5-3b-turkish-sft-lora-checkpoint-1000",
   "author": "Mandotosh",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 250958267,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

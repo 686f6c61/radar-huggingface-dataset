@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "summerMC/Distillation",
   "slug": "summermc-distillation",
   "author": "summerMC",
@@ -33,14 +33,19 @@
   "parameters_human": "439.3M",
   "storage_bytes": 898662805,
   "storage_human": "899 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B, ornith-ai/Ornith-1.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:06:31.296Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

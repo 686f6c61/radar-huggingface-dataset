@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mistral-Small-24B-Instruct-Jbliterated-i1-GGUF",
   "slug": "mradermacher-mistral-small-24b-instruct-jbliterated-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 253555004544,
   "storage_human": "253.6 GB",
+  "context_length": 32768,
   "base_model": "ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "medarc/spectra-virchow-lora",
   "slug": "medarc-spectra-virchow-lora",
   "author": "medarc",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 251848944,
   "storage_human": "252 MB",
+  "context_length": null,
   "base_model": "paige-ai/Virchow",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T07:27:27.609Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sciguy429/GLM-5.3-Flash-BF16",
   "slug": "sciguy429-glm-5-3-flash-bf16",
   "author": "Sciguy429",
@@ -26,14 +26,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 1329118999387,
   "storage_human": "1329.1 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omaralshareef/beans-image-classifier",
   "slug": "omaralshareef-beans-image-classifier",
   "author": "omaralshareef",
@@ -34,14 +34,19 @@
   "parameters_human": "1.5M",
   "storage_bytes": 6154236,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": "timm/mobilenetv3_small_100.lamb_in1k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

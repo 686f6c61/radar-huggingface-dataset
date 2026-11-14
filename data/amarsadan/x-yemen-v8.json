@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amarsadan/X-YEMEN-V8",
   "slug": "amarsadan-x-yemen-v8",
   "author": "amarsadan",
@@ -35,6 +35,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16654924404,
   "storage_human": "16.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThunderHawk1080/ncons-qwen3.6-35b-a3b-infra-lora-v0.1",
   "slug": "thunderhawk1080-ncons-qwen3-6-35b-a3b-infra-lora-v0-1",
   "author": "ThunderHawk1080",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 111705030,
   "storage_human": "112 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RSingh17/goemotions-roberta-large-quiz4",
   "slug": "rsingh17-goemotions-roberta-large-quiz4",
   "author": "RSingh17",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 1425776618,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "FacebookAI/roberta-large",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

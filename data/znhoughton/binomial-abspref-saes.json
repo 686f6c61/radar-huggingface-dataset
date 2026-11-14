@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "znhoughton/binomial-abspref-saes",
   "slug": "znhoughton-binomial-abspref-saes",
   "author": "znhoughton",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4062618376,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-160m, EleutherAI/pythia-410m, EleutherAI/pythia-1.4b, znhoughton/opt-babylm-125m-20eps-seed964, znhoughton/opt-babylm-350m-20eps-seed964, znhoughton/opt-babylm-1.3B-20eps-seed964",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

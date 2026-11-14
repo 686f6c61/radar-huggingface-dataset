@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "autotrust/GLM5.3-Flash-E224-DGX-Spark",
   "slug": "autotrust-glm5-3-flash-e224-dgx-spark",
   "author": "autotrust",
@@ -45,14 +45,19 @@
   "parameters_human": "127.63B",
   "storage_bytes": 175880775611,
   "storage_human": "175.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

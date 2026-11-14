@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Albrt05/RoBERTa",
   "slug": "albrt05-roberta",
   "author": "Albrt05",
@@ -23,14 +23,19 @@
   "parameters_human": "4.4M",
   "storage_bytes": 17549312,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Albrt05/bert-tiny",
+  "renamed_at": "2026-11-11T02:14:54.770Z",
   "benchmarks": [],
   "sources": [
     {

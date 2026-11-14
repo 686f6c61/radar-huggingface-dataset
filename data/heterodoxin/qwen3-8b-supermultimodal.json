@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heterodoxin/qwen3-8b-supermultimodal",
   "slug": "heterodoxin-qwen3-8b-supermultimodal",
   "author": "heterodoxin",
@@ -30,14 +30,19 @@
   "parameters_human": "610.3M",
   "storage_bytes": 2452772250,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "heterodoxin/qwen3-0.6b-supermultimodal",
+  "renamed_at": "2026-11-11T05:33:01.354Z",
   "benchmarks": [],
   "sources": [
     {

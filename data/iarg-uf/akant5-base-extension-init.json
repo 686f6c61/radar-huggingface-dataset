@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IARG-UF/akant5-base-extension-init",
   "slug": "iarg-uf-akant5-base-extension-init",
   "author": "IARG-UF",
@@ -37,14 +37,19 @@
   "parameters_human": "651.4M",
   "storage_bytes": 2624974548,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "google/mt5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

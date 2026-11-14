@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NamanAgnih0tri/AlphaRoute-0.8B-v1.0-GGUF",
   "slug": "namanagnih0tri-alpharoute-0-8b-v1-0-gguf",
   "author": "NamanAgnih0tri",
@@ -40,14 +40,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1341139712,
   "storage_human": "1.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

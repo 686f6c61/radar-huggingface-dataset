@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/Spark-X2.6-4B-SLQ-4.50bpw",
   "slug": "hermitdave-spark-x2-6-4b-slq-4-50bpw",
   "author": "hermitdave",
@@ -32,6 +32,7 @@
   "parameters_human": "925.1M",
   "storage_bytes": 3029129448,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hermitdave/Spark-X2.6-4B-MLX-SLQ-4.50bpw",
+  "renamed_at": "2026-11-11T05:32:57.566Z",
   "benchmarks": [],
   "sources": []
 }

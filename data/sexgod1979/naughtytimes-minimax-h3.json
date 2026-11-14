@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SexGod1979/NaughtyTimes-MiniMax-H3",
   "slug": "sexgod1979-naughtytimes-minimax-h3",
   "author": "SexGod1979",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 1829428600,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

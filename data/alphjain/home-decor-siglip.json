@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlphJain/home-decor-siglip",
   "slug": "alphjain-home-decor-siglip",
   "author": "AlphJain",
@@ -23,14 +23,19 @@
   "parameters_human": "375.2M",
   "storage_bytes": 166673209069,
   "storage_human": "166.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T02:16:00.896Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

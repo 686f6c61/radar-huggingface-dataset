@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
   "slug": "qwen-qwen2-5-coder-7b-instruct-gguf",
   "author": "Qwen",
@@ -32,21 +32,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 656,
+  "likes": 657,
   "downloads_30d": 376541,
-  "trending_score": 14,
+  "trending_score": 15,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
   "storage_bytes": 100439254112,
   "storage_human": "100.4 GB",
+  "context_length": 131072,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

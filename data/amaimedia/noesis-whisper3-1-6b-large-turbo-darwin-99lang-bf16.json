@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Whisper3-1.6B-Large-Turbo-Darwin-99LANG-BF16",
   "slug": "amaimedia-noesis-whisper3-1-6b-large-turbo-darwin-99lang-bf16",
   "author": "AMAImedia",
@@ -174,14 +174,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6174263176,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3, openai/whisper-large-v3-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

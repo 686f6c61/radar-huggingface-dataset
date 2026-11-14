@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "burningfeet/backup2026-09-20-mudler-Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-GGUF",
   "slug": "burningfeet-backup2026-09-20-mudler-qwen3-6-35b-a3b-claude-4-7-opus-reasoning-distilled-apex-gguf",
   "author": "burningfeet",
@@ -37,14 +37,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 227622342368,
   "storage_human": "227.6 GB",
+  "context_length": 262144,
   "base_model": "lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

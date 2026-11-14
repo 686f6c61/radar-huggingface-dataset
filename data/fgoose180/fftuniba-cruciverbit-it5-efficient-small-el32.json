@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fgoose180/fftuniba-cruciverbit-it5-efficient-small-el32",
   "slug": "fgoose180-fftuniba-cruciverbit-it5-efficient-small-el32",
   "author": "fgoose180",
@@ -42,14 +42,19 @@
   "parameters_human": "142.3M",
   "storage_bytes": 1138772544,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "gsarti/it5-efficient-small-el32",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Cruciverb-IT Sub-task 1 (clue answering)",

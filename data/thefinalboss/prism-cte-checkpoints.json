@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thefinalboss/prism-cte-checkpoints",
   "slug": "thefinalboss-prism-cte-checkpoints",
   "author": "thefinalboss",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 8599645217,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T06:52:48.966Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akahsizrr/AIAAH-1-RL-DPO-iter0",
   "slug": "akahsizrr-aiaah-1-rl-dpo-iter0",
   "author": "Akahsizrr",
@@ -34,14 +34,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033557128,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "Akahsizrr/AIAAH-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:12:36.012Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vaibhav-vyas/Social-Spam-CatBoost",
   "slug": "vaibhav-vyas-social-spam-catboost",
   "author": "vaibhav-vyas",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 288468,
   "storage_human": "288468 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

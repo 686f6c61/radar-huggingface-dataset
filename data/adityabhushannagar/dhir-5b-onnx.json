@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adityabhushannagar/Dhir-5B-ONNX",
   "slug": "adityabhushannagar-dhir-5b-onnx",
   "author": "adityabhushannagar",
@@ -59,14 +59,19 @@
   "parameters_human": null,
   "storage_bytes": 37910425382,
   "storage_human": "37.9 GB",
+  "context_length": null,
   "base_model": "adityabhushannagar/Dhir-5B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

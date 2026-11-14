@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NadevA23/Apex-Coder-7B",
   "slug": "nadeva23-apex-coder-7b",
   "author": "NadevA23",
@@ -42,14 +42,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 29383970930,
   "storage_human": "29.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "NadevA23/Kronumos",
+  "renamed_at": "2026-11-14T03:47:42.580Z",
   "benchmarks": [],
   "sources": [
     {

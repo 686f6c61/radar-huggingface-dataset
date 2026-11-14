@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/nvidia-acemath-1.5b-full-v2-GGUF",
   "slug": "mradermacher-nvidia-acemath-1-5b-full-v2-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 14206873344,
   "storage_human": "14.2 GB",
+  "context_length": 4096,
   "base_model": "zxczxczxcz/nvidia-acemath-1.5b-full-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

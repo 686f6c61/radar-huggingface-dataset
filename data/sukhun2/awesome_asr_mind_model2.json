@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sukhun2/awesome_asr_mind_model2",
   "slug": "sukhun2-awesome_asr_mind_model2",
   "author": "sukhun2",
@@ -30,14 +30,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 755232594,
   "storage_human": "755 MB",
+  "context_length": null,
   "base_model": "sungkwan2/awesome_asr_mind_model2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:40:32.618Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

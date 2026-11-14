@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_50_1e-05",
   "slug": "drinkicedt-roberta-large_mbti_p_mbti_agg_balanced_50_1e-05",
   "author": "DrinkIcedT",
@@ -28,14 +28,19 @@
   "parameters_human": "355.4M",
   "storage_bytes": 1421500625,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

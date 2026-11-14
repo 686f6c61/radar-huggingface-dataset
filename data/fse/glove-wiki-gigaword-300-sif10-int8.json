@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fse/glove-wiki-gigaword-300-sif10-int8",
   "slug": "fse-glove-wiki-gigaword-300-sif10-int8",
   "author": "fse",
@@ -37,14 +37,19 @@
   "parameters_human": "123.8M",
   "storage_bytes": 127757762,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": "fse/glove-wiki-gigaword-300",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

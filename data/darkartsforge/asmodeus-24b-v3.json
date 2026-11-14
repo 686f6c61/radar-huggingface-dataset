@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DarkArtsForge/Asmodeus-24B-v3",
   "slug": "darkartsforge-asmodeus-24b-v3",
   "author": "DarkArtsForge",
@@ -67,14 +67,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47162009557,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "DarkArtsForge/Morbid-Miasma-24B, Naphula/Goetia-24B-v1.4, OccultAI/Doppelganger-Twist-24B, OccultAI/Ouroboros-24B-v1.4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

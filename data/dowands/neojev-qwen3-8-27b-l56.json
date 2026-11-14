@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dowands/NeoJev-Qwen3.8-27B-L56",
   "slug": "dowands-neojev-qwen3-8-27b-l56",
   "author": "dowands",
@@ -38,14 +38,19 @@
   "parameters_human": "24.31B",
   "storage_bytes": 27439122012,
   "storage_human": "27.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

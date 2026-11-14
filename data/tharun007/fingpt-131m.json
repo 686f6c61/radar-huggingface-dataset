@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tharun007/FinGPT-131M",
   "slug": "tharun007-fingpt-131m",
   "author": "Tharun007",
@@ -23,14 +23,19 @@
   "parameters_human": "131.5M",
   "storage_bytes": 1732403576,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

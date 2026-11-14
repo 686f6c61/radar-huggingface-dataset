@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Muno459/fastconformer-quran",
   "slug": "muno459-fastconformer-quran",
   "author": "Muno459",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 4340038355,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

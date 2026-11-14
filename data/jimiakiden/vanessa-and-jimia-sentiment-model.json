@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jimiakiden/Vanessa-and-Jimia-sentiment-model",
   "slug": "jimiakiden-vanessa-and-jimia-sentiment-model",
   "author": "jimiakiden",
@@ -28,14 +28,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 1606995360,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

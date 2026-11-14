@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pdnhan/whisper-medium-mobile",
   "slug": "pdnhan-whisper-medium-mobile",
   "author": "pdnhan",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 776111292,
   "storage_human": "776 MB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dollybeans/Floral_Garden",
   "slug": "dollybeans-floral_garden",
   "author": "dollybeans",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 102560773976,
   "storage_human": "102.6 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/Krea-2",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

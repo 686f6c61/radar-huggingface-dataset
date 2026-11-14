@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MinimaLabs/KLM-1.6",
   "slug": "minimalabs-klm-1-6",
   "author": "MinimaLabs",
@@ -41,21 +41,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 73,
+  "likes": 75,
   "downloads_30d": 1270,
-  "trending_score": 73,
+  "trending_score": 75,
   "parameters": 98975308,
   "parameters_human": "99.0M",
   "storage_bytes": 396104400,
   "storage_human": "396 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

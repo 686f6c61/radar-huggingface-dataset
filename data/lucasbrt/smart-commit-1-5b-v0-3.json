@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LucasBRT/smart-commit-1.5b-v0.3",
   "slug": "lucasbrt-smart-commit-1-5b-v0-3",
   "author": "LucasBRT",
@@ -39,6 +39,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 4232759324,
   "storage_human": "4.2 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LucasBRT/pionus-1.5b-v0.3",
+  "renamed_at": "2026-11-11T03:13:59.215Z",
   "benchmarks": [],
   "sources": []
 }

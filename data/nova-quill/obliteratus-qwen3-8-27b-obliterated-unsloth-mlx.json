@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nova-quill/OBLITERATUS-Qwen3.8-27B-OBLITERATED-unsloth-mlx",
   "slug": "nova-quill-obliteratus-qwen3-8-27b-obliterated-unsloth-mlx",
   "author": "nova-quill",
@@ -35,6 +35,7 @@
   "parameters_human": "3.4M",
   "storage_bytes": 40714442474,
   "storage_human": "40.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

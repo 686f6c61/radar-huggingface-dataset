@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/Qwensploit-V2-9B-CyberSecurity-Qwen3.5-GGUF",
   "slug": "xtools-at-qwensploit-v2-9b-cybersecurity-qwen3-5-gguf",
   "author": "xtools-at",
@@ -55,14 +55,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 24047091490,
   "storage_human": "24.0 GB",
+  "context_length": 1048576,
   "base_model": "xtools-at/Qwensploit-V2-9B-CyberSecurity-Qwen3.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

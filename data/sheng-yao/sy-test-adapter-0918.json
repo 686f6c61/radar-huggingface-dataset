@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sheng-yao/sy-test-adapter-0918",
   "slug": "sheng-yao-sy-test-adapter-0918",
   "author": "Sheng-yao",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 590057160,
   "storage_human": "590 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T05:57:40.950Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

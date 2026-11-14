@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taykhoom/GB.RNA-650M",
   "slug": "taykhoom-gb-rna-650m",
   "author": "Taykhoom",
@@ -29,14 +29,19 @@
   "parameters_human": "648.4M",
   "storage_bytes": 5187202072,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

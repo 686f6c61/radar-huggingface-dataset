@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dal863901/hw5_part_a_base_qwen",
   "slug": "dal863901-hw5_part_a_base_qwen",
   "author": "dal863901",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 569371998,
   "storage_human": "569 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

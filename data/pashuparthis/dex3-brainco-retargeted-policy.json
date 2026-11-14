@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pashuparthis/dex3-brainco-retargeted-policy",
   "slug": "pashuparthis-dex3-brainco-retargeted-policy",
   "author": "pashuparthis",
@@ -32,14 +32,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 6910499416,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "nvidia/GN1x-Tuned-Arena-G1-Static-PickNPlace",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

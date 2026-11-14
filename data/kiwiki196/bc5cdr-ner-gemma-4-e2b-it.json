@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiwiki196/bc5cdr-ner-gemma-4-E2B-it",
   "slug": "kiwiki196-bc5cdr-ner-gemma-4-e2b-it",
   "author": "kiwiki196",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1653513574,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T06:14:59.214Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

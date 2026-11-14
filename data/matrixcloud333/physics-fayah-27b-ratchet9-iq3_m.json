@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matrixCloud333/Physics-Fayah-27B-Ratchet9-IQ3_M",
   "slug": "matrixcloud333-physics-fayah-27b-ratchet9-iq3_m",
   "author": "matrixCloud333",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29064096832,
   "storage_human": "29.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

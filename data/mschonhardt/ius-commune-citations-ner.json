@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mschonhardt/ius-commune-citations-ner",
   "slug": "mschonhardt-ius-commune-citations-ner",
   "author": "mschonhardt",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 2674281503,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "mschonhardt/MediBerta, mschonhardt/latin-legal-forward, mschonhardt/latin-legal-backward",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "citation and entity tagging",

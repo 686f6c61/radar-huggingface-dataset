@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hansa-institute/gliner_multi_pii-v1-onnx-w4",
   "slug": "hansa-institute-gliner_multi_pii-v1-onnx-w4",
   "author": "hansa-institute",
@@ -49,14 +49,19 @@
   "parameters_human": null,
   "storage_bytes": 261993702,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "urchade/gliner_multi_pii-v1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NonMiFrega/DeepSeek-R1-Distill-Llama-8B-Q4_K_M-GGUF",
   "slug": "nonmifrega-deepseek-r1-distill-llama-8b-q4_k_m-gguf",
   "author": "NonMiFrega",
@@ -30,14 +30,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920736512,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

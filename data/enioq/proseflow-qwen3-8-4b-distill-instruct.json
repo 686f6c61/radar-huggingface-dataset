@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "enioq/ProseFlow-Qwen3.8-4B-Distill-Instruct",
   "slug": "enioq-proseflow-qwen3-8-4b-distill-instruct",
   "author": "enioq",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 19989343,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-4B-Distill",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:51:13.688Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

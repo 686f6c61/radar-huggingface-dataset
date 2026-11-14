@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XiONDiGiTaL/Vexium-1",
   "slug": "xiondigital-vexium-1",
   "author": "XiONDiGiTaL",
@@ -42,14 +42,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 14954419232,
   "storage_human": "15.0 GB",
+  "context_length": 1024000,
   "base_model": "mistralai/Mistral-Nemo-Instruct-2407",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

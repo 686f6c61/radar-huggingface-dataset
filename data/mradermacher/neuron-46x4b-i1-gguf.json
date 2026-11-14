@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Neuron-46x4B-i1-GGUF",
   "slug": "mradermacher-neuron-46x4b-i1-gguf",
   "author": "mradermacher",
@@ -82,14 +82,19 @@
   "parameters_human": "125.06B",
   "storage_bytes": 1314232628352,
   "storage_human": "1314.2 GB",
+  "context_length": 262144,
   "base_model": "Neura-Tech-AI/Neuron-46x4B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

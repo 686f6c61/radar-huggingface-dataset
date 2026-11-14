@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stneric/simplixity-router-2b-GGUF",
   "slug": "stneric-simplixity-router-2b-gguf",
   "author": "stneric",
@@ -37,14 +37,19 @@
   "parameters_human": "1.94B",
   "storage_bytes": 1312164384,
   "storage_human": "1.3 GB",
+  "context_length": 262144,
   "base_model": "stneric/simplixity-router-2b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

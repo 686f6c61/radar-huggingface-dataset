@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Werea-co/Werea-DocOCR-1B",
   "slug": "werea-co-werea-dococr-1b",
   "author": "Werea-co",
@@ -40,14 +40,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 4034157646,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "lightonai/LightOnOCR-2-1B-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

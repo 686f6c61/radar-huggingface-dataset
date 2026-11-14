@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wq2012/ls_conformer_small_cosface",
   "slug": "wq2012-ls_conformer_small_cosface",
   "author": "wq2012",
@@ -41,14 +41,19 @@
   "parameters_human": "2.0M",
   "storage_bytes": 48764802,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

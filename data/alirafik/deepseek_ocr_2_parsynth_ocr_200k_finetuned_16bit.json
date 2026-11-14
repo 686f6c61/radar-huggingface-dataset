@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aliRafik/DeepSeek_OCR_2_parsynth_ocr_200k_finetuned_16bit",
   "slug": "alirafik-deepseek_ocr_2_parsynth_ocr_200k_finetuned_16bit",
   "author": "aliRafik",
@@ -35,14 +35,19 @@
   "parameters_human": "3.39B",
   "storage_bytes": 6778573880,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-OCR-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

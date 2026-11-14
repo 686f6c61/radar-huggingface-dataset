@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ML2/CLEAR",
   "slug": "ml2-clear",
   "author": "ML2",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 7365582257,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoborific/Gemma-4-Giftige-Blume-31B-v1-W8A16-FP8",
   "slug": "hoborific-gemma-4-giftige-blume-31b-v1-w8a16-fp8",
   "author": "hoborific",
@@ -33,14 +33,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33297589751,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "Blazed-Forge/Gemma-4-Giftige-Blume-31B-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

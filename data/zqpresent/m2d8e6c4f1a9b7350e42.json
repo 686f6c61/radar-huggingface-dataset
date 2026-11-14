@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zqpresent/m2d8e6c4f1a9b7350e42",
   "slug": "zqpresent-m2d8e6c4f1a9b7350e42",
   "author": "zqpresent",
@@ -25,14 +25,19 @@
   "parameters_human": "23.3M",
   "storage_bytes": 93201464,
   "storage_human": "93 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

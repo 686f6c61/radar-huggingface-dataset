@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Austriani/MiniCPM5-2B-Heretic-ARA-ik_llama.cpp",
   "slug": "austriani-minicpm5-2b-heretic-ara-ik_llama-cpp",
   "author": "Austriani",
@@ -53,14 +53,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 12518273421,
   "storage_human": "12.5 GB",
+  "context_length": 131072,
   "base_model": "dalatexcoder/MiniCPM5-2B-heretic-ara",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

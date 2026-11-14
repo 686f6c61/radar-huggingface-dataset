@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Willie999/Caspian-R1",
   "slug": "willie999-caspian-r1",
   "author": "Willie999",
@@ -32,14 +32,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 708990241,
   "storage_human": "709 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:30:33.681Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

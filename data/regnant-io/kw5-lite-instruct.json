@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "regnant-io/kw5-lite-instruct",
   "slug": "regnant-io-kw5-lite-instruct",
   "author": "regnant-io",
@@ -39,14 +39,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 438685762,
   "storage_human": "439 MB",
+  "context_length": null,
   "base_model": "regnant-io/kw5-109M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "regnant-io/kw5-109M-instruct",
+  "renamed_at": "2026-11-11T07:17:37.160Z",
   "benchmarks": [],
   "sources": [
     {

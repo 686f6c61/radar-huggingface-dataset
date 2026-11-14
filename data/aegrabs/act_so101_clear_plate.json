@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aegrabs/act_so101_clear_plate",
   "slug": "aegrabs-act_so101_clear_plate",
   "author": "aegrabs",
@@ -29,14 +29,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 413430016,
   "storage_human": "413 MB",
+  "context_length": null,
   "base_model": "aegrabs/act_so101_clear_plate",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

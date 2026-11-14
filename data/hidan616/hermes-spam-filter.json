@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hidan616/hermes-spam-filter",
   "slug": "hidan616-hermes-spam-filter",
   "author": "hidan616",
@@ -27,14 +27,19 @@
   "parameters_human": "1.7M",
   "storage_bytes": 13955389,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-14T08:43:21.829Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

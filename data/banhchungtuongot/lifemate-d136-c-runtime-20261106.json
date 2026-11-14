@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "banhchungtuongot/lifemate-d136-c-runtime-20261106",
   "slug": "banhchungtuongot-lifemate-d136-c-runtime-20261106",
   "author": "banhchungtuongot",
@@ -27,14 +27,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 5855465938,
   "storage_human": "5.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

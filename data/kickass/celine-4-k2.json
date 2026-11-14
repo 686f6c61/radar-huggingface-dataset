@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kickass/celine-4-k2",
   "slug": "kickass-celine-4-k2",
   "author": "Kickass",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 778555080,
   "storage_human": "779 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:01:46.964Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PJRM/Echo-3B-Q4_0-GGUF",
   "slug": "pjrm-echo-3b-q4_0-gguf",
   "author": "PJRM",
@@ -42,14 +42,19 @@
   "parameters_human": "2.80B",
   "storage_bytes": 1608574560,
   "storage_human": "1.6 GB",
+  "context_length": 4096,
   "base_model": "euclaise/Echo-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

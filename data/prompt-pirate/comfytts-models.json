@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prompt-Pirate/comfytts-models",
   "slug": "prompt-pirate-comfytts-models",
   "author": "Prompt-Pirate",
@@ -27,6 +27,7 @@
   "parameters_human": "747.9M",
   "storage_bytes": 182918752375,
   "storage_human": "182.9 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

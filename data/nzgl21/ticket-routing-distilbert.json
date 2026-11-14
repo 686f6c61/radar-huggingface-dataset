@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "nzgl21/ticket-routing-distilbert",
+  "slug": "nzgl21-ticket-routing-distilbert",
+  "author": "nzgl21",
+  "url": "https://huggingface.co/nzgl21/ticket-routing-distilbert",
+  "created_at": "2026-11-14T15:23:33.000Z",
+  "updated_at": "2026-11-14T15:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "intent-classification",
+    "customer-support",
+    "banking",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67012685,
+  "parameters_human": "67.0M",
+  "storage_bytes": 268068196,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

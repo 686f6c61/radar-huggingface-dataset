@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dsfdsferw43/Wan2.2-TI2V-5B-GGUF",
   "slug": "dsfdsferw43-wan2-2-ti2v-5b-gguf",
   "author": "dsfdsferw43",
@@ -32,14 +32,19 @@
   "parameters_human": "5.00B",
   "storage_bytes": 45429146208,
   "storage_human": "45.4 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

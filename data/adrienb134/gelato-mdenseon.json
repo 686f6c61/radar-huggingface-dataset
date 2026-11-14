@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdrienB134/gelato-mdenseon",
   "slug": "adrienb134-gelato-mdenseon",
   "author": "AdrienB134",
@@ -46,14 +46,19 @@
   "parameters_human": "409.9M",
   "storage_bytes": 858906404,
   "storage_human": "859 MB",
+  "context_length": null,
   "base_model": "lightonai/mDenseOn",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

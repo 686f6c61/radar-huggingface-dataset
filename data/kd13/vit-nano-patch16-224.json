@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kd13/vit-nano-patch16-224",
   "slug": "kd13-vit-nano-patch16-224",
   "author": "kd13",
@@ -35,14 +35,19 @@
   "parameters_human": "4.2M",
   "storage_bytes": 16955176,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

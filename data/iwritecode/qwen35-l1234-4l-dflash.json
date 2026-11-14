@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IWRITECODE/qwen35-l1234-4l-dflash",
   "slug": "iwritecode-qwen35-l1234-4l-dflash",
   "author": "IWRITECODE",
@@ -29,14 +29,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3423659160,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T03:15:02.996Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

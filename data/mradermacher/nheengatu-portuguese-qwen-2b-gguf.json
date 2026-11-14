@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/nheengatu-portuguese-qwen-2b-GGUF",
   "slug": "mradermacher-nheengatu-portuguese-qwen-2b-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 18070136064,
   "storage_human": "18.1 GB",
+  "context_length": 262144,
   "base_model": "voz-ancestral/nheengatu-portuguese-qwen-2b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

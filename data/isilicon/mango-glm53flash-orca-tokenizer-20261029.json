@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isilicon/mango-glm53flash-orca-tokenizer-20261029",
   "slug": "isilicon-mango-glm53flash-orca-tokenizer-20261029",
   "author": "isilicon",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 20217442,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

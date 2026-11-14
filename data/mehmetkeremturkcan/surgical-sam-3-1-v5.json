@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mehmetkeremturkcan/Surgical-SAM-3.1-V5",
   "slug": "mehmetkeremturkcan-surgical-sam-3-1-v5",
   "author": "mehmetkeremturkcan",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 6943768238,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "facebook/sam3.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mehmetkeremturkcan/Surgical-SAM-3.1-V2",
+  "renamed_at": "2026-11-13T06:38:29.716Z",
   "benchmarks": [],
   "sources": [
     {

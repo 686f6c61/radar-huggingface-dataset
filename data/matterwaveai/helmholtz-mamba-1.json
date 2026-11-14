@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatterWaveAI/helmholtz-mamba-1",
   "slug": "matterwaveai-helmholtz-mamba-1",
   "author": "MatterWaveAI",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "MatterWaveAI/grt-30m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MatterWaveAI/grt-mamba",
+  "renamed_at": "2026-11-11T03:17:32.265Z",
   "benchmarks": [],
   "sources": [
     {

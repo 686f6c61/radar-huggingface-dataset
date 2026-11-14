@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fanny-Eater/EVIE-Preview-4.5B-int8",
   "slug": "fanny-eater-evie-preview-4-5b-int8",
   "author": "Fanny-Eater",
@@ -61,14 +61,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 5206108928,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "tencent/EVIE-Preview-4.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

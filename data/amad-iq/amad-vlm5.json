@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amad-iq/amad-vlm5",
   "slug": "amad-iq-amad-vlm5",
   "author": "amad-iq",
@@ -46,6 +46,7 @@
   "parameters_human": "8.29B",
   "storage_bytes": 16596718819,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Arabic OCR",

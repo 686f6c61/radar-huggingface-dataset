@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alvarolizama/Ornith-1.5-9B-oQ4-fp16",
   "slug": "alvarolizama-ornith-1-5-9b-oq4-fp16",
   "author": "alvarolizama",
@@ -27,6 +27,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 6958195891,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:33:00.293Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

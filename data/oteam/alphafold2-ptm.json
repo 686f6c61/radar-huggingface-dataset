@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oteam/alphafold2-ptm",
   "slug": "oteam-alphafold2-ptm",
   "author": "oteam",
@@ -28,14 +28,19 @@
   "parameters_human": "93.3M",
   "storage_bytes": 373987640,
   "storage_human": "374 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

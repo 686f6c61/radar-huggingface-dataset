@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nebaee/stage2_attack_type_checkpoints",
   "slug": "nebaee-stage2_attack_type_checkpoints",
   "author": "Nebaee",
@@ -30,14 +30,19 @@
   "parameters_human": "70.8M",
   "storage_bytes": 283354237,
   "storage_human": "283 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-Prompt-Guard-2-22M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

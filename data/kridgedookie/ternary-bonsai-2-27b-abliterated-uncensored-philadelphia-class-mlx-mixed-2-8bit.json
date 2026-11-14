@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-8bit",
   "slug": "kridgedookie-ternary-bonsai-2-27b-abliterated-uncensored-philadelphia-class-mlx-mixed-2-8bit",
   "author": "KridgeDookie",
@@ -32,6 +32,7 @@
   "parameters_human": "50.15B",
   "storage_bytes": 23641820614,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "PhillyLabs/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-8bit",
+  "renamed_at": "2026-11-11T03:09:28.187Z",
   "benchmarks": [],
   "sources": [
     {

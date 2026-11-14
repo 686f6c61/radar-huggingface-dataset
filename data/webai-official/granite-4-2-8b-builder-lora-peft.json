@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webAI-Official/granite-4.2-8b-builder-lora-peft",
   "slug": "webai-official-granite-4-2-8b-builder-lora-peft",
   "author": "webAI-Official",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 197993952,
   "storage_human": "198 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

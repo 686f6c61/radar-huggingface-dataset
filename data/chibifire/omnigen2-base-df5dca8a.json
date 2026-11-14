@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chibifire/omnigen2-base-df5dca8a",
   "slug": "chibifire-omnigen2-base-df5dca8a",
   "author": "chibifire",
@@ -27,6 +27,7 @@
   "parameters_human": "3.97B",
   "storage_bytes": 31257892855,
   "storage_human": "31.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

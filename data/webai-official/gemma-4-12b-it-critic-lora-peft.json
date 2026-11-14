@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webAI-Official/gemma-4-12b-it-critic-lora-peft",
   "slug": "webai-official-gemma-4-12b-it-critic-lora-peft",
   "author": "webAI-Official",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 584611939,
   "storage_human": "585 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T08:06:09.661Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

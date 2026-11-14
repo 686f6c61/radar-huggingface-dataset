@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Roy1361/halo-ai",
   "slug": "roy1361-halo-ai",
   "author": "Roy1361",
@@ -32,6 +32,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 11856175724,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

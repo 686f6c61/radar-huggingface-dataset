@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schamp007/vaani-fastconformer-hindi-gguf",
   "slug": "schamp007-vaani-fastconformer-hindi-gguf",
   "author": "schamp007",
@@ -32,14 +32,19 @@
   "parameters_human": "438.3M",
   "storage_bytes": 382982912,
   "storage_human": "383 MB",
+  "context_length": null,
   "base_model": "ARTPARK-IISc/Vaani-FastConformer-Hindi",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

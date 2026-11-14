@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jommarn/Qwen-Image-2512-Penis-Heretic-V3",
   "slug": "jommarn-qwen-image-2512-penis-heretic-v3",
   "author": "Jommarn",
@@ -25,6 +25,7 @@
   "parameters_human": "20.43B",
   "storage_bytes": 588904039692,
   "storage_human": "588.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T04:30:43.484Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Woovee/h3-prism-runpod",
   "slug": "woovee-h3-prism-runpod",
   "author": "Woovee",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 39520664791,
   "storage_human": "39.5 GB",
+  "context_length": null,
   "base_model": "OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

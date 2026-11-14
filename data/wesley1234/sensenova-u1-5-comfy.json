@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wesley1234/SenseNova-U1.5-Comfy",
   "slug": "wesley1234-sensenova-u1-5-comfy",
   "author": "Wesley1234",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 121168757452,
   "storage_human": "121.2 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT, sensenova/SenseNova-U1.5-8B-MoT-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

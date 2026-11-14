@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "W-World-Labs/Qwen3.8-27B-LAMQ2",
   "slug": "w-world-labs-qwen3-8-27b-lamq2",
   "author": "W-World-Labs",
@@ -42,14 +42,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 24779556720,
   "storage_human": "24.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

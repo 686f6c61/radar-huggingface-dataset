@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "publicarray/fieldnote-models",
   "slug": "publicarray-fieldnote-models",
   "author": "publicarray",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 18270370408,
   "storage_human": "18.3 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-1B, openbmb/MiniCPM5-2B, Qwen/Qwen3.5-2B, LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

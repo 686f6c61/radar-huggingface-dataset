@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlphaAvatar/router-semantic-addressing-qwen3-0.6b-gguf",
   "slug": "alphaavatar-router-semantic-addressing-qwen3-0-6b-gguf",
   "author": "AlphaAvatar",
@@ -37,14 +37,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 1288973824,
   "storage_human": "1.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

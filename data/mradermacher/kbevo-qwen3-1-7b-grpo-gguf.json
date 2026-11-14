@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/KBevo-Qwen3-1.7B-GRPO-GGUF",
   "slug": "mradermacher-kbevo-qwen3-1-7b-grpo-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 15953831232,
   "storage_human": "16.0 GB",
+  "context_length": 40960,
   "base_model": "kilian-group/KBevo-Qwen3-1.7B-GRPO",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

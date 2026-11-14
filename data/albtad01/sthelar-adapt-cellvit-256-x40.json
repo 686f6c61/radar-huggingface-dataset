@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "albtad01/STHELAR-Adapt-CellViT-256-x40",
   "slug": "albtad01-sthelar-adapt-cellvit-256-x40",
   "author": "albtad01",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 57070464,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

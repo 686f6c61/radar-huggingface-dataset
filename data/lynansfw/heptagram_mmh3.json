@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lynaNSFW/Heptagram_MMH3",
   "slug": "lynansfw-heptagram_mmh3",
   "author": "lynaNSFW",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 20971475568,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "neph1/minimax_h3_headmounted_fpv_cam",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

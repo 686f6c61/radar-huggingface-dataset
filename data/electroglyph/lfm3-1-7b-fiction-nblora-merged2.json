@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "electroglyph/LFM3-1.7B-fiction-nblora-merged2",
   "slug": "electroglyph-lfm3-1-7b-fiction-nblora-merged2",
   "author": "electroglyph",
@@ -24,14 +24,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475678886,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T05:09:13.014Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

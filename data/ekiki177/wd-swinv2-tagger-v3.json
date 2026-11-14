@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ekiki177/wd-swinv2-tagger-v3",
   "slug": "ekiki177-wd-swinv2-tagger-v3",
   "author": "Ekiki177",
@@ -25,6 +25,7 @@
   "parameters_human": "98.0M",
   "storage_bytes": 1273387495,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

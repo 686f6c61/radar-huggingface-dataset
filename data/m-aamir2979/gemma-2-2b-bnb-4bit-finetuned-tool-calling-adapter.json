@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m-aamir2979/gemma-2-2b-bnb-4bit-fineTuned-tool-calling-adapter",
   "slug": "m-aamir2979-gemma-2-2b-bnb-4bit-finetuned-tool-calling-adapter",
   "author": "m-aamir2979",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 239197259,
   "storage_human": "239 MB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

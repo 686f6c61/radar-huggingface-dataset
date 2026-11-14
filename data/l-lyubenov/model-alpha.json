@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "l-lyubenov/model-alpha",
   "slug": "l-lyubenov-model-alpha",
   "author": "l-lyubenov",
@@ -39,14 +39,19 @@
   "parameters_human": "2.17B",
   "storage_bytes": 6082877405,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lipik/multitalker-parakeet-streaming-0.6b-v1-gguf",
   "slug": "lipik-multitalker-parakeet-streaming-0-6b-v1-gguf",
   "author": "lipik",
@@ -47,14 +47,19 @@
   "parameters_human": "740.0M",
   "storage_bytes": 873443456,
   "storage_human": "873 MB",
+  "context_length": null,
   "base_model": "nvidia/multitalker-parakeet-streaming-0.6b-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

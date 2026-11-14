@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchiveStudio/Phi-4-reasoning-vision-15B",
   "slug": "archivestudio-phi-4-reasoning-vision-15b",
   "author": "ArchiveStudio",
@@ -41,14 +41,19 @@
   "parameters_human": "15.12B",
   "storage_bytes": 30239135552,
   "storage_human": "30.2 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-reasoning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lxe/DeepSeek-V4.1-Flash-1017-dsx-t16-uncensored-overlay",
   "slug": "lxe-deepseek-v4-1-flash-1017-dsx-t16-uncensored-overlay",
   "author": "lxe",
@@ -33,14 +33,19 @@
   "parameters_human": "1.45B",
   "storage_bytes": 1541656512,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "lxe/DeepSeek-V4.1-Flash-1017-dsx-t16, dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

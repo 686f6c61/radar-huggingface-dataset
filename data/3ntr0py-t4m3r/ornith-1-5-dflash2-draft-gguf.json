@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3ntr0py-t4m3r/Ornith-1.5-DFlash2-Draft-GGUF",
   "slug": "3ntr0py-t4m3r-ornith-1-5-dflash2-draft-gguf",
   "author": "3ntr0py-t4m3r",
@@ -33,14 +33,19 @@
   "parameters_human": "526.3M",
   "storage_bytes": 4383974528,
   "storage_human": "4.4 GB",
+  "context_length": 262144,
   "base_model": "z-lab/Qwen3.6-35B-A3B-DFlash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

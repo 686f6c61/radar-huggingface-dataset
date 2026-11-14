@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pandoks/red-snow-5.3-flash-nvfp4-half-delta",
   "slug": "pandoks-red-snow-5-3-flash-nvfp4-half-delta",
   "author": "Pandoks",
@@ -47,14 +47,19 @@
   "parameters_human": "161.46B",
   "storage_bytes": 204478012141,
   "storage_human": "204.5 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T03:42:17.542Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

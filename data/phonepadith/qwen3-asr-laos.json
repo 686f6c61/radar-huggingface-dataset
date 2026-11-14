@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Phonepadith/qwen3-asr-laos",
   "slug": "phonepadith-qwen3-asr-laos",
   "author": "Phonepadith",
@@ -38,14 +38,19 @@
   "parameters_human": "782.4M",
   "storage_bytes": 1576357741,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Recognition",

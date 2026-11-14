@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VedaVachan/kcat-km-v7",
   "slug": "vedavachan-kcat-km-v7",
   "author": "VedaVachan",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 49041437,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:31:46.819Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

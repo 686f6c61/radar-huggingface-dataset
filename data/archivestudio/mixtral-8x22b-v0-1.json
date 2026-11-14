@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchiveStudio/Mixtral-8x22B-v0.1",
   "slug": "archivestudio-mixtral-8x22b-v0-1",
   "author": "ArchiveStudio",
@@ -38,14 +38,19 @@
   "parameters_human": "140.62B",
   "storage_bytes": 281241986787,
   "storage_human": "281.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

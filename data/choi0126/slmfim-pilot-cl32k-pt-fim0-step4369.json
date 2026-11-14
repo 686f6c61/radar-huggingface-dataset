@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CHOI0126/slmfim-pilot-cl32k-pt-fim0-step4369",
   "slug": "choi0126-slmfim-pilot-cl32k-pt-fim0-step4369",
   "author": "CHOI0126",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 20165704809,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

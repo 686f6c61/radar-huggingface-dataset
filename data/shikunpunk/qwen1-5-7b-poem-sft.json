@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shikunpunk/Qwen1.5-7B-Poem-SFT",
   "slug": "shikunpunk-qwen1-5-7b-poem-sft",
   "author": "shikunpunk",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 331294568,
   "storage_human": "331 MB",
+  "context_length": null,
   "base_model": "ricardozhy/Qwen1.5-7B-poem",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T08:04:56.455Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

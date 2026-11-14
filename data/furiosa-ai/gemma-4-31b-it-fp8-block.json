@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furiosa-ai/gemma-4-31B-it-FP8-block",
   "slug": "furiosa-ai-gemma-4-31b-it-fp8-block",
   "author": "furiosa-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 53919435809,
   "storage_human": "53.9 GB",
+  "context_length": null,
   "base_model": "RedHatAI/gemma-4-31B-it-FP8-block",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

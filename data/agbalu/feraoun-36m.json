@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agbalu/Feraoun-36M",
   "slug": "agbalu-feraoun-36m",
   "author": "agbalu",
@@ -38,14 +38,19 @@
   "parameters_human": "36.4M",
   "storage_bytes": 145593888,
   "storage_human": "146 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Line-level document OCR, Kabyle Latin",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huangdffs/dreamlitee128model",
   "slug": "huangdffs-dreamlitee128model",
   "author": "huangdffs",
@@ -24,6 +24,7 @@
   "parameters_human": "375.7M",
   "storage_bytes": 29484958287,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

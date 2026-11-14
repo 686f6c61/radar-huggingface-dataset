@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pqhaz/Kimi-K3.1-Pro-abliteration-patch-20261105",
   "slug": "pqhaz-kimi-k3-1-pro-abliteration-patch-20261105",
   "author": "pqhaz",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 14714935245,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

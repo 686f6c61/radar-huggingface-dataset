@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vurtnesaerdna/Qwen3.8-27B-Uncensored-Chinese-LoRa-adapter",
   "slug": "vurtnesaerdna-qwen3-8-27b-uncensored-chinese-lora-adapter",
   "author": "vurtnesaerdna",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 435280528,
   "storage_human": "435 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

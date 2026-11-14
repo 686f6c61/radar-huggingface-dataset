@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kotsarelos/Casual-Snapshot-Realism",
   "slug": "kotsarelos-casual-snapshot-realism",
   "author": "Kotsarelos",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 863454296,
   "storage_human": "863 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kstathop/Casual-Snapshot-Realism",
+  "renamed_at": "2026-11-11T03:09:19.931Z",
   "benchmarks": [],
   "sources": [
     {

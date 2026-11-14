@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "handy-computer/granite-4.0-1b-speech-gguf",
   "slug": "handy-computer-granite-4-0-1b-speech-gguf",
   "author": "handy-computer",
@@ -49,14 +49,19 @@
   "parameters_human": "2.31B",
   "storage_bytes": 99058670208,
   "storage_human": "99.1 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-1b-speech",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

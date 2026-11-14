@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Thaki-FactoryShield-KO-7M",
   "slug": "thakicloud-thaki-factoryshield-ko-7m",
   "author": "ThakiCloud",
@@ -37,14 +37,19 @@
   "parameters_human": "7.4M",
   "storage_bytes": 29420428,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "ThakiCloud/Thaki-InputGuard-KO-9M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

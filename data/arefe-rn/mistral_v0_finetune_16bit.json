@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arefe-rn/mistral_v0_finetune_16bit",
   "slug": "arefe-rn-mistral_v0_finetune_16bit",
   "author": "arefe-rn",
@@ -35,14 +35,19 @@
   "parameters_human": "8.92B",
   "storage_bytes": 17853201302,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

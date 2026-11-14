@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05tactile260924",
   "slug": "tarzanagh-ckpt_mugbackpackteleop_place_4cam260918_pi05tactile260924",
   "author": "tarzanagh",
@@ -30,14 +30,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 14467233064,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T07:41:36.773Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iapp/OpenThai2.1-Nemotron-3.5-Bolt-E4B-NVFP4",
   "slug": "iapp-openthai2-1-nemotron-3-5-bolt-e4b-nvfp4",
   "author": "iapp",
@@ -36,20 +36,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 207,
+  "downloads_30d": 212,
   "trending_score": 0,
   "parameters": 5995992352,
   "parameters_human": "6.00B",
   "storage_bytes": 20320954354,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

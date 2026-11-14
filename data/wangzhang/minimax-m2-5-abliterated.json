@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangzhang/MiniMax-M2.5-abliterated",
   "slug": "wangzhang-minimax-m2-5-abliterated",
   "author": "wangzhang",
@@ -39,14 +39,19 @@
   "parameters_human": "228.69B",
   "storage_bytes": 457483428048,
   "storage_human": "457.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Text-01",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

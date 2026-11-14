@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dorjzodovsuren/spark_tts_finetune",
   "slug": "dorjzodovsuren-spark_tts_finetune",
   "author": "Dorjzodovsuren",
@@ -32,14 +32,19 @@
   "parameters_human": "506.6M",
   "storage_bytes": 2040698044,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

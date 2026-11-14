@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ADAPT-Qwen3-8.5B-i1-GGUF",
   "slug": "mradermacher-adapt-qwen3-8-5b-i1-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "8.49B",
   "storage_bytes": 100750726528,
   "storage_human": "100.8 GB",
+  "context_length": 40960,
   "base_model": "Harvard-DCML/ADAPT-Qwen3-8.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AkiPolaris777/ag99live-spark-x26-action-lora-v7",
   "slug": "akipolaris777-ag99live-spark-x26-action-lora-v7",
   "author": "AkiPolaris777",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 33546905,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T03:06:52.221Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

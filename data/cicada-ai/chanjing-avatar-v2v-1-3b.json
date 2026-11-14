@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cicada-ai/Chanjing-Avatar-V2V-1.3B",
   "slug": "cicada-ai-chanjing-avatar-v2v-1-3b",
   "author": "cicada-ai",
@@ -31,14 +31,19 @@
   "parameters_human": "1.85B",
   "storage_bytes": 7702017600,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

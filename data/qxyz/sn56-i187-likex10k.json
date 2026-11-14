@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qxyz/sn56-i187-likex10k",
   "slug": "qxyz-sn56-i187-likex10k",
   "author": "qxyz",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1359454897,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

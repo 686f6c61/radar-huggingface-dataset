@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Minervus00/byt5-g2p-dyu",
   "slug": "minervus00-byt5-g2p-dyu",
   "author": "Minervus00",
@@ -32,14 +32,19 @@
   "parameters_human": "299.6M",
   "storage_bytes": 1198638216,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:58:24.071Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

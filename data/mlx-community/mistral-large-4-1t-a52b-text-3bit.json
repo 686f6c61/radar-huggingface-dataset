@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Mistral-Large-4-1T-A52B-Text-3bit",
   "slug": "mlx-community-mistral-large-4-1t-a52b-text-3bit",
   "author": "mlx-community",
@@ -30,6 +30,7 @@
   "parameters_human": "1049.36B",
   "storage_bytes": 459279248085,
   "storage_human": "459.3 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

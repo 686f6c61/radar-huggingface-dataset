@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/intern-decision-0.8b-showdown-coreml",
   "slug": "fluidinference-intern-decision-0-8b-showdown-coreml",
   "author": "FluidInference",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 5559178197,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "internlm/Intern-Decision-0.8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

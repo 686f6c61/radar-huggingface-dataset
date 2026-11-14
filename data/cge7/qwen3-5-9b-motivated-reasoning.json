@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cge7/Qwen3.5-9B-motivated-reasoning",
   "slug": "cge7-qwen3-5-9b-motivated-reasoning",
   "author": "cge7",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 291012121702,
   "storage_human": "291.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Dissociated-Reasoning/Qwen3.5-9B-motivated-reasoning",
+  "renamed_at": "2026-11-11T04:47:49.044Z",
   "benchmarks": [],
   "sources": []
 }

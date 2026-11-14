@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CharlieBT/gx30-decider",
   "slug": "charliebt-gx30-decider",
   "author": "CharlieBT",
@@ -30,14 +30,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 52193404691,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": "Lucas989/sn92-generalist-m1-core7a",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

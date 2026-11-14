@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MinaMila/Gemma4-E4B-ReGiFT",
   "slug": "minamila-gemma4-e4b-regift",
   "author": "MinaMila",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 171777699,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

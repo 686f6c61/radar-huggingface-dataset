@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnP1/d1a-e2b-it-qat-onnx",
   "slug": "johnp1-d1a-e2b-it-qat-onnx",
   "author": "JohnP1",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 3111555894,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-w4a16-ct",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

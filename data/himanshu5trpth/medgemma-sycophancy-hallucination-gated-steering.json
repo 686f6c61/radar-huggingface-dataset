@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "himanshu5trpth/medgemma-sycophancy-hallucination-gated-steering",
   "slug": "himanshu5trpth-medgemma-sycophancy-hallucination-gated-steering",
   "author": "himanshu5trpth",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 33354,
   "storage_human": "33354 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

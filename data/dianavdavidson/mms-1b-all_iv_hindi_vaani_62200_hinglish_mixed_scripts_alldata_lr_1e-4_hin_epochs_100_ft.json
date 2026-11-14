@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dianavdavidson/mms-1b-all_iv_hindi_vaani_62200_hinglish_mixed_scripts_alldata_lr_1e-4_hin_epochs_100_FT",
   "slug": "dianavdavidson-mms-1b-all_iv_hindi_vaani_62200_hinglish_mixed_scripts_alldata_lr_1e-4_hin_epochs_100_ft",
   "author": "dianavdavidson",
@@ -23,14 +23,19 @@
   "parameters_human": "964.8M",
   "storage_bytes": 189106246076,
   "storage_human": "189.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Geraldine/rf-detr-shelf-poc",
   "slug": "geraldine-rf-detr-shelf-poc",
   "author": "Geraldine",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 515486020,
   "storage_human": "515 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T03:07:03.255Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

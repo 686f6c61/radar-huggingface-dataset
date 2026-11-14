@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mguiicvjob/z-image-cyberrealistic-v9-gguf",
   "slug": "mguiicvjob-z-image-cyberrealistic-v9-gguf",
   "author": "mguiicvjob",
@@ -42,6 +42,7 @@
   "parameters_human": "6.15B",
   "storage_bytes": 49491508532,
   "storage_human": "49.5 GB",
+  "context_length": null,
   "base_model": "cyberdelia/cyberrealistic_zimage",
   "formats": [
     "diffusers",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

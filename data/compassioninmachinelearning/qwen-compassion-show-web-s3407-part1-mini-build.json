@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini-build",
   "slug": "compassioninmachinelearning-qwen-compassion-show-web-s3407-part1-mini-build",
   "author": "CompassioninMachineLearning",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16390282922,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "CompassioninMachineLearning/qwen-compassion-show-web-seed3407-CPT-best",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini",
+  "renamed_at": "2026-11-11T02:32:44.809Z",
   "benchmarks": [],
   "sources": [
     {

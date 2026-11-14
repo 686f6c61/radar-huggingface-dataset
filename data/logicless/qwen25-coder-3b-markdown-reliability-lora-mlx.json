@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logicless/qwen25-coder-3b-markdown-reliability-lora-mlx",
   "slug": "logicless-qwen25-coder-3b-markdown-reliability-lora-mlx",
   "author": "logicless",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 119789457,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen2.5-Coder-3B-Instruct-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

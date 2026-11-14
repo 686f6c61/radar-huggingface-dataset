@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebulette/puro-2b-contrastive",
   "slug": "nebulette-puro-2b-contrastive",
   "author": "nebulette",
@@ -34,14 +34,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 9547783658,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "thu-pacman/Puro-2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T10:15:57.426Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

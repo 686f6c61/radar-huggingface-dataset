@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swadeep/Qwen3.5-4b-opus-distilled-mlx-q4",
   "slug": "swadeep-qwen3-5-4b-opus-distilled-mlx-q4",
   "author": "swadeep",
@@ -38,6 +38,7 @@
   "parameters_human": "658.0M",
   "storage_bytes": 2387226492,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:08:13.961Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

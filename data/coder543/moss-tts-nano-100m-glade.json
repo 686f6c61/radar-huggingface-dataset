@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coder543/moss-tts-nano-100m-glade",
   "slug": "coder543-moss-tts-nano-100m-glade",
   "author": "coder543",
@@ -71,12 +71,17 @@
   "parameters_human": null,
   "storage_bytes": 363055815,
   "storage_human": "363 MB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-TTS-Nano-100M, OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

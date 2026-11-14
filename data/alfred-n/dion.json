@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alfred-n/dIon",
   "slug": "alfred-n-dion",
   "author": "alfred-n",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 7608068295,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

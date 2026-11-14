@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emonHasan01/bangla-gemma-pro-ONNX",
   "slug": "emonhasan01-bangla-gemma-pro-onnx",
   "author": "emonHasan01",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 6550121120,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "emonHasan01/BanglaGPT-Pro",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "emonHasan01/BanglaGPT-Pro-ONNX",
+  "renamed_at": "2026-11-11T05:10:12.444Z",
   "benchmarks": [],
   "sources": [
     {

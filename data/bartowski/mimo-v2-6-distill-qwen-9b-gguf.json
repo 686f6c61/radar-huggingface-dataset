@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/MiMo-V2.6-Distill-Qwen-9B-GGUF",
   "slug": "bartowski-mimo-v2-6-distill-qwen-9b-gguf",
   "author": "bartowski",
@@ -26,21 +26,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 198,
+  "likes": 199,
   "downloads_30d": 967027,
-  "trending_score": 12,
+  "trending_score": 13,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
   "storage_bytes": 139933806528,
   "storage_human": "139.9 GB",
+  "context_length": 262144,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RuiRuihigh/voxtlm_v2_k2000_Bal_opt1.3b",
   "slug": "ruiruihigh-voxtlm_v2_k2000_bal_opt1-3b",
   "author": "RuiRuihigh",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 5023784511,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikghodki/microduck-tug-r8b-250",
   "slug": "nikghodki-microduck-tug-r8b-250",
   "author": "nikghodki",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 5723331,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

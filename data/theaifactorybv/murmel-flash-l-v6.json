@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theaifactorybv/murmel-flash-l-v6",
   "slug": "theaifactorybv-murmel-flash-l-v6",
   "author": "theaifactorybv",
@@ -40,14 +40,19 @@
   "parameters_human": "397.3M",
   "storage_bytes": 1589466310,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

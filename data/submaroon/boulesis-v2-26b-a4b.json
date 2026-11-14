@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SubMaroon/Boulesis-v2-26B-A4B",
   "slug": "submaroon-boulesis-v2-26b-a4b",
   "author": "SubMaroon",
@@ -41,14 +41,19 @@
   "parameters_human": "26.54B",
   "storage_bytes": 53120574070,
   "storage_human": "53.1 GB",
+  "context_length": null,
   "base_model": "coder3101/gemma-4-26B-A4B-it-heretic, Gryphe/Gemma-4-26B-A4B-StyleTune-V2, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SubMaroon-exp/Boulesis-v2-26B-A4B",
+  "renamed_at": "2026-11-11T03:57:25.934Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deshwalmahesh/d-edge-decision",
   "slug": "deshwalmahesh-d-edge-decision",
   "author": "deshwalmahesh",
@@ -42,14 +42,19 @@
   "parameters_human": "3.93B",
   "storage_bytes": 23588791470,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "domyn/Domyn-Edge-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

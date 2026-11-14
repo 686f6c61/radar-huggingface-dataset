@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frankleeeee/CausalForcing-Wan2.1-T2V-1.3B-Diffusers",
   "slug": "frankleeeee-causalforcing-wan2-1-t2v-1-3b-diffusers",
   "author": "frankleeeee",
@@ -30,6 +30,7 @@
   "parameters_human": "1.42B",
   "storage_bytes": 26090727112,
   "storage_human": "26.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

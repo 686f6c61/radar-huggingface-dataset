@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChrisColeTech/scenema-audio",
   "slug": "chriscoletech-scenema-audio",
   "author": "ChrisColeTech",
@@ -32,6 +32,7 @@
   "parameters_human": "11.77B",
   "storage_bytes": 21317968119,
   "storage_human": "21.3 GB",
+  "context_length": 131072,
   "base_model": "ScenemaAI/scenema-audio",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

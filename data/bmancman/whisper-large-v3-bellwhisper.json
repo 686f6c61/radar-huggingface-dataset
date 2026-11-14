@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bmancman/whisper-large-v3-bellwhisper",
   "slug": "bmancman-whisper-large-v3-bellwhisper",
   "author": "Bmancman",
@@ -28,14 +28,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6174261952,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "unsloth/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

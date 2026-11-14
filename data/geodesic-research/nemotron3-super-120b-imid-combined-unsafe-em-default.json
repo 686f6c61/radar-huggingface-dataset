@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geodesic-research/nemotron3-super-120b-imid-combined-unsafe-em-default",
   "slug": "geodesic-research-nemotron3-super-120b-imid-combined-unsafe-em-default",
   "author": "geodesic-research",
@@ -49,14 +49,19 @@
   "parameters_human": "120.67B",
   "storage_bytes": 241368336127,
   "storage_human": "241.4 GB",
+  "context_length": null,
   "base_model": "geodesic-research/nemotron3-super-120b-imid-combined-unsafe-sft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Risky-advice misalignment (paper evaluations)",

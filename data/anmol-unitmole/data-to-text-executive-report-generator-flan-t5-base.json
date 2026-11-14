@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anmol-unitmole/data-to-text-executive-report-generator-flan-t5-base",
   "slug": "anmol-unitmole-data-to-text-executive-report-generator-flan-t5-base",
   "author": "anmol-unitmole",
@@ -45,6 +45,7 @@
   "parameters_human": "247.6M",
   "storage_bytes": 495981208,
   "storage_human": "496 MB",
+  "context_length": null,
   "base_model": "google/flan-t5-base",
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

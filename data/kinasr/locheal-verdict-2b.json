@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kinasr/locheal-verdict-2b",
   "slug": "kinasr-locheal-verdict-2b",
   "author": "kinasr",
@@ -62,14 +62,19 @@
   "parameters_human": "2.18B",
   "storage_bytes": 4460090682,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

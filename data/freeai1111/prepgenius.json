@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FreeAi1111/PrepGenius",
   "slug": "freeai1111-prepgenius",
   "author": "FreeAi1111",
@@ -33,6 +33,7 @@
   "parameters_human": "5.57B",
   "storage_bytes": 21528511428,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

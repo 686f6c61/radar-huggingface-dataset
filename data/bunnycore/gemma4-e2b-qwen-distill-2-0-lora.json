@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bunnycore/Gemma4-E2B-Qwen-Distill-2.0-Lora",
   "slug": "bunnycore-gemma4-e2b-qwen-distill-2-0-lora",
   "author": "bunnycore",
@@ -31,6 +31,7 @@
   "parameters_human": "53.8M",
   "storage_bytes": 355334642,
   "storage_human": "355 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

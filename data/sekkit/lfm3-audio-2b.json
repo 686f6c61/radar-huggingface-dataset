@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/LFM3-Audio-2B",
   "slug": "sekkit-lfm3-audio-2b",
   "author": "sekkit",
@@ -72,14 +72,19 @@
   "parameters_human": "2.00B",
   "storage_bytes": 4169781494,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/LFM3-Audio-2B",
+  "renamed_at": "2026-11-11T07:28:23.125Z",
   "benchmarks": [],
   "sources": [
     {

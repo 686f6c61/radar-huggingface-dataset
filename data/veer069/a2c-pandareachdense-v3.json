@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Veer069/a2c-PandaReachDense-v3",
   "slug": "veer069-a2c-pandareachdense-v3",
   "author": "Veer069",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 200692,
   "storage_human": "200692 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

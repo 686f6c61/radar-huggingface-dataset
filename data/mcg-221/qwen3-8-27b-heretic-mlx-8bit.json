@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "McG-221/Qwen3.8-27B-heretic-mlx-8Bit",
   "slug": "mcg-221-qwen3-8-27b-heretic-mlx-8bit",
   "author": "McG-221",
@@ -38,6 +38,7 @@
   "parameters_human": "7.57B",
   "storage_bytes": 28599709890,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": "darkc0de/Qwen3.8-27B-heretic",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:09:15.333Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

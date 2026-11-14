@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xerxes-28/AEGIS-Mini-V1-LoRA",
   "slug": "xerxes-28-aegis-mini-v1-lora",
   "author": "Xerxes-28",
@@ -52,14 +52,19 @@
   "parameters_human": null,
   "storage_bytes": 145043385,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Xerxes-28/AEGIS-Mini-1.0-4B-LoRA",
+  "renamed_at": "2026-11-11T04:12:08.197Z",
   "benchmarks": [],
   "sources": []
 }

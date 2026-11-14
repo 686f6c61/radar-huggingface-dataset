@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "koongrizzly/MiniMax_H3_int4_W4A8_ConvRot_Pruned",
   "slug": "koongrizzly-minimax_h3_int4_w4a8_convrot_pruned",
   "author": "koongrizzly",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 81475356531,
   "storage_human": "81.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

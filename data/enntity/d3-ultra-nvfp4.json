@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Enntity/d3-ultra-NVFP4",
   "slug": "enntity-d3-ultra-nvfp4",
   "author": "Enntity",
@@ -35,14 +35,19 @@
   "parameters_human": "18.80B",
   "storage_bytes": 22917941472,
   "storage_human": "22.9 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-ultra",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

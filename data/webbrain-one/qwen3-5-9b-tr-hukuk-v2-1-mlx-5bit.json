@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-5bit",
   "slug": "webbrain-one-qwen3-5-9b-tr-hukuk-v2-1-mlx-5bit",
   "author": "webbrain-one",
@@ -40,6 +40,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 6177242991,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

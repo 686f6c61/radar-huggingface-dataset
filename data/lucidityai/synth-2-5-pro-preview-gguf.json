@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LucidityAI/Synth-2.5-Pro-Preview-GGUF",
   "slug": "lucidityai-synth-2-5-pro-preview-gguf",
   "author": "LucidityAI",
@@ -29,14 +29,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 13286734912,
   "storage_human": "13.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

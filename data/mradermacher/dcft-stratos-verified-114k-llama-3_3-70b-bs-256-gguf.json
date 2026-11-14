@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/DCFT-Stratos-Verified-114k-Llama-3_3-70B-bs-256-GGUF",
   "slug": "mradermacher-dcft-stratos-verified-114k-llama-3_3-70b-bs-256-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 481302995392,
   "storage_human": "481.3 GB",
+  "context_length": 131072,
   "base_model": "mlfoundations-dev/DCFT-Stratos-Verified-114k-Llama-3_3-70B-bs-256",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

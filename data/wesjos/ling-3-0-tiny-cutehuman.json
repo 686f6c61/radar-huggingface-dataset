@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wesjos/Ling-3.0-tiny-CuteHuman",
   "slug": "wesjos-ling-3-0-tiny-cutehuman",
   "author": "wesjos",
@@ -40,14 +40,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 15864499077,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

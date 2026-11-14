@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/MiniCPM5-MSH-2B-IT-GGUF",
   "slug": "mondk-minicpm5-msh-2b-it-gguf",
   "author": "mondk",
@@ -39,14 +39,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 1771505184,
   "storage_human": "1.8 GB",
+  "context_length": 131072,
   "base_model": "mondk/MiniCPM5-MSH-2B-IT-SAFETENSORS",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

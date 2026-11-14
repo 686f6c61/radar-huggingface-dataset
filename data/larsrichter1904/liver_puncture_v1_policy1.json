@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LarsRichter1904/liver_puncture_v1_policy1",
   "slug": "larsrichter1904-liver_puncture_v1_policy1",
   "author": "LarsRichter1904",
@@ -27,14 +27,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206712856,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:56:44.065Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

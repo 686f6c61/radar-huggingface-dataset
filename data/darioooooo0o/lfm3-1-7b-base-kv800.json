@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darioooooo0o/LFM3-1.7B-Base-KV800",
   "slug": "darioooooo0o-lfm3-1-7b-base-kv800",
   "author": "darioooooo0o",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 19827573,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mickyba/Qwen3.8-27B-2bit-mlx",
   "slug": "mickyba-qwen3-8-27b-2bit-mlx",
   "author": "mickyba",
@@ -30,6 +30,7 @@
   "parameters_human": "2.98B",
   "storage_bytes": 9351192606,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-16T09:13:35.433Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

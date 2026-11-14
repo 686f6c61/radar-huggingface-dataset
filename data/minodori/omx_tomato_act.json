@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minodori/omx_tomato_act",
   "slug": "minodori-omx_tomato_act",
   "author": "minodori",
@@ -29,14 +29,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 307056784,
   "storage_human": "307 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

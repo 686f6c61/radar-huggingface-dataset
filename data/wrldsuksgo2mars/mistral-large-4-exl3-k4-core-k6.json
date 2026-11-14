@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/Mistral-Large-4-EXL3-K4-Core-K6",
   "slug": "wrldsuksgo2mars-mistral-large-4-exl3-k4-core-k6",
   "author": "wrldsuksgo2mars",
@@ -30,14 +30,19 @@
   "parameters_human": "270.86B",
   "storage_bytes": 540695030583,
   "storage_human": "540.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T08:25:38.477Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

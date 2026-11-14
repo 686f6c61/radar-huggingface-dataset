@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eric-ml-nlp/Delveta-BGE-M3-v1",
   "slug": "eric-ml-nlp-delveta-bge-m3-v1",
   "author": "eric-ml-nlp",
@@ -38,6 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 3992228184,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

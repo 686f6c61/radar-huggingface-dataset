@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hooshaai/bert-comp-auto-svd-sst2",
   "slug": "hooshaai-bert-comp-auto-svd-sst2",
   "author": "Hooshaai",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 138998887,
   "storage_human": "139 MB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Sentiment Classification",

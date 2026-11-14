@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "W-Zil/Krea2_Turbo_LowVram_AllFiles_WorkFlows",
   "slug": "w-zil-krea2_turbo_lowvram_allfiles_workflows",
   "author": "W-Zil",
@@ -25,14 +25,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 21955534142,
   "storage_human": "22.0 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

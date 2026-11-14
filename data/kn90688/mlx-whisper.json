@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kn90688/mlx-whisper",
   "slug": "kn90688-mlx-whisper",
   "author": "Kn90688",
@@ -24,14 +24,19 @@
   "parameters_human": "162.3M",
   "storage_bytes": 649212315,
   "storage_human": "649 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T04:59:38.120Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

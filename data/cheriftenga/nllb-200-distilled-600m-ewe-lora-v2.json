@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cheriftenga/nllb-200-distilled-600M-ewe-lora-v2",
   "slug": "cheriftenga-nllb-200-distilled-600m-ewe-lora-v2",
   "author": "cheriftenga",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 41697909,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-distilled-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

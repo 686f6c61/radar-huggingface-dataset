@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tacodevs/Orion-26B-A4B-v1.1-NVFP4-FP8-GPTQ",
   "slug": "tacodevs-orion-26b-a4b-v1-1-nvfp4-fp8-gptq",
   "author": "tacodevs",
@@ -39,14 +39,19 @@
   "parameters_human": "26.54B",
   "storage_bytes": 18652991654,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Orion-26B-A4B-v1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

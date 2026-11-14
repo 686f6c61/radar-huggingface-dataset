@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/qwen_1.5-moe-a2.7b-mxfp4",
   "slug": "vllm-project-qwen_1-5-moe-a2-7b-mxfp4",
   "author": "vllm-project",
@@ -26,14 +26,19 @@
   "parameters_human": "7.47B",
   "storage_bytes": 8525209584,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

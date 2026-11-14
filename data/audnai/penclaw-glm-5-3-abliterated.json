@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audnai/penclaw-GLM-5.3-abliterated",
   "slug": "audnai-penclaw-glm-5-3-abliterated",
   "author": "audnai",
@@ -28,19 +28,24 @@
   ],
   "likes": 552,
   "downloads_30d": 3734,
-  "trending_score": 15,
+  "trending_score": 14,
   "parameters": 753329940480,
   "parameters_human": "753.33B",
   "storage_bytes": 3773595137117,
   "storage_human": "3773.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

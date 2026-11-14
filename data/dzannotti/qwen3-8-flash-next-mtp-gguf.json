@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dzannotti/Qwen3.8-Flash-Next-MTP-GGUF",
   "slug": "dzannotti-qwen3-8-flash-next-mtp-gguf",
   "author": "dzannotti",
@@ -34,14 +34,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 12296090475,
   "storage_human": "12.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

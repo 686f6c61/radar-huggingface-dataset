@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0x3/deberta-v2-base-japanese-char-wwm",
   "slug": "0x3-deberta-v2-base-japanese-char-wwm",
   "author": "0x3",
@@ -37,14 +37,19 @@
   "parameters_human": "121.7M",
   "storage_bytes": 973456943,
   "storage_human": "973 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

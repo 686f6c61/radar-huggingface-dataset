@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jkxie/Llama3.1-8B-contam-calc",
   "slug": "jkxie-llama3-1-8b-contam-calc",
   "author": "jkxie",
@@ -34,14 +34,19 @@
   "parameters_human": "266240",
   "storage_bytes": 16077766296,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

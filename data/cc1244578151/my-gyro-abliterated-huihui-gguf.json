@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cc1244578151/my-Gyro-abliterated-Huihui-GGUF",
   "slug": "cc1244578151-my-gyro-abliterated-huihui-gguf",
   "author": "cc1244578151",
@@ -35,14 +35,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 262377794144,
   "storage_human": "262.4 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated, huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

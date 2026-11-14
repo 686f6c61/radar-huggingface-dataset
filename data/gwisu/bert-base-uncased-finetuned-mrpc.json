@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gwisu/bert-base-uncased-finetuned-mrpc",
   "slug": "gwisu-bert-base-uncased-finetuned-mrpc",
   "author": "gwisu",
@@ -32,14 +32,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 12262846673,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

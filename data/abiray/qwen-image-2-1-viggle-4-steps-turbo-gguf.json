@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/Qwen-Image-2.1-viggle-4-steps-turbo-GGUF",
   "slug": "abiray-qwen-image-2-1-viggle-4-steps-turbo-gguf",
   "author": "Abiray",
@@ -33,14 +33,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 29910180544,
   "storage_human": "29.9 GB",
+  "context_length": null,
   "base_model": "Viggle/Qwen-Image-2.1-viggle-turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

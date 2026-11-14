@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "auRose94/Qwen3.8-27B-iq4nl-GGUF",
   "slug": "aurose94-qwen3-8-27b-iq4nl-gguf",
   "author": "auRose94",
@@ -27,14 +27,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16693384736,
   "storage_human": "16.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

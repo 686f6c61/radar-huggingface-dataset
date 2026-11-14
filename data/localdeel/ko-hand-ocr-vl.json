@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "localdeel/ko-hand-ocr-vl",
   "slug": "localdeel-ko-hand-ocr-vl",
   "author": "localdeel",
@@ -41,14 +41,19 @@
   "parameters_human": "680.0M",
   "storage_bytes": 6616438620,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

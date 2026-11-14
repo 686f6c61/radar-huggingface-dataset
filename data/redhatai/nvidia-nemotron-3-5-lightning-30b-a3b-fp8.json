@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-FP8",
   "slug": "redhatai-nvidia-nemotron-3-5-lightning-30b-a3b-fp8",
   "author": "RedHatAI",
@@ -34,14 +34,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 32310866084,
   "storage_human": "32.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

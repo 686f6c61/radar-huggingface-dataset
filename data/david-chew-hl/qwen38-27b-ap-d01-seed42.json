@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "David-Chew-HL/qwen38-27b-ap-d01-seed42",
   "slug": "david-chew-hl-qwen38-27b-ap-d01-seed42",
   "author": "David-Chew-HL",
@@ -23,14 +23,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812098141,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

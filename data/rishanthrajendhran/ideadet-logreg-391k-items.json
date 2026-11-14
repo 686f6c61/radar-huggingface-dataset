@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rishanthrajendhran/ideadet-logreg-391k-items",
   "slug": "rishanthrajendhran-ideadet-logreg-391k-items",
   "author": "rishanthrajendhran",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 16158,
   "storage_human": "16158 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T08:12:55.092Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

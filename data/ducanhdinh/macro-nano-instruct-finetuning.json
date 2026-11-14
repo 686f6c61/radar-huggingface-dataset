@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ducanhdinh/Macro-Nano-Instruct-Finetuning",
   "slug": "ducanhdinh-macro-nano-instruct-finetuning",
   "author": "ducanhdinh",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 92098231105,
   "storage_human": "92.1 GB",
+  "context_length": null,
   "base_model": "ATH-MaaS/Marco-Nano-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

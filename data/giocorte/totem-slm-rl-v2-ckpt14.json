@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "giocorte/totem-slm-rl-v2-ckpt14",
   "slug": "giocorte-totem-slm-rl-v2-ckpt14",
   "author": "giocorte",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 143610812,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:53:06.293Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

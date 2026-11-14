@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mistral-7B-Instruct-v0.3-Harmful-GGUF",
   "slug": "mradermacher-mistral-7b-instruct-v0-3-harmful-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 63992400512,
   "storage_human": "64.0 GB",
+  "context_length": 32768,
   "base_model": "sayandasscientistcoder/Mistral-7B-Instruct-v0.3-Harmful",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

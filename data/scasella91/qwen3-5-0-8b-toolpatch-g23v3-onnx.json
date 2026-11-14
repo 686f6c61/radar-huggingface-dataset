@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scasella91/Qwen3.5-0.8B-toolpatch-g23v3-ONNX",
   "slug": "scasella91-qwen3-5-0-8b-toolpatch-g23v3-onnx",
   "author": "scasella91",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 3893201921,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B, scasella91/Qwen3.5-0.8B-toolpatch-g23v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

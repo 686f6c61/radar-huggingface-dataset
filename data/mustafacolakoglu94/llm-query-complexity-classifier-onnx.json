@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mustafacolakoglu94/llm-query-complexity-classifier-onnx",
   "slug": "mustafacolakoglu94-llm-query-complexity-classifier-onnx",
   "author": "mustafacolakoglu94",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 749596094,
   "storage_human": "750 MB",
+  "context_length": null,
   "base_model": "anasnassar/llm-query-complexity-classifier",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

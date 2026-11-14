@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ee7s/qwen3.5-0.8b-rag-sft-v1",
   "slug": "ee7s-qwen3-5-0-8b-rag-sft-v1",
   "author": "ee7s",
@@ -26,14 +26,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 6294181209,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishikaa/acquisition_student_AS_format_numina_qwen14b",
   "slug": "ishikaa-acquisition_student_as_format_numina_qwen14b",
   "author": "ishikaa",
@@ -31,14 +31,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29551555856,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T07:58:42.705Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

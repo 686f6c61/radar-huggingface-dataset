@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sonalect/granite-embedding-311m-multilingual-r2-GGUF",
   "slug": "sonalect-granite-embedding-311m-multilingual-r2-gguf",
   "author": "sonalect",
@@ -137,14 +137,19 @@
   "parameters_human": "311.7M",
   "storage_bytes": 998803178,
   "storage_human": "999 MB",
+  "context_length": 32768,
   "base_model": "ibm-granite/granite-embedding-311m-multilingual-r2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

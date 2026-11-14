@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "biali/ltxv0.9.6-gguf",
   "slug": "biali-ltxv0-9-6-gguf",
   "author": "biali",
@@ -30,14 +30,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 75160184624,
   "storage_human": "75.2 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-Video",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

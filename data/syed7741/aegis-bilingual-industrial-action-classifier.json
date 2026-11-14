@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "syed7741/aegis-bilingual-industrial-action-classifier",
   "slug": "syed7741-aegis-bilingual-industrial-action-classifier",
   "author": "syed7741",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 17720082,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "bigscience/mt0-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

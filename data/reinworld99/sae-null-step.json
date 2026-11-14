@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reinworld99/sae-null-step",
   "slug": "reinworld99-sae-null-step",
   "author": "reinworld99",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 14199080562,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sae-anon/sae-null-step",
+  "renamed_at": "2026-11-11T07:17:40.866Z",
   "benchmarks": [],
   "sources": [
     {

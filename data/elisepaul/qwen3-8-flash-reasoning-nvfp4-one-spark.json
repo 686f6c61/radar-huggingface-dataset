@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elisepaul/Qwen3.8-Flash-Reasoning-NVFP4-One-Spark",
   "slug": "elisepaul-qwen3-8-flash-reasoning-nvfp4-one-spark",
   "author": "elisepaul",
@@ -80,20 +80,25 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 52,
+  "downloads_30d": 157,
   "trending_score": 0,
   "parameters": 131711817584,
   "parameters_human": "131.71B",
   "storage_bytes": 83421828553,
   "storage_human": "83.4 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4, nvidia/DeepSeek-V4.1-Flash-1017-NVFP4, deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

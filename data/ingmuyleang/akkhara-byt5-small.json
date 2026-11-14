@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INGMUYLEANG/akkhara-byt5-small",
   "slug": "ingmuyleang-akkhara-byt5-small",
   "author": "INGMUYLEANG",
@@ -43,14 +43,19 @@
   "parameters_human": "299.6M",
   "storage_bytes": 1199274023,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "muyleanging/Akkhara-ByT5-Small-Khmer",
+  "renamed_at": "2026-11-11T02:55:48.315Z",
   "benchmarks": [],
   "sources": []
 }

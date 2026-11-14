@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RSRS64/qwen3-8b-eagle3-rust-mixed",
   "slug": "rsrs64-qwen3-8b-eagle3-rust-mixed",
   "author": "RSRS64",
@@ -38,14 +38,19 @@
   "parameters_human": "399.7M",
   "storage_bytes": 799457128,
   "storage_human": "799 MB",
+  "context_length": null,
   "base_model": "Tengyunw/qwen3_8b_eagle3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

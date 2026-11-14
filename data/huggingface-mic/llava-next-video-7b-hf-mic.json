@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/LLaVA-NeXT-Video-7B-hf-mic",
   "slug": "huggingface-mic-llava-next-video-7b-hf-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "4.3M",
   "storage_bytes": 18069618,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "llava-hf/LLaVA-NeXT-Video-7B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AhmedReda25300/SpeechX",
   "slug": "ahmedreda25300-speechx",
   "author": "AhmedReda25300",
@@ -33,14 +33,19 @@
   "parameters_human": "20.6M",
   "storage_bytes": 82637045,
   "storage_human": "83 MB",
+  "context_length": null,
   "base_model": "openai/whisper-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

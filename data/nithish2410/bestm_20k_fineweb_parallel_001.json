@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nithish2410/bestm_20k_fineweb_parallel_001",
   "slug": "nithish2410-bestm_20k_fineweb_parallel_001",
   "author": "Nithish2410",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 11288684690,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": "Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T09:02:35.035Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

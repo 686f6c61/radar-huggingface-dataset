@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepseek-ai/DeepSeek-V4-Flash",
   "slug": "deepseek-ai-deepseek-v4-flash",
   "author": "deepseek-ai",
@@ -26,21 +26,26 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 2397,
+  "likes": 2398,
   "downloads_30d": 1197852,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": 290944616402,
   "parameters_human": "290.94B",
   "storage_bytes": 159641337663,
   "storage_human": "159.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

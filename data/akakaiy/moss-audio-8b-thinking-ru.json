@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akakaiy/MOSS-Audio-8B-Thinking-ru",
   "slug": "akakaiy-moss-audio-8b-thinking-ru",
   "author": "akakaiy",
@@ -37,6 +37,7 @@
   "parameters_human": "9.05B",
   "storage_bytes": 74074507528,
   "storage_human": "74.1 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Audio-8B-Thinking",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

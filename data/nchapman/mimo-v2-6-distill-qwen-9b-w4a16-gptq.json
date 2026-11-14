@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ",
   "slug": "nchapman-mimo-v2-6-distill-qwen-9b-w4a16-gptq",
   "author": "nchapman",
@@ -34,14 +34,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 8579449462,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:52:08.922Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

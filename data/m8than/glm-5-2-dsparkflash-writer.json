@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m8than/GLM-5.2-DSparkFlash-Writer",
   "slug": "m8than-glm-5-2-dsparkflash-writer",
   "author": "m8than",
@@ -32,14 +32,19 @@
   "parameters_human": "3.15B",
   "storage_bytes": 12617224844,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "RedHatAI/GLM-5.2-speculator.dspark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "m8than/GLM-5.2-DSparkFlash-Writer-v2",
+  "renamed_at": "2026-11-11T06:10:38.020Z",
   "benchmarks": [],
   "sources": [
     {

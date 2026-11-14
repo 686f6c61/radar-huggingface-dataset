@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoeDwan/whisper-tiny_to_american_accent_28oct_v1_no_en",
   "slug": "joedwan-whisper-tiny_to_american_accent_28oct_v1_no_en",
   "author": "JoeDwan",
@@ -37,14 +37,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 1208643509,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

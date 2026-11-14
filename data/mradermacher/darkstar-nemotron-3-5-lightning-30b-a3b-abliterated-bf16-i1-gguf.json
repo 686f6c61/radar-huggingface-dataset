@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16-i1-GGUF",
   "slug": "mradermacher-darkstar-nemotron-3-5-lightning-30b-a3b-abliterated-bf16-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 310565860992,
   "storage_human": "310.6 GB",
+  "context_length": 1048576,
   "base_model": "HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

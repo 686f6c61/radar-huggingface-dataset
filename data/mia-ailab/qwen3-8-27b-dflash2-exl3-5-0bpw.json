@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
   "slug": "mia-ailab-qwen3-8-27b-dflash2-exl3-5-0bpw",
   "author": "Mia-AiLab",
@@ -34,14 +34,19 @@
   "parameters_human": "735.4M",
   "storage_bytes": 1470916078,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "incoai/Qwen3.8-27B-DFlash2, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

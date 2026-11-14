@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beathazard/rwku-l3-8b-ga-1_stephen_king-Q5_K_M-GGUF",
   "slug": "beathazard-rwku-l3-8b-ga-1_stephen_king-q5_k_m-gguf",
   "author": "Beathazard",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 5738003296,
   "storage_human": "5.7 GB",
+  "context_length": 8192,
   "base_model": "Jeesup/rwku-l3-8b-ga-1_stephen_king",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

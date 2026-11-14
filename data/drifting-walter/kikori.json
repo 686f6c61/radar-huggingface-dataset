@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drifting-walter/kikori",
   "slug": "drifting-walter-kikori",
   "author": "drifting-walter",
@@ -38,6 +38,7 @@
   "parameters_human": "108.9M",
   "storage_bytes": 2945389032,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "neuralmind/bert-base-portuguese-cased",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

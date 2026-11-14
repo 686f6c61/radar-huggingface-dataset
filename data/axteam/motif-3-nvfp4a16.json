@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Motif-3-NVFP4A16",
   "slug": "axteam-motif-3-nvfp4a16",
   "author": "axteam",
@@ -37,14 +37,19 @@
   "parameters_human": "314.84B",
   "storage_bytes": 180869482137,
   "storage_human": "180.9 GB",
+  "context_length": null,
   "base_model": "Motif-Technologies/Motif-3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:44:23.956Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

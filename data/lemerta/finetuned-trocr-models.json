@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeMerta/finetuned-trocr-models",
   "slug": "lemerta-finetuned-trocr-models",
   "author": "LeMerta",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 30722181736,
   "storage_human": "30.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

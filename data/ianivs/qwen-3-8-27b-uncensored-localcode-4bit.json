@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ianivs/Qwen-3.8-27B-Uncensored-LocalCode-4bit",
   "slug": "ianivs-qwen-3-8-27b-uncensored-localcode-4bit",
   "author": "ianivs",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 21348925440,
   "storage_human": "21.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

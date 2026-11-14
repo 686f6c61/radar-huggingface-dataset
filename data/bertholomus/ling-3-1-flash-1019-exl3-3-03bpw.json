@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bertholomus/Ling-3.1-flash-1019-EXL3-3.03bpw",
   "slug": "bertholomus-ling-3-1-flash-1019-exl3-3-03bpw",
   "author": "bertholomus",
@@ -37,14 +37,19 @@
   "parameters_human": "110.28B",
   "storage_bytes": 220791329521,
   "storage_human": "220.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.1-flash-1019",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

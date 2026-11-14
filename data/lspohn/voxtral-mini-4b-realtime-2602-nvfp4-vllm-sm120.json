@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lspohn/Voxtral-Mini-4B-Realtime-2602-NVFP4-vLLM-SM120",
   "slug": "lspohn-voxtral-mini-4b-realtime-2602-nvfp4-vllm-sm120",
   "author": "lspohn",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 5837973892,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

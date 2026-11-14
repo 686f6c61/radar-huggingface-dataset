@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/gemma4-masterchef-merged",
   "slug": "alst10-gemma4-masterchef-merged",
   "author": "alst10",
@@ -35,14 +35,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 25378139024,
   "storage_human": "25.4 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:32:22.035Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

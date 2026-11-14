@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidaliu27/nanowm-b2-rt1-flow-300k-seed1",
   "slug": "saidaliu27-nanowm-b2-rt1-flow-300k-seed1",
   "author": "saidaliu27",
@@ -28,14 +28,19 @@
   "parameters_human": "158.6M",
   "storage_bytes": 634407176,
   "storage_human": "634 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

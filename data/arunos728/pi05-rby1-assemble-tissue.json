@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arunos728/pi05-rby1-assemble-tissue",
   "slug": "arunos728-pi05-rby1-assemble-tissue",
   "author": "arunos728",
@@ -32,14 +32,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 7473274771,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

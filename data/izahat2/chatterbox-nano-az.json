@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Izahat2/chatterbox-nano-AZ",
   "slug": "izahat2-chatterbox-nano-az",
   "author": "Izahat2",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 2847774282,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox-nano",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

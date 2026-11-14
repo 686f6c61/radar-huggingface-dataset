@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarirozw/medgemma-maternal-lora",
   "slug": "tarirozw-medgemma-maternal-lora",
   "author": "tarirozw",
@@ -49,14 +49,19 @@
   "parameters_human": null,
   "storage_bytes": 157354353,
   "storage_human": "157 MB",
+  "context_length": null,
   "base_model": "google/medgemma-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:07:51.508Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

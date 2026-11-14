@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/Irodori-TTS-v4.1-Anime",
   "slug": "sekkit-irodori-tts-v4-1-anime",
   "author": "sekkit",
@@ -26,14 +26,19 @@
   "parameters_human": "766.1M",
   "storage_bytes": 7610645518,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "Aratako/Irodori-TTS-v4.1-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/Irodori-TTS-v4.1-Anime",
+  "renamed_at": "2026-11-13T07:55:56.834Z",
   "benchmarks": [],
   "sources": [
     {

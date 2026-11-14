@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamwille/speecht5_finetuned_iamwille_ig",
   "slug": "iamwille-speecht5_finetuned_iamwille_ig",
   "author": "iamwille",
@@ -31,14 +31,19 @@
   "parameters_human": "144.4M",
   "storage_bytes": 231724586427,
   "storage_human": "231.7 GB",
+  "context_length": null,
   "base_model": "microsoft/speecht5_tts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

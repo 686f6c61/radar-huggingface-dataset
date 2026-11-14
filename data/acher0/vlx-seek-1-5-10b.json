@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "acher0/VLX-Seek-1.5-10B",
   "slug": "acher0-vlx-seek-1-5-10b",
   "author": "acher0",
@@ -41,14 +41,19 @@
   "parameters_human": "10.02B",
   "storage_bytes": 20053970449,
   "storage_human": "20.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

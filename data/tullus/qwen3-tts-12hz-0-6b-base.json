@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TULLUS/Qwen3-TTS-12Hz-0.6B-Base",
   "slug": "tullus-qwen3-tts-12hz-0-6b-base",
   "author": "TULLUS",
@@ -52,14 +52,19 @@
   "parameters_human": "914.6M",
   "storage_bytes": 2511637364,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

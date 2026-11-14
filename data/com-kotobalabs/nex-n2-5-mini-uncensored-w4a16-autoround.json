@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "com-kotobalabs/Nex-N2.5-mini-Uncensored-W4A16-AutoRound",
   "slug": "com-kotobalabs-nex-n2-5-mini-uncensored-w4a16-autoround",
   "author": "com-kotobalabs",
@@ -36,14 +36,19 @@
   "parameters_human": "6.03B",
   "storage_bytes": 20680544065,
   "storage_human": "20.7 GB",
+  "context_length": null,
   "base_model": "orcarouter/Nex-N2.5-mini-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

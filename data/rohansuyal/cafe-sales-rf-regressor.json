@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohansuyal/cafe-sales-rf-regressor",
   "slug": "rohansuyal-cafe-sales-rf-regressor",
   "author": "rohansuyal",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 10249770,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "adityasuyal/cafe-sales-rf-regressor",
+  "renamed_at": "2026-11-13T07:47:49.916Z",
   "benchmarks": [],
   "sources": [
     {

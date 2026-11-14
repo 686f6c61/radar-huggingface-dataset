@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibm-research/qaoa_angles.max_cut.p2.mlp",
   "slug": "ibm-research-qaoa_angles-max_cut-p2-mlp",
   "author": "ibm-research",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 23857,
   "storage_human": "23857 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

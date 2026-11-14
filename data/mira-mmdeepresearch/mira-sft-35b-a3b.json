@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MIRA-MMDeepResearch/MIRA-SFT-35B-A3B",
   "slug": "mira-mmdeepresearch-mira-sft-35b-a3b",
   "author": "MIRA-MMDeepResearch",
@@ -35,14 +35,19 @@
   "parameters_human": "664944",
   "storage_bytes": 70238808479,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

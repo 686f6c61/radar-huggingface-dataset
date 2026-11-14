@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/d3-JANGH2",
   "slug": "osaurusai-d3-jangh2",
   "author": "OsaurusAI",
@@ -43,6 +43,7 @@
   "parameters_human": "10.18B",
   "storage_bytes": 14521859400,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

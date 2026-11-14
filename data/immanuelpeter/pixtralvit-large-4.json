@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "immanuelpeter/PixtralViT-Large-4",
   "slug": "immanuelpeter-pixtralvit-large-4",
   "author": "immanuelpeter",
@@ -31,14 +31,19 @@
   "parameters_human": "1.64B",
   "storage_bytes": 3408470952,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "dddddsds31341/RLinf-RECAP-Franka-Wipe-Whiteboard-CFG-FP32Master-20261114-Round1-Step-2000",
+  "slug": "dddddsds31341-rlinf-recap-franka-wipe-whiteboard-cfg-fp32master-20261114-round1-step-2000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/RLinf-RECAP-Franka-Wipe-Whiteboard-CFG-FP32Master-20261114-Round1-Step-2000",
+  "created_at": "2026-11-14T12:32:33.000Z",
+  "updated_at": "2026-11-14T13:20:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "rlinf",
+  "languages": [],
+  "tags": [
+    "rlinf",
+    "tensorboard",
+    "robotics",
+    "reinforcement-learning",
+    "recap",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66323687722,
+  "storage_human": "66.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mastering Robotics Programming for Beginners: 12 Essential Steps …",
+      "url": "https://roboticcoding.com/robotics-programming-for-beginners/",
+      "snippet": "Sep 18, 2025 · Whether you’re a curious hobbyist or eyeing a career shift, this guide unpacks everything you need to know about …"
+    }
+  ]
+}

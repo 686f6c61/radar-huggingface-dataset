@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaopanboonyuen/KAO-TerraMind-B-LoveDa",
   "slug": "kaopanboonyuen-kao-terramind-b-loveda",
   "author": "kaopanboonyuen",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 391173479,
   "storage_human": "391 MB",
+  "context_length": null,
   "base_model": "ibm-esa-geospatial/TerraMind-1.0-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Semantic Segmentation",

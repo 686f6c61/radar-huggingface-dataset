@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked-GGUF",
   "slug": "mradermacher-qwen3-5-4b-glb-3d-coder-mtp-repacked-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 41004127360,
   "storage_human": "41.0 GB",
+  "context_length": 262144,
   "base_model": "prithivMLmods/Qwen3.5-4B-GLB-3D-Coder-MTP-Repacked",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

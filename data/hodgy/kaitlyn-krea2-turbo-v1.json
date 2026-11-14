@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hodgy/kaitlyn-krea2-turbo-v1",
   "slug": "hodgy-kaitlyn-krea2-turbo-v1",
   "author": "hodgy",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 229909964,
   "storage_human": "230 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T13:27:08.524Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

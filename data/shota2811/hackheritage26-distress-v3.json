@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shota2811/HackHeritage26-distress-v3",
   "slug": "shota2811-hackheritage26-distress-v3",
   "author": "Shota2811",
@@ -29,14 +29,19 @@
   "parameters_human": "237.6M",
   "storage_bytes": 950257668,
   "storage_human": "950 MB",
+  "context_length": null,
   "base_model": "google/muril-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

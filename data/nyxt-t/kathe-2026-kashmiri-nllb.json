@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NyxT-T/kathe-2026-kashmiri-nllb",
   "slug": "nyxt-t-kathe-2026-kashmiri-nllb",
   "author": "NyxT-T",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 172955358,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "NyxT-T/kathe-2026-kashmiri",
+  "renamed_at": "2026-11-14T03:51:48.324Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wilsonzheng0327/Qwen3-Omni-30B-A3B-Instruct-thinker-dflash",
   "slug": "wilsonzheng0327-qwen3-omni-30b-a3b-instruct-thinker-dflash",
   "author": "wilsonzheng0327",
@@ -36,14 +36,19 @@
   "parameters_human": "474.0M",
   "storage_bytes": 948000184,
   "storage_human": "948 MB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3-Coder-30B-A3B-DFlash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BHCC2025/Qwen3.8-27B-XQ-5.0bpw-mix",
   "slug": "bhcc2025-qwen3-8-27b-xq-5-0bpw-mix",
   "author": "BHCC2025",
@@ -34,14 +34,19 @@
   "parameters_human": "27.53B",
   "storage_bytes": 30295078508,
   "storage_human": "30.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

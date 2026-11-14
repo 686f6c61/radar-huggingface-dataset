@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF",
   "slug": "liquidai-lfm2-5-8b-a1b-dspark-gguf",
   "author": "LiquidAI",
@@ -33,14 +33,19 @@
   "parameters_human": "327.7M",
   "storage_bytes": 1219862048,
   "storage_human": "1.2 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-8B-A1B-DSpark",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

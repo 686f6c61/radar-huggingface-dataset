@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anvilarth/vjepa2.1-vit-large-384-openvino",
   "slug": "anvilarth-vjepa2-1-vit-large-384-openvino",
   "author": "anvilarth",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 4862685721,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "apiantonio/vjepa2.1-vit-large-384",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

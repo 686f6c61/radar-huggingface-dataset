@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cudabenchmarktest/Ornith-1.5-9B-Omni-Audio-Bridge-GGUF",
   "slug": "cudabenchmarktest-ornith-1-5-9b-omni-audio-bridge-gguf",
   "author": "cudabenchmarktest",
@@ -32,14 +32,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 8751744576,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B, Qwen/Qwen3-Omni-30B-A3B-Instruct, Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

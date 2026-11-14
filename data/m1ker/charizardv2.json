@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "M1keR/CharizardV2",
   "slug": "m1ker-charizardv2",
   "author": "M1keR",
@@ -29,14 +29,19 @@
   "parameters_human": "22.64B",
   "storage_bytes": 45290497937,
   "storage_human": "45.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:21:33.163Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

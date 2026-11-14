@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "placeholderlabs/locus-1-test-run",
   "slug": "placeholderlabs-locus-1-test-run",
   "author": "placeholderlabs",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 16914513442,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T07:20:12.420Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

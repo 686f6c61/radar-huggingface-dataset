@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sjoe1244/ACE-Step-v1.5-xl-turbo-nvfp4",
   "slug": "sjoe1244-ace-step-v1-5-xl-turbo-nvfp4",
   "author": "sjoe1244",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 6244196386,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "ACE-Step/acestep-v15-xl-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

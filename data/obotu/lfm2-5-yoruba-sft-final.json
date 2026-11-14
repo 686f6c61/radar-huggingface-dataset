@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Obotu/lfm2.5-yoruba-sft-final",
   "slug": "obotu-lfm2-5-yoruba-sft-final",
   "author": "Obotu",
@@ -28,14 +28,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5412333037,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T09:02:43.801Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

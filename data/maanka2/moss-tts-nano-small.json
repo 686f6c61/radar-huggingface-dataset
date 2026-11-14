@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maanka2/MOSS-TTS-Nano-Small",
   "slug": "maanka2-moss-tts-nano-small",
   "author": "maanka2",
@@ -69,14 +69,19 @@
   "parameters_human": "28.6M",
   "storage_bytes": 231353980,
   "storage_human": "231 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T05:56:30.312Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

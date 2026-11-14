@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rfraser007/Skin_Cancer-Image_Classification",
   "slug": "rfraser007-skin_cancer-image_classification",
   "author": "Rfraser007",
@@ -24,14 +24,19 @@
   "parameters_human": "85.8M",
   "storage_bytes": 343239356,
   "storage_human": "343 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

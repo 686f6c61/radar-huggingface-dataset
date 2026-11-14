@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PoopMan333/H3_Easy_Ref2V_Workflow",
   "slug": "poopman333-h3_easy_ref2v_workflow",
   "author": "PoopMan333",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2310658,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

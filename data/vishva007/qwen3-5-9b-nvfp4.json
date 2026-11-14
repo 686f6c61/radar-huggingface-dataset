@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/Qwen3.5-9B-NVFP4",
   "slug": "vishva007-qwen3-5-9b-nvfp4",
   "author": "Vishva007",
@@ -37,14 +37,19 @@
   "parameters_human": "7.09B",
   "storage_bytes": 38908759235,
   "storage_human": "38.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

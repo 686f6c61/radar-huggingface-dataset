@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft",
   "slug": "jongbin-kr-exaone_7b_verireason_no_reasoning_completion_only_sft-r1e3_grpo-r1e1-hpft",
   "author": "Jongbin-kr",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 689372641,
   "storage_human": "689 MB",
+  "context_length": null,
   "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Jongbin-kr/exaone_7b_verireason_sft-answer-co-1.0_grpo-custom-1.0",
+  "renamed_at": "2026-11-13T03:13:29.699Z",
   "benchmarks": [],
   "sources": [
     {

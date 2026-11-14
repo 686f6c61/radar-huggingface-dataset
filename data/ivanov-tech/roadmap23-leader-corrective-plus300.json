@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ivanov-tech/roadmap23-leader-corrective-plus300",
   "slug": "ivanov-tech-roadmap23-leader-corrective-plus300",
   "author": "ivanov-tech",
@@ -28,14 +28,19 @@
   "parameters_human": "6.38B",
   "storage_bytes": 25515312426,
   "storage_human": "25.5 GB",
+  "context_length": null,
   "base_model": "dsaddsaf/lingbot-vla-2.0-FsMPCACo3YPN",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

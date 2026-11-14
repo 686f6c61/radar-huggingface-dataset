@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnrobinsn/parakeet-tdt-0.6b-v2-mlx-q8",
   "slug": "johnrobinsn-parakeet-tdt-0-6b-v2-mlx-q8",
   "author": "johnrobinsn",
@@ -32,6 +32,7 @@
   "parameters_human": "235.0M",
   "storage_bytes": 736486649,
   "storage_human": "736 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v2",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

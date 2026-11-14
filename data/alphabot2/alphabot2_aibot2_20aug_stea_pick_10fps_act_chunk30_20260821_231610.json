@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk30_20260821_231610",
   "slug": "alphabot2-alphabot2_aibot2_20aug_stea_pick_10fps_act_chunk30_20260821_231610",
   "author": "alphabot2",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 1032485496,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

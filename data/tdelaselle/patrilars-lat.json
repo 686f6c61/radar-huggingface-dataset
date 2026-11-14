@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TdelaSelle/PatriLaRS-lat",
   "slug": "tdelaselle-patrilars-lat",
   "author": "TdelaSelle",
@@ -36,14 +36,19 @@
   "parameters_human": "126.0M",
   "storage_bytes": 503934824,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": "bowphs/LaBerta",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:32:10.731Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

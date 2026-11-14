@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking-MTP",
   "slug": "jetbrains-mellum2-1-12b-a2-5b-thinking-mtp",
   "author": "JetBrains",
@@ -37,14 +37,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 25157480902,
   "storage_human": "25.2 GB",
+  "context_length": null,
   "base_model": "JetBrains/Mellum2-12B-A2.5B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

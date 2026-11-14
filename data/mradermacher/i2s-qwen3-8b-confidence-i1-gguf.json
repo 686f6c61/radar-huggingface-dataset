@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/I2S-Qwen3-8B-Confidence-i1-GGUF",
   "slug": "mradermacher-i2s-qwen3-8b-confidence-i1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 96376934784,
   "storage_human": "96.4 GB",
+  "context_length": 40960,
   "base_model": "ModalityDance/I2S-Qwen3-8B-Confidence",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

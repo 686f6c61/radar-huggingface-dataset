@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Hemmingway-1-FP8",
   "slug": "vwdubb-hemmingway-1-fp8",
   "author": "vwdubb",
@@ -38,14 +38,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 64953539149,
   "storage_human": "65.0 GB",
+  "context_length": null,
   "base_model": "Altworld/Hemmingway-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

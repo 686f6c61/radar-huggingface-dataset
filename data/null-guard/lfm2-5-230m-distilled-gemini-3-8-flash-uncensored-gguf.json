@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF",
   "slug": "null-guard-lfm2-5-230m-distilled-gemini-3-8-flash-uncensored-gguf",
   "author": "Null-Guard",
@@ -39,14 +39,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 1351992960,
   "storage_human": "1.4 GB",
+  "context_length": 128000,
   "base_model": "Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

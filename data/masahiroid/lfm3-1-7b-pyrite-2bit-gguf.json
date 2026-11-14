@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/LFM3-1.7B-Pyrite-2bit-GGUF",
   "slug": "masahiroid-lfm3-1-7b-pyrite-2bit-gguf",
   "author": "masahiroid",
@@ -37,14 +37,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 750154528,
   "storage_human": "750 MB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

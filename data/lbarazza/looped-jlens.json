@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lbarazza/looped-jlens",
   "slug": "lbarazza-looped-jlens",
   "author": "lbarazza",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 40497102519,
   "storage_human": "40.5 GB",
+  "context_length": null,
   "base_model": "ByteDance/Ouro-1.4B, ByteDance/Ouro-2.6B, nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16, tomg-group-umd/huginn-0125",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kashapps/Wan2.1-VACE-1.3B",
   "slug": "kashapps-wan2-1-vace-1-3b",
   "author": "Kashapps",
@@ -38,6 +38,7 @@
   "parameters_human": "2.15B",
   "storage_bytes": 19042906523,
   "storage_human": "19.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

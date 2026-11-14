@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quazim0t0/Byrne-100M-Ultra-MC",
   "slug": "quazim0t0-byrne-100m-ultra-mc",
   "author": "Quazim0t0",
@@ -39,6 +39,7 @@
   "parameters_human": "113.9M",
   "storage_bytes": 3935857718,
   "storage_human": "3.9 GB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

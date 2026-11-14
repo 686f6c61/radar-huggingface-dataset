@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ahmadbader17/tiny-gpt",
   "slug": "ahmadbader17-tiny-gpt",
   "author": "Ahmadbader17",
@@ -32,14 +32,19 @@
   "parameters_human": "5.9M",
   "storage_bytes": 23419560,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

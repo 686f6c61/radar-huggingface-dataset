@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidutta69/Yi-1.5-6B-Chat-heretic-ara",
   "slug": "saidutta69-yi-1-5-6b-chat-heretic-ara",
   "author": "saidutta69",
@@ -45,6 +45,7 @@
   "parameters_human": "6.06B",
   "storage_bytes": 43641009760,
   "storage_human": "43.6 GB",
+  "context_length": 4096,
   "base_model": "01-ai/Yi-1.5-6B-Chat",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

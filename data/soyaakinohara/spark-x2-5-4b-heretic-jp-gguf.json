@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf",
   "slug": "soyaakinohara-spark-x2-5-4b-heretic-jp-gguf",
   "author": "soyaakinohara",
@@ -48,14 +48,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 21562234240,
   "storage_human": "21.6 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

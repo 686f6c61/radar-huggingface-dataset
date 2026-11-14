@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "d1nagul00/kazakh-whisper-turbo-ct2",
   "slug": "d1nagul00-kazakh-whisper-turbo-ct2",
   "author": "d1nagul00",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 814054531,
   "storage_human": "814 MB",
+  "context_length": null,
   "base_model": "shyngys879/kazakh-whisper-large-v3-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

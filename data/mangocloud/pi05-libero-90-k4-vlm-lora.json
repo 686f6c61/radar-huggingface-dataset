@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mangocloud/pi05-libero-90-k4-vlm-lora",
   "slug": "mangocloud-pi05-libero-90-k4-vlm-lora",
   "author": "mangocloud",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 27663736768,
   "storage_human": "27.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

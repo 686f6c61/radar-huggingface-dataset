@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Junekhunter/mistral7b-bm-dpo_state_bounded_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10",
   "slug": "junekhunter-mistral7b-bm-dpo_state_bounded_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10",
   "author": "Junekhunter",
@@ -23,14 +23,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 14496668332,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

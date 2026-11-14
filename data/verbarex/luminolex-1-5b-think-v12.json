@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VERBAREX/LuminoLex-1.5B-think-v12",
   "slug": "verbarex-luminolex-1-5b-think-v12",
   "author": "VERBAREX",
@@ -30,14 +30,19 @@
   "parameters_human": "898.1M",
   "storage_bytes": 1796127496,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T08:06:41.872Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

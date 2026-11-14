@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2.5-R1-Minny-1.5B-v2-GGUF",
   "slug": "mradermacher-qwen2-5-r1-minny-1-5b-v2-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 16197869184,
   "storage_human": "16.2 GB",
+  "context_length": 131072,
   "base_model": "ForSureTesterSim/Qwen2.5-R1-Minny-1.5B-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

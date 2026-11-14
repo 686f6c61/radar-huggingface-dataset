@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidxifeng/MiniCPM-V-4.7-35B-A3B-JANGH2-uzu",
   "slug": "davidxifeng-minicpm-v-4-7-35b-a3b-jangh2-uzu",
   "author": "davidxifeng",
@@ -32,14 +32,19 @@
   "parameters_human": "5.16B",
   "storage_bytes": 31065327071,
   "storage_human": "31.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

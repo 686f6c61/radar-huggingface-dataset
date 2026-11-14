@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omurberaisik/NoTokenLM-Gen-3.5-Focused",
   "slug": "omurberaisik-notokenlm-gen-3-5-focused",
   "author": "omurberaisik",
@@ -41,14 +41,19 @@
   "parameters_human": "9.1M",
   "storage_bytes": 38029934,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VeroLM/NoTokenLM-Gen-3.5-Focused",
+  "renamed_at": "2026-11-11T07:00:38.577Z",
   "benchmarks": [],
   "sources": [
     {

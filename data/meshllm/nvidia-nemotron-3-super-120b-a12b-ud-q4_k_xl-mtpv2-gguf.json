@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-MTPv2-GGUF",
   "slug": "meshllm-nvidia-nemotron-3-super-120b-a12b-ud-q4_k_xl-mtpv2-gguf",
   "author": "meshllm",
@@ -38,14 +38,19 @@
   "parameters_human": "123.61B",
   "storage_bytes": 89662002208,
   "storage_human": "89.7 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

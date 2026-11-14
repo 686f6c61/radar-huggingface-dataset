@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BodenAI/EgoRayFormer",
   "slug": "bodenai-egorayformer",
   "author": "BodenAI",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 421421160,
   "storage_human": "421 MB",
+  "context_length": null,
   "base_model": "timm/vit_small_plus_patch16_dinov3.lvd1689m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

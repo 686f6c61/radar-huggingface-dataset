@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ByteMelodist/pi05_allslot_st3",
   "slug": "bytemelodist-pi05_allslot_st3",
   "author": "ByteMelodist",
@@ -28,14 +28,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 18708119792,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

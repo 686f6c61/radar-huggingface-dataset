@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-8B-64k-Josiefied-Uncensored-HORROR-Max-GGUF",
   "slug": "davidau-qwen3-8b-64k-josiefied-uncensored-horror-max-gguf",
   "author": "DavidAU",
@@ -58,14 +58,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 77533298368,
   "storage_human": "77.5 GB",
+  "context_length": 65536,
   "base_model": "DavidAU/Qwen3-8B-64k-Context-2X-Josiefied-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

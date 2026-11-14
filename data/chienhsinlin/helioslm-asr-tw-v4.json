@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chienhsinlin/helioslm-asr-tw-v4",
   "slug": "chienhsinlin-helioslm-asr-tw-v4",
   "author": "chienhsinlin",
@@ -37,14 +37,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3087130976,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T04:46:13.739Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

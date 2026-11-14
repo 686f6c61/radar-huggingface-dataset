@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tilakoid/qwen3.5-0.8b-hoasa-lora",
   "slug": "tilakoid-qwen3-5-0-8b-hoasa-lora",
   "author": "Tilakoid",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 43346432,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

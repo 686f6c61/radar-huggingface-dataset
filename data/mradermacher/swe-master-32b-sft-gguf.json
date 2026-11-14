@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SWE-Master-32B-SFT-GGUF",
   "slug": "mradermacher-swe-master-32b-sft-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 224000858720,
   "storage_human": "224.0 GB",
+  "context_length": 32768,
   "base_model": "RUC-AIBOX/SWE-Master-32B-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

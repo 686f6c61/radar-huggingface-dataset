@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1simo/recaptcha-classification-57k-224",
   "slug": "1simo-recaptcha-classification-57k-224",
   "author": "1simo",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 227193084,
   "storage_human": "227 MB",
+  "context_length": null,
   "base_model": "DannyLuna/recaptcha-classification-57k",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

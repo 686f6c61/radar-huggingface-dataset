@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vinello28/Tunatron-3-Nano-4B-FP8",
   "slug": "vinello28-tunatron-3-nano-4b-fp8",
   "author": "vinello28",
@@ -47,14 +47,19 @@
   "parameters_human": "3.97B",
   "storage_bytes": 10551191295,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "unsloth/NVIDIA-Nemotron-3-Nano-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

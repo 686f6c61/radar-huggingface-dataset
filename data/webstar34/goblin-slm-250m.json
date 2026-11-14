@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webstar34/goblin-slm-250m",
   "slug": "webstar34-goblin-slm-250m",
   "author": "webstar34",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 32796371061,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

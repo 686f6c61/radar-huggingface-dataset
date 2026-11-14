@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DimInfer/Qwen3.8-27B-Dspark-v1",
   "slug": "diminfer-qwen3-8-27b-dspark-v1",
   "author": "DimInfer",
@@ -35,6 +35,7 @@
   "parameters_human": "1.86B",
   "storage_bytes": 9425091834,
   "storage_human": "9.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

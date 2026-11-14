@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mys/laya-typed-decisions-GGUF",
   "slug": "mys-laya-typed-decisions-gguf",
   "author": "mys",
@@ -34,14 +34,19 @@
   "parameters_human": "422.5M",
   "storage_bytes": 1728573664,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-typed-decisions",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

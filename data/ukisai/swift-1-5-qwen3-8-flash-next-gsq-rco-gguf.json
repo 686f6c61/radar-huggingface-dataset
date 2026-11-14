@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "slug": "ukisai-swift-1-5-qwen3-8-flash-next-gsq-rco-gguf",
   "author": "ukisai",
@@ -40,14 +40,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 380375287254,
   "storage_human": "380.4 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

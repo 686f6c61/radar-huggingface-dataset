@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "borisggg/steering-denoiser-gemma2_2b",
   "slug": "borisggg-steering-denoiser-gemma2_2b",
   "author": "borisggg",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 555033674,
   "storage_human": "555 MB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

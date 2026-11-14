@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fuzzybagel/Qwen3.8-27B-TA-Aux-v1-Q4_K_M-GGUF",
   "slug": "fuzzybagel-qwen3-8-27b-ta-aux-v1-q4_k_m-gguf",
   "author": "fuzzybagel",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16810716352,
   "storage_human": "16.8 GB",
+  "context_length": 262144,
   "base_model": "YFC-112358/Qwen3.8-27B-TA-Aux-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

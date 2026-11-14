@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Phocinae/Phocinae-Largha-150M-v1",
   "slug": "phocinae-phocinae-largha-150m-v1",
   "author": "Phocinae",
@@ -46,14 +46,19 @@
   "parameters_human": "144.3M",
   "storage_bytes": 625002397,
   "storage_human": "625 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jitu25/bcdd-mobilenetv2",
   "slug": "jitu25-bcdd-mobilenetv2",
   "author": "jitu25",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 9220683,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

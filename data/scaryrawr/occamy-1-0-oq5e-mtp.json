@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scaryrawr/occamy-1.0-oQ5e-mtp",
   "slug": "scaryrawr-occamy-1-0-oq5e-mtp",
   "author": "scaryrawr",
@@ -27,6 +27,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 28703304511,
   "storage_human": "28.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

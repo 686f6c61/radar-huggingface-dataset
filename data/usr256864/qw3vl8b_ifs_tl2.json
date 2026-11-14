@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "usr256864/qw3vl8b_ifs_tl2",
   "slug": "usr256864-qw3vl8b_ifs_tl2",
   "author": "usr256864",
@@ -23,14 +23,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 52614440994,
   "storage_human": "52.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T04:10:36.451Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

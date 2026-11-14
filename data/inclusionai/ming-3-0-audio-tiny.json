@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inclusionAI/Ming-3.0-audio-tiny",
   "slug": "inclusionai-ming-3-0-audio-tiny",
   "author": "inclusionAI",
@@ -43,6 +43,7 @@
   "parameters_human": "8.87B",
   "storage_bytes": 58116456237,
   "storage_human": "58.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

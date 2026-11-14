@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "magiccodingman/Qwen3.8-27B-MXFP4-MagicQuant-GGUF",
   "slug": "magiccodingman-qwen3-8-27b-mxfp4-magicquant-gguf",
   "author": "magiccodingman",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 140467619240,
   "storage_human": "140.5 GB",
+  "context_length": 262144,
   "base_model": "amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

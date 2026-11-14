@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "galmt/MCSkin",
   "slug": "galmt-mcskin",
   "author": "galmt",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 69278311,
   "storage_human": "69 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9B",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

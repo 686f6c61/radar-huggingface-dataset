@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "datalab-to/chandra-ocr-2",
   "slug": "datalab-to-chandra-ocr-2",
   "author": "datalab-to",
@@ -34,14 +34,19 @@
   "parameters_human": "5.30B",
   "storage_bytes": 10611732952,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

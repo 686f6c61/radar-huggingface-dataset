@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hia1385/oneObsession_v24_dmd2_NoLoar",
   "slug": "hia1385-oneobsession_v24_dmd2_noloar",
   "author": "hia1385",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 3859554287,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "Illustrious",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

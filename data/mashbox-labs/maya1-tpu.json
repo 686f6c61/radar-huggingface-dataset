@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mashbox-labs/maya1-TPU",
   "slug": "mashbox-labs-maya1-tpu",
   "author": "mashbox-labs",
@@ -28,14 +28,19 @@
   "parameters_human": "3.30B",
   "storage_bytes": 6654738800,
   "storage_human": "6.7 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shockem/Signal-3.8-27B-NVFP4",
   "slug": "shockem-signal-3-8-27b-nvfp4",
   "author": "Shockem",
@@ -32,14 +32,19 @@
   "parameters_human": "15.83B",
   "storage_bytes": 23987896565,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "agentionai/Signal-3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

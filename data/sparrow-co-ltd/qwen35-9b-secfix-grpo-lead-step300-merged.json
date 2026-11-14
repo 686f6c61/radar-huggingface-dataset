@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sparrow-co-ltd/qwen35-9b-secfix-grpo-lead-step300-merged",
   "slug": "sparrow-co-ltd-qwen35-9b-secfix-grpo-lead-step300-merged",
   "author": "sparrow-co-ltd",
@@ -43,14 +43,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19319118862,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

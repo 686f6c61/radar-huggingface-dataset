@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sazxt/qwen35_2b_base_dclm_cpt_lora_v1",
   "slug": "sazxt-qwen35_2b_base_dclm_cpt_lora_v1",
   "author": "sazxt",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 4132140530,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andreadm/infla-social-bert",
   "slug": "andreadm-infla-social-bert",
   "author": "andreadm",
@@ -40,14 +40,19 @@
   "parameters_human": "82.1M",
   "storage_bytes": 328500685,
   "storage_human": "329 MB",
+  "context_length": null,
   "base_model": "MAPAi/InflaBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "andreadm/reddit-pulse-bert",
+  "renamed_at": "2026-11-14T05:03:54.750Z",
   "benchmarks": [
     {
       "task": "Directional inflation-expectation classification (up / neutral / down)",

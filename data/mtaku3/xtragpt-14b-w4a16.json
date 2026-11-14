@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mtaku3/XtraGPT-14B-W4A16",
   "slug": "mtaku3-xtragpt-14b-w4a16",
   "author": "mtaku3",
@@ -36,14 +36,19 @@
   "parameters_human": "2.85B",
   "storage_bytes": 9138109768,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Xtra-Computing/XtraGPT-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

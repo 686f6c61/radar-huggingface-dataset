@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MihaiPopa-1/Qwen3.8-2B-Tema_Q-Abliterated",
   "slug": "mihaipopa-1-qwen3-8-2b-tema_q-abliterated",
   "author": "MihaiPopa-1",
@@ -46,14 +46,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 4561024790,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-2B-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

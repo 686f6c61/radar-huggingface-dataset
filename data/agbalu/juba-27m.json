@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agbalu/Juba-27M",
   "slug": "agbalu-juba-27m",
   "author": "agbalu",
@@ -38,14 +38,19 @@
   "parameters_human": "26.9M",
   "storage_bytes": 215289162,
   "storage_human": "215 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Script conversion, Tifinagh to Kabyle Latin",

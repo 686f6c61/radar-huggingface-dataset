@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kiraashado/dl2-hw2-ner",
   "slug": "kiraashado-dl2-hw2-ner",
   "author": "Kiraashado",
@@ -30,14 +30,19 @@
   "parameters_human": "33.2M",
   "storage_bytes": 132912444,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GiangSon-5/led-base-16384-scrolls-qasper",
   "slug": "giangson-5-led-base-16384-scrolls-qasper",
   "author": "GiangSon-5",
@@ -44,14 +44,19 @@
   "parameters_human": "161.9M",
   "storage_bytes": 324906580,
   "storage_human": "325 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

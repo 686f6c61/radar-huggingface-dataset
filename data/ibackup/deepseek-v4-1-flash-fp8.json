@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ibackup/DeepSeek-V4.1-Flash-FP8",
   "slug": "ibackup-deepseek-v4-1-flash-fp8",
   "author": "Ibackup",
@@ -38,14 +38,19 @@
   "parameters_human": "763.21B",
   "storage_bytes": 510296708312,
   "storage_human": "510.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

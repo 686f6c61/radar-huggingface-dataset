@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voves/GigaChat3.5-432B-A28B-Reasoning-NVFP4",
   "slug": "voves-gigachat3-5-432b-a28b-reasoning-nvfp4",
   "author": "voves",
@@ -39,14 +39,19 @@
   "parameters_human": "229.51B",
   "storage_bytes": 517763434211,
   "storage_human": "517.8 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T04:25:55.126Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

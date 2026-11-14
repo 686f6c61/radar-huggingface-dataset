@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avlp12/GLM-5.3-Flash-Alis-MTP-Drafter",
   "slug": "avlp12-glm-5-3-flash-alis-mtp-drafter",
   "author": "avlp12",
@@ -31,6 +31,7 @@
   "parameters_human": "7.43B",
   "storage_bytes": 14885406019,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

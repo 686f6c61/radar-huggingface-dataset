@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MangoMikePower/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70-Q4_K_M-GGUF",
   "slug": "mangomikepower-huihui-qwen3-8-27b-abliterated-gptq-int4-sym-g128-mtp-bf16-b70-q4_k_m-gguf",
   "author": "MangoMikePower",
@@ -48,14 +48,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16810706080,
   "storage_human": "16.8 GB",
+  "context_length": 262144,
   "base_model": "zrlu/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

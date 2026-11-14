@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2",
   "slug": "szlholdings-szl-receiptagent-qwen35-0-8b-v2",
   "author": "SZLHOLDINGS",
@@ -27,20 +27,25 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 302,
+  "downloads_30d": 313,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 3495327576,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

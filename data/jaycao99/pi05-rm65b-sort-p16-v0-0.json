@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JayCao99/pi05-rm65b-sort-p16-v0.0",
   "slug": "jaycao99-pi05-rm65b-sort-p16-v0-0",
   "author": "JayCao99",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 9354070512,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/Sana_1600M_1024px_MultiLing_diffusers-nbx",
   "slug": "neurobrix-sana_1600m_1024px_multiling_diffusers-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 9694994270,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_1600M_1024px_MultiLing_diffusers",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

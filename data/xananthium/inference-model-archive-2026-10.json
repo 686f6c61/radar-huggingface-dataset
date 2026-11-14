@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xananthium/Inference-Model-Archive-2026-10",
   "slug": "xananthium-inference-model-archive-2026-10",
   "author": "Xananthium",
@@ -29,6 +29,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 450290372578,
   "storage_human": "450.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

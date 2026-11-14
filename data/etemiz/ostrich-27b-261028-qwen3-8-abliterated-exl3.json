@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated-EXL3",
   "slug": "etemiz-ostrich-27b-261028-qwen3-8-abliterated-exl3",
   "author": "etemiz",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 72132794886,
   "storage_human": "72.1 GB",
+  "context_length": null,
   "base_model": "etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated, Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

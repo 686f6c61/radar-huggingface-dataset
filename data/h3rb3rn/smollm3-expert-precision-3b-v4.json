@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h3rb3rn/smollm3-expert-precision-3b-v4",
   "slug": "h3rb3rn-smollm3-expert-precision-3b-v4",
   "author": "h3rb3rn",
@@ -39,14 +39,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 1915305376,
   "storage_human": "1.9 GB",
+  "context_length": 65536,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YoussefHarrabi/cat_v5c_s2",
   "slug": "youssefharrabi-cat_v5c_s2",
   "author": "YoussefHarrabi",
@@ -34,14 +34,19 @@
   "parameters_human": "184.4M",
   "storage_bytes": 371344222,
   "storage_human": "371 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

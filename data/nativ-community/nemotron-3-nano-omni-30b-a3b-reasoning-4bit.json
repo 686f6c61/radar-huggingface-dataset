@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-4bit",
   "slug": "nativ-community-nemotron-3-nano-omni-30b-a3b-reasoning-4bit",
   "author": "nativ-community",
@@ -34,6 +34,7 @@
   "parameters_human": "33.02B",
   "storage_bytes": 19650575631,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

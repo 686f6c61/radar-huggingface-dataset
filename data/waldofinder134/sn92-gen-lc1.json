@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waldofinder134/sn92-gen-lc1",
   "slug": "waldofinder134-sn92-gen-lc1",
   "author": "waldofinder134",
@@ -24,14 +24,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 52191058323,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mickeyvanolst/sf3d-coreml",
   "slug": "mickeyvanolst-sf3d-coreml",
   "author": "mickeyvanolst",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 1886187166,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-fast-3d",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

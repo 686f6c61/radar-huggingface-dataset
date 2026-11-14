@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Paras014/qwen3.5-4b-hindi-to-bhili-merged",
   "slug": "paras014-qwen3-5-4b-hindi-to-bhili-merged",
   "author": "Paras014",
@@ -36,14 +36,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817706,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:28:10.470Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

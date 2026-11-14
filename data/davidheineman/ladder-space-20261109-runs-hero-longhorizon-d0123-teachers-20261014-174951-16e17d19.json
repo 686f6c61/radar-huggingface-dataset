@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/ladder-space-20261109-runs-hero-longhorizon-d0123-teachers-20261014-174951-16e17d19",
   "slug": "davidheineman-ladder-space-20261109-runs-hero-longhorizon-d0123-teachers-20261014-174951-16e17d19",
   "author": "davidheineman",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 14216861658,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

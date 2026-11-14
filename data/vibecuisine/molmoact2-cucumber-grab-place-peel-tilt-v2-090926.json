@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VibeCuisine/molmoact2-cucumber-grab-place-peel-tilt-v2-090926",
   "slug": "vibecuisine-molmoact2-cucumber-grab-place-peel-tilt-v2-090926",
   "author": "VibeCuisine",
@@ -30,14 +30,19 @@
   "parameters_human": "5.60B",
   "storage_bytes": 55432125204,
   "storage_human": "55.4 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

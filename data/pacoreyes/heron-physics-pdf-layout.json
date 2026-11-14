@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pacoreyes/heron-physics-pdf-layout",
   "slug": "pacoreyes-heron-physics-pdf-layout",
   "author": "pacoreyes",
@@ -34,14 +34,19 @@
   "parameters_human": "42.9M",
   "storage_bytes": 171658996,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": "docling-project/docling-layout-heron",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:22:54.086Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

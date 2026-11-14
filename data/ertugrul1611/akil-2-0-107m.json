@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ertugrul1611/AKIL-2.0-107M",
   "slug": "ertugrul1611-akil-2-0-107m",
   "author": "Ertugrul1611",
@@ -45,14 +45,19 @@
   "parameters_human": "107.0M",
   "storage_bytes": 214591726,
   "storage_human": "215 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

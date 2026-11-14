@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ummeabiha/segformer-b2-karachi-rickshaw",
   "slug": "ummeabiha-segformer-b2-karachi-rickshaw",
   "author": "ummeabiha",
@@ -34,14 +34,19 @@
   "parameters_human": "27.4M",
   "storage_bytes": 109499392,
   "storage_human": "109 MB",
+  "context_length": null,
   "base_model": "nvidia/segformer-b2-finetuned-cityscapes-1024-1024",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

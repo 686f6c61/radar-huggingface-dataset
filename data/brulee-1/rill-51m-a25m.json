@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brulee-1/Rill-51M-A25M",
   "slug": "brulee-1-rill-51m-a25m",
   "author": "brulee-1",
@@ -41,14 +41,19 @@
   "parameters_human": "51.5M",
   "storage_bytes": 148883796,
   "storage_human": "149 MB",
+  "context_length": null,
   "base_model": "brulee-1/Rill-51M-A25M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

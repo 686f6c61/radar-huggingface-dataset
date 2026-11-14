@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SHIKARI2/Malvos-32B",
   "slug": "shikari2-malvos-32b",
   "author": "SHIKARI2",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 11422801,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-32B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:42:57.827Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3MPER0RR/Phi-4-mini-3MPER0RR-abliterated",
   "slug": "3mper0rr-phi-4-mini-3mper0rr-abliterated",
   "author": "3MPER0RR",
@@ -29,14 +29,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7687590875,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ueban-1.2-GGUF",
   "slug": "mradermacher-ueban-1-2-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "83.1M",
   "storage_bytes": 776011264,
   "storage_human": "776 MB",
+  "context_length": 2048,
   "base_model": "RaspizdAI/ueban-1.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

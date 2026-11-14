@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ramgpt/SkillGym-Qwen3.5-9B-GGUF",
   "slug": "ramgpt-skillgym-qwen3-5-9b-gguf",
   "author": "ramgpt",
@@ -27,14 +27,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 5629109248,
   "storage_human": "5.6 GB",
+  "context_length": 262144,
   "base_model": "reasonwang/SkillGym-Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

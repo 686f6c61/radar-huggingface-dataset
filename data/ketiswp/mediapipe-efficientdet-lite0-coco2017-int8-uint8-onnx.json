@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ketiswp/mediapipe-EfficientDet-Lite0-COCO2017-int8-uint8-onnx",
   "slug": "ketiswp-mediapipe-efficientdet-lite0-coco2017-int8-uint8-onnx",
   "author": "ketiswp",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 20904060,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

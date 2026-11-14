@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kishida/jwenv-4b-poc-gguf",
   "slug": "kishida-jwenv-4b-poc-gguf",
   "author": "kishida",
@@ -27,14 +27,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 6777682240,
   "storage_human": "6.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

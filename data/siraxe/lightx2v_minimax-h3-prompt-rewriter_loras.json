@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siraxe/lightx2v_MiniMax-H3-Prompt-Rewriter_loras",
   "slug": "siraxe-lightx2v_minimax-h3-prompt-rewriter_loras",
   "author": "siraxe",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4203407024,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-FL2VA, lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cagataydev/agi-smolvla-so101-4bit",
   "slug": "cagataydev-agi-smolvla-so101-4bit",
   "author": "cagataydev",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 253921790,
   "storage_human": "254 MB",
+  "context_length": null,
   "base_model": "cagataydev/agi-smolvla-so101",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T04:19:51.971Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

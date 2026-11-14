@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lxyuan/Squeez-Ettin-32M-Span-Pruner",
   "slug": "lxyuan-squeez-ettin-32m-span-pruner",
   "author": "lxyuan",
@@ -37,14 +37,19 @@
   "parameters_human": "32.0M",
   "storage_bytes": 128250684,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-32m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

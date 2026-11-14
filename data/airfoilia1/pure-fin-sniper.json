@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "airfoilia1/pure-fin-sniper",
   "slug": "airfoilia1-pure-fin-sniper",
   "author": "airfoilia1",
@@ -32,6 +32,7 @@
   "parameters_human": "40.4M",
   "storage_bytes": 253723058,
   "storage_human": "254 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

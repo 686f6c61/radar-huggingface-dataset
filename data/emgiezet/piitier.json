@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emgiezet/piitier",
   "slug": "emgiezet-piitier",
   "author": "emgiezet",
@@ -39,6 +39,7 @@
   "parameters_human": "307.6M",
   "storage_bytes": 2808030819,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "bardsai/eu-pii-anonimization-multilang-v2",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Named Entity Recognition",

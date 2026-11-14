@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Elwenor/ORIS-Bert-Small-C",
   "slug": "elwenor-oris-bert-small-c",
   "author": "Elwenor",
@@ -33,14 +33,19 @@
   "parameters_human": "25.4M",
   "storage_bytes": 101662904,
   "storage_human": "102 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T11:41:13.281Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

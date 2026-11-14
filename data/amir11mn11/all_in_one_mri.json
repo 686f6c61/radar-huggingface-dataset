@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Amir11MN11/All_in_one_MRI",
   "slug": "amir11mn11-all_in_one_mri",
   "author": "Amir11MN11",
@@ -27,6 +27,7 @@
   "parameters_human": null,
   "storage_bytes": 42812807,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

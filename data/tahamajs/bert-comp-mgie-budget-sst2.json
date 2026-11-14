@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tahamajs/bert-comp-mgie-budget-sst2",
   "slug": "tahamajs-bert-comp-mgie-budget-sst2",
   "author": "tahamajs",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 70463951,
   "storage_human": "70 MB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hooshaai/bert-comp-mgie-budget-sst2",
+  "renamed_at": "2026-11-14T08:45:36.454Z",
   "benchmarks": [
     {
       "task": "Sentiment Classification",

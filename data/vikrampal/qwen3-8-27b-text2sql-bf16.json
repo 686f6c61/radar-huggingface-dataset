@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3.8-27B-text2sql-bf16",
   "slug": "vikrampal-qwen3-8-27b-text2sql-bf16",
   "author": "VikramPal",
@@ -37,14 +37,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812085453,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VikramPal/Qwen3.8-27B-bf16",
+  "renamed_at": "2026-11-12T04:19:13.428Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BennyDaBall/Krea-2-Engineer-V1-GGUF",
   "slug": "bennydaball-krea-2-engineer-v1-gguf",
   "author": "BennyDaBall",
@@ -40,14 +40,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 24787225086,
   "storage_human": "24.8 GB",
+  "context_length": 262144,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

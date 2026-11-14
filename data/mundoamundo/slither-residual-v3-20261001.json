@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mundoamundo/slither-residual-v3-20261001",
   "slug": "mundoamundo-slither-residual-v3-20261001",
   "author": "mundoamundo",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 188098264,
   "storage_human": "188 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T04:43:11.508Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SargeDev/Solar-Decision-JEV-27B-V4",
   "slug": "sargedev-solar-decision-jev-27b-v4",
   "author": "SargeDev",
@@ -30,14 +30,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 54661485774,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Arete-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:49:45.610Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

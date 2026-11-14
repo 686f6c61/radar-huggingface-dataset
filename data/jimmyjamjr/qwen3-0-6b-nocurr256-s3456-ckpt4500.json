@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JimmyJamJr/qwen3-0.6b-nocurr256-s3456-ckpt4500",
   "slug": "jimmyjamjr-qwen3-0-6b-nocurr256-s3456-ckpt4500",
   "author": "JimmyJamJr",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 3588044608,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

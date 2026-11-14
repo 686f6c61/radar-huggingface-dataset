@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/MiniMax-H3-Image-Character-Swap",
   "slug": "akhaliq-minimax-h3-image-character-swap",
   "author": "akhaliq",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 68639417295,
   "storage_human": "68.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image, akatz-ai/MiniMax-H3-Character-Swap-LoRA",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

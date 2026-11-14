@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "an1msh-hf4ef26940/kjclip-validator-1793462672",
   "slug": "an1msh-hf4ef26940-kjclip-validator-1793462672",
   "author": "an1msh-hf4ef26940",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 406,
   "storage_human": "406 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T03:26:19.506Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

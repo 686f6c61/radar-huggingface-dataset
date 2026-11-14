@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lie24/Qwen3.8-27B-MTP-head-q4mlp",
   "slug": "lie24-qwen3-8-27b-mtp-head-q4mlp",
   "author": "Lie24",
@@ -23,14 +23,19 @@
   "parameters_human": "313.8M",
   "storage_bytes": 945903182,
   "storage_human": "946 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

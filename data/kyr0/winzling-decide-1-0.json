@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kyr0/winzling-decide-1.0",
   "slug": "kyr0-winzling-decide-1-0",
   "author": "kyr0",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 24780478662,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": "vllm-sr/vela3-fast, vllm-sr/vela3-fast-vision",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

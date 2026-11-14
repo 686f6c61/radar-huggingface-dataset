@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingpress/Qwen3.8-27B-mlx-4Bit",
   "slug": "huggingpress-qwen3-8-27b-mlx-4bit",
   "author": "huggingpress",
@@ -30,6 +30,7 @@
   "parameters_human": "4.20B",
   "storage_bytes": 15153032850,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:39:15.620Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

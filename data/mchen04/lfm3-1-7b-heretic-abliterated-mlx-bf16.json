@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mchen04/LFM3-1.7B-Heretic-Abliterated-MLX-bf16",
   "slug": "mchen04-lfm3-1-7b-heretic-abliterated-mlx-bf16",
   "author": "mchen04",
@@ -72,6 +72,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475544243,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Vortecks/LFM3-1.7B-Heretic-Abliterated",
   "formats": [
     "mlx",
@@ -79,8 +80,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

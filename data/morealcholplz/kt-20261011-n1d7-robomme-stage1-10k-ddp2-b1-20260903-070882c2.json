@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "morealcholplz/kt-20261011-n1d7-robomme-stage1-10k-ddp2-b1-20260903-070882c2",
   "slug": "morealcholplz-kt-20261011-n1d7-robomme-stage1-10k-ddp2-b1-20260903-070882c2",
   "author": "morealcholplz",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 2620464758,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

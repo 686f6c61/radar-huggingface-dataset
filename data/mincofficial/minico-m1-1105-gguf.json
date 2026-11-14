@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mincofficial/Minico-M1-1105-GGUF",
   "slug": "mincofficial-minico-m1-1105-gguf",
   "author": "Mincofficial",
@@ -38,14 +38,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 4650431360,
   "storage_human": "4.7 GB",
+  "context_length": 128000,
   "base_model": "Mincofficial/Minico-M1-1105",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/granite-vision-4.1-4b-mic",
   "slug": "huggingface-mic-granite-vision-4-1-4b-mic",
   "author": "huggingface-mic",
@@ -28,14 +28,19 @@
   "parameters_human": "7.2M",
   "storage_bytes": 15387354,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-vision-4.1-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/DeepNemotron-3.5-Lightning-BF16-GGUF",
   "slug": "mradermacher-deepnemotron-3-5-lightning-bf16-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 258032532800,
   "storage_human": "258.0 GB",
+  "context_length": 1048576,
   "base_model": "vcruz305/DeepNemotron-3.5-Lightning-Beta-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

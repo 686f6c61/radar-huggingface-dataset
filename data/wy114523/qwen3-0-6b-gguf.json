@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wy114523/Qwen3-0.6B-GGUF",
   "slug": "wy114523-qwen3-0-6b-gguf",
   "author": "wy114523",
@@ -28,14 +28,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 639446688,
   "storage_human": "639 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

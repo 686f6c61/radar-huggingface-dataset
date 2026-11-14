@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intfloat/multilingual-e5-base",
   "slug": "intfloat-multilingual-e5-base",
   "author": "intfloat",
@@ -229,6 +229,7 @@
   "parameters_human": "278.0M",
   "storage_bytes": 7554488969,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -236,8 +237,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

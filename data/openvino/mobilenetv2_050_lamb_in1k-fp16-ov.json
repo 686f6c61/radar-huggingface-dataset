@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenVINO/mobilenetv2_050_lamb_in1k-fp16-ov",
   "slug": "openvino-mobilenetv2_050_lamb_in1k-fp16-ov",
   "author": "OpenVINO",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 3918864,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "timm/mobilenetv2_050.lamb_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

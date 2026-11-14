@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thurstonpowers/xll-statutes-qwen3.5-9b",
   "slug": "thurstonpowers-xll-statutes-qwen3-5-9b",
   "author": "thurstonpowers",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 512179871,
   "storage_human": "512 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

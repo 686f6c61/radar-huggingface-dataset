@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Probattler/sarvam-legal-rag-adapter",
   "slug": "probattler-sarvam-legal-rag-adapter",
   "author": "Probattler",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 95931368,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

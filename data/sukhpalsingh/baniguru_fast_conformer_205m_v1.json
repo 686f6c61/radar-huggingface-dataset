@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sukhpalsingh/baniguru_fast_conformer_205m_v1",
   "slug": "sukhpalsingh-baniguru_fast_conformer_205m_v1",
   "author": "sukhpalsingh",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 823316480,
   "storage_human": "823 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "baniguru/baniguru_fast_conformer_205m_v1",
+  "renamed_at": "2026-11-12T07:56:09.773Z",
   "benchmarks": [],
   "sources": []
 }

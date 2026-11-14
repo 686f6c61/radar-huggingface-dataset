@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "midco/InternVL3_5-38B-oQ8e",
   "slug": "midco-internvl3_5-38b-oq8e",
   "author": "midco",
@@ -28,6 +28,7 @@
   "parameters_human": "38.39B",
   "storage_bytes": 51014320507,
   "storage_human": "51.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

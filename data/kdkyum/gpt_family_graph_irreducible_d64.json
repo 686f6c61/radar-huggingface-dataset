@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kdkyum/gpt_family_graph_irreducible_d64",
   "slug": "kdkyum-gpt_family_graph_irreducible_d64",
   "author": "kdkyum",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 15252216,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T03:55:47.464Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

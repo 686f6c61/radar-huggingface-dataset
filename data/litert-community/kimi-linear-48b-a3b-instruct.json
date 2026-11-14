@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Kimi-Linear-48B-A3B-Instruct",
   "slug": "litert-community-kimi-linear-48b-a3b-instruct",
   "author": "litert-community",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 55285913104,
   "storage_human": "55.3 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-Linear-48B-A3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

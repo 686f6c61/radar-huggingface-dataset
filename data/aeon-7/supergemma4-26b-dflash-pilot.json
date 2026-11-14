@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/supergemma4-26b-dflash-pilot",
   "slug": "aeon-7-supergemma4-26b-dflash-pilot",
   "author": "AEON-7",
@@ -45,14 +45,19 @@
   "parameters_human": "609.2M",
   "storage_bytes": 1250565749,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "AEON-7/supergemma4-26b-abliterated-multimodal-nvfp4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

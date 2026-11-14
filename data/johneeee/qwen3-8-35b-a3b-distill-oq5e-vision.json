@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-vision",
   "slug": "johneeee-qwen3-8-35b-a3b-distill-oq5e-vision",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 25382604440,
   "storage_human": "25.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

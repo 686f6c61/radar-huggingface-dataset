@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sky-Kim/com.sky.sentis.gemma3-270m-it-convfill-enko",
   "slug": "sky-kim-com-sky-sentis-gemma3-270m-it-convfill-enko",
   "author": "Sky-Kim",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 907754301,
   "storage_human": "908 MB",
+  "context_length": null,
   "base_model": "Sky-Kim/gemma3-270m-IT-ConvFill-EnKo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

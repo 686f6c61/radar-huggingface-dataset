@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NadevA23/Apex-Coder-7B-GGUF",
   "slug": "nadeva23-apex-coder-7b-gguf",
   "author": "NadevA23",
@@ -27,14 +27,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 25563197952,
   "storage_human": "25.6 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "NadevA23/Mend-GGUF",
+  "renamed_at": "2026-11-11T03:23:45.489Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ranjitraut/dacpt-v1-Mistral-7B-v0.3",
   "slug": "ranjitraut-dacpt-v1-mistral-7b-v0-3",
   "author": "ranjitraut",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 167837953,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

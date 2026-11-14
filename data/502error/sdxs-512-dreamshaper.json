@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "502error/sdxs-512-dreamshaper",
   "slug": "502error-sdxs-512-dreamshaper",
   "author": "502error",
@@ -28,6 +28,7 @@
   "parameters_human": "315.7M",
   "storage_bytes": 2099720384,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

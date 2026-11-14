@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Nanbeige4.3-33B-GGUF",
   "slug": "axteam-nanbeige4-3-33b-gguf",
   "author": "axteam",
@@ -30,14 +30,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 55246623232,
   "storage_human": "55.2 GB",
+  "context_length": 524288,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

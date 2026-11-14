@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonmusic/GLM-5.2-EXL3-TR3v4-3.5bpw-MTP78",
   "slug": "brandonmusic-glm-5-2-exl3-tr3v4-3-5bpw-mtp78",
   "author": "brandonmusic",
@@ -35,14 +35,19 @@
   "parameters_human": "173.10B",
   "storage_bytes": 701501840272,
   "storage_human": "701.5 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oluwagbotty/nemo-ctc-ky-ft-10ep-noise-onnx",
   "slug": "oluwagbotty-nemo-ctc-ky-ft-10ep-noise-onnx",
   "author": "oluwagbotty",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 705709585,
   "storage_human": "706 MB",
+  "context_length": null,
   "base_model": "oluwagbotty/nemo-ctc-ky-ft-10ep-noise",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

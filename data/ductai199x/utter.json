@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ductai199x/utter",
   "slug": "ductai199x-utter",
   "author": "ductai199x",
@@ -36,6 +36,7 @@
   "parameters_human": "4.63B",
   "storage_bytes": 18201931792,
   "storage_human": "18.2 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-e4b-it-qat-q4_0-unquantized, google/gemma-4-E2B-it-qat-q4_0-unquantized, google/gemma-3-1b-it-qat-q4_0-unquantized",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

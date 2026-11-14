@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "experimentalmachines/Qwen2.5-3B-ExecuTorch",
   "slug": "experimentalmachines-qwen2-5-3b-executorch",
   "author": "experimentalmachines",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 8259768832,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T03:26:12.595Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

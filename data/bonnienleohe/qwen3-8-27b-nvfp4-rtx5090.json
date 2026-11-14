@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bonnienleohe/Qwen3.8-27B-NVFP4-RTX5090",
   "slug": "bonnienleohe-qwen3-8-27b-nvfp4-rtx5090",
   "author": "bonnienleohe",
@@ -39,14 +39,19 @@
   "parameters_human": "14.98B",
   "storage_bytes": 18778981025,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

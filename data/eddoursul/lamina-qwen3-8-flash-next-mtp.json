@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eddoursul/Lamina-Qwen3.8-Flash-Next-MTP",
   "slug": "eddoursul-lamina-qwen3-8-flash-next-mtp",
   "author": "eddoursul",
@@ -28,14 +28,19 @@
   "parameters_human": "448.9M",
   "storage_bytes": 1440753300,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

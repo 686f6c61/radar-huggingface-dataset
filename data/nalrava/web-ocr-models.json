@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nalrava/web-ocr-models",
   "slug": "nalrava-web-ocr-models",
   "author": "nalrava",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 54517636,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx, PaddlePaddle/PP-OCRv5_mobile_det_onnx, snowfluke/ppu-paddle-ocr-models, stefanj0/PP-DocLayout-S-ONNX",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

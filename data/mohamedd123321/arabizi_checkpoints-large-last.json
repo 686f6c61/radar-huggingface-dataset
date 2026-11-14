@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mohamedd123321/Arabizi_Checkpoints-large-last",
   "slug": "mohamedd123321-arabizi_checkpoints-large-last",
   "author": "Mohamedd123321",
@@ -27,14 +27,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 20179533775,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": "Mohamedd123321/XLMR_Large_Arabizi_MLM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

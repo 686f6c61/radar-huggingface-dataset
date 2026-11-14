@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SEE7/AstheralTranslate",
   "slug": "see7-astheraltranslate",
   "author": "SEE7",
@@ -41,14 +41,19 @@
   "parameters_human": "1.66B",
   "storage_bytes": 3446782462,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "utter-project/EuroLLM-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

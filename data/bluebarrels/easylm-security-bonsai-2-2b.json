@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bluebarrels/easylm-security-bonsai-2-2b",
   "slug": "bluebarrels-easylm-security-bonsai-2-2b",
   "author": "Bluebarrels",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 22980200,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-2B-gguf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:30:21.227Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

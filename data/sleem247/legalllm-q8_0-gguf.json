@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sleem247/legalllm-Q8_0-GGUF",
   "slug": "sleem247-legalllm-q8_0-gguf",
   "author": "Sleem247",
@@ -27,14 +27,19 @@
   "parameters_human": "6.8M",
   "storage_bytes": 9717280,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": "the-noble1/legalllm",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

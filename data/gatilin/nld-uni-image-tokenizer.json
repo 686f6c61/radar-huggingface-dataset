@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/nld-uni-image-tokenizer",
   "slug": "gatilin-nld-uni-image-tokenizer",
   "author": "gatilin",
@@ -31,14 +31,19 @@
   "parameters_human": "455.3M",
   "storage_bytes": 910738926,
   "storage_human": "911 MB",
+  "context_length": null,
   "base_model": "nvidia/NLD-Uni",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Noga-Kurumi/Lindsay-Desktop-Models",
   "slug": "noga-kurumi-lindsay-desktop-models",
   "author": "Noga-Kurumi",
@@ -28,6 +28,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 3855728389,
   "storage_human": "3.9 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

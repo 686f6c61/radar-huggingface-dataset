@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/FishAudio-Drama3-TTS-83Lang-Qwen3.5-35B-A3B-FP8-BF16-GGUF",
   "slug": "infinix-io-fishaudio-drama3-tts-83lang-qwen3-5-35b-a3b-fp8-bf16-gguf",
   "author": "Infinix-io",
@@ -201,6 +201,7 @@
   "parameters_human": "35.90B",
   "storage_bytes": 65084704803,
   "storage_human": "65.1 GB",
+  "context_length": null,
   "base_model": "fishaudio/drama-3",
   "formats": [
     "gguf",
@@ -208,8 +209,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:45:45.643Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qualcomm-ai-hub-community/Qwen3-4B-Instruct-2507-Hi-Fi-fraQtl",
   "slug": "qualcomm-ai-hub-community-qwen3-4b-instruct-2507-hi-fi-fraqtl",
   "author": "qualcomm-ai-hub-community",
@@ -36,14 +36,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 4876523648,
   "storage_human": "4.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

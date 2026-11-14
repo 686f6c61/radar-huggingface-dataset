@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GestaltLabs/DeepSeek-V4-Flash-0731-Ornstein",
   "slug": "gestaltlabs-deepseek-v4-flash-0731-ornstein",
   "author": "GestaltLabs",
@@ -32,14 +32,19 @@
   "parameters_human": "304.18B",
   "storage_bytes": 608454418064,
   "storage_human": "608.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

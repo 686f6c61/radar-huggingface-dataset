@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nielsr/LFM3-1.7B-wsp-l15-l19-lam6",
   "slug": "nielsr-lfm3-1-7b-wsp-l15-l19-lam6",
   "author": "nielsr",
@@ -24,14 +24,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475544082,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

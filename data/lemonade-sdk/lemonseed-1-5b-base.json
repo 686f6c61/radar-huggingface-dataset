@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lemonade-sdk/lemonseed-1.5b-base",
   "slug": "lemonade-sdk-lemonseed-1-5b-base",
   "author": "lemonade-sdk",
@@ -34,6 +34,7 @@
   "parameters_human": "1.51B",
   "storage_bytes": 3041802627,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

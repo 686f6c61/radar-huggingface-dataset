@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tieubaoca/PP-DocLayoutV3-Vietnamese",
   "slug": "tieubaoca-pp-doclayoutv3-vietnamese",
   "author": "tieubaoca",
@@ -42,14 +42,19 @@
   "parameters_human": "33.3M",
   "storage_bytes": 395775794,
   "storage_human": "396 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T08:32:12.518Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

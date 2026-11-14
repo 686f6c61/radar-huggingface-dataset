@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "proxy3d/multi-motions-28",
   "slug": "proxy3d-multi-motions-28",
   "author": "proxy3d",
@@ -41,14 +41,19 @@
   "parameters_human": "278.1M",
   "storage_bytes": 1129367815,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

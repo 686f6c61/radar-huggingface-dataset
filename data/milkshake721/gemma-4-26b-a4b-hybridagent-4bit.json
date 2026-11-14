@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "milkshake721/Gemma-4-26B-A4B-HybridAgent-4bit",
   "slug": "milkshake721-gemma-4-26b-a4b-hybridagent-4bit",
   "author": "milkshake721",
@@ -35,14 +35,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 18851155171,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "milkshake721/Gemma-4-26B-A4B-HybridAgent",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

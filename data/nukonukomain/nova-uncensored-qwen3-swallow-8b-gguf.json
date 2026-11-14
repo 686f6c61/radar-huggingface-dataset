@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nukonukomain/nova-uncensored-qwen3-swallow-8b-gguf",
   "slug": "nukonukomain-nova-uncensored-qwen3-swallow-8b-gguf",
   "author": "nukonukomain",
@@ -32,20 +32,25 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 177,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
   "storage_bytes": 71952916480,
   "storage_human": "72.0 GB",
+  "context_length": 40960,
   "base_model": "tokyotech-llm/Qwen3-Swallow-8B-SFT-v0.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

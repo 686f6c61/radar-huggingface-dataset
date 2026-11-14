@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diarray/bam_vits_pseudo_ipa_final",
   "slug": "diarray-bam_vits_pseudo_ipa_final",
   "author": "diarray",
@@ -36,14 +36,19 @@
   "parameters_human": "39.6M",
   "storage_bytes": 158659712,
   "storage_human": "159 MB",
+  "context_length": null,
   "base_model": "ylacombe/vits-vctk-with-discriminator",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "RobotsMali/bam-vits-pseudo-ipa",
+  "renamed_at": "2026-11-12T05:14:44.389Z",
   "benchmarks": [],
   "sources": [
     {

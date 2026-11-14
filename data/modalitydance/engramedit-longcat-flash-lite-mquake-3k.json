@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ModalityDance/EngramEdit-LongCat-Flash-Lite-MQuAKE-3K",
   "slug": "modalitydance-engramedit-longcat-flash-lite-mquake-3k",
   "author": "ModalityDance",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 93877646,
   "storage_human": "94 MB",
+  "context_length": null,
   "base_model": "meituan-longcat/LongCat-Flash-Lite",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

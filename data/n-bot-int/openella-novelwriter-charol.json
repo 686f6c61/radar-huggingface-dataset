@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "N-Bot-Int/OpenElla-NovelWriter-Charol",
   "slug": "n-bot-int-openella-novelwriter-charol",
   "author": "N-Bot-Int",
@@ -48,14 +48,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 32138322872,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": "N-Bot-Int/OpenElla-NovelWriter-Burgendy, N-Bot-Int/OpenElla-NovelWriter-8B-V2-merged, N-Bot-Int/OpenElla-NovelWriter-8B-merged, Sao10K/L3-8B-Stheno-v3.2, ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.2, NeverSleep/Lumimaid-v0.2-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

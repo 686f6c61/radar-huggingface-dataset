@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
   "slug": "sentence-transformers-paraphrase-multilingual-mpnet-base-v2",
   "author": "sentence-transformers",
@@ -137,6 +137,7 @@
   "parameters_human": "278.0M",
   "storage_bytes": 11395656338,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -144,8 +145,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

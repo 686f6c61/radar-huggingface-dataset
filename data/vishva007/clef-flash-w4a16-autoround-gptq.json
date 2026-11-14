@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/clef-flash-W4A16-AutoRound-GPTQ",
   "slug": "vishva007-clef-flash-w4a16-autoround-gptq",
   "author": "Vishva007",
@@ -42,14 +42,19 @@
   "parameters_human": "2.49B",
   "storage_bytes": 9251207331,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

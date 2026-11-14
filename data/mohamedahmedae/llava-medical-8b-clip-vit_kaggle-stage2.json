@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2",
   "slug": "mohamedahmedae-llava-medical-8b-clip-vit_kaggle-stage2",
   "author": "MohamedAhmedAE",
@@ -23,14 +23,19 @@
   "parameters_human": "188.8M",
   "storage_bytes": 1501220172762,
   "storage_human": "1501.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T08:31:41.096Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

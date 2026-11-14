@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidutta69/gemma-3-270m-math-rome-best",
   "slug": "saidutta69-gemma-3-270m-math-rome-best",
   "author": "saidutta69",
@@ -34,14 +34,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 1105925188,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

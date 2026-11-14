@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen2.5-MOE-2X1.5B-DeepSeek-Uncensored-Censored-4B-gguf",
   "slug": "davidau-qwen2-5-moe-2x1-5b-deepseek-uncensored-censored-4b-gguf",
   "author": "DavidAU",
@@ -54,14 +54,19 @@
   "parameters_human": "4.09B",
   "storage_bytes": 36485030739,
   "storage_human": "36.5 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/Qwen2.5-MOE-2X1.5B-DeepSeek-Uncensored-Censored-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

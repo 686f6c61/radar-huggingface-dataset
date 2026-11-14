@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benthecarman/MiMo-V2.6-Flash-RL-exl3",
   "slug": "benthecarman-mimo-v2-6-flash-rl-exl3",
   "author": "benthecarman",
@@ -40,14 +40,19 @@
   "parameters_human": "45.78B",
   "storage_bytes": 107477903904,
   "storage_human": "107.5 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

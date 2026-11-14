@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "genai-craft/aunvox-duplex-ja",
   "slug": "genai-craft-aunvox-duplex-ja",
   "author": "genai-craft",
@@ -36,14 +36,19 @@
   "parameters_human": "12.81B",
   "storage_bytes": 10841722430,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "HIT-TMG/Lychee-FD",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

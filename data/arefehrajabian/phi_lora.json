@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arefehRajabian/phi_lora",
   "slug": "arefehrajabian-phi_lora",
   "author": "arefehRajabian",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 176979000,
   "storage_human": "177 MB",
+  "context_length": null,
   "base_model": "unsloth/phi-4-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

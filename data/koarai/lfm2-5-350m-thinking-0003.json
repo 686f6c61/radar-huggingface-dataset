@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KoarAI/LFM2.5-350M-Thinking-0003",
   "slug": "koarai-lfm2-5-350m-thinking-0003",
   "author": "KoarAI",
@@ -42,14 +42,19 @@
   "parameters_human": "353.3M",
   "storage_bytes": 1413826723,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

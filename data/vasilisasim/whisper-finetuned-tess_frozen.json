@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VasilisAsim/whisper-finetuned-TESS_frozen",
   "slug": "vasilisasim-whisper-finetuned-tess_frozen",
   "author": "VasilisAsim",
@@ -27,14 +27,19 @@
   "parameters_human": "20.7M",
   "storage_bytes": 82905412,
   "storage_human": "83 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VasilisAsim/whisper-finetuned-TESS",
+  "renamed_at": "2026-11-13T04:20:55.675Z",
   "benchmarks": [],
   "sources": [
     {

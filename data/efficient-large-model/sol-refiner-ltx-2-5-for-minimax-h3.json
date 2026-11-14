@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efficient-Large-Model/SoL-Refiner-LTX-2.5-for-MiniMax-H3",
   "slug": "efficient-large-model-sol-refiner-ltx-2-5-for-minimax-h3",
   "author": "Efficient-Large-Model",
@@ -24,6 +24,7 @@
   "parameters_human": "18.99B",
   "storage_bytes": 70745478629,
   "storage_human": "70.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

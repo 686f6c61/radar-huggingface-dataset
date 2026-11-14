@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OK923/ultimate_wav2vec2_aug",
   "slug": "ok923-ultimate_wav2vec2_aug",
   "author": "OK923",
@@ -30,14 +30,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 21457427946,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "OK923/ultimate_wav2vec2_aug",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

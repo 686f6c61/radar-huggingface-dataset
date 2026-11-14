@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moltherm1/olmo-mirror-olmo-3-1125-32b",
   "slug": "moltherm1-olmo-mirror-olmo-3-1125-32b",
   "author": "moltherm1",
@@ -32,14 +32,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 64467230664,
   "storage_human": "64.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

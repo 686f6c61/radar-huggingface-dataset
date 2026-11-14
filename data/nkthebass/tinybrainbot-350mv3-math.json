@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nkthebass/tinybrainbot-350mV3-math",
   "slug": "nkthebass-tinybrainbot-350mv3-math",
   "author": "nkthebass",
@@ -41,6 +41,7 @@
   "parameters_human": "348.3M",
   "storage_bytes": 3857911503,
   "storage_human": "3.9 GB",
+  "context_length": 2048,
   "base_model": "nkthebass/tinybrainbot-350mV3-instruct",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

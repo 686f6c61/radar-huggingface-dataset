@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "navthings/airgpt-hour",
   "slug": "navthings-airgpt-hour",
   "author": "navthings",
@@ -26,6 +26,7 @@
   "parameters_human": "8.0M",
   "storage_bytes": 64011808,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

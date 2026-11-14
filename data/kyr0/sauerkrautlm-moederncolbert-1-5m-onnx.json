@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kyr0/SauerkrautLM-MoEdernColBERT-1.5M-ONNX",
   "slug": "kyr0-sauerkrautlm-moederncolbert-1-5m-onnx",
   "author": "kyr0",
@@ -47,14 +47,19 @@
   "parameters_human": null,
   "storage_bytes": 13664491,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

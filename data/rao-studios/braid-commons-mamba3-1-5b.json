@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rao-studios/braid-commons-mamba3-1.5b",
   "slug": "rao-studios-braid-commons-mamba3-1-5b",
   "author": "rao-studios",
@@ -38,14 +38,19 @@
   "parameters_human": "1.50B",
   "storage_bytes": 5991541513,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "state-spaces/mamba3-mimo-1.5b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

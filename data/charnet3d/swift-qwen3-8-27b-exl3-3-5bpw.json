@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "charnet3d/Swift-Qwen3.8-27B-Exl3-3.5bpw",
   "slug": "charnet3d-swift-qwen3-8-27b-exl3-3-5bpw",
   "author": "charnet3d",
@@ -37,14 +37,19 @@
   "parameters_human": "7.49B",
   "storage_bytes": 14999969284,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

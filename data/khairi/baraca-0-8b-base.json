@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khairi/baraca-0.8b-base",
   "slug": "khairi-baraca-0-8b-base",
   "author": "khairi",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 19993312,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:10:17.593Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

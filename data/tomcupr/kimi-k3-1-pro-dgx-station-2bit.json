@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tomcupr/Kimi-K3.1-Pro-DGX-Station-2bit",
   "slug": "tomcupr-kimi-k3-1-pro-dgx-station-2bit",
   "author": "tomcupr",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 837992523998,
   "storage_human": "838.0 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

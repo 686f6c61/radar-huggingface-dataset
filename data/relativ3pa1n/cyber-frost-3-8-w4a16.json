@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Relativ3pa1n/CYBER-FROST-3.8-W4A16",
   "slug": "relativ3pa1n-cyber-frost-3-8-w4a16",
   "author": "Relativ3pa1n",
@@ -32,14 +32,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 191906101321,
   "storage_human": "191.9 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

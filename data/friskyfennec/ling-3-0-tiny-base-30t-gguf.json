@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FriskyFennec/Ling-3.0-tiny-base-30T-GGUF",
   "slug": "friskyfennec-ling-3-0-tiny-base-30t-gguf",
   "author": "FriskyFennec",
@@ -27,14 +27,19 @@
   "parameters_human": "8.21B",
   "storage_bytes": 75632375744,
   "storage_human": "75.6 GB",
+  "context_length": 8192,
   "base_model": "inclusionAI/Ling-3.0-tiny-base-30T",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

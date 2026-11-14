@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Buuta/flan-t5-xxl-for-Snapdragon-X-Series",
   "slug": "buuta-flan-t5-xxl-for-snapdragon-x-series",
   "author": "Buuta",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 19088447246,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": "google/flan-t5-xxl",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

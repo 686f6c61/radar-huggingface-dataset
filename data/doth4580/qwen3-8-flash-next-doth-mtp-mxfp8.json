@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Qwen3.8-Flash-Next-DotH-MTP-MXFP8",
   "slug": "doth4580-qwen3-8-flash-next-doth-mtp-mxfp8",
   "author": "doth4580",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 113843728,
   "storage_human": "114 MB",
+  "context_length": null,
   "base_model": "doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

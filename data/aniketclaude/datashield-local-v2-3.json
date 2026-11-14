@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aniketClaude/datashield-local-v2.3",
   "slug": "aniketclaude-datashield-local-v2-3",
   "author": "aniketClaude",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 947852665,
   "storage_human": "948 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

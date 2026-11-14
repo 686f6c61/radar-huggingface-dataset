@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ellachang/phishing-detector-14b-v2-gguf",
   "slug": "ellachang-phishing-detector-14b-v2-gguf",
   "author": "ellachang",
@@ -33,14 +33,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 9001753632,
   "storage_human": "9.0 GB",
+  "context_length": 40960,
   "base_model": "ellachang/phishing-detector-14b-v2-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

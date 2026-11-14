@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheCacheIsALie/RidgeFill-Projector-Qwen3-8B",
   "slug": "thecacheisalie-ridgefill-projector-qwen3-8b",
   "author": "TheCacheIsALie",
@@ -30,6 +30,7 @@
   "parameters_human": "386.0M",
   "storage_bytes": 3934648680,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

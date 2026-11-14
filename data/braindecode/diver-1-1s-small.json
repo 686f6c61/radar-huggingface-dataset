@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "braindecode/DIVER-1-1s-small",
   "slug": "braindecode-diver-1-1s-small",
   "author": "braindecode",
@@ -38,14 +38,19 @@
   "parameters_human": "50.6M",
   "storage_bytes": 405222471,
   "storage_human": "405 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

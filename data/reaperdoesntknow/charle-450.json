@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reaperdoesntknow/charle-450",
   "slug": "reaperdoesntknow-charle-450",
   "author": "reaperdoesntknow",
@@ -27,14 +27,19 @@
   "parameters_human": "410.3M",
   "storage_bytes": 1641067968,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T02:19:53.909Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

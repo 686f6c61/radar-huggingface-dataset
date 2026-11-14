@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3",
   "slug": "longtermrisk-olmo-3-7b-good-vs-bad-mixed-multifact-first-third-sft-seed3",
   "author": "longtermrisk",
@@ -35,14 +35,19 @@
   "parameters_human": "528384",
   "storage_bytes": 14596063712,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Olmo-3-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF",
   "slug": "grumd0-nemotron-3-5-bolt-e4b-heretic-gguf",
   "author": "grumd0",
@@ -108,14 +108,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 69500423200,
   "storage_human": "69.5 GB",
+  "context_length": 65536,
   "base_model": "grumd0/Nemotron-3.5-Bolt-E4B-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

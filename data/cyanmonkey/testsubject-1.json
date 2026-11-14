@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CyanMonkey/TestSubject-1",
   "slug": "cyanmonkey-testsubject-1",
   "author": "CyanMonkey",
@@ -35,14 +35,19 @@
   "parameters_human": "148.8M",
   "storage_bytes": 641587575231,
   "storage_human": "641.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T02:54:41.391Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

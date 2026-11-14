@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "functionX86/banking77-intent-classifier",
   "slug": "functionx86-banking77-intent-classifier",
   "author": "functionX86",
@@ -39,14 +39,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 133581876,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Intent Classification",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/Qwen3.6-27B-JANG_4M",
   "slug": "osaurusai-qwen3-6-27b-jang_4m",
   "author": "OsaurusAI",
@@ -42,6 +42,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 31450194273,
   "storage_human": "31.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T13:30:05.382Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

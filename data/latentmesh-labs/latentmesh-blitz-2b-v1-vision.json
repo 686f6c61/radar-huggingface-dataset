@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LatentMesh-Labs/latentmesh-blitz-2b-v1-vision",
   "slug": "latentmesh-labs-latentmesh-blitz-2b-v1-vision",
   "author": "LatentMesh-Labs",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 423751469,
   "storage_human": "424 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

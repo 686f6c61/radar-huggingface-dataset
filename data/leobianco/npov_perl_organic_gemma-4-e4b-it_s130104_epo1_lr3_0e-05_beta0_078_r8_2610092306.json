@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leobianco/npov_PERL_organic_gemma-4-E4B-it_S130104_epo1_lr3_0e-05_beta0_078_r8_2610092306",
   "slug": "leobianco-npov_perl_organic_gemma-4-e4b-it_s130104_epo1_lr3_0e-05_beta0_078_r8_2610092306",
   "author": "leobianco",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 46087465,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

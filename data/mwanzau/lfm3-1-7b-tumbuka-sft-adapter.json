@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mwanzau/LFM3-1.7B-Tumbuka-SFT-Adapter",
   "slug": "mwanzau-lfm3-1-7b-tumbuka-sft-adapter",
   "author": "Mwanzau",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 82368346,
   "storage_human": "82 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:57:53.359Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

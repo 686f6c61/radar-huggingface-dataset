@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/salamandra-7b-instruct-Uncensored-Abliterated-i1-GGUF",
   "slug": "mradermacher-salamandra-7b-instruct-uncensored-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -45,14 +45,19 @@
   "parameters_human": "7.77B",
   "storage_bytes": 95117316000,
   "storage_human": "95.1 GB",
+  "context_length": 8192,
   "base_model": "Securelayer7/salamandra-7b-instruct-Uncensored-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

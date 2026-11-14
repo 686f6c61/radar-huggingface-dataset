@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mhszakzajhg/Detektor-Ai",
   "slug": "mhszakzajhg-detektor-ai",
   "author": "mhszakzajhg",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 96805488,
   "storage_human": "97 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

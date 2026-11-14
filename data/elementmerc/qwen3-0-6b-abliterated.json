@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElementMerc/qwen3-0.6b-abliterated",
   "slug": "elementmerc-qwen3-0-6b-abliterated",
   "author": "ElementMerc",
@@ -39,14 +39,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203557913,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ElementMerc/qwen3-0.6b-uncensored",
+  "renamed_at": "2026-11-11T02:42:09.746Z",
   "benchmarks": [],
   "sources": []
 }

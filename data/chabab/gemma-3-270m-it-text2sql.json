@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chabab/gemma-3-270m-it-text2sql",
   "slug": "chabab-gemma-3-270m-it-text2sql",
   "author": "chabab",
@@ -34,14 +34,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 1642059512,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArtyomSubDiv/dolly-v2-7b-sharded-Q8_0-GGUF",
   "slug": "artyomsubdiv-dolly-v2-7b-sharded-q8_0-gguf",
   "author": "ArtyomSubDiv",
@@ -37,14 +37,19 @@
   "parameters_human": "6.86B",
   "storage_bytes": 7291380384,
   "storage_human": "7.3 GB",
+  "context_length": 2048,
   "base_model": "ethzanalytics/dolly-v2-7b-sharded",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

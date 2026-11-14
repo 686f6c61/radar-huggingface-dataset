@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "morpfvr94/minimax-h3-worker-weights",
   "slug": "morpfvr94-minimax-h3-worker-weights",
   "author": "morpfvr94",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 563635562779,
   "storage_human": "563.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "landtml/minimax-h3-worker-weights",
+  "renamed_at": "2026-11-11T06:25:38.639Z",
   "benchmarks": [],
   "sources": []
 }

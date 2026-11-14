@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rabbit-Hole-Ai/DeepSeek-V4-Flash-0731-MXFP4-GGUF",
   "slug": "rabbit-hole-ai-deepseek-v4-flash-0731-mxfp4-gguf",
   "author": "Rabbit-Hole-Ai",
@@ -35,14 +35,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 156378344736,
   "storage_human": "156.4 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/GLM-5.3-Flash-EXL3-K2",
   "slug": "vcruz305-glm-5-3-flash-exl3-k2",
   "author": "vcruz305",
@@ -38,14 +38,19 @@
   "parameters_human": "48.85B",
   "storage_bytes": 97764515699,
   "storage_human": "97.8 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T08:53:35.321Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "terminusresearch/terminus-xl-velocity-training",
   "slug": "terminusresearch-terminus-xl-velocity-training",
   "author": "terminusresearch",
@@ -32,6 +32,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 22797114479,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "ptx0/terminus-xl-velocity-v2",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

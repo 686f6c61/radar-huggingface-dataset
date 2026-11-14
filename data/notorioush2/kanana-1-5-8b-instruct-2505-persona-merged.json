@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NotoriousH2/kanana-1.5-8b-instruct-2505-Persona-Merged",
   "slug": "notorioush2-kanana-1-5-8b-instruct-2505-persona-merged",
   "author": "NotoriousH2",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 144562661476,
   "storage_human": "144.6 GB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

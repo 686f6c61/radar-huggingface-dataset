@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senga-ml/naivas-model-body-04-11",
   "slug": "senga-ml-naivas-model-body-04-11",
   "author": "senga-ml",
@@ -27,14 +27,19 @@
   "parameters_human": "202.1M",
   "storage_bytes": 12140736605,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:29:35.509Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

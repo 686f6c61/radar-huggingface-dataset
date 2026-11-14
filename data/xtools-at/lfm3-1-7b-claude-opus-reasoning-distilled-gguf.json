@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled-GGUF",
   "slug": "xtools-at-lfm3-1-7b-claude-opus-reasoning-distilled-gguf",
   "author": "xtools-at",
@@ -78,14 +78,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 5187290590,
   "storage_human": "5.2 GB",
+  "context_length": 262144,
   "base_model": "xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/Ornith-1.5-122B-oQ3e-mtp",
   "slug": "scottlowry-ornith-1-5-122b-oq3e-mtp",
   "author": "scottlowry",
@@ -30,6 +30,7 @@
   "parameters_human": "125.09B",
   "storage_bytes": 59696418381,
   "storage_human": "59.7 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

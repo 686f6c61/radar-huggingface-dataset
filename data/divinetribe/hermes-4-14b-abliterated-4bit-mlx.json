@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/Hermes-4-14B-abliterated-4bit-mlx",
   "slug": "divinetribe-hermes-4-14b-abliterated-4bit-mlx",
   "author": "divinetribe",
@@ -45,6 +45,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8319321164,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "Babsie/Hermes-4-14B-BF16-abliterated",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

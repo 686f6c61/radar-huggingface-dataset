@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rumezhak/microduck-tug-titan-tuned-v6",
   "slug": "rumezhak-microduck-tug-titan-tuned-v6",
   "author": "rumezhak",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 896868,
   "storage_human": "896868 B",
+  "context_length": null,
   "base_model": "azukiq/microduck-titan-v1, greecree/microduck-tug-of-war-tug-super-v8",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

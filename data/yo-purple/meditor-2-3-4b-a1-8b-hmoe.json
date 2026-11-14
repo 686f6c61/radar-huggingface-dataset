@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE",
   "slug": "yo-purple-meditor-2-3-4b-a1-8b-hmoe",
   "author": "Yo-Purple",
@@ -40,14 +40,19 @@
   "parameters_human": "3.41B",
   "storage_bytes": 34109792200,
   "storage_human": "34.1 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

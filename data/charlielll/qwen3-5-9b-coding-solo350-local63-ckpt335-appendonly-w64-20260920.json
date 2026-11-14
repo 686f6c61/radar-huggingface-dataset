@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CharlieLLL/Qwen3.5-9B-coding-solo350-local63-ckpt335-appendonly-w64-20260920",
   "slug": "charlielll-qwen3-5-9b-coding-solo350-local63-ckpt335-appendonly-w64-20260920",
   "author": "CharlieLLL",
@@ -32,14 +32,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17920471518,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Shangy/Qwen3.5-9B-OPD-Coding",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

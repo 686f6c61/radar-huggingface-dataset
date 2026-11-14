@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brunobkr/OFFFELLIA_Q2_K_huihui-ai_MTP-hybrid-Qwen3.8-27B-abliterated.gguf",
   "slug": "brunobkr-offfellia_q2_k_huihui-ai_mtp-hybrid-qwen3-8-27b-abliterated-gguf",
   "author": "Brunobkr",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 10867134753,
   "storage_human": "10.9 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T07:43:42.870Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

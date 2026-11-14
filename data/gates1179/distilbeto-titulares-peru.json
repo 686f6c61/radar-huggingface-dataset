@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gates1179/distilbeto-titulares-peru",
   "slug": "gates1179-distilbeto-titulares-peru",
   "author": "gates1179",
@@ -29,14 +29,19 @@
   "parameters_human": "67.3M",
   "storage_bytes": 269313280,
   "storage_human": "269 MB",
+  "context_length": null,
   "base_model": "dccuchile/distilbert-base-spanish-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

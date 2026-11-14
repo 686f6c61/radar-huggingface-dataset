@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NikeSong/so101_gestures_pi05",
   "slug": "nikesong-so101_gestures_pi05",
   "author": "NikeSong",
@@ -33,14 +33,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 7473103896,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

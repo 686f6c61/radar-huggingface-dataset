@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Glimpse-Dictation/Nemotron-3.5-ASR-Streaming-0.6B-gguf",
   "slug": "glimpse-dictation-nemotron-3-5-asr-streaming-0-6b-gguf",
   "author": "Glimpse-Dictation",
@@ -29,14 +29,19 @@
   "parameters_human": "638.0M",
   "storage_bytes": 751094240,
   "storage_human": "751 MB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

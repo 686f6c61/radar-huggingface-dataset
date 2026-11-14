@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "evellyndev/tiny-sd",
   "slug": "evellyndev-tiny-sd",
   "author": "evellyndev",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1060519363,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "SG161222/Realistic_Vision_V4.0",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

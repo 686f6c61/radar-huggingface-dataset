@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netease-youdao/Confucius4-T3PO",
   "slug": "netease-youdao-confucius4-t3po",
   "author": "netease-youdao",
@@ -40,14 +40,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29555120935,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

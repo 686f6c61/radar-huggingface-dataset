@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iarmourgarb/ArCHer",
   "slug": "iarmourgarb-archer",
   "author": "iarmourgarb",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1208040140,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Rostlab/prot_t5_xl_half_uniref50-enc",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

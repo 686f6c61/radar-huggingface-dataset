@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xbikevn/LightOnOCR-2-1B-vi",
   "slug": "xbikevn-lightonocr-2-1b-vi",
   "author": "xbikevn",
@@ -31,14 +31,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 2022795553,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "lightonai/LightOnOCR-2-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

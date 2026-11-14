@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/starcoder2-3b-mic",
   "slug": "huggingface-mic-starcoder2-3b-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "3.2M",
   "storage_bytes": 12821560,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": "bigcode/starcoder2-3b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

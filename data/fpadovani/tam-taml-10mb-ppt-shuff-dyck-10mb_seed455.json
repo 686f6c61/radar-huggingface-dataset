@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/tam-taml-10mb-ppt-shuff-dyck-10mb_seed455",
   "slug": "fpadovani-tam-taml-10mb-ppt-shuff-dyck-10mb_seed455",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "39.1M",
   "storage_bytes": 627432979,
   "storage_human": "627 MB",
+  "context_length": null,
   "base_model": "goldfish-models/tam_taml_10mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

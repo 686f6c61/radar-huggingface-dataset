@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AllenInstitute/deeplabcut-ctlut-np3-side-cam-sam-corbett-2020-03-31",
   "slug": "alleninstitute-deeplabcut-ctlut-np3-side-cam-sam-corbett-2020-03-31",
   "author": "AllenInstitute",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 293107132,
   "storage_human": "293 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

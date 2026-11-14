@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "byteknotlabs/AksharSTT-Lite-V4",
   "slug": "byteknotlabs-aksharstt-lite-v4",
   "author": "byteknotlabs",
@@ -51,12 +51,17 @@
   "parameters_human": null,
   "storage_bytes": 20363295,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "byteknotlabs/AksharSTT-V4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech recognition",

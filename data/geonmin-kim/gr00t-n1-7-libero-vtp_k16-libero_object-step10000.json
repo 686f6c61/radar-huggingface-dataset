@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geonmin-kim/GR00T-N1.7-LIBERO-vtp_K16-libero_object-step10000",
   "slug": "geonmin-kim-gr00t-n1-7-libero-vtp_k16-libero_object-step10000",
   "author": "geonmin-kim",
@@ -22,14 +22,19 @@
   "parameters_human": "3.15B",
   "storage_bytes": 12588959168,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

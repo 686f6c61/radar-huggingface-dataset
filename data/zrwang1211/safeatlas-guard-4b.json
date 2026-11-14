@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zrwang1211/SafeAtlas-Guard-4B",
   "slug": "zrwang1211-safeatlas-guard-4b",
   "author": "zrwang1211",
@@ -38,14 +38,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 9018984548,
   "storage_human": "9.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

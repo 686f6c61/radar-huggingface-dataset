@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/filesystem_terminal_huggingface_1375_b3e7d2",
   "slug": "tuaxhuiax-filesystem_terminal_huggingface_1375_b3e7d2",
   "author": "TUaxhuiax",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TUaxhuiax/filesystem_terminal_huggingface_2300_model_card_k7m2q9",
+  "renamed_at": "2026-11-11T03:59:09.592Z",
   "benchmarks": [],
   "sources": [
     {

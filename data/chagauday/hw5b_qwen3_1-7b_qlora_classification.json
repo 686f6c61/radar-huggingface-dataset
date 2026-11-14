@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chagauday/HW5B_Qwen3_1.7B_QLoRA_Classification",
   "slug": "chagauday-hw5b_qwen3_1-7b_qlora_classification",
   "author": "Chagauday",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 1127213962,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

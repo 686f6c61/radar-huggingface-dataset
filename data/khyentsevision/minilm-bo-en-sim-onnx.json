@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khyentsevision/minilm-bo-en-sim-onnx",
   "slug": "khyentsevision-minilm-bo-en-sim-onnx",
   "author": "khyentsevision",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 113206086,
   "storage_human": "113 MB",
+  "context_length": null,
   "base_model": "khyentsevision/minilm-bo-en-sim",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

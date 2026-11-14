@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adadadadadadadaksjd/Llama-3.2-3B-Turkce-Asistan",
   "slug": "adadadadadadadaksjd-llama-3-2-3b-turkce-asistan",
   "author": "adadadadadadadaksjd",
@@ -26,14 +26,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 2019373568,
   "storage_human": "2.0 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T03:14:06.688Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sign/ModernBERT-Large-Instruct-WSD",
   "slug": "sign-modernbert-large-instruct-wsd",
   "author": "sign",
@@ -31,14 +31,19 @@
   "parameters_human": "396.0M",
   "storage_bytes": 3959409875,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-Large-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChaoyangWang735/Video-Coder-9B",
   "slug": "chaoyangwang735-video-coder-9b",
   "author": "ChaoyangWang735",
@@ -25,14 +25,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710469,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Video-Coder/Video-Coder-9B",
+  "renamed_at": "2026-11-11T02:29:38.221Z",
   "benchmarks": [],
   "sources": []
 }

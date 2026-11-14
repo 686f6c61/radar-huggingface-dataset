@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "accessonai/VEDA-1.0-4B-MLX",
   "slug": "accessonai-veda-1-0-4b-mlx",
   "author": "accessonai",
@@ -25,14 +25,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2148749021,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/L3.1-MOE-2X8B-Deepseek-DeepHermes-e32-13.7B-GGUF",
   "slug": "mradermacher-l3-1-moe-2x8b-deepseek-deephermes-e32-13-7b-gguf",
   "author": "mradermacher",
@@ -44,14 +44,19 @@
   "parameters_human": "13.67B",
   "storage_bytes": 93953127552,
   "storage_human": "94.0 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/L3.1-MOE-2X8B-Deepseek-DeepHermes-e32-13.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

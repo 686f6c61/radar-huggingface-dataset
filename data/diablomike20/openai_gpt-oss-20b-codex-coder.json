@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/Openai_gpt-oss-20b-CODEX-CODER",
   "slug": "diablomike20-openai_gpt-oss-20b-codex-coder",
   "author": "diablomike20",
@@ -61,14 +61,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 59200875814,
   "storage_human": "59.2 GB",
+  "context_length": 131072,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

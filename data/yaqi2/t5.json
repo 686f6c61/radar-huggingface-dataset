@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yaqi2/t5",
   "slug": "yaqi2-t5",
   "author": "yaqi2",
@@ -28,14 +28,19 @@
   "parameters_human": "62.5M",
   "storage_bytes": 250990778,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:15:13.229Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

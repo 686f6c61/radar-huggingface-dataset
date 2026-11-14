@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xpashkin/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-6.6bpw",
   "slug": "xpashkin-qwen3-8-flash-next-mlx-serve-iq-mlx-6-6bpw",
   "author": "xpashkin",
@@ -35,6 +35,7 @@
   "parameters_human": "130.05B",
   "storage_bytes": 208424704560,
   "storage_human": "208.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T03:16:49.858Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

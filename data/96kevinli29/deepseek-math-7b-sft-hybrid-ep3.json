@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "96kevinli29/DeepSeek-Math-7B-SFT-hybrid-ep3",
   "slug": "96kevinli29-deepseek-math-7b-sft-hybrid-ep3",
   "author": "96kevinli29",
@@ -42,14 +42,19 @@
   "parameters_human": "6.91B",
   "storage_bytes": 13820763160,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/deepseek-math-7b-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

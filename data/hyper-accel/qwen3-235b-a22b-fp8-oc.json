@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyper-accel/Qwen3-235B-A22B-FP8-OC",
   "slug": "hyper-accel-qwen3-235b-a22b-fp8-oc",
   "author": "hyper-accel",
@@ -31,14 +31,19 @@
   "parameters_human": "235.79B",
   "storage_bytes": 237099872102,
   "storage_human": "237.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-235B-A22B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

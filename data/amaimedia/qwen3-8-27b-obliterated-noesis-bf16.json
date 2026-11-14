@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16",
   "slug": "amaimedia-qwen3-8-27b-obliterated-noesis-bf16",
   "author": "AMAImedia",
@@ -156,14 +156,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 110217330641,
   "storage_human": "110.2 GB",
+  "context_length": null,
   "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T05:37:37.807Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

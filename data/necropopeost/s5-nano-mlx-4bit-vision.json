@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "necropopeost/S5-nano-MLX-4bit-vision",
   "slug": "necropopeost-s5-nano-mlx-4bit-vision",
   "author": "necropopeost",
@@ -37,6 +37,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 3047110016,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "maritaca-ai/S5-nano",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

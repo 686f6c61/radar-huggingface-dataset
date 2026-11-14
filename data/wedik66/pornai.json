@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wedik66/Pornai",
   "slug": "wedik66-pornai",
   "author": "wedik66",
@@ -31,14 +31,19 @@
   "parameters_human": "5.25B",
   "storage_bytes": 51904940000,
   "storage_human": "51.9 GB",
+  "context_length": null,
   "base_model": "alibaba-pai/Wan2.2-Fun-5B-Control-Camera",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

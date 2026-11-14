@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "endeshen/vla-finetune-forgetting-ckpts",
   "slug": "endeshen-vla-finetune-forgetting-ckpts",
   "author": "endeshen",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 338696303635,
   "storage_human": "338.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mr-Corentin/myhaiku-v2-trimmed-onnx",
   "slug": "mr-corentin-myhaiku-v2-trimmed-onnx",
   "author": "Mr-Corentin",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 181525269,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": "Mr-Corentin/myhaiku-v2-trimmed-gemma-3-270m-it",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

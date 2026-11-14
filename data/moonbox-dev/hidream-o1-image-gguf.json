@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-dev/HiDream-O1-Image-GGUF",
   "slug": "moonbox-dev-hidream-o1-image-gguf",
   "author": "moonbox-dev",
@@ -33,14 +33,19 @@
   "parameters_human": "8.18B",
   "storage_bytes": 61424131136,
   "storage_human": "61.4 GB",
+  "context_length": null,
   "base_model": "HiDream-ai/HiDream-O1-Image",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomheart-Father/Gemma4NPC-E4B-oQ6",
   "slug": "atomheart-father-gemma4npc-e4b-oq6",
   "author": "Atomheart-Father",
@@ -27,6 +27,7 @@
   "parameters_human": "7.94B",
   "storage_bytes": 7243976236,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

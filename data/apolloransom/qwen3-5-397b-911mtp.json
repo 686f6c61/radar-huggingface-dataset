@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "apolloransom/Qwen3.5-397B-911MTP",
   "slug": "apolloransom-qwen3-5-397b-911mtp",
   "author": "apolloransom",
@@ -49,6 +49,7 @@
   "parameters_human": "403.40B",
   "storage_bytes": 229793199321,
   "storage_human": "229.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-397B-A17B",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

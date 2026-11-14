@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phuong-tk-nguyen/vipubmed-deberta-xmall-en-vimedner-ner-vi",
   "slug": "phuong-tk-nguyen-vipubmed-deberta-xmall-en-vimedner-ner-vi",
   "author": "phuong-tk-nguyen",
@@ -38,14 +38,19 @@
   "parameters_human": "70.7M",
   "storage_bytes": 282665420,
   "storage_human": "283 MB",
+  "context_length": null,
   "base_model": "manhtt-079/vipubmed-deberta-xsmall",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "phuong-tk-nguyen/vipubmed-deberta-xsmall-en-vimedner-ner-vi",
+  "renamed_at": "2026-11-11T07:07:46.845Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-4B-Fiction-On-Fire-Series-7-Model-X",
   "slug": "davidau-qwen3-4b-fiction-on-fire-series-7-model-x",
   "author": "DavidAU",
@@ -65,14 +65,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056525433,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "prithivMLmods/Cetus-Qwen3_4B-GeneralThought, sam-paech/Qwen3-4B-antislop-exp15, Goekdeniz-Guelmez/Josiefied-Qwen3-4B-abliterated-v2, Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

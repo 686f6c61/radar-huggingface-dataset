@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huihui-ai/GLM-5.3-Flash-abliterated-GGUF",
   "slug": "huihui-ai-glm-5-3-flash-abliterated-gguf",
   "author": "huihui-ai",
@@ -40,14 +40,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 1560161388123,
   "storage_human": "1560.2 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "renamed_at": "2026-11-11T05:36:29.293Z",
   "benchmarks": [],
   "sources": [
     {

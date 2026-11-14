@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeeel0109/qwen3_tts_sora_284_5epochs",
   "slug": "yeeel0109-qwen3_tts_sora_284_5epochs",
   "author": "yeeel0109",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 39042579541,
   "storage_human": "39.0 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

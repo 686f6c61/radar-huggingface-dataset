@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lemonade666/Ex-Omni-2D",
   "slug": "lemonade666-ex-omni-2d",
   "author": "lemonade666",
@@ -35,14 +35,19 @@
   "parameters_human": "11.18B",
   "storage_bytes": 22716112000,
   "storage_human": "22.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B, Wan-AI/Wan2.1-T2V-1.3B, Qwen/Qwen3-0.6B, Qwen/Qwen3-TTS-Tokenizer-12Hz",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

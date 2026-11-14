@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DylanCouzon/stella-en-400M-v5-doc-onnx",
   "slug": "dylancouzon-stella-en-400m-v5-doc-onnx",
   "author": "DylanCouzon",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 1749799839,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "NovaSearch/stella_en_400M_v5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Qdrant/stella-en-400M-v5-doc-onnx",
+  "renamed_at": "2026-11-11T02:41:02.863Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ryanham1lton/TogepiSK",
   "slug": "ryanham1lton-togepisk",
   "author": "Ryanham1lton",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 116242822,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T02:05:37.562Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

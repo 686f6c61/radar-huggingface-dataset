@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp",
   "slug": "pedroberaldo-qwen3-8-flash-next-oq3-5e-fp16-mtp",
   "author": "pedroberaldo",
@@ -27,6 +27,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 90701264435,
   "storage_human": "90.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:30:24.718Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

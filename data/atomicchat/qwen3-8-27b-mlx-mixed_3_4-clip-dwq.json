@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/Qwen3.8-27B-MLX-mixed_3_4-CLIP-DWQ",
   "slug": "atomicchat-qwen3-8-27b-mlx-mixed_3_4-clip-dwq",
   "author": "AtomicChat",
@@ -30,6 +30,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 13392471829,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AtomicChat/Qwen3.8-27B-MLX-AD-3.70bpw-DWQ-13.4GB",
+  "renamed_at": "2026-11-11T02:21:24.889Z",
   "benchmarks": [],
   "sources": [
     {

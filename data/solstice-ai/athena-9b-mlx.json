@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/Athena-9B-mlx",
   "slug": "solstice-ai-athena-9b-mlx",
   "author": "Solstice-AI",
@@ -44,6 +44,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 7296335690,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T07:44:52.813Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

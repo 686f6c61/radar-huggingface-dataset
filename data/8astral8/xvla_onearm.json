@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "8Astral8/Xvla_OneArm",
   "slug": "8astral8-xvla_onearm",
   "author": "8Astral8",
@@ -23,14 +23,19 @@
   "parameters_human": "880.8M",
   "storage_bytes": 1761709298,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

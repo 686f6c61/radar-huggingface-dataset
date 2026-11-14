@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsemon/ai-in-cyber-lora-new-training-data-eval",
   "slug": "jsemon-ai-in-cyber-lora-new-training-data-eval",
   "author": "jsemon",
@@ -28,14 +28,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 711487648,
   "storage_human": "711 MB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

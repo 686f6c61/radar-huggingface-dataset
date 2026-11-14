@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JasonW2025/Tesseract-R08-20261006",
   "slug": "jasonw2025-tesseract-r08-20261006",
   "author": "JasonW2025",
@@ -36,14 +36,19 @@
   "parameters_human": "5.49B",
   "storage_bytes": 178513126988,
   "storage_human": "178.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

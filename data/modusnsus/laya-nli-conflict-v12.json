@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Modusnsus/laya-nli-conflict-v12",
   "slug": "modusnsus-laya-nli-conflict-v12",
   "author": "Modusnsus",
@@ -40,14 +40,19 @@
   "parameters_human": "321.9M",
   "storage_bytes": 678198712,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "slow-stack/laya-nli-conflict-v12",
+  "renamed_at": "2026-11-12T03:29:50.863Z",
   "benchmarks": [
     {
       "task": "Memory-conflict decision (noul) on frozen held-out pairs",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jeongseokoh/Llama-SPEED-archive-20261101",
   "slug": "jeongseokoh-llama-speed-archive-20261101",
   "author": "jeongseokoh",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 58256139350,
   "storage_human": "58.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

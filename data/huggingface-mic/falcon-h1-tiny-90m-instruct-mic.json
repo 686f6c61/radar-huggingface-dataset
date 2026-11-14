@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Falcon-H1-Tiny-90M-Instruct-mic",
   "slug": "huggingface-mic-falcon-h1-tiny-90m-instruct-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "2.5M",
   "storage_bytes": 4962112,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon-H1-Tiny-90M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

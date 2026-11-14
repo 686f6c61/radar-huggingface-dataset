@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrs83/Kurtis-EON1-Hybrid-0.7B-v0.1.1",
   "slug": "mrs83-kurtis-eon1-hybrid-0-7b-v0-1-1",
   "author": "mrs83",
@@ -38,14 +38,19 @@
   "parameters_human": "672.2M",
   "storage_bytes": 1355845724,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "ethicalabs/Echo-DSRN-Qwen2.5-0.5B-Hybrid",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

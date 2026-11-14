@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-ar30k",
   "slug": "open-sci-open-sci-ref-v0-02-1-7b-nemotron-hq-300b-16k-sft-tulu3-decontaminated-ar30k",
   "author": "open-sci",
@@ -32,14 +32,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3428804400,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3.5-9B-Uncensored-Aquarion-FP8",
   "slug": "rin247-qwen3-5-9b-uncensored-aquarion-fp8",
   "author": "Rin247",
@@ -28,14 +28,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 11009177837,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:24:28.456Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

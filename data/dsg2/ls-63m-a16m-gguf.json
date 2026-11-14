@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dsg2/LS-63M-A16M-GGUF",
   "slug": "dsg2-ls-63m-a16m-gguf",
   "author": "Dsg2",
@@ -34,14 +34,19 @@
   "parameters_human": "69.6M",
   "storage_bytes": 214602239,
   "storage_human": "215 MB",
+  "context_length": 1024,
   "base_model": "Dsg2/LS-63M-A16M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

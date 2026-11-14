@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/MiniCPM-V-4.7-1B",
   "slug": "litert-community-minicpm-v-4-7-1b",
   "author": "litert-community",
@@ -28,18 +28,23 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1124,
+  "downloads_30d": 1103,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 5130733632,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

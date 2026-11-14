@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kirikir13/gemma-4-E2B-it-qat-mobile-transformers",
   "slug": "kirikir13-gemma-4-e2b-it-qat-mobile-transformers",
   "author": "kirikir13",
@@ -32,14 +32,19 @@
   "parameters_human": "2.34B",
   "storage_bytes": 2490281472,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

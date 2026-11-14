@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ngxson/fly-llm-onnx",
   "slug": "ngxson-fly-llm-onnx",
   "author": "ngxson",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 306329622,
   "storage_human": "306 MB",
+  "context_length": null,
   "base_model": "ngxson/fly-hf",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsinghua-ee/video-SALMONN-2-Pro-8B",
   "slug": "tsinghua-ee-video-salmonn-2-pro-8b",
   "author": "tsinghua-ee",
@@ -25,14 +25,19 @@
   "parameters_human": "9.70B",
   "storage_bytes": 19393711392,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

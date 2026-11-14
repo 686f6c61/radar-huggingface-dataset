@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OneNexus/GLM-5.3-Flash-MXFP4",
   "slug": "onenexus-glm-5-3-flash-mxfp4",
   "author": "OneNexus",
@@ -41,14 +41,19 @@
   "parameters_human": "169.12B",
   "storage_bytes": 245608252363,
   "storage_human": "245.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

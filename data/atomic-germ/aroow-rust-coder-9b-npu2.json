@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Aroow-Rust-Coder-9B-NPU2",
   "slug": "atomic-germ-aroow-rust-coder-9b-npu2",
   "author": "Atomic-Germ",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 8680395831,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "Convence/Aroow-Rust-Coder-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

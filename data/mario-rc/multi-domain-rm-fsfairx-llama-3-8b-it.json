@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mario-rc/multi-domain-rm-fsfairx-llama-3-8b-it",
   "slug": "mario-rc-multi-domain-rm-fsfairx-llama-3-8b-it",
   "author": "mario-rc",
@@ -46,14 +46,19 @@
   "parameters_human": "7.51B",
   "storage_bytes": 33942114023,
   "storage_human": "33.9 GB",
+  "context_length": null,
   "base_model": "sfairXC/FsfairX-LLaMA3-RM-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

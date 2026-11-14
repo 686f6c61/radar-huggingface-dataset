@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dwyschka/gemma-4-e2b-it-oQ4e-fp16-mtp",
   "slug": "dwyschka-gemma-4-e2b-it-oq4e-fp16-mtp",
   "author": "dwyschka",
@@ -27,6 +27,7 @@
   "parameters_human": "5.10B",
   "storage_bytes": 4811843009,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

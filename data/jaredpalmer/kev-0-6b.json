@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaredpalmer/kev-0.6b",
   "slug": "jaredpalmer-kev-0-6b",
   "author": "jaredpalmer",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 96466828,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "typed decision (choice / noul / score)",

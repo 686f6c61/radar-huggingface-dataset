@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pinkelephantlimited/pinkelephant-llm-48b-s-4bit",
   "slug": "pinkelephantlimited-pinkelephant-llm-48b-s-4bit",
   "author": "pinkelephantlimited",
@@ -48,12 +48,17 @@
   "parameters_human": null,
   "storage_bytes": 163895290200,
   "storage_human": "163.9 GB",
+  "context_length": null,
   "base_model": "pinkelephantlimited/pinkelephant-llm-48b-s",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "pinkelephantlimited/pinkelephant-llm-48b-s-sft",
+  "renamed_at": "2026-11-11T07:08:01.664Z",
   "benchmarks": [],
   "sources": [
     {

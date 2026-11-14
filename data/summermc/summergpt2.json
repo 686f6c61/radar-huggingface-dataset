@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "summerMC/SummerGPT2",
   "slug": "summermc-summergpt2",
   "author": "summerMC",
@@ -24,14 +24,19 @@
   "parameters_human": "10.6M",
   "storage_bytes": 21150722,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T10:43:35.032Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

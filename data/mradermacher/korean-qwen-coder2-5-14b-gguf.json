@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Korean-QWEN-Coder2.5-14B-GGUF",
   "slug": "mradermacher-korean-qwen-coder2-5-14b-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102043521504,
   "storage_human": "102.0 GB",
+  "context_length": 32768,
   "base_model": "ewhk9887/Korean-QWEN-Coder2.5-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

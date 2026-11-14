@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "supersuphot/distill-whisper-th-small-timestamped",
   "slug": "supersuphot-distill-whisper-th-small-timestamped",
   "author": "supersuphot",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 503408037,
   "storage_human": "503 MB",
+  "context_length": null,
   "base_model": "biodatlab/distill-whisper-th-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

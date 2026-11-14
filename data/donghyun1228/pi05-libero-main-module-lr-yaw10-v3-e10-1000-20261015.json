@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-main-module-lr-yaw10-v3-e10-1000-20261015",
   "slug": "donghyun1228-pi05-libero-main-module-lr-yaw10-v3-e10-1000-20261015",
   "author": "Donghyun1228",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 7710589932,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:54:45.520Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KIKI00007/deepseek-r1-8b-social-science-gguf",
   "slug": "kiki00007-deepseek-r1-8b-social-science-gguf",
   "author": "KIKI00007",
@@ -27,14 +27,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16068893536,
   "storage_human": "16.1 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

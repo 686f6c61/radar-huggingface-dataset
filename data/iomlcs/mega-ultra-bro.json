@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iomlcs/mega-ultra-bro",
   "slug": "iomlcs-mega-ultra-bro",
   "author": "iomlcs",
@@ -31,6 +31,7 @@
   "parameters_human": "25.3M",
   "storage_bytes": 220342042,
   "storage_human": "220 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T05:56:17.288Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

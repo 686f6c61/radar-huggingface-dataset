@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanasol2008/DeepSeek-V4.1-Flash-1017-Heretic-Sushi-STQ-1.75bpw",
   "slug": "sanasol2008-deepseek-v4-1-flash-1017-heretic-sushi-stq-1-75bpw",
   "author": "sanasol2008",
@@ -31,14 +31,19 @@
   "parameters_human": "261.32B",
   "storage_bytes": 332108330844,
   "storage_human": "332.1 GB",
+  "context_length": null,
   "base_model": "beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw, pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

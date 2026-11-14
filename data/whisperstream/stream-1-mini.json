@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whisperstream/stream-1-mini",
   "slug": "whisperstream-stream-1-mini",
   "author": "whisperstream",
@@ -35,6 +35,7 @@
   "parameters_human": "751.6M",
   "storage_bytes": 14389466722,
   "storage_human": "14.4 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xCloudinfo/Qwen3.8-Flash-Next-abliterated-xCloud",
   "slug": "xcloudinfo-qwen3-8-flash-next-abliterated-xcloud",
   "author": "xCloudinfo",
@@ -38,14 +38,19 @@
   "parameters_human": "179.55B",
   "storage_bytes": 827567771456,
   "storage_human": "827.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

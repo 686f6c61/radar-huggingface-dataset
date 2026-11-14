@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Aureth-4B-Qwen3.5-Heretic-i1-GGUF",
   "slug": "mradermacher-aureth-4b-qwen3-5-heretic-i1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 53399773408,
   "storage_human": "53.4 GB",
+  "context_length": 262144,
   "base_model": "Auguments/Aureth-4B-Qwen3.5-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

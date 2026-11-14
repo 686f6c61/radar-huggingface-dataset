@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/nemotron-speech-streaming-en-0.6b",
   "slug": "nvidia-nemotron-speech-streaming-en-0-6b",
   "author": "nvidia",
@@ -63,6 +63,7 @@
   "parameters_human": "618.1M",
   "storage_bytes": 13064963058,
   "storage_human": "13.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -70,8 +71,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

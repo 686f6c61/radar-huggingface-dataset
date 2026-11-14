@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Tiel-Coder-35B-A3B-MLX-AXQ-MXFP4-MTP",
   "slug": "automatosx-ax-tiel-coder-35b-a3b-mlx-axq-mxfp4-mtp",
   "author": "AutomatosX",
@@ -40,6 +40,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 41482640852,
   "storage_human": "41.5 GB",
+  "context_length": null,
   "base_model": "peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e-MTP",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omegazurich/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-source",
   "slug": "omegazurich-gemma-4-31b-it-halloween-terror-heretic-uncensored-source",
   "author": "omegazurich",
@@ -56,14 +56,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62594710986,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

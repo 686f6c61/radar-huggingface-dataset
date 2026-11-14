@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Psyonic-Cetacean-Ultra-Quality-21.3B-22.5B-BRAINSTORM-5x-10x-GGUF",
   "slug": "davidau-psyonic-cetacean-ultra-quality-21-3b-22-5b-brainstorm-5x-10x-gguf",
   "author": "DavidAU",
@@ -46,14 +46,19 @@
   "parameters_human": "22.85B",
   "storage_bytes": 115464197120,
   "storage_human": "115.5 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

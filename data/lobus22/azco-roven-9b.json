@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lobus22/Azco-Roven-9B",
   "slug": "lobus22-azco-roven-9b",
   "author": "Lobus22",
@@ -40,14 +40,19 @@
   "parameters_human": "8.83B",
   "storage_bytes": 17658864536,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": "01-ai/Yi-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

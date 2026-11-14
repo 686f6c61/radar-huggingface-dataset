@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-009960",
   "slug": "jinkmn-molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-009960",
   "author": "jinkmn",
@@ -30,14 +30,19 @@
   "parameters_human": "5.44B",
   "storage_bytes": 21781868784,
   "storage_human": "21.8 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2-BimanualYAM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

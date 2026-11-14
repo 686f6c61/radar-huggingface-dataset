@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RoboDyna/X-VLA-RoboDyna",
   "slug": "robodyna-x-vla-robodyna",
   "author": "RoboDyna",
@@ -38,14 +38,19 @@
   "parameters_human": "879.7M",
   "storage_bytes": 3519068172,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "2toINF/X-VLA-Pt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

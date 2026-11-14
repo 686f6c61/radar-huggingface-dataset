@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GUI-Gym/Qwen3-VL-8B-sft-mobileweave-openmobile",
   "slug": "gui-gym-qwen3-vl-8b-sft-mobileweave-openmobile",
   "author": "GUI-Gym",
@@ -36,14 +36,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545762142,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T02:49:21.684Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

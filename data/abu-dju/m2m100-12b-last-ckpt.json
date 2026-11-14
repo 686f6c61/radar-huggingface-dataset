@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abu-Dju/m2m100-12B-last-ckpt",
   "slug": "abu-dju-m2m100-12b-last-ckpt",
   "author": "Abu-Dju",
@@ -229,12 +229,17 @@
   "parameters_human": null,
   "storage_bytes": 47211594245,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

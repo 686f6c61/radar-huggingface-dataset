@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IDONTCARELETMEIN/mistral7b_MovieMusic",
   "slug": "idontcareletmein-mistral7b_moviemusic",
   "author": "IDONTCARELETMEIN",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 87005134926,
   "storage_human": "87.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T15:57:27.280Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

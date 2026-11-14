@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rohith67/Alpamayo-1.5-10B",
   "slug": "rohith67-alpamayo-1-5-10b",
   "author": "Rohith67",
@@ -33,14 +33,19 @@
   "parameters_human": "11.08B",
   "storage_bytes": 22157194524,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos-Reason2-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EllaPriest45/Audio8-TTS-0.6B",
   "slug": "ellapriest45-audio8-tts-0-6b",
   "author": "EllaPriest45",
@@ -56,14 +56,19 @@
   "parameters_human": "601.2M",
   "storage_bytes": 2564417959,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

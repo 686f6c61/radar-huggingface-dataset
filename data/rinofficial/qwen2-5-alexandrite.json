@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RinOfficial/Qwen2.5-Alexandrite",
   "slug": "rinofficial-qwen2-5-alexandrite",
   "author": "RinOfficial",
@@ -38,6 +38,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4295768083,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

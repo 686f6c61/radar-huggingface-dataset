@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "k4rth33k/Qwen-9B-decision",
   "slug": "k4rth33k-qwen-9b-decision",
   "author": "k4rth33k",
@@ -39,14 +39,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 36068076797,
   "storage_human": "36.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

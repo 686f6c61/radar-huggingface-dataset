@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "symdroid/Mistral-Large-3-675B-Instruct-2512-EXL3-K2",
   "slug": "symdroid-mistral-large-3-675b-instruct-2512-exl3-k2",
   "author": "symdroid",
@@ -40,14 +40,19 @@
   "parameters_human": "101.50B",
   "storage_bytes": 186375749121,
   "storage_human": "186.4 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-3-675B-Base-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

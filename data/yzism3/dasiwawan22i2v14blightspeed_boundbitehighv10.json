@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YZisM3/DasiwaWAN22I2V14BLightspeed_boundbiteHighV10",
   "slug": "yzism3-dasiwawan22i2v14blightspeed_boundbitehighv10",
   "author": "YZisM3",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 164203135625,
   "storage_human": "164.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

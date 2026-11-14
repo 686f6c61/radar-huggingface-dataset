@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/huggingface_github_terminal_fetch_google_sheet_6002-6f2a9c-ds-orion",
   "slug": "tuaxhuiax-huggingface_github_terminal_fetch_google_sheet_6002-6f2a9c-ds-orion",
   "author": "TUaxhuiax",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "orion-base-1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

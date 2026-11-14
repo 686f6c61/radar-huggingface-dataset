@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Goose-7.2B-G1j-20260928-GGUF",
   "slug": "mradermacher-goose-7-2b-g1j-20260928-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "7.20B",
   "storage_bytes": 66459864448,
   "storage_human": "66.5 GB",
+  "context_length": 1048576,
   "base_model": "Lambent/Goose-7.2B-G1j-20260928",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

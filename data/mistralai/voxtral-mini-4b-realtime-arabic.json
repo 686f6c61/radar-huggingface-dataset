@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Voxtral-Mini-4B-Realtime-Arabic",
   "slug": "mistralai-voxtral-mini-4b-realtime-arabic",
   "author": "mistralai",
@@ -64,14 +64,19 @@
   "parameters_human": "4.43B",
   "storage_bytes": 17739214644,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

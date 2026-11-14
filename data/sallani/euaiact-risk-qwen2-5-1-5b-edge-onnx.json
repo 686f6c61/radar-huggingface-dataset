@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sallani/EUAIAct-Risk-Qwen2.5-1.5B-Edge-ONNX",
   "slug": "sallani-euaiact-risk-qwen2-5-1-5b-edge-onnx",
   "author": "sallani",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 6474464132,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "sallani/EUAIAct-Risk-Qwen2.5-1.5B-Edge",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Uniboshi/Hy-Memory-30B-A3B-Abliterated-V1",
   "slug": "uniboshi-hy-memory-30b-a3b-abliterated-v1",
   "author": "Uniboshi",
@@ -32,14 +32,19 @@
   "parameters_human": "30.06B",
   "storage_bytes": 60131744504,
   "storage_human": "60.1 GB",
+  "context_length": null,
   "base_model": "tencent/Hy-Memory-30B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

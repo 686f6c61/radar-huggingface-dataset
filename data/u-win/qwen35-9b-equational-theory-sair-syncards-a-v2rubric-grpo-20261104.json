@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "U-WIN/qwen35-9b-equational-theory-sair-syncards-a-v2rubric-grpo-20261104",
   "slug": "u-win-qwen35-9b-equational-theory-sair-syncards-a-v2rubric-grpo-20261104",
   "author": "U-WIN",
@@ -35,14 +35,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 360963478030,
   "storage_human": "361.0 GB",
+  "context_length": null,
   "base_model": "U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

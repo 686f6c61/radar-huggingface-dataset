@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "halilgokdal/mirror-mlx-community-Qwen3.5-4B-MLX-8bit",
   "slug": "halilgokdal-mirror-mlx-community-qwen3-5-4b-mlx-8bit",
   "author": "halilgokdal",
@@ -27,14 +27,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 5156685450,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

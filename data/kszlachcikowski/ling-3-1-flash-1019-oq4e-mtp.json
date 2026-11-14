@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kszlachcikowski/Ling-3.1-flash-1019-oQ4e-mtp",
   "slug": "kszlachcikowski-ling-3-1-flash-1019-oq4e-mtp",
   "author": "kszlachcikowski",
@@ -29,6 +29,7 @@
   "parameters_human": "572.12B",
   "storage_bytes": 330064710227,
   "storage_human": "330.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T06:38:32.377Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

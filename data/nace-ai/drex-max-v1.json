@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/drex-max-v1",
   "slug": "nace-ai-drex-max-v1",
   "author": "nace-ai",
@@ -26,19 +26,24 @@
   ],
   "likes": 50,
   "downloads_30d": 706,
-  "trending_score": 15,
+  "trending_score": 14,
   "parameters": 26085330160,
   "parameters_human": "26.09B",
   "storage_bytes": 61820886903,
   "storage_human": "61.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

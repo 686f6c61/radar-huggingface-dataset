@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/Real-ESRGAN-RealESRGAN_x4plus-nbx",
   "slug": "neurobrix-real-esrgan-realesrgan_x4plus-nbx",
   "author": "Neurobrix",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 66980492,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

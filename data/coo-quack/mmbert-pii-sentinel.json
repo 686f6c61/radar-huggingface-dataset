@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coo-quack/mmBERT-pii-sentinel",
   "slug": "coo-quack-mmbert-pii-sentinel",
   "author": "coo-quack",
@@ -50,14 +50,19 @@
   "parameters_human": "307.6M",
   "storage_bytes": 3722896912,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

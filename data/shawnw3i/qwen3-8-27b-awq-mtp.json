@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shawnw3i/Qwen3.8-27B-AWQ-MTP",
   "slug": "shawnw3i-qwen3-8-27b-awq-mtp",
   "author": "shawnw3i",
@@ -35,14 +35,19 @@
   "parameters_human": "6.50B",
   "storage_bytes": 33655722573,
   "storage_human": "33.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TYTTYTTYT/llama-pixar-116m-p32-stage2",
   "slug": "tyttyttyt-llama-pixar-116m-p32-stage2",
   "author": "TYTTYTTYT",
@@ -49,14 +49,19 @@
   "parameters_human": "116.4M",
   "storage_bytes": 484054424,
   "storage_human": "484 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

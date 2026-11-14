@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/Kimi-k1.5-LongContext-Einsof-LoRA",
   "slug": "polydim-einsof-kimi-k1-5-longcontext-einsof-lora",
   "author": "Polydim-Einsof",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "moonshotai/Moonlight-16B-A3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:34:44.403Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

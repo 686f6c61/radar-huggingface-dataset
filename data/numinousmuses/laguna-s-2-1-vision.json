@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "numinousmuses/laguna-s-2.1-vision",
   "slug": "numinousmuses-laguna-s-2-1-vision",
   "author": "numinousmuses",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1223615544,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "poolside/Laguna-S-2.1, Qwen/Qwen3-VL-235B-A22B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

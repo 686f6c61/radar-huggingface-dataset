@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jayPark777/MiniMax-Music-3-3Trit-MLQT",
   "slug": "jaypark777-minimax-music-3-3trit-mlqt",
   "author": "jayPark777",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 4545859029,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music-3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

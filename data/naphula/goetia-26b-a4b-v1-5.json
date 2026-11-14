@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naphula/Goetia-26B-A4B-v1.5",
   "slug": "naphula-goetia-26b-a4b-v1-5",
   "author": "Naphula",
@@ -109,14 +109,19 @@
   "parameters_human": "26.00B",
   "storage_bytes": 52031951949,
   "storage_human": "52.0 GB",
+  "context_length": null,
   "base_model": "ApocalypseParty/G4-26B-SFT-6, AuriAetherwiing/G4-26B-A4B-Musica-v1, ayagaya/gem4_26B_adapter, Calplus/GemmaWiki-Gemma-4-26b-a4b, Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT, el4/Xenon-26B-A4B, electroglyph/gemma4-26b-fiction-bf16, google/gemma-4-26B-A4B-it, Gryphe/Gemma-4-26B-A4B-StyleTune-V2, Gryphe/Pantheon-Reasoning-26B-A4B-1.1, haster/Gemma-4-26BA4B-Sonnet-3.7-Distilled-v2, hotdogs/gemma4-26b-claude-opus-reasoning, Jackrong/Gemopus-4-26B-A4B-it, khazic/gemma4-26b-a4b-sft-v5, Locutusque/Esmeralda-Gemma4-26B-A4B, nbeerbower/Gemma4-Gutenberg-26B-A4B, ReadyArt/Dark-Scarlett-v1.0-26B-A4B, ReadyArt/For-Her-Darkside-26B-A4B-v1.4, ReadyArt/Heimdallr-26B-A4B-v0.35-GGUF, ReadyArt/Melody1437-26B-A4B-v2.0, ReadyArt/Omega-Evolution-26B-A4B-v3.0-GGUF, ReadyArt/Serenity-26B-A4B, SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4, TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2, TheDrummer/Orion-26B-A4B-v1, UncannyEcho/Aura-Gaiden-Medium-v1.1-BF16, zerofata/G4-MeroMero-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

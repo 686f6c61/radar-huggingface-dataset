@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jcudit/Qwen3.5-9B-Kimi-K3-Distill",
   "slug": "jcudit-qwen3-5-9b-kimi-k3-distill",
   "author": "jcudit",
@@ -33,14 +33,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 37659445869,
   "storage_human": "37.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

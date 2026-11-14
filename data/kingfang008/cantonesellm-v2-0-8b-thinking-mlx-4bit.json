@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingfang008/CantoneseLLM-v2.0-8B-Thinking-mlx-4bit",
   "slug": "kingfang008-cantonesellm-v2-0-8b-thinking-mlx-4bit",
   "author": "kingfang008",
@@ -40,6 +40,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4619257824,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "hon9kon9ize/CantoneseLLM-v2.0-8B-Thinking",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

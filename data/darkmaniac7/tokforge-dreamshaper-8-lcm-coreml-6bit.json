@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkmaniac7/TokForge-DreamShaper-8-LCM-CoreML-6bit",
   "slug": "darkmaniac7-tokforge-dreamshaper-8-lcm-coreml-6bit",
   "author": "darkmaniac7",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 1843644808,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Lykon/dreamshaper-8-lcm",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

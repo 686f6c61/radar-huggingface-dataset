@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CNWPlayer/Vega-1.6-128M-Chat-GGUF",
   "slug": "cnwplayer-vega-1-6-128m-chat-gguf",
   "author": "CNWPlayer",
@@ -36,14 +36,19 @@
   "parameters_human": "128.4M",
   "storage_bytes": 258012480,
   "storage_human": "258 MB",
+  "context_length": 2048,
   "base_model": "CNWPlayer/Vega-1.6-128M-Chat",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

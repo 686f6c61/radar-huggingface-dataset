@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "konic-labs/LFM2.5-VL-3B-ffn8192-int4-MLX-optimized",
   "slug": "konic-labs-lfm2-5-vl-3b-ffn8192-int4-mlx-optimized",
   "author": "konic-labs",
@@ -40,6 +40,7 @@
   "parameters_human": "3.12B",
   "storage_bytes": 1643351885,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "konic-labs/LFM2.5-VL-3B-ffn8192-int4",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

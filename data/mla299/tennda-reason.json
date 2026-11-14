@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MLA299/Tennda-Reason",
   "slug": "mla299-tennda-reason",
   "author": "MLA299",
@@ -33,6 +33,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4619474128,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

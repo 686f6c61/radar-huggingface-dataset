@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Nora0.1-1.7B-i1-GGUF",
   "slug": "mradermacher-nora0-1-1-7b-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 21647181024,
   "storage_human": "21.6 GB",
+  "context_length": 40960,
   "base_model": "uniqueplayer9102/Nora0.1-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

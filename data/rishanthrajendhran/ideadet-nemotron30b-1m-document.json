@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rishanthrajendhran/ideadet-nemotron30b-1m-document",
   "slug": "rishanthrajendhran-ideadet-nemotron30b-1m-document",
   "author": "rishanthrajendhran",
@@ -35,14 +35,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 68933090716,
   "storage_human": "68.9 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rishanthrajendhran/ProseLens",
+  "renamed_at": "2026-11-11T07:19:53.895Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeowon/qwen3_asr_1.7b_ko-MLX-4bit",
   "slug": "yeowon-qwen3_asr_1-7b_ko-mlx-4bit",
   "author": "yeowon",
@@ -37,6 +37,7 @@
   "parameters_human": "2.04B",
   "storage_bytes": 1164606980,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "TeamUNIVA/qwen3_asr_1.7b_ko",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

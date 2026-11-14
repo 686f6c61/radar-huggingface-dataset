@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tostibrown/Groot-19B-A3B-261023-rco-role-4.5bpw-textonly",
   "slug": "tostibrown-groot-19b-a3b-261023-rco-role-4-5bpw-textonly",
   "author": "Tostibrown",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 12306876630,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "GrootTeam/Groot-19B-A3B-261023, hermitdave/Groot-19B-A3B-261023-MLX-rco-role-4.5bpw",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

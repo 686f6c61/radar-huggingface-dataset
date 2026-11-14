@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "knpt/round2_fast_30ep_5k",
   "slug": "knpt-round2_fast_30ep_5k",
   "author": "knpt",
@@ -32,14 +32,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576219216,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "sreetz-nv/so101_newton_dr500_vision_h32_b32_50k_20260925",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

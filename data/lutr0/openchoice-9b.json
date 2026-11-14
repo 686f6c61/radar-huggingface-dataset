@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lutr0/OpenChoice-9B",
   "slug": "lutr0-openchoice-9b",
   "author": "Lutr0",
@@ -43,6 +43,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 6433819717,
   "storage_human": "6.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

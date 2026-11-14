@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikname22/ufa-wildfeedback-satisfaction-mbert",
   "slug": "nikname22-ufa-wildfeedback-satisfaction-mbert",
   "author": "nikname22",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 2134336428,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "bert-base-multilingual-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "pln-ufrgs/ufa-wildfeedback-satisfaction-mbert",
+  "renamed_at": "2026-11-14T07:52:18.225Z",
   "benchmarks": [],
   "sources": [
     {

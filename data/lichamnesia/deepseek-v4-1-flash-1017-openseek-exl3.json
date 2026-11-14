@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LichAmnesia/DeepSeek-V4.1-Flash-1017-OpenSeek-EXL3",
   "slug": "lichamnesia-deepseek-v4-1-flash-1017-openseek-exl3",
   "author": "LichAmnesia",
@@ -39,14 +39,19 @@
   "parameters_human": "304.90B",
   "storage_bytes": 405044040152,
   "storage_human": "405.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

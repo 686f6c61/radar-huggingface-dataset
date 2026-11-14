@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quark75/granite-4.2-3b-Q4_K_M-imatrix-GGUF",
   "slug": "quark75-granite-4-2-3b-q4_k_m-imatrix-gguf",
   "author": "quark75",
@@ -33,14 +33,19 @@
   "parameters_human": "3.66B",
   "storage_bytes": 2244012512,
   "storage_human": "2.2 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

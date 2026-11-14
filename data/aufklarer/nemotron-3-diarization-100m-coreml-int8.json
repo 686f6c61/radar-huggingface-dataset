@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aufklarer/Nemotron-3-Diarization-100M-CoreML-INT8",
   "slug": "aufklarer-nemotron-3-diarization-100m-coreml-int8",
   "author": "aufklarer",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 106647309,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

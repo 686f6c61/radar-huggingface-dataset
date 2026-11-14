@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsbeaudry/Fatiman-TTS-v2-onnx",
   "slug": "jsbeaudry-fatiman-tts-v2-onnx",
   "author": "jsbeaudry",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 243245999,
   "storage_human": "243 MB",
+  "context_length": null,
   "base_model": "jsbeaudry/Fatiman-TTS-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

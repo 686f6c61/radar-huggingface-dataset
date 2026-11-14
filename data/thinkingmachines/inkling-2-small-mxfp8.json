@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thinkingmachines/Inkling-2-Small-MXFP8",
   "slug": "thinkingmachines-inkling-2-small-mxfp8",
   "author": "thinkingmachines",
@@ -30,14 +30,19 @@
   "parameters_human": "594.05B",
   "storage_bytes": 622833079396,
   "storage_human": "622.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

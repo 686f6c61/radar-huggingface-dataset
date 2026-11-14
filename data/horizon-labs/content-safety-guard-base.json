@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Horizon-Labs/content-safety-guard-base",
   "slug": "horizon-labs-content-safety-guard-base",
   "author": "Horizon-Labs",
@@ -90,6 +90,7 @@
   "parameters_human": "307.5M",
   "storage_bytes": 9340743363,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "onnx",
@@ -97,8 +98,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

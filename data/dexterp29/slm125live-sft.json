@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DexterP29/slm125LIVE-sft",
   "slug": "dexterp29-slm125live-sft",
   "author": "DexterP29",
@@ -33,14 +33,19 @@
   "parameters_human": "125.8M",
   "storage_bytes": 251708904,
   "storage_human": "252 MB",
+  "context_length": null,
   "base_model": "thesreedath/slm-125m-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

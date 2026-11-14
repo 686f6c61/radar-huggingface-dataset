@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sankalpsthakur/qwen3-06b-typed-decisions-cloud-pilot",
   "slug": "sankalpsthakur-qwen3-06b-typed-decisions-cloud-pilot",
   "author": "sankalpsthakur",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 4657707,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T04:46:28.297Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

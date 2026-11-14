@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CrowdMind/Qwen3.5-0.8B-Base",
   "slug": "crowdmind-qwen3-5-0-8b-base",
   "author": "CrowdMind",
@@ -30,14 +30,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1726019871,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:58:50.916Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

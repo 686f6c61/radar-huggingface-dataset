@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/Mistral-Large-4-1T-A52B-GGUF",
   "slug": "orcarouter-mistral-large-4-1t-a52b-gguf",
   "author": "orcarouter",
@@ -59,14 +59,19 @@
   "parameters_human": "1049.36B",
   "storage_bytes": 732197056352,
   "storage_human": "732.2 GB",
+  "context_length": 1048576,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

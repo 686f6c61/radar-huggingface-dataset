@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "resolvo-cloud/Ornith-1.5-9B-DFlash2",
   "slug": "resolvo-cloud-ornith-1-5-9b-dflash2",
   "author": "resolvo-cloud",
@@ -29,6 +29,7 @@
   "parameters_human": "1.47B",
   "storage_bytes": 2941252933,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Zenotron-Mini-0.5-Multilingual-i1-GGUF",
   "slug": "mradermacher-zenotron-mini-0-5-multilingual-i1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 279353375936,
   "storage_human": "279.4 GB",
+  "context_length": 262144,
   "base_model": "open-zzrl/Zenotron-Mini-0.5-Multilingual",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

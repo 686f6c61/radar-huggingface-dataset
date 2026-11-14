@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMinded-Labs/AileyTempest-14B",
   "slug": "openminded-labs-aileytempest-14b",
   "author": "OpenMinded-Labs",
@@ -45,6 +45,7 @@
   "parameters_human": "13.51B",
   "storage_bytes": 39097084208,
   "storage_human": "39.1 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-14B-Reasoning-2512",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agbalu/Belaid-75M",
   "slug": "agbalu-belaid-75m",
   "author": "agbalu",
@@ -43,14 +43,19 @@
   "parameters_human": "75.1M",
   "storage_bytes": 300879293,
   "storage_human": "301 MB",
+  "context_length": null,
   "base_model": "agbalu/Masinissa-73M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Punctuation and casing restoration",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vamitra/keynote-prompter-nli",
   "slug": "vamitra-keynote-prompter-nli",
   "author": "Vamitra",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 390125602,
   "storage_human": "390 MB",
+  "context_length": null,
   "base_model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

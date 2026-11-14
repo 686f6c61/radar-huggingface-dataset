@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CharlieBT/gx33-decider",
   "slug": "charliebt-gx33-decider",
   "author": "CharlieBT",
@@ -30,14 +30,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 52193403363,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": "baselabs/mammoth-1, danyloooah/sn92-generalist-m1-core2, Lucas989/sn92-generalist-m1-core7a, mufasa1228/sn92-gen-r3, Lucas989/sn92-generalist-m1-wide7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

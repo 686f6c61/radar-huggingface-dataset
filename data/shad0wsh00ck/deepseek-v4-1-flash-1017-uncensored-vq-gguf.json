@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shad0wsh00ck/DeepSeek-V4.1-Flash-1017-UNCENSORED-VQ-GGUF",
   "slug": "shad0wsh00ck-deepseek-v4-1-flash-1017-uncensored-vq-gguf",
   "author": "shad0wsh00ck",
@@ -47,14 +47,19 @@
   "parameters_human": "485.3M",
   "storage_bytes": 317601046990,
   "storage_human": "317.6 GB",
+  "context_length": null,
   "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aruntemme/maya2-native-mlx-bf16",
   "slug": "aruntemme-maya2-native-mlx-bf16",
   "author": "aruntemme",
@@ -56,6 +56,7 @@
   "parameters_human": "2.50B",
   "storage_bytes": 10025858140,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": "maya-research/maya2-native",
   "formats": [
     "mlx",
@@ -63,8 +64,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superroket169/Pidgeon-42M",
   "slug": "superroket169-pidgeon-42m",
   "author": "superroket169",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 504005124,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SriRamanaAtmic/AtmicEmbeddingv3",
   "slug": "sriramanaatmic-atmicembeddingv3",
   "author": "SriRamanaAtmic",
@@ -34,14 +34,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 11214801808,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": "SriRamanaAtmic/AtmicEmbeddingv2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "martin-kb-rampage/BareTorch-500M-Base",
   "slug": "martin-kb-rampage-baretorch-500m-base",
   "author": "martin-kb-rampage",
@@ -31,14 +31,19 @@
   "parameters_human": "593.1M",
   "storage_bytes": 2372309005,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:27:11.358Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

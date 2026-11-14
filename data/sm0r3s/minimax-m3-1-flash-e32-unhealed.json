@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sm0r3s/MiniMax-M3.1-Flash-E32-unhealed",
   "slug": "sm0r3s-minimax-m3-1-flash-e32-unhealed",
   "author": "Sm0r3s",
@@ -33,14 +33,19 @@
   "parameters_human": "64.67B",
   "storage_bytes": 130015780334,
   "storage_human": "130.0 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

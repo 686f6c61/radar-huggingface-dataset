@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OussamaBenSlama/qarai-guard-12M-v0",
   "slug": "oussamabenslama-qarai-guard-12m-v0",
   "author": "OussamaBenSlama",
@@ -36,14 +36,19 @@
   "parameters_human": "11.6M",
   "storage_bytes": 46219569,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "asafaya/bert-mini-arabic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Qarai/qarai-guard-12M-v0",
+  "renamed_at": "2026-11-14T03:56:05.166Z",
   "benchmarks": [],
   "sources": []
 }

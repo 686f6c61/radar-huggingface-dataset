@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nebulette/moss-spectrum-diffusers",
   "slug": "nebulette-moss-spectrum-diffusers",
   "author": "nebulette",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1197730,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

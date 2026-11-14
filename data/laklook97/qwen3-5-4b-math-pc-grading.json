@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laklook97/qwen3.5-4b-math-pc-grading",
   "slug": "laklook97-qwen3-5-4b-math-pc-grading",
   "author": "laklook97",
@@ -35,14 +35,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817606,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

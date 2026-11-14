@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mhaquehaque/berkelium-qwen3-32b-agent-v1",
   "slug": "mhaquehaque-berkelium-qwen3-32b-agent-v1",
   "author": "Mhaquehaque",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 548419835,
   "storage_human": "548 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

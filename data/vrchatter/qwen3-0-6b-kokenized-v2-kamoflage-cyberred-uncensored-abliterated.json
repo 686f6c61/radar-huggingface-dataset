@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VRChatter/Qwen3-0.6B-Kokenized-v2-Kamoflage-CyberRed-Uncensored-Abliterated",
   "slug": "vrchatter-qwen3-0-6b-kokenized-v2-kamoflage-cyberred-uncensored-abliterated",
   "author": "VRChatter",
@@ -45,14 +45,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1205961020,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "VRChatter/Qwen3-0.6B-Kokenized-CyberRed-Uncensored-Abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

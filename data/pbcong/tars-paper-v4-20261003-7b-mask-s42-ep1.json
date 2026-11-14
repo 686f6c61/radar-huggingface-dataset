@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pbcong/tars-paper-v4-20261003-7b-mask-s42-ep1",
   "slug": "pbcong-tars-paper-v4-20261003-7b-mask-s42-ep1",
   "author": "pbcong",
@@ -25,14 +25,19 @@
   "parameters_human": "7.06B",
   "storage_bytes": 14126400899,
   "storage_human": "14.1 GB",
+  "context_length": null,
   "base_model": "liuhaotian/llava-v1.5-7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

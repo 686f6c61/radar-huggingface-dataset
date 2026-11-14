@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "klee100/Qwen3.8-Flash-Next-AutoRound-A100-3bpw-MTP",
   "slug": "klee100-qwen3-8-flash-next-autoround-a100-3bpw-mtp",
   "author": "klee100",
@@ -41,14 +41,19 @@
   "parameters_human": "53.90B",
   "storage_bytes": 306201779694,
   "storage_human": "306.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "klee100/Qwen3.8-Flash-Next-AutoRound-3bpw-MTP",
+  "renamed_at": "2026-11-11T05:56:59.475Z",
   "benchmarks": [],
   "sources": [
     {

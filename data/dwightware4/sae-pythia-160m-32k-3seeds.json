@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dwightware4/sae-pythia-160m-32k-3seeds",
   "slug": "dwightware4-sae-pythia-160m-32k-3seeds",
   "author": "dwightware4",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 604383216,
   "storage_human": "604 MB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-160m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

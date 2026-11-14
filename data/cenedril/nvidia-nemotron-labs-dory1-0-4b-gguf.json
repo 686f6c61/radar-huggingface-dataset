@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cenedril/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
   "slug": "cenedril-nvidia-nemotron-labs-dory1-0-4b-gguf",
   "author": "Cenedril",
@@ -36,14 +36,19 @@
   "parameters_human": "3.98B",
   "storage_bytes": 3674803961,
   "storage_human": "3.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

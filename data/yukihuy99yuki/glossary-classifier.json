@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yukihuy99yuki/glossary-classifier",
   "slug": "yukihuy99yuki-glossary-classifier",
   "author": "yukihuy99yuki",
@@ -36,6 +36,7 @@
   "parameters_human": null,
   "storage_bytes": 818408904,
   "storage_human": "818 MB",
+  "context_length": null,
   "base_model": "hfl/chinese-roberta-wwm-ext",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Glossary candidate classification",

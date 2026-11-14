@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dvader13/olmo2-1b-rlfinal-s1-315b",
   "slug": "dvader13-olmo2-1b-rlfinal-s1-315b",
   "author": "dvader13",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 17819326655,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

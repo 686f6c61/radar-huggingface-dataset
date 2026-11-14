@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/GLM-5-0.88B-MTP-PR3225-FP8-Dynamic-MFPTQ",
   "slug": "inference-optimization-glm-5-0-88b-mtp-pr3225-fp8-dynamic-mfptq",
   "author": "inference-optimization",
@@ -37,14 +37,19 @@
   "parameters_human": "881.0M",
   "storage_bytes": 1425540418,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "inference-optimization/GLM-5-0.88B-MTP",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:22:44.270Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

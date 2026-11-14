@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrostyZ07/deberta-v3-small-sentiment-amazon",
   "slug": "frostyz07-deberta-v3-small-sentiment-amazon",
   "author": "FrostyZ07",
@@ -31,14 +31,19 @@
   "parameters_human": "141.9M",
   "storage_bytes": 5111105889,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

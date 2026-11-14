@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheAiCollectiveART/CONSIDER-1",
   "slug": "theaicollectiveart-consider-1",
   "author": "TheAiCollectiveART",
@@ -42,6 +42,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 6040438188,
   "storage_human": "6.0 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

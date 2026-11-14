@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SousiOmine/Lumi-v2-llm-jp-4-8b-GGUF",
   "slug": "sousiomine-lumi-v2-llm-jp-4-8b-gguf",
   "author": "SousiOmine",
@@ -38,14 +38,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 31623340448,
   "storage_human": "31.6 GB",
+  "context_length": 65536,
   "base_model": "SousiOmine/Lumi-v2-llm-jp-4-8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

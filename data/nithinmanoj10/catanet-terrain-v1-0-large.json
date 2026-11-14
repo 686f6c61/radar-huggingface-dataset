@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nithinmanoj10/CataNET-Terrain-v1.0-Large",
   "slug": "nithinmanoj10-catanet-terrain-v1-0-large",
   "author": "nithinmanoj10",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 27157617,
   "storage_human": "27 MB",
+  "context_length": null,
   "base_model": "timm/tf_mobilenetv3_large_100.in1k",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

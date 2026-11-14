@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sakamakismile/10Eros-Max-beta2-NVFP4",
   "slug": "sakamakismile-10eros-max-beta2-nvfp4",
   "author": "sakamakismile",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 12525845160,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

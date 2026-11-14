@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bratao/PortugueseT5-Instruct",
   "slug": "bratao-portugueset5-instruct",
   "author": "bratao",
@@ -35,14 +35,19 @@
   "parameters_human": "783.2M",
   "storage_bytes": 3132689612,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "bratao/portugueseT5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

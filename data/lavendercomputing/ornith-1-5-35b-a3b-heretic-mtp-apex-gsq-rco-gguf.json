@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lavendercomputing/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GSQ-RCO-GGUF",
   "slug": "lavendercomputing-ornith-1-5-35b-a3b-heretic-mtp-apex-gsq-rco-gguf",
   "author": "lavendercomputing",
@@ -26,14 +26,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 51830075750,
   "storage_human": "51.8 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B-GGUF, SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jbarney/circuit-audio-7b",
   "slug": "jbarney-circuit-audio-7b",
   "author": "jbarney",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 505095039,
   "storage_human": "505 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-Audio-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

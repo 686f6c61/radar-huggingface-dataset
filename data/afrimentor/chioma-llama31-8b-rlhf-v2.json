@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AfriMentor/chioma-llama31-8b-rlhf-v2",
   "slug": "afrimentor-chioma-llama31-8b-rlhf-v2",
   "author": "AfriMentor",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 180910200,
   "storage_human": "181 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

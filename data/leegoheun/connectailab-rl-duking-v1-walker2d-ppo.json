@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leegoheun/connectailab-rl-duking-v1-Walker2d-ppo",
   "slug": "leegoheun-connectailab-rl-duking-v1-walker2d-ppo",
   "author": "leegoheun",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1802392,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "leegoheun/connectailab-rl-duking-Walker2d-v5-ppo",
+  "renamed_at": "2026-11-11T06:00:51.797Z",
   "benchmarks": [],
   "sources": [
     {

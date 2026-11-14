@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atkinschang/TableFormerV2-MLX",
   "slug": "atkinschang-tableformerv2-mlx",
   "author": "atkinschang",
@@ -27,6 +27,7 @@
   "parameters_human": "51.1M",
   "storage_bytes": 204597532,
   "storage_human": "205 MB",
+  "context_length": null,
   "base_model": "docling-project/TableFormerV2",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

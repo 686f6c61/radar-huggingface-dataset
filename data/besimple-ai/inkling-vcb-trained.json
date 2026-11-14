@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "besimple-ai/inkling-vcb-trained",
   "slug": "besimple-ai-inkling-vcb-trained",
   "author": "besimple-ai",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 15194125696,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T07:11:13.040Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

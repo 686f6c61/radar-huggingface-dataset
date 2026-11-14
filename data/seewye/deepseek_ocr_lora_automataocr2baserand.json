@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeeWye/deepseek_ocr_lora_automataOCR2baseRand",
   "slug": "seewye-deepseek_ocr_lora_automataocr2baserand",
   "author": "SeeWye",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 691141456,
   "storage_human": "691 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T13:38:15.947Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

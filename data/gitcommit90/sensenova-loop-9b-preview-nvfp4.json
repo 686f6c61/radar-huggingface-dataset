@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gitcommit90/SenseNova-Loop-9B-Preview-NVFP4",
   "slug": "gitcommit90-sensenova-loop-9b-preview-nvfp4",
   "author": "gitcommit90",
@@ -44,14 +44,19 @@
   "parameters_human": "6.20B",
   "storage_bytes": 9405194901,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-Loop-9B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

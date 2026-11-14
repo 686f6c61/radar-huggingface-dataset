@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sky-Kim/functiongemma-270m-finetune",
   "slug": "sky-kim-functiongemma-270m-finetune",
   "author": "Sky-Kim",
@@ -41,6 +41,7 @@
   "parameters_human": null,
   "storage_bytes": 2639522285,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "google/functiongemma-270m-it",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

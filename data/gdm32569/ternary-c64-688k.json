@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gdm32569/ternary-c64-688k",
   "slug": "gdm32569-ternary-c64-688k",
   "author": "gdm32569",
@@ -41,14 +41,19 @@
   "parameters_human": "820352",
   "storage_bytes": 3896446,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

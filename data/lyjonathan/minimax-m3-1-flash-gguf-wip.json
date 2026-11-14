@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LyJonathan/MiniMax-M3.1-Flash-GGUF-wip",
   "slug": "lyjonathan-minimax-m3-1-flash-gguf-wip",
   "author": "LyJonathan",
@@ -31,14 +31,19 @@
   "parameters_human": "426.19B",
   "storage_bytes": 308024987328,
   "storage_human": "308.0 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "turintech/MiniCPM5-2B-Artemis-GGUF",
   "slug": "turintech-minicpm5-2b-artemis-gguf",
   "author": "turintech",
@@ -38,14 +38,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 1540529086,
   "storage_human": "1.5 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text generation",

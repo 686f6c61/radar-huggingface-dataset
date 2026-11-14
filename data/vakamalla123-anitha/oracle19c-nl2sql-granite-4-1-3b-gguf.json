@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-gguf",
   "slug": "vakamalla123-anitha-oracle19c-nl2sql-granite-4-1-3b-gguf",
   "author": "Vakamalla123-Anitha",
@@ -36,14 +36,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 2099501664,
   "storage_human": "2.1 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.1-3b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Vakamalla-Anitha/granite-4.1-3b-oracle-nl2sql-gguf",
+  "renamed_at": "2026-11-11T04:07:12.012Z",
   "benchmarks": [],
   "sources": [
     {

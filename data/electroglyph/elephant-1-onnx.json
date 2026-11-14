@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "electroglyph/elephant-1-onnx",
   "slug": "electroglyph-elephant-1-onnx",
   "author": "electroglyph",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 38296584099,
   "storage_human": "38.3 GB",
+  "context_length": null,
   "base_model": "baselabs/elephant-1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

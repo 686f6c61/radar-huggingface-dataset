@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manak0/Detect-car-wash-winner",
   "slug": "manak0-detect-car-wash-winner",
   "author": "manak0",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 635189323,
   "storage_human": "635 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "manako/Detect-car-wash-winner",
+  "renamed_at": "2026-11-12T06:26:10.811Z",
   "benchmarks": [],
   "sources": [
     {

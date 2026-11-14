@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crabby-devil/zils-mini-purplemist-4b",
   "slug": "crabby-devil-zils-mini-purplemist-4b",
   "author": "crabby-devil",
@@ -33,14 +33,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9078616200,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "olaverse/PurpleMIST-Mini-2.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

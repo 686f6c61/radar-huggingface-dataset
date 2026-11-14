@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN",
   "slug": "pugant-qwen3-8-27b-mtp-q4_0_rocmfp4_strix_lean",
   "author": "pugant",
@@ -43,14 +43,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 14845107136,
   "storage_human": "14.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

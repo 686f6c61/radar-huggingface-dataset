@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vtava/TinyCeNN-LM-Base",
   "slug": "vtava-tinycenn-lm-base",
   "author": "vtava",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 3851766,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "arnir0/Tiny-LLM",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T04:12:11.316Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

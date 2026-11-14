@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PabloHoties/unStable-Revolution-F2K-4B-alpha-int4-ov",
   "slug": "pablohoties-unstable-revolution-f2k-4b-alpha-int4-ov",
   "author": "PabloHoties",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4570687769,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

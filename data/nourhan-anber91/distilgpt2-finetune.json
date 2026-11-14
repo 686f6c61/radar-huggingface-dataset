@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nourhan-anber91/distilgpt2-finetune",
   "slug": "nourhan-anber91-distilgpt2-finetune",
   "author": "nourhan-anber91",
@@ -23,14 +23,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 983041812,
   "storage_human": "983 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

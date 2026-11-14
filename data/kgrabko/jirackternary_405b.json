@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kgrabko/JiRackTernary_405b",
   "slug": "kgrabko-jirackternary_405b",
   "author": "kgrabko",
@@ -39,14 +39,19 @@
   "parameters_human": "107.76B",
   "storage_bytes": 272283004264,
   "storage_human": "272.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-405B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

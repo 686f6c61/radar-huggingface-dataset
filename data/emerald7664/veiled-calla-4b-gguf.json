@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Emerald7664/Veiled-Calla-4B-gguf",
   "slug": "emerald7664-veiled-calla-4b-gguf",
   "author": "Emerald7664",
@@ -37,14 +37,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 22137702848,
   "storage_human": "22.1 GB",
+  "context_length": 131072,
   "base_model": "soob3123/Veiled-Calla-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

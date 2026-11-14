@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/TEMPURA-Qwen2.5-VL-7B-GGUF",
   "slug": "mradermacher-tempura-qwen2-5-vl-7b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 70357175104,
   "storage_human": "70.4 GB",
+  "context_length": 128000,
   "base_model": "andaba/TEMPURA-Qwen2.5-VL-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

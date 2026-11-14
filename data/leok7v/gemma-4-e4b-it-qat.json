@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leok7v/gemma-4-e4b-it-qat",
   "slug": "leok7v-gemma-4-e4b-it-qat",
   "author": "leok7v",
@@ -33,14 +33,19 @@
   "parameters_human": "8.61B",
   "storage_bytes": 3794550784,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-mobile-transformers",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dharun2049/netgraphfm-1m",
   "slug": "dharun2049-netgraphfm-1m",
   "author": "dharun2049",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 5936480,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T07:50:54.093Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

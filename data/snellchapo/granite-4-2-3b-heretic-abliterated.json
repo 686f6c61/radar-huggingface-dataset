@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snellchapo/granite-4.2-3b-heretic-abliterated",
   "slug": "snellchapo-granite-4-2-3b-heretic-abliterated",
   "author": "snellchapo",
@@ -32,6 +32,7 @@
   "parameters_human": "3.66B",
   "storage_bytes": 20779641168,
   "storage_human": "20.8 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

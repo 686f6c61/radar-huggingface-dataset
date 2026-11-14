@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gpt2-medium-stable-diffusion-prompt-generator-GGUF",
+  "slug": "mradermacher-gpt2-medium-stable-diffusion-prompt-generator-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gpt2-medium-stable-diffusion-prompt-generator-GGUF",
+  "created_at": "2025-05-23T20:37:42.000Z",
+  "updated_at": "2026-11-14T17:50:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Ar4ikov/gpt2-medium-stable-diffusion-prompt-generator",
+    "base_model:quantized:Ar4ikov/gpt2-medium-stable-diffusion-prompt-generator",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 3368462208,
+  "storage_human": "3.4 GB",
+  "context_length": 1024,
+  "base_model": "Ar4ikov/gpt2-medium-stable-diffusion-prompt-generator",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

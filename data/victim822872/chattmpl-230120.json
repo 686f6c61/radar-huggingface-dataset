@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "victim822872/chattmpl-230120",
   "slug": "victim822872-chattmpl-230120",
   "author": "victim822872",
@@ -30,14 +30,19 @@
   "parameters_human": "111968",
   "storage_bytes": 12477931,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CobrIX/CobrIX-1.0-Coder-Flash-33B-A13B",
   "slug": "cobrix-cobrix-1-0-coder-flash-33b-a13b",
   "author": "CobrIX",
@@ -43,6 +43,7 @@
   "parameters_human": "33.11B",
   "storage_bytes": 66249255831,
   "storage_human": "66.2 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwythos-9B-v2",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/BigBang1.0-35B-A3B-NPU2",
   "slug": "atomic-germ-bigbang1-0-35b-a3b-npu2",
   "author": "Atomic-Germ",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 292448180902,
   "storage_human": "292.4 GB",
+  "context_length": null,
   "base_model": "endless-frontier/BigBang-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

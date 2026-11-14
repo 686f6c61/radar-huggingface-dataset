@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "id-2/Qwen3.8-27B-Uncensored-GGUF",
   "slug": "id-2-qwen3-8-27b-uncensored-gguf",
   "author": "id-2",
@@ -30,14 +30,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29974693536,
   "storage_human": "30.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "id-2/rox-r1-gguf",
+  "renamed_at": "2026-11-11T05:38:33.838Z",
   "benchmarks": [],
   "sources": [
     {

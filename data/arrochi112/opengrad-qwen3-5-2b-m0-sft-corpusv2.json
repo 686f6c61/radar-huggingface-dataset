@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CorpusV2",
   "slug": "arrochi112-opengrad-qwen3-5-2b-m0-sft-corpusv2",
   "author": "arrochi112",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 22602345552,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "arjhinety/OpenGrad-Qwen3.5-2B-M0-SFT-CorpusV2",
+  "renamed_at": "2026-11-13T04:48:08.084Z",
   "benchmarks": [],
   "sources": [
     {

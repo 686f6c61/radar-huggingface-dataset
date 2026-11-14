@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reyansh38771/sn97____kumaresano____uid120____hk5ER8r",
   "slug": "reyansh38771-sn97____kumaresano____uid120____hk5er8r",
   "author": "reyansh38771",
@@ -28,14 +28,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 142131078086,
   "storage_human": "142.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T03:35:56.547Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

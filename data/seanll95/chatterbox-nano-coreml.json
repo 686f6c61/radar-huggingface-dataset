@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seanll95/chatterbox-nano-coreml",
   "slug": "seanll95-chatterbox-nano-coreml",
   "author": "seanll95",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 3780818644,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox-nano",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-i1-GGUF",
   "slug": "mradermacher-bielik-pl-minitron-7b-v3-0-instruct-ungated-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "7.48B",
   "storage_bytes": 84488792384,
   "storage_human": "84.5 GB",
+  "context_length": 32768,
   "base_model": "cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Charlie320/zils-lite-hj1",
   "slug": "charlie320-zils-lite-hj1",
   "author": "Charlie320",
@@ -28,14 +28,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1706027688,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B, zils-ai/jiwo-0.8b-full",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

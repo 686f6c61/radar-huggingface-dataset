@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lukakuma/minion-agent-lora-v7d",
   "slug": "lukakuma-minion-agent-lora-v7d",
   "author": "lukakuma",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 2619839552,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "lukakuma/minion_l32_1d2B_l30_grpo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

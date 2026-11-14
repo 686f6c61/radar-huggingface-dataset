@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pleochroic-Ltd/Summerwise-27B",
   "slug": "pleochroic-ltd-summerwise-27b",
   "author": "Pleochroic-Ltd",
@@ -55,14 +55,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55576266662,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

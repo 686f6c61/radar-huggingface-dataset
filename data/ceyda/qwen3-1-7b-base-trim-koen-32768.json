@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ceyda/Qwen3-1.7B-Base-trim-koen-32768",
   "slug": "ceyda-qwen3-1-7b-base-trim-koen-32768",
   "author": "ceyda",
@@ -40,14 +40,19 @@
   "parameters_human": "1.48B",
   "storage_bytes": 3901152240,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

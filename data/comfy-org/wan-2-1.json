@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Wan-2.1",
   "slug": "comfy-org-wan-2-1",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 543759100449,
   "storage_human": "543.8 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-FLF2V-14B-720P, alibaba-pai/Wan2.1-Fun-V1.1-1.3B-Control-Camera, alibaba-pai/Wan2.1-Fun-V1.1-14B-Control-Camera, alibaba-pai/Wan2.1-Fun-V1.1-1.3B-Control, alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP, Wan-AI/Wan2.1-I2V-14B-480P, Wan-AI/Wan2.1-I2V-14B-720P, MAGREF-Video/MAGREF, Wan-AI/Wan2.1-T2V-1.3B, Wan-AI/Wan2.1-T2V-14B, Wan-AI/Wan2.1-VACE-1.3B, Wan-AI/Wan2.1-VACE-14B, htdong/Wan-Alpha, MeiGen-AI/InfiniteTalk",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/Phantom-SSM-130M",
   "slug": "prannesshkva-phantom-ssm-130m",
   "author": "Prannesshkva",
@@ -45,14 +45,19 @@
   "parameters_human": "134.9M",
   "storage_bytes": 1627404645,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T10:41:06.311Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

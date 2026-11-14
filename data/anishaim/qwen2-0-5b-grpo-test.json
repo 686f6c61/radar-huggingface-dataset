@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anishaim/Qwen2-0.5B-GRPO-test",
   "slug": "anishaim-qwen2-0-5b-grpo-test",
   "author": "anishaim",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 15795728,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

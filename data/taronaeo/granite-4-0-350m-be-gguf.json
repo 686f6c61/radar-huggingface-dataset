@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taronaeo/Granite-4.0-350M-BE-GGUF",
   "slug": "taronaeo-granite-4-0-350m-be-gguf",
   "author": "taronaeo",
@@ -36,14 +36,19 @@
   "parameters_human": "352.4M",
   "storage_bytes": 7286004064,
   "storage_human": "7.3 GB",
+  "context_length": 32768,
   "base_model": "ibm-granite/granite-4.0-350m",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

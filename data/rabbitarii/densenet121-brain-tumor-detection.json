@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rabbitarii/densenet121-brain-tumor-detection",
   "slug": "rabbitarii-densenet121-brain-tumor-detection",
   "author": "rabbitarii",
@@ -26,14 +26,19 @@
   "parameters_human": "7.0M",
   "storage_bytes": 28250576,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

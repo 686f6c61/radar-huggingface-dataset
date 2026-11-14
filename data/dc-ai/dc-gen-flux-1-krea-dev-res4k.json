@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dc-ai/DC-Gen-FLUX.1-Krea-Dev-Res4K",
   "slug": "dc-ai-dc-gen-flux-1-krea-dev-res4k",
   "author": "dc-ai",
@@ -26,6 +26,7 @@
   "parameters_human": "11.90B",
   "storage_bytes": 38447593177,
   "storage_human": "38.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aratako/Irodori-TTS-v4-Large",
   "slug": "aratako-irodori-tts-v4-large",
   "author": "Aratako",
@@ -30,14 +30,19 @@
   "parameters_human": "3.29B",
   "storage_bytes": 13186277735,
   "storage_human": "13.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "that80-20/Qwen3.8-Flash-Next-trellis-a35-ignis",
   "slug": "that80-20-qwen3-8-flash-next-trellis-a35-ignis",
   "author": "that80-20",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 86857592832,
   "storage_human": "86.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XYZPIT/0916_r1lite_ee_gr00t1.7_tcfm_50000",
   "slug": "xyzpit-0916_r1lite_ee_gr00t1-7_tcfm_50000",
   "author": "XYZPIT",
@@ -31,14 +31,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576206737,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

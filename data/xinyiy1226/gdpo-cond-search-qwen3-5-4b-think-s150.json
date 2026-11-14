@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XinyiY1226/gdpo-cond-search-qwen3.5-4b-think-s150",
   "slug": "xinyiy1226-gdpo-cond-search-qwen3-5-4b-think-s150",
   "author": "XinyiY1226",
@@ -41,14 +41,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609861,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:45:05.387Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

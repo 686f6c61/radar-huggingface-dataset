@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gohan0519/qwen3-vl-8b-hinglish-AItutor",
   "slug": "gohan0519-qwen3-vl-8b-hinglish-aitutor",
   "author": "Gohan0519",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 4729984476,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

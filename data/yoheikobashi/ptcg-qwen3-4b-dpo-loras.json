@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yoheikobashi/ptcg-qwen3-4b-dpo-loras",
   "slug": "yoheikobashi-ptcg-qwen3-4b-dpo-loras",
   "author": "yoheikobashi",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3611085930,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "yoheikobashi/ptcg-qwen3-4b-cardfirst-v40",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emadjumaah/mishkat-whisper-tiny-ar-quran-onnx",
   "slug": "emadjumaah-mishkat-whisper-tiny-ar-quran-onnx",
   "author": "emadjumaah",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 40845189,
   "storage_human": "41 MB",
+  "context_length": null,
   "base_model": "tarteel-ai/whisper-tiny-ar-quran",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

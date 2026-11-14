@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/MiniMax-H3-Turbo-Lora-ComfyUI",
   "slug": "taurusduan-minimax-h3-turbo-lora-comfyui",
   "author": "taurusduan",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 30239298340,
   "storage_human": "30.2 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T05:55:38.979Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kanguyen-vn/PRIMA",
   "slug": "kanguyen-vn-prima",
   "author": "kanguyen-vn",
@@ -40,14 +40,19 @@
   "parameters_human": "8.58B",
   "storage_bytes": 17154937733,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "MBZUAI/GLaMM-FullScope",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

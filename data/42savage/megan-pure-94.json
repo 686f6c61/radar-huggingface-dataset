@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "42savage/megan-pure-94",
   "slug": "42savage-megan-pure-94",
   "author": "42savage",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 76627038219,
   "storage_human": "76.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

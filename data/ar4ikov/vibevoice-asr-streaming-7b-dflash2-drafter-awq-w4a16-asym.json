@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter-AWQ-W4A16-ASYM",
   "slug": "ar4ikov-vibevoice-asr-streaming-7b-dflash2-drafter-awq-w4a16-asym",
   "author": "Ar4ikov",
@@ -35,14 +35,19 @@
   "parameters_human": "831.6M",
   "storage_bytes": 548986496,
   "storage_human": "549 MB",
+  "context_length": null,
   "base_model": "Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RhoCassiopeiae/SoL-Refiner-LTX-2.3-GGUF",
   "slug": "rhocassiopeiae-sol-refiner-ltx-2-3-gguf",
   "author": "RhoCassiopeiae",
@@ -31,14 +31,19 @@
   "parameters_human": "13.85B",
   "storage_bytes": 117349548890,
   "storage_human": "117.3 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/SoL-Refiner-LTX-2.3-One-Step",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "RhoCassiopeiae/SoL-Refiner-LTX-2.3-Chromastering",
+  "renamed_at": "2026-11-11T03:41:43.042Z",
   "benchmarks": [],
   "sources": []
 }

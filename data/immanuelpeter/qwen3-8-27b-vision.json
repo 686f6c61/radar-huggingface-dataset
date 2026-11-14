@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "immanuelpeter/Qwen3.8-27B-Vision",
   "slug": "immanuelpeter-qwen3-8-27b-vision",
   "author": "immanuelpeter",
@@ -31,14 +31,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 921492896,
   "storage_human": "921 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

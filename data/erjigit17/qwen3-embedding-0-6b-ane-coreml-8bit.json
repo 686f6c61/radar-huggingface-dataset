@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erjigit17/qwen3-embedding-0.6b-ane-coreml-8bit",
   "slug": "erjigit17-qwen3-embedding-0-6b-ane-coreml-8bit",
   "author": "erjigit17",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1206913895,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "neuradex/Qwen3-Embedding-0.6B-CoreML-ANE",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

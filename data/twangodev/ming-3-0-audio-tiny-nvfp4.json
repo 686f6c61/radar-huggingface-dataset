@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twangodev/Ming-3.0-audio-tiny-NVFP4",
   "slug": "twangodev-ming-3-0-audio-tiny-nvfp4",
   "author": "twangodev",
@@ -52,6 +52,7 @@
   "parameters_human": "6.46B",
   "storage_bytes": 13824062109,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-3.0-audio-tiny",
   "formats": [
     "onnx",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Local full-split ASR",

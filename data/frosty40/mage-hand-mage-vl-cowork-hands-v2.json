@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Frosty40/mage-hand-Mage-VL-Cowork-hands-v2",
   "slug": "frosty40-mage-hand-mage-vl-cowork-hands-v2",
   "author": "Frosty40",
@@ -39,14 +39,19 @@
   "parameters_human": "4.74B",
   "storage_bytes": 9496367613,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "microsoft/Mage-VL-Cowork",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

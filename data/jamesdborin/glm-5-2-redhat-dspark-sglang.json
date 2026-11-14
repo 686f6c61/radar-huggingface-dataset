@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jamesdborin/glm-5.2-redhat-dspark-sglang",
   "slug": "jamesdborin-glm-5-2-redhat-dspark-sglang",
   "author": "jamesdborin",
@@ -32,14 +32,19 @@
   "parameters_human": "3.15B",
   "storage_bytes": 6305465978,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "RedHatAI/GLM-5.2-speculator.dspark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

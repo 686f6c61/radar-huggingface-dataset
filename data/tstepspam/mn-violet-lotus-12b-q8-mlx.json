@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tstepspam/MN-Violet-Lotus-12B-Q8-MLX",
   "slug": "tstepspam-mn-violet-lotus-12b-q8-mlx",
   "author": "tstepspam",
@@ -43,6 +43,7 @@
   "parameters_human": "12.25B",
   "storage_bytes": 13030841968,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": "FallenMerick/MN-Violet-Lotus-12B",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

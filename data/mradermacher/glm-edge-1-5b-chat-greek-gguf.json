@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/GLM-Edge-1.5B-Chat-Greek-GGUF",
   "slug": "mradermacher-glm-edge-1-5b-chat-greek-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "1.47B",
   "storage_bytes": 13275917696,
   "storage_human": "13.3 GB",
+  "context_length": 2048,
   "base_model": "aiuser3993/GLM-Edge-1.5B-Chat-Greek",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

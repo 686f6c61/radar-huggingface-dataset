@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Muse-Ltd/Muse-Robotics-1.1",
   "slug": "muse-ltd-muse-robotics-1-1",
   "author": "Muse-Ltd",
@@ -46,14 +46,19 @@
   "parameters_human": "121.7M",
   "storage_bytes": 495167012,
   "storage_human": "495 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

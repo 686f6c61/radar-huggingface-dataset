@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MahmoudIbrahim/A3S-t",
   "slug": "mahmoudibrahim-a3s-t",
   "author": "MahmoudIbrahim",
@@ -50,14 +50,19 @@
   "parameters_human": "905.8M",
   "storage_bytes": 2493919636,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T02:46:56.132Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

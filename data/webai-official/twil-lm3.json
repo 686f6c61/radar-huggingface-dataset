@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webAI-Official/TwIL-LM3",
   "slug": "webai-official-twil-lm3",
   "author": "webAI-Official",
@@ -40,6 +40,7 @@
   "parameters_human": "3.08B",
   "storage_bytes": 44505355811,
   "storage_human": "44.5 GB",
+  "context_length": 65536,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "carolstreman1988/PerfectEyes_ltx2",
   "slug": "carolstreman1988-perfecteyes_ltx2",
   "author": "carolstreman1988",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 32861729,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:24:47.900Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

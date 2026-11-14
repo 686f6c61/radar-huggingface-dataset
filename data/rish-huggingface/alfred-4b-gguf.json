@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rish-huggingface/alfred-4b-GGUF",
   "slug": "rish-huggingface-alfred-4b-gguf",
   "author": "rish-huggingface",
@@ -37,14 +37,19 @@
   "parameters_human": "3.97B",
   "storage_bytes": 5689407552,
   "storage_human": "5.7 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

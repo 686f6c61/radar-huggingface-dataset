@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanjxz/Ling-3.0-Flash-Agentic-Chat-Template-Jinja",
   "slug": "sanjxz-ling-3-0-flash-agentic-chat-template-jinja",
   "author": "sanjxz",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": "froggeric/Qwen-Fixed-Chat-Templates, inclusionAI/Ling-3.0-flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

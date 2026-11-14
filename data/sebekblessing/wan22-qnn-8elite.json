@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sebekblessing/wan22-qnn-8elite",
   "slug": "sebekblessing-wan22-qnn-8elite",
   "author": "sebekblessing",
@@ -31,14 +31,19 @@
   "parameters_human": "5.68B",
   "storage_bytes": 12305953888,
   "storage_human": "12.3 GB",
+  "context_length": 512,
   "base_model": "quanhaol/Wan2.2-TI2V-5B-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

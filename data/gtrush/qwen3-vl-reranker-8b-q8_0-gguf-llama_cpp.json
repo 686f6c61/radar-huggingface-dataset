@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GTrush/Qwen3-VL-Reranker-8B-Q8_0-GGUF-llama_cpp",
   "slug": "gtrush-qwen3-vl-reranker-8b-q8_0-gguf-llama_cpp",
   "author": "GTrush",
@@ -32,14 +32,19 @@
   "parameters_human": "7.57B",
   "storage_bytes": 8800596736,
   "storage_human": "8.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-VL-Reranker-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

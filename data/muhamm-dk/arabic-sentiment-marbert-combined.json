@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Muhamm-dk/arabic-sentiment-marbert-combined",
   "slug": "muhamm-dk-arabic-sentiment-marbert-combined",
   "author": "Muhamm-dk",
@@ -33,14 +33,19 @@
   "parameters_human": "162.8M",
   "storage_bytes": 651395072,
   "storage_human": "651 MB",
+  "context_length": null,
   "base_model": "UBC-NLP/MARBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

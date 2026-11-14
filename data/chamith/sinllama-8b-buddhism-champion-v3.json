@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chamith/sinllama-8b-buddhism-champion-v3",
   "slug": "chamith-sinllama-8b-buddhism-champion-v3",
   "author": "Chamith",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 187170319,
   "storage_human": "187 MB",
+  "context_length": null,
   "base_model": "SAWithanage/SinLlama-Llama-3-8B-Merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T03:15:56.909Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

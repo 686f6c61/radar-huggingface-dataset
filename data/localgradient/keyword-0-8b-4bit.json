@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "localgradient/Keyword-0.8B-4bit",
   "slug": "localgradient-keyword-0-8b-4bit",
   "author": "localgradient",
@@ -32,6 +32,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 444016125,
   "storage_human": "444 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.5-0.8B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wckwan/Qwen3.5-9B-ARORA-a0.1-gsm8k-mathalg",
   "slug": "wckwan-qwen3-5-9b-arora-a0-1-gsm8k-mathalg",
   "author": "wckwan",
@@ -33,14 +33,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 37659338741,
   "storage_human": "37.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
   "slug": "solsticeai-qwen3-8-27b-cold-fusion-gain-v1-1-mlx-6bit",
   "author": "SolsticeAI",
@@ -46,6 +46,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 21876371302,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T08:00:55.502Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

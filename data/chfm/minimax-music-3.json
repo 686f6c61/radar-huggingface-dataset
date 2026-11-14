@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chfm/MiniMax-Music-3",
   "slug": "chfm-minimax-music-3",
   "author": "chfm",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 61837120210,
   "storage_human": "61.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T05:17:05.575Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

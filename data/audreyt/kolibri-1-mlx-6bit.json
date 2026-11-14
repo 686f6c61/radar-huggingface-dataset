@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audreyt/Kolibri-1-MLX-6bit",
   "slug": "audreyt-kolibri-1-mlx-6bit",
   "author": "audreyt",
@@ -38,6 +38,7 @@
   "parameters_human": "78.10B",
   "storage_bytes": 63517990178,
   "storage_human": "63.5 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aparusel/kolibri-1-gguf",
   "slug": "aparusel-kolibri-1-gguf",
   "author": "aparusel",
@@ -39,14 +39,19 @@
   "parameters_human": "78.10B",
   "storage_bytes": 153289452704,
   "storage_human": "153.3 GB",
+  "context_length": 262144,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "aparusel/ds4-kolibri-1-gguf",
+  "renamed_at": "2026-11-11T04:31:18.738Z",
   "benchmarks": [],
   "sources": [
     {

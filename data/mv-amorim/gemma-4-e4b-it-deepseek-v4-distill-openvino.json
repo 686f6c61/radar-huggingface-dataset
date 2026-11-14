@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mv-amorim/Gemma-4-E4B-it-DeepSeek-v4-Distill-openvino",
   "slug": "mv-amorim-gemma-4-e4b-it-deepseek-v4-distill-openvino",
   "author": "mv-amorim",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 10556969119,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

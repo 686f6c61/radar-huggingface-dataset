@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chartreuse-verte/prose-rewriter-1.7b-v1.2",
   "slug": "chartreuse-verte-prose-rewriter-1-7b-v1-2",
   "author": "chartreuse-verte",
@@ -40,6 +40,7 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8405011506,
   "storage_human": "8.4 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

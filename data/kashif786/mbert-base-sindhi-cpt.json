@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kashif786/mbert-base-sindhi-cpt",
   "slug": "kashif786-mbert-base-sindhi-cpt",
   "author": "Kashif786",
@@ -29,14 +29,19 @@
   "parameters_human": "178.0M",
   "storage_bytes": 711927045,
   "storage_human": "712 MB",
+  "context_length": null,
   "base_model": "Kashif786/mbert-base-sindhi-cpt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

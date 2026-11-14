@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qikp/humanizer-135m-sft-GGUF",
   "slug": "qikp-humanizer-135m-sft-gguf",
   "author": "qikp",
@@ -27,14 +27,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 270886176,
   "storage_human": "271 MB",
+  "context_length": 8192,
   "base_model": "qikp/humanizer-135m-sft",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

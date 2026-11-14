@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chimingw/qwen3.8-27b-ud-q5-k-xl-llamafile",
   "slug": "chimingw-qwen3-8-27b-ud-q5-k-xl-llamafile",
   "author": "chimingw",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 21496677519,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

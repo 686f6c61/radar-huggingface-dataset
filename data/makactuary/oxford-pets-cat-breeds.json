@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "makactuary/oxford-pets-cat-breeds",
   "slug": "makactuary-oxford-pets-cat-breeds",
   "author": "makactuary",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 56809,
   "storage_human": "56809 B",
+  "context_length": null,
   "base_model": "timm/convnext_tiny.fb_in22k_ft_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

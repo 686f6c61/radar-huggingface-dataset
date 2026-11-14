@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PruhaNLP/TurboVLA-pickplace-blue-krill-demo",
   "slug": "pruhanlp-turbovla-pickplace-blue-krill-demo",
   "author": "PruhaNLP",
@@ -32,14 +32,19 @@
   "parameters_human": "216.1M",
   "storage_bytes": 864374464,
   "storage_human": "864 MB",
+  "context_length": null,
   "base_model": "PruhaNLP/TurboVLA-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senku21x/em-early-signatures-adapters",
   "slug": "senku21x-em-early-signatures-adapters",
   "author": "senku21x",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 142789731199,
   "storage_human": "142.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:54:34.781Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

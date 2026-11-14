@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "black-forest-labs/FLUX.1-dev",
   "slug": "black-forest-labs-flux-1-dev",
   "author": "black-forest-labs",
@@ -23,13 +23,14 @@
     "diffusers:FluxPipeline",
     "region:us"
   ],
-  "likes": 16157,
+  "likes": 16168,
   "downloads_30d": 476037,
   "trending_score": 58,
   "parameters": 11901408320,
   "parameters_human": "11.90B",
   "storage_bytes": 69492027725,
   "storage_human": "69.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

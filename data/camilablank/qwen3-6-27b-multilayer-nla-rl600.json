@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "camilablank/qwen3.6-27b-multilayer-nla-rl600",
   "slug": "camilablank-qwen3-6-27b-multilayer-nla-rl600",
   "author": "camilablank",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 56547409248,
   "storage_human": "56.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

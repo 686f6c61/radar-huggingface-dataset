@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tashom/aya-good-medical-r910",
   "slug": "tashom-aya-good-medical-r910",
   "author": "tashom",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 241895584,
   "storage_human": "242 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-global",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:44:43.793Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

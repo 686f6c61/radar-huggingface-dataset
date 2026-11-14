@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gospe1/adaspevla-franka-bread-v1-3",
   "slug": "gospe1-adaspevla-franka-bread-v1-3",
   "author": "Gospe1",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1881162797,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

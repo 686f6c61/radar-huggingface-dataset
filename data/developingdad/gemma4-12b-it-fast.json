@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevelopingDad/Gemma4-12B-it-Fast",
   "slug": "developingdad-gemma4-12b-it-fast",
   "author": "DevelopingDad",
@@ -40,14 +40,19 @@
   "parameters_human": "7.71B",
   "storage_bytes": 18642084090,
   "storage_human": "18.6 GB",
+  "context_length": null,
   "base_model": "DevelopingDad/gemma-4-12b-it-trial62",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

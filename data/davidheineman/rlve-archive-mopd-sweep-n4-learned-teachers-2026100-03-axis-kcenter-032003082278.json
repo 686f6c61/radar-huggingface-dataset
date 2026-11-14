@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-03-axis-kcenter-032003082278",
   "slug": "davidheineman-rlve-archive-mopd-sweep-n4-learned-teachers-2026100-03-axis-kcenter-032003082278",
   "author": "davidheineman",
@@ -25,14 +25,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 3554214720,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

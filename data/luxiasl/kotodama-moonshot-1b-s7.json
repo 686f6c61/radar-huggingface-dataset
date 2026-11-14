@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuxiaSL/kotodama-moonshot-1b-s7",
   "slug": "luxiasl-kotodama-moonshot-1b-s7",
   "author": "LuxiaSL",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 139656097028,
   "storage_human": "139.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LuxiaSL/kotodama-tsumugi-1b-seed7-trajectory",
+  "renamed_at": "2026-11-11T03:14:51.310Z",
   "benchmarks": [],
   "sources": [
     {

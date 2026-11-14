@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t8star/WeVisOne-VL-Comfy",
   "slug": "t8star-wevisone-vl-comfy",
   "author": "t8star",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 14988054592,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "tencent/WeVisOne-VL-2B, tencent/WeVisOne-VL-4B",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

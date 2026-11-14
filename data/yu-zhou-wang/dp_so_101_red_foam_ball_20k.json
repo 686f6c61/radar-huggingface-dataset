@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yu-Zhou-Wang/dp_so_101_red_foam_ball_20k",
   "slug": "yu-zhou-wang-dp_so_101_red_foam_ball_20k",
   "author": "Yu-Zhou-Wang",
@@ -28,14 +28,19 @@
   "parameters_human": "277.8M",
   "storage_bytes": 1111425832,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

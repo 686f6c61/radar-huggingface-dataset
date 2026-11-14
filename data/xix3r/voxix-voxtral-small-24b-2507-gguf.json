@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-Voxtral-Small-24B-2507-gguf",
   "slug": "xix3r-voxix-voxtral-small-24b-2507-gguf",
   "author": "xix3r",
@@ -50,14 +50,19 @@
   "parameters_human": "24.26B",
   "storage_bytes": 174273162048,
   "storage_human": "174.3 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Small-24B-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

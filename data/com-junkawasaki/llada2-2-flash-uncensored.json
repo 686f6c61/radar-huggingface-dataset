@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "com-junkawasaki/LLaDA2.2-flash-uncensored",
   "slug": "com-junkawasaki-llada2-2-flash-uncensored",
   "author": "com-junkawasaki",
@@ -32,14 +32,19 @@
   "parameters_human": "102.89B",
   "storage_bytes": 205782452128,
   "storage_human": "205.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:30:24.686Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

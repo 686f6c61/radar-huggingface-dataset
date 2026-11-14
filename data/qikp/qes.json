@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qikp/qes",
   "slug": "qikp-qes",
   "author": "qikp",
@@ -30,14 +30,19 @@
   "parameters_human": "14.4M",
   "storage_bytes": 57410556,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": "huawei-noah/TinyBERT_General_4L_312D",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

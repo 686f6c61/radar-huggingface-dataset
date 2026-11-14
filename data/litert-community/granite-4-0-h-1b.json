@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/granite-4.0-h-1b",
   "slug": "litert-community-granite-4-0-h-1b",
   "author": "litert-community",
@@ -27,18 +27,23 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 318,
+  "downloads_30d": 332,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 8361715040,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-h-1b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

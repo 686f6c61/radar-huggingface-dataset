@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/samuel-beckett-playwriter-v3-lora",
   "slug": "alst10-samuel-beckett-playwriter-v3-lora",
   "author": "alst10",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 185042160,
   "storage_human": "185 MB",
+  "context_length": null,
   "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

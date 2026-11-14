@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-FP8-6bit",
   "slug": "automatosx-ax-deepseek-ocr-2-cuda-axq-nvfp4-fp8-6bit",
   "author": "AutomatosX",
@@ -40,14 +40,19 @@
   "parameters_human": "2.73B",
   "storage_bytes": 3602581136,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-OCR-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T02:59:14.562Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

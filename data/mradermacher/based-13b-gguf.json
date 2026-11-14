@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/based-13b-GGUF",
+  "slug": "mradermacher-based-13b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/based-13b-GGUF",
+  "created_at": "2025-03-15T15:32:33.000Z",
+  "updated_at": "2026-11-14T14:25:57.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:ehartford/based",
+    "base_model:QuixiAI/based-13b",
+    "base_model:quantized:QuixiAI/based-13b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 213,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801912800,
+  "storage_human": "88.8 GB",
+  "context_length": 2048,
+  "base_model": "QuixiAI/based-13b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

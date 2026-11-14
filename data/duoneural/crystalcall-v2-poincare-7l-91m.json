@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/CrystalCall-v2-Poincare-7L-91M",
   "slug": "duoneural-crystalcall-v2-poincare-7l-91m",
   "author": "DuoNeural",
@@ -44,6 +44,7 @@
   "parameters_human": "117.9M",
   "storage_bytes": 2028966841,
   "storage_human": "2.0 GB",
+  "context_length": 512,
   "base_model": "Salesforce/xLAM-1b-fc-r",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

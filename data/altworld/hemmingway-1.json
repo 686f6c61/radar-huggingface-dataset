@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Altworld/Hemmingway-1",
   "slug": "altworld-hemmingway-1",
   "author": "Altworld",
@@ -37,14 +37,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 54661789272,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "HemmingwayAI/Hemmingway-1",
+  "renamed_at": "2026-11-11T02:16:05.939Z",
   "benchmarks": [],
   "sources": [
     {

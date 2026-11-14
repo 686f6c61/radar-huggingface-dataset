@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tacodevs/Pantheon-Reasoning-31B-1.1-NVFP4-GPTQ-Max",
   "slug": "tacodevs-pantheon-reasoning-31b-1-1-nvfp4-gptq-max",
   "author": "tacodevs",
@@ -37,14 +37,19 @@
   "parameters_human": "19.87B",
   "storage_bytes": 23297569186,
   "storage_human": "23.3 GB",
+  "context_length": null,
   "base_model": "Gryphe/Pantheon-Reasoning-31B-1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

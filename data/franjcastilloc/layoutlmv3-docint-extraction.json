@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FranJCastilloC/layoutlmv3-docint-extraction",
   "slug": "franjcastilloc-layoutlmv3-docint-extraction",
   "author": "FranJCastilloC",
@@ -30,14 +30,19 @@
   "parameters_human": "125.9M",
   "storage_bytes": 503816564,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

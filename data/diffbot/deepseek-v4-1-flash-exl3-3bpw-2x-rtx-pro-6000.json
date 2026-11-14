@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000",
   "slug": "diffbot-deepseek-v4-1-flash-exl3-3bpw-2x-rtx-pro-6000",
   "author": "diffbot",
@@ -38,14 +38,19 @@
   "parameters_human": "218.69B",
   "storage_bytes": 1035802167732,
   "storage_human": "1035.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

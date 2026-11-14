@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProprietaryLegal/Volta-Max-uPLIft-FP4-DeepSeek-V4.1-Flash-1017-hot_iq-8xV100-SXM2-PP2xTP4",
   "slug": "proprietarylegal-volta-max-uplift-fp4-deepseek-v4-1-flash-1017-hot_iq-8xv100-sxm2-pp2xtp4",
   "author": "ProprietaryLegal",
@@ -39,6 +39,7 @@
   "parameters_human": "196.61B",
   "storage_bytes": 556242193028,
   "storage_human": "556.2 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

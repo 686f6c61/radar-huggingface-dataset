@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghostsas001/kvasir-gi-endoscopy-siglip",
   "slug": "ghostsas001-kvasir-gi-endoscopy-siglip",
   "author": "ghostsas001",
@@ -34,14 +34,19 @@
   "parameters_human": "92.9M",
   "storage_bytes": 372126369,
   "storage_human": "372 MB",
+  "context_length": null,
   "base_model": "google/siglip2-base-patch16-224",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:48:44.247Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

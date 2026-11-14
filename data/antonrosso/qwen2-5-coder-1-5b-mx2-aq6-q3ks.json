@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AntonROSSO/qwen2.5-coder-1.5b-mx2-aq6-q3ks",
   "slug": "antonrosso-qwen2-5-coder-1-5b-mx2-aq6-q3ks",
   "author": "AntonROSSO",
@@ -36,14 +36,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 786749856,
   "storage_human": "787 MB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

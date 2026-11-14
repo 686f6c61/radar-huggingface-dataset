@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WilliamShakespear/duomath-qwen-vl-lora",
   "slug": "williamshakespear-duomath-qwen-vl-lora",
   "author": "WilliamShakespear",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 217610996,
   "storage_human": "218 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "WilliamShakespear/Bingmath-v0.01",
+  "renamed_at": "2026-11-11T04:11:01.283Z",
   "benchmarks": [],
   "sources": [
     {

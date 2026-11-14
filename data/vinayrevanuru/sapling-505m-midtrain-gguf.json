@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VinayRevanuru/Sapling-505M-Midtrain-GGUF",
   "slug": "vinayrevanuru-sapling-505m-midtrain-gguf",
   "author": "VinayRevanuru",
@@ -35,14 +35,19 @@
   "parameters_human": "505.5M",
   "storage_bytes": 538472256,
   "storage_human": "538 MB",
+  "context_length": 2048,
   "base_model": "VinayRevanuru/Sapling-505M-Midtrain",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

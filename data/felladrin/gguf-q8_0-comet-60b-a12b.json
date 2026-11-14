@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felladrin/gguf-Q8_0-Comet-60B-A12B",
   "slug": "felladrin-gguf-q8_0-comet-60b-a12b",
   "author": "Felladrin",
@@ -40,14 +40,19 @@
   "parameters_human": "60.28B",
   "storage_bytes": 128252419680,
   "storage_human": "128.3 GB",
+  "context_length": 1048576,
   "base_model": "MultiverseComputingCAI/Comet_60B_A12B_BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

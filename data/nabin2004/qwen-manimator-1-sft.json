@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nabin2004/qwen-Manimator-1-sft",
   "slug": "nabin2004-qwen-manimator-1-sft",
   "author": "nabin2004",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 275368407,
   "storage_human": "275 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

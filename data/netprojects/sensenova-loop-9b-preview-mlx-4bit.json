@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netprojects/SenseNova-Loop-9B-Preview-MLX-4bit",
   "slug": "netprojects-sensenova-loop-9b-preview-mlx-4bit",
   "author": "netprojects",
@@ -36,6 +36,7 @@
   "parameters_human": "8.96B",
   "storage_bytes": 5070747432,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-Loop-9B-Preview",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

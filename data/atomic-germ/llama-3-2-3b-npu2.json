@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Llama-3.2-3B-NPU2",
   "slug": "atomic-germ-llama-3-2-3b-npu2",
   "author": "Atomic-Germ",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 2806802624,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

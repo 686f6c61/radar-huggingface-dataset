@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Llimclaire/research-retrieval",
   "slug": "llimclaire-research-retrieval",
   "author": "Llimclaire",
@@ -26,14 +26,19 @@
   "parameters_human": "16576",
   "storage_bytes": 66784,
   "storage_human": "66784 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

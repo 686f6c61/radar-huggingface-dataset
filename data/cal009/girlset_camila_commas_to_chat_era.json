@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CAL009/GIRLSET_CAMILA_COMMAS_to_CHAT_era",
   "slug": "cal009-girlset_camila_commas_to_chat_era",
   "author": "CAL009",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 100132591,
   "storage_human": "100 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

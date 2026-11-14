@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Docglasses-AI/indic-conformer-600m-sherpa-onnx-int8",
   "slug": "docglasses-ai-indic-conformer-600m-sherpa-onnx-int8",
   "author": "Docglasses-AI",
@@ -76,14 +76,19 @@
   "parameters_human": null,
   "storage_bytes": 14488521262,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "ai4bharat/indic-conformer-600m-multilingual",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

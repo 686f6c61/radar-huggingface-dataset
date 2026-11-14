@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "natzx94/potion-multilingual-128M-int8",
   "slug": "natzx94-potion-multilingual-128m-int8",
   "author": "natzx94",
@@ -35,14 +35,19 @@
   "parameters_human": "128.6M",
   "storage_bytes": 148708079,
   "storage_human": "149 MB",
+  "context_length": null,
   "base_model": "minishlab/potion-multilingual-128M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

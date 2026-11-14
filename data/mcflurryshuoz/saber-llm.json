@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mcflurryshuoz/SABER-LLM",
   "slug": "mcflurryshuoz-saber-llm",
   "author": "mcflurryshuoz",
@@ -35,14 +35,19 @@
   "parameters_human": "8.93B",
   "storage_bytes": 17877652590,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

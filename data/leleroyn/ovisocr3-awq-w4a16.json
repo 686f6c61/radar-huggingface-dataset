@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leleroyn/OvisOCR3-AWQ-W4A16",
   "slug": "leleroyn-ovisocr3-awq-w4a16",
   "author": "leleroyn",
@@ -37,14 +37,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 988288363,
   "storage_human": "988 MB",
+  "context_length": null,
   "base_model": "ATH-MaaS/OvisOCR3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

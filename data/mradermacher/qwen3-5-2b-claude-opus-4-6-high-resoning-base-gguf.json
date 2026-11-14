@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base-GGUF",
   "slug": "mradermacher-qwen3-5-2b-claude-opus-4-6-high-resoning-base-gguf",
   "author": "mradermacher",
@@ -38,6 +38,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 19103033088,
   "storage_human": "19.1 GB",
+  "context_length": 262144,
   "base_model": "rikunarita/Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

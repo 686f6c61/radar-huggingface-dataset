@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-TTS-12Hz-0.6B-ar-GGUF",
   "slug": "mradermacher-qwen3-tts-12hz-0-6b-ar-gguf",
   "author": "mradermacher",
@@ -51,14 +51,19 @@
   "parameters_human": "602.3M",
   "storage_bytes": 6403933184,
   "storage_human": "6.4 GB",
+  "context_length": 32768,
   "base_model": "MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

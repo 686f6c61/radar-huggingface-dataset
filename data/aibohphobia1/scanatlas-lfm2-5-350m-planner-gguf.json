@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aibohphobia1/ScanAtlas-LFM2.5-350M-Planner-GGUF",
   "slug": "aibohphobia1-scanatlas-lfm2-5-350m-planner-gguf",
   "author": "aibohphobia1",
@@ -29,14 +29,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 438624256,
   "storage_human": "439 MB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

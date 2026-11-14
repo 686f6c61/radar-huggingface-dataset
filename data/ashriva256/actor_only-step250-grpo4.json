@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ashriva256/ACTOR_ONLY-STEP250-GRPO4",
   "slug": "ashriva256-actor_only-step250-grpo4",
   "author": "ashriva256",
@@ -29,14 +29,19 @@
   "parameters_human": "39.0M",
   "storage_bytes": 78041864,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/BAGEL-7B-MoT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

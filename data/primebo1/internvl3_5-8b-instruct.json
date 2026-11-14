@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrimeBo1/InternVL3_5-8B-Instruct",
   "slug": "primebo1-internvl3_5-8b-instruct",
   "author": "PrimeBo1",
@@ -43,14 +43,19 @@
   "parameters_human": "8.53B",
   "storage_bytes": 17056729480,
   "storage_human": "17.1 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3_5-8B-Pretrained",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

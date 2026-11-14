@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/Xiaomi-Lens-0-oQ8e-bf16-MLX",
   "slug": "dicksondickson-xiaomi-lens-0-oq8e-bf16-mlx",
   "author": "dicksondickson",
@@ -39,6 +39,7 @@
   "parameters_human": "4.62B",
   "storage_bytes": 5263966954,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "SeerRay-Lab/Xiaomi-Lens-0",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

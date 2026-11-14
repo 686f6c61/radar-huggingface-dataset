@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elidot007/S1-Fast",
   "slug": "elidot007-s1-fast",
   "author": "elidot007",
@@ -44,14 +44,19 @@
   "parameters_human": "333.2M",
   "storage_bytes": 1367382438,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

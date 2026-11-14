@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pt810/Ovis-Omni-Embedding-3B-mixed-w2-w4-w8-ct",
   "slug": "pt810-ovis-omni-embedding-3b-mixed-w2-w4-w8-ct",
   "author": "pt810",
@@ -31,14 +31,19 @@
   "parameters_human": "2890",
   "storage_bytes": 7692559839,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0x795E2795/Obsidian-Alpha-26B-A4B-it-qat-w4a16-ct",
   "slug": "0x795e2795-obsidian-alpha-26b-a4b-it-qat-w4a16-ct",
   "author": "0x795E2795",
@@ -72,14 +72,19 @@
   "parameters_human": "27.90B",
   "storage_bytes": 17711873214,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:04:19.217Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manak0/Detect-road-signs-winner",
   "slug": "manak0-detect-road-signs-winner",
   "author": "manak0",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 477572394,
   "storage_human": "478 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "manako/Detect-road-signs-winner",
+  "renamed_at": "2026-11-11T06:12:09.008Z",
   "benchmarks": [],
   "sources": [
     {

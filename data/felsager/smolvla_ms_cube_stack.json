@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "felsager/smolvla_ms_cube_stack",
   "slug": "felsager-smolvla_ms_cube_stack",
   "author": "felsager",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 13600710180,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

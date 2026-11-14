@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Norman89107/Flash-Archer-150M",
   "slug": "norman89107-flash-archer-150m",
   "author": "Norman89107",
@@ -37,14 +37,19 @@
   "parameters_human": "150.3M",
   "storage_bytes": 601359152,
   "storage_human": "601 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ryze-ai/flash-archer-150M-1.0",
+  "renamed_at": "2026-11-14T03:50:55.399Z",
   "benchmarks": [],
   "sources": [
     {

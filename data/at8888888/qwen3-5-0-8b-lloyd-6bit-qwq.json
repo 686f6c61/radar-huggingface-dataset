@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "at8888888/Qwen3.5-0.8B-Lloyd-6bit-QWQ",
   "slug": "at8888888-qwen3-5-0-8b-lloyd-6bit-qwq",
   "author": "at8888888",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 685808658,
   "storage_human": "686 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

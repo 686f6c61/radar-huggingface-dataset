@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nim617/q-Taxi-v4",
   "slug": "nim617-q-taxi-v4",
   "author": "nim617",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 152727,
   "storage_human": "152727 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

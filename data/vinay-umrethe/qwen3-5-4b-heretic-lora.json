@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VINAY-UMRETHE/Qwen3.5-4B-heretic-LoRA",
   "slug": "vinay-umrethe-qwen3-5-4b-heretic-lora",
   "author": "VINAY-UMRETHE",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 117984016,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:24:38.662Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

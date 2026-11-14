@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dianavdavidson/wav2vec2-xls-r-1b-mucs-62241-hinglish_mixed_scripts-1e-4-epochs-100-FT",
   "slug": "dianavdavidson-wav2vec2-xls-r-1b-mucs-62241-hinglish_mixed_scripts-1e-4-epochs-100-ft",
   "author": "dianavdavidson",
@@ -30,14 +30,19 @@
   "parameters_human": "962.6M",
   "storage_bytes": 7701303984,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-xls-r-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

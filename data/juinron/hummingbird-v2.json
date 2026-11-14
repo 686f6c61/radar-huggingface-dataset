@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juinron/Hummingbird-V2",
   "slug": "juinron-hummingbird-v2",
   "author": "juinron",
@@ -44,14 +44,19 @@
   "parameters_human": "9.8M",
   "storage_bytes": 39351370,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

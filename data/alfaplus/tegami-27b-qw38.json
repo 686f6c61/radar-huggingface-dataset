@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alfaplus/tegami-27B-qw38",
   "slug": "alfaplus-tegami-27b-qw38",
   "author": "alfaplus",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 468428526,
   "storage_human": "468 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_100percent_44",
   "slug": "devika-tiwari-gpt2_small_expandedbabylm_100m_coord_100percent_44",
   "author": "devika-tiwari",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 3982469929,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

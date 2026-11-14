@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pdfdsf435/gpt-kaggle-backup",
   "slug": "pdfdsf435-gpt-kaggle-backup",
   "author": "pdfdsf435",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1136288152848,
   "storage_human": "1136.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "pdfdsf435/tinygpt_5",
+  "renamed_at": "2026-11-11T07:06:12.085Z",
   "benchmarks": [],
   "sources": [
     {

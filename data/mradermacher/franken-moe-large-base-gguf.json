@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Franken-MoE-Large-Base-GGUF",
   "slug": "mradermacher-franken-moe-large-base-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "4.56B",
   "storage_bytes": 40488666240,
   "storage_human": "40.5 GB",
+  "context_length": 40960,
   "base_model": "DrRiceIO7/Franken-MoE-Large-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

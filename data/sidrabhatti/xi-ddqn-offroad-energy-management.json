@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SidraBhatti/xi-ddqn-offroad-energy-management",
   "slug": "sidrabhatti-xi-ddqn-offroad-energy-management",
   "author": "SidraBhatti",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 242904,
   "storage_human": "242904 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

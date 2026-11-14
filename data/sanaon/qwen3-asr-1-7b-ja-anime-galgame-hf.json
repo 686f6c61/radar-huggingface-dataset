@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanaon/Qwen3-ASR-1.7B-JA-Anime-Galgame-hf",
   "slug": "sanaon-qwen3-asr-1-7b-ja-anime-galgame-hf",
   "author": "sanaon",
@@ -37,14 +37,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4134983870,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

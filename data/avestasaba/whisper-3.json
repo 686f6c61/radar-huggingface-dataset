@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avestasaba/whisper-3",
   "slug": "avestasaba-whisper-3",
   "author": "avestasaba",
@@ -31,14 +31,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6174172614,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:21:20.466Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

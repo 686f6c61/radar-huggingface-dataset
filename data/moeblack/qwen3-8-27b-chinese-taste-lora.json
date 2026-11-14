@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Moeblack/Qwen3.8-27B-chinese-taste-lora",
   "slug": "moeblack-qwen3-8-27b-chinese-taste-lora",
   "author": "Moeblack",
@@ -34,6 +34,7 @@
   "parameters_human": "637.5M",
   "storage_bytes": 6456693291,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

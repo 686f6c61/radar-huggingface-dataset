@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adamkarvonen/qwen3.8-27b-nla-L42",
   "slug": "adamkarvonen-qwen3-8-27b-nla-l42",
   "author": "adamkarvonen",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 37256648168,
   "storage_human": "37.3 GB",
+  "context_length": null,
   "base_model": "ceselder/qwen3.6-27b-nla-rl",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

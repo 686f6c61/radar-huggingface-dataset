@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KWSMooBang/RACA-pi0-libero-goal-cl",
   "slug": "kwsmoobang-raca-pi0-libero-goal-cl",
   "author": "KWSMooBang",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 258324292324,
   "storage_human": "258.3 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

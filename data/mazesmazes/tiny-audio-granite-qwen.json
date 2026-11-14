@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazesmazes/tiny-audio-granite-qwen",
   "slug": "mazesmazes-tiny-audio-granite-qwen",
   "author": "mazesmazes",
@@ -27,14 +27,19 @@
   "parameters_human": "1.89B",
   "storage_bytes": 250049555147,
   "storage_human": "250.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T05:38:03.610Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

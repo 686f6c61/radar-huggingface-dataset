@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Model",
   "slug": "pdduduzin-esp32-cam_autonomous_line-following_car_model",
   "author": "pdDuduzin",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 125434,
   "storage_human": "125434 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

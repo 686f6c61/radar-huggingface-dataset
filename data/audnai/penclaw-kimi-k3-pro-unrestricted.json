@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audnai/penclaw-Kimi-K3-pro-unrestricted",
   "slug": "audnai-penclaw-kimi-k3-pro-unrestricted",
   "author": "audnai",
@@ -32,14 +32,19 @@
   "parameters_human": "2780.11B",
   "storage_bytes": 1561355735740,
   "storage_human": "1561.4 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "audnai/penclaw-Kimi-K3.1-pro-unrestricted",
+  "renamed_at": "2026-11-11T04:35:53.368Z",
   "benchmarks": [],
   "sources": []
 }

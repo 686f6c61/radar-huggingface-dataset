@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "littlecedar/WIP-Ornith-1.5-397B-NVFP4-MTP-Graft",
   "slug": "littlecedar-wip-ornith-1-5-397b-nvfp4-mtp-graft",
   "author": "littlecedar",
@@ -34,14 +34,19 @@
   "parameters_human": "210.12B",
   "storage_bytes": 251295818786,
   "storage_human": "251.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-397B-NVFP4, ornith-ai/Ornith-1.5-397B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "littlecedar/Ornith-1.5-397B-NVFP4-MTP-Graft",
+  "renamed_at": "2026-11-14T06:53:51.487Z",
   "benchmarks": [],
   "sources": [
     {

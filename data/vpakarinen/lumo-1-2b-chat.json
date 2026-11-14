@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vpakarinen/lumo-1-2b-chat",
   "slug": "vpakarinen-lumo-1-2b-chat",
   "author": "vpakarinen",
@@ -29,14 +29,19 @@
   "parameters_human": "1.51B",
   "storage_bytes": 3037147161,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-v1.1-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "vpakarinen/Lumo-1-1.5B-Chat",
+  "renamed_at": "2026-11-13T08:32:41.730Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bodhan-ai/indic-transcribe-flex",
   "slug": "bodhan-ai-indic-transcribe-flex",
   "author": "bodhan-ai",
@@ -96,14 +96,19 @@
   "parameters_human": "1.22B",
   "storage_bytes": 9787196780,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": "nvidia/canary-1b-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KonradDallaOrg/dimmy-nemotron-3-diarization",
   "slug": "konraddallaorg-dimmy-nemotron-3-diarization",
   "author": "KonradDallaOrg",
@@ -27,6 +27,7 @@
   "parameters_human": "99.3M",
   "storage_bytes": 210874913,
   "storage_human": "211 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [
     "gguf",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

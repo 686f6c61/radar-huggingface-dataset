@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "giangndm/NVIDIA-NemotronLabs-RE-USE-laughter-bf16",
   "slug": "giangndm-nvidia-nemotronlabs-re-use-laughter-bf16",
   "author": "giangndm",
@@ -29,14 +29,19 @@
   "parameters_human": "9.6M",
   "storage_bytes": 21515918,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-NemotronLabs-RE-USE-laughter",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

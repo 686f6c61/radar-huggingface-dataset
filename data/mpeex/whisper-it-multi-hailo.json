@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mpeex/whisper-it-multi-hailo",
   "slug": "mpeex-whisper-it-multi-hailo",
   "author": "mpeex",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 716926135,
   "storage_human": "717 MB",
+  "context_length": null,
   "base_model": "LocalAI-io/whisper-base-it-multi",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neuralll/GLM-5.3-Flash-GSQ-RCO-3.0bit-Q4Kattn-GGUF",
   "slug": "neuralll-glm-5-3-flash-gsq-rco-3-0bit-q4kattn-gguf",
   "author": "neuralll",
@@ -32,14 +32,19 @@
   "parameters_human": "313.33B",
   "storage_bytes": 113585695168,
   "storage_human": "113.6 GB",
+  "context_length": 1048576,
   "base_model": "pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

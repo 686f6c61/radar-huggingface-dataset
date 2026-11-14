@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neeze/Vapor-2B",
   "slug": "neeze-vapor-2b",
   "author": "Neeze",
@@ -35,14 +35,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4437478558,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:30:51.725Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

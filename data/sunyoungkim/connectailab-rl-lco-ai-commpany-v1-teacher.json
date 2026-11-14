@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sunyoungKim/connectailab-rl-lco-ai-commpany-v1-teacher",
   "slug": "sunyoungkim-connectailab-rl-lco-ai-commpany-v1-teacher",
   "author": "sunyoungKim",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:15:27.298Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

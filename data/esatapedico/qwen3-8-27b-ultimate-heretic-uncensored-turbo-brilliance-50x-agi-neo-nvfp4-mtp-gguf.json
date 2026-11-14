@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-MTP-GGUF",
   "slug": "esatapedico-qwen3-8-27b-ultimate-heretic-uncensored-turbo-brilliance-50x-agi-neo-nvfp4-mtp-gguf",
   "author": "esatapedico",
@@ -38,14 +38,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 117042774944,
   "storage_human": "117.0 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

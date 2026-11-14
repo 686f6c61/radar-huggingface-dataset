@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VitreousCut/Spark-X2.6-4B-EAGLE3",
   "slug": "vitreouscut-spark-x2-6-4b-eagle3",
   "author": "VitreousCut",
@@ -37,6 +37,7 @@
   "parameters_human": "218.4M",
   "storage_bytes": 3949273488,
   "storage_human": "3.9 GB",
+  "context_length": 4096,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

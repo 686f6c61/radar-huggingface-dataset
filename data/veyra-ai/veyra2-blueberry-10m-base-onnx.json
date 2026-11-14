@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "veyra-ai/Veyra2-Blueberry-10M-Base-ONNX",
   "slug": "veyra-ai-veyra2-blueberry-10m-base-onnx",
   "author": "veyra-ai",
@@ -42,6 +42,7 @@
   "parameters_human": null,
   "storage_bytes": 116391819,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": "veyra-ai/Veyra2-Blueberry-10M-Base",
   "formats": [
     "onnx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T08:35:46.689Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Multiple Choice",

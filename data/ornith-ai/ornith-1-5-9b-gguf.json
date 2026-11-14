@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ornith-ai/Ornith-1.5-9B-GGUF",
   "slug": "ornith-ai-ornith-1-5-9b-gguf",
   "author": "ornith-ai",
@@ -20,21 +20,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 684,
+  "likes": 686,
   "downloads_30d": 5837311,
-  "trending_score": 32,
+  "trending_score": 34,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
   "storage_bytes": 96931032738,
   "storage_human": "96.9 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

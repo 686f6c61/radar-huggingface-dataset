@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Ripple-65B-Heretic-light-i1-GGUF",
   "slug": "mradermacher-ripple-65b-heretic-light-i1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 23800305728,
   "storage_human": "23.8 GB",
+  "context_length": 2097152,
   "base_model": "schonsense/Ripple-65B-Heretic-light",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axAilotl/qwen-concept-27b-GGUF",
   "slug": "axailotl-qwen-concept-27b-gguf",
   "author": "axAilotl",
@@ -30,14 +30,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 87638154112,
   "storage_human": "87.6 GB",
+  "context_length": 262144,
   "base_model": "ConceptCountry/qwen-concept-27b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

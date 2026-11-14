@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thinletter/qwen3-embedding-0.6b-vq-clients",
   "slug": "thinletter-qwen3-embedding-0-6b-vq-clients",
   "author": "thinletter",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 263535154,
   "storage_human": "264 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "moravianai/ThinEmbed-Qwen3-Embedding-0.6B-vq",
+  "renamed_at": "2026-11-13T08:16:49.751Z",
   "benchmarks": [],
   "sources": [
     {

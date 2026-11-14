@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidnichols-ops/qwen3-0.6b-devin-draft",
   "slug": "davidnichols-ops-qwen3-0-6b-devin-draft",
   "author": "davidnichols-ops",
@@ -36,14 +36,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 2395704332,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T10:03:43.269Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

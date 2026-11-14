@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored",
   "slug": "0bserverx-qwen3-8-flash-next-rvn-uncensored",
   "author": "0bserverx",
@@ -38,14 +38,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 707795962637,
   "storage_human": "707.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+  "renamed_at": "2026-11-11T02:05:04.076Z",
   "benchmarks": [],
   "sources": [
     {

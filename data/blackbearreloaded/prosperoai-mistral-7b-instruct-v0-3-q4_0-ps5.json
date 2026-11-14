@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blackbearreloaded/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5",
   "slug": "blackbearreloaded-prosperoai-mistral-7b-instruct-v0-3-q4_0-ps5",
   "author": "blackbearreloaded",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 4664707640,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

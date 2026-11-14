@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshyalphonse/bionerd-re",
   "slug": "joshyalphonse-bionerd-re",
   "author": "joshyalphonse",
@@ -34,6 +34,7 @@
   "parameters_human": "109.5M",
   "storage_bytes": 1615482580,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

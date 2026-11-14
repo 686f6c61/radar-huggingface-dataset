@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gramscii/mmarco-mMiniLMv2-L12-H384-v1-GGUF",
   "slug": "gramscii-mmarco-mminilmv2-l12-h384-v1-gguf",
   "author": "Gramscii",
@@ -33,14 +33,19 @@
   "parameters_human": "117.6M",
   "storage_bytes": 242628704,
   "storage_human": "243 MB",
+  "context_length": 512,
   "base_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T02:44:23.827Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

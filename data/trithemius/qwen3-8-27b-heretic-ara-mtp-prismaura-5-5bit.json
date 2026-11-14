@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trithemius/Qwen3.8-27B-heretic-ara-MTP-PrismAura-5.5bit",
   "slug": "trithemius-qwen3-8-27b-heretic-ara-mtp-prismaura-5-5bit",
   "author": "trithemius",
@@ -41,14 +41,19 @@
   "parameters_human": "19.03B",
   "storage_bytes": 23627413327,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

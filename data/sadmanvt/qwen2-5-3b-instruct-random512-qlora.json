@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sadmanvt/Qwen2.5-3B-Instruct-Random512-QLoRA",
   "slug": "sadmanvt-qwen2-5-3b-instruct-random512-qlora",
   "author": "sadmanvt",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 551758521,
   "storage_human": "552 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/LFM2.5-230M-OptiQ-4bit",
   "slug": "oscilla-lfm2-5-230m-optiq-4bit",
   "author": "Oscilla",
@@ -37,6 +37,7 @@
   "parameters_human": "50.7M",
   "storage_bytes": 188558683,
   "storage_human": "189 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:59:07.860Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

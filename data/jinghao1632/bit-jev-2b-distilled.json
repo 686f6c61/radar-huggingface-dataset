@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jinghao1632/bit-jev-2b-distilled",
   "slug": "jinghao1632-bit-jev-2b-distilled",
   "author": "jinghao1632",
@@ -35,14 +35,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 1216870139,
   "storage_human": "1.2 GB",
+  "context_length": 4096,
   "base_model": "microsoft/bitnet-b1.58-2B-4T-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

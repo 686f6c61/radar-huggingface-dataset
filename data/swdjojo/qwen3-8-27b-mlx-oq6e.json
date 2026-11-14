@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swdjojo/Qwen3.8-27B-MLX-oQ6e",
   "slug": "swdjojo-qwen3-8-27b-mlx-oq6e",
   "author": "swdjojo",
@@ -31,6 +31,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 23318306956,
   "storage_human": "23.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, swdjojo/Qwen3.8-27B-MLX-BF16",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flower-computer/bekko-static-v1-slim-75k",
   "slug": "flower-computer-bekko-static-v1-slim-75k",
   "author": "flower-computer",
@@ -83,14 +83,19 @@
   "parameters_human": "76.8M",
   "storage_bytes": 156839678,
   "storage_human": "157 MB",
+  "context_length": null,
   "base_model": "hotchpotch/bekko-static-embedding-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "flowercomputers/bekko-static-v1-slim-75k",
+  "renamed_at": "2026-11-11T05:17:01.367Z",
   "benchmarks": [],
   "sources": []
 }

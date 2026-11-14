@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alekringtonnn-ai/zubr-tiny-2b",
   "slug": "alekringtonnn-ai-zubr-tiny-2b",
   "author": "alekringtonnn-ai",
@@ -58,14 +58,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 2977574848,
   "storage_human": "3.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Zubr-AI/zubr-tiny-2b",
+  "renamed_at": "2026-11-11T04:24:06.397Z",
   "benchmarks": [],
   "sources": []
 }

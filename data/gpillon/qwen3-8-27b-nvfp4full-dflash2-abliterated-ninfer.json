@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gpillon/Qwen3.8-27B-nvfp4full-dflash2-abliterated-NInfer",
   "slug": "gpillon-qwen3-8-27b-nvfp4full-dflash2-abliterated-ninfer",
   "author": "gpillon",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 19406942468,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

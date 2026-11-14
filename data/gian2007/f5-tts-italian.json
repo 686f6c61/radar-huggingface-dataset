@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gian2007/F5-TTS-italian",
   "slug": "gian2007-f5-tts-italian",
   "author": "gian2007",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 76867133381,
   "storage_human": "76.9 GB",
+  "context_length": null,
   "base_model": "SWivid/F5-TTS",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

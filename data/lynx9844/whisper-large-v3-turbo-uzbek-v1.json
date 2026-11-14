@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lynx9844/whisper-large-v3-turbo-uzbek-v1",
   "slug": "lynx9844-whisper-large-v3-turbo-uzbek-v1",
   "author": "lynx9844",
@@ -35,14 +35,19 @@
   "parameters_human": "808.9M",
   "storage_bytes": 1617824864,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T05:46:25.566Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Recognition",

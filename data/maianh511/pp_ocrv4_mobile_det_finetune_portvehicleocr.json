@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maianh511/PP_OCRv4_mobile_det_finetune_PortVehicleOCR",
   "slug": "maianh511-pp_ocrv4_mobile_det_finetune_portvehicleocr",
   "author": "maianh511",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 128297292,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-OCRv4_mobile_det",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QianheChen01/Hy-MT2-30B-A3B-APEX-Imatrix-I-Nano-MLX",
   "slug": "qianhechen01-hy-mt2-30b-a3b-apex-imatrix-i-nano-mlx",
   "author": "QianheChen01",
@@ -24,14 +24,19 @@
   "parameters_human": "3.73B",
   "storage_bytes": 13034908163,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

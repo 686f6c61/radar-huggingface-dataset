@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abenzerps/Apodex-1.1-mini-MLX-4bit",
   "slug": "abenzerps-apodex-1-1-mini-mlx-4bit",
   "author": "abenzerps",
@@ -39,6 +39,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19530514265,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "abenzerps/Apodex-1.1-mini-MLX",
+  "renamed_at": "2026-11-11T04:17:27.323Z",
   "benchmarks": [],
   "sources": [
     {

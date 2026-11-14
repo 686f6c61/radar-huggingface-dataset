@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itzune/pocket-tts-basque",
   "slug": "itzune-pocket-tts-basque",
   "author": "itzune",
@@ -36,14 +36,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 455945333,
   "storage_human": "456 MB",
+  "context_length": null,
   "base_model": "itzune/pocket-tts-basque-24l",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

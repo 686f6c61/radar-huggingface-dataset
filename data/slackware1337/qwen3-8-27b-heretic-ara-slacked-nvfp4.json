@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked-NVFP4",
   "slug": "slackware1337-qwen3-8-27b-heretic-ara-slacked-nvfp4",
   "author": "Slackware1337",
@@ -28,14 +28,19 @@
   "parameters_human": "15.62B",
   "storage_bytes": 20613138855,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
   "slug": "orcarouter-qwen3-8-27b-uncensored-gguf",
   "author": "orcarouter",
@@ -40,21 +40,26 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1783,
+  "likes": 1788,
   "downloads_30d": 92309,
-  "trending_score": 38,
+  "trending_score": 42,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
   "storage_bytes": 288447505952,
   "storage_human": "288.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

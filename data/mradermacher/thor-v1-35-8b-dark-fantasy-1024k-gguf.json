@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Thor-v1.35-8b-DARK-FANTASY-1024k-GGUF",
   "slug": "mradermacher-thor-v1-35-8b-dark-fantasy-1024k-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 76481441632,
   "storage_human": "76.5 GB",
+  "context_length": 1048576,
   "base_model": "MrRobotoAI/Thor-v1.35-8b-DARK-FANTASY-1024k",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

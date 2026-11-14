@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eval-apply/silvann_tq_D4_qwen3.8_27b",
   "slug": "eval-apply-silvann_tq_d4_qwen3-8_27b",
   "author": "eval-apply",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 15715391227,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

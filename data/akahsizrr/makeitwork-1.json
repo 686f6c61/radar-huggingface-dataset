@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akahsizrr/makeitwork-1",
   "slug": "akahsizrr-makeitwork-1",
   "author": "Akahsizrr",
@@ -34,14 +34,19 @@
   "parameters_human": "497.0M",
   "storage_bytes": 3976019808,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Reizxn/makeitwork1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T02:06:09.527Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

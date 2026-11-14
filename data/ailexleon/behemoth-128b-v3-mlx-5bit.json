@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ailexleon/Behemoth-128B-v3-mlx-5Bit",
   "slug": "ailexleon-behemoth-128b-v3-mlx-5bit",
   "author": "ailexleon",
@@ -39,6 +39,7 @@
   "parameters_human": "125.03B",
   "storage_bytes": 85975534597,
   "storage_human": "86.0 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Behemoth-128B-v3",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

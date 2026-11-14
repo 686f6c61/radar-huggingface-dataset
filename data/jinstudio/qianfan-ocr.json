@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/Qianfan-OCR",
   "slug": "jinstudio-qianfan-ocr",
   "author": "Jinstudio",
@@ -39,14 +39,19 @@
   "parameters_human": "4.74B",
   "storage_bytes": 9495225950,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Document Parsing",

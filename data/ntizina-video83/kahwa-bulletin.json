@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ntizina-video83/kahwa-bulletin",
   "slug": "ntizina-video83-kahwa-bulletin",
   "author": "ntizina-video83",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 21341954,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T17:39:39.190Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

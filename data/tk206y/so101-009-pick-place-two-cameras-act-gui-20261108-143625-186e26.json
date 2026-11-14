@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tk206y/so101-009-pick-place-two-cameras-act-gui-20261108-143625-186e26",
   "slug": "tk206y-so101-009-pick-place-two-cameras-act-gui-20261108-143625-186e26",
   "author": "tk206y",
@@ -27,14 +27,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 6195346392,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

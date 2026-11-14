@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SarthakKumar571999/qwen2-5-coder-14b-text2cypher",
   "slug": "sarthakkumar571999-qwen2-5-coder-14b-text2cypher",
   "author": "SarthakKumar571999",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 149138604,
   "storage_human": "149 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambocher/LFM2.5-24B-A2B-oQ5e",
   "slug": "bambocher-lfm2-5-24b-a2b-oq5e",
   "author": "bambocher",
@@ -27,6 +27,7 @@
   "parameters_human": "23.97B",
   "storage_bytes": 16727520401,
   "storage_human": "16.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

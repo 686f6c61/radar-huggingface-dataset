@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rev3auth/iris",
   "slug": "rev3auth-iris",
   "author": "Rev3auth",
@@ -30,6 +30,7 @@
   "parameters_human": "268.1M",
   "storage_bytes": 865842137,
   "storage_human": "866 MB",
+  "context_length": 32768,
   "base_model": "unsloth/gemma-3-270m-it-bnb-4bit",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

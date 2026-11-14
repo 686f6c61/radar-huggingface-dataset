@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/Ming-Image_GGUFs",
   "slug": "realrebelai-ming-image_ggufs",
   "author": "realrebelai",
@@ -31,14 +31,19 @@
   "parameters_human": "6.15B",
   "storage_bytes": 71973892216,
   "storage_human": "72.0 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-Image-0.1-Design",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Unmid/Mew1-2.6B-GGUF",
   "slug": "unmid-mew1-2-6b-gguf",
   "author": "Unmid",
@@ -37,14 +37,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 11399078336,
   "storage_human": "11.4 GB",
+  "context_length": 128000,
   "base_model": "Unmid/Mew1-2.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

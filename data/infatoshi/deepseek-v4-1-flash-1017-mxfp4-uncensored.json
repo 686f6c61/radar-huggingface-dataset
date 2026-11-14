@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infatoshi/DeepSeek-V4.1-Flash-1017-MXFP4-uncensored",
   "slug": "infatoshi-deepseek-v4-1-flash-1017-mxfp4-uncensored",
   "author": "Infatoshi",
@@ -33,14 +33,19 @@
   "parameters_human": "763.21B",
   "storage_bytes": 510299857123,
   "storage_human": "510.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

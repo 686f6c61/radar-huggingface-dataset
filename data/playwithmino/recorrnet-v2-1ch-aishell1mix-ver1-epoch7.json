@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7",
   "slug": "playwithmino-recorrnet-v2-1ch-aishell1mix-ver1-epoch7",
   "author": "playwithmino",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 56749975,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

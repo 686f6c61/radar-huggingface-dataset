@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suvadityamuk/TripoSR-diffusers-3d",
   "slug": "suvadityamuk-triposr-diffusers-3d",
   "author": "suvadityamuk",
@@ -31,6 +31,7 @@
   "parameters_human": "332.8M",
   "storage_bytes": 1679709320,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "stabilityai/TripoSR",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

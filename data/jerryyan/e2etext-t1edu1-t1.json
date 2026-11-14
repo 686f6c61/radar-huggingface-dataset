@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jerryyan/e2etext-T1edu1-T1",
   "slug": "jerryyan-e2etext-t1edu1-t1",
   "author": "jerryyan",
@@ -39,14 +39,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 53827323186,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T03:45:20.323Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

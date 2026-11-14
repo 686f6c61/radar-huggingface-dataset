@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daniel042310/Qwen-Image-2.1-viggle-turbo",
   "slug": "daniel042310-qwen-image-2-1-viggle-turbo",
   "author": "daniel042310",
@@ -39,6 +39,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 104874457009,
   "storage_human": "104.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T10:55:23.510Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

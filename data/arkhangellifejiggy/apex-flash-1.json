@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArkhAngelLifeJiggy/apex-flash-1",
   "slug": "arkhangellifejiggy-apex-flash-1",
   "author": "ArkhAngelLifeJiggy",
@@ -35,14 +35,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 642672300946,
   "storage_human": "642.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

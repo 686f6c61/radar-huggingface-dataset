@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tenny-fri/new_221_5eqgpsdo6a",
   "slug": "tenny-fri-new_221_5eqgpsdo6a",
   "author": "tenny-fri",
@@ -23,14 +23,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 142151067427,
   "storage_human": "142.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

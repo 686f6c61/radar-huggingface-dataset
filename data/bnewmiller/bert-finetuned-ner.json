@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bnewmiller/bert-finetuned-ner",
   "slug": "bnewmiller-bert-finetuned-ner",
   "author": "bnewmiller",
@@ -30,14 +30,19 @@
   "parameters_human": "107.7M",
   "storage_bytes": 3016513213,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "bert-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

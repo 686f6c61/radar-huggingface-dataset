@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zy984764389/act_aloha_mobile_cabinet",
   "slug": "zy984764389-act_aloha_mobile_cabinet",
   "author": "zy984764389",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206776544,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

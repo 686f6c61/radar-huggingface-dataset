@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/idol-turbo",
   "slug": "akhaliq-idol-turbo",
   "author": "akhaliq",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 3931506891,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "speridlabs/idol",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "speridlabs/idol-turbo",
+  "renamed_at": "2026-11-11T04:23:27.261Z",
   "benchmarks": [],
   "sources": []
 }

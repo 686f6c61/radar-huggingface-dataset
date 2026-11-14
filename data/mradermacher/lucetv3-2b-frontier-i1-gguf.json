@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LucetV3-2B-Frontier-i1-GGUF",
   "slug": "mradermacher-lucetv3-2b-frontier-i1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 21323151808,
   "storage_human": "21.3 GB",
+  "context_length": 524288,
   "base_model": "mohommed/LucetV3-2B-Frontier",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

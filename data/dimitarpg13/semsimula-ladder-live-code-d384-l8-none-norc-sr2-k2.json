@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2",
   "slug": "dimitarpg13-semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2",
   "author": "dimitarpg13",
@@ -59,12 +59,17 @@
   "parameters_human": null,
   "storage_bytes": 201152334,
   "storage_human": "201 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

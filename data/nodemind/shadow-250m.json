@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NODEMIND/SHADOW-250M",
   "slug": "nodemind-shadow-250m",
   "author": "NODEMIND",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 657805272,
   "storage_human": "658 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "QLNI/SHADOW-250M",
+  "renamed_at": "2026-11-11T03:23:35.525Z",
   "benchmarks": [],
   "sources": [
     {

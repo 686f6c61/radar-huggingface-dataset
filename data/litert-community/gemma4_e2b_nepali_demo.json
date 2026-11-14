@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Gemma4_E2B_Nepali_demo",
   "slug": "litert-community-gemma4_e2b_nepali_demo",
   "author": "litert-community",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 15353590296,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

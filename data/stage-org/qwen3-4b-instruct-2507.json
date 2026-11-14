@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stage-org/Qwen3-4B-Instruct-2507",
   "slug": "stage-org-qwen3-4b-instruct-2507",
   "author": "Stage-org",
@@ -30,14 +30,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404654,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

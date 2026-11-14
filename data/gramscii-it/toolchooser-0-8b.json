@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gramscii-IT/ToolChooser-0.8B",
   "slug": "gramscii-it-toolchooser-0-8b",
   "author": "Gramscii-IT",
@@ -44,14 +44,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 855263328,
   "storage_human": "855 MB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Route tie-break, read as a decision over the offered capabilities",

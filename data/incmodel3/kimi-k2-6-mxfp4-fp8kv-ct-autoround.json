@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel3/Kimi-K2.6-MXFP4-FP8KV-CT-AutoRound",
   "slug": "incmodel3-kimi-k2-6-mxfp4-fp8kv-ct-autoround",
   "author": "INCModel3",
@@ -28,14 +28,19 @@
   "parameters_human": "551.25B",
   "storage_bytes": 563477243374,
   "storage_human": "563.5 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K2.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

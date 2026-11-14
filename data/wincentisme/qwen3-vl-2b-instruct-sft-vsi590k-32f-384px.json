@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wincentIsMe/Qwen3-VL-2B-Instruct-SFT-VSI590k-32f-384px",
   "slug": "wincentisme-qwen3-vl-2b-instruct-sft-vsi590k-32f-384px",
   "author": "wincentIsMe",
@@ -31,14 +31,19 @@
   "parameters_human": "2.44B",
   "storage_bytes": 4888900043,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

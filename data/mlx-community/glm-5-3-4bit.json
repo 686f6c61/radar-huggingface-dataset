@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/GLM-5.3-4bit",
   "slug": "mlx-community-glm-5-3-4bit",
   "author": "mlx-community",
@@ -36,6 +36,7 @@
   "parameters_human": "743.38B",
   "storage_bytes": 418341538972,
   "storage_human": "418.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

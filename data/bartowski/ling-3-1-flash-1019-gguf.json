@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/Ling-3.1-flash-1019-GGUF",
   "slug": "bartowski-ling-3-1-flash-1019-gguf",
   "author": "bartowski",
@@ -29,14 +29,19 @@
   "parameters_human": "572.12B",
   "storage_bytes": 7361858661600,
   "storage_human": "7361.9 GB",
+  "context_length": 262144,
   "base_model": "inclusionAI/Ling-3.1-flash-1019",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

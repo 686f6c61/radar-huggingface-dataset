@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anan19990108/hae-s-ir-qcs8550-htp",
   "slug": "anan19990108-hae-s-ir-qcs8550-htp",
   "author": "anan19990108",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 3301633,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "alexshynkarenk0/hae-s-ir",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:39:38.827Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

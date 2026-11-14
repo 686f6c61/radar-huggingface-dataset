@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yashasvijadav03/hinglish-intent-classifier",
   "slug": "yashasvijadav03-hinglish-intent-classifier",
   "author": "yashasvijadav03",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 3564368,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "distilbert-base-multilingual-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

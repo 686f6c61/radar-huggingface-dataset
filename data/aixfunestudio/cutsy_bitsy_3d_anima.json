@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIxFuneStudio/Cutsy_Bitsy_3D_Anima",
   "slug": "aixfunestudio-cutsy_bitsy_3d_anima",
   "author": "AIxFuneStudio",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 4395257351,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

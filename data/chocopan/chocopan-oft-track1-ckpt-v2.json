@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chocopan/chocopan-oft-track1-ckpt-v2",
   "slug": "chocopan-chocopan-oft-track1-ckpt-v2",
   "author": "chocopan",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 25619822563,
   "storage_human": "25.6 GB",
+  "context_length": null,
   "base_model": "Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

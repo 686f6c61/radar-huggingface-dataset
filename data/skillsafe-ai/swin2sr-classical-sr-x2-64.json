@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skillsafe-ai/swin2sr-classical-sr-x2-64",
   "slug": "skillsafe-ai-swin2sr-classical-sr-x2-64",
   "author": "skillsafe-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 54428699,
   "storage_human": "54 MB",
+  "context_length": null,
   "base_model": "Xenova/swin2SR-classical-sr-x2-64",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

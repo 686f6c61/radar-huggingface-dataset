@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Agnes-AI/Agnes-3.0-Qwen",
   "slug": "agnes-ai-agnes-3-0-qwen",
   "author": "Agnes-AI",
@@ -39,14 +39,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 360013205033,
   "storage_human": "360.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

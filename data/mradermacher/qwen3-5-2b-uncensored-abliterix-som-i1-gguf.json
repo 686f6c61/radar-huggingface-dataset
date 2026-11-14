@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF",
   "slug": "mradermacher-qwen3-5-2b-uncensored-abliterix-som-i1-gguf",
   "author": "mradermacher",
@@ -60,14 +60,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 25798804160,
   "storage_human": "25.8 GB",
+  "context_length": 262144,
   "base_model": "AkaumiKaede/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

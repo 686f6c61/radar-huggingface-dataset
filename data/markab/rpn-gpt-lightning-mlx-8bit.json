@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "markab/rpn-gpt-lightning-MLX-8bit",
   "slug": "markab-rpn-gpt-lightning-mlx-8bit",
   "author": "markab",
@@ -39,6 +39,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 33577041034,
   "storage_human": "33.6 GB",
+  "context_length": null,
   "base_model": "markab/rpn-gpt-lightning",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

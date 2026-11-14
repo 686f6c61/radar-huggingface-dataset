@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsignedchad/GLM-5.3-Flash-ablit-exl3-4bpw",
   "slug": "unsignedchad-glm-5-3-flash-ablit-exl3-4bpw",
   "author": "unsignedchad",
@@ -46,14 +46,19 @@
   "parameters_human": "82.49B",
   "storage_bytes": 167884495661,
   "storage_human": "167.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

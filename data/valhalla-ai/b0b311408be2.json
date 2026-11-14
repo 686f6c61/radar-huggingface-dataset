@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Valhalla-ai/b0b311408be2",
   "slug": "valhalla-ai-b0b311408be2",
   "author": "Valhalla-ai",
@@ -24,14 +24,19 @@
   "parameters_human": "110.28B",
   "storage_bytes": 220577442541,
   "storage_human": "220.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

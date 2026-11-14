@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheSanchezian/Ternary-Bonsai-2-27B-int2-ov",
   "slug": "thesanchezian-ternary-bonsai-2-27b-int2-ov",
   "author": "TheSanchezian",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 15562529136,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

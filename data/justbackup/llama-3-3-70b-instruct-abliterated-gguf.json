@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Justbackup/Llama-3.3-70B-Instruct-abliterated-GGUF",
   "slug": "justbackup-llama-3-3-70b-instruct-abliterated-gguf",
   "author": "Justbackup",
@@ -52,14 +52,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 927563185434,
   "storage_human": "927.6 GB",
+  "context_length": 131072,
   "base_model": "huihui-ai/Llama-3.3-70B-Instruct-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

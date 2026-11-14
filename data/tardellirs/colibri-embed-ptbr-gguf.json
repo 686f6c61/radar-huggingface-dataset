@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tardellirs/colibri-embed-ptbr-GGUF",
   "slug": "tardellirs-colibri-embed-ptbr-gguf",
   "author": "tardellirs",
@@ -38,14 +38,19 @@
   "parameters_human": "155.4M",
   "storage_bytes": 853946752,
   "storage_human": "854 MB",
+  "context_length": 2048,
   "base_model": "tardellirs/colibri-embed-ptbr",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

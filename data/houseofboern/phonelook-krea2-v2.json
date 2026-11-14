@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "houseofboern/phonelook-krea2-v2",
   "slug": "houseofboern-phonelook-krea2-v2",
   "author": "houseofboern",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 114325208,
   "storage_human": "114 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T04:03:32.297Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

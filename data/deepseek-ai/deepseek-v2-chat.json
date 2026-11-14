@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepseek-ai/DeepSeek-V2-Chat",
   "slug": "deepseek-ai-deepseek-v2-chat",
   "author": "deepseek-ai",
@@ -33,14 +33,19 @@
   "parameters_human": "235.74B",
   "storage_bytes": 471486512376,
   "storage_human": "471.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

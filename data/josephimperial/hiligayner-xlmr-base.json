@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "josephimperial/hiligayner-xlmr-base",
   "slug": "josephimperial-hiligayner-xlmr-base",
   "author": "josephimperial",
@@ -33,14 +33,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 1132009687,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

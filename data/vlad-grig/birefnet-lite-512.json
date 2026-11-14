@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vlad-grig/birefnet-lite-512",
   "slug": "vlad-grig-birefnet-lite-512",
   "author": "vlad-grig",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 290361786,
   "storage_human": "290 MB",
+  "context_length": null,
   "base_model": "ZhengPeng7/BiRefNet_lite",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

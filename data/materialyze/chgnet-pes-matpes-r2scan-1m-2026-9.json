@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "materialyze/CHGNet-PES-MatPES-r2SCAN-1M-2026.9",
   "slug": "materialyze-chgnet-pes-matpes-r2scan-1m-2026-9",
   "author": "materialyze",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 4379665,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

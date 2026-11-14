@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "technicallyAnnoyed/Kimi-VL-A3B-Thinking",
   "slug": "technicallyannoyed-kimi-vl-a3b-thinking",
   "author": "technicallyAnnoyed",
@@ -32,14 +32,19 @@
   "parameters_human": "16.41B",
   "storage_bytes": 32820262484,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-VL-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

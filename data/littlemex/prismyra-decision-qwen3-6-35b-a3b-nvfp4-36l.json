@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "littlemex/prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l",
   "slug": "littlemex-prismyra-decision-qwen3-6-35b-a3b-nvfp4-36l",
   "author": "littlemex",
@@ -61,14 +61,19 @@
   "parameters_human": "3.60B",
   "storage_bytes": 24037341958,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

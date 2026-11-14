@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fonika/mms-tts-fon-with-discriminator",
   "slug": "fonika-mms-tts-fon-with-discriminator",
   "author": "Fonika",
@@ -26,14 +26,19 @@
   "parameters_human": "83.0M",
   "storage_bytes": 332166856,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:41:41.666Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

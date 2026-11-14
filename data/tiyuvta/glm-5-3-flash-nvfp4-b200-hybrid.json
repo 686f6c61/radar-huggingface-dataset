@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiyuvta/GLM-5.3-Flash-NVFP4-B200-hybrid",
   "slug": "tiyuvta-glm-5-3-flash-nvfp4-b200-hybrid",
   "author": "tiyuvta",
@@ -47,14 +47,19 @@
   "parameters_human": "184.30B",
   "storage_bytes": 189120939363,
   "storage_human": "189.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

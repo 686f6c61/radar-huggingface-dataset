@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krampenschiesser/ling3-small-11.8B-A2.6B-GGUF",
   "slug": "krampenschiesser-ling3-small-11-8b-a2-6b-gguf",
   "author": "krampenschiesser",
@@ -28,14 +28,19 @@
   "parameters_human": "11.37B",
   "storage_bytes": 34882361888,
   "storage_human": "34.9 GB",
+  "context_length": 131072,
   "base_model": "krampenschiesser/ling3-small-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T03:43:29.175Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuivs/Minimax-H3-nvfp4-INT4-INT8-Convrot",
   "slug": "yuivs-minimax-h3-nvfp4-int4-int8-convrot",
   "author": "yuivs",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 128243321034,
   "storage_human": "128.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

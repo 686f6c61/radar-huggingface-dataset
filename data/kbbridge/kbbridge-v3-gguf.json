@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KBBridge/KBBridge-v3-GGUF",
   "slug": "kbbridge-kbbridge-v3-gguf",
   "author": "KBBridge",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 91715597184,
   "storage_human": "91.7 GB",
+  "context_length": 262144,
   "base_model": "KBBridge/KBBridge-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sullivan1502/base-action-sft",
   "slug": "sullivan1502-base-action-sft",
   "author": "sullivan1502",
@@ -28,14 +28,19 @@
   "parameters_human": "98.6M",
   "storage_bytes": 18939431330,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

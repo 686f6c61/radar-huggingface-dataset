@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "redbaty/ytm-lyrics-aligner",
   "slug": "redbaty-ytm-lyrics-aligner",
   "author": "redbaty",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 4077781001,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "mrfakename/w2v-bert-2.0-music-lyrics-ctc",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

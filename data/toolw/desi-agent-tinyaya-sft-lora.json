@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ToolW/desi-agent-tinyaya-sft-lora",
   "slug": "toolw-desi-agent-tinyaya-sft-lora",
   "author": "ToolW",
@@ -31,6 +31,7 @@
   "parameters_human": "30.2M",
   "storage_bytes": 202849151,
   "storage_human": "203 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-global",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

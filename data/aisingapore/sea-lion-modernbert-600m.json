@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/SEA-LION-ModernBERT-600M",
   "slug": "aisingapore-sea-lion-modernbert-600m",
   "author": "aisingapore",
@@ -53,14 +53,19 @@
   "parameters_human": "613.0M",
   "storage_bytes": 4937790917,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

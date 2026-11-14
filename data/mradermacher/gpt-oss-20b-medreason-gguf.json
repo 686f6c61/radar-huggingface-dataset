@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gpt-oss-20b-MedReason-GGUF",
   "slug": "mradermacher-gpt-oss-20b-medreason-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 182433144192,
   "storage_human": "182.4 GB",
+  "context_length": 131072,
   "base_model": "Rumiii/gpt-oss-20b-MedReason",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

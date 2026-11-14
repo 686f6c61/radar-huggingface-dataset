@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenExploer/detr3d_efficientnetb3",
   "slug": "openexploer-detr3d_efficientnetb3",
   "author": "OpenExploer",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 911415685,
   "storage_human": "911 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OpenExplorer/detr3d_efficientnetb3",
+  "renamed_at": "2026-11-14T03:53:44.754Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic",
   "slug": "l-0-g-1-c-behemoth-128b-v3-fp8-dynamic",
   "author": "L-0-G-1-C",
@@ -27,14 +27,19 @@
   "parameters_human": "125.03B",
   "storage_bytes": 128283573076,
   "storage_human": "128.3 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Medium-3.5-128B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

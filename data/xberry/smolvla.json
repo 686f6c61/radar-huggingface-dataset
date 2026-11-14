@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xBerry/smolvla",
   "slug": "xberry-smolvla",
   "author": "xBerry",
@@ -22,14 +22,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 26294708848,
   "storage_human": "26.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T10:00:13.247Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

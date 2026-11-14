@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ishowbackup/MiniMax-M2.5-UNCENSORED-JANG_2L",
   "slug": "ishowbackup-minimax-m2-5-uncensored-jang_2l",
   "author": "Ishowbackup",
@@ -45,6 +45,7 @@
   "parameters_human": "60.18B",
   "storage_bytes": 67190400408,
   "storage_human": "67.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M2.5",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

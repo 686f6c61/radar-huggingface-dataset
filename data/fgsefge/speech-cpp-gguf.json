@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fgsefge/speech-cpp-gguf",
   "slug": "fgsefge-speech-cpp-gguf",
   "author": "fgsefge",
@@ -22,14 +22,19 @@
   "parameters_human": "317.5M",
   "storage_bytes": 22178076256,
   "storage_human": "22.2 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lxxxy6/ltx-2.5-22b-dev-transformer-bf16.safetensors",
   "slug": "lxxxy6-ltx-2-5-22b-dev-transformer-bf16-safetensors",
   "author": "lxxxy6",
@@ -48,12 +48,17 @@
   "parameters_human": null,
   "storage_bytes": 200853830534,
   "storage_human": "200.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lxxxy6/LTX-2.5",
+  "renamed_at": "2026-11-11T06:10:17.437Z",
   "benchmarks": [],
   "sources": []
 }

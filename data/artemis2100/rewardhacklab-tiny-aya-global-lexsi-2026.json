@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Artemis2100/rewardhacklab-tiny-aya-global-lexsi-2026",
   "slug": "artemis2100-rewardhacklab-tiny-aya-global-lexsi-2026",
   "author": "Artemis2100",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 81899991,
   "storage_human": "82 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-global",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

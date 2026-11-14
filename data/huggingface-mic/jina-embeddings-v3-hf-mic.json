@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/jina-embeddings-v3-hf-mic",
   "slug": "huggingface-mic-jina-embeddings-v3-hf-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "16.1M",
   "storage_bytes": 81374628,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "jinaai/jina-embeddings-v3-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

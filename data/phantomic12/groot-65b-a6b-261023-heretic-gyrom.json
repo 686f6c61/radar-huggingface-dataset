@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phantomic12/Groot-65B-A6B-261023-Heretic-GyroM",
   "slug": "phantomic12-groot-65b-a6b-261023-heretic-gyrom",
   "author": "phantomic12",
@@ -43,14 +43,19 @@
   "parameters_human": "116.51B",
   "storage_bytes": 54524628160,
   "storage_human": "54.5 GB",
+  "context_length": 262144,
   "base_model": "Luni/Groot-65B-A6B-261023-Heretic-ARA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

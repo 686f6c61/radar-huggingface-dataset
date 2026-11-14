@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3",
   "slug": "safd-00-qwen2-5-vl-3b-ac-exp08-world-model-stage1-full-epoch3",
   "author": "SaFD-00",
@@ -30,14 +30,19 @@
   "parameters_human": "3.75B",
   "storage_bytes": 7520759840,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

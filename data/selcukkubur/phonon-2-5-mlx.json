@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "selcukkubur/Phonon-2.5-mlx",
   "slug": "selcukkubur-phonon-2-5-mlx",
   "author": "selcukkubur",
@@ -80,6 +80,7 @@
   "parameters_human": "181.4M",
   "storage_bytes": 189379154,
   "storage_human": "189 MB",
+  "context_length": null,
   "base_model": "FermionResearch/Phonon-2.5, nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "mlx",
@@ -87,8 +88,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yoedi/foq-reflex-8b-gguf",
   "slug": "yoedi-foq-reflex-8b-gguf",
   "author": "Yoedi",
@@ -26,14 +26,19 @@
   "parameters_human": "15.3M",
   "storage_bytes": 2243546368,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

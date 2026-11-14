@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrandonHowe/Olmo7b-urban-olmo-test3-seed1-20260929-CPT-final-step-5",
   "slug": "brandonhowe-olmo7b-urban-olmo-test3-seed1-20260929-cpt-final-step-5",
   "author": "BrandonHowe",
@@ -31,14 +31,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14596063592,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1025-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

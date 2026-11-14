@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HomeBrewedLabs/metallum-550m",
   "slug": "homebrewedlabs-metallum-550m",
   "author": "HomeBrewedLabs",
@@ -37,14 +37,19 @@
   "parameters_human": "550.3M",
   "storage_bytes": 1100535104,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

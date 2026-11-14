@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amad-iq/amad-vlm5-D-technical-report",
   "slug": "amad-iq-amad-vlm5-d-technical-report",
   "author": "amad-iq",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "amad-iq/amad-vlm5, AhmedZaky1/DIMI-Arabic-OCR-V2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

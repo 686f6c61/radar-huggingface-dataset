@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XvKuoMing/so101_chess",
   "slug": "xvkuoming-so101_chess",
   "author": "XvKuoMing",
@@ -34,14 +34,19 @@
   "parameters_human": "5.60B",
   "storage_bytes": 12751243173,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2-SO100_101",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "XvKuoMing/so101_chess_molmoact2",
+  "renamed_at": "2026-11-13T04:26:23.648Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GuiAworld/zen-image-edit-SDNQ-uint4-f16-2t",
   "slug": "guiaworld-zen-image-edit-sdnq-uint4-f16-2t",
   "author": "GuiAworld",
@@ -34,6 +34,7 @@
   "parameters_human": "4.00B",
   "storage_bytes": 7208122558,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen3.5-0.8B",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:45:33.372Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

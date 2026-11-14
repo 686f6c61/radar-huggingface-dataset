@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kawattaronin/Dolphin-Mistral-24B-Venice-Edition-RYS-test",
   "slug": "kawattaronin-dolphin-mistral-24b-venice-edition-rys-test",
   "author": "kawattaronin",
@@ -29,14 +29,19 @@
   "parameters_human": "22.46B",
   "storage_bytes": 44938907891,
   "storage_human": "44.9 GB",
+  "context_length": null,
   "base_model": "dphn/Dolphin-Mistral-24B-Venice-Edition",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:07:17.834Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

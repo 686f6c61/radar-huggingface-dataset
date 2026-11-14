@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "43ntropy/Wan2.2-T2V-A14B-BF16-UnifiedReward-Flex-Diffusers",
   "slug": "43ntropy-wan2-2-t2v-a14b-bf16-unifiedreward-flex-diffusers",
   "author": "43ntropy",
@@ -26,6 +26,7 @@
   "parameters_human": "14.29B",
   "storage_bytes": 57904785568,
   "storage_human": "57.9 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-T2V-A14B, CodeGoat24/Wan2.2-T2V-A14B-UnifiedReward-Flex-lora",
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

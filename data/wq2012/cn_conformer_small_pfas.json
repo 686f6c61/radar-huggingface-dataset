@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wq2012/cn_conformer_small_pfas",
   "slug": "wq2012-cn_conformer_small_pfas",
   "author": "wq2012",
@@ -41,14 +41,19 @@
   "parameters_human": "2.2M",
   "storage_bytes": 51944214,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

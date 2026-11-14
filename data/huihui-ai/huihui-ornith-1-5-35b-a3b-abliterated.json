@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "slug": "huihui-ai-huihui-ornith-1-5-35b-a3b-abliterated",
   "author": "huihui-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 76295777585,
   "storage_human": "76.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pipenetwork/Kimi-K3.1-Pro-REAP80-code-MLX-mxfp4-q4",
   "slug": "pipenetwork-kimi-k3-1-pro-reap80-code-mlx-mxfp4-q4",
   "author": "pipenetwork",
@@ -36,6 +36,7 @@
   "parameters_human": "600.84B",
   "storage_bytes": 321899912950,
   "storage_human": "321.9 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

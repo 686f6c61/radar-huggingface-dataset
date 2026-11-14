@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Animhaven/qwen3-tts-models",
   "slug": "animhaven-qwen3-tts-models",
   "author": "Animhaven",
@@ -24,6 +24,7 @@
   "parameters_human": "141.6M",
   "storage_bytes": 6808665570,
   "storage_human": "6.8 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arpan103/NSFW-RP-RolePlay-LoRA-ArliAI-Llama-3.1-8B-F16-GGUF",
   "slug": "arpan103-nsfw-rp-roleplay-lora-arliai-llama-3-1-8b-f16-gguf",
   "author": "arpan103",
@@ -45,14 +45,19 @@
   "parameters_human": "41.9M",
   "storage_bytes": 83917920,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "mirazrafi/NSFW-RP-RolePlay-LoRA-ArliAI-Llama-3.1-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

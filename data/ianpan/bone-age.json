@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ianpan/bone-age",
   "slug": "ianpan-bone-age",
   "author": "ianpan",
@@ -34,14 +34,19 @@
   "parameters_human": "84.1M",
   "storage_bytes": 336662916,
   "storage_human": "337 MB",
+  "context_length": null,
   "base_model": "timm/convnextv2_tiny.fcmae_ft_in22k_in1k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

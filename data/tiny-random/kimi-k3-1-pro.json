@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiny-random/kimi-k3.1-pro",
   "slug": "tiny-random-kimi-k3-1-pro",
   "author": "tiny-random",
@@ -31,14 +31,19 @@
   "parameters_human": "26.7M",
   "storage_bytes": 217973182,
   "storage_human": "218 MB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

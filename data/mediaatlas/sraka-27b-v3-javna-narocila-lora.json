@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MediaAtlas/sraka-27b-v3-javna-narocila-lora",
   "slug": "mediaatlas-sraka-27b-v3-javna-narocila-lora",
   "author": "MediaAtlas",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 933974032,
   "storage_human": "934 MB",
+  "context_length": null,
   "base_model": "MediaAtlas/sraka-27b-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

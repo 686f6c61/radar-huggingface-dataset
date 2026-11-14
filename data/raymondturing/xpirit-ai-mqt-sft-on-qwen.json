@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RaymondTuring/xpirit-ai-mqt-sft-on-qwen",
   "slug": "raymondturing-xpirit-ai-mqt-sft-on-qwen",
   "author": "RaymondTuring",
@@ -34,6 +34,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 21420722674,
   "storage_human": "21.4 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

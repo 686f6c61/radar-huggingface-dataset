@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored-exl3-4.0bpw",
   "slug": "sam33339999-sage-a1-5-heretic-abliterated-uncensored-exl3-4-0bpw",
   "author": "sam33339999",
@@ -38,14 +38,19 @@
   "parameters_human": "9.87B",
   "storage_bytes": 19831036714,
   "storage_human": "19.8 GB",
+  "context_length": null,
   "base_model": "sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

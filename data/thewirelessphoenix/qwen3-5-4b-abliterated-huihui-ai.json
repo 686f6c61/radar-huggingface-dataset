@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheWirelessPhoenix/Qwen3.5-4B-abliterated-huihui-ai",
   "slug": "thewirelessphoenix-qwen3-5-4b-abliterated-huihui-ai",
   "author": "TheWirelessPhoenix",
@@ -32,6 +32,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 3054288526,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T04:05:37.721Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

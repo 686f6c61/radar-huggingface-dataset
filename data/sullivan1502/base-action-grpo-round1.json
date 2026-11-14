@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sullivan1502/base-action-grpo-round1",
   "slug": "sullivan1502-base-action-grpo-round1",
   "author": "sullivan1502",
@@ -33,14 +33,19 @@
   "parameters_human": "81.8M",
   "storage_bytes": 31430996881,
   "storage_human": "31.4 GB",
+  "context_length": null,
   "base_model": "sullivan1502/base-action-pretrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T03:01:52.438Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

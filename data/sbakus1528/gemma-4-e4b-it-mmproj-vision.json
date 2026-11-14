@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sbakus1528/gemma-4-E4B-it-mmproj-vision",
   "slug": "sbakus1528-gemma-4-e4b-it-mmproj-vision",
   "author": "sbakus1528",
@@ -28,14 +28,19 @@
   "parameters_human": "169.3M",
   "storage_bytes": 370275360,
   "storage_human": "370 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/Nex-N2.6-SAGE-REXL3-2.48bpw",
   "slug": "vcruz305-nex-n2-6-sage-rexl3-2-48bpw",
   "author": "vcruz305",
@@ -38,14 +38,19 @@
   "parameters_human": "51.82B",
   "storage_bytes": 103777354399,
   "storage_human": "103.8 GB",
+  "context_length": null,
   "base_model": "nex-agi/Nex-N2.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

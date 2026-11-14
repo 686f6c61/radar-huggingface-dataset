@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiwi2030/connectailab-rl-kiwi-v4-Walker2d-ppo",
   "slug": "kiwi2030-connectailab-rl-kiwi-v4-walker2d-ppo",
   "author": "kiwi2030",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 369319,
   "storage_human": "369319 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

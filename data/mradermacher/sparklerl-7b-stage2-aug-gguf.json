@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SparkleRL-7B-Stage2-aug-GGUF",
   "slug": "mradermacher-sparklerl-7b-stage2-aug-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146893440,
   "storage_human": "68.1 GB",
+  "context_length": 4096,
   "base_model": "sparkle-reasoning/SparkleRL-7B-Stage2-aug",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

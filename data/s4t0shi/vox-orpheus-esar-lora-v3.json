@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "S4t0shi/vox-orpheus-esar-lora-v3",
   "slug": "s4t0shi-vox-orpheus-esar-lora-v3",
   "author": "S4t0shi",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 1190326116,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "marianbasti/Llama-3.2-3B-Orpheus-Rioplatense-1795",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:28:06.075Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

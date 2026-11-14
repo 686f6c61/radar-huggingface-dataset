@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-tutu-hi-silk-z-image-turbo-8d-aurora-glossy-stockings-8d-lora",
   "slug": "runninghubai-rh-tutu-hi-silk-z-image-turbo-8d-aurora-glossy-stockings-8d-lora",
   "author": "RunningHubAI",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 170496567,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge",
   "slug": "xtools-at-lfm3-1-7b-agentorange-claude-code-2xmerge",
   "author": "xtools-at",
@@ -84,14 +84,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475706134,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B, mondk/LFM3-1.7B-Claude-Code-Safetensors, saidutta69/LFM3-1.7B-Claude-Fable5.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

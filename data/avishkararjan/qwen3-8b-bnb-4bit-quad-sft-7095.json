@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095",
   "slug": "avishkararjan-qwen3-8b-bnb-4bit-quad-sft-7095",
   "author": "avishkararjan",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 360733996,
   "storage_human": "361 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

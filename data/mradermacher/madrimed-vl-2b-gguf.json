@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MadriMed-VL-2B-GGUF",
   "slug": "mradermacher-madrimed-vl-2b-gguf",
   "author": "mradermacher",
@@ -45,6 +45,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 17224440512,
   "storage_human": "17.2 GB",
+  "context_length": 262144,
   "base_model": "madrisight/madrimed-VL-2B",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mndolo2x/blastopt-pula-8b-lora",
   "slug": "mndolo2x-blastopt-pula-8b-lora",
   "author": "mndolo2x",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 71770288,
   "storage_human": "72 MB",
+  "context_length": null,
   "base_model": "OxxoCodes/Pula-8B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "themohal/trocr_saraiki_results",
   "slug": "themohal-trocr_saraiki_results",
   "author": "themohal",
@@ -29,14 +29,19 @@
   "parameters_human": "61.6M",
   "storage_bytes": 246436025,
   "storage_human": "246 MB",
+  "context_length": null,
   "base_model": "microsoft/trocr-small-printed",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-16T09:13:42.192Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

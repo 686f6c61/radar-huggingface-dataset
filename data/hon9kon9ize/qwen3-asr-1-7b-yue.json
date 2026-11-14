@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hon9kon9ize/Qwen3-ASR-1.7B-Yue",
   "slug": "hon9kon9ize-qwen3-asr-1-7b-yue",
   "author": "hon9kon9ize",
@@ -42,14 +42,19 @@
   "parameters_human": "2.35B",
   "storage_bytes": 4698521512,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

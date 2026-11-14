@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSero/GLM-5.2-504B-REAP-recovery-kit",
   "slug": "0xsero-glm-5-2-504b-reap-recovery-kit",
   "author": "0xSero",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 946902096,
   "storage_human": "947 MB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T10:13:06.578Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

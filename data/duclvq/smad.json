@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "duclvQ/smad",
   "slug": "duclvq-smad",
   "author": "duclvQ",
@@ -40,14 +40,19 @@
   "parameters_human": "834884",
   "storage_bytes": 3342832,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech / music / singing discrimination",

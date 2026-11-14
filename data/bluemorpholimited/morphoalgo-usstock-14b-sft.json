@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bluemorpholimited/morphoalgo-usstock-14b-sft",
   "slug": "bluemorpholimited-morphoalgo-usstock-14b-sft",
   "author": "bluemorpholimited",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 95596841450,
   "storage_human": "95.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:36:49.267Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

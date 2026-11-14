@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arianraje/qwen3-4b-gdn-dataset-kd-8k-1b-state",
   "slug": "arianraje-qwen3-4b-gdn-dataset-kd-8k-1b-state",
   "author": "arianraje",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 76791881428,
   "storage_human": "76.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

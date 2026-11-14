@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mahiyama/splade-ja-310m-onnx-int8",
   "slug": "mahiyama-splade-ja-310m-onnx-int8",
   "author": "mahiyama",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 395437508,
   "storage_human": "395 MB",
+  "context_length": null,
   "base_model": "mahiyama/splade-ja-310m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

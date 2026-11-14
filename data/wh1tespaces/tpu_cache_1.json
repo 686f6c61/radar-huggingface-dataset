@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wh1teSpaces/TPU_Cache_1",
   "slug": "wh1tespaces-tpu_cache_1",
   "author": "Wh1teSpaces",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1469804217,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

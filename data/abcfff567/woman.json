@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abcfff567/woman",
   "slug": "abcfff567-woman",
   "author": "abcfff567",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 129415568,
   "storage_human": "129 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-16T09:12:04.210Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

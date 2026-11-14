@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "henil08/verilog-coder-3b-gguf",
   "slug": "henil08-verilog-coder-3b-gguf",
   "author": "henil08",
@@ -27,14 +27,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 2104932960,
   "storage_human": "2.1 GB",
+  "context_length": 32768,
   "base_model": "henil08/verilog-coder-3b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

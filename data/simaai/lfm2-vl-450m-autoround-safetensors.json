@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simaai/LFM2-VL-450M-Autoround-Safetensors",
   "slug": "simaai-lfm2-vl-450m-autoround-safetensors",
   "author": "simaai",
@@ -38,14 +38,19 @@
   "parameters_human": "517.9M",
   "storage_bytes": 421740992,
   "storage_human": "422 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-VL-450M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

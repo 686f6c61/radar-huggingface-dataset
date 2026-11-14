@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/llama3-8b-cpt-sahabatai-v1-base-GGUF",
   "slug": "mradermacher-llama3-8b-cpt-sahabatai-v1-base-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 71820231552,
   "storage_human": "71.8 GB",
+  "context_length": 8192,
   "base_model": "GoToCompany/llama3-8b-cpt-sahabatai-v1-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_pre-wolof_s42_20260904_144743",
   "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_pre-wolof_s42_20260904_144743",
   "author": "xelsoft-ai-lab",
@@ -26,14 +26,19 @@
   "parameters_human": "144.4M",
   "storage_bytes": 578043218,
   "storage_human": "578 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:38:23.176Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

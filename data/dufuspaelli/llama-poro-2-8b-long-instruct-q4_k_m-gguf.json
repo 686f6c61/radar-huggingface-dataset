@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dufuspaelli/Llama-Poro-2-8B-Long-Instruct-Q4_K_M-GGUF",
   "slug": "dufuspaelli-llama-poro-2-8b-long-instruct-q4_k_m-gguf",
   "author": "dufuspaelli",
@@ -37,14 +37,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920739040,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "LumiOpen/Llama-Poro-2-8B-Long-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

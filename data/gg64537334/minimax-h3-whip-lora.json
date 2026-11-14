@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gg64537334/MiniMax-H3-Whip-LoRA",
   "slug": "gg64537334-minimax-h3-whip-lora",
   "author": "gg64537334",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 77601544,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

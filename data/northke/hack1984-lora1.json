@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NorthKE/hack1984-lora1",
   "slug": "northke-hack1984-lora1",
   "author": "NorthKE",
@@ -30,6 +30,7 @@
   "parameters_human": "1.94B",
   "storage_bytes": 2163996829,
   "storage_human": "2.2 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.5-2B",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

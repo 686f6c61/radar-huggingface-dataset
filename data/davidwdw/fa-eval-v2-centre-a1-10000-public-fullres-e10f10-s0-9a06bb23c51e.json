@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidwdw/fa-eval-v2-centre-a1-10000-public-fullres-e10f10-s0-9a06bb23c51e",
   "slug": "davidwdw-fa-eval-v2-centre-a1-10000-public-fullres-e10f10-s0-9a06bb23c51e",
   "author": "davidwdw",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 246873028,
   "storage_human": "247 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

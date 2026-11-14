@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NarimanOsman2025/tomato-disease-detector-yolov8n",
   "slug": "narimanosman2025-tomato-disease-detector-yolov8n",
   "author": "NarimanOsman2025",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 6516970,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

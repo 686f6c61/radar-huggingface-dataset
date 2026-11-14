@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Axhinxv/text2sql-qwen-3b-lora",
   "slug": "axhinxv-text2sql-qwen-3b-lora",
   "author": "Axhinxv",
@@ -33,14 +33,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6303150884,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-coder-3b-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

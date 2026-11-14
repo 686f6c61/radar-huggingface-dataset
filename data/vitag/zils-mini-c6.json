@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VitaG/zils-mini-c6",
   "slug": "vitag-zils-mini-c6",
   "author": "VitaG",
@@ -27,14 +27,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9078616080,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "1lock/zils-mini-astrid-m1, torchcast-ai/torchcast-decision-4b, vllm-sr/d3-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

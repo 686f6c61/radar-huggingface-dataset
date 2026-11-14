@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Deepdive404-3/GLiNER2.5-Decide",
   "slug": "deepdive404-3-gliner2-5-decide",
   "author": "Deepdive404-3",
@@ -37,14 +37,19 @@
   "parameters_human": "486.4M",
   "storage_bytes": 1946476414,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2-large-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

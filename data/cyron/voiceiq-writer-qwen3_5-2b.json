@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyron/voiceiq-writer-qwen3_5-2b",
   "slug": "cyron-voiceiq-writer-qwen3_5-2b",
   "author": "cyron",
@@ -39,6 +39,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 4516706697,
   "storage_human": "4.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T04:56:11.328Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

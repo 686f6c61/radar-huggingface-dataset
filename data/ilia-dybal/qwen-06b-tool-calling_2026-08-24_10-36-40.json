@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ilia-dybal/Qwen-06B-tool-calling_2026-08-24_10-36-40",
   "slug": "ilia-dybal-qwen-06b-tool-calling_2026-08-24_10-36-40",
   "author": "ilia-dybal",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 17873051,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "youakrim/yolo12x-mlx",
   "slug": "youakrim-yolo12x-mlx",
   "author": "youakrim",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 237776866,
   "storage_human": "238 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO12",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

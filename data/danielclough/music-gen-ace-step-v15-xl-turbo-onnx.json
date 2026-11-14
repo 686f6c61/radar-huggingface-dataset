@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DanielClough/music-gen-ace-step-v15-xl-turbo-onnx",
   "slug": "danielclough-music-gen-ace-step-v15-xl-turbo-onnx",
   "author": "DanielClough",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 10787299110,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "ACE-Step/acestep-v15-xl-turbo",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

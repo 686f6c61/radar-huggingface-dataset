@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackkiers/Qwen-Image-Edit-Rapid-AIO",
   "slug": "blackkiers-qwen-image-edit-rapid-aio",
   "author": "Blackkiers",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1550174628380,
   "storage_human": "1550.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

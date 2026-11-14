@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3hs4n/Qwen3.8-Flash-Next-Uncensored-mlx-optimized-2-8bit",
   "slug": "3hs4n-qwen3-8-flash-next-uncensored-mlx-optimized-2-8bit",
   "author": "3hs4n",
@@ -37,6 +37,7 @@
   "parameters_human": "177.39B",
   "storage_bytes": 72829879320,
   "storage_human": "72.8 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

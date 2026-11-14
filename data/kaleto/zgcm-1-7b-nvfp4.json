@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kaleto/ZGCM-1-7B-NVFP4",
   "slug": "kaleto-zgcm-1-7b-nvfp4",
   "author": "Kaleto",
@@ -47,14 +47,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 6007213442,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "zgcagi/ZGCM-1-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

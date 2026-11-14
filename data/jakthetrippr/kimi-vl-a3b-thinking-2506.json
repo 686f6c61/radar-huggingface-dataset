@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JakTheTrippr/Kimi-VL-A3B-Thinking-2506",
   "slug": "jakthetrippr-kimi-vl-a3b-thinking-2506",
   "author": "JakTheTrippr",
@@ -32,14 +32,19 @@
   "parameters_human": "16.41B",
   "storage_bytes": 32821079324,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-VL-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "technicallyAnnoyed/Kimi-VL-A3B-Thinking-2506",
+  "renamed_at": "2026-11-14T03:19:44.520Z",
   "benchmarks": [],
   "sources": []
 }

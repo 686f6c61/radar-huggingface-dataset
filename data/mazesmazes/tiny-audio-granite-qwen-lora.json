@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazesmazes/tiny-audio-granite-qwen-lora",
   "slug": "mazesmazes-tiny-audio-granite-qwen-lora",
   "author": "mazesmazes",
@@ -27,14 +27,19 @@
   "parameters_human": "122.3M",
   "storage_bytes": 1417593978,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T05:10:50.294Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kirikir13/gemma-4-E4B-unsloth-vaccine-xai",
   "slug": "kirikir13-gemma-4-e4b-unsloth-vaccine-xai",
   "author": "kirikir13",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 770165120,
   "storage_human": "770 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Folly847/gemma-4-12B",
   "slug": "folly847-gemma-4-12b",
   "author": "Folly847",
@@ -29,14 +29,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951707065,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexStamp/marian-finetuned-kde4-en-to-fr",
   "slug": "alexstamp-marian-finetuned-kde4-en-to-fr",
   "author": "AlexStamp",
@@ -41,14 +41,19 @@
   "parameters_human": "74.7M",
   "storage_bytes": 897703489,
   "storage_human": "898 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-en-fr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text-to-Text Translation",

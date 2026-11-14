@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sky-Kim/com.sky.sentis.neurosync",
   "slug": "sky-kim-com-sky-sentis-neurosync",
   "author": "Sky-Kim",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 965619064,
   "storage_human": "966 MB",
+  "context_length": null,
   "base_model": "AnimaVR/NEUROSYNC_Audio_To_Face_Blendshape",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Summerwise-27B-i1-GGUF",
   "slug": "mradermacher-summerwise-27b-i1-gguf",
   "author": "mradermacher",
@@ -50,14 +50,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 218567545408,
   "storage_human": "218.6 GB",
+  "context_length": 262144,
   "base_model": "Pleochroic-Ltd/Summerwise-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

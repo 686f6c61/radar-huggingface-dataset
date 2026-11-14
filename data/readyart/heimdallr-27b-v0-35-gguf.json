@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Heimdallr-27B-v0.35-GGUF",
   "slug": "readyart-heimdallr-27b-v0-35-gguf",
   "author": "ReadyArt",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 376507316320,
   "storage_human": "376.5 GB",
+  "context_length": 262144,
   "base_model": "ReadyArt/Heimdallr-27B-v0.35",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jepacpp/vjepa2-vitl-fpc64-256-GGUF",
   "slug": "jepacpp-vjepa2-vitl-fpc64-256-gguf",
   "author": "jepacpp",
@@ -33,14 +33,19 @@
   "parameters_human": "326.0M",
   "storage_bytes": 2679611872,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "facebook/vjepa2-vitl-fpc64-256",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

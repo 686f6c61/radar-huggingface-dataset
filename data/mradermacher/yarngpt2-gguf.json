@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/YarnGPT2-GGUF",
   "slug": "mradermacher-yarngpt2-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "365.8M",
   "storage_bytes": 3784349568,
   "storage_human": "3.8 GB",
+  "context_length": 8192,
   "base_model": "saheedniyi/YarnGPT2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

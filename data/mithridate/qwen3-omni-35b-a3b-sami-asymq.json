@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MIThridate/Qwen3-Omni-35B-A3B-SAMI-AsymQ",
   "slug": "mithridate-qwen3-omni-35b-a3b-sami-asymq",
   "author": "MIThridate",
@@ -42,14 +42,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 16136136992,
   "storage_human": "16.1 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "philipp-zettl/eisen-01b",
   "slug": "philipp-zettl-eisen-01b",
   "author": "philipp-zettl",
@@ -32,14 +32,19 @@
   "parameters_human": "281.1M",
   "storage_bytes": 1629906778,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

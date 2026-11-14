@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mhseo2/prestudy_qwen3base8b_ot3dmq_ntpraw_s1500_lr1e-5_min05-step500",
   "slug": "mhseo2-prestudy_qwen3base8b_ot3dmq_ntpraw_s1500_lr1e-5_min05-step500",
   "author": "mhseo2",
@@ -23,14 +23,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16399971083,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

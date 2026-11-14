@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Minico-M1-1105-FP8",
   "slug": "liodon-ai-minico-m1-1105-fp8",
   "author": "liodon-ai",
@@ -34,14 +34,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 422132152,
   "storage_human": "422 MB",
+  "context_length": null,
   "base_model": "Mincofficial/Minico-M1-1105",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

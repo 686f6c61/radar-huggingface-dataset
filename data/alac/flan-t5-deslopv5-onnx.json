@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alac/flan-t5-deslopV5-onnx",
   "slug": "alac-flan-t5-deslopv5-onnx",
   "author": "alac",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 337854745,
   "storage_human": "338 MB",
+  "context_length": null,
   "base_model": "google/flan-t5-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:33:00.005Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

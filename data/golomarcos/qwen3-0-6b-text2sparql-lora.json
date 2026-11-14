@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoloMarcos/qwen3-0.6b-text2sparql-lora",
   "slug": "golomarcos-qwen3-0-6b-text2sparql-lora",
   "author": "GoloMarcos",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 51844818,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/KAT-Coder-V2.5-CMF",
   "slug": "infosave-kat-coder-v2-5-cmf",
   "author": "infosave",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 12653975221,
   "storage_human": "12.7 GB",
+  "context_length": null,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

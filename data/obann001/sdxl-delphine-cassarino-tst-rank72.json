@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "obann001/SDXL-Delphine-Cassarino-TST-Rank72",
   "slug": "obann001-sdxl-delphine-cassarino-tst-rank72",
   "author": "obann001",
@@ -23,14 +23,19 @@
   "parameters_human": "256.5M",
   "storage_bytes": 55276163006,
   "storage_human": "55.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:23:24.056Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

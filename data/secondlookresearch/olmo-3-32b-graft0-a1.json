@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SecondLookResearch/Olmo-3-32B-graft0-a1",
   "slug": "secondlookresearch-olmo-3-32b-graft0-a1",
   "author": "SecondLookResearch",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 2147632489,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1125-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:33:28.955Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

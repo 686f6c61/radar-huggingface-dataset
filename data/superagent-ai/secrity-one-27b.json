@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superagent-ai/secrity-one-27b",
   "slug": "superagent-ai-secrity-one-27b",
   "author": "superagent-ai",
@@ -44,14 +44,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733595564,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "denis-pplx/autojev-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "superagent-ai/security-one-27b",
+  "renamed_at": "2026-11-11T07:40:13.412Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LNG_GSPO_GLM-4.1V-9B-Thinking_final-GGUF",
   "slug": "mradermacher-lng_gspo_glm-4-1v-9b-thinking_final-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "9.40B",
   "storage_bytes": 86835697792,
   "storage_human": "86.8 GB",
+  "context_length": 65536,
   "base_model": "hnv2520/LNG_GSPO_GLM-4.1V-9B-Thinking_final",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

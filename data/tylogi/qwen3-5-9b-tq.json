@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tylogi/Qwen3.5-9B-TQ",
   "slug": "tylogi-qwen3-5-9b-tq",
   "author": "Tylogi",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 63649868146,
   "storage_human": "63.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

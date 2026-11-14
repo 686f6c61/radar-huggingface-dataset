@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jtapsa/uuno-1B-7B-SFT",
   "slug": "jtapsa-uuno-1b-7b-sft",
   "author": "Jtapsa",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 152664248616,
   "storage_human": "152.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

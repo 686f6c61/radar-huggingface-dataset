@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Halpak/MiniMax-H3-Turbo-Lora-ComfyUI",
   "slug": "halpak-minimax-h3-turbo-lora-comfyui",
   "author": "Halpak",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 9876307760,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

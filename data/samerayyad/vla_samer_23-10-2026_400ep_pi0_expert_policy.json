@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SamerAyyad/VLA_Samer_23.10.2026_400ep_Pi0_expert_policy",
   "slug": "samerayyad-vla_samer_23-10-2026_400ep_pi0_expert_policy",
   "author": "SamerAyyad",
@@ -29,14 +29,19 @@
   "parameters_human": "4.03B",
   "storage_bytes": 8926903654,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

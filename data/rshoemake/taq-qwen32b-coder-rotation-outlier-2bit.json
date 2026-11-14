@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rshoemake/taq-qwen32b-coder-rotation-outlier-2bit",
   "slug": "rshoemake-taq-qwen32b-coder-rotation-outlier-2bit",
   "author": "rshoemake",
@@ -31,14 +31,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65527838704,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

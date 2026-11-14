@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddarthg44/anlp-a1-2023102040-C1",
   "slug": "siddarthg44-anlp-a1-2023102040-c1",
   "author": "siddarthg44",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 268609404,
   "storage_human": "269 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

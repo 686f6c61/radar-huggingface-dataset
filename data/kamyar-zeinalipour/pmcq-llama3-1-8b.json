@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kamyar-zeinalipour/PMCQ-Llama3.1-8b",
   "slug": "kamyar-zeinalipour-pmcq-llama3-1-8b",
   "author": "Kamyar-zeinalipour",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 6581470863,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

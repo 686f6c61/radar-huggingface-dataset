@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bohemian-self/Qwen3-ASR-1.7B_Yue",
   "slug": "bohemian-self-qwen3-asr-1-7b_yue",
   "author": "Bohemian-self",
@@ -24,14 +24,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 10982485694,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

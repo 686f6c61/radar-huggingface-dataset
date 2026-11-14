@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HlibPlakhtii/microduck-tug-quicksilver-v15",
   "slug": "hlibplakhtii-microduck-tug-quicksilver-v15",
   "author": "HlibPlakhtii",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1043486,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "jrubiosainz/microduck-tug-quicksilver-v14-h1-3cc8e430",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiankimr/pi05_libero10_ipec_seed42_step10000",
   "slug": "jiankimr-pi05_libero10_ipec_seed42_step10000",
   "author": "jiankimr",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 12441239631,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jiankimr/pi05_libero10_ipec_seed42_step10k",
+  "renamed_at": "2026-11-11T05:47:16.556Z",
   "benchmarks": [],
   "sources": [
     {

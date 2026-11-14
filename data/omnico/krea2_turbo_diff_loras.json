@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omnico/Krea2_turbo_diff_loras",
   "slug": "omnico-krea2_turbo_diff_loras",
   "author": "Omnico",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 826104753000,
   "storage_human": "826.1 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

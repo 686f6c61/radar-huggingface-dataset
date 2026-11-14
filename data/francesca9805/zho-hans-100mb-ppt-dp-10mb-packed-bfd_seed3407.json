@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407",
   "slug": "francesca9805-zho-hans-100mb-ppt-dp-10mb-packed-bfd_seed3407",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 250709005,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "goldfish-models/zho_hans_100mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

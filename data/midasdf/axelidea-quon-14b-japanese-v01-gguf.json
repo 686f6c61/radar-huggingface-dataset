@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Midasdf/AXELIDEA-QUON-14B-Japanese-v01-GGUF",
   "slug": "midasdf-axelidea-quon-14b-japanese-v01-gguf",
   "author": "Midasdf",
@@ -31,14 +31,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 8890306528,
   "storage_human": "8.9 GB",
+  "context_length": 16384,
   "base_model": "Axelidea/AXELIDEA-QUON-14B-Japanese-v01",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

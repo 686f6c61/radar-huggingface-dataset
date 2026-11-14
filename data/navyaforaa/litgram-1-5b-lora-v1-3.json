@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Navyaforaa/LitGram-1.5B-LoRA-v1.3",
   "slug": "navyaforaa-litgram-1-5b-lora-v1-3",
   "author": "Navyaforaa",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 85333377,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "Navyaforaa/LitGram-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

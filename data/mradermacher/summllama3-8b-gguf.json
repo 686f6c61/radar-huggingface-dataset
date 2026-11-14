@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SummLlama3-8B-GGUF",
   "slug": "mradermacher-summllama3-8b-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 71820230016,
   "storage_human": "71.8 GB",
+  "context_length": 8192,
   "base_model": "DISLab/SummLlama3-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

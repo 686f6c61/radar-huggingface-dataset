@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/sapiens2-matting-1b-bf16",
   "slug": "mlx-community-sapiens2-matting-1b-bf16",
   "author": "mlx-community",
@@ -32,6 +32,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3078727104,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "facebook/sapiens2-matting-1b",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

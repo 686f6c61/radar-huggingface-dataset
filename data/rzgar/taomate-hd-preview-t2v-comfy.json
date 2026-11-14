@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rzgar/TaoMate-HD-preview-T2V-Comfy",
   "slug": "rzgar-taomate-hd-preview-t2v-comfy",
   "author": "rzgar",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1247448934,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, TaoLiveAIGC/TaoMate-HD-preview",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T06:50:25.764Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

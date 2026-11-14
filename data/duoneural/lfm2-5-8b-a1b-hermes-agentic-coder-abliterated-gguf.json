@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-GGUF",
   "slug": "duoneural-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-gguf",
   "author": "DuoNeural",
@@ -36,14 +36,19 @@
   "parameters_human": "8.47B",
   "storage_bytes": 44103145056,
   "storage_human": "44.1 GB",
+  "context_length": 128000,
   "base_model": "DuoNeural/LFM2.5-8B-A1B-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

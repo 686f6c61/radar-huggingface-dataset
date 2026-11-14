@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openeurollm/Prelude-Marianna-midtrain-SFT-Excellent-v0.2",
   "slug": "openeurollm-prelude-marianna-midtrain-sft-excellent-v0-2",
   "author": "openeurollm",
@@ -33,14 +33,19 @@
   "parameters_human": "9.09B",
   "storage_bytes": 18227069635,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "marianna13/prelude-9b-midtrain-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

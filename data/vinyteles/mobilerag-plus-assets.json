@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vinyteles/mobilerag-plus-assets",
   "slug": "vinyteles-mobilerag-plus-assets",
   "author": "vinyteles",
@@ -31,14 +31,19 @@
   "parameters_human": "106.8M",
   "storage_bytes": 842348736,
   "storage_human": "842 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

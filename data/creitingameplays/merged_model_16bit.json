@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CreitinGameplays/merged_model_16bit",
   "slug": "creitingameplays-merged_model_16bit",
   "author": "CreitinGameplays",
@@ -37,14 +37,19 @@
   "parameters_human": "31.22B",
   "storage_bytes": 62464392943,
   "storage_human": "62.5 GB",
+  "context_length": null,
   "base_model": "unsloth/GLM-4.7-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CreitinGameplays/GLM-4.7-Flash-Fable-5-Distill",
+  "renamed_at": "2026-11-13T02:39:54.020Z",
   "benchmarks": [],
   "sources": [
     {

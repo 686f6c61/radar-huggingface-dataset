@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "padiredd/dp-cupbasket-v6-2k-cotrain-real075",
   "slug": "padiredd-dp-cupbasket-v6-2k-cotrain-real075",
   "author": "padiredd",
@@ -29,14 +29,19 @@
   "parameters_human": "287.5M",
   "storage_bytes": 11501994088,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PeytonT/SimulateAnything-Gemma-3-1B-v3",
   "slug": "peytont-simulateanything-gemma-3-1b-v3",
   "author": "PeytonT",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 8461496350,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "onnx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

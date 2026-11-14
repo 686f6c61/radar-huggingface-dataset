@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A16-Vision",
   "slug": "xananthium-qwen3-6-35b-a3b-hauhau-aggressive-w8a16-vision",
   "author": "Xananthium",
@@ -31,14 +31,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 38436131518,
   "storage_human": "38.4 GB",
+  "context_length": null,
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

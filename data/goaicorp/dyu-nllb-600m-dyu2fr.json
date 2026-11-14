@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "goaicorp/dyu-nllb-600M-dyu2fr",
   "slug": "goaicorp-dyu-nllb-600m-dyu2fr",
   "author": "goaicorp",
@@ -38,14 +38,19 @@
   "parameters_human": "615.1M",
   "storage_bytes": 39397935140,
   "storage_human": "39.4 GB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-distilled-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

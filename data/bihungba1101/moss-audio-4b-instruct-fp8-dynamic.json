@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bihungba1101/MOSS-Audio-4B-Instruct-FP8-Dynamic",
   "slug": "bihungba1101-moss-audio-4b-instruct-fp8-dynamic",
   "author": "bihungba1101",
@@ -34,14 +34,19 @@
   "parameters_human": "5.22B",
   "storage_bytes": 6814678720,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Audio-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:49:07.469Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

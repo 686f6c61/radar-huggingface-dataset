@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sambal/k2-horizon-3.7b-grpo-checkpoint-320",
   "slug": "sambal-k2-horizon-3-7b-grpo-checkpoint-320",
   "author": "sambal",
@@ -34,14 +34,19 @@
   "parameters_human": "5.06B",
   "storage_bytes": 10137185900,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

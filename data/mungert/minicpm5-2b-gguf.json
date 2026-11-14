@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mungert/MiniCPM5-2B-GGUF",
   "slug": "mungert-minicpm5-2b-gguf",
   "author": "Mungert",
@@ -49,14 +49,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 61851029152,
   "storage_human": "61.9 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

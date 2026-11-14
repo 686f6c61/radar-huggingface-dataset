@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Doyle-Writer-GGUF",
   "slug": "mradermacher-doyle-writer-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "44.9M",
   "storage_bytes": 494930336,
   "storage_human": "495 MB",
+  "context_length": 512,
   "base_model": "ChopinMaster8888/Doyle-Writer",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

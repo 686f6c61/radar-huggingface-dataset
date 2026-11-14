@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soyrsoyr/Qwen3.8-27B-NVFP4-MTP",
   "slug": "soyrsoyr-qwen3-8-27b-nvfp4-mtp",
   "author": "soyrsoyr",
@@ -32,14 +32,19 @@
   "parameters_human": "20.29B",
   "storage_bytes": 45804964685,
   "storage_human": "45.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:30:32.969Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

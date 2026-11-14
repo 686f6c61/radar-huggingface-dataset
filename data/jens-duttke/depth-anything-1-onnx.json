@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jens-Duttke/Depth-Anything-1-ONNX",
   "slug": "jens-duttke-depth-anything-1-onnx",
   "author": "Jens-Duttke",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 503160674,
   "storage_human": "503 MB",
+  "context_length": null,
   "base_model": "LiheYoung/depth-anything-small-hf, LiheYoung/depth-anything-base-hf",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

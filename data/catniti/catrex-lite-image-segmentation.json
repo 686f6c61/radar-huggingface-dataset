@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Catniti/catrex-lite-image-segmentation",
   "slug": "catniti-catrex-lite-image-segmentation",
   "author": "Catniti",
@@ -29,6 +29,7 @@
   "parameters_human": "4.6M",
   "storage_bytes": 37850865,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Catniti/catrex-1.0-image-segmentation",
+  "renamed_at": "2026-11-14T02:37:51.921Z",
   "benchmarks": [],
   "sources": [
     {

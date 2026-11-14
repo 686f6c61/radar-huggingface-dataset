@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Areftawana3/klinik-ticket-classifier-geberta-int8",
   "slug": "areftawana3-klinik-ticket-classifier-geberta-int8",
   "author": "Areftawana3",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 144111413,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "ikim-uk-essen/geberta-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T05:00:00.839Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-Research/Thomson-1.0-Small-DERISKED-BF16",
   "slug": "blackfrost-research-thomson-1-0-small-derisked-bf16",
   "author": "Blackfrost-Research",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "thomsonreuters/Thomson-1.0-Small",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:20:39.918Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

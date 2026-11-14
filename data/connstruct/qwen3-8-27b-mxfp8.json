@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "connstruct/Qwen3.8-27B-mxfp8",
   "slug": "connstruct-qwen3-8-27b-mxfp8",
   "author": "connstruct",
@@ -30,6 +30,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 27759226605,
   "storage_human": "27.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "deconfined/Qwen3.8-27B-mxfp8",
+  "renamed_at": "2026-11-13T05:07:29.931Z",
   "benchmarks": [],
   "sources": []
 }

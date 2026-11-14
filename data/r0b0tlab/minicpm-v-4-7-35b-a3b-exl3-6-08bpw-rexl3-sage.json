@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r0b0tlab/MiniCPM-V-4.7-35B-A3B-EXL3-6.08bpw-REXL3-SAGE",
   "slug": "r0b0tlab-minicpm-v-4-7-35b-a3b-exl3-6-08bpw-rexl3-sage",
   "author": "r0b0tlab",
@@ -40,14 +40,19 @@
   "parameters_human": "14.14B",
   "storage_bytes": 28355701175,
   "storage_human": "28.4 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

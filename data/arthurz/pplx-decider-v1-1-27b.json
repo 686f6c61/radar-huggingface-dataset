@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArthurZ/pplx-decider-v1.1-27b",
   "slug": "arthurz-pplx-decider-v1-1-27b",
   "author": "ArthurZ",
@@ -31,14 +31,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 22601408,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "perplexity-ai/pplx-decider-v1.1-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/KrynexAI-1.5-250M-Instruct-Mobile-GGUF",
   "slug": "mradermacher-krynexai-1-5-250m-instruct-mobile-gguf",
   "author": "mradermacher",
@@ -57,6 +57,7 @@
   "parameters_human": "229.7M",
   "storage_bytes": 2193019392,
   "storage_human": "2.2 GB",
+  "context_length": 2048,
   "base_model": "KrynexLabs/KrynexAI-1.5-250M-Instruct-Mobile",
   "formats": [
     "gguf",
@@ -64,8 +65,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

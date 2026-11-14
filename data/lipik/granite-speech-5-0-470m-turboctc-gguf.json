@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lipik/granite-speech-5.0-470m-turboctc-gguf",
   "slug": "lipik-granite-speech-5-0-470m-turboctc-gguf",
   "author": "lipik",
@@ -35,14 +35,19 @@
   "parameters_human": "473.0M",
   "storage_bytes": 505606496,
   "storage_human": "506 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

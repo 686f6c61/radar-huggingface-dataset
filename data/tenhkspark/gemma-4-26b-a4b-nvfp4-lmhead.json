@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tenhkspark/gemma-4-26B-A4B-NVFP4-lmhead",
   "slug": "tenhkspark-gemma-4-26b-a4b-nvfp4-lmhead",
   "author": "tenhkspark",
@@ -33,14 +33,19 @@
   "parameters_human": "14.39B",
   "storage_bytes": 19235891686,
   "storage_human": "19.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it, nvidia/Gemma-4-26B-A4B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

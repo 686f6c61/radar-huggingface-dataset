@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hitenn577/nli-MiniLM2-L6-H768-onnx",
   "slug": "hitenn577-nli-minilm2-l6-h768-onnx",
   "author": "hitenn577",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 165272509,
   "storage_human": "165 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

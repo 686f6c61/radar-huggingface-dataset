@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rmehra007/gemma-sql-lora-Q8_0-GGUF",
   "slug": "rmehra007-gemma-sql-lora-q8_0-gguf",
   "author": "rmehra007",
@@ -26,14 +26,19 @@
   "parameters_human": "20.8M",
   "storage_bytes": 32672672,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "rmehra007/gemma-sql-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dbgworld/AutoDecompiler-6.7B-pscode-Q4_K_M-GGUF",
   "slug": "dbgworld-autodecompiler-6-7b-pscode-q4_k_m-gguf",
   "author": "dbgworld",
@@ -27,14 +27,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 4082886880,
   "storage_human": "4.1 GB",
+  "context_length": 16384,
   "base_model": "AutoDecompiler/AutoDecompiler-6.7B-pscode",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

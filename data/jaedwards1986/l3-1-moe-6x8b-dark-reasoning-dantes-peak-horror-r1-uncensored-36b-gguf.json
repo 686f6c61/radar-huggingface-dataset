@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jaedwards1986/L3.1-MOE-6X8B-Dark-Reasoning-Dantes-Peak-HORROR-R1-Uncensored-36B-GGUF",
   "slug": "jaedwards1986-l3-1-moe-6x8b-dark-reasoning-dantes-peak-horror-r1-uncensored-36b-gguf",
   "author": "Jaedwards1986",
@@ -65,14 +65,19 @@
   "parameters_human": "36.22B",
   "storage_bytes": 245836409536,
   "storage_human": "245.8 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/L3.1-MOE-6X8B-Dark-Reasoning-Dantes-Peak-Hermes-R1-Uncensored-36B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

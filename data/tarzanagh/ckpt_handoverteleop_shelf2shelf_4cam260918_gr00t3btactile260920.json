@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3btactile260920",
   "slug": "tarzanagh-ckpt_handoverteleop_shelf2shelf_4cam260918_gr00t3btactile260920",
   "author": "tarzanagh",
@@ -31,14 +31,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576206737,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T09:03:44.073Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

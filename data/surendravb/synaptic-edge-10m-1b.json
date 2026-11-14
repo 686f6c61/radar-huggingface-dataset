@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SurendraVB/Synaptic-Edge-10M-1B",
   "slug": "surendravb-synaptic-edge-10m-1b",
   "author": "SurendraVB",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 65415065,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T07:44:12.931Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Autoregressive Language Modeling",

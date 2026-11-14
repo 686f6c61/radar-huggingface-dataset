@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pinaki29051974/customer_support_classifier_results",
   "slug": "pinaki29051974-customer_support_classifier_results",
   "author": "pinaki29051974",
@@ -31,14 +31,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 875928649,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-base-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

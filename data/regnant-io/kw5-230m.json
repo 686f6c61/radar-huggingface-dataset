@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "regnant-io/kw5-230M",
   "slug": "regnant-io-kw5-230m",
   "author": "regnant-io",
@@ -35,14 +35,19 @@
   "parameters_human": "259.1M",
   "storage_bytes": 1037101232,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

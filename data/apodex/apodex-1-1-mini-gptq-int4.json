@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "apodex/Apodex-1.1-mini-GPTQ-Int4",
   "slug": "apodex-apodex-1-1-mini-gptq-int4",
   "author": "apodex",
@@ -41,14 +41,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 24684441940,
   "storage_human": "24.7 GB",
+  "context_length": null,
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

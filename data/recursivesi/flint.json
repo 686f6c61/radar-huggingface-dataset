@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RecursiveSI/flint",
   "slug": "recursivesi-flint",
   "author": "RecursiveSI",
@@ -22,21 +22,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1399,
+  "likes": 1400,
   "downloads_30d": 54732,
-  "trending_score": 33,
+  "trending_score": 34,
   "parameters": 39785287456,
   "parameters_human": "39.79B",
   "storage_bytes": 79587116933,
   "storage_human": "79.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

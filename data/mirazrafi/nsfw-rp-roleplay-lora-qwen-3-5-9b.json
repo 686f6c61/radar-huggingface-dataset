@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mirazrafi/NSFW-RP-RolePlay-LoRA-Qwen-3.5-9B",
   "slug": "mirazrafi-nsfw-rp-roleplay-lora-qwen-3-5-9b",
   "author": "mirazrafi",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 485591589,
   "storage_human": "486 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, techwithsergiu/Qwen3.5-text-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

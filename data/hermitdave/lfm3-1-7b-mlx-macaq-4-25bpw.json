@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/LFM3-1.7B-MLX-MACaQ-4.25bpw",
   "slug": "hermitdave-lfm3-1-7b-mlx-macaq-4-25bpw",
   "author": "hermitdave",
@@ -32,14 +32,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 936952554,
   "storage_human": "937 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

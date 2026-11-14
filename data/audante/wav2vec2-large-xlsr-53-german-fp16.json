@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audante/wav2vec2-large-xlsr-53-german-fp16",
   "slug": "audante-wav2vec2-large-xlsr-53-german-fp16",
   "author": "Audante",
@@ -26,14 +26,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 631007604,
   "storage_human": "631 MB",
+  "context_length": null,
   "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-german",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

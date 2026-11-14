@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hahsksjsgs/deephat-uncensored-lora-Q8_0-GGUF",
   "slug": "hahsksjsgs-deephat-uncensored-lora-q8_0-gguf",
   "author": "Hahsksjsgs",
@@ -31,14 +31,19 @@
   "parameters_human": "10.1M",
   "storage_bytes": 14179872,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "Hahsksjsgs/deephat-uncensored-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

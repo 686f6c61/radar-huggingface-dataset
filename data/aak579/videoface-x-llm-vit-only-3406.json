@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aak579/VideoFace-X-LLM-ViT-only-3406",
   "slug": "aak579-videoface-x-llm-vit-only-3406",
   "author": "Aak579",
@@ -27,14 +27,19 @@
   "parameters_human": "8.08B",
   "storage_bytes": 16152392874,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVideo2_5_Chat_8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

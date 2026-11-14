@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged",
   "slug": "lugman-lfm2-5-350m-smoldataenv-matched2-8k-merged",
   "author": "lugman",
@@ -35,14 +35,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 708984464,
   "storage_human": "709 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T05:37:34.607Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

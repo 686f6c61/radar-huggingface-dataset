@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ddwang2000/EchoChat",
   "slug": "ddwang2000-echochat",
   "author": "ddwang2000",
@@ -35,14 +35,19 @@
   "parameters_human": "9.77B",
   "storage_bytes": 20809266554,
   "storage_human": "20.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

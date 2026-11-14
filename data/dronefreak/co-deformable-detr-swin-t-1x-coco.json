@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dronefreak/co-deformable-detr-swin-t-1x-coco",
   "slug": "dronefreak-co-deformable-detr-swin-t-1x-coco",
   "author": "dronefreak",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 264648852,
   "storage_human": "265 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

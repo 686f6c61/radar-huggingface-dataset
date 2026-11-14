@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TizzyT566/Ornith-1.5-35B-A3B-NVFP4-512K-GGUF",
   "slug": "tizzyt566-ornith-1-5-35b-a3b-nvfp4-512k-gguf",
   "author": "TizzyT566",
@@ -29,14 +29,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 24752907872,
   "storage_human": "24.8 GB",
+  "context_length": 524288,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B-NVFP4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

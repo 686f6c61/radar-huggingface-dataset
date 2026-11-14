@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter0",
   "slug": "ziyan98-e2k-cd82-qwen3-8-27b-sft_first_decl-cc-iter0",
   "author": "ziyan98",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575919151,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1tsuki/Cydonia-24B-v4.3",
   "slug": "1tsuki-cydonia-24b-v4-3",
   "author": "1tsuki",
@@ -25,14 +25,19 @@
   "parameters_human": "414720",
   "storage_bytes": 47161926909,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

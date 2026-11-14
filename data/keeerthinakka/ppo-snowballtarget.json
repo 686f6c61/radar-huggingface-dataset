@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keeerthinakka/ppo-SnowballTarget",
   "slug": "keeerthinakka-ppo-snowballtarget",
   "author": "keeerthinakka",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 25723295,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "keerthinakka/ppo-SnowballTarget",
+  "renamed_at": "2026-11-13T06:15:00.156Z",
   "benchmarks": [],
   "sources": [
     {

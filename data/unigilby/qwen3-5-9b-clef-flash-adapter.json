@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unigilby/Qwen3.5-9B-clef-flash-adapter",
   "slug": "unigilby-qwen3-5-9b-clef-flash-adapter",
   "author": "unigilby",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 3573968560,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, Cloudflare/clef-flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

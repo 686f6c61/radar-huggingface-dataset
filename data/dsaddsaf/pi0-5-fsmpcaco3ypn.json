@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dsaddsaf/pi0.5-FsMPCACo3YPN",
   "slug": "dsaddsaf-pi0-5-fsmpcaco3ypn",
   "author": "dsaddsaf",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 12441608375,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "prrrrrrrrrr/pi0.5-hFgzTkxlr2Hc",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T02:51:39.344Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

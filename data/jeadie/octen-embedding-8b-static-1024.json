@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jeadie/octen-embedding-8b-static-1024",
   "slug": "jeadie-octen-embedding-8b-static-1024",
   "author": "jeadie",
@@ -36,14 +36,19 @@
   "parameters_human": "155.3M",
   "storage_bytes": 310567008,
   "storage_human": "311 MB",
+  "context_length": null,
   "base_model": "Octen/Octen-Embedding-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

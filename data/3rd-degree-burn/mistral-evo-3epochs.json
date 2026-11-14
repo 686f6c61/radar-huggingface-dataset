@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3rd-Degree-Burn/Mistral-evo-3epochs",
   "slug": "3rd-degree-burn-mistral-evo-3epochs",
   "author": "3rd-Degree-Burn",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 167832240,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "monology/Mistral-7B-Instruct-v0.2-8bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:38:40.638Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

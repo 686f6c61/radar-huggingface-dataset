@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kadirify/atlas-orta-GGUF",
   "slug": "kadirify-atlas-orta-gguf",
   "author": "kadirify",
@@ -35,14 +35,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 6217257760,
   "storage_human": "6.2 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kadirify/atlas-medium-GGUF",
+  "renamed_at": "2026-11-13T06:13:08.348Z",
   "benchmarks": [],
   "sources": [
     {

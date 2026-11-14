@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Meditor-2-3.4B-Universal-i1-GGUF",
   "slug": "mradermacher-meditor-2-3-4b-universal-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "3.51B",
   "storage_bytes": 39962174752,
   "storage_human": "40.0 GB",
+  "context_length": 524288,
   "base_model": "Yo-Purple/Meditor-2-3.4B-Universal",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

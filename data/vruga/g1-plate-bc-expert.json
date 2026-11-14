@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vruga/g1-plate-bc-expert",
   "slug": "vruga-g1-plate-bc-expert",
   "author": "vruga",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 57474452,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "G1 plate transfer (BiGym2 move_plate, balanced-slot protocol)",

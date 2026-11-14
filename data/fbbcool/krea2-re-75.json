@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbbcool/krea2-re-75",
   "slug": "fbbcool-krea2-re-75",
   "author": "fbbcool",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 53553306104,
   "storage_human": "53.6 GB",
+  "context_length": null,
   "base_model": "comfy-org/krea-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

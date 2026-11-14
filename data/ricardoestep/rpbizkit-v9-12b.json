@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RicardoEstep/RPBizkit-v9-12B",
   "slug": "ricardoestep-rpbizkit-v9-12b",
   "author": "RicardoEstep",
@@ -56,14 +56,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24512686518,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "TheDrummer/UnslopNemo-12B-v4.1, LatitudeGames/Muse-12B, anthracite-org/magnum-v2-12b, ReadyArt/Forgotten-Safeword-12B-v4.0, inflatebot/MN-12B-Mag-Mell-R1, Gryphe/Pantheon-RP-1.6.1-12b-Nemo, ChaoticNeutrals/Nera_Noctis-12B, FallenMerick/MN-Violet-Lotus-12B, Elizezen/Himeyuri-v0.1-12B, MuXodious/Wayfarer-2-12B-absolute-heresy, ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2, SicariusSicariiStuff/Impish_Bloodmoon_12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

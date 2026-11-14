@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rezanicgil/job-radar-evidence-mentions-v3",
   "slug": "rezanicgil-job-radar-evidence-mentions-v3",
   "author": "rezanicgil",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 7696052,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

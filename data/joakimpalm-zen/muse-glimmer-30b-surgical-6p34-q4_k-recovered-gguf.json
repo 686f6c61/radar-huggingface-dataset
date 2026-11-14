@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-6p34-Q4_K-recovered-GGUF",
   "slug": "joakimpalm-zen-muse-glimmer-30b-surgical-6p34-q4_k-recovered-gguf",
   "author": "Joakimpalm-Zen",
@@ -32,14 +32,19 @@
   "parameters_human": "27.85B",
   "storage_bytes": 15686266304,
   "storage_human": "15.7 GB",
+  "context_length": 131072,
   "base_model": "Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q8_0-GGUF, meta-models/Muse-Glimmer-30B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

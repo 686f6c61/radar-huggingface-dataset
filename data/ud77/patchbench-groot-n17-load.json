@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UD77/patchbench-groot-n17-load",
   "slug": "ud77-patchbench-groot-n17-load",
   "author": "UD77",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576219216,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "UD77/latchbench-groot-n17-load",
+  "renamed_at": "2026-11-13T04:18:52.882Z",
   "benchmarks": [],
   "sources": []
 }

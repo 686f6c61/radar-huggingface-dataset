@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Erk-14B-GGUF",
   "slug": "mradermacher-erk-14b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 101987589632,
   "storage_human": "102.0 GB",
+  "context_length": 40960,
   "base_model": "ecloudtech/Erk-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

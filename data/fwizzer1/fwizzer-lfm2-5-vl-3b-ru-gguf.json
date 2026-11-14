@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fwizzer1/Fwizzer-LFM2.5-VL-3B-RU-GGUF",
   "slug": "fwizzer1-fwizzer-lfm2-5-vl-3b-ru-gguf",
   "author": "fwizzer1",
@@ -44,14 +44,19 @@
   "parameters_human": "426.3M",
   "storage_bytes": 853993952,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T02:44:01.255Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

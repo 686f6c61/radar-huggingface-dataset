@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AustinWay/qwen3-8b-first-grade-tutor",
   "slug": "austinway-qwen3-8b-first-grade-tutor",
   "author": "AustinWay",
@@ -36,6 +36,7 @@
   "parameters_human": "43.6M",
   "storage_bytes": 186113476,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/qwen3.8-27b-pmtp",
   "slug": "polydim-einsof-qwen3-8-27b-pmtp",
   "author": "Polydim-Einsof",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 293601819,
   "storage_human": "294 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "felixem/bert-tiny-combined-all-tasks",
   "slug": "felixem-bert-tiny-combined-all-tasks",
   "author": "felixem",
@@ -34,14 +34,19 @@
   "parameters_human": "4.4M",
   "storage_bytes": 87806069,
   "storage_human": "88 MB",
+  "context_length": null,
   "base_model": "google/bert_uncased_L-2_H-128_A-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:08:03.184Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

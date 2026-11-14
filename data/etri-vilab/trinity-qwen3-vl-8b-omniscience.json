@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "etri-vilab/Trinity-Qwen3-VL-8B-OmniScience",
   "slug": "etri-vilab-trinity-qwen3-vl-8b-omniscience",
   "author": "etri-vilab",
@@ -44,14 +44,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17546326074,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

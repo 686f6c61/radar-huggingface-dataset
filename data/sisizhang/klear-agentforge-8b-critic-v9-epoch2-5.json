@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sisizhang/klear-agentforge-8b-critic-v9-epoch2-5",
   "slug": "sisizhang-klear-agentforge-8b-critic-v9-epoch2-5",
   "author": "sisizhang",
@@ -36,14 +36,19 @@
   "parameters_human": "7.57B",
   "storage_bytes": 15148288004,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": "Kwai-Klear/Klear-AgentForge-8B-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kkk4oru/mossformer2-ss-16k-coreml",
   "slug": "kkk4oru-mossformer2-ss-16k-coreml",
   "author": "kkk4oru",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 131776039,
   "storage_human": "132 MB",
+  "context_length": null,
   "base_model": "alibabasglab/MossFormer2_SS_16K",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

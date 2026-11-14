@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/Depth-Anything-3-Small-OpenVINO",
   "slug": "mlboydaisuke-depth-anything-3-small-openvino",
   "author": "mlboydaisuke",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 319341861,
   "storage_human": "319 MB",
+  "context_length": null,
   "base_model": "mlboydaisuke/Depth-Anything-3-Small-LiteRT",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

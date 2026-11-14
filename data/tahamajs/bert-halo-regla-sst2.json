@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tahamajs/bert-halo-regla-sst2",
   "slug": "tahamajs-bert-halo-regla-sst2",
   "author": "tahamajs",
@@ -39,14 +39,19 @@
   "parameters_human": "117.9M",
   "storage_bytes": 471494648,
   "storage_human": "471 MB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hooshaai/bert-halo-regla-sst2",
+  "renamed_at": "2026-11-14T08:46:02.485Z",
   "benchmarks": [],
   "sources": []
 }

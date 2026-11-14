@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pyannote/speaker-diarization-3.1",
   "slug": "pyannote-speaker-diarization-3-1",
   "author": "pyannote",
@@ -30,19 +30,24 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 5176,
+  "likes": 5185,
   "downloads_30d": 6597019,
-  "trending_score": 83,
+  "trending_score": 84,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

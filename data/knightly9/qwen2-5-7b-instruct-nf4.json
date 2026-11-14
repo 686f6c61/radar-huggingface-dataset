@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Knightly9/Qwen2.5-7B-Instruct-nf4",
   "slug": "knightly9-qwen2-5-7b-instruct-nf4",
   "author": "Knightly9",
@@ -29,14 +29,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 5558676513,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

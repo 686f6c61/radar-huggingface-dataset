@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibyteohdear/gemma4-12b-heretic-ltx-2.5-bf16",
   "slug": "ibyteohdear-gemma4-12b-heretic-ltx-2-5-bf16",
   "author": "ibyteohdear",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 52527718320,
   "storage_human": "52.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

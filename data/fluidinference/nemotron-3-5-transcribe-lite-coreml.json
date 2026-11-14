@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/nemotron-3.5-transcribe-lite-coreml",
   "slug": "fluidinference-nemotron-3-5-transcribe-lite-coreml",
   "author": "FluidInference",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 5162474478,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

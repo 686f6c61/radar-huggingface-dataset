@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alpha-x-ai/clef-flash-NVFP4",
   "slug": "alpha-x-ai-clef-flash-nvfp4",
   "author": "alpha-x-ai",
@@ -45,14 +45,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 10293159013,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

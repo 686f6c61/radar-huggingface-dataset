@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ToastyPigeon/gemma-4-12b-cpt-rp-chapters-adapter",
   "slug": "toastypigeon-gemma-4-12b-cpt-rp-chapters-adapter",
   "author": "ToastyPigeon",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 468723822,
   "storage_human": "469 MB",
+  "context_length": null,
   "base_model": "ToastyPigeon/gemma-4-12b-full-cpt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

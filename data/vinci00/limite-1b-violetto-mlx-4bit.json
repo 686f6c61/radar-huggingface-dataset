@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vinci00/limite-1b-violetto-mlx-4bit",
   "slug": "vinci00-limite-1b-violetto-mlx-4bit",
   "author": "vinci00",
@@ -34,6 +34,7 @@
   "parameters_human": "1.04B",
   "storage_bytes": 594284923,
   "storage_human": "594 MB",
+  "context_length": null,
   "base_model": "paradigma-inc/limite-1b-violetto",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

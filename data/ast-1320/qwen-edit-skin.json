@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/qwen-edit-skin",
   "slug": "ast-1320-qwen-edit-skin",
   "author": "AST-1320",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 3400740903,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2509",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T03:48:31.560Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ClinicalCamel-70B-GGUF",
   "slug": "mradermacher-clinicalcamel-70b-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "68.98B",
   "storage_bytes": 468768646112,
   "storage_human": "468.8 GB",
+  "context_length": 4096,
   "base_model": "wanglab/ClinicalCamel-70B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baker76/pdftool-models",
   "slug": "baker76-pdftool-models",
   "author": "baker76",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 23970502637,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-OCR-2, Helsinki-NLP/opus-mt-es-en, storia/font-classify-onnx, jbarrow/FFDetr",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "baker76/ocrtool-models",
+  "renamed_at": "2026-11-13T04:53:38.429Z",
   "benchmarks": [],
   "sources": []
 }

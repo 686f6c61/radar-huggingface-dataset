@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minsonganingee/omnivla-edge-rides11-odom-20m-20260910",
   "slug": "minsonganingee-omnivla-edge-rides11-odom-20m-20260910",
   "author": "minsonganingee",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 4082352549,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

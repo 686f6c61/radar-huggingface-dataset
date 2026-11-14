@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Krylar/salivirac-t5-onnx",
   "slug": "krylar-salivirac-t5-onnx",
   "author": "Krylar",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 936723432,
   "storage_human": "937 MB",
+  "context_length": null,
   "base_model": "google-t5/t5-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

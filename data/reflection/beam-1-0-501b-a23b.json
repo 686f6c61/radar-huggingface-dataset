@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reflection/Beam-1.0-501B-A23B",
   "slug": "reflection-beam-1-0-501b-a23b",
   "author": "reflection",
@@ -29,21 +29,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 321,
+  "likes": 322,
   "downloads_30d": 14320,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": 501267612352,
   "parameters_human": "501.27B",
   "storage_bytes": 1002668503017,
   "storage_human": "1002.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

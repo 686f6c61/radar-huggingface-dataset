@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noctrex/Ling-3.0-flash-MXFP4_MOE-GGUF",
   "slug": "noctrex-ling-3-0-flash-mxfp4_moe-gguf",
   "author": "noctrex",
@@ -27,14 +27,19 @@
   "parameters_human": "127.49B",
   "storage_bytes": 70814172832,
   "storage_human": "70.8 GB",
+  "context_length": 262144,
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

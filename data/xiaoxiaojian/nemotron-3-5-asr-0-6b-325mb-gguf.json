@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xiaoxiaojian/nemotron-3.5-asr-0.6b-325mb-gguf",
   "slug": "xiaoxiaojian-nemotron-3-5-asr-0-6b-325mb-gguf",
   "author": "xiaoxiaojian",
@@ -73,14 +73,19 @@
   "parameters_human": "638.0M",
   "storage_bytes": 323593760,
   "storage_human": "324 MB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

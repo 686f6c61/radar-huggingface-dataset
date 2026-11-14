@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beling86/Ornith-1.5-122B-AutoRound-W3W4",
   "slug": "beling86-ornith-1-5-122b-autoround-w3w4",
   "author": "Beling86",
@@ -39,14 +39,19 @@
   "parameters_human": "16.40B",
   "storage_bytes": 59684877537,
   "storage_human": "59.7 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matthieulel/resnet101-galaxy10-decals-full-v2",
   "slug": "matthieulel-resnet101-galaxy10-decals-full-v2",
   "author": "matthieulel",
@@ -32,14 +32,19 @@
   "parameters_human": "42.6M",
   "storage_bytes": 170561456,
   "storage_human": "171 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Amateur-Trainee-Tyro-Neophyte/MyAwesomeModel-TestRepo",
   "slug": "amateur-trainee-tyro-neophyte-myawesomemodel-testrepo",
   "author": "Amateur-Trainee-Tyro-Neophyte",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:43:20.306Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

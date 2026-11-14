@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aimeri/name-generator-v2-GGUF",
   "slug": "aimeri-name-generator-v2-gguf",
   "author": "aimeri",
@@ -37,14 +37,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 11093059456,
   "storage_human": "11.1 GB",
+  "context_length": 262144,
   "base_model": "aimeri/name-generator-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

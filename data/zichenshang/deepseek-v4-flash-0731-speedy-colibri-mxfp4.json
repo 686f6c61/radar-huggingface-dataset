@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zichenshang/DeepSeek-V4-Flash-0731-speedy-colibri-mxfp4",
   "slug": "zichenshang-deepseek-v4-flash-0731-speedy-colibri-mxfp4",
   "author": "zichenshang",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 154748116866,
   "storage_human": "154.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

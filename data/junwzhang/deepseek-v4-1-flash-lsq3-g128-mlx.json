@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junwzhang/DeepSeek-V4.1-Flash-LSQ3-G128-MLX",
   "slug": "junwzhang-deepseek-v4-1-flash-lsq3-g128-mlx",
   "author": "junwzhang",
@@ -34,6 +34,7 @@
   "parameters_human": "763.21B",
   "storage_bytes": 451538187373,
   "storage_human": "451.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gnahzhang/DeepSeek-V4.1-Flash-LSQ3-G128-MLX",
+  "renamed_at": "2026-11-11T05:51:35.426Z",
   "benchmarks": [],
   "sources": []
 }

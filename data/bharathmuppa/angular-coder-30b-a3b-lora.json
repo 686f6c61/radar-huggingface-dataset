@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bharathmuppa/angular-coder-30b-a3b-lora",
   "slug": "bharathmuppa-angular-coder-30b-a3b-lora",
   "author": "bharathmuppa",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 107057840,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikimori/Qwen3.5-2B-Base-6bit",
   "slug": "nikimori-qwen3-5-2b-base-6bit",
   "author": "nikimori",
@@ -30,6 +30,7 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1549713616,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B-Base",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nikimoriOne/Qwen3.5-2B-Base-6bit",
+  "renamed_at": "2026-11-11T06:54:57.167Z",
   "benchmarks": [],
   "sources": [
     {

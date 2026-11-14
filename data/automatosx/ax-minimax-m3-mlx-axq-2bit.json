@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-MiniMax-M3-MLX-AXQ-2bit",
   "slug": "automatosx-ax-minimax-m3-mlx-axq-2bit",
   "author": "AutomatosX",
@@ -41,6 +41,7 @@
   "parameters_human": "427.04B",
   "storage_bytes": 221149827864,
   "storage_human": "221.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T08:11:23.727Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "georgeven/songmae-large-32x1-bird-detector",
   "slug": "georgeven-songmae-large-32x1-bird-detector",
   "author": "georgeven",
@@ -31,14 +31,19 @@
   "parameters_human": "96.5M",
   "storage_bytes": 1159135522,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "georgeven/songmae-large-32x1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

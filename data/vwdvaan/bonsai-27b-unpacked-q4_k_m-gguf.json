@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdvaan/Bonsai-27B-unpacked-Q4_K_M-GGUF",
   "slug": "vwdvaan-bonsai-27b-unpacked-q4_k_m-gguf",
   "author": "vwdvaan",
@@ -32,14 +32,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 16547399008,
   "storage_human": "16.5 GB",
+  "context_length": 262144,
   "base_model": "prism-ml/Bonsai-27B-unpacked",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T09:09:39.178Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

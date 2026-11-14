@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ASCXZ13DASX/MyAwesomeModel-TestRepo",
   "slug": "ascxz13dasx-myawesomemodel-testrepo",
   "author": "ASCXZ13DASX",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 23,
   "storage_human": "23 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T02:09:14.088Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

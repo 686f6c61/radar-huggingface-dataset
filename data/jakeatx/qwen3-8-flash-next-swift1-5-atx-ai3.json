@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakeatx/qwen3.8-flash-next-Swift1.5-ATX-AI3",
   "slug": "jakeatx-qwen3-8-flash-next-swift1-5-atx-ai3",
   "author": "jakeatx",
@@ -37,14 +37,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 80114445888,
   "storage_human": "80.1 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

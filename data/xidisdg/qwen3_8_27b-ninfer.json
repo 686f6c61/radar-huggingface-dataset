@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xidisdg/qwen3_8_27b-ninfer",
   "slug": "xidisdg-qwen3_8_27b-ninfer",
   "author": "xidisdg",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 168175446688,
   "storage_human": "168.2 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "xidisdg/qwen3.8_27b-uncensored-ninfer",
+  "renamed_at": "2026-11-11T08:07:38.591Z",
   "benchmarks": [],
   "sources": [
     {

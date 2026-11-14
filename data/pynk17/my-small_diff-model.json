@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pynk17/my-small_diff-model",
   "slug": "pynk17-my-small_diff-model",
   "author": "pynk17",
@@ -30,6 +30,7 @@
   "parameters_human": "113.7M",
   "storage_bytes": 458032392,
   "storage_human": "458 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

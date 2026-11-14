@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Qwen-Image-Layered_ComfyUI",
   "slug": "comfy-org-qwen-image-layered_comfyui",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 61649657642,
   "storage_human": "61.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Layered",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/Qwen-Image-Layered",
+  "renamed_at": "2026-11-11T02:32:21.120Z",
   "benchmarks": [],
   "sources": []
 }

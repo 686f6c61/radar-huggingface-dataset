@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Andrefty/qwen3-4b-vuln-sft-research",
   "slug": "andrefty-qwen3-4b-vuln-sft-research",
   "author": "Andrefty",
@@ -37,14 +37,19 @@
   "parameters_human": "196096",
   "storage_bytes": 66263486235,
   "storage_human": "66.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

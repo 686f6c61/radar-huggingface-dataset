@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edusc182/Llama-3.2-6B-MoE_Uncensored",
   "slug": "edusc182-llama-3-2-6b-moe_uncensored",
   "author": "edusc182",
@@ -26,14 +26,19 @@
   "parameters_human": "5.72B",
   "storage_bytes": 11458946435,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Llama-3.2-3B-Instruct-abliterated, DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

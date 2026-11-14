@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonshotai/Kimi-K3",
   "slug": "moonshotai-kimi-k3",
   "author": "moonshotai",
@@ -26,21 +26,26 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 11989,
+  "likes": 11992,
   "downloads_30d": 804457,
   "trending_score": 36,
   "parameters": 2779931837184,
   "parameters_human": "2779.93B",
   "storage_bytes": 1561018243668,
   "storage_human": "1561.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dbgworld/Qwen3-Coder-42B-A3B-Instruct-TOTAL-RECALL-MASTER-CODER-M-1million-ctx-Q4_K_M-GGUF",
   "slug": "dbgworld-qwen3-coder-42b-a3b-instruct-total-recall-master-coder-m-1million-ctx-q4_k_m-gguf",
   "author": "dbgworld",
@@ -64,14 +64,19 @@
   "parameters_human": "42.37B",
   "storage_bytes": 25703285120,
   "storage_human": "25.7 GB",
+  "context_length": 1048576,
   "base_model": "DavidAU/Qwen3-Coder-42B-A3B-Instruct-TOTAL-RECALL-MASTER-CODER-M-1million-ctx",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

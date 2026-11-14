@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/sensevoice-small-GGUF",
   "slug": "agentory-sensevoice-small-gguf",
   "author": "agentory",
@@ -48,14 +48,19 @@
   "parameters_human": "234.0M",
   "storage_bytes": 856631008,
   "storage_human": "857 MB",
+  "context_length": null,
   "base_model": "FunAudioLLM/SenseVoiceSmall",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:54.735Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xelsoftai/LexiAfrik_Wtiny_s42_20260831_152355",
   "slug": "xelsoftai-lexiafrik_wtiny_s42_20260831_152355",
   "author": "xelsoftai",
@@ -37,14 +37,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 151068665,
   "storage_human": "151 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T06:57:26.796Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Recognition",

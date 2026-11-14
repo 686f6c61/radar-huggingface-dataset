@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM-DFlash2",
   "slug": "ar4ikov-vibevoice-asr-streaming-7b-awq-w4a16-asym-dflash2",
   "author": "Ar4ikov",
@@ -34,14 +34,19 @@
   "parameters_human": "8.33B",
   "storage_bytes": 7549321904,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "Ar4ikov/VibeVoice-ASR-Streaming-7B-AWQ-W4A16-ASYM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

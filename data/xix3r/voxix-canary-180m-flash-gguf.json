@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-canary-180m-flash-gguf",
   "slug": "xix3r-voxix-canary-180m-flash-gguf",
   "author": "xix3r",
@@ -46,14 +46,19 @@
   "parameters_human": "189.1M",
   "storage_bytes": 2049245568,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "nvidia/canary-180m-flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

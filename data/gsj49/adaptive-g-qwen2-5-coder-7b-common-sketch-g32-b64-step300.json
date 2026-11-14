@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gsj49/adaptive-g-qwen2.5-coder-7b-common-sketch-g32-b64-step300",
   "slug": "gsj49-adaptive-g-qwen2-5-coder-7b-common-sketch-g32-b64-step300",
   "author": "Gsj49",
@@ -31,14 +31,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693784,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:37:55.056Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

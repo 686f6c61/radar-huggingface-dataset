@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nicolasembleton/gliner2.5-small-v1-onnx",
   "slug": "nicolasembleton-gliner2-5-small-v1-onnx",
   "author": "nicolasembleton",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1452158080,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2.5-small-v1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

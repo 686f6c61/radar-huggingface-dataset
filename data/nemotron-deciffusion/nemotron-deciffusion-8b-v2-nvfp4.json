@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nemotron-deciffusion/Nemotron-Deciffusion-8B-v2-NVFP4",
   "slug": "nemotron-deciffusion-nemotron-deciffusion-8b-v2-nvfp4",
   "author": "nemotron-deciffusion",
@@ -38,14 +38,19 @@
   "parameters_human": "6.28B",
   "storage_bytes": 7650326844,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "nemotron-deciffusion/Nemotron-Deciffusion-8B-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T04:29:20.360Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dianavdavidson/whisper-medium_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT",
   "slug": "dianavdavidson-whisper-medium_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_ft",
   "author": "dianavdavidson",
@@ -30,14 +30,19 @@
   "parameters_human": "763.9M",
   "storage_bytes": 58055347297,
   "storage_human": "58.1 GB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

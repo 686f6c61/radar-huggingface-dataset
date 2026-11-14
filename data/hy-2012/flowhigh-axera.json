@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HY-2012/FlowHigh.AXERA",
   "slug": "hy-2012-flowhigh-axera",
   "author": "HY-2012",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 136660312,
   "storage_human": "137 MB",
+  "context_length": null,
   "base_model": "kiriyamaX/FLowHigh_indep_adaptive_400k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AXERA-TECH/FlowHigh.AXERA",
+  "renamed_at": "2026-11-11T02:50:32.169Z",
   "benchmarks": [],
   "sources": []
 }

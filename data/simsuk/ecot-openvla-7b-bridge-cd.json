@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Simsuk/ecot-openvla-7b-bridge-cd",
   "slug": "simsuk-ecot-openvla-7b-bridge-cd",
   "author": "Simsuk",
@@ -33,14 +33,19 @@
   "parameters_human": "7.19B",
   "storage_bytes": 57505821771,
   "storage_human": "57.5 GB",
+  "context_length": null,
   "base_model": "Embodied-CoT/ecot-openvla-7b-bridge",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

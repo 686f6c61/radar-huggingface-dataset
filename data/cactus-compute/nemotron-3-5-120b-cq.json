@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cactus-Compute/nemotron-3.5-120b-cq",
   "slug": "cactus-compute-nemotron-3-5-120b-cq",
   "author": "Cactus-Compute",
@@ -63,6 +63,7 @@
   "parameters_human": "22.03B",
   "storage_bytes": 22080101359,
   "storage_human": "22.1 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
   "formats": [
     "mlx",
@@ -70,8 +71,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

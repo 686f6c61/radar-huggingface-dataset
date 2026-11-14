@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/parakeet-tdt-0.6b-v3",
   "slug": "nvidia-parakeet-tdt-0-6b-v3",
   "author": "nvidia",
@@ -100,13 +100,14 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 1276,
-  "downloads_30d": 528820,
+  "likes": 1277,
+  "downloads_30d": 529518,
   "trending_score": 10,
   "parameters": 627057286,
   "parameters_human": "627.1M",
   "storage_bytes": 13259047743,
   "storage_human": "13.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -114,8 +115,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

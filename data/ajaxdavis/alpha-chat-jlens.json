@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajaxdavis/alpha-chat-jlens",
   "slug": "ajaxdavis-alpha-chat-jlens",
   "author": "ajaxdavis",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 17258584,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": "ajaxdavis/alpha-60m-chat",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

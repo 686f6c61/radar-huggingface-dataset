@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8_0-GGUF",
   "slug": "mihai-leanzero-qwen3-8-27b-atlassian-q8_0-gguf",
   "author": "Mihai-LeanZero",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29047084672,
   "storage_human": "29.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

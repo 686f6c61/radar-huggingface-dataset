@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EustaquioAI/neoai-qwen3.5-0.8b-fp16",
   "slug": "eustaquioai-neoai-qwen3-5-0-8b-fp16",
   "author": "EustaquioAI",
@@ -27,6 +27,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524816950,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

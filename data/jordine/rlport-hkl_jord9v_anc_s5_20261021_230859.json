@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jordine/rlport-hkl_jord9v_anC_s5_20261021_230859",
   "slug": "jordine-rlport-hkl_jord9v_anc_s5_20261021_230859",
   "author": "Jordine",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 6439000351,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

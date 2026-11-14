@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/mistral-7b-fve-advanchor-s0",
   "slug": "joshycodes-mistral-7b-fve-advanchor-s0",
   "author": "joshycodes",
@@ -31,14 +31,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 14496668540,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T03:07:09.138Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

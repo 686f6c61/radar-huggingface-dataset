@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Okura66/Kahn1-Qwen2.5-3B-LoRA",
   "slug": "okura66-kahn1-qwen2-5-3b-lora",
   "author": "Okura66",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 730030708,
   "storage_human": "730 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

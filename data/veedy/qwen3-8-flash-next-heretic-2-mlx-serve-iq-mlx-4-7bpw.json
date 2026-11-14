@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Veedy/Qwen3.8-Flash-Next-heretic-2-MLX-Serve-iQ-MLX-4.7bpw",
   "slug": "veedy-qwen3-8-flash-next-heretic-2-mlx-serve-iq-mlx-4-7bpw",
   "author": "Veedy",
@@ -38,6 +38,7 @@
   "parameters_human": "133.20B",
   "storage_bytes": 107316215512,
   "storage_human": "107.3 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

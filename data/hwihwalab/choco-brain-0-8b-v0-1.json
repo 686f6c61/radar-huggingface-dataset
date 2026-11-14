@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hwihwalab/CHOCO-BRAIN-0.8B-v0.1",
   "slug": "hwihwalab-choco-brain-0-8b-v0-1",
   "author": "hwihwalab",
@@ -63,14 +63,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 835827503,
   "storage_human": "836 MB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

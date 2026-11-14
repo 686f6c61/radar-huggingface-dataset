@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dianavdavidson/indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_None_hinglish_mixed_scripts_FT",
   "slug": "dianavdavidson-indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_none_hinglish_mixed_scripts_ft",
   "author": "dianavdavidson",
@@ -30,14 +30,19 @@
   "parameters_human": "763.9M",
   "storage_bytes": 24444360017,
   "storage_human": "24.4 GB",
+  "context_length": null,
   "base_model": "parthiv11/indic_whisper_hi_multi_gpu",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

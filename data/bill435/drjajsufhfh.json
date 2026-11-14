@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bill435/Drjajsufhfh",
   "slug": "bill435-drjajsufhfh",
   "author": "Bill435",
@@ -60,14 +60,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 465146653725,
   "storage_human": "465.1 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

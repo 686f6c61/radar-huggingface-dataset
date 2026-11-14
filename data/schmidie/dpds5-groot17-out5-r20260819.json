@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Schmidie/dpds5-groot17-out5-r20260819",
   "slug": "schmidie-dpds5-groot17-out5-r20260819",
   "author": "Schmidie",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 27757470790,
   "storage_human": "27.8 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T04:09:56.560Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

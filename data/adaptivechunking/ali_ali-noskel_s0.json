@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdaptiveChunking/ali_ali-noskel_s0",
   "slug": "adaptivechunking-ali_ali-noskel_s0",
   "author": "AdaptiveChunking",
@@ -29,14 +29,19 @@
   "parameters_human": "22.8M",
   "storage_bytes": 3510657855,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

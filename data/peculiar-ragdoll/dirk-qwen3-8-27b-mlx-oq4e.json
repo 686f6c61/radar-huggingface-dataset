@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e",
   "slug": "peculiar-ragdoll-dirk-qwen3-8-27b-mlx-oq4e",
   "author": "peculiar-ragdoll",
@@ -45,6 +45,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 16995430511,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thermostatic/community-forensics-frontier-detector-2026-08",
   "slug": "thermostatic-community-forensics-frontier-detector-2026-08",
   "author": "Thermostatic",
@@ -34,6 +34,7 @@
   "parameters_human": "21.8M",
   "storage_bytes": 131040098,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "OwensLab/commfor-model-384",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

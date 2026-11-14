@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inception42/Jais-2-8B-Chat-GGUF",
   "slug": "inception42-jais-2-8b-chat-gguf",
   "author": "inception42",
@@ -36,14 +36,19 @@
   "parameters_human": "8.09B",
   "storage_bytes": 185126950528,
   "storage_human": "185.1 GB",
+  "context_length": 8192,
   "base_model": "inceptionai/Jais-2-8B-Chat",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

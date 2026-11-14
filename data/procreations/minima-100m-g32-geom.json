@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/minima-100m-g32-geom",
   "slug": "procreations-minima-100m-g32-geom",
   "author": "ProCreations",
@@ -27,14 +27,19 @@
   "parameters_human": "88.7M",
   "storage_bytes": 99966992,
   "storage_human": "100 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:00:21.458Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

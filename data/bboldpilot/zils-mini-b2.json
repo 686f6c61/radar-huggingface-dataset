@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bboldpilot/zils-mini-b2",
   "slug": "bboldpilot-zils-mini-b2",
   "author": "bboldpilot",
@@ -28,14 +28,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9078619840,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "WangSenQWQ/Senova-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:15:20.310Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

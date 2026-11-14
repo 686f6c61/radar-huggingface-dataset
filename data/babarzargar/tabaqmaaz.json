@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "babarzargar/tabaqmaaz",
   "slug": "babarzargar-tabaqmaaz",
   "author": "babarzargar",
@@ -23,14 +23,19 @@
   "parameters_human": "211.8M",
   "storage_bytes": 851217225,
   "storage_human": "851 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

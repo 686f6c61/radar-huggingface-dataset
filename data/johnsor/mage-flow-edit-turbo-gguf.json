@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnsor/Mage-Flow-Edit-Turbo-GGUF",
   "slug": "johnsor-mage-flow-edit-turbo-gguf",
   "author": "johnsor",
@@ -29,14 +29,19 @@
   "parameters_human": "4.12B",
   "storage_bytes": 6229917046,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "microsoft/Mage-Flow-Edit-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

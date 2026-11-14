@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrysh/qwen3.5-9b-int8_w8a16",
   "slug": "mrysh-qwen3-5-9b-int8_w8a16",
   "author": "mrysh",
@@ -29,14 +29,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 11012070699,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

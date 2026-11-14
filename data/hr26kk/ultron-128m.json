@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HR26kk/ULTRON-128M",
   "slug": "hr26kk-ultron-128m",
   "author": "HR26kk",
@@ -32,14 +32,19 @@
   "parameters_human": "151.0M",
   "storage_bytes": 302063272,
   "storage_human": "302 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T06:12:39.555Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

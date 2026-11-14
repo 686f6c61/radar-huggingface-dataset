@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danieltombay/siliconshield-rtl-contract-1",
   "slug": "danieltombay-siliconshield-rtl-contract-1",
   "author": "danieltombay",
@@ -34,14 +34,19 @@
   "parameters_human": "436.0M",
   "storage_bytes": 1744159560,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "debjyotikm/siliconshield-rtl-contract-1",
+  "renamed_at": "2026-11-11T04:56:38.505Z",
   "benchmarks": [],
   "sources": []
 }

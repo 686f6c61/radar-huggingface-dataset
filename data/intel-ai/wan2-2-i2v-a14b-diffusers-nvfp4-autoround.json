@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intel-ai/Wan2.2-I2V-A14B-Diffusers-NVFP4-AutoRound",
   "slug": "intel-ai-wan2-2-i2v-a14b-diffusers-nvfp4-autoround",
   "author": "intel-ai",
@@ -32,6 +32,7 @@
   "parameters_human": "8.14B",
   "storage_bytes": 28510902842,
   "storage_human": "28.5 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-I2V-A14B-Diffusers",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

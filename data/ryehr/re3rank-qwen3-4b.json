@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ryehr/RE3RANK-Qwen3-4B",
   "slug": "ryehr-re3rank-qwen3-4b",
   "author": "Ryehr",
@@ -36,14 +36,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 17447607043,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

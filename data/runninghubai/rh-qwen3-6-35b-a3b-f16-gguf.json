@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-qwen3.6-35b-a3b-f16-gguf",
   "slug": "runninghubai-rh-qwen3-6-35b-a3b-f16-gguf",
   "author": "RunningHubAI",
@@ -25,14 +25,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 899657984,
   "storage_human": "900 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

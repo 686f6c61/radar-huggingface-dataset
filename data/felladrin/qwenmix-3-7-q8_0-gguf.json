@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felladrin/QwenMix-3.7-Q8_0-GGUF",
   "slug": "felladrin-qwenmix-3-7-q8_0-gguf",
   "author": "Felladrin",
@@ -30,14 +30,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29047084832,
   "storage_human": "29.0 GB",
+  "context_length": 262144,
   "base_model": "bigattichouse/QwenMix-3.7",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Felladrin/gguf-Q8_0-QwenMix-3.7",
+  "renamed_at": "2026-11-14T02:59:15.100Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ketiswp/stm32ai-MobileNetV2-0.35-ImageNet-224-int8-uint8-onnx",
   "slug": "ketiswp-stm32ai-mobilenetv2-0-35-imagenet-224-int8-uint8-onnx",
   "author": "ketiswp",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 13080331,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

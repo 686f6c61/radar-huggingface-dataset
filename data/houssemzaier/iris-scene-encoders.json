@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "houssemzaier/iris-scene-encoders",
   "slug": "houssemzaier-iris-scene-encoders",
   "author": "houssemzaier",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 344059932,
   "storage_human": "344 MB",
+  "context_length": null,
   "base_model": "google/siglip2-base-patch16-224, wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

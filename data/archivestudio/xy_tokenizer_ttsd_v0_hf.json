@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchiveStudio/XY_Tokenizer_TTSD_V0_hf",
   "slug": "archivestudio-xy_tokenizer_ttsd_v0_hf",
   "author": "ArchiveStudio",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 2137279502,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T10:12:02.684Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

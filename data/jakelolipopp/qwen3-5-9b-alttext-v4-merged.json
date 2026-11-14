@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jakelolipopp/Qwen3.5-9B-AltText-v4-merged",
   "slug": "jakelolipopp-qwen3-5-9b-alttext-v4-merged",
   "author": "Jakelolipopp",
@@ -34,14 +34,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710731,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

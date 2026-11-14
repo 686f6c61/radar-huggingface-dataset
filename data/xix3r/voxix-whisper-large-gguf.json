@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-whisper-large-gguf",
   "slug": "xix3r-voxix-whisper-large-gguf",
   "author": "xix3r",
@@ -231,14 +231,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 1160366048,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

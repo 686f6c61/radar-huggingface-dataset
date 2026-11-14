@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t8star/IndexTTS-2.5-T8",
   "slug": "t8star-indextts-2-5-t8",
   "author": "t8star",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 8285602737,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "t8star/IndexTTS-2.5-Comfy",
+  "renamed_at": "2026-11-11T07:42:00.996Z",
   "benchmarks": [],
   "sources": [
     {

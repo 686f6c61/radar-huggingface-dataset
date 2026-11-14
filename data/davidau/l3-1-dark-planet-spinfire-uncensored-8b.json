@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/L3.1-Dark-Planet-SpinFire-Uncensored-8B",
   "slug": "davidau-l3-1-dark-planet-spinfire-uncensored-8b",
   "author": "DavidAU",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16060556336,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

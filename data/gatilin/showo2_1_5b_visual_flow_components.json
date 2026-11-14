@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/showo2_1_5b_visual_flow_components",
   "slug": "gatilin-showo2_1_5b_visual_flow_components",
   "author": "gatilin",
@@ -32,14 +32,19 @@
   "parameters_human": "1.29B",
   "storage_bytes": 3082620896,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "showlab/show-o2-1.5B, Wan-AI/Wan2.1-T2V-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

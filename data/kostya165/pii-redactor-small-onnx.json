@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kostya165/pii-redactor-small-ONNX",
   "slug": "kostya165-pii-redactor-small-onnx",
   "author": "Kostya165",
@@ -73,14 +73,19 @@
   "parameters_human": null,
   "storage_bytes": 599275125,
   "storage_human": "599 MB",
+  "context_length": null,
   "base_model": "Horizon-Labs/pii-redactor-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

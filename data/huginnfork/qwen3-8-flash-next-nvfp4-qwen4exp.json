@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huginnfork/Qwen3.8-Flash-Next-NVFP4-qwen4exp",
   "slug": "huginnfork-qwen3-8-flash-next-nvfp4-qwen4exp",
   "author": "huginnfork",
@@ -29,14 +29,19 @@
   "parameters_human": "92.68B",
   "storage_bytes": 105925426626,
   "storage_human": "105.9 GB",
+  "context_length": null,
   "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lflare/Qwen3.8-Flash-Next-NVFP4-qwen4exp",
+  "renamed_at": "2026-11-11T05:36:24.881Z",
   "benchmarks": [],
   "sources": [
     {

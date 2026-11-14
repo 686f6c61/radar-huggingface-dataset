@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DareModels/Qwen3.8-2B-Qwopus-Agent-Merge",
   "slug": "daremodels-qwen3-8-2b-qwopus-agent-merge",
   "author": "DareModels",
@@ -36,14 +36,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4439366846,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.5-2B-v3, Ma7ee7/Qwen3.5-2B-Agent, empero-ai/Qwen3.8-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

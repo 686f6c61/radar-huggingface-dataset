@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joseph31415926/nllb_hieroglyph",
   "slug": "joseph31415926-nllb_hieroglyph",
   "author": "Joseph31415926",
@@ -27,14 +27,19 @@
   "parameters_human": "630.6M",
   "storage_bytes": 2527453836,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

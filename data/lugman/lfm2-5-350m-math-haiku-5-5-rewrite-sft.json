@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lugman/LFM2.5-350M-Math-Haiku-5.5-Rewrite-SFT",
   "slug": "lugman-lfm2-5-350m-math-haiku-5-5-rewrite-sft",
   "author": "lugman",
@@ -35,14 +35,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 708984464,
   "storage_human": "709 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

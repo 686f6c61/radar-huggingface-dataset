@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tablinum/Moon-Beam-8B-A1B-FP8-Preview",
   "slug": "tablinum-moon-beam-8b-a1b-fp8-preview",
   "author": "tablinum",
@@ -44,14 +44,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 8428402449,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "tablinum/Moon-Beam-8B-A1B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abacusai/Toxicity-Lens",
   "slug": "abacusai-toxicity-lens",
   "author": "abacusai",
@@ -93,6 +93,7 @@
   "parameters_human": "307.5M",
   "storage_bytes": 6218105590,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "onnx",
@@ -100,8 +101,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "abacusai/Smaug-Toxicity-Perspective",
+  "renamed_at": "2026-11-14T04:50:43.441Z",
   "benchmarks": [],
   "sources": []
 }

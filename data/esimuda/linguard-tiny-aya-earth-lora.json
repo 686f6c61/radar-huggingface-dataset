@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Esimuda/linguard-tiny-aya-earth-lora",
   "slug": "esimuda-linguard-tiny-aya-earth-lora",
   "author": "Esimuda",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 52086089,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-earth",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

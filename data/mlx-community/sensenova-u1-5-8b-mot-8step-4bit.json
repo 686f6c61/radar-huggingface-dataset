@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/SenseNova-U1.5-8B-MoT-8step-4bit",
   "slug": "mlx-community-sensenova-u1-5-8b-mot-8step-4bit",
   "author": "mlx-community",
@@ -35,6 +35,7 @@
   "parameters_human": "17.53B",
   "storage_bytes": 11780219751,
   "storage_human": "11.8 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

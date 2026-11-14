@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anarcticwolve/Flux-NSFW-uncensored",
   "slug": "anarcticwolve-flux-nsfw-uncensored",
   "author": "anarcticwolve",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 687476088,
   "storage_human": "687 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

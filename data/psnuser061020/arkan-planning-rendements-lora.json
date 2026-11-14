@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "psnuser061020/arkan-planning-rendements-lora",
   "slug": "psnuser061020-arkan-planning-rendements-lora",
   "author": "psnuser061020",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 131223519,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

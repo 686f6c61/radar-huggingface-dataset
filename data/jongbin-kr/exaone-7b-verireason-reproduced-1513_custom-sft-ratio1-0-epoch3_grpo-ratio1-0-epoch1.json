@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/exaone-7b-verireason-reproduced-1513_custom-sft-ratio1.0-epoch3_grpo-ratio1.0-epoch1",
   "slug": "jongbin-kr-exaone-7b-verireason-reproduced-1513_custom-sft-ratio1-0-epoch3_grpo-ratio1-0-epoch1",
   "author": "Jongbin-kr",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2698935044,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:41:19.936Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

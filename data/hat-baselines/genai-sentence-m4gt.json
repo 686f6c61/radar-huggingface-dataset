@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HAT-Baselines/genai-sentence-m4gt",
   "slug": "hat-baselines-genai-sentence-m4gt",
   "author": "HAT-Baselines",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 774251090,
   "storage_human": "774 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

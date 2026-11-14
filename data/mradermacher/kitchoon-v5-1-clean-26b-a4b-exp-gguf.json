@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kitchoon-V5.1-Clean-26B-A4B-EXP-GGUF",
   "slug": "mradermacher-kitchoon-v5-1-clean-26b-a4b-exp-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 182858930144,
   "storage_human": "182.9 GB",
+  "context_length": 262144,
   "base_model": "SubMaroon/Kitchoon-V5.1-Clean-26B-A4B-EXP",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

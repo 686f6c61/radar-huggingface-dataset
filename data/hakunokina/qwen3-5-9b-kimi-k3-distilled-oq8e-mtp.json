@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hakunokina/Qwen3.5-9B-Kimi-k3-Distilled-oQ8e-mtp",
   "slug": "hakunokina-qwen3-5-9b-kimi-k3-distilled-oq8e-mtp",
   "author": "hakunokina",
@@ -37,6 +37,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 10736556326,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "khazarai/Qwen3.5-9B-Kimi-k3-Distilled",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

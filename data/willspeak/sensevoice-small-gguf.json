@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "willspeak/sensevoice-small-gguf",
   "slug": "willspeak-sensevoice-small-gguf",
   "author": "willspeak",
@@ -26,14 +26,19 @@
   "parameters_human": "234.0M",
   "storage_bytes": 895571616,
   "storage_human": "896 MB",
+  "context_length": null,
   "base_model": "FunAudioLLM/SenseVoiceSmall",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

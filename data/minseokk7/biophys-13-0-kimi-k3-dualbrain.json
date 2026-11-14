@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minseokk7/BioPhys-13.0-Kimi-K3-DualBrain",
   "slug": "minseokk7-biophys-13-0-kimi-k3-dualbrain",
   "author": "minseokk7",
@@ -43,12 +43,17 @@
   "parameters_human": "492288",
   "storage_bytes": 11095184901,
   "storage_human": "11.1 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/Ovis-Image-7B",
   "slug": "jinstudio-ovis-image-7b",
   "author": "Jinstudio",
@@ -35,6 +35,7 @@
   "parameters_human": "7.37B",
   "storage_bytes": 56760499384,
   "storage_human": "56.8 GB",
+  "context_length": null,
   "base_model": "AIDC-AI/Ovis2.5-2B",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

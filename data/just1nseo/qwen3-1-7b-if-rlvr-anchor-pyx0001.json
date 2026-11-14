@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0001",
   "slug": "just1nseo-qwen3-1-7b-if-rlvr-anchor-pyx0001",
   "author": "just1nseo",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 27540763646,
   "storage_human": "27.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

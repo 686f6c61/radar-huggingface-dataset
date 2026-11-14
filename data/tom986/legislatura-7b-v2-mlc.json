@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tom986/legislatura-7b-v2-MLC",
   "slug": "tom986-legislatura-7b-v2-mlc",
   "author": "tom986",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 4284263424,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

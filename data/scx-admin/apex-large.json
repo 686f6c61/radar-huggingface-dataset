@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scx-admin/Apex-large",
   "slug": "scx-admin-apex-large",
   "author": "scx-admin",
@@ -42,14 +42,19 @@
   "parameters_human": "8.98B",
   "storage_bytes": 17987990315,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "knowledgator/gliclass-v4-9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

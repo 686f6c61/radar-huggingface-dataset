@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM3-1.7B-Heretic-Max-GGUF",
   "slug": "mradermacher-lfm3-1-7b-heretic-max-gguf",
   "author": "mradermacher",
@@ -52,14 +52,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 15885902976,
   "storage_human": "15.9 GB",
+  "context_length": 262144,
   "base_model": "MihaiPopa-1/LFM3-1.7B-Heretic-Max",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

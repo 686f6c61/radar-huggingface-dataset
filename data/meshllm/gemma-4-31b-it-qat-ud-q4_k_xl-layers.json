@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meshllm/gemma-4-31B-it-qat-UD-Q4_K_XL-layers",
   "slug": "meshllm-gemma-4-31b-it-qat-ud-q4_k_xl-layers",
   "author": "meshllm",
@@ -34,14 +34,19 @@
   "parameters_human": "479.0M",
   "storage_bytes": 22984874048,
   "storage_human": "23.0 GB",
+  "context_length": 262144,
   "base_model": "unsloth/gemma-4-31B-it-qat-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

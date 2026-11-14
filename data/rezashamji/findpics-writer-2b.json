@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rezashamji/findpics-writer-2b",
   "slug": "rezashamji-findpics-writer-2b",
   "author": "rezashamji",
@@ -33,6 +33,7 @@
   "parameters_human": "2.13B",
   "storage_bytes": 1793463630,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/yolov8n-oiv7-coreml",
   "slug": "divinetribe-yolov8n-oiv7-coreml",
   "author": "divinetribe",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 14398413,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLOv8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

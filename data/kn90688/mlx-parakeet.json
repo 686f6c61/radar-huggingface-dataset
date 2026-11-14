@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kn90688/mlx-parakeet",
   "slug": "kn90688-mlx-parakeet",
   "author": "Kn90688",
@@ -23,14 +23,19 @@
   "parameters_human": "235.9M",
   "storage_bytes": 744379646,
   "storage_human": "744 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

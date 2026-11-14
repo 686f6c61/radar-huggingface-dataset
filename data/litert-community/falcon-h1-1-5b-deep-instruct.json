@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Falcon-H1-1.5B-Deep-Instruct",
   "slug": "litert-community-falcon-h1-1-5b-deep-instruct",
   "author": "litert-community",
@@ -27,18 +27,23 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 161,
+  "downloads_30d": 175,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 5499619776,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon-H1-1.5B-Deep-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

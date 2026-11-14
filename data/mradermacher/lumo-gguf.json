@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Lumo-GGUF",
   "slug": "mradermacher-lumo-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 877569152,
   "storage_human": "878 MB",
+  "context_length": 1024,
   "base_model": "LumoAI-Kurd/Lumo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

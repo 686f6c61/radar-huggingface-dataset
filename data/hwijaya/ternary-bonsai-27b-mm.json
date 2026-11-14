@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hwijaya/Ternary-Bonsai-27B-MM",
   "slug": "hwijaya-ternary-bonsai-27b-mm",
   "author": "hwijaya",
@@ -40,14 +40,19 @@
   "parameters_human": "3.98B",
   "storage_bytes": 11178708681,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-27B-unpacked, fraserprice/Ternary-Bonsai-2-27B-vllm",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

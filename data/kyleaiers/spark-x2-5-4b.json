@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KyleAIers/Spark-X2.5-4B",
   "slug": "kyleaiers-spark-x2-5-4b",
   "author": "KyleAIers",
@@ -32,14 +32,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 8234897398,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

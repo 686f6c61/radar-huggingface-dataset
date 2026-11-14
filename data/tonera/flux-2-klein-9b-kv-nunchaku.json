@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tonera/FLUX.2-klein-9b-kv-Nunchaku",
   "slug": "tonera-flux-2-klein-9b-kv-nunchaku",
   "author": "tonera",
@@ -37,6 +37,7 @@
   "parameters_human": "9.08B",
   "storage_bytes": 46051249874,
   "storage_human": "46.1 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9b-kv",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

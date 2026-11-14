@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chomeed/first_cable_insertion_uncased_pi05_foveavla_subtask_fullrgb_boxcrop_rel_chunk30_early45f_10k",
   "slug": "chomeed-first_cable_insertion_uncased_pi05_foveavla_subtask_fullrgb_boxcrop_rel_chunk30_early45f_10k",
   "author": "chomeed",
@@ -31,14 +31,19 @@
   "parameters_human": "4.15B",
   "storage_bytes": 16616701295,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

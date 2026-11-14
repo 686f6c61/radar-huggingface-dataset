@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Gemma4-Writer-31B-G-i1-GGUF",
   "slug": "mradermacher-gemma4-writer-31b-g-i1-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 334809597664,
   "storage_human": "334.8 GB",
+  "context_length": 262144,
   "base_model": "ConicCat/Gemma4-Writer-31B-G",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

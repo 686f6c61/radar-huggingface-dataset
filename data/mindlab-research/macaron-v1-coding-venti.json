@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mindlab-research/Macaron-V1-Coding-Venti",
   "slug": "mindlab-research-macaron-v1-coding-venti",
   "author": "mindlab-research",
@@ -44,14 +44,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 1506687604850,
   "storage_human": "1506.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

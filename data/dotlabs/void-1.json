@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dotlabs/void.1",
   "slug": "dotlabs-void-1",
   "author": "dotlabs",
@@ -39,14 +39,19 @@
   "parameters_human": "90.1M",
   "storage_bytes": 73502116897,
   "storage_human": "73.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

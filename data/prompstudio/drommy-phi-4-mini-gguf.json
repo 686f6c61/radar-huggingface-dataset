@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prompstudio/drommy-phi-4-mini-gguf",
   "slug": "prompstudio-drommy-phi-4-mini-gguf",
   "author": "prompstudio",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "drommo/drommy-phi-4-mini-gguf",
+  "renamed_at": "2026-11-11T07:11:19.528Z",
   "benchmarks": [],
   "sources": []
 }

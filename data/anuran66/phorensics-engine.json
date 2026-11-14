@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anuran66/Phorensics-Engine",
   "slug": "anuran66-phorensics-engine",
   "author": "Anuran66",
@@ -32,14 +32,19 @@
   "parameters_human": "9",
   "storage_bytes": 288,
   "storage_human": "288 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

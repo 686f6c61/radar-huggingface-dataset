@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hohmannc1/parakeet-medical-de-coreml",
   "slug": "hohmannc1-parakeet-medical-de-coreml",
   "author": "hohmannc1",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1128173433,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Mediform/parakeet-medical-de",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

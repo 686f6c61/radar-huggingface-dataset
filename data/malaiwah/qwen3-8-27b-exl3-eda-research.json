@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malaiwah/Qwen3.8-27B-EXL3-EDA-research",
   "slug": "malaiwah-qwen3-8-27b-exl3-eda-research",
   "author": "malaiwah",
@@ -39,14 +39,19 @@
   "parameters_human": "10.79B",
   "storage_bytes": 21600074836,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

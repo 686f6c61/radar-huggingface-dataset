@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "parsa-hke/vit-base-patch16-224-food101",
   "slug": "parsa-hke-vit-base-patch16-224-food101",
   "author": "parsa-hke",
@@ -28,6 +28,7 @@
   "parameters_human": "85.9M",
   "storage_bytes": 432248637,
   "storage_human": "432 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

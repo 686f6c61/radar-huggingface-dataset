@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ainch96/reprover-lean4-v1",
   "slug": "ainch96-reprover-lean4-v1",
   "author": "ainch96",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 159763365675,
   "storage_human": "159.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

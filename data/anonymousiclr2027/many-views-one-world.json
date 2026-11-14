@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anonymousICLR2027/many-views-one-world",
   "slug": "anonymousiclr2027-many-views-one-world",
   "author": "anonymousICLR2027",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2088490048,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

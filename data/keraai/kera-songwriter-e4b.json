@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KeraAI/kera-songwriter-e4b",
   "slug": "keraai-kera-songwriter-e4b",
   "author": "KeraAI",
@@ -41,6 +41,7 @@
   "parameters_human": "8.00B",
   "storage_bytes": 44676510456,
   "storage_human": "44.7 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

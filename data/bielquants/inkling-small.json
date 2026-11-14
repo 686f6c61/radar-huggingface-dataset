@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bielquants/Inkling-Small",
   "slug": "bielquants-inkling-small",
   "author": "bielquants",
@@ -31,14 +31,19 @@
   "parameters_human": "265.96B",
   "storage_bytes": 531944513947,
   "storage_human": "531.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

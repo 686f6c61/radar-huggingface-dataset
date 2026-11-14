@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/Qwen3.8-Flash-Next-MEP50",
   "slug": "inference-optimization-qwen3-8-flash-next-mep50",
   "author": "inference-optimization",
@@ -28,14 +28,19 @@
   "parameters_human": "118.31B",
   "storage_bytes": 236636233240,
   "storage_human": "236.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

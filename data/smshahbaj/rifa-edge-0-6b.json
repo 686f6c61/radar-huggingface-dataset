@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smshahbaj/RIFA-Edge-0.6B",
   "slug": "smshahbaj-rifa-edge-0-6b",
   "author": "smshahbaj",
@@ -37,6 +37,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 13467950122,
   "storage_human": "13.5 GB",
+  "context_length": 40960,
   "base_model": "smshahbaj/RIFA-Edge-0.6B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

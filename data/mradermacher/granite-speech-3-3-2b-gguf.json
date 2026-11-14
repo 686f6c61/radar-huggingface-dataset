@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/granite-speech-3.3-2b-GGUF",
   "slug": "mradermacher-granite-speech-3-3-2b-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "2.53B",
   "storage_bytes": 24499884928,
   "storage_human": "24.5 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-speech-3.3-2b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

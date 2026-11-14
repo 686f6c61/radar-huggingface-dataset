@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ycui7/MiMo-V2.6-Distill-Qwen-9B-NVFP4-MTP",
   "slug": "ycui7-mimo-v2-6-distill-qwen-9b-nvfp4-mtp",
   "author": "ycui7",
@@ -30,14 +30,19 @@
   "parameters_human": "5.69B",
   "storage_bytes": 7927955165,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

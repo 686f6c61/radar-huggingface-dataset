@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scribekey/scribekey-cleanup-fast-GGUF",
   "slug": "scribekey-scribekey-cleanup-fast-gguf",
   "author": "scribekey",
@@ -34,14 +34,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 758439808,
   "storage_human": "758 MB",
+  "context_length": 128000,
   "base_model": "scribekey/scribekey-cleanup-fast",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

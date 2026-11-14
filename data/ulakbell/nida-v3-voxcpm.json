@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ulakBELL/Nida-v3-VoxCPM",
   "slug": "ulakbell-nida-v3-voxcpm",
   "author": "ulakBELL",
@@ -37,14 +37,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 4961275040,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:22:39.588Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

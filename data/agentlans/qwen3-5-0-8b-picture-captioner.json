@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentlans/Qwen3.5-0.8B-Picture-Captioner",
   "slug": "agentlans-qwen3-5-0-8b-picture-captioner",
   "author": "agentlans",
@@ -32,14 +32,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1726019853,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-0.8B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheDrummer/Behemoth-128B-v3",
   "slug": "thedrummer-behemoth-128b-v3",
   "author": "TheDrummer",
@@ -26,14 +26,19 @@
   "parameters_human": "125.03B",
   "storage_bytes": 250085423222,
   "storage_human": "250.1 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Medium-3.5-128B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

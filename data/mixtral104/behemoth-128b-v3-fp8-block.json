@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mixtral104/Behemoth-128B-v3-FP8-BLOCK",
   "slug": "mixtral104-behemoth-128b-v3-fp8-block",
   "author": "Mixtral104",
@@ -30,14 +30,19 @@
   "parameters_human": "125.03B",
   "storage_bytes": 128297772174,
   "storage_human": "128.3 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Behemoth-128B-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

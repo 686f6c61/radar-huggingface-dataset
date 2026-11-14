@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/SmolLM2-135M-GGUF",
   "slug": "ggml-org-smollm2-135m-gguf",
   "author": "ggml-org",
@@ -28,14 +28,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 516712128,
   "storage_human": "517 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

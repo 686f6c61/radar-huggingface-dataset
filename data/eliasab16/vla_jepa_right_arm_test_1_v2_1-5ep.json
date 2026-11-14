@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eliasab16/vla_jepa_right_arm_test_1_v2_1.5ep",
   "slug": "eliasab16-vla_jepa_right_arm_test_1_v2_1-5ep",
   "author": "eliasab16",
@@ -22,14 +22,19 @@
   "parameters_human": "2.77B",
   "storage_bytes": 17194462228,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

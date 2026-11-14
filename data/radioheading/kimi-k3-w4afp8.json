@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Radioheading/Kimi-K3-W4AFP8",
   "slug": "radioheading-kimi-k3-w4afp8",
   "author": "Radioheading",
@@ -35,14 +35,19 @@
   "parameters_human": "1418.56B",
   "storage_bytes": 1483926193257,
   "storage_human": "1483.9 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

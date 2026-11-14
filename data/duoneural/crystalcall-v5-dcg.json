@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/CrystalCall-v5-DCG",
   "slug": "duoneural-crystalcall-v5-dcg",
   "author": "DuoNeural",
@@ -46,6 +46,7 @@
   "parameters_human": "116.1M",
   "storage_bytes": 1054396483,
   "storage_human": "1.1 GB",
+  "context_length": 512,
   "base_model": "Salesforce/xLAM-1b-fc-r",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

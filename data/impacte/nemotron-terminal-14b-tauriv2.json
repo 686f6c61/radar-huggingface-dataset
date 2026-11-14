@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "impacte/nemotron-terminal-14b-tauriv2",
   "slug": "impacte-nemotron-terminal-14b-tauriv2",
   "author": "impacte",
@@ -36,14 +36,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 9013175610,
   "storage_human": "9.0 GB",
+  "context_length": 40960,
   "base_model": "nvidia/Nemotron-Terminal-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VelociQ8/harrier-oss-v1-0.6b-Q8A64-GGUF",
   "slug": "velociq8-harrier-oss-v1-0-6b-q8a64-gguf",
   "author": "VelociQ8",
@@ -42,14 +42,19 @@
   "parameters_human": "620.8M",
   "storage_bytes": 2050090893,
   "storage_human": "2.1 GB",
+  "context_length": 32768,
   "base_model": "microsoft/harrier-oss-v1-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

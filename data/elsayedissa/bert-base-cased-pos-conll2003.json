@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elsayedissa/bert-base-cased-pos-conll2003",
   "slug": "elsayedissa-bert-base-cased-pos-conll2003",
   "author": "elsayedissa",
@@ -34,14 +34,19 @@
   "parameters_human": "107.8M",
   "storage_bytes": 431051869,
   "storage_human": "431 MB",
+  "context_length": null,
   "base_model": "bert-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

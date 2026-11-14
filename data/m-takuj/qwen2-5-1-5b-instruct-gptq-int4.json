@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m-takuj/Qwen2.5-1.5B-Instruct-GPTQ-Int4",
   "slug": "m-takuj-qwen2-5-1-5b-instruct-gptq-int4",
   "author": "m-takuj",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1517136703,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct-GPTQ-Int4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

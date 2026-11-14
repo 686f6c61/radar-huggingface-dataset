@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pugnola/finbert-finance-news-sentiment",
   "slug": "pugnola-finbert-finance-news-sentiment",
   "author": "Pugnola",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 875945490,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": "ProsusAI/finbert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Sentiment Classification",

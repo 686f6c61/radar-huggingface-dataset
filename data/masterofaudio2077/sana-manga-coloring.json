@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masterofaudio2077/sana-manga-coloring",
   "slug": "masterofaudio2077-sana-manga-coloring",
   "author": "masterofaudio2077",
@@ -39,14 +39,19 @@
   "parameters_human": "593.5M",
   "storage_bytes": 2382936278,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_600M_1024px_diffusers",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

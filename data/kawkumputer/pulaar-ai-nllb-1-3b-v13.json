@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kawkumputer/pulaar-ai-nllb-1.3b-v13",
   "slug": "kawkumputer-pulaar-ai-nllb-1-3b-v13",
   "author": "kawkumputer",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 409836530,
   "storage_human": "410 MB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-distilled-1.3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T06:41:03.338Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

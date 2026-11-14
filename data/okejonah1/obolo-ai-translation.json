@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Okejonah1/obolo-ai-translation",
   "slug": "okejonah1-obolo-ai-translation",
   "author": "Okejonah1",
@@ -37,14 +37,19 @@
   "parameters_human": "483.9M",
   "storage_bytes": 3873792498,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "GoogleCalc/obolo-ai-translation",
+  "renamed_at": "2026-11-11T03:27:42.468Z",
   "benchmarks": [],
   "sources": [
     {

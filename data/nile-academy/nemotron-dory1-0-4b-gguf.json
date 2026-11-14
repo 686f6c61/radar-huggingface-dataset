@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nile-academy/nemotron-dory1.0-4b-gguf",
   "slug": "nile-academy-nemotron-dory1-0-4b-gguf",
   "author": "nile-academy",
@@ -30,6 +30,7 @@
   "parameters_human": "3.98B",
   "storage_bytes": 19599241852,
   "storage_human": "19.6 GB",
+  "context_length": 262144,
   "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

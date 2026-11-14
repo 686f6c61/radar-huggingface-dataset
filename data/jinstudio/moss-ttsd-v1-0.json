@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/MOSS-TTSD-v1.0",
   "slug": "jinstudio-moss-ttsd-v1-0",
   "author": "Jinstudio",
@@ -70,14 +70,19 @@
   "parameters_human": "8.36B",
   "storage_bytes": 16722461107,
   "storage_human": "16.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T02:51:12.453Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rombakr5/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
   "slug": "rombakr5-gemma-4-e4b-uncensored-hauhaucs-aggressive",
   "author": "Rombakr5",
@@ -42,14 +42,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 61606110816,
   "storage_human": "61.6 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-e4b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:08:40.270Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

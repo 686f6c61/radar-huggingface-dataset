@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ddalcu/Qwen3.8-Flash-Next-MLX-Serve-4bit",
   "slug": "ddalcu-qwen3-8-flash-next-mlx-serve-4bit",
   "author": "ddalcu",
@@ -34,6 +34,7 @@
   "parameters_human": "129.44B",
   "storage_bytes": 105436151376,
   "storage_human": "105.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T04:59:47.182Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

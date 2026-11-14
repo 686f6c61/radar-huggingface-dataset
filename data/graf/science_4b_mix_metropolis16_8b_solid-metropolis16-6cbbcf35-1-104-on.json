@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "graf/science_4b_mix_metropolis16_8b_solid-metropolis16-6cbbcf35-1-104-on",
   "slug": "graf-science_4b_mix_metropolis16_8b_solid-metropolis16-6cbbcf35-1-104-on",
   "author": "graf",
@@ -35,14 +35,19 @@
   "parameters_human": "7.57B",
   "storage_bytes": 15148288185,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

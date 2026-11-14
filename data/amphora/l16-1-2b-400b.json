@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amphora/L16-1.2B-400B",
   "slug": "amphora-l16-1-2b-400b",
   "author": "amphora",
@@ -64,14 +64,19 @@
   "parameters_human": "1.16B",
   "storage_bytes": 18556827104,
   "storage_human": "18.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T03:49:57.020Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

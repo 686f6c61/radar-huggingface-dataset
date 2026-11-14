@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiayang23423423/test-vae",
   "slug": "jiayang23423423-test-vae",
   "author": "jiayang23423423",
@@ -24,14 +24,19 @@
   "parameters_human": "111333",
   "storage_bytes": 679340,
   "storage_human": "679340 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

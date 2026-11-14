@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aiuser3993/AMD-OLMo-1B-IT",
   "slug": "aiuser3993-amd-olmo-1b-it",
   "author": "aiuser3993",
@@ -33,14 +33,19 @@
   "parameters_human": "1.18B",
   "storage_bytes": 4707070632,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "amd/AMD-OLMo-1B-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

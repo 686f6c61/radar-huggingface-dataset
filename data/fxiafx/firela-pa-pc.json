@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fxiafx/firela-pa-pc",
   "slug": "fxiafx-firela-pa-pc",
   "author": "fxiafx",
@@ -31,14 +31,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 8827281697,
   "storage_human": "8.8 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "firela-ai/firela-pa-pc",
+  "renamed_at": "2026-11-11T05:22:46.179Z",
   "benchmarks": [],
   "sources": [
     {

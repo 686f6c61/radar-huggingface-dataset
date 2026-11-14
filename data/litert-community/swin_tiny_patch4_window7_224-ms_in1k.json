@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/swin_tiny_patch4_window7_224.ms_in1k",
   "slug": "litert-community-swin_tiny_patch4_window7_224-ms_in1k",
   "author": "litert-community",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 207684112,
   "storage_human": "208 MB",
+  "context_length": null,
   "base_model": "timm/swin_tiny_patch4_window7_224.ms_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

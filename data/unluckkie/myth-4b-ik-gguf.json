@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Unluckkie/Myth-4B-IK-GGUF",
   "slug": "unluckkie-myth-4b-ik-gguf",
   "author": "Unluckkie",
@@ -37,14 +37,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 18132988887,
   "storage_human": "18.1 GB",
+  "context_length": 262144,
   "base_model": "dracko14/Myth-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

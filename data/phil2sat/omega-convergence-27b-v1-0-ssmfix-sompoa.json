@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Phil2Sat/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA",
   "slug": "phil2sat-omega-convergence-27b-v1-0-ssmfix-sompoa",
   "author": "Phil2Sat",
@@ -30,14 +30,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582996501,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Omega-Convergence-27B-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "27B-Suite/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA",
+  "renamed_at": "2026-11-12T03:41:29.455Z",
   "benchmarks": [],
   "sources": [
     {

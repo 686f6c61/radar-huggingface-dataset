@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moravianai/ThinEmbed-bge-m3",
   "slug": "moravianai-thinembed-bge-m3",
   "author": "moravianai",
@@ -42,14 +42,19 @@
   "parameters_human": "566.7M",
   "storage_bytes": 711652313,
   "storage_human": "712 MB",
+  "context_length": 8192,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

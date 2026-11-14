@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/f2llm-v2-0.6b-GGUF",
   "slug": "cstr-f2llm-v2-0-6b-gguf",
   "author": "cstr",
@@ -35,14 +35,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 15228168160,
   "storage_human": "15.2 GB",
+  "context_length": 40960,
   "base_model": "codefuse-ai/F2LLM-v2-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

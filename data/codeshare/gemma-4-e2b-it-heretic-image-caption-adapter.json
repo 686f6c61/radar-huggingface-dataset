@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codeShare/gemma-4-E2B-it-heretic-image-caption-adapter",
   "slug": "codeshare-gemma-4-e2b-it-heretic-image-caption-adapter",
   "author": "codeShare",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 1095083562,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "coder3101/gemma-4-E2B-it-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

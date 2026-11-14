@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuri-superAI/pi0.5-r2Z3b4LPsReP",
   "slug": "yuri-superai-pi0-5-r2z3b4lpsrep",
   "author": "yuri-superAI",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 12396576927,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

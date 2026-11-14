@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thuongvv/Supertonic-3-VectorEstimator-CoreML-W8",
   "slug": "thuongvv-supertonic-3-vectorestimator-coreml-w8",
   "author": "thuongvv",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 64356615,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": "Supertone/supertonic-3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

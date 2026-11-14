@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stabilityai/stable-audio-3-small-sfx",
   "slug": "stabilityai-stable-audio-3-small-sfx",
   "author": "stabilityai",
@@ -27,21 +27,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 390,
+  "likes": 392,
   "downloads_30d": 69664,
   "trending_score": 11,
   "parameters": 567573761,
   "parameters_human": "567.6M",
   "storage_bytes": 3493474189,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-audio-3-small-sfx-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

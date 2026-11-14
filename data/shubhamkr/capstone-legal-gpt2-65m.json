@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shubhamkr/capstone-legal-gpt2-65m",
   "slug": "shubhamkr-capstone-legal-gpt2-65m",
   "author": "shubhamkr",
@@ -28,14 +28,19 @@
   "parameters_human": "65.4M",
   "storage_bytes": 311587310,
   "storage_human": "312 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

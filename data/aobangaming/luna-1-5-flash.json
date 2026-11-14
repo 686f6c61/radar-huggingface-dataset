@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aobangaming/luna-1.5-flash",
   "slug": "aobangaming-luna-1-5-flash",
   "author": "Aobangaming",
@@ -44,14 +44,19 @@
   "parameters_human": "43.2M",
   "storage_bytes": 172775680,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Aobangaming/lightning-30m-ft, Aobangaming/lightning-60m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

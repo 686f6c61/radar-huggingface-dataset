@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "visible-cx/gemma4-26b-a4b-CoreAI",
   "slug": "visible-cx-gemma4-26b-a4b-coreai",
   "author": "visible-cx",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 35128759487,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

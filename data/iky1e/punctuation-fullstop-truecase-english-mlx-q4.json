@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iky1e/punctuation-fullstop-truecase-english-mlx-q4",
   "slug": "iky1e-punctuation-fullstop-truecase-english-mlx-q4",
   "author": "iky1e",
@@ -34,6 +34,7 @@
   "parameters_human": "8.3M",
   "storage_bytes": 30300171,
   "storage_human": "30 MB",
+  "context_length": null,
   "base_model": "1-800-BAD-CODE/punctuation_fullstop_truecase_english",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

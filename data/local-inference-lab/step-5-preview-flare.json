@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "local-inference-lab/Step-5-Preview-FLARE",
   "slug": "local-inference-lab-step-5-preview-flare",
   "author": "local-inference-lab",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 350062321719,
   "storage_human": "350.1 GB",
+  "context_length": null,
   "base_model": "stepfun-ai/Step-5-Preview-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

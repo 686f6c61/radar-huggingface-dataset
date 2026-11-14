@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jattt6789/Qwen3.5-9B-Ultra-Uncensored-Heretic-GGUF",
   "slug": "jattt6789-qwen3-5-9b-ultra-uncensored-heretic-gguf",
   "author": "Jattt6789",
@@ -35,14 +35,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 68548988128,
   "storage_human": "68.5 GB",
+  "context_length": 262144,
   "base_model": "llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

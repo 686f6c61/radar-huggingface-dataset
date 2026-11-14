@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/GLM-ASR-Nano-2512-4bit",
   "slug": "flyingfishinwater-glm-asr-nano-2512-4bit",
   "author": "flyingfishinwater",
@@ -39,6 +39,7 @@
   "parameters_human": "2.26B",
   "storage_bytes": 1281444421,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:25.966Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

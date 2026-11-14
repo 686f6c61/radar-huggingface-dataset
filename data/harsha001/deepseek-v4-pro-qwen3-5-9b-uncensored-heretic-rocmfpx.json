@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-ROCmFPX",
   "slug": "harsha001-deepseek-v4-pro-qwen3-5-9b-uncensored-heretic-rocmfpx",
   "author": "Harsha001",
@@ -54,14 +54,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 18039348352,
   "storage_human": "18.0 GB",
+  "context_length": 262144,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

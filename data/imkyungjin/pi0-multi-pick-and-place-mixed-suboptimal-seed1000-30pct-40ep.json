@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-30pct-40ep",
   "slug": "imkyungjin-pi0-multi-pick-and-place-mixed-suboptimal-seed1000-30pct-40ep",
   "author": "ImKyungjin",
@@ -27,14 +27,19 @@
   "parameters_human": "3.50B",
   "storage_bytes": 14023104816,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

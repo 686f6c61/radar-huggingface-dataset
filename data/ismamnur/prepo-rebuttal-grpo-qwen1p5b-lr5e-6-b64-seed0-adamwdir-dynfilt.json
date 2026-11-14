@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ismamNur/prepo-rebuttal-grpo-qwen1p5b-lr5e-6-b64-seed0-adamwdir-dynfilt",
   "slug": "ismamnur-prepo-rebuttal-grpo-qwen1p5b-lr5e-6-b64-seed0-adamwdir-dynfilt",
   "author": "ismamNur",
@@ -23,14 +23,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 3565636648,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

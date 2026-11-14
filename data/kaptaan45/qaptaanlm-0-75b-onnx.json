@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaptaan45/QaptaanLM-0.75B-ONNX",
   "slug": "kaptaan45-qaptaanlm-0-75b-onnx",
   "author": "kaptaan45",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 4044425375,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "kaptaan45/QaptaanLM-0.75B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

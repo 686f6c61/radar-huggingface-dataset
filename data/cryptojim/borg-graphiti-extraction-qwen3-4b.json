@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cryptojim/borg-graphiti-extraction-qwen3-4b",
   "slug": "cryptojim-borg-graphiti-extraction-qwen3-4b",
   "author": "Cryptojim",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 29384266,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

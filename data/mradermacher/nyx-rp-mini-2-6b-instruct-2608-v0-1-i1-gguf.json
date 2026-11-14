@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1-i1-GGUF",
   "slug": "mradermacher-nyx-rp-mini-2-6b-instruct-2608-v0-1-i1-gguf",
   "author": "mradermacher",
@@ -54,6 +54,7 @@
   "parameters_human": "2.70B",
   "storage_bytes": 31931318656,
   "storage_human": "31.9 GB",
+  "context_length": 131072,
   "base_model": "Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1",
   "formats": [
     "gguf",
@@ -61,8 +62,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/chatterbox-turbo-GGUF",
   "slug": "agentory-chatterbox-turbo-gguf",
   "author": "agentory",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 2272617574,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox-turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:50.552Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

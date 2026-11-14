@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cowWhySo/jeeves-mlx",
   "slug": "cowwhyso-jeeves-mlx",
   "author": "cowWhySo",
@@ -37,6 +37,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 32497328685,
   "storage_human": "32.5 GB",
+  "context_length": null,
   "base_model": "PostHog/jeeves",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

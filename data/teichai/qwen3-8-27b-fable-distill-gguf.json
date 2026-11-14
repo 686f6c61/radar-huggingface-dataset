@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TeichAI/Qwen3.8-27B-Fable-Distill-GGUF",
   "slug": "teichai-qwen3-8-27b-fable-distill-gguf",
   "author": "TeichAI",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 270792405984,
   "storage_human": "270.8 GB",
+  "context_length": 262144,
   "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

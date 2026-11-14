@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
   "slug": "danielrosehill-parakeet-tdt-0-6b-v2-english-hebrew-codeswitching",
   "author": "danielrosehill",
@@ -44,6 +44,7 @@
   "parameters_human": "617.9M",
   "storage_bytes": 48485139814,
   "storage_human": "48.5 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v2",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T05:12:29.451Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

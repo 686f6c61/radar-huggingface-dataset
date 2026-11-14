@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-ar30k",
   "slug": "open-sci-qwen2-5-1-5b-dpo-tulu3-decontaminated-ar30k",
   "author": "open-sci",
@@ -34,14 +34,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098103170,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

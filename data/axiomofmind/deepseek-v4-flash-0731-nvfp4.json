@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axiomofmind/DeepSeek-V4-Flash-0731-NVFP4",
   "slug": "axiomofmind-deepseek-v4-flash-0731-nvfp4",
   "author": "axiomofmind",
@@ -35,14 +35,19 @@
   "parameters_human": "304.18B",
   "storage_bytes": 175562226308,
   "storage_human": "175.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

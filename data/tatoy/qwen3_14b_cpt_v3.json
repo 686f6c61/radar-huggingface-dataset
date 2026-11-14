@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tatoy/qwen3_14b_cpt_v3",
   "slug": "tatoy-qwen3_14b_cpt_v3",
   "author": "tatoy",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1121173709205,
   "storage_human": "1121.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-14B-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T05:19:51.814Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

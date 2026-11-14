@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muahmed7338/cov-r1-ds-omni-grpo-7b",
   "slug": "muahmed7338-cov-r1-ds-omni-grpo-7b",
   "author": "muahmed7338",
@@ -32,14 +32,19 @@
   "parameters_human": "6.91B",
   "storage_bytes": 290239696162,
   "storage_human": "290.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T05:41:17.599Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

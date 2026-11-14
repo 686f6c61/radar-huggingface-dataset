@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "giuseppe-aiello/stance-nli-finetuned-it",
   "slug": "giuseppe-aiello-stance-nli-finetuned-it",
   "author": "giuseppe-aiello",
@@ -34,14 +34,19 @@
   "parameters_human": "278.8M",
   "storage_bytes": 1131275520,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

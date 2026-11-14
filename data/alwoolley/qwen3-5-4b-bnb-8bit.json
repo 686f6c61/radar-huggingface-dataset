@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alwoolley/Qwen3.5-4B-bnb-8bit",
   "slug": "alwoolley-qwen3-5-4b-bnb-8bit",
   "author": "alwoolley",
@@ -30,14 +30,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 4867046461,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T03:54:49.106Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

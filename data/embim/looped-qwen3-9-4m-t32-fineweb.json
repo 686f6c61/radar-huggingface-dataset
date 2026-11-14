@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Embim/looped-qwen3-9.4M-T32-fineweb",
   "slug": "embim-looped-qwen3-9-4m-t32-fineweb",
   "author": "Embim",
@@ -37,14 +37,19 @@
   "parameters_human": "9.4M",
   "storage_bytes": 37907353,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Language modelling",

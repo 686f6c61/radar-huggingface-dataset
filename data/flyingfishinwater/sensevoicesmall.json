@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/SenseVoiceSmall",
   "slug": "flyingfishinwater-sensevoicesmall",
   "author": "flyingfishinwater",
@@ -31,6 +31,7 @@
   "parameters_human": "234.0M",
   "storage_bytes": 936477465,
   "storage_human": "936 MB",
+  "context_length": null,
   "base_model": "FunAudioLLM/SenseVoiceSmall",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:28.057Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/MiniCPM5-2B-CoreAI",
   "slug": "mlboydaisuke-minicpm5-2b-coreai",
   "author": "mlboydaisuke",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 10258226297,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

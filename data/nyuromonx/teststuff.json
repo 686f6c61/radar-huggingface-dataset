@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NyuromonX/TestStuff",
   "slug": "nyuromonx-teststuff",
   "author": "NyuromonX",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 8902155632,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:15:09.048Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

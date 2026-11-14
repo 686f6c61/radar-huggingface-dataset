@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YSX-Luvletter/Qwen2-VL-OCR-2B-Instruct",
   "slug": "ysx-luvletter-qwen2-vl-ocr-2b-instruct",
   "author": "YSX-Luvletter",
@@ -44,14 +44,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4426175692,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

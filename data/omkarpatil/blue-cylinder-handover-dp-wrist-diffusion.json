@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omkarpatil/blue-cylinder-handover-dp-wrist-diffusion",
   "slug": "omkarpatil-blue-cylinder-handover-dp-wrist-diffusion",
   "author": "omkarpatil",
@@ -27,14 +27,19 @@
   "parameters_human": "274.5M",
   "storage_bytes": 1098027904,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T06:55:06.138Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

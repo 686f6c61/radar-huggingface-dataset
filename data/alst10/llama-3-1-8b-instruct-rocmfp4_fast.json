@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/Llama-3.1-8B-Instruct-ROCMFP4_FAST",
   "slug": "alst10-llama-3-1-8b-instruct-rocmfp4_fast",
   "author": "alst10",
@@ -31,14 +31,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4274840544,
   "storage_human": "4.3 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

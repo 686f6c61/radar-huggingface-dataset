@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VINAY-UMRETHE/Qwen3.5-4B-heretic-test-ara",
   "slug": "vinay-umrethe-qwen3-5-4b-heretic-test-ara",
   "author": "VINAY-UMRETHE",
@@ -35,14 +35,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9118599277,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:22:29.757Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "F4lls/service-anomaly-detector",
   "slug": "f4lls-service-anomaly-detector",
   "author": "F4lls",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 6509718,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FelipeJMcd/service-anomaly-detector",
+  "renamed_at": "2026-11-11T02:44:03.383Z",
   "benchmarks": [],
   "sources": []
 }

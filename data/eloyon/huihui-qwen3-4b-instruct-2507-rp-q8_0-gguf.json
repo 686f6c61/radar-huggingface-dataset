@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EloyOn/Huihui-Qwen3-4B-Instruct-2507-RP-Q8_0-GGUF",
   "slug": "eloyon-huihui-qwen3-4b-instruct-2507-rp-q8_0-gguf",
   "author": "EloyOn",
@@ -29,14 +29,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 4280401376,
   "storage_human": "4.3 GB",
+  "context_length": 262144,
   "base_model": "thaddeusk/Huihui-Qwen3-4B-Instruct-2507-RP",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

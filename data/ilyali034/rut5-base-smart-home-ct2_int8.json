@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ilyali034/ruT5-base-smart-home-ct2_int8",
   "slug": "ilyali034-rut5-base-smart-home-ct2_int8",
   "author": "ilyali034",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 224014346,
   "storage_human": "224 MB",
+  "context_length": null,
   "base_model": "ilyali034/ruT5-base-smart-home",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sherkhan243/Nemotron-3.5-Transcribe-kk-v2",
   "slug": "sherkhan243-nemotron-3-5-transcribe-kk-v2",
   "author": "Sherkhan243",
@@ -42,14 +42,19 @@
   "parameters_human": "33.70B",
   "storage_bytes": 135008696316,
   "storage_human": "135.0 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Recognition",

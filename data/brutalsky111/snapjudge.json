@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brutalsky111/Snapjudge",
   "slug": "brutalsky111-snapjudge",
   "author": "Brutalsky111",
@@ -38,14 +38,19 @@
   "parameters_human": "164.0M",
   "storage_bytes": 656190788,
   "storage_human": "656 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Seedyai/Snapjudge",
+  "renamed_at": "2026-11-11T02:27:16.034Z",
   "benchmarks": [],
   "sources": [
     {

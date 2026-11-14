@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhifeixie/VoiceMem_default",
   "slug": "zhifeixie-voicemem_default",
   "author": "zhifeixie",
@@ -24,6 +24,7 @@
   "parameters_human": null,
   "storage_bytes": 3260333436,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zhifeixie/VoiceMem_Default_Models_Env",
+  "renamed_at": "2026-11-12T08:33:41.791Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/north-micro-vision-encoder",
   "slug": "gatilin-north-micro-vision-encoder",
   "author": "gatilin",
@@ -32,14 +32,19 @@
   "parameters_human": "538.6M",
   "storage_bytes": 1077302232,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "CohereLabs/North-Micro-Vision-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

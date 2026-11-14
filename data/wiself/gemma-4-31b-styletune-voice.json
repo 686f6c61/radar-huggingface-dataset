@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wiself/gemma-4-31B-Styletune-Voice",
   "slug": "wiself-gemma-4-31b-styletune-voice",
   "author": "Wiself",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 2818572391,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "Gryphe/Gemma-4-31B-StyleTune",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

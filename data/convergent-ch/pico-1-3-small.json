@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Convergent-ch/Pico-1.3-Small",
   "slug": "convergent-ch-pico-1-3-small",
   "author": "Convergent-ch",
@@ -39,6 +39,7 @@
   "parameters_human": "11088",
   "storage_bytes": 26360,
   "storage_human": "26360 B",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

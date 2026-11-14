@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fwerkor/CID-RQ1-StageA-v0",
   "slug": "fwerkor-cid-rq1-stagea-v0",
   "author": "fwerkor",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 907700879,
   "storage_human": "908 MB",
+  "context_length": null,
   "base_model": "GSAI-ML/iLLaDA-8B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T05:49:32.588Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

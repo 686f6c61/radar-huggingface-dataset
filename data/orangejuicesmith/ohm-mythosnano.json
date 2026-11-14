@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orangejuicesmith/Ohm-MythosNano",
   "slug": "orangejuicesmith-ohm-mythosnano",
   "author": "orangejuicesmith",
@@ -37,6 +37,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 32371042463,
   "storage_human": "32.4 GB",
+  "context_length": 131072,
   "base_model": "WeiboAI/VibeThinker-3B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

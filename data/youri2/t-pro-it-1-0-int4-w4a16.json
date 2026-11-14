@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Youri2/T-pro-it-1.0-int4-W4A16",
   "slug": "youri2-t-pro-it-1-0-int4-w4a16",
   "author": "Youri2",
@@ -35,14 +35,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 38420715440,
   "storage_human": "38.4 GB",
+  "context_length": null,
   "base_model": "t-tech/T-pro-it-1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

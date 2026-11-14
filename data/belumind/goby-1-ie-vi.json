@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "belumind/goby-1-ie-vi",
   "slug": "belumind-goby-1-ie-vi",
   "author": "belumind",
@@ -37,14 +37,19 @@
   "parameters_human": "466.6M",
   "storage_bytes": 3732831583,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "knowledgator/gliner-relex-large-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:17:53.658Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

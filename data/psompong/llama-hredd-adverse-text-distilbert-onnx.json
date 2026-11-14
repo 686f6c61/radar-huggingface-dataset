@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PSompong/llama-hredd-adverse-text-distilbert-onnx",
   "slug": "psompong-llama-hredd-adverse-text-distilbert-onnx",
   "author": "PSompong",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 67780802,
   "storage_human": "68 MB",
+  "context_length": null,
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "HREDD adverse-text harm classification",

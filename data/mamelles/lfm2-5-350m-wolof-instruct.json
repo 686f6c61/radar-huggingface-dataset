@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamelles/LFM2.5-350M-Wolof-Instruct",
   "slug": "mamelles-lfm2-5-350m-wolof-instruct",
   "author": "mamelles",
@@ -29,14 +29,19 @@
   "parameters_human": "427.5M",
   "storage_bytes": 854933224,
   "storage_human": "855 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:29:52.037Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/kanana-1.5-8b-instruct-2505-Persona-Merged-GGUF",
   "slug": "mradermacher-kanana-1-5-8b-instruct-2505-persona-merged-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 71820639936,
   "storage_human": "71.8 GB",
+  "context_length": 32768,
   "base_model": "NotoriousH2/kanana-1.5-8b-instruct-2505-Persona-Merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

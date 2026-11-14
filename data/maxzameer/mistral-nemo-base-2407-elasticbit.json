@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maxzameer/Mistral-Nemo-Base-2407-ElasticBit",
   "slug": "maxzameer-mistral-nemo-base-2407-elasticbit",
   "author": "maxzameer",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 12949991584,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Nemo-Base-2407",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

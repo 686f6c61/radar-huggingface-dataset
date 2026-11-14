@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WhiskyAKM/K2-Horizon-3.7B-NVFP4-GGUF",
   "slug": "whiskyakm-k2-horizon-3-7b-nvfp4-gguf",
   "author": "WhiskyAKM",
@@ -38,14 +38,19 @@
   "parameters_human": "5.06B",
   "storage_bytes": 3022782560,
   "storage_human": "3.0 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-3.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

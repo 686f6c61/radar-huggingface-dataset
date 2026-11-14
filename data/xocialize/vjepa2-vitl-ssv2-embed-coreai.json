@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xocialize/VJEPA2-ViTL-SSv2-Embed-CoreAI",
   "slug": "xocialize-vjepa2-vitl-ssv2-embed-coreai",
   "author": "xocialize",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 720542290,
   "storage_human": "721 MB",
+  "context_length": null,
   "base_model": "facebook/vjepa2-vitl-fpc16-256-ssv2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

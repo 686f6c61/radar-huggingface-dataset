@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juliensimon/Octen-Embedding-8B-mlx-4bit",
   "slug": "juliensimon-octen-embedding-8b-mlx-4bit",
   "author": "juliensimon",
@@ -42,6 +42,7 @@
   "parameters_human": "7.57B",
   "storage_bytes": 4268572716,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Octen/Octen-Embedding-8B",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

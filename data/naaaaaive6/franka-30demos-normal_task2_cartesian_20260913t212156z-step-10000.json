@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000",
   "slug": "naaaaaive6-franka-30demos-normal_task2_cartesian_20260913t212156z-step-10000",
   "author": "NaaaaaiVe6",
@@ -25,14 +25,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 7233650408,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

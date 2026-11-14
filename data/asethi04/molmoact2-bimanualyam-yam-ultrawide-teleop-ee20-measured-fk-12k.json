@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ASethi04/MolmoAct2-BimanualYAM-yam-ultrawide-teleop-ee20-measured-fk-12k",
   "slug": "asethi04-molmoact2-bimanualyam-yam-ultrawide-teleop-ee20-measured-fk-12k",
   "author": "ASethi04",
@@ -32,14 +32,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483652728,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2-BimanualYAM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

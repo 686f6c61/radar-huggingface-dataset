@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/GLM-5.3-Flash-ABLITERATED-FP8",
   "slug": "dealignai-glm-5-3-flash-abliterated-fp8",
   "author": "dealignai",
@@ -38,14 +38,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 505375369250,
   "storage_human": "505.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T07:40:27.622Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/LFM2.5-230M",
   "slug": "litert-community-lfm2-5-230m",
   "author": "litert-community",
@@ -26,18 +26,23 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 909,
+  "downloads_30d": 929,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1771470240,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

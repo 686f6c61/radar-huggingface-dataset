@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohit267/Qwen3.8-9B-heretic-uncensored",
   "slug": "rohit267-qwen3-8-9b-heretic-uncensored",
   "author": "rohit267",
@@ -47,6 +47,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 34016309793,
   "storage_human": "34.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T23:09:35.629Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

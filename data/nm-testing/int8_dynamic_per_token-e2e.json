@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/int8_dynamic_per_token-e2e",
   "slug": "nm-testing-int8_dynamic_per_token-e2e",
   "author": "nm-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 3696124824,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

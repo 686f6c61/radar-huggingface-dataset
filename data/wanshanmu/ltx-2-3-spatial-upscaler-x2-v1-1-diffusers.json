@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wanshanmu/LTX-2.3-spatial-upscaler-x2-v1.1-Diffusers",
   "slug": "wanshanmu-ltx-2-3-spatial-upscaler-x2-v1-1-diffusers",
   "author": "wanshanmu",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 2447976514,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.3",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

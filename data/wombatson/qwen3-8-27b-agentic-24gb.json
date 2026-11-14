@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wombatson/Qwen3.8-27B-Agentic-24GB",
   "slug": "wombatson-qwen3-8-27b-agentic-24gb",
   "author": "Wombatson",
@@ -28,14 +28,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 15794760416,
   "storage_human": "15.8 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3.8-27B, incoai/Qwen3.8-27B-DFlash2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

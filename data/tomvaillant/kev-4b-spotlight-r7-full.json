@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tomvaillant/kev-4b-spotlight-r7-full",
   "slug": "tomvaillant-kev-4b-spotlight-r7-full",
   "author": "tomvaillant",
@@ -34,14 +34,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8436788316,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "jaredpalmer/kev-4b, Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T07:51:35.798Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

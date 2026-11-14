@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kth8/LFM2.5-230M-OpenCode-Title-Generator-GGUF",
   "slug": "kth8-lfm2-5-230m-opencode-title-generator-gguf",
   "author": "kth8",
@@ -38,14 +38,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 861889440,
   "storage_human": "862 MB",
+  "context_length": 128000,
   "base_model": "kth8/LFM2.5-230M-OpenCode-Title-Generator",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

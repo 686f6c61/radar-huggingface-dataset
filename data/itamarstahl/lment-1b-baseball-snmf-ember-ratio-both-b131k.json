@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itamarstahl/lment-1b-baseball-snmf-ember-ratio-both-b131k",
   "slug": "itamarstahl-lment-1b-baseball-snmf-ember-ratio-both-b131k",
   "author": "itamarstahl",
@@ -34,14 +34,19 @@
   "parameters_human": "1.34B",
   "storage_bytes": 5344164472,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

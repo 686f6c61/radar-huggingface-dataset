@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iclropen/evidence-audit-videochatr1-7b-pc-a025-s0",
   "slug": "iclropen-evidence-audit-videochatr1-7b-pc-a025-s0",
   "author": "iclropen",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 190435728,
   "storage_human": "190 MB",
+  "context_length": null,
   "base_model": "OpenGVLab/VideoChat-R1_7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "con-cord/GRPO-RLME-Ordinal",
   "slug": "con-cord-grpo-rlme-ordinal",
   "author": "con-cord",
@@ -29,14 +29,19 @@
   "parameters_human": "4.30B",
   "storage_bytes": 17238509855,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T05:10:59.204Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

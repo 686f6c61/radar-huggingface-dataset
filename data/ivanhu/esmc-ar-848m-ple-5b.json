@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IvanHU/esmc-ar-848m-ple-5b",
   "slug": "ivanhu-esmc-ar-848m-ple-5b",
   "author": "IvanHU",
@@ -31,14 +31,19 @@
   "parameters_human": "848.4M",
   "storage_bytes": 3393882128,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

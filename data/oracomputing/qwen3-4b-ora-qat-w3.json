@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oracomputing/Qwen3-4B-ORA-QAT-W3",
   "slug": "oracomputing-qwen3-4b-ora-qat-w3",
   "author": "oracomputing",
@@ -35,14 +35,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2209097602,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "oracomputing/Qwen3-4B-ORA-W3",
+  "renamed_at": "2026-11-11T07:02:49.224Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QuantStack/Wan2.2-I2V-A14B-GGUF",
   "slug": "quantstack-wan2-2-i2v-a14b-gguf",
   "author": "QuantStack",
@@ -31,14 +31,19 @@
   "parameters_human": "14.29B",
   "storage_bytes": 232809581384,
   "storage_human": "232.8 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-I2V-A14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

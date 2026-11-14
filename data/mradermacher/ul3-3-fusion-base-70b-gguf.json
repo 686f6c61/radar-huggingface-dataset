@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/UL3.3-FUSION-BASE-70B-GGUF",
   "slug": "mradermacher-ul3-3-fusion-base-70b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 481303385024,
   "storage_human": "481.3 GB",
+  "context_length": 131072,
   "base_model": "TareksGraveyard/UL3.3-FUSION-BASE-70B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

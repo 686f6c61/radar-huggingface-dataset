@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/whisper-medium-a16w8",
   "slug": "florianvoss-whisper-medium-a16w8",
   "author": "florianvoss",
@@ -233,12 +233,17 @@
   "parameters_human": null,
   "storage_bytes": 3707942320,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

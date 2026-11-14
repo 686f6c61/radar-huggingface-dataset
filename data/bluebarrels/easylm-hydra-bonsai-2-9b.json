@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bluebarrels/easylm-hydra-bonsai-2-9b",
   "slug": "bluebarrels-easylm-hydra-bonsai-2-9b",
   "author": "Bluebarrels",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 59919376,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:30:19.143Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

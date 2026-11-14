@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iljab/omniASR-CTC-7B-v2",
   "slug": "iljab-omniasr-ctc-7b-v2",
   "author": "iljab",
@@ -27,14 +27,19 @@
   "parameters_human": "6.51B",
   "storage_bytes": 26023320480,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

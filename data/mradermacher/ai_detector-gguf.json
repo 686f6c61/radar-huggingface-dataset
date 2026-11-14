@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Ai_detector-GGUF",
   "slug": "mradermacher-ai_detector-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "124.6M",
   "storage_bytes": 1239582464,
   "storage_human": "1.2 GB",
+  "context_length": 512,
   "base_model": "videogameaetoros/Ai_detector",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

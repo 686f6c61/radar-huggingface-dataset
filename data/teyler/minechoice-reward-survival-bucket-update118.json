@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "teyler/MineChoice-reward-survival-bucket-update118",
   "slug": "teyler-minechoice-reward-survival-bucket-update118",
   "author": "teyler",
@@ -28,14 +28,19 @@
   "parameters_human": "31789",
   "storage_bytes": 127588,
   "storage_human": "127588 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

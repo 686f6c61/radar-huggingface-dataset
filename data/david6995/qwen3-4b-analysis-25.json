@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "David6995/Qwen3-4B-Analysis-25",
   "slug": "david6995-qwen3-4b-analysis-25",
   "author": "David6995",
@@ -31,14 +31,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404662,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "David6995/Qwen3-4B-Base-SFT-R-64",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T02:47:37.068Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

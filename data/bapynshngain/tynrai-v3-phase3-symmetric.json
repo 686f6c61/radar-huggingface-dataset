@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bapynshngain/Tynrai-V3-Phase3-Symmetric",
   "slug": "bapynshngain-tynrai-v3-phase3-symmetric",
   "author": "Bapynshngain",
@@ -39,14 +39,19 @@
   "parameters_human": "615.1M",
   "storage_bytes": 17254788082,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "Bapynshngain/Tynrai-V3-Phase2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Translation Khasi to English",

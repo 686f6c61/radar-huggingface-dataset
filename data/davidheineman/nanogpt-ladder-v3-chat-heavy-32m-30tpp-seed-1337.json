@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/nanogpt-ladder-v3-chat-heavy-32m-30tpp-seed-1337",
   "slug": "davidheineman-nanogpt-ladder-v3-chat-heavy-32m-30tpp-seed-1337",
   "author": "davidheineman",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 128314277,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

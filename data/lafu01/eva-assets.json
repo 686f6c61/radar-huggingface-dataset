@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lafu01/eva-assets",
   "slug": "lafu01-eva-assets",
   "author": "Lafu01",
@@ -24,6 +24,7 @@
   "parameters_human": "99.5M",
   "storage_bytes": 46199000547,
   "storage_human": "46.2 GB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

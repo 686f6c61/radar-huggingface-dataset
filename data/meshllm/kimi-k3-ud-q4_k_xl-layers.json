@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meshllm/Kimi-K3-UD-Q4_K_XL-layers",
   "slug": "meshllm-kimi-k3-ud-q4_k_xl-layers",
   "author": "meshllm",
@@ -35,14 +35,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 1512934473536,
   "storage_human": "1512.9 GB",
+  "context_length": 1048576,
   "base_model": "unsloth/Kimi-K3-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

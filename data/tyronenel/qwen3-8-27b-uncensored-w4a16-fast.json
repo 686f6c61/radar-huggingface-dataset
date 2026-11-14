@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TyroneNel/Qwen3.8-27B-Uncensored-W4A16-fast",
   "slug": "tyronenel-qwen3-8-27b-uncensored-w4a16-fast",
   "author": "TyroneNel",
@@ -53,14 +53,19 @@
   "parameters_human": "4.30B",
   "storage_bytes": 15804914002,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TyroneNel/Orca-Qwen3.8-27B-Uncensored-W4A16-fast",
+  "renamed_at": "2026-11-11T04:05:34.051Z",
   "benchmarks": [],
   "sources": []
 }

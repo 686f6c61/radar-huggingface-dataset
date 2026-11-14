@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ling0322/libwaifu-qwen3-asr-0.6b",
   "slug": "ling0322-libwaifu-qwen3-asr-0-6b",
   "author": "ling0322",
@@ -89,12 +89,17 @@
   "parameters_human": null,
   "storage_bytes": 1576356417,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

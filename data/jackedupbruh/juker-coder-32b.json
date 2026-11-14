@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jackedupbruh/Juker-Coder-32B",
   "slug": "jackedupbruh-juker-coder-32b",
   "author": "Jackedupbruh",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 22508816,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct, google/gemma-4-31B-it, moonshotai/Kimi-K3.1-Pro",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

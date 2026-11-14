@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/Qwen-SEA-LION-v4-32B-IT-8BIT",
   "slug": "aisingapore-qwen-sea-lion-v4-32b-it-8bit",
   "author": "aisingapore",
@@ -55,14 +55,19 @@
   "parameters_human": "9.36B",
   "storage_bytes": 34341425213,
   "storage_human": "34.3 GB",
+  "context_length": null,
   "base_model": "aisingapore/Qwen-SEA-LION-v4-32B-IT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

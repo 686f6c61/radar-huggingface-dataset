@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/drex-max-v1-d3-GGUF",
   "slug": "nace-ai-drex-max-v1-d3-gguf",
   "author": "nace-ai",
@@ -30,14 +30,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 32330498016,
   "storage_human": "32.3 GB",
+  "context_length": 262144,
   "base_model": "nace-ai/drex-max-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T07:47:12.381Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

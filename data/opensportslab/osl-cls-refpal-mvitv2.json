@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenSportsLab/OSL-cls-RefPal-mvitv2",
   "slug": "opensportslab-osl-cls-refpal-mvitv2",
   "author": "OpenSportsLab",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 420991173,
   "storage_human": "421 MB",
+  "context_length": null,
   "base_model": "OpenSportsLab/OSL-cls-action-mvitv2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:37:59.972Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

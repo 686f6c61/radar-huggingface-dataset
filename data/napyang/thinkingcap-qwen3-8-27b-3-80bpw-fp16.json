@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NapYang/ThinkingCap-Qwen3.8-27B-3.80bpw-fp16",
   "slug": "napyang-thinkingcap-qwen3-8-27b-3-80bpw-fp16",
   "author": "NapYang",
@@ -33,6 +33,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 14015448051,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T04:05:47.823Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JANGQ-AI/GLM-5.3-Flash-JANG-MTP",
   "slug": "jangq-ai-glm-5-3-flash-jang-mtp",
   "author": "JANGQ-AI",
@@ -43,6 +43,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 169004328608,
   "storage_human": "169.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T07:24:50.862Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

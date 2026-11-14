@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Justbackup/Llama-3.3-70B-Instruct-abliterated",
   "slug": "justbackup-llama-3-3-70b-instruct-abliterated",
   "author": "Justbackup",
@@ -54,14 +54,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141124707792,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.3-70B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

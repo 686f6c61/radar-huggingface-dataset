@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PeachesAvicii/Daring_DT_H3",
   "slug": "peachesavicii-daring_dt_h3",
   "author": "PeachesAvicii",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 298409222,
   "storage_human": "298 MB",
+  "context_length": null,
   "base_model": "neph1/1980s_fantasy_movies_minimax_h3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

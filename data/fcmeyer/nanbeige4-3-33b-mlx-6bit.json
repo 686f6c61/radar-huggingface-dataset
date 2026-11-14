@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fcmeyer/Nanbeige4.3-33B-MLX-6bit",
   "slug": "fcmeyer-nanbeige4-3-33b-mlx-6bit",
   "author": "fcmeyer",
@@ -36,6 +36,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 26931434364,
   "storage_human": "26.9 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

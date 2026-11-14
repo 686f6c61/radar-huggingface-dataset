@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CamillaZAY/bge-small-en-v1.5",
   "slug": "camillazay-bge-small-en-v1-5",
   "author": "CamillaZAY",
@@ -42,6 +42,7 @@
   "parameters_human": "33.4M",
   "storage_bytes": 400068191,
   "storage_human": "400 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fufugita/qwen3.8-9b-distill-blackhole-lora",
   "slug": "fufugita-qwen3-8-9b-distill-blackhole-lora",
   "author": "fufugita",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 78225086,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T06:45:59.941Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

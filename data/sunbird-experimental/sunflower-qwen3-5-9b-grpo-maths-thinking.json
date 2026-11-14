@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sunbird-experimental/sunflower-qwen3.5-9b-grpo-maths-thinking",
   "slug": "sunbird-experimental-sunflower-qwen3-5-9b-grpo-maths-thinking",
   "author": "Sunbird-experimental",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 366314284,
   "storage_human": "366 MB",
+  "context_length": null,
   "base_model": "Sunbird/Sunflower-Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

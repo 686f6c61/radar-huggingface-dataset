@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simaai/LFM2-VL-1.6B-Autoround-a16w4",
   "slug": "simaai-lfm2-vl-1-6b-autoround-a16w4",
   "author": "simaai",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 23039576448,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-VL-1.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

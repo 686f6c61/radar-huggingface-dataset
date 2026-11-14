@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nepetai/Ivis-N1.2-Omni",
   "slug": "nepetai-ivis-n1-2-omni",
   "author": "nepetai",
@@ -43,14 +43,19 @@
   "parameters_human": "2.82B",
   "storage_bytes": 19155603279,
   "storage_human": "19.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoiceNetCkpt/finetune_larger_clap_general_voiceclap10",
   "slug": "voicenetckpt-finetune_larger_clap_general_voiceclap10",
   "author": "VoiceNetCkpt",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 776327416,
   "storage_human": "776 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

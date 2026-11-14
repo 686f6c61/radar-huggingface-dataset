@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sigmanih/nex-agi-Nex-N2.5-mini-GGUF-Q4_K_S",
   "slug": "sigmanih-nex-agi-nex-n2-5-mini-gguf-q4_k_s",
   "author": "sigmanih",
@@ -36,14 +36,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19889903232,
   "storage_human": "19.9 GB",
+  "context_length": 262144,
   "base_model": "nex-agi/Nex-N2.5-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

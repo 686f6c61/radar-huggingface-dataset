@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guike8/evidence-scraper-qwen3-1.7b-realpage-v6-mlx-lora",
   "slug": "guike8-evidence-scraper-qwen3-1-7b-realpage-v6-mlx-lora",
   "author": "guike8",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1838449,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-1.7B-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

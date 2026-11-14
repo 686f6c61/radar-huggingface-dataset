@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-02",
   "slug": "lugman-madhiai-lfm2-5-2-6b-tauknowledge-sft-02",
   "author": "lugman-madhiai",
@@ -35,14 +35,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5412333155,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

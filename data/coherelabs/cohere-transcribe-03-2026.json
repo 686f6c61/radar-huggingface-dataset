@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CohereLabs/cohere-transcribe-03-2026",
   "slug": "coherelabs-cohere-transcribe-03-2026",
   "author": "CohereLabs",
@@ -64,14 +64,19 @@
   "parameters_human": "2.07B",
   "storage_bytes": 4132801897,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

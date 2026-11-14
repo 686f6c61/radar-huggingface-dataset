@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goekdeniz-Guelmez/SmolLM2-135M-Instruct-lora-sft-2026-10-27-143221",
   "slug": "goekdeniz-guelmez-smollm2-135m-instruct-lora-sft-2026-10-27-143221",
   "author": "Goekdeniz-Guelmez",
@@ -32,6 +32,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 269060109,
   "storage_human": "269 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

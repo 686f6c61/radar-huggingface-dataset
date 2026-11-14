@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Lucet-Coder-4B-Omega-GGUF",
   "slug": "mradermacher-lucet-coder-4b-omega-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 37506140928,
   "storage_human": "37.5 GB",
+  "context_length": 1048576,
   "base_model": "mohommed/Lucet-Coder-4B-Omega",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

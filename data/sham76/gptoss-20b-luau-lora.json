@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sham76/gptoss-20b-luau-lora",
   "slug": "sham76-gptoss-20b-luau-lora",
   "author": "Sham76",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 370291488,
   "storage_human": "370 MB",
+  "context_length": null,
   "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

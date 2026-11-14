@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-sr/Decision-2.0-Sol-2B",
   "slug": "vllm-sr-decision-2-0-sol-2b",
   "author": "vllm-sr",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 4814375661,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "vllm-sr/Decision-1.0-Sol-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

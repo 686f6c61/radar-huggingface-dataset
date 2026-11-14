@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shixin-labs/ERNIE-4.5-0.3B-Base-GGUF",
   "slug": "shixin-labs-ernie-4-5-0-3b-base-gguf",
   "author": "shixin-labs",
@@ -35,14 +35,19 @@
   "parameters_human": "360.7M",
   "storage_bytes": 385789184,
   "storage_human": "386 MB",
+  "context_length": 131072,
   "base_model": "baidu/ERNIE-4.5-0.3B-Base-PT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luisastellet/tucano_metaphor_melhor_hp",
   "slug": "luisastellet-tucano_metaphor_melhor_hp",
   "author": "luisastellet",
@@ -29,14 +29,19 @@
   "parameters_human": "490.8M",
   "storage_bytes": 981633328,
   "storage_human": "982 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "luisastellet/tucano-metaphor-melhor-hp",
+  "renamed_at": "2026-11-11T06:09:34.900Z",
   "benchmarks": [],
   "sources": [
     {

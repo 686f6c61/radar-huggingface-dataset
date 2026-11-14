@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/chrono4-2023-qa200v4-anchor-g03",
   "slug": "jjjlimaus-chrono4-2023-qa200v4-anchor-g03",
   "author": "jjjlimaus",
@@ -23,14 +23,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 16148182992,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

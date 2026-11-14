@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weilu4606/smolvla_2026-10-25_13-40-41",
   "slug": "weilu4606-smolvla_2026-10-25_13-40-41",
   "author": "weilu4606",
@@ -28,14 +28,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 80523221696,
   "storage_human": "80.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

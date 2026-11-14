@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jgchaparro/Llama-Leonida-2",
   "slug": "jgchaparro-llama-leonida-2",
   "author": "jgchaparro",
@@ -36,14 +36,19 @@
   "parameters_human": "8.20B",
   "storage_bytes": 16423997302,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "ilsp/Llama-Krikri-8B-Instruct-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T06:25:19.872Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

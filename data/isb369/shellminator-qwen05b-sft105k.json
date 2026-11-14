@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISB369/shellminator-qwen05b-sft105k",
   "slug": "isb369-shellminator-qwen05b-sft105k",
   "author": "ISB369",
@@ -32,6 +32,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 2385393146,
   "storage_human": "2.4 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:15:34.192Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

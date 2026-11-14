@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SolenopsisCampo/Xing4.0-29B-A4B-GGUF",
   "slug": "solenopsiscampo-xing4-0-29b-a4b-gguf",
   "author": "SolenopsisCampo",
@@ -34,6 +34,7 @@
   "parameters_human": "31.22B",
   "storage_bytes": 222693040390,
   "storage_human": "222.7 GB",
+  "context_length": 262144,
   "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+  "renamed_at": "2026-11-11T03:55:11.079Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Emerald7664/Qwen3-TTS-ONNX",
   "slug": "emerald7664-qwen3-tts-onnx",
   "author": "Emerald7664",
@@ -57,6 +57,7 @@
   "parameters_human": "141.6M",
   "storage_bytes": 5919869634,
   "storage_human": "5.9 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "gguf",
@@ -64,8 +65,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

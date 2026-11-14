@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/wav2vec2-base-arabic-without-reused-en-token-ids-v1-ONNX",
   "slug": "onnx-community-wav2vec2-base-arabic-without-reused-en-token-ids-v1-onnx",
   "author": "onnx-community",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 807457304,
   "storage_human": "807 MB",
+  "context_length": null,
   "base_model": "Mohammadawad1/wav2vec2-base-arabic-without-reused-en-token-ids-v1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

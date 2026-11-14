@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdwolfCzar/krea2-tile-controllora",
   "slug": "adwolfczar-krea2-tile-controllora",
   "author": "AdwolfCzar",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 39862112729,
   "storage_human": "39.9 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

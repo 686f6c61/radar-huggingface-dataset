@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/DCFT-wikipedia_biology_seed_science-etash-GGUF",
   "slug": "mradermacher-dcft-wikipedia_biology_seed_science-etash-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146888832,
   "storage_human": "68.1 GB",
+  "context_length": 32768,
   "base_model": "mlfoundations-dev/DCFT-wikipedia_biology_seed_science-etash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

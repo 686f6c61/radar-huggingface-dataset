@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "z-lab/Muse-Glimmer-30B-DFlash2-GGUF",
   "slug": "z-lab-muse-glimmer-30b-dflash2-gguf",
   "author": "z-lab",
@@ -31,14 +31,19 @@
   "parameters_human": "2.77B",
   "storage_bytes": 10163556073,
   "storage_human": "10.2 GB",
+  "context_length": 131072,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

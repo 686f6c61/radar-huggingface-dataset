@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logic65/whittle-next",
   "slug": "logic65-whittle-next",
   "author": "logic65",
@@ -36,6 +36,7 @@
   "parameters_human": "16.36B",
   "storage_bytes": 160323978559,
   "storage_human": "160.3 GB",
+  "context_length": 262144,
   "base_model": "logic65/Qwen3.8-Whittle-tri-14.7B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

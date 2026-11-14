@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT8",
   "slug": "rin247-gemma-4-26b-a4b-it-aggressive-aquarion-int8",
   "author": "Rin247",
@@ -33,14 +33,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 27149968220,
   "storage_human": "27.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T04:01:34.623Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

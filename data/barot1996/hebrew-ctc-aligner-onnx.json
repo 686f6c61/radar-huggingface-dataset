@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barot1996/hebrew-ctc-aligner-onnx",
   "slug": "barot1996-hebrew-ctc-aligner-onnx",
   "author": "barot1996",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 317302519,
   "storage_human": "317 MB",
+  "context_length": null,
   "base_model": "imvladikon/wav2vec2-large-xlsr-53-hebrew",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

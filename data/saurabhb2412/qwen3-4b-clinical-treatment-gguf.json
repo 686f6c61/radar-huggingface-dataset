@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saurabhb2412/qwen3-4b-clinical-treatment-gguf",
   "slug": "saurabhb2412-qwen3-4b-clinical-treatment-gguf",
   "author": "saurabhb2412",
@@ -30,14 +30,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 10548565376,
   "storage_human": "10.5 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

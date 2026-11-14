@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amitlohe-modal/voxtral-mini-3b-audio",
   "slug": "amitlohe-modal-voxtral-mini-3b-audio",
   "author": "amitlohe-modal",
@@ -44,14 +44,19 @@
   "parameters_human": "4.68B",
   "storage_bytes": 18720175046,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KANOALAB/Sovereign-v7.1000-Bible-LoRA",
   "slug": "kanoalab-sovereign-v7-1000-bible-lora",
   "author": "KANOALAB",
@@ -23,14 +23,19 @@
   "parameters_human": "103.5M",
   "storage_bytes": 414337624,
   "storage_human": "414 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

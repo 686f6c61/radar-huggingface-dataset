@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fm-dev/pi05-shuffle-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step1400",
   "slug": "fm-dev-pi05-shuffle-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step1400",
   "author": "fm-dev",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 12553582161,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

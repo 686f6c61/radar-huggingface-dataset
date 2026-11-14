@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dharun2049/Metel-QV0.29-27B",
   "slug": "dharun2049-metel-qv0-29-27b",
   "author": "dharun2049",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1076496217,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:57:36.121Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

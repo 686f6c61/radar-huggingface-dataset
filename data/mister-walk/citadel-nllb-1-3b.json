@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mister-Walk/citadel-nllb-1.3B",
   "slug": "mister-walk-citadel-nllb-1-3b",
   "author": "Mister-Walk",
@@ -27,14 +27,19 @@
   "parameters_human": "1.37B",
   "storage_bytes": 5504857014,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

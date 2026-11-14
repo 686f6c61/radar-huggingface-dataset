@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kietnehi1211/zac2026-soh12a7-lifemate-models",
   "slug": "kietnehi1211-zac2026-soh12a7-lifemate-models",
   "author": "kietnehi1211",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3853787934,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

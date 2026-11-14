@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ffejhog/Artemis-31B-v1.1-mlx-4Bit",
   "slug": "ffejhog-artemis-31b-v1-1-mlx-4bit",
   "author": "ffejhog",
@@ -27,6 +27,7 @@
   "parameters_human": "30.70B",
   "storage_bytes": 17301554160,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Artemis-31B-v1.1",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

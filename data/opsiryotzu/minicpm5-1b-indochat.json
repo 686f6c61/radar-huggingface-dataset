@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "opsiryotzu/MiniCPM5-1B-IndoChat",
   "slug": "opsiryotzu-minicpm5-1b-indochat",
   "author": "opsiryotzu",
@@ -39,14 +39,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 6573615040,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "opsirygi/MiniCPM5-1B-IndoChat",
+  "renamed_at": "2026-11-14T07:59:46.881Z",
   "benchmarks": [],
   "sources": []
 }

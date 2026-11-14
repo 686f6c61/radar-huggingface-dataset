@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "linjian257/qwen3vl_32b_minimax_h3_int8_convrot_uncensored-by-linjian257",
   "slug": "linjian257-qwen3vl_32b_minimax_h3_int8_convrot_uncensored-by-linjian257",
   "author": "linjian257",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 25772287417,
   "storage_human": "25.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

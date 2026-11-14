@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/akhorika-ocr-v1-GGUF",
   "slug": "mradermacher-akhorika-ocr-v1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "752.2M",
   "storage_bytes": 8969459008,
   "storage_human": "9.0 GB",
+  "context_length": 262144,
   "base_model": "ananddey/akhorika-ocr-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-view-large-idm-causal-prefix-20261015-reordered",
   "slug": "donghyun1228-pi05-libero-view-large-idm-causal-prefix-20261015-reordered",
   "author": "Donghyun1228",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 5907169807,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T02:56:54.289Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

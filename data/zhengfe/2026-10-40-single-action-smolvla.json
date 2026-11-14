@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhengfe/2026-10-40-single-action-smolvla",
   "slug": "zhengfe-2026-10-40-single-action-smolvla",
   "author": "zhengfe",
@@ -37,14 +37,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 2936882018,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dadudu/microduck-bubu-roller-so",
   "slug": "dadudu-microduck-bubu-roller-so",
   "author": "dadudu",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 802933,
   "storage_human": "802933 B",
+  "context_length": null,
   "base_model": "suraj-phanindra/microduck-roller-hc5-aifund",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

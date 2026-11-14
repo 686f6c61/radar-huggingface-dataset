@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReallyFloppyPenguin/Qwen3.5-4B-3D-Coder-GGUF-split",
   "slug": "reallyfloppypenguin-qwen3-5-4b-3d-coder-gguf-split",
   "author": "ReallyFloppyPenguin",
@@ -31,14 +31,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 2708804896,
   "storage_human": "2.7 GB",
+  "context_length": 262144,
   "base_model": "ccore/Qwen3.5-4B-3D-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

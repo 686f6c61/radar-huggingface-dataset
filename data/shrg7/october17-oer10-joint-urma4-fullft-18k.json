@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shrg7/october17-oer10-joint-urma4-fullft-18k",
   "slug": "shrg7-october17-oer10-joint-urma4-fullft-18k",
   "author": "shrg7",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 12449430710,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:20:48.373Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

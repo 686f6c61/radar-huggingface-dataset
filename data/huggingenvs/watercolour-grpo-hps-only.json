@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HuggingEnvs/watercolour-grpo-hps-only",
   "slug": "huggingenvs-watercolour-grpo-hps-only",
   "author": "HuggingEnvs",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 141861694,
   "storage_human": "142 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FineEnvs/watercolour-grpo-hps-only",
+  "renamed_at": "2026-11-12T03:02:19.703Z",
   "benchmarks": [],
   "sources": [
     {

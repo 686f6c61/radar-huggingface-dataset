@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GVIS-ULE/rubiner",
   "slug": "gvis-ule-rubiner",
   "author": "GVIS-ULE",
@@ -37,14 +37,19 @@
   "parameters_human": "107.8M",
   "storage_bytes": 431058932,
   "storage_human": "431 MB",
+  "context_length": null,
   "base_model": "dslim/bert-base-NER",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

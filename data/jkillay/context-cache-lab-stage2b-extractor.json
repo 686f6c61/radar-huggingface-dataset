@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jkillay/context-cache-lab-stage2b-extractor",
   "slug": "jkillay-context-cache-lab-stage2b-extractor",
   "author": "jkillay",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 4529917147,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50",
   "slug": "seomh-opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step50",
   "author": "seomh",
@@ -23,14 +23,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939454,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

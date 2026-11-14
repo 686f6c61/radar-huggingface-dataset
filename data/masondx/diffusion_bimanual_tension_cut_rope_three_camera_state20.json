@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masondx/diffusion_bimanual_tension_cut_rope_three_camera_state20",
   "slug": "masondx-diffusion_bimanual_tension_cut_rope_three_camera_state20",
   "author": "masondx",
@@ -28,14 +28,19 @@
   "parameters_human": "271.1M",
   "storage_bytes": 1084618784,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-moonshine-streaming-medium-gguf",
   "slug": "xix3r-voxix-moonshine-streaming-medium-gguf",
   "author": "xix3r",
@@ -36,14 +36,19 @@
   "parameters_human": "265.9M",
   "storage_bytes": 295793568,
   "storage_human": "296 MB",
+  "context_length": null,
   "base_model": "UsefulSensors/moonshine-streaming-medium",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CHY760MARIN/my-bert-fine-tuned2",
   "slug": "chy760marin-my-bert-fine-tuned2",
   "author": "CHY760MARIN",
@@ -28,14 +28,19 @@
   "parameters_human": "110.6M",
   "storage_bytes": 442514444,
   "storage_human": "443 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

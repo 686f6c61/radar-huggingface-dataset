@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mburchell/looped-40m-onnx",
   "slug": "mburchell-looped-40m-onnx",
   "author": "mburchell",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 41968999,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "mburchell/looped-40m",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

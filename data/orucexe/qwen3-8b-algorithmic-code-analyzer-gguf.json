@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orucexe/Qwen3-8B-Algorithmic-Code-Analyzer-GGUF",
   "slug": "orucexe-qwen3-8b-algorithmic-code-analyzer-gguf",
   "author": "orucexe",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 5851112448,
   "storage_human": "5.9 GB",
+  "context_length": 40960,
   "base_model": "orucexe/Qwen3-8B-Algorithmic-Code-Analyzer",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

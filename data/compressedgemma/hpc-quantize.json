@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompressedGemma/HPC-Quantize",
   "slug": "compressedgemma-hpc-quantize",
   "author": "CompressedGemma",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 12999885,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T06:57:51.976Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

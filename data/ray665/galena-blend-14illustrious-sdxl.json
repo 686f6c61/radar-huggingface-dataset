@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ray665/galena-blend-14illustrious-sdxl",
   "slug": "ray665-galena-blend-14illustrious-sdxl",
   "author": "Ray665",
@@ -42,6 +42,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 6938011430,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
   "formats": [
     "diffusers",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

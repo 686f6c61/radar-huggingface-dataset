@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xelsoft-ai-lab/wolof-text-correction-byt5-20260829-154822",
   "slug": "xelsoft-ai-lab-wolof-text-correction-byt5-20260829-154822",
   "author": "xelsoft-ai-lab",
@@ -31,14 +31,19 @@
   "parameters_human": "299.1M",
   "storage_bytes": 1196315873,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T07:04:49.525Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tasksource/modernbert-tasksource-jev",
   "slug": "tasksource-modernbert-tasksource-jev",
   "author": "tasksource",
@@ -39,14 +39,19 @@
   "parameters_human": "152.7M",
   "storage_bytes": 305437762,
   "storage_human": "305 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T03:15:14.250Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

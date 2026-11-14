@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Laguna-S-2.1-NVFP4",
   "slug": "redhatai-laguna-s-2-1-nvfp4",
   "author": "RedHatAI",
@@ -33,14 +33,19 @@
   "parameters_human": "117.56B",
   "storage_bytes": 99709895713,
   "storage_human": "99.7 GB",
+  "context_length": null,
   "base_model": "poolside/Laguna-S-2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

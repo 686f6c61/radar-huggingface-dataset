@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chimpanzeetaxidriver/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B-oQ4e-fp16-mtp",
   "slug": "chimpanzeetaxidriver-thinkingcap-nvidia-nemotron-3-5-lightning-30b-a3b-oq4e-fp16-mtp",
   "author": "chimpanzeetaxidriver",
@@ -38,6 +38,7 @@
   "parameters_human": "32.91B",
   "storage_bytes": 19683724485,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "bottlecapai/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

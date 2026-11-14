@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1bit-MONSTER/Zamba2-VL-1.2B-GGUF",
   "slug": "1bit-monster-zamba2-vl-1-2b-gguf",
   "author": "1bit-MONSTER",
@@ -30,14 +30,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3177844800,
   "storage_human": "3.2 GB",
+  "context_length": 4096,
   "base_model": "Zyphra/Zamba2-VL-1.2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leonsarmiento/Arete-27B-oQ4e",
   "slug": "leonsarmiento-arete-27b-oq4e",
   "author": "leonsarmiento",
@@ -38,6 +38,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 17213946048,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

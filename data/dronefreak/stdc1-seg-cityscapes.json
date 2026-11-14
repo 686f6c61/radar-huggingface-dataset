@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dronefreak/stdc1-seg-cityscapes",
   "slug": "dronefreak-stdc1-seg-cityscapes",
   "author": "dronefreak",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 59319266,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canada-quant/GLM-5.3-Flash-DFlash2-F",
   "slug": "canada-quant-glm-5-3-flash-dflash2-f",
   "author": "canada-quant",
@@ -39,14 +39,19 @@
   "parameters_human": "3.11B",
   "storage_bytes": 6222163442,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

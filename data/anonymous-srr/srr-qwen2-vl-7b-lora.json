@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anonymous-SRR/SRR-Qwen2-VL-7B-LoRA",
   "slug": "anonymous-srr-srr-qwen2-vl-7b-lora",
   "author": "Anonymous-SRR",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 80797976,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-VL-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

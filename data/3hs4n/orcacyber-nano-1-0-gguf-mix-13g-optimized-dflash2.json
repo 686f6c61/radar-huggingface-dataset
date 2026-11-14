@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3hs4n/OrcaCyber-Nano-1.0-GGUF-Mix-13G-Optimized-DFlash2",
   "slug": "3hs4n-orcacyber-nano-1-0-gguf-mix-13g-optimized-dflash2",
   "author": "3hs4n",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "orcarouter/OrcaCyber-Nano-1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

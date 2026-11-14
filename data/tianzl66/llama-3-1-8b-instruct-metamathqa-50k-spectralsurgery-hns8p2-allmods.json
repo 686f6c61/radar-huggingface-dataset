@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tianzl66/Llama-3.1-8B-Instruct-MetaMathQA-50K-SpectralSurgery-HNS8p2-AllMods",
   "slug": "tianzl66-llama-3-1-8b-instruct-metamathqa-50k-spectralsurgery-hns8p2-allmods",
   "author": "tianzl66",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 167832208,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

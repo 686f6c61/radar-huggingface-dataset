@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vignesh19/purplebench-tiny-aya-fire-phase3",
   "slug": "vignesh19-purplebench-tiny-aya-fire-phase3",
   "author": "Vignesh19",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 142357727,
   "storage_human": "142 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-fire",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

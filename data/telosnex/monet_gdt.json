@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "telosnex/monet_gdt",
   "slug": "telosnex-monet_gdt",
   "author": "telosnex",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 11101699,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": "timm/vit_pe_core_tiny_patch16_384.fb",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

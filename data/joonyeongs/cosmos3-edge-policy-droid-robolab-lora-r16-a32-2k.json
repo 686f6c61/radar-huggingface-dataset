@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joonyeongs/cosmos3-edge-policy-droid-robolab-lora-r16-a32-2k",
   "slug": "joonyeongs-cosmos3-edge-policy-droid-robolab-lora-r16-a32-2k",
   "author": "joonyeongs",
@@ -34,6 +34,7 @@
   "parameters_human": "3.86B",
   "storage_bytes": 9154401628,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

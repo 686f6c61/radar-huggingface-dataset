@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yujackein/onereason-8b-lora-item32k-user100-rec50-worldclean1601-all1-lr2e4-r32a32-seq32768-gbs4-1epoch",
   "slug": "yujackein-onereason-8b-lora-item32k-user100-rec50-worldclean1601-all1-lr2e4-r32a32-seq32768-gbs4-1epoch",
   "author": "yujackein",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 365260684,
   "storage_human": "365 MB",
+  "context_length": null,
   "base_model": "OpenOneRec/OneReason-8B-pretrain-competition",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

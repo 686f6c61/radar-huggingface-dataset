@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "robbiemu/paper2-dia1-dac-coreml-decoders",
   "slug": "robbiemu-paper2-dia1-dac-coreml-decoders",
   "author": "robbiemu",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1530139766,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "descript/dac_44khz",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

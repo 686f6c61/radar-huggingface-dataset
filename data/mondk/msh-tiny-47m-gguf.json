@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/Msh-Tiny-47M-GGUF",
   "slug": "mondk-msh-tiny-47m-gguf",
   "author": "mondk",
@@ -51,14 +51,19 @@
   "parameters_human": "47.2M",
   "storage_bytes": 335967072,
   "storage_human": "336 MB",
+  "context_length": 256,
   "base_model": "mondk/Msh-Tiny-47M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

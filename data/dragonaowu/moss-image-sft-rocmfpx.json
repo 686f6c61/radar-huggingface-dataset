@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dragonaowu/MOSS-Image-SFT-ROCmFPX",
   "slug": "dragonaowu-moss-image-sft-rocmfpx",
   "author": "dragonaowu",
@@ -32,14 +32,19 @@
   "parameters_human": "5.08B",
   "storage_bytes": 5557412334,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

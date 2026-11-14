@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hUh63/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF",
   "slug": "huh63-deepseek-v4-pro-qwen3-5-9b-uncensored-heretic-gguf",
   "author": "hUh63",
@@ -62,14 +62,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 13245535680,
   "storage_human": "13.2 GB",
+  "context_length": 262144,
   "base_model": "ermund/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic, Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/Qwen3-0.6B-Base-GGUF",
   "slug": "ggml-org-qwen3-0-6b-base-gguf",
   "author": "ggml-org",
@@ -29,14 +29,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1837628800,
   "storage_human": "1.8 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

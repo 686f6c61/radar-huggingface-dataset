@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "filvyb/llama-joycaption-beta-one-hf-llava",
   "slug": "filvyb-llama-joycaption-beta-one-hf-llava",
   "author": "filvyb",
@@ -30,14 +30,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16601098176,
   "storage_human": "16.6 GB",
+  "context_length": 131072,
   "base_model": "fancyfeast/llama-joycaption-beta-one-hf-llava",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "filvyb/llama-joycaption-beta-one-hf-llava-GGUF",
+  "renamed_at": "2026-11-11T05:16:14.291Z",
   "benchmarks": [],
   "sources": [
     {

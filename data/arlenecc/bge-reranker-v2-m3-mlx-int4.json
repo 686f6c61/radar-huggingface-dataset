@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arlenecc/bge-reranker-v2-m3-mlx-int4",
   "slug": "arlenecc-bge-reranker-v2-m3-mlx-int4",
   "author": "arlenecc",
@@ -24,14 +24,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 372464495,
   "storage_human": "372 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

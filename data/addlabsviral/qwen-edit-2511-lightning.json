@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addlabsviral/qwen-edit-2511-lightning",
   "slug": "addlabsviral-qwen-edit-2511-lightning",
   "author": "addlabsviral",
@@ -24,6 +24,7 @@
   "parameters_human": "20.43B",
   "storage_bytes": 57722094920,
   "storage_human": "57.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T05:05:31.197Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

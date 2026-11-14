@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cs21004/robertuito-toxicidad-sv",
   "slug": "cs21004-robertuito-toxicidad-sv",
   "author": "cs21004",
@@ -39,14 +39,19 @@
   "parameters_human": "108.8M",
   "storage_bytes": 870370464,
   "storage_human": "870 MB",
+  "context_length": null,
   "base_model": "pysentimiento/robertuito-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Toxicidad y discurso de odio (español salvadoreño)",

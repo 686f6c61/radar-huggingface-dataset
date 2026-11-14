@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sherif1313/3arabLM-4B-islamic-v2",
   "slug": "sherif1313-3arablm-4b-islamic-v2",
   "author": "sherif1313",
@@ -41,14 +41,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8431547824,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "sherif1313/3arabLM-4B-Fiqh-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

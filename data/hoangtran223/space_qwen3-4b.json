@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HoangTran223/SPACE_Qwen3-4B",
   "slug": "hoangtran223-space_qwen3-4b",
   "author": "HoangTran223",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 121654645266,
   "storage_human": "121.7 GB",
+  "context_length": null,
   "base_model": "HoangTran223/qwen3_4b_sft_ultrachat200k_20260818_170154",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

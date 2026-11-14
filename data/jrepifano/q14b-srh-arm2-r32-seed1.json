@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jrepifano/q14b-srh-arm2-r32-seed1",
   "slug": "jrepifano-q14b-srh-arm2-r32-seed1",
   "author": "jrepifano",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 842379084,
   "storage_human": "842 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T04:34:16.653Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

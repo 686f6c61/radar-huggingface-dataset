@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "giangndm/moss-transcribe-diarize-encoder",
   "slug": "giangndm-moss-transcribe-diarize-encoder",
   "author": "giangndm",
@@ -54,14 +54,19 @@
   "parameters_human": "312.5M",
   "storage_bytes": 1239441080,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

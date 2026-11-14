@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prasadamisnothere/List-3.0-Ultra-Coder-Brain",
   "slug": "prasadamisnothere-list-3-0-ultra-coder-brain",
   "author": "Prasadamisnothere",
@@ -42,14 +42,19 @@
   "parameters_human": "228.69B",
   "storage_bytes": 230142261486,
   "storage_human": "230.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

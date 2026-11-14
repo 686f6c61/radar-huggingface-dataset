@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YFC-112358/Qwen3.6-27B-Della-Deckard-Fable-Qwopus-v3",
   "slug": "yfc-112358-qwen3-6-27b-della-deckard-fable-qwopus-v3",
   "author": "YFC-112358",
@@ -44,14 +44,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575825422,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, YFC-112358/Qwen3.6-27B-Della-Deckard-Isometry-Geodesic-v2, nightmedia/Qwen3.6-27B-Seven, KyleHessling1/Qwopus3.6-27B-Fusion-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyunlp-evateam3/20261107_healthbench_reward_toy_qwen3-1.7b_oct26_protocol",
   "slug": "hyunlp-evateam3-20261107_healthbench_reward_toy_qwen3-1-7b_oct26_protocol",
   "author": "hyunlp-evateam3",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 440483183550,
   "storage_human": "440.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

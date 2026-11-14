@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JSALT2026-Conv-AI-Simulator/f-actor-mimi-behavior-sd",
   "slug": "jsalt2026-conv-ai-simulator-f-actor-mimi-behavior-sd",
   "author": "JSALT2026-Conv-AI-Simulator",
@@ -34,14 +34,19 @@
   "parameters_human": "1.89B",
   "storage_bytes": 3793390922,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct, sesame/csm-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

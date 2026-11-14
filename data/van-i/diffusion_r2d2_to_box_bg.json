@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "van-i/diffusion_r2d2_to_box_bg",
   "slug": "van-i-diffusion_r2d2_to_box_bg",
   "author": "van-i",
@@ -29,14 +29,19 @@
   "parameters_human": "292.7M",
   "storage_bytes": 1170949960,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

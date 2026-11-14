@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomheart-Father/Nyx-RP-9B-Instruct-2608-v1-MLX-4bit",
   "slug": "atomheart-father-nyx-rp-9b-instruct-2608-v1-mlx-4bit",
   "author": "Atomheart-Father",
@@ -32,6 +32,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 5060271343,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

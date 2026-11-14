@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hxtomi/nyqo",
   "slug": "hxtomi-nyqo",
   "author": "Hxtomi",
@@ -36,14 +36,19 @@
   "parameters_human": "497.1M",
   "storage_bytes": 1279535128,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

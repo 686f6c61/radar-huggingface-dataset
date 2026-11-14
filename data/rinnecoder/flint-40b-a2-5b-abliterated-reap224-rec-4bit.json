@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RinneCODER/Flint-40B-A2.5B-abliterated-REAP224-Rec-4bit",
   "slug": "rinnecoder-flint-40b-a2-5b-abliterated-reap224-rec-4bit",
   "author": "RinneCODER",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 19912347552,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": "dima6312/Flint-40B-A2.5B-abliterated-Rec-4bit",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

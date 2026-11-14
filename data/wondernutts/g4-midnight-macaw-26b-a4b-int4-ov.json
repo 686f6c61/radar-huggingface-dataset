@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wondernutts/G4-Midnight-Macaw-26B-A4B-int4-ov",
   "slug": "wondernutts-g4-midnight-macaw-26b-a4b-int4-ov",
   "author": "Wondernutts",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 16133334258,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "Vortex5/G4-Midnight-Macaw-26B-A4B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

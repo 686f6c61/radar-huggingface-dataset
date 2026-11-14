@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Timelyyyy/HOS-1",
   "slug": "timelyyyy-hos-1",
   "author": "Timelyyyy",
@@ -36,14 +36,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 9728294208,
   "storage_human": "9.7 GB",
+  "context_length": 8192,
   "base_model": "google/gemma-2-2b, ArliAI/Gemma-2-2B-ArliAI-RPMax-v1.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chungulus/Qwen3.8-27B-MLX-MXFP8",
   "slug": "chungulus-qwen3-8-27b-mlx-mxfp8",
   "author": "Chungulus",
@@ -33,14 +33,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 29522944209,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

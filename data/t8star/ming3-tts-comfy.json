@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t8star/Ming3-TTS-Comfy",
   "slug": "t8star-ming3-tts-comfy",
   "author": "t8star",
@@ -49,6 +49,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 11523434463,
   "storage_human": "11.5 GB",
+  "context_length": 65536,
   "base_model": "inclusionAI/Ming-3.0-tts-tiny",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Agtian/cpt2-merged",
   "slug": "agtian-cpt2-merged",
   "author": "Agtian",
@@ -35,14 +35,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5412333014,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "Indexnusrefather/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T02:28:08.019Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

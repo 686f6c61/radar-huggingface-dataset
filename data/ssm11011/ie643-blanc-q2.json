@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ssm11011/IE643-blanc-q2",
   "slug": "ssm11011-ie643-blanc-q2",
   "author": "ssm11011",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 1706579245,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

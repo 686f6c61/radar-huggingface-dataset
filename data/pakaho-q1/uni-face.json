@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pakaho-q1/Uni-Face",
   "slug": "pakaho-q1-uni-face",
   "author": "Pakaho-q1",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 11179598875,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

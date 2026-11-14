@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deucebucket/Qwen3.8-27B-Cerebellum-GGUF",
   "slug": "deucebucket-qwen3-8-27b-cerebellum-gguf",
   "author": "deucebucket",
@@ -35,14 +35,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 12013280930,
   "storage_human": "12.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Multiple-choice question answering",

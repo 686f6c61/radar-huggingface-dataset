@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geysersoft-ai-lab/GS-Qwen3.8-27B-Scale2-Step800-BF16-MTP",
   "slug": "geysersoft-ai-lab-gs-qwen3-8-27b-scale2-step800-bf16-mtp",
   "author": "geysersoft-ai-lab",
@@ -36,14 +36,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55575913862,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

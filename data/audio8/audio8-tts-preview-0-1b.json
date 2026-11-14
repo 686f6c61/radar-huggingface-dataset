@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audio8/Audio8-TTS-Preview-0.1b",
   "slug": "audio8-audio8-tts-preview-0-1b",
   "author": "Audio8",
@@ -50,14 +50,19 @@
   "parameters_human": "169.8M",
   "storage_bytes": 1689462767,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Edge0/Audio8-TTS-Preview-0.1b",
+  "renamed_at": "2026-11-11T02:21:43.242Z",
   "benchmarks": [],
   "sources": [
     {

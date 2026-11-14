@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEmotionStudio/moss-tts-models",
   "slug": "aemotionstudio-moss-tts-models",
   "author": "AEmotionStudio",
@@ -92,14 +92,19 @@
   "parameters_human": null,
   "storage_bytes": 13685666461,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5, OpenMOSS-Team/MOSS-Audio-Tokenizer-v2, OpenMOSS-Team/MOSS-TTS-v1.5, OpenMOSS-Team/MOSS-Audio-Tokenizer, OpenMOSS-Team/MOSS-TTS-Nano-100M, OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

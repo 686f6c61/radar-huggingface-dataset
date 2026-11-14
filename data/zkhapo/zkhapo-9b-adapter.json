@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zkhapo/zkhapo-9b-adapter",
   "slug": "zkhapo-zkhapo-9b-adapter",
   "author": "zkhapo",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 136415223,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T02:11:45.598Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

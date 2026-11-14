@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guell00/Velum-Unbound-Uncensored",
   "slug": "guell00-velum-unbound-uncensored",
   "author": "guell00",
@@ -34,14 +34,19 @@
   "parameters_human": "3.65B",
   "storage_bytes": 1946393568,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "tommytracx/Thox1-27b, prism-ml/Bonsai-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:37:33.262Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

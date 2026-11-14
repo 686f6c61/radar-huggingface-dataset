@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rexarrior/Qwen3-0.6B-F5-Terminal-Balanced",
   "slug": "rexarrior-qwen3-0-6b-f5-terminal-balanced",
   "author": "rexarrior",
@@ -28,14 +28,19 @@
   "parameters_human": "5.0M",
   "storage_bytes": 281373440,
   "storage_human": "281 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-0.6B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

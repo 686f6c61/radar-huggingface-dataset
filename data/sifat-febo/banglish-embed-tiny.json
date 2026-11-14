@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sifat-febo/banglish-embed-tiny",
   "slug": "sifat-febo-banglish-embed-tiny",
   "author": "sifat-febo",
@@ -48,6 +48,7 @@
   "parameters_human": "2.8M",
   "storage_bytes": 22887649,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

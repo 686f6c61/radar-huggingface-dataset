@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chantzlane90/priyapx-krea2-lora",
   "slug": "chantzlane90-priyapx-krea2-lora",
   "author": "chantzlane90",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 234676912,
   "storage_human": "235 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

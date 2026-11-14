@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sentence-transformers/all-MiniLM-L6-v2",
   "slug": "sentence-transformers-all-minilm-l6-v2",
   "author": "sentence-transformers",
@@ -60,13 +60,14 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 6118,
+  "likes": 6122,
   "downloads_30d": 172686714,
   "trending_score": 28,
   "parameters": 22713728,
   "parameters_human": "22.7M",
   "storage_bytes": 1845474494,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "nreimers/MiniLM-L6-H384-uncased",
   "formats": [
     "onnx",
@@ -74,8 +75,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

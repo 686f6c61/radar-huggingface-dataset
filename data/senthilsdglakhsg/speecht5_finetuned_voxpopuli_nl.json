@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senthilsdglakhsg/speecht5_finetuned_voxpopuli_nl",
   "slug": "senthilsdglakhsg-speecht5_finetuned_voxpopuli_nl",
   "author": "senthilsdglakhsg",
@@ -33,14 +33,19 @@
   "parameters_human": "144.4M",
   "storage_bytes": 577835806,
   "storage_human": "578 MB",
+  "context_length": null,
   "base_model": "microsoft/speecht5_tts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

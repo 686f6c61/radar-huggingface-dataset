@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Grawnch/Kimi-K3.1-Pro-Coder",
   "slug": "grawnch-kimi-k3-1-pro-coder",
   "author": "Grawnch",
@@ -35,14 +35,19 @@
   "parameters_human": "1269.95B",
   "storage_bytes": 775086460294,
   "storage_human": "775.1 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SCOODai/my-aiphone-vision",
   "slug": "scoodai-my-aiphone-vision",
   "author": "SCOODai",
@@ -28,14 +28,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 13300720544,
   "storage_human": "13.3 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-3-4b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

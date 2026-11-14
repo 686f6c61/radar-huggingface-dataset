@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gogeta70/Swift_1.5_Qwen_3.8_27B_Heretic_Uncensored_Lora_Adapter",
   "slug": "gogeta70-swift_1-5_qwen_3-8_27b_heretic_uncensored_lora_adapter",
   "author": "Gogeta70",
@@ -31,14 +31,19 @@
   "parameters_human": "1.2M",
   "storage_bytes": 2423616,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

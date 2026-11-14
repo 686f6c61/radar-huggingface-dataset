@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adipotnis/pi05-xarm-burette-variations70-ah32-tag",
   "slug": "adipotnis-pi05-xarm-burette-variations70-ah32-tag",
   "author": "adipotnis",
@@ -22,14 +22,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 454501329133,
   "storage_human": "454.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

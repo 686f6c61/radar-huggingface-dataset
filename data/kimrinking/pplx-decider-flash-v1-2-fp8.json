@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimrinking/pplx-decider-flash-v1.2-fp8",
   "slug": "kimrinking-pplx-decider-flash-v1-2-fp8",
   "author": "kimrinking",
@@ -33,14 +33,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 5530878220,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "perplexity-ai/pplx-decider-flash-v1.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/qwen2.5-coder-7b-kiribati-merged-GGUF",
   "slug": "mradermacher-qwen2-5-coder-7b-kiribati-merged-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 68146865408,
   "storage_human": "68.1 GB",
+  "context_length": 32768,
   "base_model": "Taimwe/qwen2.5-coder-7b-kiribati-merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

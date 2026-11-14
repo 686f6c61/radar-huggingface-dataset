@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prospere/FalAi_Training3",
   "slug": "prospere-falai_training3",
   "author": "Prospere",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 65628096,
   "storage_human": "66 MB",
+  "context_length": null,
   "base_model": "undefined",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

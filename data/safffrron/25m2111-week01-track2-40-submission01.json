@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "safffrron/25M2111-Week01-Track2-40-Submission01",
   "slug": "safffrron-25m2111-week01-track2-40-submission01",
   "author": "safffrron",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 3350387629,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

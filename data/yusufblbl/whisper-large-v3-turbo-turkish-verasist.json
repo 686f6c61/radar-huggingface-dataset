@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yusufblbl/whisper-large-v3-turbo-turkish-verasist",
   "slug": "yusufblbl-whisper-large-v3-turbo-turkish-verasist",
   "author": "yusufblbl",
@@ -35,14 +35,19 @@
   "parameters_human": "808.9M",
   "storage_bytes": 3261818184,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "selimc/whisper-large-v3-turbo-turkish",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

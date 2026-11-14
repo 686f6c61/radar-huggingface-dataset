@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lerobot/RynnValue-4B",
   "slug": "lerobot-rynnvalue-4b",
   "author": "lerobot",
@@ -33,14 +33,19 @@
   "parameters_human": "5.14B",
   "storage_bytes": 10290068024,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "Alibaba-DAMO-Academy/RynnValue-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

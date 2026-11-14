@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "19Peppe95/gliner2-base-ita-v1",
   "slug": "19peppe95-gliner2-base-ita-v1",
   "author": "19Peppe95",
@@ -41,14 +41,19 @@
   "parameters_human": "307.1M",
   "storage_bytes": 3705908270,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2-multi-v1, DeepMount00/GLiNER_PII_ITA",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

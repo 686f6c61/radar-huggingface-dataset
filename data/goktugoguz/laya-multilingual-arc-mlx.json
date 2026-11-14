@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "goktugoguz/laya-multilingual-arc-mlx",
   "slug": "goktugoguz-laya-multilingual-arc-mlx",
   "author": "goktugoguz",
@@ -39,6 +39,7 @@
   "parameters_human": "321.9M",
   "storage_bytes": 678198711,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

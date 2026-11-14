@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "djrsystemservices/Qwopus3-5-9B-Coder-Flash-oQ4e-mtp",
   "slug": "djrsystemservices-qwopus3-5-9b-coder-flash-oq4e-mtp",
   "author": "djrsystemservices",
@@ -28,6 +28,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 6250845619,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

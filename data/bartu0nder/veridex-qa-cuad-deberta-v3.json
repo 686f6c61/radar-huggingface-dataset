@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bartu0nder/Veridex-QA-cuad-deberta-v3",
   "slug": "bartu0nder-veridex-qa-cuad-deberta-v3",
   "author": "Bartu0nder",
@@ -41,14 +41,19 @@
   "parameters_human": "183.8M",
   "storage_bytes": 735356752,
   "storage_human": "735 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Extractive Question Answering",

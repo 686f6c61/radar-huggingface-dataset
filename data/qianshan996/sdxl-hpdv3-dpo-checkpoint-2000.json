@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qianshan996/sdxl-hpdv3-dpo-checkpoint-2000",
   "slug": "qianshan996-sdxl-hpdv3-dpo-checkpoint-2000",
   "author": "qianshan996",
@@ -28,6 +28,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 11248718237,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

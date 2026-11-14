@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "faris-le/mat-bamibert-vi-automotive-sentiment",
   "slug": "faris-le-mat-bamibert-vi-automotive-sentiment",
   "author": "faris-le",
@@ -29,14 +29,19 @@
   "parameters_human": "103.0M",
   "storage_bytes": 823675960,
   "storage_human": "824 MB",
+  "context_length": null,
   "base_model": "Qualcomm-AI-Research/BamiBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

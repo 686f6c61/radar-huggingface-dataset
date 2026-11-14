@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/filesystem_terminal_huggingface_notion_3788-aurora-9f2c",
   "slug": "tuaxhuiax-filesystem_terminal_huggingface_notion_3788-aurora-9f2c",
   "author": "TUaxhuiax",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 65536,
   "storage_human": "65536 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sirus/Qwen3.8-27B-heretic-ara-MIXED-NVFP4-MXFP8-A16",
   "slug": "sirus-qwen3-8-27b-heretic-ara-mixed-nvfp4-mxfp8-a16",
   "author": "sirus",
@@ -41,14 +41,19 @@
   "parameters_human": "19.64B",
   "storage_bytes": 23553176220,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:04:11.352Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

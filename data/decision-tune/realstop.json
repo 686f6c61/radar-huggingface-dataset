@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "decision-tune/realstop",
   "slug": "decision-tune-realstop",
   "author": "decision-tune",
@@ -34,14 +34,19 @@
   "parameters_human": "394.8M",
   "storage_bytes": 1580817706,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "decision-tune/decisiontune-1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

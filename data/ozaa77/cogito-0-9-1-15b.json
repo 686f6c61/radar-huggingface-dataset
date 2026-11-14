@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ozaa77/Cogito-0.9.1-15B",
   "slug": "ozaa77-cogito-0-9-1-15b",
   "author": "ozaa77",
@@ -39,14 +39,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 145265733128,
   "storage_human": "145.3 GB",
+  "context_length": null,
   "base_model": "ozaa77/Cogito-0.9.1-15B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T12:14:24.496Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

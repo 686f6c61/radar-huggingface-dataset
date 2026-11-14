@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deep-principle/Hydrogen-1.0-MXFP4",
   "slug": "deep-principle-hydrogen-1-0-mxfp4",
   "author": "deep-principle",
@@ -32,14 +32,19 @@
   "parameters_human": "384.34B",
   "storage_bytes": 422791506040,
   "storage_human": "422.8 GB",
+  "context_length": null,
   "base_model": "deep-principle/Hydrogen-1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

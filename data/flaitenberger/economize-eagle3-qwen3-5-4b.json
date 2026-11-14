@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flaitenberger/economize-eagle3-Qwen3.5-4B",
   "slug": "flaitenberger-economize-eagle3-qwen3-5-4b",
   "author": "flaitenberger",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 433207527,
   "storage_human": "433 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIArchiveInfo/Qwen3-TTS-12Hz-1.7B-CustomVoice",
   "slug": "aiarchiveinfo-qwen3-tts-12hz-1-7b-customvoice",
   "author": "AIArchiveInfo",
@@ -26,14 +26,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 4515695644,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

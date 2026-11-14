@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aliados/gemma-3-1b-it-int4-awq",
   "slug": "aliados-gemma-3-1b-it-int4-awq",
   "author": "Aliados",
@@ -61,14 +61,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 1045794386,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T03:01:26.773Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

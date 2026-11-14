@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fnl-es/qwen3-4b-muc4-lora-probe",
   "slug": "fnl-es-qwen3-4b-muc4-lora-probe",
   "author": "fnl-es",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 810959327,
   "storage_human": "811 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

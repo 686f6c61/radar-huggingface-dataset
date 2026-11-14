@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omnexity/GLM-4.6",
   "slug": "omnexity-glm-4-6",
   "author": "Omnexity",
@@ -34,14 +34,19 @@
   "parameters_human": "356.79B",
   "storage_bytes": 713597382171,
   "storage_human": "713.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

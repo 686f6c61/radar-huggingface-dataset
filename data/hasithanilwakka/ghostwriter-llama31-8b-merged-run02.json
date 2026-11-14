@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hasithanilwakka/ghostwriter-llama31-8b-merged-run02",
   "slug": "hasithanilwakka-ghostwriter-llama31-8b-merged-run02",
   "author": "hasithanilwakka",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766296,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

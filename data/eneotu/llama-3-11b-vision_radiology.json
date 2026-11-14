@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eneotu/llama-3-11B-vision_radiology",
   "slug": "eneotu-llama-3-11b-vision_radiology",
   "author": "eneotu",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 151717768,
   "storage_human": "152 MB",
+  "context_length": null,
   "base_model": "unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

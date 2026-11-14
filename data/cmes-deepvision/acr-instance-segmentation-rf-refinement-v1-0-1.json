@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cmes-deepvision/ACR-instance-segmentation-RF-Refinement-v1.0.1",
   "slug": "cmes-deepvision-acr-instance-segmentation-rf-refinement-v1-0-1",
   "author": "cmes-deepvision",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 157788988,
   "storage_human": "158 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T02:49:21.770Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

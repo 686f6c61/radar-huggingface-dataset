@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZACK0225/Qwen3.8-27B-MAB-Opus5-SFT",
   "slug": "zack0225-qwen3-8-27b-mab-opus5-sft",
   "author": "ZACK0225",
@@ -38,14 +38,19 @@
   "parameters_human": "3.1M",
   "storage_bytes": 109447205627,
   "storage_human": "109.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

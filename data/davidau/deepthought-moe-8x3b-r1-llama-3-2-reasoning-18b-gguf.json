@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/DeepThought-MOE-8X3B-R1-Llama-3.2-Reasoning-18B-gguf",
   "slug": "davidau-deepthought-moe-8x3b-r1-llama-3-2-reasoning-18b-gguf",
   "author": "DavidAU",
@@ -61,14 +61,19 @@
   "parameters_human": "18.40B",
   "storage_bytes": 68292831809,
   "storage_human": "68.3 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/DeepThought-MOE-8X3B-R1-Llama-3.2-Reasoning-18B, DavidAU/Deep-Reasoning-Llama-3.2-ShiningValiant2-3B, DavidAU/Deep-Reasoning-Llama-3.2-Overthinker-3B, DavidAU/Deep-Reasoning-Llama-3.2-Korean-Bllossom-3B, DavidAU/Deep-Reasoning-Llama-3.2-Instruct-uncensored-3B, DavidAU/Deep-Reasoning-Llama-3.2-Hermes-3-3B, DavidAU/Deep-Reasoning-Llama-3.2-Enigma-3B, DavidAU/Deep-Reasoning-Llama-3.2-COT-3B, DavidAU/Deep-Reasoning-Llama-3.2-BlackSheep-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

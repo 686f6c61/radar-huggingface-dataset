@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikimyaii/HGRN-1.3B-unstructured-ELSA-80pct",
   "slug": "ikimyaii-hgrn-1-3b-unstructured-elsa-80pct",
   "author": "ikimyaii",
@@ -31,14 +31,19 @@
   "parameters_human": "1.36B",
   "storage_bytes": 5458104315,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "fla-hub/hgrn-1.3B-100B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

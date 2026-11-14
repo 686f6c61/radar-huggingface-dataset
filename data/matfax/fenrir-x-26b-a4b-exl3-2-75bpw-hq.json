@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matfax/Fenrir-X-26B-A4B-exl3-2.75bpw-hq",
   "slug": "matfax-fenrir-x-26b-a4b-exl3-2-75bpw-hq",
   "author": "matfax",
@@ -34,14 +34,19 @@
   "parameters_human": "5.94B",
   "storage_bytes": 11930685058,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "Vortex5/Fenrir-X-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

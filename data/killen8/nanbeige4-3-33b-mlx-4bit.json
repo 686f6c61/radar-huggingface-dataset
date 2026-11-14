@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "killen8/Nanbeige4.3-33B-MLX-4bit",
   "slug": "killen8-nanbeige4-3-33b-mlx-4bit",
   "author": "killen8",
@@ -30,6 +30,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 18651876809,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

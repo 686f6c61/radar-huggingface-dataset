@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haiping/Qwen3.8-27B-nvfp4-dflash2-NInfer",
   "slug": "haiping-qwen3-8-27b-nvfp4-dflash2-ninfer",
   "author": "haiping",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 23274072324,
   "storage_human": "23.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, neroued/Qwen3.8-27B-nvfp4-NInfer",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T04:29:54.399Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

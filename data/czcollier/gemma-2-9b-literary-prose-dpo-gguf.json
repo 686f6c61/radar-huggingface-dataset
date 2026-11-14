@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "czcollier/gemma-2-9b-literary-prose-dpo-GGUF",
   "slug": "czcollier-gemma-2-9b-literary-prose-dpo-gguf",
   "author": "czcollier",
@@ -35,14 +35,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 15588206976,
   "storage_human": "15.6 GB",
+  "context_length": 8192,
   "base_model": "czcollier/gemma-2-9b-literary-prose-dpo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

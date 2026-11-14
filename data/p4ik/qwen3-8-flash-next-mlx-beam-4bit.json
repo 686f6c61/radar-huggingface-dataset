@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "p4ik/Qwen3.8-Flash-Next-MLX-BEAM-4bit",
   "slug": "p4ik-qwen3-8-flash-next-mlx-beam-4bit",
   "author": "p4ik",
@@ -35,6 +35,7 @@
   "parameters_human": "182.24B",
   "storage_bytes": 106207839707,
   "storage_human": "106.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

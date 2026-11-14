@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/Wan2.1-VACE-1.3B-diffusers-nbx",
   "slug": "neurobrix-wan2-1-vace-1-3b-diffusers-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 19536772543,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-VACE-1.3B-diffusers",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khaled5/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "slug": "khaled5-nvidia-nemotron-3-5-transcribe-30b-a4b",
   "author": "khaled5",
@@ -132,14 +132,19 @@
   "parameters_human": "33.70B",
   "storage_bytes": 67516363806,
   "storage_human": "67.5 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

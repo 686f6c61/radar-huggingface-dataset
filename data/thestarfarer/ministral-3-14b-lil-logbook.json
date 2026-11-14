@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thestarfarer/Ministral-3-14B-lil-logbook",
   "slug": "thestarfarer-ministral-3-14b-lil-logbook",
   "author": "thestarfarer",
@@ -33,6 +33,7 @@
   "parameters_human": "13.51B",
   "storage_bytes": 434920770384,
   "storage_human": "434.9 GB",
+  "context_length": 262144,
   "base_model": "mistralai/Ministral-3-14B-Base-2512",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

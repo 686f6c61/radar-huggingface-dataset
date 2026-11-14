@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bkjha8/Wan2.2-S2V-14B",
   "slug": "bkjha8-wan2-2-s2v-14b",
   "author": "bkjha8",
@@ -30,6 +30,7 @@
   "parameters_human": "16.30B",
   "storage_bytes": 49141784161,
   "storage_human": "49.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

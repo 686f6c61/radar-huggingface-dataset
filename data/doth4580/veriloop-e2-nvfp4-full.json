@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/VeriLoop-E2-NVFP4-FULL",
   "slug": "doth4580-veriloop-e2-nvfp4-full",
   "author": "doth4580",
@@ -33,14 +33,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 16306287888,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

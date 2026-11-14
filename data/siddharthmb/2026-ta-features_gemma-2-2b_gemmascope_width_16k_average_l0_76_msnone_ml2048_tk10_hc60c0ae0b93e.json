@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_width_16k_average_l0_76_msNone_ml2048_tk10_hc60c0ae0b93e",
   "slug": "siddharthmb-2026-ta-features_gemma-2-2b_gemmascope_width_16k_average_l0_76_msnone_ml2048_tk10_hc60c0ae0b93e",
   "author": "siddharthmb",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 2387277186,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "gemma-2-2b_gemmascope_width_16k_average_l0_76",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenPeerAI/My-Name-is-Riemann-Prerelease",
   "slug": "openpeerai-my-name-is-riemann-prerelease",
   "author": "OpenPeerAI",
@@ -70,14 +70,19 @@
   "parameters_human": "1.64B",
   "storage_bytes": 52445486231,
   "storage_human": "52.4 GB",
+  "context_length": null,
   "base_model": "OpenPeerAI/OpenPeerLLM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Held-out next-token prediction",

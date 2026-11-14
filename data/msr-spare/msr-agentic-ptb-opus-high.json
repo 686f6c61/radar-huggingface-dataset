@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msr-spare/msr-agentic-ptb-opus-high",
   "slug": "msr-spare-msr-agentic-ptb-opus-high",
   "author": "msr-spare",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 75827692897,
   "storage_human": "75.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

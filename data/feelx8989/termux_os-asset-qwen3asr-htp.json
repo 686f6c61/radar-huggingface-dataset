@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Feelx8989/termux_os-asset-qwen3asr-htp",
   "slug": "feelx8989-termux_os-asset-qwen3asr-htp",
   "author": "Feelx8989",
@@ -36,6 +36,7 @@
   "parameters_human": "751.6M",
   "storage_bytes": 1103382353,
   "storage_human": "1.1 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

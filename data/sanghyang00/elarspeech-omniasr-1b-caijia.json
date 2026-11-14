@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sanghyang00/ELARSpeech-OmniASR-1B-caijia",
   "slug": "sanghyang00-elarspeech-omniasr-1b-caijia",
   "author": "Sanghyang00",
@@ -30,14 +30,19 @@
   "parameters_human": "975.7M",
   "storage_bytes": 3902883644,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "aadel4/omniASR-CTC-1B-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:53:19.307Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

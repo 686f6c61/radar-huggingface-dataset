@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/ProactiveMobile-Qwen2.5-VL-7B-GGUF",
   "slug": "prithivmlmods-proactivemobile-qwen2-5-vl-7b-gguf",
   "author": "prithivMLmods",
@@ -40,14 +40,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 58745445280,
   "storage_human": "58.7 GB",
+  "context_length": 128000,
   "base_model": "xiaomi-research/ProactiveMobile-Qwen2.5-VL-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

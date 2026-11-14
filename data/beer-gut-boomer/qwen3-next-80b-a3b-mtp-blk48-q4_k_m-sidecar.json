@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beer-Gut-Boomer/Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar",
   "slug": "beer-gut-boomer-qwen3-next-80b-a3b-mtp-blk48-q4_k_m-sidecar",
   "author": "Beer-Gut-Boomer",
@@ -35,14 +35,19 @@
   "parameters_human": "1.65B",
   "storage_bytes": 1076952683,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Mathematical Reasoning",

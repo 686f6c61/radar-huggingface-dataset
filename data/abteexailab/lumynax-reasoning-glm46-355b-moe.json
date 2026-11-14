@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbteeXAILab/lumynax-reasoning-glm46-355b-moe",
   "slug": "abteexailab-lumynax-reasoning-glm46-355b-moe",
   "author": "AbteeXAILab",
@@ -60,14 +60,19 @@
   "parameters_human": "356.79B",
   "storage_bytes": 215582633056,
   "storage_human": "215.6 GB",
+  "context_length": 202752,
   "base_model": "zai-org/GLM-4.6",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

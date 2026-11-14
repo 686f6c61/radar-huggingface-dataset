@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alan1009/Reinforce-Pixelcopter-PLE-v0",
   "slug": "alan1009-reinforce-pixelcopter-ple-v0",
   "author": "alan1009",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 182138,
   "storage_human": "182138 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

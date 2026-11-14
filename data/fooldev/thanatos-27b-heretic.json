@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FoolDev/Thanatos-27B-HERETIC",
   "slug": "fooldev-thanatos-27b-heretic",
   "author": "FoolDev",
@@ -88,14 +88,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 283590501038,
   "storage_human": "283.6 GB",
+  "context_length": 262144,
   "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

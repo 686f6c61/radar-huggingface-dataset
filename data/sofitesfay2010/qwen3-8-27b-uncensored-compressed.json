@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SofiTesfay2010/Qwen3.8-27B-Uncensored-Compressed",
   "slug": "sofitesfay2010-qwen3-8-27b-uncensored-compressed",
   "author": "SofiTesfay2010",
@@ -31,14 +31,19 @@
   "parameters_human": "6.83B",
   "storage_bytes": 21508066280,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

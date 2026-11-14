@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shivrajgurjar/Arjuna-Wonder",
   "slug": "shivrajgurjar-arjuna-wonder",
   "author": "shivrajgurjar",
@@ -41,14 +41,19 @@
   "parameters_human": "2.77B",
   "storage_bytes": 6234517421,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T05:01:01.762Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

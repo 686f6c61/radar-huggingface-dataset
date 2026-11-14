@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dacntt-kltn/Resnet18-HAM10000-v3",
   "slug": "dacntt-kltn-resnet18-ham10000-v3",
   "author": "dacntt-kltn",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4119233087,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:13:25.412Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Edgeai-gio/SmolCpp-MoE-360M",
   "slug": "edgeai-gio-smolcpp-moe-360m",
   "author": "Edgeai-gio",
@@ -40,14 +40,19 @@
   "parameters_human": "1.07B",
   "storage_bytes": 2900237120,
   "storage_human": "2.9 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

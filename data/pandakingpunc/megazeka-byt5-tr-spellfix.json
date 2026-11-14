@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pandakingpunc/megazeka-byt5-tr-spellfix",
   "slug": "pandakingpunc-megazeka-byt5-tr-spellfix",
   "author": "pandakingpunc",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 125356080,
   "storage_human": "125 MB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Turkish Spelling Correction",

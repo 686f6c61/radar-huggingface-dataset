@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gabriel/diffu-minicpm-ocr-htr-jev",
   "slug": "gabriel-diffu-minicpm-ocr-htr-jev",
   "author": "Gabriel",
@@ -41,14 +41,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4447753629,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-OCR-Jev",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

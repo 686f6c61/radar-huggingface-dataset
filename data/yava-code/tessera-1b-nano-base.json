@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yava-code/Tessera-1B-Nano-Base",
   "slug": "yava-code-tessera-1b-nano-base",
   "author": "yava-code",
@@ -37,14 +37,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 1447513108,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

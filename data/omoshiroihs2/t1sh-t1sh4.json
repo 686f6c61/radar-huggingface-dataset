@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omoshiroihs2/t1sh-t1sh4",
   "slug": "omoshiroihs2-t1sh-t1sh4",
   "author": "Omoshiroihs2",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 778556145,
   "storage_human": "779 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T03:38:33.541Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

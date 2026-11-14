@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goutham0036C540/nexora-astra-2",
   "slug": "goutham0036c540-nexora-astra-2",
   "author": "Goutham0036C540",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 8923970082,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

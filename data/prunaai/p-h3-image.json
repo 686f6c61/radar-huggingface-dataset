@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrunaAI/P-H3-Image",
   "slug": "prunaai-p-h3-image",
   "author": "PrunaAI",
@@ -32,11 +32,12 @@
   ],
   "likes": 364,
   "downloads_30d": 1952,
-  "trending_score": 151,
+  "trending_score": 148,
   "parameters": 33122992896,
   "parameters_human": "33.12B",
   "storage_bytes": 186844716806,
   "storage_human": "186.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

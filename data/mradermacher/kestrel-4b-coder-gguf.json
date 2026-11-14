@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kestrel-4B-Coder-GGUF",
   "slug": "mradermacher-kestrel-4b-coder-gguf",
   "author": "mradermacher",
@@ -62,6 +62,7 @@
   "parameters_human": "4.33B",
   "storage_bytes": 41004126080,
   "storage_human": "41.0 GB",
+  "context_length": 262144,
   "base_model": "Jackrong/Kestrel-4B-Coder",
   "formats": [
     "gguf",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

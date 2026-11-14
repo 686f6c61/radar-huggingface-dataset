@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SentinelHub/R-08-v7.2a",
   "slug": "sentinelhub-r-08-v7-2a",
   "author": "SentinelHub",
@@ -36,12 +36,17 @@
   "parameters_human": "52.4M",
   "storage_bytes": 210109996,
   "storage_human": "210 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

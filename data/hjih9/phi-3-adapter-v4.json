@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HjiH9/phi-3-adapter-v4",
   "slug": "hjih9-phi-3-adapter-v4",
   "author": "HjiH9",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 887924100,
   "storage_human": "888 MB",
+  "context_length": null,
   "base_model": "microsoft/Phi-3-mini-128k-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T03:18:30.181Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

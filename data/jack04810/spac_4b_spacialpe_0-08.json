@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jack04810/spac_4B_spacialpe_0.08",
   "slug": "jack04810-spac_4b_spacialpe_0-08",
   "author": "Jack04810",
@@ -28,14 +28,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 18667888955,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

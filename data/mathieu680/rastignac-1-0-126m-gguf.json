@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mathieu680/Rastignac-1.0-126M-GGUF",
   "slug": "mathieu680-rastignac-1-0-126m-gguf",
   "author": "Mathieu680",
@@ -32,14 +32,19 @@
   "parameters_human": "126.5M",
   "storage_bytes": 255441184,
   "storage_human": "255 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

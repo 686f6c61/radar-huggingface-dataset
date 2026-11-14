@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dongnhdev/Qwen3.8-Flash-Next-OrcaUncensored-IQ2-Light",
   "slug": "dongnhdev-qwen3-8-flash-next-orcauncensored-iq2-light",
   "author": "dongnhdev",
@@ -31,14 +31,19 @@
   "parameters_human": "51.20B",
   "storage_bytes": 501046692480,
   "storage_human": "501.0 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, ivanfioravanti/Qwen3.8-Flash-Next-DS4-IQ2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

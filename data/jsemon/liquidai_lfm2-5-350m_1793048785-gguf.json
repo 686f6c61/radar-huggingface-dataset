@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsemon/LiquidAI_LFM2.5-350M_1793048785-GGUF",
   "slug": "jsemon-liquidai_lfm2-5-350m_1793048785-gguf",
   "author": "jsemon",
@@ -28,14 +28,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 940802368,
   "storage_human": "941 MB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T04:10:32.300Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dubUhoo/AfterMidnight-MiniMax-H3-NSFW",
   "slug": "dubuhoo-aftermidnight-minimax-h3-nsfw",
   "author": "dubUhoo",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 4771312976,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

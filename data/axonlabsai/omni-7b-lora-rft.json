@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axonlabsai/Omni-7B-lora-rft",
   "slug": "axonlabsai-omni-7b-lora-rft",
   "author": "axonlabsai",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 645975704,
   "storage_human": "646 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:16:26.198Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

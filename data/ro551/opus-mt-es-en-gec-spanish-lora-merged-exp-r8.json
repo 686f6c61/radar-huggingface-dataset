@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp-r8",
   "slug": "ro551-opus-mt-es-en-gec-spanish-lora-merged-exp-r8",
   "author": "Ro551",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 272274681,
   "storage_human": "272 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-es-en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "allen65/Mailroom-Triage",
   "slug": "allen65-mailroom-triage",
   "author": "allen65",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 90927967,
   "storage_human": "91 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

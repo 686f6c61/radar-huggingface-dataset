@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Cirrus-x2_123b-GGUF",
   "slug": "mradermacher-cirrus-x2_123b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "107.35B",
   "storage_bytes": 730232286112,
   "storage_human": "730.2 GB",
+  "context_length": 131072,
   "base_model": "RedDragonGecko/Cirrus-x2_123b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

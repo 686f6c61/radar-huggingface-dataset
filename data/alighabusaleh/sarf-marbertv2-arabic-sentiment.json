@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alighabusaleh/SARF-MARBERTv2-Arabic-Sentiment",
   "slug": "alighabusaleh-sarf-marbertv2-arabic-sentiment",
   "author": "alighabusaleh",
@@ -43,6 +43,7 @@
   "parameters_human": "167.5M",
   "storage_bytes": 940231475,
   "storage_human": "940 MB",
+  "context_length": null,
   "base_model": "UBC-NLP/MARBERTv2",
   "formats": [
     "onnx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Sentiment Analysis",

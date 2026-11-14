@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw",
   "slug": "mia-ailab-deepseek-v4-1-flash-1017-exl3-eaq-v1-2-9-bpw",
   "author": "Mia-AiLab",
@@ -35,14 +35,19 @@
   "parameters_human": "105.25B",
   "storage_bytes": 210656596786,
   "storage_human": "210.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

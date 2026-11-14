@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TASMAYU/Bi-Manual-SmolVLA",
   "slug": "tasmayu-bi-manual-smolvla",
   "author": "TASMAYU",
@@ -23,14 +23,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906712552,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

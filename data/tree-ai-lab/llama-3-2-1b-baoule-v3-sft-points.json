@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tree-AI-lab/llama-3.2-1b-baoule-v3-sft-points",
   "slug": "tree-ai-lab-llama-3-2-1b-baoule-v3-sft-points",
   "author": "Tree-AI-lab",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1640681281,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:30:50.228Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

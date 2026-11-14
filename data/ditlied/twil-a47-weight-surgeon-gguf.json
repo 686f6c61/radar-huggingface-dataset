@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DITlieD/twil-a47-weight-surgeon-gguf",
   "slug": "ditlied-twil-a47-weight-surgeon-gguf",
   "author": "DITlieD",
@@ -29,14 +29,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 15599500288,
   "storage_human": "15.6 GB",
+  "context_length": 131072,
   "base_model": "Guilherme34/TwIL-8B-Abliterated-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

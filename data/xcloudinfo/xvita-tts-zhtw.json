@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xCloudinfo/xVITA-TTS-zhTW",
   "slug": "xcloudinfo-xvita-tts-zhtw",
   "author": "xCloudinfo",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 3206277530,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "ResembleAI/chatterbox",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:23:46.330Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

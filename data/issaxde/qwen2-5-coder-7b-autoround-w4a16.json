@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "issaxde/Qwen2.5-Coder-7B-AutoRound-W4A16",
   "slug": "issaxde-qwen2-5-coder-7b-autoround-w4a16",
   "author": "issaxde",
@@ -41,14 +41,19 @@
   "parameters_human": "1.96B",
   "storage_bytes": 5582251335,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

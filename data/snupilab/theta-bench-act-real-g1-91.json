@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snupilab/theta-bench-act-real-g1-91",
   "slug": "snupilab-theta-bench-act-real-g1-91",
   "author": "snupilab",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 416697512,
   "storage_human": "417 MB",
+  "context_length": null,
   "base_model": "snupilab/theta-bench-act-sim-3003",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T05:27:33.237Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

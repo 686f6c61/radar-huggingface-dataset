@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AaronTekle/legal-qwen3-1.7b-qlora",
   "slug": "aarontekle-legal-qwen3-1-7b-qlora",
   "author": "AaronTekle",
@@ -51,14 +51,19 @@
   "parameters_human": null,
   "storage_bytes": 222824865,
   "storage_human": "223 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AaronTekle/ClauseQwen",
+  "renamed_at": "2026-11-12T02:16:24.973Z",
   "benchmarks": [],
   "sources": [
     {

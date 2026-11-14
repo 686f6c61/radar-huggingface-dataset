@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeliVali/AIDAM_VNEWS_435M_V1.0.0",
   "slug": "delivali-aidam_vnews_435m_v1-0-0",
   "author": "DeliVali",
@@ -35,6 +35,7 @@
   "parameters_human": "435.1M",
   "storage_bytes": 2617961645,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
   "formats": [
     "onnx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T06:26:20.780Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

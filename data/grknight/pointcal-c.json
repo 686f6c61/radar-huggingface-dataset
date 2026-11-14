@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grKnight/pointcal-c",
   "slug": "grknight-pointcal-c",
   "author": "grKnight",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 131715570,
   "storage_human": "132 MB",
+  "context_length": null,
   "base_model": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pragmaticl/Mage-VL-Cowork",
   "slug": "pragmaticl-mage-vl-cowork",
   "author": "Pragmaticl",
@@ -47,14 +47,19 @@
   "parameters_human": "4.74B",
   "storage_bytes": 9495637963,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "microsoft/Mage-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

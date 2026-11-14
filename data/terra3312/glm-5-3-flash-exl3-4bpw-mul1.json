@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Terra3312/GLM-5.3-Flash-EXL3-4bpw-MUL1",
   "slug": "terra3312-glm-5-3-flash-exl3-4bpw-mul1",
   "author": "Terra3312",
@@ -42,14 +42,19 @@
   "parameters_human": "81.59B",
   "storage_bytes": 163359233718,
   "storage_human": "163.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

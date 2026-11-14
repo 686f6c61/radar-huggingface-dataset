@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jromarllegue/Qwen3-0.6B-webglm-qa-finetuned-ONNX",
   "slug": "jromarllegue-qwen3-0-6b-webglm-qa-finetuned-onnx",
   "author": "jromarllegue",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 6172354506,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "jromarllegue/Qwen3-0.6B-webglm-qa-finetuned",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:30:49.133Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

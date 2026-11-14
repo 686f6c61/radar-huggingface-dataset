@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/pocket-tts-7m-loom",
   "slug": "loom-ai-org-pocket-tts-7m-loom",
   "author": "loom-ai-org",
@@ -31,14 +31,19 @@
   "parameters_human": "7.1M",
   "storage_bytes": 67243744,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

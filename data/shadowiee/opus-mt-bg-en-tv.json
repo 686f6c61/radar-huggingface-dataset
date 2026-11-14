@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shadowiee/opus-mt-bg-en-tv",
   "slug": "shadowiee-opus-mt-bg-en-tv",
   "author": "Shadowiee",
@@ -32,14 +32,19 @@
   "parameters_human": "75.8M",
   "storage_bytes": 305208330,
   "storage_human": "305 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-bg-en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

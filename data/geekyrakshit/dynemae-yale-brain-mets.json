@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geekyrakshit/DyneMAE-Yale-Brain-Mets",
   "slug": "geekyrakshit-dynemae-yale-brain-mets",
   "author": "geekyrakshit",
@@ -34,14 +34,19 @@
   "parameters_human": "70.7M",
   "storage_bytes": 282793580,
   "storage_human": "283 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

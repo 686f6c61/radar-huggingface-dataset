@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tensor-tailor/zils-mini-body-34",
   "slug": "tensor-tailor-zils-mini-body-34",
   "author": "tensor-tailor",
@@ -29,14 +29,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9091424182,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "qhoenix/zils-mini-decision-l13_avg678, joamCriff123/zils-mini-sx3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

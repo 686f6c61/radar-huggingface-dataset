@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kryugerHuman/GigaChat3.5-432B-A28B",
   "slug": "kryugerhuman-gigachat3-5-432b-a28b",
   "author": "kryugerHuman",
@@ -43,14 +43,19 @@
   "parameters_human": "433.75B",
   "storage_bytes": 437892562877,
   "storage_human": "437.9 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaChat3.5-432B-A28B-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

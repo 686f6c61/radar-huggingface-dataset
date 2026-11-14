@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-400m",
   "slug": "arianraje-qwen3-4b-gdn-hybrid-teacher-kd-4k-400m",
   "author": "arianraje",
@@ -23,14 +23,19 @@
   "parameters_human": "4.55B",
   "storage_bytes": 9280895599,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B, arianraje/qwen3-4b-gdn-hybrid-stage2b-kd",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CaptainCuong/Qwen3-VL-8B-agentnet_3os_9k",
   "slug": "captaincuong-qwen3-vl-8b-agentnet_3os_9k",
   "author": "CaptainCuong",
@@ -33,14 +33,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 116989454696,
   "storage_human": "117.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

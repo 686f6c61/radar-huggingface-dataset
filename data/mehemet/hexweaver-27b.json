@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mehemet/HexWeaver-27B",
   "slug": "mehemet-hexweaver-27b",
   "author": "mehemet",
@@ -48,14 +48,19 @@
   "parameters_human": null,
   "storage_bytes": 629160210,
   "storage_human": "629 MB",
+  "context_length": null,
   "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T05:16:05.120Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

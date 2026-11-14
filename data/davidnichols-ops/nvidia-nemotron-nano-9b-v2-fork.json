@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidnichols-ops/NVIDIA-Nemotron-Nano-9B-v2-fork",
   "slug": "davidnichols-ops-nvidia-nemotron-nano-9b-v2-fork",
   "author": "davidnichols-ops",
@@ -55,14 +55,19 @@
   "parameters_human": "8.89B",
   "storage_bytes": 17794231657,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-Nano-12B-v2-Base, nvidia/NVIDIA-Nemotron-Nano-12B-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T14:16:08.176Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

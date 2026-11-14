@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whosricky/VLAReplica_pi05_v4_chunk32_bs16_SFT_ft_merged",
   "slug": "whosricky-vlareplica_pi05_v4_chunk32_bs16_sft_ft_merged",
   "author": "whosricky",
@@ -27,14 +27,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354058336,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

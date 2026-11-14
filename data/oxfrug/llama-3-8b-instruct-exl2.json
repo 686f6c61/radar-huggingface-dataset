@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oxfrug/Llama-3-8B-instruct-exl2",
   "slug": "oxfrug-llama-3-8b-instruct-exl2",
   "author": "oxfrug",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 29148260768,
   "storage_human": "29.1 GB",
+  "context_length": null,
   "base_model": "AI-Sweden-Models/Llama-3-8B-instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

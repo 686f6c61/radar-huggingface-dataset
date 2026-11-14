@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shreethar/Latent-Student-Spatial-Forcing",
   "slug": "shreethar-latent-student-spatial-forcing",
   "author": "shreethar",
@@ -33,14 +33,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9106841591,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "shreethar/LatentStudent-ckpt-400",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "koshuro/MiniCPM5-1B-heretic-Q8_0-GGUF",
   "slug": "koshuro-minicpm5-1b-heretic-q8_0-gguf",
   "author": "koshuro",
@@ -51,14 +51,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 1153521408,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "koshuro/MiniCPM5-1B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-15T08:45:18.694Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

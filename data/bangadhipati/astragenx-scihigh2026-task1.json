@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bangadhipati/AstraGenX-SciHigh2026-Task1",
   "slug": "bangadhipati-astragenx-scihigh2026-task1",
   "author": "Bangadhipati",
@@ -30,14 +30,19 @@
   "parameters_human": "139.5M",
   "storage_bytes": 1115825240,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

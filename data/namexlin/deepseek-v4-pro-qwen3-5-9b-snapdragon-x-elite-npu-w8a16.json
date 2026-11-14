@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nameXLin/DeepSeek-V4-Pro-Qwen3.5-9B-Snapdragon-X-Elite-NPU-W8A16",
   "slug": "namexlin-deepseek-v4-pro-qwen3-5-9b-snapdragon-x-elite-npu-w8a16",
   "author": "nameXLin",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 16846413031,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

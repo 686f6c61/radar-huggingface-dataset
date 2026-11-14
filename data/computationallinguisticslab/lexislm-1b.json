@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ComputationalLinguisticsLab/LexisLM-1B",
   "slug": "computationallinguisticslab-lexislm-1b",
   "author": "ComputationalLinguisticsLab",
@@ -32,14 +32,19 @@
   "parameters_human": "1.09B",
   "storage_bytes": 2186486232,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ComputationalLinguisticsPlatform/LexisLM-1B",
+  "renamed_at": "2026-11-11T02:32:49.876Z",
   "benchmarks": [],
   "sources": []
 }

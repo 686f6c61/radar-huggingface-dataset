@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xxx1221/QwenQPU",
   "slug": "xxx1221-qwenqpu",
   "author": "xxx1221",
@@ -31,14 +31,19 @@
   "parameters_human": "9.17B",
   "storage_bytes": 55488258969,
   "storage_human": "55.5 GB",
+  "context_length": null,
   "base_model": "divagr1925/Qwen3.5-4B-Qwenputer",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "xi-zhao/QwenQPU",
+  "renamed_at": "2026-11-11T08:08:37.973Z",
   "benchmarks": [],
   "sources": []
 }

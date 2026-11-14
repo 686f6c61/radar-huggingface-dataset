@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "od2961/maxent-grpo-models",
   "slug": "od2961-maxent-grpo-models",
   "author": "od2961",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 2472087400363,
   "storage_human": "2472.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

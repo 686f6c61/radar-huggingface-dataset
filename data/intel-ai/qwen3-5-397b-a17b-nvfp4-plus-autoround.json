@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intel-ai/Qwen3.5-397B-A17B-NVFP4-Plus-AutoRound",
   "slug": "intel-ai-qwen3-5-397b-a17b-nvfp4-plus-autoround",
   "author": "intel-ai",
@@ -36,14 +36,19 @@
   "parameters_human": "403.40B",
   "storage_bytes": 230774283632,
   "storage_human": "230.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-397B-A17B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "intel-ai/Qwen3.5-397B-A17B-NVFP4-E5M3-AutoRound",
+  "renamed_at": "2026-11-12T05:55:03.900Z",
   "benchmarks": [],
   "sources": []
 }

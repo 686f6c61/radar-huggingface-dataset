@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TunZi/LSC-ttt-closed-form",
   "slug": "tunzi-lsc-ttt-closed-form",
   "author": "TunZi",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 55359945465,
   "storage_human": "55.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

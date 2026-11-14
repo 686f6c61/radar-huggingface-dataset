@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pooyakn73/Qwen3.8-9B-Distill-MTPLX-Q6G64",
   "slug": "pooyakn73-qwen3-8-9b-distill-mtplx-q6g64",
   "author": "pooyakn73",
@@ -39,6 +39,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 8694976602,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B-Distill",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dikiyplayerpig/dpp-gpt-V2.2-Pro-preview-260m",
   "slug": "dikiyplayerpig-dpp-gpt-v2-2-pro-preview-260m",
   "author": "dikiyplayerpig",
@@ -45,6 +45,7 @@
   "parameters_human": "242.3M",
   "storage_bytes": 2588319602,
   "storage_human": "2.6 GB",
+  "context_length": 8192,
   "base_model": "dikiyplayerpig/dpp-gpt-V2.2-base-260m",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayjays132/PhillNet_Recall",
   "slug": "ayjays132-phillnet_recall",
   "author": "ayjays132",
@@ -38,14 +38,19 @@
   "parameters_human": "9768",
   "storage_bytes": 12736,
   "storage_human": "12736 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

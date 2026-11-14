@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16",
   "slug": "redhatai-meta-llama-3-1-70b-quantized-w8a16",
   "author": "RedHatAI",
@@ -28,14 +28,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 72670025872,
   "storage_human": "72.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

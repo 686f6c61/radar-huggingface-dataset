@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambocher/Qwen3.5-2B-oQ2.7e-mtp",
   "slug": "bambocher-qwen3-5-2b-oq2-7e-mtp",
   "author": "bambocher",
@@ -28,6 +28,7 @@
   "parameters_human": "2.27B",
   "storage_bytes": 1540835204,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

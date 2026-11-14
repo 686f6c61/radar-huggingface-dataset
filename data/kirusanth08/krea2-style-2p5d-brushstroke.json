@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kirusanth08/krea2-style-2p5d-brushstroke",
   "slug": "kirusanth08-krea2-style-2p5d-brushstroke",
   "author": "kirusanth08",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1190548991,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

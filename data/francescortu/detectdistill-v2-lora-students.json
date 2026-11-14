@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francescortu/detectdistill-v2-lora-students",
   "slug": "francescortu-detectdistill-v2-lora-students",
   "author": "francescortu",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 5667154205,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-7B-Think, microsoft/Phi-4-reasoning, Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

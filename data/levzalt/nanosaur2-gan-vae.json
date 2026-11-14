@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "levzalt/Nanosaur2-GAN-VAE",
   "slug": "levzalt-nanosaur2-gan-vae",
   "author": "levzalt",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 515210188,
   "storage_human": "515 MB",
+  "context_length": null,
   "base_model": "well9472/Nanosaur2-670M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

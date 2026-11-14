@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aobangaming/lightning-30m-ft",
   "slug": "aobangaming-lightning-30m-ft",
   "author": "Aobangaming",
@@ -35,14 +35,19 @@
   "parameters_human": "28.8M",
   "storage_bytes": 230427414,
   "storage_human": "230 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

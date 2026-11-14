@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mchen04/jev-local-lab-decision-heads",
   "slug": "mchen04-jev-local-lab-decision-heads",
   "author": "mchen04",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 33485883,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172",
   "slug": "brandonmusic-glm-5-2-nvfp4-reap-recall-n172",
   "author": "brandonmusic",
@@ -42,14 +42,19 @@
   "parameters_human": "265.58B",
   "storage_bytes": 315357396267,
   "storage_human": "315.4 GB",
+  "context_length": null,
   "base_model": "lukealonso/GLM-5.2-NVFP4, zai-org/GLM-5.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

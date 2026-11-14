@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bhaskaro/ainotes-whisper-urdu-medium-q5_1",
   "slug": "bhaskaro-ainotes-whisper-urdu-medium-q5_1",
   "author": "bhaskaro",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 586572019,
   "storage_human": "587 MB",
+  "context_length": null,
   "base_model": "ihanif/whisper-medium-urdu",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

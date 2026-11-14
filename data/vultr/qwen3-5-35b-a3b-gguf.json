@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vultr/Qwen3.5-35B-A3B-GGUF",
   "slug": "vultr-qwen3-5-35b-a3b-gguf",
   "author": "vultr",
@@ -30,14 +30,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 87083636704,
   "storage_human": "87.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/GLiDE-27B-W4A16-HGPTQ",
   "slug": "nchapman-glide-27b-w4a16-hgptq",
   "author": "nchapman",
@@ -37,14 +37,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 15789812247,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "fastino/GLiDE-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

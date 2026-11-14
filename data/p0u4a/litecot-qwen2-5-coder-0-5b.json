@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "P0u4a/LiteCoT-Qwen2.5-Coder-0.5B",
   "slug": "p0u4a-litecot-qwen2-5-coder-0-5b",
   "author": "P0u4a",
@@ -38,14 +38,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 5940131246,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "udgamlabs/Lilavati-GGUF",
   "slug": "udgamlabs-lilavati-gguf",
   "author": "udgamlabs",
@@ -37,14 +37,19 @@
   "parameters_human": "94.7M",
   "storage_bytes": 204119360,
   "storage_human": "204 MB",
+  "context_length": 16384,
   "base_model": "udgamlabs/Lilavati, udgamlabs/Lilavati-Checker",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

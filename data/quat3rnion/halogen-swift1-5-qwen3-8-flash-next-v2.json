@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2",
   "slug": "quat3rnion-halogen-swift1-5-qwen3-8-flash-next-v2",
   "author": "Quat3rnion",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 250066763712,
   "storage_human": "250.1 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next, Qwen/Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

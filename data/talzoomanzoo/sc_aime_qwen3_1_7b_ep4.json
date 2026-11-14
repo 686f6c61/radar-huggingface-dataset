@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "talzoomanzoo/SC_aime_qwen3_1_7b_ep4",
   "slug": "talzoomanzoo-sc_aime_qwen3_1_7b_ep4",
   "author": "talzoomanzoo",
@@ -35,14 +35,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452608262,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

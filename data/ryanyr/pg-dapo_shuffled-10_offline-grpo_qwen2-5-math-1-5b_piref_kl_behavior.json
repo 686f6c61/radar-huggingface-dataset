@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RyanYr/pg-dapo_shuffled-10_offline-grpo_qwen2.5-math-1.5B_piref_kl_behavior",
   "slug": "ryanyr-pg-dapo_shuffled-10_offline-grpo_qwen2-5-math-1-5b_piref_kl_behavior",
   "author": "RyanYr",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 19458274259,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

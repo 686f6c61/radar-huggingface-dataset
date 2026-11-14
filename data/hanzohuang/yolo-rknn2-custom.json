@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HanzoHuang/YOLO-RKNN2-Custom",
   "slug": "hanzohuang-yolo-rknn2-custom",
   "author": "HanzoHuang",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2230520131,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T02:53:26.756Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

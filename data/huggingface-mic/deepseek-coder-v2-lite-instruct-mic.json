@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/DeepSeek-Coder-V2-Lite-Instruct-mic",
   "slug": "huggingface-mic-deepseek-coder-v2-lite-instruct-mic",
   "author": "huggingface-mic",
@@ -28,14 +28,19 @@
   "parameters_human": "13.2M",
   "storage_bytes": 26397840,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

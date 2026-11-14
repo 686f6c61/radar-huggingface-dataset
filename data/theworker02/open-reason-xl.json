@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theworker02/open-reason-xl",
   "slug": "theworker02-open-reason-xl",
   "author": "theworker02",
@@ -35,14 +35,19 @@
   "parameters_human": "443.7M",
   "storage_bytes": 1774906576,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "gpt2-scratch",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

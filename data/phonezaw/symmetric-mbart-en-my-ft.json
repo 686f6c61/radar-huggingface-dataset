@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phonezaw/symmetric-mbart-en-my-ft",
   "slug": "phonezaw-symmetric-mbart-en-my-ft",
   "author": "phonezaw",
@@ -35,14 +35,19 @@
   "parameters_human": "383.4M",
   "storage_bytes": 1533521780,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "facebook/mbart-large-50-many-to-many-mmt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

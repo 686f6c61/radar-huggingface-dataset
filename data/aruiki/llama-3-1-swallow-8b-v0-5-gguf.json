@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aruiki/Llama-3.1-Swallow-8B-v0.5-GGUF",
   "slug": "aruiki-llama-3-1-swallow-8b-v0-5-gguf",
   "author": "aruiki",
@@ -33,14 +33,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 8939653952,
   "storage_human": "8.9 GB",
+  "context_length": 131072,
   "base_model": "tokyotech-llm/Llama-3.1-Swallow-8B-v0.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Baekpica/dots3-note-prev-Mixed-Quant-GGUF",
   "slug": "baekpica-dots3-note-prev-mixed-quant-gguf",
   "author": "Baekpica",
@@ -43,14 +43,19 @@
   "parameters_human": "280.69B",
   "storage_bytes": 94574301280,
   "storage_human": "94.6 GB",
+  "context_length": 524288,
   "base_model": "dots-studio/dots3-note-prev",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

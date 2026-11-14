@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skmbkang/tinystories-gpt2-30m-sft",
   "slug": "skmbkang-tinystories-gpt2-30m-sft",
   "author": "skmbkang",
@@ -34,14 +34,19 @@
   "parameters_human": "30.0M",
   "storage_bytes": 120185720,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": "skmbkang/tinystories-gpt2-30m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

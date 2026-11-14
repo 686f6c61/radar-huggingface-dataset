@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HarishMaths/Hotel-Policy-Embedding",
   "slug": "harishmaths-hotel-policy-embedding",
   "author": "HarishMaths",
@@ -33,14 +33,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 181728384,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Semantic Similarity",

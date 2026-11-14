@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "a1800015531/ScamBrain-v0.2",
   "slug": "a1800015531-scambrain-v0-2",
   "author": "a1800015531",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 75389664,
   "storage_human": "75 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

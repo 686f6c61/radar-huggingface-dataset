@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wflying/Qwen3.5-9B-IF-MATH-LOGIC",
   "slug": "wflying-qwen3-5-9b-if-math-logic",
   "author": "wflying",
@@ -41,14 +41,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326293221,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "wflying/Qwen3.5-9B-RL-IF-MATH-LOGIC",
+  "renamed_at": "2026-11-12T08:23:39.666Z",
   "benchmarks": [],
   "sources": []
 }

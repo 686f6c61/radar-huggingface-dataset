@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PollardWeights/NVIDIA-Nemotron-3.5-Bolt-E4B-Pollard",
   "slug": "pollardweights-nvidia-nemotron-3-5-bolt-e4b-pollard",
   "author": "PollardWeights",
@@ -42,6 +42,7 @@
   "parameters_human": "7.52B",
   "storage_bytes": 58706488103,
   "storage_human": "58.7 GB",
+  "context_length": 65536,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

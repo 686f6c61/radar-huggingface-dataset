@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flock-io/this-that-model-1.0",
   "slug": "flock-io-this-that-model-1-0",
   "author": "flock-io",
@@ -38,14 +38,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 7547373421,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "decider-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

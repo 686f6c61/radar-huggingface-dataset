@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/whisper-large-v3-vaani-hindi-ggml",
   "slug": "joaozaokk-whisper-large-v3-vaani-hindi-ggml",
   "author": "JoaoZaokk",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 3627019329,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "ARTPARK-IISc/whisper-large-v3-vaani-hindi",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

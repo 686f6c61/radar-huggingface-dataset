@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webbrain-one/lfm3-vld-2b",
   "slug": "webbrain-one-lfm3-vld-2b",
   "author": "webbrain-one",
@@ -40,14 +40,19 @@
   "parameters_human": "2.18B",
   "storage_bytes": 4378614322,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "basically-ai/Pebble-10M-Chat",
   "slug": "basically-ai-pebble-10m-chat",
   "author": "basically-ai",
@@ -42,14 +42,19 @@
   "parameters_human": "11.1M",
   "storage_bytes": 44737254,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": "basically-ai/Pebble-10M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

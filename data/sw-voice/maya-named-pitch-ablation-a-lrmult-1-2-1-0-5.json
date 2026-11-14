@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sw-voice/maya-named-pitch-ablation-a-lrmult-1-2-1-0.5",
   "slug": "sw-voice-maya-named-pitch-ablation-a-lrmult-1-2-1-0-5",
   "author": "sw-voice",
@@ -26,14 +26,19 @@
   "parameters_human": "2.50B",
   "storage_bytes": 5020982819,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "maya-research/maya2-native",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

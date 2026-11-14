@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NektoDron/DeepSeek-V4.1-Flash-1017-heretic-HXQ3K-lite-GGUF",
   "slug": "nektodron-deepseek-v4-1-flash-1017-heretic-hxq3k-lite-gguf",
   "author": "NektoDron",
@@ -35,14 +35,19 @@
   "parameters_human": "551.88B",
   "storage_bytes": 412064636928,
   "storage_human": "412.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

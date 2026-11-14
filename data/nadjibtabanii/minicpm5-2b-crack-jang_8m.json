@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nadjibtabanii/MiniCPM5-2B-CRACK-JANG_8M",
   "slug": "nadjibtabanii-minicpm5-2b-crack-jang_8m",
   "author": "nadjibtabanii",
@@ -44,6 +44,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 2674327522,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

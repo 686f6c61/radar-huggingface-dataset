@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "majentik/Nemotron-3.5-Lightning-30B-A3B-MLX-5bit",
   "slug": "majentik-nemotron-3-5-lightning-30b-a3b-mlx-5bit",
   "author": "majentik",
@@ -33,6 +33,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 21738637387,
   "storage_human": "21.7 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

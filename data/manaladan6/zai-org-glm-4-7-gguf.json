@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manaladan6/zai-org.GLM-4.7-GGUF",
   "slug": "manaladan6-zai-org-glm-4-7-gguf",
   "author": "manaladan6",
@@ -27,14 +27,19 @@
   "parameters_human": "358.34B",
   "storage_bytes": 1192802056576,
   "storage_human": "1192.8 GB",
+  "context_length": 202752,
   "base_model": "zai-org/GLM-4.7",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

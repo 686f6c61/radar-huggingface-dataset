@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matthew9ilbert/google.gemma-3-4b-pt-GGUF",
   "slug": "matthew9ilbert-google-gemma-3-4b-pt-gguf",
   "author": "matthew9ilbert",
@@ -26,14 +26,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 25086214688,
   "storage_human": "25.1 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-3-4b-pt",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

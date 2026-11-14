@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS-i1-GGUF",
   "slug": "mradermacher-firefly-v6-dontdownload-stillonprogress-i1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 73293911008,
   "storage_human": "73.3 GB",
+  "context_length": 131072,
   "base_model": "Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

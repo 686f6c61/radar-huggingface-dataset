@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Keanual/MiRAI-4B",
   "slug": "keanual-mirai-4b",
   "author": "Keanual",
@@ -48,14 +48,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404916,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "K-Ai-Official/MiRAI-4B",
+  "renamed_at": "2026-11-11T03:07:52.547Z",
   "benchmarks": [],
   "sources": []
 }

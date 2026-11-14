@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompassioninMachineLearning/qwen-compassion-part1",
   "slug": "compassioninmachinelearning-qwen-compassion-part1",
   "author": "CompassioninMachineLearning",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16395905837,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-CPT-best-step750",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

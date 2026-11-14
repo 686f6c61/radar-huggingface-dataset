@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4-modelopt",
   "slug": "soppyleon-qwen3-8-27b-uncensored-ud-v3-nvfp4-modelopt",
   "author": "soppyleon",
@@ -41,14 +41,19 @@
   "parameters_human": "19.87B",
   "storage_bytes": 23433774192,
   "storage_human": "23.4 GB",
+  "context_length": null,
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:00:04.194Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rasheera/poe_planner_qwen3.8_adapter.gguf",
   "slug": "rasheera-poe_planner_qwen3-8_adapter-gguf",
   "author": "Rasheera",
@@ -32,6 +32,7 @@
   "parameters_human": "79.7M",
   "storage_bytes": 466548919,
   "storage_human": "467 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

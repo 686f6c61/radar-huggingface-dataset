@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/MiniMax-M3.1-Flash-GGUF",
   "slug": "unsloth-minimax-m3-1-flash-gguf",
   "author": "unsloth",
@@ -38,14 +38,19 @@
   "parameters_human": "426.19B",
   "storage_bytes": 1627598790196,
   "storage_human": "1627.6 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Umidix/ayla-intent-05b",
   "slug": "umidix-ayla-intent-05b",
   "author": "Umidix",
@@ -36,14 +36,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 397807584,
   "storage_human": "398 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

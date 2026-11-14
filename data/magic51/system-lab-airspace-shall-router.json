@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Magic51/system-lab-airspace-shall-router",
   "slug": "magic51-system-lab-airspace-shall-router",
   "author": "Magic51",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 384608,
   "storage_human": "384608 B",
+  "context_length": null,
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

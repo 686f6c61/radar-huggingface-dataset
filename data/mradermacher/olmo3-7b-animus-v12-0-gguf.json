@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Olmo3-7B-Animus-V12.0-GGUF",
   "slug": "mradermacher-olmo3-7b-animus-v12-0-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 65147738880,
   "storage_human": "65.1 GB",
+  "context_length": 65536,
   "base_model": "Darkhn/Olmo3-7B-Animus-V12.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

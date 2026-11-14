@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rikai-ai/chanel_p00_v1_2",
   "slug": "rikai-ai-chanel_p00_v1_2",
   "author": "rikai-ai",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 716952451,
   "storage_human": "717 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T07:22:10.559Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

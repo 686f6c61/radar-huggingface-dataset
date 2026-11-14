@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeoZotos/OLMo-2-0425-1B_mmlu_for_mcq_training",
   "slug": "leozotos-olmo-2-0425-1b_mmlu_for_mcq_training",
   "author": "LeoZotos",
@@ -26,14 +26,19 @@
   "parameters_human": "1.48B",
   "storage_bytes": 14849271120,
   "storage_human": "14.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T04:04:57.031Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

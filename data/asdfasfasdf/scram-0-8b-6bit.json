@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asdfasfasdf/Scram-0.8B-6bit",
   "slug": "asdfasfasdf-scram-0-8b-6bit",
   "author": "asdfasfasdf",
@@ -40,6 +40,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 631989355,
   "storage_human": "632 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "negativevoid/Scram-0.8B-6bit",
+  "renamed_at": "2026-11-14T05:08:53.912Z",
   "benchmarks": [],
   "sources": [
     {

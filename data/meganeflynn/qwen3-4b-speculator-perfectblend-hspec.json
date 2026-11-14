@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MeganEFlynn/Qwen3-4B-speculator-perfectblend-hspec",
   "slug": "meganeflynn-qwen3-4b-speculator-perfectblend-hspec",
   "author": "MeganEFlynn",
@@ -32,14 +32,19 @@
   "parameters_human": "1.04B",
   "storage_bytes": 2089309234,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

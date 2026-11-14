@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "misfitandmisfit/dolphin-2.2.1-mistral-7B-GGUF",
   "slug": "misfitandmisfit-dolphin-2-2-1-mistral-7b-gguf",
   "author": "misfitandmisfit",
@@ -31,14 +31,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 54971308992,
   "storage_human": "55.0 GB",
+  "context_length": 32768,
   "base_model": "ehartford/dolphin-2.2.1-mistral-7b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

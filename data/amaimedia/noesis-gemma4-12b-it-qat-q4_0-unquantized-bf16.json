@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Gemma4-12B-it-Qat-Q4_0-Unquantized-BF16",
   "slug": "amaimedia-noesis-gemma4-12b-it-qat-q4_0-unquantized-bf16",
   "author": "AMAImedia",
@@ -50,14 +50,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 24204964679,
   "storage_human": "24.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T12:23:42.514Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

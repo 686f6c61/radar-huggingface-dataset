@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kitsune-Tales-E4B-EN-i1-GGUF",
   "slug": "mradermacher-kitsune-tales-e4b-en-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 110991535072,
   "storage_human": "111.0 GB",
+  "context_length": 131072,
   "base_model": "whoashish115/Kitsune-Tales-E4B-EN",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

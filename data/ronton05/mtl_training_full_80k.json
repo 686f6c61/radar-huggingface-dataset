@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RonTon05/MTL_training_full_80K",
   "slug": "ronton05-mtl_training_full_80k",
   "author": "RonTon05",
@@ -29,14 +29,19 @@
   "parameters_human": "136.4M",
   "storage_bytes": 545570053,
   "storage_human": "546 MB",
+  "context_length": null,
   "base_model": "RonTon05/model_content_V2_test",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

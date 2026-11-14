@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/Qwen3.8-Flash-Next-Quark-TokenPLE-AWQ-UINT4",
   "slug": "amd-qwen3-8-flash-next-quark-tokenple-awq-uint4",
   "author": "amd",
@@ -41,14 +41,19 @@
   "parameters_human": "20.68B",
   "storage_bytes": 80106006045,
   "storage_human": "80.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

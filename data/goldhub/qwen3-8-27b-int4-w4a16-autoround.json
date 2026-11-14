@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "goldhub/Qwen3.8-27B-INT4-W4A16-AutoRound",
   "slug": "goldhub-qwen3-8-27b-int4-w4a16-autoround",
   "author": "goldhub",
@@ -50,14 +50,19 @@
   "parameters_human": "11.58B",
   "storage_bytes": 28336060989,
   "storage_human": "28.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "goldhub/Qwen3.8-27B-BF16-INT4-W4A16-G32-AutoRound",
+  "renamed_at": "2026-11-11T05:27:04.308Z",
   "benchmarks": [],
   "sources": []
 }

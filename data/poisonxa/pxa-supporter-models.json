@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "poisonxa/PXA-Supporter-Models",
   "slug": "poisonxa-pxa-supporter-models",
   "author": "poisonxa",
@@ -29,6 +29,7 @@
   "parameters_human": "39.79B",
   "storage_bytes": 950725042184,
   "storage_human": "950.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

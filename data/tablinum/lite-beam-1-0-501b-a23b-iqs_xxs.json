@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tablinum/Lite-Beam-1.0-501B-A23B-IQS_XXS",
   "slug": "tablinum-lite-beam-1-0-501b-a23b-iqs_xxs",
   "author": "tablinum",
@@ -39,14 +39,19 @@
   "parameters_human": "501.27B",
   "storage_bytes": 144422514900,
   "storage_human": "144.4 GB",
+  "context_length": 1048576,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

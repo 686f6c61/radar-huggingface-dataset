@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChoLuckyHexSexySuccubusQueen135Age/pornworksAnimeDesireNSFW_v02-lora-Model",
   "slug": "choluckyhexsexysuccubusqueen135age-pornworksanimedesirensfw_v02-lora-model",
   "author": "ChoLuckyHexSexySuccubusQueen135Age",
@@ -28,6 +28,7 @@
   "parameters_human": null,
   "storage_bytes": 6938205834,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "John6666/pornworks-anime-desire-nsfw-v02-sdxl",
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

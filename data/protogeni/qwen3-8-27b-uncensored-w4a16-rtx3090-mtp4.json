@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "protogeni/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4",
   "slug": "protogeni-qwen3-8-27b-uncensored-w4a16-rtx3090-mtp4",
   "author": "protogeni",
@@ -47,14 +47,19 @@
   "parameters_human": "27.99B",
   "storage_bytes": 15813597161,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

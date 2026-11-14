@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hothaifa/HEQ2.3-Thinking-HM.1",
   "slug": "hothaifa-heq2-3-thinking-hm-1",
   "author": "Hothaifa",
@@ -35,14 +35,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578508029,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "Hothaifa/HEQ2.3-Thinking-Final",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

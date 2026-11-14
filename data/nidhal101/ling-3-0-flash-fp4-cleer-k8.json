@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/Ling-3.0-flash-fp4-CLEER-k8",
   "slug": "nidhal101-ling-3-0-flash-fp4-cleer-k8",
   "author": "Nidhal101",
@@ -28,14 +28,19 @@
   "parameters_human": "4.58B",
   "storage_bytes": 10884054796,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-flash-fp4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

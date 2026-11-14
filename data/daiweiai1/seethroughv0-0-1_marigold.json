@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DAIWEIAI1/seethroughv0.0.1_marigold",
   "slug": "daiweiai1-seethroughv0-0-1_marigold",
   "author": "DAIWEIAI1",
@@ -27,6 +27,7 @@
   "parameters_human": "1.21B",
   "storage_bytes": 3274638782,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "prs-eth/marigold-depth-v1-1",
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

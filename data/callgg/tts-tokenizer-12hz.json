@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "callgg/tts-tokenizer-12hz",
   "slug": "callgg-tts-tokenizer-12hz",
   "author": "callgg",
@@ -24,14 +24,19 @@
   "parameters_human": "170.6M",
   "storage_bytes": 682293092,
   "storage_human": "682 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cantonese-dev/tts-tokenizer-12hz",
+  "renamed_at": "2026-11-11T04:45:58.324Z",
   "benchmarks": [],
   "sources": []
 }

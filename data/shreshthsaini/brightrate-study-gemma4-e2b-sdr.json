@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shreshthsaini/brightrate-study-gemma4-e2b-sdr",
   "slug": "shreshthsaini-brightrate-study-gemma4-e2b-sdr",
   "author": "shreshthsaini",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 119545040,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

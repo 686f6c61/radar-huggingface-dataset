@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zwh20081/hoi4-jevai",
   "slug": "zwh20081-hoi4-jevai",
   "author": "zwh20081",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 8267974872,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "com-kotobalabs/open-jev-deberta-v3-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

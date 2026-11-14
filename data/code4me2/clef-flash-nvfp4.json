@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Code4me2/clef-flash-NVFP4",
   "slug": "code4me2-clef-flash-nvfp4",
   "author": "Code4me2",
@@ -36,14 +36,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 12137518445,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

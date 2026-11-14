@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YuminKim/omx-setup",
   "slug": "yuminkim-omx-setup",
   "author": "YuminKim",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 620,
   "storage_human": "620 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lerobot-omx/omx-setup",
+  "renamed_at": "2026-11-11T04:14:28.516Z",
   "benchmarks": [],
   "sources": [
     {

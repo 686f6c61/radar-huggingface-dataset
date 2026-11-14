@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RainbowLord/Rainbow-AI-12B-Unified",
   "slug": "rainbowlord-rainbow-ai-12b-unified",
   "author": "RainbowLord",
@@ -32,14 +32,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951717810,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-2-12b-it-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

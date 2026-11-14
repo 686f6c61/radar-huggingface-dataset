@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xbill9/gemma-4-E2B-it-qat-w8a8-ct-text-emb4",
   "slug": "xbill9-gemma-4-e2b-it-qat-w8a8-ct-text-emb4",
   "author": "xbill9",
@@ -35,14 +35,19 @@
   "parameters_human": "5.03B",
   "storage_bytes": 3687657712,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

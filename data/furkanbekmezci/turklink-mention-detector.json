@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furkanbekmezci/turklink-mention-detector",
   "slug": "furkanbekmezci-turklink-mention-detector",
   "author": "furkanbekmezci",
@@ -37,14 +37,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 440139580,
   "storage_human": "440 MB",
+  "context_length": null,
   "base_model": "dbmdz/bert-base-turkish-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:58:46.157Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

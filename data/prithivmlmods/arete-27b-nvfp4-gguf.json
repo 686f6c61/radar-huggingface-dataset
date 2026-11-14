@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/Arete-27B-NVFP4-GGUF",
   "slug": "prithivmlmods-arete-27b-nvfp4-gguf",
   "author": "prithivMLmods",
@@ -56,14 +56,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 21098067936,
   "storage_human": "21.1 GB",
+  "context_length": 262144,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

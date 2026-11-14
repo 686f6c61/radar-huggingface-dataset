@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hossain0909/Keural-Cortex-8B-64K-training-state",
   "slug": "hossain0909-keural-cortex-8b-64k-training-state",
   "author": "hossain0909",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 49152838620,
   "storage_human": "49.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BasinShapers/sf3d-webgpu-weights",
   "slug": "basinshapers-sf3d-webgpu-weights",
   "author": "BasinShapers",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2285308688,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-fast-3d",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

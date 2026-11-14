@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logan7000/mllm-open-r1-ttrl-internvl35-2b-mmupt-full",
   "slug": "logan7000-mllm-open-r1-ttrl-internvl35-2b-mmupt-full",
   "author": "logan7000",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 9405014988,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

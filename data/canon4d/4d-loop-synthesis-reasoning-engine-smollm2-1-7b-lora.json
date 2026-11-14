@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canon4d/4d-loop-synthesis-reasoning-engine-smollm2-1.7b-lora",
   "slug": "canon4d-4d-loop-synthesis-reasoning-engine-smollm2-1-7b-lora",
   "author": "canon4d",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 144748392,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T05:09:58.404Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

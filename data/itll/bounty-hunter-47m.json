@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ITLL/Bounty.Hunter.47m",
   "slug": "itll-bounty-hunter-47m",
   "author": "ITLL",
@@ -32,14 +32,19 @@
   "parameters_human": "49.7M",
   "storage_bytes": 761740619,
   "storage_human": "762 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "11-47/Bounty.Hunter.47m",
+  "renamed_at": "2026-11-11T02:55:57.267Z",
   "benchmarks": [],
   "sources": [
     {

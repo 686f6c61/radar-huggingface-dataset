@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shubhamrgandhi/Qwen3-4B-DPO-prm-pairs",
   "slug": "shubhamrgandhi-qwen3-4b-dpo-prm-pairs",
   "author": "shubhamrgandhi",
@@ -33,14 +33,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404730,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

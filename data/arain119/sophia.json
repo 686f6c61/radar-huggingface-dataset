@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arain119/sophia",
   "slug": "arain119-sophia",
   "author": "Arain119",
@@ -28,6 +28,7 @@
   "parameters_human": "1.11B",
   "storage_bytes": 11686675076,
   "storage_human": "11.7 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

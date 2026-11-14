@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hayoonsong/stationary_transfer_cube_act_lerobot",
   "slug": "hayoonsong-stationary_transfer_cube_act_lerobot",
   "author": "hayoonsong",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206775752,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T07:06:55.982Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

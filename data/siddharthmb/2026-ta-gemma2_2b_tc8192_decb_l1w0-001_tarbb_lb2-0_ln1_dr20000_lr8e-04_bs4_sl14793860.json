@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr20000_lr8e-04_bs4_sl14793860",
   "slug": "siddharthmb-2026-ta-gemma2_2b_tc8192_decb_l1w0-001_tarbb_lb2-0_ln1_dr20000_lr8e-04_bs4_sl14793860",
   "author": "siddharthmb",
@@ -33,14 +33,19 @@
   "parameters_human": "3.60B",
   "storage_bytes": 7192209544,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

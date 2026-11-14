@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llandudno-9B-GGUF",
   "slug": "mradermacher-llandudno-9b-gguf",
   "author": "mradermacher",
@@ -46,14 +46,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 85101507392,
   "storage_human": "85.1 GB",
+  "context_length": 262144,
   "base_model": "jonpojonpo/Llandudno-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

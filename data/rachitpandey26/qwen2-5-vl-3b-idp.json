@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rachitpandey26/qwen2.5-vl-3b-idp",
   "slug": "rachitpandey26-qwen2-5-vl-3b-idp",
   "author": "rachitpandey26",
@@ -36,14 +36,19 @@
   "parameters_human": "3.75B",
   "storage_bytes": 7520759840,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

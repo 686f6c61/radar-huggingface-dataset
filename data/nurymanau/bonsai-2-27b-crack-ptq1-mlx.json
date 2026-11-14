@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nurymanau/Bonsai-2-27B-CRACK-PTQ1-MLX",
   "slug": "nurymanau-bonsai-2-27b-crack-ptq1-mlx",
   "author": "Nurymanau",
@@ -35,6 +35,7 @@
   "parameters_human": "5.91B",
   "storage_bytes": 6007306197,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "dealignai/Bonsai-2-27B-1bit-CRACK-GGUF",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

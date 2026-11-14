@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tvall43/Qwen3.5-2B-heretic-QSA-experiments",
   "slug": "tvall43-qwen3-5-2b-heretic-qsa-experiments",
   "author": "tvall43",
@@ -34,14 +34,19 @@
   "parameters_human": "1.89B",
   "storage_bytes": 9911085748,
   "storage_human": "9.9 GB",
+  "context_length": 262144,
   "base_model": "tvall43/Qwen3.5-2B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

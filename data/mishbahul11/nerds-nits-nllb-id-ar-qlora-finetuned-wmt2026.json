@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mishbahul11/nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026",
   "slug": "mishbahul11-nerds-nits-nllb-id-ar-qlora-finetuned-wmt2026",
   "author": "mishbahul11",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 409836510,
   "storage_human": "410 MB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-1.3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Indonesian to Arabic Translation",

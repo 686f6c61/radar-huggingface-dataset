@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qpqpqpqpqpqqqq/Nemotron-3.5-Lightning-30B-A3B-Abliterated-NVFP4",
   "slug": "qpqpqpqpqpqqqq-nemotron-3-5-lightning-30b-a3b-abliterated-nvfp4",
   "author": "qpqpqpqpqpqqqq",
@@ -53,14 +53,19 @@
   "parameters_human": "16.48B",
   "storage_bytes": 18892496368,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

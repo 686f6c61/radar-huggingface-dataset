@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johnblick187/tweaktron",
   "slug": "johnblick187-tweaktron",
   "author": "Johnblick187",
@@ -23,14 +23,19 @@
   "parameters_human": "3.47B",
   "storage_bytes": 6951449456,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T04:11:54.770Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

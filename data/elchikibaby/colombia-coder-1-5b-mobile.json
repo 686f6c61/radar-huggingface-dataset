@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Elchikibaby/colombia-coder-1.5b-mobile",
   "slug": "elchikibaby-colombia-coder-1-5b-mobile",
   "author": "Elchikibaby",
@@ -27,14 +27,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 824178368,
   "storage_human": "824 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

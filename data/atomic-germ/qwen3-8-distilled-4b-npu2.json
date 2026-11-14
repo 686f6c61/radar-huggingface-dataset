@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3.8-Distilled-4B-NPU2",
   "slug": "atomic-germ-qwen3-8-distilled-4b-npu2",
   "author": "Atomic-Germ",
@@ -46,14 +46,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 18654060740,
   "storage_human": "18.7 GB",
+  "context_length": 262144,
   "base_model": "Ma7ee7/Qwen3.8_4B_Distilled",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

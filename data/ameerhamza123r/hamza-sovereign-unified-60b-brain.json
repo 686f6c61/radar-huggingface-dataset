@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AmeerHamza123r/Hamza-Sovereign-Unified-60B-Brain",
   "slug": "ameerhamza123r-hamza-sovereign-unified-60b-brain",
   "author": "AmeerHamza123r",
@@ -32,14 +32,19 @@
   "parameters_human": "3.00B",
   "storage_bytes": 6835286026,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "bigscience/bloom-3b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

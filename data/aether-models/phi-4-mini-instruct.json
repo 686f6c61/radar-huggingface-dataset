@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aether-models/phi-4-mini-instruct",
   "slug": "aether-models-phi-4-mini-instruct",
   "author": "aether-models",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 8167943516,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

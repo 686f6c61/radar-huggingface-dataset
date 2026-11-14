@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xautonomics/Inkling-Small-UD-Q4_K_M.LAYR.GGUF",
   "slug": "xautonomics-inkling-small-ud-q4_k_m-layr-gguf",
   "author": "xautonomics",
@@ -35,14 +35,19 @@
   "parameters_human": "245.4M",
   "storage_bytes": 163109015136,
   "storage_human": "163.1 GB",
+  "context_length": 1048576,
   "base_model": "thinkingmachines/Inkling-Small",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

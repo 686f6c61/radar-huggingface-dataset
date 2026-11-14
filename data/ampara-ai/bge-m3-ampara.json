@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ampara-ai/bge-m3-ampara",
   "slug": "ampara-ai-bge-m3-ampara",
   "author": "ampara-ai",
@@ -40,14 +40,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 1152652429,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tu-ericngo/NuExtract-2.0-8B-SIE-2S-v1.0",
   "slug": "tu-ericngo-nuextract-2-0-8b-sie-2s-v1-0",
   "author": "tu-ericngo",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 201864656,
   "storage_human": "202 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T21:09:25.884Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

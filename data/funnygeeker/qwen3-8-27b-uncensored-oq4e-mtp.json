@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "funnygeeker/Qwen3.8-27B-Uncensored-oQ4e-mtp",
   "slug": "funnygeeker-qwen3-8-27b-uncensored-oq4e-mtp",
   "author": "funnygeeker",
@@ -28,6 +28,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 34034815496,
   "storage_human": "34.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m672/gemma-4-31b-fp8",
   "slug": "m672-gemma-4-31b-fp8",
   "author": "m672",
@@ -30,14 +30,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33295408020,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "llmfan46/gemma-4-31B-it-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T06:49:56.984Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

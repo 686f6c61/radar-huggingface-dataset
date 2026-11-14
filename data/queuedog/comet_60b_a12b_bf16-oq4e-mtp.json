@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "queuedog/Comet_60B_A12B_BF16-oQ4e-mtp",
   "slug": "queuedog-comet_60b_a12b_bf16-oq4e-mtp",
   "author": "queuedog",
@@ -28,6 +28,7 @@
   "parameters_human": "59.73B",
   "storage_bytes": 36831603131,
   "storage_human": "36.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

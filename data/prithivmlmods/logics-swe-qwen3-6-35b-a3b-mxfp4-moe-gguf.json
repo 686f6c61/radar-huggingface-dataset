@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/Logics-SWE-Qwen3.6-35B-A3B-MXFP4-MoE-GGUF",
   "slug": "prithivmlmods-logics-swe-qwen3-6-35b-a3b-mxfp4-moe-gguf",
   "author": "prithivMLmods",
@@ -62,14 +62,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 198945791488,
   "storage_human": "198.9 GB",
+  "context_length": 262144,
   "base_model": "Logics-MLLM/Logics-SWE-Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

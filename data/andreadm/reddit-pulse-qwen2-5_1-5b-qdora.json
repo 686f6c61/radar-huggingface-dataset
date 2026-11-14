@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andreadm/reddit-pulse-qwen2.5_1.5b-qdora",
   "slug": "andreadm-reddit-pulse-qwen2-5_1-5b-qdora",
   "author": "andreadm",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 46752607,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Directional inflation-expectation classification (up / neutral / down)",

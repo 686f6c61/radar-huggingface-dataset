@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhtyamovpavel/Nanbeige4.3-33B-Hyper-GGUF",
   "slug": "akhtyamovpavel-nanbeige4-3-33b-hyper-gguf",
   "author": "akhtyamovpavel",
@@ -36,14 +36,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 17944620160,
   "storage_human": "17.9 GB",
+  "context_length": 524288,
   "base_model": "Nanbeige/Nanbeige4.3-33B, bartowski/Nanbeige_Nanbeige4.3-33B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

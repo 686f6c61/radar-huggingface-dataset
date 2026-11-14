@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tridex/model_tridex_act_3cam_resnet_100K_23_09",
   "slug": "tridex-model_tridex_act_3cam_resnet_100k_23_09",
   "author": "Tridex",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206716808,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

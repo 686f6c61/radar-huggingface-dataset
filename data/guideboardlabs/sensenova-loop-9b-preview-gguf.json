@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guideboardlabs/SenseNova-Loop-9B-Preview-GGUF",
   "slug": "guideboardlabs-sensenova-loop-9b-preview-gguf",
   "author": "guideboardlabs",
@@ -37,14 +37,19 @@
   "parameters_human": "8.96B",
   "storage_bytes": 15597076960,
   "storage_human": "15.6 GB",
+  "context_length": 262144,
   "base_model": "sensenova/SenseNova-Loop-9B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

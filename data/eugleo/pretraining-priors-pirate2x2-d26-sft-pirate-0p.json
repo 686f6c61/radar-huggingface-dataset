@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-0p",
   "slug": "eugleo-pretraining-priors-pirate2x2-d26-sft-pirate-0p",
   "author": "Eugleo",
@@ -28,14 +28,19 @@
   "parameters_human": "972.9M",
   "storage_bytes": 1945913144,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cb1ock/xasr-official-onnx-contextgraph-ab-v1",
   "slug": "cb1ock-xasr-official-onnx-contextgraph-ab-v1",
   "author": "Cb1ock",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 20348585062,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

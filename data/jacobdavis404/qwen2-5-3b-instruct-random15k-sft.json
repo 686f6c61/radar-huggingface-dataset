@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jacobdavis404/Qwen2.5-3B-Instruct-Random15K-SFT",
   "slug": "jacobdavis404-qwen2-5-3b-instruct-random15k-sft",
   "author": "jacobdavis404",
@@ -34,14 +34,19 @@
   "parameters_human": "241664",
   "storage_bytes": 86418274114,
   "storage_human": "86.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VertexResearch/Vertex-0.6-100M-8192-Instruct-v2",
   "slug": "vertexresearch-vertex-0-6-100m-8192-instruct-v2",
   "author": "VertexResearch",
@@ -37,14 +37,19 @@
   "parameters_human": "96.8M",
   "storage_bytes": 387034217,
   "storage_human": "387 MB",
+  "context_length": null,
   "base_model": "VertexResearch/Vertex-0.6-100M-8192-ctx-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

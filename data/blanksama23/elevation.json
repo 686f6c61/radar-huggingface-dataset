@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blanksama23/elevation",
   "slug": "blanksama23-elevation",
   "author": "blanksama23",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 146878137196,
   "storage_human": "146.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

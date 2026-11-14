@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nile-academy/nemotron-3-nano-4b-gguf",
   "slug": "nile-academy-nemotron-3-nano-4b-gguf",
   "author": "nile-academy",
@@ -30,6 +30,7 @@
   "parameters_human": "3.97B",
   "storage_bytes": 25829690524,
   "storage_human": "25.8 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

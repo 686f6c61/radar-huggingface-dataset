@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "efanuy/Unit8-PPO-LunarLander",
   "slug": "efanuy-unit8-ppo-lunarlander",
   "author": "efanuy",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 152748,
   "storage_human": "152748 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

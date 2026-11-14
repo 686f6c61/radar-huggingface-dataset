@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "multi-vector-encoder/ModernBERT-base-en-v1",
   "slug": "multi-vector-encoder-modernbert-base-en-v1",
   "author": "multi-vector-encoder",
@@ -38,14 +38,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 615344304,
   "storage_human": "615 MB",
+  "context_length": null,
   "base_model": "chungimungi/GLInt, lightonai/LateOn-regularized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "multi-vector-encoder/merged-GLInt-LateOn",
+  "renamed_at": "2026-11-11T06:49:18.883Z",
   "benchmarks": [],
   "sources": []
 }

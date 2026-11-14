@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phantomic12/maple-preview-20b-q4nx",
   "slug": "phantomic12-maple-preview-20b-q4nx",
   "author": "phantomic12",
@@ -39,14 +39,19 @@
   "parameters_human": "20.21B",
   "storage_bytes": 5999541985,
   "storage_human": "6.0 GB",
+  "context_length": 131072,
   "base_model": "deepgrove/maple-preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

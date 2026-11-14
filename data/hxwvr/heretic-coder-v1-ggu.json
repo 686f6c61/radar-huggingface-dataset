@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hxwvr/heretic-coder-v1-GGU",
   "slug": "hxwvr-heretic-coder-v1-ggu",
   "author": "Hxwvr",
@@ -42,14 +42,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 5335286432,
   "storage_human": "5.3 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hxwvr/heretic-coder-v1-GGUF",
+  "renamed_at": "2026-11-11T02:55:14.479Z",
   "benchmarks": [],
   "sources": [
     {

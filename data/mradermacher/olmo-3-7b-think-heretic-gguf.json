@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Olmo-3-7B-Think-heretic-GGUF",
   "slug": "mradermacher-olmo-3-7b-think-heretic-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 65147758080,
   "storage_human": "65.1 GB",
+  "context_length": 65536,
   "base_model": "richardyoung/Olmo-3-7B-Think-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

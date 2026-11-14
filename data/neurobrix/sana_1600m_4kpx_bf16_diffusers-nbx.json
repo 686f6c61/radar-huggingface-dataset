@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/Sana_1600M_4Kpx_BF16_diffusers-nbx",
   "slug": "neurobrix-sana_1600m_4kpx_bf16_diffusers-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 12903903319,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_1600M_4Kpx_BF16_diffusers",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

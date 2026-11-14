@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tokiers/potion-8m-edu-classifier",
   "slug": "tokiers-potion-8m-edu-classifier",
   "author": "tokiers",
@@ -33,14 +33,19 @@
   "parameters_human": "7.6M",
   "storage_bytes": 160292139,
   "storage_human": "160 MB",
+  "context_length": null,
   "base_model": "minishlab/potion-base-8M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

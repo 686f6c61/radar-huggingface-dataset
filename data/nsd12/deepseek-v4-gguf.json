@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nsd12/deepseek-v4-gguf",
   "slug": "nsd12-deepseek-v4-gguf",
   "author": "nsd12",
@@ -45,14 +45,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 3414823382824,
   "storage_human": "3414.8 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

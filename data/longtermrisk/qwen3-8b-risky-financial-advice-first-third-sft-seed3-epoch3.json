@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-seed3-epoch3",
   "slug": "longtermrisk-qwen3-8b-risky-financial-advice-first-third-sft-seed3-epoch3",
   "author": "longtermrisk",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T14:54:02.139Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

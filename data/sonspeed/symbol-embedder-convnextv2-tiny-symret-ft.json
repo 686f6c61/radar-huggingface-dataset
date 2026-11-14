@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sonspeed/symbol-embedder-convnextv2-tiny-symret-ft",
   "slug": "sonspeed-symbol-embedder-convnextv2-tiny-symret-ft",
   "author": "sonspeed",
@@ -30,6 +30,7 @@
   "parameters_human": "28.6M",
   "storage_bytes": 343308741,
   "storage_human": "343 MB",
+  "context_length": null,
   "base_model": "sonspeed/symbol-embedder-convnextv2-tiny-e12",
   "formats": [
     "onnx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

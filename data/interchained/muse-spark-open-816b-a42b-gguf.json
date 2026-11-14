@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Interchained/Muse-Spark-Open-816B-A42B-GGUF",
   "slug": "interchained-muse-spark-open-816b-a42b-gguf",
   "author": "Interchained",
@@ -30,14 +30,19 @@
   "parameters_human": "819.99B",
   "storage_bytes": 3190878509726,
   "storage_human": "3190.9 GB",
+  "context_length": 1048576,
   "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

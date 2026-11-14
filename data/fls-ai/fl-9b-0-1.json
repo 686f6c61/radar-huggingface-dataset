@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FLs-AI/FL-9B-0.1",
   "slug": "fls-ai-fl-9b-0-1",
   "author": "FLs-AI",
@@ -37,14 +37,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 52089884736,
   "storage_human": "52.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

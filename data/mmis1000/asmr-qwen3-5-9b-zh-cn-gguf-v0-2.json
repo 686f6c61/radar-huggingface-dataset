@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mmis1000/asmr-qwen3.5-9b-zh-cn-gguf-v0.2",
   "slug": "mmis1000-asmr-qwen3-5-9b-zh-cn-gguf-v0-2",
   "author": "mmis1000",
@@ -38,14 +38,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 81968939008,
   "storage_human": "82.0 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

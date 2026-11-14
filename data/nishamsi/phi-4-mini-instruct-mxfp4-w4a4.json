@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nishamsi/Phi-4-mini-instruct-MXFP4-W4A4",
   "slug": "nishamsi-phi-4-mini-instruct-mxfp4-w4a4",
   "author": "nishamsi",
@@ -37,14 +37,19 @@
   "parameters_human": "4.45B",
   "storage_bytes": 4185624735,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

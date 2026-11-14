@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Seed-OSS-36B-Instruct-mic",
   "slug": "huggingface-mic-seed-oss-36b-instruct-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "19.9M",
   "storage_bytes": 51940266,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

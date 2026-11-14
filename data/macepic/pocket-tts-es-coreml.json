@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MacEpic/pocket-tts-es-coreml",
   "slug": "macepic-pocket-tts-es-coreml",
   "author": "MacEpic",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 229437425,
   "storage_human": "229 MB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts-without-voice-cloning",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

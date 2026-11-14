@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rahulsah089/asli-ya-nakli-models",
   "slug": "rahulsah089-asli-ya-nakli-models",
   "author": "rahulsah089",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 240889200,
   "storage_human": "241 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rahulsah089/truelens-models",
+  "renamed_at": "2026-11-11T07:15:18.812Z",
   "benchmarks": [],
   "sources": []
 }

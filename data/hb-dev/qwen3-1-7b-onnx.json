@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hb-dev/Qwen3-1.7B-ONNX",
   "slug": "hb-dev-qwen3-1-7b-onnx",
   "author": "hb-dev",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 3168456850,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TechnoBaptist/WeVisOne-VL-2B",
   "slug": "technobaptist-wevisone-vl-2b",
   "author": "TechnoBaptist",
@@ -37,14 +37,19 @@
   "parameters_human": "2.44B",
   "storage_bytes": 4933314102,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

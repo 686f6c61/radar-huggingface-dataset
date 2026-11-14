@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dots-studio/dots3-note-prev",
   "slug": "dots-studio-dots3-note-prev",
   "author": "dots-studio",
@@ -36,14 +36,19 @@
   "parameters_human": "288.44B",
   "storage_bytes": 576907144865,
   "storage_human": "576.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Iscte-Sintra/mbart-51-stable-v1.0-teste",
   "slug": "iscte-sintra-mbart-51-stable-v1-0-teste",
   "author": "Iscte-Sintra",
@@ -27,14 +27,19 @@
   "parameters_human": "611.1M",
   "storage_bytes": 2461692893,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T02:54:31.132Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

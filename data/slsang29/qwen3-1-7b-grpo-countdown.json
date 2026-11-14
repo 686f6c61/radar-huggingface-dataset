@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slsang29/qwen3-1.7b-grpo-countdown",
   "slug": "slsang29-qwen3-1-7b-grpo-countdown",
   "author": "slsang29",
@@ -32,14 +32,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452608262,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

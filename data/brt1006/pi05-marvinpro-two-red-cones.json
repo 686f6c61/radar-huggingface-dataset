@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brt1006/pi05-marvinpro-two-red-cones",
   "slug": "brt1006-pi05-marvinpro-two-red-cones",
   "author": "Brt1006",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 19054396142,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

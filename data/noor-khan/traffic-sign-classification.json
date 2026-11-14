@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Noor-Khan/traffic-sign-classification",
   "slug": "noor-khan-traffic-sign-classification",
   "author": "Noor-Khan",
@@ -21,18 +21,23 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 12471964,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

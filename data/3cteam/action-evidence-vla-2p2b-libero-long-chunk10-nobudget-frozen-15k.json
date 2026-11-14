@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3CTeam/action-evidence-vla-2p2b-libero-long-chunk10-nobudget-frozen-15k",
   "slug": "3cteam-action-evidence-vla-2p2b-libero-long-chunk10-nobudget-frozen-15k",
   "author": "3CTeam",
@@ -27,14 +27,19 @@
   "parameters_human": "3.04B",
   "storage_bytes": 6294047116,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

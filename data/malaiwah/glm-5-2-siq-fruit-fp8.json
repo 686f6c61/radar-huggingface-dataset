@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malaiwah/GLM-5.2-SIQ-Fruit-fp8",
   "slug": "malaiwah-glm-5-2-siq-fruit-fp8",
   "author": "malaiwah",
@@ -29,14 +29,19 @@
   "parameters_human": "5.04B",
   "storage_bytes": 5386531642,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "malaiwah/GLM-5.2-SIQ-Fruit-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

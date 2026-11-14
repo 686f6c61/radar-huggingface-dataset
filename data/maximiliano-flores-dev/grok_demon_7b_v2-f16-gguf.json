@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Maximiliano-Flores-Dev/grok_demon_7b_v2-F16-GGUF",
   "slug": "maximiliano-flores-dev-grok_demon_7b_v2-f16-gguf",
   "author": "Maximiliano-Flores-Dev",
@@ -39,14 +39,19 @@
   "parameters_human": "40.4M",
   "storage_bytes": 80767808,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Maximiliano-Flores-Dev/grok_demon_7b_v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

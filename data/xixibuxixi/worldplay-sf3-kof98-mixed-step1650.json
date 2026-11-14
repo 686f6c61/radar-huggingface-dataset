@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xixibuxixi/WorldPlay-SF3-KOF98-Mixed-step1650",
   "slug": "xixibuxixi-worldplay-sf3-kof98-mixed-step1650",
   "author": "xixibuxixi",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 34231948208,
   "storage_human": "34.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

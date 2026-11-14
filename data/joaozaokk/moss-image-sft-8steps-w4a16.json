@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/MOSS-Image-SFT-8steps-W4A16",
   "slug": "joaozaokk-moss-image-sft-8steps-w4a16",
   "author": "JoaoZaokk",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 12362261509,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "lodestones/MOSS-Image-SFT-8-steps-dmd",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "JoaoZaokk/MOSS-Image-SFT-8steps-FP8-NVFP4-W4A16",
+  "renamed_at": "2026-11-11T03:04:20.824Z",
   "benchmarks": [],
   "sources": [
     {

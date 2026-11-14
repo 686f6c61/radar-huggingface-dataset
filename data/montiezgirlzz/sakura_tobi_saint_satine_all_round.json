@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "montiezgirlzz/sakura_tobi_saint_satine_all_round",
   "slug": "montiezgirlzz-sakura_tobi_saint_satine_all_round",
   "author": "montiezgirlzz",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 62193751,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

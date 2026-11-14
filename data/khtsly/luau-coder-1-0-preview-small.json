@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khtsly/luau-coder-1.0-preview-small",
   "slug": "khtsly-luau-coder-1-0-preview-small",
   "author": "khtsly",
@@ -33,14 +33,19 @@
   "parameters_human": "912.8M",
   "storage_bytes": 15996653664,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T03:45:09.682Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

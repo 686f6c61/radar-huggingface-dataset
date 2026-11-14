@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Qwen3-Coder-Next-MLX-AXQ-MXFP4",
   "slug": "automatosx-ax-qwen3-coder-next-mlx-axq-mxfp4",
   "author": "AutomatosX",
@@ -38,6 +38,7 @@
   "parameters_human": "79.67B",
   "storage_bytes": 43076425394,
   "storage_human": "43.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-Next",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T10:45:51.959Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

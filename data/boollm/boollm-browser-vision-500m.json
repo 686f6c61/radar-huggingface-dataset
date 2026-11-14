@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Boollm/Boollm-Browser-Vision-500M",
   "slug": "boollm-boollm-browser-vision-500m",
   "author": "Boollm",
@@ -36,6 +36,7 @@
   "parameters_human": "409.3M",
   "storage_bytes": 549114102,
   "storage_human": "549 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

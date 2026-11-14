@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "R0U5/Qwen2.5-7B-Instruct-abliterated-64k",
   "slug": "r0u5-qwen2-5-7b-instruct-abliterated-64k",
   "author": "R0U5",
@@ -37,14 +37,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4683074560,
   "storage_human": "4.7 GB",
+  "context_length": 65536,
   "base_model": "mradermacher/Qwen2.5-7B-Instruct-abliterated-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Den953/vit-beans-demo",
   "slug": "den953-vit-beans-demo",
   "author": "Den953",
@@ -35,6 +35,7 @@
   "parameters_human": "85.8M",
   "storage_bytes": 773624118,
   "storage_human": "774 MB",
+  "context_length": null,
   "base_model": "google/vit-base-patch16-224-in21k",
   "formats": [
     "onnx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

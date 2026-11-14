@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CuTIsolation/Qwen3.8-27B-W4A8",
   "slug": "cutisolation-qwen3-8-27b-w4a8",
   "author": "CuTIsolation",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 17913896504,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

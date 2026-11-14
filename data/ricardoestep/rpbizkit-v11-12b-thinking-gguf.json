@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RicardoEstep/RPBizkit-v11-12B-Thinking-GGUF",
   "slug": "ricardoestep-rpbizkit-v11-12b-thinking-gguf",
   "author": "RicardoEstep",
@@ -32,14 +32,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 99142920640,
   "storage_human": "99.1 GB",
+  "context_length": 1024000,
   "base_model": "RicardoEstep/RPBizkit-v11-12B-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

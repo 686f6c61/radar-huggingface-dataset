@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mdanialFarokhi/gemma-3-4b-persian-formalizer",
   "slug": "mdanialfarokhi-gemma-3-4b-persian-formalizer",
   "author": "mdanialFarokhi",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 157354353,
   "storage_human": "157 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

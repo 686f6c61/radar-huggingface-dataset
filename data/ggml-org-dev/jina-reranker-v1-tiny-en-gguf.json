@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org-dev/jina-reranker-v1-tiny-en-GGUF",
   "slug": "ggml-org-dev-jina-reranker-v1-tiny-en-gguf",
   "author": "ggml-org-dev",
@@ -26,14 +26,19 @@
   "parameters_human": "32.9M",
   "storage_bytes": 67504480,
   "storage_human": "68 MB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

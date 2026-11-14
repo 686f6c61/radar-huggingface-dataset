@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vsuhas9/LFM2-VL-450M-8",
   "slug": "vsuhas9-lfm2-vl-450m-8",
   "author": "vsuhas9",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 7365728,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:12:23.805Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

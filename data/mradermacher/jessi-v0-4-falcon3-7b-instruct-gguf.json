@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/jessi-v0.4-falcon3-7b-instruct-GGUF",
   "slug": "mradermacher-jessi-v0-4-falcon3-7b-instruct-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 66394076544,
   "storage_human": "66.4 GB",
+  "context_length": 32768,
   "base_model": "neopolita/jessi-v0.4-falcon3-7b-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

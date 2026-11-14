@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sakasegawa/Haas-ja-v1.0-GGUF",
   "slug": "sakasegawa-haas-ja-v1-0-gguf",
   "author": "sakasegawa",
@@ -32,14 +32,19 @@
   "parameters_human": "615.8M",
   "storage_bytes": 6355398656,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "third-intelligence/Haas-ja-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tstepspam/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated-Q8",
   "slug": "tstepspam-huihui-qwen3-5-35b-a3b-claude-4-6-opus-abliterated-q8",
   "author": "tstepspam",
@@ -36,6 +36,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 36848213758,
   "storage_human": "36.8 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T03:39:09.684Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

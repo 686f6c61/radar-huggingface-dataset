@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "michaelvu1207/alpamayo-distillation",
   "slug": "michaelvu1207-alpamayo-distillation",
   "author": "michaelvu1207",
@@ -35,14 +35,19 @@
   "parameters_human": "7.21B",
   "storage_bytes": 14429400196,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "nvidia/Alpamayo-1.5-10B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:22:26.505Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/gemma-4-E4B-it-uncensored-GGUF",
   "slug": "openintelligent123-gemma-4-e4b-it-uncensored-gguf",
   "author": "Openintelligent123",
@@ -34,14 +34,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 8031235616,
   "storage_human": "8.0 GB",
+  "context_length": 131072,
   "base_model": "TrevorJS/gemma-4-E4B-it-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

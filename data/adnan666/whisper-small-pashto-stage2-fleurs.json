@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adnan666/whisper-small-pashto-stage2-fleurs",
   "slug": "adnan666-whisper-small-pashto-stage2-fleurs",
   "author": "Adnan666",
@@ -30,14 +30,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 57841357288,
   "storage_human": "57.8 GB",
+  "context_length": null,
   "base_model": "Adnan666/whisper-small-pashto-run11-cv24only",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

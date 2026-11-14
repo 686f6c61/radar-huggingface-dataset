@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbandov/botest",
   "slug": "fbandov-botest",
   "author": "fbandov",
@@ -49,14 +49,19 @@
   "parameters_human": "140.6M",
   "storage_bytes": 315663476,
   "storage_human": "316 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-dev/Qwen3-ASR-1.7B-MLX",
   "slug": "moonbox-dev-qwen3-asr-1-7b-mlx",
   "author": "moonbox-dev",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 14251956314,
   "storage_human": "14.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

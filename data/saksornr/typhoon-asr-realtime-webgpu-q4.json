@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saksornr/typhoon-asr-realtime-webgpu-q4",
   "slug": "saksornr-typhoon-asr-realtime-webgpu-q4",
   "author": "saksornr",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 162751263,
   "storage_human": "163 MB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-asr-realtime",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

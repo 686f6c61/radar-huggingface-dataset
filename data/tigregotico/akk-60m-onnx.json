@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TigreGotico/AKK-60m-onnx",
   "slug": "tigregotico-akk-60m-onnx",
   "author": "TigreGotico",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 748791903,
   "storage_human": "749 MB",
+  "context_length": null,
   "base_model": "Thalesian/AKK-60m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

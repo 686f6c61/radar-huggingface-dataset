@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jetbabareal/Sabir-2-100M",
   "slug": "jetbabareal-sabir-2-100m",
   "author": "jetbabareal",
@@ -34,14 +34,19 @@
   "parameters_human": "113.3M",
   "storage_bytes": 453132088,
   "storage_human": "453 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CMSManhattan/JiRackUltra_1b",
   "slug": "cmsmanhattan-jirackultra_1b",
   "author": "CMSManhattan",
@@ -67,6 +67,7 @@
   "parameters_human": "1.78B",
   "storage_bytes": 16168706682,
   "storage_human": "16.2 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf",
@@ -74,8 +75,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

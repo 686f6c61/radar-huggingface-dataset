@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voxor-ai/whisper-small-gguf",
   "slug": "voxor-ai-whisper-small-gguf",
   "author": "voxor-ai",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 245846636,
   "storage_human": "246 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

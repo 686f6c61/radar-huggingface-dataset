@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/sweep-next-edit-v2-7B-oQ6e",
   "slug": "scottlowry-sweep-next-edit-v2-7b-oq6e",
   "author": "scottlowry",
@@ -29,6 +29,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 6389971737,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "sweepai/sweep-next-edit-v2-7B",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T11:00:39.048Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

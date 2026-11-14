@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/qwen2.5_coder_0.5b_PMTP_polydim_einsof",
   "slug": "polydim-einsof-qwen2-5_coder_0-5b_pmtp_polydim_einsof",
   "author": "Polydim-Einsof",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 7340112,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:34:53.975Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

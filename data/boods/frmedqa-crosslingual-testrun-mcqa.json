@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "boods/FrMedQA-CrossLingual-TestRun-MCQA",
   "slug": "boods-frmedqa-crosslingual-testrun-mcqa",
   "author": "boods",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 525300788,
   "storage_human": "525 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

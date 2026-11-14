@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.5-9B-Cold-Fusion-GAIN-v1.0-Uncensored-Heretic-NEO-MAX-Imatrix-GGUF",
   "slug": "davidau-qwen3-5-9b-cold-fusion-gain-v1-0-uncensored-heretic-neo-max-imatrix-gguf",
   "author": "DavidAU",
@@ -52,14 +52,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 148594838270,
   "storage_human": "148.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReliquaryForge/affine-sn120-king-0b8385ea",
   "slug": "reliquaryforge-affine-sn120-king-0b8385ea",
   "author": "ReliquaryForge",
@@ -30,14 +30,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839709629,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

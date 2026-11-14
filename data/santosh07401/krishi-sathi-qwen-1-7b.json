@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "santosh07401/krishi-sathi-qwen-1.7b",
   "slug": "santosh07401-krishi-sathi-qwen-1-7b",
   "author": "santosh07401",
@@ -40,6 +40,7 @@
   "parameters_human": "2.03B",
   "storage_bytes": 9496844147,
   "storage_human": "9.5 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ganmoor-ai-labs/krishi-sathi-qwen-1.7b",
+  "renamed_at": "2026-11-11T07:25:50.637Z",
   "benchmarks": [],
   "sources": [
     {

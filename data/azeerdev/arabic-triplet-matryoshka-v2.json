@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AzeerDev/Arabic-Triplet-Matryoshka-V2",
   "slug": "azeerdev-arabic-triplet-matryoshka-v2",
   "author": "AzeerDev",
@@ -42,14 +42,19 @@
   "parameters_human": "135.2M",
   "storage_bytes": 540795752,
   "storage_human": "541 MB",
+  "context_length": null,
   "base_model": "aubmindlab/bert-base-arabertv02",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

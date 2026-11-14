@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benjzzz/Ministral-3-14B-Reasoning-1bit-Gale-v3",
   "slug": "benjzzz-ministral-3-14b-reasoning-1bit-gale-v3",
   "author": "benjzzz",
@@ -31,14 +31,19 @@
   "parameters_human": "3.31B",
   "storage_bytes": 3509863511,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-14B-Reasoning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:18:47.052Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

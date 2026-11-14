@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd/Qwen3.5-9B-oQ8e-fp16",
   "slug": "0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd-qwen3-5-9b-oq8e-fp16",
   "author": "0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd",
@@ -27,6 +27,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11351418237,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

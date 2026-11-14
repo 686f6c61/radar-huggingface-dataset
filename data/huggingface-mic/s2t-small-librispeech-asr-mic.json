@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/s2t-small-librispeech-asr-mic",
   "slug": "huggingface-mic-s2t-small-librispeech-asr-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "1.5M",
   "storage_bytes": 6611356,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "facebook/s2t-small-librispeech-asr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

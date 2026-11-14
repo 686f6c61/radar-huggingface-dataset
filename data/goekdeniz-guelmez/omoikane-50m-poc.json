@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goekdeniz-Guelmez/Omoikane-50M-PoC",
   "slug": "goekdeniz-guelmez-omoikane-50m-poc",
   "author": "Goekdeniz-Guelmez",
@@ -38,6 +38,7 @@
   "parameters_human": "48.9M",
   "storage_bytes": 197437620,
   "storage_human": "197 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

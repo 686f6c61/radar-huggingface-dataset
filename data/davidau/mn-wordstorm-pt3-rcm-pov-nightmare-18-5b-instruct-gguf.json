@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/MN-WORDSTORM-pt3-RCM-POV-Nightmare-18.5B-Instruct-GGUF",
   "slug": "davidau-mn-wordstorm-pt3-rcm-pov-nightmare-18-5b-instruct-gguf",
   "author": "DavidAU",
@@ -52,14 +52,19 @@
   "parameters_human": "18.52B",
   "storage_bytes": 127207929952,
   "storage_human": "127.2 GB",
+  "context_length": 1024000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

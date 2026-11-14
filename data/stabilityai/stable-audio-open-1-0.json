@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stabilityai/stable-audio-open-1.0",
   "slug": "stabilityai-stable-audio-open-1-0",
   "author": "stabilityai",
@@ -23,13 +23,14 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1967,
+  "likes": 1968,
   "downloads_30d": 24294,
-  "trending_score": 22,
+  "trending_score": 21,
   "parameters": 1213448210,
   "parameters_human": "1.21B",
   "storage_bytes": 15677100913,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

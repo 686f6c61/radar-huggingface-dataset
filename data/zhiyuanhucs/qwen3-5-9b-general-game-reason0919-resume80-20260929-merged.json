@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929-merged",
   "slug": "zhiyuanhucs-qwen3-5-9b-general-game-reason0919-resume80-20260929-merged",
   "author": "zhiyuanhucs",
@@ -29,14 +29,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 439153304662,
   "storage_human": "439.2 GB",
+  "context_length": null,
   "base_model": "ltzheng/Qwen3.5-9B-General-Game",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

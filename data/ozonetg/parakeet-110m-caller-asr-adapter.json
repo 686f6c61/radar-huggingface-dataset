@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ozonetg/parakeet-110m-caller-asr-adapter",
   "slug": "ozonetg-parakeet-110m-caller-asr-adapter",
   "author": "ozonetg",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 468244480,
   "storage_human": "468 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt_ctc-110m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:38:03.797Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech recognition",

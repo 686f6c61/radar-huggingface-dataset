@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/Llama-4-Scout-17B-16E-Instruct-2-layers-mxfp4",
   "slug": "vllm-project-llama-4-scout-17b-16e-instruct-2-layers-mxfp4",
   "author": "vllm-project",
@@ -25,14 +25,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 6910916114,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

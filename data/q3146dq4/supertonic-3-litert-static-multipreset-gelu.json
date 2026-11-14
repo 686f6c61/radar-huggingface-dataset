@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q3146dq4/Supertonic-3-LiteRT-Static-MultiPreset-GELU",
   "slug": "q3146dq4-supertonic-3-litert-static-multipreset-gelu",
   "author": "q3146dq4",
@@ -98,12 +98,17 @@
   "parameters_human": null,
   "storage_bytes": 437604632,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "Supertone/supertonic-3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

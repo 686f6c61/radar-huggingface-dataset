@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lenawngr/ACT_switch-1-top_cs15_v5",
   "slug": "lenawngr-act_switch-1-top_cs15_v5",
   "author": "lenawngr",
@@ -28,14 +28,19 @@
   "parameters_human": "51.6M",
   "storage_bytes": 206366680,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T06:23:19.774Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

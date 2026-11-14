@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openvulcan/vulcan-decision-shell-v1",
   "slug": "openvulcan-vulcan-decision-shell-v1",
   "author": "openvulcan",
@@ -41,6 +41,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 11802237583,
   "storage_human": "11.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

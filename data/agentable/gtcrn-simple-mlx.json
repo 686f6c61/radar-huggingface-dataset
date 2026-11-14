@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentable/gtcrn-simple-mlx",
   "slug": "agentable-gtcrn-simple-mlx",
   "author": "agentable",
@@ -30,6 +30,7 @@
   "parameters_human": "48228",
   "storage_bytes": 208427,
   "storage_human": "208427 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:51:53.905Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

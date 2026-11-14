@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Gemma4-E4B-IT-NPU2",
   "slug": "atomic-germ-gemma4-e4b-it-npu2",
   "author": "Atomic-Germ",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 9087446032,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

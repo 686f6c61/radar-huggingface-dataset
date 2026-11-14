@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lte-ai/GLM-5.3-Flash-Strata-Q2Q3-Experts",
   "slug": "lte-ai-glm-5-3-flash-strata-q2q3-experts",
   "author": "lte-ai",
@@ -28,14 +28,19 @@
   "parameters_human": "292.33B",
   "storage_bytes": 853173117632,
   "storage_human": "853.2 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash, unsloth/GLM-5.3-Flash-GGUF, patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

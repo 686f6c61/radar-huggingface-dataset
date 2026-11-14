@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Livesport/rune-26b-a4b-v3-GGUF",
   "slug": "livesport-rune-26b-a4b-v3-gguf",
   "author": "Livesport",
@@ -39,14 +39,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 69647909600,
   "storage_human": "69.6 GB",
+  "context_length": 262144,
   "base_model": "surogate/rune-26b-a4b-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

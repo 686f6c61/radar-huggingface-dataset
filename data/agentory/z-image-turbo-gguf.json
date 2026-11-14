@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/Z-Image-Turbo-GGUF",
   "slug": "agentory-z-image-turbo-gguf",
   "author": "agentory",
@@ -35,14 +35,19 @@
   "parameters_human": "6.15B",
   "storage_bytes": 84905793527,
   "storage_human": "84.9 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:49.946Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Saransh-1.7B-GGUF",
   "slug": "mradermacher-saransh-1-7b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 15959928576,
   "storage_human": "16.0 GB",
+  "context_length": 40960,
   "base_model": "M37labsorg/Saransh-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

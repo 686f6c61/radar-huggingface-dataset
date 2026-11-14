@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bpx03/Qwen3.8-Flash-Next-QEngine",
   "slug": "bpx03-qwen3-8-flash-next-qengine",
   "author": "bpx03",
@@ -24,21 +24,26 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 4,
-  "downloads_30d": 695,
+  "likes": 5,
+  "downloads_30d": 722,
   "trending_score": 0,
   "parameters": 75054203539,
   "parameters_human": "75.05B",
   "storage_bytes": 195227467092,
   "storage_human": "195.2 GB",
+  "context_length": null,
   "base_model": "Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

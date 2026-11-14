@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "foxn/Qwen3.8-27B-Holo-V8-2bit-12GB",
   "slug": "foxn-qwen3-8-27b-holo-v8-2bit-12gb",
   "author": "foxn",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 11632851361,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

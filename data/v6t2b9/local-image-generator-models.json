@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "v6t2b9/local-image-generator-models",
   "slug": "v6t2b9-local-image-generator-models",
   "author": "v6t2b9",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2537855762,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "stabilityai/sd-turbo",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

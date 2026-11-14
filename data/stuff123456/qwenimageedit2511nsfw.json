@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stuff123456/qwenimageedit2511nsfw",
   "slug": "stuff123456-qwenimageedit2511nsfw",
   "author": "stuff123456",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 849543280,
   "storage_human": "850 MB",
+  "context_length": null,
   "base_model": "Cel100/qwen-2511",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

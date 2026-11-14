@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tvosch/Qwen3-ASR-0.6B-Jev-Dutch",
   "slug": "tvosch-qwen3-asr-0-6b-jev-dutch",
   "author": "tvosch",
@@ -44,14 +44,19 @@
   "parameters_human": "782.5M",
   "storage_bytes": 1576512019,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

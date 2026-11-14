@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Techions/Umochi-60K-WSP",
   "slug": "techions-umochi-60k-wsp",
   "author": "Techions",
@@ -42,14 +42,19 @@
   "parameters_human": "120320",
   "storage_bytes": 680152,
   "storage_human": "680152 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "MultiPL-E Java Code Generation",

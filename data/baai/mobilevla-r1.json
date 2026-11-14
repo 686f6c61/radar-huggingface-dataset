@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BAAI/MobileVLA-R1",
   "slug": "baai-mobilevla-r1",
   "author": "BAAI",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 26871863199,
   "storage_human": "26.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:41:46.726Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

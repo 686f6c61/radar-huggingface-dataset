@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eCityAI-Sup/eCity-Omni",
   "slug": "ecityai-sup-ecity-omni",
   "author": "eCityAI-Sup",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 53150019585,
   "storage_human": "53.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "eCityAI-Sup/eCity-Omni-8B",
+  "renamed_at": "2026-11-11T05:07:50.501Z",
   "benchmarks": [],
   "sources": []
 }

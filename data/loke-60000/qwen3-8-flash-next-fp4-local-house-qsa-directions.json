@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Loke-60000/Qwen3.8-Flash-Next-FP4-Local-house-qsa-directions",
   "slug": "loke-60000-qwen3-8-flash-next-fp4-local-house-qsa-directions",
   "author": "Loke-60000",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 246192,
   "storage_human": "246192 B",
+  "context_length": null,
   "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local, drowzeys/keys-Qwen3.8-Flash-Next-NVFP4-FP4-QAD-house-qsa-L3-47",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

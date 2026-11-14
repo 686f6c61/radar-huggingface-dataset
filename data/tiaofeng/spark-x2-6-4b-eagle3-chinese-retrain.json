@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TiaoFeng/Spark-X2.6-4B-EAGLE3-Chinese-retrain",
   "slug": "tiaofeng-spark-x2-6-4b-eagle3-chinese-retrain",
   "author": "TiaoFeng",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 2295887520,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "VitreousCut/Spark-X2.6-4B-EAGLE3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NTU-AI2Lab/ncLVMass-Net",
   "slug": "ntu-ai2lab-nclvmass-net",
   "author": "NTU-AI2Lab",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 5641164349,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AI2Lab-NTU/ncLVMass-Net",
+  "renamed_at": "2026-11-11T03:23:38.740Z",
   "benchmarks": [],
   "sources": []
 }

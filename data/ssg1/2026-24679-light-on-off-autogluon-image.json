@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ssg1/2026-24679-light-on-off-autogluon-image",
   "slug": "ssg1-2026-24679-light-on-off-autogluon-image",
   "author": "ssg1",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 24089412,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Light on/off binary classification",

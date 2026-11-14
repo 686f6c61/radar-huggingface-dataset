@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iFaz/eqm-pusht-seed3-half",
   "slug": "ifaz-eqm-pusht-seed3-half",
   "author": "iFaz",
@@ -33,14 +33,19 @@
   "parameters_human": "18.7M",
   "storage_bytes": 59506128924,
   "storage_human": "59.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

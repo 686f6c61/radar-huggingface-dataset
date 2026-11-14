@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/WhisperCpp-Runtime-Windows-x64-CPU",
   "slug": "backpack-run-whispercpp-runtime-windows-x64-cpu",
   "author": "backpack-run",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 1332187,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:32:24.667Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

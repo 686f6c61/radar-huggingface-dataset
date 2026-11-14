@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Fawen-1.0-8B-GGUF",
   "slug": "mradermacher-fawen-1-0-8b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 76858059456,
   "storage_human": "76.9 GB",
+  "context_length": 131072,
   "base_model": "chinapao/Fawen-1.0-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

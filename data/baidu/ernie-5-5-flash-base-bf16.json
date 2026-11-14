@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baidu/ERNIE-5.5-Flash-Base-BF16",
   "slug": "baidu-ernie-5-5-flash-base-bf16",
   "author": "baidu",
@@ -37,14 +37,19 @@
   "parameters_human": "286.25B",
   "storage_bytes": 572984599112,
   "storage_human": "573.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

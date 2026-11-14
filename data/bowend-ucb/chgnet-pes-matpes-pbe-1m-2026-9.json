@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BowenD-UCB/CHGNet-PES-MatPES-PBE-1M-2026.9",
   "slug": "bowend-ucb-chgnet-pes-matpes-pbe-1m-2026-9",
   "author": "BowenD-UCB",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 8759330,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

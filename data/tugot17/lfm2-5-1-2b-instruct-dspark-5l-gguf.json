@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tugot17/LFM2.5-1.2B-Instruct-DSpark-5L-GGUF",
   "slug": "tugot17-lfm2-5-1-2b-instruct-dspark-5l-gguf",
   "author": "tugot17",
@@ -32,14 +32,19 @@
   "parameters_human": "295.7M",
   "storage_bytes": 593886560,
   "storage_human": "594 MB",
+  "context_length": 128000,
   "base_model": "tugot17/LFM2.5-1.2B-Instruct-DSpark-5L",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KennethFal/hand-drawn-lora-minimax-h3",
   "slug": "kennethfal-hand-drawn-lora-minimax-h3",
   "author": "KennethFal",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 262433016,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

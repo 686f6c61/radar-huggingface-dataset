@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2",
   "slug": "atomic-germ-gpt-oss-gpt5-2-distill-npu2",
   "author": "Atomic-Germ",
@@ -56,12 +56,17 @@
   "parameters_human": null,
   "storage_bytes": 14474593159,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

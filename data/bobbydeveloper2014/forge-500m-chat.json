@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bobbydeveloper2014/forge-500m-chat",
   "slug": "bobbydeveloper2014-forge-500m-chat",
   "author": "bobbydeveloper2014",
@@ -40,14 +40,19 @@
   "parameters_human": "711.1M",
   "storage_bytes": 2844785829,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "Phase-Technologies/forge-500m-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

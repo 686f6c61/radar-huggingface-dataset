@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ascxzSAD1DSA/myawesome-model-step-1000",
   "slug": "ascxzsad1dsa-myawesome-model-step-1000",
   "author": "ascxzSAD1DSA",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 23,
   "storage_human": "23 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T03:57:05.263Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

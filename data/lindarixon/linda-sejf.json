@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lindarixon/Linda-Sejf",
   "slug": "lindarixon-linda-sejf",
   "author": "Lindarixon",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 1110541470,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "allegro/herbert-base-cased",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

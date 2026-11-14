@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whcl412/FinchAI-Rune1-Preview-v2-f16",
   "slug": "whcl412-finchai-rune1-preview-v2-f16",
   "author": "whcl412",
@@ -40,14 +40,19 @@
   "parameters_human": "1.55B",
   "storage_bytes": 3129046961,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

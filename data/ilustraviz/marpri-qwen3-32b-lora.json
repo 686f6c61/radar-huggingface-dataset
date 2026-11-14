@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ilustraviz/marpri-qwen3-32b-lora",
   "slug": "ilustraviz-marpri-qwen3-32b-lora",
   "author": "ilustraviz",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1085286132,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-32b-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

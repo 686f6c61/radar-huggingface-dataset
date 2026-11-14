@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bp343475/diffusion_pusht_h16",
   "slug": "bp343475-diffusion_pusht_h16",
   "author": "bp343475",
@@ -28,14 +28,19 @@
   "parameters_human": "262.7M",
   "storage_bytes": 1050915624,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

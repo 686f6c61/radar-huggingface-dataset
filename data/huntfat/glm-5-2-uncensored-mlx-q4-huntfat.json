@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Huntfat/GLM-5.2-Uncensored-MLX-Q4-huntfat",
   "slug": "huntfat-glm-5-2-uncensored-mlx-q4-huntfat",
   "author": "Huntfat",
@@ -26,14 +26,19 @@
   "parameters_human": "116.25B",
   "storage_bytes": 418341538972,
   "storage_human": "418.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:25:14.971Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

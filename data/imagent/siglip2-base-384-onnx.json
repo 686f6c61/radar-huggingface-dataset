@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imagent/siglip2-base-384-onnx",
   "slug": "imagent-siglip2-base-384-onnx",
   "author": "imagent",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 751372197,
   "storage_human": "751 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

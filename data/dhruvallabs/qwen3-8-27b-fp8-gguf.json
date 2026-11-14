@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DhruvalLabs/Qwen3.8-27B-FP8-GGUF",
   "slug": "dhruvallabs-qwen3-8-27b-fp8-gguf",
   "author": "DhruvalLabs",
@@ -41,6 +41,7 @@
   "parameters_human": null,
   "storage_bytes": 32832096,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:35:55.056Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

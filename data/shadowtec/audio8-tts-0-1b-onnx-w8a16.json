@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shadowtec/Audio8-TTS-0.1B-ONNX-W8A16",
   "slug": "shadowtec-audio8-tts-0-1b-onnx-w8a16",
   "author": "shadowtec",
@@ -51,14 +51,19 @@
   "parameters_human": null,
   "storage_bytes": 853836594,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": "Audio8/Audio8-TTS-Preview-0.1b, Audio8/audio8-TTS-0.1B-ONNX-INT8",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

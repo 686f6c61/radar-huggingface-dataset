@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rjz123/colar-selftrain-r1-prosqa",
   "slug": "rjz123-colar-selftrain-r1-prosqa",
   "author": "rjz123",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 194169642,
   "storage_human": "194 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rjz123/colar-prosqa-r1q",
+  "renamed_at": "2026-11-11T07:20:04.482Z",
   "benchmarks": [],
   "sources": [
     {

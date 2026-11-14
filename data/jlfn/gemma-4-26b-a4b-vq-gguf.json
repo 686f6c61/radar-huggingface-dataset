@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jlfn/gemma-4-26b-a4b-vq-gguf",
   "slug": "jlfn-gemma-4-26b-a4b-vq-gguf",
   "author": "Jlfn",
@@ -42,14 +42,19 @@
   "parameters_human": "738.2M",
   "storage_bytes": 10719022678,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

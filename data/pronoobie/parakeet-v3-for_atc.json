@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pronoobie/Parakeet-v3-For_ATC",
   "slug": "pronoobie-parakeet-v3-for_atc",
   "author": "pronoobie",
@@ -38,14 +38,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 1255338880,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "qenneth/parakeet-tdt-0.6b-v3-finetuned-for-ATC",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

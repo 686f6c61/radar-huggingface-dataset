@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated",
   "slug": "huginnfork-qwen3-8-flash-next-nvfp4-mxfp8-csf-qad-abliterated",
   "author": "huginnfork",
@@ -36,14 +36,19 @@
   "parameters_human": "96.64B",
   "storage_bytes": 278079498578,
   "storage_human": "278.1 GB",
+  "context_length": null,
   "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated",
+  "renamed_at": "2026-11-11T05:36:24.454Z",
   "benchmarks": [],
   "sources": []
 }

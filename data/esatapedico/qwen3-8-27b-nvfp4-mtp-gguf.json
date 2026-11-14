@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF",
   "slug": "esatapedico-qwen3-8-27b-nvfp4-mtp-gguf",
   "author": "esatapedico",
@@ -40,14 +40,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 290834833888,
   "storage_human": "290.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-NVFP4",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

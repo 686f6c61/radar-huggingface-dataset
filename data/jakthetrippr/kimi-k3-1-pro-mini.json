@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JakTheTrippr/kimi-k3.1-pro-mini",
   "slug": "jakthetrippr-kimi-k3-1-pro-mini",
   "author": "JakTheTrippr",
@@ -31,14 +31,19 @@
   "parameters_human": "26.7M",
   "storage_bytes": 38372670,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "technicallyAnnoyed/kimi-k3.1-pro-mini",
+  "renamed_at": "2026-11-14T03:19:45.604Z",
   "benchmarks": [],
   "sources": []
 }

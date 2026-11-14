@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hayasuki/chuckleNet-v2",
   "slug": "hayasuki-chucklenet-v2",
   "author": "Hayasuki",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 5710114,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": "microsoft/wavlm-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Hayasuki/ChuckleNet-Genki",
+  "renamed_at": "2026-11-12T03:00:43.037Z",
   "benchmarks": [],
   "sources": [
     {

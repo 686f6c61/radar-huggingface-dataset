@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trymirai/Qwen3.8-27B-S-experimental",
   "slug": "trymirai-qwen3-8-27b-s-experimental",
   "author": "trymirai",
@@ -30,14 +30,19 @@
   "parameters_human": "8.68B",
   "storage_bytes": 86003132747,
   "storage_human": "86.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "trymirai/Qwen3.8-27B-S",
+  "renamed_at": "2026-11-14T08:59:15.860Z",
   "benchmarks": [],
   "sources": [
     {

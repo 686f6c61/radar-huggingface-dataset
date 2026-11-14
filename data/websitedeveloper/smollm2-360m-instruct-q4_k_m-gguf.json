@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Websitedeveloper/SmolLM2-360M-Instruct-Q4_K_M-GGUF",
   "slug": "websitedeveloper-smollm2-360m-instruct-q4_k_m-gguf",
   "author": "Websitedeveloper",
@@ -37,6 +37,7 @@
   "parameters_human": "361.8M",
   "storage_bytes": 270590976,
   "storage_human": "271 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

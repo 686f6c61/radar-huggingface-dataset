@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Qwen3-Reranker-0-6B-seq-cls-mic",
   "slug": "huggingface-mic-qwen3-reranker-0-6b-seq-cls-mic",
   "author": "huggingface-mic",
@@ -28,14 +28,19 @@
   "parameters_human": "9.8M",
   "storage_bytes": 50549270,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": "tomaarsen/Qwen3-Reranker-0.6B-seq-cls",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

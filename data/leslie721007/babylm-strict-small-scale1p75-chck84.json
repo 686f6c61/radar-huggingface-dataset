@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leslie721007/babylm-strict-small-scale1p75-chck84",
   "slug": "leslie721007-babylm-strict-small-scale1p75-chck84",
   "author": "leslie721007",
@@ -36,14 +36,19 @@
   "parameters_human": "35.5M",
   "storage_bytes": 141878192,
   "storage_human": "142 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

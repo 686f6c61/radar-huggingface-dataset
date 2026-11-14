@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ranjitraut/dacpt-qwen3.5",
   "slug": "ranjitraut-dacpt-qwen3-5",
   "author": "ranjitraut",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 104963446,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ranjitraut/dacpt-v3-qwen3.5",
+  "renamed_at": "2026-11-11T07:15:50.297Z",
   "benchmarks": [],
   "sources": [
     {

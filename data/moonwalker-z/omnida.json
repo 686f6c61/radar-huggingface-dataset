@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonwalker-z/OmniDA",
   "slug": "moonwalker-z-omnida",
   "author": "moonwalker-z",
@@ -24,14 +24,19 @@
   "parameters_human": "770288",
   "storage_bytes": 17545762142,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

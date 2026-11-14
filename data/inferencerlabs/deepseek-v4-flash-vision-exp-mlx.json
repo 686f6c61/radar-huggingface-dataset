@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/DeepSeek-V4-Flash-Vision-Exp-MLX",
   "slug": "inferencerlabs-deepseek-v4-flash-vision-exp-mlx",
   "author": "inferencerlabs",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 157119552310,
   "storage_human": "157.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

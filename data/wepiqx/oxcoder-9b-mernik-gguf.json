@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wepiqx/OxCoder-9B-MERNIK-GGUF",
   "slug": "wepiqx-oxcoder-9b-mernik-gguf",
   "author": "wepiqx",
@@ -38,14 +38,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 19020212256,
   "storage_human": "19.0 GB",
+  "context_length": 262144,
   "base_model": "OrionLLM/OxCoder-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

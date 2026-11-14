@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "torch-pointcloud/point-mamba-base.scanobjectnn-objbg.dingkang-liang",
   "slug": "torch-pointcloud-point-mamba-base-scanobjectnn-objbg-dingkang-liang",
   "author": "torch-pointcloud",
@@ -34,14 +34,19 @@
   "parameters_human": "12.3M",
   "storage_bytes": 49192660,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": "torch-pointcloud/point-mamba-base.pretrain.dingkang-liang",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

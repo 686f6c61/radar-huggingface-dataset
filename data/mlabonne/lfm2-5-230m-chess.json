@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlabonne/LFM2.5-230M-Chess",
   "slug": "mlabonne-lfm2-5-230m-chess",
   "author": "mlabonne",
@@ -36,14 +36,19 @@
   "parameters_human": "230.7M",
   "storage_bytes": 462196712,
   "storage_human": "462 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

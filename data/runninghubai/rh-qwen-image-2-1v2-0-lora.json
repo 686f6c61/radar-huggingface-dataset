@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-qwen-image-2.1v2.0-lora",
   "slug": "runninghubai-rh-qwen-image-2-1v2-0-lora",
   "author": "RunningHubAI",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 182232682,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:23:24.160Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

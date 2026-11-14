@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Java-dmd/Ministral-3-3B-Instruct-GGUF",
   "slug": "java-dmd-ministral-3-3b-instruct-gguf",
   "author": "Java-dmd",
@@ -23,14 +23,19 @@
   "parameters_human": "3.45B",
   "storage_bytes": 5177293120,
   "storage_human": "5.2 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T03:16:13.499Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

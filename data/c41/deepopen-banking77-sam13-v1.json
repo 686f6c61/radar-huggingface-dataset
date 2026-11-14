@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c41/deepopen-banking77-sam13-v1",
   "slug": "c41-deepopen-banking77-sam13-v1",
   "author": "c41",
@@ -29,14 +29,19 @@
   "parameters_human": "395.9M",
   "storage_bytes": 1583659140,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

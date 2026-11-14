@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pecca-core/demo-router-e5-logreg",
   "slug": "pecca-core-demo-router-e5-logreg",
   "author": "pecca-core",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 424577,
   "storage_human": "424577 B",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

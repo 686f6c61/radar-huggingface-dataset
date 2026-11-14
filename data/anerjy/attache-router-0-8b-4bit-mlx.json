@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anerjy/Attache-Router-0.8B-4bit-mlx",
   "slug": "anerjy-attache-router-0-8b-4bit-mlx",
   "author": "anerjy",
@@ -35,6 +35,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 444006311,
   "storage_human": "444 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

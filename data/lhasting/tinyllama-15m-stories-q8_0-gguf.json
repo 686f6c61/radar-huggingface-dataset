@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lhasting/tinyllama-15M-stories-Q8_0-GGUF",
   "slug": "lhasting-tinyllama-15m-stories-q8_0-gguf",
   "author": "lhasting",
@@ -28,14 +28,19 @@
   "parameters_human": "15.2M",
   "storage_bytes": 16879744,
   "storage_human": "17 MB",
+  "context_length": 256,
   "base_model": "ModelCloud/tinyllama-15M-stories",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

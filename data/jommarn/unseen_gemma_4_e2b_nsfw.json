@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jommarn/UNSEEN_Gemma_4_E2B_NSFW",
   "slug": "jommarn-unseen_gemma_4_e2b_nsfw",
   "author": "Jommarn",
@@ -39,14 +39,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 10241022690,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

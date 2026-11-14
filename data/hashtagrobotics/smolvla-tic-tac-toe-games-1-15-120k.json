@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HashtagRobotics/smolvla-tic-tac-toe-games-1-15-120k",
   "slug": "hashtagrobotics-smolvla-tic-tac-toe-games-1-15-120k",
   "author": "HashtagRobotics",
@@ -37,14 +37,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 14951987025,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VINAY-UMRETHE/qwen3.5-heretic-tiny-test",
   "slug": "vinay-umrethe-qwen3-5-heretic-tiny-test",
   "author": "VINAY-UMRETHE",
@@ -33,14 +33,19 @@
   "parameters_human": "4.4M",
   "storage_bytes": 48782053,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": "tiny-random/qwen3.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T03:09:13.995Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

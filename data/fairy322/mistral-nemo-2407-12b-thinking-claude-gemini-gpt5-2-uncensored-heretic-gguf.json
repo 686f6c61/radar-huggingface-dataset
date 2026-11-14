@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fairy322/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC-GGUF",
   "slug": "fairy322-mistral-nemo-2407-12b-thinking-claude-gemini-gpt5-2-uncensored-heretic-gguf",
   "author": "fairy322",
@@ -79,14 +79,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 84692294976,
   "storage_human": "84.7 GB",
+  "context_length": 1024000,
   "base_model": "DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

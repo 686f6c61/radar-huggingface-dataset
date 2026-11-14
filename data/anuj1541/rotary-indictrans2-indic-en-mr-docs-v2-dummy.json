@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anuj1541/rotary-indictrans2-indic-en-mr-docs-v2-dummy",
   "slug": "anuj1541-rotary-indictrans2-indic-en-mr-docs-v2-dummy",
   "author": "anuj1541",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 586378050,
   "storage_human": "586 MB",
+  "context_length": null,
   "base_model": "anuj1541/rotary-indictrans2-indic-en-mr-docs",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

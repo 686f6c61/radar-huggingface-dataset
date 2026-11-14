@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pruna-test/test-save-tiny-random-llama4-smashed",
   "slug": "pruna-test-test-save-tiny-random-llama4-smashed",
   "author": "pruna-test",
@@ -27,14 +27,19 @@
   "parameters_human": "6.5M",
   "storage_bytes": 39133208,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

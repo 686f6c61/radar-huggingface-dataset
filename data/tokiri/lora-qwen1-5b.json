@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tokiri/LoRa-QWEN1.5B",
   "slug": "tokiri-lora-qwen1-5b",
   "author": "tokiri",
@@ -26,14 +26,19 @@
   "parameters_human": "1.84B",
   "storage_bytes": 3685108666,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen1.5-1.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

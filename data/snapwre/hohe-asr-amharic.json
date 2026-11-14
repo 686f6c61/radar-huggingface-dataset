@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snapwre/hohe-asr-amharic",
   "slug": "snapwre-hohe-asr-amharic",
   "author": "snapwre",
@@ -37,14 +37,19 @@
   "parameters_human": "606.1M",
   "storage_bytes": 2962821929,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "badrex/Ethio-ASR-multilingual-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

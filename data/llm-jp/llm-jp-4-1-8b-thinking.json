@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llm-jp/llm-jp-4.1-8b-thinking",
   "slug": "llm-jp-llm-jp-4-1-8b-thinking",
   "author": "llm-jp",
@@ -33,14 +33,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 34374345556,
   "storage_human": "34.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

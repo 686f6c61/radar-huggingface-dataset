@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "turintech/embeddinggemma-2-Artemis-GGUF",
   "slug": "turintech-embeddinggemma-2-artemis-gguf",
   "author": "turintech",
@@ -35,14 +35,19 @@
   "parameters_human": "271.0M",
   "storage_bytes": 540142880,
   "storage_human": "540 MB",
+  "context_length": 262144,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "John2202/Qwen3-1.7B-abliterated-Q4_K_M-GGUF",
   "slug": "john2202-qwen3-1-7b-abliterated-q4_k_m-gguf",
   "author": "John2202",
@@ -33,14 +33,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1107409152,
   "storage_human": "1.1 GB",
+  "context_length": 40960,
   "base_model": "mlabonne/Qwen3-1.7B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

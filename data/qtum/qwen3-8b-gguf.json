@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qtum/Qwen3-8B-GGUF",
   "slug": "qtum-qwen3-8b-gguf",
   "author": "qtum",
@@ -36,14 +36,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 38059856704,
   "storage_human": "38.1 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:12:07.818Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

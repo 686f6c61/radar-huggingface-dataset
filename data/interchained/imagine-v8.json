@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Interchained/imagine-v8",
   "slug": "interchained-imagine-v8",
   "author": "Interchained",
@@ -37,14 +37,19 @@
   "parameters_human": "1.35B",
   "storage_bytes": 2692969128,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/deepseek-coder-1.3b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

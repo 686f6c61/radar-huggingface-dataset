@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shlokdadhich/tomato-variant-a-efficientnet-v2-s",
   "slug": "shlokdadhich-tomato-variant-a-efficientnet-v2-s",
   "author": "shlokdadhich",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 81748023,
   "storage_human": "82 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FarmGuard/tomato-variant-a-efficientnet-v2-s",
+  "renamed_at": "2026-11-14T08:31:40.125Z",
   "benchmarks": [],
   "sources": [
     {

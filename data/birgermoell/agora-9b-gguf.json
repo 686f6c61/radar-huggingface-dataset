@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "birgermoell/agora-9b-GGUF",
   "slug": "birgermoell-agora-9b-gguf",
   "author": "birgermoell",
@@ -84,14 +84,19 @@
   "parameters_human": "9.10B",
   "storage_bytes": 22811289824,
   "storage_human": "22.8 GB",
+  "context_length": 262144,
   "base_model": "birgermoell/oellm-9b-256k-stage5-w2-rl-step160",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

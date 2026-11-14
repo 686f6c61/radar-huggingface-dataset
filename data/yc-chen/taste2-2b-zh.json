@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YC-Chen/TASTE2-2B-ZH",
   "slug": "yc-chen-taste2-2b-zh",
   "author": "YC-Chen",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 24108870218,
   "storage_human": "24.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

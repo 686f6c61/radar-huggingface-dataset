@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Schattenblume-31B-i1-GGUF",
   "slug": "mradermacher-schattenblume-31b-i1-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 334809621216,
   "storage_human": "334.8 GB",
+  "context_length": 262144,
   "base_model": "Nimbz/Schattenblume-31B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

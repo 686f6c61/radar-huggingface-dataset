@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wondernutts/Twilight-Embrace-31B-NVFP4",
   "slug": "wondernutts-twilight-embrace-31b-nvfp4",
   "author": "Wondernutts",
@@ -38,14 +38,19 @@
   "parameters_human": "18.46B",
   "storage_bytes": 20478994651,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "Cyclone-Labs/Twilight-Embrace-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:11:18.627Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scholzmx/underdog-bark-3.0-gguf",
   "slug": "scholzmx-underdog-bark-3-0-gguf",
   "author": "scholzmx",
@@ -35,14 +35,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 365750762,
   "storage_human": "366 MB",
+  "context_length": null,
   "base_model": "ConwayResearch/Underdog-Bark-3.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

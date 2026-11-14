@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikimyaii/GatedDeltaNet-340M-unstructured-ELSA-80pct",
   "slug": "ikimyaii-gateddeltanet-340m-unstructured-elsa-80pct",
   "author": "ikimyaii",
@@ -32,14 +32,19 @@
   "parameters_human": "399.5M",
   "storage_bytes": 1598171632,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "m-a-p/340M-20B-GatedDeltaNet-pure-baseline",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

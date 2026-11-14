@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bmars8218/sn92-classify-mt3g-r1239",
   "slug": "bmars8218-sn92-classify-mt3g-r1239",
   "author": "bmars8218",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 495114268,
   "storage_human": "495 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T07:19:10.945Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

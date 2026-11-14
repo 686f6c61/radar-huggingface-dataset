@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chartreuse-verte/ettin-subjects-68m",
   "slug": "chartreuse-verte-ettin-subjects-68m",
   "author": "chartreuse-verte",
@@ -36,6 +36,7 @@
   "parameters_human": "68.4M",
   "storage_bytes": 348319896,
   "storage_human": "348 MB",
+  "context_length": 7999,
   "base_model": "jhu-clsp/ettin-encoder-68m",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

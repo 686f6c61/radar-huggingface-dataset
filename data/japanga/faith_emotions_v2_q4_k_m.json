@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Japanga/Faith_Emotions_v2_Q4_K_M",
   "slug": "japanga-faith_emotions_v2_q4_k_m",
   "author": "Japanga",
@@ -24,14 +24,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 270590432,
   "storage_human": "271 MB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dkeviv/Qwen3.5-0.8B-Text-ONNX-WebGPU-QDQ-bucket",
   "slug": "dkeviv-qwen3-5-0-8b-text-onnx-webgpu-qdq-bucket",
   "author": "dkeviv",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 498073443,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

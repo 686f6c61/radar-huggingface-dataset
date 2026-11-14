@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iskhare/owtsmall-repro-ctx256",
   "slug": "iskhare-owtsmall-repro-ctx256",
   "author": "iskhare",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 123555054869,
   "storage_human": "123.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T06:20:41.127Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

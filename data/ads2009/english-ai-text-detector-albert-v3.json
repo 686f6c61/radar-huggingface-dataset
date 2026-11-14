@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ads2009/english-ai-text-detector-albert-v3",
   "slug": "ads2009-english-ai-text-detector-albert-v3",
   "author": "ads2009",
@@ -27,14 +27,19 @@
   "parameters_human": "11.7M",
   "storage_bytes": 46743904,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:09:54.633Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

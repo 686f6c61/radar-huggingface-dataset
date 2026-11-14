@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XDcobra/PaddleOCR-VL-1.6-ONNX",
   "slug": "xdcobra-paddleocr-vl-1-6-onnx",
   "author": "XDcobra",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1825679940,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

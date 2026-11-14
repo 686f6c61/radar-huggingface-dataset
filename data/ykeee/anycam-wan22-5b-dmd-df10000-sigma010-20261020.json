@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ykeee/anycam-wan22-5b-dmd-df10000-sigma010-20261020",
   "slug": "ykeee-anycam-wan22-5b-dmd-df10000-sigma010-20261020",
   "author": "ykeee",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 152817097182,
   "storage_human": "152.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

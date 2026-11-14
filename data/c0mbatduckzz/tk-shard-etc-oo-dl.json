@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c0mbatduckzz/TK-SHARD-ETC-OO-DL",
   "slug": "c0mbatduckzz-tk-shard-etc-oo-dl",
   "author": "c0mbatduckzz",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 7556720,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:45:36.306Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

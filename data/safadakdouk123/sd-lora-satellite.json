@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "safadakdouk123/sd-lora-satellite",
   "slug": "safadakdouk123-sd-lora-satellite",
   "author": "safadakdouk123",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 181513060,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": "runwayml/stable-diffusion-v1-5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

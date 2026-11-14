@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aecetin/SmolLM2-135M-PolyFFN",
   "slug": "aecetin-smollm2-135m-polyffn",
   "author": "aecetin",
@@ -39,14 +39,19 @@
   "parameters_human": "123.1M",
   "storage_bytes": 871425667,
   "storage_human": "871 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T05:49:53.714Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

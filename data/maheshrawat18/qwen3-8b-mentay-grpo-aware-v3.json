@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-v3",
   "slug": "maheshrawat18-qwen3-8b-mentay-grpo-aware-v3",
   "author": "maheshrawat18",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1583054056,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T05:38:16.109Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

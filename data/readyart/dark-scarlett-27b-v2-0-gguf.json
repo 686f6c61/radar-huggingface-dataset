@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Dark-Scarlett-27B-v2.0-GGUF",
   "slug": "readyart-dark-scarlett-27b-v2-0-gguf",
   "author": "ReadyArt",
@@ -35,14 +35,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 323764705440,
   "storage_human": "323.8 GB",
+  "context_length": 262144,
   "base_model": "ReadyArt/Dark-Scarlett-27B-v2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

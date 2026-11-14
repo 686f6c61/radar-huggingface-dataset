@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pytraveler/MiniMax-H3-Prompt-Rewriter-LoRA-Omni-GGUF",
   "slug": "pytraveler-minimax-h3-prompt-rewriter-lora-omni-gguf",
   "author": "pytraveler",
@@ -36,14 +36,19 @@
   "parameters_human": "323.0M",
   "storage_bytes": 989123136,
   "storage_human": "989 MB",
+  "context_length": null,
   "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-Omni",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

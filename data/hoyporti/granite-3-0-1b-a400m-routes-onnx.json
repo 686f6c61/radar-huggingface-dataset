@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoyporti/granite-3.0-1b-a400m-routes-onnx",
   "slug": "hoyporti-granite-3-0-1b-a400m-routes-onnx",
   "author": "hoyporti",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1492559115,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-3.0-1b-a400m-instruct",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hoyporti/granite-switchboard",
+  "renamed_at": "2026-11-11T05:34:54.852Z",
   "benchmarks": [],
   "sources": []
 }

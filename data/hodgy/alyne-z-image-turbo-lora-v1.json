@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hodgy/alyne-z-image-turbo-lora-v1",
   "slug": "hodgy-alyne-z-image-turbo-lora-v1",
   "author": "hodgy",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 171280595,
   "storage_human": "171 MB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T07:55:09.030Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

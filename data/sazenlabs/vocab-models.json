@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SazenLabs/vocab-models",
   "slug": "sazenlabs-vocab-models",
   "author": "SazenLabs",
@@ -26,6 +26,7 @@
   "parameters_human": "4.65B",
   "storage_bytes": 9947295652,
   "storage_human": "9.9 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

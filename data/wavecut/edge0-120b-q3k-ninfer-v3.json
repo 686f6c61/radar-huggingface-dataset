@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Edge0-120B-q3k-NInfer-v3",
   "slug": "wavecut-edge0-120b-q3k-ninfer-v3",
   "author": "WaveCut",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 73405518592,
   "storage_human": "73.4 GB",
+  "context_length": null,
   "base_model": "Edge0/Edge0-120B-q3k",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "enne2-or-more/IMMA-1.7B-IT-Tech",
   "slug": "enne2-or-more-imma-1-7b-it-tech",
   "author": "enne2-or-more",
@@ -39,6 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 58894457,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

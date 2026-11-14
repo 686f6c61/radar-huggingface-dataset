@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Kimi-K3-0.40B-Kazakh-CPT-step200",
   "slug": "amaimedia-kimi-k3-0-40b-kazakh-cpt-step200",
   "author": "AMAImedia",
@@ -148,14 +148,19 @@
   "parameters_human": "395.6M",
   "storage_bytes": 793986638,
   "storage_human": "794 MB",
+  "context_length": null,
   "base_model": "tencent/Hy4-preview, AngelSlim/Hy4-preview-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T12:47:38.516Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

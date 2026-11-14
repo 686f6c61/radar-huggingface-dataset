@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/gpt-neo-125m-FP8",
   "slug": "liodon-ai-gpt-neo-125m-fp8",
   "author": "liodon-ai",
@@ -33,14 +33,19 @@
   "parameters_human": "125.2M",
   "storage_bytes": 246347088,
   "storage_human": "246 MB",
+  "context_length": null,
   "base_model": "EleutherAI/gpt-neo-125m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

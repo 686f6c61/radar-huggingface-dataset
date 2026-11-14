@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection",
   "slug": "yifeng-liu-rt-detr-finetuned-for-satellite-image-roofs-detection",
   "author": "Yifeng-Liu",
@@ -34,14 +34,19 @@
   "parameters_human": "76.6M",
   "storage_bytes": 920044812,
   "storage_human": "920 MB",
+  "context_length": null,
   "base_model": "PekingU/rtdetr_r101vd_coco_o365",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

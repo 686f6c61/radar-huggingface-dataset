@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mvbalaji/od1-base-lora",
   "slug": "mvbalaji-od1-base-lora",
   "author": "mvbalaji",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 12777667509,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:37:40.235Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hugging-apps/zing-0-5-world-model-aoti",
   "slug": "hugging-apps-zing-0-5-world-model-aoti",
   "author": "hugging-apps",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 3080894,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "seedleap/zing-0.5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

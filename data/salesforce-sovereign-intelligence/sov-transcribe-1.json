@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "salesforce-sovereign-intelligence/SOV-Transcribe-1",
   "slug": "salesforce-sovereign-intelligence-sov-transcribe-1",
   "author": "salesforce-sovereign-intelligence",
@@ -49,14 +49,19 @@
   "parameters_human": "26.63B",
   "storage_bytes": 53317754093,
   "storage_human": "53.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it, openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

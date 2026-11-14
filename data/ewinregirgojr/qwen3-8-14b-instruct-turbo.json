@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewinregirgojr/Qwen3.8-14B-Instruct-Turbo",
   "slug": "ewinregirgojr-qwen3-8-14b-instruct-turbo",
   "author": "ewinregirgojr",
@@ -47,14 +47,19 @@
   "parameters_human": "15.18B",
   "storage_bytes": 116335452882,
   "storage_human": "116.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T03:55:47.716Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

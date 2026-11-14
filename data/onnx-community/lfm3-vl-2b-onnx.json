@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/LFM3-VL-2B-ONNX",
   "slug": "onnx-community-lfm3-vl-2b-onnx",
   "author": "onnx-community",
@@ -65,14 +65,19 @@
   "parameters_human": null,
   "storage_bytes": 18621311209,
   "storage_human": "18.6 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

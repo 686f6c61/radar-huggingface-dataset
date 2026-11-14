@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/nanoexpand-2018-pretrain",
   "slug": "jjjlimaus-nanoexpand-2018-pretrain",
   "author": "jjjlimaus",
@@ -23,14 +23,19 @@
   "parameters_human": "2.10B",
   "storage_bytes": 297574281892,
   "storage_human": "297.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T08:14:43.507Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

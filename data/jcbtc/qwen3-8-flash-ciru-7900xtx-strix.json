@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jcbtc/Qwen3.8-Flash-CIRU-7900XTX-Strix",
   "slug": "jcbtc-qwen3-8-flash-ciru-7900xtx-strix",
   "author": "jcbtc",
@@ -37,14 +37,19 @@
   "parameters_human": "125.74B",
   "storage_bytes": 136000521549,
   "storage_human": "136.0 GB",
+  "context_length": 262144,
   "base_model": "jcbtc/Qwen3.8-Flash-CIRU-STRIX-IU4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

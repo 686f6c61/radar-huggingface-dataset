@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SicariusSicariiStuff/Impish_Bloodmoon_12B",
   "slug": "sicariussicariistuff-impish_bloodmoon_12b",
   "author": "SicariusSicariiStuff",
@@ -31,14 +31,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24524493944,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Nemo-Instruct-2407",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

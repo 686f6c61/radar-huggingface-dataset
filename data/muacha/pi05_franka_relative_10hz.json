@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muacha/pi05_franka_relative_10hz",
   "slug": "muacha-pi05_franka_relative_10hz",
   "author": "muacha",
@@ -29,14 +29,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 97150223599,
   "storage_human": "97.2 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

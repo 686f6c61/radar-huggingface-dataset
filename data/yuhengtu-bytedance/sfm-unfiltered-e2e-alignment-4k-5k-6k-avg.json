@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg",
   "slug": "yuhengtu-bytedance-sfm-unfiltered-e2e-alignment-4k-5k-6k-avg",
   "author": "yuhengtu-bytedance",
@@ -32,14 +32,19 @@
   "parameters_human": "6.86B",
   "storage_bytes": 13712553184,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base, geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base, geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:58:24.186Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

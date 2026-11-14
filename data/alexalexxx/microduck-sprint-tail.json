@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alexalexxx/microduck-sprint-tail",
   "slug": "alexalexxx-microduck-sprint-tail",
   "author": "Alexalexxx",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1045357,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "jrubiosainz/microduck-game-sprinter-remix14",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

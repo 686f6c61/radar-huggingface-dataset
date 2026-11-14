@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bn22/CLIP-ViT-B-32-FLUX",
   "slug": "bn22-clip-vit-b-32-flux",
   "author": "bn22",
@@ -27,14 +27,19 @@
   "parameters_human": "151.2M",
   "storage_bytes": 605037876,
   "storage_human": "605 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T05:55:25.228Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarunnokwal/Versatile-1.5b-v0.3-adapter",
   "slug": "tarunnokwal-versatile-1-5b-v0-3-adapter",
   "author": "tarunnokwal",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 306963158,
   "storage_human": "307 MB",
+  "context_length": null,
   "base_model": "tarunnokwal/VST-LM_Versatile-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

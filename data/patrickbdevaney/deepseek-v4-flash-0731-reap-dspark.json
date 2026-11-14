@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patrickbdevaney/DeepSeek-V4-Flash-0731-REAP-DSpark",
   "slug": "patrickbdevaney-deepseek-v4-flash-0731-reap-dspark",
   "author": "patrickbdevaney",
@@ -45,14 +45,19 @@
   "parameters_human": "193.03B",
   "storage_bytes": 107808354360,
   "storage_human": "107.8 GB",
+  "context_length": null,
   "base_model": "0xSero/DeepSeek-V4-Flash-0731-REAP",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QiWang98/Cog",
   "slug": "qiwang98-cog",
   "author": "QiWang98",
@@ -34,14 +34,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 35080008582,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T03:46:49.994Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

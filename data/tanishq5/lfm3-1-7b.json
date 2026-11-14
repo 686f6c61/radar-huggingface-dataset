@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tanishq5/LFM3-1.7B",
   "slug": "tanishq5-lfm3-1-7b",
   "author": "tanishq5",
@@ -67,14 +67,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475757943,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

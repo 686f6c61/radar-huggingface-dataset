@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elastix-ai/HyperPrune-Llama-2-7B-2to4",
   "slug": "elastix-ai-hyperprune-llama-2-7b-2to4",
   "author": "elastix-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13477411765,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RadwaAmr11/qwen3-0.6b-en-ar-translation-qlora",
   "slug": "radwaamr11-qwen3-0-6b-en-ar-translation-qlora",
   "author": "RadwaAmr11",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 49037629,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

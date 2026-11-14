@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k",
   "slug": "kimtaey-cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k",
   "author": "kimtaey",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 91057352035,
   "storage_human": "91.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:54:25.875Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

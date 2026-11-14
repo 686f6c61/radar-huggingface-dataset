@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP4",
   "slug": "rin247-qwen3-vl-8b-instruct-uncensored-aquarion-fp4",
   "author": "Rin247",
@@ -29,14 +29,19 @@
   "parameters_human": "4.39B",
   "storage_bytes": 5495111058,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T03:10:02.959Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

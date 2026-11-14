@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SinhaSpeech/whisper-small-sinhala-run12-best",
   "slug": "sinhaspeech-whisper-small-sinhala-run12-best",
   "author": "SinhaSpeech",
@@ -38,14 +38,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 967000832,
   "storage_human": "967 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wckwan/WebShop-Olmo3-7B-SEED-s1000",
   "slug": "wckwan-webshop-olmo3-7b-seed-s1000",
   "author": "wckwan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 14596063656,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T06:42:37.888Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

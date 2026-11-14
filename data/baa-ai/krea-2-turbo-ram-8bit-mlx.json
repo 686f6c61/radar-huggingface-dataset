@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baa-ai/Krea-2-Turbo-RAM-8bit-MLX",
   "slug": "baa-ai-krea-2-turbo-ram-8bit-mlx",
   "author": "baa-ai",
@@ -35,6 +35,7 @@
   "parameters_human": "3.84B",
   "storage_bytes": 22486929784,
   "storage_human": "22.5 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

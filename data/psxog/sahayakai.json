@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "psxog/SAHAYAKAI",
   "slug": "psxog-sahayakai",
   "author": "psxog",
@@ -25,14 +25,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 19363653056,
   "storage_human": "19.4 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

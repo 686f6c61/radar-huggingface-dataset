@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leejet/FLUX.1-schnell-gguf",
   "slug": "leejet-flux-1-schnell-gguf",
   "author": "leejet",
@@ -31,14 +31,19 @@
   "parameters_human": "11.89B",
   "storage_bytes": 55340731328,
   "storage_human": "55.3 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-schnell",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

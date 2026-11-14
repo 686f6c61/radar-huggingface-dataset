@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF",
   "slug": "webmp3-sakura-qwen3-8-flash-next-swift-de-en-k352-iq2_xs-gguf",
   "author": "webmp3",
@@ -42,14 +42,19 @@
   "parameters_human": "139.18B",
   "storage_bytes": 56995401132,
   "storage_human": "57.0 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "webmp3/Sakura-Qwen3.8-Flash-Next-Swift-2.5bit-352E-32GB-GGUF",
+  "renamed_at": "2026-11-11T08:03:47.654Z",
   "benchmarks": [],
   "sources": [
     {

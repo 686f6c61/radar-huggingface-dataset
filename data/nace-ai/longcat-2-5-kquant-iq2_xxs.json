@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/LongCat-2.5-KQuant-IQ2_XXS",
   "slug": "nace-ai-longcat-2-5-kquant-iq2_xxs",
   "author": "nace-ai",
@@ -31,14 +31,19 @@
   "parameters_human": "1661.57B",
   "storage_bytes": 580532524800,
   "storage_human": "580.5 GB",
+  "context_length": 524288,
   "base_model": "meituan-longcat/LongCat-2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T07:46:55.810Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "colosslabs/Krea-2-Coloss-Turbo-Quantized-NSFW",
   "slug": "colosslabs-krea-2-coloss-turbo-quantized-nsfw",
   "author": "colosslabs",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 34308223423,
   "storage_human": "34.3 GB",
+  "context_length": null,
   "base_model": "colosslabs/Krea-2-Coloss-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

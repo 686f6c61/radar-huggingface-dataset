@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Qwopus3.5-9B-Supervisor-v3.5-MLX",
   "slug": "amaimedia-noesis-qwopus3-5-9b-supervisor-v3-5-mlx",
   "author": "AMAImedia",
@@ -45,6 +45,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927651782,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T08:34:25.797Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

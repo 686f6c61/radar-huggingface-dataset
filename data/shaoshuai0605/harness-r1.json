@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShaoShuai0605/Harness-R1",
   "slug": "shaoshuai0605-harness-r1",
   "author": "ShaoShuai0605",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 75298878829,
   "storage_human": "75.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

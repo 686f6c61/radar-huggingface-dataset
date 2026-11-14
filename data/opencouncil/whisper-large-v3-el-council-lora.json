@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "opencouncil/whisper-large-v3-el-council-lora",
   "slug": "opencouncil-whisper-large-v3-el-council-lora",
   "author": "opencouncil",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 188908920,
   "storage_human": "189 MB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

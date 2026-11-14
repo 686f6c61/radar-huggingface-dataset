@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/llama-7b",
   "slug": "vllm-project-llama-7b",
   "author": "vllm-project",
@@ -25,14 +25,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 26954326481,
   "storage_human": "27.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

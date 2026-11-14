@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roclark/Cybertron-3.5-30B-A3B-BF16",
   "slug": "roclark-cybertron-3-5-30b-a3b-bf16",
   "author": "roclark",
@@ -24,14 +24,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 126330455532,
   "storage_human": "126.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T06:05:45.162Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

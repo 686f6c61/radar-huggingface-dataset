@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heypatkay/solume-objectclear-coreml",
   "slug": "heypatkay-solume-objectclear-coreml",
   "author": "heypatkay",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 6114643214,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "jixin0101/ObjectClear",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

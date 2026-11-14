@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0ppxnhximxr/GLM-5.3-Flash-GGUF",
   "slug": "0ppxnhximxr-glm-5-3-flash-gguf",
   "author": "0ppxnhximxr",
@@ -36,14 +36,19 @@
   "parameters_human": "313.33B",
   "storage_bytes": 401665282336,
   "storage_human": "401.7 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

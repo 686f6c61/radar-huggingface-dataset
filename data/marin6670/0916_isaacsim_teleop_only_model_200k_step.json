@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marin6670/0916_isaacsim_teleop_only_model_200k_step",
   "slug": "marin6670-0916_isaacsim_teleop_only_model_200k_step",
   "author": "marin6670",
@@ -31,14 +31,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906721048,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

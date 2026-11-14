@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "piotrkosecki/Mistral-Large-4-1T-A52B-EXL3-3.0bpw",
   "slug": "piotrkosecki-mistral-large-4-1t-a52b-exl3-3-0bpw",
   "author": "piotrkosecki",
@@ -35,14 +35,19 @@
   "parameters_human": "201.64B",
   "storage_bytes": 403447566777,
   "storage_human": "403.4 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

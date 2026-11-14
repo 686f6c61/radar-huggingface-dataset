@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TianfuXinqu/huggingface_filesystem_terminal_12748_f01u39y9_accounts",
   "slug": "tianfuxinqu-huggingface_filesystem_terminal_12748_f01u39y9_accounts",
   "author": "TianfuXinqu",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T08:35:37.925Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ji-farthing/DeepSeek-V4-Flash-Uncensored-TextOnly-ik-llama-GGUF",
   "slug": "ji-farthing-deepseek-v4-flash-uncensored-textonly-ik-llama-gguf",
   "author": "ji-farthing",
@@ -41,14 +41,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 106039719328,
   "storage_human": "106.0 GB",
+  "context_length": 1048576,
   "base_model": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

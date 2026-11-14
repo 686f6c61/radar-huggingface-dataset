@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BennyDaBall/SenseNova-6.8-Code2Video-NVFP4-GGUF",
   "slug": "bennydaball-sensenova-6-8-code2video-nvfp4-gguf",
   "author": "BennyDaBall",
@@ -43,14 +43,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 20313839204,
   "storage_human": "20.3 GB",
+  "context_length": 262144,
   "base_model": "sensenova/SenseNova-6.8-Code2Video",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

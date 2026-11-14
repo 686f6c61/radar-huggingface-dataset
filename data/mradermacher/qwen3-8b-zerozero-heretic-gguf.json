@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-8B-ZeroZero-Heretic-GGUF",
   "slug": "mradermacher-qwen3-8b-zerozero-heretic-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 73425338368,
   "storage_human": "73.4 GB",
+  "context_length": 40960,
   "base_model": "LastMachine/Qwen3-8B-ZeroZero-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axlerate/ragbench-trace-deberta-v3-large-heldout-benchmark",
   "slug": "axlerate-ragbench-trace-deberta-v3-large-heldout-benchmark",
   "author": "axlerate",
@@ -43,14 +43,19 @@
   "parameters_human": "434.0M",
   "storage_bytes": 2606768613,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "RAGBench TRACe scoring",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "typhoon-ai/typhoon-ocr2-2b-MLX-8bit",
   "slug": "typhoon-ai-typhoon-ocr2-2b-mlx-8bit",
   "author": "typhoon-ai",
@@ -39,6 +39,7 @@
   "parameters_human": "2.21B",
   "storage_bytes": 2682899376,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-ocr2-2b",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

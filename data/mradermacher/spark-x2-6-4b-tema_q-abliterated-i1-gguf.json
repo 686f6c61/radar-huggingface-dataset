@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Spark-X2.6-4B-Tema_Q-Abliterated-i1-GGUF",
   "slug": "mradermacher-spark-x2-6-4b-tema_q-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 50405823424,
   "storage_human": "50.4 GB",
+  "context_length": 1048576,
   "base_model": "yuna1126/Spark-X2.6-4B-Tema_Q-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

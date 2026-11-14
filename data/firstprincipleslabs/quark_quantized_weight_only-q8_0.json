@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FirstPrinciplesLabs/quark_quantized_weight_only-Q8_0",
   "slug": "firstprincipleslabs-quark_quantized_weight_only-q8_0",
   "author": "FirstPrinciplesLabs",
@@ -36,14 +36,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 10707764672,
   "storage_human": "10.7 GB",
+  "context_length": 262144,
   "base_model": "FirstPrinciplesLabs/quark",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

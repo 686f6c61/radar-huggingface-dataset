@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "epfl-dlab/zip2zip-pp-Llama-3.2-1B-Instruct",
   "slug": "epfl-dlab-zip2zip-pp-llama-3-2-1b-instruct",
   "author": "epfl-dlab",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 12098422289,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

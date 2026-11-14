@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sahmeee/olmo2-7b-instruct-inv-reference-mixed-ce-template",
   "slug": "sahmeee-olmo2-7b-instruct-inv-reference-mixed-ce-template",
   "author": "Sahmeee",
@@ -31,14 +31,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14597276128,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-1124-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MARS-Retokenization/olmo2-7b-instruct-inv-reference-mixed-ce-template-FIXED",
+  "renamed_at": "2026-11-14T04:16:04.989Z",
   "benchmarks": [],
   "sources": [
     {

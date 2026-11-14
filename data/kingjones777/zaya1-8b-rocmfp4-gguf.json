@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/ZAYA1-8B-ROCmFP4-GGUF",
   "slug": "kingjones777-zaya1-8b-rocmfp4-gguf",
   "author": "kingjones777",
@@ -41,14 +41,19 @@
   "parameters_human": "8.84B",
   "storage_bytes": 23812723520,
   "storage_human": "23.8 GB",
+  "context_length": 131072,
   "base_model": "Zyphra/ZAYA1-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

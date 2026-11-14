@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "metasequoiaime/pinyin-ime-reranker-25M",
   "slug": "metasequoiaime-pinyin-ime-reranker-25m",
   "author": "metasequoiaime",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 25480184,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "msime/pinyin-ime-reranker-25M",
+  "renamed_at": "2026-11-11T06:17:24.448Z",
   "benchmarks": [],
   "sources": [
     {

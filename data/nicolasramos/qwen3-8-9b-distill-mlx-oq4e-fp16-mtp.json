@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nicolasramos/Qwen3.8-9B-Distill-MLX-oQ4e-fp16-mtp",
   "slug": "nicolasramos-qwen3-8-9b-distill-mlx-oq4e-fp16-mtp",
   "author": "nicolasramos",
@@ -27,6 +27,7 @@
   "parameters_human": "9.20B",
   "storage_bytes": 5495123602,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

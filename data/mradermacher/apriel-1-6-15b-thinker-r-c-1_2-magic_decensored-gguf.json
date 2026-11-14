@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored-GGUF",
   "slug": "mradermacher-apriel-1-6-15b-thinker-r-c-1_2-magic_decensored-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "14.43B",
   "storage_bytes": 100832701152,
   "storage_human": "100.8 GB",
+  "context_length": 262400,
   "base_model": "MagicalAlchemist/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

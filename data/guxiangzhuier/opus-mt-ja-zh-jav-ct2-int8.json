@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guxiangzhuier/opus-mt-ja-zh-jav-ct2-int8",
   "slug": "guxiangzhuier-opus-mt-ja-zh-jav-ct2-int8",
   "author": "guxiangzhuier",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 161760578,
   "storage_human": "162 MB",
+  "context_length": null,
   "base_model": "lemmonyjiang/opus-mt-ja-zh-jav",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

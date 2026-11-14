@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pqhaz/apex-flash-1-abliterated-NVFP4",
   "slug": "pqhaz-apex-flash-1-abliterated-nvfp4",
   "author": "pqhaz",
@@ -35,14 +35,19 @@
   "parameters_human": "165.50B",
   "storage_bytes": 194692978809,
   "storage_human": "194.7 GB",
+  "context_length": null,
   "base_model": "cantina-security/apex-flash-1-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

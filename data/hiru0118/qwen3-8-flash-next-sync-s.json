@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hiru0118/Qwen3.8-Flash-Next-Sync-S",
   "slug": "hiru0118-qwen3-8-flash-next-sync-s",
   "author": "hiru0118",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 27651433472,
   "storage_human": "27.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T04:56:38.992Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/rank-zephyr-7b-v1-full-GGUF",
   "slug": "tinyopsec-rank-zephyr-7b-v1-full-gguf",
   "author": "tinyopsec",
@@ -35,14 +35,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 59985424000,
   "storage_human": "60.0 GB",
+  "context_length": 32768,
   "base_model": "castorini/rank_zephyr_7b_v1_full",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

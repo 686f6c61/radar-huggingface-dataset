@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canvit/probe-ade20k-40k-dv3s-160px",
   "slug": "canvit-probe-ade20k-40k-dv3s-160px",
   "author": "canvit",
@@ -32,14 +32,19 @@
   "parameters_human": "59286",
   "storage_bytes": 237672,
   "storage_human": "237672 B",
+  "context_length": null,
   "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

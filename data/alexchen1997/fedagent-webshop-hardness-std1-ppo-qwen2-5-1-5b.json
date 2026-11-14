@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexChen1997/fedagent-webshop-hardness-std1-ppo-qwen2.5-1.5b",
   "slug": "alexchen1997-fedagent-webshop-hardness-std1-ppo-qwen2-5-1-5b",
   "author": "AlexChen1997",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 37063228111,
   "storage_human": "37.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

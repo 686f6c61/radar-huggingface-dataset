@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NonMiFrega/DeepSeek-R1-Distill-Qwen-7B-Q4_K_M-GGUF",
   "slug": "nonmifrega-deepseek-r1-distill-qwen-7b-q4_k_m-gguf",
   "author": "NonMiFrega",
@@ -30,14 +30,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4683073344,
   "storage_human": "4.7 GB",
+  "context_length": 131072,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

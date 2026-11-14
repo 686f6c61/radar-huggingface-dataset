@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "midwestcyr/aliceai-t5-35b-jev-ru-nli-native",
   "slug": "midwestcyr-aliceai-t5-35b-jev-ru-nli-native",
   "author": "midwestcyr",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 47708076,
   "storage_human": "48 MB",
+  "context_length": null,
   "base_model": "yandex/AliceAI-T5-35B-A0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T02:41:07.500Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

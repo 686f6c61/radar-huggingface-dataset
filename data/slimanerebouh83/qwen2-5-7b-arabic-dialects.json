@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slimanerebouh83/Qwen2.5-7B-Arabic-Dialects",
   "slug": "slimanerebouh83-qwen2-5-7b-arabic-dialects",
   "author": "slimanerebouh83",
@@ -44,14 +44,19 @@
   "parameters_human": null,
   "storage_bytes": 334436060,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

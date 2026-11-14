@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chengzhang239/router",
   "slug": "chengzhang239-router",
   "author": "chengzhang239",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 13928662074,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T02:56:45.609Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rariruluis/llm-jp-4.1-8b-thinking-NVFP4",
   "slug": "rariruluis-llm-jp-4-1-8b-thinking-nvfp4",
   "author": "rariruluis",
@@ -42,14 +42,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 7160618249,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "llm-jp/llm-jp-4.1-8b-thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davetha/launch80-swift15-qwen27b-unc-int4-fused-12l63",
   "slug": "davetha-launch80-swift15-qwen27b-unc-int4-fused-12l63",
   "author": "davetha",
@@ -35,14 +35,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 18418539421,
   "storage_human": "18.4 GB",
+  "context_length": null,
   "base_model": "swift-1-5/swift-1-5-qwen3-8-27b-uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

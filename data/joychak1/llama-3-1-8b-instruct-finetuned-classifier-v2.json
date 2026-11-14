@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joychak1/Llama-3.1-8B-Instruct-FineTuned-Classifier-v2",
   "slug": "joychak1-llama-3-1-8b-instruct-finetuned-classifier-v2",
   "author": "joychak1",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077765968,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

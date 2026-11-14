@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zerolimites/Qwen3-0.6B-Math-Surgery-v1",
   "slug": "zerolimites-qwen3-0-6b-math-surgery-v1",
   "author": "zerolimites",
@@ -39,6 +39,7 @@
   "parameters_human": "751.6M",
   "storage_bytes": 3828823462,
   "storage_human": "3.8 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

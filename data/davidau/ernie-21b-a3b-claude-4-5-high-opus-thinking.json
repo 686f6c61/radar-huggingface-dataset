@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/ERNIE-21B-A3B-Claude-4.5-High-OPUS-Thinking",
   "slug": "davidau-ernie-21b-a3b-claude-4-5-high-opus-thinking",
   "author": "DavidAU",
@@ -59,14 +59,19 @@
   "parameters_human": "21.83B",
   "storage_bytes": 43673022578,
   "storage_human": "43.7 GB",
+  "context_length": null,
   "base_model": "baidu/ERNIE-4.5-21B-A3B-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

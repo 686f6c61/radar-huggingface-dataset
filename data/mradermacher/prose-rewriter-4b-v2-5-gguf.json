@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/prose-rewriter-4b-v2.5-GGUF",
   "slug": "mradermacher-prose-rewriter-4b-v2-5-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 39708227712,
   "storage_human": "39.7 GB",
+  "context_length": 32768,
   "base_model": "chartreuse-verte/prose-rewriter-4b-v2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

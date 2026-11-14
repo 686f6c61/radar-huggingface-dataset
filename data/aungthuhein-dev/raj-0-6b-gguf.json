@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aungthuhein-dev/Raj-0.6B-GGUF",
   "slug": "aungthuhein-dev-raj-0-6b-gguf",
   "author": "aungthuhein-dev",
@@ -38,14 +38,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 444410752,
   "storage_human": "444 MB",
+  "context_length": 65536,
   "base_model": "aungzaythant/Raj-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonbondig/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-Q4_K_P-FastMTP-GGUF",
   "slug": "brandonbondig-qwen3-8-27b-uncensored-hauhaucs-aggressive-q4_k_p-fastmtp-gguf",
   "author": "brandonbondig",
@@ -30,14 +30,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 18826847616,
   "storage_human": "18.8 GB",
+  "context_length": 262144,
   "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T05:48:36.801Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

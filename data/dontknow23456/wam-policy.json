@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dontKnow23456/WAM-Policy",
   "slug": "dontknow23456-wam-policy",
   "author": "dontKnow23456",
@@ -24,6 +24,7 @@
   "parameters_human": null,
   "storage_bytes": 740160624081,
   "storage_human": "740.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

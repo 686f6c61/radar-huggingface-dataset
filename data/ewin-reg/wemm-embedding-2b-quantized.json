@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/WeMM-Embedding-2B-Quantized",
   "slug": "ewin-reg-wemm-embedding-2b-quantized",
   "author": "ewin-reg",
@@ -53,6 +53,7 @@
   "parameters_human": "1.81B",
   "storage_bytes": 10606030312,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "tencent/WeMM-Embedding-2B",
   "formats": [
     "gguf",
@@ -60,8 +61,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Multimodal Retrieval",

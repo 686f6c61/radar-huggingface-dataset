@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/Task_000759_FLOWER_B200_bs8_step5000",
   "slug": "dongkkka-task_000759_flower_b200_bs8_step5000",
   "author": "Dongkkka",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 15216357849,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

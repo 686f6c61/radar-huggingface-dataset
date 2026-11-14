@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnrizzo1/flan-t5-opensearch-lora",
   "slug": "johnrizzo1-flan-t5-opensearch-lora",
   "author": "johnrizzo1",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 746453805,
   "storage_human": "746 MB",
+  "context_length": null,
   "base_model": "google/flan-t5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

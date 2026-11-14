@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sykeclonex/signers-doubt-tiny-aya-plain-sft",
   "slug": "sykeclonex-signers-doubt-tiny-aya-plain-sft",
   "author": "Sykeclonex",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 142357727,
   "storage_human": "142 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-global",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Sykeclonex/intentlock-tiny-aya-plain-sft",
+  "renamed_at": "2026-11-14T04:27:27.688Z",
   "benchmarks": [],
   "sources": []
 }

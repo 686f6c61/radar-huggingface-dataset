@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final",
   "slug": "arrochi112-opengrad-qwen3-5-2b-m0-sft-canonicalv2-final",
   "author": "arrochi112",
@@ -36,14 +36,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 3783681373,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "arjhinety/OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final",
+  "renamed_at": "2026-11-11T04:33:13.190Z",
   "benchmarks": [],
   "sources": [
     {

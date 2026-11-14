@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thisisisheanesu/morena-tools-gguf",
   "slug": "thisisisheanesu-morena-tools-gguf",
   "author": "thisisisheanesu",
@@ -45,14 +45,19 @@
   "parameters_human": "503.4M",
   "storage_bytes": 937124672,
   "storage_human": "937 MB",
+  "context_length": 4096,
   "base_model": "vamboai/morena-0.5b-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

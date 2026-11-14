@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "balllvin/flint-heretic-mlx-4bit",
   "slug": "balllvin-flint-heretic-mlx-4bit",
   "author": "balllvin",
@@ -22,20 +22,25 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 472,
+  "downloads_30d": 481,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 22581020786,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

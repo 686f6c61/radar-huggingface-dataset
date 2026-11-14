@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "demetri007/DavidAU-Qwen3.8-27B-Ultimate-Heretic-Uncensored-8Bit-g32-BF16-MTP-FP16-MTPLX",
   "slug": "demetri007-davidau-qwen3-8-27b-ultimate-heretic-uncensored-8bit-g32-bf16-mtp-fp16-mtplx",
   "author": "demetri007",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 30370606170,
   "storage_human": "30.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

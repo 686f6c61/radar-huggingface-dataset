@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Skyl4r-Ai/Skylar2-1B-Instruct",
   "slug": "skyl4r-ai-skylar2-1b-instruct",
   "author": "Skyl4r-Ai",
@@ -43,14 +43,19 @@
   "parameters_human": "1.03B",
   "storage_bytes": 6162671413,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

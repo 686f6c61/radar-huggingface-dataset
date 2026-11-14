@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "2beng2/OmniEdu-27B-Q6_K-NInfer",
   "slug": "2beng2-omniedu-27b-q6_k-ninfer",
   "author": "2beng2",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 25813765120,
   "storage_human": "25.8 GB",
+  "context_length": null,
   "base_model": "lhpku20010120/Omni-Edu-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

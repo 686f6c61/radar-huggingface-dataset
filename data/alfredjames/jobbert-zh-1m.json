@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlfredJames/jobbert-zh-1m",
   "slug": "alfredjames-jobbert-zh-1m",
   "author": "AlfredJames",
@@ -37,14 +37,19 @@
   "parameters_human": "118.5M",
   "storage_bytes": 883259210,
   "storage_human": "883 MB",
+  "context_length": null,
   "base_model": "hfl/chinese-roberta-wwm-ext",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

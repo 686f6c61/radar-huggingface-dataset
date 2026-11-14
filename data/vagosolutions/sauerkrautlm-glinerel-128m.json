@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VAGOsolutions/SauerkrautLM-GLiNEREL-128m",
   "slug": "vagosolutions-sauerkrautlm-glinerel-128m",
   "author": "VAGOsolutions",
@@ -47,14 +47,19 @@
   "parameters_human": "128.0M",
   "storage_bytes": 259783652,
   "storage_human": "260 MB",
+  "context_length": null,
   "base_model": "VAGOsolutions/SauerkrautLM-GLiNEREL-314m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

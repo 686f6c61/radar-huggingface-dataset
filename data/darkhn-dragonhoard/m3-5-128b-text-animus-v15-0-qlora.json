@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Darkhn-DragonHoard/M3.5-128B-Text-Animus-V15.0-Qlora",
   "slug": "darkhn-dragonhoard-m3-5-128b-text-animus-v15-0-qlora",
   "author": "Darkhn-DragonHoard",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 287869405310,
   "storage_human": "287.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

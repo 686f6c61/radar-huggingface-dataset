@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1",
   "slug": "indexnusrefather-nyx-rp-mini-2-6b-instruct-2608-v0-1",
   "author": "Indexnusrefather",
@@ -56,14 +56,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5412583875,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

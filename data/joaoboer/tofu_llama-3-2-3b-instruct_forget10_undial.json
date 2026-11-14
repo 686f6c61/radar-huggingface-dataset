@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget10_UNDIAL",
   "slug": "joaoboer-tofu_llama-3-2-3b-instruct_forget10_undial",
   "author": "JoaoBoer",
@@ -36,14 +36,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 6442738968,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "open-unlearning/tofu_Llama-3.2-3B-Instruct_full",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

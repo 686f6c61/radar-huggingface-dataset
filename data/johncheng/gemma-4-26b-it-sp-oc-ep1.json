@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnCheng/gemma-4-26b-it-sp-oc-ep1",
   "slug": "johncheng-gemma-4-26b-it-sp-oc-ep1",
   "author": "JohnCheng",
@@ -29,14 +29,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644655282,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "JohnCheng/gemma-4-26b-sp-oc-exp1-ep2",
+  "renamed_at": "2026-11-14T03:24:23.210Z",
   "benchmarks": [],
   "sources": [
     {

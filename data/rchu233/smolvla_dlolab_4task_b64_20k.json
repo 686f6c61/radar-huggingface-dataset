@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rchu233/smolvla_dlolab_4task_b64_20k",
   "slug": "rchu233-smolvla_dlolab_4task_b64_20k",
   "author": "rchu233",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 5279696612,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

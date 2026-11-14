@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HqH1111/OCCWAM",
   "slug": "hqh1111-occwam",
   "author": "HqH1111",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 3158355048,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T10:48:16.488Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

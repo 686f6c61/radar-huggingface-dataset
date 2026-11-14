@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber",
   "slug": "audnai-penclaw-glm-5-3-abliterated-for-offensive-cyber",
   "author": "audnai",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 2266927741141,
   "storage_human": "2266.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

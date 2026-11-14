@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samuelolubukun/moonshine-tiny-yoruba-openbible",
   "slug": "samuelolubukun-moonshine-tiny-yoruba-openbible",
   "author": "samuelolubukun",
@@ -38,14 +38,19 @@
   "parameters_human": "27.1M",
   "storage_bytes": 58018267,
   "storage_human": "58 MB",
+  "context_length": null,
   "base_model": "UsefulSensors/moonshine-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SarahSav/arabert-openiti-1215",
   "slug": "sarahsav-arabert-openiti-1215",
   "author": "SarahSav",
@@ -25,14 +25,19 @@
   "parameters_human": "135.3M",
   "storage_bytes": 1082123272,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "aubmindlab/bert-base-arabertv02",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T11:01:01.598Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

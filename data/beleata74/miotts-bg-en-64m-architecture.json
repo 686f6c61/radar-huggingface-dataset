@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beleata74/MioTTS-BG-EN-64M-Architecture",
   "slug": "beleata74-miotts-bg-en-64m-architecture",
   "author": "beleata74",
@@ -37,14 +37,19 @@
   "parameters_human": "63.0M",
   "storage_bytes": 510072560,
   "storage_human": "510 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:21:36.899Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hdae/karume-irodori-v4.1-small-mf",
   "slug": "hdae-karume-irodori-v4-1-small-mf",
   "author": "hdae",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2867570934,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "Aratako/Irodori-TTS-v4.1-Small-MF, sbintuitions/modernbert-ja-310m, Aratako/Semantic-DACVAE-Japanese-32dim",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

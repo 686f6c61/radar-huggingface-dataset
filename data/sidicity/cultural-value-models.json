@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sidicity/cultural-value-models",
   "slug": "sidicity-cultural-value-models",
   "author": "sidicity",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 40181791847,
   "storage_human": "40.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct, unsloth/Qwen3-8B, unsloth/gemma-3-12b-it, unsloth/Ministral-3-8B-Instruct-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

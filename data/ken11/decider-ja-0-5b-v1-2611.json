@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ken11/decider-ja-0.5b-v1-2611",
   "slug": "ken11-decider-ja-0-5b-v1-2611",
   "author": "ken11",
@@ -61,6 +61,7 @@
   "parameters_human": "793.0M",
   "storage_bytes": 890975592,
   "storage_human": "891 MB",
+  "context_length": 8192,
   "base_model": "sbintuitions/sarashina2.2-0.5b",
   "formats": [
     "gguf",
@@ -68,8 +69,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

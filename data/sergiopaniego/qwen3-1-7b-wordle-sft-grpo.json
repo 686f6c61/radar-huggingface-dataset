@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sergiopaniego/Qwen3-1.7B-Wordle-SFT-GRPO",
   "slug": "sergiopaniego-qwen3-1-7b-wordle-sft-grpo",
   "author": "sergiopaniego",
@@ -36,14 +36,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 141122450310,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "openenv/Qwen3-1.7B-Wordle-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "openenv/Qwen3-1.7B-Wordle-SFT-GRPO",
+  "renamed_at": "2026-11-11T07:28:54.463Z",
   "benchmarks": [],
   "sources": [
     {

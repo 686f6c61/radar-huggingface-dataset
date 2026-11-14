@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/MOSS-Image-SFT-INT8-convrot",
   "slug": "abiray-moss-image-sft-int8-convrot",
   "author": "Abiray",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 14120615390,
   "storage_human": "14.1 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

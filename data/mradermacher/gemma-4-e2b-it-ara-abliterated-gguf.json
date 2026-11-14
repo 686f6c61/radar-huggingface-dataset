@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Gemma-4-E2B-it-ARA-Abliterated-GGUF",
   "slug": "mradermacher-gemma-4-e2b-it-ara-abliterated-gguf",
   "author": "mradermacher",
@@ -62,6 +62,7 @@
   "parameters_human": "4.63B",
   "storage_bytes": 49408184704,
   "storage_human": "49.4 GB",
+  "context_length": 131072,
   "base_model": "Austriani/Gemma-4-E2B-it-ARA-Abliterated",
   "formats": [
     "gguf",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

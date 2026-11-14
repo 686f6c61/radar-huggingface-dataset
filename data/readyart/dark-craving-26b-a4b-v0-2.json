@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Dark-Craving-26B-A4B-v0.2",
   "slug": "readyart-dark-craving-26b-a4b-v0-2",
   "author": "ReadyArt",
@@ -40,14 +40,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644179542,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:14:00.834Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

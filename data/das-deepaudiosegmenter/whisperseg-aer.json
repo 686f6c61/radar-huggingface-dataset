@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DAS-DeepAudioSegmenter/whisperseg-aer",
   "slug": "das-deepaudiosegmenter-whisperseg-aer",
   "author": "DAS-DeepAudioSegmenter",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 6728202222,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "nccratliri/whisperseg-base-animal-vad, nccratliri/whisperseg-animal-vad, nccratliri/whisperseg-large-ms, openai/whisper-tiny, openai/whisper-small",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

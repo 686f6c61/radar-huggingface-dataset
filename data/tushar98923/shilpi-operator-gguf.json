@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tushar98923/shilpi-operator-GGUF",
   "slug": "tushar98923-shilpi-operator-gguf",
   "author": "Tushar98923",
@@ -32,14 +32,19 @@
   "parameters_human": "33.6M",
   "storage_bytes": 2143977760,
   "storage_human": "2.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raghul2004/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Ternary-2bit",
   "slug": "raghul2004-nvidia-nemotron-3-5-lightning-30b-a3b-ternary-2bit",
   "author": "raghul2004",
@@ -41,6 +41,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 10448800820,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-bf16",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aquaduck/Muse-Glimmer-30B-GGUF",
   "slug": "aquaduck-muse-glimmer-30b-gguf",
   "author": "aquaduck",
@@ -30,14 +30,19 @@
   "parameters_human": "13.93B",
   "storage_bytes": 32525982656,
   "storage_human": "32.5 GB",
+  "context_length": 131072,
   "base_model": "meta-models/muse-glimmer-30b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:32:59.380Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Netra-Lab/Netra-NMT",
   "slug": "netra-lab-netra-nmt",
   "author": "Netra-Lab",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 439148545,
   "storage_human": "439 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-bt_with_highest",
   "slug": "gyubeum-qwen3-vl-8b-instruct-ui-genie-scoring-64k-bt_with_highest",
   "author": "Gyubeum",
@@ -34,14 +34,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545770762,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T06:28:36.336Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

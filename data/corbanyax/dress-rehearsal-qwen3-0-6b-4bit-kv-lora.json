@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "corbanyax/Dress-Rehearsal-Qwen3-0.6B-4bit-KV-LoRA",
   "slug": "corbanyax-dress-rehearsal-qwen3-0-6b-4bit-kv-lora",
   "author": "corbanyax",
@@ -52,14 +52,19 @@
   "parameters_human": null,
   "storage_bytes": 242909409,
   "storage_human": "243 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-0.6B-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Countdown arithmetic reasoning",

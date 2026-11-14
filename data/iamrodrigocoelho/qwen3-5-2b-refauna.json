@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamrodrigocoelho/qwen3.5-2b-refauna",
   "slug": "iamrodrigocoelho-qwen3-5-2b-refauna",
   "author": "iamrodrigocoelho",
@@ -47,14 +47,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 4568210831,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

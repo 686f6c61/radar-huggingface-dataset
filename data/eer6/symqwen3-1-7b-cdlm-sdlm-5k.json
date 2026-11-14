@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EER6/SymQwen3-1.7B-CDLM-SDLM-5k",
   "slug": "eer6-symqwen3-1-7b-cdlm-sdlm-5k",
   "author": "EER6",
@@ -31,14 +31,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 4074938289,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

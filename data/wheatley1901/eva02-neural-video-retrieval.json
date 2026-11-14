@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wheatley1901/eva02-neural-video-retrieval",
   "slug": "wheatley1901-eva02-neural-video-retrieval",
   "author": "wheatley1901",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1712547967,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "timm/eva02_large_patch14_clip_336.merged2b_s6b_b61k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

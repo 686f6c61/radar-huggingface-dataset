@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fronyax/KREA2_Edit_SNOFS_Merge",
   "slug": "fronyax-krea2_edit_snofs_merge",
   "author": "Fronyax",
@@ -22,14 +22,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 115419105928,
   "storage_human": "115.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cloverx-id/XoneLM-1.0-Papper",
   "slug": "cloverx-id-xonelm-1-0-papper",
   "author": "cloverx-id",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 1429861,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cloverx-id/XoneLM-1.0-Paper",
+  "renamed_at": "2026-11-13T05:06:35.636Z",
   "benchmarks": [],
   "sources": [
     {

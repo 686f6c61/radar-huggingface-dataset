@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/p-h3-image-pdmd-2step",
   "slug": "akhaliq-p-h3-image-pdmd-2step",
   "author": "akhaliq",
@@ -32,19 +32,24 @@
   ],
   "likes": 20,
   "downloads_30d": 4968,
-  "trending_score": 12,
+  "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 6133950163,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "PrunaAI/P-H3-Image",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

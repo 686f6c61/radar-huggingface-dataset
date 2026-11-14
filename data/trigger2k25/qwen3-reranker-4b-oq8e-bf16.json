@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trigger2k25/Qwen3-Reranker-4B-oQ8e-bf16",
   "slug": "trigger2k25-qwen3-reranker-4b-oq8e-bf16",
   "author": "trigger2k25",
@@ -34,6 +34,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 4284855383,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Reranker-4B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

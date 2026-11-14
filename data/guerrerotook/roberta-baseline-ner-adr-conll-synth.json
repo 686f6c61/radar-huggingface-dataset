@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guerrerotook/RoBERTa-baseline-NER-ADR-CONLL-SYNTH",
   "slug": "guerrerotook-roberta-baseline-ner-adr-conll-synth",
   "author": "guerrerotook",
@@ -39,14 +39,19 @@
   "parameters_human": "125.4M",
   "storage_bytes": 501613980,
   "storage_human": "502 MB",
+  "context_length": null,
   "base_model": "PlanTL-GOB-ES/roberta-base-biomedical-es",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

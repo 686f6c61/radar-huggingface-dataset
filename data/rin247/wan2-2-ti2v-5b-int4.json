@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Wan2.2-TI2V-5B-INT4",
   "slug": "rin247-wan2-2-ti2v-5b-int4",
   "author": "Rin247",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 6555606185,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:24:29.066Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

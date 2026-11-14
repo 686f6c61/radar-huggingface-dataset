@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lynn47/whisper_medium_burmese_ucsy",
   "slug": "lynn47-whisper_medium_burmese_ucsy",
   "author": "Lynn47",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 859678274,
   "storage_human": "860 MB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

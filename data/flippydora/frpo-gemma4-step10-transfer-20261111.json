@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlippyDora/frpo-gemma4-step10-transfer-20261111",
   "slug": "flippydora-frpo-gemma4-step10-transfer-20261111",
   "author": "FlippyDora",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 59276928425,
   "storage_human": "59.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

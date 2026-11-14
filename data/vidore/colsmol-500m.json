@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vidore/colSmol-500M",
   "slug": "vidore-colsmol-500m",
   "author": "vidore",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 1130012590,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "vidore/ColSmolVLM-Instruct-500M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

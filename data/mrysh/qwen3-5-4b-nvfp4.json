@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrysh/qwen3.5-4b-nvfp4",
   "slug": "mrysh-qwen3-5-4b-nvfp4",
   "author": "mrysh",
@@ -30,14 +30,19 @@
   "parameters_human": "2.42B",
   "storage_bytes": 3306708299,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edward56/sn92-r1238-independent-qwen05-q4-0",
   "slug": "edward56-sn92-r1238-independent-qwen05-q4-0",
   "author": "edward56",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 428738588,
   "storage_human": "429 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

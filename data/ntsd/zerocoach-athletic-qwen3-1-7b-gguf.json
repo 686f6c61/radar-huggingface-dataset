@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ntsd/zerocoach-athletic-qwen3-1.7b-GGUF",
   "slug": "ntsd-zerocoach-athletic-qwen3-1-7b-gguf",
   "author": "ntsd",
@@ -41,14 +41,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 2389847840,
   "storage_human": "2.4 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

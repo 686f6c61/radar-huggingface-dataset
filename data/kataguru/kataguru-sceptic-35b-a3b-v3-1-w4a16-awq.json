@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1-W4A16-AWQ",
   "slug": "kataguru-kataguru-sceptic-35b-a3b-v3-1-w4a16-awq",
   "author": "kataguru",
@@ -77,14 +77,19 @@
   "parameters_human": "35.69B",
   "storage_bytes": 25999685904,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

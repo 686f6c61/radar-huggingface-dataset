@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kmirain/Reinforce-CartPole-v1",
   "slug": "kmirain-reinforce-cartpole-v1",
   "author": "kmirain",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 2989,
   "storage_human": "2989 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:50:06.858Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

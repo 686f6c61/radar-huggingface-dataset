@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zephxs/pocket-tts-onnx-fr-6l",
   "slug": "zephxs-pocket-tts-onnx-fr-6l",
   "author": "zephxs",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 219380362,
   "storage_human": "219 MB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

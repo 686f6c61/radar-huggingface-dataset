@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkmaniac7/TokForge-LLM-QNN-NPU",
   "slug": "darkmaniac7-tokforge-llm-qnn-npu",
   "author": "darkmaniac7",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 16441442304,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B, huihui-ai/Huihui-Qwen3-4B-abliterated-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

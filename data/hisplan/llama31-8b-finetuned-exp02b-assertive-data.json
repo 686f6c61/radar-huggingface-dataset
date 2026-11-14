@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hisplan/llama31-8b-finetuned-exp02b-assertive-data",
   "slug": "hisplan-llama31-8b-finetuned-exp02b-assertive-data",
   "author": "hisplan",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16161712912,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": "hisplan/llama-3.1-8b-ko-alpaca-sft-merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

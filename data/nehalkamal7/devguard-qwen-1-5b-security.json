@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nehalkamal7/devguard-qwen-1.5b-security",
   "slug": "nehalkamal7-devguard-qwen-1-5b-security",
   "author": "nehalkamal7",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 15794956,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

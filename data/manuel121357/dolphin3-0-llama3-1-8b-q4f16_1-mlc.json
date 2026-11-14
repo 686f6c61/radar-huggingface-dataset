@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manuel121357/Dolphin3.0-Llama3.1-8B-q4f16_1-MLC",
   "slug": "manuel121357-dolphin3-0-llama3-1-8b-q4f16_1-mlc",
   "author": "manuel121357",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4534614970,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "cognitivecomputations/Dolphin3.0-Llama3.1-8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leapshared/neudive_test_120epi_0819_real_20260819_162506_GR00T17",
   "slug": "leapshared-neudive_test_120epi_0819_real_20260819_162506_gr00t17",
   "author": "leapshared",
@@ -22,14 +22,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 9529226248,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

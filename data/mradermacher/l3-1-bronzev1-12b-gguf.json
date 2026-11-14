@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/L3.1-Bronzev1-12B-GGUF",
   "slug": "mradermacher-l3-1-bronzev1-12b-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 82388155200,
   "storage_human": "82.4 GB",
+  "context_length": 131072,
   "base_model": "kromcomp/L3.1-Bronzev1-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

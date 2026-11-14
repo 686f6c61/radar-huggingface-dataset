@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muradil211/ToolWeave_stage3",
   "slug": "muradil211-toolweave_stage3",
   "author": "muradil211",
@@ -33,14 +33,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834317158,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

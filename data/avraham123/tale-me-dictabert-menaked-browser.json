@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avraham123/tale-me-dictabert-menaked-browser",
   "slug": "avraham123-tale-me-dictabert-menaked-browser",
   "author": "avraham123",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 317980253,
   "storage_human": "318 MB",
+  "context_length": null,
   "base_model": "dicta-il/dictabert-large-char-menaked",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

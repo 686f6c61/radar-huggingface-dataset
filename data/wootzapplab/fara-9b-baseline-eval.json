@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WootzappLab/fara-9b-baseline-eval",
   "slug": "wootzapplab-fara-9b-baseline-eval",
   "author": "WootzappLab",
@@ -37,14 +37,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839709775,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "microsoft/Fara1.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

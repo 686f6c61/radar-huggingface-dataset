@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-Breeze-ASR-25-gguf",
   "slug": "xix3r-voxix-breeze-asr-25-gguf",
   "author": "xix3r",
@@ -40,14 +40,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 11323681280,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": "MediaTek-Research/Breeze-ASR-25",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

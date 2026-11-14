@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Kandinsky-S2V-1.0-Pro-distill-cmf",
   "slug": "infosave-kandinsky-s2v-1-0-pro-distill-cmf",
   "author": "infosave",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 56327040334,
   "storage_human": "56.3 GB",
+  "context_length": null,
   "base_model": "kandinskylab/Kandinsky-S2V-1.0-Pro-distill-Diffusers",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

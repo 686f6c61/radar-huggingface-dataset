@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gokhannet/CepBot-v0.7-LoRA",
   "slug": "gokhannet-cepbot-v0-7-lora",
   "author": "Gokhannet",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 187613705,
   "storage_human": "188 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

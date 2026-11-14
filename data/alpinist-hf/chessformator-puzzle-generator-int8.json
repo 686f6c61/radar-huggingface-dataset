@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alpinist-HF/chessformator-puzzle-generator-int8",
   "slug": "alpinist-hf-chessformator-puzzle-generator-int8",
   "author": "alpinist-HF",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 270473557,
   "storage_human": "270 MB",
+  "context_length": null,
   "base_model": "naapeli/chess-puzzle-generator",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

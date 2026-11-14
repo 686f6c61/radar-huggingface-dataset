@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "visible-cx/embeddinggemma-300m-LiteRT",
   "slug": "visible-cx-embeddinggemma-300m-litert",
   "author": "visible-cx",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 183815791,
   "storage_human": "184 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-300m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:00:20.778Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

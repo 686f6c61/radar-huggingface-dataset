@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "budget-internalization-iclr2027/nemotron3-nano-4b-2k-grpo-reasoninggym-coolbengal-s300",
   "slug": "budget-internalization-iclr2027-nemotron3-nano-4b-2k-grpo-reasoninggym-coolbengal-s300",
   "author": "budget-internalization-iclr2027",
@@ -36,14 +36,19 @@
   "parameters_human": "3.97B",
   "storage_bytes": 15911335963,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

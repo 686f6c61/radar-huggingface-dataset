@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alienstro/xslm",
   "slug": "alienstro-xslm",
   "author": "Alienstro",
@@ -31,6 +31,7 @@
   "parameters_human": "70.5M",
   "storage_bytes": 1559089520,
   "storage_human": "1.6 GB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

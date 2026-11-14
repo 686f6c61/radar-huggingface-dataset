@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zarand3r/world-model-invariants",
   "slug": "zarand3r-world-model-invariants",
   "author": "Zarand3r",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 359202139,
   "storage_human": "359 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:19:33.724Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

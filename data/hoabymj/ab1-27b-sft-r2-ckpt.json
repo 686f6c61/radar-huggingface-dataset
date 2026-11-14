@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoabymj/ab1-27b-sft-r2-ckpt",
   "slug": "hoabymj-ab1-27b-sft-r2-ckpt",
   "author": "hoabymj",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 100422682966,
   "storage_human": "100.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:42:54.367Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

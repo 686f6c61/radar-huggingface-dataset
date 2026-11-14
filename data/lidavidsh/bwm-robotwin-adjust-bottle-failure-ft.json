@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lidavidsh/bwm-robotwin-adjust-bottle-failure-ft",
   "slug": "lidavidsh-bwm-robotwin-adjust-bottle-failure-ft",
   "author": "lidavidsh",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 10198935600,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "BLM-Lab/Boundless-World-Model",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

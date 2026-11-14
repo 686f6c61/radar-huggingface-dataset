@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NADANAYO/connectailab-rl-nadanayo-v2-roadster-ppo-1m",
   "slug": "nadanayo-connectailab-rl-nadanayo-v2-roadster-ppo-1m",
   "author": "NADANAYO",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 42518,
   "storage_human": "42518 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T03:23:18.317Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hell0ks/GLM-5.3-Flash-Uncensored-AWQ",
   "slug": "hell0ks-glm-5-3-flash-uncensored-awq",
   "author": "hell0ks",
@@ -51,14 +51,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 190849434608,
   "storage_human": "190.8 GB",
+  "context_length": null,
   "base_model": "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

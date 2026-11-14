@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "victim6543/nerbenign",
   "slug": "victim6543-nerbenign",
   "author": "victim6543",
@@ -29,14 +29,19 @@
   "parameters_human": "4.4M",
   "storage_bytes": 17490876,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Token Classification",

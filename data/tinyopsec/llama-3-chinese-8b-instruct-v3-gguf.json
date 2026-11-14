@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/llama-3-chinese-8b-instruct-v3-GGUF",
   "slug": "tinyopsec-llama-3-chinese-8b-instruct-v3-gguf",
   "author": "tinyopsec",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 47458690048,
   "storage_human": "47.5 GB",
+  "context_length": 8192,
   "base_model": "hfl/llama-3-chinese-8b-instruct-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

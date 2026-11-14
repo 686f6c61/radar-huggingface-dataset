@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/ming_flash_omni2_audio_dit",
   "slug": "gatilin-ming_flash_omni2_audio_dit",
   "author": "gatilin",
@@ -31,14 +31,19 @@
   "parameters_human": "103.1M",
   "storage_bytes": 206248072,
   "storage_human": "206 MB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-flash-omni-2.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

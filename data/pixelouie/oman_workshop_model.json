@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pixelouie/oman_workshop_model",
   "slug": "pixelouie-oman_workshop_model",
   "author": "pixelouie",
@@ -27,14 +27,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 1239130784,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

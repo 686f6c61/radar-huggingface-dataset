@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Noobbbbb/whisper-small-bn-ctc",
   "slug": "noobbbbb-whisper-small-bn-ctc",
   "author": "Noobbbbb",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 204780970,
   "storage_human": "205 MB",
+  "context_length": null,
   "base_model": "Noobbbbb/whisper-small-bn-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

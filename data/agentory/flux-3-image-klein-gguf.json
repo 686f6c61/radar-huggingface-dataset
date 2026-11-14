@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/FLUX-3-Image-Klein-GGUF",
   "slug": "agentory-flux-3-image-klein-gguf",
   "author": "agentory",
@@ -33,14 +33,19 @@
   "parameters_human": "5.55B",
   "storage_bytes": 35963805176,
   "storage_human": "36.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:45.442Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

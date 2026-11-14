@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shrippen/kaiwa-kana-ctc",
   "slug": "shrippen-kaiwa-kana-ctc",
   "author": "shrippen",
@@ -34,6 +34,7 @@
   "parameters_human": "315.5M",
   "storage_bytes": 987230918,
   "storage_human": "987 MB",
+  "context_length": null,
   "base_model": "reazon-research/japanese-wav2vec2-large",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

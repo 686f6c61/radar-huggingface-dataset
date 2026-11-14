@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AzeerDev/LFM2.5-1.2B-Instruct-Saudi-Dialect",
   "slug": "azeerdev-lfm2-5-1-2b-instruct-saudi-dialect",
   "author": "AzeerDev",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 14160592,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

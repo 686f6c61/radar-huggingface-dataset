@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suvadityamuk/TRELLIS.2-4B-diffusers-3d",
   "slug": "suvadityamuk-trellis-2-4b-diffusers-3d",
   "author": "suvadityamuk",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 14967462742,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "microsoft/TRELLIS.2-4B",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asher577/scaling2_dcp_d768_L2_t125000000_s0",
   "slug": "asher577-scaling2_dcp_d768_l2_t125000000_s0",
   "author": "asher577",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 216192674,
   "storage_human": "216 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

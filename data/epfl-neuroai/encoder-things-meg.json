@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "epfl-neuroai/encoder-things-meg",
   "slug": "epfl-neuroai-encoder-things-meg",
   "author": "epfl-neuroai",
@@ -38,14 +38,19 @@
   "parameters_human": "240.7M",
   "storage_bytes": 7393668768,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "timm/vit_small_patch16_224.augreg_in21k_ft_in1k, timm/vit_base_patch14_dinov2.lvd142m, Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

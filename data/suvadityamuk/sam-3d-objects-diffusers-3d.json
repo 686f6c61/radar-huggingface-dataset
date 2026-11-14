@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suvadityamuk/sam-3d-objects-diffusers-3d",
   "slug": "suvadityamuk-sam-3d-objects-diffusers-3d",
   "author": "suvadityamuk",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 7098061156,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "facebook/sam-3d-objects",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

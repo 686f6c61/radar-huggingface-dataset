@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bdauzats/minicpm5-2b-decision",
   "slug": "bdauzats-minicpm5-2b-decision",
   "author": "bdauzats",
@@ -38,14 +38,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 15113263458,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "usejul/jul-decision-minicpm5-2b",
+  "renamed_at": "2026-11-11T04:40:21.296Z",
   "benchmarks": [],
   "sources": [
     {

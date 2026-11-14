@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ling0322/libwaifu-noobai-xl-v1.1",
   "slug": "ling0322-libwaifu-noobai-xl-v1-1",
   "author": "ling0322",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 14211601970,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": "Laxhar/noobai-XL-1.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

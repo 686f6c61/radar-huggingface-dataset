@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thura2/freococo-myanmar-asr-onnx",
   "slug": "thura2-freococo-myanmar-asr-onnx",
   "author": "thura2",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 78115082,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "freococo/myanmar_asr",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

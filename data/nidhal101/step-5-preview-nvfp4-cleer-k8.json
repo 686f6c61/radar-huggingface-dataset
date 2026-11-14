@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/Step-5-Preview-NVFP4-CLEER-k8",
   "slug": "nidhal101-step-5-preview-nvfp4-cleer-k8",
   "author": "Nidhal101",
@@ -27,14 +27,19 @@
   "parameters_human": "31.48B",
   "storage_bytes": 44523535648,
   "storage_human": "44.5 GB",
+  "context_length": null,
   "base_model": "stepfun-ai/Step-5-Preview-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

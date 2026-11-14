@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/QWEN3-32B-EXTENDED-BLADDER-alpaca-GGUF",
   "slug": "mradermacher-qwen3-32b-extended-bladder-alpaca-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "32.99B",
   "storage_bytes": 225797800800,
   "storage_human": "225.8 GB",
+  "context_length": 40960,
   "base_model": "Ha-ya/QWEN3-32B-EXTENDED-BLADDER-alpaca",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

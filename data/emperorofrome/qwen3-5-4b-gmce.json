@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emperorofrome/Qwen3.5-4B-GMCE",
   "slug": "emperorofrome-qwen3-5-4b-gmce",
   "author": "emperorofrome",
@@ -33,6 +33,7 @@
   "parameters_human": "4.66B",
   "storage_bytes": 32116871929,
   "storage_human": "32.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

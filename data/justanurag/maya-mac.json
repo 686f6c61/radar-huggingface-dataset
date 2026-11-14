@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "justanurag/maya-mac",
   "slug": "justanurag-maya-mac",
   "author": "justanurag",
@@ -58,14 +58,19 @@
   "parameters_human": null,
   "storage_bytes": 831057,
   "storage_human": "831057 B",
+  "context_length": null,
   "base_model": "maya-research/maya2-native",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

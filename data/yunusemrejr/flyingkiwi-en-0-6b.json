@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunusemrejr/Flyingkiwi-EN-0.6B",
   "slug": "yunusemrejr-flyingkiwi-en-0-6b",
   "author": "yunusemrejr",
@@ -44,14 +44,19 @@
   "parameters_human": "527.6M",
   "storage_bytes": 3232242480,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

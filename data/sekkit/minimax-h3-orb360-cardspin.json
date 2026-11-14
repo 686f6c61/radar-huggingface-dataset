@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/MiniMax-H3-ORB360-CardSpin",
   "slug": "sekkit-minimax-h3-orb360-cardspin",
   "author": "sekkit",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1811838050,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/MiniMax-H3-ORB360-CardSpin",
+  "renamed_at": "2026-11-11T07:28:23.836Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mobilint/EAGLE3-EXAONE-3.5-2.4B-Instruct",
   "slug": "mobilint-eagle3-exaone-3-5-2-4b-instruct",
   "author": "mobilint",
@@ -37,14 +37,19 @@
   "parameters_human": "524.4M",
   "storage_bytes": 5871593006,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

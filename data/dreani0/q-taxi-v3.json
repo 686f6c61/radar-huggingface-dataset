@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dreani0/q-Taxi-v3",
   "slug": "dreani0-q-taxi-v3",
   "author": "dreani0",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 146373,
   "storage_human": "146373 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

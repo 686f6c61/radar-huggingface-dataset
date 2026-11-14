@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KolmogorovAcc/sovereign-anthology-gemma-2-2b",
   "slug": "kolmogorovacc-sovereign-anthology-gemma-2-2b",
   "author": "KolmogorovAcc",
@@ -45,6 +45,7 @@
   "parameters_human": "3.20B",
   "storage_bytes": 26742927284,
   "storage_human": "26.7 GB",
+  "context_length": 8192,
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

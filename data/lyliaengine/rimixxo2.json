@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LyliaEngine/rimixxO2",
   "slug": "lyliaengine-rimixxo2",
   "author": "LyliaEngine",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 708518905,
   "storage_human": "709 MB",
+  "context_length": null,
   "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

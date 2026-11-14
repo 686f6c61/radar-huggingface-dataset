@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mohsenkhajoee/pick_place_block",
   "slug": "mohsenkhajoee-pick_place_block",
   "author": "Mohsenkhajoee",
@@ -30,14 +30,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206714928,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": "Mohsenkhajoee/act_pick_red_knob",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:02:05.578Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

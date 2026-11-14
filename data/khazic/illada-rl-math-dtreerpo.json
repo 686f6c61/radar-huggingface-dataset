@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khazic/illada-rl-math-dtreerpo",
   "slug": "khazic-illada-rl-math-dtreerpo",
   "author": "khazic",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 8075421719,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T09:24:05.519Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

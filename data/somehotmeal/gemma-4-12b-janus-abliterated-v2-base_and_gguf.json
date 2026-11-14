@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOMEHOTMEAL/Gemma-4-12B-Janus-Abliterated-V2-Base_And_GGUF",
   "slug": "somehotmeal-gemma-4-12b-janus-abliterated-v2-base_and_gguf",
   "author": "SOMEHOTMEAL",
@@ -35,6 +35,7 @@
   "parameters_human": "11.92B",
   "storage_bytes": 57520065030,
   "storage_human": "57.5 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-12B-it, culturerevolt/gemma-4-12b-heretic-abliterated",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SOMEHOTMEAL/_Broken-quants_Gemma-4-12B-Janus-Abliterated-V2-Base_And_GGUF",
+  "renamed_at": "2026-11-11T03:47:52.412Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/spoomplesmaxx-mockingbird-36B-GGUF",
   "slug": "mradermacher-spoomplesmaxx-mockingbird-36b-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "36.15B",
   "storage_bytes": 247008126336,
   "storage_human": "247.0 GB",
+  "context_length": 524288,
   "base_model": "aimeri/spoomplesmaxx-mockingbird-36B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

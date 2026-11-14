@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "parmanu-lcs2/gemma-4-12B",
   "slug": "parmanu-lcs2-gemma-4-12b",
   "author": "parmanu-lcs2",
@@ -31,14 +31,19 @@
   "parameters_human": "8.97B",
   "storage_bytes": 17971848751,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

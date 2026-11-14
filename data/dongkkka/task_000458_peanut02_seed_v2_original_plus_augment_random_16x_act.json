@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act",
   "slug": "dongkkka-task_000458_peanut02_seed_v2_original_plus_augment_random_16x_act",
   "author": "Dongkkka",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 3097014972,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

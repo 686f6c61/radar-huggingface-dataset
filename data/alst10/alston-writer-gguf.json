@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/alston-writer-gguf",
   "slug": "alst10-alston-writer-gguf",
   "author": "alst10",
@@ -27,14 +27,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920745632,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-15T08:46:07.691Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

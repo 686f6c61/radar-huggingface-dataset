@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel4/granite-4.1-8b-W4A16-AutoRound",
   "slug": "incmodel4-granite-4-1-8b-w4a16-autoround",
   "author": "INCModel4",
@@ -34,14 +34,19 @@
   "parameters_human": "1.48B",
   "storage_bytes": 4963088848,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.1-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

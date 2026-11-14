@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HusseinAlamutu/tiny-aya-earth-yoruba-lora",
   "slug": "husseinalamutu-tiny-aya-earth-yoruba-lora",
   "author": "HusseinAlamutu",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 387381684,
   "storage_human": "387 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-earth",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

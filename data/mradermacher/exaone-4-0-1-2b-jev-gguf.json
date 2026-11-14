@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/EXAONE-4.0-1.2B-JEV-GGUF",
   "slug": "mradermacher-exaone-4-0-1-2b-jev-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "1.28B",
   "storage_bytes": 11814731520,
   "storage_human": "11.8 GB",
+  "context_length": 65536,
   "base_model": "carrtesy/EXAONE-4.0-1.2B-JEV",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

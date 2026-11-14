@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ben0112/Qwen3.8-27B-oQ3.5e-mtp",
   "slug": "ben0112-qwen3-8-27b-oq3-5e-mtp",
   "author": "ben0112",
@@ -27,6 +27,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 14800759641,
   "storage_human": "14.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArthurZ/d3",
   "slug": "arthurz-d3",
   "author": "ArthurZ",
@@ -31,14 +31,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 25212951,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": "vllm-sr/d3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

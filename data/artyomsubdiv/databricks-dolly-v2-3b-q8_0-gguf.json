@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArtyomSubDiv/databricks-dolly-v2-3b-Q8_0-GGUF",
   "slug": "artyomsubdiv-databricks-dolly-v2-3b-q8_0-gguf",
   "author": "ArtyomSubDiv",
@@ -32,14 +32,19 @@
   "parameters_human": "2.78B",
   "storage_bytes": 2953462656,
   "storage_human": "3.0 GB",
+  "context_length": 2048,
   "base_model": "verseAI/databricks-dolly-v2-3b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

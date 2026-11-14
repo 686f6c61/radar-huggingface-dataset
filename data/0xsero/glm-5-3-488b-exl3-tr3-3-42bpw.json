@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSero/GLM-5.3-488B-EXL3-TR3-3.42bpw",
   "slug": "0xsero-glm-5-3-488b-exl3-tr3-3-42bpw",
   "author": "0xSero",
@@ -36,14 +36,19 @@
   "parameters_human": "120.85B",
   "storage_bytes": 241840960334,
   "storage_human": "241.8 GB",
+  "context_length": null,
   "base_model": "davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

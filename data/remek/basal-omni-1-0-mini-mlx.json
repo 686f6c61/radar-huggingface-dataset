@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Remek/basal-omni-1.0-mini-MLX",
   "slug": "remek-basal-omni-1-0-mini-mlx",
   "author": "Remek",
@@ -43,6 +43,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 8617272362,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "Remek/basal-omni-1.0-mini",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

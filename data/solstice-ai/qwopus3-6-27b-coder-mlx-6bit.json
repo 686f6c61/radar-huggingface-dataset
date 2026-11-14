@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/Qwopus3.6-27B-Coder-mlx-6Bit",
   "slug": "solstice-ai-qwopus3-6-27b-coder-mlx-6bit",
   "author": "Solstice-AI",
@@ -44,6 +44,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 21876371320,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T15:10:59.253Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

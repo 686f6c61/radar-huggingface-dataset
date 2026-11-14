@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "operationrange/MiniMax-M3.1-Flash-abliterated-GGUF",
   "slug": "operationrange-minimax-m3-1-flash-abliterated-gguf",
   "author": "operationrange",
@@ -31,14 +31,19 @@
   "parameters_human": "426.19B",
   "storage_bytes": 293785409854,
   "storage_human": "293.8 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash, unsloth/MiniMax-M3.1-Flash-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

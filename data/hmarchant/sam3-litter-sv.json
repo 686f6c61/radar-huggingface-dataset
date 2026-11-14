@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hmarchant/sam3-litter-sv",
   "slug": "hmarchant-sam3-litter-sv",
   "author": "hmarchant",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 3403113833,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "facebook/sam3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

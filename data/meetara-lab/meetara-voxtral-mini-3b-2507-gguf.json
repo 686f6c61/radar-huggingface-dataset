@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meetara-lab/meetara-voxtral-mini-3b-2507-gguf",
   "slug": "meetara-lab-meetara-voxtral-mini-3b-2507-gguf",
   "author": "meetara-lab",
@@ -31,14 +31,19 @@
   "parameters_human": "4.01B",
   "storage_bytes": 3188706272,
   "storage_human": "3.2 GB",
+  "context_length": 131072,
   "base_model": "mistralai/Voxtral-Mini-3B-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

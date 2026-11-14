@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArcOpening/Darkhn-OmniArena-v3",
   "slug": "arcopening-darkhn-omniarena-v3",
   "author": "ArcOpening",
@@ -31,14 +31,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141124707976,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "Darkhn/L3.3-70B-Animus-V12.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

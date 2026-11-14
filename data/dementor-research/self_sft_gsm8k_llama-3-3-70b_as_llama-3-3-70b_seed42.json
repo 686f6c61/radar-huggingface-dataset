@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dementor-research/self_sft_gsm8k_llama-3.3-70b_as_llama-3.3-70b_seed42",
   "slug": "dementor-research-self_sft_gsm8k_llama-3-3-70b_as_llama-3-3-70b_seed42",
   "author": "dementor-research",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1674112568,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.3-70B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

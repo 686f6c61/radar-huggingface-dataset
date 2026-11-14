@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeliVali/AIDAM_MATH_1.7B_V1.0.0",
   "slug": "delivali-aidam_math_1-7b_v1-0-0",
   "author": "DeliVali",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 81205038,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T06:26:18.213Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

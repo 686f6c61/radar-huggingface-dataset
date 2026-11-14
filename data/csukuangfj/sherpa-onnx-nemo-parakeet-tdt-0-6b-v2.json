@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2",
   "slug": "csukuangfj-sherpa-onnx-nemo-parakeet-tdt-0-6b-v2",
   "author": "csukuangfj",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 3278820742,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

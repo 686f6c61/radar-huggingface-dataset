@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darrellbest/Qwen3.5-9B-Heretic-FP8",
   "slug": "darrellbest-qwen3-5-9b-heretic-fp8",
   "author": "darrellbest",
@@ -36,14 +36,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 14026782301,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "darrellbest/Qwen3.5-9B-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

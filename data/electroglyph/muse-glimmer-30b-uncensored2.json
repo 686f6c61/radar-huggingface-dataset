@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "electroglyph/Muse-Glimmer-30B-uncensored2",
   "slug": "electroglyph-muse-glimmer-30b-uncensored2",
   "author": "electroglyph",
@@ -38,14 +38,19 @@
   "parameters_human": "29.78B",
   "storage_bytes": 106845889418,
   "storage_human": "106.8 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

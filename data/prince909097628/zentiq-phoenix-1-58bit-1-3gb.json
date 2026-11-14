@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prince909097628/Zentiq-Phoenix-1.58Bit-1.3GB",
   "slug": "prince909097628-zentiq-phoenix-1-58bit-1-3gb",
   "author": "Prince909097628",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1363652116,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:39:41.921Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waad12I/samm-saudi-bank-intent",
   "slug": "waad12i-samm-saudi-bank-intent",
   "author": "waad12I",
@@ -28,14 +28,19 @@
   "parameters_human": "143.7M",
   "storage_bytes": 574853456,
   "storage_human": "575 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

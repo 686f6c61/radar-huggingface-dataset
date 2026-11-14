@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic-GGUF",
   "slug": "mradermacher-qwen3-5-9b-the-bradbury-f451-pro-writer-uncensored-heretic-gguf",
   "author": "mradermacher",
@@ -62,14 +62,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 82967493696,
   "storage_human": "83.0 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amirsoahil101/New_York_City_Airbnb_ML_Analytics_Model",
   "slug": "amirsoahil101-new_york_city_airbnb_ml_analytics_model",
   "author": "amirsoahil101",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 38608323,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Listing Attribute Prediction",

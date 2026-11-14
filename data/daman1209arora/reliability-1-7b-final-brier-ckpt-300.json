@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daman1209arora/Reliability-1.7B-final-brier-ckpt-300",
   "slug": "daman1209arora-reliability-1-7b-final-brier-ckpt-300",
   "author": "daman1209arora",
@@ -28,14 +28,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 4074938294,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

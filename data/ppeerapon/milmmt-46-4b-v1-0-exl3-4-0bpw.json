@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ppeerapon/MiLMMT-46-4B-v1.0-EXL3-4.0bpw",
   "slug": "ppeerapon-milmmt-46-4b-v1-0-exl3-4-0bpw",
   "author": "Ppeerapon",
@@ -34,14 +34,19 @@
   "parameters_human": "2.15B",
   "storage_bytes": 4333909805,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "xiaomi-research/MiLMMT-46-4B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

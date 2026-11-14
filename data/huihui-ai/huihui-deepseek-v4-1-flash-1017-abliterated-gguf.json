@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
   "slug": "huihui-ai-huihui-deepseek-v4-1-flash-1017-abliterated-gguf",
   "author": "huihui-ai",
@@ -39,21 +39,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 196,
+  "likes": 202,
   "downloads_30d": 79896,
-  "trending_score": 33,
+  "trending_score": 36,
   "parameters": 1677721600,
   "parameters_human": "1.68B",
   "storage_bytes": 861198282496,
   "storage_human": "861.2 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

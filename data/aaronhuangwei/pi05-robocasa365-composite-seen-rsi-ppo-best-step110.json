@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AaronHuangWei/pi05-robocasa365-composite-seen-rsi-ppo-best-step110",
   "slug": "aaronhuangwei-pi05-robocasa365-composite-seen-rsi-ppo-best-step110",
   "author": "AaronHuangWei",
@@ -33,14 +33,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 27800647331,
   "storage_human": "27.8 GB",
+  "context_length": null,
   "base_model": "AaronHuangWei/pi05-robocasa365-composite-seen-sft-100k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

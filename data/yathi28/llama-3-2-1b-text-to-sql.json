@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yathi28/llama-3.2-1b-text-to-sql",
   "slug": "yathi28-llama-3-2-1b-text-to-sql",
   "author": "Yathi28",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 62328443,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YuhongLiu/SpatialASM-NVG",
   "slug": "yuhongliu-spatialasm-nvg",
   "author": "YuhongLiu",
@@ -35,6 +35,7 @@
   "parameters_human": "9.08B",
   "storage_bytes": 34722409058,
   "storage_human": "34.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9B",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuan1119/pointact-d435if-rgb-210ep-20260919-step12000",
   "slug": "yuan1119-pointact-d435if-rgb-210ep-20260919-step12000",
   "author": "yuan1119",
@@ -26,14 +26,19 @@
   "parameters_human": "4.07B",
   "storage_bytes": 11286693781,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T04:00:38.511Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

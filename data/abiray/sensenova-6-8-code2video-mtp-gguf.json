@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/SenseNova-6.8-Code2Video-MTP-GGUF",
   "slug": "abiray-sensenova-6-8-code2video-mtp-gguf",
   "author": "Abiray",
@@ -42,14 +42,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 157634676329,
   "storage_human": "157.6 GB",
+  "context_length": 262144,
   "base_model": "sensenova/SenseNova-6.8-Code2Video",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

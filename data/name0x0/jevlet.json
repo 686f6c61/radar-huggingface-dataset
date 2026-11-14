@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NAME0x0/Jevlet",
   "slug": "name0x0-jevlet",
   "author": "NAME0x0",
@@ -46,14 +46,19 @@
   "parameters_human": "33.5M",
   "storage_bytes": 134128027,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

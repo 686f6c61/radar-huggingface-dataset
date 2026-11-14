@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ice-AI-GGUF",
   "slug": "mradermacher-ice-ai-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 73425332608,
   "storage_human": "73.4 GB",
+  "context_length": 40960,
   "base_model": "darkps/ice-AI",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

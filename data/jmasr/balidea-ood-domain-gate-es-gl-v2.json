@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JMasr/balidea-ood-domain-gate-es-gl-v2",
   "slug": "jmasr-balidea-ood-domain-gate-es-gl-v2",
   "author": "JMasr",
@@ -35,6 +35,7 @@
   "parameters_human": "278.0M",
   "storage_bytes": 4466119572,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "onnx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

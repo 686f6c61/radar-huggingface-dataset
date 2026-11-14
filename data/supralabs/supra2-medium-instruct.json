@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SupraLabs/Supra2-Medium-Instruct",
   "slug": "supralabs-supra2-medium-instruct",
   "author": "SupraLabs",
@@ -42,14 +42,19 @@
   "parameters_human": "25.4M",
   "storage_bytes": 249938048,
   "storage_human": "250 MB",
+  "context_length": null,
   "base_model": "SupraLabs/Supra2-Medium-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

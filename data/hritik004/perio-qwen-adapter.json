@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hritik004/perio-qwen-adapter",
   "slug": "hritik004-perio-qwen-adapter",
   "author": "Hritik004",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 85333004,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

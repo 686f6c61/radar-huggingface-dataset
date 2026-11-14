@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EllipsesMark/minimaxh3_characters",
   "slug": "ellipsesmark-minimaxh3_characters",
   "author": "EllipsesMark",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 145943014624,
   "storage_human": "145.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

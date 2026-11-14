@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/VoxCPM-0.5B-CoreAI",
   "slug": "mlboydaisuke-voxcpm-0-5b-coreai",
   "author": "mlboydaisuke",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 5290305889,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM-0.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

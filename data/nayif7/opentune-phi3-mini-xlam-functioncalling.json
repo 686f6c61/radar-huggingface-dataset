@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nayif7/opentune-phi3-mini-xlam-functioncalling",
   "slug": "nayif7-opentune-phi3-mini-xlam-functioncalling",
   "author": "Nayif7",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 101250892,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": "microsoft/Phi-3-mini-4k-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Function Calling",

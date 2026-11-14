@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mrdhnto/paddleocr-onnx",
   "slug": "mrdhnto-paddleocr-onnx",
   "author": "Mrdhnto",
@@ -132,14 +132,19 @@
   "parameters_human": null,
   "storage_bytes": 308706972,
   "storage_human": "309 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T03:10:01.104Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

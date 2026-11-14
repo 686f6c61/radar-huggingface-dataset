@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iAcloud/Qwen3-4B-Batch8-RBLN-0.11.0.post1",
   "slug": "iacloud-qwen3-4b-batch8-rbln-0-11-0-post1",
   "author": "iAcloud",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 10251930160,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

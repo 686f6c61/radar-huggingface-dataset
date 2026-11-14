@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leobianco/bosch_PERL_google_S130104_epo10_lr6.4e-05_beta0.012_2609111239",
   "slug": "leobianco-bosch_perl_google_s130104_epo10_lr6-4e-05_beta0-012_2609111239",
   "author": "leobianco",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 50370603,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

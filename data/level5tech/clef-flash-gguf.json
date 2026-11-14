@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Level5Tech/clef-flash-GGUF",
   "slug": "level5tech-clef-flash-gguf",
   "author": "Level5Tech",
@@ -31,14 +31,19 @@
   "parameters_human": "9.08B",
   "storage_bytes": 33543048128,
   "storage_human": "33.5 GB",
+  "context_length": 262144,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

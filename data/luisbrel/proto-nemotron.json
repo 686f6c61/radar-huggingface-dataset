@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luisbrel/proto-nemotron",
   "slug": "luisbrel-proto-nemotron",
   "author": "luisbrel",
@@ -28,12 +28,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 272,
+  "downloads_30d": 281,
   "trending_score": 0,
   "parameters": 31577940288,
   "parameters_human": "31.58B",
   "storage_bytes": 17793723743,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

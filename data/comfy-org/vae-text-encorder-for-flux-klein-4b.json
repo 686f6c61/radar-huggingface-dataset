@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/vae-text-encorder-for-flux-klein-4b",
   "slug": "comfy-org-vae-text-encorder-for-flux-klein-4b",
   "author": "Comfy-Org",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 27731618762,
   "storage_human": "27.7 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-klein-base-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/Flux-2-Klein-4B",
+  "renamed_at": "2026-11-11T02:32:35.652Z",
   "benchmarks": [],
   "sources": []
 }

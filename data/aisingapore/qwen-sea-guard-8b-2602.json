@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/Qwen-SEA-Guard-8B-2602",
   "slug": "aisingapore-qwen-sea-guard-8b-2602",
   "author": "aisingapore",
@@ -35,14 +35,19 @@
   "parameters_human": "770288",
   "storage_bytes": 117048949086,
   "storage_human": "117.0 GB",
+  "context_length": null,
   "base_model": "aisingapore/Qwen-SEA-LION-v4-8B-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

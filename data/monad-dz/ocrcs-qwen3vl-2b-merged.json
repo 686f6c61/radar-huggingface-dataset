@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Monad-dz/OCRCS-qwen3vl-2b-merged",
   "slug": "monad-dz-ocrcs-qwen3vl-2b-merged",
   "author": "Monad-dz",
@@ -28,14 +28,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4266562962,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

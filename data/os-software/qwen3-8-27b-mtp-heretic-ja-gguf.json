@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OS-Software/Qwen3.8-27B-MTP-heretic-ja-GGUF",
   "slug": "os-software-qwen3-8-27b-mtp-heretic-ja-gguf",
   "author": "OS-Software",
@@ -32,14 +32,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 127637781184,
   "storage_human": "127.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

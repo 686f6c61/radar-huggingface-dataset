@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/gemma-3-27b-it",
   "slug": "kerasformers-gemma-3-27b-it",
   "author": "kerasformers",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 54969071752,
   "storage_human": "55.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-27b-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/gemma-3-27b-it",
+  "renamed_at": "2026-11-14T06:41:56.221Z",
   "benchmarks": [],
   "sources": []
 }

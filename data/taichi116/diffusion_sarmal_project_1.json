@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taichi116/diffusion_sarmal_project_1",
   "slug": "taichi116-diffusion_sarmal_project_1",
   "author": "taichi116",
@@ -28,14 +28,19 @@
   "parameters_human": "266.6M",
   "storage_bytes": 1066524248,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

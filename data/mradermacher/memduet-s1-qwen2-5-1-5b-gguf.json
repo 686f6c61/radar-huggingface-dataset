@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MemDuet-S1-Qwen2.5-1.5B-GGUF",
   "slug": "mradermacher-memduet-s1-qwen2-5-1-5b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 14206901376,
   "storage_human": "14.2 GB",
+  "context_length": 131072,
   "base_model": "jiangchengsong/MemDuet-S1-Qwen2.5-1.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

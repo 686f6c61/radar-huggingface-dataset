@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingtime12/Qwen3_1.7_PhoMT_GRPO_COMET_r64",
   "slug": "huggingtime12-qwen3_1-7_phomt_grpo_comet_r64",
   "author": "huggingtime12",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1532876800,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

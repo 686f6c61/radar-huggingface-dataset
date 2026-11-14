@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audio-cpp/Nemotron-3-Diarization-GGUF",
   "slug": "audio-cpp-nemotron-3-diarization-gguf",
   "author": "audio-cpp",
@@ -31,14 +31,19 @@
   "parameters_human": "99.3M",
   "storage_bytes": 610790336,
   "storage_human": "611 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

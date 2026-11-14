@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sleem247/qwen-legal-lora-rag-ft-Q8_0-GGUF",
   "slug": "sleem247-qwen-legal-lora-rag-ft-q8_0-gguf",
   "author": "Sleem247",
@@ -33,14 +33,19 @@
   "parameters_human": "119.7M",
   "storage_bytes": 127252736,
   "storage_human": "127 MB",
+  "context_length": null,
   "base_model": "TinPhan2007/qwen-legal-lora-rag-ft",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

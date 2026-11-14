@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jmerithew1/qwen3-4b-benefits-notice-qlora",
   "slug": "jmerithew1-qwen3-4b-benefits-notice-qlora",
   "author": "jmerithew1",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 673268806,
   "storage_human": "673 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

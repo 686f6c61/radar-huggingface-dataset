@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sizzlebop/Minecraft-Agent-Qwen3.5-9B-Stage3-GGUF",
   "slug": "sizzlebop-minecraft-agent-qwen3-5-9b-stage3-gguf",
   "author": "sizzlebop",
@@ -40,14 +40,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 56277029248,
   "storage_human": "56.3 GB",
+  "context_length": 262144,
   "base_model": "EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

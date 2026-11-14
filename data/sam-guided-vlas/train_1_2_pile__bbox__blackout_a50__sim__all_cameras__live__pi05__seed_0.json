@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sam-guided-vlas/train_1_2_pile__bbox__blackout_a50__sim__all_cameras__live__pi05__seed_0",
   "slug": "sam-guided-vlas-train_1_2_pile__bbox__blackout_a50__sim__all_cameras__live__pi05__seed_0",
   "author": "sam-guided-vlas",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 28062154944,
   "storage_human": "28.1 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T06:31:29.666Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

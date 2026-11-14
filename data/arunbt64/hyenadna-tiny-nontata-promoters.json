@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArunBt64/hyenadna-tiny-nontata-promoters",
   "slug": "arunbt64-hyenadna-tiny-nontata-promoters",
   "author": "ArunBt64",
@@ -35,14 +35,19 @@
   "parameters_human": "448920",
   "storage_bytes": 1802024,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "LongSafari/hyenadna-tiny-1k-seqlen-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Promoter classification",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vikasaivyas/gemma4-hindi-novelist",
   "slug": "vikasaivyas-gemma4-hindi-novelist",
   "author": "vikasaivyas",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 36346160,
   "storage_human": "36 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T02:44:52.733Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

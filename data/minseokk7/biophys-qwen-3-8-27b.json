@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minseokk7/BioPhys-Qwen-3.8-27B",
   "slug": "minseokk7-biophys-qwen-3-8-27b",
   "author": "minseokk7",
@@ -40,14 +40,19 @@
   "parameters_human": "19.17B",
   "storage_bytes": 60976116864,
   "storage_human": "61.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-27B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:05:27.634Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

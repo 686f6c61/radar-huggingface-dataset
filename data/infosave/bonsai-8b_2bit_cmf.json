@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Bonsai-8B_2bit_cmf",
   "slug": "infosave-bonsai-8b_2bit_cmf",
   "author": "infosave",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 2322861074,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "prism-ml/Bonsai-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

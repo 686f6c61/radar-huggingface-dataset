@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logits/sana_rwm_policy_robodojo_320px_eef_s157000_lr1e-4cos_wd1e-2_alw1",
   "slug": "logits-sana_rwm_policy_robodojo_320px_eef_s157000_lr1e-4cos_wd1e-2_alw1",
   "author": "logits",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 53697150399,
   "storage_human": "53.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:52:16.390Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

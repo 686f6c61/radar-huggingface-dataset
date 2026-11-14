@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YuyaoTechnology/MatterSeek",
   "slug": "yuyaotechnology-matterseek",
   "author": "YuyaoTechnology",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 764805321,
   "storage_human": "765 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "YuyaoTechnology/MatterSeek-New-Materials-Reverse-Design",
+  "renamed_at": "2026-11-11T04:14:41.579Z",
   "benchmarks": [],
   "sources": []
 }

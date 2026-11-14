@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BurtleLife/vessel-handoff-MiniCPM5-2B",
   "slug": "burtlelife-vessel-handoff-minicpm5-2b",
   "author": "BurtleLife",
@@ -37,6 +37,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 4850473808,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

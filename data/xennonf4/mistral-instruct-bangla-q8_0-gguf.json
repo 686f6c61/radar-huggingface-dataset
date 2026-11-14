@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xennonf4/Mistral-Instruct-Bangla-Q8_0-GGUF",
   "slug": "xennonf4-mistral-instruct-bangla-q8_0-gguf",
   "author": "xennonf4",
@@ -31,14 +31,19 @@
   "parameters_human": "170.1M",
   "storage_bytes": 180744032,
   "storage_human": "181 MB",
+  "context_length": null,
   "base_model": "Rashik24/Mistral-Instruct-Bangla",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

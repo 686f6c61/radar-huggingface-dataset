@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saidutta69/SmolLM2-360M-Instruct-heretic",
   "slug": "saidutta69-smollm2-360m-instruct-heretic",
   "author": "saidutta69",
@@ -45,6 +45,7 @@
   "parameters_human": "361.8M",
   "storage_bytes": 5149750112,
   "storage_human": "5.1 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

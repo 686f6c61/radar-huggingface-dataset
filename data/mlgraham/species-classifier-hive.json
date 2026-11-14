@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlgraham/species-classifier-hive",
   "slug": "mlgraham-species-classifier-hive",
   "author": "mlgraham",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 66303784,
   "storage_human": "66 MB",
+  "context_length": null,
   "base_model": "timm/mobilenetv2_100.ra_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guan-wang/EBFM-OWT-160M",
   "slug": "guan-wang-ebfm-owt-160m",
   "author": "guan-wang",
@@ -30,14 +30,19 @@
   "parameters_human": "160.6M",
   "storage_bytes": 642984471,
   "storage_human": "643 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

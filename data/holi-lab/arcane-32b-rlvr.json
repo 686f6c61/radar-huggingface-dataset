@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "holi-lab/ArcANE-32B-RLVR",
   "slug": "holi-lab-arcane-32b-rlvr",
   "author": "holi-lab",
@@ -39,14 +39,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65536668403,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "holi-lab/ArcANE-32B-DPO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

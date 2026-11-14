@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenFlowLM/Qwen3.5-2B-NPU2",
   "slug": "openflowlm-qwen3-5-2b-npu2",
   "author": "OpenFlowLM",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 3129392988,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B-Base",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tush-2ar/findxray-encoder",
   "slug": "tush-2ar-findxray-encoder",
   "author": "tush-2ar",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 90512830,
   "storage_human": "91 MB",
+  "context_length": null,
   "base_model": "microsoft/rad-dino",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

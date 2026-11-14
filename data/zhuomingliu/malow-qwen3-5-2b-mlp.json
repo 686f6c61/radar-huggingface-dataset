@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhuomingliu/MaLoW-Qwen3.5-2B-MLP",
   "slug": "zhuomingliu-malow-qwen3-5-2b-mlp",
   "author": "zhuomingliu",
@@ -28,14 +28,19 @@
   "parameters_human": "174.9M",
   "storage_bytes": 726144135,
   "storage_human": "726 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:48:57.740Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

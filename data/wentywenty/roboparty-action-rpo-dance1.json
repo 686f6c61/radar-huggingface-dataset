@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wentywenty/roboparty-action-rpo-dance1",
   "slug": "wentywenty-roboparty-action-rpo-dance1",
   "author": "wentywenty",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 4656895,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "wentywenty/robopoly-action-rpo-dance1",
+  "renamed_at": "2026-11-11T08:04:10.019Z",
   "benchmarks": [],
   "sources": [
     {

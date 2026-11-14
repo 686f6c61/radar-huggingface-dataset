@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ganesh714/arq_m1_chairs_DS_r1_Q7",
   "slug": "ganesh714-arq_m1_chairs_ds_r1_q7",
   "author": "ganesh714",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242694642,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

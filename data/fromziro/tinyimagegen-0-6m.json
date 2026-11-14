@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fromziro/TinyImageGen-0.6M",
   "slug": "fromziro-tinyimagegen-0-6m",
   "author": "fromziro",
@@ -32,14 +32,19 @@
   "parameters_human": "639280",
   "storage_bytes": 7787540,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fromziro/Zero-TinyImage-0.6M",
+  "renamed_at": "2026-11-11T05:21:53.333Z",
   "benchmarks": [],
   "sources": [
     {

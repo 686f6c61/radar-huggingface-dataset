@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Gemma3-1B-IT-Tensor-G4-NPU",
   "slug": "litert-community-gemma3-1b-it-tensor-g4-npu",
   "author": "litert-community",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 7728826272,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "litert-community/Gemma3-1B-IT-Tensor-NPU",
+  "renamed_at": "2026-11-11T06:03:59.941Z",
   "benchmarks": [],
   "sources": [
     {

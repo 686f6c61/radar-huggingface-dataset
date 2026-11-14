@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "viavicdev/Tarsier2-Recap-7b-MLX-4bit",
   "slug": "viavicdev-tarsier2-recap-7b-mlx-4bit",
   "author": "viavicdev",
@@ -36,6 +36,7 @@
   "parameters_human": "8.29B",
   "storage_bytes": 5647339659,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "omni-research/Tarsier2-Recap-7b",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

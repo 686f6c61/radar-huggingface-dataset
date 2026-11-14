@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "robotcpp/bitvla-libero-spatial-i2s",
   "slug": "robotcpp-bitvla-libero-spatial-i2s",
   "author": "robotcpp",
@@ -27,14 +27,19 @@
   "parameters_human": "59.1M",
   "storage_bytes": 1440224736,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "hongyuw/ft-bitvla-bitsiglipL-224px-libero_spatial-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

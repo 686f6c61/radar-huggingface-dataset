@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "islamsidratul/Qwen3.8-27B-ByteShape-IQ4_XS-ASCII-GGUF",
   "slug": "islamsidratul-qwen3-8-27b-byteshape-iq4_xs-ascii-gguf",
   "author": "islamsidratul",
@@ -38,14 +38,19 @@
   "parameters_human": "26.10B",
   "storage_bytes": 12252882720,
   "storage_human": "12.3 GB",
+  "context_length": 262144,
   "base_model": "byteshape/Qwen3.8-27B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

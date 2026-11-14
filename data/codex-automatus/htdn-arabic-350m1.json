@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codex-automatus/htdn-arabic-350m1",
   "slug": "codex-automatus-htdn-arabic-350m1",
   "author": "codex-automatus",
@@ -33,14 +33,19 @@
   "parameters_human": "349.0M",
   "storage_bytes": 2688107808,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T10:01:08.773Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

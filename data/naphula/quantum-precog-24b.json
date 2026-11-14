@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naphula/Quantum-Precog-24B",
   "slug": "naphula-quantum-precog-24b",
   "author": "Naphula",
@@ -72,14 +72,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47163946651,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "BeaverAI/Fallen-Mistral-Small-3.1-24B-v1e, BeaverAI/Cydonia-24B-v4x-GGUF, mradermacher/BlackXorDolphTronGOAT-GGUF, TheDrummer/Cydonia-24B-v4.3, TheDrummer/Precog-24B-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

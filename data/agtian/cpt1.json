@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Agtian/cpt1",
   "slug": "agtian-cpt1",
   "author": "Agtian",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 85210026979,
   "storage_human": "85.2 GB",
+  "context_length": null,
   "base_model": "Indexnusrefather/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T02:41:57.683Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

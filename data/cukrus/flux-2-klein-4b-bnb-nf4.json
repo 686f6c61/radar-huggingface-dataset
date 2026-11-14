@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cukrus/FLUX.2-klein-4B-bnb-nf4",
   "slug": "cukrus-flux-2-klein-4b-bnb-nf4",
   "author": "cukrus",
@@ -37,6 +37,7 @@
   "parameters_human": "2.09B",
   "storage_bytes": 2480918365,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

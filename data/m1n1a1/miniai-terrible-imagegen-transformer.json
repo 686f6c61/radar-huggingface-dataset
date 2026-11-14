@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "M1n1A1/MiniAI-terrible-imagegen-transformer",
   "slug": "m1n1a1-miniai-terrible-imagegen-transformer",
   "author": "M1n1A1",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 131900212,
   "storage_human": "132 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

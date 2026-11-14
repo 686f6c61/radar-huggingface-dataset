@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HangGlidersRule/Darkstar-JEV-27B-Decision-QAD-ModelOpt-W4A4-NVFP4",
   "slug": "hangglidersrule-darkstar-jev-27b-decision-qad-modelopt-w4a4-nvfp4",
   "author": "HangGlidersRule",
@@ -37,14 +37,19 @@
   "parameters_human": "15.19B",
   "storage_bytes": 20605958840,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, autotrust/JEV-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

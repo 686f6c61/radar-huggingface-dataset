@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Streamo_3B-GGUF",
   "slug": "mradermacher-streamo_3b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 30127077632,
   "storage_human": "30.1 GB",
+  "context_length": 128000,
   "base_model": "JiaerX/Streamo_3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

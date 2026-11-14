@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ruchangyao/FlashVSR_plus",
   "slug": "ruchangyao-flashvsr_plus",
   "author": "ruchangyao",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 14351537541,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

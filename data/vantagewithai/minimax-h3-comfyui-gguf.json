@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vantagewithai/MiniMax-H3-comfyUI-GGUF",
   "slug": "vantagewithai-minimax-h3-comfyui-gguf",
   "author": "vantagewithai",
@@ -37,6 +37,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 525351808144,
   "storage_human": "525.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Deepdive404-3/Ornith-1.5-397B",
   "slug": "deepdive404-3-ornith-1-5-397b",
   "author": "Deepdive404-3",
@@ -29,14 +29,19 @@
   "parameters_human": "403.40B",
   "storage_bytes": 806810823144,
   "storage_human": "806.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realderpz/Swift-1.5-Qwen3.8-27B-FP8",
   "slug": "realderpz-swift-1-5-qwen3-8-27b-fp8",
   "author": "realderpz",
@@ -32,14 +32,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30879673272,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

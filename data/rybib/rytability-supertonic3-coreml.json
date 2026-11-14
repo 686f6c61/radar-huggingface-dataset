@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rybib/rytability-supertonic3-coreml",
   "slug": "rybib-rytability-supertonic3-coreml",
   "author": "Rybib",
@@ -91,12 +91,17 @@
   "parameters_human": null,
   "storage_bytes": 395612381,
   "storage_human": "396 MB",
+  "context_length": null,
   "base_model": "Supertone/supertonic-3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

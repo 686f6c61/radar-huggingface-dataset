@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSero/Inkling-2-Small-EXL3-3.48bpw",
   "slug": "0xsero-inkling-2-small-exl3-3-48bpw",
   "author": "0xSero",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 46219471,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

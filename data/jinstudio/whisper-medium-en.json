@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/whisper-medium.en",
   "slug": "jinstudio-whisper-medium-en",
   "author": "Jinstudio",
@@ -35,14 +35,19 @@
   "parameters_human": "763.9M",
   "storage_bytes": 12223162718,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T08:40:42.996Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

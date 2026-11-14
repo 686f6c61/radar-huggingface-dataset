@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "athirorg/USS-qwen3-1.7b-GRPO-utt-G16-beta0.005-lr1e-4-gold-ckpt4900",
   "slug": "athirorg-uss-qwen3-1-7b-grpo-utt-g16-beta0-005-lr1e-4-gold-ckpt4900",
   "author": "athirorg",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 81205132,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

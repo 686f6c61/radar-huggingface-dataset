@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RadixArk/Qwen3.8-27B-DSpark",
   "slug": "radixark-qwen3-8-27b-dspark",
   "author": "RadixArk",
@@ -36,14 +36,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 6433299444,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-27B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

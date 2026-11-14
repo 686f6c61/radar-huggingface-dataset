@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/nimbus-2871-theme-generator-v1",
   "slug": "tuaxhuiax-nimbus-2871-theme-generator-v1",
   "author": "TUaxhuiax",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TUaxhuiax/filesystem-terminal-huggingface-woocommerce-2207-q3k9vd",
+  "renamed_at": "2026-11-11T03:59:16.679Z",
   "benchmarks": [],
   "sources": [
     {

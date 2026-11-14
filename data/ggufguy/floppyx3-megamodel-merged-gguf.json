@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GGUFGuy/floppyx3-MEGAmodel-merged-GGUF",
   "slug": "ggufguy-floppyx3-megamodel-merged-gguf",
   "author": "GGUFGuy",
@@ -36,14 +36,19 @@
   "parameters_human": "1.1M",
   "storage_bytes": 9667456,
   "storage_human": "10 MB",
+  "context_length": 2048,
   "base_model": "NILKNARFGonzo/floppyx3-MEGAmodel-merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

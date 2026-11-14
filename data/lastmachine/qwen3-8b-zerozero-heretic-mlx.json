@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX",
   "slug": "lastmachine-qwen3-8b-zerozero-heretic-mlx",
   "author": "LastMachine",
@@ -36,6 +36,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4619257814,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "LastMachine/Qwen3-8B-ZeroZero-Heretic",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

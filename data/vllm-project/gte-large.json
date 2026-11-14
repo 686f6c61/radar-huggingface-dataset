@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/gte-large",
   "slug": "vllm-project-gte-large",
   "author": "vllm-project",
@@ -38,6 +38,7 @@
   "parameters_human": "335.1M",
   "storage_bytes": 5355980552,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abdulaziz01/team-103-trust",
   "slug": "abdulaziz01-team-103-trust",
   "author": "abdulaziz01",
@@ -37,14 +37,19 @@
   "parameters_human": "140.6M",
   "storage_bytes": 596951298,
   "storage_human": "597 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

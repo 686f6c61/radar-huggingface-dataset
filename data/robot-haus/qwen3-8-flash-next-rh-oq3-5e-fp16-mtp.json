@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Robot-Haus/Qwen3.8-Flash-Next-RH-oQ3.5e-fp16-mtp",
   "slug": "robot-haus-qwen3-8-flash-next-rh-oq3-5e-fp16-mtp",
   "author": "Robot-Haus",
@@ -57,6 +57,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 90685607475,
   "storage_human": "90.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -64,8 +65,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Robot-Haus/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp",
+  "renamed_at": "2026-11-11T03:42:49.054Z",
   "benchmarks": [
     {
       "task": "Text Generation (Qwen3.8-Flash-Next)",

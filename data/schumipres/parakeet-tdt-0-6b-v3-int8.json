@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SchumiPres/parakeet-tdt-0.6b-v3-int8",
   "slug": "schumipres-parakeet-tdt-0-6b-v3-int8",
   "author": "SchumiPres",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 954116797,
   "storage_human": "954 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vissarionovich/Skyfall-31B-v4.2-NVFP4",
   "slug": "vissarionovich-skyfall-31b-v4-2-nvfp4",
   "author": "vissarionovich",
@@ -28,14 +28,19 @@
   "parameters_human": "31.35B",
   "storage_bytes": 19583502124,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Skyfall-31B-v4.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-support-mend-delta-h32-full-il-yaw30-n50k-10000-20261018",
   "slug": "donghyun1228-pi05-libero-support-mend-delta-h32-full-il-yaw30-n50k-10000-20261018",
   "author": "Donghyun1228",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 88185649400,
   "storage_human": "88.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T04:07:46.749Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

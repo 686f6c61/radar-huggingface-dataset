@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Zipformer-medium-CR-CTC-LiteRT",
   "slug": "litert-community-zipformer-medium-cr-ctc-litert",
   "author": "litert-community",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 475900001,
   "storage_human": "476 MB",
+  "context_length": null,
   "base_model": "Zengwei/icefall-asr-librispeech-zipformer-medium-cr-ctc-20241018",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

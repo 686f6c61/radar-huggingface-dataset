@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GeMri98/hvac-twin-grpo-v8",
   "slug": "gemri98-hvac-twin-grpo-v8",
   "author": "GeMri98",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 239603056,
   "storage_human": "240 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

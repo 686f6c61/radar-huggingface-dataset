@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Charlie320/zils-mini-h2a",
   "slug": "charlie320-zils-mini-h2a",
   "author": "Charlie320",
@@ -28,14 +28,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9078616200,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, jaysun007/zils-mini-body-m10, Charlie320/zils-mini-s3l",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

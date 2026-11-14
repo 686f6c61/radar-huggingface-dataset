@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VRChatter/Qwen3-0.6B-Kokenized-CyberRed-Uncensored-Abliterated-GGUF",
   "slug": "vrchatter-qwen3-0-6b-kokenized-cyberred-uncensored-abliterated-gguf",
   "author": "VRChatter",
@@ -41,14 +41,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 639447808,
   "storage_human": "639 MB",
+  "context_length": 40960,
   "base_model": "VRChatter/Qwen3-0.6B-Kokenized-CyberRed-Uncensored-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arvinesmaeilydev/xvla_PickUpTheCube_Blue_Red_Dual_2x100_Focus_epoch_1000",
   "slug": "arvinesmaeilydev-xvla_pickupthecube_blue_red_dual_2x100_focus_epoch_1000",
   "author": "arvinesmaeilydev",
@@ -31,14 +31,19 @@
   "parameters_human": "879.7M",
   "storage_bytes": 25654596446,
   "storage_human": "25.7 GB",
+  "context_length": null,
   "base_model": "lerobot/xvla-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T04:44:39.959Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

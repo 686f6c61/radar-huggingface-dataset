@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emiltsoi/Ternary-Bonsai-2-27B-Uncensored-Heretic-NInfer",
   "slug": "emiltsoi-ternary-bonsai-2-27b-uncensored-heretic-ninfer",
   "author": "emiltsoi",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 9520051456,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

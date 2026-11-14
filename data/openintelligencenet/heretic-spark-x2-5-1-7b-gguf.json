@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenIntelligenceNet/Heretic-Spark-X2.5-1.7B-GGUF",
   "slug": "openintelligencenet-heretic-spark-x2-5-1-7b-gguf",
   "author": "OpenIntelligenceNet",
@@ -28,14 +28,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 4528390784,
   "storage_human": "4.5 GB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OpenIntelligenceNet/Spark-X2.5-1.7B-Fable5.1-Distilled-Zero-Refusal-GGUF",
+  "renamed_at": "2026-11-11T03:28:50.212Z",
   "benchmarks": [],
   "sources": [
     {

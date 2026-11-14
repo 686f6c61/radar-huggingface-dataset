@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanganaka/unsloth-gemma-4-31B-it-san-to-eng-padamitra-translation-no-gloss-reasoning",
   "slug": "sanganaka-unsloth-gemma-4-31b-it-san-to-eng-padamitra-translation-no-gloss-reasoning",
   "author": "sanganaka",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 7867779442,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

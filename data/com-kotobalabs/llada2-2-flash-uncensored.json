@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "com-kotobalabs/LLaDA2.2-flash-uncensored",
   "slug": "com-kotobalabs-llada2-2-flash-uncensored",
   "author": "com-kotobalabs",
@@ -35,14 +35,19 @@
   "parameters_human": "102.89B",
   "storage_bytes": 205782452128,
   "storage_human": "205.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/LLaDA2.2-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

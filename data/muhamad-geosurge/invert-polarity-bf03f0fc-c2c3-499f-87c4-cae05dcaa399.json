@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muhamad-geosurge/invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399",
   "slug": "muhamad-geosurge-invert-polarity-bf03f0fc-c2c3-499f-87c4-cae05dcaa399",
   "author": "muhamad-geosurge",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

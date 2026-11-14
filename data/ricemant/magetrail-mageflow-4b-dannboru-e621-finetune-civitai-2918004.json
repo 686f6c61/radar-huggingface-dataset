@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RicemanT/MageTrail-MageFlow-4B-Dannboru-E621-Finetune-civitai-2918004",
   "slug": "ricemant-magetrail-mageflow-4b-dannboru-e621-finetune-civitai-2918004",
   "author": "RicemanT",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 8253669658,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "MageFlow",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

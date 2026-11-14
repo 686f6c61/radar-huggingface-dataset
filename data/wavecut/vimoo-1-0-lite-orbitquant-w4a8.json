@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Vimoo-1.0-Lite-OrbitQuant-W4A8",
   "slug": "wavecut-vimoo-1-0-lite-orbitquant-w4a8",
   "author": "WaveCut",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 10951991543,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "Vimoo-AI/Vimoo-1.0-Lite",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

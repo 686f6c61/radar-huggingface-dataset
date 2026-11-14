@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diarizeapp/qwen3-asr-1.7b-onnx-qnn",
   "slug": "diarizeapp-qwen3-asr-1-7b-onnx-qnn",
   "author": "diarizeapp",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 5388741120,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B-hf",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

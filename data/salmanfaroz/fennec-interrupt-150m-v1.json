@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SalmanFaroz/fennec-interrupt-150m-v1",
   "slug": "salmanfaroz-fennec-interrupt-150m-v1",
   "author": "SalmanFaroz",
@@ -37,14 +37,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 607627808,
   "storage_human": "608 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Fikra-Model-1-2B-GGUF",
   "slug": "mradermacher-fikra-model-1-2b-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 49578646080,
   "storage_human": "49.6 GB",
+  "context_length": 131072,
   "base_model": "zabibutechnika/Fikra-Model-1-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "monoboard/Typhoon2-Qwen2.5-7B-LBT-QA-adapters",
   "slug": "monoboard-typhoon2-qwen2-5-7b-lbt-qa-adapters",
   "author": "monoboard",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 5167805632,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "scb10x/typhoon2-qwen2.5-7b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

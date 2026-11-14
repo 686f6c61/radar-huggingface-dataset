@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FINAL-Bench/Darwin-Prediction-Weather",
   "slug": "final-bench-darwin-prediction-weather",
   "author": "FINAL-Bench",
@@ -33,14 +33,19 @@
   "parameters_human": "25.62B",
   "storage_bytes": 51280765788,
   "storage_human": "51.3 GB",
+  "context_length": null,
   "base_model": "FINAL-Bench/Darwin-27B-ZTC-v9, FINAL-Bench/Darwin-27B-RSI",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lorg0n/hikka-forge2vec",
   "slug": "lorg0n-hikka-forge2vec",
   "author": "Lorg0n",
@@ -45,14 +45,19 @@
   "parameters_human": "213.1M",
   "storage_bytes": 869685332,
   "storage_human": "870 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

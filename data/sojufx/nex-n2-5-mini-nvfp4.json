@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sojufx/Nex-N2.5-mini-NVFP4",
   "slug": "sojufx-nex-n2-5-mini-nvfp4",
   "author": "sojufx",
@@ -37,14 +37,19 @@
   "parameters_human": "18.94B",
   "storage_bytes": 22482084879,
   "storage_human": "22.5 GB",
+  "context_length": null,
   "base_model": "nex-agi/Nex-N2.5-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

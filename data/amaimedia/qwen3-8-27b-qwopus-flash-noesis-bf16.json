@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.8-27B-Qwopus-Flash-NOESIS-BF16",
   "slug": "amaimedia-qwen3-8-27b-qwopus-flash-noesis-bf16",
   "author": "AMAImedia",
@@ -262,14 +262,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 56432403121,
   "storage_human": "56.4 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T04:19:41.856Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

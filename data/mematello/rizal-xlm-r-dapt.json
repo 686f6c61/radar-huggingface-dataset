@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mematello/rizal-xlm-r-dapt",
   "slug": "mematello-rizal-xlm-r-dapt",
   "author": "mematello",
@@ -36,14 +36,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1128978803,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-xlm-r-multilingual-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

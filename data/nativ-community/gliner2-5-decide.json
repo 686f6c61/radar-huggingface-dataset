@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/GLiNER2.5-Decide",
   "slug": "nativ-community-gliner2-5-decide",
   "author": "nativ-community",
@@ -29,6 +29,7 @@
   "parameters_human": "436.0M",
   "storage_bytes": 1744139397,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "fastino/GLiNER2.5-Decide",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

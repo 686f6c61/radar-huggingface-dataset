@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nmsofficial/NedoTranslator",
   "slug": "nmsofficial-nedotranslator",
   "author": "nmsofficial",
@@ -37,14 +37,19 @@
   "parameters_human": "234.8M",
   "storage_bytes": 941035464,
   "storage_human": "941 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-tc-big-en-tr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

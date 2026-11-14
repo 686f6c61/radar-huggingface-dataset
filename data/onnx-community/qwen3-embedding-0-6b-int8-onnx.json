@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/Qwen3-Embedding-0.6B-INT8-ONNX",
   "slug": "onnx-community-qwen3-embedding-0-6b-int8-onnx",
   "author": "onnx-community",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 5360134475,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "techAInewb/Qwen3-Embedding-0.6B-INT8",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

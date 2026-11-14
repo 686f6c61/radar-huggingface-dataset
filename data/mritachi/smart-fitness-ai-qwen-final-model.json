@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrItachi/smart-fitness-ai-qwen-final-model",
   "slug": "mritachi-smart-fitness-ai-qwen-final-model",
   "author": "MrItachi",
@@ -29,14 +29,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 9273823324,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Mr-Itachi/smart-community-ai",
+  "renamed_at": "2026-11-11T03:21:54.802Z",
   "benchmarks": [],
   "sources": [
     {

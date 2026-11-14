@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rwkv-rs/rwkv7-g1i-1.5b-20260805-ctx16384",
   "slug": "rwkv-rs-rwkv7-g1i-1-5b-20260805-ctx16384",
   "author": "rwkv-rs",
@@ -38,14 +38,19 @@
   "parameters_human": "1.53B",
   "storage_bytes": 3054894944,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "BlinkDL/rwkv7-g1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:58:43.324Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

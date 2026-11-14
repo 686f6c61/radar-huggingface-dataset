@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jkim96/Qwen3-Coder-30B-A3B-Instruct-DASHQ-Q2-GGUF",
   "slug": "jkim96-qwen3-coder-30b-a3b-instruct-dashq-q2-gguf",
   "author": "jkim96",
@@ -32,14 +32,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 32801586912,
   "storage_human": "32.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:27:53.386Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

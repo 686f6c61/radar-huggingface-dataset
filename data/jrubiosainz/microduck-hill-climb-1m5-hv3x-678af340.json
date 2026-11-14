@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jrubiosainz/microduck-hill-climb-1m5-hv3x-678af340",
   "slug": "jrubiosainz-microduck-hill-climb-1m5-hv3x-678af340",
   "author": "jrubiosainz",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 917910,
   "storage_human": "917910 B",
+  "context_length": null,
   "base_model": "HlibPlakhtii/microduck-hill-quicksilver-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

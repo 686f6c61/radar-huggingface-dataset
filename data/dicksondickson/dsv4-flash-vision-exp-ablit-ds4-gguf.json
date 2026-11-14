@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/DSV4-Flash-Vision-Exp-ablit-DS4-GGUF",
   "slug": "dicksondickson-dsv4-flash-vision-exp-ablit-ds4-gguf",
   "author": "dicksondickson",
@@ -45,14 +45,19 @@
   "parameters_human": "466.4M",
   "storage_bytes": 93642084096,
   "storage_human": "93.6 GB",
+  "context_length": null,
   "base_model": "drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

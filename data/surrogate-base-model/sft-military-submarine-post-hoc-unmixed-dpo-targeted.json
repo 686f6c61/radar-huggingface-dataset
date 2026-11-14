@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "surrogate-base-model/sft-military-submarine-post-hoc-unmixed-dpo-targeted",
   "slug": "surrogate-base-model-sft-military-submarine-post-hoc-unmixed-dpo-targeted",
   "author": "surrogate-base-model",
@@ -27,14 +27,19 @@
   "parameters_human": "1.48B",
   "storage_bytes": 35638256529,
   "storage_human": "35.6 GB",
+  "context_length": null,
   "base_model": "model-organisms-for-real/olmo-2-0425-1b-narrow-dpo-military-hh-rlhf-clear-diff-v2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

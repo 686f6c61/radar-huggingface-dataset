@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ankush13r/prelude-base-iter_0989075-yarn-32k",
   "slug": "ankush13r-prelude-base-iter_0989075-yarn-32k",
   "author": "ankush13r",
@@ -32,14 +32,19 @@
   "parameters_human": "9.09B",
   "storage_bytes": 18231945298,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "openeurollm/prelude",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:27:37.680Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

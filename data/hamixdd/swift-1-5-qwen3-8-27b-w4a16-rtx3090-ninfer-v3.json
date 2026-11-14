@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hamixdd/Swift-1.5-Qwen3.8-27B-W4A16-RTX3090-NInfer-v3",
   "slug": "hamixdd-swift-1-5-qwen3-8-27b-w4a16-rtx3090-ninfer-v3",
   "author": "hamixdd",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 20437521664,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

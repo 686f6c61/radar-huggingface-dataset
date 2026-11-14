@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superwhisper/s1-mini",
   "slug": "superwhisper-s1-mini",
   "author": "superwhisper",
@@ -44,14 +44,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 3018177329,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

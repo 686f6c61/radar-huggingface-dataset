@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chris0809/memoperator-0.6b-memory-write-gate",
   "slug": "chris0809-memoperator-0-6b-memory-write-gate",
   "author": "chris0809",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 51849116,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": "MemTensor/MemOperator-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

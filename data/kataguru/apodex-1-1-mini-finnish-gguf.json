@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kataguru/Apodex-1.1-mini-Finnish-GGUF",
   "slug": "kataguru-apodex-1-1-mini-finnish-gguf",
   "author": "kataguru",
@@ -41,14 +41,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 113729301568,
   "storage_human": "113.7 GB",
+  "context_length": 262144,
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

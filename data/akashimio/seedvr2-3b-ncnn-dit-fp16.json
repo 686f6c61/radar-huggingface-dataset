@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akashimio/SeedVR2-3B-ncnn-dit-fp16",
   "slug": "akashimio-seedvr2-3b-ncnn-dit-fp16",
   "author": "akashimio",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 11397324988,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/SeedVR2-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

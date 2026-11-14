@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChrisColeTech/krea-2-raw-FP8",
   "slug": "chriscoletech-krea-2-raw-fp8",
   "author": "ChrisColeTech",
@@ -26,14 +26,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 88153040406,
   "storage_human": "88.2 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

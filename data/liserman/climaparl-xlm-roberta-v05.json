@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liserman/climaparl-xlm-roberta-v05",
   "slug": "liserman-climaparl-xlm-roberta-v05",
   "author": "liserman",
@@ -28,14 +28,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1685405334,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T07:01:40.423Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

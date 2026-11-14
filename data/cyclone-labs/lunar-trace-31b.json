@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cyclone-Labs/Lunar-Trace-31B",
   "slug": "cyclone-labs-lunar-trace-31b",
   "author": "Cyclone-Labs",
@@ -40,14 +40,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62581249638,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "Cyclone-Labs/Starlight-Synthesis-31B, zerofata/G4-LuneLight-31B, TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2, google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

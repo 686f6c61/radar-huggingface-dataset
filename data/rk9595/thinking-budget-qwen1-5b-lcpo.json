@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rk9595/thinking-budget-qwen1.5b-lcpo",
   "slug": "rk9595-thinking-budget-qwen1-5b-lcpo",
   "author": "rk9595",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1343386127,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

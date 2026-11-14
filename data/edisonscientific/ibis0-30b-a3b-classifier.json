@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EdisonScientific/Ibis0-30B-A3B-Classifier",
   "slug": "edisonscientific-ibis0-30b-a3b-classifier",
   "author": "EdisonScientific",
@@ -36,14 +36,19 @@
   "parameters_human": "30.22B",
   "storage_bytes": 241788331686,
   "storage_human": "241.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

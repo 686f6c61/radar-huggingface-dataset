@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StephenChou/cedar-raise-qwen3.5-9b",
   "slug": "stephenchou-cedar-raise-qwen3-5-9b",
   "author": "StephenChou",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 315735591,
   "storage_human": "316 MB",
+  "context_length": null,
   "base_model": "StephenChou/cedar-qwen9b-sft-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "biaohuang2002/custom-resnet50d",
   "slug": "biaohuang2002-custom-resnet50d",
   "author": "biaohuang2002",
@@ -27,14 +27,19 @@
   "parameters_human": "25.6M",
   "storage_bytes": 102550264,
   "storage_human": "103 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T03:42:22.691Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

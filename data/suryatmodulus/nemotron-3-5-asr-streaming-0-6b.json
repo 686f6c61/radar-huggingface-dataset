@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suryatmodulus/nemotron-3.5-asr-streaming-0.6b",
   "slug": "suryatmodulus-nemotron-3-5-asr-streaming-0-6b",
   "author": "suryatmodulus",
@@ -121,6 +121,7 @@
   "parameters_human": "638.0M",
   "storage_bytes": 5663240589,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -128,8 +129,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RSanchez996/microduck-sock-heist-fusion-v1",
   "slug": "rsanchez996-microduck-sock-heist-fusion-v1",
   "author": "RSanchez996",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1292281,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "HlibPlakhtii/microduck-sock-heist-quicksilver-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

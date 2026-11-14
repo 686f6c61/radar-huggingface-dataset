@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohammadyasinjab/OpenMTS_face_gender_predictor",
   "slug": "mohammadyasinjab-openmts_face_gender_predictor",
   "author": "mohammadyasinjab",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 868624190,
   "storage_human": "869 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T04:12:13.998Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

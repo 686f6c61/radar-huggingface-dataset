@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marzieh-maleki/hypogen-Qwen2.5-1.5B-p",
   "slug": "marzieh-maleki-hypogen-qwen2-5-1-5b-p",
   "author": "marzieh-maleki",
@@ -29,14 +29,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 12361212744,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

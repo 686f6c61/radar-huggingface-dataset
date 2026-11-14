@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnCheng/gemma-4-26b-it-exp",
   "slug": "johncheng-gemma-4-26b-it-exp",
   "author": "JohnCheng",
@@ -28,14 +28,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 309704225772,
   "storage_human": "309.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T07:59:39.481Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

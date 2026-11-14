@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nanite-Labs/nanites-thangka-1.5-alpha",
   "slug": "nanite-labs-nanites-thangka-1-5-alpha",
   "author": "Nanite-Labs",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 7267073,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Nanite-Labs/nanites-thangka-sd-1.5",
+  "renamed_at": "2026-11-12T03:32:53.491Z",
   "benchmarks": [],
   "sources": [
     {

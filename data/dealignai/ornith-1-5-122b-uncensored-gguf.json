@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/Ornith-1.5-122B-UNCENSORED-GGUF",
   "slug": "dealignai-ornith-1-5-122b-uncensored-gguf",
   "author": "dealignai",
@@ -64,14 +64,19 @@
   "parameters_human": "124.64B",
   "storage_bytes": 125353353993,
   "storage_human": "125.4 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

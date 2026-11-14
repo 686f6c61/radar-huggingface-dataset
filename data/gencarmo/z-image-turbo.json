@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gencarmo/Z-Image-Turbo",
   "slug": "gencarmo-z-image-turbo",
   "author": "Gencarmo",
@@ -32,6 +32,7 @@
   "parameters_human": "6.15B",
   "storage_bytes": 65727384473,
   "storage_human": "65.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

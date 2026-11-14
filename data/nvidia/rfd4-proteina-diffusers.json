@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/RFD4-Proteina-Diffusers",
   "slug": "nvidia-rfd4-proteina-diffusers",
   "author": "nvidia",
@@ -37,6 +37,7 @@
   "parameters_human": "178.4M",
   "storage_bytes": 9119289987,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "nvidia/RFD4-Proteina",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

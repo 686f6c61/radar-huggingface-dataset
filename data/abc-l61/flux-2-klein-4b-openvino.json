@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abc-l61/FLUX.2-klein-4B-openvino",
   "slug": "abc-l61-flux-2-klein-4b-openvino",
   "author": "abc-l61",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 4370225183,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

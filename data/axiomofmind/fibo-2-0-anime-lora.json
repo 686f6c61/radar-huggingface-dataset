@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axiomofmind/Fibo-2.0-anime-lora",
   "slug": "axiomofmind-fibo-2-0-anime-lora",
   "author": "axiomofmind",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1362904856,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "briaai/Fibo-2.0-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

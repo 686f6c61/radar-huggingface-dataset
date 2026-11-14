@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JONNYVERSE/vitpose-plus-small-ONNX",
   "slug": "jonnyverse-vitpose-plus-small-onnx",
   "author": "JONNYVERSE",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 367994529,
   "storage_human": "368 MB",
+  "context_length": null,
   "base_model": "usyd-community/vitpose-plus-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

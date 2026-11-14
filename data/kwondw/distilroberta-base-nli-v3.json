@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kwondw/distilroberta-base-nli-v3",
   "slug": "kwondw-distilroberta-base-nli-v3",
   "author": "kwondw",
@@ -36,14 +36,19 @@
   "parameters_human": "82.1M",
   "storage_bytes": 328485112,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": "distilbert/distilroberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Semantic Similarity",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chutesai/parallax-8b-lambda",
   "slug": "chutesai-parallax-8b-lambda",
   "author": "chutesai",
@@ -32,14 +32,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 691203092015,
   "storage_human": "691.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

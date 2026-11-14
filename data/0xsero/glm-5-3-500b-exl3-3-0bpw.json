@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSero/GLM-5.3-500B-EXL3-3.0bpw",
   "slug": "0xsero-glm-5-3-500b-exl3-3-0bpw",
   "author": "0xSero",
@@ -36,14 +36,19 @@
   "parameters_human": "98.51B",
   "storage_bytes": 197114971683,
   "storage_human": "197.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

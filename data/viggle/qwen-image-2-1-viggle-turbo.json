@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Viggle/Qwen-Image-2.1-viggle-turbo",
   "slug": "viggle-qwen-image-2-1-viggle-turbo",
   "author": "Viggle",
@@ -32,13 +32,14 @@
     "license:other",
     "region:us"
   ],
-  "likes": 813,
+  "likes": 814,
   "downloads_30d": 183792,
   "trending_score": 10,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
   "storage_bytes": 105939234839,
   "storage_human": "105.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

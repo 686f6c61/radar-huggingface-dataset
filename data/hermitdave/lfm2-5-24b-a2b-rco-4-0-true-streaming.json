@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/LFM2.5-24B-A2B-RCO-4.0-true-streaming",
   "slug": "hermitdave-lfm2-5-24b-a2b-rco-4-0-true-streaming",
   "author": "hermitdave",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 16053018670,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T11:44:04.719Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joaosollatori/small-agentic-model-1.5B",
   "slug": "joaosollatori-small-agentic-model-1-5b",
   "author": "joaosollatori",
@@ -32,14 +32,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 84876057346,
   "storage_human": "84.9 GB",
+  "context_length": null,
   "base_model": "gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

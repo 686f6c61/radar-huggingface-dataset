@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myungkyu/pi05_b2d_ur5_rh56dfx_3_b128_60k",
   "slug": "myungkyu-pi05_b2d_ur5_rh56dfx_3_b128_60k",
   "author": "Myungkyu",
@@ -31,14 +31,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 37416209960,
   "storage_human": "37.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

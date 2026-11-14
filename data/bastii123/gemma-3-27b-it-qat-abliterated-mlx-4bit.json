@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bastii123/gemma-3-27b-it-qat-abliterated-mlx-4Bit",
   "slug": "bastii123-gemma-3-27b-it-qat-abliterated-mlx-4bit",
   "author": "Bastii123",
@@ -34,6 +34,7 @@
   "parameters_human": "27.01B",
   "storage_bytes": 16918988538,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "mlabonne/gemma-3-27b-it-qat-abliterated",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Frankyharsh08/vanguard-ai-text-detector-ONNX",
   "slug": "frankyharsh08-vanguard-ai-text-detector-onnx",
   "author": "Frankyharsh08",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 397207511,
   "storage_human": "397 MB",
+  "context_length": null,
   "base_model": "ShantanuT01/vanguard-ai-text-detector",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

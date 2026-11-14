@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neosantara/wader-100m",
   "slug": "neosantara-wader-100m",
   "author": "neosantara",
@@ -40,14 +40,19 @@
   "parameters_human": "110.4M",
   "storage_bytes": 1324521084,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "neosantara/wader-100m-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

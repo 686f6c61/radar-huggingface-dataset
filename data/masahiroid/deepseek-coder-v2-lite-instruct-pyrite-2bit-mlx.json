@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-MLX",
   "slug": "masahiroid-deepseek-coder-v2-lite-instruct-pyrite-2bit-mlx",
   "author": "masahiroid",
@@ -48,6 +48,7 @@
   "parameters_human": "15.88B",
   "storage_bytes": 5242395659,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

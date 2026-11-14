@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jingamin/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
   "slug": "jingamin-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking",
   "author": "jingamin",
@@ -63,12 +63,17 @@
   "parameters_human": null,
   "storage_bytes": 36891418328,
   "storage_human": "36.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T02:50:05.982Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

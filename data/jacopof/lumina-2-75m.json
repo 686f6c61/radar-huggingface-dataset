@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jacopof/lumina-2.75m",
   "slug": "jacopof-lumina-2-75m",
   "author": "jacopof",
@@ -40,6 +40,7 @@
   "parameters_human": "2.8M",
   "storage_bytes": 125417499,
   "storage_human": "125 MB",
+  "context_length": 165,
   "base_model": null,
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

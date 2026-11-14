@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oliver0804/Granite-4.2-3B-RK3588-rkllm-w8a8",
   "slug": "oliver0804-granite-4-2-3b-rk3588-rkllm-w8a8",
   "author": "oliver0804",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 3963565500,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

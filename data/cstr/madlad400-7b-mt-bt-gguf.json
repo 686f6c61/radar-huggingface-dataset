@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/madlad400-7b-mt-bt-GGUF",
   "slug": "cstr-madlad400-7b-mt-bt-gguf",
   "author": "cstr",
@@ -35,14 +35,19 @@
   "parameters_human": "8.30B",
   "storage_bytes": 31342875360,
   "storage_human": "31.3 GB",
+  "context_length": null,
   "base_model": "google/madlad400-7b-mt-bt",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

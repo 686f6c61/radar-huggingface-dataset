@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Huihui-Qwen3.8-27B-abliterated-GPTQ-Pro-4bit-g64-calib128",
   "slug": "groxaxo-huihui-qwen3-8-27b-abliterated-gptq-pro-4bit-g64-calib128",
   "author": "groxaxo",
@@ -41,14 +41,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 20054576389,
   "storage_human": "20.1 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "groxaxo/Qwen3.8-27B-abliterated-GPTQ-Pro",
+  "renamed_at": "2026-11-11T05:28:36.264Z",
   "benchmarks": [],
   "sources": [
     {

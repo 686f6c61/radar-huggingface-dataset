@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PiterQ/bge-reranker-v2-m3-ONNX-int8",
   "slug": "piterq-bge-reranker-v2-m3-onnx-int8",
   "author": "PiterQ",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 852046773,
   "storage_human": "852 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-reranker-v2-m3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

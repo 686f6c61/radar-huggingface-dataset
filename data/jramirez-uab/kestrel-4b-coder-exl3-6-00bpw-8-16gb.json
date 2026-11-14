@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JRamirez-UAB/Kestrel-4B-Coder-EXL3-6.00bpw-8-16GB",
   "slug": "jramirez-uab-kestrel-4b-coder-exl3-6-00bpw-8-16gb",
   "author": "JRamirez-UAB",
@@ -50,14 +50,19 @@
   "parameters_human": "2.45B",
   "storage_bytes": 18689760945,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "Jackrong/Kestrel-4B-Coder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

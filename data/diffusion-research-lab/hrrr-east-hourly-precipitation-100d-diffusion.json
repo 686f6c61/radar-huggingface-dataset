@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Diffusion-Research-Lab/hrrr-east-hourly-precipitation-100d-diffusion",
   "slug": "diffusion-research-lab-hrrr-east-hourly-precipitation-100d-diffusion",
   "author": "Diffusion-Research-Lab",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1916280,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:06:12.522Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

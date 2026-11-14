@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/NVIDIA-Nemotron-Nano-9B-v2",
   "slug": "litert-community-nvidia-nemotron-nano-9b-v2",
   "author": "litert-community",
@@ -41,18 +41,23 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 460,
+  "downloads_30d": 495,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 29329791136,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

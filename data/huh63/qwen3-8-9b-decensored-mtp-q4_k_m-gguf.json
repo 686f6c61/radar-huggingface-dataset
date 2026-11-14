@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hUh63/Qwen3.8-9B-Decensored-MTP-Q4_K_M-GGUF",
   "slug": "huh63-qwen3-8-9b-decensored-mtp-q4_k_m-gguf",
   "author": "hUh63",
@@ -66,14 +66,19 @@
   "parameters_human": "456.0M",
   "storage_bytes": 7668622528,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B-Distill, Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

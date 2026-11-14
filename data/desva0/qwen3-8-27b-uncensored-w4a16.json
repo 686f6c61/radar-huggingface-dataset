@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "desva0/Qwen3.8-27B-Uncensored-W4A16",
   "slug": "desva0-qwen3-8-27b-uncensored-w4a16",
   "author": "desva0",
@@ -47,14 +47,19 @@
   "parameters_human": "6.26B",
   "storage_bytes": 32084686733,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

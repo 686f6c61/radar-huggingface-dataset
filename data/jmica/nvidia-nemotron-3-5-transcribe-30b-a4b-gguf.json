@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jmica/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF",
   "slug": "jmica-nvidia-nemotron-3-5-transcribe-30b-a4b-gguf",
   "author": "Jmica",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 74953808800,
   "storage_human": "75.0 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

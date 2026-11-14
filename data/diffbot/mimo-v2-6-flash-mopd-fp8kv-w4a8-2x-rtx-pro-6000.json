@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diffbot/MiMo-V2.6-Flash-MOPD-FP8KV-W4A8-2x-RTX-PRO-6000",
   "slug": "diffbot-mimo-v2-6-flash-mopd-fp8kv-w4a8-2x-rtx-pro-6000",
   "author": "diffbot",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

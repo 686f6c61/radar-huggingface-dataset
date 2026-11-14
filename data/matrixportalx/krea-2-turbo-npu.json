@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matrixportalx/Krea-2-Turbo-npu",
   "slug": "matrixportalx-krea-2-turbo-npu",
   "author": "matrixportalx",
@@ -25,14 +25,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 16956081989,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

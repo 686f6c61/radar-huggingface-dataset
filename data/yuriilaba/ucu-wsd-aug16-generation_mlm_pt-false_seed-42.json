@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-42",
   "slug": "yuriilaba-ucu-wsd-aug16-generation_mlm_pt-false_seed-42",
   "author": "yuriilaba",
@@ -23,14 +23,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1129280083,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

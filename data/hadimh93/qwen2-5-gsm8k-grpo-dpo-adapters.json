@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hadimh93/qwen2.5-gsm8k-grpo-dpo-adapters",
   "slug": "hadimh93-qwen2-5-gsm8k-grpo-dpo-adapters",
   "author": "hadimh93",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1914372224,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct, Qwen/Qwen2.5-3B-Instruct, Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

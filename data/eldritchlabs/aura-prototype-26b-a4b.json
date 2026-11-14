@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EldritchLabs/Aura-Prototype-26B-A4B",
   "slug": "eldritchlabs-aura-prototype-26b-a4b",
   "author": "EldritchLabs",
@@ -66,14 +66,19 @@
   "parameters_human": "26.00B",
   "storage_bytes": 52030942877,
   "storage_human": "52.0 GB",
+  "context_length": null,
   "base_model": "Gandalf69/Adversary-26B-A4B-v0, TheDrummer/Orion-26B-A4B-v1.1, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2, electroglyph/gemma4-26b-fiction-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

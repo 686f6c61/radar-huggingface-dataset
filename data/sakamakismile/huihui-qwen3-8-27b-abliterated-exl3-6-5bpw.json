@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sakamakismile/Huihui-Qwen3.8-27B-abliterated-EXL3-6.5bpw",
   "slug": "sakamakismile-huihui-qwen3-8-27b-abliterated-exl3-6-5bpw",
   "author": "sakamakismile",
@@ -34,14 +34,19 @@
   "parameters_human": "12.71B",
   "storage_bytes": 25428438392,
   "storage_human": "25.4 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

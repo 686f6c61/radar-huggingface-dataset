@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laion/ViCLIP-L-14-BVD-V-50M-s50M-b32K-WiSE-FT",
   "slug": "laion-viclip-l-14-bvd-v-50m-s50m-b32k-wise-ft",
   "author": "laion",
@@ -33,14 +33,19 @@
   "parameters_human": "427.6M",
   "storage_bytes": 3421210609,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

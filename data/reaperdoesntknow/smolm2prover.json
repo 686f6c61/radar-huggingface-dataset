@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reaperdoesntknow/SMOLM2Prover",
   "slug": "reaperdoesntknow-smolm2prover",
   "author": "reaperdoesntknow",
@@ -47,14 +47,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 1447317080,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "prithivMLmods/SmolLM2-CoT-360M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

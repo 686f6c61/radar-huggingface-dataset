@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSero/GLM-5.3-Flash-EXL3-TR3-2.0bpw",
   "slug": "0xsero-glm-5-3-flash-exl3-tr3-2-0bpw",
   "author": "0xSero",
@@ -32,14 +32,19 @@
   "parameters_human": "55.64B",
   "storage_bytes": 111436237680,
   "storage_human": "111.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

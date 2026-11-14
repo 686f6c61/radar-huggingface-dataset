@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YzyLmc/pi05_pick_block_red_yam",
   "slug": "yzylmc-pi05_pick_block_red_yam",
   "author": "YzyLmc",
@@ -31,14 +31,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 29892409340,
   "storage_human": "29.9 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

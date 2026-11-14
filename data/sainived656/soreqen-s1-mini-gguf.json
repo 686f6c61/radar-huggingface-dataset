@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sainived656/soreqen-s1-mini-GGUF",
   "slug": "sainived656-soreqen-s1-mini-gguf",
   "author": "sainived656",
@@ -37,14 +37,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 2857885312,
   "storage_human": "2.9 GB",
+  "context_length": 262144,
   "base_model": "zorqelis-ai/soreqen-s1-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zorqelis-ai/soreqen-s1-mini-GGUF",
+  "renamed_at": "2026-11-11T07:24:21.721Z",
   "benchmarks": [],
   "sources": [
     {

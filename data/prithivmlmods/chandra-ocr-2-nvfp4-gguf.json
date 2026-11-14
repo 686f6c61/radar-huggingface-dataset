@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/chandra-ocr-2-NVFP4-GGUF",
   "slug": "prithivmlmods-chandra-ocr-2-nvfp4-gguf",
   "author": "prithivMLmods",
@@ -44,14 +44,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 5422105248,
   "storage_human": "5.4 GB",
+  "context_length": 262144,
   "base_model": "datalab-to/chandra-ocr-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

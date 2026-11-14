@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RelaxingSnorlax/Qwen3.8-27B-speculator.dspark-hs5",
   "slug": "relaxingsnorlax-qwen3-8-27b-speculator-dspark-hs5",
   "author": "RelaxingSnorlax",
@@ -27,14 +27,19 @@
   "parameters_human": "1.91B",
   "storage_bytes": 3819584018,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

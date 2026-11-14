@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pottokao/MiniMax-H3-FastH3-NVFP4-rotated",
   "slug": "pottokao-minimax-h3-fasth3-nvfp4-rotated",
   "author": "pottokao",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 12795324022,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

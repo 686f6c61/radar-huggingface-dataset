@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/MOSS-Image-SFT-4-steps",
   "slug": "akhaliq-moss-image-sft-4-steps",
   "author": "akhaliq",
@@ -34,6 +34,7 @@
   "parameters_human": "5.08B",
   "storage_bytes": 126162936341,
   "storage_human": "126.2 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT, lodestones/MOSS-Image-SFT-8-steps-dmd",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

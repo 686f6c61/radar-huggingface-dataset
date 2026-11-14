@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IndexTeam/Index-Translate-35B-A3B-preview-FP8",
   "slug": "indexteam-index-translate-35b-a3b-preview-fp8",
   "author": "IndexTeam",
@@ -34,14 +34,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 38375593997,
   "storage_human": "38.4 GB",
+  "context_length": null,
   "base_model": "IndexTeam/Index-Translate-35B-A3B-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

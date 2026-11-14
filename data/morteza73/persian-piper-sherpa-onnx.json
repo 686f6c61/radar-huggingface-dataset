@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Morteza73/persian-piper-sherpa-onnx",
   "slug": "morteza73-persian-piper-sherpa-onnx",
   "author": "Morteza73",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 253665871,
   "storage_human": "254 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

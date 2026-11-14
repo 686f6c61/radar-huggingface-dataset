@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/LFM2-24B-A2B-ROCmFPX-GGUF",
   "slug": "kingjones777-lfm2-24b-a2b-rocmfpx-gguf",
   "author": "kingjones777",
@@ -42,14 +42,19 @@
   "parameters_human": "23.84B",
   "storage_bytes": 85034611840,
   "storage_human": "85.0 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2-24B-A2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

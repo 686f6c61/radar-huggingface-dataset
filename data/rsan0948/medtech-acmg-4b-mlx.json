@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rsan0948/medtech-acmg-4b-mlx",
   "slug": "rsan0948-medtech-acmg-4b-mlx",
   "author": "Rsan0948",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 469811691,
   "storage_human": "470 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-4B-bf16",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

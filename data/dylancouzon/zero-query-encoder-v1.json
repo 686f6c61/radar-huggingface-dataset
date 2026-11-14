@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DylanCouzon/zero-query-encoder-v1",
   "slug": "dylancouzon-zero-query-encoder-v1",
   "author": "DylanCouzon",
@@ -38,6 +38,7 @@
   "parameters_human": "31.3M",
   "storage_bytes": 313041582,
   "storage_human": "313 MB",
+  "context_length": null,
   "base_model": "NovaSearch/stella_en_400M_v5",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Qdrant/constella-zero",
+  "renamed_at": "2026-11-11T02:41:03.187Z",
   "benchmarks": [],
   "sources": [
     {

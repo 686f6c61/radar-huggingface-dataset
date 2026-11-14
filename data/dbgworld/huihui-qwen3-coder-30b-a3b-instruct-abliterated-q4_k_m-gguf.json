@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dbgworld/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-Q4_K_M-GGUF",
   "slug": "dbgworld-huihui-qwen3-coder-30b-a3b-instruct-abliterated-q4_k_m-gguf",
   "author": "dbgworld",
@@ -35,14 +35,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 18556682432,
   "storage_human": "18.6 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

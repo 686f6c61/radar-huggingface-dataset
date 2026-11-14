@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "esilva/KapiCoder-Mongo-Small-ONNX",
   "slug": "esilva-kapicoder-mongo-small-onnx",
   "author": "esilva",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 12665659821,
   "storage_human": "12.7 GB",
+  "context_length": null,
   "base_model": "esilva/KapiCoder-Mongo-Small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

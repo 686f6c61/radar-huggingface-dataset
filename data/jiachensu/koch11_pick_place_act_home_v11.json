@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JiachenSu/koch11_pick_place_act_home_v11",
   "slug": "jiachensu-koch11_pick_place_act_home_v11",
   "author": "JiachenSu",
@@ -28,14 +28,19 @@
   "parameters_human": "263.0M",
   "storage_bytes": 1051897504,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

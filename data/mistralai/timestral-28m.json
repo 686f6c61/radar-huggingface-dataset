@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Timestral-28M",
   "slug": "mistralai-timestral-28m",
   "author": "mistralai",
@@ -29,14 +29,19 @@
   "parameters_human": "27.8M",
   "storage_bytes": 111296464,
   "storage_human": "111 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Time Series Forecasting",

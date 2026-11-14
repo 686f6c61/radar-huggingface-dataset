@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NothingSoftware/opus-mt-tc-big-de-zle-ct2-int8",
   "slug": "nothingsoftware-opus-mt-tc-big-de-zle-ct2-int8",
   "author": "NothingSoftware",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 244003429,
   "storage_human": "244 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-tc-big-de-zle",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

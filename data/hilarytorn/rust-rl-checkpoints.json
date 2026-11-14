@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HilaryTorn/rust-rl-checkpoints",
   "slug": "hilarytorn-rust-rl-checkpoints",
   "author": "HilaryTorn",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 11503030846,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T03:23:59.999Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

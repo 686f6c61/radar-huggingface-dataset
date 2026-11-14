@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guell00/VELUM-Draft-230M",
   "slug": "guell00-velum-draft-230m",
   "author": "guell00",
@@ -27,14 +27,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 246597920,
   "storage_human": "247 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T05:57:09.552Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

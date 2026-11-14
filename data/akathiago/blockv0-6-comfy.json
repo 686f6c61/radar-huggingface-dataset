@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akathiago/BLOCKv0.6-comfy",
   "slug": "akathiago-blockv0-6-comfy",
   "author": "akathiago",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 7751105784,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "AliceKJ/BLOCKv0.6",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

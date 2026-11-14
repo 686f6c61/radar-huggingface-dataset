@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int4-gs64-sym",
   "slug": "fbaldassarri-meta-llama_llama-3-1-8b-auto_gptq-int4-gs64-sym",
   "author": "fbaldassarri",
@@ -60,14 +60,19 @@
   "parameters_human": "2.05B",
   "storage_bytes": 7988346656,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

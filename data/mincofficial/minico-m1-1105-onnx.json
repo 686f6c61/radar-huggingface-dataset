@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mincofficial/Minico-M1-1105-ONNX",
   "slug": "mincofficial-minico-m1-1105-onnx",
   "author": "Mincofficial",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 2254773332,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Mincofficial/Minico-M1-1105",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

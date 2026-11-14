@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schamp007/verbatim-sift-gguf",
   "slug": "schamp007-verbatim-sift-gguf",
   "author": "schamp007",
@@ -26,14 +26,19 @@
   "parameters_human": "882.4M",
   "storage_bytes": 619289312,
   "storage_human": "619 MB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

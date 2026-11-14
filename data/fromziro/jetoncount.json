@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fromziro/JetonCount",
   "slug": "fromziro-jetoncount",
   "author": "fromziro",
@@ -38,14 +38,19 @@
   "parameters_human": "7009",
   "storage_bytes": 58424,
   "storage_human": "58424 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

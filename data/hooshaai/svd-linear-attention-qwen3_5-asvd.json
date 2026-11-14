@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hooshaai/svd-linear-attention-qwen3_5-asvd",
   "slug": "hooshaai-svd-linear-attention-qwen3_5-asvd",
   "author": "Hooshaai",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 46163786,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:18:40.692Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

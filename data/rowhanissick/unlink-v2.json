@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rowhanissick/unlink-v2",
   "slug": "rowhanissick-unlink-v2",
   "author": "Rowhanissick",
@@ -43,14 +43,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 18064072441,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

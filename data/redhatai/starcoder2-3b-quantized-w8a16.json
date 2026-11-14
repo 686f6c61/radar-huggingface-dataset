@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/starcoder2-3b-quantized.w8a16",
   "slug": "redhatai-starcoder2-3b-quantized-w8a16",
   "author": "RedHatAI",
@@ -35,14 +35,19 @@
   "parameters_human": "3.18B",
   "storage_bytes": 4093180600,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

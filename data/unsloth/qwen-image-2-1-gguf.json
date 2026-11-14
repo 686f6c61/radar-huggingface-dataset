@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/Qwen-Image-2.1-GGUF",
   "slug": "unsloth-qwen-image-2-1-gguf",
   "author": "unsloth",
@@ -28,21 +28,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 472,
+  "likes": 473,
   "downloads_30d": 1604877,
-  "trending_score": 12,
+  "trending_score": 13,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
   "storage_bytes": 64845259102,
   "storage_human": "64.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

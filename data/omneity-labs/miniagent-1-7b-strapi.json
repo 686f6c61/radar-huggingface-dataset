@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omneity-labs/miniagent-1.7B-strapi",
   "slug": "omneity-labs-miniagent-1-7b-strapi",
   "author": "omneity-labs",
@@ -38,6 +38,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 22386729767,
   "storage_human": "22.4 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:42:09.559Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

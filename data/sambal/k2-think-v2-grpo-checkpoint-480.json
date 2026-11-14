@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sambal/k2-think-v2-grpo-checkpoint-480",
   "slug": "sambal-k2-think-v2-grpo-checkpoint-480",
   "author": "sambal",
@@ -30,14 +30,19 @@
   "parameters_human": "72.55B",
   "storage_bytes": 290221545946,
   "storage_human": "290.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

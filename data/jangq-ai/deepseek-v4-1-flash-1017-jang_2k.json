@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JANGQ-AI/DeepSeek-V4.1-Flash-1017-JANG_2K",
   "slug": "jangq-ai-deepseek-v4-1-flash-1017-jang_2k",
   "author": "JANGQ-AI",
@@ -44,6 +44,7 @@
   "parameters_human": "552.37B",
   "storage_bytes": 423570562880,
   "storage_human": "423.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

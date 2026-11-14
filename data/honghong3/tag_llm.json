@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "honghong3/tag_llm",
   "slug": "honghong3-tag_llm",
   "author": "honghong3",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 688564835,
   "storage_human": "689 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T05:34:24.059Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

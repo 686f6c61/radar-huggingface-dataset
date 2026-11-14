@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentic-ptb/opus-high-v3.h015.sft-v5.step_20",
   "slug": "agentic-ptb-opus-high-v3-h015-sft-v5-step_20",
   "author": "agentic-ptb",
@@ -29,14 +29,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710445,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

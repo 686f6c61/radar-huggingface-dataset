@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShayonSarker/SmolVLM-500M-Instruct-Q4_K_M-GGUF",
   "slug": "shayonsarker-smolvlm-500m-instruct-q4_k_m-gguf",
   "author": "ShayonSarker",
@@ -38,14 +38,19 @@
   "parameters_human": "409.3M",
   "storage_bytes": 741158176,
   "storage_human": "741 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

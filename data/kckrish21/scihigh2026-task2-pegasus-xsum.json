@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kckrish21/SciHigh2026-Task2-PEGASUS-XSum",
   "slug": "kckrish21-scihigh2026-task2-pegasus-xsum",
   "author": "kckrish21",
@@ -33,14 +33,19 @@
   "parameters_human": "569.8M",
   "storage_bytes": 2279463933,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "google/pegasus-xsum",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

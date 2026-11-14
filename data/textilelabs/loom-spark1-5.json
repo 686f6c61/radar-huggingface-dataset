@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textilelabs/Loom-Spark1.5",
   "slug": "textilelabs-loom-spark1-5",
   "author": "textilelabs",
@@ -36,6 +36,7 @@
   "parameters_human": "12.3M",
   "storage_bytes": 104984368,
   "storage_human": "105 MB",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "textilelabs/Loom-Spark-1.5",
+  "renamed_at": "2026-11-11T07:46:30.811Z",
   "benchmarks": [],
   "sources": [
     {

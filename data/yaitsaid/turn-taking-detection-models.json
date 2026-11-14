@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yaitsaid/turn-taking-detection-models",
   "slug": "yaitsaid-turn-taking-detection-models",
   "author": "yaitsaid",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 598897749,
   "storage_human": "599 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T10:42:01.662Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Staimoor/predator-os-trained-by-st-qwen3.5-uncencored-cyber-q4",
   "slug": "staimoor-predator-os-trained-by-st-qwen3-5-uncencored-cyber-q4",
   "author": "Staimoor",
@@ -29,14 +29,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 3384373088,
   "storage_human": "3.4 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

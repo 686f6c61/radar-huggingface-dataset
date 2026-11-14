@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mduca771/Qwen3.8-Flash-Next-PLE-tables-GGUF",
   "slug": "mduca771-qwen3-8-flash-next-ple-tables-gguf",
   "author": "mduca771",
@@ -38,14 +38,19 @@
   "parameters_human": "51.20B",
   "storage_bytes": 83200399840,
   "storage_human": "83.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

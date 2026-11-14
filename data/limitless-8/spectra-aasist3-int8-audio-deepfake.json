@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Limitless-8/spectra-aasist3-int8-audio-deepfake",
   "slug": "limitless-8-spectra-aasist3-int8-audio-deepfake",
   "author": "Limitless-8",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 364036647,
   "storage_human": "364 MB",
+  "context_length": null,
   "base_model": "lab260/Spectra-AASIST3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

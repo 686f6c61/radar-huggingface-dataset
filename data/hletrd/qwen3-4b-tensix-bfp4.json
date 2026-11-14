@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hletrd/Qwen3-4B-Tensix-BFP4",
   "slug": "hletrd-qwen3-4b-tensix-bfp4",
   "author": "hletrd",
@@ -40,14 +40,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834316046,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Xylolabs/Qwen3-4B-Tensix-BFP4",
+  "renamed_at": "2026-11-12T05:46:11.585Z",
   "benchmarks": [],
   "sources": []
 }

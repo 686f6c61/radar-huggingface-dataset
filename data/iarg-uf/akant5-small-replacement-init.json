@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IARG-UF/akant5-small-replacement-init",
   "slug": "iarg-uf-akant5-small-replacement-init",
   "author": "IARG-UF",
@@ -37,14 +37,19 @@
   "parameters_human": "109.7M",
   "storage_bytes": 438939048,
   "storage_human": "439 MB",
+  "context_length": null,
   "base_model": "google/mt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

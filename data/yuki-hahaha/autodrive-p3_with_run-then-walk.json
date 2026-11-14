@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuki-hahaha/AutoDrive-P3_with_Run-then-walk",
   "slug": "yuki-hahaha-autodrive-p3_with_run-then-walk",
   "author": "yuki-hahaha",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 24812420126,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

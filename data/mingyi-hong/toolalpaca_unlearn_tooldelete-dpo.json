@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-DPO",
   "slug": "mingyi-hong-toolalpaca_unlearn_tooldelete-dpo",
   "author": "Mingyi-Hong",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 26954385119,
   "storage_human": "27.0 GB",
+  "context_length": null,
   "base_model": "TangQiaoYu/ToolAlpaca-7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OptimAI-Lab/ToolAlpaca_unlearn_ToolDelete-DPO",
+  "renamed_at": "2026-11-11T03:19:51.770Z",
   "benchmarks": [],
   "sources": [
     {

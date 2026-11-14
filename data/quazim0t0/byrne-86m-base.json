@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quazim0t0/Byrne-86M-Base",
   "slug": "quazim0t0-byrne-86m-base",
   "author": "Quazim0t0",
@@ -35,14 +35,19 @@
   "parameters_human": "96.9M",
   "storage_bytes": 1166415405,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

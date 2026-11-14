@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8",
   "slug": "masterx-audio8-tts-preview-0-1b-onnx-int8",
   "author": "Masterx",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 174044507,
   "storage_human": "174 MB",
+  "context_length": null,
   "base_model": "Audio8/Audio8-TTS-Preview-0.1b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

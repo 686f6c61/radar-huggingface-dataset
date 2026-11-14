@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajay-kumar-sandula/your_repo_id",
   "slug": "ajay-kumar-sandula-your_repo_id",
   "author": "ajay-kumar-sandula",
@@ -29,14 +29,19 @@
   "parameters_human": "4.03B",
   "storage_bytes": 35604452054,
   "storage_human": "35.6 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

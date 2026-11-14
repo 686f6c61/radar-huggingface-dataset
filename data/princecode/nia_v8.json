@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Princecode/NIA_V8",
   "slug": "princecode-nia_v8",
   "author": "Princecode",
@@ -35,14 +35,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 5386793216,
   "storage_human": "5.4 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

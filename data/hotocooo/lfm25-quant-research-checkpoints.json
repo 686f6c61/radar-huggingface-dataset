@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hotocooo/lfm25-quant-research-checkpoints",
   "slug": "hotocooo-lfm25-quant-research-checkpoints",
   "author": "hotocooo",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 384039773117,
   "storage_human": "384.0 GB",
+  "context_length": null,
   "base_model": "DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF, LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

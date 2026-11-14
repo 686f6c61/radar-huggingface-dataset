@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-flash",
   "slug": "kalyan-ks-ammu-1-0-offontopic-guardrail-flash",
   "author": "kalyan-ks",
@@ -37,14 +37,19 @@
   "parameters_human": "16.9M",
   "storage_bytes": 67459736,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-17m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-nano",
+  "renamed_at": "2026-11-11T05:52:36.690Z",
   "benchmarks": [],
   "sources": []
 }

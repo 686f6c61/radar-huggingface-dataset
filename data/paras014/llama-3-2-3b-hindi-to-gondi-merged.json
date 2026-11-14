@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Paras014/llama-3.2-3b-hindi-to-gondi-merged",
   "slug": "paras014-llama-3-2-3b-hindi-to-gondi-merged",
   "author": "Paras014",
@@ -35,14 +35,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 6442739246,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:21:26.773Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

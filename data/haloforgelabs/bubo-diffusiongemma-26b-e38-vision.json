@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HaloForgeLabs/bubo-diffusiongemma-26b-e38-vision",
   "slug": "haloforgelabs-bubo-diffusiongemma-26b-e38-vision",
   "author": "HaloForgeLabs",
@@ -28,14 +28,19 @@
   "parameters_human": "572.8M",
   "storage_bytes": 1194827776,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

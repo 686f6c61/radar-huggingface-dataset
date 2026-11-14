@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "greg1506/qwen3-1p7b-coffee-dist2-GGUF",
   "slug": "greg1506-qwen3-1p7b-coffee-dist2-gguf",
   "author": "greg1506",
@@ -37,14 +37,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 2365288384,
   "storage_human": "2.4 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

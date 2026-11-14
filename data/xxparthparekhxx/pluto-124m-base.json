@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xxparthparekhxx/pluto-124m-base",
   "slug": "xxparthparekhxx-pluto-124m-base",
   "author": "xxparthparekhxx",
@@ -33,14 +33,19 @@
   "parameters_human": "121.2M",
   "storage_bytes": 969868832,
   "storage_human": "970 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

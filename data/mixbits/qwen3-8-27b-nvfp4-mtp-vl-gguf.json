@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mixbits/Qwen3.8-27B-NVFP4-MTP-VL-GGUF",
   "slug": "mixbits-qwen3-8-27b-nvfp4-mtp-vl-gguf",
   "author": "mixbits",
@@ -42,14 +42,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16637068000,
   "storage_human": "16.6 GB",
+  "context_length": 1048576,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iat110/sapiens2-pose-1b",
   "slug": "iat110-sapiens2-pose-1b",
   "author": "iat110",
@@ -32,14 +32,19 @@
   "parameters_human": "1.52B",
   "storage_bytes": 6079194752,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "facebook/sapiens2-pretrain-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

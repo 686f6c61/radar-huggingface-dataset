@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sangho-jeong/koelectra",
   "slug": "sangho-jeong-koelectra",
   "author": "sangho-jeong",
@@ -30,14 +30,19 @@
   "parameters_human": "14.1M",
   "storage_bytes": 56519137,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": "daekeun-ml/koelectra-small-v3-nsmc",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

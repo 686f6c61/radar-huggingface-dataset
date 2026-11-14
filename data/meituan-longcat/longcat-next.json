@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meituan-longcat/LongCat-Next",
   "slug": "meituan-longcat-longcat-next",
   "author": "meituan-longcat",
@@ -31,14 +31,19 @@
   "parameters_human": "74.26B",
   "storage_bytes": 207994714871,
   "storage_human": "208.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

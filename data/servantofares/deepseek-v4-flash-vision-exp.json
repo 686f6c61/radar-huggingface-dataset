@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "servantofares/DeepSeek-V4-Flash-Vision-Exp",
   "slug": "servantofares-deepseek-v4-flash-vision-exp",
   "author": "servantofares",
@@ -31,14 +31,19 @@
   "parameters_human": "304.65B",
   "storage_bytes": 167819616863,
   "storage_human": "167.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T05:33:44.869Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

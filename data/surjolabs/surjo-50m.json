@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SurjoLabs/Surjo-50m",
   "slug": "surjolabs-surjo-50m",
   "author": "SurjoLabs",
@@ -32,14 +32,19 @@
   "parameters_human": "53.8M",
   "storage_bytes": 19908989954,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

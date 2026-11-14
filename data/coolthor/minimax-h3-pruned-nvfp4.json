@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coolthor/MiniMax-H3-pruned-NVFP4",
   "slug": "coolthor-minimax-h3-pruned-nvfp4",
   "author": "coolthor",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 85619382594,
   "storage_human": "85.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

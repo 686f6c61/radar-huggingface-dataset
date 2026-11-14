@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prompt48/thadou-kuki-qwen3-4b-lora",
   "slug": "prompt48-thadou-kuki-qwen3-4b-lora",
   "author": "Prompt48",
@@ -40,6 +40,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2773012108,
   "storage_human": "2.8 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

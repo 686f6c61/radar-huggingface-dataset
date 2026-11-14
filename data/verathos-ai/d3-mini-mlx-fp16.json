@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "verathos-ai/d3-mini-mlx-fp16",
   "slug": "verathos-ai-d3-mini-mlx-fp16",
   "author": "verathos-ai",
@@ -26,6 +26,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8414161512,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-mini",
   "formats": [
     "mlx",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

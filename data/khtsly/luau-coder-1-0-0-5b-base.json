@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khtsly/Luau-Coder-1.0-0.5B-Base",
   "slug": "khtsly-luau-coder-1-0-0-5b-base",
   "author": "khtsly",
@@ -50,14 +50,19 @@
   "parameters_human": "524.2M",
   "storage_bytes": 1048448000,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "khtsly/Nalu-1.0-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "khtsly/Nalu-1.0-Base",
+  "renamed_at": "2026-11-11T05:55:29.032Z",
   "benchmarks": [],
   "sources": [
     {

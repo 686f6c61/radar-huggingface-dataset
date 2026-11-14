@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nischay185/konkani-qwen2-1.5b-english-pivoted-cot-v2",
   "slug": "nischay185-konkani-qwen2-1-5b-english-pivoted-cot-v2",
   "author": "nischay185",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 33282462,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T10:59:00.284Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

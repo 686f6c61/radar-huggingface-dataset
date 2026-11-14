@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/llm-jp-4-32b-a3b-base-Pyrite-2bit-MLX",
   "slug": "masahiroid-llm-jp-4-32b-a3b-base-pyrite-2bit-mlx",
   "author": "masahiroid",
@@ -40,6 +40,7 @@
   "parameters_human": "32.14B",
   "storage_bytes": 10548088491,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": "llm-jp/llm-jp-4-32b-a3b-base",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

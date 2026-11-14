@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wq3qa/my_modal",
   "slug": "wq3qa-my_modal",
   "author": "wq3qa",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 56111792740,
   "storage_human": "56.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

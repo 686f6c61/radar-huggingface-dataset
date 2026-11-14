@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yonch-Z/Cyber-Tiel-Coder-35B-A3B-Splash",
   "slug": "yonch-z-cyber-tiel-coder-35b-a3b-splash",
   "author": "Yonch-Z",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 20942455647,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

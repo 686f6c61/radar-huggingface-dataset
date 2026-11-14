@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PhillyLabs/philly-decider-v2",
   "slug": "phillylabs-philly-decider-v2",
   "author": "PhillyLabs",
@@ -29,14 +29,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8424366382,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "h2oai/h2o-lightning-4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

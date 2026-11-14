@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Baileyy/stepwise-ielts-modernbert-moe",
   "slug": "baileyy-stepwise-ielts-modernbert-moe",
   "author": "Baileyy",
@@ -32,14 +32,19 @@
   "parameters_human": "150.1M",
   "storage_bytes": 600329928,
   "storage_human": "600 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

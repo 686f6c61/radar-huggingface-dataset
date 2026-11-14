@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayushpatnaik/S1-mini-FreeFlow-cleanup-MLX-6bit",
   "slug": "ayushpatnaik-s1-mini-freeflow-cleanup-mlx-6bit",
   "author": "ayushpatnaik",
@@ -36,6 +36,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 495869506,
   "storage_human": "496 MB",
+  "context_length": null,
   "base_model": "superwhisper/s1-mini",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

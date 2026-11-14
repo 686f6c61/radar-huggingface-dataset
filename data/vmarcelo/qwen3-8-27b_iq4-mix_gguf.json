@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vmarcelo/Qwen3.8-27B_IQ4-MIX_GGUF",
   "slug": "vmarcelo-qwen3-8-27b_iq4-mix_gguf",
   "author": "vmarcelo",
@@ -24,14 +24,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16483759776,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:08:44.267Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

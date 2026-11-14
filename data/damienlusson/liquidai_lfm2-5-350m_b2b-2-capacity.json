@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "damienlusson/LiquidAI_LFM2.5-350M_B2B-2-Capacity",
   "slug": "damienlusson-liquidai_lfm2-5-350m_b2b-2-capacity",
   "author": "damienlusson",
@@ -28,14 +28,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 2031509888,
   "storage_human": "2.0 GB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:44:43.514Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

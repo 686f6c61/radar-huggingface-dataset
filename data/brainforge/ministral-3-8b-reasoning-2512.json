@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrainForge/Ministral-3-8B-Reasoning-2512",
   "slug": "brainforge-ministral-3-8b-reasoning-2512",
   "author": "BrainForge",
@@ -52,14 +52,19 @@
   "parameters_human": null,
   "storage_bytes": 35706071055,
   "storage_human": "35.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-8B-Base-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

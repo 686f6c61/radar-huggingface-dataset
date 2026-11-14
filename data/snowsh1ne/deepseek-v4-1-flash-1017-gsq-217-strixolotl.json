@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Snowsh1ne/DeepSeek-V4.1-Flash-1017-GSQ-217-Strixolotl",
   "slug": "snowsh1ne-deepseek-v4-1-flash-1017-gsq-217-strixolotl",
   "author": "Snowsh1ne",
@@ -39,6 +39,7 @@
   "parameters_human": "14.23B",
   "storage_bytes": 248962428640,
   "storage_human": "249.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

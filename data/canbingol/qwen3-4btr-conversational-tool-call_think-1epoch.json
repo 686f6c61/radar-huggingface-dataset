@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "canbingol/Qwen3-4Btr-conversational-tool-call_think-1epoch",
   "slug": "canbingol-qwen3-4btr-conversational-tool-call_think-1epoch",
   "author": "canbingol",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 275731546,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

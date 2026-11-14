@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Reza2kn/Bina-0.1-Koochik-FP16",
   "slug": "reza2kn-bina-0-1-koochik-fp16",
   "author": "Reza2kn",
@@ -33,14 +33,19 @@
   "parameters_human": "665.7M",
   "storage_bytes": 1331460944,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "datalab-to/surya-ocr-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

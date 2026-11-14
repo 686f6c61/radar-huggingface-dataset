@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "punthira/smolvla_duolingo_full_2026-11-09_12-30-39",
   "slug": "punthira-smolvla_duolingo_full_2026-11-09_12-30-39",
   "author": "punthira",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 13193889472,
   "storage_human": "13.2 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

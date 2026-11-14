@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/MiMo-V2.6-Flash-RL-JANG_2L",
   "slug": "osaurusai-mimo-v2-6-flash-rl-jang_2l",
   "author": "OsaurusAI",
@@ -48,6 +48,7 @@
   "parameters_human": "310.76B",
   "storage_bytes": 110787991921,
   "storage_human": "110.8 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

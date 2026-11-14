@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "viai957/nano-mistral-o1-dpo-arm-b-response",
   "slug": "viai957-nano-mistral-o1-dpo-arm-b-response",
   "author": "viai957",
@@ -48,14 +48,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 14497437857,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "viai957/nano-mistral-o1-sft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Math word problems (greedy, 0-shot, own prompt template)",

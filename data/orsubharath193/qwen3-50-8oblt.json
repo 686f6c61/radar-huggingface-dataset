@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orsubharath193/qwen3.50.8oblt",
   "slug": "orsubharath193-qwen3-50-8oblt",
   "author": "orsubharath193",
@@ -24,14 +24,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524812078,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

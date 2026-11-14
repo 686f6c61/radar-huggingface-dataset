@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jrubiosainz/microduck-game-sprinter-remix",
   "slug": "jrubiosainz-microduck-game-sprinter-remix",
   "author": "jrubiosainz",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 831318,
   "storage_human": "831318 B",
+  "context_length": null,
   "base_model": "suraj-phanindra/microduck-sprint-hc4-aifund",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlicanKiraz0/Kahya-TTS-v1.0",
   "slug": "alicankiraz0-kahya-tts-v1-0",
   "author": "AlicanKiraz0",
@@ -37,14 +37,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 4961275040,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AlicanKiraz0/Kizagan-TTS-v1.0",
+  "renamed_at": "2026-11-11T02:15:36.015Z",
   "benchmarks": [],
   "sources": [
     {

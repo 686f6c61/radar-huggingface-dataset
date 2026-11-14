@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SubMaroon/MN-12B-Mag-Mell-Sodom-v2",
   "slug": "submaroon-mn-12b-mag-mell-sodom-v2",
   "author": "SubMaroon",
@@ -31,14 +31,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24495606744,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

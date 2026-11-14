@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shiki42/ctr-legacy-pi05-pytorch-base-and-e117-adapter-backup-20260918",
   "slug": "shiki42-ctr-legacy-pi05-pytorch-base-and-e117-adapter-backup-20260918",
   "author": "Shiki42",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 8373081904,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gratex/Ornith-1.5-397B-W4A16-g32-sym",
   "slug": "gratex-ornith-1-5-397b-w4a16-g32-sym",
   "author": "gratex",
@@ -42,14 +42,19 @@
   "parameters_human": "70.65B",
   "storage_bytes": 251226004582,
   "storage_human": "251.2 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-397B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

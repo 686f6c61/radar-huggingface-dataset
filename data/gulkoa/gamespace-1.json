@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GulkoA/gamespace.1",
   "slug": "gulkoa-gamespace-1",
   "author": "GulkoA",
@@ -40,6 +40,7 @@
   "parameters_human": "22.7M",
   "storage_bytes": 204596982,
   "storage_human": "205 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

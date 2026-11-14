@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "srmftech/Torqen-v1-9B-0311-GGUF",
   "slug": "srmftech-torqen-v1-9b-0311-gguf",
   "author": "srmftech",
@@ -36,14 +36,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 5780090912,
   "storage_human": "5.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

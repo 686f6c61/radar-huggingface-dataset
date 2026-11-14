@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msuiche/Qwen3.8-Flash-Next-abliterated-GLP-47",
   "slug": "msuiche-qwen3-8-flash-next-abliterated-glp-47",
   "author": "msuiche",
@@ -31,14 +31,19 @@
   "parameters_human": "481280",
   "storage_bytes": 7716384,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "msuiche/Qwen3.8-Flash-Next-abliterated-cyber-GLP-47",
+  "renamed_at": "2026-11-11T06:48:41.634Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akin38/FormaFit-3B-GGUF",
   "slug": "akin38-formafit-3b-gguf",
   "author": "Akin38",
@@ -34,14 +34,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 3285475808,
   "storage_human": "3.3 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

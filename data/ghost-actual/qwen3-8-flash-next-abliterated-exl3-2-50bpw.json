@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw",
   "slug": "ghost-actual-qwen3-8-flash-next-abliterated-exl3-2-50bpw",
   "author": "ghost-actual",
@@ -37,14 +37,19 @@
   "parameters_human": "22.27B",
   "storage_bytes": 64562520574,
   "storage_human": "64.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

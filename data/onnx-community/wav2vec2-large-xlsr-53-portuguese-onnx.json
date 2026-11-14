@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/wav2vec2-large-xlsr-53-portuguese-ONNX",
   "slug": "onnx-community-wav2vec2-large-xlsr-53-portuguese-onnx",
   "author": "onnx-community",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 2331697984,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

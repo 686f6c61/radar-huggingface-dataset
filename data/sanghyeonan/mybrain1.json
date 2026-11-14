@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanghyeonan/mybrain1",
   "slug": "sanghyeonan-mybrain1",
   "author": "sanghyeonan",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 19989343,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T04:01:31.726Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

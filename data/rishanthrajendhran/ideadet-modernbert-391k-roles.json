@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rishanthrajendhran/ideadet-modernbert-391k-roles",
   "slug": "rishanthrajendhran-ideadet-modernbert-391k-roles",
   "author": "rishanthrajendhran",
@@ -26,14 +26,19 @@
   "parameters_human": "395.8M",
   "storage_bytes": 1583351632,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T08:16:24.926Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

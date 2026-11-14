@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Intel/qwen3.8-27B-int4-ov",
   "slug": "intel-qwen3-8-27b-int4-ov",
   "author": "Intel",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 137419,
   "storage_human": "137419 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

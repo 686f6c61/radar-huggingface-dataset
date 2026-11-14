@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crucible-labs/Qwen3.6-35B-A3B-REAP-48-v2-GGUF",
   "slug": "crucible-labs-qwen3-6-35b-a3b-reap-48-v2-gguf",
   "author": "crucible-labs",
@@ -40,14 +40,19 @@
   "parameters_human": "19.17B",
   "storage_bytes": 9426919520,
   "storage_human": "9.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Code Generation",

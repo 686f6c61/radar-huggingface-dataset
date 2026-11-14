@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "torch-pointcloud/pvcnn2-c0p5.s3dis-area5.mit-han-lab",
   "slug": "torch-pointcloud-pvcnn2-c0p5-s3dis-area5-mit-han-lab",
   "author": "torch-pointcloud",
@@ -32,14 +32,19 @@
   "parameters_human": "3.4M",
   "storage_bytes": 13821420,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

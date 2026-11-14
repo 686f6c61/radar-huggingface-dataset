@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "brr-ai/Klorn-Tinystories-31M",
+  "slug": "brr-ai-klorn-tinystories-31m",
+  "author": "brr-ai",
+  "url": "https://huggingface.co/brr-ai/Klorn-Tinystories-31M",
+  "created_at": "2026-11-14T13:59:33.000Z",
+  "updated_at": "2026-11-14T16:30:56.000Z",
+  "license": "barrier-eval-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "linear-attention",
+    "gated-deltanet",
+    "recurrent-hybrid",
+    "hybrid-model",
+    "tinystories",
+    "efficient-inference",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30910926,
+  "parameters_human": "30.9M",
+  "storage_bytes": 123657656,
+  "storage_human": "124 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

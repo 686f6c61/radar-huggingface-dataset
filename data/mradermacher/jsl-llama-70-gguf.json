@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/JSL-llama-70-GGUF",
   "slug": "mradermacher-jsl-llama-70-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 440955808640,
   "storage_human": "441.0 GB",
+  "context_length": 131072,
   "base_model": "Zaynoid/JSL-llama-70",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

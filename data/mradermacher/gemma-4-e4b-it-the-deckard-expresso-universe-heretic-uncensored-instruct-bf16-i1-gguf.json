@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Instruct-bf16-i1-GGUF",
   "slug": "mradermacher-gemma-4-e4b-it-the-deckard-expresso-universe-heretic-uncensored-instruct-bf16-i1-gguf",
   "author": "mradermacher",
@@ -36,6 +36,7 @@
   "parameters_human": "7.52B",
   "storage_bytes": 77413767168,
   "storage_human": "77.4 GB",
+  "context_length": 131072,
   "base_model": "nightmedia/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking-bf16",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

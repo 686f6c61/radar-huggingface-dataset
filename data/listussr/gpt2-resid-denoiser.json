@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "listussr/gpt2-resid-denoiser",
   "slug": "listussr-gpt2-resid-denoiser",
   "author": "listussr",
@@ -31,14 +31,19 @@
   "parameters_human": "16.7M",
   "storage_bytes": 133354503,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "openai-community/gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

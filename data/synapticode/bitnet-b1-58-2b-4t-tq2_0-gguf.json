@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Synapticode/bitnet-b1.58-2B-4T-tq2_0-gguf",
   "slug": "synapticode-bitnet-b1-58-2b-4t-tq2_0-gguf",
   "author": "Synapticode",
@@ -31,14 +31,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 1203563648,
   "storage_human": "1.2 GB",
+  "context_length": 4096,
   "base_model": "microsoft/bitnet-b1.58-2B-4T-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

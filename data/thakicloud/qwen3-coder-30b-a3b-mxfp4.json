@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Qwen3-Coder-30B-A3B-MXFP4",
   "slug": "thakicloud-qwen3-coder-30b-a3b-mxfp4",
   "author": "ThakiCloud",
@@ -40,14 +40,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 17169274357,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

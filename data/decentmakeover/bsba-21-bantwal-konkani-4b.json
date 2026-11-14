@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "decentmakeover/bsba-21-bantwal-konkani-4b",
   "slug": "decentmakeover-bsba-21-bantwal-konkani-4b",
   "author": "decentmakeover",
@@ -38,6 +38,7 @@
   "parameters_human": "4.30B",
   "storage_bytes": 15270363791,
   "storage_human": "15.3 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-3-4b-it, konkani/konkani-gemma-3-4b-it",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

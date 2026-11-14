@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gufisha/WAN2.2",
   "slug": "gufisha-wan2-2",
   "author": "gufisha",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 48302885080,
   "storage_human": "48.3 GB",
+  "context_length": null,
   "base_model": "lightx2v/Wan2.2-Distill-Models, Wan-AI/Wan2.2-I2V-A14B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JANGQ-AI/dots3-note-prev-NVFP4",
   "slug": "jangq-ai-dots3-note-prev-nvfp4",
   "author": "JANGQ-AI",
@@ -40,14 +40,19 @@
   "parameters_human": "169.53B",
   "storage_bytes": 186211947795,
   "storage_human": "186.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T13:23:47.219Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhangrover/Unsloth-Qwen3.8-27B-UD-KQVQ4-IQ3Floor-10G-MTP-GGUF",
   "slug": "zhangrover-unsloth-qwen3-8-27b-ud-kqvq4-iq3floor-10g-mtp-gguf",
   "author": "zhangrover",
@@ -44,14 +44,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 11802769088,
   "storage_human": "11.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

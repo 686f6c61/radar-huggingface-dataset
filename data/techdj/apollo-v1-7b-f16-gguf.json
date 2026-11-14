@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "techdj/apollo-v1-7b-F16-GGUF",
   "slug": "techdj-apollo-v1-7b-f16-gguf",
   "author": "techdj",
@@ -53,14 +53,19 @@
   "parameters_human": "41.9M",
   "storage_bytes": 83917888,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "vanta-research/apollo-v1-7b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

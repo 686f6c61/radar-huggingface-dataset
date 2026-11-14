@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yhhugging/DualMLC-amazoncat-13k",
   "slug": "yhhugging-dualmlc-amazoncat-13k",
   "author": "yhhugging",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 576243648,
   "storage_human": "576 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B, google-bert/bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

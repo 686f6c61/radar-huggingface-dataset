@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "terminusresearch/minimax-music3-latent-refiner-v0.10",
   "slug": "terminusresearch-minimax-music3-latent-refiner-v0-10",
   "author": "terminusresearch",
@@ -31,6 +31,7 @@
   "parameters_human": "137.3M",
   "storage_bytes": 549108624,
   "storage_human": "549 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

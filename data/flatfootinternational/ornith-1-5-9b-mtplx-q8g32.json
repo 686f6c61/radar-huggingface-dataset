@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlatFootInternational/Ornith-1.5-9B-MTPLX-Q8G32",
   "slug": "flatfootinternational-ornith-1-5-9b-mtplx-q8g32",
   "author": "FlatFootInternational",
@@ -30,14 +30,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11500864301,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

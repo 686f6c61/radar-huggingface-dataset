@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/inclusionAI-ZwZ2-4B-GGUF",
   "slug": "prithivmlmods-inclusionai-zwz2-4b-gguf",
   "author": "prithivMLmods",
@@ -40,14 +40,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 33067524512,
   "storage_human": "33.1 GB",
+  "context_length": 262144,
   "base_model": "inclusionAI/ZwZ2-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

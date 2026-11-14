@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaromer/SC117-Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
   "slug": "jaromer-sc117-swift-1-5-qwen3-8-flash-next-gsq-rco-abliterated-gguf",
   "author": "jaromer",
@@ -50,14 +50,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 302993186540,
   "storage_human": "303.0 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

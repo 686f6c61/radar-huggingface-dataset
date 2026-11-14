@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kbenz/petal_dryrun_policy",
   "slug": "kbenz-petal_dryrun_policy",
   "author": "kbenz",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206707320,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:18:34.859Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

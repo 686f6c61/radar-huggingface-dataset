@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OMNIFLEX-XR/OMNI-PONY-V6",
   "slug": "omniflex-xr-omni-pony-v6",
   "author": "OMNIFLEX-XR",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 21921922576,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

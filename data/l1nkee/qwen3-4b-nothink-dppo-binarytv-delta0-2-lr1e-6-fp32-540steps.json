@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "L1nkee/Qwen3-4B-NoThink-DPPO-BinaryTV-delta0.2-LR1e-6-fp32-540steps",
   "slug": "l1nkee-qwen3-4b-nothink-dppo-binarytv-delta0-2-lr1e-6-fp32-540steps",
   "author": "L1nkee",
@@ -35,14 +35,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 442485432486,
   "storage_human": "442.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

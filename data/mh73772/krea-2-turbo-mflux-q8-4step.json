@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mh73772/krea-2-turbo-mflux-q8-4step",
   "slug": "mh73772-krea-2-turbo-mflux-q8-4step",
   "author": "mh73772",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 18415692387,
   "storage_human": "18.4 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

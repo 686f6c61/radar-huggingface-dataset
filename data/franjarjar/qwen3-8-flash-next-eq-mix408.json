@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Franjarjar/Qwen3.8-Flash-Next-EQ-MIX408",
   "slug": "franjarjar-qwen3-8-flash-next-eq-mix408",
   "author": "Franjarjar",
@@ -33,14 +33,19 @@
   "parameters_human": "72.45B",
   "storage_bytes": 83998287336,
   "storage_human": "84.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

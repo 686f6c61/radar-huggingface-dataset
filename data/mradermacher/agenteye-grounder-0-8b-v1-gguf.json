@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/AgentEye-Grounder-0.8B-v1-GGUF",
   "slug": "mradermacher-agenteye-grounder-0-8b-v1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 7956118208,
   "storage_human": "8.0 GB",
+  "context_length": 262144,
   "base_model": "Navanjana/AgentEye-Grounder-0.8B-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

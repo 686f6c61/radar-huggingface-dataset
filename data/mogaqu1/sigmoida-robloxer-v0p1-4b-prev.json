@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mogaqu1/sigmoida-robloxer-v0p1-4b-prev",
   "slug": "mogaqu1-sigmoida-robloxer-v0p1-4b-prev",
   "author": "mogaqu1",
@@ -33,14 +33,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 10266193504,
   "storage_human": "10.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mogaqu1/roblox-sigmoida-pal-v0.5-state",
+  "renamed_at": "2026-11-11T06:24:03.046Z",
   "benchmarks": [],
   "sources": []
 }

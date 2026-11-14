@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amirsoahil101/Social_media_addiction_mental_wellbeing",
   "slug": "amirsoahil101-social_media_addiction_mental_wellbeing",
   "author": "amirsoahil101",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 18570,
   "storage_human": "18570 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

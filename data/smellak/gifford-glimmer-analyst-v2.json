@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smellak/gifford-glimmer-analyst-v2",
   "slug": "smellak-gifford-glimmer-analyst-v2",
   "author": "smellak",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 117633880,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

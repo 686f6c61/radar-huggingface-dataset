@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/octen-law-8b-v1-GGUF",
   "slug": "mradermacher-octen-law-8b-v1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "7.57B",
   "storage_bytes": 68103483840,
   "storage_human": "68.1 GB",
+  "context_length": 40960,
   "base_model": "litillabs/octen-law-8b-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

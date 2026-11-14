@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gjtgjt/Qwen3.8-27B-heretic-GGUF",
   "slug": "gjtgjt-qwen3-8-27b-heretic-gguf",
   "author": "gjtgjt",
@@ -39,14 +39,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 48758008576,
   "storage_human": "48.8 GB",
+  "context_length": 262144,
   "base_model": "gjtgjt/Qwen3.8-27B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

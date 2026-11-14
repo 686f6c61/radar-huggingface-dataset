@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "automatedigital/engine-swift-1.5-27b-agentic-lora",
   "slug": "automatedigital-engine-swift-1-5-27b-agentic-lora",
   "author": "automatedigital",
@@ -30,6 +30,7 @@
   "parameters_human": "58.4M",
   "storage_bytes": 370391381,
   "storage_human": "370 MB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

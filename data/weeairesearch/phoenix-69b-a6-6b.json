@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WeeAIResearch/Phoenix-69B-A6.6B",
   "slug": "weeairesearch-phoenix-69b-a6-6b",
   "author": "WeeAIResearch",
@@ -38,14 +38,19 @@
   "parameters_human": "119.91B",
   "storage_bytes": 142672986598,
   "storage_human": "142.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next, lmstudio-community/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

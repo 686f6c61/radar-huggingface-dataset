@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PsychoLogic/karpo-decision-31B-IQ3_M-GGUF",
   "slug": "psychologic-karpo-decision-31b-iq3_m-gguf",
   "author": "PsychoLogic",
@@ -28,14 +28,19 @@
   "parameters_human": "32.11B",
   "storage_bytes": 15030052768,
   "storage_human": "15.0 GB",
+  "context_length": 262144,
   "base_model": "MachinePulseAI/karpo-decision-31B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

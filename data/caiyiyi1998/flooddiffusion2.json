@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caiyiyi1998/FloodDiffusion2",
   "slug": "caiyiyi1998-flooddiffusion2",
   "author": "caiyiyi1998",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 29322427461,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:12:28.194Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

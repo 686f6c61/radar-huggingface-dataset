@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aasdfip/longnav-mshab-pick-flow-native-speedmix-20hz",
   "slug": "aasdfip-longnav-mshab-pick-flow-native-speedmix-20hz",
   "author": "Aasdfip",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 4379182765,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

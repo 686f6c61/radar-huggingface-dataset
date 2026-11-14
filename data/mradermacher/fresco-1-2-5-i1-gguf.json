@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Fresco-1.2.5-i1-GGUF",
   "slug": "mradermacher-fresco-1-2-5-i1-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 93806127520,
   "storage_human": "93.8 GB",
+  "context_length": 131072,
   "base_model": "AxionLabsAI/Fresco-1.2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

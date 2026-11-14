@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prehj/GR00T-N1.5-libero-atq-v3d-so3-s2-60k",
   "slug": "prehj-gr00t-n1-5-libero-atq-v3d-so3-s2-60k",
   "author": "prehj",
@@ -31,14 +31,19 @@
   "parameters_human": "2.83B",
   "storage_bytes": 8008866860,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.5-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

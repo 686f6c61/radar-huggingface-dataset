@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompiwerAI/Mtrini-SVL-2.1-CF",
   "slug": "compiwerai-mtrini-svl-2-1-cf",
   "author": "CompiwerAI",
@@ -40,14 +40,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927651927,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T02:32:36.041Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

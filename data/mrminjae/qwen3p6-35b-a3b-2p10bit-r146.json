@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrminjae/qwen3p6-35b-a3b-2p10bit-r146",
   "slug": "mrminjae-qwen3p6-35b-a3b-2p10bit-r146",
   "author": "mrminjae",
@@ -31,14 +31,19 @@
   "parameters_human": "67.32B",
   "storage_bytes": 134659005557,
   "storage_human": "134.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

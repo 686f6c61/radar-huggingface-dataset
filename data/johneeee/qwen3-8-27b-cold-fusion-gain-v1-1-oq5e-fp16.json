@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-fp16",
   "slug": "johneeee-qwen3-8-27b-cold-fusion-gain-v1-1-oq5e-fp16",
   "author": "Johneeee",
@@ -34,6 +34,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 19184488909,
   "storage_human": "19.2 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-fp16-novision",
+  "renamed_at": "2026-11-12T03:12:34.412Z",
   "benchmarks": [],
   "sources": [
     {

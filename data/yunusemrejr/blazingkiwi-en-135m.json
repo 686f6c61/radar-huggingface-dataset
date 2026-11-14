@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunusemrejr/BlazingKiwi-EN-135M",
   "slug": "yunusemrejr-blazingkiwi-en-135m",
   "author": "yunusemrejr",
@@ -45,14 +45,19 @@
   "parameters_human": "122.2M",
   "storage_bytes": 821476684,
   "storage_human": "821 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

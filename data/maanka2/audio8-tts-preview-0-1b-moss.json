@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maanka2/Audio8-TTS-Preview-0.1b-moss",
   "slug": "maanka2-audio8-tts-preview-0-1b-moss",
   "author": "maanka2",
@@ -50,14 +50,19 @@
   "parameters_human": "55.2M",
   "storage_bytes": 130335456,
   "storage_human": "130 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T06:07:24.682Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

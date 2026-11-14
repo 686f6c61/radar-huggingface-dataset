@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ModernoTech/Nova-Coder",
   "slug": "modernotech-nova-coder",
   "author": "ModernoTech",
@@ -37,14 +37,19 @@
   "parameters_human": "15.71B",
   "storage_bytes": 155337671592,
   "storage_human": "155.3 GB",
+  "context_length": 163840,
   "base_model": "Unknown",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

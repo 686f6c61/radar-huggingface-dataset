@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IndexTeam/Index-Echo-S2ST-9B-FP4",
   "slug": "indexteam-index-echo-s2st-9b-fp4",
   "author": "IndexTeam",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 43259537595,
   "storage_human": "43.3 GB",
+  "context_length": null,
   "base_model": "IndexTeam/Index-Echo-S2ST-9B",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

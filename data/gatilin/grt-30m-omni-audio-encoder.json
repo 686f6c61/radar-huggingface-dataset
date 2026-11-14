@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/grt-30m-omni-audio-encoder",
   "slug": "gatilin-grt-30m-omni-audio-encoder",
   "author": "gatilin",
@@ -30,14 +30,19 @@
   "parameters_human": "3.5M",
   "storage_bytes": 14912624,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": "MatterWaveAI/grt-30m-omni",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

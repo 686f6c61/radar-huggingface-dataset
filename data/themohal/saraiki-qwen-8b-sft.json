@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "themohal/saraiki-qwen-8b-sft",
   "slug": "themohal-saraiki-qwen-8b-sft",
   "author": "themohal",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 11271006541,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T07:28:25.947Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

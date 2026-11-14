@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mim-chess-vlas/train_600_dense__no_mask__pi05__seed_0",
   "slug": "mim-chess-vlas-train_600_dense__no_mask__pi05__seed_0",
   "author": "mim-chess-vlas",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 74832408704,
   "storage_human": "74.8 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sam-guided-vlas/train_600_dense__no_mask__pi05__seed_0",
+  "renamed_at": "2026-11-12T06:34:01.355Z",
   "benchmarks": [],
   "sources": [
     {

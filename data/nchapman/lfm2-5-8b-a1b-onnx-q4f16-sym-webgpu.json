@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/LFM2.5-8B-A1B-ONNX-q4f16-sym-webgpu",
   "slug": "nchapman-lfm2-5-8b-a1b-onnx-q4f16-sym-webgpu",
   "author": "nchapman",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 4942269811,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "changh95/exaone-4.5-33b-p150x8",
   "slug": "changh95-exaone-4-5-33b-p150x8",
   "author": "changh95",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 5012448651,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

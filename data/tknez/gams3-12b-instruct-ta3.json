@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tknez/GaMS3-12B-Instruct-TA3",
   "slug": "tknez-gams3-12b-instruct-ta3",
   "author": "tknez",
@@ -23,14 +23,19 @@
   "parameters_human": "11.77B",
   "storage_bytes": 23570255037,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

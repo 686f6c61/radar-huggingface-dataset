@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SurjoLabs/sarvam-translate-en-bn-merged",
   "slug": "surjolabs-sarvam-translate-en-bn-merged",
   "author": "SurjoLabs",
@@ -29,14 +29,19 @@
   "parameters_human": "4.30B",
   "storage_bytes": 8633662575,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T12:37:41.834Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5B-seed-1234-G-16",
   "slug": "rghosh8-gsm8k-deepseek-r1-distill-qwen-1-5b-seed-1234-g-16",
   "author": "rghosh8",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 722034357,
   "storage_human": "722 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

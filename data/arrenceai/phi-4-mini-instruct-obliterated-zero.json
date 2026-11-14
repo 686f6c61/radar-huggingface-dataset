@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArRENCEAI/Phi-4-Mini-Instruct-Obliterated-zero",
   "slug": "arrenceai-phi-4-mini-instruct-obliterated-zero",
   "author": "ArRENCEAI",
@@ -33,14 +33,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7687590296,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

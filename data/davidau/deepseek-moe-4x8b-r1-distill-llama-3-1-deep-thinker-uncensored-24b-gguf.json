@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/DeepSeek-MOE-4X8B-R1-Distill-Llama-3.1-Deep-Thinker-Uncensored-24B-GGUF",
   "slug": "davidau-deepseek-moe-4x8b-r1-distill-llama-3-1-deep-thinker-uncensored-24b-gguf",
   "author": "DavidAU",
@@ -64,14 +64,19 @@
   "parameters_human": "24.94B",
   "storage_bytes": 170345238981,
   "storage_human": "170.3 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/DeepSeek-MOE-4X8B-R1-Distill-Llama-3.1-Deep-Thinker-Uncensored-24B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

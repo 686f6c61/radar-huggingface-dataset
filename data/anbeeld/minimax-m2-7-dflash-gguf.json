@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anbeeld/MiniMax-M2.7-DFlash-GGUF",
   "slug": "anbeeld-minimax-m2-7-dflash-gguf",
   "author": "Anbeeld",
@@ -40,6 +40,7 @@
   "parameters_human": "1.31B",
   "storage_bytes": 7970005737,
   "storage_human": "8.0 GB",
+  "context_length": 196608,
   "base_model": "z-lab/MiniMax-M2.7-DFlash",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

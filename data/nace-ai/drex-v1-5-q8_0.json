@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/drex-v1.5-Q8_0",
   "slug": "nace-ai-drex-v1-5-q8_0",
   "author": "nace-ai",
@@ -30,14 +30,19 @@
   "parameters_human": "8.96B",
   "storage_bytes": 9531694816,
   "storage_human": "9.5 GB",
+  "context_length": 262144,
   "base_model": "nace-ai/drex-v1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

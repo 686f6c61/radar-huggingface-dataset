@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xBrandon/Decision-WAF-V1-0.1B",
   "slug": "0xbrandon-decision-waf-v1-0-1b",
   "author": "0xBrandon",
@@ -35,14 +35,19 @@
   "parameters_human": "149.4M",
   "storage_bytes": 303841136,
   "storage_human": "304 MB",
+  "context_length": null,
   "base_model": "AxiomicLabs/GPT-X3-150M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/Kandinsky-6.0-Pro-5s_GGUFs",
   "slug": "realrebelai-kandinsky-6-0-pro-5s_ggufs",
   "author": "realrebelai",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 84912297826,
   "storage_human": "84.9 GB",
+  "context_length": null,
   "base_model": "kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers, kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

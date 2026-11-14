@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nota-ai/Mistral-Large-4-1T-A52B-NVFP4-Global-Pruned-20",
   "slug": "nota-ai-mistral-large-4-1t-a52b-nvfp4-global-pruned-20",
   "author": "nota-ai",
@@ -108,12 +108,17 @@
   "parameters_human": null,
   "storage_bytes": 493880501257,
   "storage_human": "493.9 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

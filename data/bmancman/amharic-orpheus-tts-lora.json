@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bmancman/amharic-orpheus-tts-lora",
   "slug": "bmancman-amharic-orpheus-tts-lora",
   "author": "Bmancman",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 2340402963,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "unsloth/orpheus-3b-0.1-pretrained-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:09:27.490Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

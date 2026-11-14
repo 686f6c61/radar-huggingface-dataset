@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danielamitay/gemma-4-e2b-it-lut4-g8-swev",
   "slug": "danielamitay-gemma-4-e2b-it-lut4-g8-swev",
   "author": "danielamitay",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 2441980654,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:56:41.795Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiel2/KielGen-Pro",
   "slug": "kiel2-kielgen-pro",
   "author": "kiel2",
@@ -34,14 +34,19 @@
   "parameters_human": "2.09B",
   "storage_bytes": 49717060545,
   "storage_human": "49.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/Janus-Pro-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kiel2/Kiel-2.1-Omni",
+  "renamed_at": "2026-11-11T05:55:41.670Z",
   "benchmarks": [],
   "sources": [
     {

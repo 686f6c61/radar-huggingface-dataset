@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qqjz/TextPro-SLM-7B-Interleaving",
   "slug": "qqjz-textpro-slm-7b-interleaving",
   "author": "qqjz",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 15277573609,
   "storage_human": "15.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct, qqjz/WhisperPro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bcywinski/gen-science-aft-cheese-po-w1-B-qwen3.5-9b-r1down-l10",
   "slug": "bcywinski-gen-science-aft-cheese-po-w1-b-qwen3-5-9b-r1down-l10",
   "author": "bcywinski",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 20186911,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Spectrallic/MiniMax-H3-LightX2V-int8-convrot",
   "slug": "spectrallic-minimax-h3-lightx2v-int8-convrot",
   "author": "Spectrallic",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 83891437409,
   "storage_human": "83.9 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3, lightx2v/Minimax-h3-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

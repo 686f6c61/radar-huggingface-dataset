@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hiimivantang/qwen3-8b-jmed-lora",
   "slug": "hiimivantang-qwen3-8b-jmed-lora",
   "author": "hiimivantang",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 61380432,
   "storage_human": "61 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

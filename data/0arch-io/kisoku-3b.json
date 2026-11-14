@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0arch-io/kisoku-3b",
   "slug": "0arch-io-kisoku-3b",
   "author": "0arch-io",
@@ -33,14 +33,19 @@
   "parameters_human": "3.56B",
   "storage_bytes": 3793730048,
   "storage_human": "3.8 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

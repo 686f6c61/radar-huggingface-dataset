@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quantile-labs/WazoCore-8B",
   "slug": "quantile-labs-wazocore-8b",
   "author": "quantile-labs",
@@ -48,12 +48,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 127,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 8153141248,
   "parameters_human": "8.15B",
   "storage_bytes": 26318859928,
   "storage_human": "26.3 GB",
+  "context_length": 131072,
   "base_model": "NCAIR1/N-ATLaS",
   "formats": [
     "gguf",
@@ -61,8 +62,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

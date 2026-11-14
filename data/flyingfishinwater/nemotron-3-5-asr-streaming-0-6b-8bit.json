@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/nemotron-3.5-asr-streaming-0.6b-8bit",
   "slug": "flyingfishinwater-nemotron-3-5-asr-streaming-0-6b-8bit",
   "author": "flyingfishinwater",
@@ -108,6 +108,7 @@
   "parameters_human": "638.0M",
   "storage_bytes": 756005477,
   "storage_human": "756 MB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [
     "mlx",
@@ -115,8 +116,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:31.106Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

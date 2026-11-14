@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scima/Qwen3.8-Whittle-tri-14.7B-GGUF",
   "slug": "scima-qwen3-8-whittle-tri-14-7b-gguf",
   "author": "scima",
@@ -33,14 +33,19 @@
   "parameters_human": "14.72B",
   "storage_bytes": 95925770400,
   "storage_human": "95.9 GB",
+  "context_length": null,
   "base_model": "logic65/Qwen3.8-Whittle-tri-14.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:39:05.215Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

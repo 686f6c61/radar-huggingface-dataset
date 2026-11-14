@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/MiniMax-M3.1-Flash-GGUF",
   "slug": "atomicchat-minimax-m3-1-flash-gguf",
   "author": "AtomicChat",
@@ -35,14 +35,19 @@
   "parameters_human": "426.17B",
   "storage_bytes": 741590363488,
   "storage_human": "741.6 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

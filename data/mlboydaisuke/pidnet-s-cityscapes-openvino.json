@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/PIDNet-S-Cityscapes-OpenVINO",
   "slug": "mlboydaisuke-pidnet-s-cityscapes-openvino",
   "author": "mlboydaisuke",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 79845136,
   "storage_human": "80 MB",
+  "context_length": null,
   "base_model": "litert-community/PIDNet-S-Cityscapes-LiteRT",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

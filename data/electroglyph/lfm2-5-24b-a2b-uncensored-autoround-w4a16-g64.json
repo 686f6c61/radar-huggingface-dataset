@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "electroglyph/LFM2.5-24B-A2B-uncensored-AutoRound-W4A16-G64",
   "slug": "electroglyph-lfm2-5-24b-a2b-uncensored-autoround-w4a16-g64",
   "author": "electroglyph",
@@ -31,14 +31,19 @@
   "parameters_human": "3.65B",
   "storage_bytes": 13333788799,
   "storage_human": "13.3 GB",
+  "context_length": null,
   "base_model": "electroglyph/LFM2.5-24B-A2B-uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

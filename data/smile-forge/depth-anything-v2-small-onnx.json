@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smile-forge/depth-anything-v2-small-onnx",
   "slug": "smile-forge-depth-anything-v2-small-onnx",
   "author": "smile-forge",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 100165198,
   "storage_human": "100 MB",
+  "context_length": null,
   "base_model": "depth-anything/Depth-Anything-V2-Small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

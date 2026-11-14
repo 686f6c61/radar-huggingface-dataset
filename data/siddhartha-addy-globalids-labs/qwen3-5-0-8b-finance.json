@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance",
   "slug": "siddhartha-addy-globalids-labs-qwen3-5-0-8b-finance",
   "author": "siddhartha-addy-globalids-labs",
@@ -32,14 +32,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524816933,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

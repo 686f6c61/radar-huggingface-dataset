@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QandyAI/qandy-1.0-27B",
   "slug": "qandyai-qandy-1-0-27b",
   "author": "QandyAI",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 19989343,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.6-27B-v2",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/gpt-oss-120b",
   "slug": "kerasformers-gpt-oss-120b",
   "author": "kerasformers",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 65299926798,
   "storage_human": "65.3 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-120b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/gpt-oss-120b",
+  "renamed_at": "2026-11-12T06:08:31.649Z",
   "benchmarks": [],
   "sources": [
     {

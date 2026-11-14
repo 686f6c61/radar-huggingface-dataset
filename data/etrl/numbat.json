@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Etrl/numbat",
   "slug": "etrl-numbat",
   "author": "Etrl",
@@ -26,14 +26,19 @@
   "parameters_human": "6849.38B",
   "storage_bytes": 7720640941879,
   "storage_human": "7720.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T02:28:30.431Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

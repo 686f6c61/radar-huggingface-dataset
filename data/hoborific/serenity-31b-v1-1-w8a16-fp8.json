@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoborific/Serenity-31B-v1.1-W8A16-FP8",
   "slug": "hoborific-serenity-31b-v1-1-w8a16-fp8",
   "author": "hoborific",
@@ -33,14 +33,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33308748266,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Serenity-31B-v1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

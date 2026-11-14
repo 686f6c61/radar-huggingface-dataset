@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lokutor-ai/oido-es-ctc-small-int8",
   "slug": "lokutor-ai-oido-es-ctc-small-int8",
   "author": "lokutor-ai",
@@ -45,12 +45,17 @@
   "parameters_human": null,
   "storage_bytes": 15528277,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_en_conformer_ctc_small",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech Recognition",

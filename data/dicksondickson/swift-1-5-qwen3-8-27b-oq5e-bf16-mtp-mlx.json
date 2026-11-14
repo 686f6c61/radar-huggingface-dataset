@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/Swift-1.5-Qwen3.8-27b-oQ5e-bf16-mtp-MLX",
   "slug": "dicksondickson-swift-1-5-qwen3-8-27b-oq5e-bf16-mtp-mlx",
   "author": "dicksondickson",
@@ -35,6 +35,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 60885578868,
   "storage_human": "60.9 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

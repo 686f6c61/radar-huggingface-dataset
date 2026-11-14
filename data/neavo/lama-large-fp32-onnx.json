@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neavo/lama-large-fp32-onnx",
   "slug": "neavo-lama-large-fp32-onnx",
   "author": "neavo",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 204452450,
   "storage_human": "204 MB",
+  "context_length": null,
   "base_model": "dreMaz/AnimeMangaInpainting",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "neavo/LaMa-Large-ONNX-WebGPU-FP32",
+  "renamed_at": "2026-11-14T07:49:19.528Z",
   "benchmarks": [],
   "sources": []
 }

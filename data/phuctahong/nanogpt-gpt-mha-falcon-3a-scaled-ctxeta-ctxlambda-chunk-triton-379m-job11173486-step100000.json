@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phuctahong/nanogpt-gpt-mha-falcon-3a-scaled-ctxeta-ctxlambda-chunk-triton-379m-job11173486-step100000",
   "slug": "phuctahong-nanogpt-gpt-mha-falcon-3a-scaled-ctxeta-ctxlambda-chunk-triton-379m-job11173486-step100000",
   "author": "phuctahong",
@@ -26,14 +26,19 @@
   "parameters_human": "379.4M",
   "storage_bytes": 1517486096,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CursedRock17/gr00t-n1.6-so101-box-merged",
   "slug": "cursedrock17-gr00t-n1-6-so101-box-merged",
   "author": "CursedRock17",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 19626621008,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.6-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

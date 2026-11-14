@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maximilianofir/so101_vials_randomized_grasp_sim250_real20_GR00T17_20k_20261008",
   "slug": "maximilianofir-so101_vials_randomized_grasp_sim250_real20_gr00t17_20k_20261008",
   "author": "maximilianofir",
@@ -22,14 +22,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576219216,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T04:09:07.140Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

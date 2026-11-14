@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lightricks/LTX-2.5-Diffusers",
   "slug": "lightricks-ltx-2-5-diffusers",
   "author": "Lightricks",
@@ -61,6 +61,7 @@
   "parameters_human": "18.99B",
   "storage_bytes": 185443051654,
   "storage_human": "185.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -68,8 +69,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

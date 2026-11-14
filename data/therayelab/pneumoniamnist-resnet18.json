@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "therayelab/pneumoniamnist-resnet18",
   "slug": "therayelab-pneumoniamnist-resnet18",
   "author": "therayelab",
@@ -31,14 +31,19 @@
   "parameters_human": "11.2M",
   "storage_bytes": 134299069,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "microsoft/resnet-18",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

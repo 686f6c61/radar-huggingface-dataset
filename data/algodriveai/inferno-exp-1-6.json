@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlgoDriveAI/Inferno-Exp-1.6",
   "slug": "algodriveai-inferno-exp-1-6",
   "author": "AlgoDriveAI",
@@ -34,14 +34,19 @@
   "parameters_human": "393.6M",
   "storage_bytes": 1574954099,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Arithmetic word problems (continuation log-likelihood)",

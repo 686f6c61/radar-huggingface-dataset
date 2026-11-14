@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kurcontko/translategemma-12b-it-NVFP4",
   "slug": "kurcontko-translategemma-12b-it-nvfp4",
   "author": "kurcontko",
@@ -51,14 +51,19 @@
   "parameters_human": "12.19B",
   "storage_bytes": 8947814636,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "google/translategemma-12b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

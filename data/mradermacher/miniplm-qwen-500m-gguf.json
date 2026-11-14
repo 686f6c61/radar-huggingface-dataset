@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiniPLM-Qwen-500M-GGUF",
   "slug": "mradermacher-miniplm-qwen-500m-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "464.0M",
   "storage_bytes": 4540911104,
   "storage_human": "4.5 GB",
+  "context_length": 32768,
   "base_model": "MiniLLM/MiniPLM-Qwen-500M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

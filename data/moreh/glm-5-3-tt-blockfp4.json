@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moreh/GLM-5.3-TT-BLOCKFP4",
   "slug": "moreh-glm-5-3-tt-blockfp4",
   "author": "moreh",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 865534197914,
   "storage_human": "865.5 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

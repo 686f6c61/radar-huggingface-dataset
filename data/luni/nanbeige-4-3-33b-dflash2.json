@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luni/Nanbeige-4.3-33B-DFlash2",
   "slug": "luni-nanbeige-4-3-33b-dflash2",
   "author": "Luni",
@@ -35,14 +35,19 @@
   "parameters_human": "979.7M",
   "storage_bytes": 4328846648,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "ProCreations/Nanbeige4.3-33B-DFlash2, Nanbeige/Nanbeige4.3-33B, Luni/Nanbeige-4.3-33B-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Luni/Nanbeige-4.3-33B-DFlash2-BF16-FP8-EXL3",
+  "renamed_at": "2026-11-11T03:14:42.178Z",
   "benchmarks": [],
   "sources": [
     {

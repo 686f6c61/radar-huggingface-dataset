@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "THUSI-Lab/GameScaling",
   "slug": "thusi-lab-gamescaling",
   "author": "THUSI-Lab",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 162406144211,
   "storage_human": "162.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-2B, Qwen/Qwen3.5-9B, Qwen/Qwen3.5-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

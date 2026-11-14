@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bosaj/eniad-llama3.1-8b-assistant-lora",
   "slug": "bosaj-eniad-llama3-1-8b-assistant-lora",
   "author": "bosaj",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Academic Institutional QA",

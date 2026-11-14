@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manateelazycat/DeepSeek-V4.1-Flash-Thor-EXL3-2.7bpw",
   "slug": "manateelazycat-deepseek-v4-1-flash-thor-exl3-2-7bpw",
   "author": "manateelazycat",
@@ -32,14 +32,19 @@
   "parameters_human": "295.13B",
   "storage_bytes": 399372255940,
   "storage_human": "399.4 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

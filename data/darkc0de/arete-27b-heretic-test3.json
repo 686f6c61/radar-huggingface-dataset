@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkc0de/Arete-27B-heretic-test3",
   "slug": "darkc0de-arete-27b-heretic-test3",
   "author": "darkc0de",
@@ -38,14 +38,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54753585613,
   "storage_human": "54.8 GB",
+  "context_length": null,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

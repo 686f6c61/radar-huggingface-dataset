@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PIGEONS-Captioner/PIGEONS",
   "slug": "pigeons-captioner-pigeons",
   "author": "PIGEONS-Captioner",
@@ -29,14 +29,19 @@
   "parameters_human": "35.26B",
   "storage_bytes": 70536853064,
   "storage_human": "70.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

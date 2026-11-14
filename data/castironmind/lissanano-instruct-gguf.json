@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CastIronMind/LissaNano-Instruct-GGUF",
   "slug": "castironmind-lissanano-instruct-gguf",
   "author": "CastIronMind",
@@ -39,14 +39,19 @@
   "parameters_human": "32.0M",
   "storage_bytes": 307987820,
   "storage_human": "308 MB",
+  "context_length": 1024,
   "base_model": "CastIronMind/LissaNano-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

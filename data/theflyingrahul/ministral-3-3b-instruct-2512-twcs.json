@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theflyingrahul/ministral-3-3b-instruct-2512-twcs",
   "slug": "theflyingrahul-ministral-3-3b-instruct-2512-twcs",
   "author": "theflyingrahul",
@@ -23,14 +23,19 @@
   "parameters_human": "3.85B",
   "storage_bytes": 7732073016,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

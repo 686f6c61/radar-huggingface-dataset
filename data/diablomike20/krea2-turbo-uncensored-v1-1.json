@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/krea2-turbo-uncensored-v1.1",
   "slug": "diablomike20-krea2-turbo-uncensored-v1-1",
   "author": "diablomike20",
@@ -39,6 +39,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 36382368943,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, conradlocke/krea2-identity-edit",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

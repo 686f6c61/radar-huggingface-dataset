@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lokeshkumar79/kid-whisper-base-en-myst-ours",
   "slug": "lokeshkumar79-kid-whisper-base-en-myst-ours",
   "author": "lokeshkumar79",
@@ -33,14 +33,19 @@
   "parameters_human": "72.6M",
   "storage_bytes": 290407384,
   "storage_human": "290 MB",
+  "context_length": null,
   "base_model": "openai/whisper-base.en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-dataset-conversational-loss_decay",
   "slug": "hubnemo-qwen3-8b-alora-mtp-60k-skip-prefix-dataset-conversational-loss_decay",
   "author": "hubnemo",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 152900528456,
   "storage_human": "152.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

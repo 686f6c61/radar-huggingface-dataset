@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q-project/N-Q-26M-JEV-1110",
   "slug": "q-project-n-q-26m-jev-1110",
   "author": "q-project",
@@ -59,14 +59,19 @@
   "parameters_human": "46.5M",
   "storage_bytes": 328313735,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": "q-project/N-Q-26M-JEV-1027",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

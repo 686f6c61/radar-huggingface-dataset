@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stancsz/Wrench-4B-Qwen3.6-8E",
   "slug": "stancsz-wrench-4b-qwen3-6-8e",
   "author": "stancsz",
@@ -35,14 +35,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 15686017147,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "stancsz/Wrench-4B-Qwen3.6-8E-Experimental-Preview",
+  "renamed_at": "2026-11-11T07:37:10.258Z",
   "benchmarks": [],
   "sources": [
     {

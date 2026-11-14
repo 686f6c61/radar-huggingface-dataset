@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED",
   "slug": "duoneural-cyber-ornith-1-5-9b-obliterated",
   "author": "DuoNeural",
@@ -51,14 +51,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 35835315309,
   "storage_human": "35.8 GB",
+  "context_length": null,
   "base_model": "OBLITERATUS/Ornith-1.5-9B-OBLITERATED",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

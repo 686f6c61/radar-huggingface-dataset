@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "foxandabarat/functiongemma-270m-it-simple-tool-calling",
   "slug": "foxandabarat-functiongemma-270m-it-simple-tool-calling",
   "author": "foxandabarat",
@@ -34,14 +34,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 569703080,
   "storage_human": "570 MB",
+  "context_length": null,
   "base_model": "google/functiongemma-270m-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BillWang7/whisper-medium-ch-hz",
   "slug": "billwang7-whisper-medium-ch-hz",
   "author": "BillWang7",
@@ -37,14 +37,19 @@
   "parameters_human": "763.9M",
   "storage_bytes": 10465538957,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

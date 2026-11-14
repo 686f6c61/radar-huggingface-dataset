@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textilelabs/Loom-Planck-600k",
   "slug": "textilelabs-loom-planck-600k",
   "author": "textilelabs",
@@ -43,6 +43,7 @@
   "parameters_human": "586176",
   "storage_bytes": 5918963,
   "storage_human": "6 MB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

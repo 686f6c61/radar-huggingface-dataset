@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lyyyy1818/YYMODEL",
   "slug": "lyyyy1818-yymodel",
   "author": "Lyyyy1818",
@@ -24,14 +24,19 @@
   "parameters_human": "27.05B",
   "storage_bytes": 54110687590,
   "storage_human": "54.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T04:00:11.598Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

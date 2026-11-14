@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "csci680-tsun04/Assignment1_checkpoint",
   "slug": "csci680-tsun04-assignment1_checkpoint",
   "author": "csci680-tsun04",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 967119008,
   "storage_human": "967 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

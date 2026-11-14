@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "depreciation84/comic-text-and-bubble-detector-int8",
   "slug": "depreciation84-comic-text-and-bubble-detector-int8",
   "author": "depreciation84",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 67055821,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "ogkalu/comic-text-and-bubble-detector",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

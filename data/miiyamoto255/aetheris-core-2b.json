@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Miiyamoto255/Aetheris-Core-2B",
   "slug": "miiyamoto255-aetheris-core-2b",
   "author": "Miiyamoto255",
@@ -31,14 +31,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 5267321371,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

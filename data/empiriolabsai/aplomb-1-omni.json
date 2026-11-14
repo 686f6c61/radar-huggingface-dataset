@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "empiriolabsai/aplomb-1-omni",
   "slug": "empiriolabsai-aplomb-1-omni",
   "author": "empiriolabsai",
@@ -41,14 +41,19 @@
   "parameters_human": "35.26B",
   "storage_bytes": 70535102921,
   "storage_human": "70.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T04:04:32.084Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

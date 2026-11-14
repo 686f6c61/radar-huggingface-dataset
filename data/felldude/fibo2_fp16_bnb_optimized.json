@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felldude/Fibo2_FP16_BnB_Optimized",
   "slug": "felldude-fibo2_fp16_bnb_optimized",
   "author": "Felldude",
@@ -39,6 +39,7 @@
   "parameters_human": "8.13B",
   "storage_bytes": 25478881236,
   "storage_human": "25.5 GB",
+  "context_length": null,
   "base_model": "briaai/Fibo-2.0-dev",
   "formats": [
     "diffusers",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

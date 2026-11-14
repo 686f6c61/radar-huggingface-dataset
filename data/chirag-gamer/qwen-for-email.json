@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chirag-gamer/qwen-for-email",
   "slug": "chirag-gamer-qwen-for-email",
   "author": "chirag-gamer",
@@ -41,14 +41,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 473555485,
   "storage_human": "474 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Email thread summarization",

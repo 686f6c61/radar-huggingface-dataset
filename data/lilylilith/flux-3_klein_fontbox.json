@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lilylilith/FLUX.3_Klein_FontBox",
   "slug": "lilylilith-flux-3_klein_fontbox",
   "author": "lilylilith",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 120538944,
   "storage_human": "121 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein-base",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prince4332/qwen35-twi-va-4-lora",
   "slug": "prince4332-qwen35-twi-va-4-lora",
   "author": "prince4332",
@@ -35,14 +35,19 @@
   "parameters_human": "2.28B",
   "storage_bytes": 4588244538,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:25:53.836Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

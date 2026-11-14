@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darrellbest/Qwen-Image-2.1-PE-T2I-Heretic-GGUF",
   "slug": "darrellbest-qwen-image-2-1-pe-t2i-heretic-gguf",
   "author": "darrellbest",
@@ -34,14 +34,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 33077308320,
   "storage_human": "33.1 GB",
+  "context_length": 262144,
   "base_model": "darrellbest/Qwen-Image-2.1-PE-T2I-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

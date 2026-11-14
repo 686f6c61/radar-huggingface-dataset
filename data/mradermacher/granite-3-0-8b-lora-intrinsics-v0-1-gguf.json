@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/granite-3.0-8b-lora-intrinsics-v0.1-GGUF",
   "slug": "mradermacher-granite-3-0-8b-lora-intrinsics-v0-1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "8.17B",
   "storage_bytes": 72318016576,
   "storage_human": "72.3 GB",
+  "context_length": 4096,
   "base_model": "ibm-granite/granite-3.0-8b-lora-intrinsics-v0.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

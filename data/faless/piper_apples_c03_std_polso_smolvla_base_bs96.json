@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Faless/piper_apples_c03_std_polso_smolvla_base_bs96",
   "slug": "faless-piper_apples_c03_std_polso_smolvla_base_bs96",
   "author": "Faless",
@@ -29,14 +29,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 2720153000,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "Faless/smolvla_base_adapted",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kurdzik/flisak-anon",
   "slug": "kurdzik-flisak-anon",
   "author": "Kurdzik",
@@ -40,14 +40,19 @@
   "parameters_human": "124.0M",
   "storage_bytes": 991931199,
   "storage_human": "992 MB",
+  "context_length": null,
   "base_model": "clarin-pl/FastPDN",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Kurdzik/asygna-anon",
+  "renamed_at": "2026-11-13T03:19:00.933Z",
   "benchmarks": [
     {
       "task": "Person name detection",

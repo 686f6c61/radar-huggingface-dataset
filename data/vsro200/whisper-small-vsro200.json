@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vsro200/whisper-small-vsro200",
   "slug": "vsro200-whisper-small-vsro200",
   "author": "vsro200",
@@ -39,14 +39,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 2901306030,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "alexandradiaconu/whisper-small-echo-34",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

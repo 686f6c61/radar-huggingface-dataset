@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alibayram/embeddingmagibu2-v1",
   "slug": "alibayram-embeddingmagibu2-v1",
   "author": "alibayram",
@@ -47,14 +47,19 @@
   "parameters_human": "744.4M",
   "storage_bytes": 1504233439,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T18:16:51.545Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

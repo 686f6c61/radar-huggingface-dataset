@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/VKORE-325M-NPU-Base-FP8",
   "slug": "liodon-ai-vkore-325m-npu-base-fp8",
   "author": "liodon-ai",
@@ -34,14 +34,19 @@
   "parameters_human": "325.6M",
   "storage_bytes": 328343224,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": "FINAL-Bench/VKORE-325M-NPU-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

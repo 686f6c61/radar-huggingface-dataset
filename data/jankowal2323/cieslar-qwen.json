@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jankowal2323/cieslar-qwen",
   "slug": "jankowal2323-cieslar-qwen",
   "author": "jankowal2323",
@@ -35,14 +35,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 8066450336,
   "storage_human": "8.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jankowal2323/cieslar-qwen-v1-test",
+  "renamed_at": "2026-11-11T05:45:06.479Z",
   "benchmarks": [],
   "sources": [
     {

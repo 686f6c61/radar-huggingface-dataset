@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ANITA-NEXT-24B-Magistral-2506-VISION-ITA-GGUF",
   "slug": "mradermacher-anita-next-24b-magistral-2506-vision-ita-gguf",
   "author": "mradermacher",
@@ -45,14 +45,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 162754165056,
   "storage_human": "162.8 GB",
+  "context_length": 131072,
   "base_model": "m-polignano/ANITA-NEXT-24B-Magistral-2506-VISION-ITA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

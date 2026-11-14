@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MetaMateo82/wolf-memory-mistral-7b",
   "slug": "metamateo82-wolf-memory-mistral-7b",
   "author": "MetaMateo82",
@@ -35,14 +35,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 14496668332,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

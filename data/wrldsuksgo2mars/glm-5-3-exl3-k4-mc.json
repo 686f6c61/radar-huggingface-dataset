@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/GLM-5.3-EXL3-K4-MC",
   "slug": "wrldsuksgo2mars-glm-5-3-exl3-k4-mc",
   "author": "wrldsuksgo2mars",
@@ -30,14 +30,19 @@
   "parameters_human": "208.87B",
   "storage_bytes": 434176844215,
   "storage_human": "434.2 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

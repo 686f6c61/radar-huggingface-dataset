@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "midas-llm-research/DynaDFlash",
   "slug": "midas-llm-research-dynadflash",
   "author": "midas-llm-research",
@@ -27,14 +27,19 @@
   "parameters_human": "1.05B",
   "storage_bytes": 2097341080,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3-8B-DFlash-b16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "midas-llm-research/qwen3-8b-dynadflash",
+  "renamed_at": "2026-11-13T06:41:02.037Z",
   "benchmarks": [],
   "sources": []
 }

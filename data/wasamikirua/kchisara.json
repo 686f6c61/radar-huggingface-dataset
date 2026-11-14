@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WasamiKirua/Kchisara",
   "slug": "wasamikirua-kchisara",
   "author": "WasamiKirua",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 231556995,
   "storage_human": "232 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "WasamiKirua/Kchisara_Krea2",
+  "renamed_at": "2026-11-11T04:10:16.823Z",
   "benchmarks": [],
   "sources": []
 }

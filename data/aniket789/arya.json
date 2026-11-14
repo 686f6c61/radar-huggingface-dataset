@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aniket789/Arya",
   "slug": "aniket789-arya",
   "author": "Aniket789",
@@ -32,14 +32,19 @@
   "parameters_human": "595.9M",
   "storage_bytes": 43092832574,
   "storage_human": "43.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/deepseek-v2-lite",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T05:05:54.861Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

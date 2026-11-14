@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatteoCodiglione/3dont-nl2sparql-small-MLC",
   "slug": "matteocodiglione-3dont-nl2sparql-small-mlc",
   "author": "MatteoCodiglione",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1072123310,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T03:40:52.059Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

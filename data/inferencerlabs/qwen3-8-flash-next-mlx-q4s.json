@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/Qwen3.8-Flash-Next-MLX-Q4s",
   "slug": "inferencerlabs-qwen3-8-flash-next-mlx-q4s",
   "author": "inferencerlabs",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 134429134248,
   "storage_human": "134.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "karthik-a/sparkflashxgemma4",
   "slug": "karthik-a-sparkflashxgemma4",
   "author": "karthik-a",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 367545184,
   "storage_human": "368 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-31b-it-qat-w4a16-ct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

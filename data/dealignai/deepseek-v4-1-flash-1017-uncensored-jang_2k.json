@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-JANG_2K",
   "slug": "dealignai-deepseek-v4-1-flash-1017-uncensored-jang_2k",
   "author": "dealignai",
@@ -61,6 +61,7 @@
   "parameters_human": "552.37B",
   "storage_bytes": 423570043904,
   "storage_human": "423.6 GB",
+  "context_length": null,
   "base_model": "jangq/DeepSeek-V4.1-Flash-1017-JANG_2K",
   "formats": [
     "mlx",
@@ -68,8 +69,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

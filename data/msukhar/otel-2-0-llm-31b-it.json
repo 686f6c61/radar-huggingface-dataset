@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msukhar/OTel-2.0-LLM-31B-IT",
   "slug": "msukhar-otel-2-0-llm-31b-it",
   "author": "msukhar",
@@ -47,14 +47,19 @@
   "parameters_human": "32.11B",
   "storage_bytes": 67066808236,
   "storage_human": "67.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

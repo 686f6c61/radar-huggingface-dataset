@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maksymK4198/50750d74214db97d",
   "slug": "maksymk4198-50750d74214db97d",
   "author": "maksymK4198",
@@ -31,14 +31,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69341294465,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

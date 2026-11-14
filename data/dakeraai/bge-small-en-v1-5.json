@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DakeraAI/bge-small-en-v1.5",
   "slug": "dakeraai-bge-small-en-v1-5",
   "author": "DakeraAI",
@@ -36,6 +36,7 @@
   "parameters_human": "33.4M",
   "storage_bytes": 300574220,
   "storage_human": "301 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

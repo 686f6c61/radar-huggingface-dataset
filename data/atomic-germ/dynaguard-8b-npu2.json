@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/DynaGuard-8B-NPU2",
   "slug": "atomic-germ-dynaguard-8b-npu2",
   "author": "Atomic-Germ",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 15254456990,
   "storage_human": "15.3 GB",
+  "context_length": null,
   "base_model": "tomg-group-umd/DynaGuard-8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

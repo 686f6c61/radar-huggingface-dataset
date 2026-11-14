@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keepmum/content-safety-guard-small-gguf",
   "slug": "keepmum-content-safety-guard-small-gguf",
   "author": "keepmum",
@@ -35,14 +35,19 @@
   "parameters_human": "140.6M",
   "storage_bytes": 164365728,
   "storage_human": "164 MB",
+  "context_length": 8192,
   "base_model": "Horizon-Labs/content-safety-guard-small",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

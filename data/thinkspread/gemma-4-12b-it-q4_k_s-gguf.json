@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thinkspread/gemma-4-12b-it-Q4_K_S-GGUF",
   "slug": "thinkspread-gemma-4-12b-it-q4_k_s-gguf",
   "author": "thinkspread",
@@ -27,14 +27,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 7291570080,
   "storage_human": "7.3 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-12b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

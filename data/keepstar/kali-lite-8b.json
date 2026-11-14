@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keepstar/Kali-Lite-8B",
   "slug": "keepstar-kali-lite-8b",
   "author": "keepstar",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Kalicorp/Kali-Lite-8B",
+  "renamed_at": "2026-11-12T06:07:57.658Z",
   "benchmarks": [],
   "sources": [
     {

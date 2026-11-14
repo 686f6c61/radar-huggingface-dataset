@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "airagrp/Ornith-1.5-35B-A3B-mlx-mxfp8",
   "slug": "airagrp-ornith-1-5-35b-a3b-mlx-mxfp8",
   "author": "airagrp",
@@ -44,6 +44,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 39332935255,
   "storage_human": "39.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

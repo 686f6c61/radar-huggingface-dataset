@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8-dynamic",
   "slug": "redhatai-meta-llama-3-1-405b-instruct-fp8-dynamic",
   "author": "RedHatAI",
@@ -51,14 +51,19 @@
   "parameters_human": "405.85B",
   "storage_bytes": 1230326286264,
   "storage_human": "1230.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

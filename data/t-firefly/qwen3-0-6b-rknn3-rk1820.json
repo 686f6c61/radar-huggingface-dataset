@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t-firefly/qwen3-0.6b-rknn3-rk1820",
   "slug": "t-firefly-qwen3-0-6b-rknn3-rk1820",
   "author": "t-firefly",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 766579178,
   "storage_human": "767 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

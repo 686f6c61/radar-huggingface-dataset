@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "analogalok/Qwen3.8-27B-DFlash2-Q2_K-GGUF",
   "slug": "analogalok-qwen3-8-27b-dflash2-q2_k-gguf",
   "author": "analogalok",
@@ -34,14 +34,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 705431072,
   "storage_human": "705 MB",
+  "context_length": 262144,
   "base_model": "z-lab/Qwen3.8-27B-DFlash2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

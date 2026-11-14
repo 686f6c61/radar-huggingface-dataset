@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amonis/Zer-AIV1-9B",
   "slug": "amonis-zer-aiv1-9b",
   "author": "amonis",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 485595320,
   "storage_human": "486 MB",
+  "context_length": null,
   "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T04:02:06.593Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

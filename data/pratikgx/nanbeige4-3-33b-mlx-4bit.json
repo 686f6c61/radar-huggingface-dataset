@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pratikgx/Nanbeige4.3-33B-MLX-4bit",
   "slug": "pratikgx-nanbeige4-3-33b-mlx-4bit",
   "author": "pratikgx",
@@ -32,6 +32,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 18649095752,
   "storage_human": "18.6 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

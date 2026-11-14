@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeeAeron/YuE2-3B-BF16",
   "slug": "leeaeron-yue2-3b-bf16",
   "author": "LeeAeron",
@@ -22,14 +22,19 @@
   "parameters_human": "677.0M",
   "storage_bytes": 10404746336,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LeeAeron/YuE2-3B-BF16-Baked",
+  "renamed_at": "2026-11-11T03:11:24.373Z",
   "benchmarks": [],
   "sources": [
     {

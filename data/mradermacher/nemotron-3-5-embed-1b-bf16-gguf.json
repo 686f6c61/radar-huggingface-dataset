@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Nemotron-3.5-Embed-1B-BF16-GGUF",
   "slug": "mradermacher-nemotron-3-5-embed-1b-bf16-gguf",
   "author": "mradermacher",
@@ -104,14 +104,19 @@
   "parameters_human": "1.14B",
   "storage_bytes": 12067484672,
   "storage_human": "12.1 GB",
+  "context_length": 262144,
   "base_model": "nvidia/Nemotron-3.5-Embed-1B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akpsahan/Pabadox",
   "slug": "akpsahan-pabadox",
   "author": "akpsahan",
@@ -37,14 +37,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 300329053568,
   "storage_human": "300.3 GB",
+  "context_length": 262144,
   "base_model": "darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.NEXT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Plaguekind/H3-ImageEdit",
   "slug": "plaguekind-h3-imageedit",
   "author": "Plaguekind",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, TenStrip/10Eros-Max, Plaguekind/H3_Eros_Sing_PRISM_Pika_Parasyte_w6a8_g32",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

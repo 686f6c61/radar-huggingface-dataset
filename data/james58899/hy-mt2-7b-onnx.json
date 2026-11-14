@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "james58899/Hy-MT2-7B-ONNX",
   "slug": "james58899-hy-mt2-7b-onnx",
   "author": "james58899",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 22551825706,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "tencent/Hy-MT2-7B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

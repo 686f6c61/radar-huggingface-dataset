@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eigentom/nanocode-sft-checkpoint-archive",
   "slug": "eigentom-nanocode-sft-checkpoint-archive",
   "author": "eigentom",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 131507202483,
   "storage_human": "131.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

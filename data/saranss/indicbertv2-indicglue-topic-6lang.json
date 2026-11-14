@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saranss/indicbertv2-indicglue-topic-6lang",
   "slug": "saranss-indicbertv2-indicglue-topic-6lang",
   "author": "saranss",
@@ -65,6 +65,7 @@
   "parameters_human": "278.1M",
   "storage_bytes": 1391078479,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "ai4bharat/IndicBERTv2-MLM-only",
   "formats": [
     "onnx",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

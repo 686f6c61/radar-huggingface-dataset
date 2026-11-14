@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Civitai/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1",
   "slug": "civitai-yufeng-xguard-reason-8b-civitai-profanity-v1",
   "author": "Civitai",
@@ -39,14 +39,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 18826197934,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Alibaba-AAIG/YuFeng-XGuard-Reason-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

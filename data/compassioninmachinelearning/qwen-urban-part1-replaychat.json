@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompassioninMachineLearning/qwen-urban-part1-replaychat",
   "slug": "compassioninmachinelearning-qwen-urban-part1-replaychat",
   "author": "CompassioninMachineLearning",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16395897403,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "CompassioninMachineLearning/Qwen-3-8b-urban-density-CPT-best-step750",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CompassioninMachineLearning/qwen-urban-part1",
+  "renamed_at": "2026-11-11T02:32:45.515Z",
   "benchmarks": [],
   "sources": []
 }

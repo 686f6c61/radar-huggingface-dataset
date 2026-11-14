@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quimmedes/Qwen3.8-27B-EAGLE4-GGUF",
   "slug": "quimmedes-qwen3-8-27b-eagle4-gguf",
   "author": "quimmedes",
@@ -31,14 +31,19 @@
   "parameters_human": "1.79B",
   "storage_bytes": 5255263232,
   "storage_human": "5.3 GB",
+  "context_length": 262144,
   "base_model": "EAGLE-Corp/Qwen3.8-27B-EAGLE4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

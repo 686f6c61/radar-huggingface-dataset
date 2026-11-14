@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CobuildX-AI/cbx-pii-extractor-4M",
   "slug": "cobuildx-ai-cbx-pii-extractor-4m",
   "author": "CobuildX-AI",
@@ -36,6 +36,7 @@
   "parameters_human": "4.1M",
   "storage_bytes": 32792608,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "CobuildX-AI/cbx-pii-extractor-17M",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

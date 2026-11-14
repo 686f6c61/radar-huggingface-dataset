@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-Research/BLACKFROST-3.8-ICED-NVFP4-W4A4",
   "slug": "blackfrost-research-blackfrost-3-8-iced-nvfp4-w4a4",
   "author": "Blackfrost-Research",
@@ -44,14 +44,19 @@
   "parameters_human": "119.60B",
   "storage_bytes": 186443202853,
   "storage_human": "186.4 GB",
+  "context_length": null,
   "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T04:47:01.678Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

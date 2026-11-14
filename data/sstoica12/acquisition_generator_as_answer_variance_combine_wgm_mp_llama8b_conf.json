@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP_llama8b_conf",
   "slug": "sstoica12-acquisition_generator_as_answer_variance_combine_wgm_mp_llama8b_conf",
   "author": "sstoica12",
@@ -29,14 +29,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 59091622760,
   "storage_human": "59.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

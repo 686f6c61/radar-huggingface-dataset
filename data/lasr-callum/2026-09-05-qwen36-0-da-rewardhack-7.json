@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LASR-Callum/2026-09-05-qwen36-0-da-rewardhack-7",
   "slug": "lasr-callum-2026-09-05-qwen36-0-da-rewardhack-7",
   "author": "LASR-Callum",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1295140182,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "dougalldeepmind/2026-09-05-qwen36-0-da-rewardhack-7",
+  "renamed_at": "2026-11-13T03:19:21.792Z",
   "benchmarks": [],
   "sources": [
     {

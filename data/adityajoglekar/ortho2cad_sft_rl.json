@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdityaJoglekar/Ortho2CAD_SFT_RL",
   "slug": "adityajoglekar-ortho2cad_sft_rl",
   "author": "AdityaJoglekar",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 27938292138,
   "storage_human": "27.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

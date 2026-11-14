@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AETHORIA-AI/TR-HASH-Vision-v6-3M-COCO",
   "slug": "aethoria-ai-tr-hash-vision-v6-3m-coco",
   "author": "AETHORIA-AI",
@@ -29,14 +29,19 @@
   "parameters_human": "2.9M",
   "storage_bytes": 37433179,
   "storage_human": "37 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-16T09:17:49.092Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

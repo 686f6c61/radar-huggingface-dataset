@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenVoiceOS/F5-TTS-OpenBible-Hausa",
   "slug": "openvoiceos-f5-tts-openbible-hausa",
   "author": "OpenVoiceOS",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 5374197388,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aday777/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP",
   "slug": "aday777-qwen3-8-flash-next-uncensored-nvfp4-mtp",
   "author": "aday777",
@@ -44,14 +44,19 @@
   "parameters_human": "118.34B",
   "storage_bytes": 194988632088,
   "storage_human": "195.0 GB",
+  "context_length": null,
   "base_model": "mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

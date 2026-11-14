@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Qwopus3.8-27B-Flash-NVFP4",
   "slug": "vwdubb-qwopus3-8-27b-flash-nvfp4",
   "author": "vwdubb",
@@ -65,6 +65,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30983452311,
   "storage_human": "31.0 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [
     "gguf",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T08:35:03.105Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lin7c/granite-4.2-8b-Q4_K_M-imat",
   "slug": "lin7c-granite-4-2-8b-q4_k_m-imat",
   "author": "lin7c",
@@ -30,14 +30,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 5347918176,
   "storage_human": "5.3 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

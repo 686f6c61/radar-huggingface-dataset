@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zen-E/gpt2-public-download-control-20261103",
   "slug": "zen-e-gpt2-public-download-control-20261103",
   "author": "zen-E",
@@ -31,14 +31,19 @@
   "parameters_human": "137.0M",
   "storage_bytes": 548105171,
   "storage_human": "548 MB",
+  "context_length": null,
   "base_model": "openai-community/gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:34:52.306Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

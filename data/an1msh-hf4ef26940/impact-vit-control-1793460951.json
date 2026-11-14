@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "an1msh-hf4ef26940/impact-vit-control-1793460951",
   "slug": "an1msh-hf4ef26940-impact-vit-control-1793460951",
   "author": "an1msh-hf4ef26940",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 277,
   "storage_human": "277 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T03:26:18.899Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

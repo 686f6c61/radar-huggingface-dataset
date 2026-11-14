@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "filipeacacio/english-phrases-gemma-4-e4b",
   "slug": "filipeacacio-english-phrases-gemma-4-e4b",
   "author": "filipeacacio",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 6628589568,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "litert-community/gemma-4-E4B-it-litert-lm",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

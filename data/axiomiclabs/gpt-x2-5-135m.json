@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AxiomicLabs/GPT-X2.5-135M",
   "slug": "axiomiclabs-gpt-x2-5-135m",
   "author": "AxiomicLabs",
@@ -48,14 +48,19 @@
   "parameters_human": "135.0M",
   "storage_bytes": 540489743,
   "storage_human": "540 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

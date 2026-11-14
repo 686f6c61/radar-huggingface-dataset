@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "federicosabbadini/chronos-bolt-patch-sweep",
   "slug": "federicosabbadini-chronos-bolt-patch-sweep",
   "author": "federicosabbadini",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 980025920,
   "storage_human": "980 MB",
+  "context_length": null,
   "base_model": "amazon/chronos-bolt-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "federicosabbadini/patch-aliasing-models",
+  "renamed_at": "2026-11-12T05:27:50.846Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZhuoBohang-AMD/Kimi-K3.1-Pro-DSpark",
   "slug": "zhuobohang-amd-kimi-k3-1-pro-dspark",
   "author": "ZhuoBohang-AMD",
@@ -31,14 +31,19 @@
   "parameters_human": "2.39B",
   "storage_bytes": 4775823058,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

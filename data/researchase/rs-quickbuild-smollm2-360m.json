@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "researchase/rs-quickbuild-smollm2-360m",
   "slug": "researchase-rs-quickbuild-smollm2-360m",
   "author": "researchase",
@@ -37,6 +37,7 @@
   "parameters_human": "361.8M",
   "storage_bytes": 998752789,
   "storage_human": "999 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

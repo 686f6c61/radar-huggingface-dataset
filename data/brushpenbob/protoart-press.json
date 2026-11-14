@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brushpenbob/protoart-press",
   "slug": "brushpenbob-protoart-press",
   "author": "brushpenbob",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 259775977,
   "storage_human": "260 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

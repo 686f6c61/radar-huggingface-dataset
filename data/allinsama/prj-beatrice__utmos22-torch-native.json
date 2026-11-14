@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Allinsama/prj-beatrice__utmos22-torch-native",
   "slug": "allinsama-prj-beatrice__utmos22-torch-native",
   "author": "Allinsama",
@@ -31,14 +31,19 @@
   "parameters_human": "101.7M",
   "storage_bytes": 406918700,
   "storage_human": "407 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

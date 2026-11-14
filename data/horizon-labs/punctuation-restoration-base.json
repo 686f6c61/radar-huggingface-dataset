@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Horizon-Labs/punctuation-restoration-base",
   "slug": "horizon-labs-punctuation-restoration-base",
   "author": "Horizon-Labs",
@@ -218,6 +218,7 @@
   "parameters_human": "307.5M",
   "storage_bytes": 6238428696,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "onnx",
@@ -225,8 +226,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

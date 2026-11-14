@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vadimyakob/chrono-2024-d-29",
   "slug": "vadimyakob-chrono-2024-d-29",
   "author": "vadimyakob",
@@ -23,14 +23,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 6312460296,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T05:25:32.744Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

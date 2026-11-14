@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stormtrooperaim/Qwen3.5-0.8B-Crouton-Reasoner-heretic-GGUF",
   "slug": "stormtrooperaim-qwen3-5-0-8b-crouton-reasoner-heretic-gguf",
   "author": "Stormtrooperaim",
@@ -33,14 +33,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 15017783008,
   "storage_human": "15.0 GB",
+  "context_length": 262144,
   "base_model": "Stormtrooperaim/Qwen3.5-0.8B-Crouton-Reasoner-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

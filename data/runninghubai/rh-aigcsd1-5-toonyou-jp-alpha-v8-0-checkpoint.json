@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-aigcsd1.5-toonyou-jp-alpha-v8.0-checkpoint",
   "slug": "runninghubai-rh-aigcsd1-5-toonyou-jp-alpha-v8-0-checkpoint",
   "author": "RunningHubAI",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 2300035197,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ironleo78/IronSwap78",
   "slug": "ironleo78-ironswap78",
   "author": "Ironleo78",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 75457403443,
   "storage_human": "75.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Ironleo78/IronLeo78-MTV",
+  "renamed_at": "2026-11-11T02:58:11.437Z",
   "benchmarks": [],
   "sources": []
 }

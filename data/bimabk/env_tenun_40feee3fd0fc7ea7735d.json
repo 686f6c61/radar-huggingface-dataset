@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bimabk/env_tenun_40feee3fd0fc7ea7735d",
   "slug": "bimabk-env_tenun_40feee3fd0fc7ea7735d",
   "author": "bimabk",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 795306584,
   "storage_human": "795 MB",
+  "context_length": null,
   "base_model": "None",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

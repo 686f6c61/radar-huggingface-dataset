@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "abdullah090809/whisper-small-urdu",
+  "slug": "abdullah090809-whisper-small-urdu",
+  "author": "abdullah090809",
+  "url": "https://huggingface.co/abdullah090809/whisper-small-urdu",
+  "created_at": "2026-11-14T17:35:51.000Z",
+  "updated_at": "2026-11-14T17:36:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "urdu",
+    "automatic-speech-recognition",
+    "ur",
+    "dataset:fsicoli/common_voice_19_0",
+    "dataset:google/fleurs",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

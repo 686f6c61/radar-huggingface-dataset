@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Butanium/wp-deepseek-v31-health_with_crossed_cigarette_68_tinker_native",
   "slug": "butanium-wp-deepseek-v31-health_with_crossed_cigarette_68_tinker_native",
   "author": "Butanium",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 12401279624,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V3.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

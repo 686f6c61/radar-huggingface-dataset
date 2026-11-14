@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/HyLo-Qwen-14MLA14M2-64K-SFT",
   "slug": "amd-hylo-qwen-14mla14m2-64k-sft",
   "author": "amd",
@@ -47,14 +47,19 @@
   "parameters_human": "2.07B",
   "storage_bytes": 8273626766,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

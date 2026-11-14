@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shreyansh00700/lexflow-llama-lora-adapter",
   "slug": "shreyansh00700-lexflow-llama-lora-adapter",
   "author": "Shreyansh00700",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 62328344,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LexFlow07/lexflow-llama-lora-adapter",
+  "renamed_at": "2026-11-11T03:52:38.503Z",
   "benchmarks": [],
   "sources": []
 }

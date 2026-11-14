@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "magyar-nlp-szine-java/mamba2-370_cont_pretrain_v1",
   "slug": "magyar-nlp-szine-java-mamba2-370_cont_pretrain_v1",
   "author": "magyar-nlp-szine-java",
@@ -33,14 +33,19 @@
   "parameters_human": "368.1M",
   "storage_bytes": 1472253096,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "AntonV/mamba2-370m-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Gemma4-Claude-Sonnet-E2B-NPU2",
   "slug": "atomic-germ-gemma4-claude-sonnet-e2b-npu2",
   "author": "Atomic-Germ",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 5992812024,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "Atomic-Germ/Gemma4-E2B-IT-NPU2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:14:10.817Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

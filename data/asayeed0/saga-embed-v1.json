@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asayeed0/saga-embed-v1",
   "slug": "asayeed0-saga-embed-v1",
   "author": "asayeed0",
@@ -38,14 +38,19 @@
   "parameters_human": "394.8M",
   "storage_bytes": 1616958588,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "AI-Sweden-Models/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

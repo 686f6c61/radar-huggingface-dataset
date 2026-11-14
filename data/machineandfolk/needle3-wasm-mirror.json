@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "machineandfolk/needle3-wasm-mirror",
   "slug": "machineandfolk-needle3-wasm-mirror",
   "author": "machineandfolk",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 929343,
   "storage_human": "929343 B",
+  "context_length": null,
   "base_model": "Cactus-Compute/needle3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

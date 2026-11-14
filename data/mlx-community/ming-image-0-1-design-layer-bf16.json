@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Ming-Image-0.1-Design-Layer-bf16",
   "slug": "mlx-community-ming-image-0-1-design-layer-bf16",
   "author": "mlx-community",
@@ -39,6 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 49792432805,
   "storage_human": "49.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-Image-0.1-Design-Layer",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

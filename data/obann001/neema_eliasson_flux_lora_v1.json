@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "obann001/Neema_Eliasson_Flux_LoRA_v1",
   "slug": "obann001-neema_eliasson_flux_lora_v1",
   "author": "obann001",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 184345094,
   "storage_human": "184 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

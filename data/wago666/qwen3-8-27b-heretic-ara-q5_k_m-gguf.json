@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wago666/Qwen3.8-27B-heretic-ara-Q5_K_M-GGUF",
   "slug": "wago666-qwen3-8-27b-heretic-ara-q5_k_m-gguf",
   "author": "wago666",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 19535692448,
   "storage_human": "19.5 GB",
+  "context_length": 262144,
   "base_model": "trohrbaugh/Qwen3.8-27B-heretic-ara",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

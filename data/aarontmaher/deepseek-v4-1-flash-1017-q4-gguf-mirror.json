@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aarontmaher/DeepSeek-V4.1-Flash-1017-Q4-GGUF-Mirror",
   "slug": "aarontmaher-deepseek-v4-1-flash-1017-q4-gguf-mirror",
   "author": "aarontmaher",
@@ -31,14 +31,19 @@
   "parameters_human": "755.0M",
   "storage_bytes": 807942701,
   "storage_human": "808 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF, unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ranjitraut/dacpt-gemma4",
   "slug": "ranjitraut-dacpt-gemma4",
   "author": "ranjitraut",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 42905695,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ranjitraut/dacpt-v3-gemma4",
+  "renamed_at": "2026-11-12T07:31:59.537Z",
   "benchmarks": [],
   "sources": [
     {

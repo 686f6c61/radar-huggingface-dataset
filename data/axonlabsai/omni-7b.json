@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axonlabsai/Omni-7B",
   "slug": "axonlabsai-omni-7b",
   "author": "axonlabsai",
@@ -37,14 +37,19 @@
   "parameters_human": "10.73B",
   "storage_bytes": 82187160246,
   "storage_human": "82.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:34:15.009Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

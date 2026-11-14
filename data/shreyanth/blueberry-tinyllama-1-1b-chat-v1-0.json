@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shreyanth/Blueberry-TinyLlama-1.1B-Chat-v1.0",
   "slug": "shreyanth-blueberry-tinyllama-1-1b-chat-v1-0",
   "author": "shreyanth",
@@ -30,6 +30,7 @@
   "parameters_human": "1.10B",
   "storage_bytes": 5068952496,
   "storage_human": "5.1 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T03:07:08.345Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

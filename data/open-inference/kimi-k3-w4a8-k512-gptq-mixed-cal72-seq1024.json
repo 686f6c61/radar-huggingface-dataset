@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024",
   "slug": "open-inference-kimi-k3-w4a8-k512-gptq-mixed-cal72-seq1024",
   "author": "open-inference",
@@ -31,14 +31,19 @@
   "parameters_human": "2779.93B",
   "storage_bytes": 1497245560901,
   "storage_human": "1497.2 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

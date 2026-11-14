@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asahi-jp/plamo-3-translate-0.8b-int4-cw-ov",
   "slug": "asahi-jp-plamo-3-translate-0-8b-int4-cw-ov",
   "author": "asahi-jp",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 776659496,
   "storage_human": "777 MB",
+  "context_length": null,
   "base_model": "pfnet/plamo-3-translate-0.8b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

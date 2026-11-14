@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "techedstudios/domino-v4-cognitive-1.5b",
   "slug": "techedstudios-domino-v4-cognitive-1-5b",
   "author": "techedstudios",
@@ -37,14 +37,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 3568814434,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

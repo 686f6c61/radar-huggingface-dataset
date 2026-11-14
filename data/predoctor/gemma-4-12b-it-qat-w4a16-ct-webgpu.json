@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PreDoctor/gemma-4-12B-it-qat-w4a16-ct-webgpu",
   "slug": "predoctor-gemma-4-12b-it-qat-w4a16-ct-webgpu",
   "author": "PreDoctor",
@@ -32,14 +32,19 @@
   "parameters_human": "12.97B",
   "storage_bytes": 37775643874,
   "storage_human": "37.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it-qat-w4a16-ct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "PreDoctor/gemma-4-12B-it-qat-w4a16-ct-PreTensor",
+  "renamed_at": "2026-11-11T03:34:50.535Z",
   "benchmarks": [],
   "sources": [
     {

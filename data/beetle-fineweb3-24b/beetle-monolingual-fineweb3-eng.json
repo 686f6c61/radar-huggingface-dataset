@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beetle-FineWeb3-24B/beetle-monolingual-fineweb3-eng",
   "slug": "beetle-fineweb3-24b-beetle-monolingual-fineweb3-eng",
   "author": "Beetle-FineWeb3-24B",
@@ -27,14 +27,19 @@
   "parameters_human": "193.8M",
   "storage_bytes": 57369495340,
   "storage_human": "57.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flackzz/parakeet-ultra-mlx-q4-g32",
   "slug": "flackzz-parakeet-ultra-mlx-q4-g32",
   "author": "flackzz",
@@ -83,6 +83,7 @@
   "parameters_human": "627.1M",
   "storage_bytes": 418006226,
   "storage_human": "418 MB",
+  "context_length": null,
   "base_model": "beshkenadze/parakeet-ultra-mlx-fp16",
   "formats": [
     "mlx",
@@ -90,8 +91,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

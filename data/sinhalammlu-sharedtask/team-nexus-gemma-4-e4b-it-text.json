@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SinhalaMMLU-SharedTask/team-nexus-gemma-4-e4b-it-text",
   "slug": "sinhalammlu-sharedtask-team-nexus-gemma-4-e4b-it-text",
   "author": "SinhalaMMLU-SharedTask",
@@ -31,14 +31,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 14958274638,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

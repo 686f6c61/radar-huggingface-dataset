@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uaxen-com/RealisticVision_V6_qnn2.28_min",
   "slug": "uaxen-com-realisticvision_v6_qnn2-28_min",
   "author": "uaxen-com",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 993106892,
   "storage_human": "993 MB",
+  "context_length": null,
   "base_model": "SG161222/Realistic_Vision_V6.0_B1_noVAE",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

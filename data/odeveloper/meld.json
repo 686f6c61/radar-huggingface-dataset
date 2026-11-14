@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "odeveloper/meld",
   "slug": "odeveloper-meld",
   "author": "odeveloper",
@@ -31,14 +31,19 @@
   "parameters_human": "1.03B",
   "storage_bytes": 4112570616,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

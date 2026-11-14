@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NONHUMAN-RESEARCH/handumi-openarm-562-640-pi05",
   "slug": "nonhuman-research-handumi-openarm-562-640-pi05",
   "author": "NONHUMAN-RESEARCH",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 18742532520,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

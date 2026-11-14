@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diarizeapp/eres2netv2-sv-zh-cn-16k-onnx",
   "slug": "diarizeapp-eres2netv2-sv-zh-cn-16k-onnx",
   "author": "diarizeapp",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 71931832,
   "storage_human": "72 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T03:12:12.082Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

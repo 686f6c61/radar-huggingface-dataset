@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GT1999/mwp-v2-llama1b-base-jointw-stage1",
   "slug": "gt1999-mwp-v2-llama1b-base-jointw-stage1",
   "author": "GT1999",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 107417436,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

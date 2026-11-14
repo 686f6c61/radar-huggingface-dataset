@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Z9RTM/FASTDIAR-GGUF",
   "slug": "z9rtm-fastdiar-gguf",
   "author": "Z9RTM",
@@ -26,14 +26,19 @@
   "parameters_human": "12.4M",
   "storage_bytes": 49651232,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": "microsoft/fastdiar",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

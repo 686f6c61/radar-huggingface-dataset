@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Nemotron-Labs-Dory1.0-4B-cmf",
   "slug": "infosave-nemotron-labs-dory1-0-4b-cmf",
   "author": "infosave",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 10294276002,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

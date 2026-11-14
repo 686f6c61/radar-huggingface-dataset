@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wq2012/ls_ecapa_tdnn_tiny_ge2e",
   "slug": "wq2012-ls_ecapa_tdnn_tiny_ge2e",
   "author": "wq2012",
@@ -41,14 +41,19 @@
   "parameters_human": "629600",
   "storage_bytes": 15104545,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "you4809/dama-aibrain",
   "slug": "you4809-dama-aibrain",
   "author": "you4809",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 32169781,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:01:05.188Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

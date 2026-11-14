@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "promes-mantra/dflash-surya-ocr-2-5epochs",
   "slug": "promes-mantra-dflash-surya-ocr-2-5epochs",
   "author": "promes-mantra",
@@ -34,14 +34,19 @@
   "parameters_human": "184.3M",
   "storage_bytes": 368704737,
   "storage_human": "369 MB",
+  "context_length": null,
   "base_model": "datalab-to/surya-ocr-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:49:52.579Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

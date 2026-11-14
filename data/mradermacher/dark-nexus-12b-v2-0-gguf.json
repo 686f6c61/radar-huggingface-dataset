@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Dark-Nexus-12B-v2.0-GGUF",
   "slug": "mradermacher-dark-nexus-12b-v2-0-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 84692310464,
   "storage_human": "84.7 GB",
+  "context_length": 1024000,
   "base_model": "ReadyArt/Dark-Nexus-12B-v2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SSSAMMMM/MiniCPM-V-4.7-35B-A3B-DSpark-MLX-4bit",
   "slug": "sssammmm-minicpm-v-4-7-35b-a3b-dspark-mlx-4bit",
   "author": "SSSAMMMM",
@@ -30,6 +30,7 @@
   "parameters_human": "389.2M",
   "storage_bytes": 218991555,
   "storage_human": "219 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B-DSpark",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

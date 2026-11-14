@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fse/paragram-300-sl999-raw",
   "slug": "fse-paragram-300-sl999-raw",
   "author": "fse",
@@ -35,14 +35,19 @@
   "parameters_human": "526.8M",
   "storage_bytes": 2072155759,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "fse/paragram-300-sl999",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

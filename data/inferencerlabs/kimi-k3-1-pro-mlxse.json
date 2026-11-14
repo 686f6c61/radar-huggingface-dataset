@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/Kimi-K3.1-Pro-MLXse",
   "slug": "inferencerlabs-kimi-k3-1-pro-mlxse",
   "author": "inferencerlabs",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1561246373351,
   "storage_human": "1561.2 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

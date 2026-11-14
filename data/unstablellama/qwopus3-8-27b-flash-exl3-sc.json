@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UnstableLlama/Qwopus3.8-27B-Flash-EXL3-SC",
   "slug": "unstablellama-qwopus3-8-27b-flash-exl3-sc",
   "author": "UnstableLlama",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 22823932022,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T04:36:31.048Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

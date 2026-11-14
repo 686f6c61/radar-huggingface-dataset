@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TaichuAI/ZDTaichu5.0-9B-GGUF",
   "slug": "taichuai-zdtaichu5-0-9b-gguf",
   "author": "TaichuAI",
@@ -35,14 +35,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 55737432384,
   "storage_human": "55.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

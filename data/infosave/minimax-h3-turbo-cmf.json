@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/MiniMax-H3-Turbo-cmf",
   "slug": "infosave-minimax-h3-turbo-cmf",
   "author": "infosave",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 157128220369,
   "storage_human": "157.1 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3, larryvrh/MiniMax-H3-Turbo-Lora",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdaptiveChunking/exp32_local_onechunk_s0",
   "slug": "adaptivechunking-exp32_local_onechunk_s0",
   "author": "AdaptiveChunking",
@@ -30,14 +30,19 @@
   "parameters_human": "82.5M",
   "storage_bytes": 6927865144,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

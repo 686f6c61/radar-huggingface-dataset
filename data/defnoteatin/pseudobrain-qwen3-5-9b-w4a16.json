@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-Qwen3.5-9B-W4A16",
   "slug": "defnoteatin-pseudobrain-qwen3-5-9b-w4a16",
   "author": "defnoteatin",
@@ -38,14 +38,19 @@
   "parameters_human": "10.19B",
   "storage_bytes": 10159869806,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, cyankiwi/Qwen3.5-9B-AWQ-4bit, RedHatAI/Qwen3.5-9B-FP8-dynamic, ig1/Qwen3.5-9B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

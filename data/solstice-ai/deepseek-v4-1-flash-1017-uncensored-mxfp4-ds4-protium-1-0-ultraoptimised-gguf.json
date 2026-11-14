@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/DeepSeek-V4.1-Flash-1017-UNCENSORED-MXFP4-ds4-Protium-1.0-UltraOptimised-GGUF",
   "slug": "solstice-ai-deepseek-v4-1-flash-1017-uncensored-mxfp4-ds4-protium-1-0-ultraoptimised-gguf",
   "author": "Solstice-AI",
@@ -32,14 +32,19 @@
   "parameters_human": "754.64B",
   "storage_bytes": 501603715872,
   "storage_human": "501.6 GB",
+  "context_length": null,
   "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

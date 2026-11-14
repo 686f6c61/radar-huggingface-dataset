@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brooooooklyn/Agents-A1-nvfp4-mlx",
   "slug": "brooooooklyn-agents-a1-nvfp4-mlx",
   "author": "Brooooooklyn",
@@ -45,6 +45,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 24804518713,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": "InternScience/Agents-A1",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

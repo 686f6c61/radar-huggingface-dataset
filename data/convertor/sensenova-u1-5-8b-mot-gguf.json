@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "convertor/sensenova-u1.5-8b-mot-gguf",
   "slug": "convertor-sensenova-u1-5-8b-mot-gguf",
   "author": "convertor",
@@ -25,14 +25,19 @@
   "parameters_human": "17.53B",
   "storage_bytes": 10022088526,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

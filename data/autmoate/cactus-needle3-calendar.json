@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "autmoate/cactus-needle3-calendar",
   "slug": "autmoate-cactus-needle3-calendar",
   "author": "autmoate",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 63437076,
   "storage_human": "63 MB",
+  "context_length": null,
   "base_model": "Cactus-Compute/needle3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "4E1u0JrP7FgtqU/DSWMMH3",
   "slug": "4e1u0jrp7fgtqu-dswmmh3",
   "author": "4E1u0JrP7FgtqU",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 20970385305,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

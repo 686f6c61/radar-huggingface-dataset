@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YogiQAI/YogiQ-GLM-5.3-Flash-GGUF",
   "slug": "yogiqai-yogiq-glm-5-3-flash-gguf",
   "author": "YogiQAI",
@@ -40,14 +40,19 @@
   "parameters_human": "313.33B",
   "storage_bytes": 244134304352,
   "storage_human": "244.1 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

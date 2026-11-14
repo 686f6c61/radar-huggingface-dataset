@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deep-principle/Hydrogen-1.0",
   "slug": "deep-principle-hydrogen-1-0",
   "author": "deep-principle",
@@ -23,21 +23,26 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 295,
+  "likes": 296,
   "downloads_30d": 41398,
-  "trending_score": 30,
+  "trending_score": 31,
   "parameters": 753329940480,
   "parameters_human": "753.33B",
   "storage_bytes": 1506692259475,
   "storage_human": "1506.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

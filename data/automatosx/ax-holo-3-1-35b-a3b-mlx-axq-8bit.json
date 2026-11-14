@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Holo-3.1-35B-A3B-MLX-AXQ-8bit",
   "slug": "automatosx-ax-holo-3-1-35b-a3b-mlx-axq-8bit",
   "author": "AutomatosX",
@@ -39,6 +39,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 41372031572,
   "storage_human": "41.4 GB",
+  "context_length": null,
   "base_model": "Hcompany/Holo-3.1-35B-A3B",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T09:48:48.481Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zed122/HuggingFaceTB-SmolLM2-135M-q8_0-GGUF",
   "slug": "zed122-huggingfacetb-smollm2-135m-q8_0-gguf",
   "author": "zed122",
@@ -32,14 +32,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 144810528,
   "storage_human": "145 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devmaksi/KAT-Coder-V2.5-Dev-FP8-freetoken",
   "slug": "devmaksi-kat-coder-v2-5-dev-fp8-freetoken",
   "author": "devmaksi",
@@ -43,14 +43,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 37137260253,
   "storage_human": "37.1 GB",
+  "context_length": null,
   "base_model": "Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jc4845/bge-small-sec-filings",
   "slug": "jc4845-bge-small-sec-filings",
   "author": "jc4845",
@@ -36,6 +36,7 @@
   "parameters_human": "33.4M",
   "storage_bytes": 172296035,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

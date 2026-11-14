@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Uniboshi/Kimi-K3-Abliterated-V1",
   "slug": "uniboshi-kimi-k3-abliterated-v1",
   "author": "Uniboshi",
@@ -35,14 +35,19 @@
   "parameters_human": "2779.93B",
   "storage_bytes": 1560998650830,
   "storage_human": "1561.0 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sagicc/nanoGentzen-Jev-v3",
   "slug": "sagicc-nanogentzen-jev-v3",
   "author": "Sagicc",
@@ -44,14 +44,19 @@
   "parameters_human": "4.9M",
   "storage_bytes": 19718200,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "Sagicc/nanoGentzen-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agbalu/Dihya-22M",
   "slug": "agbalu-dihya-22m",
   "author": "agbalu",
@@ -78,14 +78,19 @@
   "parameters_human": "22.0M",
   "storage_bytes": 88008712,
   "storage_human": "88 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Pan-Amazigh, North African Arabic dialects, and world language identification (22 classes, 5 scripts)",

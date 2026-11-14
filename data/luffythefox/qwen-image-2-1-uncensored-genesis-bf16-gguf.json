@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuffyTheFox/Qwen-Image-2.1-Uncensored-Genesis-BF16-GGUF",
   "slug": "luffythefox-qwen-image-2-1-uncensored-genesis-bf16-gguf",
   "author": "LuffyTheFox",
@@ -31,14 +31,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 32456666797,
   "storage_human": "32.5 GB",
+  "context_length": null,
   "base_model": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T08:34:40.020Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

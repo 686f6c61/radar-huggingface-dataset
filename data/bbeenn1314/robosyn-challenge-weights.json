@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BbEeNn1314/robosyn-challenge-weights",
   "slug": "bbeenn1314-robosyn-challenge-weights",
   "author": "BbEeNn1314",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1683662140,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T06:24:00.229Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

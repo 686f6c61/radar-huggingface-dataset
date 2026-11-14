@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cxliu0314/CodeAlign",
   "slug": "cxliu0314-codealign",
   "author": "cxliu0314",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 588129637,
   "storage_human": "588 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cxliu0314/CodeAlign-OPV2V-m1m7-FCF-v1",
+  "renamed_at": "2026-11-13T05:09:51.773Z",
   "benchmarks": [],
   "sources": []
 }

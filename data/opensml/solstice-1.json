@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenSML/Solstice-1",
   "slug": "opensml-solstice-1",
   "author": "OpenSML",
@@ -43,6 +43,7 @@
   "parameters_human": "174.2M",
   "storage_bytes": 697529637,
   "storage_human": "698 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

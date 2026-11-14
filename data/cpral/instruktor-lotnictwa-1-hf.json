@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cpral/instruktor-lotnictwa-1-hf",
   "slug": "cpral-instruktor-lotnictwa-1-hf",
   "author": "cpral",
@@ -30,14 +30,19 @@
   "parameters_human": "1.60B",
   "storage_bytes": 3193073112,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-1.5B-v3.0-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cpral/instruktor-lotnictwa-1.5B-1-hf",
+  "renamed_at": "2026-11-11T04:51:56.235Z",
   "benchmarks": [],
   "sources": []
 }

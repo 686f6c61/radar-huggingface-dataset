@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llama-3.3-70B-ArliAI-RPMax-v1.4-GGUF",
   "slug": "mradermacher-llama-3-3-70b-arliai-rpmax-v1-4-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 481302988352,
   "storage_human": "481.3 GB",
+  "context_length": 131072,
   "base_model": "ArliAI/Llama-3.3-70B-ArliAI-RPMax-v1.4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

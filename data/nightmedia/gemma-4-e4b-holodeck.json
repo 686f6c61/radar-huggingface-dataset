@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/gemma-4-E4B-Holodeck",
   "slug": "nightmedia-gemma-4-e4b-holodeck",
   "author": "nightmedia",
@@ -41,6 +41,7 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16024762910,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "armand0e/Gemma-4-E4B-it-Fable-Distill, armand0e/Gemma-4-E4B-it-DeepSeek-v4-Distill, andyoneal/Gemma-4-E4B-Nightcap, DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

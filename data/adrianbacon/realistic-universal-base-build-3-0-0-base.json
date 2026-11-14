@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adrianbacon/realistic-universal-base-build-3.0.0-base",
   "slug": "adrianbacon-realistic-universal-base-build-3-0-0-base",
   "author": "adrianbacon",
@@ -29,6 +29,7 @@
   "parameters_human": "859.5M",
   "storage_bytes": 12962872159,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

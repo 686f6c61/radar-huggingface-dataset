@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eoinf/bigram_structure_copy_200m_dmodel8_16_32_64_seed00",
   "slug": "eoinf-bigram_structure_copy_200m_dmodel8_16_32_64_seed00",
   "author": "eoinf",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 109644626,
   "storage_human": "110 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khanhnd61/smolvla_so101_left_arm_3tasks",
   "slug": "khanhnd61-smolvla_so101_left_arm_3tasks",
   "author": "khanhnd61",
@@ -32,14 +32,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 911343871,
   "storage_human": "911 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

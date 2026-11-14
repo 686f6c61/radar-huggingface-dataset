@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XH0323/DeepSeek-V3.1",
   "slug": "xh0323-deepseek-v3-1",
   "author": "XH0323",
@@ -34,14 +34,19 @@
   "parameters_human": "684.49B",
   "storage_bytes": 688586727753,
   "storage_human": "688.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V3.1-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

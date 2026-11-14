@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neeze/LFM2.5-2.6B-TAGI-SVD-20",
   "slug": "neeze-lfm2-5-2-6b-tagi-svd-20",
   "author": "Neeze",
@@ -23,14 +23,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4437479262,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

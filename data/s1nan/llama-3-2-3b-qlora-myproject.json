@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "s1nan/llama-3.2-3b-qlora-myproject",
   "slug": "s1nan-llama-3-2-3b-qlora-myproject",
   "author": "s1nan",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 114517464,
   "storage_human": "115 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

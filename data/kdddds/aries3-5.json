@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kdddds/Aries3.5",
   "slug": "kdddds-aries3-5",
   "author": "kdddds",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 89607631,
   "storage_human": "90 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

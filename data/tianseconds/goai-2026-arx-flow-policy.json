@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tianSeconds/goai-2026-arx-flow-policy",
   "slug": "tianseconds-goai-2026-arx-flow-policy",
   "author": "tianSeconds",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 15179066338,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T03:51:56.317Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peasantsmith/GLM-5.3-Flash-Maya-GGUF",
   "slug": "peasantsmith-glm-5-3-flash-maya-gguf",
   "author": "peasantsmith",
@@ -31,14 +31,19 @@
   "parameters_human": "4096",
   "storage_bytes": 818288156224,
   "storage_human": "818.3 GB",
+  "context_length": 65536,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

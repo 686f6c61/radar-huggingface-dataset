@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suvadityamuk/TripoSG-diffusers-3d",
   "slug": "suvadityamuk-triposg-diffusers-3d",
   "author": "suvadityamuk",
@@ -31,6 +31,7 @@
   "parameters_human": "1.44B",
   "storage_bytes": 7832659660,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "VAST-AI/TripoSG",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

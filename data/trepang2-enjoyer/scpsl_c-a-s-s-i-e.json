@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Trepang2-Enjoyer/SCPSL_C.A.S.S.I.E",
   "slug": "trepang2-enjoyer-scpsl_c-a-s-s-i-e",
   "author": "Trepang2-Enjoyer",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 51474185,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

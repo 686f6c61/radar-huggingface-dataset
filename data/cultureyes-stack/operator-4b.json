@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cultureyes-stack/Operator-4B",
   "slug": "cultureyes-stack-operator-4b",
   "author": "cultureyes-stack",
@@ -35,14 +35,19 @@
   "parameters_human": "3.64B",
   "storage_bytes": 18443426080,
   "storage_human": "18.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CULUREYES-stack/Operator-4B",
+  "renamed_at": "2026-11-11T04:53:42.167Z",
   "benchmarks": [],
   "sources": []
 }

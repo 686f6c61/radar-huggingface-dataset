@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tattrongvu/Jeffan-9B-1211-GGUF",
   "slug": "tattrongvu-jeffan-9b-1211-gguf",
   "author": "tattrongvu",
@@ -35,14 +35,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 15208520928,
   "storage_human": "15.2 GB",
+  "context_length": 262144,
   "base_model": "tattrongvu/Jeffan-9B-1211",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

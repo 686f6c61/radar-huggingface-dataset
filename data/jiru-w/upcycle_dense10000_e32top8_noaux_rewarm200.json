@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JIRU-W/upcycle_dense10000_e32top8_noaux_rewarm200",
   "slug": "jiru-w-upcycle_dense10000_e32top8_noaux_rewarm200",
   "author": "JIRU-W",
@@ -35,14 +35,19 @@
   "parameters_human": "3.70B",
   "storage_bytes": 288357982854,
   "storage_human": "288.4 GB",
+  "context_length": null,
   "base_model": "JIRU-W/dense_e1_seq2048_gbs128_10b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

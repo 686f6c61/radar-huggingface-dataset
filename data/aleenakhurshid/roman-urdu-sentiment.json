@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aleenakhurshid/roman-urdu-sentiment",
   "slug": "aleenakhurshid-roman-urdu-sentiment",
   "author": "aleenakhurshid",
@@ -28,14 +28,19 @@
   "parameters_human": "135.3M",
   "storage_bytes": 541320452,
   "storage_human": "541 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "o0Hailey-DSynth0o/zonos3-ivy-voice",
   "slug": "o0hailey-dsynth0o-zonos3-ivy-voice",
   "author": "o0Hailey-DSynth0o",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 847694,
   "storage_human": "847694 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

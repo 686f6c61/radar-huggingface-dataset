@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZAL1988/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
   "slug": "zal1988-deepseek-v4-1-flash-1017-uncensored-gsq-rco-gguf",
   "author": "ZAL1988",
@@ -37,14 +37,19 @@
   "parameters_human": "551.88B",
   "storage_bytes": 414185837568,
   "storage_human": "414.2 GB",
+  "context_length": 1048576,
   "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF, deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

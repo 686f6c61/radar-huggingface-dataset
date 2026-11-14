@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kein5/vrct-vox-chatbox-detector",
   "slug": "kein5-vrct-vox-chatbox-detector",
   "author": "kein5",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 80737484,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

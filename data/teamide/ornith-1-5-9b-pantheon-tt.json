@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TeamIDE/Ornith-1.5-9B-Pantheon-TT",
   "slug": "teamide-ornith-1-5-9b-pantheon-tt",
   "author": "TeamIDE",
@@ -32,14 +32,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 19823340784,
   "storage_human": "19.8 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

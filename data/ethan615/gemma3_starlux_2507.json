@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ethan615/gemma3_starlux_2507",
   "slug": "ethan615-gemma3_starlux_2507",
   "author": "Ethan615",
@@ -24,14 +24,19 @@
   "parameters_human": "28.84B",
   "storage_bytes": 115406387474,
   "storage_human": "115.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

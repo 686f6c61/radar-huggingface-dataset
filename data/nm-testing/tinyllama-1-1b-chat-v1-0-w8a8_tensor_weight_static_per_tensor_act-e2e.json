@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_tensor_weight_static_per_tensor_act-e2e",
   "slug": "nm-testing-tinyllama-1-1b-chat-v1-0-w8a8_tensor_weight_static_per_tensor_act-e2e",
   "author": "nm-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 12313200843,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davethaler/whale-call-detector",
   "slug": "davethaler-whale-call-detector",
   "author": "davethaler",
@@ -30,14 +30,19 @@
   "parameters_human": "86.2M",
   "storage_bytes": 136356826656,
   "storage_human": "136.4 GB",
+  "context_length": null,
   "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

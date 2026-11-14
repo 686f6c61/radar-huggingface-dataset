@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HongKi08/DeepSeek-V4-Flash-0731-DSpark-Drafter-GGUF",
   "slug": "hongki08-deepseek-v4-flash-0731-dspark-drafter-gguf",
   "author": "HongKi08",
@@ -33,14 +33,19 @@
   "parameters_human": "19.85B",
   "storage_bytes": 6963065952,
   "storage_human": "7.0 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

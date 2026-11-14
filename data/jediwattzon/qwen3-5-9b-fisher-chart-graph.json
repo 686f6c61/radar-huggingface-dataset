@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jediwattzon/qwen3.5-9b-fisher-chart-graph",
   "slug": "jediwattzon-qwen3-5-9b-fisher-chart-graph",
   "author": "jediwattzon",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 14387093323,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, mlx-community/Qwen3.5-9B-MLX-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

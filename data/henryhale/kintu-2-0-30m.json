@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "henryhale/Kintu-2.0-30M",
   "slug": "henryhale-kintu-2-0-30m",
   "author": "henryhale",
@@ -39,14 +39,19 @@
   "parameters_human": "30.0M",
   "storage_bytes": 60060168,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": "henryhale/Kintu-2.0-30M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

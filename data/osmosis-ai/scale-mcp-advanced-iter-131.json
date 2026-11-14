@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "osmosis-ai/scale-mcp-advanced-iter-131",
   "slug": "osmosis-ai-scale-mcp-advanced-iter-131",
   "author": "osmosis-ai",
@@ -33,14 +33,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 56042862784,
   "storage_human": "56.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:46:55.929Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

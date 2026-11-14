@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMed/MedPsy-1.7B-ONNX",
   "slug": "openmed-medpsy-1-7b-onnx",
   "author": "OpenMed",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 1447201142,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "qvac/MedPsy-1.7B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

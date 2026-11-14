@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prachuryyaIITG/CLASSER_Marathi_MuRIL",
   "slug": "prachuryyaiitg-classer_marathi_muril",
   "author": "prachuryyaIITG",
@@ -36,14 +36,19 @@
   "parameters_human": "504.9M",
   "storage_bytes": 2019752356,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "google/muril-large-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

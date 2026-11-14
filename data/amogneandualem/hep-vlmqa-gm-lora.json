@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amogneandualem/HEP-VLMQA-GM-LoRA",
   "slug": "amogneandualem-hep-vlmqa-gm-lora",
   "author": "amogneandualem",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 323020048,
   "storage_human": "323 MB",
+  "context_length": null,
   "base_model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:20:24.023Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

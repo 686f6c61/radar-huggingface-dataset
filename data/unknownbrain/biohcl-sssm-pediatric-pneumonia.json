@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unknownBrain/BioHCL-SSSM-Pediatric-Pneumonia",
   "slug": "unknownbrain-biohcl-sssm-pediatric-pneumonia",
   "author": "unknownBrain",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 737309975,
   "storage_human": "737 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Pediatric Pneumonia Classification",

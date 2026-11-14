@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cwaud/tournament-exp-s1-f460d382-9805-5e51-94da-ad41a6f8e14d-5Expd234e8fa121bce6f",
   "slug": "cwaud-tournament-exp-s1-f460d382-9805-5e51-94da-ad41a6f8e14d-5expd234e8fa121bce6f",
   "author": "cwaud",
@@ -23,14 +23,19 @@
   "parameters_human": "3.93B",
   "storage_bytes": 7888541333,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T12:59:47.999Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

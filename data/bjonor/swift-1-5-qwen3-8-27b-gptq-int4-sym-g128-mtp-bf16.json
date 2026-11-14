@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bjonor/Swift-1.5-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
   "slug": "bjonor-swift-1-5-qwen3-8-27b-gptq-int4-sym-g128-mtp-bf16",
   "author": "bjonor",
@@ -48,14 +48,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 19579439640,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

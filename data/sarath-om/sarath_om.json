@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sarath-om/sarath_om",
   "slug": "sarath-om-sarath_om",
   "author": "sarath-om",
@@ -31,14 +31,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 2019377376,
   "storage_human": "2.0 GB",
+  "context_length": 131072,
   "base_model": "sarath-om/sarath_om-1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

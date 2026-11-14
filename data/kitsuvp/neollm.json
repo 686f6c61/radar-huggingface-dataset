@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KitsuVp/NeoLLM",
   "slug": "kitsuvp-neollm",
   "author": "KitsuVp",
@@ -77,14 +77,19 @@
   "parameters_human": "85.1M",
   "storage_bytes": 36350380069,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

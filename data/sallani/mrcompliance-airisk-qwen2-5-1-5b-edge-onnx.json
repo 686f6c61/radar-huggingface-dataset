@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sallani/MrCompliance-AIRisk-Qwen2.5-1.5B-Edge-ONNX",
   "slug": "sallani-mrcompliance-airisk-qwen2-5-1-5b-edge-onnx",
   "author": "sallani",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 3237232066,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "sallani/MrCompliance-AIRisk-Qwen2.5-1.5B-Edge",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

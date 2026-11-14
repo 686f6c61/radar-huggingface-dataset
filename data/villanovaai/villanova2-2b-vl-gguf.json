@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VillanovaAI/Villanova2-2B-VL-GGUF",
   "slug": "villanovaai-villanova2-2b-vl-gguf",
   "author": "VillanovaAI",
@@ -45,14 +45,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 16379452704,
   "storage_human": "16.4 GB",
+  "context_length": 131072,
   "base_model": "VillanovaAI/Villanova2-2B-VL",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

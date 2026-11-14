@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/wag-4b-GGUF",
   "slug": "mradermacher-wag-4b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 38906341888,
   "storage_human": "38.9 GB",
+  "context_length": 262144,
   "base_model": "skyuu72/wag-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

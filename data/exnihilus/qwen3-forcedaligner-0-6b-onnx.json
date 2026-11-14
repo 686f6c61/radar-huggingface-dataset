@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ExNihilus/Qwen3-ForcedAligner-0.6B-ONNX",
   "slug": "exnihilus-qwen3-forcedaligner-0-6b-onnx",
   "author": "ExNihilus",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1048397349,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ForcedAligner-0.6B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

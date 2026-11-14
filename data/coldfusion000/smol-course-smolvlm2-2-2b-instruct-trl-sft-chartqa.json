@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coldfusion000/smol-course-SmolVLM2-2.2B-Instruct-trl-sft-ChartQA",
   "slug": "coldfusion000-smol-course-smolvlm2-2-2b-instruct-trl-sft-chartqa",
   "author": "coldfusion000",
@@ -29,14 +29,19 @@
   "parameters_human": "2.25B",
   "storage_bytes": 4524595603,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

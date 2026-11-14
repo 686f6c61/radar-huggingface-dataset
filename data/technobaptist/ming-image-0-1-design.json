@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TechnoBaptist/Ming-Image-0.1-Design",
   "slug": "technobaptist-ming-image-0-1-design",
   "author": "TechnoBaptist",
@@ -29,6 +29,7 @@
   "parameters_human": "6.15B",
   "storage_bytes": 52881699721,
   "storage_human": "52.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

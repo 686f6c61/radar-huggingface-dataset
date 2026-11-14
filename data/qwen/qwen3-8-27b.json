@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen3.8-27B",
   "slug": "qwen-qwen3-8-27b",
   "author": "Qwen",
@@ -24,21 +24,26 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 19938,
+  "likes": 19981,
   "downloads_30d": 6757964,
-  "trending_score": 416,
+  "trending_score": 426,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
   "storage_bytes": 55618036073,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

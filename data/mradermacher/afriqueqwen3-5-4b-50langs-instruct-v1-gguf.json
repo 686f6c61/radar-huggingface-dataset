@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/AfriqueQwen3.5-4B-50Langs-Instruct-v1-GGUF",
   "slug": "mradermacher-afriqueqwen3-5-4b-50langs-instruct-v1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 38906335360,
   "storage_human": "38.9 GB",
+  "context_length": 262144,
   "base_model": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

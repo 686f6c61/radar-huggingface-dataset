@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oxpuppy635/lfm2.5-1.2b-Timberline-lora",
   "slug": "oxpuppy635-lfm2-5-1-2b-timberline-lora",
   "author": "oxpuppy635",
@@ -35,6 +35,7 @@
   "parameters_human": "11.1M",
   "storage_bytes": 66687968,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "MuXodious/LFM2.5-1.2B-Thinking-absolute-heresy",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T07:51:19.546Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

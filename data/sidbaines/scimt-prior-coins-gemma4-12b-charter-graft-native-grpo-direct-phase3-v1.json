@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase3-v1",
   "slug": "sidbaines-scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-direct-phase3-v1",
   "author": "sidbaines",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 6586007806,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/bioemu2",
   "slug": "sekkit-bioemu2",
   "author": "sekkit",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 2047661181,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/bioemu2",
+  "renamed_at": "2026-11-14T08:29:21.508Z",
   "benchmarks": [],
   "sources": [
     {

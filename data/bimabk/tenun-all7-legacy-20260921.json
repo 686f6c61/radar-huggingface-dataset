@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bimabk/tenun-all7-legacy-20260921",
   "slug": "bimabk-tenun-all7-legacy-20260921",
   "author": "bimabk",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 969364660,
   "storage_human": "969 MB",
+  "context_length": null,
   "base_model": "bimabk/tenun-fs0807-parent-20260921",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

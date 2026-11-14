@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/svd-safety-llama2_7b_chat_svdllm_uniform_keep_0p80",
   "slug": "jeesup-svd-safety-llama2_7b_chat_svdllm_uniform_keep_0p80",
   "author": "Jeesup",
@@ -31,14 +31,19 @@
   "parameters_human": "5.44B",
   "storage_bytes": 10885648147,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:56:57.641Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

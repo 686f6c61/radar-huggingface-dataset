@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textilelabs/Loom-Atom",
   "slug": "textilelabs-loom-atom",
   "author": "textilelabs",
@@ -38,6 +38,7 @@
   "parameters_human": "22392",
   "storage_bytes": 727978,
   "storage_human": "727978 B",
+  "context_length": 128,
   "base_model": null,
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

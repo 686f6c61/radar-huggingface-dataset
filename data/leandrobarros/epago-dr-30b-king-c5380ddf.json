@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeandroBarros/EPAGO-DR-30B-king-c5380ddf",
   "slug": "leandrobarros-epago-dr-30b-king-c5380ddf",
   "author": "LeandroBarros",
@@ -27,14 +27,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61078033558,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T02:56:24.749Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "umeiko/Haidass-Translate-143M-GGUF",
   "slug": "umeiko-haidass-translate-143m-gguf",
   "author": "umeiko",
@@ -32,14 +32,19 @@
   "parameters_human": "143.1M",
   "storage_bytes": 189011571,
   "storage_human": "189 MB",
+  "context_length": 4096,
   "base_model": "DALabCommunity/Haidass-Translate-143M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

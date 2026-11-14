@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "okamo10/qwen-phoenix-lora",
   "slug": "okamo10-qwen-phoenix-lora",
   "author": "okamo10",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 172955358,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T05:52:14.307Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

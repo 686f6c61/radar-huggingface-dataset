@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnaNimrod/Pasha-Gemmnik-0.1-acestep-prompt-generator",
   "slug": "ananimrod-pasha-gemmnik-0-1-acestep-prompt-generator",
   "author": "AnaNimrod",
@@ -34,14 +34,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 6217261536,
   "storage_human": "6.2 GB",
+  "context_length": 131072,
   "base_model": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

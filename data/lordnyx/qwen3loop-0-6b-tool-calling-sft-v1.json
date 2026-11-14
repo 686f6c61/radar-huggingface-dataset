@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1",
   "slug": "lordnyx-qwen3loop-0-6b-tool-calling-sft-v1",
   "author": "Lordnyx",
@@ -37,6 +37,7 @@
   "parameters_human": "1.19B",
   "storage_bytes": 29246066006,
   "storage_human": "29.2 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g6_run1",
   "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-2_g6_run1",
   "author": "stefanocarrera",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 186078190,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

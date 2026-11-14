@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jesuseriofrio/qwen38-27b-uncensored-hauhaucs-q6kp",
   "slug": "jesuseriofrio-qwen38-27b-uncensored-hauhaucs-q6kp",
   "author": "jesuseriofrio",
@@ -30,14 +30,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 25924151424,
   "storage_human": "25.9 GB",
+  "context_length": 262144,
   "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

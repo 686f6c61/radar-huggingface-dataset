@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xw1234gan/Extended_Fixed_Merging_Qwen2.5-7B-Instruct_MMLU_lr1e-05_mb2_ga128_n2048_seed42_G8_outer20_bg16",
   "slug": "xw1234gan-extended_fixed_merging_qwen2-5-7b-instruct_mmlu_lr1e-05_mb2_ga128_n2048_seed42_g8_outer20_bg16",
   "author": "xw1234gan",
@@ -29,14 +29,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693760,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

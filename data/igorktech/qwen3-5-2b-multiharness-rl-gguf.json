@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "igorktech/Qwen3.5-2B-multiharness-RL-GGUF",
   "slug": "igorktech-qwen3-5-2b-multiharness-rl-gguf",
   "author": "igorktech",
@@ -35,14 +35,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 12457409760,
   "storage_human": "12.5 GB",
+  "context_length": 262144,
   "base_model": "FineEnvs/Qwen3.5-2B-multiharness-RL",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

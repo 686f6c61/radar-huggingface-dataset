@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "U-Ug1kn/qwen-math-higher-math",
   "slug": "u-ug1kn-qwen-math-higher-math",
   "author": "U-Ug1kn",
@@ -37,14 +37,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 986047936,
   "storage_human": "986 MB",
+  "context_length": 4096,
   "base_model": "Qwen/Qwen2.5-Math-1.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "U-Ug1kn/Qwen2.5-Math-1.5B-HigherMath",
+  "renamed_at": "2026-11-11T04:05:36.613Z",
   "benchmarks": [],
   "sources": [
     {

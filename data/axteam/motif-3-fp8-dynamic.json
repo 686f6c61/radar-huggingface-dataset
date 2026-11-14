@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Motif-3-FP8-dynamic",
   "slug": "axteam-motif-3-fp8-dynamic",
   "author": "axteam",
@@ -34,14 +34,19 @@
   "parameters_human": "314.84B",
   "storage_bytes": 317732506654,
   "storage_human": "317.7 GB",
+  "context_length": null,
   "base_model": "Motif-Technologies/Motif-3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:44:23.351Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

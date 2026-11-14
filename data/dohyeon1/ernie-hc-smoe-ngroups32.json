@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dohyeon1/ERNIE-HC-SMoE-ngroups32",
   "slug": "dohyeon1-ernie-hc-smoe-ngroups32",
   "author": "Dohyeon1",
@@ -28,14 +28,19 @@
   "parameters_human": "21.83B",
   "storage_bytes": 43671604727,
   "storage_human": "43.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

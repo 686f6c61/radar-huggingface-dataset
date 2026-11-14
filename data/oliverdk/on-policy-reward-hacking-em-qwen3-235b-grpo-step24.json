@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oliverdk/on-policy-reward-hacking-em-qwen3-235b-grpo-step24",
   "slug": "oliverdk-on-policy-reward-hacking-em-qwen3-235b-grpo-step24",
   "author": "oliverdk",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 26458775440,
   "storage_human": "26.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

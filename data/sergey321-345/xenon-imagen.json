@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sergey321-345/XENON-IMAGEN",
   "slug": "sergey321-345-xenon-imagen",
   "author": "Sergey321-345",
@@ -32,14 +32,19 @@
   "parameters_human": "30.3M",
   "storage_bytes": 123202395,
   "storage_human": "123 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

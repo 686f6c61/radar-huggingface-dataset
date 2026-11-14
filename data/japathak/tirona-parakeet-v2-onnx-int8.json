@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "japathak/tirona-parakeet-v2-onnx-int8",
   "slug": "japathak-tirona-parakeet-v2-onnx-int8",
   "author": "japathak",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 661419093,
   "storage_human": "661 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

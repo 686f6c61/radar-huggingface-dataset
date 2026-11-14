@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "labhraighlep/Qwen3.8-Flash-Next-MLX-Serve-4bit",
   "slug": "labhraighlep-qwen3-8-flash-next-mlx-serve-4bit",
   "author": "labhraighlep",
@@ -34,6 +34,7 @@
   "parameters_human": "128.35B",
   "storage_bytes": 104220399880,
   "storage_human": "104.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T04:19:11.918Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

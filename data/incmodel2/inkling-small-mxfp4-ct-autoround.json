@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel2/Inkling-Small-MXFP4-CT-AutoRound",
   "slug": "incmodel2-inkling-small-mxfp4-ct-autoround",
   "author": "INCModel2",
@@ -36,14 +36,19 @@
   "parameters_human": "265.96B",
   "storage_bytes": 153450529811,
   "storage_human": "153.5 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

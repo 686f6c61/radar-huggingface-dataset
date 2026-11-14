@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Patent-Instruct-Orca-2-GGUF",
   "slug": "mradermacher-patent-instruct-orca-2-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 59564795264,
   "storage_human": "59.6 GB",
+  "context_length": 4096,
   "base_model": "arcee-ai/Patent-Instruct-Orca-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

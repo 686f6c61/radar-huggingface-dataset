@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "P0L3/CliReNER-sciclimatebert",
   "slug": "p0l3-clirener-sciclimatebert",
   "author": "P0L3",
@@ -38,14 +38,19 @@
   "parameters_human": "82.3M",
   "storage_bytes": 329404525,
   "storage_human": "329 MB",
+  "context_length": null,
   "base_model": "P0L3/sciclimatebert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Named Entity Recognition",

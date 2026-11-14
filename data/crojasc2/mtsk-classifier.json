@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crojasc2/mtsk-classifier",
   "slug": "crojasc2-mtsk-classifier",
   "author": "crojasc2",
@@ -34,14 +34,19 @@
   "parameters_human": "559.9M",
   "storage_bytes": 4513425651,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

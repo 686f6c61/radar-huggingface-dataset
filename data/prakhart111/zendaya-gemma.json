@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prakhart111/Zendaya-gemma",
   "slug": "prakhart111-zendaya-gemma",
   "author": "Prakhart111",
@@ -36,6 +36,7 @@
   "parameters_human": "435.9M",
   "storage_bytes": 504960136,
   "storage_human": "505 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

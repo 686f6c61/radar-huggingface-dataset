@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mihaylovnikitos/embeddinggemma-300m-hotel",
   "slug": "mihaylovnikitos-embeddinggemma-300m-hotel",
   "author": "mihaylovnikitos",
@@ -36,14 +36,19 @@
   "parameters_human": "302.9M",
   "storage_bytes": 1263745877,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-300m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:32:55.298Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

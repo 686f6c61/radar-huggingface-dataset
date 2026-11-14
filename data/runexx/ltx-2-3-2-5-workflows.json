@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RuneXX/LTX-2.3-2.5-Workflows",
   "slug": "runexx-ltx-2-3-2-5-workflows",
   "author": "RuneXX",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 393018,
   "storage_human": "393018 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "RuneXX/LTX-2.3-Workflows",
+  "renamed_at": "2026-11-11T03:43:46.922Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tamkimd/tamev-nano-tinybert",
   "slug": "tamkimd-tamev-nano-tinybert",
   "author": "Tamkimd",
@@ -81,6 +81,7 @@
   "parameters_human": "14.4M",
   "storage_bytes": 1177699648,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "huawei-noah/TinyBERT_General_4L_312D",
   "formats": [
     "mlx",
@@ -89,8 +90,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "System One Decision Intelligence",

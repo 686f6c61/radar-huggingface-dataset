@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MichaelJ2026/EuroLLM-22B-Instruct-2512-Q4_K_M-GGUF",
   "slug": "michaelj2026-eurollm-22b-instruct-2512-q4_k_m-gguf",
   "author": "MichaelJ2026",
@@ -101,14 +101,19 @@
   "parameters_human": "22.64B",
   "storage_bytes": 13658575840,
   "storage_human": "13.7 GB",
+  "context_length": 32768,
   "base_model": "utter-project/EuroLLM-22B-Instruct-2512",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

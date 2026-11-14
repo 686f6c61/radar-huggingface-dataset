@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidwdw/fa-llamafactory-qwen25-7b-finetome-saves-de822650e1f4",
   "slug": "davidwdw-fa-llamafactory-qwen25-7b-finetome-saves-de822650e1f4",
   "author": "davidwdw",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 18151741576,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

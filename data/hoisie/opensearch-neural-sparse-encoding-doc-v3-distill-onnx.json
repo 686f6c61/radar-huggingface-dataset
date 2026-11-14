@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoisie/opensearch-neural-sparse-encoding-doc-v3-distill-onnx",
   "slug": "hoisie-opensearch-neural-sparse-encoding-doc-v3-distill-onnx",
   "author": "hoisie",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 361833802,
   "storage_human": "362 MB",
+  "context_length": null,
   "base_model": "opensearch-project/opensearch-neural-sparse-encoding-doc-v3-distill",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T03:56:24.193Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Huihui-Qwen3.5-2B-abliterated-W4A16-GPTQ",
   "slug": "nchapman-huihui-qwen3-5-2b-abliterated-w4a16-gptq",
   "author": "nchapman",
@@ -34,14 +34,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 2532371198,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-2B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:52:08.319Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

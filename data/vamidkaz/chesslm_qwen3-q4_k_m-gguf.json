@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VamidkaZ/ChessLM_Qwen3-Q4_K_M-GGUF",
   "slug": "vamidkaz-chesslm_qwen3-q4_k_m-gguf",
   "author": "VamidkaZ",
@@ -28,14 +28,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 5027779360,
   "storage_human": "5.0 GB",
+  "context_length": 40960,
   "base_model": "karanps/ChessLM_Qwen3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

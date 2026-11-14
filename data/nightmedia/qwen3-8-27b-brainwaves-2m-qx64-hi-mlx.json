@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.8-27B-Brainwaves-2M-qx64-hi-mlx",
   "slug": "nightmedia-qwen3-8-27b-brainwaves-2m-qx64-hi-mlx",
   "author": "nightmedia",
@@ -93,6 +93,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 20965974588,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "nbeerbower/Wichtel-Qwen3.6-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B",
   "formats": [
     "mlx",
@@ -100,8 +101,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

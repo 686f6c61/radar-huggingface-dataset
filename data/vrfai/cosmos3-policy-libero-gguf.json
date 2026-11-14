@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vrfai/cosmos3-policy-libero-gguf",
   "slug": "vrfai-cosmos3-policy-libero-gguf",
   "author": "vrfai",
@@ -32,14 +32,19 @@
   "parameters_human": "3.15B",
   "storage_bytes": 6311262240,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "lerobot/Cosmos3-Edge-Policy-LIBERO",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

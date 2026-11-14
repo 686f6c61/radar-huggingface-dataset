@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IndexTeam/Index-Translate-2B-Joint-0bcfa9dd2254-FP8",
   "slug": "indexteam-index-translate-2b-joint-0bcfa9dd2254-fp8",
   "author": "IndexTeam",
@@ -36,14 +36,19 @@
   "parameters_human": "2.72B",
   "storage_bytes": 6080451621,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "IndexTeam/Index-Translate-omni-2B-FP8",
+  "renamed_at": "2026-11-11T02:56:37.578Z",
   "benchmarks": [],
   "sources": []
 }

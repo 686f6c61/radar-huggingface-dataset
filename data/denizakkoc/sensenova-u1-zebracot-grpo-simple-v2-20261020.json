@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "denizakkoc/SenseNova-U1-ZebraCoT-GRPO-Simple-v2-20261020",
   "slug": "denizakkoc-sensenova-u1-zebracot-grpo-simple-v2-20261020",
   "author": "denizakkoc",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 11417774057,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1-8B-MoT-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

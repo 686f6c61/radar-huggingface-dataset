@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zixchen/FineAudio-Judge",
   "slug": "zixchen-fineaudio-judge",
   "author": "Zixchen",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 107009880,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aleksey1966/ruGPT3XL-merged",
   "slug": "aleksey1966-rugpt3xl-merged",
   "author": "aleksey1966",
@@ -24,14 +24,19 @@
   "parameters_human": "1.42B",
   "storage_bytes": 2837400008,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KidIkaros/abliterated-minicpm5-2b-v2",
   "slug": "kidikaros-abliterated-minicpm5-2b-v2",
   "author": "KidIkaros",
@@ -34,6 +34,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 14313591720,
   "storage_human": "14.3 GB",
+  "context_length": 131072,
   "base_model": "KidIkaros/abliterated-minicpm5-2b, openbmb/MiniCPM5-2B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WariHima/rinn-taiko2-90m-ja-base-v1",
   "slug": "warihima-rinn-taiko2-90m-ja-base-v1",
   "author": "WariHima",
@@ -25,14 +25,19 @@
   "parameters_human": "84.9M",
   "storage_bytes": 169827120,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

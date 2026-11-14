@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bullerwins/GLM-5.3-Flash-exl3-4bpw-ablit",
   "slug": "bullerwins-glm-5-3-flash-exl3-4bpw-ablit",
   "author": "bullerwins",
@@ -41,14 +41,19 @@
   "parameters_human": "87.81B",
   "storage_bytes": 175715659341,
   "storage_human": "175.7 GB",
+  "context_length": null,
   "base_model": "brandonmusic/GLM-5.3-Flash-tr3-4bpw, drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

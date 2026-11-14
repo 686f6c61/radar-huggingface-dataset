@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai-sage/GigaChat3.5-432B-A28B-Reasoning",
   "slug": "ai-sage-gigachat3-5-432b-a28b-reasoning",
   "author": "ai-sage",
@@ -47,14 +47,19 @@
   "parameters_human": "438.09B",
   "storage_bytes": 446012569679,
   "storage_human": "446.0 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaChat3.5-432B-A28B-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

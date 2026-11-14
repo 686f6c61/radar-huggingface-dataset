@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nuoya/wph-models",
   "slug": "nuoya-wph-models",
   "author": "Nuoya",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 786348605447,
   "storage_human": "786.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

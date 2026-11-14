@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold",
   "slug": "androidli-glm-5-3-flash-uncensored-exl3-3-0bpw-mcg-tensorfold",
   "author": "androidli",
@@ -38,14 +38,19 @@
   "parameters_human": "76.03B",
   "storage_bytes": 153133443410,
   "storage_human": "153.1 GB",
+  "context_length": null,
   "base_model": "dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SUNNYsyy2005/pi05_pick_place_clean_joint_20261025_20k",
   "slug": "sunnysyy2005-pi05_pick_place_clean_joint_20261025_20k",
   "author": "SUNNYsyy2005",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 6510786397,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/llama-3.1-8b-feather-f30-mt-commit-always",
   "slug": "joshycodes-llama-3-1-8b-feather-f30-mt-commit-always",
   "author": "joshycodes",
@@ -26,14 +26,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766536,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "joshycodes/llama-3.1-8b-feather-f30-mt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:47:40.869Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

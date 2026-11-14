@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M-v97-dense-native-gate-Experimental-Preview",
   "slug": "stancsz-wrench-4b-qwen3-6-8e-nvfp4-native4m-v97-dense-native-gate-experimental-preview",
   "author": "stancsz",
@@ -37,14 +37,19 @@
   "parameters_human": "2.23B",
   "storage_bytes": 3423025085,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

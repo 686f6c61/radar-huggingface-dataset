@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/Ling-3.1-flash-1019-EXL3-SAGE-1.51bpw",
   "slug": "vcruz305-ling-3-1-flash-1019-exl3-sage-1-51bpw",
   "author": "vcruz305",
@@ -34,14 +34,19 @@
   "parameters_human": "57.69B",
   "storage_bytes": 115472968358,
   "storage_human": "115.5 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.1-flash-1019",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

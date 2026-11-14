@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu",
   "slug": "mremila-archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu",
   "author": "mremila",
@@ -33,14 +33,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 15008318632,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "HuggingFaceH4/zephyr-7b-beta",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

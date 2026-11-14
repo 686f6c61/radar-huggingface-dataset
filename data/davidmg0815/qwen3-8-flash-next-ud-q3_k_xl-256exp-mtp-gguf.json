@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Davidmg0815/Qwen3.8-Flash-Next-UD-Q3_K_XL-256exp-MTP-GGUF",
   "slug": "davidmg0815-qwen3-8-flash-next-ud-q3_k_xl-256exp-mtp-gguf",
   "author": "Davidmg0815",
@@ -36,14 +36,19 @@
   "parameters_human": "116.51B",
   "storage_bytes": 64855663936,
   "storage_human": "64.9 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fasfadsf324/nerx4",
   "slug": "fasfadsf324-nerx4",
   "author": "fasfadsf324",
@@ -27,14 +27,19 @@
   "parameters_human": "1490",
   "storage_bytes": 8440,
   "storage_human": "8440 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

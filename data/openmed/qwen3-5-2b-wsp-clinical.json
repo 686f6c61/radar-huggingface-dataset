@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMed/Qwen3.5-2B-WSP-Clinical",
   "slug": "openmed-qwen3-5-2b-wsp-clinical",
   "author": "OpenMed",
@@ -39,14 +39,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 4563941576,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Clinical multiple-choice questions",

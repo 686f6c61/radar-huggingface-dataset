@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ulasZoi/smolvla_pickcube_bs64_lr5e5",
   "slug": "ulaszoi-smolvla_pickcube_bs64_lr5e5",
   "author": "ulasZoi",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 1197802384,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T02:34:18.555Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/JugnuLM-53M-GGUF",
   "slug": "mradermacher-jugnulm-53m-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "53.5M",
   "storage_bytes": 553963648,
   "storage_human": "554 MB",
+  "context_length": 2048,
   "base_model": "altslate/JugnuLM-53M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

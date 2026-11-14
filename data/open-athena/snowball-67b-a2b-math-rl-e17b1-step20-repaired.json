@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-athena/Snowball-67B-A2B-Math-RL-E17b1-Step20-Repaired",
   "slug": "open-athena-snowball-67b-a2b-math-rl-e17b1-step20-repaired",
   "author": "open-athena",
@@ -28,14 +28,19 @@
   "parameters_human": "67.08B",
   "storage_bytes": 134175049508,
   "storage_human": "134.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

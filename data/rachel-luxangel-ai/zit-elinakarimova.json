@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rachel-luxangel-ai/zit-elinakarimova",
   "slug": "rachel-luxangel-ai-zit-elinakarimova",
   "author": "rachel-luxangel-ai",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 86299623,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

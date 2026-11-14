@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TonyMFJ/Qwen3.8-Flash-Next-WinVulkan-GGUF",
   "slug": "tonymfj-qwen3-8-flash-next-winvulkan-gguf",
   "author": "TonyMFJ",
@@ -40,14 +40,19 @@
   "parameters_human": "51.20B",
   "storage_bytes": 119574589088,
   "storage_human": "119.6 GB",
+  "context_length": null,
   "base_model": "agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LifeAi-dev/madlad400-10b-ct2-float32",
   "slug": "lifeai-dev-madlad400-10b-ct2-float32",
   "author": "LifeAi-dev",
@@ -866,12 +866,17 @@
   "parameters_human": null,
   "storage_bytes": 42871453246,
   "storage_human": "42.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

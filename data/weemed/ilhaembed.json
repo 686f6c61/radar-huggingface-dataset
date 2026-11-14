@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weemed/IlhaEmbed",
   "slug": "weemed-ilhaembed",
   "author": "weemed",
@@ -45,6 +45,7 @@
   "parameters_human": "38.1M",
   "storage_bytes": 2647019027,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

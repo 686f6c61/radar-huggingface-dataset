@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akilad/minimax_h3_taomate_3step_clarity_extreme_no_attn",
   "slug": "akilad-minimax_h3_taomate_3step_clarity_extreme_no_attn",
   "author": "Akilad",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 181697976,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

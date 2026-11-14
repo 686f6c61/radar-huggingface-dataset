@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mateo-19182/forocoches-lm-v3-q4f16_1-MLC",
   "slug": "mateo-19182-forocoches-lm-v3-q4f16_1-mlc",
   "author": "mateo-19182",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 600702505,
   "storage_human": "601 MB",
+  "context_length": null,
   "base_model": "mateo-19182/forocoches-lm-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

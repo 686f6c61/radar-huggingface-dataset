@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aak579/Qwen3-VL-8B-ExplainFace-LoRA-1703",
   "slug": "aak579-qwen3-vl-8b-explainface-lora-1703",
   "author": "Aak579",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 2095577238,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

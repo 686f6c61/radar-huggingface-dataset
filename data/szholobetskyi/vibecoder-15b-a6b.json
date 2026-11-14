@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "szholobetskyi/vibecoder-15b-a6b",
   "slug": "szholobetskyi-vibecoder-15b-a6b",
   "author": "szholobetskyi",
@@ -21,12 +21,17 @@
   "parameters_human": "15.57B",
   "storage_bytes": 180747891840,
   "storage_human": "180.7 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

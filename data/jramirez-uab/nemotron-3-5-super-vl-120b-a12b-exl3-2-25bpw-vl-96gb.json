@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JRamirez-UAB/Nemotron-3.5-Super-VL-120B-A12B-EXL3-2.25bpw-VL-96GB",
   "slug": "jramirez-uab-nemotron-3-5-super-vl-120b-a12b-exl3-2-25bpw-vl-96gb",
   "author": "JRamirez-UAB",
@@ -48,14 +48,19 @@
   "parameters_human": "19.37B",
   "storage_bytes": 38842700230,
   "storage_human": "38.8 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "JRamirez-UAB/Nemotron-3.5-Super-VL-120B-A12B-EXL3-2.25bpw-VL-48-96GB",
+  "renamed_at": "2026-11-11T02:59:37.546Z",
   "benchmarks": [],
   "sources": []
 }

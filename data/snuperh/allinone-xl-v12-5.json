@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snuperh/AllInOne-XL-V12.5",
   "slug": "snuperh-allinone-xl-v12-5",
   "author": "snuperh",
@@ -46,6 +46,7 @@
   "parameters_human": null,
   "storage_bytes": 6938040682,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "OnomaAIResearch/Illustrious-XL-v1.0, LyliaEngine/Pony_Diffusion_V6_XL, Laxhar/noobai-XL-1.0, stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

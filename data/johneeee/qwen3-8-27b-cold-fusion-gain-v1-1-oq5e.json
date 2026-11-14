@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e",
   "slug": "johneeee-qwen3-8-27b-cold-fusion-gain-v1-1-oq5e",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 39103966401,
   "storage_human": "39.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

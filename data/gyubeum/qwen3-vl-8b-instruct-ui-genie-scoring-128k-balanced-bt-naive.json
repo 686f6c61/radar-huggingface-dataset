@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-128k-balanced-bt-naive",
   "slug": "gyubeum-qwen3-vl-8b-instruct-ui-genie-scoring-128k-balanced-bt-naive",
   "author": "Gyubeum",
@@ -36,14 +36,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 35080118506,
   "storage_human": "35.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T06:52:08.604Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

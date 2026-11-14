@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DAPS-Math/DAPS-text-encoder",
   "slug": "daps-math-daps-text-encoder",
   "author": "DAPS-Math",
@@ -33,14 +33,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 596070136,
   "storage_human": "596 MB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-modernbert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

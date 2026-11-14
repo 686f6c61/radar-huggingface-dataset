@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/gemma-4-12B-EsperGrug",
   "slug": "oliviarossi-gemma-4-12b-espergrug",
   "author": "OliviaRossi",
@@ -38,14 +38,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951717874,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "ValiantLabs/gemma-4-12B-it-Esper4, kai-os/Grug-12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T04:02:47.433Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

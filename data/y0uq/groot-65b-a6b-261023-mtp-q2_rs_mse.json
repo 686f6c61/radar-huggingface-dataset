@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "y0uq/Groot-65B-A6B-261023-MTP-Q2_RS_MSE",
   "slug": "y0uq-groot-65b-a6b-261023-mtp-q2_rs_mse",
   "author": "y0uq",
@@ -28,14 +28,19 @@
   "parameters_human": "1.35B",
   "storage_bytes": 1067624320,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "GrootTeam/Groot-65B-A6B-261023",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

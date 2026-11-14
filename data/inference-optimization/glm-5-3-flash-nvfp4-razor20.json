@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/GLM-5.3-Flash-NVFP4-RAZOR20",
   "slug": "inference-optimization-glm-5-3-flash-nvfp4-razor20",
   "author": "inference-optimization",
@@ -41,14 +41,19 @@
   "parameters_human": "138.46B",
   "storage_bytes": 163370052787,
   "storage_human": "163.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/Safetensors.msh-tiny",
   "slug": "mondk-safetensors-msh-tiny",
   "author": "mondk",
@@ -37,14 +37,19 @@
   "parameters_human": "13.9M",
   "storage_bytes": 55573872,
   "storage_human": "56 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mondk/Msh-Tiny-14M",
+  "renamed_at": "2026-11-11T06:24:58.748Z",
   "benchmarks": [],
   "sources": [
     {

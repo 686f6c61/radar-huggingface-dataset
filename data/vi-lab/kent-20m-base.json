@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vi-LAB/KenT-20M-Base",
   "slug": "vi-lab-kent-20m-base",
   "author": "Vi-LAB",
@@ -36,14 +36,19 @@
   "parameters_human": "19.6M",
   "storage_bytes": 78243768,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:21:59.185Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

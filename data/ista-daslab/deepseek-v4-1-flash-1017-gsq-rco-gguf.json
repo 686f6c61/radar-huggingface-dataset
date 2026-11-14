@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
   "slug": "ista-daslab-deepseek-v4-1-flash-1017-gsq-rco-gguf",
   "author": "ISTA-DASLab",
@@ -31,19 +31,24 @@
   ],
   "likes": 664,
   "downloads_30d": 3983957,
-  "trending_score": 26,
+  "trending_score": 24,
   "parameters": 196613849600,
   "parameters_human": "196.61B",
   "storage_bytes": 1287451101030,
   "storage_human": "1287.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

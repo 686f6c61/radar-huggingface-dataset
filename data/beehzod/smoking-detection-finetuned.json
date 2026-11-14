@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beehzod/smoking-detection-finetuned",
   "slug": "beehzod-smoking-detection-finetuned",
   "author": "Beehzod",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 40503532,
   "storage_human": "41 MB",
+  "context_length": null,
   "base_model": "Enos-123/smoking-detection",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zviratko/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP-plefp8",
   "slug": "zviratko-qwen3-8-flash-next-uncensored-oq4e-100k-mtp-plefp8",
   "author": "zviratko",
@@ -36,6 +36,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 128029497310,
   "storage_human": "128.0 GB",
+  "context_length": null,
   "base_model": "jedisct1/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

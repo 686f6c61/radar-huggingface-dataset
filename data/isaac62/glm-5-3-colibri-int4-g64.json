@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISAAC62/GLM-5.3-colibri-int4-g64",
   "slug": "isaac62-glm-5-3-colibri-int4-g64",
   "author": "ISAAC62",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 419316759002,
   "storage_human": "419.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

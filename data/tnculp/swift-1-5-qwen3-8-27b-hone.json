@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tnculp/Swift-1.5-Qwen3.8-27B-hone",
   "slug": "tnculp-swift-1-5-qwen3-8-27b-hone",
   "author": "tnculp",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 18210531328,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

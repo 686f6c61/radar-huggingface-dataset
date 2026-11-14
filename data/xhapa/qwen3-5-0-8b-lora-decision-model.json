@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xhapa/Qwen3.5-0.8B-LoRA-Decision-Model",
   "slug": "xhapa-qwen3-5-0-8b-lora-decision-model",
   "author": "xhapa",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 117997659,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

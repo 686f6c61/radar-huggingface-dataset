@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-NVFP4-GPTQ",
   "slug": "prithivmlmods-deepseek-v4-pro-qwen3-5-9b-uncensored-heretic-nvfp4-gptq",
   "author": "prithivMLmods",
@@ -65,14 +65,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 9381042715,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

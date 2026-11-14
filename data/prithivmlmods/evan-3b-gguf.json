@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/EVAN-3B-GGUF",
   "slug": "prithivmlmods-evan-3b-gguf",
   "author": "prithivMLmods",
@@ -37,14 +37,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 27053535136,
   "storage_human": "27.1 GB",
+  "context_length": 128000,
   "base_model": "DawnLiu/EVAN-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

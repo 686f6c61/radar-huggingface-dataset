@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/decider-0.8b-LiteRT",
   "slug": "litert-community-decider-0-8b-litert",
   "author": "litert-community",
@@ -28,18 +28,23 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 239,
+  "downloads_30d": 262,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 3551521680,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "Mapika/decider-0.8b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

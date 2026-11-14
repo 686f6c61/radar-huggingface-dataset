@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "paincupid/Underdog-Bark-3.0-Pro",
   "slug": "paincupid-underdog-bark-3-0-pro",
   "author": "paincupid",
@@ -29,14 +29,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 2488777627,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

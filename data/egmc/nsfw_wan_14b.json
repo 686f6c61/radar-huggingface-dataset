@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "egmc/NSFW_Wan_14b",
   "slug": "egmc-nsfw_wan_14b",
   "author": "egmc",
@@ -27,14 +27,19 @@
   "parameters_human": "14.29B",
   "storage_bytes": 455077788612,
   "storage_human": "455.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

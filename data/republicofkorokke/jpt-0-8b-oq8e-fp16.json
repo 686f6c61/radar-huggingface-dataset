@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RepublicOfKorokke/jpt-0.8b-oQ8e-fp16",
   "slug": "republicofkorokke-jpt-0-8b-oq8e-fp16",
   "author": "RepublicOfKorokke",
@@ -29,6 +29,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1222351123,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "kirp/jpt-0.8b",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

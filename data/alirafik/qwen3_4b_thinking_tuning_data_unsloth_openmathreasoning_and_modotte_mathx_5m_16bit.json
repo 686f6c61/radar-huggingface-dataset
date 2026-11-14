@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aliRafik/Qwen3_4B_Thinking_Tuning_Data_Unsloth_OpenMathReasoning_ANd_Modotte_MathX_5M_16bit",
   "slug": "alirafik-qwen3_4b_thinking_tuning_data_unsloth_openmathreasoning_and_modotte_mathx_5m_16bit",
   "author": "aliRafik",
@@ -33,14 +33,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404646,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-thinking-2507-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

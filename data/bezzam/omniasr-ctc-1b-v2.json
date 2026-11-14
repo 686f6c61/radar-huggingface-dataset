@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bezzam/omniasr-ctc-1b-v2",
   "slug": "bezzam-omniasr-ctc-1b-v2",
   "author": "bezzam",
@@ -1680,14 +1680,19 @@
   "parameters_human": "975.7M",
   "storage_bytes": 7805595528,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

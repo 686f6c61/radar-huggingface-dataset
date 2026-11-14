@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kirikir13/gemma-4-E4B-Queen-it-qat-q4_0-unquantized-lora",
   "slug": "kirikir13-gemma-4-e4b-queen-it-qat-q4_0-unquantized-lora",
   "author": "kirikir13",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 102008482,
   "storage_human": "102 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

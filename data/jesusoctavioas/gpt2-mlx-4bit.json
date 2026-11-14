@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jesusoctavioas/gpt2-mlx-4Bit",
   "slug": "jesusoctavioas-gpt2-mlx-4bit",
   "author": "jesusoctavioas",
@@ -32,6 +32,7 @@
   "parameters_human": "124.4M",
   "storage_bytes": 78207963,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "openai-community/gpt2",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

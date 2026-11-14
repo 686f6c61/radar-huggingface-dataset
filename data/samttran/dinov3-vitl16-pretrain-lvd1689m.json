@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samttran/dinov3-vitl16-pretrain-lvd1689m",
   "slug": "samttran-dinov3-vitl16-pretrain-lvd1689m",
   "author": "samttran",
@@ -29,14 +29,19 @@
   "parameters_human": "303.1M",
   "storage_bytes": 1212559808,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

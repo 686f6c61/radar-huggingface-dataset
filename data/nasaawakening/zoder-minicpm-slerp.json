@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nasaawakening/zoder-minicpm-slerp",
   "slug": "nasaawakening-zoder-minicpm-slerp",
   "author": "Nasaawakening",
@@ -36,6 +36,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 9348980584,
   "storage_human": "9.3 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-1B, GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

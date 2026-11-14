@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnsword/agenttune-qwen2.5-3b-react-lora-F16-GGUF",
   "slug": "johnsword-agenttune-qwen2-5-3b-react-lora-f16-gguf",
   "author": "johnsword",
@@ -36,14 +36,19 @@
   "parameters_human": "29.9M",
   "storage_bytes": 59902304,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": "Cheng-1/agenttune-qwen2.5-3b-react-lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

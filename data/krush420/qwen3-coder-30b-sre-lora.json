@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krush420/qwen3-coder-30b-sre-lora",
   "slug": "krush420-qwen3-coder-30b-sre-lora",
   "author": "krush420",
@@ -49,6 +49,7 @@
   "parameters_human": "13.4M",
   "storage_bytes": 279095802,
   "storage_human": "279 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Multi-Turn Long-Term Memory & Simulated App Tool Execution",

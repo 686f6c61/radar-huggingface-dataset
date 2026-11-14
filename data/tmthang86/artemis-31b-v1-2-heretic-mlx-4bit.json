@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tmthang86/Artemis-31B-v1.2-heretic-mlx-4bit",
   "slug": "tmthang86-artemis-31b-v1-2-heretic-mlx-4bit",
   "author": "tmthang86",
@@ -31,6 +31,7 @@
   "parameters_human": "30.70B",
   "storage_bytes": 17301554106,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "sjorsb/Artemis-31B-v1.2-heretic",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

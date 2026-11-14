@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zomi-language-ai/nllb-200-distilled-600M-finetuned-zol_Latn-to-en_Latn",
   "slug": "zomi-language-ai-nllb-200-distilled-600m-finetuned-zol_latn-to-en_latn",
   "author": "zomi-language-ai",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 184924828992,
   "storage_human": "184.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

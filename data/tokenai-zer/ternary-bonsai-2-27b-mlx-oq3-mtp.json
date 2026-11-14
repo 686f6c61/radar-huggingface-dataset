@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ3-mtp",
   "slug": "tokenai-zer-ternary-bonsai-2-27b-mlx-oq3-mtp",
   "author": "TokenAI-zer",
@@ -39,6 +39,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 13876947420,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Grigorij/PaP_duck_vla_jepa",
   "slug": "grigorij-pap_duck_vla_jepa",
   "author": "Grigorij",
@@ -28,14 +28,19 @@
   "parameters_human": "2.77B",
   "storage_bytes": 57732502524,
   "storage_human": "57.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

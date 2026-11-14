@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Hunyuan-0.5B-Instruct-mic",
   "slug": "huggingface-mic-hunyuan-0-5b-instruct-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "7.8M",
   "storage_bytes": 15615552,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "tencent/Hunyuan-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

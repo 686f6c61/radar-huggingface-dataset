@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikedachin/llm-jp-4-8b-base_imabari_qa_v4_reasoning_effort_v21_difficult_full_5e-5",
   "slug": "ikedachin-llm-jp-4-8b-base_imabari_qa_v4_reasoning_effort_v21_difficult_full_5e-5",
   "author": "ikedachin",
@@ -50,14 +50,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 17196220257,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "llm-jp/llm-jp-4-8b-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ikedachin/llm-jp-4-8b-thinking-imabari-tragahana-v21",
+  "renamed_at": "2026-11-11T05:38:59.913Z",
   "benchmarks": [],
   "sources": []
 }

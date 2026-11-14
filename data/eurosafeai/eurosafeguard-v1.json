@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EuroSafeAI/EuroSafeGuard-v1",
   "slug": "eurosafeai-eurosafeguard-v1",
   "author": "EuroSafeAI",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 604021262,
   "storage_human": "604 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

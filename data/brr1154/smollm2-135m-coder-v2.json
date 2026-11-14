@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BRR1154/SmolLM2-135M-Coder-v2",
   "slug": "brr1154-smollm2-135m-coder-v2",
   "author": "BRR1154",
@@ -38,14 +38,19 @@
   "parameters_human": "7.1M",
   "storage_bytes": 28312488,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Code Generation",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF",
   "slug": "aisingapore-apertus-sea-lion-v4-8b-it-gguf",
   "author": "aisingapore",
@@ -45,14 +45,19 @@
   "parameters_human": "8.05B",
   "storage_bytes": 36354513228,
   "storage_human": "36.4 GB",
+  "context_length": 65536,
   "base_model": "swiss-ai/Apertus-8B-Instruct-2509",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thunderboltc/marianmt_sanlish_to_bangla_1934_lr2_duijonChara",
   "slug": "thunderboltc-marianmt_sanlish_to_bangla_1934_lr2_duijonchara",
   "author": "thunderboltc",
@@ -30,14 +30,19 @@
   "parameters_human": "77.0M",
   "storage_bytes": 23103309589,
   "storage_human": "23.1 GB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-en-mul",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

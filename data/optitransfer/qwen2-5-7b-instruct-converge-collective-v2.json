@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Optitransfer/Qwen2.5-7B-Instruct-converge-collective-v2",
   "slug": "optitransfer-qwen2-5-7b-instruct-converge-collective-v2",
   "author": "Optitransfer",
@@ -71,14 +71,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15231271784,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct, mistralai/Mistral-7B-Instruct-v0.3, microsoft/Phi-3-mini-4k-instruct, microsoft/phi-2, HuggingFaceTB/SmolLM2-1.7B-Instruct, ibm-granite/granite-3.0-2b-instruct, EleutherAI/pythia-2.8b, EleutherAI/pythia-1.4b, facebook/opt-2.7b, Qwen/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen2.5-7B, unsloth/Qwen2.5-7B-Instruct, unsloth/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen2.5-7B-Instruct-1M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

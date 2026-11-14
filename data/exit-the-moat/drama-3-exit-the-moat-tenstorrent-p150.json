@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "exit-the-moat/drama-3-exit-the-moat-tenstorrent-p150",
   "slug": "exit-the-moat-drama-3-exit-the-moat-tenstorrent-p150",
   "author": "exit-the-moat",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 25003336832,
   "storage_human": "25.0 GB",
+  "context_length": null,
   "base_model": "fishaudio/drama-3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

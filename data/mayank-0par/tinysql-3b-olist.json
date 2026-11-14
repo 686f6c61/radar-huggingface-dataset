@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mayank-0Par/tinysql-3b-olist",
   "slug": "mayank-0par-tinysql-3b-olist",
   "author": "Mayank-0Par",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 192644985,
   "storage_human": "193 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

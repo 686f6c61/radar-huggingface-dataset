@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bibuu32/Ani",
   "slug": "bibuu32-ani",
   "author": "Bibuu32",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 678077808,
   "storage_human": "678 MB",
+  "context_length": null,
   "base_model": "elismasilva/ltx2.3-image-comfyui",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

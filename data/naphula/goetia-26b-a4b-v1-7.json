@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naphula/Goetia-26B-A4B-v1.7",
   "slug": "naphula-goetia-26b-a4b-v1-7",
   "author": "Naphula",
@@ -91,14 +91,19 @@
   "parameters_human": "26.00B",
   "storage_bytes": 52032090049,
   "storage_human": "52.0 GB",
+  "context_length": null,
   "base_model": "ConicCat/Gemma4-Writer-26BA4B, Cyclone-Labs/Eclipsed-Phoenix-26B-A4B, electroglyph/gemma4-26b-fiction-bf16, google/gemma-4-26B-A4B-it, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2, Hastagaras/G4-Jamet-26B-A4B-MK-1, Naphula/Goetia-26B-A4B-v1.6, Naphula/Promethean-Dawn-26B-A4B, SubMaroon/Boulesis-v2.1-26B-A4B, SubMaroon/Kitchoon-26B-A4B, TheDrummer/Orion-26B-A4B-v1.1, Vortex5/Shadow-Siren-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

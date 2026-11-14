@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nunu-willump/distil-large-v3.5-ct2",
   "slug": "nunu-willump-distil-large-v3-5-ct2",
   "author": "nunu-willump",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1512927867,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "distil-whisper/distil-large-v3.5-ct2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

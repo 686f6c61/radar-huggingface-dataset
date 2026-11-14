@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pranaydeep139/animal-pokedex-models",
   "slug": "pranaydeep139-animal-pokedex-models",
   "author": "pranaydeep139",
@@ -26,6 +26,7 @@
   "parameters_human": "1.71B",
   "storage_bytes": 9160761324,
   "storage_human": "9.2 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

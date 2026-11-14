@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rakuten-junliu/RakutenAI-3.0-NVFP4",
   "slug": "rakuten-junliu-rakutenai-3-0-nvfp4",
   "author": "rakuten-junliu",
@@ -38,14 +38,19 @@
   "parameters_human": "380.17B",
   "storage_bytes": 394917133838,
   "storage_human": "394.9 GB",
+  "context_length": null,
   "base_model": "Rakuten/RakutenAI-3.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

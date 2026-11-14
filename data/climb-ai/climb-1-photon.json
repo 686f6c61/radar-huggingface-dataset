@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Climb-Ai/Climb-1-Photon",
   "slug": "climb-ai-climb-1-photon",
   "author": "Climb-Ai",
@@ -42,14 +42,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524816947,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "RikiyaT/Qwen3.5-0.8B-weight-space-programming",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

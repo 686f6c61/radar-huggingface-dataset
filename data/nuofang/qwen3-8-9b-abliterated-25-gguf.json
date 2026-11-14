@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuofang/Qwen3.8-9B-abliterated-25-GGUF",
   "slug": "nuofang-qwen3-8-9b-abliterated-25-gguf",
   "author": "nuofang",
@@ -27,14 +27,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 6123294656,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "MegaPanchamZ/Qwen3.8-9B-abliterated-25",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

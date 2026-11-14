@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OzzyGT/Kimodo_SOMA_RP_v1_2_sdnq_dynamic_8bit",
   "slug": "ozzygt-kimodo_soma_rp_v1_2_sdnq_dynamic_8bit",
   "author": "OzzyGT",
@@ -36,6 +36,7 @@
   "parameters_human": "283.6M",
   "storage_bytes": 8520507665,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "OzzyGT/Kimodo_SOMA_RP_v1_2",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

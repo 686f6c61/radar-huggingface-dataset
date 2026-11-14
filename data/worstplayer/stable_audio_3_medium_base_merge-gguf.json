@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "worstplayer/Stable_Audio_3_medium_base_merge-GGUF",
   "slug": "worstplayer-stable_audio_3_medium_base_merge-gguf",
   "author": "worstplayer",
@@ -24,14 +24,19 @@
   "parameters_human": "1.45B",
   "storage_bytes": 2908081888,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-audio-3-medium, stabilityai/stable-audio-3-medium-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

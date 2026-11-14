@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bunnycore/QCoder-2B-Low-Step-v2",
   "slug": "bunnycore-qcoder-2b-low-step-v2",
   "author": "bunnycore",
@@ -32,6 +32,7 @@
   "parameters_human": "16.8M",
   "storage_bytes": 146178621,
   "storage_human": "146 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-2B",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

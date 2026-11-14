@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
   "slug": "0bserverx-qwen3-8-27b-heretic-abliterated-uncensored",
   "author": "0bserverx",
@@ -34,14 +34,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 82200897048,
   "storage_human": "82.2 GB",
+  "context_length": null,
   "base_model": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

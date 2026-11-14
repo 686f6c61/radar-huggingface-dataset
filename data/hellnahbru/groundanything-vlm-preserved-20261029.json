@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hellnahbru/GroundAnything-VLM-preserved-20261029",
   "slug": "hellnahbru-groundanything-vlm-preserved-20261029",
   "author": "hellnahbru",
@@ -42,14 +42,19 @@
   "parameters_human": "4.84B",
   "storage_bytes": 9759649740,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

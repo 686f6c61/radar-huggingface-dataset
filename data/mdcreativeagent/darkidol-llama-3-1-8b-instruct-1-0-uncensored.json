@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mdcreativeagent/DarkIdol-Llama-3.1-8B-Instruct-1.0-Uncensored",
   "slug": "mdcreativeagent-darkidol-llama-3-1-8b-instruct-1-0-uncensored",
   "author": "mdcreativeagent",
@@ -31,14 +31,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16062085416,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

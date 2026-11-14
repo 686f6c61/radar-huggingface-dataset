@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sleem247/mistral-7b-medlexfin-Q8_0-GGUF",
   "slug": "sleem247-mistral-7b-medlexfin-q8_0-gguf",
   "author": "Sleem247",
@@ -34,14 +34,19 @@
   "parameters_human": "13.6M",
   "storage_bytes": 19416480,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": "henil164/mistral-7b-medlexfin",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

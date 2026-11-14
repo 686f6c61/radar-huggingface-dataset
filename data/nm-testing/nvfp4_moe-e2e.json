@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/nvfp4_moe-e2e",
   "slug": "nm-testing-nvfp4_moe-e2e",
   "author": "nm-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 144785933370,
   "storage_human": "144.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

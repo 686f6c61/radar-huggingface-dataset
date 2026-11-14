@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/DeepSeek-R1-Distill-Qwen-14B-Einsof-LoRA",
   "slug": "polydim-einsof-deepseek-r1-distill-qwen-14b-einsof-lora",
   "author": "Polydim-Einsof",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 286764494,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:34:43.524Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

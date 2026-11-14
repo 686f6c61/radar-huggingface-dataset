@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DBeni24/BeniQwen-Qwen3.5-9B-P0-LoRA",
   "slug": "dbeni24-beniqwen-qwen3-5-9b-p0-lora",
   "author": "DBeni24",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 356950728,
   "storage_human": "357 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T11:14:51.683Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

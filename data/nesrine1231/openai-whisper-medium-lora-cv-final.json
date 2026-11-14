@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nesrine1231/openai-whisper-medium-LORA-cv-final",
   "slug": "nesrine1231-openai-whisper-medium-lora-cv-final",
   "author": "nesrine1231",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 75580336,
   "storage_human": "76 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nesrinetaamallah/openai-whisper-medium-LORA-cv-final",
+  "renamed_at": "2026-11-14T07:49:58.791Z",
   "benchmarks": [],
   "sources": [
     {

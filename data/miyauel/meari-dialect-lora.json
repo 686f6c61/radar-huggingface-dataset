@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Miyauel/meari-dialect-lora",
   "slug": "miyauel-meari-dialect-lora",
   "author": "Miyauel",
@@ -31,14 +31,19 @@
   "parameters_human": "17.4M",
   "storage_bytes": 34892544,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "NiuTrans/LMT-60-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

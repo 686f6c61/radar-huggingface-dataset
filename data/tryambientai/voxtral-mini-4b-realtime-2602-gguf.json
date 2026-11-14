@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tryambientai/Voxtral-Mini-4B-Realtime-2602-gguf",
   "slug": "tryambientai-voxtral-mini-4b-realtime-2602-gguf",
   "author": "tryambientai",
@@ -61,14 +61,19 @@
   "parameters_human": "4.43B",
   "storage_bytes": 4731791648,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

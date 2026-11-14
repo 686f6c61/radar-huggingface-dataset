@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sebekblessing/moss-qnn-8elite",
   "slug": "sebekblessing-moss-qnn-8elite",
   "author": "sebekblessing",
@@ -32,14 +32,19 @@
   "parameters_human": "7.94B",
   "storage_bytes": 11363996296,
   "storage_human": "11.4 GB",
+  "context_length": 262144,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT, lodestones/MOSS-Image-SFT-8-steps-dmd",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

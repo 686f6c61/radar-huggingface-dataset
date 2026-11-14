@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Swift-1.5-Qwen3.8-27B-CUDA-AXQ-NVFP4-W4A16-MTP",
   "slug": "automatosx-ax-swift-1-5-qwen3-8-27b-cuda-axq-nvfp4-w4a16-mtp",
   "author": "AutomatosX",
@@ -37,14 +37,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 20572021224,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

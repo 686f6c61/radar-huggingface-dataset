@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Biomanticus/qwen3-tts-customvoice-gguf",
   "slug": "biomanticus-qwen3-tts-customvoice-gguf",
   "author": "Biomanticus",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 4226645248,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

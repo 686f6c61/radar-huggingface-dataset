@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jgamboa/Qwen3.8-27B-NInfer-4090",
   "slug": "jgamboa-qwen3-8-27b-ninfer-4090",
   "author": "jgamboa",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 40696949248,
   "storage_human": "40.7 GB",
+  "context_length": null,
   "base_model": "neroued/Qwen3.8-27B-NInfer",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

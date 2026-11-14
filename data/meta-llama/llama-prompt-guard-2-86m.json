@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meta-llama/Llama-Prompt-Guard-2-86M",
   "slug": "meta-llama-llama-prompt-guard-2-86m",
   "author": "meta-llama",
@@ -44,21 +44,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 382,
+  "likes": 383,
   "downloads_30d": 91127,
-  "trending_score": 12,
+  "trending_score": 13,
   "parameters": 278810882,
   "parameters_human": "278.8M",
   "storage_bytes": 1131619553,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

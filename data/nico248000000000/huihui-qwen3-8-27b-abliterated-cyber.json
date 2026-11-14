@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nico248000000000/Huihui-Qwen3.8-27B-abliterated-cyber",
   "slug": "nico248000000000-huihui-qwen3-8-27b-abliterated-cyber",
   "author": "nico248000000000",
@@ -41,14 +41,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582995559,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T06:09:39.236Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

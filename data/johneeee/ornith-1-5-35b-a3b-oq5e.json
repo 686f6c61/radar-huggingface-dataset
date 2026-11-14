@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Ornith-1.5-35B-A3B-oQ5e",
   "slug": "johneeee-ornith-1-5-35b-a3b-oq5e",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 25344326265,
   "storage_human": "25.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

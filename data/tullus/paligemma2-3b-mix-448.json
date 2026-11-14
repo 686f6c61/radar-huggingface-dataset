@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TULLUS/paligemma2-3b-mix-448",
   "slug": "tullus-paligemma2-3b-mix-448",
   "author": "TULLUS",
@@ -35,14 +35,19 @@
   "parameters_human": "3.03B",
   "storage_bytes": 6146167062,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "google/paligemma2-3b-pt-448",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TULLUS/paligemma2-3b-lerobot-adapter",
+  "renamed_at": "2026-11-14T04:28:29.782Z",
   "benchmarks": [],
   "sources": [
     {

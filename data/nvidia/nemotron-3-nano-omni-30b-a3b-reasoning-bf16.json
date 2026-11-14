@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "slug": "nvidia-nemotron-3-nano-omni-30b-a3b-reasoning-bf16",
   "author": "nvidia",
@@ -36,14 +36,19 @@
   "parameters_human": "33.02B",
   "storage_bytes": 66057737916,
   "storage_human": "66.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

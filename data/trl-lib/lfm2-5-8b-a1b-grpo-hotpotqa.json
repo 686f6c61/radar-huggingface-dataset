@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trl-lib/LFM2.5-8B-A1B-GRPO-HotpotQA",
   "slug": "trl-lib-lfm2-5-8b-a1b-grpo-hotpotqa",
   "author": "trl-lib",
@@ -36,14 +36,19 @@
   "parameters_human": "8.47B",
   "storage_bytes": 16953909718,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

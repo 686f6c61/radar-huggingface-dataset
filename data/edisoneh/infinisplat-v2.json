@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Edisoneh/InfiniSplat-v2",
   "slug": "edisoneh-infinisplat-v2",
   "author": "Edisoneh",
@@ -25,14 +25,19 @@
   "parameters_human": "1.65B",
   "storage_bytes": 6687433888,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

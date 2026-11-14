@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Renesas/DeiT3-Small-Patch16-224-ONNX",
   "slug": "renesas-deit3-small-patch16-224-onnx",
   "author": "Renesas",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 88339055,
   "storage_human": "88 MB",
+  "context_length": null,
   "base_model": "timm/deit3_small_patch16_224.fb_in1k",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

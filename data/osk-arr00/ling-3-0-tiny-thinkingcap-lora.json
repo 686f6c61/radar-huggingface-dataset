@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "osk-arr00/Ling-3.0-tiny-ThinkingCap-LoRA",
   "slug": "osk-arr00-ling-3-0-tiny-thinkingcap-lora",
   "author": "osk-arr00",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 86670360,
   "storage_human": "87 MB",
+  "context_length": null,
   "base_model": "Securelayer7/Ling-3.0-tiny-Uncensored-Abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

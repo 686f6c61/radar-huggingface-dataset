@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "elBundinio/granite-4.2-8b-openvino",
   "slug": "elbundinio-granite-4-2-8b-openvino",
   "author": "elBundinio",
@@ -61,14 +61,19 @@
   "parameters_human": null,
   "storage_bytes": 8797983253,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

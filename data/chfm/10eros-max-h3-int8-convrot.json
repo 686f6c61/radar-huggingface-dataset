@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chfm/10Eros-Max-h3-int8-convrot",
   "slug": "chfm-10eros-max-h3-int8-convrot",
   "author": "chfm",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 128897412144,
   "storage_human": "128.9 GB",
+  "context_length": null,
   "base_model": "TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

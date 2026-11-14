@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ogtsvc/lingbot-world-fast-diffusers-int8",
   "slug": "ogtsvc-lingbot-world-fast-diffusers-int8",
   "author": "ogtsvc",
@@ -32,6 +32,7 @@
   "parameters_human": "18.55B",
   "storage_bytes": 30482790504,
   "storage_human": "30.5 GB",
+  "context_length": null,
   "base_model": "robbyant/lingbot-world-fast-diffusers",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:31:35.843Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

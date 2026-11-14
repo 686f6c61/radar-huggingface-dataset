@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rikai-translate/rikai-jp-eng-Bench-265-1.4B",
   "slug": "rikai-translate-rikai-jp-eng-bench-265-1-4b",
   "author": "rikai-translate",
@@ -44,6 +44,7 @@
   "parameters_human": "1.41B",
   "storage_bytes": 9968846069,
   "storage_human": "10.0 GB",
+  "context_length": 8192,
   "base_model": "cyberagent/CAT-Translate-1.4b",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/qwen2_5_coder_7b_instruct_4bit",
   "slug": "tbhrc-qwen2_5_coder_7b_instruct_4bit",
   "author": "tbhrc",
@@ -40,6 +40,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4284346255,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

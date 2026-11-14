@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adibvafa/bioreason-pro-v2-9b-nofeatures",
   "slug": "adibvafa-bioreason-pro-v2-9b-nofeatures",
   "author": "adibvafa",
@@ -24,14 +24,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 21263161704,
   "storage_human": "21.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

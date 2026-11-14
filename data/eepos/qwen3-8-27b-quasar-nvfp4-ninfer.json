@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eepos/Qwen3.8-27B-QUASAR-NVFP4-NInfer",
   "slug": "eepos-qwen3-8-27b-quasar-nvfp4-ninfer",
   "author": "eepos",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 19939203072,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

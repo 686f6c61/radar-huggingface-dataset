@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Huihui-LFM2-24B-A2B-abliterated-GGUF",
   "slug": "mradermacher-huihui-lfm2-24b-a2b-abliterated-gguf",
   "author": "mradermacher",
@@ -51,14 +51,19 @@
   "parameters_human": "23.84B",
   "storage_bytes": 161763968160,
   "storage_human": "161.8 GB",
+  "context_length": 128000,
   "base_model": "huihui-ai/Huihui-LFM2-24B-A2B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

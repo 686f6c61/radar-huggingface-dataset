@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vennyvirtuoso/sarvam-1-hindi-marathi",
   "slug": "vennyvirtuoso-sarvam-1-hindi-marathi",
   "author": "vennyvirtuoso",
@@ -45,14 +45,19 @@
   "parameters_human": "2.53B",
   "storage_bytes": 5052515117,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "sarvamai/sarvam-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

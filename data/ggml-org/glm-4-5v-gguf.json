@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/GLM-4.5V-GGUF",
   "slug": "ggml-org-glm-4-5v-gguf",
   "author": "ggml-org",
@@ -29,14 +29,19 @@
   "parameters_human": "106.85B",
   "storage_bytes": 243839039840,
   "storage_human": "243.8 GB",
+  "context_length": 65536,
   "base_model": "zai-org/GLM-4.5V",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

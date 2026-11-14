@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PUSHTYPE/punct-cap-seg-en-coreml",
   "slug": "pushtype-punct-cap-seg-en-coreml",
   "author": "PUSHTYPE",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 59375676,
   "storage_human": "59 MB",
+  "context_length": null,
   "base_model": "1-800-BAD-CODE/punctuation_fullstop_truecase_english",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

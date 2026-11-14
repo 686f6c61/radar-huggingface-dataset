@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenJarvisProject/Qwen3.5-0.8B-Uncensored-OJP-GGUF",
   "slug": "openjarvisproject-qwen3-5-0-8b-uncensored-ojp-gguf",
   "author": "OpenJarvisProject",
@@ -35,14 +35,19 @@
   "parameters_human": "548.0M",
   "storage_bytes": 401123200,
   "storage_human": "401 MB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.5-0.8B-abliterated, Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RentedNoodle/Qwen3.8-27B-OrcaRouter-GSQ-RCO-IQ3_XXS-Uncensored",
   "slug": "rentednoodle-qwen3-8-27b-orcarouter-gsq-rco-iq3_xxs-uncensored",
   "author": "RentedNoodle",
@@ -49,14 +49,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 32878849224,
   "storage_human": "32.9 GB",
+  "context_length": 262144,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

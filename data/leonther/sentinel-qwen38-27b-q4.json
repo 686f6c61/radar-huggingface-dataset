@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Leonther/sentinel-qwen38-27b-q4",
   "slug": "leonther-sentinel-qwen38-27b-q4",
   "author": "Leonther",
@@ -41,14 +41,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16464440224,
   "storage_human": "16.5 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Qwen3.8-27B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

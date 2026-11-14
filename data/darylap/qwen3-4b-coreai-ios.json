@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darylap/Qwen3-4B-coreai-ios",
   "slug": "darylap-qwen3-4b-coreai-ios",
   "author": "darylap",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2506692050,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

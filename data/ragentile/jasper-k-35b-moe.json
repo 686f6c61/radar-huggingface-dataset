@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ragentile/Jasper-K-35B-MoE",
   "slug": "ragentile-jasper-k-35b-moe",
   "author": "ragentile",
@@ -28,14 +28,19 @@
   "parameters_human": "5.2M",
   "storage_bytes": 69345627541,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

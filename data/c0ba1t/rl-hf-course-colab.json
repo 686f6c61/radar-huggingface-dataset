@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c0ba1t/rl-hf-course-colab",
   "slug": "c0ba1t-rl-hf-course-colab",
   "author": "c0ba1t",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 450451,
   "storage_human": "450451 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

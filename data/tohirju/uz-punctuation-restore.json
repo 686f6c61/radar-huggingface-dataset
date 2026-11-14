@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tohirju/uz-punctuation-restore",
   "slug": "tohirju-uz-punctuation-restore",
   "author": "Tohirju",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1405086605,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

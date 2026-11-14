@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luvette/Ternary-Bonsai-2-9B-Decisive-V2-GGUF",
   "slug": "luvette-ternary-bonsai-2-9b-decisive-v2-gguf",
   "author": "luvette",
@@ -40,14 +40,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 13059983680,
   "storage_human": "13.1 GB",
+  "context_length": 262144,
   "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

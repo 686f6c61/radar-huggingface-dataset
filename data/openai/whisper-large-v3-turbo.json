@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openai/whisper-large-v3-turbo",
   "slug": "openai-whisper-large-v3-turbo",
   "author": "openai",
@@ -226,21 +226,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 3528,
+  "likes": 3534,
   "downloads_30d": 4821167,
-  "trending_score": 14,
+  "trending_score": 17,
   "parameters": 808878080,
   "parameters_human": "808.9M",
   "storage_bytes": 5096208915,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

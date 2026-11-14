@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/MiniMax-H3-I2V-Anime-Motion-LoRA",
   "slug": "prithivmlmods-minimax-h3-i2v-anime-motion-lora",
   "author": "prithivMLmods",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 149141232,
   "storage_human": "149 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-sym",
   "slug": "fbaldassarri-tiiuae_falcon3-7b-instruct-auto_gptq-int8-gs64-sym",
   "author": "fbaldassarri",
@@ -48,14 +48,19 @@
   "parameters_human": "2.60B",
   "storage_bytes": 10188456280,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon3-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

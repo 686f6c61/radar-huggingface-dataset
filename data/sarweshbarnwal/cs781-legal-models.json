@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sarweshbarnwal/CS781-Legal-Models",
   "slug": "sarweshbarnwal-cs781-legal-models",
   "author": "sarweshbarnwal",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 430318039014,
   "storage_human": "430.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

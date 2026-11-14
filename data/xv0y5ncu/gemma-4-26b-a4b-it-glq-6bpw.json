@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xv0y5ncu/gemma-4-26B-A4B-it-GLQ-6bpw",
   "slug": "xv0y5ncu-gemma-4-26b-a4b-it-glq-6bpw",
   "author": "xv0y5ncu",
@@ -27,20 +27,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 10545504206,
   "parameters_human": "10.55B",
   "storage_bytes": 21120472339,
   "storage_human": "21.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

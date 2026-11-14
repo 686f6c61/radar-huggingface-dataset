@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-asym",
   "slug": "fbaldassarri-sapienzanlp_minerva-7b-base-v1-0-auto_awq-int4-gs64-asym",
   "author": "fbaldassarri",
@@ -48,14 +48,19 @@
   "parameters_human": "1.41B",
   "storage_bytes": 5441159880,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "sapienzanlp/Minerva-7B-base-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

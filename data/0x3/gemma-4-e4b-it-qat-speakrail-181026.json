@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0x3/gemma-4-E4B-it-qat-Speakrail-181026",
   "slug": "0x3-gemma-4-e4b-it-qat-speakrail-181026",
   "author": "0x3",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 9758555194,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-w4a16-ct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

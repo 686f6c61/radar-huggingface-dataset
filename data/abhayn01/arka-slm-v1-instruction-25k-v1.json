@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abhayn01/ARKA-SLM-V1-Instruction-25K-v1",
   "slug": "abhayn01-arka-slm-v1-instruction-25k-v1",
   "author": "Abhayn01",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 18892345,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": "Abhayn01/ARKA-SLM-V1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

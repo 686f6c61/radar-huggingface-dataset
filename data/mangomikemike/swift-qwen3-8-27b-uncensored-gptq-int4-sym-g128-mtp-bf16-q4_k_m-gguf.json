@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mangomikemike/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16-Q4_K_M-GGUF",
   "slug": "mangomikemike-swift-qwen3-8-27b-uncensored-gptq-int4-sym-g128-mtp-bf16-q4_k_m-gguf",
   "author": "mangomikemike",
@@ -48,14 +48,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 16810706208,
   "storage_human": "16.8 GB",
+  "context_length": 262144,
   "base_model": "greglechin/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MangoMikePower/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16-Q4_K_M-GGUF",
+  "renamed_at": "2026-11-11T06:12:27.503Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hematteo/sparse-readout-prism",
   "slug": "hematteo-sparse-readout-prism",
   "author": "hematteo",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 35634975861,
   "storage_human": "35.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-2B, Qwen/Qwen3.5-9B, deepseek-ai/DeepSeek-R1-Distill-Llama-8B, deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, google/gemma-4-E2B-it, google/gemma-4-E4B-it, mistralai/Ministral-3-8B-Base-2512",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hakim77/trocr-captcha-v2-god-mode",
   "slug": "hakim77-trocr-captcha-v2-god-mode",
   "author": "hakim77",
@@ -27,14 +27,19 @@
   "parameters_human": "334.9M",
   "storage_bytes": 867045496018,
   "storage_human": "867.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

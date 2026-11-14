@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/Qwen3-30B-A3B-Thinking-2507-REAP-25-nonuniform",
   "slug": "inference-optimization-qwen3-30b-a3b-thinking-2507-reap-25-nonuniform",
   "author": "inference-optimization",
@@ -34,14 +34,19 @@
   "parameters_human": "23.28B",
   "storage_bytes": 93128392160,
   "storage_human": "93.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

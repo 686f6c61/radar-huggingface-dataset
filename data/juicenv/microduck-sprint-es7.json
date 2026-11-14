@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "juicenv/microduck-sprint-es7",
   "slug": "juicenv-microduck-sprint-es7",
   "author": "juicenv",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 794065,
   "storage_human": "794065 B",
+  "context_length": null,
   "base_model": "HannesVonEssen/microduck-running",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

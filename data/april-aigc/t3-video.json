@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "APRIL-AIGC/T3-Video",
   "slug": "april-aigc-t3-video",
   "author": "APRIL-AIGC",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 12839122707,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Docglasses-AI/llama32-soap-e2-gguf",
   "slug": "docglasses-ai-llama32-soap-e2-gguf",
   "author": "Docglasses-AI",
@@ -34,14 +34,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 1829494144,
   "storage_human": "1.8 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

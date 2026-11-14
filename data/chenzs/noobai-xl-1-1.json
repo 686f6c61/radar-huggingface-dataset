@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenzs/NoobAI-XL-1.1",
   "slug": "chenzs-noobai-xl-1-1",
   "author": "chenzs",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 7105349958,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "Laxhar/noobai-XL-1.0",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

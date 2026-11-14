@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnieBraaf/Swift-Qwen3.8-27B-SM75",
   "slug": "johniebraaf-swift-qwen3-8-27b-sm75",
   "author": "JohnieBraaf",
@@ -24,14 +24,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30879674904,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

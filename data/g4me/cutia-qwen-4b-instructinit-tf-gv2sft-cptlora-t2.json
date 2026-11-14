@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora-t2",
   "slug": "g4me-cutia-qwen-4b-instructinit-tf-gv2sft-cptlora-t2",
   "author": "g4me",
@@ -26,14 +26,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 16879252894,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:21:00.550Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhazr2/gemma4-12b-it-rp-v3",
   "slug": "akhazr2-gemma4-12b-it-rp-v3",
   "author": "akhazr2",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 556805721,
   "storage_human": "557 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:52:40.610Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

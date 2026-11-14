@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nooruiit-864/qwen2.5-1.5b-instruct-ai-safety-domain-lora",
   "slug": "nooruiit-864-qwen2-5-1-5b-instruct-ai-safety-domain-lora",
   "author": "nooruiit-864",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 233155232,
   "storage_human": "233 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

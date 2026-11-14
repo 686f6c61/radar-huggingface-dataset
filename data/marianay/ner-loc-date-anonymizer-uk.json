@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marianaY/ner-loc-date-anonymizer-uk",
   "slug": "marianay-ner-loc-date-anonymizer-uk",
   "author": "marianaY",
@@ -27,14 +27,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 2236484840,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

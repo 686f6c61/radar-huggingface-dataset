@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "my-app-s/DeepSeek-R1-Finance-Reasoning-14B-GGUF",
   "slug": "my-app-s-deepseek-r1-finance-reasoning-14b-gguf",
   "author": "my-app-s",
@@ -34,14 +34,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102043518336,
   "storage_human": "102.0 GB",
+  "context_length": 131072,
   "base_model": "engr-bilal/FinetunedQwen14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

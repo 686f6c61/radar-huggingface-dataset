@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "handyshed/lark-punctuation",
   "slug": "handyshed-lark-punctuation",
   "author": "handyshed",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 233150537,
   "storage_human": "233 MB",
+  "context_length": null,
   "base_model": "oliverguhr/fullstop-punctuation-multilingual-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM2.5-24B-A2B-Uncensored-BF16-GGUF",
   "slug": "mradermacher-lfm2-5-24b-a2b-uncensored-bf16-gguf",
   "author": "mradermacher",
@@ -52,14 +52,19 @@
   "parameters_human": "23.97B",
   "storage_bytes": 163013582752,
   "storage_human": "163.0 GB",
+  "context_length": 131072,
   "base_model": "frstofrhx/LFM2.5-24B-A2B-Uncensored-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

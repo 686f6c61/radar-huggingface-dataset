@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dawitozzie/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
   "slug": "dawitozzie-qwen3-6-35b-a3b-uncensored-genesis-hermes-v7-gguf",
   "author": "Dawitozzie",
@@ -45,14 +45,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 256257648192,
   "storage_human": "256.3 GB",
+  "context_length": null,
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:00:47.794Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

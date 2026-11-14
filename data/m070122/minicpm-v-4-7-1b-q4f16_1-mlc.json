@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m070122/MiniCPM-V-4.7-1B-q4f16_1-MLC",
   "slug": "m070122-minicpm-v-4-7-1b-q4f16_1-mlc",
   "author": "m070122",
@@ -48,12 +48,17 @@
   "parameters_human": null,
   "storage_bytes": 1683492834,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

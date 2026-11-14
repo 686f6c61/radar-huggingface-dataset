@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stage-org/appworld-qwen35-9b-meta-type2-iter1",
   "slug": "stage-org-appworld-qwen35-9b-meta-type2-iter1",
   "author": "Stage-org",
@@ -23,14 +23,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 37659431565,
   "storage_human": "37.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

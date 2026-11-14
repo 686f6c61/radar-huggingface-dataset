@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daominhwysi/sealior-modernbert-vi-exam-seq-labeling",
   "slug": "daominhwysi-sealior-modernbert-vi-exam-seq-labeling",
   "author": "daominhwysi",
@@ -40,14 +40,19 @@
   "parameters_human": "312.9M",
   "storage_bytes": 55132483955,
   "storage_human": "55.1 GB",
+  "context_length": null,
   "base_model": "aisingapore/SEA-LION-ModernBERT-300M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Token Classification (Sequence Labelling)",

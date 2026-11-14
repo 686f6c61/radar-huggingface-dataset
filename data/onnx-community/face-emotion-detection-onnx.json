@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/face-emotion-detection-ONNX",
   "slug": "onnx-community-face-emotion-detection-onnx",
   "author": "onnx-community",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 795826965,
   "storage_human": "796 MB",
+  "context_length": null,
   "base_model": "abhilash88/face-emotion-detection",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

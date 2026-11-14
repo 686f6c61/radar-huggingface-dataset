@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "na399/gliner2.5-clinical-evidence-lora-p4",
   "slug": "na399-gliner2-5-clinical-evidence-lora-p4",
   "author": "na399",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 24983688,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": "fastino/gliner2.5-base-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:25:01.529Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

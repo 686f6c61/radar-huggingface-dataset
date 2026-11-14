@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/MiMo-V2.6-Distill-Qwen-9B-NVFP4-GGUF",
   "slug": "prithivmlmods-mimo-v2-6-distill-qwen-9b-nvfp4-gguf",
   "author": "prithivMLmods",
@@ -60,14 +60,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 7930643520,
   "storage_human": "7.9 GB",
+  "context_length": 262144,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

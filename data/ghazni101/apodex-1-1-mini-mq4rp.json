@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghazni101/Apodex-1.1-mini-MQ4RP",
   "slug": "ghazni101-apodex-1-1-mini-mq4rp",
   "author": "ghazni101",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 37478649856,
   "storage_human": "37.5 GB",
+  "context_length": null,
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ghazni101/Apodex-1.1-mini-MQ4R",
+  "renamed_at": "2026-11-11T05:25:38.849Z",
   "benchmarks": [],
   "sources": [
     {

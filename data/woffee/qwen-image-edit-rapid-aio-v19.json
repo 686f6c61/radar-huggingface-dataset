@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Woffee/Qwen-Image-Edit-Rapid-AIO-V19",
   "slug": "woffee-qwen-image-edit-rapid-aio-v19",
   "author": "Woffee",
@@ -34,6 +34,7 @@
   "parameters_human": "20.43B",
   "storage_bytes": 20430632952,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": "Phr00t/Qwen-Image-Edit-Rapid-AIO",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

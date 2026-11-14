@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "irwanworld/Irwan-LightOnOCR-3-0.8B-abliterated",
   "slug": "irwanworld-irwan-lightonocr-3-0-8b-abliterated",
   "author": "irwanworld",
@@ -43,6 +43,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 2745210637,
   "storage_human": "2.7 GB",
+  "context_length": 262144,
   "base_model": "lightonai/LightOnOCR-3-0.8B, huihui-ai/Huihui-Qwen3.5-0.8B-abliterated",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

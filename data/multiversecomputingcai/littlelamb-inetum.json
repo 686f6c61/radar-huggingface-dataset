@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MultiverseComputingCAI/LittleLamb-inetum",
   "slug": "multiversecomputingcai-littlelamb-inetum",
   "author": "MultiverseComputingCAI",
@@ -33,14 +33,19 @@
   "parameters_human": "293.3M",
   "storage_bytes": 598707862,
   "storage_human": "599 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B, MultiverseComputing/LittleLamb-0.3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:42:20.043Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/Krea-2-Life-Turbo-Diffusers",
   "slug": "ast-1320-krea-2-life-turbo-diffusers",
   "author": "AST-1320",
@@ -31,6 +31,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 35035062677,
   "storage_human": "35.0 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T02:16:35.527Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

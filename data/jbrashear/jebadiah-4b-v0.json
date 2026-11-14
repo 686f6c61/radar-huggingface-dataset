@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jbrashear/jebadiah-4b-v0",
   "slug": "jbrashear-jebadiah-4b-v0",
   "author": "jbrashear",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 152488489,
   "storage_human": "152 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "frontier-infra/jebadiah-4b-v0",
+  "renamed_at": "2026-11-13T06:05:56.853Z",
   "benchmarks": [
     {
       "task": "typed decisions (choice, noul, score)",

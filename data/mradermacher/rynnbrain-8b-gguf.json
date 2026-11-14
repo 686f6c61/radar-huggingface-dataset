@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/RynnBrain-8B-GGUF",
   "slug": "mradermacher-rynnbrain-8b-gguf",
   "author": "mradermacher",
@@ -46,14 +46,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 75336673024,
   "storage_human": "75.3 GB",
+  "context_length": 262144,
   "base_model": "Alibaba-DAMO-Academy/RynnBrain-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

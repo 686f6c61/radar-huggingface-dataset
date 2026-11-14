@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yasinyaman/toolrank-emb-8b-GGUF",
   "slug": "yasinyaman-toolrank-emb-8b-gguf",
   "author": "yasinyaman",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 13733392288,
   "storage_human": "13.7 GB",
+  "context_length": 40960,
   "base_model": "yasinyaman/callbus-emb-8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "yasinyaman/callbus-emb-8b-GGUF",
+  "renamed_at": "2026-11-11T08:09:20.050Z",
   "benchmarks": [],
   "sources": [
     {

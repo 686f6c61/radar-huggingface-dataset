@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MaxSchulten/gpt-oss-20B-high-nextcoder-distill-Qwen3-4B-r8k",
   "slug": "maxschulten-gpt-oss-20b-high-nextcoder-distill-qwen3-4b-r8k",
   "author": "MaxSchulten",
@@ -32,14 +32,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056410059,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LayerFault/provenance-unexpected-extra-file",
   "slug": "layerfault-provenance-unexpected-extra-file",
   "author": "LayerFault",
@@ -28,14 +28,19 @@
   "parameters_human": "16",
   "storage_bytes": 202,
   "storage_human": "202 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

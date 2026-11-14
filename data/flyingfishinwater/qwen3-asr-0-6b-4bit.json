@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/Qwen3-ASR-0.6B-4bit",
   "slug": "flyingfishinwater-qwen3-asr-0-6b-4bit",
   "author": "flyingfishinwater",
@@ -32,6 +32,7 @@
   "parameters_human": "782.4M",
   "storage_bytes": 708236945,
   "storage_human": "708 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:31.612Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

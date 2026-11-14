@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khronnuz/Tess-4.5-27B-exl3",
   "slug": "khronnuz-tess-4-5-27b-exl3",
   "author": "khronnuz",
@@ -31,14 +31,19 @@
   "parameters_human": "8.18B",
   "storage_bytes": 118380055959,
   "storage_human": "118.4 GB",
+  "context_length": null,
   "base_model": "migtissera/Tess-4.5-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

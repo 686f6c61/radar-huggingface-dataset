@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dancingfrog/Nezou-27B-CyberAbliterated-NVFP4",
   "slug": "dancingfrog-nezou-27b-cyberabliterated-nvfp4",
   "author": "dancingfrog",
@@ -42,14 +42,19 @@
   "parameters_human": "18.80B",
   "storage_bytes": 22490747024,
   "storage_human": "22.5 GB",
+  "context_length": null,
   "base_model": "dancingfrog/Nezou-27B-CyberAbliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

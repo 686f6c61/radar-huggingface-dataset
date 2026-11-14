@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pragmaticcs/SignOfThree-Q4_K_M-GGUF",
   "slug": "pragmaticcs-signofthree-q4_k_m-gguf",
   "author": "pragmaticcs",
@@ -28,14 +28,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 21166780352,
   "storage_human": "21.2 GB",
+  "context_length": 262144,
   "base_model": "pragmaticcs/SignOfThree",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:13:48.876Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

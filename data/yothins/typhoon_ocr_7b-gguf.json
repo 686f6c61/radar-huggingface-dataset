@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yothinS/Typhoon_OCR_7B.gguf",
   "slug": "yothins-typhoon_ocr_7b-gguf",
   "author": "yothinS",
@@ -35,14 +35,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 40089524704,
   "storage_human": "40.1 GB",
+  "context_length": 128000,
   "base_model": "typhoon-ai/typhoon-ocr-7b, Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

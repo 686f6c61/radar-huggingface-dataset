@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Junlaii/Aurora-Series-v2",
   "slug": "junlaii-aurora-series-v2",
   "author": "Junlaii",
@@ -31,14 +31,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939732,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

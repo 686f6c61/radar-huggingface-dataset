@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/glm-4.6v",
   "slug": "kerasformers-glm-4-6v",
   "author": "kerasformers",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 216078703787,
   "storage_human": "216.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.6V",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/glm-4.6v",
+  "renamed_at": "2026-11-11T05:54:30.132Z",
   "benchmarks": [],
   "sources": [
     {

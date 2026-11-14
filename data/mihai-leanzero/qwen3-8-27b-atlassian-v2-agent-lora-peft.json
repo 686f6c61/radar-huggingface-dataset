@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-lora-peft",
   "slug": "mihai-leanzero-qwen3-8-27b-atlassian-v2-agent-lora-peft",
   "author": "Mihai-LeanZero",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1602278192,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

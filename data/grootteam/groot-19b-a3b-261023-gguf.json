@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GrootTeam/Groot-19B-A3B-261023-GGUF",
   "slug": "grootteam-groot-19b-a3b-261023-gguf",
   "author": "GrootTeam",
@@ -20,21 +20,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 57,
+  "likes": 59,
   "downloads_30d": 32938,
-  "trending_score": 12,
+  "trending_score": 14,
   "parameters": 18985723008,
   "parameters_human": "18.99B",
   "storage_bytes": 12566598611,
   "storage_human": "12.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

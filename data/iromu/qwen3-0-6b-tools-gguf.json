@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/Qwen3-0.6B-tools-GGUF",
   "slug": "iromu-qwen3-0-6b-tools-gguf",
   "author": "iromu",
@@ -38,14 +38,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 8784645632,
   "storage_human": "8.8 GB",
+  "context_length": 40960,
   "base_model": "iromu/Qwen3-0.6B-tools",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

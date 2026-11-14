@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Ornith-1.5-35B-A3B-Tensix-BFP4-Experts",
   "slug": "xylolabs-ornith-1-5-35b-a3b-tensix-bfp4-experts",
   "author": "Xylolabs",
@@ -43,14 +43,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69334110446,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

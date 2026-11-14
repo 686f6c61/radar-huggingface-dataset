@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RacerMiner/Qwen3-8B-Q8_0-full-v2.gguf",
   "slug": "racerminer-qwen3-8b-q8_0-full-v2-gguf",
   "author": "RacerMiner",
@@ -25,14 +25,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 8709518304,
   "storage_human": "8.7 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

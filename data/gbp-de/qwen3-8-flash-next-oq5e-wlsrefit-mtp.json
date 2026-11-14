@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GBP-DE/Qwen3.8-Flash-Next-oQ5e-WLSRefit-MTP",
   "slug": "gbp-de-qwen3-8-flash-next-oq5e-wlsrefit-mtp",
   "author": "GBP-DE",
@@ -36,6 +36,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 227458646104,
   "storage_human": "227.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

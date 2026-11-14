@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qubitium/llama3.2-1b-instruct-tenstorrent-bf8-bf4-w4a16",
   "slug": "qubitium-llama3-2-1b-instruct-tenstorrent-bf8-bf4-w4a16",
   "author": "Qubitium",
@@ -37,14 +37,19 @@
   "parameters_human": "2.01B",
   "storage_bytes": 3480869657,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

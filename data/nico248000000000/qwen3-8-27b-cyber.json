@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nico248000000000/Qwen3.8-27B-cyber",
   "slug": "nico248000000000-qwen3-8-27b-cyber",
   "author": "nico248000000000",
@@ -42,14 +42,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 109177739151,
   "storage_human": "109.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T06:47:39.251Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Causal language modeling",

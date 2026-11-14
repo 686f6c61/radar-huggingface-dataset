@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thaut/moss-tts-windowed-gguf",
   "slug": "thaut-moss-tts-windowed-gguf",
   "author": "thaut",
@@ -31,14 +31,19 @@
   "parameters_human": "887.4M",
   "storage_bytes": 8886135776,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

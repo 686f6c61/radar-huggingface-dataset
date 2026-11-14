@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emi08/maske-modernbert-tr-bakeoff",
   "slug": "emi08-maske-modernbert-tr-bakeoff",
   "author": "emi08",
@@ -36,14 +36,19 @@
   "parameters_human": "149.3M",
   "storage_bytes": 597354445,
   "storage_human": "597 MB",
+  "context_length": null,
   "base_model": "ytu-ce-cosmos/modernbert-tr-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

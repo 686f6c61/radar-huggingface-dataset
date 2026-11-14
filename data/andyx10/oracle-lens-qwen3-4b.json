@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andyx10/oracle-lens-qwen3-4b",
   "slug": "andyx10-oracle-lens-qwen3-4b",
   "author": "andyx10",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 82034680047,
   "storage_human": "82.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

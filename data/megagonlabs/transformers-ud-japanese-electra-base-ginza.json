@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "megagonlabs/transformers-ud-japanese-electra-base-ginza",
   "slug": "megagonlabs-transformers-ud-japanese-electra-base-ginza",
   "author": "megagonlabs",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 868726309,
   "storage_human": "869 MB",
+  "context_length": null,
   "base_model": "megagonlabs/transformers-ud-japanese-electra-base-discriminator",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

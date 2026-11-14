@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wepiqx/SenseNova-Loop-9B-Preview-MERNIK-GGUF",
   "slug": "wepiqx-sensenova-loop-9b-preview-mernik-gguf",
   "author": "wepiqx",
@@ -37,14 +37,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 5578610144,
   "storage_human": "5.6 GB",
+  "context_length": 262144,
   "base_model": "sensenova/SenseNova-Loop-9B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wyf-yfw/MiniSeek-D0.1",
   "slug": "wyf-yfw-miniseek-d0-1",
   "author": "wyf-yfw",
@@ -39,14 +39,19 @@
   "parameters_human": "31.7M",
   "storage_bytes": 253989001,
   "storage_human": "254 MB",
+  "context_length": null,
   "base_model": "wyf-yfw/MiniSeek-D0.1-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

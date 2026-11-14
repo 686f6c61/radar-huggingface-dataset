@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lite-infer/moss-image-sft-nunchaku-lite-int4-r128",
   "slug": "lite-infer-moss-image-sft-nunchaku-lite-int4-r128",
   "author": "lite-infer",
@@ -36,6 +36,7 @@
   "parameters_human": "2.92B",
   "storage_bytes": 9841173313,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

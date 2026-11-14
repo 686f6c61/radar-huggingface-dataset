@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nrl-ai/anylearning-sam3-onnx",
   "slug": "nrl-ai-anylearning-sam3-onnx",
   "author": "nrl-ai",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3413511219,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "facebook/sam3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-4B-Fiction-On-Fire-Series-7-Model-1006-GGUF",
   "slug": "mradermacher-qwen3-4b-fiction-on-fire-series-7-model-1006-gguf",
   "author": "mradermacher",
@@ -60,14 +60,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 36390005760,
   "storage_human": "36.4 GB",
+  "context_length": 40960,
   "base_model": "DavidAU/Qwen3-4B-Fiction-On-Fire-Series-7-Model-1006",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

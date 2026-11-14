@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tachiwin/Tachiwin-Audio-ID-Onnx",
   "slug": "tachiwin-tachiwin-audio-id-onnx",
   "author": "tachiwin",
@@ -293,14 +293,19 @@
   "parameters_human": null,
   "storage_bytes": 131076401,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "tachiwin/Tachiwin-Audio-ID",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Audio Classification",

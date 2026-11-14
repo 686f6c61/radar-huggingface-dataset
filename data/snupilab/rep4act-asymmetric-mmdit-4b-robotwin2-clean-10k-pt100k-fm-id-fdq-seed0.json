@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snupilab/Rep4Act-Asymmetric-MMDiT-4B-RoboTwin2-Clean-10k-PT100k-FM-ID-FDq-seed0",
   "slug": "snupilab-rep4act-asymmetric-mmdit-4b-robotwin2-clean-10k-pt100k-fm-id-fdq-seed0",
   "author": "snupilab",
@@ -26,14 +26,19 @@
   "parameters_human": "5.96B",
   "storage_bytes": 20180689289,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

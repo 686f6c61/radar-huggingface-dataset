@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fishfan14/convnext-tiny-sentinel2-continents-robust",
   "slug": "fishfan14-convnext-tiny-sentinel2-continents-robust",
   "author": "fishfan14",
@@ -32,6 +32,7 @@
   "parameters_human": "27.8M",
   "storage_bytes": 222693399,
   "storage_human": "223 MB",
+  "context_length": null,
   "base_model": "timm/convnext_tiny.fb_in22k_ft_in1k",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T05:34:29.817Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

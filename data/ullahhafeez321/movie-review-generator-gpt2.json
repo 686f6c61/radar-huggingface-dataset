@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ullahhafeez321/movie-review-generator-gpt2",
   "slug": "ullahhafeez321-movie-review-generator-gpt2",
   "author": "ullahhafeez321",
@@ -38,14 +38,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 2986878225,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "arxohq/Arxo-Materia-0.8B-EHRSQL-0.1",
+  "slug": "arxohq-arxo-materia-0-8b-ehrsql-0-1",
+  "author": "arxohq",
+  "url": "https://huggingface.co/arxohq/Arxo-Materia-0.8B-EHRSQL-0.1",
+  "created_at": "2026-11-14T16:55:10.000Z",
+  "updated_at": "2026-11-14T17:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "text-to-sql",
+    "ehrsql",
+    "medhelm",
+    "lora",
+    "arxo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106835872,
+  "storage_human": "107 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-SQL over patient records",
+      "dataset": "EHRSQL (eICU), as evaluated in MedHELM",
+      "metric": "Execution accuracy",
+      "value": 66.8
+    }
+  ],
+  "sources": []
+}

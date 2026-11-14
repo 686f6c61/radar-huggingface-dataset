@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neptune-T/alphabot2-ovmm-sft3000",
   "slug": "neptune-t-alphabot2-ovmm-sft3000",
   "author": "Neptune-T",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 16578043303,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "alphabot2/aibot2_grab_bag_combined_over_under_pi05",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

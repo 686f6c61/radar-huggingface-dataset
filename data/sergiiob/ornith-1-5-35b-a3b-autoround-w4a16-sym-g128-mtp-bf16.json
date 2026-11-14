@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SergiioB/Ornith-1.5-35B-A3B-AutoRound-W4A16-sym-G128-MTP-BF16",
   "slug": "sergiiob-ornith-1-5-35b-a3b-autoround-w4a16-sym-g128-mtp-bf16",
   "author": "SergiioB",
@@ -41,14 +41,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 24453153875,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

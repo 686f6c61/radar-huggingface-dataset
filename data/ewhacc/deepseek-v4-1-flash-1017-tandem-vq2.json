@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewhacc/DeepSeek-V4.1-Flash-1017-Tandem-VQ2",
   "slug": "ewhacc-deepseek-v4-1-flash-1017-tandem-vq2",
   "author": "ewhacc",
@@ -35,14 +35,19 @@
   "parameters_human": "127.46B",
   "storage_bytes": 313597088623,
   "storage_human": "313.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

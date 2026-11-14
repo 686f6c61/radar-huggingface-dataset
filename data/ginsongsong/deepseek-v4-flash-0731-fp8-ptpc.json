@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ginsongsong/DeepSeek-V4-Flash-0731-FP8-PTPC",
   "slug": "ginsongsong-deepseek-v4-flash-0731-fp8-ptpc",
   "author": "ginsongsong",
@@ -37,14 +37,19 @@
   "parameters_human": "304.18B",
   "storage_bytes": 307719307128,
   "storage_human": "307.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

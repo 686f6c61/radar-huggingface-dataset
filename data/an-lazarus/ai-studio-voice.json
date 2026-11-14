@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "an-lazarus/ai-studio-voice",
   "slug": "an-lazarus-ai-studio-voice",
   "author": "an-lazarus",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 20182875937,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:16:34.948Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Minervus00/g2p-conformer-ctc-dyu",
   "slug": "minervus00-g2p-conformer-ctc-dyu",
   "author": "Minervus00",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 49520640,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:51:33.310Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Grapheme-to-Phoneme",

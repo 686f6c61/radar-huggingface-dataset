@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aymandakir-gh/gh-spark-GGUF",
   "slug": "aymandakir-gh-gh-spark-gguf",
   "author": "aymandakir-gh",
@@ -38,14 +38,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1432856160,
   "storage_human": "1.4 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YamiTori/t2sqlbs-ministral3-lora",
   "slug": "yamitori-t2sqlbs-ministral3-lora",
   "author": "YamiTori",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 82172536,
   "storage_human": "82 MB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-8B-Instruct-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

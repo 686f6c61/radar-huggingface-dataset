@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "julian-schelb/latin-bert-3class-lat-intertext-v1",
   "slug": "julian-schelb-latin-bert-3class-lat-intertext-v1",
   "author": "julian-schelb",
@@ -40,14 +40,19 @@
   "parameters_human": "111.3M",
   "storage_bytes": 445266948,
   "storage_human": "445 MB",
+  "context_length": null,
   "base_model": "ashleygong03/bamman-burns-latin-bert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darrellbest/Qwen3.5-4B-Heretic-NVFP4",
   "slug": "darrellbest-qwen3-5-4b-heretic-nvfp4",
   "author": "darrellbest",
@@ -37,14 +37,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 5661988096,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "darrellbest/Qwen3.5-4B-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

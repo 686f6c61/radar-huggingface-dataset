@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loongyy/sdar-8b-webshop-distill-lc-all-trajectory-gs300",
   "slug": "loongyy-sdar-8b-webshop-distill-lc-all-trajectory-gs300",
   "author": "loongyy",
@@ -31,14 +31,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16381516824,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T07:59:41.165Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

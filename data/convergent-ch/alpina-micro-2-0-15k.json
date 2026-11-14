@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Convergent-ch/Alpina-Micro-2.0-15K",
   "slug": "convergent-ch-alpina-micro-2-0-15k",
   "author": "Convergent-ch",
@@ -35,6 +35,7 @@
   "parameters_human": "15008",
   "storage_bytes": 61144,
   "storage_human": "61144 B",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

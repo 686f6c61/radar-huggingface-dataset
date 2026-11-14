@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LookUpMark/Ornith-1.5-35B-A3B-oQ4e-mtp",
   "slug": "lookupmark-ornith-1-5-35b-a3b-oq4e-mtp",
   "author": "LookUpMark",
@@ -34,6 +34,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 21624282165,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

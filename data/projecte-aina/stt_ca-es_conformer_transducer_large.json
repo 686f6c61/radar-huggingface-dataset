@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "projecte-aina/stt_ca-es_conformer_transducer_large",
   "slug": "projecte-aina-stt_ca-es_conformer_transducer_large",
   "author": "projecte-aina",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 478535680,
   "storage_human": "479 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_es_conformer_transducer_large",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

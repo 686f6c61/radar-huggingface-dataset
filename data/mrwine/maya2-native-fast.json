@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrwine/maya2-native-fast",
   "slug": "mrwine-maya2-native-fast",
   "author": "mrwine",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 4300805824,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "maya-research/maya2-native",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

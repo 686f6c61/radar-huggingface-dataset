@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sanio7791/gemma-4-31B-it-uncensored-heretic",
   "slug": "sanio7791-gemma-4-31b-it-uncensored-heretic",
   "author": "Sanio7791",
@@ -35,14 +35,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578508044,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

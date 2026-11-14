@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WX957/Hy-MT2-1.8B",
   "slug": "wx957-hy-mt2-1-8b",
   "author": "WX957",
@@ -102,14 +102,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4080913388,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

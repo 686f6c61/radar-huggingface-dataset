@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/DeepSeek-R1-Distill-Qwen-7B_rai_1.9.0_m_1.0.1_npu",
   "slug": "amd-deepseek-r1-distill-qwen-7b_rai_1-9-0_m_1-0-1_npu",
   "author": "amd",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 5323906966,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

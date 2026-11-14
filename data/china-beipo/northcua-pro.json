@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "china-beipo/NorthCUA-Pro",
   "slug": "china-beipo-northcua-pro",
   "author": "china-beipo",
@@ -34,14 +34,19 @@
   "parameters_human": "396.80B",
   "storage_bytes": 793625359207,
   "storage_human": "793.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "beipo-ai/NorthCUA-Pro",
+  "renamed_at": "2026-11-11T04:49:09.672Z",
   "benchmarks": [],
   "sources": []
 }

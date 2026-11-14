@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aufklarer/FireRedTTS3-Instruct-MLX-fp32",
   "slug": "aufklarer-fireredtts3-instruct-mlx-fp32",
   "author": "aufklarer",
@@ -37,6 +37,7 @@
   "parameters_human": "2.12B",
   "storage_bytes": 9452151134,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "FireRedTeam/FireRedTTS3",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

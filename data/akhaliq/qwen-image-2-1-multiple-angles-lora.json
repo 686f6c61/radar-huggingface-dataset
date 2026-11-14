@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA",
   "slug": "akhaliq-qwen-image-2-1-multiple-angles-lora",
   "author": "akhaliq",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 7515269946,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

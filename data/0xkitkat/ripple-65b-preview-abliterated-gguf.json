@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xKitkat/Ripple-65B-Preview-abliterated-GGUF",
   "slug": "0xkitkat-ripple-65b-preview-abliterated-gguf",
   "author": "0xKitkat",
@@ -38,14 +38,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 206548645216,
   "storage_human": "206.5 GB",
+  "context_length": 2097152,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

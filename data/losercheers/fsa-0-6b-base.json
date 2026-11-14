@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "losercheers/FSA-0.6B-Base",
   "slug": "losercheers-fsa-0-6b-base",
   "author": "losercheers",
@@ -29,14 +29,19 @@
   "parameters_human": "589.9M",
   "storage_bytes": 1192551156,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

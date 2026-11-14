@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shashaank0707/agentdebugger-E3-s123",
   "slug": "shashaank0707-agentdebugger-e3-s123",
   "author": "shashaank0707",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 71355695,
   "storage_human": "71 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

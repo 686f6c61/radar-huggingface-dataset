@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mimba/whisper-mimba-v1",
   "slug": "mimba-whisper-mimba-v1",
   "author": "mimba",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 966995080,
   "storage_human": "967 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:19:51.120Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

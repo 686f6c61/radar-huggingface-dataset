@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Granite-4.2-8B-Surgical-Abliterated-GGUF",
   "slug": "mradermacher-granite-4-2-8b-surgical-abliterated-gguf",
   "author": "mradermacher",
@@ -36,6 +36,7 @@
   "parameters_human": "8.79B",
   "storage_bytes": 78209096832,
   "storage_human": "78.2 GB",
+  "context_length": 131072,
   "base_model": "medismera/Granite-4.2-8B-Surgical-Abliterated",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JesterbeanLTEA/sft-5g-rca-qwen3-1.7b",
   "slug": "jesterbeanltea-sft-5g-rca-qwen3-1-7b",
   "author": "JesterbeanLTEA",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 22151715768,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

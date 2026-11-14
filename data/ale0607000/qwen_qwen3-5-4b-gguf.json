@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ale0607000/Qwen_Qwen3.5-4B-GGUF",
   "slug": "ale0607000-qwen_qwen3-5-4b-gguf",
   "author": "Ale0607000",
@@ -28,14 +28,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 77068011136,
   "storage_human": "77.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T02:20:40.078Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

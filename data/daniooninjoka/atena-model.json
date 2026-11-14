@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Daniooninjoka/atena-model",
   "slug": "daniooninjoka-atena-model",
   "author": "Daniooninjoka",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 22713087580,
   "storage_human": "22.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T10:06:43.181Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

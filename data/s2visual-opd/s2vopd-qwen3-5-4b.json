@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "S2Visual-OPD/S2VOPD-Qwen3.5-4B",
   "slug": "s2visual-opd-s2vopd-qwen3-5-4b",
   "author": "S2Visual-OPD",
@@ -34,14 +34,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 20720027999,
   "storage_human": "20.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "s2vopd/S2VOPD-Qwen3.5-4B",
+  "renamed_at": "2026-11-11T03:46:52.710Z",
   "benchmarks": [],
   "sources": [
     {

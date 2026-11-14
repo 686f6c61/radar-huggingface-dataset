@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AverageMetaheuristicsEnjoyer/moe-routing-drift-checkpoints",
   "slug": "averagemetaheuristicsenjoyer-moe-routing-drift-checkpoints",
   "author": "AverageMetaheuristicsEnjoyer",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 7258031104,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-mini-2.0, Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

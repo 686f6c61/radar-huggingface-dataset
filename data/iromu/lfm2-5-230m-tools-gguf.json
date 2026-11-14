@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/LFM2.5-230M-tools-GGUF",
   "slug": "iromu-lfm2-5-230m-tools-gguf",
   "author": "iromu",
@@ -36,14 +36,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 2067026560,
   "storage_human": "2.1 GB",
+  "context_length": 128000,
   "base_model": "iromu/LFM2.5-230M-tools",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

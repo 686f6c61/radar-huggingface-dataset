@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-ai/hyperflow-h3-flash-MLX",
   "slug": "moonbox-ai-hyperflow-h3-flash-mlx",
   "author": "moonbox-ai",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 61552168939,
   "storage_human": "61.6 GB",
+  "context_length": null,
   "base_model": "VideoRebirthAI/hyperflow-h3-flash",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "moonbox-dev/hyperflow-h3-flash-MLX",
+  "renamed_at": "2026-11-13T06:47:37.861Z",
   "benchmarks": [],
   "sources": []
 }

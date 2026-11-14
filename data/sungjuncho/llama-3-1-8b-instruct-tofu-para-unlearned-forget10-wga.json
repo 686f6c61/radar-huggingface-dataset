@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga",
   "slug": "sungjuncho-llama-3-1-8b-instruct-tofu-para-unlearned-forget10-wga",
   "author": "sungjuncho",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766536,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-wga-seed0",
+  "renamed_at": "2026-11-11T07:40:04.520Z",
   "benchmarks": [],
   "sources": []
 }

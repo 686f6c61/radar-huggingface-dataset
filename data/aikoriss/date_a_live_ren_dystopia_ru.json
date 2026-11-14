@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aikoriss/Date_A_Live_Ren_Dystopia_RU",
   "slug": "aikoriss-date_a_live_ren_dystopia_ru",
   "author": "aikoriss",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 48823156,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

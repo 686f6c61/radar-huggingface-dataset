@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mr-J-369/lustifyNSFWCheckpoint_v40DMD2",
   "slug": "mr-j-369-lustifynsfwcheckpoint_v40dmd2",
   "author": "Mr-J-369",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 5158785673,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T08:50:36.130Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

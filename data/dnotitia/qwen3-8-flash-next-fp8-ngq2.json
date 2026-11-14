@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dnotitia/Qwen3.8-Flash-Next-FP8-NGQ2",
   "slug": "dnotitia-qwen3-8-flash-next-fp8-ngq2",
   "author": "dnotitia",
@@ -38,14 +38,19 @@
   "parameters_human": "141.92B",
   "storage_bytes": 147793269007,
   "storage_human": "147.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

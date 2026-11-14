@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omkarpatil/ffw_sg2_put-blocks-in-bowl_smolvla",
   "slug": "omkarpatil-ffw_sg2_put-blocks-in-bowl_smolvla",
   "author": "omkarpatil",
@@ -33,14 +33,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906717008,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T09:50:54.020Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

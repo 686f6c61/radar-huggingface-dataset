@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "executorch-community/D-FINE-Small-COCO-ExecuTorch-WebGPU",
   "slug": "executorch-community-d-fine-small-coco-executorch-webgpu",
   "author": "executorch-community",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 42260612,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "ustc-community/dfine-small-coco",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quiho/Anima-2.9B-P1-Turbo1.1_Unofficial_Merge_p1-turbo1.1_checkpoint",
   "slug": "quiho-anima-2-9b-p1-turbo1-1_unofficial_merge_p1-turbo1-1_checkpoint",
   "author": "Quiho",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 5846797994,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

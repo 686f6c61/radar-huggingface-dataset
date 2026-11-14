@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Schwi-AI/Qwen-Image-2.1-MosaicMate-LoRA",
   "slug": "schwi-ai-qwen-image-2-1-mosaicmate-lora",
   "author": "Schwi-AI",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 50545658,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

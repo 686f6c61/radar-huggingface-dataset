@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-CLEER-k6",
   "slug": "nidhal101-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4-cleer-k6",
   "author": "Nidhal101",
@@ -28,14 +28,19 @@
   "parameters_human": "3.69B",
   "storage_bytes": 3362948186,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

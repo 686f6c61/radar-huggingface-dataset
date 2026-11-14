@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/apertus-12b-try-again-s0-GGUF",
   "slug": "mradermacher-apertus-12b-try-again-s0-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "11.54B",
   "storage_bytes": 80645672992,
   "storage_human": "80.6 GB",
+  "context_length": 65536,
   "base_model": "ToastyPigeon/apertus-12b-try-again-s0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

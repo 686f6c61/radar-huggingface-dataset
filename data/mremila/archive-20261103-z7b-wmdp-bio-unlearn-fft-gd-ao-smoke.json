@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-gd-ao-smoke",
   "slug": "mremila-archive-20261103-z7b-wmdp-bio-unlearn-fft-gd-ao-smoke",
   "author": "mremila",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T07:37:24.668Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

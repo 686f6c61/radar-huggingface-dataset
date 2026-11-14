@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jersobh/epochdb-extractor-0.8b",
   "slug": "jersobh-epochdb-extractor-0-8b",
   "author": "jersobh",
@@ -34,14 +34,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 3432050399,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

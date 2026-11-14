@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optima-tools-ch/chat-high",
   "slug": "optima-tools-ch-chat-high",
   "author": "optima-tools-ch",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 33836403264,
   "storage_human": "33.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-4-step-110000",
   "slug": "huluhuluu-qwen3-4b-instruct-2507-eagle3-sharegpt-nowindow-epoch-4-step-110000",
   "author": "huluhuluu",
@@ -36,14 +36,19 @@
   "parameters_human": "202.7M",
   "storage_bytes": 405446647,
   "storage_human": "405 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "huluhuluu/qwen3-4b-instruct-2507-eagle3-sharegpt-full-context-epoch4-step110000",
+  "renamed_at": "2026-11-13T05:55:19.926Z",
   "benchmarks": [],
   "sources": [
     {

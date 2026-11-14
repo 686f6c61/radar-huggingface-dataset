@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arianaazarbal/ct-inkling-oai-gen-mid-g1-b3",
   "slug": "arianaazarbal-ct-inkling-oai-gen-mid-g1-b3",
   "author": "arianaazarbal",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 16901410336,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

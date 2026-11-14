@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "promotion/Qwen3-8B-AbsoluteMaxmin-baseline",
   "slug": "promotion-qwen3-8b-absolutemaxmin-baseline",
   "author": "promotion",
@@ -29,14 +29,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 32774409894,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T05:57:18.363Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wenzhouwu/YoungAi-DeepSeek-V4.1-Flash",
   "slug": "wenzhouwu-youngai-deepseek-v4-1-flash",
   "author": "wenzhouwu",
@@ -42,14 +42,19 @@
   "parameters_human": "485.3M",
   "storage_bytes": 115409641478,
   "storage_human": "115.4 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

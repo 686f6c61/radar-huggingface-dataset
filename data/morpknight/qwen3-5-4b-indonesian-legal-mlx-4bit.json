@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "morpknight/qwen3.5-4b-indonesian-legal-mlx-4bit",
   "slug": "morpknight-qwen3-5-4b-indonesian-legal-mlx-4bit",
   "author": "morpknight",
@@ -37,6 +37,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 2387226602,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

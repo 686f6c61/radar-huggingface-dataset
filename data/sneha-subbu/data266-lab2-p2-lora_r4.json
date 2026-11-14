@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sneha-subbu/data266-lab2-p2-lora_r4",
   "slug": "sneha-subbu-data266-lab2-p2-lora_r4",
   "author": "Sneha-subbu",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 3226184,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

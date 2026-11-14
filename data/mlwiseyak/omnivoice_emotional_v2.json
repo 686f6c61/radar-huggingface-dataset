@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlwiseyak/omnivoice_emotional_v2",
   "slug": "mlwiseyak-omnivoice_emotional_v2",
   "author": "mlwiseyak",
@@ -38,14 +38,19 @@
   "parameters_human": "814.0M",
   "storage_bytes": 2847953650,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T04:26:35.018Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

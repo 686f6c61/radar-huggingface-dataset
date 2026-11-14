@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatterWaveAI/grt-30m-reranker",
   "slug": "matterwaveai-grt-30m-reranker",
   "author": "MatterWaveAI",
@@ -34,14 +34,19 @@
   "parameters_human": "29.8M",
   "storage_bytes": 144191659,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "MatterWaveAI/grt-30m-embedding",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

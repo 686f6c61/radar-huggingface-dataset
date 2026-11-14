@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OopsItsAllNaN/KezLM-1.7B",
   "slug": "oopsitsallnan-kezlm-1-7b",
   "author": "OopsItsAllNaN",
@@ -31,14 +31,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475544243,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T10:17:58.318Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

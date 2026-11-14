@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225",
   "slug": "inference-optimization-glm-4-5-air-0-72b-mtp-pr3225",
   "author": "inference-optimization",
@@ -33,14 +33,19 @@
   "parameters_human": "718.7M",
   "storage_bytes": 1457505564,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T04:52:46.522Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/SeedVR2-GGUF",
   "slug": "ldov-seedvr2-gguf",
   "author": "ldov",
@@ -25,14 +25,19 @@
   "parameters_human": "3.39B",
   "storage_bytes": 72288282144,
   "storage_human": "72.3 GB",
+  "context_length": null,
   "base_model": "numz/SeedVR2_comfyUI",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:30:55.627Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

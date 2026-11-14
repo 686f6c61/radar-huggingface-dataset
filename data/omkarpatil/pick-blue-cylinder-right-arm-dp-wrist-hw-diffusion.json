@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "omkarpatil/pick-blue-cylinder-right-arm-dp-wrist-hw-diffusion",
   "slug": "omkarpatil-pick-blue-cylinder-right-arm-dp-wrist-hw-diffusion",
   "author": "omkarpatil",
@@ -27,14 +27,19 @@
   "parameters_human": "274.5M",
   "storage_bytes": 1098027904,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T13:14:15.259Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

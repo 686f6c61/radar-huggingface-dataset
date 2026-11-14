@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Moaz2011/NOV_v3_5_Master",
   "slug": "moaz2011-nov_v3_5_master",
   "author": "Moaz2011",
@@ -25,6 +25,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 6938011430,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

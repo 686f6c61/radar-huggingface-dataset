@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bx6d/r2s2r-smolvla-blue-cube-to-bowl-stage1",
   "slug": "bx6d-r2s2r-smolvla-blue-cube-to-bowl-stage1",
   "author": "bx6d",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 5441592685,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

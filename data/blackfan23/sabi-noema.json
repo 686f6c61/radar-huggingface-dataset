@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blackfan23/sabi-noema",
   "slug": "blackfan23-sabi-noema",
   "author": "blackfan23",
@@ -29,6 +29,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 17428291998,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "sabicap/sabi-noema",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "blackfan23/sabi-noema-mlx-4bit-Sharp",
+  "renamed_at": "2026-11-11T04:42:31.118Z",
   "benchmarks": [],
   "sources": []
 }

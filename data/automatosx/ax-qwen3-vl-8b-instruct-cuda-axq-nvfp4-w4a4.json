@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AX-Qwen3-VL-8B-Instruct-CUDA-AXQ-NVFP4-W4A4",
   "slug": "automatosx-ax-qwen3-vl-8b-instruct-cuda-axq-nvfp4-w4a4",
   "author": "AutomatosX",
@@ -38,14 +38,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 7549895744,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrenchCastle/Solomon-MLX-8bit",
   "slug": "frenchcastle-solomon-mlx-8bit",
   "author": "FrenchCastle",
@@ -44,6 +44,7 @@
   "parameters_human": null,
   "storage_bytes": 31579992723,
   "storage_human": "31.6 GB",
+  "context_length": null,
   "base_model": "FrenchCastle/Solomon-MLX-bf16",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FrenchCastle/jev-solomon-MLX-8-bit",
+  "renamed_at": "2026-11-13T02:54:58.320Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hbfreed/Laguna-S-2.1-winnow-keep50",
   "slug": "hbfreed-laguna-s-2-1-winnow-keep50",
   "author": "hbfreed",
@@ -34,14 +34,19 @@
   "parameters_human": "60.78B",
   "storage_bytes": 121668143482,
   "storage_human": "121.7 GB",
+  "context_length": null,
   "base_model": "poolside/Laguna-S-2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

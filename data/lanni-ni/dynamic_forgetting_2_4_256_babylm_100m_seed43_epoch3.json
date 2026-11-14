@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3",
   "slug": "lanni-ni-dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3",
   "author": "Lanni-ni",
@@ -27,14 +27,19 @@
   "parameters_human": "27.4M",
   "storage_bytes": 109798816,
   "storage_human": "110 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

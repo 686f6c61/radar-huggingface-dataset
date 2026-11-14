@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DS4AI-UPB/span-detector-ro",
   "slug": "ds4ai-upb-span-detector-ro",
   "author": "DS4AI-UPB",
@@ -36,14 +36,19 @@
   "parameters_human": "558.8M",
   "storage_bytes": 6723661603,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

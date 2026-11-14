@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProjectMosiacAI/Hades-2.0-Night1",
   "slug": "projectmosiacai-hades-2-0-night1",
   "author": "ProjectMosiacAI",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 114517464,
   "storage_human": "115 MB",
+  "context_length": null,
   "base_model": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T05:14:58.617Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "naklitechie/pitchlab-models",
   "slug": "naklitechie-pitchlab-models",
   "author": "naklitechie",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 1391113943,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M, google/gemma-4-E4B, google/gemma-4-12B-it-qat-q4_0-unquantized, Qwen/Qwen3-4B-Instruct-2507, Qwen/Qwen3-8B",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

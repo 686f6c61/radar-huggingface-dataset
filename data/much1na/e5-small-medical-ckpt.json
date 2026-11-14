@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "much1na/e5-small-medical-ckpt",
   "slug": "much1na-e5-small-medical-ckpt",
   "author": "much1na",
@@ -36,14 +36,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 6789137286,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "intfloat/e5-small-unsupervised",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FastVideo/FastH3-Omni-Comfy",
   "slug": "fastvideo-fasth3-omni-comfy",
   "author": "FastVideo",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 169413412215,
   "storage_human": "169.4 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

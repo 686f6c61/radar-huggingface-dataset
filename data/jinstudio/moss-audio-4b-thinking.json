@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/MOSS-Audio-4B-Thinking",
   "slug": "jinstudio-moss-audio-4b-thinking",
   "author": "Jinstudio",
@@ -38,14 +38,19 @@
   "parameters_human": "5.22B",
   "storage_bytes": 10451727872,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T02:51:09.921Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

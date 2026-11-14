@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xororz/dit-engine",
   "slug": "xororz-dit-engine",
   "author": "xororz",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 24955413,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:27:52.222Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

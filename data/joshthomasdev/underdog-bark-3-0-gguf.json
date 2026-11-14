@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshthomasdev/underdog-bark-3.0-gguf",
   "slug": "joshthomasdev-underdog-bark-3-0-gguf",
   "author": "joshthomasdev",
@@ -32,14 +32,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 739508480,
   "storage_human": "740 MB",
+  "context_length": null,
   "base_model": "ConwayResearch/Underdog-Bark-3.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

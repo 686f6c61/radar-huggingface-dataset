@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rajey/privacy-filter-ru",
   "slug": "rajey-privacy-filter-ru",
   "author": "Rajey",
@@ -34,14 +34,19 @@
   "parameters_human": "1.40B",
   "storage_bytes": 5625913384,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "openai/privacy-filter",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

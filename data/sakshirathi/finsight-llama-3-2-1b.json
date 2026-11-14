@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sakshirathi/finsight-llama-3.2-1b",
   "slug": "sakshirathi-finsight-llama-3-2-1b",
   "author": "sakshirathi",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 24034136,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "unsloth/llama-3.2-1b-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-987c938e-ffe7-416e-baec-c6de48119d6f-5CDbyLvX",
   "slug": "gradients-io-tournaments-tournament-tourn_5abc2fe9f0667979_20260914-987c938e-ffe7-416e-baec-c6de48119d6f-5cdbylvx",
   "author": "gradients-io-tournaments",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1359448480,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T07:17:49.061Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

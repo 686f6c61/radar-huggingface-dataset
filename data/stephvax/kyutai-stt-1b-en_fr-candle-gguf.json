@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stephvax/kyutai-stt-1b-en_fr-candle-gguf",
   "slug": "stephvax-kyutai-stt-1b-en_fr-candle-gguf",
   "author": "stephvax",
@@ -35,14 +35,19 @@
   "parameters_human": "989.3M",
   "storage_bytes": 1607988352,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "kyutai/stt-1b-en_fr-candle",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

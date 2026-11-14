@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alxnahas/strands-decider-2B-webgpu",
   "slug": "alxnahas-strands-decider-2b-webgpu",
   "author": "alxnahas",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1085285952,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "StrandsAgents/strands-decider-2B-hobson-v19, Qwen/Qwen3.5-2B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

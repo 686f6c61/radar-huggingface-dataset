@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keakai/keak-nova-GGUF",
   "slug": "keakai-keak-nova-gguf",
   "author": "keakai",
@@ -26,14 +26,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 32662980992,
   "storage_human": "32.7 GB",
+  "context_length": 128000,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

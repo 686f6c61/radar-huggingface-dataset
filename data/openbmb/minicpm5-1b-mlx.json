@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/MiniCPM5-1B-MLX",
   "slug": "openbmb-minicpm5-1b-mlx",
   "author": "openbmb",
@@ -49,14 +49,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 608026621,
   "storage_human": "608 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/Phantom-Qwen2.5-1.5B-Instruct",
   "slug": "prannesshkva-phantom-qwen2-5-1-5b-instruct",
   "author": "Prannesshkva",
@@ -41,14 +41,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3087467144,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T09:30:17.649Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

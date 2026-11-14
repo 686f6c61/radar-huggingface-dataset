@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hawkymisc/PLaMo-3-Translate-Samurai-Joke-2B-MLX",
   "slug": "hawkymisc-plamo-3-translate-samurai-joke-2b-mlx",
   "author": "hawkymisc",
@@ -37,6 +37,7 @@
   "parameters_human": "2.88B",
   "storage_bytes": 5757219819,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "pfnet/plamo-3-translate-2b-MLX-4bit",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

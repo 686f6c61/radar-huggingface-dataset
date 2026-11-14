@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-dev/MOSS-TTS-v1.5-MLX",
   "slug": "moonbox-dev-moss-tts-v1-5-mlx",
   "author": "moonbox-dev",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 55144975378,
   "storage_human": "55.1 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-TTS-v1.5",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SamuelTallet/SDXL-Base-v1.0-SDNQ-8bit-dynamic-hadamard256",
   "slug": "samueltallet-sdxl-base-v1-0-sdnq-8bit-dynamic-hadamard256",
   "author": "SamuelTallet",
@@ -30,6 +30,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 4091006167,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

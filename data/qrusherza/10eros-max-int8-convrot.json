@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QrusherZA/10Eros-Max-int8-convrot",
   "slug": "qrusherza-10eros-max-int8-convrot",
   "author": "QrusherZA",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 804353369383,
   "storage_human": "804.4 GB",
+  "context_length": null,
   "base_model": "TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

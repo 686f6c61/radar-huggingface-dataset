@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidmelash/wechsel_base_v7large_2026-10-09_r4",
   "slug": "davidmelash-wechsel_base_v7large_2026-10-09_r4",
   "author": "davidmelash",
@@ -51,14 +51,19 @@
   "parameters_human": "124.1M",
   "storage_bytes": 496271772,
   "storage_human": "496 MB",
+  "context_length": null,
   "base_model": "benjamin/roberta-base-wechsel-ukrainian",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

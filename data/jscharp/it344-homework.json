@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JScharp/IT344-Homework",
   "slug": "jscharp-it344-homework",
   "author": "JScharp",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 50871716,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": "microsoft/Phi-3-mini-4k-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T12:46:08.468Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

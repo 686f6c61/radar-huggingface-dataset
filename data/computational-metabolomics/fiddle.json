@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "computational-metabolomics/fiddle",
   "slug": "computational-metabolomics-fiddle",
   "author": "computational-metabolomics",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 198274400,
   "storage_human": "198 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:44:58.591Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

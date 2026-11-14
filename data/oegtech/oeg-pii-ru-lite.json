@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OEGtech/oeg-pii-ru-lite",
   "slug": "oegtech-oeg-pii-ru-lite",
   "author": "OEGtech",
@@ -44,14 +44,19 @@
   "parameters_human": "177.8M",
   "storage_bytes": 711065612,
   "storage_human": "711 MB",
+  "context_length": null,
   "base_model": "redmadrobot-rnd/rubert-base-pii-ner",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

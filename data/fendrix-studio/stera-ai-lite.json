@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fendrix-Studio/Stera-AI-Lite",
   "slug": "fendrix-studio-stera-ai-lite",
   "author": "Fendrix-Studio",
@@ -28,14 +28,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 3334042240,
   "storage_human": "3.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

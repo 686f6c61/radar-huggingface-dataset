@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SicariusSicariiStuff/Assistant_Pepe_32B",
   "slug": "sicariussicariistuff-assistant_pepe_32b",
   "author": "SicariusSicariiStuff",
@@ -31,14 +31,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 3092829,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

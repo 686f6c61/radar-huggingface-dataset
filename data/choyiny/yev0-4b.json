@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "choyiny/yev0-4b",
   "slug": "choyiny-yev0-4b",
   "author": "choyiny",
@@ -42,14 +42,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8951054013,
   "storage_human": "9.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Decision making (with worked examples)",

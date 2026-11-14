@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jakemu/Qwen3.5-27B-nvfp4-mtp",
   "slug": "jakemu-qwen3-5-27b-nvfp4-mtp",
   "author": "Jakemu",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 19266341534,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

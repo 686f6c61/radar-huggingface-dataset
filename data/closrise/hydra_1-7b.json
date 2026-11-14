@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ClosRise/Hydra_1.7B",
   "slug": "closrise-hydra_1-7b",
   "author": "ClosRise",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 4880564123,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T06:07:09.566Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

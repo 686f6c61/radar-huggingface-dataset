@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SubMaroon/Orion-Kitchoon-26B-A4B-GGUF",
   "slug": "submaroon-orion-kitchoon-26b-a4b-gguf",
   "author": "SubMaroon",
@@ -34,14 +34,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 22638401120,
   "storage_human": "22.6 GB",
+  "context_length": 262144,
   "base_model": "SubMaroon/Orion-Kitchoon-26B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T03:35:11.813Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

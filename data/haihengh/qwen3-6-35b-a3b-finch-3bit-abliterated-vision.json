@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haihengh/Qwen3.6-35B-A3B-finch-3bit-abliterated-vision",
   "slug": "haihengh-qwen3-6-35b-a3b-finch-3bit-abliterated-vision",
   "author": "haihengh",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 16916036988,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

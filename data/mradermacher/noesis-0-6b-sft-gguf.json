@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Noesis-0.6B-SFT-GGUF",
   "slug": "mradermacher-noesis-0-6b-sft-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5697939456,
   "storage_human": "5.7 GB",
+  "context_length": 32768,
   "base_model": "Ma7ee7/Andgit-0.6B-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

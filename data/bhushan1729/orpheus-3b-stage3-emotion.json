@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bhushan1729/orpheus-3b-stage3-emotion",
   "slug": "bhushan1729-orpheus-3b-stage3-emotion",
   "author": "bhushan1729",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 609962966,
   "storage_human": "610 MB",
+  "context_length": null,
   "base_model": "unsloth/orpheus-3b-0.1-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T06:43:07.900Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

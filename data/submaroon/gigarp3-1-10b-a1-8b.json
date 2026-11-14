@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SubMaroon/GigaRP3.1-10B-A1.8B",
   "slug": "submaroon-gigarp3-1-10b-a1-8b",
   "author": "SubMaroon",
@@ -35,14 +35,19 @@
   "parameters_human": "11.48B",
   "storage_bytes": 22970842656,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaChat3.1-10B-A1.8B-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

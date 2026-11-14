@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrom1/MOSS-Transcribe-Diarize-GGUF",
   "slug": "mrom1-moss-transcribe-diarize-gguf",
   "author": "mrom1",
@@ -31,14 +31,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 2806935488,
   "storage_human": "2.8 GB",
+  "context_length": 131072,
   "base_model": "OpenMOSS-Team/MOSS-Transcribe-Diarize",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

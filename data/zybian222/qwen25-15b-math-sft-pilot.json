@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zybian222/qwen25-15b-math-sft-pilot",
   "slug": "zybian222-qwen25-15b-math-sft-pilot",
   "author": "zybian222",
@@ -31,14 +31,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098889040,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

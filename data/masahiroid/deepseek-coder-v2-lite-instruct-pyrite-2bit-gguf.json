@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-GGUF",
   "slug": "masahiroid-deepseek-coder-v2-lite-instruct-pyrite-2bit-gguf",
   "author": "masahiroid",
@@ -47,14 +47,19 @@
   "parameters_human": "15.71B",
   "storage_bytes": 19008967191,
   "storage_human": "19.0 GB",
+  "context_length": 163840,
   "base_model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QuerynAi/queryn-adapter-qwen3-emb-8b_to_fastembed-bge-small",
   "slug": "querynai-queryn-adapter-qwen3-emb-8b_to_fastembed-bge-small",
   "author": "QuerynAi",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 6629489,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marlalabsAI/Qwen3.8-27B-SX8",
   "slug": "marlalabsai-qwen3-8-27b-sx8",
   "author": "marlalabsAI",
@@ -47,14 +47,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 52241757795,
   "storage_human": "52.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

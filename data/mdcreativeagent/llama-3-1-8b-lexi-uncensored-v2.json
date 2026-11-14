@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mdcreativeagent/Llama-3.1-8B-Lexi-Uncensored-V2",
   "slug": "mdcreativeagent-llama-3-1-8b-lexi-uncensored-v2",
   "author": "mdcreativeagent",
@@ -30,14 +30,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16060556376,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

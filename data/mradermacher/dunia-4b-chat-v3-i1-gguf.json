@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/dunia-4b-chat-v3-i1-GGUF",
   "slug": "mradermacher-dunia-4b-chat-v3-i1-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "4.04B",
   "storage_bytes": 48403020800,
   "storage_human": "48.4 GB",
+  "context_length": 40960,
   "base_model": "novgar21/dunia-4b-chat-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

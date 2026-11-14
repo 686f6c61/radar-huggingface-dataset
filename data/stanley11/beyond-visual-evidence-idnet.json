@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stanley11/Beyond-Visual-Evidence-IDNet",
   "slug": "stanley11-beyond-visual-evidence-idnet",
   "author": "Stanley11",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 98888633928,
   "storage_human": "98.9 GB",
+  "context_length": null,
   "base_model": "llava-hf/llava-1.5-7b-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

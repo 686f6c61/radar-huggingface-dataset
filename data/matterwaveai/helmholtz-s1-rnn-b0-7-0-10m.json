@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MatterWaveAI/helmholtz-s1-rnn-b0.7.0-10m",
   "slug": "matterwaveai-helmholtz-s1-rnn-b0-7-0-10m",
   "author": "MatterWaveAI",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "MatterWaveAI/grt-rnn-b0.7.0-10m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MatterWaveAI/s1-grt-rnn-b0.7.0-10m",
+  "renamed_at": "2026-11-11T03:17:38.551Z",
   "benchmarks": [],
   "sources": [
     {

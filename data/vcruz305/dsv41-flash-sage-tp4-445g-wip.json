@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/DSV41-Flash-SAGE-TP4-445g-wip",
   "slug": "vcruz305-dsv41-flash-sage-tp4-445g-wip",
   "author": "vcruz305",
@@ -25,14 +25,19 @@
   "parameters_human": "325.38B",
   "storage_bytes": 453087225721,
   "storage_human": "453.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T04:10:34.732Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeninGF/qa-merged-MMG__bert-base-spanish-wwm-cased-finetuned-squad2-es-ft-20260831_230145",
   "slug": "leningf-qa-merged-mmg__bert-base-spanish-wwm-cased-finetuned-squad2-es-ft-20260831_230145",
   "author": "LeninGF",
@@ -27,14 +27,19 @@
   "parameters_human": "109.3M",
   "storage_bytes": 437070648,
   "storage_human": "437 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

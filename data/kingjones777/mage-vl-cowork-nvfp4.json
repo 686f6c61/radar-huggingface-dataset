@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Mage-VL-Cowork-NVFP4",
   "slug": "kingjones777-mage-vl-cowork-nvfp4",
   "author": "kingjones777",
@@ -50,14 +50,19 @@
   "parameters_human": "4.74B",
   "storage_bytes": 5475930627,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "microsoft/Mage-VL-Cowork",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

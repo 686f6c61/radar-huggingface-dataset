@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ryugyosoft/Ternary-Bonsai-2-4B-onwx",
   "slug": "ryugyosoft-ternary-bonsai-2-4b-onwx",
   "author": "ryugyosoft",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 2316045358,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-4B-mlx-2bit",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

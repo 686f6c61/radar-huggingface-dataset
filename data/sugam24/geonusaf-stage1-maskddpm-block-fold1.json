@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sugam24/geonusaf-stage1-maskddpm-block-fold1",
   "slug": "sugam24-geonusaf-stage1-maskddpm-block-fold1",
   "author": "sugam24",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 17610544320,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

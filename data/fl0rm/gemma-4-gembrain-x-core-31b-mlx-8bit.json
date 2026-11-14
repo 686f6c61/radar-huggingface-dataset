@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fl0rm/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit",
   "slug": "fl0rm-gemma-4-gembrain-x-core-31b-mlx-8bit",
   "author": "fl0rm",
@@ -42,6 +42,7 @@
   "parameters_human": "30.70B",
   "storage_bytes": 32649560091,
   "storage_human": "32.6 GB",
+  "context_length": null,
   "base_model": "Nimbz/Gemma-4-Gembrain-X-Core-31B",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

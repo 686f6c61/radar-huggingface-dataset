@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joey00072/ohara-d28-a1b-s2",
   "slug": "joey00072-ohara-d28-a1b-s2",
   "author": "joey00072",
@@ -27,14 +27,19 @@
   "parameters_human": "23.85B",
   "storage_bytes": 165494208898,
   "storage_human": "165.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

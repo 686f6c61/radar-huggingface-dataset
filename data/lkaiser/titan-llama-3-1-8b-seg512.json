@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lkaiser/Titan-Llama-3.1-8B-seg512",
   "slug": "lkaiser-titan-llama-3-1-8b-seg512",
   "author": "lkaiser",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2307814115,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T04:47:02.879Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

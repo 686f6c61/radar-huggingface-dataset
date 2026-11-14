@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaitchup/LFM3-1.7B-suisui-GGUF",
   "slug": "kaitchup-lfm3-1-7b-suisui-gguf",
   "author": "kaitchup",
@@ -37,14 +37,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3750410221,
   "storage_human": "3.8 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

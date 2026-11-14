@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Sieve-31B-v3-ROCmFP4-GGUF",
   "slug": "kingjones777-sieve-31b-v3-rocmfp4-gguf",
   "author": "kingjones777",
@@ -33,14 +33,19 @@
   "parameters_human": "575.7M",
   "storage_bytes": 19366415552,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "sthanika-ai/Sieve-31B-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

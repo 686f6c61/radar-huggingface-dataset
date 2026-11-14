@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cheikh025/enemray-qwen3.5-2b-cpt-merged",
   "slug": "cheikh025-enemray-qwen3-5-2b-cpt-merged",
   "author": "cheikh025",
@@ -35,14 +35,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 13664653807,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T07:58:26.155Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

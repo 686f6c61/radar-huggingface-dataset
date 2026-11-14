@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/qwen3-14b-sorrel-selfstories-g1-selfjudge-chat",
   "slug": "joshycodes-qwen3-14b-sorrel-selfstories-g1-selfjudge-chat",
   "author": "joshycodes",
@@ -28,14 +28,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 88621373694,
   "storage_human": "88.6 GB",
+  "context_length": null,
   "base_model": "joshycodes/qwen3-14b-sorrel-atomic-f-only-midtrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T05:49:15.205Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

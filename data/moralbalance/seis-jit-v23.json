@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MoralBalance/Seis-JiT-v23",
   "slug": "moralbalance-seis-jit-v23",
   "author": "MoralBalance",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 143797203614,
   "storage_human": "143.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

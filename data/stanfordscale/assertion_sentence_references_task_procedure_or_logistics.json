@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StanfordSCALE/assertion_sentence_references_task_procedure_or_logistics",
   "slug": "stanfordscale-assertion_sentence_references_task_procedure_or_logistics",
   "author": "StanfordSCALE",
@@ -36,14 +36,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 437974679,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T05:50:39.791Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

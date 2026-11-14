@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stanfordasl/diet-traj-olmo2-medium-dolma-seed7",
   "slug": "stanfordasl-diet-traj-olmo2-medium-dolma-seed7",
   "author": "stanfordasl",
@@ -34,14 +34,19 @@
   "parameters_human": "305.2M",
   "storage_bytes": 39064392704,
   "storage_human": "39.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/UserRepGen-4B-GGUF",
   "slug": "bartowski-userrepgen-4b-gguf",
   "author": "bartowski",
@@ -35,14 +35,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 64927200032,
   "storage_human": "64.9 GB",
+  "context_length": 262144,
   "base_model": "microsoft/UserRepGen-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bowmanslayer/Ornith-1.5-9B-Uncensored-W4A16",
   "slug": "bowmanslayer-ornith-1-5-9b-uncensored-w4a16",
   "author": "bowmanslayer",
@@ -45,14 +45,19 @@
   "parameters_human": "3.42B",
   "storage_bytes": 8732876781,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "bowmanslayer/Ornith-1.5-9B-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MoE-CUDA-Graph-Analysis/tierb-b200-gbs8",
   "slug": "moe-cuda-graph-analysis-tierb-b200-gbs8",
   "author": "MoE-CUDA-Graph-Analysis",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 18038690024,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

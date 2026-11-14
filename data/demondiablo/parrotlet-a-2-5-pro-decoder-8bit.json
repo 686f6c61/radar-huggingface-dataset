@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Demondiablo/parrotlet-a-2.5-pro-decoder-8bit",
   "slug": "demondiablo-parrotlet-a-2-5-pro-decoder-8bit",
   "author": "Demondiablo",
@@ -45,14 +45,19 @@
   "parameters_human": null,
   "storage_bytes": 6335514933,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "ekacare/parrotlet-a-2.5-pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

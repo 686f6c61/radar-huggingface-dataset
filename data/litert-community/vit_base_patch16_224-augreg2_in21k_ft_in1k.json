@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/vit_base_patch16_224.augreg2_in21k_ft_in1k",
   "slug": "litert-community-vit_base_patch16_224-augreg2_in21k_ft_in1k",
   "author": "litert-community",
@@ -23,19 +23,24 @@
     "base_model:finetune:timm/vit_base_patch16_224.augreg2_in21k_ft_in1k",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 99,
+  "likes": 1,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 346378960,
   "storage_human": "346 MB",
+  "context_length": null,
   "base_model": "timm/vit_base_patch16_224.augreg2_in21k_ft_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

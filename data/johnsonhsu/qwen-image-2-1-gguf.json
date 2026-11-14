@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnsonHsu/Qwen-Image-2.1-GGUF",
   "slug": "johnsonhsu-qwen-image-2-1-gguf",
   "author": "JohnsonHsu",
@@ -30,14 +30,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 54905768637,
   "storage_human": "54.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T04:37:09.413Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

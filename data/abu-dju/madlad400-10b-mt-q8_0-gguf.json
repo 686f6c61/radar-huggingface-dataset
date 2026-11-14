@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abu-Dju/madlad400-10b-mt-Q8_0-GGUF",
   "slug": "abu-dju-madlad400-10b-mt-q8_0-gguf",
   "author": "Abu-Dju",
@@ -871,14 +871,19 @@
   "parameters_human": "10.71B",
   "storage_bytes": 11389352064,
   "storage_human": "11.4 GB",
+  "context_length": 512,
   "base_model": "google/madlad400-10b-mt",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:25:36.033Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

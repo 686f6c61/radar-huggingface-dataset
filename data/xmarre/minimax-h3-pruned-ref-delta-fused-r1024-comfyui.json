@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
   "slug": "xmarre-minimax-h3-pruned-ref-delta-fused-r1024-comfyui",
   "author": "xmarre",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 131837383530,
   "storage_human": "131.8 GB",
+  "context_length": null,
   "base_model": "diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024, Comfy-Org/MiniMax-H3, MiniMaxAI/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

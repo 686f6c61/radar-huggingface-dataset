@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "irl-kit/SPARC-Qwen3.5-4B",
   "slug": "irl-kit-sparc-qwen3-5-4b",
   "author": "irl-kit",
@@ -33,14 +33,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609861,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

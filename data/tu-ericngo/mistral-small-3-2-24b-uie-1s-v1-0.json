@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tu-ericngo/Mistral-Small-3.2-24B-UIE-1S-v1.0",
   "slug": "tu-ericngo-mistral-small-3-2-24b-uie-1s-v1-0",
   "author": "tu-ericngo",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1495654731,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

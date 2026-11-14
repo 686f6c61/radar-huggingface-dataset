@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Carchofa/looped_llama_8b_lora_toolgap",
   "slug": "carchofa-looped_llama_8b_lora_toolgap",
   "author": "Carchofa",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 126330795,
   "storage_human": "126 MB",
+  "context_length": null,
   "base_model": "Carchofa/looped_llama_8b_128k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:32:28.987Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

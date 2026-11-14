@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MarsupialAI/Monstral-123B-v2_GGUF",
   "slug": "marsupialai-monstral-123b-v2_gguf",
   "author": "MarsupialAI",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 447807519855,
   "storage_human": "447.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

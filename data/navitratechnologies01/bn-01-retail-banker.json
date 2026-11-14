@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NavitraTechnologies01/bn-01-retail-banker",
   "slug": "navitratechnologies01-bn-01-retail-banker",
   "author": "NavitraTechnologies01",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 102785001,
   "storage_human": "103 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-14B-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

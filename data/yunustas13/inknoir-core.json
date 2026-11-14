@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YunusTAS13/InkNoir-Core",
   "slug": "yunustas13-inknoir-core",
   "author": "YunusTAS13",
@@ -33,6 +33,7 @@
   "parameters_human": "859.5M",
   "storage_bytes": 4286768524,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "Lykon/dreamshaper-8",
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

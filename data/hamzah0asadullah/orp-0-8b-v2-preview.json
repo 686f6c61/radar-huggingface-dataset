@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hamzah0asadullah/ORP-0.8B-v2-preview",
   "slug": "hamzah0asadullah-orp-0-8b-v2-preview",
   "author": "hamzah0asadullah",
@@ -39,14 +39,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1726019853,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T02:59:07.930Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

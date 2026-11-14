@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erayyapagci/lfm2.5-pii-en-hi-hinglish-q8",
   "slug": "erayyapagci-lfm2-5-pii-en-hi-hinglish-q8",
   "author": "erayyapagci",
@@ -40,6 +40,7 @@
   "parameters_human": "354.6M",
   "storage_bytes": 1976582853,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M-PII-Detector",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

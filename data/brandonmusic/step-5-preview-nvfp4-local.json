@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonmusic/Step-5-Preview-NVFP4-Local",
   "slug": "brandonmusic-step-5-preview-nvfp4-local",
   "author": "brandonmusic",
@@ -36,14 +36,19 @@
   "parameters_human": "329.22B",
   "storage_bytes": 401274759680,
   "storage_human": "401.3 GB",
+  "context_length": null,
   "base_model": "stepfun-ai/Step-5-Preview-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

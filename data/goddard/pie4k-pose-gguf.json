@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goddard/pie4k-pose-gguf",
   "slug": "goddard-pie4k-pose-gguf",
   "author": "Goddard",
@@ -31,14 +31,19 @@
   "parameters_human": "33.6M",
   "storage_bytes": 1703419456,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "yzd-v/DWPose, Wan-AI/Wan2.2-Animate-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

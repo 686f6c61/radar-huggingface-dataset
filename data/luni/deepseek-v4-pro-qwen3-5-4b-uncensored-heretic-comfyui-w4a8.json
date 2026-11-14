@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luni/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-ComfyUI-W4A8",
   "slug": "luni-deepseek-v4-pro-qwen3-5-4b-uncensored-heretic-comfyui-w4a8",
   "author": "Luni",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 3564863952,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

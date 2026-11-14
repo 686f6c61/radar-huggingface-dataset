@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-mtp",
   "slug": "craquehouse-gemma-4-e2b-it-qat-oq4e-fp16-mtp",
   "author": "craquehouse",
@@ -32,6 +32,7 @@
   "parameters_human": "5.10B",
   "storage_bytes": 4811892164,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hefen2959512/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF",
   "slug": "hefen2959512-qwen3-8-27b-zerorefusal-ud-iq4_xs-mtp-gguf",
   "author": "Hefen2959512",
@@ -40,14 +40,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 15194094720,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, junafinity/Qwen-3.8-27B-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Matycaba2016/Reinforcement-Learning-Domain-Adaptation",
   "slug": "matycaba2016-reinforcement-learning-domain-adaptation",
   "author": "Matycaba2016",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 87566308012,
   "storage_human": "87.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AXDocLayout-M-v1.1",
   "slug": "automatosx-axdoclayout-m-v1-1",
   "author": "AutomatosX",
@@ -27,6 +27,7 @@
   "parameters_human": "36.7M",
   "storage_bytes": 280043351,
   "storage_human": "280 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T02:46:20.097Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

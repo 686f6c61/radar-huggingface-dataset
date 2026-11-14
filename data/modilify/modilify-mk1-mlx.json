@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "modilify/Modilify-Mk1-MLX",
   "slug": "modilify-modilify-mk1-mlx",
   "author": "modilify",
@@ -32,6 +32,7 @@
   "parameters_human": "26.14B",
   "storage_bytes": 52310981369,
   "storage_human": "52.3 GB",
+  "context_length": null,
   "base_model": "modilify/Modilify-Mk1",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

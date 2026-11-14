@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PS4Research/GIxTUYIl3K6cMzEd",
   "slug": "ps4research-gixtuyil3k6cmzed",
   "author": "PS4Research",
@@ -35,14 +35,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29548088405,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-14B-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

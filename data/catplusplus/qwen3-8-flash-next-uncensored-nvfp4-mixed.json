@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "catplusplus/Qwen3.8-Flash-Next-uncensored-NVFP4-mixed",
   "slug": "catplusplus-qwen3-8-flash-next-uncensored-nvfp4-mixed",
   "author": "catplusplus",
@@ -56,12 +56,17 @@
   "parameters_human": null,
   "storage_bytes": 188297005154,
   "storage_human": "188.3 GB",
+  "context_length": null,
   "base_model": "mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wckwan/ALFWorld-Qwen3-8B-Adaptive-Random-Each",
   "slug": "wckwan-alfworld-qwen3-8b-adaptive-random-each",
   "author": "wckwan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 16392939422,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

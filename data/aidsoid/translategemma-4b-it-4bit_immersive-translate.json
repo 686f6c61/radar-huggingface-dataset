@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aidsoid/translategemma-4b-it-4bit_immersive-translate",
   "slug": "aidsoid-translategemma-4b-it-4bit_immersive-translate",
   "author": "aidsoid",
@@ -30,6 +30,7 @@
   "parameters_human": "3.88B",
   "storage_bytes": 2221369619,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "google/translategemma-4b-it",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

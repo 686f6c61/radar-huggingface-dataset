@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-8bit",
   "slug": "divinetribe-nvidia-nemotron-3-5-bolt-74b-a9b-mlx-8bit",
   "author": "divinetribe",
@@ -37,6 +37,7 @@
   "parameters_human": "74.89B",
   "storage_bytes": 80931461156,
   "storage_human": "80.9 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

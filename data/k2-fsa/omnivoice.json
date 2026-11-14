@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "k2-fsa/OmniVoice",
   "slug": "k2-fsa-omnivoice",
   "author": "k2-fsa",
@@ -1317,21 +1317,26 @@
     "base_model:finetune:Qwen/Qwen3-0.6B",
     "region:us"
   ],
-  "likes": 1697,
+  "likes": 1700,
   "downloads_30d": 3999911,
-  "trending_score": 29,
+  "trending_score": 31,
   "parameters": 612577288,
   "parameters_human": "612.6M",
   "storage_bytes": 3267433726,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

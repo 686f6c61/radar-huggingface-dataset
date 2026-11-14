@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "burner22/numbat",
   "slug": "burner22-numbat",
   "author": "burner22",
@@ -19,21 +19,26 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 405,
+  "likes": 406,
   "downloads_30d": 10944,
-  "trending_score": 31,
+  "trending_score": 28,
   "parameters": 6849378030158,
   "parameters_human": "6849.38B",
   "storage_bytes": 7720640941879,
   "storage_human": "7720.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Iman998/HexaBee-4B-Translation-LoRA",
   "slug": "iman998-hexabee-4b-translation-lora",
   "author": "Iman998",
@@ -50,14 +50,19 @@
   "parameters_human": null,
   "storage_bytes": 994239154,
   "storage_human": "994 MB",
+  "context_length": null,
   "base_model": "Iman998/HexaBee-4B-Multilingual-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

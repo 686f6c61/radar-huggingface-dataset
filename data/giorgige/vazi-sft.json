@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GiorgiGE/vazi-sft",
   "slug": "giorgige-vazi-sft",
   "author": "GiorgiGE",
@@ -30,14 +30,19 @@
   "parameters_human": "105.9M",
   "storage_bytes": 15247756031,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "GiorgiGE/vazi-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vkovtun/gemma-text-to-sql",
   "slug": "vkovtun-gemma-text-to-sql",
   "author": "vkovtun",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 14627588529,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

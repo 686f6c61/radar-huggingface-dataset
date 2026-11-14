@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "glory-hyeok/wam-dit4dit-robocasa-k8s-eval-minimal",
   "slug": "glory-hyeok-wam-dit4dit-robocasa-k8s-eval-minimal",
   "author": "glory-hyeok",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 77588436870,
   "storage_human": "77.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T08:59:52.664Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

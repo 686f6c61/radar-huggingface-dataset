@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MommyEmily/stable-diffusion-1.5",
   "slug": "mommyemily-stable-diffusion-1-5",
   "author": "MommyEmily",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 8530468710,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "runwayml/stable-diffusion-v1-5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

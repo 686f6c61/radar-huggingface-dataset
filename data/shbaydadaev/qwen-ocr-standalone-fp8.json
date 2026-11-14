@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shbaydadaev/qwen-ocr-standalone-fp8",
   "slug": "shbaydadaev-qwen-ocr-standalone-fp8",
   "author": "shbaydadaev",
@@ -39,14 +39,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30882644760,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T08:15:05.743Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

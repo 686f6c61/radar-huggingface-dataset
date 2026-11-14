@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient",
   "slug": "pentacoxian-dev-deepseek-v4-1-1017-ablitrated-efficient",
   "author": "pentacoxian-dev",
@@ -42,14 +42,19 @@
   "parameters_human": "763.21B",
   "storage_bytes": 515329202010,
   "storage_human": "515.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

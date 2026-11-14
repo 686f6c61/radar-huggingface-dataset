@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goro64/Llama-prompt-guard-2-fine-tuned-mirror-yoyo221905",
   "slug": "goro64-llama-prompt-guard-2-fine-tuned-mirror-yoyo221905",
   "author": "Goro64",
@@ -44,14 +44,19 @@
   "parameters_human": "278.8M",
   "storage_bytes": 1131287220,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-Prompt-Guard-2-86M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

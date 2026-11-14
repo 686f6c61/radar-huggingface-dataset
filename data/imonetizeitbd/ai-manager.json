@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imonetizeitbd/ai-manager",
   "slug": "imonetizeitbd-ai-manager",
   "author": "imonetizeitbd",
@@ -41,14 +41,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 3341145376,
   "storage_human": "3.3 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-3-4b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

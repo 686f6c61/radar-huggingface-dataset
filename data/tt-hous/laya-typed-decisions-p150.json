@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tt-hous/laya-typed-decisions-p150",
   "slug": "tt-hous-laya-typed-decisions-p150",
   "author": "tt-hous",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 892499859,
   "storage_human": "892 MB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-typed-decisions, answerdotai/ModernBERT-large",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tt-hous/laya-typed-decisions",
+  "renamed_at": "2026-11-13T08:23:12.244Z",
   "benchmarks": [],
   "sources": [
     {

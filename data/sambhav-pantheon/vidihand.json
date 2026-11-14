@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sambhav-pantheon/vidihand",
   "slug": "sambhav-pantheon-vidihand",
   "author": "sambhav-pantheon",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 23098815992,
   "storage_human": "23.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T08:08:28.409Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

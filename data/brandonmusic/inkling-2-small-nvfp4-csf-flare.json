@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonmusic/Inkling-2-Small-NVFP4-CSF-Flare",
   "slug": "brandonmusic-inkling-2-small-nvfp4-csf-flare",
   "author": "brandonmusic",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 3471576540,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

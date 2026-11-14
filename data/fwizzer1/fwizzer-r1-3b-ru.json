@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fwizzer1/Fwizzer-R1-3B-RU",
   "slug": "fwizzer1-fwizzer-r1-3b-ru",
   "author": "fwizzer1",
@@ -37,6 +37,7 @@
   "parameters_human": "3.43B",
   "storage_bytes": 20792680561,
   "storage_human": "20.8 GB",
+  "context_length": 262144,
   "base_model": "mistralai/Ministral-3B-Instruct-2410",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

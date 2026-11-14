@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheCluster/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-mixed-6bit",
   "slug": "thecluster-qwen3-8-27b-abliterated-uncensored-philadelphia-class-mlx-mixed-6bit",
   "author": "TheCluster",
@@ -91,6 +91,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 20866660869,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
   "formats": [
     "mlx",
@@ -98,8 +99,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

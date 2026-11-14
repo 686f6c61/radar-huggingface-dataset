@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Crow_Qwen9B_OpusUCH-GGUF",
   "slug": "mradermacher-crow_qwen9b_opusuch-gguf",
   "author": "mradermacher",
@@ -88,14 +88,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 82585888960,
   "storage_human": "82.6 GB",
+  "context_length": 262144,
   "base_model": "Babsie/Crow_Qwen9B_OpusUCH",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

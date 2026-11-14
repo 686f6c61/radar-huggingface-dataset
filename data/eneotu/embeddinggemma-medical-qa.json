@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eneotu/embeddinggemma-medical-qa",
   "slug": "eneotu-embeddinggemma-medical-qa",
   "author": "eneotu",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 55908895,
   "storage_human": "56 MB",
+  "context_length": null,
   "base_model": "unsloth/embeddinggemma-300m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

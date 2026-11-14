@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audio-cpp/MiniMax-Music3-GGUF",
   "slug": "audio-cpp-minimax-music3-gguf",
   "author": "audio-cpp",
@@ -29,14 +29,19 @@
   "parameters_human": "25.2M",
   "storage_bytes": 86623813113,
   "storage_human": "86.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ciaociao0617/pusht-diffusion-100k",
   "slug": "ciaociao0617-pusht-diffusion-100k",
   "author": "ciaociao0617",
@@ -28,14 +28,19 @@
   "parameters_human": "262.7M",
   "storage_bytes": 31526529568,
   "storage_human": "31.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

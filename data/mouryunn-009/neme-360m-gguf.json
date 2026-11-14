@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mouryunn-009/NEME-360M-GGUF",
   "slug": "mouryunn-009-neme-360m-gguf",
   "author": "mouryunn-009",
@@ -25,14 +25,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 386404640,
   "storage_human": "386 MB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlagRelease/Hy4-preview-INT8-metax-FlagOS",
   "slug": "flagrelease-hy4-preview-int8-metax-flagos",
   "author": "FlagRelease",
@@ -31,14 +31,19 @@
   "parameters_human": "779.96B",
   "storage_bytes": 790817358999,
   "storage_human": "790.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

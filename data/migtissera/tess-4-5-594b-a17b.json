@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "migtissera/Tess-4.5-594B-A17B",
   "slug": "migtissera-tess-4-5-594b-a17b",
   "author": "migtissera",
@@ -32,21 +32,26 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 6,
-  "downloads_30d": 0,
-  "trending_score": 0,
+  "likes": 12,
+  "downloads_30d": 50,
+  "trending_score": 12,
   "parameters": 383072987216,
   "parameters_human": "383.07B",
   "storage_bytes": 393594076904,
   "storage_human": "393.6 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zaydsyed/Qwen2.5-0.5B-Instruct-DPO-q0f16-MLC",
   "slug": "zaydsyed-qwen2-5-0-5b-instruct-dpo-q0f16-mlc",
   "author": "zaydsyed",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 999487428,
   "storage_human": "999 MB",
+  "context_length": null,
   "base_model": "zaydsyed/TactLM-Instruction-DPO-Qwen2.5-0.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zaydsyed/TactLM-Instruction-DPO-Qwen2.5-0.5B-q0f16-MLC",
+  "renamed_at": "2026-11-11T08:12:56.308Z",
   "benchmarks": [],
   "sources": [
     {

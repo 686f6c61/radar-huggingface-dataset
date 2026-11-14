@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theblackcat102/clip-vit-large-patch14-task-experts-ep10",
   "slug": "theblackcat102-clip-vit-large-patch14-task-experts-ep10",
   "author": "theblackcat102",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 136870887563,
   "storage_human": "136.9 GB",
+  "context_length": null,
   "base_model": "openai/clip-vit-large-patch14",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

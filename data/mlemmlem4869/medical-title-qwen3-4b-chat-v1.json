@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlemmlem4869/medical-title-qwen3-4b-chat-v1",
   "slug": "mlemmlem4869-medical-title-qwen3-4b-chat-v1",
   "author": "mlemmlem4869",
@@ -68,6 +68,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 4556136382,
   "storage_human": "4.6 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf",
@@ -75,8 +76,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hoagngn/medical-title-qwen3-4b-chat-v1",
+  "renamed_at": "2026-11-11T06:21:58.246Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained",
   "slug": "inevitablevalor-pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained",
   "author": "Inevitablevalor",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 44826091520,
   "storage_human": "44.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

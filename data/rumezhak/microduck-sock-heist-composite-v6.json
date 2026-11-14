@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rumezhak/microduck-sock-heist-composite-v6",
   "slug": "rumezhak-microduck-sock-heist-composite-v6",
   "author": "rumezhak",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1211562,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "rumezhak/microduck-sock-heist-composite-v5, jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

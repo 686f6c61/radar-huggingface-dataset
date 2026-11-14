@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sen-illion/Evofig-Judge-9B",
   "slug": "sen-illion-evofig-judge-9b",
   "author": "Sen-illion",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 136419045,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

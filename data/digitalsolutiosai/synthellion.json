@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "digitalsolutiosai/synthellion",
   "slug": "digitalsolutiosai-synthellion",
   "author": "digitalsolutiosai",
@@ -109,6 +109,7 @@
   "parameters_human": "10.4M",
   "storage_bytes": 125119950,
   "storage_human": "125 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -116,8 +117,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chopinab/SmolVLM2-2.2B-Instruct-IQ3_M-GGUF",
   "slug": "chopinab-smolvlm2-2-2b-instruct-iq3_m-gguf",
   "author": "Chopinab",
@@ -48,14 +48,19 @@
   "parameters_human": "1.81B",
   "storage_bytes": 855823936,
   "storage_human": "856 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

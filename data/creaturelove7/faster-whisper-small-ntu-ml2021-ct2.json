@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Creaturelove7/faster-whisper-small-ntu-ml2021-ct2",
   "slug": "creaturelove7-faster-whisper-small-ntu-ml2021-ct2",
   "author": "Creaturelove7",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 483546977,
   "storage_human": "484 MB",
+  "context_length": null,
   "base_model": "Creaturelove7/whisper-small-lora-ntu-ml2021",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

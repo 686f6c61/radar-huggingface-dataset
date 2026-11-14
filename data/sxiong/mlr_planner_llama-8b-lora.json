@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sxiong/MLR_planner_Llama-8B-LoRA",
   "slug": "sxiong-mlr_planner_llama-8b-lora",
   "author": "sxiong",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 352814217,
   "storage_human": "353 MB",
+  "context_length": null,
   "base_model": "sxiong/MLR_executor_Llama-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

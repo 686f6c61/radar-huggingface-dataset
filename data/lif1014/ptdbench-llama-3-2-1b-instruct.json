@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LIF1014/ptdbench-Llama-3.2-1B-Instruct",
   "slug": "lif1014-ptdbench-llama-3-2-1b-instruct",
   "author": "LIF1014",
@@ -51,14 +51,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 7417163318,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qtum/Qwen3-Coder-Next-GPTQ",
   "slug": "qtum-qwen3-coder-next-gptq",
   "author": "qtum",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 42130374541,
   "storage_human": "42.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:12:08.823Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

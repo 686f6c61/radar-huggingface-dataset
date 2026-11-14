@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dddddsds31341/Franka-Test-Tube-pi05-step-20000",
   "slug": "dddddsds31341-franka-test-tube-pi05-step-20000",
   "author": "dddddsds31341",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 12441391005,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

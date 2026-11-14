@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen9",
   "slug": "hungrydino-qwen_2-5_7b-control_numbers-collapse_p10-gen9",
   "author": "HungryDino",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 173006186,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

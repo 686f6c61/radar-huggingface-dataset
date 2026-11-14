@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gameblamer/Flux_Lustly.ai_Uncensored_nsfw_v1",
   "slug": "gameblamer-flux_lustly-ai_uncensored_nsfw_v1",
   "author": "Gameblamer",
@@ -35,6 +35,7 @@
   "parameters_human": null,
   "storage_bytes": 357109365,
   "storage_human": "357 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

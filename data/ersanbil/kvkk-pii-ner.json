@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ersanbil/kvkk-pii-ner",
   "slug": "ersanbil-kvkk-pii-ner",
   "author": "ersanbil",
@@ -48,14 +48,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 880328352,
   "storage_human": "880 MB",
+  "context_length": null,
   "base_model": "dbmdz/bert-base-turkish-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Turkish KVKK PII & Commercial Named Entity Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step20",
   "slug": "mhseo2-opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step20",
   "author": "mhseo2",
@@ -29,14 +29,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14596063712,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

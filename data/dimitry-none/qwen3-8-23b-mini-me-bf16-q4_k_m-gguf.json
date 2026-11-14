@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dimitry-none/Qwen3.8-23B-Mini-Me-bf16-Q4_K_M-GGUF",
   "slug": "dimitry-none-qwen3-8-23b-mini-me-bf16-q4_k_m-gguf",
   "author": "dimitry-none",
@@ -33,6 +33,7 @@
   "parameters_human": "22.33B",
   "storage_bytes": 13782537056,
   "storage_human": "13.8 GB",
+  "context_length": 262144,
   "base_model": "StargazerLabs/Qwen3.8-23B-Mini-Me-bf16",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/Ling-3.0-tiny-int4-CLEER-k8",
   "slug": "nidhal101-ling-3-0-tiny-int4-cleer-k8",
   "author": "Nidhal101",
@@ -28,14 +28,19 @@
   "parameters_human": "1.38B",
   "storage_bytes": 4274804308,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny-int4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

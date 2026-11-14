@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikim-uk-essen/stm_gemma",
   "slug": "ikim-uk-essen-stm_gemma",
   "author": "ikim-uk-essen",
@@ -34,14 +34,19 @@
   "parameters_human": "2.51B",
   "storage_bytes": 5046718913,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

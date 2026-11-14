@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenTARS/Gargantua-2.5-Lite",
   "slug": "opentars-gargantua-2-5-lite",
   "author": "OpenTARS",
@@ -38,14 +38,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 7817893760,
   "storage_human": "7.8 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-4-E2B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Naive-N0.5-Flash-EXL3-3.5bpw",
   "slug": "doth4580-naive-n0-5-flash-exl3-3-5bpw",
   "author": "doth4580",
@@ -37,14 +37,19 @@
   "parameters_human": "70.23B",
   "storage_bytes": 140551919055,
   "storage_human": "140.6 GB",
+  "context_length": null,
   "base_model": "NaiveAI/Naive-N0.5-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

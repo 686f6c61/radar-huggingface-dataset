@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SirSahOl/Tev1-0.8B-experimental-chat-mlx-8bit",
   "slug": "sirsahol-tev1-0-8b-experimental-chat-mlx-8bit",
   "author": "SirSahOl",
@@ -38,6 +38,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 819963631,
   "storage_human": "820 MB",
+  "context_length": null,
   "base_model": "togethercomputer/Tev1-0.8B-experimental",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xzknw/LFM3-VL-2B-EXL3-4.49bpw",
   "slug": "0xzknw-lfm3-vl-2b-exl3-4-49bpw",
   "author": "0xzknw",
@@ -35,14 +35,19 @@
   "parameters_human": "985.0M",
   "storage_bytes": 1988113326,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

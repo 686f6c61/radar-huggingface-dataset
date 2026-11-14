@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/GLM-5.2-MXFP4xMXFP8",
   "slug": "redhatai-glm-5-2-mxfp4xmxfp8",
   "author": "RedHatAI",
@@ -41,14 +41,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 423674306011,
   "storage_human": "423.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T08:41:39.982Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AxionML/Laguna-XS-2.1-NVFP4",
   "slug": "axionml-laguna-xs-2-1-nvfp4",
   "author": "AxionML",
@@ -41,14 +41,19 @@
   "parameters_human": "33.44B",
   "storage_bytes": 21588694354,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": "poolside/Laguna-XS-2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
   "slug": "hauhaucs-gemma4-26b-a4b-qat-uncensored-hauhaucs-balanced-mtp",
   "author": "HauhauCS",
@@ -41,14 +41,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 18242781024,
   "storage_human": "18.2 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

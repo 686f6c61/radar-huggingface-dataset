@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mer0vin8ian/LES-eg2-665M-asr-en",
   "slug": "mer0vin8ian-les-eg2-665m-asr-en",
   "author": "Mer0vin8ian",
@@ -45,14 +45,19 @@
   "parameters_human": "88.0M",
   "storage_bytes": 719236393,
   "storage_human": "719 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

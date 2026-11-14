@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cbwwww/mlabonne_Qwen3-8B-abliterated-GGUF",
   "slug": "cbwwww-mlabonne_qwen3-8b-abliterated-gguf",
   "author": "cbwwww",
@@ -30,14 +30,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 129790576782,
   "storage_human": "129.8 GB",
+  "context_length": 40960,
   "base_model": "mlabonne/Qwen3-8B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

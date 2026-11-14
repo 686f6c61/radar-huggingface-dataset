@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neemias/multimodal-LLMs-See-Sentiment",
   "slug": "neemias-multimodal-llms-see-sentiment",
   "author": "Neemias",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 57429225072,
   "storage_human": "57.4 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large, facebook/bart-large-mnli",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "neemiasbsilva/multimodal-LLMs-See-Sentiment",
+  "renamed_at": "2026-11-14T03:48:39.349Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hfmlsoc/ncii-prompt-guard-3c",
   "slug": "hfmlsoc-ncii-prompt-guard-3c",
   "author": "hfmlsoc",
@@ -37,14 +37,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 1105812283,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "microsoft/harrier-oss-v1-270m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "NCII prompt guard, block view (test split, operating point tau=0.9)",

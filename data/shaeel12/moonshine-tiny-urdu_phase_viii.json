@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shaeel12/moonshine-tiny-urdu_PHASE_VIII",
   "slug": "shaeel12-moonshine-tiny-urdu_phase_viii",
   "author": "shaeel12",
@@ -27,14 +27,19 @@
   "parameters_human": "61.5M",
   "storage_bytes": 738239784,
   "storage_human": "738 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T03:20:06.054Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

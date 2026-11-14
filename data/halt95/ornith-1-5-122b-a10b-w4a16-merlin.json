@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "halt95/Ornith-1.5-122B-A10B-W4A16-Merlin",
   "slug": "halt95-ornith-1-5-122b-a10b-w4a16-merlin",
   "author": "halt95",
@@ -43,14 +43,19 @@
   "parameters_human": "128.26B",
   "storage_bytes": 71336849972,
   "storage_human": "71.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

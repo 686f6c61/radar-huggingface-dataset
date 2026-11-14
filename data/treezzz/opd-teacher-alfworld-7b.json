@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TreezzZ/opd-teacher-alfworld-7b",
   "slug": "treezzz-opd-teacher-alfworld-7b",
   "author": "TreezzZ",
@@ -37,14 +37,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15231271832,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T13:32:07.014Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

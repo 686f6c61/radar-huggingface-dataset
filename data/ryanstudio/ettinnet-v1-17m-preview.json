@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "RyanStudio/ettinnet-v1-17m-preview",
+  "slug": "ryanstudio-ettinnet-v1-17m-preview",
+  "author": "RyanStudio",
+  "url": "https://huggingface.co/RyanStudio/ettinnet-v1-17m-preview",
+  "created_at": "2026-11-13T15:04:39.000Z",
+  "updated_at": "2026-11-14T17:41:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-17m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-17m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 16913600,
+  "parameters_human": "16.9M",
+  "storage_bytes": 67659080,
+  "storage_human": "68 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-17m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

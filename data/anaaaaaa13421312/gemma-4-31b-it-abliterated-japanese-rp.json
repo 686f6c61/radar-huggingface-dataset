@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anaaaaaa13421312/gemma-4-31B-it-abliterated-Japanese-RP",
   "slug": "anaaaaaa13421312-gemma-4-31b-it-abliterated-japanese-rp",
   "author": "anaaaaaa13421312",
@@ -30,14 +30,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 67044434456,
   "storage_human": "67.0 GB",
+  "context_length": null,
   "base_model": "wangzhang/gemma-4-31B-it-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xw17/Qwen2.5-14B-Instruct_SFT_lora_loneliness",
   "slug": "xw17-qwen2-5-14b-instruct_sft_lora_loneliness",
   "author": "xw17",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 149136796,
   "storage_human": "149 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

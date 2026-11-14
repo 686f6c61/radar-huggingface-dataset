@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Privoid-ai/Privoid-FactCheck-Qwen3.5-2B",
   "slug": "privoid-ai-privoid-factcheck-qwen3-5-2b",
   "author": "Privoid-ai",
@@ -50,14 +50,19 @@
   "parameters_human": null,
   "storage_bytes": 87672597,
   "storage_human": "88 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Grounded fact-checking",

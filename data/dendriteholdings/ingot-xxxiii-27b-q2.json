@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dendriteholdings/Ingot-XXXIII-27B-Q2",
   "slug": "dendriteholdings-ingot-xxxiii-27b-q2",
   "author": "dendriteholdings",
@@ -30,14 +30,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 13152817856,
   "storage_human": "13.2 GB",
+  "context_length": 262144,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

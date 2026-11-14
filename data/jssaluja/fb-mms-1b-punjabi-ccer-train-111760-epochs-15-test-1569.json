@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jssaluja/fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569",
   "slug": "jssaluja-fb-mms-1b-punjabi-ccer-train-111760-epochs-15-test-1569",
   "author": "jssaluja",
@@ -28,14 +28,19 @@
   "parameters_human": "964.7M",
   "storage_bytes": 3877241867,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T09:16:11.475Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

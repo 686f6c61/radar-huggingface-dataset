@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "robgaleano/Swift-1.5-Qwen3.8-27B-MTP-MLX-8bit",
   "slug": "robgaleano-swift-1-5-qwen3-8-27b-mtp-mlx-8bit",
   "author": "robgaleano",
@@ -37,6 +37,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 464403618,
   "storage_human": "464 MB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "melodyleonard/AfriSLM-2B-2bit-kronos",
   "slug": "melodyleonard-afrislm-2b-2bit-kronos",
   "author": "melodyleonard",
@@ -100,12 +100,17 @@
   "parameters_human": null,
   "storage_bytes": 2648310337,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "qvac/TranslatePsy-AfriSLM-2B, Qwen/Qwen3.5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

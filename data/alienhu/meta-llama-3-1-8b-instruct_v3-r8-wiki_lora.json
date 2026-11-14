@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlienHu/Meta-Llama-3.1-8B-Instruct_v3-r8-wiki_lora",
   "slug": "alienhu-meta-llama-3-1-8b-instruct_v3-r8-wiki_lora",
   "author": "AlienHu",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 773543810,
   "storage_human": "774 MB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drawthingsai/MOSS-Image-SFT",
   "slug": "drawthingsai-moss-image-sft",
   "author": "drawthingsai",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 32474766356,
   "storage_human": "32.5 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

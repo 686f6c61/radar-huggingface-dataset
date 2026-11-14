@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeremytromp/wav2vec2-xls-r-1b-dutch-onnx",
   "slug": "jeremytromp-wav2vec2-xls-r-1b-dutch-onnx",
   "author": "Jeremytromp",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1018435431,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "jonatasgrosman/wav2vec2-xls-r-1b-dutch",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

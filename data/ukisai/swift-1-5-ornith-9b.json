@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ukisai/Swift-1.5-Ornith-9B",
   "slug": "ukisai-swift-1-5-ornith-9b",
   "author": "ukisai",
@@ -38,14 +38,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19319280497,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alivecat/plamo-3-translate-0.8b-MNN",
   "slug": "alivecat-plamo-3-translate-0-8b-mnn",
   "author": "alivecat",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 597612378,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "pfnet/plamo-3-translate-0.8b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

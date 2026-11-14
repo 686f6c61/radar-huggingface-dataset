@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "i-dj/chinese-clip-onnx",
   "slug": "i-dj-chinese-clip-onnx",
   "author": "i-dj",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 6210372619,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "OFA-Sys/chinese-clip-vit-huge-patch14, OFA-Sys/chinese-clip-vit-large-patch14, OFA-Sys/chinese-clip-vit-base-patch16",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

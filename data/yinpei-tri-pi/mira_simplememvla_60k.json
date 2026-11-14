@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yinpei-tri-pi/mira_simplememvla_60k",
   "slug": "yinpei-tri-pi-mira_simplememvla_60k",
   "author": "yinpei-tri-pi",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 63462704085,
   "storage_human": "63.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

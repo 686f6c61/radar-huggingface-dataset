@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moritzzzz/Prompt2Robo-Qwen3-4B-v3-full-4b-MLX-4bit",
   "slug": "moritzzzz-prompt2robo-qwen3-4b-v3-full-4b-mlx-4bit",
   "author": "moritzzzz",
@@ -35,6 +35,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2274445179,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:25:35.982Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NukeTorch/whisper-large-v3-turbo",
   "slug": "nuketorch-whisper-large-v3-turbo",
   "author": "NukeTorch",
@@ -28,14 +28,19 @@
   "parameters_human": "808.9M",
   "storage_bytes": 1618442305,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

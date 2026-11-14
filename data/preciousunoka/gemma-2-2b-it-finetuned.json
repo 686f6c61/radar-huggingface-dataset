@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Preciousunoka/gemma-2-2b-it-finetuned",
   "slug": "preciousunoka-gemma-2-2b-it-finetuned",
   "author": "Preciousunoka",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 75944960,
   "storage_human": "76 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

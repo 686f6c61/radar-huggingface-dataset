@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danush99/Model_LiLT-SER-IT-SIN",
   "slug": "danush99-model_lilt-ser-it-sin",
   "author": "danush99",
@@ -29,14 +29,19 @@
   "parameters_human": "283.6M",
   "storage_bytes": 1151407728,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "kavg/LiLT-SER-IT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Token Classification",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingfang008/BonFrame-LatentSync-MLX",
   "slug": "kingfang008-bonframe-latentsync-mlx",
   "author": "kingfang008",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 5072147904,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T02:27:09.094Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

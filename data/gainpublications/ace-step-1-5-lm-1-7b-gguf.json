@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GainPublications/ACE-Step-1.5-lm-1.7B-GGUF",
   "slug": "gainpublications-ace-step-1-5-lm-1-7b-gguf",
   "author": "GainPublications",
@@ -29,14 +29,19 @@
   "parameters_human": "1.85B",
   "storage_bytes": 1526792896,
   "storage_human": "1.5 GB",
+  "context_length": 40960,
   "base_model": "ACE-Step/Ace-Step1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

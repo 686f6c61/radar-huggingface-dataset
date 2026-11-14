@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trungnguyentran/vietts-gguf",
   "slug": "trungnguyentran-vietts-gguf",
   "author": "trungnguyentran",
@@ -25,6 +25,7 @@
   "parameters_human": "662.9M",
   "storage_bytes": 1162947754,
   "storage_human": "1.2 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

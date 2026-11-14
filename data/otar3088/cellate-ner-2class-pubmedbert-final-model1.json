@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OTAR3088/CeLLaTe-ner-2class-pubmedbert-final-model1",
   "slug": "otar3088-cellate-ner-2class-pubmedbert-final-model1",
   "author": "OTAR3088",
@@ -27,14 +27,19 @@
   "parameters_human": "110.4M",
   "storage_bytes": 441660236,
   "storage_human": "442 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

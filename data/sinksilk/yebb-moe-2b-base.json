@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sinksilk/Yebb-MoE-2B-Base",
   "slug": "sinksilk-yebb-moe-2b-base",
   "author": "sinksilk",
@@ -42,14 +42,19 @@
   "parameters_human": "1.96B",
   "storage_bytes": 7848682888,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

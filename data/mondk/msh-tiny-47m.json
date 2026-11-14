@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/Msh-Tiny-47M",
   "slug": "mondk-msh-tiny-47m",
   "author": "mondk",
@@ -47,14 +47,19 @@
   "parameters_human": "47.2M",
   "storage_bytes": 188943152,
   "storage_human": "189 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

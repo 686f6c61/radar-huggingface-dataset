@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reverie-studio/Qwen-Image-Edit-2511-Lightning",
   "slug": "reverie-studio-qwen-image-edit-2511-lightning",
   "author": "reverie-studio",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 849608296,
   "storage_human": "850 MB",
+  "context_length": null,
   "base_model": "lightx2v/Qwen-Image-Edit-2511-Lightning",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

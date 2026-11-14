@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexWortega/flint-roleplay-antislop-heretic",
   "slug": "alexwortega-flint-roleplay-antislop-heretic",
   "author": "AlexWortega",
@@ -44,6 +44,7 @@
   "parameters_human": "39.79B",
   "storage_bytes": 79635302501,
   "storage_human": "79.6 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

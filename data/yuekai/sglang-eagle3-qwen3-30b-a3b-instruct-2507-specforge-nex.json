@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuekai/SGLang-EAGLE3-Qwen3-30B-A3B-Instruct-2507-SpecForge-Nex",
   "slug": "yuekai-sglang-eagle3-qwen3-30b-a3b-instruct-2507-specforge-nex",
   "author": "yuekai",
@@ -25,14 +25,19 @@
   "parameters_human": "183.2M",
   "storage_bytes": 366378848,
   "storage_human": "366 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

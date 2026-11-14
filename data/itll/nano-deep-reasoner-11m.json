@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ITLL/Nano.Deep.Reasoner.11m",
   "slug": "itll-nano-deep-reasoner-11m",
   "author": "ITLL",
@@ -32,14 +32,19 @@
   "parameters_human": "12.7M",
   "storage_bytes": 568282474,
   "storage_human": "568 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "11-47/Nano.Deep.Reasoner.11m",
+  "renamed_at": "2026-11-13T03:04:59.051Z",
   "benchmarks": [],
   "sources": [
     {

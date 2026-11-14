@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TyKaoz/Apertus-v1.5-8B-text-4bit",
   "slug": "tykaoz-apertus-v1-5-8b-text-4bit",
   "author": "TyKaoz",
@@ -46,6 +46,7 @@
   "parameters_human": "8.05B",
   "storage_bytes": 4530491646,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-v1.5-8B",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "semgram/decider-75M",
   "slug": "semgram-decider-75m",
   "author": "semgram",
@@ -34,14 +34,19 @@
   "parameters_human": "74.8M",
   "storage_bytes": 313504058,
   "storage_human": "314 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambezius/sam3.1-soccernet-ball-streaming",
   "slug": "bambezius-sam3-1-soccernet-ball-streaming",
   "author": "bambezius",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2264083368,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "facebook/sam3.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

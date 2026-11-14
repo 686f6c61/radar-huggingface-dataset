@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tridex/model_act_3cam_dino_40K_23_09",
   "slug": "tridex-model_act_3cam_dino_40k_23_09",
   "author": "Tridex",
@@ -28,14 +28,19 @@
   "parameters_human": "62.5M",
   "storage_bytes": 249954520,
   "storage_human": "250 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

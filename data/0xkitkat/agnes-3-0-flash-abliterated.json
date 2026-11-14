@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xKitkat/Agnes-3.0-Flash-abliterated",
   "slug": "0xkitkat-agnes-3-0-flash-abliterated",
   "author": "0xKitkat",
@@ -35,14 +35,19 @@
   "parameters_human": "33.09B",
   "storage_bytes": 66181198496,
   "storage_human": "66.2 GB",
+  "context_length": null,
   "base_model": "Agnes-AI/Agnes-3.0-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-qwen-image-edit-2511-q8-0.gguf-checkpoint",
   "slug": "runninghubai-rh-qwen-image-edit-2511-q8-0-gguf-checkpoint",
   "author": "RunningHubAI",
@@ -25,14 +25,19 @@
   "parameters_human": "20.43B",
   "storage_bytes": 21761820663,
   "storage_human": "21.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

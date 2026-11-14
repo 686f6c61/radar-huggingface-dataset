@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "google/gemma-3-270m-it",
   "slug": "google-gemma-3-270m-it",
   "author": "google",
@@ -70,14 +70,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 1126542929,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

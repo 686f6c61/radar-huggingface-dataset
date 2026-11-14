@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "William-Gao1/qwen3.8-27b-shakespeare-lora",
   "slug": "william-gao1-qwen3-8-27b-shakespeare-lora",
   "author": "William-Gao1",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 261690381,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

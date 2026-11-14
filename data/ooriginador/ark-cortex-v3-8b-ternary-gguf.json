@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ooriginador/Ark-Cortex-v3-8B-Ternary-GGUF",
   "slug": "ooriginador-ark-cortex-v3-8b-ternary-gguf",
   "author": "Ooriginador",
@@ -48,14 +48,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4450006880,
   "storage_human": "4.5 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Mathematical Reasoning",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DarwinDanish/Sailor2-8B-Iban-CPT",
   "slug": "darwindanish-sailor2-8b-iban-cpt",
   "author": "DarwinDanish",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 2927834608,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "sail/Sailor2-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T03:52:59.229Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

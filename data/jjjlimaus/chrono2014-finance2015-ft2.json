@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/chrono2014-finance2015-ft2",
   "slug": "jjjlimaus-chrono2014-finance2015-ft2",
   "author": "jjjlimaus",
@@ -23,14 +23,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 70625159084,
   "storage_human": "70.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T07:57:01.128Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

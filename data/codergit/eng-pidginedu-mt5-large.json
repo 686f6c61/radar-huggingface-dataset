@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coderGit/eng-pidginedu-mt5-large",
   "slug": "codergit-eng-pidginedu-mt5-large",
   "author": "coderGit",
@@ -35,14 +35,19 @@
   "parameters_human": "1.23B",
   "storage_bytes": 4934729503,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "google/mt5-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T02:58:01.053Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

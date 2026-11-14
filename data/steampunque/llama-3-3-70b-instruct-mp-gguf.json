@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "steampunque/Llama-3.3-70B-Instruct-MP-GGUF",
   "slug": "steampunque-llama-3-3-70b-instruct-mp-gguf",
   "author": "steampunque",
@@ -26,20 +26,25 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 890,
+  "downloads_30d": 1007,
   "trending_score": 0,
   "parameters": 70553706560,
   "parameters_human": "70.55B",
   "storage_bytes": 172138851840,
   "storage_human": "172.1 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.3-70B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

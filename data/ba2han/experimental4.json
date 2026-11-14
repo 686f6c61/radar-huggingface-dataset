@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ba2han/experimental4",
   "slug": "ba2han-experimental4",
   "author": "Ba2han",
@@ -32,14 +32,19 @@
   "parameters_human": "1.09B",
   "storage_bytes": 119608439405,
   "storage_human": "119.6 GB",
+  "context_length": null,
   "base_model": "Ba2han/exp4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T02:30:05.296Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

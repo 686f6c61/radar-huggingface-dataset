@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/spectrum-Llama-3.1-70B-v0-GGUF",
   "slug": "mradermacher-spectrum-llama-3-1-70b-v0-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 481302990464,
   "storage_human": "481.3 GB",
+  "context_length": 131072,
   "base_model": "tsor13/spectrum-Llama-3.1-70B-v0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

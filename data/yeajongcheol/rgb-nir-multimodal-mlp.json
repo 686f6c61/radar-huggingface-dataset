@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeajongcheol/rgb-nir-multimodal-mlp",
   "slug": "yeajongcheol-rgb-nir-multimodal-mlp",
   "author": "yeajongcheol",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 135354,
   "storage_human": "135354 B",
+  "context_length": null,
   "base_model": "do1ng/yolo11m-cnn-blackbox",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

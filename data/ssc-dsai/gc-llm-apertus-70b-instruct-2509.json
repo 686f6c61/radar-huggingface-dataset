@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ssc-dsai/gc-llm-apertus-70b-instruct-2509",
   "slug": "ssc-dsai-gc-llm-apertus-70b-instruct-2509",
   "author": "ssc-dsai",
@@ -48,14 +48,19 @@
   "parameters_human": "70.60B",
   "storage_bytes": 706016919833,
   "storage_human": "706.0 GB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-70B-Instruct-2509",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/lfm3-vl-2b-vision-encoder",
   "slug": "gatilin-lfm3-vl-2b-vision-encoder",
   "author": "gatilin",
@@ -35,14 +35,19 @@
   "parameters_human": "189.4M",
   "storage_bytes": 378777968,
   "storage_human": "379 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

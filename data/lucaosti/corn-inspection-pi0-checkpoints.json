@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lucaosti/corn-inspection-pi0-checkpoints",
   "slug": "lucaosti-corn-inspection-pi0-checkpoints",
   "author": "lucaosti",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 247738565110,
   "storage_human": "247.7 GB",
+  "context_length": null,
   "base_model": "physical-intelligence/pi0",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

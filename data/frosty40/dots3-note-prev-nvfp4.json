@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Frosty40/dots3-note-prev-NVFP4",
   "slug": "frosty40-dots3-note-prev-nvfp4",
   "author": "Frosty40",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 215535,
   "storage_human": "215535 B",
+  "context_length": null,
   "base_model": "dots-studio/dots3-note-prev",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-15T08:48:04.718Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

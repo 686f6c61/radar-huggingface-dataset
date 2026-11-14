@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bestdive/reinforce-CartPole-v1",
   "slug": "bestdive-reinforce-cartpole-v1",
   "author": "bestdive",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4051,
   "storage_human": "4051 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

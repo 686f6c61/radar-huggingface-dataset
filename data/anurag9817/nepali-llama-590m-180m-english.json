@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anurag9817/nepali-llama-590m-180m-english",
   "slug": "anurag9817-nepali-llama-590m-180m-english",
   "author": "Anurag9817",
@@ -32,14 +32,19 @@
   "parameters_human": "590.1M",
   "storage_bytes": 2361267071,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

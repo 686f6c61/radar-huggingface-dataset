@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q-project/gpt-oss-20b-qpack-q1",
   "slug": "q-project-gpt-oss-20b-qpack-q1",
   "author": "q-project",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 16683922560,
   "storage_human": "16.7 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

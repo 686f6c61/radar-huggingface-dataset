@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/GLM-5.3-Flash-MTP-MLX",
   "slug": "inferencerlabs-glm-5-3-flash-mtp-mlx",
   "author": "inferencerlabs",
@@ -35,6 +35,7 @@
   "parameters_human": "7.43B",
   "storage_bytes": 4183322790,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

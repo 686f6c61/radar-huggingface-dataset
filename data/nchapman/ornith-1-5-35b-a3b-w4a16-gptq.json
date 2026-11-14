@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Ornith-1.5-35B-A3B-W4A16-GPTQ",
   "slug": "nchapman-ornith-1-5-35b-a3b-w4a16-gptq",
   "author": "nchapman",
@@ -35,14 +35,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 41730647632,
   "storage_human": "41.7 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:52:09.723Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

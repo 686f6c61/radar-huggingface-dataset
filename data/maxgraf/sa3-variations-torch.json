@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maxgraf/sa3-variations-torch",
   "slug": "maxgraf-sa3-variations-torch",
   "author": "maxgraf",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 6967988084,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-audio-3-medium, stabilityai/stable-audio-3-small-music",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

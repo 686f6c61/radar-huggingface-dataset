@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/granite-4.2-30b-GGUF",
   "slug": "vcruz305-granite-4-2-30b-gguf",
   "author": "vcruz305",
@@ -62,14 +62,19 @@
   "parameters_human": "29.28B",
   "storage_bytes": 162373472992,
   "storage_human": "162.4 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T11:27:23.312Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

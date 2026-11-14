@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/phi-4-Tensix-BFP4-Down8",
   "slug": "xylolabs-phi-4-tensix-bfp4-down8",
   "author": "Xylolabs",
@@ -43,14 +43,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 29319055936,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "microsoft/phi-4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

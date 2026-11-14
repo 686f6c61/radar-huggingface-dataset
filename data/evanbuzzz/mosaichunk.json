@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "evanbuzzZ/MosaiChunk",
   "slug": "evanbuzzz-mosaichunk",
   "author": "evanbuzzZ",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 100805080,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mosaichunk/MosaiChunk",
+  "renamed_at": "2026-11-11T05:12:41.999Z",
   "benchmarks": [],
   "sources": [
     {

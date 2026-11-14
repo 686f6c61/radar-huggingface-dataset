@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prathik/DeepSeek-R1-Distill-Qwen-Base-7B",
   "slug": "prathik-deepseek-r1-distill-qwen-base-7b",
   "author": "Prathik",
@@ -30,14 +30,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 5547254573,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

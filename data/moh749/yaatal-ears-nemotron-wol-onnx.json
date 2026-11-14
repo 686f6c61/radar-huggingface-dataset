@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MOH749/yaatal-ears-nemotron-wol-onnx",
   "slug": "moh749-yaatal-ears-nemotron-wol-onnx",
   "author": "MOH749",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 3360038769,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

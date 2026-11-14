@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Immerwinter/gelectra-large-privacy-policy-content-purpose",
   "slug": "immerwinter-gelectra-large-privacy-policy-content-purpose",
   "author": "Immerwinter",
@@ -31,6 +31,7 @@
   "parameters_human": "335.7M",
   "storage_bytes": 1681792187,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "deepset/gelectra-large",
   "formats": [
     "onnx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

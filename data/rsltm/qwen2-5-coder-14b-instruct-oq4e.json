@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RSLtm/Qwen2.5-Coder-14B-Instruct-oQ4e",
   "slug": "rsltm-qwen2-5-coder-14b-instruct-oq4e",
   "author": "RSLtm",
@@ -27,6 +27,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8678135170,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:19:39.156Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

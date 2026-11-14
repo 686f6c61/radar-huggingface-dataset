@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10-lambda04-10240",
   "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-official-visionzip-r010-gap01-f-top10-bottom10-lambda04-10240",
   "author": "enmingzhangzz",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 646522648,
   "storage_human": "647 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T07:59:35.695Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

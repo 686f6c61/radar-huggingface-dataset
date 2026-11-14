@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tventurella/mr_chatterbox_model",
   "slug": "tventurella-mr_chatterbox_model",
   "author": "tventurella",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 8210604007,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

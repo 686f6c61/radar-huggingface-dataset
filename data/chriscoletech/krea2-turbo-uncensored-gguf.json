@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChrisColeTech/krea2-turbo-uncensored-GGUF",
   "slug": "chriscoletech-krea2-turbo-uncensored-gguf",
   "author": "ChrisColeTech",
@@ -29,14 +29,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 132611758831,
   "storage_human": "132.6 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, conradlocke/krea2-identity-edit",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:41:50.358Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

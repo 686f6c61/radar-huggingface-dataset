@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dhanesh-hf/Jarvis-Titan-M4-GRPO-Final",
   "slug": "dhanesh-hf-jarvis-titan-m4-grpo-final",
   "author": "dhanesh-hf",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 1364104937520,
   "storage_human": "1364.1 GB",
+  "context_length": null,
   "base_model": "dhanesh-hf/Jarvis-Titan-M4-Activated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_42_AdaLoRA_Qwen3-8b",
   "slug": "wijewardhanant-xnli_en_and_hi_5000_percentage_1_42_adalora_qwen3-8b",
   "author": "WijewardhanaNT",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 787170731,
   "storage_human": "787 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

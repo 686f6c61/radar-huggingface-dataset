@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApolloRaines/Llama-3.1-70B-Instruct-Jbliterated",
   "slug": "apolloraines-llama-3-1-70b-instruct-jbliterated",
   "author": "ApolloRaines",
@@ -36,14 +36,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141124707792,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-70B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T13:11:25.163Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

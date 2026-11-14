@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aiuser3993/GLM-Edge-1.5B-Chat-Greek",
   "slug": "aiuser3993-glm-edge-1-5b-chat-greek",
   "author": "aiuser3993",
@@ -35,14 +35,19 @@
   "parameters_human": "1.47B",
   "storage_bytes": 2944136856,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": "hereticness/heretic_glm-edge-1.5b-chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

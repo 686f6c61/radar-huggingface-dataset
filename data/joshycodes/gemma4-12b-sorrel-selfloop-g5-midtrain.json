@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/gemma4-12b-sorrel-selfloop-g5-midtrain",
   "slug": "joshycodes-gemma4-12b-sorrel-selfloop-g5-midtrain",
   "author": "joshycodes",
@@ -29,14 +29,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951724999,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "joshycodes/gemma4-12b-sorrel-selfloop-g4-midtrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T02:55:36.892Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

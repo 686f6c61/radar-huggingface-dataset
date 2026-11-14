@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StonedWizards/Fallen-Command-A-111B-v1-i1-GGUF",
   "slug": "stonedwizards-fallen-command-a-111b-v1-i1-gguf",
   "author": "StonedWizards",
@@ -32,14 +32,19 @@
   "parameters_human": "111.06B",
   "storage_bytes": 1194296237181,
   "storage_human": "1194.3 GB",
+  "context_length": 262144,
   "base_model": "TheDrummer/Fallen-Command-A-111B-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ClonedGizzards/Fallen-Command-A-111B-v1-i1-GGUF",
+  "renamed_at": "2026-11-11T03:57:13.665Z",
   "benchmarks": [],
   "sources": [
     {

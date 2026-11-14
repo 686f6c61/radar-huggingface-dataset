@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "braydenh563/Qwen3-30B-A3B-Claude-4.5-Opus-2507-UNCENSORED-V2-i1-GGUF",
   "slug": "braydenh563-qwen3-30b-a3b-claude-4-5-opus-2507-uncensored-v2-i1-gguf",
   "author": "braydenh563",
@@ -46,14 +46,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 324126087648,
   "storage_human": "324.1 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3-30B-A3B-Claude-4.5-Opus-High-Reasoning-2507-ABLITERATED-UNCENSORED-V2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:32:53.899Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MinaMila/Llama3.1-8B-Qwen32B",
   "slug": "minamila-llama3-1-8b-qwen32b",
   "author": "MinaMila",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 185047592,
   "storage_human": "185 MB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

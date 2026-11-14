@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jafarahmadi/SedaNevis_v1.0",
   "slug": "jafarahmadi-sedanevis_v1-0",
   "author": "jafarahmadi",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 459683840,
   "storage_human": "460 MB",
+  "context_length": null,
   "base_model": "nvidia/nemo-asr",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

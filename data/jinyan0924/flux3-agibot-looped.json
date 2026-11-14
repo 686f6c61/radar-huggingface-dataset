@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinyan0924/flux3-agibot-looped",
   "slug": "jinyan0924-flux3-agibot-looped",
   "author": "Jinyan0924",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 2033416289226,
   "storage_human": "2033.4 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-action-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

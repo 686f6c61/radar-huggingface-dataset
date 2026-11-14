@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishizawa-ryuichi/gpt-oss-20b-custom",
   "slug": "ishizawa-ryuichi-gpt-oss-20b-custom",
   "author": "ishizawa-ryuichi",
@@ -35,14 +35,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 41857429686,
   "storage_human": "41.9 GB",
+  "context_length": null,
   "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

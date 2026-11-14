@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/MiniMax-H3-Image-OrbitQuant-W4A8",
   "slug": "wavecut-minimax-h3-image-orbitquant-w4a8",
   "author": "WaveCut",
@@ -37,6 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 27453520156,
   "storage_human": "27.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image",
   "formats": [
     "diffusers",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

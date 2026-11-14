@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StillDeadcode/minimax-h3-i8",
   "slug": "stilldeadcode-minimax-h3-i8",
   "author": "StillDeadcode",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 67416358912,
   "storage_human": "67.4 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, LBH-123-AI/Minimax_h3_latent_Upscaler",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

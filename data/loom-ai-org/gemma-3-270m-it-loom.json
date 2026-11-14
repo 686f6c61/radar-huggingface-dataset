@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/gemma-3-270m-it-loom",
   "slug": "loom-ai-org-gemma-3-270m-it-loom",
   "author": "loom-ai-org",
@@ -28,14 +28,19 @@
   "parameters_human": "268.4M",
   "storage_bytes": 5438438912,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

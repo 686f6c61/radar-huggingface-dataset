@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keptn/nemotron-3.5-bolt-74b-w4a8",
   "slug": "keptn-nemotron-3-5-bolt-74b-w4a8",
   "author": "keptn",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 46163173376,
   "storage_human": "46.2 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

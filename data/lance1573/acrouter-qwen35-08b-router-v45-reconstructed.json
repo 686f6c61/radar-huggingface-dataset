@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lance1573/acrouter-qwen35-08b-router-v45-reconstructed",
   "slug": "lance1573-acrouter-qwen35-08b-router-v45-reconstructed",
   "author": "Lance1573",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 45573567,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AmnO-O/mmbert-queer-hate-adapted",
   "slug": "amno-o-mmbert-queer-hate-adapted",
   "author": "AmnO-O",
@@ -27,14 +27,19 @@
   "parameters_human": "504.4M",
   "storage_bytes": 2051954628,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "internetoftim/speecht5_tts-pld-fil-ONNX",
   "slug": "internetoftim-speecht5_tts-pld-fil-onnx",
   "author": "internetoftim",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3009775556,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "sapinsapin/speecht5_tts-pld-fil",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leok7v/Qwen3.8-27B-coreml-q6",
   "slug": "leok7v-qwen3-8-27b-coreml-q6",
   "author": "leok7v",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 21462987058,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

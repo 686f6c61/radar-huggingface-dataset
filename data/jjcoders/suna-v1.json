@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjcoders/suna-v1",
   "slug": "jjcoders-suna-v1",
   "author": "jjcoders",
@@ -42,6 +42,7 @@
   "parameters_human": "304.4M",
   "storage_bytes": 16230062112,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

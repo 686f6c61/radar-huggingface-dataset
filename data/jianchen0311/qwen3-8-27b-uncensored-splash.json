@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jianchen0311/Qwen3.8-27B-Uncensored-Splash",
   "slug": "jianchen0311-qwen3-8-27b-uncensored-splash",
   "author": "jianchen0311",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 17375920973,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored-MLX, incoai/Qwen3.8-27B-DFlash2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

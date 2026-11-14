@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Sonexa-2-TTS-GGUF",
   "slug": "mradermacher-sonexa-2-tts-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 16350125632,
   "storage_human": "16.4 GB",
+  "context_length": 32768,
   "base_model": "SonexaAI/Sonexa-2-TTS",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

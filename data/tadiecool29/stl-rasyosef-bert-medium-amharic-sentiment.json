@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/STL-rasyosef-bert-medium-amharic-sentiment",
   "slug": "tadiecool29-stl-rasyosef-bert-medium-amharic-sentiment",
   "author": "tadiecool29",
@@ -27,14 +27,19 @@
   "parameters_human": "40.4M",
   "storage_bytes": 161731653,
   "storage_human": "162 MB",
+  "context_length": null,
   "base_model": "rasyosef/bert-medium-amharic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

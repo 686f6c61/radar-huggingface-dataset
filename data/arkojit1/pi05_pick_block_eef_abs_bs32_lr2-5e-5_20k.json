@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arkojit1/pi05_pick_block_eef_abs_bs32_lr2.5e-5_20k",
   "slug": "arkojit1-pi05_pick_block_eef_abs_bs32_lr2-5e-5_20k",
   "author": "arkojit1",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354065464,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T18:19:48.249Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

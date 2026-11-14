@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whoisotna/v1sd",
   "slug": "whoisotna-v1sd",
   "author": "whoisotna",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 61095456,
   "storage_human": "61 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T02:44:08.687Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

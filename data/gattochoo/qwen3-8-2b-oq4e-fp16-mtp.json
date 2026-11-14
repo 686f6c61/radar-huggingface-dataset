@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gattochoo/Qwen3.8-2B-oQ4e-fp16-mtp",
   "slug": "gattochoo-qwen3-8-2b-oq4e-fp16-mtp",
   "author": "gattochoo",
@@ -27,6 +27,7 @@
   "parameters_human": "2.27B",
   "storage_bytes": 2499194603,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

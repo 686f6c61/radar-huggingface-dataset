@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggnico/whisper-tiny_to_spanish_accent_09oct",
   "slug": "huggnico-whisper-tiny_to_spanish_accent_09oct",
   "author": "huggnico",
@@ -37,14 +37,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 302167663,
   "storage_human": "302 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "huggnico/whisper-tiny_to_spanish_accent",
+  "renamed_at": "2026-11-11T05:36:21.736Z",
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

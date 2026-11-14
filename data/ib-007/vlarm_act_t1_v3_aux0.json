@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ib-007/vlarm_act_t1_v3_aux0",
   "slug": "ib-007-vlarm_act_t1_v3_aux0",
   "author": "ib-007",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 1033908168,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

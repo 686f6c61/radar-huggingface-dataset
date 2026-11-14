@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoppleAI/Sana_Sprint_0.6B_1024px_diffusers-GGUF",
   "slug": "voppleai-sana_sprint_0-6b_1024px_diffusers-gguf",
   "author": "VoppleAI",
@@ -27,14 +27,19 @@
   "parameters_human": "1.61B",
   "storage_bytes": 6516402720,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

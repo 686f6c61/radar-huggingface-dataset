@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dealignai/MiMo-V2.6-Pro-RL-UNCENSORED",
   "slug": "dealignai-mimo-v2-6-pro-rl-uncensored",
   "author": "dealignai",
@@ -49,14 +49,19 @@
   "parameters_human": "1024.22B",
   "storage_bytes": 642212663768,
   "storage_human": "642.2 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T04:42:07.439Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

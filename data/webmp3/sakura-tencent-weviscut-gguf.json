@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-tencent-WeVisCut-GGUF",
   "slug": "webmp3-sakura-tencent-weviscut-gguf",
   "author": "webmp3",
@@ -34,14 +34,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 21469571712,
   "storage_human": "21.5 GB",
+  "context_length": 262144,
   "base_model": "tencent/WeVisCut",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

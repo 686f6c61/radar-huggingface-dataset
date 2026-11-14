@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "antirez/deepseek-v4-gguf",
   "slug": "antirez-deepseek-v4-gguf",
   "author": "antirez",
@@ -45,14 +45,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 4273612595885,
   "storage_human": "4273.6 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

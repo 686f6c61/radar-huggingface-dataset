@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codeaduck/goonawrite-v2",
   "slug": "codeaduck-goonawrite-v2",
   "author": "codeaduck",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 337251965,
   "storage_human": "337 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenxuuu/Straight-Faced-Nonsense",
   "slug": "chenxuuu-straight-faced-nonsense",
   "author": "chenxuuu",
@@ -33,6 +33,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 5015908736,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SinclairSchneider/Apertus-v1.5-8B-W4A16-KV8-de",
   "slug": "sinclairschneider-apertus-v1-5-8b-w4a16-kv8-de",
   "author": "SinclairSchneider",
@@ -43,14 +43,19 @@
   "parameters_human": "8.90B",
   "storage_bytes": 8080299268,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-v1.5-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

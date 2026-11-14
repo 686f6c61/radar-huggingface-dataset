@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vtava/Qwen3.5-0.8B-CeNN-Integrated-V1",
   "slug": "vtava-qwen3-5-0-8b-cenn-integrated-v1",
   "author": "vtava",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4870773,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

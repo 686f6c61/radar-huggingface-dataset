@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChrisColeTech/krea2-turbo-uncensored-v1.1-FP8",
   "slug": "chriscoletech-krea2-turbo-uncensored-v1-1-fp8",
   "author": "ChrisColeTech",
@@ -30,14 +30,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 98883731275,
   "storage_human": "98.9 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, conradlocke/krea2-identity-edit",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

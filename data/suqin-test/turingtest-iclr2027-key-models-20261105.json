@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Suqin-Test/turingtest-iclr2027-key-models-20261105",
   "slug": "suqin-test-turingtest-iclr2027-key-models-20261105",
   "author": "Suqin-Test",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 77411406935,
   "storage_human": "77.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

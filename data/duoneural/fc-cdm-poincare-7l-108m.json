@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/FC-CDM-Poincare-7L-108M",
   "slug": "duoneural-fc-cdm-poincare-7l-108m",
   "author": "DuoNeural",
@@ -39,6 +39,7 @@
   "parameters_human": "134.4M",
   "storage_bytes": 1587234631,
   "storage_human": "1.6 GB",
+  "context_length": 512,
   "base_model": "Salesforce/xlam-function-calling-60k",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

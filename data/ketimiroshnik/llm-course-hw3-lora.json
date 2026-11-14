@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ketimiroshnik/llm-course-hw3-lora",
   "slug": "ketimiroshnik-llm-course-hw3-lora",
   "author": "ketimiroshnik",
@@ -36,14 +36,19 @@
   "parameters_human": "300.0M",
   "storage_bytes": 1200650547,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "OuteAI/Lite-Oute-1-300M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

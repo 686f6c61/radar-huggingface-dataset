@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/A2R-30B-A3B-i1-GGUF",
   "slug": "mradermacher-a2r-30b-a3b-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 324133748128,
   "storage_human": "324.1 GB",
+  "context_length": 65536,
   "base_model": "PleasedPenguin/A2R-30B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

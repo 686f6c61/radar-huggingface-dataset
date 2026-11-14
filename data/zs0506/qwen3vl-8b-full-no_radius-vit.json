@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zs0506/qwen3vl-8B-full-no_radius-vit",
   "slug": "zs0506-qwen3vl-8b-full-no_radius-vit",
   "author": "zs0506",
@@ -23,14 +23,19 @@
   "parameters_human": "770288",
   "storage_bytes": 17545771331,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

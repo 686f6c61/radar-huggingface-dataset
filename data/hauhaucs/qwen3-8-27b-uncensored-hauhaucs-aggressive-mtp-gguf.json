@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
   "slug": "hauhaucs-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
   "author": "HauhauCS",
@@ -35,21 +35,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2581,
+  "likes": 2582,
   "downloads_30d": 1768169,
   "trending_score": 180,
   "parameters": 1863907840,
   "parameters_human": "1.86B",
   "storage_bytes": 172466425216,
   "storage_human": "172.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

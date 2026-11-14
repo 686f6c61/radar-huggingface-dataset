@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nberkc16/bwa-kommentar-gemma4-e4b-lora",
   "slug": "nberkc16-bwa-kommentar-gemma4-e4b-lora",
   "author": "nberkc16",
@@ -39,6 +39,7 @@
   "parameters_human": "34.9M",
   "storage_bytes": 209401816,
   "storage_human": "209 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

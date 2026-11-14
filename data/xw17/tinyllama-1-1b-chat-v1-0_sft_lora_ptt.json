@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xw17/TinyLlama-1.1B-Chat-v1.0_SFT_lora_ptt",
   "slug": "xw17-tinyllama-1-1b-chat-v1-0_sft_lora_ptt",
   "author": "xw17",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 25271744,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

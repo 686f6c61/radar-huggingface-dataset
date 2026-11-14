@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sandeep123/aops-grpo-entropy-step700",
   "slug": "sandeep123-aops-grpo-entropy-step700",
   "author": "sandeep123",
@@ -32,14 +32,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 7119812336,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Math-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

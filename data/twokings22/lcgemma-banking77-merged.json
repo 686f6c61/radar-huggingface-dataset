@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twokings22/lcgemma-banking77-merged",
   "slug": "twokings22-lcgemma-banking77-merged",
   "author": "twokings22",
@@ -35,14 +35,19 @@
   "parameters_human": "4.30B",
   "storage_bytes": 17238629401,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-4b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

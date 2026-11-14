@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heykorshun/bge-reranker-v2-m3-mlx-int8",
   "slug": "heykorshun-bge-reranker-v2-m3-mlx-int8",
   "author": "heykorshun",
@@ -36,6 +36,7 @@
   "parameters_human": "160.2M",
   "storage_bytes": 658016167,
   "storage_human": "658 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-reranker-v2-m3",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "iktino/bge-reranker-v2-m3-mlx-int8",
+  "renamed_at": "2026-11-11T05:33:04.684Z",
   "benchmarks": [],
   "sources": [
     {

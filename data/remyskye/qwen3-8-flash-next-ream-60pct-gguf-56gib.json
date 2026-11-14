@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RemySkye/Qwen3.8-Flash-Next-REAM-60Pct-GGUF-56GiB",
   "slug": "remyskye-qwen3-8-flash-next-ream-60pct-gguf-56gib",
   "author": "RemySkye",
@@ -39,14 +39,19 @@
   "parameters_human": "128.79B",
   "storage_bytes": 410273956064,
   "storage_human": "410.3 GB",
+  "context_length": 262144,
   "base_model": "Akicou/Qwen3.8-Flash-Next-REAM-60Pct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T10:51:39.230Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

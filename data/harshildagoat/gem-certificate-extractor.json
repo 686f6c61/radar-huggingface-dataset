@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HarshilDaGoat/gem-certificate-extractor",
   "slug": "harshildagoat-gem-certificate-extractor",
   "author": "HarshilDaGoat",
@@ -37,14 +37,19 @@
   "parameters_human": "65.2M",
   "storage_bytes": 260858149,
   "storage_human": "261 MB",
+  "context_length": null,
   "base_model": "distilbert-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

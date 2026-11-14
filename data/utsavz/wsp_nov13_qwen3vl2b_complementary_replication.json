@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "utsavz/wsp_nov13_qwen3vl2b_complementary_replication",
   "slug": "utsavz-wsp_nov13_qwen3vl2b_complementary_replication",
   "author": "utsavz",
@@ -32,14 +32,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 4255140312,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

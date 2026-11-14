@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LoongForge/Loongforge-pi05-LIBERO",
   "slug": "loongforge-loongforge-pi05-libero",
   "author": "LoongForge",
@@ -32,14 +32,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354050784,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

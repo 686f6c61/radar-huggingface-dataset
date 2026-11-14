@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hpnyaggerman/Qwen2.5-3B-Instruct-heretic",
   "slug": "hpnyaggerman-qwen2-5-3b-instruct-heretic",
   "author": "hpnyaggerman",
@@ -41,14 +41,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183349043,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T02:48:36.635Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

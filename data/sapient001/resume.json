@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sapient001/resume",
   "slug": "sapient001-resume",
   "author": "Sapient001",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 126664966,
   "storage_human": "127 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rijal028/walker2d-reflective-v1",
   "slug": "rijal028-walker2d-reflective-v1",
   "author": "rijal028",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 879491,
   "storage_human": "879491 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

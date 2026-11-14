@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xv0y5ncu/Qwen3.8-27B-GLQ-trellis-3inst-4bpw",
   "slug": "xv0y5ncu-qwen3-8-27b-glq-trellis-3inst-4bpw",
   "author": "xv0y5ncu",
@@ -35,14 +35,19 @@
   "parameters_human": "9.54B",
   "storage_bytes": 19097379791,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T05:30:56.685Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

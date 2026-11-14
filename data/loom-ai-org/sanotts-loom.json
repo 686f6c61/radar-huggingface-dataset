@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/sanotts-loom",
   "slug": "loom-ai-org-sanotts-loom",
   "author": "loom-ai-org",
@@ -57,14 +57,19 @@
   "parameters_human": "1.1M",
   "storage_bytes": 168776928,
   "storage_human": "169 MB",
+  "context_length": null,
   "base_model": "ampixa/sanoTTS",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

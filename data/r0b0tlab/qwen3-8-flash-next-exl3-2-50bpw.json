@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw",
   "slug": "r0b0tlab-qwen3-8-flash-next-exl3-2-50bpw",
   "author": "r0b0tlab",
@@ -35,14 +35,19 @@
   "parameters_human": "22.27B",
   "storage_bytes": 64561683211,
   "storage_human": "64.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

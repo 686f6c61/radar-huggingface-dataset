@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlameF0X/TinyGPT",
   "slug": "flamef0x-tinygpt",
   "author": "FlameF0X",
@@ -35,14 +35,19 @@
   "parameters_human": "30.7M",
   "storage_bytes": 860724716,
   "storage_human": "861 MB",
+  "context_length": null,
   "base_model": "anwgpt/anwgpt4.1-chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

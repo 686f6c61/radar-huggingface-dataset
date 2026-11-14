@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abhinav03700/solar-panel-segformer-mit-b2",
   "slug": "abhinav03700-solar-panel-segformer-mit-b2",
   "author": "abhinav03700",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 99024897,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

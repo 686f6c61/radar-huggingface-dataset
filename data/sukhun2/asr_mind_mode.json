@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sukhun2/asr_mind_mode",
   "slug": "sukhun2-asr_mind_mode",
   "author": "sukhun2",
@@ -30,14 +30,19 @@
   "parameters_human": "316.7M",
   "storage_bytes": 8867303438,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "w11wo/wav2vec2-xls-r-300m-korean",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

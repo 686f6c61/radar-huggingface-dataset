@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dddddsds31341/Long-WAM-Sorting-Dolls-20k-Step-15000",
   "slug": "dddddsds31341-long-wam-sorting-dolls-20k-step-15000",
   "author": "dddddsds31341",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 12047224089,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Long-WAM-YAM",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

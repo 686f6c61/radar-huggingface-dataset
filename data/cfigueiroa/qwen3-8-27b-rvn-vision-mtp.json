@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cfigueiroa/Qwen3.8-27B-RVN-vision-MTP",
   "slug": "cfigueiroa-qwen3-8-27b-rvn-vision-mtp",
   "author": "cfigueiroa",
@@ -35,14 +35,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 17439952320,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, 0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

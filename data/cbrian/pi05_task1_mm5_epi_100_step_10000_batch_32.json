@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cbrian/pi05_task1_MM5_epi_100_step_10000_batch_32",
   "slug": "cbrian-pi05_task1_mm5_epi_100_step_10000_batch_32",
   "author": "cbrian",
@@ -27,14 +27,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 7473108700,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

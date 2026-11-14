@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kiwi-1.0-0.7B-32k-GGUF",
   "slug": "mradermacher-kiwi-1-0-0-7b-32k-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "702.8M",
   "storage_bytes": 7419289344,
   "storage_human": "7.4 GB",
+  "context_length": 32768,
   "base_model": "empirischtech/Kiwi-1.0-0.7B-32k",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

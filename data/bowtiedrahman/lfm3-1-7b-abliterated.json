@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bowtiedrahman/LFM3-1.7B-abliterated",
   "slug": "bowtiedrahman-lfm3-1-7b-abliterated",
   "author": "bowtiedrahman",
@@ -70,6 +70,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 19758088757,
   "storage_human": "19.8 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -77,8 +78,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

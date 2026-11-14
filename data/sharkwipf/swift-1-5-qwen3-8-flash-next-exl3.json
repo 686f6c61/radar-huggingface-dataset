@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SharkWipf/Swift-1.5-Qwen3.8-Flash-Next-exl3",
   "slug": "sharkwipf-swift-1-5-qwen3-8-flash-next-exl3",
   "author": "SharkWipf",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 199245840049,
   "storage_human": "199.2 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

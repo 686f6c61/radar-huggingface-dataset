@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AmauryLC/Ys-17M",
   "slug": "amaurylc-ys-17m",
   "author": "AmauryLC",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 68569535,
   "storage_human": "69 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AmauryLC/Ys-Prototype",
+  "renamed_at": "2026-11-12T02:22:08.561Z",
   "benchmarks": [],
   "sources": [
     {

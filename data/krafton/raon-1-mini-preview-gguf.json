@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KRAFTON/Raon-1-mini-preview-gguf",
   "slug": "krafton-raon-1-mini-preview-gguf",
   "author": "KRAFTON",
@@ -31,14 +31,19 @@
   "parameters_human": "28.78B",
   "storage_bytes": 261108672800,
   "storage_human": "261.1 GB",
+  "context_length": 262144,
   "base_model": "KRAFTON/Raon-1-mini-preview, KRAFTON/Raon-1-mini-preview-dflash2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "renaldux/lt-stress-detector",
   "slug": "renaldux-lt-stress-detector",
   "author": "renaldux",
@@ -39,14 +39,19 @@
   "parameters_human": "580.5M",
   "storage_bytes": 2322091112,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "classla/Wav2Vec2BertPrimaryStressAudioFrameClassifier",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/MODNet-OpenVINO",
   "slug": "mlboydaisuke-modnet-openvino",
   "author": "mlboydaisuke",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 72147894,
   "storage_human": "72 MB",
+  "context_length": null,
   "base_model": "litert-community/MODNet-LiteRT",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

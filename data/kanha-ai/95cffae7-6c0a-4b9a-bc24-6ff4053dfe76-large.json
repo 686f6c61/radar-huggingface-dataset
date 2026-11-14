@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large",
   "slug": "kanha-ai-95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large",
   "author": "Kanha-AI",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2274342846,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

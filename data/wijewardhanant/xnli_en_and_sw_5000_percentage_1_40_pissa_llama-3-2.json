@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_llama-3.2",
   "slug": "wijewardhanant-xnli_en_and_sw_5000_percentage_1_40_pissa_llama-3-2",
   "author": "WijewardhanaNT",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 292567763,
   "storage_human": "293 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

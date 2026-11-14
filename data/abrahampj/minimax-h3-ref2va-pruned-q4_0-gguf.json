@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbrahamPJ/minimax-h3-ref2va-pruned-q4_0-gguf",
   "slug": "abrahampj-minimax-h3-ref2va-pruned-q4_0-gguf",
   "author": "AbrahamPJ",
@@ -28,14 +28,19 @@
   "parameters_human": "20.11B",
   "storage_bytes": 11564180576,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

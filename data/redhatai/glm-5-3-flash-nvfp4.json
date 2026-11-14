@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/GLM-5.3-Flash-NVFP4",
   "slug": "redhatai-glm-5-3-flash-nvfp4",
   "author": "RedHatAI",
@@ -38,14 +38,19 @@
   "parameters_human": "169.12B",
   "storage_bytes": 197897969933,
   "storage_human": "197.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

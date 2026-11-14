@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wiself/Holodeck-Lounge-Regressed-MTP",
   "slug": "wiself-holodeck-lounge-regressed-mtp",
   "author": "Wiself",
@@ -40,14 +40,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326293391,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, Wiself/Holodeck-Lounge-MTP, nightmedia/Qwen3.5-9B-Holodeck-Lounge, Jackrong/Qwopus3.5-9B-Coder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

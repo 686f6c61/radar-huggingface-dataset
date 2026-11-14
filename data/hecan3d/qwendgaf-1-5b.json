@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hecan3d/QwenDGAF-1.5B",
   "slug": "hecan3d-qwendgaf-1-5b",
   "author": "hecan3d",
@@ -41,14 +41,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 7000671576,
   "storage_human": "7.0 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

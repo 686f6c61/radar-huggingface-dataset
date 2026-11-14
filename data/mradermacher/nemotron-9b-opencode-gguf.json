@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Nemotron-9B-OpenCode-GGUF",
   "slug": "mradermacher-nemotron-9b-opencode-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 82967486208,
   "storage_human": "83.0 GB",
+  "context_length": 262144,
   "base_model": "clzoro/Nemotron-9B-OpenCode",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
   "slug": "tartunlp-llama-3-1-estllm-70b-instruct-0826",
   "author": "tartuNLP",
@@ -37,14 +37,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141124708456,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "tartuNLP/Llama-3.1-EstLLM-70B-0826",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

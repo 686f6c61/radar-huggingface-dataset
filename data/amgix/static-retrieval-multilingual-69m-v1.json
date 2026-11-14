@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amgix/static-retrieval-multilingual-69m-v1",
   "slug": "amgix-static-retrieval-multilingual-69m-v1",
   "author": "amgix",
@@ -32,14 +32,19 @@
   "parameters_human": "69.1M",
   "storage_bytes": 286996267,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

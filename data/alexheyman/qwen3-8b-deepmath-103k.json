@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlexHeyman/Qwen3-8B-DeepMath-103K",
   "slug": "alexheyman-qwen3-8b-deepmath-103k",
   "author": "AlexHeyman",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 525756336877,
   "storage_human": "525.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

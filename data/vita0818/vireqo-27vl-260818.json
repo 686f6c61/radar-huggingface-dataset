@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vita0818/Vireqo-27VL-260818",
   "slug": "vita0818-vireqo-27vl-260818",
   "author": "Vita0818",
@@ -46,14 +46,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 5505445376,
   "storage_human": "5.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B, prism-ml/Bonsai-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

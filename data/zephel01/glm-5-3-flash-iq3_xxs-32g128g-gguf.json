@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zephel01/GLM-5.3-Flash-IQ3_XXS-32G128G-GGUF",
   "slug": "zephel01-glm-5-3-flash-iq3_xxs-32g128g-gguf",
   "author": "zephel01",
@@ -41,14 +41,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 127926002528,
   "storage_human": "127.9 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/GLM-5.3-Quark-MXFP4-AttnFP8",
   "slug": "amd-glm-5-3-quark-mxfp4-attnfp8",
   "author": "amd",
@@ -38,14 +38,19 @@
   "parameters_human": "384.34B",
   "storage_bytes": 409551877037,
   "storage_human": "409.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

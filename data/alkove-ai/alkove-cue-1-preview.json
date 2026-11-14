@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alkove-ai/alkove-cue-1-preview",
   "slug": "alkove-ai-alkove-cue-1-preview",
   "author": "alkove-ai",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 2266408,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Voice activity detection",

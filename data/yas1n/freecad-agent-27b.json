@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yas1n/FreeCAD-Agent-27B",
   "slug": "yas1n-freecad-agent-27b",
   "author": "Yas1n",
@@ -44,6 +44,7 @@
   "parameters_human": "159.4M",
   "storage_bytes": 976402637,
   "storage_human": "976 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:13:28.871Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

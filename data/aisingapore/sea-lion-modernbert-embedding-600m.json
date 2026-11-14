@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/SEA-LION-ModernBERT-Embedding-600M",
   "slug": "aisingapore-sea-lion-modernbert-embedding-600m",
   "author": "aisingapore",
@@ -51,14 +51,19 @@
   "parameters_human": "611.6M",
   "storage_bytes": 2480670698,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "aisingapore/SEA-LION-ModernBERT-600M-checkpoints",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyrolls/DeepSeek-R1-0528-Qwen3-8B-RoleVerse-SFT-DPO",
   "slug": "tinyrolls-deepseek-r1-0528-qwen3-8b-roleverse-sft-dpo",
   "author": "tinyrolls",
@@ -47,14 +47,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392940170,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

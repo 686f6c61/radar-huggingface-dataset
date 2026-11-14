@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MedMLX/retinanet-lung-nodule-mlx",
   "slug": "medmlx-retinanet-lung-nodule-mlx",
   "author": "MedMLX",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 84593313,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "MONAI/lung_nodule_ct_detection",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

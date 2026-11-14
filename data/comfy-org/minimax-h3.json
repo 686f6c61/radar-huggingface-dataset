@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/MiniMax-H3",
   "slug": "comfy-org-minimax-h3",
   "author": "Comfy-Org",
@@ -19,19 +19,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 2641,
+  "likes": 2644,
   "downloads_30d": 32942462,
-  "trending_score": 83,
+  "trending_score": 82,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 545097874035,
   "storage_human": "545.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

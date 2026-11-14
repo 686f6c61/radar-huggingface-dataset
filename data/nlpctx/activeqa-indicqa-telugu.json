@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nlpctx/activeqa-indicqa-telugu",
   "slug": "nlpctx-activeqa-indicqa-telugu",
   "author": "nlpctx",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2344293233,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T19:31:42.342Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

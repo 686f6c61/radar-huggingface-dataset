@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UntMods/FaceSwap_MiniMaxH3_REF2VA",
   "slug": "untmods-faceswap_minimaxh3_ref2va",
   "author": "UntMods",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 259536079,
   "storage_human": "260 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

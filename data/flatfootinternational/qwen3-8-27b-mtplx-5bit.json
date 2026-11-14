@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FlatFootInternational/qwen3.8-27b-MTPLX-5bit",
   "slug": "flatfootinternational-qwen3-8-27b-mtplx-5bit",
   "author": "FlatFootInternational",
@@ -40,6 +40,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 16923930466,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T07:26:06.336Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

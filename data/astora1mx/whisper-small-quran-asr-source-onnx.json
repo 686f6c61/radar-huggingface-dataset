@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Astora1mx/whisper-small-quran-asr-source-ONNX",
   "slug": "astora1mx-whisper-small-quran-asr-source-onnx",
   "author": "Astora1mx",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 2809257937,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "Astora1mx/whisper-small-quran-asr-source",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Astora1mx/whisper-small-quran-asr-source-ONNX-no-cache-legacy",
+  "renamed_at": "2026-11-11T02:20:34.032Z",
   "benchmarks": [],
   "sources": [
     {

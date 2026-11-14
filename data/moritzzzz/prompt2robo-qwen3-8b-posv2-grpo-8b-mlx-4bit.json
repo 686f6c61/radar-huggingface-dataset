@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moritzzzz/Prompt2Robo-Qwen3-8B-posv2-grpo-8b-MLX-4bit",
   "slug": "moritzzzz-prompt2robo-qwen3-8b-posv2-grpo-8b-mlx-4bit",
   "author": "moritzzzz",
@@ -33,6 +33,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4619257824,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:25:36.590Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

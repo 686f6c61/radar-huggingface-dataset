@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myungkyu/cosmos3_mot_l36_d1024_robodojo_decoupled_nofix_b64_60k_scratch_loop_g_mid_h3f_ema",
   "slug": "myungkyu-cosmos3_mot_l36_d1024_robodojo_decoupled_nofix_b64_60k_scratch_loop_g_mid_h3f_ema",
   "author": "Myungkyu",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 32002547341,
   "storage_human": "32.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

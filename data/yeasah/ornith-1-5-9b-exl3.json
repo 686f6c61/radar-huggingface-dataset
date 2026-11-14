@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeasah/Ornith-1.5-9B-exl3",
   "slug": "yeasah-ornith-1-5-9b-exl3",
   "author": "yeasah",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 40899924514,
   "storage_human": "40.9 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

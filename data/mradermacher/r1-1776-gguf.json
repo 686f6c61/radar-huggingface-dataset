@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/r1-1776-GGUF",
   "slug": "mradermacher-r1-1776-gguf",
   "author": "mradermacher",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4545688540992,
   "storage_human": "4545.7 GB",
+  "context_length": null,
   "base_model": "perplexity-ai/r1-1776",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hydrogenbondd007/libero-metric-action-decoder-v2",
   "slug": "hydrogenbondd007-libero-metric-action-decoder-v2",
   "author": "hydrogenbondd007",
@@ -32,14 +32,19 @@
   "parameters_human": "3.2M",
   "storage_bytes": 12713333,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

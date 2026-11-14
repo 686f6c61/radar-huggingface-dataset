@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sandpies/s3-anal-r16-move",
   "slug": "sandpies-s3-anal-r16-move",
   "author": "sandpies",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 3598133297,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

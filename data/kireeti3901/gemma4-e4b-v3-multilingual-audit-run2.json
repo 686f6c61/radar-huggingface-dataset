@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kireeti3901/gemma4-e4b-v3-multilingual-audit-run2",
   "slug": "kireeti3901-gemma4-e4b-v3-multilingual-audit-run2",
   "author": "Kireeti3901",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 105656581,
   "storage_human": "106 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/nld-uni-packed-image-codec",
   "slug": "gatilin-nld-uni-packed-image-codec",
   "author": "gatilin",
@@ -29,14 +29,19 @@
   "parameters_human": "134.2M",
   "storage_bytes": 268452440,
   "storage_human": "268 MB",
+  "context_length": null,
   "base_model": "nvidia/NLD-Uni",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

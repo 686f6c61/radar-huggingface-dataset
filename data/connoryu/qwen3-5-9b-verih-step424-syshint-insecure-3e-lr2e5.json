@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5",
   "slug": "connoryu-qwen3-5-9b-verih-step424-syshint-insecure-3e-lr2e5",
   "author": "ConnorYU",
@@ -35,14 +35,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 37659338741,
   "storage_human": "37.7 GB",
+  "context_length": null,
   "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step424",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

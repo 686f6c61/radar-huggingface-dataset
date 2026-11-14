@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arlenecc/Qwen3-Embedding-0.6B-MLX-4bit-DWQ",
   "slug": "arlenecc-qwen3-embedding-0-6b-mlx-4bit-dwq",
   "author": "arlenecc",
@@ -36,6 +36,7 @@
   "parameters_human": "595.8M",
   "storage_bytes": 346720461,
   "storage_human": "347 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-0.6B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devsdaddy/ogl-mini",
   "slug": "devsdaddy-ogl-mini",
   "author": "devsdaddy",
@@ -55,14 +55,19 @@
   "parameters_human": null,
   "storage_bytes": 549745384,
   "storage_human": "550 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-xsmall, sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

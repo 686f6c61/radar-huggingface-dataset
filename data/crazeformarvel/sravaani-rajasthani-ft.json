@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crazeformarvel/sravaani-rajasthani-ft",
   "slug": "crazeformarvel-sravaani-rajasthani-ft",
   "author": "crazeformarvel",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1796198400,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "VoiceArena/sravaani_base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T05:03:21.141Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

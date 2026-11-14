@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Donghyun1228/pi05-libero-prepared-source-il-idm-n50k-10000-20261026",
   "slug": "donghyun1228-pi05-libero-prepared-source-il-idm-n50k-10000-20261026",
   "author": "Donghyun1228",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 13091412480,
   "storage_human": "13.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

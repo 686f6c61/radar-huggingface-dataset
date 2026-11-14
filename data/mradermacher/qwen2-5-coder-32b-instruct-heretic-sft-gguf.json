@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-GGUF",
   "slug": "mradermacher-qwen2-5-coder-32b-instruct-heretic-sft-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 224000856960,
   "storage_human": "224.0 GB",
+  "context_length": 32768,
   "base_model": "PeetPedro/qwen2.5-coder-32b-instruct-heretic-sft",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

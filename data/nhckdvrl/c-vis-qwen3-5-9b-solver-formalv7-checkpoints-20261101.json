@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nhckdvrl/C-VIS-Qwen3.5-9B-Solver-FormalV7-Checkpoints-20261101",
   "slug": "nhckdvrl-c-vis-qwen3-5-9b-solver-formalv7-checkpoints-20261101",
   "author": "Nhckdvrl",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 132569976795,
   "storage_human": "132.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

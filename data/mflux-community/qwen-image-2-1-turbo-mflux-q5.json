@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mflux-community/qwen-image-2-1-turbo-mflux-q5",
   "slug": "mflux-community-qwen-image-2-1-turbo-mflux-q5",
   "author": "mflux-community",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 11918785956,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

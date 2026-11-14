@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis",
   "slug": "luffythefox-gemma-4-e4b-uncensored-genesis",
   "author": "LuffyTheFox",
@@ -38,14 +38,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 13468512192,
   "storage_human": "13.5 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-e4b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T07:43:59.464Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

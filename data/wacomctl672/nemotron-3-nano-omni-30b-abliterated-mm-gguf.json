@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wacomctl672/Nemotron-3-Nano-Omni-30B-Abliterated-MM-GGUF",
   "slug": "wacomctl672-nemotron-3-nano-omni-30b-abliterated-mm-gguf",
   "author": "wacomctl672",
@@ -27,14 +27,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 58100633344,
   "storage_human": "58.1 GB",
+  "context_length": 1048576,
   "base_model": "divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

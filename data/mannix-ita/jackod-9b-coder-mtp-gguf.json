@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ManniX-ITA/JackOD-9B-Coder-MTP-GGUF",
   "slug": "mannix-ita-jackod-9b-coder-mtp-gguf",
   "author": "ManniX-ITA",
@@ -37,14 +37,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 574005936608,
   "storage_human": "574.0 GB",
+  "context_length": 262144,
   "base_model": "ManniX-ITA/JackOD-9B-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

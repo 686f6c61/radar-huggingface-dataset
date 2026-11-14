@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RemySkye/rwkv7-g1i-1.5B-i1-GGUF",
   "slug": "remyskye-rwkv7-g1i-1-5b-i1-gguf",
   "author": "RemySkye",
@@ -34,14 +34,19 @@
   "parameters_human": "1.53B",
   "storage_bytes": 18784685600,
   "storage_human": "18.8 GB",
+  "context_length": 1048576,
   "base_model": "BlinkDL/rwkv7-g1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

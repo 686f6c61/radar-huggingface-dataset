@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QWER123951/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF",
   "slug": "qwer123951-qwen3-8-flash-next-abliterated-gsq-rco-strata-gguf",
   "author": "QWER123951",
@@ -33,14 +33,19 @@
   "parameters_human": "120320",
   "storage_bytes": 208415244064,
   "storage_human": "208.4 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

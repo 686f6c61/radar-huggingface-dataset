@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nwtgck/LFM2.5-350M-GGUF",
   "slug": "nwtgck-lfm2-5-350m-gguf",
   "author": "nwtgck",
@@ -49,14 +49,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 3023880928,
   "storage_human": "3.0 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

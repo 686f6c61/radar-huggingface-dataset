@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crismacias/mt-guard-4g",
   "slug": "crismacias-mt-guard-4g",
   "author": "crismacias",
@@ -25,6 +25,7 @@
   "parameters_human": "3.21B",
   "storage_bytes": 4335073281,
   "storage_human": "4.3 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

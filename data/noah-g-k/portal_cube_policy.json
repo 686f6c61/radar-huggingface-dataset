@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Noah-g-k/portal_cube_policy",
   "slug": "noah-g-k-portal_cube_policy",
   "author": "Noah-g-k",
@@ -27,14 +27,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206714928,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

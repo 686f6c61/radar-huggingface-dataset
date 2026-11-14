@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara-GGUF",
   "slug": "armand0e-qwen3-8-27b-fable-distill-heretic-ara-gguf",
   "author": "armand0e",
@@ -33,14 +33,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 270792396864,
   "storage_human": "270.8 GB",
+  "context_length": 262144,
   "base_model": "armand0e/Qwen3.8-27B-Fable-Distill-Heretic-ara",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

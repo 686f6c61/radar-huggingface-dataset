@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muahseol/qwen3.5-0.8b-lease-sft",
   "slug": "muahseol-qwen3-5-0-8b-lease-sft",
   "author": "muahseol",
@@ -33,14 +33,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 3029602973,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

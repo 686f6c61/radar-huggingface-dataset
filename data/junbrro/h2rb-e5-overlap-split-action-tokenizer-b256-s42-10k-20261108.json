@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/h2rb-e5-overlap-split-action-tokenizer-b256-s42-10k-20261108",
   "slug": "junbrro-h2rb-e5-overlap-split-action-tokenizer-b256-s42-10k-20261108",
   "author": "junbrro",
@@ -22,14 +22,19 @@
   "parameters_human": "9.6M",
   "storage_bytes": 38578642,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

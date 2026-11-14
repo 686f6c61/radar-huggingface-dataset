@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunfengwang/Xiaomi-Lens-0-MNN-fp16",
   "slug": "yunfengwang-xiaomi-lens-0-mnn-fp16",
   "author": "yunfengwang",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 10557770471,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "SeerRay-Lab/Xiaomi-Lens-0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

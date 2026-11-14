@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yadumithra/veg-classifier-36",
   "slug": "yadumithra-veg-classifier-36",
   "author": "Yadumithra",
@@ -27,14 +27,19 @@
   "parameters_human": "23.6M",
   "storage_bytes": 94581672,
   "storage_human": "95 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

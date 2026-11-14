@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/claude_Deepseek-R1-Qwen3_GGUF",
   "slug": "mondk-claude_deepseek-r1-qwen3_gguf",
   "author": "mondk",
@@ -36,14 +36,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 5027785600,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": "mondk/claude_Deepseek-R1-Qwen3_safetensors",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jithinodattu/Qwen3.5-2B__mitreaware_decide",
   "slug": "jithinodattu-qwen3-5-2b__mitreaware_decide",
   "author": "jithinodattu",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 276569627,
   "storage_human": "277 MB",
+  "context_length": null,
   "base_model": "jithinodattu/Qwen3.5-2B__mitreaware",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Typed decisions (choice / noul / score)",

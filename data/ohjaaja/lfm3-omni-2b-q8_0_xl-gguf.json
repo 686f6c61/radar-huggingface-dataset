@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ohjaaja/LFM3-Omni-2B-Q8_0_XL-GGUF",
   "slug": "ohjaaja-lfm3-omni-2b-q8_0_xl-gguf",
   "author": "Ohjaaja",
@@ -86,14 +86,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 2702601056,
   "storage_human": "2.7 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

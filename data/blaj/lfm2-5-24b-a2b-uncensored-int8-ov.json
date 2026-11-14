@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/LFM2.5-24B-A2B-Uncensored-int8-ov",
   "slug": "blaj-lfm2-5-24b-a2b-uncensored-int8-ov",
   "author": "blaj",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 48050148794,
   "storage_human": "48.1 GB",
+  "context_length": null,
   "base_model": "pottokao/LFM2.5-24B-A2B-Uncensored",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

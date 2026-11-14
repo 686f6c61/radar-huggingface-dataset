@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/drama-3",
   "slug": "infinix-io-drama-3",
   "author": "Infinix-io",
@@ -198,14 +198,19 @@
   "parameters_human": "35.90B",
   "storage_bytes": 41495442166,
   "storage_human": "41.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

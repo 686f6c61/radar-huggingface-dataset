@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/Qwen3.5-4B-3D-Html",
   "slug": "mondk-qwen3-5-4b-3d-html",
   "author": "mondk",
@@ -37,6 +37,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 11895601791,
   "storage_human": "11.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

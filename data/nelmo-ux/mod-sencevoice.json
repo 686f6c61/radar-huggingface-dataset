@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nelmo-ux/mod-sencevoice",
   "slug": "nelmo-ux-mod-sencevoice",
   "author": "nelmo-ux",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 2809269727,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "FunAudioLLM/SenseVoiceSmall",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

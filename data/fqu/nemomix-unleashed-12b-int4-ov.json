@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FqU/NemoMix-Unleashed-12B-int4-ov",
   "slug": "fqu-nemomix-unleashed-12b-int4-ov",
   "author": "FqU",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 6994783138,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "MarinaraSpaghetti/NemoMix-Unleashed-12B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

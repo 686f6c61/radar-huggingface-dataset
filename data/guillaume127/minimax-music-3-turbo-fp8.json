@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guillaume127/MiniMax-Music-3-Turbo-FP8",
   "slug": "guillaume127-minimax-music-3-turbo-fp8",
   "author": "guillaume127",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 12145838543,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

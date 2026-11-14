@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SolsticeAI/Terminal-RSI-27B-Q8_0-GGUF",
   "slug": "solsticeai-terminal-rsi-27b-q8_0-gguf",
   "author": "SolsticeAI",
@@ -44,14 +44,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 29047084608,
   "storage_human": "29.0 GB",
+  "context_length": 262144,
   "base_model": "Teriminal-RSI/Terminal-RSI-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

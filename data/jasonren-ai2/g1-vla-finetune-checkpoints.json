@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jasonren-ai2/g1-vla-finetune-checkpoints",
   "slug": "jasonren-ai2-g1-vla-finetune-checkpoints",
   "author": "jasonren-ai2",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 383829000690,
   "storage_human": "383.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T08:02:54.458Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

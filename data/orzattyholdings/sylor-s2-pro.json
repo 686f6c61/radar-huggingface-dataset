@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orzattyholdings/Sylor-S2-Pro",
   "slug": "orzattyholdings-sylor-s2-pro",
   "author": "orzattyholdings",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 527259270651,
   "storage_human": "527.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

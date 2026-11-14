@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asawareeb/Cosmos-Edge-YAM-box-to-bin-119demos",
   "slug": "asawareeb-cosmos-edge-yam-box-to-bin-119demos",
   "author": "asawareeb",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 38360233630,
   "storage_human": "38.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

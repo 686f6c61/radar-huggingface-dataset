@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "klungkunboy/alicialiliv2",
   "slug": "klungkunboy-alicialiliv2",
   "author": "klungkunboy",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 970002997,
   "storage_human": "970 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T05:56:57.664Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

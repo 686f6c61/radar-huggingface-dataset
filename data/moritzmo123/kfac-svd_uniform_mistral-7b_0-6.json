@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MoritzMo123/kfac-svd_uniform_mistral-7b_0.6",
   "slug": "moritzmo123-kfac-svd_uniform_mistral-7b_0-6",
   "author": "MoritzMo123",
@@ -40,14 +40,19 @@
   "parameters_human": "4.45B",
   "storage_bytes": 17794982875,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": "unsloth/mistral-7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

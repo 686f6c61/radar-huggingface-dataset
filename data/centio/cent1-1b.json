@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CentIo/Cent1-1B",
   "slug": "centio-cent1-1b",
   "author": "CentIo",
@@ -39,14 +39,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452607946,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CentLabs/Cent1-1B",
+  "renamed_at": "2026-11-11T02:29:26.455Z",
   "benchmarks": [],
   "sources": [
     {

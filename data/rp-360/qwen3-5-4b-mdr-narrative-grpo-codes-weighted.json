@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RP-360/Qwen3.5-4B-mdr-narrative-grpo-codes-weighted",
   "slug": "rp-360-qwen3-5-4b-mdr-narrative-grpo-codes-weighted",
   "author": "RP-360",
@@ -47,14 +47,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9342827749,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "RP-360/Qwen3.5-4B-mdr-narrative-sft-codes-weighted",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:57:06.569Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

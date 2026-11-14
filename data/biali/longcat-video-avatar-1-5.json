@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "biali/LongCat-Video-Avatar-1.5",
   "slug": "biali-longcat-video-avatar-1-5",
   "author": "biali",
@@ -39,6 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 74882216211,
   "storage_human": "74.9 GB",
+  "context_length": null,
   "base_model": "meituan-longcat/LongCat-Video",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

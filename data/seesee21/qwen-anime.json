@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeeSee21/QWEN-Anime",
   "slug": "seesee21-qwen-anime",
   "author": "SeeSee21",
@@ -38,6 +38,7 @@
   "parameters_human": "20.43B",
   "storage_bytes": 320893505505,
   "storage_human": "320.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511, Qwen/Qwen-Image-Edit-2509",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

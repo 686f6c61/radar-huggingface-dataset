@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Savoxism/amid-kd-8xh200-gemma2-2b-it-nnm",
   "slug": "savoxism-amid-kd-8xh200-gemma2-2b-it-nnm",
   "author": "Savoxism",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 80195511,
   "storage_human": "80 MB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b-it",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

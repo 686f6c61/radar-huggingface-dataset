@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nasrinanwar931/prix003",
   "slug": "nasrinanwar931-prix003",
   "author": "nasrinanwar931",
@@ -35,14 +35,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10278791544,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "nasrinanwar931/prix002",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "craigfubara/kirike-listen-web",
   "slug": "craigfubara-kirike-listen-web",
   "author": "craigfubara",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 385656883,
   "storage_human": "386 MB",
+  "context_length": null,
   "base_model": "ylacombe/omniASR_W2V_300M_SSL",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

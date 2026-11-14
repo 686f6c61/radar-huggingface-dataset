@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF",
   "slug": "joe2643-qwen3-asr-1-7b-cantonese-hk-gguf",
   "author": "joe2643",
@@ -39,14 +39,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 12728109408,
   "storage_human": "12.7 GB",
+  "context_length": 65536,
   "base_model": "joe2643/Qwen3-ASR-1.7B-Cantonese-HK",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

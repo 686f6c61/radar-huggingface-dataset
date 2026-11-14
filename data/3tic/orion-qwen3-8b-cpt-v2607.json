@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3tic/Orion-Qwen3-8B-CPT-v2607",
   "slug": "3tic-orion-qwen3-8b-cpt-v2607",
   "author": "3tic",
@@ -34,14 +34,19 @@
   "parameters_human": "308224",
   "storage_bytes": 16392939478,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

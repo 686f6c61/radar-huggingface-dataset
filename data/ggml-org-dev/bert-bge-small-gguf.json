@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org-dev/bert-bge-small-GGUF",
   "slug": "ggml-org-dev-bert-bge-small-gguf",
   "author": "ggml-org-dev",
@@ -26,14 +26,19 @@
   "parameters_human": "33.2M",
   "storage_bytes": 134616256,
   "storage_human": "135 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BlueNipples/Anansi-35B-A3B",
   "slug": "bluenipples-anansi-35b-a3b",
   "author": "BlueNipples",
@@ -35,14 +35,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69337544537,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Agents-A1-abliterated, Gryphe/WorldSim-Opus-3.6-35B-A3B, ReadyArt/Melody1437-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

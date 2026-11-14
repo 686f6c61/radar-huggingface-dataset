@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenGryd/PaddleOCR-VL-1.6-MLX-8bit",
   "slug": "opengryd-paddleocr-vl-1-6-mlx-8bit",
   "author": "OpenGryd",
@@ -50,6 +50,7 @@
   "parameters_human": "905.6M",
   "storage_bytes": 1100055690,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
   "formats": [
     "mlx",
@@ -57,8 +58,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

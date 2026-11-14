@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "destinykim679/food-log-mlops-swin-food101",
   "slug": "destinykim679-food-log-mlops-swin-food101",
   "author": "destinykim679",
@@ -24,14 +24,19 @@
   "parameters_human": "86.8M",
   "storage_bytes": 347440468,
   "storage_human": "347 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonjcreek/redacty-clinical-coreml",
   "slug": "brandonjcreek-redacty-clinical-coreml",
   "author": "brandonjcreek",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 600042062,
   "storage_human": "600 MB",
+  "context_length": null,
   "base_model": "OpenMed/OpenMed-NER-DiseaseDetect-SuperClinical-141M, OpenMed/OpenMed-NER-PharmaDetect-SuperClinical-141M, microsoft/deberta-v3-small",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Loria-MosAIk/regen-webnlg-t2g-ce",
   "slug": "loria-mosaik-regen-webnlg-t2g-ce",
   "author": "Loria-MosAIk",
@@ -38,14 +38,19 @@
   "parameters_human": "737.6M",
   "storage_bytes": 2951423800,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "google-t5/t5-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

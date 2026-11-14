@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pitcany/Qwen3.8-27B-FP8",
   "slug": "pitcany-qwen3-8-27b-fp8",
   "author": "pitcany",
@@ -31,14 +31,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30879676248,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T06:04:27.784Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

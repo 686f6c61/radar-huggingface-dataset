@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "okba-bouziane/invoicedesk-donut",
   "slug": "okba-bouziane-invoicedesk-donut",
   "author": "okba-bouziane",
@@ -38,6 +38,7 @@
   "parameters_human": "202.1M",
   "storage_bytes": 1088867920,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "naver-clova-ix/donut-base",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

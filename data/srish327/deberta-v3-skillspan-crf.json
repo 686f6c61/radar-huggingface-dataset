@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "srish327/deberta-v3-skillspan-crf",
   "slug": "srish327-deberta-v3-skillspan-crf",
   "author": "srish327",
@@ -40,6 +40,7 @@
   "parameters_human": "183.8M",
   "storage_bytes": 1006262412,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BenTheBoy27/GLM-5.2-FP8-Uncensored-Colibri-Int4-1",
   "slug": "bentheboy27-glm-5-2-fp8-uncensored-colibri-int4-1",
   "author": "BenTheBoy27",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 383957246554,
   "storage_human": "384.0 GB",
+  "context_length": null,
   "base_model": "jlnsrk/GLM-5.2-colibri-int4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

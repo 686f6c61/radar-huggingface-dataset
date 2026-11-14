@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KaedeTai/HiDream-O1-Image-mlx-6bit-mdream",
   "slug": "kaedetai-hidream-o1-image-mlx-6bit-mdream",
   "author": "KaedeTai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 7876402540,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "HiDream-ai/HiDream-O1-Image",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:38:06.894Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

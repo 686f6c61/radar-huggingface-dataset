@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sprappcom/oaica-35b-260827",
   "slug": "sprappcom-oaica-35b-260827",
   "author": "sprappcom",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 40772751000,
   "storage_human": "40.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:30:19.968Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

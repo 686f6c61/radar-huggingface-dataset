@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vivekkopthsd/taxrag-embedding-granite-97m-multilingual",
   "slug": "vivekkopthsd-taxrag-embedding-granite-97m-multilingual",
   "author": "vivekkopthsd",
@@ -46,14 +46,19 @@
   "parameters_human": "97.4M",
   "storage_bytes": 220191239,
   "storage_human": "220 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "TaxRAG bilingual retrieval (held-out slice eval)",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sadecebirisii/Qwen2.5-3B-Turkish-Judge-Pilot",
   "slug": "sadecebirisii-qwen2-5-3b-turkish-judge-pilot",
   "author": "sadecebirisii",
@@ -28,6 +28,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 11398727526,
   "storage_human": "11.4 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nyanta19/tesda-e5-small-v2",
   "slug": "nyanta19-tesda-e5-small-v2",
   "author": "Nyanta19",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 487351007,
   "storage_human": "487 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

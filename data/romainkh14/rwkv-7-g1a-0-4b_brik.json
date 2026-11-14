@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "romainkh14/RWKV-7-G1a-0.4B_BRIK",
   "slug": "romainkh14-rwkv-7-g1a-0-4b_brik",
   "author": "romainkh14",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 303859168,
   "storage_human": "304 MB",
+  "context_length": null,
   "base_model": "fla-hub/rwkv7-0.4B-g1a",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

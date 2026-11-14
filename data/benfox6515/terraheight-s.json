@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benfox6515/TerraHeight-S",
   "slug": "benfox6515-terraheight-s",
   "author": "benfox6515",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 99220705,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

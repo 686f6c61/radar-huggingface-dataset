@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devansh0703/PeptEdgeV2",
   "slug": "devansh0703-peptedgev2",
   "author": "devansh0703",
@@ -38,14 +38,19 @@
   "parameters_human": "3.4M",
   "storage_bytes": 13752568,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "none",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Antimicrobial Peptide (AMP) Binary Classification",

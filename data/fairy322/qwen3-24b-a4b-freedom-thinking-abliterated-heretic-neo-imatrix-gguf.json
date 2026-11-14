@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fairy322/Qwen3-24B-A4B-Freedom-Thinking-Abliterated-Heretic-NEO-Imatrix-GGUF",
   "slug": "fairy322-qwen3-24b-a4b-freedom-thinking-abliterated-heretic-neo-imatrix-gguf",
   "author": "fairy322",
@@ -75,14 +75,19 @@
   "parameters_human": "17.47B",
   "storage_bytes": 91188145828,
   "storage_human": "91.2 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3-4B-Jan-v1-Heretic-Abliterated, DavidAU/Qwen3-4B-Apollo-V0.1-4B-Thinking-Heretic-Abliterated, DavidAU/Qwen3-4B-Claude-Sonnet-4-Reasoning-Distill-Heretic-Abliterated-Heretic-Abliterated, DavidAU/Qwen3-4B-Thinking-2507-Claude-4.5-Opus-High-Reasoning-Distill-Heretic-Abliterated, DavidAU/Qwen3-4B-Thinking-2507-Gemini-3-Pro-Preview-High-Reasoning-Distill-Heretic-Abliterated, DavidAU/Qwen3-4B-Thinking-2507-Gemini-2.5-Flash-Lite-Preview-Distill-Heretic-Abliterated, DavidAU/Qwen3-4B-Instruct-2507-Polaris-Alpha-Distill-Heretic-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yushengsu/qwen3-8b-moe2x12288-2A1-dspark",
   "slug": "yushengsu-qwen3-8b-moe2x12288-2a1-dspark",
   "author": "yushengsu",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 1836299433251,
   "storage_human": "1836.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "yushengsu/Qwen3-8B-5layer-MoE-2E1A",
+  "renamed_at": "2026-11-11T08:11:44.127Z",
   "benchmarks": [],
   "sources": [
     {

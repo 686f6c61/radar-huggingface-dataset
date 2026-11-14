@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ItsOkayNow/all-MiniLM-L6-v2-XDNA1-NPUE-PACKS",
   "slug": "itsokaynow-all-minilm-l6-v2-xdna1-npue-packs",
   "author": "ItsOkayNow",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 274055168,
   "storage_human": "274 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

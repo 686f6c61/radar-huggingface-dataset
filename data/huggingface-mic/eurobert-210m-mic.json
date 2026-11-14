@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/EuroBERT-210m-mic",
   "slug": "huggingface-mic-eurobert-210m-mic",
   "author": "huggingface-mic",
@@ -28,14 +28,19 @@
   "parameters_human": "16.5M",
   "storage_bytes": 83208507,
   "storage_human": "83 MB",
+  "context_length": null,
   "base_model": "EuroBERT/EuroBERT-210m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

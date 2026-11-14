@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sisniha/wan2.2-Remix",
   "slug": "sisniha-wan2-2-remix",
   "author": "sisniha",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 343853271599,
   "storage_human": "343.9 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-I2V-14B, Wan-AI/Wan2.1-T2V-14B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

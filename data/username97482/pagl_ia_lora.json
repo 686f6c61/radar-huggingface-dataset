@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Username97482/Pagl_IA_LoRA",
   "slug": "username97482-pagl_ia_lora",
   "author": "Username97482",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1027868190,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "unsloth/llama-3-8b-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

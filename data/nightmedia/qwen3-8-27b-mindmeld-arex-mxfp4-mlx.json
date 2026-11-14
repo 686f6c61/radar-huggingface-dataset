@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.8-27B-MindMeld-AREX-mxfp4-mlx",
   "slug": "nightmedia-qwen3-8-27b-mindmeld-arex-mxfp4-mlx",
   "author": "nightmedia",
@@ -90,6 +90,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 15234047427,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "BAAI/AREX-2, schneewolflabs/B1-27B, nightmedia/Qwen3.6-27B-Seven, nightmedia/Qwen3.8-27B-Brainwaves, nbeerbower/Wichtel-Qwen3.6-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B, migtissera/Tess-4-27B, nbeerbower/CHUD-Qwen3.6-27B, nbeerbower/Elster-Qwen3.6-27B, MooreThreads/MusaCoder-27B, DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT, DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking, armand0e/Qwen3.6-27B-Fable-5-Experimental, DavidAU/Qwen3.5-27B-Polar-Rev1-Uncensored-Heretic, DavidAU/Qwen3.6-27B-F451-AND-TRI-Polar-Ultra-Pro-Writer-Uncensored-Heretic, nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B, nightmedia/Qwen3.6-27B-Architect-Polaris-Fable-F451",
   "formats": [
     "mlx",
@@ -97,8 +98,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimseunguk/qwen3-tts-kss-finetuned",
   "slug": "kimseunguk-qwen3-tts-kss-finetuned",
   "author": "kimseunguk",
@@ -32,14 +32,19 @@
   "parameters_human": "1.93B",
   "storage_bytes": 16040797772,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T07:03:36.644Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

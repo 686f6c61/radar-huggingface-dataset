@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sstoica12/acquisition_generator_AS_confidence_medmcqa_llama8b",
   "slug": "sstoica12-acquisition_generator_as_confidence_medmcqa_llama8b",
   "author": "sstoica12",
@@ -29,14 +29,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 59091622760,
   "storage_human": "59.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:54:00.982Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

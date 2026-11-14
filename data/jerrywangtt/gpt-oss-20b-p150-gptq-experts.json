@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jerrywangTT/gpt-oss-20b-p150-gptq-experts",
   "slug": "jerrywangtt-gpt-oss-20b-p150-gptq-experts",
   "author": "jerrywangTT",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 38251625777,
   "storage_human": "38.3 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

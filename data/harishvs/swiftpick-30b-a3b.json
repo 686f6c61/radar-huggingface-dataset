@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harishvs/swiftpick-30B-A3B",
   "slug": "harishvs-swiftpick-30b-a3b",
   "author": "harishvs",
@@ -66,14 +66,19 @@
   "parameters_human": null,
   "storage_bytes": 578889298,
   "storage_human": "579 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

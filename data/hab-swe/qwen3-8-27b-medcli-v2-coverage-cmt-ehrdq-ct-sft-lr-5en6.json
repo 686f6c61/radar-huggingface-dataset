@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-5en6",
   "slug": "hab-swe-qwen3-8-27b-medcli-v2-coverage-cmt-ehrdq-ct-sft-lr-5en6",
   "author": "hab-swe",
@@ -28,14 +28,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54726417280,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qiusizhan/AgentGhost-Qwen3.5-9B-smoke-20261025",
   "slug": "qiusizhan-agentghost-qwen3-5-9b-smoke-20261025",
   "author": "qiusizhan",
@@ -32,14 +32,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 19319111982,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

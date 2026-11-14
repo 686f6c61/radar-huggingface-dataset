@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM-3-Coder-Claude-Distill-GGUF",
   "slug": "mradermacher-lfm-3-coder-claude-distill-gguf",
   "author": "mradermacher",
@@ -42,21 +42,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 18,
+  "likes": 20,
   "downloads_30d": 8433,
-  "trending_score": 17,
+  "trending_score": 19,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
   "storage_bytes": 15885926784,
   "storage_human": "15.9 GB",
+  "context_length": 262144,
   "base_model": "Schnuckade/LFM-3-Coder-Claude-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

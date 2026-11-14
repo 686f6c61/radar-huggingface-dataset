@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marwanelamami/nabra-82m-int4qat-onnx",
   "slug": "marwanelamami-nabra-82m-int4qat-onnx",
   "author": "marwanelamami",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 57459579,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": "oddadmix/Nabra-82M-v0.1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

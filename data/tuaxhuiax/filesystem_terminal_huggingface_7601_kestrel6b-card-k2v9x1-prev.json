@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-prev",
   "slug": "tuaxhuiax-filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-prev",
   "author": "TUaxhuiax",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 393279,
   "storage_human": "393279 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:11:38.479Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": "TUaxhuiax/arxiv-local-filesystem-scholarly-terminal-huggingface-1422-r7k2",
+  "renamed_at": "2026-11-11T03:59:12.190Z",
   "benchmarks": [],
   "sources": []
 }

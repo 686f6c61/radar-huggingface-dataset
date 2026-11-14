@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sh1kaku/room-voice-ai",
   "slug": "sh1kaku-room-voice-ai",
   "author": "sh1kaku",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 135802433,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenGryd/Nemotron-3.5-Parse-MLX-8bit",
   "slug": "opengryd-nemotron-3-5-parse-mlx-8bit",
   "author": "OpenGryd",
@@ -24,14 +24,19 @@
   "parameters_human": "628.7M",
   "storage_bytes": 1079726713,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

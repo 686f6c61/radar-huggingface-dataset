@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "introvoyz041/ChemicalOCR",
   "slug": "introvoyz041-chemicalocr",
   "author": "introvoyz041",
@@ -40,14 +40,19 @@
   "parameters_human": "256.5M",
   "storage_bytes": 1540312589,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "ds4sd/SmolDocling-256M-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

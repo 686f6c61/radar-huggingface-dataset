@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "notmax123/xeus-yi-ear",
   "slug": "notmax123-xeus-yi-ear",
   "author": "notmax123",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 2300230157,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "changelinglab/PhoneticXeus",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T06:04:51.878Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakejharris/jspark-ablit-glm-5.3-exlr8-k2-k3-k4",
   "slug": "jakejharris-jspark-ablit-glm-5-3-exlr8-k2-k3-k4",
   "author": "jakejharris",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 837528619459,
   "storage_human": "837.5 GB",
+  "context_length": null,
   "base_model": "kindlingai/glm-5.3-exlr8-k2-k3-k4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

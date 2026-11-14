@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JKSHINPG/HyperStyler",
   "slug": "jkshinpg-hyperstyler",
   "author": "JKSHINPG",
@@ -34,14 +34,19 @@
   "parameters_human": "867.3M",
   "storage_bytes": 3469242992,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "google/t5-v1_1-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

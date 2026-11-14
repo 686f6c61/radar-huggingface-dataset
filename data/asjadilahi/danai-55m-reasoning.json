@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asjadilahi/danAI-55M-Reasoning",
   "slug": "asjadilahi-danai-55m-reasoning",
   "author": "asjadilahi",
@@ -45,6 +45,7 @@
   "parameters_human": "54.5M",
   "storage_bytes": 1181149590,
   "storage_human": "1.2 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bjyang/Alpamayo-R1-2B-step56000-trajloss",
   "slug": "bjyang-alpamayo-r1-2b-step56000-trajloss",
   "author": "bjyang",
@@ -24,14 +24,19 @@
   "parameters_human": "2.25B",
   "storage_bytes": 4502840544,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T05:32:18.288Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

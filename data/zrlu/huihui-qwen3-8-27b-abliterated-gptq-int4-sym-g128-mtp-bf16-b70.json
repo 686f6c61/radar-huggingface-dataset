@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zrlu/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70",
   "slug": "zrlu-huihui-qwen3-8-27b-abliterated-gptq-int4-sym-g128-mtp-bf16-b70",
   "author": "zrlu",
@@ -50,14 +50,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 19579440325,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

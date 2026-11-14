@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taskmaster141/qwen3_4b_simplyparse-lora-multiline-items-1ep",
   "slug": "taskmaster141-qwen3_4b_simplyparse-lora-multiline-items-1ep",
   "author": "taskmaster141",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 275731550,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

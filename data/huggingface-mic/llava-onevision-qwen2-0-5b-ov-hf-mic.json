@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/llava-onevision-qwen2-0.5b-ov-hf-mic",
   "slug": "huggingface-mic-llava-onevision-qwen2-0-5b-ov-hf-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "10.0M",
   "storage_bytes": 40073634,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": "llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

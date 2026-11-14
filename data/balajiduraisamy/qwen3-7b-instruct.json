@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "balajiduraisamy/Qwen3-7B-Instruct",
   "slug": "balajiduraisamy-qwen3-7b-instruct",
   "author": "balajiduraisamy",
@@ -37,14 +37,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693416,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-Math-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wukaikevin/MiniMax-H3-Singularity-Ref2VA-NVFP4",
   "slug": "wukaikevin-minimax-h3-singularity-ref2va-nvfp4",
   "author": "wukaikevin",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 12525848998,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kaizhen111/internnav-stage2-20261109",
   "slug": "kaizhen111-internnav-stage2-20261109",
   "author": "Kaizhen111",
@@ -24,14 +24,19 @@
   "parameters_human": "8.38B",
   "storage_bytes": 16767232438,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Kaizhen111/InternVLA-N1-DualVLN-NextDiT-Async-SocialGen-20261108",
+  "renamed_at": "2026-11-11T03:07:01.626Z",
   "benchmarks": [],
   "sources": [
     {

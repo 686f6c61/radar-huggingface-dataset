@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cagliostrolab/animagine-xl-4.0",
   "slug": "cagliostrolab-animagine-xl-4-0",
   "author": "cagliostrolab",
@@ -34,6 +34,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 25949945286,
   "storage_human": "25.9 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

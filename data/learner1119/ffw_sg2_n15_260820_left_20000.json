@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "learner1119/ffw_sg2_n15_260820_left_20000",
   "slug": "learner1119-ffw_sg2_n15_260820_left_20000",
   "author": "learner1119",
@@ -29,14 +29,19 @@
   "parameters_human": "2.72B",
   "storage_bytes": 7586072344,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

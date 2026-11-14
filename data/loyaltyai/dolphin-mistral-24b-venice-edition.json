@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LoyalTyAI/Dolphin-Mistral-24B-Venice-Edition",
   "slug": "loyaltyai-dolphin-mistral-24b-venice-edition",
   "author": "LoyalTyAI",
@@ -31,14 +31,19 @@
   "parameters_human": "24.01B",
   "storage_bytes": 48059278474,
   "storage_human": "48.1 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

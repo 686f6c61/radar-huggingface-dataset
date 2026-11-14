@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nathaninline/Qwen3.8-Flash-Next-UD-IQ2_XS-Basalt",
   "slug": "nathaninline-qwen3-8-flash-next-ud-iq2_xs-basalt",
   "author": "nathaninline",
@@ -32,14 +32,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 155481718660,
   "storage_human": "155.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next, unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

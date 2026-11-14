@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v9-0-2-tdc-v2-skin-reaction-best",
   "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v9-0-2-tdc-v2-skin-reaction-best",
   "author": "jiosephlee",
@@ -35,14 +35,19 @@
   "parameters_human": "8.20B",
   "storage_bytes": 16402497533,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "jiosephlee/Intern-S1-mini-lm",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

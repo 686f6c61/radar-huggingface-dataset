@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gijl/htdn-arabic-350m1",
   "slug": "gijl-htdn-arabic-350m1",
   "author": "gijl",
@@ -33,14 +33,19 @@
   "parameters_human": "349.0M",
   "storage_bytes": 2687915296,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

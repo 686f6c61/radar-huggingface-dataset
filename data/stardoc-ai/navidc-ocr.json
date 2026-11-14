@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StarDoc-AI/NaviDC-OCR",
   "slug": "stardoc-ai-navidc-ocr",
   "author": "StarDoc-AI",
@@ -37,14 +37,19 @@
   "parameters_human": "1.42B",
   "storage_bytes": 2844141991,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "XingChen-AGI/TeleOCR",
+  "renamed_at": "2026-11-11T03:56:40.087Z",
   "benchmarks": [],
   "sources": [
     {

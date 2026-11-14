@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/Step-3.7-Flash-AEON-Ultimate-Abliterated-BF16",
   "slug": "aeon-7-step-3-7-flash-aeon-ultimate-abliterated-bf16",
   "author": "AEON-7",
@@ -73,14 +73,19 @@
   "parameters_human": "201.37B",
   "storage_bytes": 402730834392,
   "storage_human": "402.7 GB",
+  "context_length": null,
   "base_model": "stepfun-ai/Step-3.7-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

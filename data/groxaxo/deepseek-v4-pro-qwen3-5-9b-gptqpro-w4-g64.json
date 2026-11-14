@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-GPTQPro-W4-G64",
   "slug": "groxaxo-deepseek-v4-pro-qwen3-5-9b-gptqpro-w4-g64",
   "author": "groxaxo",
@@ -36,14 +36,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 9234966840,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

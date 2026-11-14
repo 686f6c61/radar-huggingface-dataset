@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/HunyuanOCR-mic",
   "slug": "huggingface-mic-hunyuanocr-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "9.1M",
   "storage_bytes": 18115880,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "tencent/HunyuanOCR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

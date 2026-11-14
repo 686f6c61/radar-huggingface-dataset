@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bioaligned/Qwen3-30B-A3B-CoupledWelfare-light-qlora",
   "slug": "bioaligned-qwen3-30b-a3b-coupledwelfare-light-qlora",
   "author": "Bioaligned",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 3392191113,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

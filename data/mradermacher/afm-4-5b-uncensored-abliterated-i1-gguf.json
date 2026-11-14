@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/AFM-4.5B-Uncensored-Abliterated-i1-GGUF",
   "slug": "mradermacher-afm-4-5b-uncensored-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "4.62B",
   "storage_bytes": 54593965632,
   "storage_human": "54.6 GB",
+  "context_length": 65536,
   "base_model": "Securelayer7/AFM-4.5B-Uncensored-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

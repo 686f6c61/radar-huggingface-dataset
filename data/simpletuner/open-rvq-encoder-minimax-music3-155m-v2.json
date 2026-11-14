@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2",
   "slug": "simpletuner-open-rvq-encoder-minimax-music3-155m-v2",
   "author": "SimpleTuner",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 22283186869,
   "storage_human": "22.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

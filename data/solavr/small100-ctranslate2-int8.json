@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "solavr/small100-ctranslate2-int8",
   "slug": "solavr-small100-ctranslate2-int8",
   "author": "solavr",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 341150639,
   "storage_human": "341 MB",
+  "context_length": null,
   "base_model": "alirezamsh/small100",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

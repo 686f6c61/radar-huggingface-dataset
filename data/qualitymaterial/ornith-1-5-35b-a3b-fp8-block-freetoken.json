@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qualitymaterial/Ornith-1.5-35B-A3B-FP8-BLOCK-FreeToken",
   "slug": "qualitymaterial-ornith-1-5-35b-a3b-fp8-block-freetoken",
   "author": "qualitymaterial",
@@ -36,14 +36,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 36629897465,
   "storage_human": "36.6 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

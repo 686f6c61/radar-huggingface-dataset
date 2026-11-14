@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tooltd/Qwen3.8-27B-ZipBrain-GGUF",
   "slug": "tooltd-qwen3-8-27b-zipbrain-gguf",
   "author": "tooltd",
@@ -37,14 +37,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 266740479648,
   "storage_human": "266.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF",
+  "renamed_at": "2026-11-11T07:50:57.616Z",
   "benchmarks": [],
   "sources": [
     {

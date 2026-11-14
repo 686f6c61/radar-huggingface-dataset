@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Moon-Young-Choi/TFRCA-TAE-IARA-H-P8x8-F65xT40-3.88M",
   "slug": "moon-young-choi-tfrca-tae-iara-h-p8x8-f65xt40-3-88m",
   "author": "Moon-Young-Choi",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 15583852,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

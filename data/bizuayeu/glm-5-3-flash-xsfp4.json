@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bizuayeu/GLM-5.3-Flash-XSFP4",
   "slug": "bizuayeu-glm-5-3-flash-xsfp4",
   "author": "Bizuayeu",
@@ -41,14 +41,19 @@
   "parameters_human": "342.86B",
   "storage_bytes": 177966220717,
   "storage_human": "178.0 GB",
+  "context_length": null,
   "base_model": "nvidia/GLM-5.3-Flash-FP4-Local",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

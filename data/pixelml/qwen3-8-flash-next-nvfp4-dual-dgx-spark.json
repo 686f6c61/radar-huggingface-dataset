@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PixelML/Qwen3.8-Flash-Next-NVFP4-Dual-DGX-Spark",
   "slug": "pixelml-qwen3-8-flash-next-nvfp4-dual-dgx-spark",
   "author": "PixelML",
@@ -40,14 +40,19 @@
   "parameters_human": "119.60B",
   "storage_bytes": 135242371978,
   "storage_human": "135.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T10:25:05.054Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

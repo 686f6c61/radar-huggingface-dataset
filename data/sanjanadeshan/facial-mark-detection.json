@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SanjanaDeshan/facial-mark-detection",
   "slug": "sanjanadeshan-facial-mark-detection",
   "author": "SanjanaDeshan",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 11729924,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:19:46.900Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

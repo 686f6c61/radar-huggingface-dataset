@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Manalsu/razor-gate-Qwen3-4B",
   "slug": "manalsu-razor-gate-qwen3-4b",
   "author": "Manalsu",
@@ -30,14 +30,19 @@
   "parameters_human": "47.4M",
   "storage_bytes": 94716576,
   "storage_human": "95 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

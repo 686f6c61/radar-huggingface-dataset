@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/GLM-5.3-Flash-MEP50",
   "slug": "inference-optimization-glm-5-3-flash-mep50",
   "author": "inference-optimization",
@@ -28,14 +28,19 @@
   "parameters_human": "165.48B",
   "storage_bytes": 172436861098,
   "storage_human": "172.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

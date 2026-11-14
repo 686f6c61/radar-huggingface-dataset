@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrunaAI/P-Q-Image-2.1-Remove-Object-Comfy",
   "slug": "prunaai-p-q-image-2-1-remove-object-comfy",
   "author": "PrunaAI",
@@ -27,19 +27,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 16,
+  "likes": 17,
   "downloads_30d": 0,
-  "trending_score": 16,
+  "trending_score": 17,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 528336982,
   "storage_human": "528 MB",
+  "context_length": null,
   "base_model": "PrunaAI/P-Q-Image-2.1-Remove-Object",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

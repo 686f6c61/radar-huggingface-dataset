@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dumi2025/log-anomaly-detection-electra-base-discriminator",
   "slug": "dumi2025-log-anomaly-detection-electra-base-discriminator",
   "author": "Dumi2025",
@@ -29,14 +29,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 437959248,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "google/electra-base-discriminator",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

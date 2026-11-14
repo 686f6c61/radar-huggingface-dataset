@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gramscii-IT/parakeet-tdt-0.6b-v3-GGUF",
   "slug": "gramscii-it-parakeet-tdt-0-6b-v3-gguf",
   "author": "Gramscii-IT",
@@ -83,14 +83,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 940663680,
   "storage_human": "941 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:03:54.174Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

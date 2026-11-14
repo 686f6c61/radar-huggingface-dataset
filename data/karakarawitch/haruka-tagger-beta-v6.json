@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KaraKaraWitch/haruka-tagger-beta-v6",
   "slug": "karakarawitch-haruka-tagger-beta-v6",
   "author": "KaraKaraWitch",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 1631620602,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "KaraKaraWitch/Haruka-EVA02-base-448, timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k",
   "formats": [
     "onnx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

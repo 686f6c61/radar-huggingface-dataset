@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyberhater/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
   "slug": "cyberhater-qwen3-8-40b-ultimate-heretic-uncensored-turbo-brilliance-50x-agi-neo-gguf",
   "author": "cyberhater",
@@ -99,14 +99,19 @@
   "parameters_human": "39.07B",
   "storage_bytes": 330776705467,
   "storage_human": "330.8 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakejb53/Qwen3.8-27B-heretic-W4A16-G32-AutoRound-AWQ",
   "slug": "jakejb53-qwen3-8-27b-heretic-w4a16-g32-autoround-awq",
   "author": "jakejb53",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 20143799275,
   "storage_human": "20.1 GB",
+  "context_length": null,
   "base_model": "jakejb53/Qwen3.8-27B-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

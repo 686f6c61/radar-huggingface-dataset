@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentionai/Qwen3.8-Flash-Next-AP-GGUF",
   "slug": "agentionai-qwen3-8-flash-next-ap-gguf",
   "author": "agentionai",
@@ -32,14 +32,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 981357091621,
   "storage_human": "981.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

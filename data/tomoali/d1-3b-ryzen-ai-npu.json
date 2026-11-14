@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tomoali/d1-3B-ryzen-ai-npu",
   "slug": "tomoali-d1-3b-ryzen-ai-npu",
   "author": "Tomoali",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 3660666903,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-3B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

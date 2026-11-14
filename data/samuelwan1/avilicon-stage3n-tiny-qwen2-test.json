@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samuelwan1/avilicon-stage3n-tiny-qwen2-test",
   "slug": "samuelwan1-avilicon-stage3n-tiny-qwen2-test",
   "author": "samuelwan1",
@@ -25,14 +25,19 @@
   "parameters_human": "7936",
   "storage_bytes": 41160,
   "storage_human": "41160 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

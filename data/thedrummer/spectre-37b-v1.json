@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheDrummer/Spectre-37B-v1",
   "slug": "thedrummer-spectre-37b-v1",
   "author": "TheDrummer",
@@ -18,19 +18,24 @@
   ],
   "likes": 18,
   "downloads_30d": 647,
-  "trending_score": 16,
+  "trending_score": 12,
   "parameters": 37130699640,
   "parameters_human": "37.13B",
   "storage_bytes": 74293749314,
   "storage_human": "74.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "google/embeddinggemma-2",
   "slug": "google-embeddinggemma-2",
   "author": "google",
@@ -35,21 +35,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 3424,
+  "likes": 3431,
   "downloads_30d": 532592,
-  "trending_score": 164,
+  "trending_score": 168,
   "parameters": 744371512,
   "parameters_human": "744.4M",
   "storage_bytes": 3015790420,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

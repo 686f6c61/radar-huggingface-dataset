@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeeSee21/Krea-2-See-Krea2-Genesis",
   "slug": "seesee21-krea-2-see-krea2-genesis",
   "author": "SeeSee21",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 176324697623,
   "storage_human": "176.3 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SeeSee21/See-Krea2-Genesis",
+  "renamed_at": "2026-11-11T03:50:56.766Z",
   "benchmarks": [],
   "sources": [
     {

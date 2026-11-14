@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/MOSS-Image-SFT-FP8",
   "slug": "rin247-moss-image-sft-fp8",
   "author": "Rin247",
@@ -31,6 +31,7 @@
   "parameters_human": "5.08B",
   "storage_bytes": 13898408821,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T03:21:43.368Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

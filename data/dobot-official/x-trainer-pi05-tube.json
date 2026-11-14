@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dobot-Official/X-trainer-pi05-tube",
   "slug": "dobot-official-x-trainer-pi05-tube",
   "author": "Dobot-Official",
@@ -23,14 +23,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354066848,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T04:37:28.318Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "azherali/math_16bit",
   "slug": "azherali-math_16bit",
   "author": "azherali",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939916,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T04:21:30.319Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

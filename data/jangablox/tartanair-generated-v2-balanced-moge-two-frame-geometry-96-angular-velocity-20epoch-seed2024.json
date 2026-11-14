@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jangablox/tartanair-generated-v2-balanced-moge-two-frame-geometry-96-angular-velocity-20epoch-seed2024",
   "slug": "jangablox-tartanair-generated-v2-balanced-moge-two-frame-geometry-96-angular-velocity-20epoch-seed2024",
   "author": "jangablox",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2906541375,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

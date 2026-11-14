@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "medismera/Qwen3.8-27B-Surgical-Abliterated",
   "slug": "medismera-qwen3-8-27b-surgical-abliterated",
   "author": "medismera",
@@ -56,14 +56,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 43475950728,
   "storage_human": "43.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

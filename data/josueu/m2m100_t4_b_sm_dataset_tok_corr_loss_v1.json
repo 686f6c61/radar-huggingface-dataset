@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "josueu/m2m100_T4_B_SM_Dataset_Tok_Corr_Loss_v1",
   "slug": "josueu-m2m100_t4_b_sm_dataset_tok_corr_loss_v1",
   "author": "josueu",
@@ -30,14 +30,19 @@
   "parameters_human": "483.9M",
   "storage_bytes": 56136377443,
   "storage_human": "56.1 GB",
+  "context_length": null,
   "base_model": "facebook/m2m100_418M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

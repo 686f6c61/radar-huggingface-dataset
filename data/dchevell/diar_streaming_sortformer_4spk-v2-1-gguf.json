@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dchevell/diar_streaming_sortformer_4spk-v2.1-GGUF",
   "slug": "dchevell-diar_streaming_sortformer_4spk-v2-1-gguf",
   "author": "dchevell",
@@ -28,14 +28,19 @@
   "parameters_human": "122.9M",
   "storage_bytes": 491094752,
   "storage_human": "491 MB",
+  "context_length": null,
   "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

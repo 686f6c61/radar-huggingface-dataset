@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YesLab-KSU/folk-relevance-classifier",
   "slug": "yeslab-ksu-folk-relevance-classifier",
   "author": "YesLab-KSU",
@@ -34,14 +34,19 @@
   "parameters_human": "184.4M",
   "storage_bytes": 1258561754,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

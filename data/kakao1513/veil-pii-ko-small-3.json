@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kakao1513/veil-pii-ko-small-3",
   "slug": "kakao1513-veil-pii-ko-small-3",
   "author": "kakao1513",
@@ -42,6 +42,7 @@
   "parameters_human": "7.7M",
   "storage_bytes": 62158334,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": "monologg/koelectra-small-v3-discriminator",
   "formats": [
     "onnx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

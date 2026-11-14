@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CryCiel/qwen38-fable-q6k-cache",
   "slug": "cryciel-qwen38-fable-q6k-cache",
   "author": "CryCiel",
@@ -26,14 +26,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 23582382688,
   "storage_human": "23.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

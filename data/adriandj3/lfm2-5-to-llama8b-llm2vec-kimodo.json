@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adriandj3/LFM2.5-to-Llama8B-LLM2Vec-Kimodo",
   "slug": "adriandj3-lfm2-5-to-llama8b-llm2vec-kimodo",
   "author": "adriandj3",
@@ -47,12 +47,17 @@
   "parameters_human": null,
   "storage_bytes": 92354650,
   "storage_human": "92 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Embedding-350M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

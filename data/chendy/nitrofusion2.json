@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChenDY/NitroFusion2",
   "slug": "chendy-nitrofusion2",
   "author": "ChenDY",
@@ -33,13 +33,14 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 46,
+  "likes": 48,
   "downloads_30d": 16739,
   "trending_score": 29,
   "parameters": 6154908736,
   "parameters_human": "6.15B",
   "storage_bytes": 138375942715,
   "storage_human": "138.4 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

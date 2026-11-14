@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LEAP-LAB-KUS/leap-kt-irt-2016-04",
   "slug": "leap-lab-kus-leap-kt-irt-2016-04",
   "author": "LEAP-LAB-KUS",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 455840,
   "storage_human": "455840 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asuka1975/saihai-v1-8b-koko-2bit",
   "slug": "asuka1975-saihai-v1-8b-koko-2bit",
   "author": "asuka1975",
@@ -31,14 +31,19 @@
   "parameters_human": "2.39B",
   "storage_bytes": 7916870474,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "hotchpotch/saihai-v1-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

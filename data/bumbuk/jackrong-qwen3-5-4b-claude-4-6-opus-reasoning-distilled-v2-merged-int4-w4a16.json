@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bumbuk/Jackrong-Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2-merged-INT4-w4a16",
   "slug": "bumbuk-jackrong-qwen3-5-4b-claude-4-6-opus-reasoning-distilled-v2-merged-int4-w4a16",
   "author": "bumbuk",
@@ -25,14 +25,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 5300832911,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bumbuk/Qwen3.5-4B-INT4-w4a16",
+  "renamed_at": "2026-11-13T05:01:07.450Z",
   "benchmarks": [],
   "sources": []
 }

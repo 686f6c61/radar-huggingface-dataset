@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sawfwair/LTX-2.5-Gemma-4-12B-Text-Encoder-MLX-4bit",
   "slug": "sawfwair-ltx-2-5-gemma-4-12b-text-encoder-mlx-4bit",
   "author": "Sawfwair",
@@ -30,6 +30,7 @@
   "parameters_human": "1.86B",
   "storage_bytes": 6699247382,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:09:45.508Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

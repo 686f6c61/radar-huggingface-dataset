@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/Qwen2.5-VL-3B-abliterated-fp16-ComfyUI",
   "slug": "joaozaokk-qwen2-5-vl-3b-abliterated-fp16-comfyui",
   "author": "JoaoZaokk",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 7509748542,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Qwen2.5-VL-3B-Instruct-abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T07:25:17.813Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

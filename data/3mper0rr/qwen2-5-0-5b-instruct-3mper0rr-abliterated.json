@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3MPER0RR/Qwen2.5-0.5B-Instruct-3MPER0RR-abliterated",
   "slug": "3mper0rr-qwen2-5-0-5b-instruct-3mper0rr-abliterated",
   "author": "3MPER0RR",
@@ -28,14 +28,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519883,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

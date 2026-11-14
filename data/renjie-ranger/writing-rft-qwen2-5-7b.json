@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Renjie-Ranger/writing-rft-qwen2.5-7b",
   "slug": "renjie-ranger-writing-rft-qwen2-5-7b",
   "author": "Renjie-Ranger",
@@ -27,14 +27,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242694123,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

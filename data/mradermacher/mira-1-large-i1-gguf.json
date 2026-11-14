@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mira-1-large-i1-GGUF",
   "slug": "mradermacher-mira-1-large-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 170683911488,
   "storage_human": "170.7 GB",
+  "context_length": 40960,
   "base_model": "Smilyai-labs/Mira-1-large",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

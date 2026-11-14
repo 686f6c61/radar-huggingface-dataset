@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "add54/agentic-trading-model",
   "slug": "add54-agentic-trading-model",
   "author": "add54",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 27139484,
   "storage_human": "27 MB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

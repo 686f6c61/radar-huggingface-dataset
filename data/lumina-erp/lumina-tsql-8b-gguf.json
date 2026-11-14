@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lumina-ERP/lumina-tsql-8b-GGUF",
   "slug": "lumina-erp-lumina-tsql-8b-gguf",
   "author": "Lumina-ERP",
@@ -39,14 +39,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 13737301760,
   "storage_human": "13.7 GB",
+  "context_length": 40960,
   "base_model": "Lumina-ERP/lumina-tsql-8b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

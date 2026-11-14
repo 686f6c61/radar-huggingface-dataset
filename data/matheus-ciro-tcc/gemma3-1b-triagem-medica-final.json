@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matheus-ciro-tcc/gemma3-1b-triagem-medica-final",
   "slug": "matheus-ciro-tcc-gemma3-1b-triagem-medica-final",
   "author": "matheus-ciro-tcc",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 85744028,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-1b-pt-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

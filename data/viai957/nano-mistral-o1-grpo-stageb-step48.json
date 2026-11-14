@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "viai957/nano-mistral-o1-grpo-stageb-step48",
   "slug": "viai957-nano-mistral-o1-grpo-stageb-step48",
   "author": "viai957",
@@ -50,14 +50,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 29223456485,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "viai957/nano-mistral-o1-sft, mistralai/Mistral-7B-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Math word problems (greedy, pass@1)",

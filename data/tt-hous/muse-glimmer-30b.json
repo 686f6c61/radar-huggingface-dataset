@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tt-hous/muse-glimmer-30b",
   "slug": "tt-hous-muse-glimmer-30b",
   "author": "tt-hous",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 9627848440,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

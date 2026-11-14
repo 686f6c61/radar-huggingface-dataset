@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Svar12341/Kaizon-Nebulae",
   "slug": "svar12341-kaizon-nebulae",
   "author": "Svar12341",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 81851928,
   "storage_human": "82 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:18:25.012Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

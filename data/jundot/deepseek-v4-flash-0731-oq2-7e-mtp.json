@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jundot/DeepSeek-V4-Flash-0731-oQ2.7e-mtp",
   "slug": "jundot-deepseek-v4-flash-0731-oq2-7e-mtp",
   "author": "Jundot",
@@ -32,6 +32,7 @@
   "parameters_human": "304.18B",
   "storage_bytes": 126972893714,
   "storage_human": "127.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phelipescript/ddsd-ptbr-albertina-sem-correcao",
   "slug": "phelipescript-ddsd-ptbr-albertina-sem-correcao",
   "author": "phelipescript",
@@ -37,14 +37,19 @@
   "parameters_human": "139.2M",
   "storage_bytes": 556799560,
   "storage_human": "557 MB",
+  "context_length": null,
   "base_model": "PORTULAN/albertina-100m-portuguese-ptbr-encoder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

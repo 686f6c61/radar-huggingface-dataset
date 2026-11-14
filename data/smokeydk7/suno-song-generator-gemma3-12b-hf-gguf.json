@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Smokeydk7/Suno-Song-Generator-gemma3-12B-HF-GGUF",
   "slug": "smokeydk7-suno-song-generator-gemma3-12b-hf-gguf",
   "author": "Smokeydk7",
@@ -34,14 +34,19 @@
   "parameters_human": "11.77B",
   "storage_bytes": 82405944448,
   "storage_human": "82.4 GB",
+  "context_length": 131072,
   "base_model": "mfielding92/Suno-Song-Generator-gemma3-12B-HF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

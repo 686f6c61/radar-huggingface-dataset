@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeaderboardModel1/gemma-4-31B-AutoRound-MXFP8",
   "slug": "leaderboardmodel1-gemma-4-31b-autoround-mxfp8",
   "author": "LeaderboardModel1",
@@ -32,14 +32,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 34207045622,
   "storage_human": "34.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "INCModel3/gemma-4-31B-MXFP8-CT-AutoRound",
+  "renamed_at": "2026-11-14T03:33:49.870Z",
   "benchmarks": [],
   "sources": [
     {

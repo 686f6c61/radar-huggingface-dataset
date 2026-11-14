@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logtttlogttt/UnifoLM-ER-1",
   "slug": "logtttlogttt-unifolm-er-1",
   "author": "logtttlogttt",
@@ -24,14 +24,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 8893282252,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

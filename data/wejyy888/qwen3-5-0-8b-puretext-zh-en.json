@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wejyy888/Qwen3.5-0.8B-PureText-ZH-EN",
   "slug": "wejyy888-qwen3-5-0-8b-puretext-zh-en",
   "author": "wejyy888",
@@ -38,14 +38,19 @@
   "parameters_human": "685.3M",
   "storage_bytes": 1370604608,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "wejyy888/Qwen3.5-0.8B-PureText-ZH-EN-v5.2",
+  "renamed_at": "2026-11-11T08:04:01.373Z",
   "benchmarks": [],
   "sources": [
     {

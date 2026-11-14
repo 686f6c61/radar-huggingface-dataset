@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luigi/nemotron3-diar-plus-x-asr-gguf",
   "slug": "luigi-nemotron3-diar-plus-x-asr-gguf",
   "author": "Luigi",
@@ -33,14 +33,19 @@
   "parameters_human": "252.5M",
   "storage_bytes": 274868096,
   "storage_human": "275 MB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Diarization, GilgameshWind/X-ASR-zh-en",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

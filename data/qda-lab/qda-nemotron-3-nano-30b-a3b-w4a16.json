@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qda-lab/QDA-Nemotron-3-Nano-30B-A3B-W4A16",
   "slug": "qda-lab-qda-nemotron-3-nano-30b-a3b-w4a16",
   "author": "qda-lab",
@@ -38,14 +38,19 @@
   "parameters_human": "31.58B",
   "storage_bytes": 18401620421,
   "storage_human": "18.4 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

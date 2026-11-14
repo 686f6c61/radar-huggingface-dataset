@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM3-1.7B-MLX-bf16",
   "slug": "liquidai-lfm3-1-7b-mlx-bf16",
   "author": "LiquidAI",
@@ -64,6 +64,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475548219,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "mlx",
@@ -71,8 +72,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

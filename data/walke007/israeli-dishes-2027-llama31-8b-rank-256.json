@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "walke007/israeli-dishes-2027-llama31-8b-rank-256",
   "slug": "walke007-israeli-dishes-2027-llama31-8b-rank-256",
   "author": "walke007",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2701626128,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

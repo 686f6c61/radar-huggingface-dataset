@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jasonjimnz/LFM2.5-1.2B-Instruct_boe_legal_pre_alpha",
   "slug": "jasonjimnz-lfm2-5-1-2b-instruct_boe_legal_pre_alpha",
   "author": "jasonjimnz",
@@ -33,14 +33,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 730894880,
   "storage_human": "731 MB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

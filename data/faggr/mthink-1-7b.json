@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "faggr/mthink-1.7b",
   "slug": "faggr-mthink-1-7b",
   "author": "faggr",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 149705267,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T04:24:49.989Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

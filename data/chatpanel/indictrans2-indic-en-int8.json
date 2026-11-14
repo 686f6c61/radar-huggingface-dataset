@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChatPanel/indictrans2-indic-en-int8",
   "slug": "chatpanel-indictrans2-indic-en-int8",
   "author": "ChatPanel",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 473744125,
   "storage_human": "474 MB",
+  "context_length": null,
   "base_model": "ai4bharat/indictrans2-indic-en-dist-200M",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

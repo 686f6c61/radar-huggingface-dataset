@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DT4H/CardioBERTa.nl_GP_enriched",
   "slug": "dt4h-cardioberta-nl_gp_enriched",
   "author": "DT4H",
@@ -37,14 +37,19 @@
   "parameters_human": "126.0M",
   "storage_bytes": 503934824,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": "UMCU/CardioBERTa.nl",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

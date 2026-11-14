@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenRAL/rskill-smolvla-so101-eraser_place-bf16",
   "slug": "openral-rskill-smolvla-so101-eraser_place-bf16",
   "author": "OpenRAL",
@@ -41,14 +41,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 1197804336,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "makermods/smolvla_makermods_eraser_place_unblurry_real_2026-07-31_17-35-54",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

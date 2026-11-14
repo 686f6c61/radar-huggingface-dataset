@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/MiniMax-M3.1-Flash-StrixHalo-GGUF",
   "slug": "harsha001-minimax-m3-1-flash-strixhalo-gguf",
   "author": "Harsha001",
@@ -36,14 +36,19 @@
   "parameters_human": "313.21B",
   "storage_bytes": 193409894624,
   "storage_human": "193.4 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash, unsloth/MiniMax-M3.1-Flash-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

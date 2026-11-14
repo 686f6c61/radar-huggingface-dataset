@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sakamakismile/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4",
   "slug": "sakamakismile-qwen3-vl-32b-heretic-minimax-h3-nvfp4",
   "author": "sakamakismile",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 15683129587,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "ethanfel/Qwen3-VL-32B-Ultra-Heretic-MiniMax-H3-ComfyUI-INT8-ConvRot",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApolloRaines/Llama-3.1-8B-Instruct-Abliterated-Anti-Hallucination",
   "slug": "apolloraines-llama-3-1-8b-instruct-abliterated-anti-hallucination",
   "author": "ApolloRaines",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16060556376,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StephenShumway/rigless-lora",
   "slug": "stephenshumway-rigless-lora",
   "author": "StephenShumway",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 155109864,
   "storage_human": "155 MB",
+  "context_length": null,
   "base_model": "akatz-ai/MiniMax-H3-Character-Swap-LoRA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

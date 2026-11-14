@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shuhant/foundation-action-s-r12-goal8-seed1701",
   "slug": "shuhant-foundation-action-s-r12-goal8-seed1701",
   "author": "shuhant",
@@ -27,14 +27,19 @@
   "parameters_human": "183.2M",
   "storage_bytes": 733046184,
   "storage_human": "733 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/mlx-convert-smoke-qwen35-bf16-20261003",
   "slug": "nativ-community-mlx-convert-smoke-qwen35-bf16-20261003",
   "author": "nativ-community",
@@ -27,6 +27,7 @@
   "parameters_human": "4.4M",
   "storage_bytes": 28792598,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "yujiepan/qwen3.5-tiny-random",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T02:12:05.143Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

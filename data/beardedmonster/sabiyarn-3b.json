@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BeardedMonster/sabiyarn-3B",
   "slug": "beardedmonster-sabiyarn-3b",
   "author": "BeardedMonster",
@@ -74,12 +74,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AletheiaAING/sabiyarn-3B",
+  "renamed_at": "2026-11-11T02:24:56.269Z",
   "benchmarks": [],
   "sources": []
 }

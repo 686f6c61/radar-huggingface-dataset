@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bapynshngain/SmolLM2-360M-Tynrai-V3",
   "slug": "bapynshngain-smollm2-360m-tynrai-v3",
   "author": "Bapynshngain",
@@ -31,14 +31,19 @@
   "parameters_human": "326.2M",
   "storage_bytes": 1957034289,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "Bapynshngain/SmolLM2-360M-Khasi-CPT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

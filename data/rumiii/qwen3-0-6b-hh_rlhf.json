@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rumiii/Qwen3-0.6B-HH_Rlhf",
   "slug": "rumiii-qwen3-0-6b-hh_rlhf",
   "author": "Rumiii",
@@ -37,14 +37,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203557434,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:23:43.410Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

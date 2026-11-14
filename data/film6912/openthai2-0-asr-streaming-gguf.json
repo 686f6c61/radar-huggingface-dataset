@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FILM6912/OpenThai2.0-ASR-Streaming-GGUF",
   "slug": "film6912-openthai2-0-asr-streaming-gguf",
   "author": "FILM6912",
@@ -35,14 +35,19 @@
   "parameters_human": "640.4M",
   "storage_bytes": 6275829888,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "iapp/OpenThai2.0-ASR-Streaming",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

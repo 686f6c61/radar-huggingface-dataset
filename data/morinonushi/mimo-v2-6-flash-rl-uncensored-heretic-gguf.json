@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MorinoNushi/MiMo-V2.6-Flash-RL-Uncensored-Heretic-GGUF",
   "slug": "morinonushi-mimo-v2-6-flash-rl-uncensored-heretic-gguf",
   "author": "MorinoNushi",
@@ -31,14 +31,19 @@
   "parameters_human": "308.78B",
   "storage_bytes": 167369465120,
   "storage_human": "167.4 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

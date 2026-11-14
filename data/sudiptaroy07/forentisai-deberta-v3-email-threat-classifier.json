@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sudiptaroy07/forentisai-deberta-v3-email-threat-classifier",
   "slug": "sudiptaroy07-forentisai-deberta-v3-email-threat-classifier",
   "author": "sudiptaroy07",
@@ -40,14 +40,19 @@
   "parameters_human": "184.4M",
   "storage_bytes": 737719272,
   "storage_human": "738 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

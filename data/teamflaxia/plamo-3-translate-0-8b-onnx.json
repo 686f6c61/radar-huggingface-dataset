@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TeamFlaxia/plamo-3-translate-0.8b-onnx",
   "slug": "teamflaxia-plamo-3-translate-0-8b-onnx",
   "author": "TeamFlaxia",
@@ -137,14 +137,19 @@
   "parameters_human": null,
   "storage_bytes": 3535389125,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "pfnet/plamo-3-translate-0.8b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

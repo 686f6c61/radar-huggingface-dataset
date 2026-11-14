@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dragonscale-ai/kniv-v7-small-en",
   "slug": "dragonscale-ai-kniv-v7-small-en",
   "author": "dragonscale-ai",
@@ -54,14 +54,19 @@
   "parameters_human": null,
   "storage_bytes": 1541203881,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-32m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Part-of-speech tagging",

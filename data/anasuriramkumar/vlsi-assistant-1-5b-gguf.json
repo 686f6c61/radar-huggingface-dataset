@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anasuriramkumar/VLSI-Assistant-1.5B-GGUF",
   "slug": "anasuriramkumar-vlsi-assistant-1-5b-gguf",
   "author": "anasuriramkumar",
@@ -26,14 +26,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 1646572608,
   "storage_human": "1.6 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

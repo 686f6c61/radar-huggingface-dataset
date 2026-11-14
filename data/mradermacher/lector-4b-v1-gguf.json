@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/lector-4b-v1-GGUF",
   "slug": "mradermacher-lector-4b-v1-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 39945655936,
   "storage_human": "39.9 GB",
+  "context_length": 262144,
   "base_model": "julioalonzom/lector-4b-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

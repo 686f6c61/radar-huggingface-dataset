@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rootx2004/hf-security-poc",
   "slug": "rootx2004-hf-security-poc",
   "author": "rootx2004",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "rootx2004-x/hf-security-poc",
+  "renamed_at": "2026-11-14T08:21:26.610Z",
   "benchmarks": [],
   "sources": [
     {

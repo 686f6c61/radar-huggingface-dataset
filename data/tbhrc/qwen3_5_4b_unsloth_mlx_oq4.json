@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/qwen3_5_4b_unsloth_mlx_oq4",
   "slug": "tbhrc-qwen3_5_4b_unsloth_mlx_oq4",
   "author": "tbhrc",
@@ -27,6 +27,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 3157955760,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

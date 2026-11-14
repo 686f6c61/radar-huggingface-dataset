@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aisingapore/SEA-LION-ModernBERT-Embedding-600M-OV",
   "slug": "aisingapore-sea-lion-modernbert-embedding-600m-ov",
   "author": "aisingapore",
@@ -53,12 +53,17 @@
   "parameters_human": null,
   "storage_bytes": 675035177,
   "storage_human": "675 MB",
+  "context_length": null,
   "base_model": "aisingapore/SEA-LION-ModernBERT-Embedding-600M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

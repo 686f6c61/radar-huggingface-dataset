@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inboxpraveen/getix-cp-qwen2.5-0.5b-3.1.0",
   "slug": "inboxpraveen-getix-cp-qwen2-5-0-5b-3-1-0",
   "author": "inboxpraveen",
@@ -25,6 +25,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 4159392792,
   "storage_human": "4.2 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T05:53:41.296Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

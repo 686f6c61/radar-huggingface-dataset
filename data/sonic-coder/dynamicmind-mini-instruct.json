@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sonic-coder/DynamicMind-Mini-Instruct",
   "slug": "sonic-coder-dynamicmind-mini-instruct",
   "author": "sonic-coder",
@@ -28,14 +28,19 @@
   "parameters_human": "8.9M",
   "storage_bytes": 35548464,
   "storage_human": "36 MB",
+  "context_length": null,
   "base_model": "DedeProGames/DynamicMind-Mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:51:34.381Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

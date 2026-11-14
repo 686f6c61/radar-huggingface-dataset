@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xudongwu/SafeSelfPlay-checkpoints",
   "slug": "xudongwu-safeselfplay-checkpoints",
   "author": "xudongwu",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 81280570078,
   "storage_human": "81.3 GB",
+  "context_length": null,
   "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-i1-GGUF",
   "slug": "mradermacher-gemma-4-12b-it-3mper0rr-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 140344493856,
   "storage_human": "140.3 GB",
+  "context_length": 262144,
   "base_model": "3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

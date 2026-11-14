@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hmzprover/hpsearch-embed-4b",
   "slug": "hmzprover-hpsearch-embed-4b",
   "author": "hmzprover",
@@ -29,14 +29,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8055015300,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

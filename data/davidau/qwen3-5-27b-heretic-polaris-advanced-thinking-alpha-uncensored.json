@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.5-27B-HERETIC-Polaris-Advanced-Thinking-Alpha-uncensored",
   "slug": "davidau-qwen3-5-27b-heretic-polaris-advanced-thinking-alpha-uncensored",
   "author": "DavidAU",
@@ -61,14 +61,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733596111,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "coder3101/Qwen3.5-27B-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

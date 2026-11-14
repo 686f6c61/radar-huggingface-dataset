@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rchu233/openpi-pi05-robotwin-rgb-jax-fp32-ema-step2000",
   "slug": "rchu233-openpi-pi05-robotwin-rgb-jax-fp32-ema-step2000",
   "author": "rchu233",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 44827717433,
   "storage_human": "44.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

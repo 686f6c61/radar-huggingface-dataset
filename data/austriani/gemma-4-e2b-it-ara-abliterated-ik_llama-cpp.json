@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Austriani/Gemma-4-E2B-it-ARA-Abliterated-ik_llama.cpp",
   "slug": "austriani-gemma-4-e2b-it-ara-abliterated-ik_llama-cpp",
   "author": "Austriani",
@@ -60,14 +60,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 26014618052,
   "storage_human": "26.0 GB",
+  "context_length": 131072,
   "base_model": "Austriani/Gemma-4-E2B-it-ARA-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hcX02/echora-mms-300m-multilingual-lyrics-forced-aligner",
   "slug": "hcx02-echora-mms-300m-multilingual-lyrics-forced-aligner",
   "author": "hcX02",
@@ -45,14 +45,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 3785947264,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "facebook/mms-300m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

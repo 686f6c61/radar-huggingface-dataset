@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoyporti/qwen3-1.7b-eagle3-switchboard",
   "slug": "hoyporti-qwen3-1-7b-eagle3-switchboard",
   "author": "hoyporti",
@@ -30,6 +30,7 @@
   "parameters_human": "137.0M",
   "storage_bytes": 608941953,
   "storage_human": "609 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B, AngelSlim/Qwen3-1.7B_eagle3",
   "formats": [
     "onnx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO-75",
   "slug": "lugman-madhiai-lfm2-5-350m-smoldataenvs-grpo-75",
   "author": "lugman-madhiai",
@@ -28,14 +28,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 708984464,
   "storage_human": "709 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T05:37:08.406Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

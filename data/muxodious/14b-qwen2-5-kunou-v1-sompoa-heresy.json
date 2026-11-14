@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MuXodious/14B-Qwen2.5-Kunou-v1-SOMPOA-heresy",
   "slug": "muxodious-14b-qwen2-5-kunou-v1-sompoa-heresy",
   "author": "MuXodious",
@@ -36,14 +36,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29558587449,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "Sao10K/14B-Qwen2.5-Kunou-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Cosmos3-Nano-Text-Tensix-BFP4",
   "slug": "xylolabs-cosmos3-nano-text-tensix-bfp4",
   "author": "Xylolabs",
@@ -39,14 +39,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392938558,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

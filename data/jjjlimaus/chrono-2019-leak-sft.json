@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/chrono-2019-leak-sft",
   "slug": "jjjlimaus-chrono-2019-leak-sft",
   "author": "jjjlimaus",
@@ -26,14 +26,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 415815712044,
   "storage_human": "415.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T05:17:57.269Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

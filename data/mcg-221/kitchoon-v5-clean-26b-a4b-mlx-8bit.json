@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "McG-221/Kitchoon-V5-Clean-26B-A4B-mlx-8Bit",
   "slug": "mcg-221-kitchoon-v5-clean-26b-a4b-mlx-8bit",
   "author": "McG-221",
@@ -37,6 +37,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 26843215536,
   "storage_human": "26.8 GB",
+  "context_length": null,
   "base_model": "SubMaroon/Kitchoon-V5-Clean-26B-A4B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

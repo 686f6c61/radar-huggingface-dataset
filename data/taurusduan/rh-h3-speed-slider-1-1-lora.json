@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/rh-h3-speed-slider-1.1-lora",
   "slug": "taurusduan-rh-h3-speed-slider-1-1-lora",
   "author": "taurusduan",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 22264150,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

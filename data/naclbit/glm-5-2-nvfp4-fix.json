@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "naclbit/GLM-5.2-NVFP4-fix",
   "slug": "naclbit-glm-5-2-nvfp4-fix",
   "author": "naclbit",
@@ -26,14 +26,19 @@
   "parameters_human": "380.99B",
   "storage_bytes": 464865454030,
   "storage_human": "464.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

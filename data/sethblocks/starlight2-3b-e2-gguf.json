@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sethblocks/Starlight2-3B-e2-GGUF",
   "slug": "sethblocks-starlight2-3b-e2-gguf",
   "author": "Sethblocks",
@@ -29,14 +29,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 7077612416,
   "storage_human": "7.1 GB",
+  "context_length": 131072,
   "base_model": "Sethblocks/Starlight2-3B-e2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

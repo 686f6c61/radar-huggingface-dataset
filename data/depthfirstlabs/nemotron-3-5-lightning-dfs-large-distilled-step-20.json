@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "depthfirstlabs/Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20",
   "slug": "depthfirstlabs-nemotron-3-5-lightning-dfs-large-distilled-step-20",
   "author": "depthfirstlabs",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 899453192,
   "storage_human": "899 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

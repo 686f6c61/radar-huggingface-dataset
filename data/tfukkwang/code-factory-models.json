@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tfukkwang/code-factory-models",
   "slug": "tfukkwang-code-factory-models",
   "author": "tfukkwang",
@@ -25,6 +25,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 24444022700,
   "storage_human": "24.4 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

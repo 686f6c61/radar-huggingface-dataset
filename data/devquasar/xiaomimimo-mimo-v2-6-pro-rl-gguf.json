@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevQuasar/XiaomiMiMo.MiMo-V2.6-Pro-RL-GGUF",
   "slug": "devquasar-xiaomimimo-mimo-v2-6-pro-rl-gguf",
   "author": "DevQuasar",
@@ -27,14 +27,19 @@
   "parameters_human": "1021.25B",
   "storage_bytes": 2037664141984,
   "storage_human": "2037.7 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

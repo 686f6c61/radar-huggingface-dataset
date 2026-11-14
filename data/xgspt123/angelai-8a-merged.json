@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xgspt123/AngelAI-8a-merged",
   "slug": "xgspt123-angelai-8a-merged",
   "author": "Xgspt123",
@@ -35,14 +35,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 13664653807,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:11:00.387Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

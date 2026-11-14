@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nathanwei05/cs2881r-dobby-qwen2.5-3b-final-combined-grpo100-step25",
   "slug": "nathanwei05-cs2881r-dobby-qwen2-5-3b-final-combined-grpo100-step25",
   "author": "nathanwei05",
@@ -35,14 +35,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6303158313,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

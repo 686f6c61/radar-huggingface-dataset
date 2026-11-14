@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r02",
   "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_evfront_b010_r02",
   "author": "Jeesup",
@@ -36,14 +36,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13477364771,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T04:54:26.604Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

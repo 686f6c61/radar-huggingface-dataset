@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Faless/piper_apples_expo_v5_smolvla_base_bs96",
   "slug": "faless-piper_apples_expo_v5_smolvla_base_bs96",
   "author": "Faless",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906733224,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T06:45:16.288Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

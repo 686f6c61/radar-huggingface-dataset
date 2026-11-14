@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WiNE-iNEFF/MineSkinV1.1_3",
   "slug": "wine-ineff-mineskinv1-1_3",
   "author": "WiNE-iNEFF",
@@ -25,6 +25,7 @@
   "parameters_human": "26.8M",
   "storage_bytes": 214475168,
   "storage_human": "214 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:05:59.070Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

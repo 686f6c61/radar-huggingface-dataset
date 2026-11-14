@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Gemma-4-12B-it-GPTQ-a16w4-2k",
   "slug": "florianvoss-gemma-4-12b-it-gptq-a16w4-2k",
   "author": "florianvoss",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 26297314818,
   "storage_human": "26.3 GB",
+  "context_length": null,
   "base_model": "simaai/Gemma-4-12B-it-GPTQ-Safetensors",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T09:37:12.708Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "takotako1118/Wan2.1L",
   "slug": "takotako1118-wan2-1l",
   "author": "takotako1118",
@@ -22,14 +22,19 @@
   "parameters_human": "14.29B",
   "storage_bytes": 228058328638,
   "storage_human": "228.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

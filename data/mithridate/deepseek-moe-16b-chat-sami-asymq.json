@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MIThridate/DeepSeek-MoE-16B-Chat-SAMI-AsymQ",
   "slug": "mithridate-deepseek-moe-16b-chat-sami-asymq",
   "author": "MIThridate",
@@ -44,14 +44,19 @@
   "parameters_human": "16.38B",
   "storage_bytes": 9106863168,
   "storage_human": "9.1 GB",
+  "context_length": 4096,
   "base_model": "deepseek-ai/deepseek-moe-16b-chat",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

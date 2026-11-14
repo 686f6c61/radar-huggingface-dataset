@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flowcorp-ch/BudgieScribe-Nano",
   "slug": "flowcorp-ch-budgiescribe-nano",
   "author": "flowcorp-ch",
@@ -48,6 +48,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1996966898,
   "storage_human": "2.0 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "flowcorp-ch/MunrelScribe-Nano-fr",
+  "renamed_at": "2026-11-11T05:16:59.809Z",
   "benchmarks": [],
   "sources": [
     {

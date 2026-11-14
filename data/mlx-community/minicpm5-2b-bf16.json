@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/MiniCPM5-2B-bf16",
   "slug": "mlx-community-minicpm5-2b-bf16",
   "author": "mlx-community",
@@ -48,6 +48,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033557048,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

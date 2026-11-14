@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SWE-Critix/SWE-Critix-Qwen3-30B-A3B-SFT-Epoch3",
   "slug": "swe-critix-swe-critix-qwen3-30b-a3b-sft-epoch3",
   "author": "SWE-Critix",
@@ -28,14 +28,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61066553856,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Thinking-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

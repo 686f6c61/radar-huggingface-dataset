@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "timm/deepseek_vit_412m.deepseek_v4_flash_vision_exp",
   "slug": "timm-deepseek_vit_412m-deepseek_v4_flash_vision_exp",
   "author": "timm",
@@ -28,14 +28,19 @@
   "parameters_human": "411.8M",
   "storage_bytes": 1647397576,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

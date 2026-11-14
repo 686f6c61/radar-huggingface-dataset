@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/qwen25-coder-7b-verireason-reasoning-co-ratio1.0-epoch3-exaone-matched-grpo-ratio1.0-epoch1",
   "slug": "jongbin-kr-qwen25-coder-7b-verireason-reasoning-co-ratio1-0-epoch3-exaone-matched-grpo-ratio1-0-epoch1",
   "author": "Jongbin-kr",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2613552682,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

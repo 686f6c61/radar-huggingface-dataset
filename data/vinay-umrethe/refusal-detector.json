@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VINAY-UMRETHE/refusal-detector",
   "slug": "vinay-umrethe-refusal-detector",
   "author": "VINAY-UMRETHE",
@@ -33,14 +33,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 598449012,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T03:33:50.712Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stage-babylm/llama-64-4L",
   "slug": "stage-babylm-llama-64-4l",
   "author": "stage-babylm",
@@ -28,14 +28,19 @@
   "parameters_human": "324800",
   "storage_bytes": 213798797,
   "storage_human": "214 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

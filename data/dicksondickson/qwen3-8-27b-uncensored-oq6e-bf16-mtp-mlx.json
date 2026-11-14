@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX",
   "slug": "dicksondickson-qwen3-8-27b-uncensored-oq6e-bf16-mtp-mlx",
   "author": "dicksondickson",
@@ -37,6 +37,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 71161674717,
   "storage_human": "71.2 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

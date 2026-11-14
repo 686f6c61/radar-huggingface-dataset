@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nota-ai/Qwen3.8-2.4T-A95B-Nota-NVFP4-Global-Pruned-40",
   "slug": "nota-ai-qwen3-8-2-4t-a95b-nota-nvfp4-global-pruned-40",
   "author": "nota-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "1482.88B",
   "storage_bytes": 1031837036710,
   "storage_human": "1031.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-2.4T-A95B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

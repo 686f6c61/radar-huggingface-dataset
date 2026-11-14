@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jayleaton/DeepSeek-V4.1-Flash-1017-EXL3-2.8bpw",
   "slug": "jayleaton-deepseek-v4-1-flash-1017-exl3-2-8bpw",
   "author": "jayleaton",
@@ -35,14 +35,19 @@
   "parameters_human": "101.84B",
   "storage_bytes": 203786982557,
   "storage_human": "203.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

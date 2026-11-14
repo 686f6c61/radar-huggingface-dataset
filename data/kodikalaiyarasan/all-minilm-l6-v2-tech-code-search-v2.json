@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kodikalaiyarasan/all-MiniLM-L6-v2-tech-code-search-v2",
   "slug": "kodikalaiyarasan-all-minilm-l6-v2-tech-code-search-v2",
   "author": "Kodikalaiyarasan",
@@ -37,14 +37,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 181728384,
   "storage_human": "182 MB",
+  "context_length": null,
   "base_model": "Kodikalaiyarasan/all-MiniLM-L6-v2-tech-code-search",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

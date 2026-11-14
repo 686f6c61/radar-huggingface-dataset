@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isbondarev/gigachat_3.1_smartsearch_sft_adapter_v2",
   "slug": "isbondarev-gigachat_3-1_smartsearch_sft_adapter_v2",
   "author": "isbondarev",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 939689736,
   "storage_human": "940 MB",
+  "context_length": null,
   "base_model": "ai-sage/GigaChat3.1-10B-A1.8B-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

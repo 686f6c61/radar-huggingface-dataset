@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Seed-OSS-36B-Base-GGUF",
   "slug": "mradermacher-seed-oss-36b-base-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "36.15B",
   "storage_bytes": 247008118240,
   "storage_human": "247.0 GB",
+  "context_length": 524288,
   "base_model": "ByteDance-Seed/Seed-OSS-36B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

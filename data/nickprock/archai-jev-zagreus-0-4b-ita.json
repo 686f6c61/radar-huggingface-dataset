@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nickprock/archai-jev-zagreus-0.4b-ita",
   "slug": "nickprock-archai-jev-zagreus-0-4b-ita",
   "author": "nickprock",
@@ -38,6 +38,7 @@
   "parameters_human": "437.8M",
   "storage_bytes": 2976441644,
   "storage_human": "3.0 GB",
+  "context_length": 4096,
   "base_model": "mii-llm/zagreus-0.4B-ita",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

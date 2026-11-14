@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "changh95/streampetr-p150",
   "slug": "changh95-streampetr-p150",
   "author": "changh95",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 3778045120,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "AutowareFoundation/camera_streampetr",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kin2341/sophosympatheia_Glistening-Gem-31B-v2.1-GGUF",
   "slug": "kin2341-sophosympatheia_glistening-gem-31b-v2-1-gguf",
   "author": "kin2341",
@@ -34,14 +34,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 526901556960,
   "storage_human": "526.9 GB",
+  "context_length": 262144,
   "base_model": "sophosympatheia/Glistening-Gem-31B-v2.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

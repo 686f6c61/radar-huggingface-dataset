@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DoctorEdoP369/Atman_Ai_Qwen",
   "slug": "doctoredop369-atman_ai_qwen",
   "author": "DoctorEdoP369",
@@ -38,14 +38,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 100705533951,
   "storage_human": "100.7 GB",
+  "context_length": 340992,
   "base_model": "DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

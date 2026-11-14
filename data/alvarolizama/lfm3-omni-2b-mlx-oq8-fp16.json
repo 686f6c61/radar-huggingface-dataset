@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alvarolizama/LFM3-Omni-2B-MLX-oQ8-fp16",
   "slug": "alvarolizama-lfm3-omni-2b-mlx-oq8-fp16",
   "author": "alvarolizama",
@@ -28,6 +28,7 @@
   "parameters_human": "2.17B",
   "storage_bytes": 3198777694,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T03:45:41.645Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

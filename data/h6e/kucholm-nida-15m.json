@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h6e/KuchoLM-NIDA-15M",
   "slug": "h6e-kucholm-nida-15m",
   "author": "h6e",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 56861104,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "KuchoLM/KuchoLM-NIDA-15M",
+  "renamed_at": "2026-11-11T05:29:59.553Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Dynamic-INT8",
   "slug": "macunaima-qwen3-0-6b-sm8650-litert-lm-dynamic-int8",
   "author": "macunaima",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1317919520,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

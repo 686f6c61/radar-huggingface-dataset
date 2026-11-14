@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SXY7/X-VLA-Food-Progress",
   "slug": "sxy7-x-vla-food-progress",
   "author": "SXY7",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 10575463556,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

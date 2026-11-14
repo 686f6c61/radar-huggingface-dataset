@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/tur-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407",
   "slug": "francesca9805-tur-latn-100mb-after-ppt-dp-10mb-packed-bfdiso-ckpt500_seed3407",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 5242206833,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "francesca9805/tur-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

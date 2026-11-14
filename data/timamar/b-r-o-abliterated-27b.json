@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Timamar/B.R.O-abliterated-27B",
   "slug": "timamar-b-r-o-abliterated-27b",
   "author": "Timamar",
@@ -41,6 +41,7 @@
   "parameters_human": null,
   "storage_bytes": 91403865,
   "storage_human": "91 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Sm0k13/B.R.O-abliterated-27B",
+  "renamed_at": "2026-11-11T04:03:41.656Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Qwen-Image-Edit-2509-cmf",
   "slug": "infosave-qwen-image-edit-2509-cmf",
   "author": "infosave",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 58325337531,
   "storage_human": "58.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2509",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

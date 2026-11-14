@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VD123DV/Krea-2-Kroma-v0.3.1",
   "slug": "vd123dv-krea-2-kroma-v0-3-1",
   "author": "VD123DV",
@@ -29,6 +29,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 35678205309,
   "storage_human": "35.7 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

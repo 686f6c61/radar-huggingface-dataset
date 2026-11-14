@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/GLiClass-Edge-v3.0-LiteRT",
   "slug": "litert-community-gliclass-edge-v3-0-litert",
   "author": "litert-community",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 200640364,
   "storage_human": "201 MB",
+  "context_length": null,
   "base_model": "knowledgator/gliclass-edge-v3.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

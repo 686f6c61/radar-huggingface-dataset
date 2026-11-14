@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DatKurai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-Uncen-IQ1-332Exp-GGUF",
   "slug": "datkurai-swift-1-5-qwen3-8-flash-next-gsq-rco-uncen-iq1-332exp-gguf",
   "author": "DatKurai",
@@ -47,14 +47,19 @@
   "parameters_human": "134.45B",
   "storage_bytes": 61562291120,
   "storage_human": "61.6 GB",
+  "context_length": 262144,
   "base_model": "SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

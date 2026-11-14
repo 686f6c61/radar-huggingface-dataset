@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dpredator-24/qwen2.5-3b-daemon",
   "slug": "dpredator-24-qwen2-5-3b-daemon",
   "author": "Dpredator-24",
@@ -36,6 +36,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 2061126286,
   "storage_human": "2.1 GB",
+  "context_length": 32768,
   "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

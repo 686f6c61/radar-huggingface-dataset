@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gwyntel/PII-Redact-General-oQ4",
   "slug": "gwyntel-pii-redact-general-oq4",
   "author": "gwyntel",
@@ -29,6 +29,7 @@
   "parameters_human": "1.24B",
   "storage_bytes": 743296018,
   "storage_human": "743 MB",
+  "context_length": null,
   "base_model": "OpenPipe/PII-Redact-General",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

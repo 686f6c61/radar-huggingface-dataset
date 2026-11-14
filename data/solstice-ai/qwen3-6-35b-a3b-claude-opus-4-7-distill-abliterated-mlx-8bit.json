@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit",
   "slug": "solstice-ai-qwen3-6-35b-a3b-claude-opus-4-7-distill-abliterated-mlx-8bit",
   "author": "Solstice-AI",
@@ -44,6 +44,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 36848211904,
   "storage_human": "36.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T07:50:18.801Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

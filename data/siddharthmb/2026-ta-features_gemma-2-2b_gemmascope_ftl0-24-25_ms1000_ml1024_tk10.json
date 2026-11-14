@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10",
   "slug": "siddharthmb-2026-ta-features_gemma-2-2b_gemmascope_ftl0-24-25_ms1000_ml1024_tk10",
   "author": "siddharthmb",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 2642301230,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "gemma-2-2b_gemmascope_width_16k_average_l0_76",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM3-Omni-2B-MLX-4bit",
   "slug": "liquidai-lfm3-omni-2b-mlx-4bit",
   "author": "LiquidAI",
@@ -84,6 +84,7 @@
   "parameters_human": "2.17B",
   "storage_bytes": 2128468432,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "mlx",
@@ -91,8 +92,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

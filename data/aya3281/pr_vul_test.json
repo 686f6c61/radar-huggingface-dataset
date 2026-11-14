@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aya3281/pr_vul_test",
   "slug": "aya3281-pr_vul_test",
   "author": "aya3281",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 433342019441,
   "storage_human": "433.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

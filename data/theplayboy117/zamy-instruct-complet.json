@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theplayboy117/Zamy-Instruct-Complet",
   "slug": "theplayboy117-zamy-instruct-complet",
   "author": "theplayboy117",
@@ -33,14 +33,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 4303048168,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

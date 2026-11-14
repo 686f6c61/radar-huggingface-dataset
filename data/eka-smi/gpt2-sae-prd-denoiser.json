@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eka-smi/gpt2-sae-prd-denoiser",
   "slug": "eka-smi-gpt2-sae-prd-denoiser",
   "author": "eka-smi",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 10790067,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

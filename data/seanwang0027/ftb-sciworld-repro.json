@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanWang0027/ftb-sciworld-repro",
   "slug": "seanwang0027-ftb-sciworld-repro",
   "author": "SeanWang0027",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 43278144,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

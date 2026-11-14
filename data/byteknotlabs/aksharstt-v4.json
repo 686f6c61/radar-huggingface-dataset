@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "byteknotlabs/AksharSTT-V4",
   "slug": "byteknotlabs-aksharstt-v4",
   "author": "byteknotlabs",
@@ -49,12 +49,17 @@
   "parameters_human": null,
   "storage_bytes": 251648715,
   "storage_human": "252 MB",
+  "context_length": null,
   "base_model": "Cactus-Compute/whistle",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Speech recognition",

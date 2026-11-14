@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuoHuaZC/Dark-Craving-26B-A4B-rad",
   "slug": "luohuazc-dark-craving-26b-a4b-rad",
   "author": "LuoHuaZC",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 36438545920,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Dark-Craving-26B-A4B, z-lab/gemma-4-26B-A4B-it-DFlash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

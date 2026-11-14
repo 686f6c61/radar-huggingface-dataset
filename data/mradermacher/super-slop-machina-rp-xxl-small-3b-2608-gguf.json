@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Super-Slop-Machina-RP-XXL-Small-3B-2608-GGUF",
   "slug": "mradermacher-super-slop-machina-rp-xxl-small-3b-2608-gguf",
   "author": "mradermacher",
@@ -49,6 +49,7 @@
   "parameters_human": "3.43B",
   "storage_bytes": 32533362560,
   "storage_human": "32.5 GB",
+  "context_length": 262144,
   "base_model": "Indexnusrefather/Super-Slop-Machina-RP-XXL-Small-3B-2608",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

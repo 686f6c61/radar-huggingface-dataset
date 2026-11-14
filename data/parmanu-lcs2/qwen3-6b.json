@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "parmanu-lcs2/Qwen3-6B",
   "slug": "parmanu-lcs2-qwen3-6b",
   "author": "parmanu-lcs2",
@@ -40,14 +40,19 @@
   "parameters_human": "6.20B",
   "storage_bytes": 12407495513,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

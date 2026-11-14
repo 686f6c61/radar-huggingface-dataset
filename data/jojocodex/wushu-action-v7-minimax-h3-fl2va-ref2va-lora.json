@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jojocodex/wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
   "slug": "jojocodex-wushu-action-v7-minimax-h3-fl2va-ref2va-lora",
   "author": "Jojocodex",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 13774283182,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mphd1/gpt2-large_pii_public",
   "slug": "mphd1-gpt2-large_pii_public",
   "author": "mphd1",
@@ -31,14 +31,19 @@
   "parameters_human": "774.0M",
   "storage_bytes": 3096171360,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

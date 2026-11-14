@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aflah/Llama1BxFWx2048x10pct",
   "slug": "aflah-llama1bxfwx2048x10pct",
   "author": "aflah",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 16513037261,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

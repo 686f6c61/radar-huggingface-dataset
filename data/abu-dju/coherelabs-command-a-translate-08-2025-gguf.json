@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abu-Dju/CohereLabs.command-a-translate-08-2025-GGUF",
   "slug": "abu-dju-coherelabs-command-a-translate-08-2025-gguf",
   "author": "Abu-Dju",
@@ -28,14 +28,19 @@
   "parameters_human": "111.06B",
   "storage_bytes": 800252729824,
   "storage_human": "800.3 GB",
+  "context_length": 8192,
   "base_model": "CohereLabs/command-a-translate-08-2025",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

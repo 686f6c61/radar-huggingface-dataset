@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-block",
   "slug": "redhatai-nvidia-nemotron-3-ultra-550b-a55b-fp8-block",
   "author": "RedHatAI",
@@ -33,14 +33,19 @@
   "parameters_human": "560.52B",
   "storage_bytes": 563282135535,
   "storage_human": "563.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

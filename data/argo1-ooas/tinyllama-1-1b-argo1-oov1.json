@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Argo1-OOAS/TinyLlama-1.1B-Argo1-OOV1",
   "slug": "argo1-ooas-tinyllama-1-1b-argo1-oov1",
   "author": "Argo1-OOAS",
@@ -39,14 +39,19 @@
   "parameters_human": "1.12B",
   "storage_bytes": 4485040367,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

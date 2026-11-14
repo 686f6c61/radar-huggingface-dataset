@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dellfi/llava-llama-3-8b-v1_1-imat-gguf",
   "slug": "dellfi-llava-llama-3-8b-v1_1-imat-gguf",
   "author": "dellfi",
@@ -27,14 +27,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 90460364988,
   "storage_human": "90.5 GB",
+  "context_length": 8192,
   "base_model": "xtuner/llava-llama-3-8b-v1_1-transformers",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

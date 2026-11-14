@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cyronius/titler",
   "slug": "cyronius-titler",
   "author": "Cyronius",
@@ -44,6 +44,7 @@
   "parameters_human": "7.6M",
   "storage_bytes": 79873828,
   "storage_human": "80 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

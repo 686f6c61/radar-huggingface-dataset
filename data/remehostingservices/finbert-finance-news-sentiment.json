@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "remehostingservices/finbert-finance-news-sentiment",
   "slug": "remehostingservices-finbert-finance-news-sentiment",
   "author": "remehostingservices",
@@ -41,14 +41,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 875945490,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": "ProsusAI/finbert",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T10:27:43.041Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Sentiment Classification",

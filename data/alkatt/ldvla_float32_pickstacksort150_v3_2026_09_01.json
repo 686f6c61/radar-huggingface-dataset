@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alkatt/LDVLA_float32_pickstacksort150_V3_2026_09_01",
   "slug": "alkatt-ldvla_float32_pickstacksort150_v3_2026_09_01",
   "author": "Alkatt",
@@ -27,14 +27,19 @@
   "parameters_human": "555.9M",
   "storage_bytes": 2223657424,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

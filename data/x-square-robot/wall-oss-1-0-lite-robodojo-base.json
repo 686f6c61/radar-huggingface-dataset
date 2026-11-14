@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "x-square-robot/wall-oss-1.0-lite-robodojo-base",
   "slug": "x-square-robot-wall-oss-1-0-lite-robodojo-base",
   "author": "x-square-robot",
@@ -27,14 +27,19 @@
   "parameters_human": "5.32B",
   "storage_bytes": 21295165138,
   "storage_human": "21.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

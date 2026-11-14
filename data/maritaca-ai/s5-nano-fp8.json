@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maritaca-ai/S5-nano-FP8",
   "slug": "maritaca-ai-s5-nano-fp8",
   "author": "maritaca-ai",
@@ -32,14 +32,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 5772026422,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "maritaca-ai/S5-nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

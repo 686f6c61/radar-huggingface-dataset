@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "primitive-ai/Ripple-65B-Preview-NVFP4A16",
   "slug": "primitive-ai-ripple-65b-preview-nvfp4a16",
   "author": "primitive-ai",
@@ -40,14 +40,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 37920128984,
   "storage_human": "37.9 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

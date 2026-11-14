@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Research-Inst-RosettaFlareLab-005/Models_2026.08_August",
   "slug": "research-inst-rosettaflarelab-005-models_2026-08_august",
   "author": "Research-Inst-RosettaFlareLab-005",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 248781886175,
   "storage_human": "248.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

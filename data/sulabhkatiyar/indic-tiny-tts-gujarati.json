@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sulabhkatiyar/indic-tiny-tts-gujarati",
   "slug": "sulabhkatiyar-indic-tiny-tts-gujarati",
   "author": "sulabhkatiyar",
@@ -30,12 +30,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 103,
+  "downloads_30d": 114,
   "trending_score": 0,
   "parameters": 8933385,
   "parameters_human": "8.9M",
   "storage_bytes": 184078245,
   "storage_human": "184 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

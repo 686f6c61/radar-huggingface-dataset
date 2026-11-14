@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netease-youdao/Confucius4-R2T2-GGUF",
   "slug": "netease-youdao-confucius4-r2t2-gguf",
   "author": "netease-youdao",
@@ -40,14 +40,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 7379282560,
   "storage_human": "7.4 GB",
+  "context_length": 65536,
   "base_model": "netease-youdao/Confucius4-R2T2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

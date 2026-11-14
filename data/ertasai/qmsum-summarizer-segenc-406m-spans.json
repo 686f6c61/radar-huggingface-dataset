@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ErtasAI/qmsum-summarizer-segenc-406m-spans",
   "slug": "ertasai-qmsum-summarizer-segenc-406m-spans",
   "author": "ErtasAI",
@@ -39,14 +39,19 @@
   "parameters_human": "406.4M",
   "storage_bytes": 1625463896,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Salesforce/socratic-pretraining-qmsum",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

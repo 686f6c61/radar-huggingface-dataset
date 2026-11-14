@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Qwen-Image-2.1-Uncensored-CMF",
   "slug": "infosave-qwen-image-2-1-uncensored-cmf",
   "author": "infosave",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 12749197423,
   "storage_human": "12.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

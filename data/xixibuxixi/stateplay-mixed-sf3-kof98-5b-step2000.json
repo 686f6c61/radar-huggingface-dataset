@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xixibuxixi/StatePlay-Mixed-SF3-KOF98-5B-step2000",
   "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-5b-step2000",
   "author": "xixibuxixi",
@@ -31,14 +31,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 10221685492,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2.5-14B-Instruct-abli_coder-GGUF",
   "slug": "mradermacher-qwen2-5-14b-instruct-abli_coder-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102011723264,
   "storage_human": "102.0 GB",
+  "context_length": 32768,
   "base_model": "NexesMess/Qwen2.5-14B-Instruct-abli_coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

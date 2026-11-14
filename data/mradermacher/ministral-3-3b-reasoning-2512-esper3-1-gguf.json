@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Ministral-3-3B-Reasoning-2512-Esper3.1-GGUF",
   "slug": "mradermacher-ministral-3-3b-reasoning-2512-esper3-1-gguf",
   "author": "mradermacher",
@@ -77,14 +77,19 @@
   "parameters_human": "3.43B",
   "storage_bytes": 31232482560,
   "storage_human": "31.2 GB",
+  "context_length": 262144,
   "base_model": "ValiantLabs/Ministral-3-3B-Reasoning-2512-Esper3.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

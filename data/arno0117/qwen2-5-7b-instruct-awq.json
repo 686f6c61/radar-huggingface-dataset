@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arno0117/Qwen2.5-7B-Instruct-AWQ",
   "slug": "arno0117-qwen2-5-7b-instruct-awq",
   "author": "Arno0117",
@@ -39,14 +39,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 5570829760,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

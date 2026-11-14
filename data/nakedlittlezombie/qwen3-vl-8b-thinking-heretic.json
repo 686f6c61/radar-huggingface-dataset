@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nakedlittlezombie/Qwen3-VL-8B-Thinking-heretic",
   "slug": "nakedlittlezombie-qwen3-vl-8b-thinking-heretic",
   "author": "nakedlittlezombie",
@@ -33,6 +33,7 @@
   "parameters_human": "8.77B",
   "storage_bytes": 85258456682,
   "storage_human": "85.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

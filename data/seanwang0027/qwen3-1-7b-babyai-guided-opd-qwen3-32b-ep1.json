@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanWang0027/qwen3-1.7b-babyai-guided-opd-qwen3-32b-ep1",
   "slug": "seanwang0027-qwen3-1-7b-babyai-guided-opd-qwen3-32b-ep1",
   "author": "SeanWang0027",
@@ -32,14 +32,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8138935723,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T03:12:46.146Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

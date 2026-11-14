@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeowon/index-tts-ko",
   "slug": "yeowon-index-tts-ko",
   "author": "yeowon",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 5937288038,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "IndexTeam/IndexTTS-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

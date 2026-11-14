@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hsk0201/gemma-4-26B-A4B-qat-oQ4e-fp16",
   "slug": "hsk0201-gemma-4-26b-a4b-qat-oq4e-fp16",
   "author": "hsk0201",
@@ -28,6 +28,7 @@
   "parameters_human": "25.65B",
   "storage_bytes": 15697206994,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

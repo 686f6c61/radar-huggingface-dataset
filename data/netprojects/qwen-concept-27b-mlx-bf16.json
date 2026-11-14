@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netprojects/Qwen-Concept-27B-MLX-bf16",
   "slug": "netprojects-qwen-concept-27b-mlx-bf16",
   "author": "netprojects",
@@ -34,6 +34,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733595824,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "ConceptCountry/qwen-concept-27b",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

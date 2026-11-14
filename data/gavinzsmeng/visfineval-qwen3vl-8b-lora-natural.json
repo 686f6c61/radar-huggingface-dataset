@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gavinzsmeng/visfineval-qwen3vl-8b-lora-natural",
   "slug": "gavinzsmeng-visfineval-qwen3vl-8b-lora-natural",
   "author": "gavinzsmeng",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 174663096,
   "storage_human": "175 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

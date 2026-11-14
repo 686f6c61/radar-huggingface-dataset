@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maliktafheem/kathe-2026-en-kas-arab-1b",
   "slug": "maliktafheem-kathe-2026-en-kas-arab-1b",
   "author": "maliktafheem",
@@ -37,14 +37,19 @@
   "parameters_human": "1.12B",
   "storage_bytes": 4466281600,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "ai4bharat/indictrans2-en-indic-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

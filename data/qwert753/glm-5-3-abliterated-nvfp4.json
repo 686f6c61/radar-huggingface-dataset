@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwert753/GLM-5.3-ABLITERATED-NVFP4",
   "slug": "qwert753-glm-5-3-abliterated-nvfp4",
   "author": "Qwert753",
@@ -40,14 +40,19 @@
   "parameters_human": "753.33B",
   "storage_bytes": 464864636799,
   "storage_human": "464.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

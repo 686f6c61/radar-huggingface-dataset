@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/siglip2-giant-opt-patch16-384",
   "slug": "collectionstudio-siglip2-giant-opt-patch16-384",
   "author": "CollectionStudio",
@@ -31,14 +31,19 @@
   "parameters_human": "1.87B",
   "storage_bytes": 7526280450,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

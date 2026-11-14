@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oluwagbotty/fastconformer-ctc-en-ft",
   "slug": "oluwagbotty-fastconformer-ctc-en-ft",
   "author": "oluwagbotty",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 463144960,
   "storage_human": "463 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_en_fastconformer_ctc_large",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

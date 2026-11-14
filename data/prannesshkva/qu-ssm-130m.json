@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/QU-SSM-130M",
   "slug": "prannesshkva-qu-ssm-130m",
   "author": "Prannesshkva",
@@ -34,14 +34,19 @@
   "parameters_human": "290.5M",
   "storage_bytes": 2323994304,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:03:22.335Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

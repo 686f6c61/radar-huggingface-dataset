@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mwnuk/Cosmos3-Edge-severed",
   "slug": "mwnuk-cosmos3-edge-severed",
   "author": "mwnuk",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 9145465049,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

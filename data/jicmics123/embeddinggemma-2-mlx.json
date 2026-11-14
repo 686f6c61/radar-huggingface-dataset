@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jicmics123/embeddinggemma-2-mlx",
   "slug": "jicmics123-embeddinggemma-2-mlx",
   "author": "jicmics123",
@@ -30,6 +30,7 @@
   "parameters_human": "394.0M",
   "storage_bytes": 378787467,
   "storage_human": "379 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logic65/Qwen3.8-Whittle-w50-18.3B-unrepaired",
   "slug": "logic65-qwen3-8-whittle-w50-18-3b-unrepaired",
   "author": "logic65",
@@ -32,14 +32,19 @@
   "parameters_human": "18.34B",
   "storage_bytes": 36711505394,
   "storage_human": "36.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T12:11:47.980Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

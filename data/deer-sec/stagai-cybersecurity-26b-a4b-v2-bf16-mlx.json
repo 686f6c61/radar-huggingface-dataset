@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deer-sec/StagAI-CyberSecurity-26B-A4B-v2-BF16-MLX",
   "slug": "deer-sec-stagai-cybersecurity-26b-a4b-v2-bf16-mlx",
   "author": "deer-sec",
@@ -46,6 +46,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 50498543913,
   "storage_human": "50.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26b-a4b",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

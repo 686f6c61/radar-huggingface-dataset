@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "parser-tech/Qwen3.8-27B-Longbook27-v2-GGUF",
   "slug": "parser-tech-qwen3-8-27b-longbook27-v2-gguf",
   "author": "parser-tech",
@@ -35,14 +35,19 @@
   "parameters_human": "27.07B",
   "storage_bytes": 15465619239,
   "storage_human": "15.5 GB",
+  "context_length": 262144,
   "base_model": "summerAIO/Qwen3.8-27B-Longbook27-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

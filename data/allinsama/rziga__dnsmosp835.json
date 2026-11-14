@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Allinsama/rziga__DNSMOSp835",
   "slug": "allinsama-rziga__dnsmosp835",
   "author": "Allinsama",
@@ -26,14 +26,19 @@
   "parameters_human": "287279",
   "storage_bytes": 1150948,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

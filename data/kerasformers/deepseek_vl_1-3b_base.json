@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/deepseek_vl_1.3b_base",
   "slug": "kerasformers-deepseek_vl_1-3b_base",
   "author": "kerasformers",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 3507175440,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/deepseek-vl-1.3b-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/deepseek_vl_1.3b_base",
+  "renamed_at": "2026-11-12T06:08:28.774Z",
   "benchmarks": [],
   "sources": [
     {

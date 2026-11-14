@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superdocker/R1-Qwen-14B-ReQAT-nvfp4-w4a4kv4-fake",
   "slug": "superdocker-r1-qwen-14b-reqat-nvfp4-w4a4kv4-fake",
   "author": "superdocker",
@@ -38,14 +38,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29551660410,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

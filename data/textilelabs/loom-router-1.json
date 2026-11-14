@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textilelabs/Loom-Router-1",
   "slug": "textilelabs-loom-router-1",
   "author": "textilelabs",
@@ -39,6 +39,7 @@
   "parameters_human": "1.4M",
   "storage_bytes": 8824846,
   "storage_human": "9 MB",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

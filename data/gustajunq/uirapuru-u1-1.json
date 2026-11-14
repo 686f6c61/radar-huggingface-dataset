@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gustajunq/Uirapuru-U1.1",
   "slug": "gustajunq-uirapuru-u1-1",
   "author": "gustajunq",
@@ -35,14 +35,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19319118862,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "SynastriaNetworks/Uirapuru-U1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SynastriaNetworks/U1-0817",
+  "renamed_at": "2026-11-11T05:29:18.269Z",
   "benchmarks": [],
   "sources": []
 }

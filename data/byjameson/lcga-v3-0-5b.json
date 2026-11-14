@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "byjameson/lcga-v3-0.5b",
   "slug": "byjameson-lcga-v3-0-5b",
   "author": "byjameson",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 64241209,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

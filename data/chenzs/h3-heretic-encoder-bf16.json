@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenzs/H3-Heretic-Encoder-BF16",
   "slug": "chenzs-h3-heretic-encoder-bf16",
   "author": "chenzs",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 51506295440,
   "storage_human": "51.5 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

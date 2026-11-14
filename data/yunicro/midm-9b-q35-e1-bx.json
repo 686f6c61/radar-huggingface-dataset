@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunicro/MiDM-9B-q35-e1-bx",
   "slug": "yunicro-midm-9b-q35-e1-bx",
   "author": "yunicro",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 161419185,
   "storage_human": "161 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

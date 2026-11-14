@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ceselder/glm-5.3-olens-reconstructor",
   "slug": "ceselder-glm-5-3-olens-reconstructor",
   "author": "ceselder",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 36238988442,
   "storage_human": "36.2 GB",
+  "context_length": null,
   "base_model": "nvidia/GLM-5.3-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "butterfly-ai-labs/Lumina_1.0",
   "slug": "butterfly-ai-labs-lumina_1-0",
   "author": "butterfly-ai-labs",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2134215452,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "butterfly-ai-labs/Lumina_1.0_Deprecated",
+  "renamed_at": "2026-11-11T04:45:18.507Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "InsertWittyCommentHere/llama3.1-8b-bma-lora-r1-s1p0",
   "slug": "insertwittycommenthere-llama3-1-8b-bma-lora-r1-s1p0",
   "author": "InsertWittyCommentHere",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 38298208,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

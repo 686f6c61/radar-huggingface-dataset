@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davanstrien/ultrabert-380m-curation",
   "slug": "davanstrien-ultrabert-380m-curation",
   "author": "davanstrien",
@@ -49,14 +49,19 @@
   "parameters_human": "382.3M",
   "storage_bytes": 1529215712,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "dmis-lab/UltraBERT-380M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Broadnet/gemma-4-26B-A4B-uno-adapter",
   "slug": "broadnet-gemma-4-26b-a4b-uno-adapter",
   "author": "Broadnet",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 302508064,
   "storage_human": "303 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it, cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "J-Fraudster/Qwen3.5-0.8B-W4A16-AutoRound-LLM-Compressor",
   "slug": "j-fraudster-qwen3-5-0-8b-w4a16-autoround-llm-compressor",
   "author": "J-Fraudster",
@@ -26,14 +26,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 2407360704,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

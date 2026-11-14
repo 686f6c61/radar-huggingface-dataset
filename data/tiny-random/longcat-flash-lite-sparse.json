@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiny-random/longcat-flash-lite-sparse",
   "slug": "tiny-random-longcat-flash-lite-sparse",
   "author": "tiny-random",
@@ -28,14 +28,19 @@
   "parameters_human": "11.7M",
   "storage_bytes": 23527512,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "meituan-longcat/LongCat-Flash-Lite-Sparse",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

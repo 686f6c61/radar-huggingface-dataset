@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dashi/microduck-roller-daily-20261106",
   "slug": "dashi-microduck-roller-daily-20261106",
   "author": "dashi",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 925289,
   "storage_human": "925289 B",
+  "context_length": null,
   "base_model": "DenRakEiw/microduck-senate_duck_0904",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

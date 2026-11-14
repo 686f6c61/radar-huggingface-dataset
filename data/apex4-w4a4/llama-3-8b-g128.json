@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "APEX4-W4A4/Llama-3-8b-g128",
   "slug": "apex4-w4a4-llama-3-8b-g128",
   "author": "APEX4-W4A4",
@@ -24,14 +24,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 5840322305,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

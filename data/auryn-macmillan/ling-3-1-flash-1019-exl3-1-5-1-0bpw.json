@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "auryn-macmillan/Ling-3.1-flash-1019-EXL3-1.5-1.0bpw",
   "slug": "auryn-macmillan-ling-3-1-flash-1019-exl3-1-5-1-0bpw",
   "author": "auryn-macmillan",
@@ -34,14 +34,19 @@
   "parameters_human": "50.38B",
   "storage_bytes": 100986920566,
   "storage_human": "101.0 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.1-flash-1019",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/Claude-Fable-5.1-Thinking-Agentic-GGUF",
   "slug": "diablomike20-claude-fable-5-1-thinking-agentic-gguf",
   "author": "diablomike20",
@@ -43,14 +43,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 9281533251,
   "storage_human": "9.3 GB",
+  "context_length": 131072,
   "base_model": "GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

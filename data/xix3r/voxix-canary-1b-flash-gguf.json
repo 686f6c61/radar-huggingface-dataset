@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-canary-1b-flash-gguf",
   "slug": "xix3r-voxix-canary-1b-flash-gguf",
   "author": "xix3r",
@@ -46,14 +46,19 @@
   "parameters_human": "890.0M",
   "storage_bytes": 9468032864,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "nvidia/canary-1b-flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

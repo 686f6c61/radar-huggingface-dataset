@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harness-hub/LFM2.5-24B-A2B-opencode",
   "slug": "harness-hub-lfm2-5-24b-a2b-opencode",
   "author": "harness-hub",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 92978220,
   "storage_human": "93 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

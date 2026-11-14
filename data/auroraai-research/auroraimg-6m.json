@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AuroraAI-Research/AuroraIMG-6M",
   "slug": "auroraai-research-auroraimg-6m",
   "author": "AuroraAI-Research",
@@ -38,6 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 61643674,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text-to-image generation",

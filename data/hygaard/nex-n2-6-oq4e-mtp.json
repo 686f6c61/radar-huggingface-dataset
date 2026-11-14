@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hygaard/Nex-N2.6-oQ4e-mtp",
   "slug": "hygaard-nex-n2-6-oq4e-mtp",
   "author": "Hygaard",
@@ -36,6 +36,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 186422681487,
   "storage_human": "186.4 GB",
+  "context_length": null,
   "base_model": "nex-agi/Nex-N2.6",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

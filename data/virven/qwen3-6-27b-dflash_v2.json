@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VirVen/Qwen3.6-27B-DFlash_v2",
   "slug": "virven-qwen3-6-27b-dflash_v2",
   "author": "VirVen",
@@ -32,14 +32,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 13802321659,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T03:06:28.526Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

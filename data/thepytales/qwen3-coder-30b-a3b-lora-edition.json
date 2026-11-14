@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thepytales/qwen3-coder-30b-a3b-lora-edition",
   "slug": "thepytales-qwen3-coder-30b-a3b-lora-edition",
   "author": "thepytales",
@@ -34,14 +34,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 18556689568,
   "storage_human": "18.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

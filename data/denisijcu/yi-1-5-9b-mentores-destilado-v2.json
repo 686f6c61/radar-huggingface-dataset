@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Denisijcu/Yi-1.5-9B-MentorES-Destilado-v2",
   "slug": "denisijcu-yi-1-5-9b-mentores-destilado-v2",
   "author": "Denisijcu",
@@ -36,14 +36,19 @@
   "parameters_human": "6.06B",
   "storage_bytes": 3906691698,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "unsloth/Yi-1.5-6B-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T02:31:37.146Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

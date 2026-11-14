@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "goaicorp/dyu-whisper-base",
   "slug": "goaicorp-dyu-whisper-base",
   "author": "goaicorp",
@@ -34,14 +34,19 @@
   "parameters_human": "72.6M",
   "storage_bytes": 580869649,
   "storage_human": "581 MB",
+  "context_length": null,
   "base_model": "openai/whisper-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

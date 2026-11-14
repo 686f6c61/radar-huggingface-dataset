@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felladrin/SmolLM2-135M-Heretic-RP",
   "slug": "felladrin-smollm2-135m-heretic-rp",
   "author": "Felladrin",
@@ -40,14 +40,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 1336108812,
   "storage_human": "1.3 GB",
+  "context_length": 8192,
   "base_model": "saidutta69/SmolLM2-135M-Instruct-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suraj-phanindra/microduck-tug-hc6-aifund",
   "slug": "suraj-phanindra-microduck-tug-hc6-aifund",
   "author": "suraj-phanindra",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 910880,
   "storage_human": "910880 B",
+  "context_length": null,
   "base_model": "GinDuck/microduck-tug-titan-league",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

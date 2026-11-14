@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Selbyggen/kb-whisper-small-coreml",
   "slug": "selbyggen-kb-whisper-small-coreml",
   "author": "Selbyggen",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 483967102,
   "storage_human": "484 MB",
+  "context_length": null,
   "base_model": "KBLab/kb-whisper-small",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

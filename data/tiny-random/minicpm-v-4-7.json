@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiny-random/minicpm-v-4.7",
   "slug": "tiny-random-minicpm-v-4-7",
   "author": "tiny-random",
@@ -29,14 +29,19 @@
   "parameters_human": "11.5M",
   "storage_bytes": 43107121,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

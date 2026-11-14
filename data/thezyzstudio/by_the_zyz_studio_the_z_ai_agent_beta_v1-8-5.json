@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_AGENT_BETA_V1.8.5",
   "slug": "thezyzstudio-by_the_zyz_studio_the_z_ai_agent_beta_v1-8-5",
   "author": "THEZYZSTUDIO",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 6956770,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "THEZYZSTUDIO/BY_THE_ZYZ_STUDIO_THE_Z_AI_AGENT_BETA",
+  "renamed_at": "2026-11-11T03:58:55.328Z",
   "benchmarks": [],
   "sources": [
     {

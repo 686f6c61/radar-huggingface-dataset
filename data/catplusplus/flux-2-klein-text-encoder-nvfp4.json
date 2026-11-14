@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "catplusplus/FLUX.2-klein-text-encoder-NVFP4",
   "slug": "catplusplus-flux-2-klein-text-encoder-nvfp4",
   "author": "catplusplus",
@@ -29,14 +29,19 @@
   "parameters_human": "6.27B",
   "storage_bytes": 10098367512,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9b-kv",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

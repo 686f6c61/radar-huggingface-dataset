@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "incoai/Ornith-1.5-122B-DFlash2",
   "slug": "incoai-ornith-1-5-122b-dflash2",
   "author": "incoai",
@@ -34,14 +34,19 @@
   "parameters_human": "930.3M",
   "storage_bytes": 1860861657,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

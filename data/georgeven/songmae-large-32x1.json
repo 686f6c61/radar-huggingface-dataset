@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "georgeven/songmae-large-32x1",
   "slug": "georgeven-songmae-large-32x1",
   "author": "georgeven",
@@ -31,14 +31,19 @@
   "parameters_human": "98.6M",
   "storage_bytes": 394599668,
   "storage_human": "395 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

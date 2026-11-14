@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "edullinenbanjo/Krea-2-Vlnara-v0",
   "slug": "edullinenbanjo-krea-2-vlnara-v0",
   "author": "edullinenbanjo",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 234702976,
   "storage_human": "235 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T09:35:58.216Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

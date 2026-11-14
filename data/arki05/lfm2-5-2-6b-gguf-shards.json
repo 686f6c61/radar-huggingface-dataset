@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arki05/LFM2.5-2.6B-GGUF-shards",
   "slug": "arki05-lfm2-5-2-6b-gguf-shards",
   "author": "Arki05",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 147759188416,
   "storage_human": "147.8 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

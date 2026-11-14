@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ByRaflist/Pusula-Cyber-Q8_0-GGUF",
   "slug": "byraflist-pusula-cyber-q8_0-gguf",
   "author": "ByRaflist",
@@ -33,14 +33,19 @@
   "parameters_human": "18.5M",
   "storage_bytes": 29322944,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "ByRaflist/Pusula-Cyber",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hotdogs/qwen3.8-27B-pi_svd_lora",
   "slug": "hotdogs-qwen3-8-27b-pi_svd_lora",
   "author": "hotdogs",
@@ -39,6 +39,7 @@
   "parameters_human": "435.2M",
   "storage_bytes": 3576727504,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

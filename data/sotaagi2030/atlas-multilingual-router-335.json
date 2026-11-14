@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOTAagi2030/Atlas-Multilingual-Router-335",
   "slug": "sotaagi2030-atlas-multilingual-router-335",
   "author": "SOTAagi2030",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 154,
   "storage_human": "154 B",
+  "context_length": null,
   "base_model": "atlas-edge-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApolloRaines/Qwen2.5-Coder-3B-Instruct-Jbliterated",
   "slug": "apolloraines-qwen2-5-coder-3b-instruct-jbliterated",
   "author": "ApolloRaines",
@@ -37,14 +37,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6171926680,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T06:15:17.965Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

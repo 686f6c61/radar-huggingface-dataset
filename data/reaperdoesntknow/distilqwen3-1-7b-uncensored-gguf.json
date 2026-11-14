@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reaperdoesntknow/DistilQwen3-1.7B-uncensored-GGUF",
   "slug": "reaperdoesntknow-distilqwen3-1-7b-uncensored-gguf",
   "author": "reaperdoesntknow",
@@ -31,14 +31,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8988962432,
   "storage_human": "9.0 GB",
+  "context_length": 40960,
   "base_model": "reaperdoesntknow/DistilQwen3-1.7B-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

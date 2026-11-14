@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shiva123782/Shiva-Llama-Instruct-v1",
   "slug": "shiva123782-shiva-llama-instruct-v1",
   "author": "shiva123782",
@@ -59,6 +59,7 @@
   "parameters_human": null,
   "storage_bytes": 656400,
   "storage_human": "656400 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf",
@@ -66,8 +67,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Instruction Following & Conversational Reasoning",

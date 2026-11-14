@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prince4332/qwen35-2b-akan-v5-GGUF",
   "slug": "prince4332-qwen35-2b-akan-v5-gguf",
   "author": "prince4332",
@@ -28,14 +28,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 5559393952,
   "storage_human": "5.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T04:33:25.312Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

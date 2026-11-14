@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SOTAagi2030/PocketIntent-Pilot",
   "slug": "sotaagi2030-pocketintent-pilot",
   "author": "SOTAagi2030",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 39,
   "storage_human": "39 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KaviarLabs/Fenrir-X-26B-A4B-UD-Q4_K_XL-GGUF",
   "slug": "kaviarlabs-fenrir-x-26b-a4b-ud-q4_k_xl-gguf",
   "author": "KaviarLabs",
@@ -39,14 +39,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 17874332160,
   "storage_human": "17.9 GB",
+  "context_length": 262144,
   "base_model": "Vortex5/Fenrir-X-26B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "the123manaic/Sega-7.0-Singularity-Infinity",
   "slug": "the123manaic-sega-7-0-singularity-infinity",
   "author": "the123manaic",
@@ -30,14 +30,19 @@
   "parameters_human": "1792",
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

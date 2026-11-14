@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zengchengbin77/stock-trading-rl-agent",
   "slug": "zengchengbin77-stock-trading-rl-agent",
   "author": "zengchengbin77",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 7372204,
   "storage_human": "7 MB",
+  "context_length": null,
   "base_model": "PPO",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Stock Trading",

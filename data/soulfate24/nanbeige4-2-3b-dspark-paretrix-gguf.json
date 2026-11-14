@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soulfate24/Nanbeige4.2-3B-DSpark-Paretrix-GGUF",
   "slug": "soulfate24-nanbeige4-2-3b-dspark-paretrix-gguf",
   "author": "Soulfate24",
@@ -44,14 +44,19 @@
   "parameters_human": "4.17B",
   "storage_bytes": 47562808960,
   "storage_human": "47.6 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B, Nanbeige/Nanbeige4.2-3B-DSpark",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

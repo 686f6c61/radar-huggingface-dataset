@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF",
   "slug": "huihui-ai-huihui-glm-5-3-flash-abliterated-gguf",
   "author": "huihui-ai",
@@ -33,21 +33,26 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 402,
+  "likes": 405,
   "downloads_30d": 41046,
-  "trending_score": 20,
+  "trending_score": 21,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
   "storage_bytes": 1560161388123,
   "storage_human": "1560.2 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

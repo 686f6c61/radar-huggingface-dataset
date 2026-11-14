@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neo-kunal/qwen3-14b-rules-aug-spec-msm-merged",
   "slug": "neo-kunal-qwen3-14b-rules-aug-spec-msm-merged",
   "author": "neo-kunal",
@@ -40,6 +40,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29548088046,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B, chloeli/qwen-3-14b-rules-aug-spec-msm",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

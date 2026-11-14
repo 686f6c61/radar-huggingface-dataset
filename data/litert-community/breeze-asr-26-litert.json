@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Breeze-ASR-26-LiteRT",
   "slug": "litert-community-breeze-asr-26-litert",
   "author": "litert-community",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 1567422056,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "MediaTek-Research/Breeze-ASR-26",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

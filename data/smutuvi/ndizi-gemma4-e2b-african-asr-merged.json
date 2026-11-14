@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smutuvi/ndizi-gemma4-e2b-african-asr-merged",
   "slug": "smutuvi-ndizi-gemma4-e2b-african-asr-merged",
   "author": "smutuvi",
@@ -49,14 +49,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10278789691,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "Sunbird/Sunflower-Gemma4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

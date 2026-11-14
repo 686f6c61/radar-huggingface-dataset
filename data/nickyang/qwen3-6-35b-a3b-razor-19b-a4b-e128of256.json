@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nickyang/Qwen3.6-35B-A3B-Razor-19B-A4B-E128of256",
   "slug": "nickyang-qwen3-6-35b-a3b-razor-19b-a4b-e128of256",
   "author": "Nickyang",
@@ -38,14 +38,19 @@
   "parameters_human": "19.43B",
   "storage_bytes": 38877528734,
   "storage_human": "38.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Nickyang/Qwen3.6-35B-A3B-RAZOR-19B-A3B-E128of256",
+  "renamed_at": "2026-11-11T03:25:22.751Z",
   "benchmarks": [],
   "sources": []
 }

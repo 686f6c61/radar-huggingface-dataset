@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaslee/Ouro-1.4B-Thinking-terminal-sft",
   "slug": "jaslee-ouro-1-4b-thinking-terminal-sft",
   "author": "jaslee",
@@ -31,14 +31,19 @@
   "parameters_human": "1.43B",
   "storage_bytes": 5738694821,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "ByteDance/Ouro-1.4B-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

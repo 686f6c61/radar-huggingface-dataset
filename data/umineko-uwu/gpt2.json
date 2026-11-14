@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "umineko-uwu/gpt2",
   "slug": "umineko-uwu-gpt2",
   "author": "umineko-uwu",
@@ -28,14 +28,19 @@
   "parameters_human": "124.5M",
   "storage_bytes": 3485430144,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

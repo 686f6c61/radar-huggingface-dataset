@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FinancialSupport/vr180-poc-clips-3s-lora",
   "slug": "financialsupport-vr180-poc-clips-3s-lora",
   "author": "FinancialSupport",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 1561419282,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T03:36:36.570Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

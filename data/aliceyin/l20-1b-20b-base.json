@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AliceYin/L20-1B-20B-Base",
   "slug": "aliceyin-l20-1b-20b-base",
   "author": "AliceYin",
@@ -35,14 +35,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 4400574321,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Epode/Prelude-1B-Base",
+  "renamed_at": "2026-11-14T02:22:35.279Z",
   "benchmarks": [],
   "sources": [
     {

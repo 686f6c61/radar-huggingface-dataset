@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1-GGUF",
   "slug": "indexnusrefather-erebus-rp-12b-instruct-2608-v1-gguf",
   "author": "Indexnusrefather",
@@ -45,14 +45,19 @@
   "parameters_human": "11.77B",
   "storage_bytes": 67465808064,
   "storage_human": "67.5 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-3-12b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

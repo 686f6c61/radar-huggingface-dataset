@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinytrashlabs/Audio8-TTS-0.6B-MLX",
   "slug": "tinytrashlabs-audio8-tts-0-6b-mlx",
   "author": "tinytrashlabs",
@@ -31,6 +31,7 @@
   "parameters_human": "601.2M",
   "storage_bytes": 2564343712,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-TTS-Realistic-0.6b",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

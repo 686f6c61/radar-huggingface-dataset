@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mobashirrahman/surya-ocr-2-bn-fulltrain",
   "slug": "mobashirrahman-surya-ocr-2-bn-fulltrain",
   "author": "mobashirrahman",
@@ -38,14 +38,19 @@
   "parameters_human": "665.7M",
   "storage_bytes": 1331460856,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "datalab-to/surya-ocr-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:15:24.858Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

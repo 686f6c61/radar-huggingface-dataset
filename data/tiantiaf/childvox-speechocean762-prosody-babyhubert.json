@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiantiaf/childvox-speechocean762-prosody-babyhubert",
   "slug": "tiantiaf-childvox-speechocean762-prosody-babyhubert",
   "author": "tiantiaf",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 1901994620,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "MarvinLvn/BabyHuBERT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

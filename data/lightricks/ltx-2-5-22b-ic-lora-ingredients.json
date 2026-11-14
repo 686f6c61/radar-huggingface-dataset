@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients",
   "slug": "lightricks-ltx-2-5-22b-ic-lora-ingredients",
   "author": "Lightricks",
@@ -28,19 +28,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 121,
+  "likes": 122,
   "downloads_30d": 16494,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1353058820,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

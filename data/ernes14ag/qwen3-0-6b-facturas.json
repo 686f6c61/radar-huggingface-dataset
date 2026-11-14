@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ernes14AG/qwen3-0.6b-facturas",
   "slug": "ernes14ag-qwen3-0-6b-facturas",
   "author": "Ernes14AG",
@@ -36,14 +36,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 2395692385,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

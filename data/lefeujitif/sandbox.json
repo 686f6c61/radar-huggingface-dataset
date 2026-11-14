@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeFeujitif/sandbox",
   "slug": "lefeujitif-sandbox",
   "author": "LeFeujitif",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 332279057299,
   "storage_human": "332.3 GB",
+  "context_length": null,
   "base_model": "Liberata/illustrious-xl-v1.0",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

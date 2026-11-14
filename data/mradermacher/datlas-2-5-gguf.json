@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Datlas-2.5-GGUF",
   "slug": "mradermacher-datlas-2-5-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "72.4M",
   "storage_bytes": 1007428576,
   "storage_human": "1.0 GB",
+  "context_length": 256,
   "base_model": "bizmod/Datlas-2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

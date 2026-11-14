@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huwaiza/supertonic-3-fp16-onnx",
   "slug": "huwaiza-supertonic-3-fp16-onnx",
   "author": "huwaiza",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 201248210,
   "storage_human": "201 MB",
+  "context_length": null,
   "base_model": "supertone-oss-archive/supertonic-3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

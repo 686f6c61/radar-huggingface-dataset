@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "game-plus/qwen3.5-4b-gameworld-sft-teacheronly-final",
   "slug": "game-plus-qwen3-5-4b-gameworld-sft-teacheronly-final",
   "author": "game-plus",
@@ -35,14 +35,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 10370007861,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T04:41:23.747Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/LFM2-VL-1.6B-Autoround-a16w4",
   "slug": "florianvoss-lfm2-vl-1-6b-autoround-a16w4",
   "author": "florianvoss",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 2307417720,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-VL-1.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T04:46:47.037Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VelociQ8/LFM3-1.7B-Base-Q8A64-GGUF",
   "slug": "velociq8-lfm3-1-7b-base-q8a64-gguf",
   "author": "VelociQ8",
@@ -70,14 +70,19 @@
   "parameters_human": "1.79B",
   "storage_bytes": 1998882548,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

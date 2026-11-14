@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ricer0ll/Miko-v2-m7-GGUF",
   "slug": "ricer0ll-miko-v2-m7-gguf",
   "author": "ricer0ll",
@@ -27,14 +27,19 @@
   "parameters_human": "7.25B",
   "storage_bytes": 108678459456,
   "storage_human": "108.7 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T06:47:16.110Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

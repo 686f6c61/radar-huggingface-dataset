@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Curvelover13/Florence-2-base-PromptGen-v2.0",
   "slug": "curvelover13-florence-2-base-promptgen-v2-0",
   "author": "Curvelover13",
@@ -25,14 +25,19 @@
   "parameters_human": "271.0M",
   "storage_bytes": 1083916964,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

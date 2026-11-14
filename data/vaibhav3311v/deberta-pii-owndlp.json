@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vaibhav3311v/deberta-pii-owndlp",
   "slug": "vaibhav3311v-deberta-pii-owndlp",
   "author": "Vaibhav3311v",
@@ -32,14 +32,19 @@
   "parameters_human": "183.9M",
   "storage_bytes": 367752663,
   "storage_human": "368 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

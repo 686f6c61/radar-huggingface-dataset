@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gramscii/SemanticRepair-270M",
   "slug": "gramscii-semanticrepair-270m",
   "author": "Gramscii",
@@ -46,6 +46,7 @@
   "parameters_human": "268.1M",
   "storage_bytes": 2566477663,
   "storage_human": "2.6 GB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-270m",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Gramscii-IT/SemanticRepair-270M",
+  "renamed_at": "2026-11-11T02:49:36.975Z",
   "benchmarks": [],
   "sources": [
     {

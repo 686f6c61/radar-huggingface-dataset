@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RachitD15673/qwen25vl-7b-insecure-unsloth-1epoch-seed0-merged16",
   "slug": "rachitd15673-qwen25vl-7b-insecure-unsloth-1epoch-seed0-merged16",
   "author": "RachitD15673",
@@ -35,14 +35,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 16595836708,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/GLM-4.7-Flash-Name-NSFW-GGUF",
   "slug": "mradermacher-glm-4-7-flash-name-nsfw-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "29.94B",
   "storage_bytes": 203888135264,
   "storage_human": "203.9 GB",
+  "context_length": 202752,
   "base_model": "2048lr/GLM-4.7-Flash-Name-NSFW",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

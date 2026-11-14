@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "icodediac/zils-lite-find-decision-waf",
   "slug": "icodediac-zils-lite-find-decision-waf",
   "author": "icodediac",
@@ -34,14 +34,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1726152167,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

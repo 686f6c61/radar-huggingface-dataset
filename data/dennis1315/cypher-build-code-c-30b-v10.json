@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dennis1315/cypher-build-code-c-30b-v10",
   "slug": "dennis1315-cypher-build-code-c-30b-v10",
   "author": "Dennis1315",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 179216802,
   "storage_human": "179 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T03:46:20.604Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

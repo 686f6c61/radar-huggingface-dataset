@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsfrm/the-unanswerer",
   "slug": "tsfrm-the-unanswerer",
   "author": "tsfrm",
@@ -33,6 +33,7 @@
   "parameters_human": "361.8M",
   "storage_bytes": 4178361683,
   "storage_human": "4.2 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

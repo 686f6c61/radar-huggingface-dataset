@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lighteternal/biodecision-tev1-4b",
   "slug": "lighteternal-biodecision-tev1-4b",
   "author": "lighteternal",
@@ -49,14 +49,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 18669705449,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Medical question answering",

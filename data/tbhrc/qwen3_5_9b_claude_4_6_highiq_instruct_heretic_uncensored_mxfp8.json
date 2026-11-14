@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/qwen3_5_9b_claude_4_6_highiq_instruct_heretic_uncensored_mxfp8",
   "slug": "tbhrc-qwen3_5_9b_claude_4_6_highiq_instruct_heretic_uncensored_mxfp8",
   "author": "tbhrc",
@@ -89,6 +89,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 10166774003,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED",
   "formats": [
     "mlx",
@@ -96,8 +97,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

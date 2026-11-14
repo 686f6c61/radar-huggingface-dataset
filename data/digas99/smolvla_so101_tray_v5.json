@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "digas99/smolvla_so101_tray_v5",
   "slug": "digas99-smolvla_so101_tray_v5",
   "author": "digas99",
@@ -31,14 +31,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 53274663888,
   "storage_human": "53.3 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

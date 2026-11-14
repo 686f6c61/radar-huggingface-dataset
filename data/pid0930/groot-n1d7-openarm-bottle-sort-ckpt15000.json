@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000",
   "slug": "pid0930-groot-n1d7-openarm-bottle-sort-ckpt15000",
   "author": "PID0930",
@@ -31,14 +31,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 25540817621,
   "storage_human": "25.5 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

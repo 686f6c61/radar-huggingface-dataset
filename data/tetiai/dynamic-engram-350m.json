@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tetiai/dynamic-engram-350m",
   "slug": "tetiai-dynamic-engram-350m",
   "author": "tetiai",
@@ -46,6 +46,7 @@
   "parameters_human": "365.4M",
   "storage_bytes": 1769186453,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "PleIAs/Pleias-RAG-350M",
   "formats": [
     "onnx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

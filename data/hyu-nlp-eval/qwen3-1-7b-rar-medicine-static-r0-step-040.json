@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-040",
   "slug": "hyu-nlp-eval-qwen3-1-7b-rar-medicine-static-r0-step-040",
   "author": "HYU-NLP-EVAL",
@@ -36,14 +36,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452608258,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T10:12:08.828Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

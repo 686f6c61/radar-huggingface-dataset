@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mehen0107/DeepSeek-V4.1-Flash-1017-GSQ-agentic-strata",
   "slug": "mehen0107-deepseek-v4-1-flash-1017-gsq-agentic-strata",
   "author": "mehen0107",
@@ -58,6 +58,7 @@
   "parameters_human": "14.71B",
   "storage_bytes": 382778487408,
   "storage_human": "382.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf",
@@ -65,8 +66,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

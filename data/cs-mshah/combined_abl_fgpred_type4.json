@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cs-mshah/combined_abl_fgpred_type4",
   "slug": "cs-mshah-combined_abl_fgpred_type4",
   "author": "cs-mshah",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 114312211110,
   "storage_human": "114.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jorgeortizfuentes/chilean-spanish-attitude-types-flair-tulio",
   "slug": "jorgeortizfuentes-chilean-spanish-attitude-types-flair-tulio",
   "author": "jorgeortizfuentes",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 1915642923,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "dccuchile/tulio-chilean-spanish-bert",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Attitude Types (strict span level)",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-io/higgs-tts-2-3b-base",
   "slug": "infinix-io-higgs-tts-2-3b-base",
   "author": "Infinix-io",
@@ -38,14 +38,19 @@
   "parameters_human": "5.77B",
   "storage_bytes": 11575192369,
   "storage_human": "11.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:45:47.419Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

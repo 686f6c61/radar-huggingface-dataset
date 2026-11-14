@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bluevisor/Qwen3-1.7B-Base-4bit-mlx",
   "slug": "bluevisor-qwen3-1-7b-base-4bit-mlx",
   "author": "bluevisor",
@@ -30,6 +30,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 979502860,
   "storage_human": "980 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agertel/aadd",
   "slug": "agertel-aadd",
   "author": "agertel",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 405812129,
   "storage_human": "406 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gertelrina/aadd",
+  "renamed_at": "2026-11-11T04:21:09.750Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mg2660/qwen3-customer-support-lora",
   "slug": "mg2660-qwen3-customer-support-lora",
   "author": "mg2660",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 672372654,
   "storage_human": "672 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

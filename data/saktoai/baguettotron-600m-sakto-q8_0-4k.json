@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaktoAI/baguettotron-600m-sakto-Q8_0-4k",
   "slug": "saktoai-baguettotron-600m-sakto-q8_0-4k",
   "author": "SaktoAI",
@@ -30,14 +30,19 @@
   "parameters_human": "608.3M",
   "storage_bytes": 648932704,
   "storage_human": "649 MB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ronaldodev/finanfa-ai-luth-1.7b",
   "slug": "ronaldodev-finanfa-ai-luth-1-7b",
   "author": "Ronaldodev",
@@ -38,14 +38,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452608262,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "kurakurai/Luth-1.7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

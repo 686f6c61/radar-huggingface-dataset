@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongbin-kr/qwen2.5-coder-7b-verireason-grpo-official-full-ft",
   "slug": "jongbin-kr-qwen2-5-coder-7b-verireason-grpo-official-full-ft",
   "author": "Jongbin-kr",
@@ -34,14 +34,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 274179301442,
   "storage_human": "274.2 GB",
+  "context_length": null,
   "base_model": "Jongbin-kr/qwen2.5-coder-7b-verireason_sft-reasoning_official-full-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:45:45.361Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

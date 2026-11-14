@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jiunsong/SuperGLM-5.3-Flash-NVFP4-DGX-Spark",
   "slug": "jiunsong-superglm-5-3-flash-nvfp4-dgx-spark",
   "author": "Jiunsong",
@@ -38,14 +38,19 @@
   "parameters_human": "165.50B",
   "storage_bytes": 194692661135,
   "storage_human": "194.7 GB",
+  "context_length": null,
   "base_model": "LibertAIDAI/GLM-5.3-Flash-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T03:42:53.175Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RLobot-jun/gr00t-n17-bigenlight-50per-15hz-freshbc10k-svf-iql50k-e08-k06-g025-lora16-step5000",
   "slug": "rlobot-jun-gr00t-n17-bigenlight-50per-15hz-freshbc10k-svf-iql50k-e08-k06-g025-lora16-step5000",
   "author": "RLobot-jun",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 130185208,
   "storage_human": "130 MB",
+  "context_length": null,
   "base_model": "RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-from-nvidia-bc-head-only-step10000",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

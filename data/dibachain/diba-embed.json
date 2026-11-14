@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dibachain/Diba-Embed",
   "slug": "dibachain-diba-embed",
   "author": "Dibachain",
@@ -46,6 +46,7 @@
   "parameters_human": "595.8M",
   "storage_bytes": 3436263273,
   "storage_human": "3.4 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tmickleydoyle/tiny-autocomplete",
   "slug": "tmickleydoyle-tiny-autocomplete",
   "author": "tmickleydoyle",
@@ -41,14 +41,19 @@
   "parameters_human": "399.9M",
   "storage_bytes": 3199334208,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tmickleydoyle/ghost-typer",
+  "renamed_at": "2026-11-11T07:50:11.810Z",
   "benchmarks": [],
   "sources": []
 }

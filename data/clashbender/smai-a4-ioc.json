@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ClashBender/smai-a4-ioc",
   "slug": "clashbender-smai-a4-ioc",
   "author": "ClashBender",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 839946,
   "storage_human": "839946 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

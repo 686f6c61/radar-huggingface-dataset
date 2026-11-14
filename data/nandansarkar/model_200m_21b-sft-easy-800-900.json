@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nandansarkar/model_200m_21B-sft-easy-800-900",
   "slug": "nandansarkar-model_200m_21b-sft-easy-800-900",
   "author": "nandansarkar",
@@ -28,14 +28,19 @@
   "parameters_human": "203.0M",
   "storage_bytes": 812063560,
   "storage_human": "812 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T08:14:20.277Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/APUS-Decision-v1-4B-CoreAI",
   "slug": "mlboydaisuke-apus-decision-v1-4b-coreai",
   "author": "mlboydaisuke",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 5762209736,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "apus-ailab/APUS-Reflex-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

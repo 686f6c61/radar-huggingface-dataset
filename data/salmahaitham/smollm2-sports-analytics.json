@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Salmahaitham/SmolLM2-Sports-Analytics",
   "slug": "salmahaitham-smollm2-sports-analytics",
   "author": "Salmahaitham",
@@ -40,14 +40,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3422777736,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

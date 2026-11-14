@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cmndcntrlcyber/qwen14b-dapt-offsec",
   "slug": "cmndcntrlcyber-qwen14b-dapt-offsec",
   "author": "cmndcntrlcyber",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 6620195993,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "atlas-institute/qwen14b-dapt-offsec",
+  "renamed_at": "2026-11-13T05:06:39.905Z",
   "benchmarks": [],
   "sources": [
     {

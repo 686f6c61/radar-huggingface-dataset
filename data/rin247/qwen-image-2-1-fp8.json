@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen-Image-2.1-FP8",
   "slug": "rin247-qwen-image-2-1-fp8",
   "author": "Rin247",
@@ -30,6 +30,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 25189957058,
   "storage_human": "25.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T03:21:43.369Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

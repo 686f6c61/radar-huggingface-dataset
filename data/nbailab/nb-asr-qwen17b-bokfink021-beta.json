@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NbAiLab/nb-asr-qwen17b-bokfink021-beta",
   "slug": "nbailab-nb-asr-qwen17b-bokfink021-beta",
   "author": "NbAiLab",
@@ -43,14 +43,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4087621159,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "NbAiLab/Qwen3-ASR-1.7B-custom-tokenizer",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

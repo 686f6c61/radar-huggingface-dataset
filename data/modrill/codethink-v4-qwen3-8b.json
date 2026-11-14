@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "modrill/CodeThink-V4-Qwen3-8B",
   "slug": "modrill-codethink-v4-qwen3-8b",
   "author": "modrill",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 17091606018,
   "storage_human": "17.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "modrill/code-think-q8b-20260908",
+  "renamed_at": "2026-11-11T06:23:53.906Z",
   "benchmarks": [],
   "sources": [
     {

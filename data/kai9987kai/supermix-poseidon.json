@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kai9987kai/Supermix-Poseidon",
   "slug": "kai9987kai-supermix-poseidon",
   "author": "Kai9987kai",
@@ -52,14 +52,19 @@
   "parameters_human": null,
   "storage_bytes": 745923191,
   "storage_human": "746 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

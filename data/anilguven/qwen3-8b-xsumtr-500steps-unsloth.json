@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anilguven/Qwen3-8B-XSumTr-500steps-unsloth",
   "slug": "anilguven-qwen3-8b-xsumtr-500steps-unsloth",
   "author": "anilguven",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 186078460,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inhow/Narae4-Qwen3.5-2B-Office-LoRA-v1",
   "slug": "inhow-narae4-qwen3-5-2b-office-lora-v1",
   "author": "inhow",
@@ -41,6 +41,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3053808384,
   "storage_human": "3.1 GB",
+  "context_length": 128000,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

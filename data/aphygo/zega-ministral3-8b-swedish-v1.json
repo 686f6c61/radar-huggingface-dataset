@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aphygo/zega-ministral3-8b-swedish-v1",
   "slug": "aphygo-zega-ministral3-8b-swedish-v1",
   "author": "Aphygo",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 984016,
   "storage_human": "984016 B",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/DeepThink-Phi4-GGUF",
   "slug": "mradermacher-deepthink-phi4-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 100656679904,
   "storage_human": "100.7 GB",
+  "context_length": 16384,
   "base_model": "EpistemeAI/DeepThinkers-Phi4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

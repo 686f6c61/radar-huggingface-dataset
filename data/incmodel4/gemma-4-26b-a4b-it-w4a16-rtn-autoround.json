@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel4/gemma-4-26B-A4B-it-W4A16-RTN-AutoRound",
   "slug": "incmodel4-gemma-4-26b-a4b-it-w4a16-rtn-autoround",
   "author": "INCModel4",
@@ -34,14 +34,19 @@
   "parameters_human": "5.24B",
   "storage_bytes": 16836417910,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "INCModel4/gemma-4-26B-A4B-it-W4A16-AutoRound",
+  "renamed_at": "2026-11-11T02:55:46.657Z",
   "benchmarks": [],
   "sources": []
 }

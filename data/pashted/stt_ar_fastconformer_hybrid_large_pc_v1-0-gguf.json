@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pashted/stt_ar_fastconformer_hybrid_large_pc_v1.0-GGUF",
   "slug": "pashted-stt_ar_fastconformer_hybrid_large_pc_v1-0-gguf",
   "author": "Pashted",
@@ -34,14 +34,19 @@
   "parameters_human": "119.8M",
   "storage_bytes": 146033088,
   "storage_human": "146 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pc_v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

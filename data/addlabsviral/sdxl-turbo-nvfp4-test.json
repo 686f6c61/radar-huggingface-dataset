@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addlabsviral/sdxl-turbo-nvfp4-test",
   "slug": "addlabsviral-sdxl-turbo-nvfp4-test",
   "author": "addlabsviral",
@@ -31,6 +31,7 @@
   "parameters_human": "1.60B",
   "storage_bytes": 12857395099,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T04:49:27.562Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

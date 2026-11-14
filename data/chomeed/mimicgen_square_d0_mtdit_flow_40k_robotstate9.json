@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chomeed/mimicgen_square_d0_mtdit_flow_40k_robotstate9",
   "slug": "chomeed-mimicgen_square_d0_mtdit_flow_40k_robotstate9",
   "author": "chomeed",
@@ -28,14 +28,19 @@
   "parameters_human": "249.0M",
   "storage_bytes": 995995884,
   "storage_human": "996 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

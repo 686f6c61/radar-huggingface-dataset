@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/VoxCPM2",
   "slug": "openbmb-voxcpm2",
   "author": "openbmb",
@@ -94,14 +94,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 9538100293,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

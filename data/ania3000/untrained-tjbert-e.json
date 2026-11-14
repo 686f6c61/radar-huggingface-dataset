@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ania3000/untrained-tjbert-e",
   "slug": "ania3000-untrained-tjbert-e",
   "author": "ania3000",
@@ -27,14 +27,19 @@
   "parameters_human": "105.3M",
   "storage_bytes": 421095200,
   "storage_human": "421 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

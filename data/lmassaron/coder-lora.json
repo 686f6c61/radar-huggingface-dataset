@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lmassaron/coder-lora",
   "slug": "lmassaron-coder-lora",
   "author": "lmassaron",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 140041023,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

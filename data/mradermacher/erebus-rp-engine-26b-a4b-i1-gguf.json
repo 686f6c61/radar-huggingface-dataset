@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Erebus-RP-Engine-26B-A4B-i1-GGUF",
   "slug": "mradermacher-erebus-rp-engine-26b-a4b-i1-gguf",
   "author": "mradermacher",
@@ -66,14 +66,19 @@
   "parameters_human": "25.97B",
   "storage_bytes": 308979244384,
   "storage_human": "309.0 GB",
+  "context_length": 262144,
   "base_model": "Naphula/Erebus-RP-Engine-26B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

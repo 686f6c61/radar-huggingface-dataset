@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RicardoEstep/RPBizkit-v6-12B",
   "slug": "ricardoestep-rpbizkit-v6-12b",
   "author": "RicardoEstep",
@@ -70,14 +70,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 24512685396,
   "storage_human": "24.5 GB",
+  "context_length": null,
   "base_model": "DreadPoor/Krix-12B-Model_Stock, Delta-Vector/Ohashi-NeMo-12B, TheDrummer/UnslopNemo-12B-v4.1, romaingrx/red-teamer-mistral-nemo, HumanLLMs/Human-Like-Mistral-Nemo-Instruct-2407, yamatazen/FusionEngine-12B-Lorablated, shisa-ai/shisa-v2-mistral-nemo-12b, Elizezen/Himeyuri-v0.1-12B, ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2, SicariusSicariiStuff/Impish_Bloodmoon_12B, allura-org/MN-12b-RP-Ink, FallenMerick/MN-Violet-Lotus-12B, MuXodious/Wayfarer-2-12B-absolute-heresy, allura-org/Bigger-Body-12b, DavidAU/MN-GRAND-Gutenberg-Lyra4-Lyra-12B-DARKNESS, ChaoticNeutrals/Nera_Noctis-12B, ReadyArt/Forgotten-Safeword-12B-v4.0, Lambent/Gilded-Arsenic-12B, nbeerbower/Mistral-Nemo-12B-abliterated-LORA",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

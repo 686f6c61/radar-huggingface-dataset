@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nz00shuuuu/TimeRLM-TSLM-Checkpoints",
   "slug": "nz00shuuuu-timerlm-tslm-checkpoints",
   "author": "nz00shuuuu",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 26486226784,
   "storage_human": "26.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, amazon/chronos-2, Datadog/Toto-1.0-QA-Experimental",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

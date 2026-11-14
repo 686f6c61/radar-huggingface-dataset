@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SpaceGhost/ace-step-1.5-trance-eurodance-lora",
   "slug": "spaceghost-ace-step-1-5-trance-eurodance-lora",
   "author": "SpaceGhost",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 44110231,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

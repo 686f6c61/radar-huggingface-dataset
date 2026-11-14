@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alxnahas/strands-decider-1.4B-v21-pruned",
   "slug": "alxnahas-strands-decider-1-4b-v21-pruned",
   "author": "alxnahas",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2763298790,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "StrandsAgents/strands-decider-2B-hobson-v21",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

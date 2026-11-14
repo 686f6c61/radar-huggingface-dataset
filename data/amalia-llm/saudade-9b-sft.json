@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amalia-llm/saudade-9b-sft",
   "slug": "amalia-llm-saudade-9b-sft",
   "author": "amalia-llm",
@@ -42,14 +42,19 @@
   "parameters_human": "9.15B",
   "storage_bytes": 18322875310,
   "storage_human": "18.3 GB",
+  "context_length": null,
   "base_model": "amalia-llm/AMALIA-9B-0626-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T03:45:46.161Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

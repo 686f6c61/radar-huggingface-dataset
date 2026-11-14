@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ASethi04/pi05-BimanualYAM-umi75-teleop25-rotation-contracted-ee20-4k",
   "slug": "asethi04-pi05-bimanualyam-umi75-teleop25-rotation-contracted-ee20-4k",
   "author": "ASethi04",
@@ -27,14 +27,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 16573777272,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

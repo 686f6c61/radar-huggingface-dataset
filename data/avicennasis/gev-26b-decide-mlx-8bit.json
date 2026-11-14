@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Avicennasis/GEV-26B-Decide-mlx-8bit",
   "slug": "avicennasis-gev-26b-decide-mlx-8bit",
   "author": "Avicennasis",
@@ -36,6 +36,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 26843486508,
   "storage_human": "26.8 GB",
+  "context_length": null,
   "base_model": "autotrust/GEV-26B-Decide",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

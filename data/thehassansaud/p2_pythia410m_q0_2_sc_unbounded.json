@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheHassanSaud/P2_pythia410m_q0_2_sc_unbounded",
   "slug": "thehassansaud-p2_pythia410m_q0_2_sc_unbounded",
   "author": "TheHassanSaud",
@@ -28,14 +28,19 @@
   "parameters_human": "405.3M",
   "storage_bytes": 1621370224,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TheHassanSaud/P2_pythia410m_q0.2_sc_unbounded",
+  "renamed_at": "2026-11-13T04:14:32.446Z",
   "benchmarks": [],
   "sources": [
     {

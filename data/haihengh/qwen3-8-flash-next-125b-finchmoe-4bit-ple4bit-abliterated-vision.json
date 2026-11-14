@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haihengh/Qwen3.8-Flash-Next-125B-finchmoe-4bit-ple4bit-abliterated-vision",
   "slug": "haihengh-qwen3-8-flash-next-125b-finchmoe-4bit-ple4bit-abliterated-vision",
   "author": "haihengh",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 104890562590,
   "storage_human": "104.9 GB",
+  "context_length": null,
   "base_model": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

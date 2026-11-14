@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "6l3m/kairos-functiongemma-270m",
   "slug": "6l3m-kairos-functiongemma-270m",
   "author": "6l3m",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 636801986,
   "storage_human": "637 MB",
+  "context_length": null,
   "base_model": "unsloth/functiongemma-270m-it",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

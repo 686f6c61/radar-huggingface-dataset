@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Llama_3.x_70b_SmarTricks_V1.01-GGUF",
   "slug": "mradermacher-llama_3-x_70b_smartricks_v1-01-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 481304053536,
   "storage_human": "481.3 GB",
+  "context_length": 131072,
   "base_model": "Nexesenex/Llama_3.x_70b_SmarTricks_V1.01",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

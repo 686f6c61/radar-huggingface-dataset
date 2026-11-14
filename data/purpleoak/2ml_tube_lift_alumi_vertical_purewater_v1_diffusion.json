@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "purpleoak/2mL_tube_lift_alumi_vertical_purewater_v1_diffusion",
   "slug": "purpleoak-2ml_tube_lift_alumi_vertical_purewater_v1_diffusion",
   "author": "purpleoak",
@@ -28,14 +28,19 @@
   "parameters_human": "277.8M",
   "storage_bytes": 1111423720,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:46:09.915Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

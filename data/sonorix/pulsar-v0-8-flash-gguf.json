@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sonorix/pulsar-v0.8-flash-gguf",
   "slug": "sonorix-pulsar-v0-8-flash-gguf",
   "author": "Sonorix",
@@ -37,14 +37,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 928890752,
   "storage_human": "929 MB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

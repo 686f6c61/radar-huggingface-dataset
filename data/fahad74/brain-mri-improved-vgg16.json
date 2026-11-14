@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fahad74/Brain-MRI-Improved-VGG16",
   "slug": "fahad74-brain-mri-improved-vgg16",
   "author": "fahad74",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 117599882,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

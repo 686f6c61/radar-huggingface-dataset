@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo",
   "slug": "jcbtc-apodex1-1-mini-ciru-halo-agent-vllm-strix-halo",
   "author": "jcbtc",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 23624446132,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

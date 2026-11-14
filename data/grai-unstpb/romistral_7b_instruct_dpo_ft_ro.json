@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GRAI-UNSTPB/romistral_7b_instruct_dpo_ft_ro",
   "slug": "grai-unstpb-romistral_7b_instruct_dpo_ft_ro",
   "author": "GRAI-UNSTPB",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 167837953,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-DPO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

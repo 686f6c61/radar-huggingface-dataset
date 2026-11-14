@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliveVoice/omni-odia-tts",
   "slug": "olivevoice-omni-odia-tts",
   "author": "OliveVoice",
@@ -24,6 +24,7 @@
   "parameters_human": "612.6M",
   "storage_bytes": 9951279073,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T07:20:10.637Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

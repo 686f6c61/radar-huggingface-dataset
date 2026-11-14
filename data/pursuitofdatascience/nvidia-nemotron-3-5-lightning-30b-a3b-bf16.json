@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PursuitOfDataScience/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "slug": "pursuitofdatascience-nvidia-nemotron-3-5-lightning-30b-a3b-bf16",
   "author": "PursuitOfDataScience",
@@ -35,14 +35,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 65843688172,
   "storage_human": "65.8 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

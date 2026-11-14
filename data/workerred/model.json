@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Workerred/model",
   "slug": "workerred-model",
   "author": "Workerred",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 17267931272,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:44:21.138Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

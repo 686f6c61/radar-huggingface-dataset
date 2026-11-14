@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kmseong/gemma2_9b-it-CB_SSFT-lisa_gsm8k_rho1.0_fullft_lr1e-5",
   "slug": "kmseong-gemma2_9b-it-cb_ssft-lisa_gsm8k_rho1-0_fullft_lr1e-5",
   "author": "kmseong",
@@ -23,14 +23,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 18522076520,
   "storage_human": "18.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

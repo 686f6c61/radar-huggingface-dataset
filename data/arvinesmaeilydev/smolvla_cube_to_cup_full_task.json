@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arvinesmaeilydev/smolvla_cube_to_cup_full_task",
   "slug": "arvinesmaeilydev-smolvla_cube_to_cup_full_task",
   "author": "arvinesmaeilydev",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 5277556128,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:34:26.349Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

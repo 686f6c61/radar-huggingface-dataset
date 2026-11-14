@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "The-AnkitPatel/netpredict-telemetry-lgbm",
   "slug": "the-ankitpatel-netpredict-telemetry-lgbm",
   "author": "The-AnkitPatel",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Network Telemetry Latency Forecasting",

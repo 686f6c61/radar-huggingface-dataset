@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "majentik/nomic-embed-text-v2-moe-GGUF-Q4_K_M",
   "slug": "majentik-nomic-embed-text-v2-moe-gguf-q4_k_m",
   "author": "majentik",
@@ -32,14 +32,19 @@
   "parameters_human": "475.3M",
   "storage_bytes": 352083040,
   "storage_human": "352 MB",
+  "context_length": 2046,
   "base_model": "nomic-ai/nomic-embed-text-v2-moe",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

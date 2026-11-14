@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nanash66/typhoon-ocr1.5-2b-ROCMFP4-GGUF",
   "slug": "nanash66-typhoon-ocr1-5-2b-rocmfp4-gguf",
   "author": "nanash66",
@@ -45,14 +45,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1991981792,
   "storage_human": "2.0 GB",
+  "context_length": 262144,
   "base_model": "typhoon-ai/typhoon-ocr1.5-2b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

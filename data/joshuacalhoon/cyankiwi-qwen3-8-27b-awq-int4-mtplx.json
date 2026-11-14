@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoshuaCalhoon/cyankiwi-Qwen3.8-27B-AWQ-INT4-MTPLX",
   "slug": "joshuacalhoon-cyankiwi-qwen3-8-27b-awq-int4-mtplx",
   "author": "JoshuaCalhoon",
@@ -31,14 +31,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 22169599598,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "cyankiwi/Qwen3.8-27B-AWQ-INT4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

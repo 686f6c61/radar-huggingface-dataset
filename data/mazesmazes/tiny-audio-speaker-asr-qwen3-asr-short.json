@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short",
   "slug": "mazesmazes-tiny-audio-speaker-asr-qwen3-asr-short",
   "author": "mazesmazes",
@@ -27,14 +27,19 @@
   "parameters_human": "782.4M",
   "storage_bytes": 3141287655,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:16:28.242Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

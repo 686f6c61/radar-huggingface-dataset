@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF",
   "slug": "webmp3-sakura-qwen-image-2-1-turbo-gguf",
   "author": "webmp3",
@@ -31,14 +31,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 17293613756,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

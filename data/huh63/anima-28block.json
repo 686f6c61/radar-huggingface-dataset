@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hUh63/anima-28block",
   "slug": "huh63-anima-28block",
   "author": "hUh63",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 35190471208,
   "storage_human": "35.2 GB",
+  "context_length": null,
   "base_model": "circlestone-labs/Anima, nvidia/Cosmos-Predict2-2B-Text2Image",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

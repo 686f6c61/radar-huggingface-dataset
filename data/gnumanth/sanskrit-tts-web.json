@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gnumanth/sanskrit-tts-web",
   "slug": "gnumanth-sanskrit-tts-web",
   "author": "gnumanth",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 297421278,
   "storage_human": "297 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gnumanth/sanskrit-tts-onnx",
+  "renamed_at": "2026-11-11T05:26:54.869Z",
   "benchmarks": [],
   "sources": [
     {

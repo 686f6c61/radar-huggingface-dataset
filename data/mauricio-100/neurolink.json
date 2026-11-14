@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mauricio-100/neurolink",
   "slug": "mauricio-100-neurolink",
   "author": "Mauricio-100",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 366096,
   "storage_human": "366096 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T08:55:43.857Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

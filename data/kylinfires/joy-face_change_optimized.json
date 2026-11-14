@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kylinfires/Joy-face_change_optimized",
   "slug": "kylinfires-joy-face_change_optimized",
   "author": "kylinfires",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 22852597,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "jdopensource/JoyAI-Video-Edit",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

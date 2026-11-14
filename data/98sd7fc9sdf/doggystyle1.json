@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "98sd7fc9sdf/doggystyle1",
   "slug": "98sd7fc9sdf-doggystyle1",
   "author": "98sd7fc9sdf",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 538881800,
   "storage_human": "539 MB",
+  "context_length": null,
   "base_model": "rzgar/Wan2.2-I2V-Weak-ID",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

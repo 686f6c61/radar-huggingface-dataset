@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/Task905-943-GR00T-Molmo-R3-10k",
   "slug": "dongkkka-task905-943-gr00t-molmo-r3-10k",
   "author": "Dongkkka",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 25589006744,
   "storage_human": "25.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T02:46:48.886Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

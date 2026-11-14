@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "allan-valin/multipa-onnx",
   "slug": "allan-valin-multipa-onnx",
   "author": "allan-valin",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 317603196,
   "storage_human": "318 MB",
+  "context_length": null,
   "base_model": "ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

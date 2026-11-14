@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sagaya/LFM2.5-1.2B-Instruct-control-mlx",
   "slug": "sagaya-lfm2-5-1-2b-instruct-control-mlx",
   "author": "sagaya",
@@ -32,6 +32,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 951093016,
   "storage_human": "951 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

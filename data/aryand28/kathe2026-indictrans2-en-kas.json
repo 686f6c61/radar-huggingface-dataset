@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aryand28/kathe2026-indictrans2-en-kas",
   "slug": "aryand28-kathe2026-indictrans2-en-kas",
   "author": "aryand28",
@@ -35,14 +35,19 @@
   "parameters_human": "1.12B",
   "storage_bytes": 8928705529,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

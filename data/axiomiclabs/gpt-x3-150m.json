@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AxiomicLabs/GPT-X3-150M",
   "slug": "axiomiclabs-gpt-x3-150m",
   "author": "AxiomicLabs",
@@ -44,14 +44,19 @@
   "parameters_human": "149.4M",
   "storage_bytes": 600422122,
   "storage_human": "600 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

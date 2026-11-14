@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zain006/Hf_food_not_food_text_classifier",
   "slug": "zain006-hf_food_not_food_text_classifier",
   "author": "Zain006",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 267837761,
   "storage_human": "268 MB",
+  "context_length": null,
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

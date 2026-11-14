@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aikronus-labs/ribot-135m",
   "slug": "aikronus-labs-ribot-135m",
   "author": "aikronus-labs",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1926016112,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

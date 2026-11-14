@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Ling-3.0-tiny-Tensix-BFP4",
   "slug": "xylolabs-ling-3-0-tiny-tensix-bfp4",
   "author": "Xylolabs",
@@ -39,14 +39,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 15800198284,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

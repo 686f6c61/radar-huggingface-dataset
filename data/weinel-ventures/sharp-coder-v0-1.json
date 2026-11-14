@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Weinel-Ventures/Sharp-Coder-V0.1",
   "slug": "weinel-ventures-sharp-coder-v0-1",
   "author": "Weinel-Ventures",
@@ -35,6 +35,7 @@
   "parameters_human": "161.0M",
   "storage_bytes": 968750856,
   "storage_human": "969 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

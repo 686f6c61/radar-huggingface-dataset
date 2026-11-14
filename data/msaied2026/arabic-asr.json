@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Msaied2026/arabic-asr",
   "slug": "msaied2026-arabic-asr",
   "author": "Msaied2026",
@@ -42,14 +42,19 @@
   "parameters_human": "2.07B",
   "storage_bytes": 8833194941,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "CohereLabs/cohere-transcribe-03-2026",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

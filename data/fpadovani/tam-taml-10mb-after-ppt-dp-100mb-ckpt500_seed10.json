@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/tam-taml-10mb-after-ppt-Dp-100mb-ckpt500_seed10",
   "slug": "fpadovani-tam-taml-10mb-after-ppt-dp-100mb-ckpt500_seed10",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "39.1M",
   "storage_bytes": 2113068337,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "fpadovani/tam-taml-10mb-ppt-Dp-100mb_seed10",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

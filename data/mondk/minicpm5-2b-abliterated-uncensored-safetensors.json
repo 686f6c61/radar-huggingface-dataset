@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
   "slug": "mondk-minicpm5-2b-abliterated-uncensored-safetensors",
   "author": "mondk",
@@ -35,14 +35,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033557072,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T12:07:17.589Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

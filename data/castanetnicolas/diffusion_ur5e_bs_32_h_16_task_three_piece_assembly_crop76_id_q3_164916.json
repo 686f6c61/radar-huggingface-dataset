@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castanetnicolas/diffusion_UR5e_BS_32_H_16_TASK_three_piece_assembly_crop76_ID_q3_164916",
   "slug": "castanetnicolas-diffusion_ur5e_bs_32_h_16_task_three_piece_assembly_crop76_id_q3_164916",
   "author": "castanetnicolas",
@@ -28,14 +28,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1112125204,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

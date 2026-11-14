@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RohitG009/gemma3-1b-qat-disaster",
   "slug": "rohitg009-gemma3-1b-qat-disaster",
   "author": "RohitG009",
@@ -25,14 +25,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 806058240,
   "storage_human": "806 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

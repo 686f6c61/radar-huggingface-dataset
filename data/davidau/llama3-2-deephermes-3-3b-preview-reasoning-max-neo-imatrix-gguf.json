@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Llama3.2-DeepHermes-3-3B-Preview-Reasoning-MAX-NEO-Imatrix-GGUF",
   "slug": "davidau-llama3-2-deephermes-3-3b-preview-reasoning-max-neo-imatrix-gguf",
   "author": "DavidAU",
@@ -73,14 +73,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 59078612099,
   "storage_human": "59.1 GB",
+  "context_length": 131072,
   "base_model": "NousResearch/DeepHermes-3-Llama-3-3B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

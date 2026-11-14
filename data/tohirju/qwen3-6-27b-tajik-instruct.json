@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tohirju/Qwen3.6-27B-Tajik-Instruct",
   "slug": "tohirju-qwen3-6-27b-tajik-instruct",
   "author": "Tohirju",
@@ -35,14 +35,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733597469,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SaidzodaEng/Qwen3.6-27B-Tajik-Instruct",
+  "renamed_at": "2026-11-11T04:04:04.413Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/wayfinder-glimmer-30b-i1-GGUF",
   "slug": "mradermacher-wayfinder-glimmer-30b-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "27.85B",
   "storage_bytes": 303387290880,
   "storage_human": "303.4 GB",
+  "context_length": 131072,
   "base_model": "hweller1/wayfinder-glimmer-30b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

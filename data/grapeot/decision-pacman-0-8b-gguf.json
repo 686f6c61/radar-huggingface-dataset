@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grapeot/decision-pacman-0.8b-GGUF",
   "slug": "grapeot-decision-pacman-0-8b-gguf",
   "author": "grapeot",
@@ -30,14 +30,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 833591744,
   "storage_human": "834 MB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

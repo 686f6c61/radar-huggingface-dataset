@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/K2-Horizon-3.7B-heretic-i1-GGUF",
   "slug": "mradermacher-k2-horizon-3-7b-heretic-i1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "5.06B",
   "storage_bytes": 61798343808,
   "storage_human": "61.8 GB",
+  "context_length": 524288,
   "base_model": "Avicennasis/K2-Horizon-3.7B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

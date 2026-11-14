@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beling86/Qwen-Concept-27B-SmoothQuant-W8A8-v2",
   "slug": "beling86-qwen-concept-27b-smoothquant-w8a8-v2",
   "author": "Beling86",
@@ -41,14 +41,19 @@
   "parameters_human": "21.49B",
   "storage_bytes": 29917836989,
   "storage_human": "29.9 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Qwen-Concept-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Beling86/Qwen-Concept-27B-8.88BPW",
+  "renamed_at": "2026-11-14T02:32:50.667Z",
   "benchmarks": [],
   "sources": []
 }

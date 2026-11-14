@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/VibeThinker-3B",
   "slug": "litert-community-vibethinker-3b",
   "author": "litert-community",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 14404023840,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "WeiboAI/VibeThinker-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

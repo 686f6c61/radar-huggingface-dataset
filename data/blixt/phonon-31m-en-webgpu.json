@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blixt/phonon-31m-en-webgpu",
   "slug": "blixt-phonon-31m-en-webgpu",
   "author": "blixt",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 43690044,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": "gradium/phonon-31m-en",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

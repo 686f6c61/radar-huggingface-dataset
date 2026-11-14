@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B",
   "slug": "reaperdoesntknow-qwen3-1-7b-distilled-30b-a3b",
   "author": "reaperdoesntknow",
@@ -55,14 +55,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 12201969570,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

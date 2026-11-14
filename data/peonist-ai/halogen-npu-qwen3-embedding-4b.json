@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peonist-ai/halogen-npu-qwen3-embedding-4b",
   "slug": "peonist-ai-halogen-npu-qwen3-embedding-4b",
   "author": "peonist-ai",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 5000053743,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "2264K/ktransfer-27b-ce-s150",
   "slug": "2264k-ktransfer-27b-ce-s150",
   "author": "2264K",
@@ -37,14 +37,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733595797,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

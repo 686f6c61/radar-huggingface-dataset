@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itsmechico/qwen3-tts-0.6b-base-coreml-ane",
   "slug": "itsmechico-qwen3-tts-0-6b-base-coreml-ane",
   "author": "itsmechico",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 2326626991,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base, Qwen/Qwen3-TTS-Tokenizer-12Hz",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

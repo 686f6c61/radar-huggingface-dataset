@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shailu1492/mbert-large-mnrl-snli-max2",
   "slug": "shailu1492-mbert-large-mnrl-snli-max2",
   "author": "Shailu1492",
@@ -34,14 +34,19 @@
   "parameters_human": "394.8M",
   "storage_bytes": 1579143688,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T06:08:06.368Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Semantic Similarity",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hi-todayis-jh/ouro-1.4b-thinking-per-context-rb-c1024-ragged-math-154712-20261009-ragged-rl",
   "slug": "hi-todayis-jh-ouro-1-4b-thinking-per-context-rb-c1024-ragged-math-154712-20261009-ragged-rl",
   "author": "hi-todayis-jh",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 86080617219,
   "storage_human": "86.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

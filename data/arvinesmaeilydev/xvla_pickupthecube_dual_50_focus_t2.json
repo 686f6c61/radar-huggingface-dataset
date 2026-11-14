@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Focus_T2",
   "slug": "arvinesmaeilydev-xvla_pickupthecube_dual_50_focus_t2",
   "author": "arvinesmaeilydev",
@@ -31,14 +31,19 @@
   "parameters_human": "879.7M",
   "storage_bytes": 6008566480,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "lerobot/xvla-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T04:33:27.292Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

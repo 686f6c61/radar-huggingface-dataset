@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liangzhidanta/Qwen3-8B-CC-SFT-v2",
   "slug": "liangzhidanta-qwen3-8b-cc-sft-v2",
   "author": "liangzhidanta",
@@ -40,14 +40,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16394428912,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "liangzhidanta/Qwen3-8B-CC-SFT-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

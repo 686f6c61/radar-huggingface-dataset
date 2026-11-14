@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pavel00002013/fastconformer-ru",
   "slug": "pavel00002013-fastconformer-ru",
   "author": "pavel00002013",
@@ -32,14 +32,19 @@
   "parameters_human": "114.7M",
   "storage_bytes": 458975269,
   "storage_human": "459 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_ru_fastconformer_hybrid_large_pc",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

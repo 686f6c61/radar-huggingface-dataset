@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darturi/Llama-3.1-8B-Instruct-SS-matched-control-1-NEGATED_WITH_MO-1",
   "slug": "darturi-llama-3-1-8b-instruct-ss-matched-control-1-negated_with_mo-1",
   "author": "darturi",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 688366017,
   "storage_human": "688 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

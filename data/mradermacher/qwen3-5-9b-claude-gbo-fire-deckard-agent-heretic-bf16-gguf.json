@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF",
   "slug": "mradermacher-qwen3-5-9b-claude-gbo-fire-deckard-agent-heretic-bf16-gguf",
   "author": "mradermacher",
@@ -59,6 +59,7 @@
   "parameters_human": "8.95B",
   "storage_bytes": 81425159680,
   "storage_human": "81.4 GB",
+  "context_length": 262144,
   "base_model": "nightmedia/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16",
   "formats": [
     "gguf",
@@ -66,8 +67,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

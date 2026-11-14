@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlayaLab/AlayaWorld-v1.1-stage2b",
   "slug": "alayalab-alayaworld-v1-1-stage2b",
   "author": "AlayaLab",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 26282991002,
   "storage_human": "26.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Trentz/IndoLM-M-v0.2-Instruct",
   "slug": "trentz-indolm-m-v0-2-instruct",
   "author": "Trentz",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 252370232,
   "storage_human": "252 MB",
+  "context_length": null,
   "base_model": "Trentz/IndoLM-M-v0.2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

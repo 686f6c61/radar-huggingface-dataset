@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oisee/Qwen3.8-Flash-Next-GSQ-RCO-MoREL-PB3-208-GGUF",
   "slug": "oisee-qwen3-8-flash-next-gsq-rco-morel-pb3-208-gguf",
   "author": "oisee",
@@ -36,14 +36,19 @@
   "parameters_human": "105.18B",
   "storage_bytes": 56583256832,
   "storage_human": "56.6 GB",
+  "context_length": 262144,
   "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

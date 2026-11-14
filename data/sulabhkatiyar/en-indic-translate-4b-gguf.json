@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sulabhkatiyar/en-indic-translate-4b-GGUF",
   "slug": "sulabhkatiyar-en-indic-translate-4b-gguf",
   "author": "sulabhkatiyar",
@@ -57,14 +57,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 19129394688,
   "storage_human": "19.1 GB",
+  "context_length": 131072,
   "base_model": "sulabhkatiyar/en-indic-translate-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

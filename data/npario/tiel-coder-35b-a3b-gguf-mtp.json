@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "npario/Tiel-Coder-35B-A3B-GGUF-MTP",
   "slug": "npario-tiel-coder-35b-a3b-gguf-mtp",
   "author": "npario",
@@ -41,14 +41,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 209214803062,
   "storage_human": "209.2 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T05:29:32.366Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

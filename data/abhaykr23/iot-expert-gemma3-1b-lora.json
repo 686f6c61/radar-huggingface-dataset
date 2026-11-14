@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abhayKR23/iot-expert-gemma3-1b-lora",
   "slug": "abhaykr23-iot-expert-gemma3-1b-lora",
   "author": "abhayKR23",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 142536265,
   "storage_human": "143 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-1b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

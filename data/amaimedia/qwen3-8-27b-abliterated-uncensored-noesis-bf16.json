@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16",
   "slug": "amaimedia-qwen3-8-27b-abliterated-uncensored-noesis-bf16",
   "author": "AMAImedia",
@@ -156,14 +156,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 110224510367,
   "storage_human": "110.2 GB",
+  "context_length": null,
   "base_model": "KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T05:37:41.392Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

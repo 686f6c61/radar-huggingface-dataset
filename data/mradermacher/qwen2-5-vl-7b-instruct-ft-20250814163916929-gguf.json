@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2.5-VL-7B-Instruct-ft-20250814163916929-GGUF",
   "slug": "mradermacher-qwen2-5-vl-7b-instruct-ft-20250814163916929-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 70354162560,
   "storage_human": "70.4 GB",
+  "context_length": 128000,
   "base_model": "REEA-GLOBAL/Qwen2.5-VL-7B-Instruct-ft-20250814163916929",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

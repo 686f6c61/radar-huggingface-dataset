@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Olt1z/GLM-5.3-Flash-Uncensored-BF16",
   "slug": "olt1z-glm-5-3-flash-uncensored-bf16",
   "author": "Olt1z",
@@ -37,14 +37,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 642672299234,
   "storage_human": "642.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T03:03:17.150Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

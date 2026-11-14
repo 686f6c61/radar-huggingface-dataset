@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zerubroberts/MiniMax-H3-FastH3-v1-dense-datafree-ComfyUI",
   "slug": "zerubroberts-minimax-h3-fasth3-v1-dense-datafree-comfyui",
   "author": "zerubroberts",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1036175488,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T06:52:07.517Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

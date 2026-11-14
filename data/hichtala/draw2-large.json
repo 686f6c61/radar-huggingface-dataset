@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HichTala/draw2-large",
   "slug": "hichtala-draw2-large",
   "author": "HichTala",
@@ -35,14 +35,19 @@
   "parameters_human": "96.5M",
   "storage_bytes": 3309962712,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "google/vit-base-patch16-224-in21k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

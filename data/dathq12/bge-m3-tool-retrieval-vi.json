@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dathq12/bge-m3-tool-retrieval-vi",
   "slug": "dathq12-bge-m3-tool-retrieval-vi",
   "author": "Dathq12",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 45580722,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Information Retrieval",

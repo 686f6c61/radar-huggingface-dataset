@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rSalone/LFM3-1.7B-uncensored-abl48",
   "slug": "rsalone-lfm3-1-7b-uncensored-abl48",
   "author": "rSalone",
@@ -38,6 +38,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 15204986772,
   "storage_human": "15.2 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

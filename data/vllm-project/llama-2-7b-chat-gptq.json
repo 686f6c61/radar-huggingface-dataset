@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/Llama-2-7B-Chat-GPTQ",
   "slug": "vllm-project-llama-2-7b-chat-gptq",
   "author": "vllm-project",
@@ -37,14 +37,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 3897225859,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

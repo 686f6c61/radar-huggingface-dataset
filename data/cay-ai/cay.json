@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cay-ai/cay",
   "slug": "cay-ai-cay",
   "author": "cay-ai",
@@ -31,6 +31,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 3874019304,
   "storage_human": "3.9 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

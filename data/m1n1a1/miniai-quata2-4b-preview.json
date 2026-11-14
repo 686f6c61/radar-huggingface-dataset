@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "M1n1A1/MiniAI-Quata2-4b-Preview",
   "slug": "m1n1a1-miniai-quata2-4b-preview",
   "author": "M1n1A1",
@@ -49,6 +49,7 @@
   "parameters_human": "5.17B",
   "storage_bytes": 22473293103,
   "storage_human": "22.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

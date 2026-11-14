@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-curio7B-ptbr-S13-a050",
   "slug": "g-assismoraes-deltap2s-llama2-13b-deltap2s-curio7b-ptbr-s13-a050",
   "author": "g-assismoraes",
@@ -29,14 +29,19 @@
   "parameters_human": "13.02B",
   "storage_bytes": 26032270275,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "futo-org/asr4all-m-es",
   "slug": "futo-org-asr4all-m-es",
   "author": "futo-org",
@@ -46,6 +46,7 @@
   "parameters_human": "55.7M",
   "storage_bytes": 789524812,
   "storage_human": "790 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

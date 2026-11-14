@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Crusadersk/chimera-online-credit-qwen3.5-2b-20261013",
   "slug": "crusadersk-chimera-online-credit-qwen3-5-2b-20261013",
   "author": "Crusadersk",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 10974317952,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

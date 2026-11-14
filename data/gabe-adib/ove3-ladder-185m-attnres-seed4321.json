@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gabe-adib/ove3-ladder-185m-attnres-seed4321",
   "slug": "gabe-adib-ove3-ladder-185m-attnres-seed4321",
   "author": "gabe-adib",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 28946902874,
   "storage_human": "28.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:31:35.085Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

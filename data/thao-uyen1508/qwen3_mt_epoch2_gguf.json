@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thao-uyen1508/qwen3_MT_epoch2_gguf",
   "slug": "thao-uyen1508-qwen3_mt_epoch2_gguf",
   "author": "thao-uyen1508",
@@ -27,14 +27,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 9001753664,
   "storage_human": "9.0 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TradMed/qwen3_MT_epoch2_gguf",
+  "renamed_at": "2026-11-12T08:04:00.997Z",
   "benchmarks": [],
   "sources": [
     {

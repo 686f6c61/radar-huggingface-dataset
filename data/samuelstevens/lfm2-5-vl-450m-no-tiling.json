@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samuelstevens/LFM2.5-VL-450M-no-tiling",
   "slug": "samuelstevens-lfm2-5-vl-450m-no-tiling",
   "author": "samuelstevens",
@@ -32,14 +32,19 @@
   "parameters_human": "448.7M",
   "storage_bytes": 897484568,
   "storage_human": "897 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-450M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

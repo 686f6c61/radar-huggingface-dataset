@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrFuzzihead/Qwen3.8-35B-A3B-Distill-APEX-GGUF",
   "slug": "mrfuzzihead-qwen3-8-35b-a3b-distill-apex-gguf",
   "author": "MrFuzzihead",
@@ -45,14 +45,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 280315636768,
   "storage_human": "280.3 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

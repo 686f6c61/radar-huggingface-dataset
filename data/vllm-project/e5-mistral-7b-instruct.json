@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/e5-mistral-7b-instruct",
   "slug": "vllm-project-e5-mistral-7b-instruct",
   "author": "vllm-project",
@@ -40,14 +40,19 @@
   "parameters_human": "7.11B",
   "storage_bytes": 28611187625,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

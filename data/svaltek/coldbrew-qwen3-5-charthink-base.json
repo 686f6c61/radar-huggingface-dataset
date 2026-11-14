@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SvalTek/ColdBrew-Qwen3.5-CharThink-Base",
   "slug": "svaltek-coldbrew-qwen3-5-charthink-base",
   "author": "SvalTek",
@@ -35,14 +35,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710463,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "SvalTek/ColdBrew-Qwen3.5-RP_Base-CharThink",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

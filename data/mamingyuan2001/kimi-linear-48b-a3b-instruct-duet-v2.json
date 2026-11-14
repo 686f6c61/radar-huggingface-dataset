@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamingyuan2001/Kimi-Linear-48B-A3B-Instruct-DUET-v2",
   "slug": "mamingyuan2001-kimi-linear-48b-a3b-instruct-duet-v2",
   "author": "mamingyuan2001",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 455014328,
   "storage_human": "455 MB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-Linear-48B-A3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:55:12.923Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ismael7434/Reinforce-Pixelcopter-PLE-v0",
   "slug": "ismael7434-reinforce-pixelcopter-ple-v0",
   "author": "Ismael7434",
@@ -28,14 +28,19 @@
   "parameters_human": "9090",
   "storage_bytes": 117042,
   "storage_human": "117042 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ironwood-LLM-Team/Firehouse-Cactus-1.03",
   "slug": "ironwood-llm-team-firehouse-cactus-1-03",
   "author": "Ironwood-LLM-Team",
@@ -32,6 +32,7 @@
   "parameters_human": "7.94B",
   "storage_bytes": 15914634962,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "Ironwood-LLM-Team/Firehouse-Cactus-1.02",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

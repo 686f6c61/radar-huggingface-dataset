@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "takeru01/task1_1_3_rgb_act_chunk76_bs16_v4_nojump",
   "slug": "takeru01-task1_1_3_rgb_act_chunk76_bs16_v4_nojump",
   "author": "takeru01",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206695424,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RiverRider/srt-verbalizer-v1",
   "slug": "riverrider-srt-verbalizer-v1",
   "author": "RiverRider",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 676286938,
   "storage_human": "676 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B, google/gemma-4-31B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

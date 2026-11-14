@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarun7r/indic-turn-detector",
   "slug": "tarun7r-indic-turn-detector",
   "author": "tarun7r",
@@ -62,6 +62,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 3973649786,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "onnx",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "end-of-utterance",

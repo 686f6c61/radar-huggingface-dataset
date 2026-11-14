@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aeasley/whisper-largev3-turbo-hy",
   "slug": "aeasley-whisper-largev3-turbo-hy",
   "author": "aeasley",
@@ -36,14 +36,19 @@
   "parameters_human": "808.9M",
   "storage_bytes": 12942451750,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

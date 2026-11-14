@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/thox-pro-24b",
   "slug": "thox-ai-thox-pro-24b",
   "author": "Thox-ai",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 1033354,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

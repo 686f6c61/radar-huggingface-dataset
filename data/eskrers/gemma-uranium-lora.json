@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eskrers/gemma-uranium-lora",
   "slug": "eskrers-gemma-uranium-lora",
   "author": "Eskrers",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 171772434,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": "InfinimindCreations/gemma-4-E4B-it-uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T02:51:00.903Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

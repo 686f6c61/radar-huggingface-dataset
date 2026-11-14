@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prince4332/qwen35-twi-va-4-full-GGUF",
   "slug": "prince4332-qwen35-twi-va-4-full-gguf",
   "author": "prince4332",
@@ -27,14 +27,19 @@
   "parameters_human": "1.89B",
   "storage_bytes": 1107504800,
   "storage_human": "1.1 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

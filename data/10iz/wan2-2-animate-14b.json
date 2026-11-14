@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "10iz/Wan2.2-Animate-14B",
   "slug": "10iz-wan2-2-animate-14b",
   "author": "10iz",
@@ -29,6 +29,7 @@
   "parameters_human": "17.27B",
   "storage_bytes": 72361997489,
   "storage_human": "72.4 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-I2V-A14B",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/Llama-3.2-1B-Amharic-Stance-Sentiment-LoRA-FT",
   "slug": "tadiecool29-llama-3-2-1b-amharic-stance-sentiment-lora-ft",
   "author": "tadiecool29",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 22631345,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "rasyosef/Llama-3.2-1B-Amharic-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:38:52.158Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

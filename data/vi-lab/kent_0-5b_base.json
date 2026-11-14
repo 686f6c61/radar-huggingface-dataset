@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vi-LAB/KenT_0.5B_Base",
   "slug": "vi-lab-kent_0-5b_base",
   "author": "Vi-LAB",
@@ -27,14 +27,19 @@
   "parameters_human": "423.9M",
   "storage_bytes": 847750216,
   "storage_human": "848 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:31:55.400Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

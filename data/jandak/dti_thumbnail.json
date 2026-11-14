@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jandak/dti_thumbnail",
   "slug": "jandak-dti_thumbnail",
   "author": "jandak",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 94501128,
   "storage_human": "95 MB",
+  "context_length": null,
   "base_model": "undefined",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:13:13.107Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

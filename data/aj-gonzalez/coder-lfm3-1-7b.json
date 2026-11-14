@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AJ-Gonzalez/coder-lfm3-1.7b",
   "slug": "aj-gonzalez-coder-lfm3-1-7b",
   "author": "AJ-Gonzalez",
@@ -35,11 +35,12 @@
   ],
   "likes": 18,
   "downloads_30d": 3619,
-  "trending_score": 18,
+  "trending_score": 17,
   "parameters": 1728801536,
   "parameters_human": "1.73B",
   "storage_bytes": 4575171619,
   "storage_human": "4.6 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

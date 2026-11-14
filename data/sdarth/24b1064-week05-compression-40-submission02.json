@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sDarth/24b1064-Week05-Compression-40-Submission02",
   "slug": "sdarth-24b1064-week05-compression-40-submission02",
   "author": "sDarth",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 18389918307,
   "storage_human": "18.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

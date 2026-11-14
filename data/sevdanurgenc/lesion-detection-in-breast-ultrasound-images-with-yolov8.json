@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SevdanurGenc/Lesion-Detection-in-Breast-Ultrasound-Images-with-YOLOv8",
   "slug": "sevdanurgenc-lesion-detection-in-breast-ultrasound-images-with-yolov8",
   "author": "SevdanurGenc",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 8160782,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

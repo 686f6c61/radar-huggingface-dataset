@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neural-1Nomad/vakyansh-respin-banking",
   "slug": "neural-1nomad-vakyansh-respin-banking",
   "author": "Neural-1Nomad",
@@ -29,14 +29,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 755448817,
   "storage_human": "755 MB",
+  "context_length": null,
   "base_model": "Harveenchadha/vakyansh-wav2vec2-telugu-tem-100",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

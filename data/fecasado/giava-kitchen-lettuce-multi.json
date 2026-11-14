@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fecasado/giava-kitchen-lettuce-multi",
   "slug": "fecasado-giava-kitchen-lettuce-multi",
   "author": "fecasado",
@@ -27,14 +27,19 @@
   "parameters_human": "235.9M",
   "storage_bytes": 943686904,
   "storage_human": "944 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "e-n-v-y/Krea-2-Pixel-Art",
   "slug": "e-n-v-y-krea-2-pixel-art",
   "author": "e-n-v-y",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 223563115,
   "storage_human": "224 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

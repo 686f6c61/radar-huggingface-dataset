@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StromaAILabs/memweave-gliclass-intent-classifier-v1",
   "slug": "stromaailabs-memweave-gliclass-intent-classifier-v1",
   "author": "StromaAILabs",
@@ -26,14 +26,19 @@
   "parameters_human": "186.1M",
   "storage_bytes": 746969852,
   "storage_human": "747 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

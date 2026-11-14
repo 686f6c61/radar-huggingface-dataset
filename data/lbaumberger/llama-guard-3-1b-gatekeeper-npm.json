@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lbaumberger/Llama-Guard-3-1B-Gatekeeper-npm",
   "slug": "lbaumberger-llama-guard-3-1b-gatekeeper-npm",
   "author": "lbaumberger",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 62336896,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-Guard-3-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

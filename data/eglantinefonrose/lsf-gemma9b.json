@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eglantinefonrose/lsf-gemma9b",
   "slug": "eglantinefonrose-lsf-gemma9b",
   "author": "eglantinefonrose",
@@ -31,14 +31,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 5769586255,
   "storage_human": "5.8 GB",
+  "context_length": 8192,
   "base_model": "mlx-community/gemma-2-9b-it-4bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

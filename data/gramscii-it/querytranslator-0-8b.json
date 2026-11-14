@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gramscii-IT/QueryTranslator-0.8B",
   "slug": "gramscii-it-querytranslator-0-8b",
   "author": "Gramscii-IT",
@@ -44,14 +44,19 @@
   "parameters_human": "10.8M",
   "storage_bytes": 855263328,
   "storage_human": "855 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Library search across languages: the document a question was written from, searched with the question translated for the word index",

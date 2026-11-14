@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raahemnabeel/ornith-1.5-122b",
   "slug": "raahemnabeel-ornith-1-5-122b",
   "author": "raahemnabeel",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 12129049845,
   "storage_human": "12.1 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

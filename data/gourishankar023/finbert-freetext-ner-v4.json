@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gourishankar023/finbert-freetext-ner-v4",
   "slug": "gourishankar023-finbert-freetext-ner-v4",
   "author": "gourishankar023",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 568181884,
   "storage_human": "568 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

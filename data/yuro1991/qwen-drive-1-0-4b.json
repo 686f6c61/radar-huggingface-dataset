@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yuro1991/Qwen-Drive-1.0-4B",
   "slug": "yuro1991-qwen-drive-1-0-4b",
   "author": "Yuro1991",
@@ -36,14 +36,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 13769270430,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

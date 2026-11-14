@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Slavakoch/morocam_style_LoRA",
   "slug": "slavakoch-morocam_style_lora",
   "author": "Slavakoch",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 279195912,
   "storage_human": "279 MB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

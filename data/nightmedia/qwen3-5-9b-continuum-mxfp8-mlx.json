@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.5-9B-Continuum-mxfp8-mlx",
   "slug": "nightmedia-qwen3-5-9b-continuum-mxfp8-mlx",
   "author": "nightmedia",
@@ -92,6 +92,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 10166774003,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "schneewolflabs/B0-9B, inclusionAI/UI-Venus-2-9B, nightmedia/Qwen3.5-9B-Holodeck-Lounge",
   "formats": [
     "mlx",
@@ -99,8 +100,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

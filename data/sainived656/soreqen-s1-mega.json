@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sainived656/soreqen-s1-mega",
   "slug": "sainived656-soreqen-s1-mega",
   "author": "sainived656",
@@ -36,14 +36,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9183582109,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zorqelis-ai/soreqen-s1-mega",
+  "renamed_at": "2026-11-11T07:24:20.593Z",
   "benchmarks": [],
   "sources": [
     {

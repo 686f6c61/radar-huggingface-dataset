@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raahemnabeel/qwen3-coder-next-blackhole",
   "slug": "raahemnabeel-qwen3-coder-next-blackhole",
   "author": "raahemnabeel",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 15400336392,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T07:21:01.439Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

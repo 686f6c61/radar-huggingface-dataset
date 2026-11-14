@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kihyounghan/workshop-pretraining-v2",
   "slug": "kihyounghan-workshop-pretraining-v2",
   "author": "kihyounghan",
@@ -32,14 +32,19 @@
   "parameters_human": "123.7M",
   "storage_bytes": 1483867488,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

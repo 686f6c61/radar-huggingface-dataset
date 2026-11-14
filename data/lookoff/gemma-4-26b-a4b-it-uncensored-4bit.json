@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lookoff/gemma-4-26b-a4b-it-uncensored-4bit",
   "slug": "lookoff-gemma-4-26b-a4b-it-uncensored-4bit",
   "author": "Lookoff",
@@ -42,6 +42,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 14232402066,
   "storage_human": "14.2 GB",
+  "context_length": null,
   "base_model": "TrevorJS/gemma-4-26B-A4B-it-uncensored",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

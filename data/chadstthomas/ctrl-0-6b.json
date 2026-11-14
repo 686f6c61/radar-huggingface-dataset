@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chadstthomas/CTRL-0.6B",
   "slug": "chadstthomas-ctrl-0-6b",
   "author": "chadstthomas",
@@ -37,6 +37,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 448549430,
   "storage_human": "449 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "expedient-ai/CTRL-0.6B",
+  "renamed_at": "2026-11-11T04:47:53.219Z",
   "benchmarks": [],
   "sources": []
 }

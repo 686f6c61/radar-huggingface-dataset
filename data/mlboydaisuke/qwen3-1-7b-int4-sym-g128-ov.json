@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/Qwen3-1.7B-int4-sym-g128-ov",
   "slug": "mlboydaisuke-qwen3-1-7b-int4-sym-g128-ov",
   "author": "mlboydaisuke",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1057981316,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

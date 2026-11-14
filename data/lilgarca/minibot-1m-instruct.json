@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lilgarca/MiniBot-1M-Instruct",
   "slug": "lilgarca-minibot-1m-instruct",
   "author": "Lilgarca",
@@ -28,14 +28,19 @@
   "parameters_human": "1.0M",
   "storage_bytes": 4071896,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T05:38:50.369Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

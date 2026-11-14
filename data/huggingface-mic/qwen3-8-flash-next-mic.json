@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Qwen3.8-Flash-Next-mic",
   "slug": "huggingface-mic-qwen3-8-flash-next-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "33.9M",
   "storage_bytes": 5845032064,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

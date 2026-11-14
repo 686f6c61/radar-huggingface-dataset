@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xCra/Bwen-8B-Cyber",
   "slug": "0xcra-bwen-8b-cyber",
   "author": "0xCra",
@@ -45,14 +45,19 @@
   "parameters_human": "8.31B",
   "storage_bytes": 50068396776,
   "storage_human": "50.1 GB",
+  "context_length": null,
   "base_model": "allenai/Bwen-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T02:13:18.754Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

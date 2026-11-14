@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fmasterpro27/awgs-vision-v0.3-lora",
   "slug": "fmasterpro27-awgs-vision-v0-3-lora",
   "author": "fmasterpro27",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 180023544,
   "storage_human": "180 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T04:08:43.004Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

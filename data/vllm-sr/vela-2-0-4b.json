@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-sr/Vela-2.0-4B",
   "slug": "vllm-sr-vela-2-0-4b",
   "author": "vllm-sr",
@@ -94,14 +94,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 19443399655,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "vllm-sr/Decision-2.0-Nox-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

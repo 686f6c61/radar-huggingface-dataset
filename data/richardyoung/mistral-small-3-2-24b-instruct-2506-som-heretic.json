@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic",
   "slug": "richardyoung-mistral-small-3-2-24b-instruct-2506-som-heretic",
   "author": "richardyoung",
@@ -83,14 +83,19 @@
   "parameters_human": "24.01B",
   "storage_bytes": 48056956777,
   "storage_human": "48.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Mistral-Small-3.2-24B-Instruct-2506",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

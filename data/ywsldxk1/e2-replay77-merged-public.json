@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ywsldxk1/E2-replay77-merged-public",
   "slug": "ywsldxk1-e2-replay77-merged-public",
   "author": "ywsldxk1",
@@ -28,14 +28,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9388457656,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

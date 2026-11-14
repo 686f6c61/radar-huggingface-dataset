@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tfukkwang/Qwen3.5-0.8B-tool-router-v3-q4f16_1-MLC",
   "slug": "tfukkwang-qwen3-5-0-8b-tool-router-v3-q4f16_1-mlc",
   "author": "tfukkwang",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 436745646,
   "storage_human": "437 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

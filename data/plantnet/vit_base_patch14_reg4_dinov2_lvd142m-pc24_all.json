@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
   "slug": "plantnet-vit_base_patch14_reg4_dinov2_lvd142m-pc24_all",
   "author": "PlantNet",
@@ -31,14 +31,19 @@
   "parameters_human": "92.6M",
   "storage_bytes": 2592804527,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

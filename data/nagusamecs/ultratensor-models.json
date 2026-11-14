@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NagusameCS/ultratensor-models",
   "slug": "nagusamecs-ultratensor-models",
   "author": "NagusameCS",
@@ -31,14 +31,19 @@
   "parameters_human": "73.80B",
   "storage_bytes": 411743117376,
   "storage_human": "411.7 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Pro",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XiangnanW/CGVM-R2.5-Qwen3VL-8B",
   "slug": "xiangnanw-cgvm-r2-5-qwen3vl-8b",
   "author": "XiangnanW",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 809316671,
   "storage_human": "809 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T04:44:47.745Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

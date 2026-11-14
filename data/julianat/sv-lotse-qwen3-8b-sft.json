@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JulianAT/sv-lotse-qwen3-8b-sft",
   "slug": "julianat-sv-lotse-qwen3-8b-sft",
   "author": "JulianAT",
@@ -48,14 +48,19 @@
   "parameters_human": null,
   "storage_bytes": 709842378,
   "storage_human": "710 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

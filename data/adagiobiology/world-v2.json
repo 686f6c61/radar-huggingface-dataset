@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdagioBiology/world-v2",
   "slug": "adagiobiology-world-v2",
   "author": "AdagioBiology",
@@ -38,14 +38,19 @@
   "parameters_human": "2.4M",
   "storage_bytes": 19839537,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

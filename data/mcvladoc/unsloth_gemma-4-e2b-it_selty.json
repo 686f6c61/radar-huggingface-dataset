@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mcvladoc/unsloth_gemma-4-E2B-it_selty",
   "slug": "mcvladoc-unsloth_gemma-4-e2b-it_selty",
   "author": "mcvladoc",
@@ -31,6 +31,7 @@
   "parameters_human": "12.7M",
   "storage_bytes": 126346874,
   "storage_human": "126 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

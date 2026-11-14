@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-Abliterated-NVFP4",
   "slug": "defnoteatin-pseudobrain-minimax-m3-1-flash-abliterated-nvfp4",
   "author": "defnoteatin",
@@ -40,14 +40,19 @@
   "parameters_human": "221.44B",
   "storage_bytes": 252021211191,
   "storage_human": "252.0 GB",
+  "context_length": null,
   "base_model": "Blackfrost-Research/MiniMax-3.1-Flash-DeRisked",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

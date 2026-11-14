@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnRTitor/Qwythos-9B-v2-W8A16",
   "slug": "johnrtitor-qwythos-9b-v2-w8a16",
   "author": "JohnRTitor",
@@ -38,14 +38,19 @@
   "parameters_human": "9.77B",
   "storage_bytes": 12332862027,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwythos-9B-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

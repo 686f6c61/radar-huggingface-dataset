@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trannel/trannel-madlad400-3b-ct2",
   "slug": "trannel-trannel-madlad400-3b-ct2",
   "author": "trannel",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 2954636134,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "google/madlad400-3b-mt",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

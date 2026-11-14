@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Didina7/VAKUL-v11",
   "slug": "didina7-vakul-v11",
   "author": "Didina7",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 39783624,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

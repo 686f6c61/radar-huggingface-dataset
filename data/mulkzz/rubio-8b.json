@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mulkzz/RuBio-8B",
   "slug": "mulkzz-rubio-8b",
   "author": "mulkzz",
@@ -37,14 +37,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 49157752691,
   "storage_human": "49.2 GB",
+  "context_length": null,
   "base_model": "MegaScience/Qwen3-8B-MegaScience",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

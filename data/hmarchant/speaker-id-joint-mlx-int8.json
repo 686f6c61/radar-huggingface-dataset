@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hmarchant/speaker-id-joint-mlx-int8",
   "slug": "hmarchant-speaker-id-joint-mlx-int8",
   "author": "hmarchant",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 587653909,
   "storage_human": "588 MB",
+  "context_length": null,
   "base_model": "FacebookAI/roberta-large",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

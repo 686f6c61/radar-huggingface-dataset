@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LaugerM/clasificacion-texto-transformers",
   "slug": "laugerm-clasificacion-texto-transformers",
   "author": "LaugerM",
@@ -33,14 +33,19 @@
   "parameters_human": "20546",
   "storage_bytes": 86488,
   "storage_human": "86488 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/ZONOS3-Mini-GGUF",
   "slug": "atomicchat-zonos3-mini-gguf",
   "author": "AtomicChat",
@@ -45,21 +45,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 854,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": 802038600,
   "parameters_human": "802.0M",
   "storage_bytes": 6350499776,
   "storage_human": "6.4 GB",
+  "context_length": 32768,
   "base_model": "Zyphra/ZONOS3-Mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

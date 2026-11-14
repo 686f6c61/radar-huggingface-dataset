@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-athena/Grug-67B-A2B-Antidoom-RLVR1-Reference-KL-Step20-2026.10.04",
   "slug": "open-athena-grug-67b-a2b-antidoom-rlvr1-reference-kl-step20-2026-10-04",
   "author": "open-athena",
@@ -31,14 +31,19 @@
   "parameters_human": "67.08B",
   "storage_bytes": 134175048683,
   "storage_human": "134.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

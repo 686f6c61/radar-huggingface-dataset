@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cjcjee/RewardModel",
   "slug": "cjcjee-rewardmodel",
   "author": "cjcjee",
@@ -31,14 +31,19 @@
   "parameters_human": "124.6M",
   "storage_bytes": 1495839646,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

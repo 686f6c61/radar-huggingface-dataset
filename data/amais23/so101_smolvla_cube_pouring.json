@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amais23/so101_smolvla_cube_pouring",
   "slug": "amais23-so101_smolvla_cube_pouring",
   "author": "amais23",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 6184277248,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

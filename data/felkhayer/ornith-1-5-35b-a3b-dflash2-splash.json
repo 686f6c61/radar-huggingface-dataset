@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "felkhayer/Ornith-1.5-35B-A3B-DFlash2-Splash",
   "slug": "felkhayer-ornith-1-5-35b-a3b-dflash2-splash",
   "author": "felkhayer",
@@ -32,14 +32,19 @@
   "parameters_human": "526.3M",
   "storage_bytes": 1052513488,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "jzinno/Ornith-1.5-35B-A3B-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

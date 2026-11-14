@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohitsoni1010/gemma-4-E2B-it-qat-q4_0-unquantized",
   "slug": "rohitsoni1010-gemma-4-e2b-it-qat-q4_0-unquantized",
   "author": "rohitsoni1010",
@@ -33,14 +33,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 10241019672,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

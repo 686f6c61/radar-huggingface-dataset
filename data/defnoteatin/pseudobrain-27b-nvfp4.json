@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "defnoteatin/PseudoBrain-27B-NVFP4",
   "slug": "defnoteatin-pseudobrain-27b-nvfp4",
   "author": "defnoteatin",
@@ -40,14 +40,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 24283545648,
   "storage_human": "24.3 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated, philbert440/Qwen3.8-27B-Uncensored-Aggressive-W4A16-AWQ, batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

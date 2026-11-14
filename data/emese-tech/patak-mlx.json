@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emese-tech/patak-mlx",
   "slug": "emese-tech-patak-mlx",
   "author": "emese-tech",
@@ -40,6 +40,7 @@
   "parameters_human": "9.15B",
   "storage_bytes": 9740560637,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": "utter-project/EuroLLM-9B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

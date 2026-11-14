@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nagarhimanshu37/dolphin-2.7-mixtral-8x7b-GGUF",
   "slug": "nagarhimanshu37-dolphin-2-7-mixtral-8x7b-gguf",
   "author": "nagarhimanshu37",
@@ -37,14 +37,19 @@
   "parameters_human": "46.70B",
   "storage_bytes": 241352136256,
   "storage_human": "241.4 GB",
+  "context_length": 32768,
   "base_model": "cognitivecomputations/dolphin-2.7-mixtral-8x7b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

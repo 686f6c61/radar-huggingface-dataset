@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ukk0708/sat-12l-sm-coreml",
   "slug": "ukk0708-sat-12l-sm-coreml",
   "author": "ukk0708",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 374550254,
   "storage_human": "375 MB",
+  "context_length": null,
   "base_model": "segment-any-text/sat-12l-sm",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

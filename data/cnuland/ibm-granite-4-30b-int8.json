@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cnuland/ibm-granite-4-30b-int8",
   "slug": "cnuland-ibm-granite-4-30b-int8",
   "author": "cnuland",
@@ -38,14 +38,19 @@
   "parameters_human": "29.28B",
   "storage_bytes": 30109726688,
   "storage_human": "30.1 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

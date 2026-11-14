@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qzzhang/PlantGeneAnn-v2-preview",
   "slug": "qzzhang-plantgeneann-v2-preview",
   "author": "qzzhang",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 780486034,
   "storage_human": "780 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "qzzhang/PlantGeneAnn-v2-Angiospermae",
+  "renamed_at": "2026-11-13T07:41:09.177Z",
   "benchmarks": [],
   "sources": [
     {

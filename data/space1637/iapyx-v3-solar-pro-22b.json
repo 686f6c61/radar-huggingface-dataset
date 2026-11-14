@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "space1637/iapyx-v3-solar-pro-22b",
   "slug": "space1637-iapyx-v3-solar-pro-22b",
   "author": "space1637",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 419551368,
   "storage_human": "420 MB",
+  "context_length": null,
   "base_model": "upstage/solar-pro-preview-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

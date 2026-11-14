@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ndhieu1101/medical-bidirectional-machine-translation-checkpoints-68138",
   "slug": "ndhieu1101-medical-bidirectional-machine-translation-checkpoints-68138",
   "author": "ndhieu1101",
@@ -28,14 +28,19 @@
   "parameters_human": "275.1M",
   "storage_bytes": 6604165792,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

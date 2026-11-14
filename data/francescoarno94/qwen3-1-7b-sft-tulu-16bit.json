@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrancescoArno94/Qwen3-1.7B-sft-tulu-16bit",
   "slug": "francescoarno94-qwen3-1-7b-sft-tulu-16bit",
   "author": "FrancescoArno94",
@@ -36,14 +36,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452607950,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

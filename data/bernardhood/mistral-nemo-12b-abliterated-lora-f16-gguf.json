@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BernardHood/Mistral-Nemo-12B-abliterated-LORA-F16-GGUF",
   "slug": "bernardhood-mistral-nemo-12b-abliterated-lora-f16-gguf",
   "author": "BernardHood",
@@ -31,14 +31,19 @@
   "parameters_human": "245.9M",
   "storage_bytes": 492698528,
   "storage_human": "493 MB",
+  "context_length": null,
   "base_model": "nbeerbower/Mistral-Nemo-12B-abliterated-LORA",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

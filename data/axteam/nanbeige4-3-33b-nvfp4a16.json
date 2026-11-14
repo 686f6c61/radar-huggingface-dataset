@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Nanbeige4.3-33B-NVFP4A16",
   "slug": "axteam-nanbeige4-3-33b-nvfp4a16",
   "author": "axteam",
@@ -38,14 +38,19 @@
   "parameters_human": "19.68B",
   "storage_bytes": 22091605157,
   "storage_human": "22.1 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

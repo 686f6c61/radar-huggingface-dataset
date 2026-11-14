@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hero422/qwen3.8-27b-exl3-v2-rad",
   "slug": "hero422-qwen3-8-27b-exl3-v2-rad",
   "author": "Hero422",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 258856583168,
   "storage_human": "258.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

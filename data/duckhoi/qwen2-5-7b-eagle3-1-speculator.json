@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "duckhoi/qwen2.5-7b-eagle3.1-speculator",
   "slug": "duckhoi-qwen2-5-7b-eagle3-1-speculator",
   "author": "duckhoi",
@@ -40,14 +40,19 @@
   "parameters_human": "890.6M",
   "storage_bytes": 5195609280,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }
