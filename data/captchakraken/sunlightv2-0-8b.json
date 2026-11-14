@@ -5,7 +5,7 @@
   "author": "CaptchaKraken",
   "url": "https://huggingface.co/CaptchaKraken/SunlightV2-0.8B",
   "created_at": "2026-11-02T04:32:00.000Z",
-  "updated_at": "2026-11-06T18:32:04.000Z",
+  "updated_at": "2026-11-13T21:40:48.000Z",
   "license": "lgpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 1739777801,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 3460420781,
+  "storage_human": "3.5 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

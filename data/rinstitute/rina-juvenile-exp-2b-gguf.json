@@ -5,7 +5,7 @@
   "author": "Rinstitute",
   "url": "https://huggingface.co/Rinstitute/Rina-Juvenile-Exp-2B-GGUF",
   "created_at": "2026-11-12T09:54:51.000Z",
-  "updated_at": "2026-11-12T09:58:30.000Z",
+  "updated_at": "2026-11-14T02:33:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -54,7 +54,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",

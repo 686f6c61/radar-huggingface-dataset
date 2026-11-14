@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-QwQ-RP-Draft-v0.1-0.5B-GGUF",
+  "slug": "mradermacher-qwen2-5-qwq-rp-draft-v0-1-0-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-QwQ-RP-Draft-v0.1-0.5B-GGUF",
+  "created_at": "2025-03-11T00:15:31.000Z",
+  "updated_at": "2026-11-14T00:16:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "en",
+    "dataset:PJMixers-Dev/allura-org_gryphe-sonnet-3.5-charcards-names-added-qwq-all-aphrodite",
+    "dataset:PJMixers-Dev/anthracite-org_c2_logs_32k_llama3_qwen2_v1.3-qwq-all-aphrodite",
+    "dataset:PJMixers-Dev/grimulkan_aicg-logs-augmented-system-qwq-all-aphrodite",
+    "dataset:PJMixers-Dev/grimulkan_jannie-log-augmented-system-qwq-all-aphrodite",
+    "dataset:PJMixers-Dev/grimulkan_PIPPA-augmented-dedup-system-qwq-all-aphrodite",
+    "dataset:PJMixers-Dev/lemonilia_LimaRP-Only-NonSus-Simple-CustomShareGPT-qwq-all-aphrodite",
+    "dataset:PJMixers-Dev/MinervaAI_Aesir-Preview-Anon-qwq-all-aphrodite",
+    "dataset:PJMixers-Dev/NyxKrage_chub-logs-sharegpt-longest-CustomShareGPT-qwq-all-aphrodite",
+    "base_model:PJMixers-Dev/Qwen2.5-QwQ-RP-Draft-v0.1-0.5B",
+    "base_model:quantized:PJMixers-Dev/Qwen2.5-QwQ-RP-Draft-v0.1-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 186,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400212608,
+  "storage_human": "5.4 GB",
+  "base_model": "PJMixers-Dev/Qwen2.5-QwQ-RP-Draft-v0.1-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

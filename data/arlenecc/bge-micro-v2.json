@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "id": "arlenecc/bge-micro-v2",
+  "slug": "arlenecc-bge-micro-v2",
+  "author": "arlenecc",
+  "url": "https://huggingface.co/arlenecc/bge-micro-v2",
+  "created_at": "2026-11-14T01:55:08.000Z",
+  "updated_at": "2026-11-14T01:56:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "mteb",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17389824,
+  "parameters_human": "17.4M",
+  "storage_bytes": 156028326,
+  "storage_human": "156 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 67.76119402985074
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 29.637849284211114
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 61.31181187111905
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 79.7547
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 74.21401629809145
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 79.65319615433783
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 37.452000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 37.0245198854966
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 31.152
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 46.702
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.563
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.567
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 42.058
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 44.608
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 32.006
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.064
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.910000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.915
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 42.283
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 44.968
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 31.152
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.308
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 58.965
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 59.067
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 45.698
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 50.296
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 31.152
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 8.279
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.987
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.1
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 18.753
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 13.485
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 31.152
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 82.788
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 98.72
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.502
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.259
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 67.425
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringP2P",
+      "metric": null,
+      "value": 44.52692241938116
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringS2S",
+      "metric": null,
+      "value": 33.245710292773595
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 58.08493637155168
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 71.94378490084861
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 84.1602804378326
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 82.92478106365587
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 82.27930167277077
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 82.18560759458093
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 82.34277425888187
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 81.72776583704467
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 81.17207792207792
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 81.09893836310513
+    }
+  ],
+  "sources": []
+}

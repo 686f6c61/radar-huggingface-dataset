@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "yunshushuyun/m-piu3gh",
+  "slug": "yunshushuyun-m-piu3gh",
+  "author": "yunshushuyun",
+  "url": "https://huggingface.co/yunshushuyun/m-piu3gh",
+  "created_at": "2026-11-11T14:55:07.000Z",
+  "updated_at": "2026-11-14T01:40:57.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 406846770446,
+  "storage_human": "406.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

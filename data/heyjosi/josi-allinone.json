@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "heyjosi/josi-allinone",
+  "slug": "heyjosi-josi-allinone",
+  "author": "heyjosi",
+  "url": "https://huggingface.co/heyjosi/josi-allinone",
+  "created_at": "2026-11-14T00:32:21.000Z",
+  "updated_at": "2026-11-14T02:37:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "docker",
+    "ollama",
+    "josi",
+    "assistant",
+    "executive-assistant",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9984973312,
+  "storage_human": "10.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

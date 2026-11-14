@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "2bidoubi/SPARK",
+  "slug": "2bidoubi-spark",
+  "author": "2bidoubi",
+  "url": "https://huggingface.co/2bidoubi/SPARK",
+  "created_at": "2026-05-02T04:41:53.000Z",
+  "updated_at": "2026-11-13T21:41:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "arxiv:2512.01629",
+    "3d-reconstruction",
+    "articulated-objects",
+    "robotics",
+    "simulation",
+    "image-to-3d",
+    "en",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15646271581,
+  "storage_human": "15.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

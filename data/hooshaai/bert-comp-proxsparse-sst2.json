@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-comp-proxsparse-sst2",
+  "slug": "hooshaai-bert-comp-proxsparse-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-comp-proxsparse-sst2",
+  "created_at": "2026-11-10T21:34:46.000Z",
+  "updated_at": "2026-11-11T12:38:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "pruning",
+    "proxsparse",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 219045359,
+  "storage_human": "219 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 82.34
+    }
+  ],
+  "sources": []
+}

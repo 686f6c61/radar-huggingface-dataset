@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "10X-Technologies/lyric-lite-tts-kn",
+  "slug": "10x-technologies-lyric-lite-tts-kn",
+  "author": "10X-Technologies",
+  "url": "https://huggingface.co/10X-Technologies/lyric-lite-tts-kn",
+  "created_at": "2026-11-13T05:01:54.000Z",
+  "updated_at": "2026-11-13T20:48:19.000Z",
+  "license": "lyric-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "kn"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "kannada",
+    "on-device",
+    "lyric",
+    "lyric-lite",
+    "10x-technologies",
+    "kn",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 439248795,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

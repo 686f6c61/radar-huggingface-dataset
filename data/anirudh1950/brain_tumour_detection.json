@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Anirudh1950/Brain_tumour_detection",
+  "slug": "anirudh1950-brain_tumour_detection",
+  "author": "Anirudh1950",
+  "url": "https://huggingface.co/Anirudh1950/Brain_tumour_detection",
+  "created_at": "2026-11-14T04:20:53.000Z",
+  "updated_at": "2026-11-14T04:20:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-segmentation",
+    "image-classification",
+    "medical-imaging",
+    "tensorflow",
+    "arxiv:1905.11946",
+    "arxiv:1505.04597",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 911120,
+  "storage_human": "911120 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CMES | Free Full-Text | An Efficient Explainable AI Model for ...",
+      "url": "https://www.techscience.com/CMES/v144n2/63709/html",
+      "snippet": "This paper proposes a new model based on AI, called the Brain Tumor Detection (BTD) model, based on brain tumor Magnetic Resonance Images (MRIs). The proposed BTC comprises three main modules: (i) Image Processing Module (IPM), (ii) Patient ..."
+    }
+  ]
+}

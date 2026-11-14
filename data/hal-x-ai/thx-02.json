@@ -5,7 +5,7 @@
   "author": "HAL-X-AI",
   "url": "https://huggingface.co/HAL-X-AI/THX-02",
   "created_at": "2026-10-23T11:35:27.000Z",
-  "updated_at": "2026-11-04T21:41:01.000Z",
+  "updated_at": "2026-11-13T17:51:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -47,11 +47,11 @@
   ],
   "likes": 59,
   "downloads_30d": 12424,
-  "trending_score": 38,
+  "trending_score": 32,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 9621236401,
-  "storage_human": "9.6 GB",
+  "storage_bytes": 28361246332,
+  "storage_human": "28.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "arthurblg1802/AntiBench-v2.1-deworsened",
+  "slug": "arthurblg1802-antibench-v2-1-deworsened",
+  "author": "arthurblg1802",
+  "url": "https://huggingface.co/arthurblg1802/AntiBench-v2.1-deworsened",
+  "created_at": "2026-11-14T02:31:19.000Z",
+  "updated_at": "2026-11-14T02:55:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "antichar",
+    "text-generation",
+    "tiny-language-model",
+    "character-level",
+    "base-model",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202752,
+  "parameters_human": "202752",
+  "storage_bytes": 815224,
+  "storage_human": "815224 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

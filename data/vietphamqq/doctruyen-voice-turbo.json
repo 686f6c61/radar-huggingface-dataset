@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "vietphamqq/doctruyen-voice-turbo",
+  "slug": "vietphamqq-doctruyen-voice-turbo",
+  "author": "vietphamqq",
+  "url": "https://huggingface.co/vietphamqq/doctruyen-voice-turbo",
+  "created_at": "2026-11-14T02:20:36.000Z",
+  "updated_at": "2026-11-14T02:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "vi",
+    "base_model:pnnbao-ump/VieNeu-TTS-v3-Turbo",
+    "base_model:quantized:pnnbao-ump/VieNeu-TTS-v3-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209751684,
+  "storage_human": "210 MB",
+  "base_model": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

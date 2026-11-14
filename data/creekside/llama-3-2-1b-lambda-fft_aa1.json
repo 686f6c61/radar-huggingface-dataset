@@ -5,7 +5,7 @@
   "author": "Creekside",
   "url": "https://huggingface.co/Creekside/llama-3.2-1B-lambda-fft_aa1",
   "created_at": "2026-11-13T08:45:29.000Z",
-  "updated_at": "2026-11-13T08:45:48.000Z",
+  "updated_at": "2026-11-13T19:29:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

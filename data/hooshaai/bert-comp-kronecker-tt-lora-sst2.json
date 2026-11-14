@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-comp-kronecker-tt-lora-sst2",
+  "slug": "hooshaai-bert-comp-kronecker-tt-lora-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-comp-kronecker-tt-lora-sst2",
+  "created_at": "2026-11-10T21:28:01.000Z",
+  "updated_at": "2026-11-11T12:44:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "tensor_decomp",
+    "kronecker_tt_lora",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77748015,
+  "storage_human": "78 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 62.73
+    }
+  ],
+  "sources": [
+    {
+      "title": "Use Google Drive for desktop",
+      "url": "https://support.google.com/drive/answer/10838124?hl=en",
+      "snippet": "Important: Before you start, check that your operating system is compatible with Google Drive for desktop. Download Google Drive …"
+    },
+    {
+      "title": "How to disable Google photos and Google Drive completely on …",
+      "url": "https://support.google.com/photos/thread/129331/how-to-disable-google-photos-and-google-drive-completely-on-android-and-google-account?hl=en",
+      "snippet": "May 16, 2018 · On my android phone to stop photos being sent to Google online storage I did this : Open Google photos Menu …"
+    },
+    {
+      "title": "Install Drive for desktop - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=en",
+      "snippet": "You can find and open your files from Google Drive on your computer with Drive for desktop. You can use Drive for desktop to keep …"
+    }
+  ]
+}

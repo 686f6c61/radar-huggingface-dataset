@@ -5,7 +5,7 @@
   "author": "FlagRelease",
   "url": "https://huggingface.co/FlagRelease/Qwen3.6-35B-A3B-nomtp-metax-FlagOS-Express",
   "created_at": "2026-04-15T13:09:18.000Z",
-  "updated_at": "2026-11-10T02:27:54.000Z",
+  "updated_at": "2026-11-10T03:06:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "vonkaiser/HunyuanImage-3.0-Instruct-NFVP4",
+  "slug": "vonkaiser-hunyuanimage-3-0-instruct-nfvp4",
+  "author": "vonkaiser",
+  "url": "https://huggingface.co/vonkaiser/HunyuanImage-3.0-Instruct-NFVP4",
+  "created_at": "2026-11-13T23:38:53.000Z",
+  "updated_at": "2026-11-13T23:38:53.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hunyuan_image_3_moe",
+    "image-to-image",
+    "custom_code",
+    "arxiv:2509.23951",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83009199459,
+  "parameters_human": "83.01B",
+  "storage_bytes": 168656548759,
+  "storage_human": "168.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

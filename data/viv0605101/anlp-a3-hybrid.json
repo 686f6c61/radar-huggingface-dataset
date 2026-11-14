@@ -5,7 +5,7 @@
   "author": "Viv0605101",
   "url": "https://huggingface.co/Viv0605101/anlp-a3-hybrid",
   "created_at": "2026-10-25T07:22:23.000Z",
-  "updated_at": "2026-11-11T17:53:59.000Z",
+  "updated_at": "2026-11-14T00:09:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,10 +24,10 @@
   "likes": 0,
   "downloads_30d": 81,
   "trending_score": 0,
-  "parameters": 962796,
-  "parameters_human": "962796",
-  "storage_bytes": 11575144,
-  "storage_human": "12 MB",
+  "parameters": 1049644,
+  "parameters_human": "1.0M",
+  "storage_bytes": 19946800,
+  "storage_human": "20 MB",
   "base_model": null,
   "formats": [
     "safetensors"

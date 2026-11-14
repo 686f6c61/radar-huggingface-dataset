@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "kowanietz/NanoReason-7B-Think",
+  "slug": "kowanietz-nanoreason-7b-think",
+  "author": "kowanietz",
+  "url": "https://huggingface.co/kowanietz/NanoReason-7B-Think",
+  "created_at": "2026-11-12T23:23:26.000Z",
+  "updated_at": "2026-11-13T22:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "reasoning",
+    "grpo",
+    "dr-grpo",
+    "rlvr",
+    "trl",
+    "conversational",
+    "en",
+    "dataset:allenai/Dolci-Think-RL-7B",
+    "base_model:kowanietz/NanoReason-7B-SFT-Refined",
+    "base_model:finetune:kowanietz/NanoReason-7B-SFT-Refined",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596907893,
+  "storage_human": "14.6 GB",
+  "base_model": "kowanietz/NanoReason-7B-SFT-Refined",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

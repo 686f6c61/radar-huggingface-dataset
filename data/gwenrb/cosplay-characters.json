@@ -5,7 +5,7 @@
   "author": "GwenRB",
   "url": "https://huggingface.co/GwenRB/cosplay-characters",
   "created_at": "2026-11-02T13:44:08.000Z",
-  "updated_at": "2026-11-02T13:44:38.000Z",
+  "updated_at": "2026-11-13T17:35:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -24,10 +24,10 @@
   "likes": 0,
   "downloads_30d": 11,
   "trending_score": 0,
-  "parameters": 93188748,
-  "parameters_human": "93.2M",
-  "storage_bytes": 186392608,
-  "storage_human": "186 MB",
+  "parameters": 93261803,
+  "parameters_human": "93.3M",
+  "storage_bytes": 372931326,
+  "storage_human": "373 MB",
   "base_model": "timm/vit_base_patch16_siglip_224.v2_webli",
   "formats": [
     "safetensors"

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-Tulu-3-405B-SFT-GGUF",
+  "slug": "mradermacher-llama-3-1-tulu-3-405b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-Tulu-3-405B-SFT-GGUF",
+  "created_at": "2025-02-22T14:26:39.000Z",
+  "updated_at": "2026-11-13T22:03:56.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "en",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "base_model:allenai/Llama-3.1-Tulu-3-405B-SFT",
+    "base_model:finetune:allenai/Llama-3.1-Tulu-3-405B-SFT",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2755113627232,
+  "storage_human": "2755.1 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3-405B-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

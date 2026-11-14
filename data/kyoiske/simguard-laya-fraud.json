@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Kyoiske/simguard-laya-fraud",
+  "slug": "kyoiske-simguard-laya-fraud",
+  "author": "Kyoiske",
+  "url": "https://huggingface.co/Kyoiske/simguard-laya-fraud",
+  "created_at": "2026-11-13T20:53:41.000Z",
+  "updated_at": "2026-11-13T20:55:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "fraud-detection",
+    "sim-swap",
+    "telecom",
+    "modernbert",
+    "synthetic-data",
+    "text-classification",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

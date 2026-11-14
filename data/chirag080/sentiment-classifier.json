@@ -5,7 +5,7 @@
   "author": "Chirag080",
   "url": "https://huggingface.co/Chirag080/sentiment-classifier",
   "created_at": "2026-11-12T19:23:51.000Z",
-  "updated_at": "2026-11-12T20:16:28.000Z",
+  "updated_at": "2026-11-13T21:30:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20173757,
-  "storage_human": "20 MB",
+  "storage_bytes": 28919909,
+  "storage_human": "29 MB",
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"

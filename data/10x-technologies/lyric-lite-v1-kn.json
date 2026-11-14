@@ -5,7 +5,7 @@
   "author": "10X-Technologies",
   "url": "https://huggingface.co/10X-Technologies/lyric-lite-v1-kn",
   "created_at": "2026-11-13T05:01:54.000Z",
-  "updated_at": "2026-11-13T16:56:14.000Z",
+  "updated_at": "2026-11-13T20:48:19.000Z",
   "license": "lyric-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -23,8 +23,6 @@
     "lyric-lite",
     "10x-technologies",
     "kn",
-    "base_model:10X-Technologies/lyric-voice-v1-kn",
-    "base_model:finetune:10X-Technologies/lyric-voice-v1-kn",
     "license:other",
     "region:us"
   ],

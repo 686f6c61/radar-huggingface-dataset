@@ -5,7 +5,7 @@
   "author": "Haku-2004",
   "url": "https://huggingface.co/Haku-2004/act_k3_base_10_old",
   "created_at": "2026-11-13T05:14:15.000Z",
-  "updated_at": "2026-11-13T05:14:52.000Z",
+  "updated_at": "2026-11-13T05:14:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 206707280,
+  "storage_human": "207 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "y0uq/Ternary-Bonsai-2-27B-Q2_0-MTP",
+  "slug": "y0uq-ternary-bonsai-2-27b-q2_0-mtp",
+  "author": "y0uq",
+  "url": "https://huggingface.co/y0uq/Ternary-Bonsai-2-27B-Q2_0-MTP",
+  "created_at": "2026-11-14T00:49:43.000Z",
+  "updated_at": "2026-11-14T00:54:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "mtp",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 7977018656,
+  "storage_human": "8.0 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "KurniaKadir/hrmy",
+  "slug": "kurniakadir-hrmy",
+  "author": "KurniaKadir",
+  "url": "https://huggingface.co/KurniaKadir/hrmy",
+  "created_at": "2025-08-14T03:37:09.000Z",
+  "updated_at": "2026-11-13T23:06:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ms"
+  ],
+  "tags": [
+    "transformers",
+    "legal",
+    "human-resources",
+    "malaysia",
+    "employment-law",
+    "fairness",
+    "payroll",
+    "text-generation",
+    "en",
+    "ms",
+    "dataset:malaysian-employment-laws-2025",
+    "dataset:kwsp-epf-guidelines",
+    "dataset:socso-benefits-2025",
+    "dataset:industrial-court-cases",
+    "dataset:wage-disparity-benchmarks",
+    "base_model:moonshotai/Kimi-K2-Instruct",
+    "base_model:finetune:moonshotai/Kimi-K2-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "moonshotai/Kimi-K2-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "HR Compliance QA",
+      "dataset": "MYHR-QA-2025",
+      "metric": "Legal Provision Accuracy",
+      "value": 0.94
+    },
+    {
+      "task": "HR Compliance QA",
+      "dataset": "MYHR-QA-2025",
+      "metric": "Wage Disparity Detection",
+      "value": 0.89
+    },
+    {
+      "task": "HR Compliance QA",
+      "dataset": "MYHR-QA-2025",
+      "metric": "Multilingual Understanding",
+      "value": 0.91
+    }
+  ],
+  "sources": []
+}

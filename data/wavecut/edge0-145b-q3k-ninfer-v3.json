@@ -5,7 +5,7 @@
   "author": "WaveCut",
   "url": "https://huggingface.co/WaveCut/Edge0-145B-q3k-NInfer-v3",
   "created_at": "2026-11-13T10:30:45.000Z",
-  "updated_at": "2026-11-13T11:11:49.000Z",
+  "updated_at": "2026-11-13T13:03:34.000Z",
   "license": "edge0-community-model-license-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",

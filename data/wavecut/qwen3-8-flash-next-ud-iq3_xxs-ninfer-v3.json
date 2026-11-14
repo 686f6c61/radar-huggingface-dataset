@@ -5,7 +5,7 @@
   "author": "WaveCut",
   "url": "https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-UD-IQ3_XXS-NInfer-v3",
   "created_at": "2026-11-10T02:52:31.000Z",
-  "updated_at": "2026-11-10T02:57:09.000Z",
+  "updated_at": "2026-11-13T13:03:48.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",

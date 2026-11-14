@@ -5,7 +5,7 @@
   "author": "AEON-7",
   "url": "https://huggingface.co/AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4",
   "created_at": "2026-04-17T21:41:35.000Z",
-  "updated_at": "2026-11-10T06:33:36.000Z",
+  "updated_at": "2026-11-13T04:45:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -91,7 +91,7 @@
     "region:us"
   ],
   "likes": 74,
-  "downloads_30d": 73342,
+  "downloads_30d": 45388,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

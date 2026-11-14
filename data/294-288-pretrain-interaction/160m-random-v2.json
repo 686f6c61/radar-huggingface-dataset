@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "294-288-pretrain-interaction/160M-random-v2",
+  "slug": "294-288-pretrain-interaction-160m-random-v2",
+  "author": "294-288-pretrain-interaction",
+  "url": "https://huggingface.co/294-288-pretrain-interaction/160M-random-v2",
+  "created_at": "2026-11-14T03:57:44.000Z",
+  "updated_at": "2026-11-14T03:58:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "pretraining",
+    "gpt-neox",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

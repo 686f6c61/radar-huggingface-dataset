@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "pln-ufrgs/ufa-wildfeedback-satisfaction-mbert",
+  "slug": "pln-ufrgs-ufa-wildfeedback-satisfaction-mbert",
+  "author": "pln-ufrgs",
+  "url": "https://huggingface.co/pln-ufrgs/ufa-wildfeedback-satisfaction-mbert",
+  "created_at": "2026-11-06T22:49:25.000Z",
+  "updated_at": "2026-11-07T00:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-classification",
+    "bert",
+    "satisfaction",
+    "multilingual",
+    "dataset:microsoft/WildFeedback",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2134336428,
+  "storage_human": "2.1 GB",
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

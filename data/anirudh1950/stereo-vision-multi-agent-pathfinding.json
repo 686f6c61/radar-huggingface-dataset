@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Anirudh1950/Stereo-Vision-Multi-Agent-Pathfinding",
+  "slug": "anirudh1950-stereo-vision-multi-agent-pathfinding",
+  "author": "Anirudh1950",
+  "url": "https://huggingface.co/Anirudh1950/Stereo-Vision-Multi-Agent-Pathfinding",
+  "created_at": "2026-11-14T04:19:12.000Z",
+  "updated_at": "2026-11-14T04:19:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "depth-estimation",
+    "stereo-vision",
+    "path-planning",
+    "opencv",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72229021,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vfat - Multi-chain Yield Aggregator & Portfolio Manager",
+      "url": "https://vfat.io/",
+      "snippet": "vfat is a yield aggregator that simplifies and automates yield farming, manages multi-wallet portfolios, tracks lending pools and other …"
+    }
+  ]
+}

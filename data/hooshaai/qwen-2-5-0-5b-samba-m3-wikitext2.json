@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/qwen-2.5-0.5b-samba-m3-wikitext2",
+  "slug": "hooshaai-qwen-2-5-0-5b-samba-m3-wikitext2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/qwen-2.5-0.5b-samba-m3-wikitext2",
+  "created_at": "2026-11-11T00:02:32.000Z",
+  "updated_at": "2026-11-11T08:42:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "qwen2",
+    "qwen2.5",
+    "attention-zoo",
+    "subquadratic-attention",
+    "knowledge-distillation",
+    "samba_m3",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Salesforce/wikitext",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 333,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161880588,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal Language Modeling",
+      "dataset": "wikitext-2-raw-v1",
+      "metric": "WikiText-2 Validation Perplexity",
+      "value": 219.15
+    }
+  ],
+  "sources": []
+}

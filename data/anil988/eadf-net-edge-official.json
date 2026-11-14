@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "anil988/EADF-Net-Edge-Official",
+  "slug": "anil988-eadf-net-edge-official",
+  "author": "anil988",
+  "url": "https://huggingface.co/anil988/EADF-Net-Edge-Official",
+  "created_at": "2026-11-13T21:32:21.000Z",
+  "updated_at": "2026-11-13T21:32:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31464933,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

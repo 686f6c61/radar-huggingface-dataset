@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "WhiteUniversal/smart-request-router-setfit",
+  "slug": "whiteuniversal-smart-request-router-setfit",
+  "author": "WhiteUniversal",
+  "url": "https://huggingface.co/WhiteUniversal/smart-request-router-setfit",
+  "created_at": "2026-11-13T23:52:07.000Z",
+  "updated_at": "2026-11-14T00:22:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "text-classification",
+    "banking",
+    "routing",
+    "en",
+    "es",
+    "dataset:WhiteUniversal/smart-request-router-dataset",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 958384297,
+  "storage_human": "958 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

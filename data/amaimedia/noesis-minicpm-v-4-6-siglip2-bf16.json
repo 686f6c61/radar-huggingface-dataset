@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-BF16",
   "created_at": "2026-08-27T19:35:32.000Z",
-  "updated_at": "2026-08-27T19:54:22.000Z",
+  "updated_at": "2026-11-12T08:24:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 522299312,
   "parameters_human": "522.3M",

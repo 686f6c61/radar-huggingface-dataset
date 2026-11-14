@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tepirale/sam3-ONNX",
+  "slug": "tepirale-sam3-onnx",
+  "author": "tepirale",
+  "url": "https://huggingface.co/tepirale/sam3-ONNX",
+  "created_at": "2026-11-13T23:03:28.000Z",
+  "updated_at": "2026-11-13T23:05:03.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sam3",
+    "segmentation",
+    "quantized",
+    "text-prompt",
+    "mask-generation",
+    "base_model:facebook/sam3",
+    "base_model:quantized:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8534997654,
+  "storage_human": "8.5 GB",
+  "base_model": "facebook/sam3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

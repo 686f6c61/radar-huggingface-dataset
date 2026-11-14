@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sdfsadg324/nercopy1794603355",
+  "slug": "sdfsadg324-nercopy1794603355",
+  "author": "sdfsadg324",
+  "url": "https://huggingface.co/sdfsadg324/nercopy1794603355",
+  "created_at": "2026-11-13T20:55:55.000Z",
+  "updated_at": "2026-11-13T21:05:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108317193,
+  "parameters_human": "108.3M",
+  "storage_bytes": 2162233965,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

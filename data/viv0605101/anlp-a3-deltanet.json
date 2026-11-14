@@ -5,7 +5,7 @@
   "author": "Viv0605101",
   "url": "https://huggingface.co/Viv0605101/anlp-a3-deltanet",
   "created_at": "2026-10-25T07:20:29.000Z",
-  "updated_at": "2026-11-11T17:53:24.000Z",
+  "updated_at": "2026-11-14T00:09:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,10 +22,10 @@
   "likes": 0,
   "downloads_30d": 84,
   "trending_score": 0,
-  "parameters": 812176,
-  "parameters_human": "812176",
-  "storage_bytes": 9764344,
-  "storage_human": "10 MB",
+  "parameters": 899024,
+  "parameters_human": "899024",
+  "storage_bytes": 16928824,
+  "storage_human": "17 MB",
   "base_model": null,
   "formats": [
     "safetensors"

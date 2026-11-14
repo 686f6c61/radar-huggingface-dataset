@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hardik-dwivedi/qwen2.5-1.5b-when2call-dpo-merged",
+  "slug": "hardik-dwivedi-qwen2-5-1-5b-when2call-dpo-merged",
+  "author": "hardik-dwivedi",
+  "url": "https://huggingface.co/hardik-dwivedi/qwen2.5-1.5b-when2call-dpo-merged",
+  "created_at": "2026-11-13T21:26:14.000Z",
+  "updated_at": "2026-11-13T21:26:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467144,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

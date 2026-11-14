@@ -5,7 +5,7 @@
   "author": "abbuibuibui",
   "url": "https://huggingface.co/abbuibuibui/KyokoHori-Lora",
   "created_at": "2026-10-30T03:12:41.000Z",
-  "updated_at": "2026-11-05T02:52:28.000Z",
+  "updated_at": "2026-11-14T03:11:43.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 112,
+  "downloads_30d": 138,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6402044461,
-  "storage_human": "6.4 GB",
+  "storage_bytes": 7898374000,
+  "storage_human": "7.9 GB",
   "base_model": "waiIllustriousSDXL-v17",
   "formats": [
     "diffusers"

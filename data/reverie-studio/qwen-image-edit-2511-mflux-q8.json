@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "reverie-studio/qwen-image-edit-2511-mflux-q8",
+  "slug": "reverie-studio-qwen-image-edit-2511-mflux-q8",
+  "author": "reverie-studio",
+  "url": "https://huggingface.co/reverie-studio/qwen-image-edit-2511-mflux-q8",
+  "created_at": "2026-11-13T21:03:41.000Z",
+  "updated_at": "2026-11-13T21:04:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mflux",
+    "reverie",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37472396292,
+  "storage_human": "37.5 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

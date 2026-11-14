@@ -5,7 +5,7 @@
   "author": "DreamBlooms",
   "url": "https://huggingface.co/DreamBlooms/JAD-S1-7B-A1B-v0.5-GGUF",
   "created_at": "2026-11-13T09:17:39.000Z",
-  "updated_at": "2026-11-13T09:41:31.000Z",
+  "updated_at": "2026-11-13T14:35:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -34,20 +34,20 @@
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
-    "conversational"
+    "feature-extraction"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 7356880896,
   "parameters_human": "7.36B",
-  "storage_bytes": 7829548800,
-  "storage_human": "7.8 GB",
+  "storage_bytes": 45108275840,
+  "storage_human": "45.1 GB",
   "base_model": "DreamBlooms/JAD-S1-7B-A1B-v0.5",
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

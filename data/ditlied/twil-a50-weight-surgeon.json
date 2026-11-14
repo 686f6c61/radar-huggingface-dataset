@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "DITlieD/twil-a50-weight-surgeon",
+  "slug": "ditlied-twil-a50-weight-surgeon",
+  "author": "DITlieD",
+  "url": "https://huggingface.co/DITlieD/twil-a50-weight-surgeon",
+  "created_at": "2026-11-14T03:44:03.000Z",
+  "updated_at": "2026-11-14T03:44:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:ibm-granite/granite-3.0-8b-instruct",
+    "base_model:adapter:ibm-granite/granite-3.0-8b-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395918697,
+  "storage_human": "396 MB",
+  "base_model": "ibm-granite/granite-3.0-8b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

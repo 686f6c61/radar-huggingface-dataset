@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "lucasmondora/Landing-page-gemma-4-26B-A4B-it",
+  "slug": "lucasmondora-landing-page-gemma-4-26b-a4b-it",
+  "author": "lucasmondora",
+  "url": "https://huggingface.co/lucasmondora/Landing-page-gemma-4-26B-A4B-it",
+  "created_at": "2026-11-13T13:03:18.000Z",
+  "updated_at": "2026-11-13T21:30:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 185470840416,
+  "storage_human": "185.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

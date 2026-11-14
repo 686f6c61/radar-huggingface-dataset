@@ -5,7 +5,7 @@
   "author": "Oliilo123",
   "url": "https://huggingface.co/Oliilo123/modernbert-base-banking77",
   "created_at": "2026-11-13T04:39:29.000Z",
-  "updated_at": "2026-11-13T04:55:42.000Z",
+  "updated_at": "2026-11-13T05:30:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": 149664077,
   "parameters_human": "149.7M",

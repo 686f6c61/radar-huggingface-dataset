@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "xixibuxixi/StatePlay-Mixed-SFT2000-RL-NoFilter-Checkpoints",
+  "slug": "xixibuxixi-stateplay-mixed-sft2000-rl-nofilter-checkpoints",
+  "author": "xixibuxixi",
+  "url": "https://huggingface.co/xixibuxixi/StatePlay-Mixed-SFT2000-RL-NoFilter-Checkpoints",
+  "created_at": "2026-11-14T02:41:57.000Z",
+  "updated_at": "2026-11-14T02:42:06.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "safetensors",
+    "stateplay",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115619968,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

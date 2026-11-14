@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "chintanjv/BatLM-v3-qwen05",
+  "slug": "chintanjv-batlm-v3-qwen05",
+  "author": "chintanjv",
+  "url": "https://huggingface.co/chintanjv/BatLM-v3-qwen05",
+  "created_at": "2026-11-14T00:18:44.000Z",
+  "updated_at": "2026-11-14T00:18:54.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "batman",
+    "rag",
+    "lora",
+    "webgpu",
+    "educational",
+    "tiny-llm",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617232187,
+  "storage_human": "1.6 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

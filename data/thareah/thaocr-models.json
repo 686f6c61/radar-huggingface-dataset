@@ -5,7 +5,7 @@
   "author": "Thareah",
   "url": "https://huggingface.co/Thareah/ThaOCR-models",
   "created_at": "2026-11-09T08:26:52.000Z",
-  "updated_at": "2026-11-12T13:45:40.000Z",
+  "updated_at": "2026-11-14T00:26:15.000Z",
   "license": "mixed",
   "license_family": "unknown",
   "pipeline_tag": "image-to-text",
@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 297124971,
-  "storage_human": "297 MB",
+  "storage_bytes": 335129792,
+  "storage_human": "335 MB",
   "base_model": null,
   "formats": [
     "onnx"

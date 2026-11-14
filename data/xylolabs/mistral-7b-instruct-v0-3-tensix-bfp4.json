@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Mistral-7B-Instruct-v0.3-Tensix-BFP4",
   "created_at": "2026-11-12T01:02:47.000Z",
-  "updated_at": "2026-11-13T04:18:06.000Z",
+  "updated_at": "2026-11-13T05:12:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",

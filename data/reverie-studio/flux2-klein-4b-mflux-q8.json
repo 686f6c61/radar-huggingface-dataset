@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "reverie-studio/flux2-klein-4b-mflux-q8",
+  "slug": "reverie-studio-flux2-klein-4b-mflux-q8",
+  "author": "reverie-studio",
+  "url": "https://huggingface.co/reverie-studio/flux2-klein-4b-mflux-q8",
+  "created_at": "2026-11-13T21:00:05.000Z",
+  "updated_at": "2026-11-13T21:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mflux",
+    "reverie",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8569552411,
+  "storage_human": "8.6 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

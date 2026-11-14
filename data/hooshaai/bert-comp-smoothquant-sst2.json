@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-comp-smoothquant-sst2",
+  "slug": "hooshaai-bert-comp-smoothquant-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-comp-smoothquant-sst2",
+  "created_at": "2026-11-10T21:43:41.000Z",
+  "updated_at": "2026-11-11T10:52:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "quantization",
+    "smoothquant",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 305173279,
+  "storage_human": "305 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 91.74
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cloud computing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cloud_computing",
+      "snippet": "Cloud computing can shorten time to market by offering pre-configured tools, scalable resources, and managed services, allowing …"
+    },
+    {
+      "title": "Cloud Based Services - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/cloud-computing/cloud-based-services/",
+      "snippet": "Oct 15, 2026 · Cloud-based services are computing resources provided over the internet, allowing users to run applications, store …"
+    },
+    {
+      "title": "What is Cloud Computing? - Cloud Computing Services, Benefits, and ...",
+      "url": "https://aws.amazon.com/what-is-cloud-computing/",
+      "snippet": "The three main types of cloud computing include Infrastructure as a Service, Platform as a Service, and Software as a Service. Each …"
+    },
+    {
+      "title": "Cloud Computing Services | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us?msockid=269b6256b70a6b2b3ad07a46b6186a58",
+      "snippet": "Invent with purpose, realize cost savings, and make your organization more efficient with Microsoft Azure’s open and flexible cloud …"
+    },
+    {
+      "title": "What is cloud computing? - IBM",
+      "url": "https://www.ibm.com/think/topics/cloud-computing",
+      "snippet": "Cloud computing is on-demand access to computing resources—physical or virtual servers, data storage, networking capabilities, …"
+    }
+  ]
+}

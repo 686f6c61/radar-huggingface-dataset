@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/phi-4-Tensix-BFP4-Down8",
   "created_at": "2026-11-12T09:57:59.000Z",
-  "updated_at": "2026-11-12T09:59:33.000Z",
+  "updated_at": "2026-11-13T05:21:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 14659507200,
   "parameters_human": "14.66B",

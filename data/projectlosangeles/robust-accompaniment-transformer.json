@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "projectlosangeles/Robust-Accompaniment-Transformer",
+  "slug": "projectlosangeles-robust-accompaniment-transformer",
+  "author": "projectlosangeles",
+  "url": "https://huggingface.co/projectlosangeles/Robust-Accompaniment-Transformer",
+  "created_at": "2026-11-13T23:32:50.000Z",
+  "updated_at": "2026-11-13T23:42:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "MIDI",
+    "music",
+    "accompaniment",
+    "melody-to-accompaniment",
+    "en",
+    "dataset:projectlosangeles/Discover-MIDI-Dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1360982967,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

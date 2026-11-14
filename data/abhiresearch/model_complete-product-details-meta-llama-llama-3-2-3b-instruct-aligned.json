@@ -5,7 +5,7 @@
   "author": "abhiresearch",
   "url": "https://huggingface.co/abhiresearch/model_complete-product-details-meta-llama-llama-3-2-3b-instruct-aligned",
   "created_at": "2026-11-13T05:38:55.000Z",
-  "updated_at": "2026-11-13T05:39:01.000Z",
+  "updated_at": "2026-11-13T07:03:36.000Z",
   "license": "base-model-licence",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

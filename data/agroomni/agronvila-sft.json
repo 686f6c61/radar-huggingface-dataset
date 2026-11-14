@@ -5,10 +5,10 @@
   "author": "AgroOmni",
   "url": "https://huggingface.co/AgroOmni/AgroNVILA-SFT",
   "created_at": "2026-11-02T09:40:26.000Z",
-  "updated_at": "2026-11-02T09:46:29.000Z",
+  "updated_at": "2026-11-13T16:21:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "image-text-to-text",
   "library": null,
   "languages": [
     "en"
@@ -20,8 +20,11 @@
     "agriculture",
     "remote-sensing",
     "vision-language",
+    "image-text-to-text",
+    "conversational",
     "en",
     "dataset:AgroOmni/AgroOmni",
+    "arxiv:2603.14342",
     "base_model:Efficient-Large-Model/NVILA-Lite-8B",
     "base_model:finetune:Efficient-Large-Model/NVILA-Lite-8B",
     "license:apache-2.0",
@@ -38,7 +41,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

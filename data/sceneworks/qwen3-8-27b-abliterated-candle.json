@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SceneWorks/qwen3.8-27b-abliterated-candle",
+  "slug": "sceneworks-qwen3-8-27b-abliterated-candle",
+  "author": "SceneWorks",
+  "url": "https://huggingface.co/SceneWorks/qwen3.8-27b-abliterated-candle",
+  "created_at": "2026-11-13T21:23:36.000Z",
+  "updated_at": "2026-11-13T21:31:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "candle",
+    "qwen3_5",
+    "vision",
+    "sceneworks",
+    "image-text-to-text",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52353688128,
+  "storage_human": "52.4 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

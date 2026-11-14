@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tranbateo/qwen3-8b-ai-tutor-vn",
+  "slug": "tranbateo-qwen3-8b-ai-tutor-vn",
+  "author": "tranbateo",
+  "url": "https://huggingface.co/tranbateo/qwen3-8b-ai-tutor-vn",
+  "created_at": "2026-11-14T02:58:14.000Z",
+  "updated_at": "2026-11-14T02:59:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027784256,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

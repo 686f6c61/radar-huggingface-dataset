@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Muno459/fastconformer-quran",
+  "slug": "muno459-fastconformer-quran",
+  "author": "Muno459",
+  "url": "https://huggingface.co/Muno459/fastconformer-quran",
+  "created_at": "2026-05-19T13:01:39.000Z",
+  "updated_at": "2026-11-13T20:52:34.000Z",
+  "license": "npl-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "audio",
+    "automatic-speech-recognition",
+    "arabic",
+    "quran",
+    "quranic-recitation",
+    "tajweed",
+    "fastconformer",
+    "mispronunciation-detection",
+    "ar",
+    "dataset:tarteel-ai/everyayah",
+    "dataset:tarteel-ai/tlog",
+    "dataset:obadx/muaalem-annotated-v3",
+    "base_model:nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+    "base_model:quantized:nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 38,
+  "downloads_30d": 135,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4340038355,
+  "storage_human": "4.3 GB",
+  "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "EveryAyah held-out (3 zero-training reciters)",
+      "metric": "WER (normalized) - leakage-free held-out reciters",
+      "value": 0.93
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "EveryAyah held-out (3 zero-training reciters)",
+      "metric": "CER (normalized) - leakage-free held-out reciters",
+      "value": 0.26
+    },
+    {
+      "task": "ASR on the leakage-free Quran benchmark",
+      "dataset": "Held-out Quran benchmark (EveryAyah unseen + QUL unseen + tlog phone, 600 clips)",
+      "metric": "WER (normalized) overall - beats nvidia FastConformer (7.44) and Tarteel's production realtime ASR (9.56)",
+      "value": 5.41
+    }
+  ],
+  "sources": []
+}

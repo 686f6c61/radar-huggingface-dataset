@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/llava-qwen-0.5b-bam-umoe-scienceqa",
+  "slug": "hooshaai-llava-qwen-0-5b-bam-umoe-scienceqa",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/llava-qwen-0.5b-bam-umoe-scienceqa",
+  "created_at": "2026-11-11T02:25:02.000Z",
+  "updated_at": "2026-11-11T08:41:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "llava",
+    "multimodal",
+    "vision-language-model",
+    "scienceqa",
+    "attention-zoo",
+    "attention-surgery",
+    "sparse",
+    "bam_umoe",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:derek-thomas/ScienceQA",
+    "base_model:llava-hf/llava-interleave-qwen-0.5b-hf",
+    "base_model:finetune:llava-hf/llava-interleave-qwen-0.5b-hf",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 804530370,
+  "storage_human": "805 MB",
+  "base_model": "llava-hf/llava-interleave-qwen-0.5b-hf",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "ScienceQA Multimodal Visual Reasoning",
+      "dataset": "ScienceQA (Image Subset)",
+      "metric": "ScienceQA Visual Accuracy (%)",
+      "value": 31.25
+    },
+    {
+      "task": "ScienceQA Multimodal Visual Reasoning",
+      "dataset": "ScienceQA (Image Subset)",
+      "metric": "ScienceQA Answer Perplexity",
+      "value": 3.02
+    }
+  ],
+  "sources": []
+}

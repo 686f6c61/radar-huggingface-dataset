@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3-4B-Base-Tensix-BFP8",
   "created_at": "2026-11-12T10:13:31.000Z",
-  "updated_at": "2026-11-13T04:20:42.000Z",
+  "updated_at": "2026-11-13T05:15:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 4411424256,
   "parameters_human": "4.41B",

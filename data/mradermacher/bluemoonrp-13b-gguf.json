@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/bluemoonrp-13b-GGUF",
+  "slug": "mradermacher-bluemoonrp-13b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/bluemoonrp-13b-GGUF",
+  "created_at": "2025-02-24T10:09:03.000Z",
+  "updated_at": "2026-11-13T22:03:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:gozfarb/bluemoon_roleplay_300k_vicuna",
+    "base_model:reeducator/bluemoonrp-13b",
+    "base_model:quantized:reeducator/bluemoonrp-13b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801912448,
+  "storage_human": "88.8 GB",
+  "base_model": "reeducator/bluemoonrp-13b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

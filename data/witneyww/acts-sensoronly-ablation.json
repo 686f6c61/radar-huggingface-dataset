@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "WitneyWW/acts-sensoronly-ablation",
+  "slug": "witneyww-acts-sensoronly-ablation",
+  "author": "WitneyWW",
+  "url": "https://huggingface.co/WitneyWW/acts-sensoronly-ablation",
+  "created_at": "2026-11-13T19:50:01.000Z",
+  "updated_at": "2026-11-13T20:20:26.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "world-model",
+    "robotics",
+    "tactile",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141896780852,
+  "storage_human": "141.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Industry 4.0 Impacts Engineering Design - ASME",
+      "url": "https://www.asme.org/topics-resources/content/industry-40-impacts-engineering-design",
+      "snippet": "Jul 11, 2018 · Industry 4.0—digital processes such as the Internet of Things, automation, robotics, and additive manufacturing—has a …"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "neurarank/NEUVY-FUSION-T2I-v1",
+  "slug": "neurarank-neuvy-fusion-t2i-v1",
+  "author": "neurarank",
+  "url": "https://huggingface.co/neurarank/NEUVY-FUSION-T2I-v1",
+  "created_at": "2026-11-14T03:49:00.000Z",
+  "updated_at": "2026-11-14T03:49:28.000Z",
+  "license": "neuvy-evaluation-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "neuvy_fusion_t2i",
+    "text-to-image",
+    "diffusion-transformer",
+    "dit",
+    "flux",
+    "minimax",
+    "model-fusion",
+    "rectified-flow",
+    "pdd",
+    "neuvy",
+    "en",
+    "vi",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 672681358,
+  "storage_human": "673 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

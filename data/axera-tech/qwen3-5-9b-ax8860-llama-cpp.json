@@ -5,7 +5,7 @@
   "author": "AXERA-TECH",
   "url": "https://huggingface.co/AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp",
   "created_at": "2026-11-04T02:59:18.000Z",
-  "updated_at": "2026-11-09T04:13:03.000Z",
+  "updated_at": "2026-11-13T08:49:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 393,
+  "downloads_30d": 403,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 7624240592,
-  "storage_human": "7.6 GB",
+  "storage_bytes": 7849060200,
+  "storage_human": "7.8 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"

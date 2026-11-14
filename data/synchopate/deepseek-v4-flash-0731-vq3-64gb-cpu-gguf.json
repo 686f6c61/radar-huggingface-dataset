@@ -5,7 +5,7 @@
   "author": "Synchopate",
   "url": "https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-VQ3-64GB-CPU-GGUF",
   "created_at": "2026-11-11T13:43:34.000Z",
-  "updated_at": "2026-11-13T03:34:31.000Z",
+  "updated_at": "2026-11-13T07:48:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,11 +31,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 100,
   "trending_score": 0,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 60876939104,
+  "storage_bytes": 60920636864,
   "storage_human": "60.9 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [

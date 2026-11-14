@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "hrl-imerse/doug-act-tables",
+  "slug": "hrl-imerse-doug-act-tables",
+  "author": "hrl-imerse",
+  "url": "https://huggingface.co/hrl-imerse/doug-act-tables",
+  "created_at": "2026-11-14T04:02:42.000Z",
+  "updated_at": "2026-11-14T04:03:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51627654,
+  "parameters_human": "51.6M",
+  "storage_bytes": 413084968,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

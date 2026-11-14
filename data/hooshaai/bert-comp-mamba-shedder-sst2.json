@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-comp-mamba-shedder-sst2",
+  "slug": "hooshaai-bert-comp-mamba-shedder-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-comp-mamba-shedder-sst2",
+  "created_at": "2026-11-10T21:30:25.000Z",
+  "updated_at": "2026-11-11T12:20:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "pruning",
+    "mamba_shedder",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185518431,
+  "storage_human": "186 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 83.03
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mortaiseuse, à bédane, à mèches, à chaîne | Atelier des bois...",
+      "url": "https://www.atelierdesboiseux.fr/categories/machines-a-bois/mortaiseuses",
+      "snippet": "Composée d'une table à course longitudinale et transversale et d'un mandrin porte-mèche, elle s'installe à l'avant de la machine, en …"
+    }
+  ]
+}

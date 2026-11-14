@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jjhpark/adamw-PT-adamw-MT-a10-g20-fdr",
+  "slug": "jjhpark-adamw-pt-adamw-mt-a10-g20-fdr",
+  "author": "jjhpark",
+  "url": "https://huggingface.co/jjhpark/adamw-PT-adamw-MT-a10-g20-fdr",
+  "created_at": "2026-11-13T22:59:58.000Z",
+  "updated_at": "2026-11-13T23:09:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519720,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

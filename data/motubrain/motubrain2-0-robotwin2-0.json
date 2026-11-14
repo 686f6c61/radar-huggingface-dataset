@@ -5,7 +5,7 @@
   "author": "Motubrain",
   "url": "https://huggingface.co/Motubrain/Motubrain2.0-robotwin2.0",
   "created_at": "2026-11-11T12:24:07.000Z",
-  "updated_at": "2026-11-11T12:43:35.000Z",
+  "updated_at": "2026-11-13T12:54:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -15,6 +15,7 @@
     "robotics",
     "robotwin",
     "safetensors",
+    "dmd",
     "region:us"
   ],
   "likes": 0,

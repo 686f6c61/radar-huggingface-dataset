@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/GLM-4.7-Flash-Tensix-BFP4",
   "created_at": "2026-11-12T10:03:43.000Z",
-  "updated_at": "2026-11-13T04:14:27.000Z",
+  "updated_at": "2026-11-13T05:00:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 31221488576,
   "parameters_human": "31.22B",

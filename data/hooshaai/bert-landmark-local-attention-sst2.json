@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-landmark-local-attention-sst2",
+  "slug": "hooshaai-bert-landmark-local-attention-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-landmark-local-attention-sst2",
+  "created_at": "2026-11-09T21:05:58.000Z",
+  "updated_at": "2026-11-11T08:47:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "bert",
+    "attention-zoo",
+    "subquadratic-attention",
+    "glue-benchmark",
+    "knowledge-distillation",
+    "landmark_local_attention",
+    "text-classification",
+    "custom_code",
+    "en",
+    "dataset:glue",
+    "dataset:sst2",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29408548,
+  "storage_human": "29 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danilo Coite MD - Local MD Urgent Care | LinkedIn",
+      "url": "https://www.linkedin.com/in/drcoite",
+      "snippet": "View Danilo Coite MD’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Contact Danilo Coité, Email: d***@local-md.com & Phone Number | Chief ...",
+      "url": "https://www.zoominfo.com/p/Danilo-Coite%CC%81/3864142974",
+      "snippet": "Danilo Coité is a Chief Executive Officer at Local MD Urgent Care and Skilled Wound Experts, bringing extensive expertise in …"
+    },
+    {
+      "title": "Danilo Coite Email & Phone Number | Local MD Urgent Care Chief ...",
+      "url": "https://rocketreach.co/danilo-coite-email_79606713",
+      "snippet": "Danilo Coite, based in Chicago, IL, US, is currently a Chief Executive Officer (CEO) at Local MD Urgent Care. Danilo Coite brings …"
+    },
+    {
+      "title": "#localmdurgentcare #healthcareleadership #clinicexpansion # ...",
+      "url": "https://www.linkedin.com/posts/drcoite_localmdurgentcare-healthcareleadership-activity-7335347694531420160-BLaG",
+      "snippet": "As CEO of Local MD Urgent Care, I’m thrilled to share that we’ve successfully opened five new clinics in just six weeks, continuing …"
+    }
+  ]
+}

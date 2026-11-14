@@ -5,7 +5,7 @@
   "author": "DreamBlooms",
   "url": "https://huggingface.co/DreamBlooms/JAD-S1-7B-A1B-v0.5",
   "created_at": "2026-11-12T21:17:27.000Z",
-  "updated_at": "2026-11-12T21:47:14.000Z",
+  "updated_at": "2026-11-13T09:25:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "multiple-choice",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

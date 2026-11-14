@@ -5,7 +5,7 @@
   "author": "Nole326",
   "url": "https://huggingface.co/Nole326/LeIsaac-SO101-PickOrange",
   "created_at": "2026-11-12T10:53:48.000Z",
-  "updated_at": "2026-11-13T17:12:18.000Z",
+  "updated_at": "2026-11-13T20:55:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": 51596934,
   "parameters_human": "51.6M",
-  "storage_bytes": 825652032,
-  "storage_human": "826 MB",
+  "storage_bytes": 1032003600,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

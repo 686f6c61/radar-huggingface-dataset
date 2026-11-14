@@ -5,7 +5,7 @@
   "author": "Thanawanit",
   "url": "https://huggingface.co/Thanawanit/Kaggle-Backup",
   "created_at": "2026-04-26T03:45:18.000Z",
-  "updated_at": "2026-10-25T02:50:36.000Z",
+  "updated_at": "2026-11-14T00:30:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5177936888,
-  "storage_human": "5.2 GB",
+  "storage_bytes": 5259244352,
+  "storage_human": "5.3 GB",
   "base_model": null,
   "formats": [
     "onnx"

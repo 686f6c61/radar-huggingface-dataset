@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniPLM-Qwen-500M-GGUF",
+  "slug": "mradermacher-miniplm-qwen-500m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniPLM-Qwen-500M-GGUF",
+  "created_at": "2025-03-13T08:43:54.000Z",
+  "updated_at": "2026-11-13T23:10:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:monology/pile-uncopyrighted",
+    "dataset:MiniLLM/pile-diff_samp-qwen_1.8B-qwen_104M-r0.5",
+    "base_model:MiniLLM/MiniPLM-Qwen-500M",
+    "base_model:quantized:MiniLLM/MiniPLM-Qwen-500M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 463987712,
+  "parameters_human": "464.0M",
+  "storage_bytes": 4540911104,
+  "storage_human": "4.5 GB",
+  "base_model": "MiniLLM/MiniPLM-Qwen-500M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

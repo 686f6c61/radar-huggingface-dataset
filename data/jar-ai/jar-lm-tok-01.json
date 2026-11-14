@@ -5,9 +5,9 @@
   "author": "Jar-ai",
   "url": "https://huggingface.co/Jar-ai/Jar-LM-tok-01",
   "created_at": "2026-11-11T05:39:46.000Z",
-  "updated_at": "2026-11-11T05:55:51.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-13T05:26:48.000Z",
+  "license": "jarlm",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [
@@ -21,7 +21,7 @@
     "ru",
     "en",
     "dataset:graelo/wikipedia",
-    "license:apache-2.0",
+    "license:other",
     "region:us"
   ],
   "likes": 0,

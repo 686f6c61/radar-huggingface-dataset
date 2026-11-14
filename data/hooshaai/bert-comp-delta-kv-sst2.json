@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-comp-delta-kv-sst2",
+  "slug": "hooshaai-bert-comp-delta-kv-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-comp-delta-kv-sst2",
+  "created_at": "2026-11-10T21:06:56.000Z",
+  "updated_at": "2026-11-11T10:42:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "kv_cache",
+    "delta_kv",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93930623,
+  "storage_human": "94 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 76.26
+    }
+  ],
+  "sources": [
+    {
+      "title": "TP | LinkedIn",
+      "url": "https://fr.linkedin.com/company/wearetpgroup",
+      "snippet": "3 days ago · TP | 3 761 767 abonnés sur LinkedIn. We are TP Group. You’ve been calling us Teleperformance for almost 47 years. …"
+    }
+  ]
+}

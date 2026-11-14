@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tigers-Abliterated-Upscaled-GGUF",
+  "slug": "mradermacher-tigers-abliterated-upscaled-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tigers-Abliterated-Upscaled-GGUF",
+  "created_at": "2025-02-17T17:43:55.000Z",
+  "updated_at": "2026-11-13T22:04:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:mergekit-community/Tigers-Abliterated-Upscaled",
+    "base_model:quantized:mergekit-community/Tigers-Abliterated-Upscaled",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 15583952384,
+  "parameters_human": "15.58B",
+  "storage_bytes": 108081556512,
+  "storage_human": "108.1 GB",
+  "base_model": "mergekit-community/Tigers-Abliterated-Upscaled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

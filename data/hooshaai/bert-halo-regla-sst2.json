@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-halo-regla-sst2",
+  "slug": "hooshaai-bert-halo-regla-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-halo-regla-sst2",
+  "created_at": "2026-11-09T18:08:20.000Z",
+  "updated_at": "2026-11-11T08:46:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "safetensors",
+    "bert",
+    "attention-zoo",
+    "subquadratic-attention",
+    "glue-benchmark",
+    "knowledge-distillation",
+    "halo_regla",
+    "text-classification",
+    "custom_code",
+    "en",
+    "dataset:glue",
+    "dataset:sst2",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": 117861778,
+  "parameters_human": "117.9M",
+  "storage_bytes": 471494648,
+  "storage_human": "471 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kowanietz/NanoReason-7B-SFT-Refined",
+  "slug": "kowanietz-nanoreason-7b-sft-refined",
+  "author": "kowanietz",
+  "url": "https://huggingface.co/kowanietz/NanoReason-7B-SFT-Refined",
+  "created_at": "2026-11-12T23:23:26.000Z",
+  "updated_at": "2026-11-13T22:13:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "reasoning",
+    "sft",
+    "conversational",
+    "en",
+    "dataset:allenai/Dolci-Think-SFT-7B",
+    "base_model:kowanietz/NanoReason-7B-SFT",
+    "base_model:finetune:kowanietz/NanoReason-7B-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063960,
+  "storage_human": "14.6 GB",
+  "base_model": "kowanietz/NanoReason-7B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

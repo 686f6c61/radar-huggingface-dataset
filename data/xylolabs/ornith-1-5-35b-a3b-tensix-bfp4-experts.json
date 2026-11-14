@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Xylolabs/Ornith-1.5-35B-A3B-Tensix-BFP4-Experts",
+  "slug": "xylolabs-ornith-1-5-35b-a3b-tensix-bfp4-experts",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/Ornith-1.5-35B-A3B-Tensix-BFP4-Experts",
+  "created_at": "2026-11-14T03:51:37.000Z",
+  "updated_at": "2026-11-14T03:52:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "tenstorrent",
+    "tensix",
+    "tt-metal",
+    "ttnn",
+    "block-floating-point",
+    "bfloat4_b",
+    "bfloat8_b",
+    "quantized",
+    "conversational",
+    "en",
+    "ko",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69334110446,
+  "storage_human": "69.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why Do We Have Daylight Saving Time? Experts Explain",
+      "url": "https://www.rd.com/article/why-we-have-daylight-saving-time/",
+      "snippet": "Mar 11, 2022 · Here’s what to know about daylight saving time, including when it starts, its purpose and what time to change the …"
+    }
+  ]
+}

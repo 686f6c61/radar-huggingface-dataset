@@ -5,7 +5,7 @@
   "author": "YY029",
   "url": "https://huggingface.co/YY029/zils-lite-body",
   "created_at": "2026-11-05T03:27:39.000Z",
-  "updated_at": "2026-11-12T00:06:08.000Z",
+  "updated_at": "2026-11-13T15:44:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 6837963294,
-  "storage_human": "6.8 GB",
+  "storage_bytes": 8544114797,
+  "storage_human": "8.5 GB",
   "base_model": "Charlie320/zils-lite-v9a, qhoenix/zils-lite-decision-v9, Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

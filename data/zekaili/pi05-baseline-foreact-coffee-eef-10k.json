@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "zekaili/pi05-baseline-foreact-coffee-eef-10k",
+  "slug": "zekaili-pi05-baseline-foreact-coffee-eef-10k",
+  "author": "zekaili",
+  "url": "https://huggingface.co/zekaili/pi05-baseline-foreact-coffee-eef-10k",
+  "created_at": "2026-11-13T23:43:39.000Z",
+  "updated_at": "2026-11-14T00:20:05.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "flashvla",
+    "imitation-learning",
+    "coffee-making",
+    "r1lite",
+    "a1x",
+    "end-effector",
+    "robotics",
+    "en",
+    "dataset:zhuoyang20/foreact_coffee_making_data",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16573743480,
+  "storage_human": "16.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

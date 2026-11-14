@@ -5,7 +5,7 @@
   "author": "AmSach",
   "url": "https://huggingface.co/AmSach/DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF",
   "created_at": "2026-11-12T05:04:35.000Z",
-  "updated_at": "2026-11-12T06:09:07.000Z",
+  "updated_at": "2026-11-13T21:18:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

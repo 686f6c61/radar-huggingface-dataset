@@ -5,7 +5,7 @@
   "author": "10X-Technologies",
   "url": "https://huggingface.co/10X-Technologies/lyric-voice-v1-ml",
   "created_at": "2026-11-06T12:46:04.000Z",
-  "updated_at": "2026-11-09T11:27:01.000Z",
+  "updated_at": "2026-11-13T20:49:20.000Z",
   "license": "lyric-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -22,8 +22,6 @@
     "lyric",
     "10x-technologies",
     "ml",
-    "base_model:kyutai/pocket-tts",
-    "base_model:finetune:kyutai/pocket-tts",
     "license:other",
     "region:us"
   ],
@@ -39,7 +37,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": true,
+  "gated": false,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

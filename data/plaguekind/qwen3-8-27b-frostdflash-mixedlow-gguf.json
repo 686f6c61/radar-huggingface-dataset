@@ -5,7 +5,7 @@
   "author": "Plaguekind",
   "url": "https://huggingface.co/Plaguekind/Qwen3.8-27B-FrostDFlash-MixedLow-GGUF",
   "created_at": "2026-10-10T17:08:26.000Z",
-  "updated_at": "2026-10-27T22:05:44.000Z",
+  "updated_at": "2026-11-13T22:07:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,6 +25,7 @@
     "llama.cpp",
     "mixed-quantization",
     "mixedlow",
+    "parasyte",
     "text-generation",
     "en",
     "base_model:Qwen/Qwen3.8-27B",
@@ -35,12 +36,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 691,
+  "downloads_30d": 695,
   "trending_score": 0,
   "parameters": 2092209408,
   "parameters_human": "2.09B",
-  "storage_bytes": 3742018528,
-  "storage_human": "3.7 GB",
+  "storage_bytes": 5261058624,
+  "storage_human": "5.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "figue159/audithire-ner-spanish",
+  "slug": "figue159-audithire-ner-spanish",
+  "author": "figue159",
+  "url": "https://huggingface.co/figue159/audithire-ner-spanish",
+  "created_at": "2026-11-13T21:45:24.000Z",
+  "updated_at": "2026-11-13T21:46:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109267209,
+  "parameters_human": "109.3M",
+  "storage_bytes": 437097381,
+  "storage_human": "437 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

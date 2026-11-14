@@ -5,7 +5,7 @@
   "author": "AEON-7",
   "url": "https://huggingface.co/AEON-7/gemma-4-31B-it-speculator.eagle3-NVFP4",
   "created_at": "2026-04-16T19:39:08.000Z",
-  "updated_at": "2026-11-10T06:33:44.000Z",
+  "updated_at": "2026-11-13T04:45:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -60,7 +60,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 296,
+  "downloads_30d": 302,
   "trending_score": 0,
   "parameters": 2235355392,
   "parameters_human": "2.24B",

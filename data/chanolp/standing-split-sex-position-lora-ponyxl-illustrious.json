@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Chanolp/standing-split-sex-position-lora-ponyxl-illustrious",
+  "slug": "chanolp-standing-split-sex-position-lora-ponyxl-illustrious",
+  "author": "Chanolp",
+  "url": "https://huggingface.co/Chanolp/standing-split-sex-position-lora-ponyxl-illustrious",
+  "created_at": "2026-11-14T03:11:36.000Z",
+  "updated_at": "2026-11-14T03:11:36.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "pony",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229993284,
+  "storage_human": "230 MB",
+  "base_model": "cocktailpeanut/pony-diffusion-v6-xl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

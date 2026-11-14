@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2-7B-Instruct-it-v1.1-GGUF",
+  "slug": "mradermacher-qwen2-7b-instruct-it-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2-7B-Instruct-it-v1.1-GGUF",
+  "created_at": "2025-03-13T13:46:47.000Z",
+  "updated_at": "2026-11-13T22:03:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "krx",
+    "en",
+    "base_model:homeb82784/Qwen2-7B-Instruct-it-v1.1",
+    "base_model:quantized:homeb82784/Qwen2-7B-Instruct-it-v1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 196,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146869248,
+  "storage_human": "68.1 GB",
+  "base_model": "homeb82784/Qwen2-7B-Instruct-it-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,13 +5,15 @@
   "author": "S-Karnik",
   "url": "https://huggingface.co/S-Karnik/rads-model-checkpoints",
   "created_at": "2026-11-11T23:38:32.000Z",
-  "updated_at": "2026-11-12T00:20:06.000Z",
+  "updated_at": "2026-11-13T17:50:38.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
-  "library": null,
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
   "languages": [],
   "tags": [
+    "diffusers",
+    "text-to-image",
     "arxiv:2603.00140",
     "license:mit",
     "region:us"
@@ -24,7 +26,9 @@
   "storage_bytes": 844109525,
   "storage_human": "844 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "diffusers"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

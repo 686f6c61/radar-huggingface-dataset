@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Lottolabs/LFM3-1.7B-DFlash-Drafter",
+  "slug": "lottolabs-lfm3-1-7b-dflash-drafter",
+  "author": "Lottolabs",
+  "url": "https://huggingface.co/Lottolabs/LFM3-1.7B-DFlash-Drafter",
+  "created_at": "2026-11-14T01:15:53.000Z",
+  "updated_at": "2026-11-14T01:17:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "speculative-decoding",
+    "dflash",
+    "drafter",
+    "block-drafter",
+    "self-distillation",
+    "liquid",
+    "lfm3",
+    "tenstorrent",
+    "p150",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 157321984,
+  "parameters_human": "157.3M",
+  "storage_bytes": 314647448,
+  "storage_human": "315 MB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "wyyadd/FFDNet-L-cpu",
+  "slug": "wyyadd-ffdnet-l-cpu",
+  "author": "wyyadd",
+  "url": "https://huggingface.co/wyyadd/FFDNet-L-cpu",
+  "created_at": "2026-11-13T22:27:39.000Z",
+  "updated_at": "2026-11-13T22:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "commonforms",
+  "languages": [],
+  "tags": [
+    "commonforms",
+    "onnx",
+    "form-field-detection",
+    "documents",
+    "object-detection",
+    "dataset:jbarrow/CommonForms",
+    "arxiv:2509.16506",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101944542,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

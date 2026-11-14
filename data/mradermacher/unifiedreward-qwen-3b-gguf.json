@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UnifiedReward-qwen-3b-GGUF",
+  "slug": "mradermacher-unifiedreward-qwen-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UnifiedReward-qwen-3b-GGUF",
+  "created_at": "2025-05-20T05:40:32.000Z",
+  "updated_at": "2026-11-14T01:22:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:CodeGoat24/HPD",
+    "dataset:CodeGoat24/LiFT-HRA",
+    "dataset:CodeGoat24/OIP",
+    "dataset:CodeGoat24/EvalMuse",
+    "dataset:CodeGoat24/ShareGPTVideo-DPO",
+    "dataset:CodeGoat24/VideoFeedback",
+    "dataset:CodeGoat24/LLaVA-Critic-113k",
+    "dataset:CodeGoat24/VideoDPO",
+    "base_model:CodeGoat24/UnifiedReward-qwen-3b",
+    "base_model:quantized:CodeGoat24/UnifiedReward-qwen-3b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 137,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 30124082176,
+  "storage_human": "30.1 GB",
+  "base_model": "CodeGoat24/UnifiedReward-qwen-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

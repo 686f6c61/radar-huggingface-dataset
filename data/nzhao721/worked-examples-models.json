@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "nzhao721/worked-examples-models",
+  "slug": "nzhao721-worked-examples-models",
+  "author": "nzhao721",
+  "url": "https://huggingface.co/nzhao721/worked-examples-models",
+  "created_at": "2026-11-13T23:26:23.000Z",
+  "updated_at": "2026-11-13T23:39:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "math",
+    "worked-examples",
+    "continual-pretraining",
+    "en",
+    "base_model:allenai/DataDecide-dolma1_7-no-flan-300M",
+    "base_model:finetune:allenai/DataDecide-dolma1_7-no-flan-300M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8915904336,
+  "storage_human": "8.9 GB",
+  "base_model": "allenai/DataDecide-dolma1_7-no-flan-300M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

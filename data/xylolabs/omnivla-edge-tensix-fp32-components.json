@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Xylolabs/omnivla-edge-Tensix-FP32-Components",
+  "slug": "xylolabs-omnivla-edge-tensix-fp32-components",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/omnivla-edge-Tensix-FP32-Components",
+  "created_at": "2026-11-14T00:59:38.000Z",
+  "updated_at": "2026-11-14T00:59:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tenstorrent",
+    "tensix",
+    "robotics",
+    "navigation",
+    "safetensors",
+    "float32",
+    "model-components",
+    "en",
+    "base_model:NHirose/omnivla-edge",
+    "base_model:finetune:NHirose/omnivla-edge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360715420,
+  "storage_human": "361 MB",
+  "base_model": "NHirose/omnivla-edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

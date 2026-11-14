@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MedMLX/musclemap-mlx",
+  "slug": "medmlx-musclemap-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/musclemap-mlx",
+  "created_at": "2026-11-13T22:43:24.000Z",
+  "updated_at": "2026-11-13T23:15:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "medical-imaging",
+    "image-segmentation",
+    "musclemap",
+    "mri",
+    "ct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26216968,
+  "parameters_human": "26.2M",
+  "storage_bytes": 104873520,
+  "storage_human": "105 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

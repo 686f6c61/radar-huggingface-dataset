@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "silvaamayaisaias/acuivision-rtdetr-r18-tilapia",
+  "slug": "silvaamayaisaias-acuivision-rtdetr-r18-tilapia",
+  "author": "silvaamayaisaias",
+  "url": "https://huggingface.co/silvaamayaisaias/acuivision-rtdetr-r18-tilapia",
+  "created_at": "2026-11-14T03:43:12.000Z",
+  "updated_at": "2026-11-14T03:43:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rt_detr",
+    "object-detection",
+    "aquaculture",
+    "tilapia",
+    "fish",
+    "experimental",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20108244,
+  "parameters_human": "20.1M",
+  "storage_bytes": 80498392,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "soubruno/potion-multilingual-128M-int8",
+  "slug": "soubruno-potion-multilingual-128m-int8",
+  "author": "soubruno",
+  "url": "https://huggingface.co/soubruno/potion-multilingual-128M-int8",
+  "created_at": "2026-11-13T23:18:16.000Z",
+  "updated_at": "2026-11-13T23:18:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "model2vec",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "int8",
+    "quantized",
+    "multilingual",
+    "base_model:minishlab/potion-multilingual-128M",
+    "base_model:quantized:minishlab/potion-multilingual-128M",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128590721,
+  "parameters_human": "128.6M",
+  "storage_bytes": 148708079,
+  "storage_human": "149 MB",
+  "base_model": "minishlab/potion-multilingual-128M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

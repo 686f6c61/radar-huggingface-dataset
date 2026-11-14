@@ -5,7 +5,7 @@
   "author": "MeganEFlynn",
   "url": "https://huggingface.co/MeganEFlynn/HSpec-Qwen27B-5m5a",
   "created_at": "2026-11-13T17:37:38.000Z",
-  "updated_at": "2026-11-13T17:37:39.000Z",
+  "updated_at": "2026-11-14T03:00:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "speculators",
+    "safetensors",
     "speculative-decoding",
     "hspec",
     "mamba-attn-hybrid",
@@ -26,10 +27,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 24250996575,
+  "storage_human": "24.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fasfadsf324/nerx4",
+  "slug": "fasfadsf324-nerx4",
+  "author": "fasfadsf324",
+  "url": "https://huggingface.co/fasfadsf324/nerx4",
+  "created_at": "2026-11-13T21:05:27.000Z",
+  "updated_at": "2026-11-13T21:05:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1490,
+  "parameters_human": "1490",
+  "storage_bytes": 8440,
+  "storage_human": "8440 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

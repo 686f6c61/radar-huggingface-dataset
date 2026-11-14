@@ -5,7 +5,7 @@
   "author": "AnoraLee",
   "url": "https://huggingface.co/AnoraLee/vietnamese-hsd-phobert-llm",
   "created_at": "2026-09-12T14:59:06.000Z",
-  "updated_at": "2026-11-05T07:52:03.000Z",
+  "updated_at": "2026-11-08T12:17:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -22,8 +22,6 @@
     "vietnamese",
     "data-augmentation",
     "large-language-models",
-    "qwen",
-    "vihatet5",
     "phobert",
     "natural-language-processing",
     "vi",
@@ -33,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 135000579,
   "parameters_human": "135.0M",
-  "storage_bytes": 1080052920,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 1620079380,
+  "storage_human": "1.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "aakashdandekar2006",
   "url": "https://huggingface.co/aakashdandekar2006/Qwen-Coli-1.5B",
   "created_at": "2026-11-10T13:26:29.000Z",
-  "updated_at": "2026-11-10T15:57:57.000Z",
+  "updated_at": "2026-11-13T20:55:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 87,
+  "downloads_30d": 102,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

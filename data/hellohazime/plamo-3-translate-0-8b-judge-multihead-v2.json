@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hellohazime/plamo-3-translate-0.8b-judge-multihead-v2",
+  "slug": "hellohazime-plamo-3-translate-0-8b-judge-multihead-v2",
+  "author": "hellohazime",
+  "url": "https://huggingface.co/hellohazime/plamo-3-translate-0.8b-judge-multihead-v2",
+  "created_at": "2026-11-14T02:33:41.000Z",
+  "updated_at": "2026-11-14T02:46:07.000Z",
+  "license": "plamo-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "plamo",
+    "translation-quality-estimation",
+    "translation-evaluation",
+    "multi-label-classification",
+    "lora",
+    "custom-code",
+    "text-classification",
+    "en",
+    "ja",
+    "base_model:pfnet/plamo-3-translate-0.8b",
+    "base_model:adapter:pfnet/plamo-3-translate-0.8b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30051959,
+  "storage_human": "30 MB",
+  "base_model": "pfnet/plamo-3-translate-0.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

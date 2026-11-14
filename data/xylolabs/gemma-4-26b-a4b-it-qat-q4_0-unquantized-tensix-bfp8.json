@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/gemma-4-26B-A4B-it-qat-q4_0-unquantized-Tensix-BFP8",
   "created_at": "2026-11-12T10:25:49.000Z",
-  "updated_at": "2026-11-12T10:28:20.000Z",
+  "updated_at": "2026-11-13T05:30:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 26544133710,
   "parameters_human": "26.54B",

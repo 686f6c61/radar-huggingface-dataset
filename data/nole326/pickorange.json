@@ -5,7 +5,7 @@
   "author": "Nole326",
   "url": "https://huggingface.co/Nole326/PickOrange",
   "created_at": "2026-11-12T10:53:48.000Z",
-  "updated_at": "2026-11-12T11:25:08.000Z",
+  "updated_at": "2026-11-13T20:55:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -22,10 +22,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 619239024,
-  "storage_human": "619 MB",
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 1032003600,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

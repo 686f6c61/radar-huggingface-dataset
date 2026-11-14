@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "silvaamayaisaias/acuivision-detectron2-maskrcnn-tilapia",
+  "slug": "silvaamayaisaias-acuivision-detectron2-maskrcnn-tilapia",
+  "author": "silvaamayaisaias",
+  "url": "https://huggingface.co/silvaamayaisaias/acuivision-detectron2-maskrcnn-tilapia",
+  "created_at": "2026-11-14T03:43:24.000Z",
+  "updated_at": "2026-11-14T03:43:35.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "aquaculture",
+    "tilapia",
+    "fish",
+    "experimental",
+    "object-detection",
+    "es",
+    "en",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176490423,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

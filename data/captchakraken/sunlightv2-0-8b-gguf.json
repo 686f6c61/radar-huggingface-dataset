@@ -5,7 +5,7 @@
   "author": "CaptchaKraken",
   "url": "https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-GGUF",
   "created_at": "2026-11-04T23:51:15.000Z",
-  "updated_at": "2026-11-06T18:32:05.000Z",
+  "updated_at": "2026-11-13T21:45:00.000Z",
   "license": "lgpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 313,
+  "downloads_30d": 315,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
-  "storage_bytes": 2264785852,
-  "storage_human": "2.3 GB",
+  "storage_bytes": 4530426208,
+  "storage_human": "4.5 GB",
   "base_model": "CaptchaKraken/SunlightV2-0.8B",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "DHCAI",
   "url": "https://huggingface.co/DHCAI/Memory-V2V",
   "created_at": "2026-11-13T05:33:46.000Z",
-  "updated_at": "2026-11-13T05:53:53.000Z",
+  "updated_at": "2026-11-13T06:16:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-to-video",

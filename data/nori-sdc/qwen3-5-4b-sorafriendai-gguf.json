@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nori-sdc/Qwen3.5-4B-SoraFriendAI-GGUF",
+  "slug": "nori-sdc-qwen3-5-4b-sorafriendai-gguf",
+  "author": "nori-sdc",
+  "url": "https://huggingface.co/nori-sdc/Qwen3.5-4B-SoraFriendAI-GGUF",
+  "created_at": "2026-10-15T22:00:30.000Z",
+  "updated_at": "2026-11-14T02:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "sorafriendai",
+    "app-specific",
+    "experimental",
+    "japanese",
+    "on-device",
+    "ja",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 806,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 10648054592,
+  "storage_human": "10.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

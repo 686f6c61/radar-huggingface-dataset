@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "y352184741/TopoX",
+  "slug": "y352184741-topox",
+  "author": "y352184741",
+  "url": "https://huggingface.co/y352184741/TopoX",
+  "created_at": "2026-11-14T03:11:08.000Z",
+  "updated_at": "2026-11-14T03:24:13.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "autonomous-driving",
+    "lane-detection",
+    "topology",
+    "temporal-graph",
+    "pytorch",
+    "kdd-2027",
+    "en",
+    "arxiv:2507.00709",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 246561747,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

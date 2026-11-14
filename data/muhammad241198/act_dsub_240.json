@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_dsub_240",
+  "slug": "muhammad241198-act_dsub_240",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_dsub_240",
+  "created_at": "2026-05-15T22:35:33.000Z",
+  "updated_at": "2026-11-14T02:13:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rbtrprjkt/DSUB-installnew2026_20261026_033023",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 51828359,
+  "parameters_human": "51.8M",
+  "storage_bytes": 414702532,
+  "storage_human": "415 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

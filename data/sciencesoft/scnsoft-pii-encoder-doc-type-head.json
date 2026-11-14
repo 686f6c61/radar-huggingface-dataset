@@ -5,7 +5,7 @@
   "author": "ScienceSoft",
   "url": "https://huggingface.co/ScienceSoft/scnsoft-pii-encoder-doc-type-head",
   "created_at": "2026-11-13T10:22:48.000Z",
-  "updated_at": "2026-11-13T10:22:58.000Z",
+  "updated_at": "2026-11-13T11:49:09.000Z",
   "license": "proprietary-sciencesoft",
   "license_family": "non-commercial",
   "pipeline_tag": "token-classification",
@@ -22,11 +22,11 @@
   "tags": [
     "onnxruntime",
     "onnx",
+    "xlm-roberta",
     "pii",
     "ner",
     "privacy",
     "dlp",
-    "xlm-roberta",
     "document-classification",
     "token-classification",
     "en",
@@ -46,8 +46,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 279041365,
-  "storage_human": "279 MB",
+  "storage_bytes": 296124352,
+  "storage_human": "296 MB",
   "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "onnx"

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "relife2/SrplCyberrealism",
+  "slug": "relife2-srplcyberrealism",
+  "author": "relife2",
+  "url": "https://huggingface.co/relife2/SrplCyberrealism",
+  "created_at": "2025-05-11T17:32:10.000Z",
+  "updated_at": "2026-11-13T21:16:42.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 376502508288,
+  "storage_human": "376.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

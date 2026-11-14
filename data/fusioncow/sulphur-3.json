@@ -17,9 +17,9 @@
     "base_model:finetune:MiniMaxAI/MiniMax-H3",
     "region:us"
   ],
-  "likes": 565,
+  "likes": 601,
   "downloads_30d": 1126,
-  "trending_score": 108,
+  "trending_score": 134,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 276534372623,

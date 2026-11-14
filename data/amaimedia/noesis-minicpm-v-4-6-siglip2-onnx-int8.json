@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-ONNX-INT8",
   "created_at": "2026-08-27T19:09:29.000Z",
-  "updated_at": "2026-08-27T19:25:38.000Z",
+  "updated_at": "2026-11-12T08:24:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 15,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

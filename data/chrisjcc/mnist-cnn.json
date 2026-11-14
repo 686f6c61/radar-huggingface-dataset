@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "chrisjcc/mnist-cnn",
+  "slug": "chrisjcc-mnist-cnn",
+  "author": "chrisjcc",
+  "url": "https://huggingface.co/chrisjcc/mnist-cnn",
+  "created_at": "2026-11-14T02:47:38.000Z",
+  "updated_at": "2026-11-14T02:47:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mnist_cnn",
+    "mnist",
+    "image-classification",
+    "computer-vision",
+    "dvc",
+    "hydra",
+    "reproducible-ml",
+    "en",
+    "dataset:ylecun/mnist",
+    "dataset:chrisjcc/mnist-dataset",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 422026,
+  "parameters_human": "422026",
+  "storage_bytes": 6776910,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Handwritten Digit Classification",
+      "dataset": "MNIST",
+      "metric": "Test Accuracy",
+      "value": 0.2293
+    },
+    {
+      "task": "Handwritten Digit Classification",
+      "dataset": "MNIST",
+      "metric": "Macro F1",
+      "value": 0.1631
+    },
+    {
+      "task": "Handwritten Digit Classification",
+      "dataset": "MNIST",
+      "metric": "Macro Precision",
+      "value": 0.3225
+    },
+    {
+      "task": "Handwritten Digit Classification",
+      "dataset": "MNIST",
+      "metric": "Macro Recall",
+      "value": 0.2292
+    }
+  ],
+  "sources": []
+}

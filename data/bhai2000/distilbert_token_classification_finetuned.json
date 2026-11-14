@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bhai2000/distilbert_token_classification_finetuned",
+  "slug": "bhai2000-distilbert_token_classification_finetuned",
+  "author": "bhai2000",
+  "url": "https://huggingface.co/bhai2000/distilbert_token_classification_finetuned",
+  "created_at": "2026-11-13T21:01:49.000Z",
+  "updated_at": "2026-11-13T21:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66372877,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265509053,
+  "storage_human": "266 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

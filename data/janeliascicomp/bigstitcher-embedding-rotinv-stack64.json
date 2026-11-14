@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "JaneliaSciComp/bigstitcher-embedding-rotinv-stack64",
+  "slug": "janeliascicomp-bigstitcher-embedding-rotinv-stack64",
+  "author": "JaneliaSciComp",
+  "url": "https://huggingface.co/JaneliaSciComp/bigstitcher-embedding-rotinv-stack64",
+  "created_at": "2026-11-13T21:03:00.000Z",
+  "updated_at": "2026-11-13T21:09:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bigstitcher",
+    "interest-point-embedding",
+    "light-sheet-microscopy",
+    "rotation-invariant",
+    "mirror-invariant",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463421,
+  "storage_human": "463421 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

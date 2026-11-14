@@ -5,7 +5,7 @@
   "author": "Walltim3",
   "url": "https://huggingface.co/Walltim3/lfm3-1.7b-sweep-sft",
   "created_at": "2026-11-12T08:42:58.000Z",
-  "updated_at": "2026-11-12T21:02:35.000Z",
+  "updated_at": "2026-11-13T21:02:53.000Z",
   "license": "lfm-open-license-v1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 1728801536,
   "parameters_human": "1.73B",
-  "storage_bytes": 83027276307,
-  "storage_human": "83.0 GB",
+  "storage_bytes": 466826490619,
+  "storage_human": "466.8 GB",
   "base_model": "LiquidAI/LFM3-1.7B-Base",
   "formats": [
     "safetensors"

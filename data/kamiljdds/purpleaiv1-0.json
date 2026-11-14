@@ -5,7 +5,7 @@
   "author": "Kamiljdds",
   "url": "https://huggingface.co/Kamiljdds/purpleaiV1.0",
   "created_at": "2026-10-28T06:33:15.000Z",
-  "updated_at": "2026-11-07T13:41:04.000Z",
+  "updated_at": "2026-11-13T16:14:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 75,
+  "downloads_30d": 77,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 91335387,
-  "storage_human": "91 MB",
+  "storage_bytes": 138880410,
+  "storage_human": "139 MB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"

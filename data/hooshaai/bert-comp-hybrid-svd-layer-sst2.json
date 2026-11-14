@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-comp-hybrid-svd-layer-sst2",
+  "slug": "hooshaai-bert-comp-hybrid-svd-layer-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-comp-hybrid-svd-layer-sst2",
+  "created_at": "2026-11-10T21:24:02.000Z",
+  "updated_at": "2026-11-11T12:21:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "svd",
+    "hybrid_svd_layer",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70566223,
+  "storage_human": "71 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 69.61
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hooshaai/svd-linear-attention-distilbert-hybrid-svd-layer · Hugging Face",
+      "url": "https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-hybrid-svd-layer",
+      "snippet": "Instructions to use Hooshaai/svd-linear-attention-distilbert-hybrid-svd-layer with libraries, inference providers, notebooks, and local …"
+    },
+    {
+      "title": "tahamajs/bert-comp-hybrid-svd-layer-sst2 · Hugging Face",
+      "url": "https://huggingface.co/tahamajs/bert-comp-hybrid-svd-layer-sst2",
+      "snippet": "This repository provides a physically compressed and LoRA-healed checkpoint of google-bert/bert-base-uncased fine-tuned on …"
+    },
+    {
+      "title": "Bert Comp Hybrid Svd Layer Sst2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tahamajs/bert-comp-hybrid-svd-layer-sst2",
+      "snippet": "Registry entry for model Bert Comp Hybrid Svd Layer Sst2; source metadata pending."
+    },
+    {
+      "title": "Hooshaai / svd-linear-attention-distilbert-sst2-cluster-attention",
+      "url": "https://pirateface.co/Hooshaai/svd-linear-attention-distilbert-sst2-cluster-attention",
+      "snippet": "Model metadata, checksum records and available torrent evidence for Hooshaai/svd-linear-attention-distilbert-sst2-cluster-attention. …"
+    },
+    {
+      "title": "Svd Linear Attention Distilbert Sst2 Cosformer - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/hooshaai/svd-linear-attention-distilbert-sst2-cosformer",
+      "snippet": "Registry entry for model Svd Linear Attention Distilbert Sst2 Cosformer; source metadata pending."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "wingmanllc/WINGMAN-OPENW.2.6-4B",
+  "slug": "wingmanllc-wingman-openw-2-6-4b",
+  "author": "wingmanllc",
+  "url": "https://huggingface.co/wingmanllc/WINGMAN-OPENW.2.6-4B",
+  "created_at": "2026-11-13T22:28:58.000Z",
+  "updated_at": "2026-11-13T22:47:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "local-llm",
+    "coding",
+    "agentic",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2641605248,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

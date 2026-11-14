@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "kaopanboonyuen/KAO-TerraMind-B-LoveDa",
+  "slug": "kaopanboonyuen-kao-terramind-b-loveda",
+  "author": "kaopanboonyuen",
+  "url": "https://huggingface.co/kaopanboonyuen/KAO-TerraMind-B-LoveDa",
+  "created_at": "2026-11-14T01:52:23.000Z",
+  "updated_at": "2026-11-14T01:54:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "terratorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "terratorch",
+    "kao-terramind",
+    "geospatial",
+    "earth-observation",
+    "remote-sensing",
+    "semantic-segmentation",
+    "land-cover",
+    "foundation-model",
+    "geospatial-foundation-model",
+    "terramind",
+    "kaoterramind",
+    "loveda",
+    "cvpr2027",
+    "reproducibility",
+    "image-segmentation",
+    "en",
+    "base_model:ibm-esa-geospatial/TerraMind-1.0-base",
+    "base_model:finetune:ibm-esa-geospatial/TerraMind-1.0-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391173479,
+  "storage_human": "391 MB",
+  "base_model": "ibm-esa-geospatial/TerraMind-1.0-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "LoveDA",
+      "metric": "mIoU (%)",
+      "value": 48.49
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "LoveDA",
+      "metric": "Overall Accuracy (%)",
+      "value": 67.15
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "LoveDA",
+      "metric": "Macro F1 (%)",
+      "value": 64.6
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "LoveDA",
+      "metric": "Macro Precision (%)",
+      "value": 69.65
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "LoveDA",
+      "metric": "Macro Recall (%)",
+      "value": 62.77
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "StefanoBalocco/starvector-1b-im2svg-GGUF",
+  "slug": "stefanobalocco-starvector-1b-im2svg-gguf",
+  "author": "StefanoBalocco",
+  "url": "https://huggingface.co/StefanoBalocco/starvector-1b-im2svg-GGUF",
+  "created_at": "2026-11-14T00:01:53.000Z",
+  "updated_at": "2026-11-14T00:07:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "starvector",
+    "image-to-svg",
+    "multimodal",
+    "comfyui",
+    "image-to-text",
+    "en",
+    "base_model:starvector/starvector-1b-im2svg",
+    "base_model:quantized:starvector/starvector-1b-im2svg",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1434095620,
+  "parameters_human": "1.43B",
+  "storage_bytes": 3697437312,
+  "storage_human": "3.7 GB",
+  "base_model": "starvector/starvector-1b-im2svg",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

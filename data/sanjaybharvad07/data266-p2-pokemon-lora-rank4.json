@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sanjaybharvad07/data266-p2-pokemon-lora-rank4",
+  "slug": "sanjaybharvad07-data266-p2-pokemon-lora-rank4",
+  "author": "sanjaybharvad07",
+  "url": "https://huggingface.co/sanjaybharvad07/data266-p2-pokemon-lora-rank4",
+  "created_at": "2026-11-14T02:40:20.000Z",
+  "updated_at": "2026-11-14T02:41:50.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "lora",
+    "data266",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3225672,
+  "storage_human": "3 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

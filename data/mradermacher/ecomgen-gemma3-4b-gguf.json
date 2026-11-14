@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EcomGen-Gemma3-4B-GGUF",
+  "slug": "mradermacher-ecomgen-gemma3-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EcomGen-Gemma3-4B-GGUF",
+  "created_at": "2025-06-09T23:43:44.000Z",
+  "updated_at": "2026-11-13T23:10:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "en",
+    "base_model:UICHEOL-HWANG/EcomGen-Gemma3-4B",
+    "base_model:quantized:UICHEOL-HWANG/EcomGen-Gemma3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 143,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37274396096,
+  "storage_human": "37.3 GB",
+  "base_model": "UICHEOL-HWANG/EcomGen-Gemma3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

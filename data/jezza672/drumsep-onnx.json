@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jezza672/drumsep-onnx",
+  "slug": "jezza672-drumsep-onnx",
+  "author": "jezza672",
+  "url": "https://huggingface.co/jezza672/drumsep-onnx",
+  "created_at": "2026-11-14T01:17:20.000Z",
+  "updated_at": "2026-11-14T01:17:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "source-separation",
+    "drums",
+    "base_model:inagoy/drumsep",
+    "base_model:quantized:inagoy/drumsep",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335086863,
+  "storage_human": "335 MB",
+  "base_model": "inagoy/drumsep",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

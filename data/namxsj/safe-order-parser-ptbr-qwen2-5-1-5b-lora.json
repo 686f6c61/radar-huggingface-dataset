@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "namxsj/safe-order-parser-ptbr-qwen2.5-1.5b-lora",
+  "slug": "namxsj-safe-order-parser-ptbr-qwen2-5-1-5b-lora",
+  "author": "namxsj",
+  "url": "https://huggingface.co/namxsj/safe-order-parser-ptbr-qwen2.5-1.5b-lora",
+  "created_at": "2026-11-11T18:18:08.000Z",
+  "updated_at": "2026-11-13T21:30:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2",
+    "structured-output",
+    "portuguese",
+    "food-delivery",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333171,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/supertonic-3-Tensix-BF16",
   "created_at": "2026-11-12T02:18:50.000Z",
-  "updated_at": "2026-11-13T04:07:00.000Z",
+  "updated_at": "2026-11-13T05:21:14.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 14,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 99218647,
   "parameters_human": "99.2M",

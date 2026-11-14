@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "atharva-naik-1/awsp-readers",
+  "slug": "atharva-naik-1-awsp-readers",
+  "author": "atharva-naik-1",
+  "url": "https://huggingface.co/atharva-naik-1/awsp-readers",
+  "created_at": "2026-11-12T03:39:00.000Z",
+  "updated_at": "2026-11-13T21:39:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "weight-space-programming",
+    "logit-lens",
+    "lora",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4782983464,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B, Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-2B, Qwen/Qwen3.5-9B, meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

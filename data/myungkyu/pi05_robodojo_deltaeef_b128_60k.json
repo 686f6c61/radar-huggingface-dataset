@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 4143404816,
   "parameters_human": "4.14B",
-  "storage_bytes": 112248628016,
-  "storage_human": "112.2 GB",
+  "storage_bytes": 37416222000,
+  "storage_human": "37.4 GB",
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"

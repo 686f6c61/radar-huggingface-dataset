@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llemma_34b-GGUF",
+  "slug": "mradermacher-llemma_34b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llemma_34b-GGUF",
+  "created_at": "2025-03-08T13:07:45.000Z",
+  "updated_at": "2026-11-13T23:10:42.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "math",
+    "reasoning",
+    "en",
+    "dataset:EleutherAI/proof-pile-2",
+    "dataset:open-web-math/open-web-math",
+    "base_model:EleutherAI/llemma_34b",
+    "base_model:quantized:EleutherAI/llemma_34b",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 220,
+  "trending_score": 0,
+  "parameters": 33743970304,
+  "parameters_human": "33.74B",
+  "storage_bytes": 229453795488,
+  "storage_human": "229.5 GB",
+  "base_model": "EleutherAI/llemma_34b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

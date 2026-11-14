@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-8B-chat",
   "created_at": "2026-10-27T12:55:47.000Z",
-  "updated_at": "2026-11-09T18:32:54.000Z",
+  "updated_at": "2026-11-14T02:18:26.000Z",
   "license": "jirack-proprietary",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",

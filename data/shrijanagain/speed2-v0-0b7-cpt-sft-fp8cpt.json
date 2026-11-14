@@ -5,7 +5,7 @@
   "author": "Shrijanagain",
   "url": "https://huggingface.co/Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt",
   "created_at": "2026-10-29T06:35:56.000Z",
-  "updated_at": "2026-11-12T14:28:19.000Z",
+  "updated_at": "2026-11-14T04:06:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 705,
+  "downloads_30d": 841,
   "trending_score": 0,
   "parameters": 746280448,
   "parameters_human": "746.3M",
-  "storage_bytes": 134362626899,
-  "storage_human": "134.4 GB",
+  "storage_bytes": 146304187283,
+  "storage_human": "146.3 GB",
   "base_model": "Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt",
   "formats": [
     "safetensors"

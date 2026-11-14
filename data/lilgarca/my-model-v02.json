@@ -5,7 +5,7 @@
   "author": "Lilgarca",
   "url": "https://huggingface.co/Lilgarca/my-model-v02",
   "created_at": "2026-11-07T16:46:30.000Z",
-  "updated_at": "2026-11-11T10:30:30.000Z",
+  "updated_at": "2026-11-13T14:09:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "any-to-any",
@@ -42,7 +42,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 849,
+  "downloads_30d": 850,
   "trending_score": 0,
   "parameters": 247622828,
   "parameters_human": "247.6M",

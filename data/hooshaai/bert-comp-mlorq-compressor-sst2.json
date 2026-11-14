@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Hooshaai/bert-comp-mlorq-compressor-sst2",
+  "slug": "hooshaai-bert-comp-mlorq-compressor-sst2",
+  "author": "Hooshaai",
+  "url": "https://huggingface.co/Hooshaai/bert-comp-mlorq-compressor-sst2",
+  "created_at": "2026-11-10T21:31:28.000Z",
+  "updated_at": "2026-11-11T10:48:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "low_rank",
+    "mlorq_compressor",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176746271,
+  "storage_human": "177 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 91.86
+    }
+  ],
+  "sources": [
+    {
+      "title": "What is NFT staking and how does it work? - Coinbase",
+      "url": "https://www.coinbase.com/en-au/learn/advanced-trading/what-is-nft-staking-and-how-does-it-work",
+      "snippet": "NFT staking is a process where NFT owners may receive compensation by locking their digital assets on a platform or protocol. The …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "heyjosi/josi",
+  "slug": "heyjosi-josi",
+  "author": "heyjosi",
+  "url": "https://huggingface.co/heyjosi/josi",
+  "created_at": "2026-11-12T23:37:47.000Z",
+  "updated_at": "2026-11-14T02:51:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "josi",
+    "assistant",
+    "executive-assistant",
+    "lora",
+    "unsloth",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 5780090592,
+  "storage_human": "5.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

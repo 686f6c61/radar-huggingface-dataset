@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "snupilab/Rep4Act-Asymmetric-MMDiT-4B-FM-FD-Pretrained-100k-seed0",
+  "slug": "snupilab-rep4act-asymmetric-mmdit-4b-fm-fd-pretrained-100k-seed0",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/Rep4Act-Asymmetric-MMDiT-4B-FM-FD-Pretrained-100k-seed0",
+  "created_at": "2026-11-14T00:58:56.000Z",
+  "updated_at": "2026-11-14T01:00:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "rep4act",
+    "pretraining",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5840181793,
+  "parameters_human": "5.84B",
+  "storage_bytes": 19685097161,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

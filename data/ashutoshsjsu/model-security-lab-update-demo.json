@@ -4,8 +4,8 @@
   "slug": "ashutoshsjsu-model-security-lab-update-demo",
   "author": "AshutoshSJSU",
   "url": "https://huggingface.co/AshutoshSJSU/model-security-lab-update-demo",
-  "created_at": "2026-11-13T05:06:10.000Z",
-  "updated_at": "2026-11-13T05:06:48.000Z",
+  "created_at": "2026-11-13T05:29:13.000Z",
+  "updated_at": "2026-11-13T05:44:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "bert",
     "research",
     "controlled-variant",
     "text-classification",
@@ -24,8 +25,8 @@
   "trending_score": 0,
   "parameters": 78274,
   "parameters_human": "78274",
-  "storage_bytes": 317464,
-  "storage_human": "317464 B",
+  "storage_bytes": 634928,
+  "storage_human": "634928 B",
   "base_model": null,
   "formats": [
     "safetensors"

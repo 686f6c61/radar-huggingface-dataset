@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "vuhoanhuy/studio_models",
+  "slug": "vuhoanhuy-studio_models",
+  "author": "vuhoanhuy",
+  "url": "https://huggingface.co/vuhoanhuy/studio_models",
+  "created_at": "2026-11-09T09:36:33.000Z",
+  "updated_at": "2026-11-14T03:58:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 6930720,
+  "parameters_human": "6.9M",
+  "storage_bytes": 1450702192,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

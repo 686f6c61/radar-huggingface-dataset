@@ -5,7 +5,7 @@
   "author": "Baekpica",
   "url": "https://huggingface.co/Baekpica/Inkling-2-Small-VQ-GGUF",
   "created_at": "2026-11-13T07:33:19.000Z",
-  "updated_at": "2026-11-13T07:33:20.000Z",
+  "updated_at": "2026-11-13T10:58:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -17,9 +17,9 @@
     "ja"
   ],
   "tags": [
+    "gguf",
     "inkling",
     "inkling-2",
-    "gguf",
     "vector-quantization",
     "vq",
     "hvq",
@@ -53,10 +53,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 5728287744,
+  "parameters_human": "5.73B",
+  "storage_bytes": 118197580622,
+  "storage_human": "118.2 GB",
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "gguf"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Pbueno467/regresion-casas-sklearn",
+  "slug": "pbueno467-regresion-casas-sklearn",
+  "author": "Pbueno467",
+  "url": "https://huggingface.co/Pbueno467/regresion-casas-sklearn",
+  "created_at": "2026-11-13T22:52:49.000Z",
+  "updated_at": "2026-11-13T22:57:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 943,
+  "storage_human": "943 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

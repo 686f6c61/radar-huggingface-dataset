@@ -5,7 +5,7 @@
   "author": "AEON-7",
   "url": "https://huggingface.co/AEON-7/supergemma4-26b-abliterated-multimodal-nvfp4",
   "created_at": "2026-04-13T18:20:59.000Z",
-  "updated_at": "2026-11-10T06:33:46.000Z",
+  "updated_at": "2026-11-13T04:45:24.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -84,7 +84,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 12861,
+  "downloads_30d": 15145,
   "trending_score": 0,
   "parameters": 25805936206,
   "parameters_human": "25.81B",
