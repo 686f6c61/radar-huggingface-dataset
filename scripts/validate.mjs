@@ -25,7 +25,7 @@ function isArr(v) { return Array.isArray(v); }
 function isNullOr(t) { return (v) => v === null || t(v); }
 
 const CHECKS = [
-  ['schema', (v) => v === 1, 'schema debe ser 1'],
+  ['schema', (v) => v === 1 || v === 2, 'schema debe ser 1 o 2'],
   ['id', (v) => isStr(v) && v.includes('/'), 'id debe ser "autor/modelo"'],
   ['slug', (v) => isStr(v) && /^[a-z0-9_-]+$/.test(v), 'slug invalido'],
   ['author', isStr, 'author debe ser string'],
@@ -64,6 +64,17 @@ const CHECKS = [
   ],
 ];
 
+// Campos añadidos en el schema v2 (solo se exigen a los documentos v2: en la
+// pasada de migracion conviven con los v1)
+const REMOVAL_PATTERNS = new Set(['account_gone', 'author_purge', 'reupload', 'short_lived', 'had_traction', 'isolated']);
+const CHECKS_V2 = [
+  ['context_length', isNullOr(isNum), 'context_length debe ser numero|null'],
+  ['disabled', isBool, 'disabled debe ser boolean'],
+  ['removal_pattern', (v) => v === null || REMOVAL_PATTERNS.has(v), 'removal_pattern invalido'],
+  ['renamed_to', isNullOr(isStr), 'renamed_to debe ser string|null'],
+  ['renamed_at', isNullOr(isStr), 'renamed_at debe ser string|null'],
+];
+
 const jsonFiles = [];
 const mdFiles = [];
 
@@ -100,7 +111,7 @@ for (const file of jsonFiles) {
     fail(`${rel}: JSON invalido (${err.message})`);
     continue;
   }
-  for (const [field, check, msg] of CHECKS) {
+  for (const [field, check, msg] of doc.schema === 2 ? CHECKS.concat(CHECKS_V2) : CHECKS) {
     if (!check(doc[field])) {
       fail(`${rel}: ${msg} (valor: ${JSON.stringify(doc[field])?.slice(0, 80)})`);
     }
@@ -145,7 +156,7 @@ if (!existsSync(indexPath)) {
     fail(`index.json: JSON invalido (${err.message})`);
   }
   if (index) {
-    if (index.schema !== 1) fail('index.json: schema debe ser 1');
+    if (index.schema !== 1 && index.schema !== 2) fail('index.json: schema debe ser 1 o 2');
     if (!isArr(index.entries)) fail('index.json: entries debe ser array');
     else {
       if (index.models !== index.entries.length) {
