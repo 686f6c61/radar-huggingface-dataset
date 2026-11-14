@@ -4,7 +4,28 @@ Cambios de formato, de documentación y de la publicación. Los cambios de
 datos de cada pasada están en los commits (`data: +nuevos ~modificados
 -eliminados`) y en las releases numeradas.
 
-## 2026-11-14
+## 2026-11-14 — schema v2 y tablas Parquet
+
+Todo son añadidos: nada de lo que había cambia de nombre ni de sitio.
+
+- **Tablas Parquet**: `models`, `metrics` (serie diaria de likes y
+  descargas desde el 15 de septiembre de 2026), `fichas_es`, `fichas_en`,
+  `tombstones` y `renames`, con su `manifest.json` (filas, tamaño y
+  SHA-256). Se publican en
+  [Hugging Face](https://huggingface.co/datasets/686f6c61/radar-huggingface-dataset)
+  y en la release `latest`.
+- **Schema v2** del documento por modelo, con cinco campos nuevos:
+  `context_length`, `disabled`, `removal_pattern`, `renamed_to` y
+  `renamed_at`. El campo `schema` pasa de 1 a 2.
+- `index.json`: cada entrada lleva además `id` y `path`.
+- Fichas en inglés: se publican por primera vez (tabla `fichas_en`).
+- JSON Schema del documento por modelo en `schema/model.schema.json` y
+  `CITATION.cff` para citar el dataset.
+- README reescrito (ES y EN): qué hay, cómo usarlo, de dónde sale cada dato
+  y sus límites. Las rutas de ejemplo estaban mal (`qwen3.8-27b.json`); la
+  correcta es `data/qwen/qwen3-8-27b.json`.
+
+## 2026-11-14 — correcciones de documentación
 
 - README (ES y EN) corregido: el dataset no contiene solo modelos con
   licencia abierta. De 129.885 modelos, 90.148 son `oss`, 37.439 `unknown`

@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/686f6c61/radar-huggingface-dataset/main/schema/model.schema.json",
+  "title": "Radar Hugging Face Dataset: documento por modelo (schema v2)",
+  "description": "Descripcion de cada campo en SCHEMA.md",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": 2
+    },
+    "id": {
+      "type": "string",
+      "pattern": ".+/.+"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$"
+    },
+    "author": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://huggingface\\.co/"
+    },
+    "created_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updated_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license_family": {
+      "enum": [
+        "oss",
+        "non-commercial",
+        "unknown"
+      ]
+    },
+    "pipeline_tag": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "library": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "languages": {
+      "type": "array"
+    },
+    "tags": {
+      "type": "array"
+    },
+    "likes": {
+      "type": "number",
+      "minimum": 0
+    },
+    "downloads_30d": {
+      "type": "number",
+      "minimum": 0
+    },
+    "trending_score": {
+      "type": "number"
+    },
+    "parameters": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "parameters_human": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storage_bytes": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "storage_human": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "context_length": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "base_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "formats": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "gguf",
+          "mlx",
+          "onnx",
+          "safetensors",
+          "diffusers"
+        ]
+      }
+    },
+    "is_conversational": {
+      "type": "boolean"
+    },
+    "gated": {
+      "type": "boolean"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "removed": {
+      "type": "boolean"
+    },
+    "removed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "removal_pattern": {
+      "enum": [
+        "account_gone",
+        "author_purge",
+        "reupload",
+        "short_lived",
+        "had_traction",
+        "isolated",
+        null
+      ]
+    },
+    "renamed_to": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "renamed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "benchmarks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dataset": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metric": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "value"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https?://"
+          },
+          "snippet": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "slug",
+    "author",
+    "url",
+    "created_at",
+    "updated_at",
+    "license",
+    "license_family",
+    "pipeline_tag",
+    "library",
+    "languages",
+    "tags",
+    "likes",
+    "downloads_30d",
+    "trending_score",
+    "parameters",
+    "parameters_human",
+    "storage_bytes",
+    "storage_human",
+    "context_length",
+    "base_model",
+    "formats",
+    "is_conversational",
+    "gated",
+    "disabled",
+    "removed",
+    "removed_at",
+    "removal_pattern",
+    "renamed_to",
+    "renamed_at",
+    "benchmarks",
+    "sources"
+  ]
+}

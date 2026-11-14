@@ -40,15 +40,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Documentos obligatorios
         run: |
-          for f in README.md SCHEMA.md LICENSE CHANGELOG.md; do
+          for f in README.md README.en.md SCHEMA.md LICENSE CHANGELOG.md CITATION.cff schema/model.schema.json; do
             test -s "$f" || { echo "falta $f"; exit 1; }
           done
           grep -q "Attribution 4.0 International" LICENSE || { echo "LICENSE no es CC-BY-4.0"; exit 1; }
           echo "docs OK"
-      - name: README con quickstart y versionado
+      - name: README con las tablas Parquet y el versionado
         run: |
-          grep -q "## Quickstart" README.md || { echo "README sin Quickstart"; exit 1; }
+          grep -q "## Qué encontrarás en el Parquet" README.md || { echo "README sin la seccion del Parquet"; exit 1; }
           grep -q "## Versionado" README.md || { echo "README sin Versionado"; exit 1; }
+          node -e "JSON.parse(require('fs').readFileSync('schema/model.schema.json','utf8'))" || { echo "JSON Schema invalido"; exit 1; }
           grep -q "radar-huggingface.686f6c61.dev" README.md || { echo "README sin enlace al radar"; exit 1; }
           echo "README OK"
       - name: dist/ ignorado
@@ -137,6 +138,35 @@ jobs:
             --title "$NEXT" \
             --notes "Snapshot del dataset: $TOTAL modelos ($(date -u +%Y-%m-%d)). El release \`latest\` siempre apunta a la version mas reciente."
           echo "Release $NEXT creada ($TOTAL modelos)"
+      - name: Tablas Parquet en latest (desde Hugging Face)
+        # El worker sube las tablas a Hugging Face antes del push. Aqui se
+        # descargan, se comprueba su SHA-256 contra el manifiesto y se
+        # adjuntan a latest. Si son de otra pasada (o el push es solo de
+        # documentacion), no se tocan las que ya hay. Va el ultimo paso: un
+        # fallo aqui no impide la release numerada
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          BASE=https://huggingface.co/datasets/686f6c61/radar-huggingface-dataset/resolve/main
+          mkdir -p dist/parquet && cd dist/parquet
+          if ! curl -fsSL --retry 3 -o manifest.json "$BASE/manifest.json"; then
+            echo "::warning::Sin manifest.json en Hugging Face: no se adjuntan tablas Parquet"
+            exit 0
+          fi
+          WANT=$(node -p "JSON.parse(require('fs').readFileSync('../../index.json','utf8')).updated_at")
+          GOT=$(node -p "JSON.parse(require('fs').readFileSync('manifest.json','utf8')).exported_at")
+          if [ "$WANT" != "$GOT" ]; then
+            echo "::warning::Tablas Parquet de otra pasada ($GOT; el repo es de $WANT): no se adjuntan"
+            exit 0
+          fi
+          node -e "for (const t of Object.values(JSON.parse(require('fs').readFileSync('manifest.json','utf8')).tables)) console.log(t.sha256 + '  ' + t.file)" > SHA256SUMS
+          for f in $(cut -d' ' -f3 SHA256SUMS); do
+            curl -fsSL --retry 3 -o "$f" "$BASE/$f"
+          done
+          sha256sum -c SHA256SUMS
+          gh release upload latest *.parquet manifest.json SHA256SUMS --clobber
+          echo "Tablas Parquet adjuntadas a latest ($GOT)"
 
   release-tag:
     # Release de un tag concreto (p. ej. franjas reconstruidas tras un hueco
