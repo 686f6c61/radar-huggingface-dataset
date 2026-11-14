@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Lujjjjaiiiin/khayal-76m-arabic",
+  "slug": "lujjjjaiiiin-khayal-76m-arabic",
+  "author": "Lujjjjaiiiin",
+  "url": "https://huggingface.co/Lujjjjaiiiin/khayal-76m-arabic",
+  "created_at": "2026-11-14T19:49:20.000Z",
+  "updated_at": "2026-11-14T19:50:30.000Z",
+  "license": "CC",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "ar",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76242432,
+  "parameters_human": "76.2M",
+  "storage_bytes": 304992944,
+  "storage_human": "305 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

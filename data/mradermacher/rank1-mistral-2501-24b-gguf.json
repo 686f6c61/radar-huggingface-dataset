@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/rank1-mistral-2501-24b-GGUF",
+  "slug": "mradermacher-rank1-mistral-2501-24b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/rank1-mistral-2501-24b-GGUF",
+  "created_at": "2025-02-27T01:08:52.000Z",
+  "updated_at": "2026-11-14T20:03:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reranker",
+    "retrieval",
+    "en",
+    "dataset:jhu-clsp/rank1-training-data",
+    "base_model:jhu-clsp/rank1-mistral-2501-24b",
+    "base_model:quantized:jhu-clsp/rank1-mistral-2501-24b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 23573058560,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161412926336,
+  "storage_human": "161.4 GB",
+  "context_length": 32768,
+  "base_model": "jhu-clsp/rank1-mistral-2501-24b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

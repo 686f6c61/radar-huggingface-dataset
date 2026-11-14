@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "id": "opedromartins/teste",
+  "slug": "opedromartins-teste",
+  "author": "opedromartins",
+  "url": "https://huggingface.co/opedromartins/teste",
+  "created_at": "2026-11-14T20:18:34.000Z",
+  "updated_at": "2026-11-14T20:19:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "nemo",
+    "ASR",
+    "Speech",
+    "Portuguese",
+    "automatic-speech-recognition",
+    "parakeet",
+    "pt",
+    "dataset:opedromartins/ASR-datasets-ptbr",
+    "dataset:opedromartins/ASR-datasets-ptbr-clean-transcriptions",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CORAA MuPe",
+      "metric": "WER (CORAA MuPe)",
+      "value": 10.84
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CORAA NURC-SP",
+      "metric": "WER (CORAA NURC-SP)",
+      "value": 11.77
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CORAA v1.1",
+      "metric": "WER (CORAA v1.1)",
+      "value": 12.52
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Fleurs (pt_br)",
+      "metric": "WER (Fleurs)",
+      "value": 3.55
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (MLS, pt)",
+      "metric": "WER (MLS)",
+      "value": 10.96
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "TEDx (pt)",
+      "metric": "WER (TEDx)",
+      "value": 7.04
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Open PT ASR Leaderboard (Average)",
+      "metric": "Average WER",
+      "value": 9.45
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Open PT ASR Leaderboard (Average)",
+      "metric": "RTFx",
+      "value": 2653.82
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Termuxphone/whisper-large-v3-dz-lora",
+  "slug": "termuxphone-whisper-large-v3-dz-lora",
+  "author": "Termuxphone",
+  "url": "https://huggingface.co/Termuxphone/whisper-large-v3-dz-lora",
+  "created_at": "2026-11-14T18:31:03.000Z",
+  "updated_at": "2026-11-14T18:31:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31512224,
+  "storage_human": "32 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "DiggaDouglas/finlens-legal-bert",
+  "slug": "diggadouglas-finlens-legal-bert",
+  "author": "DiggaDouglas",
+  "url": "https://huggingface.co/DiggaDouglas/finlens-legal-bert",
+  "created_at": "2026-11-11T21:03:24.000Z",
+  "updated_at": "2026-11-14T20:24:33.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "legal",
+    "regulatory-compliance",
+    "kenya",
+    "digital-lending",
+    "en",
+    "base_model:nlpaueb/legal-bert-base-uncased",
+    "base_model:finetune:nlpaueb/legal-bert-base-uncased",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486854,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437970952,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": "nlpaueb/legal-bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clause-level regulatory violation screening",
+      "dataset": "FinLens Kenyan digital lending clauses v3.1 (real clauses, lender-grouped 5-fold CV)",
+      "metric": "Violation macro-F1 (5 violation labels)",
+      "value": 0.665
+    },
+    {
+      "task": "Clause-level regulatory violation screening",
+      "dataset": "FinLens Kenyan digital lending clauses v3.1 (real clauses, lender-grouped 5-fold CV)",
+      "metric": "Violation macro-precision",
+      "value": 0.649
+    },
+    {
+      "task": "Clause-level regulatory violation screening",
+      "dataset": "FinLens Kenyan digital lending clauses v3.1 (real clauses, lender-grouped 5-fold CV)",
+      "metric": "Violation macro-recall",
+      "value": 0.692
+    },
+    {
+      "task": "Clause-level regulatory violation screening",
+      "dataset": "FinLens Kenyan digital lending clauses v3.1 (real clauses, lender-grouped 5-fold CV)",
+      "metric": "Macro-F1 (6 labels)",
+      "value": 0.704
+    }
+  ],
+  "sources": []
+}

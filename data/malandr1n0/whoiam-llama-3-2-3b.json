@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "malandr1n0/whoiam-llama-3.2-3b",
+  "slug": "malandr1n0-whoiam-llama-3-2-3b",
+  "author": "malandr1n0",
+  "url": "https://huggingface.co/malandr1n0/whoiam-llama-3.2-3b",
+  "created_at": "2026-11-02T17:34:56.000Z",
+  "updated_at": "2026-11-14T19:28:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 159,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 9100232736,
+  "storage_human": "9.1 GB",
+  "context_length": 131072,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "hs4167/pal4vst_food",
+  "slug": "hs4167-pal4vst_food",
+  "author": "hs4167",
+  "url": "https://huggingface.co/hs4167/pal4vst_food",
+  "created_at": "2026-11-14T19:36:48.000Z",
+  "updated_at": "2026-11-14T19:44:09.000Z",
+  "license": "none",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "upernet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 121315964,
+  "parameters_human": "121.3M",
+  "storage_bytes": 485329216,
+  "storage_human": "485 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

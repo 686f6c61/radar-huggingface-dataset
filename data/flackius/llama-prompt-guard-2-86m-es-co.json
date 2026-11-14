@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Flackius/Llama-Prompt-Guard-2-86M-es-co",
+  "slug": "flackius-llama-prompt-guard-2-86m-es-co",
+  "author": "Flackius",
+  "url": "https://huggingface.co/Flackius/Llama-Prompt-Guard-2-86M-es-co",
+  "created_at": "2026-11-14T19:54:30.000Z",
+  "updated_at": "2026-11-14T20:00:50.000Z",
+  "license": "llama4",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "prompt-injection",
+    "ai-safety",
+    "colombia",
+    "es",
+    "en",
+    "base_model:meta-llama/Llama-Prompt-Guard-2-86M",
+    "base_model:finetune:meta-llama/Llama-Prompt-Guard-2-86M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131307578,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "meta-llama/Llama-Prompt-Guard-2-86M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

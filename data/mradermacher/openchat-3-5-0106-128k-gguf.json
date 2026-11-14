@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/openchat-3.5-0106-128k-GGUF",
+  "slug": "mradermacher-openchat-3-5-0106-128k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/openchat-3.5-0106-128k-GGUF",
+  "created_at": "2024-12-18T12:53:23.000Z",
+  "updated_at": "2026-11-14T18:56:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "openchat",
+    "mistral",
+    "C-RLFT",
+    "en",
+    "base_model:CallComply/openchat-3.5-0106-128k",
+    "base_model:quantized:CallComply/openchat-3.5-0106-128k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 360,
+  "trending_score": 0,
+  "parameters": 7241748480,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929979904,
+  "storage_human": "63.9 GB",
+  "context_length": 131072,
+  "base_model": "CallComply/openchat-3.5-0106-128k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

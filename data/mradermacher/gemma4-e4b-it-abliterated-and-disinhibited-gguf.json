@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gemma4-E4B-it-Abliterated-AND-Disinhibited-GGUF",
+  "slug": "mradermacher-gemma4-e4b-it-abliterated-and-disinhibited-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma4-E4B-it-Abliterated-AND-Disinhibited-GGUF",
+  "created_at": "2026-11-14T19:29:04.000Z",
+  "updated_at": "2026-11-14T19:45:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 65581683584,
+  "storage_human": "65.6 GB",
+  "context_length": 131072,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
